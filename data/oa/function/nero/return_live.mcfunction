@@ -1,0 +1,5 @@
+$execute in minecraft:overworld if entity @e[distance=0..,tag=oa.nero_mark,scores={oa.id=$(id)},limit=1] store success score #moved oa.tmp run tp @s @e[distance=0..,tag=oa.nero_mark,scores={oa.id=$(id)},limit=1]
+$execute if score #moved oa.tmp matches 0 in minecraft:the_nether if entity @e[distance=0..,tag=oa.nero_mark,scores={oa.id=$(id)},limit=1] store success score #moved oa.tmp run tp @s @e[distance=0..,tag=oa.nero_mark,scores={oa.id=$(id)},limit=1]
+$execute if score #moved oa.tmp matches 0 in minecraft:the_end if entity @e[distance=0..,tag=oa.nero_mark,scores={oa.id=$(id)},limit=1] store success score #moved oa.tmp run tp @s @e[distance=0..,tag=oa.nero_mark,scores={oa.id=$(id)},limit=1]
+$execute if score #moved oa.tmp matches 0 in oa:br if entity @e[distance=0..,tag=oa.nero_mark,scores={oa.id=$(id)},limit=1] store success score #moved oa.tmp run tp @s @e[distance=0..,tag=oa.nero_mark,scores={oa.id=$(id)},limit=1]
+$execute if score #moved oa.tmp matches 0 in oa:practice if entity @e[distance=0..,tag=oa.nero_mark,scores={oa.id=$(id)},limit=1] store success score #moved oa.tmp run tp @s @e[distance=0..,tag=oa.nero_mark,scores={oa.id=$(id)},limit=1]

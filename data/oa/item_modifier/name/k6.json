@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:custom_name": {
+          "text": "ゆったり：瞬間奇襲アイテム",
+          "color": "aqua",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{name_v172:1b}}"
+    }
+  ]
+}

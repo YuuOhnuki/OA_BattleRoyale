@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "ふろボール",
+                  "color": "gold",
+                  "italic": false
+                },
+                "minecraft:custom_data": {
+                  "oa_furoball": true,
+                  "furo_lore182": true,
+                  "furo_stack1927": true
+                },
+                "minecraft:item_model": "minecraft:fire_charge",
+                "minecraft:max_stack_size": 64,
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 0.05,
+                  "animation": "none",
+                  "sound": "minecraft:item.firecharge.use",
+                  "has_consume_particles": false,
+                  "on_consume_effects": []
+                },
+                "minecraft:use_cooldown": {
+                  "seconds": 1.0,
+                  "cooldown_group": "oa:furoball"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "右クリック：爆風で周囲を吹き飛ばす",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "自分は約2.5m上昇／着地まで落下ダメージ無効",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "使い切り／再使用1秒／64個までスタック可",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

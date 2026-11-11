@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "木のノックバック棒",
+                  "color": "yellow",
+                  "italic": false
+                },
+                "minecraft:enchantments": {
+                  "minecraft:knockback": 2
+                },
+                "minecraft:custom_data": {
+                  "oa_normal": "kb_stick"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "通常武器／固有装備の所持制限対象外",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "hit": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "source_entity": {
+              "minecraft:entity_type": "minecraft:player"
+            },
+            "tags": [
+              {
+                "id": "#minecraft:is_player_attack",
+                "expected": true
+              }
+            ]
+          },
+          "blocked": false
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "oa:itori/flins_hit"
+  }
+}

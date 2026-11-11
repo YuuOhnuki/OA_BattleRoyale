@@ -1,0 +1,5 @@
+$data modify storage oa:players p$(id).mark.x set from entity @s Pos[0]
+$data modify storage oa:players p$(id).mark.y set from entity @s Pos[1]
+$data modify storage oa:players p$(id).mark.z set from entity @s Pos[2]
+$data modify storage oa:players p$(id).mark.yaw set from entity @s Rotation[0]
+$data modify storage oa:players p$(id).mark.pitch set from entity @s Rotation[1]

@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:text_display,tag=oa.lobby_label] if data entity @s text{text:"BR MAP｜上：南・海／下：北・山岳\n左：東・森／右：西・市街地"} run data merge entity @s {text:{text:"BR MAP｜北：山岳・雪／東：森\n西：市街地／南：海・港",color:"gold"}}

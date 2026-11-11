@@ -1,0 +1,69 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "#minecraft:bypasses_armor",
+      "required": false
+    },
+    {
+      "id": "minecraft:cactus",
+      "required": false
+    },
+    {
+      "id": "minecraft:campfire",
+      "required": false
+    },
+    {
+      "id": "minecraft:dry_out",
+      "required": false
+    },
+    {
+      "id": "minecraft:falling_anvil",
+      "required": false
+    },
+    {
+      "id": "minecraft:falling_stalactite",
+      "required": false
+    },
+    {
+      "id": "minecraft:hot_floor",
+      "required": false
+    },
+    {
+      "id": "minecraft:sulfur_cube_hot",
+      "required": false
+    },
+    {
+      "id": "minecraft:in_fire",
+      "required": false
+    },
+    {
+      "id": "minecraft:lava",
+      "required": false
+    },
+    {
+      "id": "minecraft:lightning_bolt",
+      "required": false
+    },
+    {
+      "id": "minecraft:sweet_berry_bush",
+      "required": false
+    },
+    {
+      "id": "oa:execution",
+      "required": false
+    },
+    {
+      "id": "oa:sonic",
+      "required": false
+    },
+    {
+      "id": "oa:zone",
+      "required": false
+    },
+    {
+      "id": "oa:yuua_counter",
+      "required": false
+    }
+  ]
+}

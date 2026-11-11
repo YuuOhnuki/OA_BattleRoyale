@@ -1,0 +1,11 @@
+particle minecraft:end_rod ~ ~-4 ~ 0 0 0 0 1 force @s
+particle minecraft:end_rod ~ ~-2 ~ 0 0 0 0 1 force @s
+particle minecraft:end_rod ~ ~0 ~ 0 0 0 0 1 force @s
+particle minecraft:end_rod ~ ~2 ~ 0 0 0 0 1 force @s
+particle minecraft:end_rod ~ ~4 ~ 0 0 0 0 1 force @s
+particle minecraft:end_rod ~ ~6 ~ 0 0 0 0 1 force @s
+particle minecraft:end_rod ~ ~8 ~ 0 0 0 0 1 force @s
+particle minecraft:end_rod ~ ~10 ~ 0 0 0 0 1 force @s
+particle minecraft:end_rod ~ ~12 ~ 0 0 0 0 1 force @s
+particle minecraft:flame ~ ~0.2 ~ 0 0 0 0 1 force @s
+particle minecraft:flame ~ ~12 ~ 0 0 0 0 1 force @s

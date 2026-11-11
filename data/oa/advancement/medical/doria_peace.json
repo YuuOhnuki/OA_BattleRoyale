@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "used": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "oa_buff": "doria"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "oa:medical/doria_peace"
+  }
+}

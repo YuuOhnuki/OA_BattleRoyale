@@ -1,0 +1,20 @@
+scoreboard players set #stage oa.map2 1
+fill ~-152 ~-20 ~136 ~-121 ~0 ~152 minecraft:air
+fill ~-152 ~-20 ~136 ~-121 ~-20 ~152 minecraft:bedrock
+fill ~-152 ~-19 ~136 ~-121 ~-19 ~152 minecraft:sand
+fill ~-152 ~-18 ~136 ~-152 ~-18 ~151 minecraft:sand
+fill ~-152 ~-18 ~152 ~-121 ~-18 ~152 minecraft:sand
+fill ~-152 ~-17 ~136 ~-152 ~-17 ~151 minecraft:sand
+fill ~-152 ~-17 ~152 ~-121 ~-17 ~152 minecraft:sand
+fill ~-152 ~-16 ~136 ~-152 ~-16 ~151 minecraft:sand
+fill ~-152 ~-16 ~152 ~-121 ~-16 ~152 minecraft:sand
+fill ~-152 ~-15 ~136 ~-152 ~-15 ~151 minecraft:sand
+fill ~-152 ~-15 ~152 ~-121 ~-15 ~152 minecraft:sand
+fill ~-152 ~-14 ~136 ~-152 ~-14 ~151 minecraft:sand
+fill ~-152 ~-14 ~152 ~-121 ~-14 ~152 minecraft:sand
+fill ~-152 ~-13 ~136 ~-152 ~-13 ~151 minecraft:sand
+fill ~-152 ~-13 ~152 ~-121 ~-13 ~152 minecraft:sand
+fillbiome ~-152 ~-20 ~136 ~-137 ~8 ~151 minecraft:ocean
+fillbiome ~-136 ~-20 ~136 ~-121 ~8 ~151 minecraft:ocean
+fillbiome ~-152 ~-20 ~152 ~-137 ~8 ~152 minecraft:ocean
+fillbiome ~-136 ~-20 ~152 ~-121 ~8 ~152 minecraft:ocean

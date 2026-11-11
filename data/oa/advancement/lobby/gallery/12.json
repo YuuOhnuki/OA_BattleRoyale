@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "read": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:nbt": "{Tags:[\"oa.gallery_button\",\"oa.gallery_12\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "oa:lobby/gallery/click/12"
+  }
+}

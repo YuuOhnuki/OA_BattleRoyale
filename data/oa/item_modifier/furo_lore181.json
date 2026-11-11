@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:lore": [
+          {
+            "text": "右クリック：爆風で周囲を吹き飛ばす",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "自分は約10m上昇／着地まで落下ダメージ無効",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "使い切り／再使用1秒",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{furo_lore181:1b}"
+    }
+  ]
+}

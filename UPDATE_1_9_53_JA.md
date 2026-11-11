@@ -1,0 +1,5 @@
+# v1.9.53
+
+解放段階用アイテム修飾子k10_1～4のルート配列をminecraft:sequenceオブジェクトへ修正。gacha_projectilesから存在しないminecraft:potionを除去し、splash_potionとlingering_potionへ分離。タグはreplace=trueを指定。全item_modifierのルートオブジェクトを検査。
+
+旧版ZIPをdatapacks外へ移動し、この版だけを配置して再読み込みしてください。静的検査済み、実機の読み込み試験は未実施。

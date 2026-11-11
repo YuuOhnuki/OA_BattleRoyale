@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:nbt": "{Tags:[\"oa.practice_weapon_3\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "oa:practice/click/weapon_3"
+  }
+}

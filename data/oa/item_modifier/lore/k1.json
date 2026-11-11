@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:lore": [
+          {
+            "text": "装着中は発光。攻撃した敵・攻撃してきた敵を倒す",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "使用時間30秒／使い捨て",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:enchantments"
+          ]
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{lore_release1:1b}}"
+    }
+  ]
+}

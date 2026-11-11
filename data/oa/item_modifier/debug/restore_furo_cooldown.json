@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "minecraft:use_cooldown": {
+      "seconds": 1.0,
+      "cooldown_group": "oa:furoball"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:inverted",
+  "term": {
+    "type": "minecraft:match_tool",
+    "predicate": {
+      "predicates": {
+        "minecraft:custom_data": {
+          "br_pick": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+particle minecraft:end_rod ^ ^ ^0.25 0 0 0 0 1 normal @s
+particle minecraft:end_rod ^ ^ ^0.5 0 0 0 0 1 normal @s
+particle minecraft:end_rod ^ ^ ^0.75 0 0 0 0 1 normal @s
+particle minecraft:end_rod ^ ^ ^1 0 0 0 0 1 normal @s
+particle minecraft:end_rod ^ ^ ^1.25 0 0 0 0 1 normal @s
+particle minecraft:end_rod ^ ^ ^1.5 0 0 0 0 1 normal @s
+particle minecraft:end_rod ^ ^ ^1.75 0 0 0 0 1 normal @s
+particle minecraft:end_rod ^ ^ ^2 0 0 0 0 1 normal @s
+particle minecraft:end_rod ^ ^ ^2.25 0 0 0 0 1 normal @s
+particle minecraft:end_rod ^ ^ ^2.5 0 0 0 0 1 normal @s
+particle minecraft:end_rod ^ ^ ^2.75 0 0 0 0 1 normal @s
+particle minecraft:end_rod ^ ^ ^3 0 0 0 0 1 normal @s

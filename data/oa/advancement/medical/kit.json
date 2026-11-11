@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "used": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "br_heal_kind": 2
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "oa:medical/kit"
+  }
+}

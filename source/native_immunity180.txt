@@ -1,0 +1,4 @@
+Official cached 26.3 server jar bytecode inspected offline, without launching server.
+LivingEntity.isInvulnerableTo calls EnchantmentHelper.isImmuneToDamage.
+ServerPlayer.hurtServer and LivingEntity.hurtServer query invulnerability before actuallyHurt, which queries again. Immunity returns before ENTITY_HURT_PLAYER.
+A per-tick guard avoids compounding independent random queries and cannot observe a native fully immune hit for exact FX.

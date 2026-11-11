@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_enchantments",
+      "enchantments": {
+        "oa:nero": 1
+      },
+      "add": false
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{nero_v2:1b}}"
+    }
+  ]
+}

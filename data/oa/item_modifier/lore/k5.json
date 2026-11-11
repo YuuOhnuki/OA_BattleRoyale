@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:lore": [
+          {
+            "text": "拾うと強制装着。速くなる代わりに視界が狭まる",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "参加者の攻撃を25%で無効化／装着60秒で壊れる",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:enchantments"
+          ]
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{lore_release1:1b}}"
+    }
+  ]
+}

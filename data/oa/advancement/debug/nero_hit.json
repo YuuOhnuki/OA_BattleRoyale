@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "hit": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:player",
+                "minecraft:nbt": "{Tags:[\"oa.self_decoy\"]}"
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:nbt": "{Tags:[\"oa.db_mobs\"]}"
+              }
+            }
+          ]
+        },
+        "damage": {
+          "type": {
+            "source_entity": {
+              "minecraft:nbt": "{Tags:[\"oa.debug_mob\"]}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "oa:debug/nero_hit"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:lore": [
+          {
+            "text": "右クリックで装着。周囲に自動で音波攻撃／装着中HP+6",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "音波CT4秒／時々息切れして足が遅くなる",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:enchantments"
+          ]
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{lore_v160:1b}}"
+    }
+  ]
+}

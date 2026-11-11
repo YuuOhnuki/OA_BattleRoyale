@@ -1,0 +1,1 @@
+tellraw @s [{text:"参加="},{selector:"@s[tag=oa.player]"},{text:" / 固有serial="},{score:{name:"@s",objective:"oa.owner"}},{text:" / CT="},{score:{name:"@s",objective:"oa.cd"}},{text:" / 印="},{score:{name:"@s",objective:"oa.mark"}}]

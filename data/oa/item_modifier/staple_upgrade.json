@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_enchantments",
+      "enchantments": {
+        "oa:staple": 1
+      },
+      "add": false
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{staple_v146:1b}}"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "used": {
+      "trigger": "minecraft:used_totem",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "oa_overwork": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "oa:overwork/used"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:lore": [
+          {
+            "text": "右クリック：全体効果・自分への罰を含む15種のガチャ／CT45秒",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "通常攻撃：まれに相手を打ち上げる",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{lore_release1:1b,lore_taya1926:1b}}"
+    }
+  ]
+}

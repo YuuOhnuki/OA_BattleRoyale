@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:lore": [
+          {
+            "text": "主手：足が速くなり、高く跳べる。落下ダメージ無効",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "通常攻撃：相手をしばらく跳ねさせる",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "水に触れている時・雨天：長押し→離すと激流III（レベル3）／CT5秒",
+            "color": "aqua",
+            "italic": false
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:enchantments"
+          ]
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{lore_release1:1b,fish_lore1916:1b}}"
+    }
+  ]
+}

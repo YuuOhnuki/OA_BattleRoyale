@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:lore": [
+          {
+            "text": "右クリック：10秒小型化し、移動速度上昇・耐性・体力増強",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "CT20秒／通常攻撃：相手の足を遅くする",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:enchantments"
+          ]
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{lore_release1:1b}}"
+    }
+  ]
+}

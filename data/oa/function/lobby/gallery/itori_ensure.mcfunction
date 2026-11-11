@@ -1,0 +1,1 @@
+$execute in minecraft:overworld positioned $(x) $(y) $(z) if loaded ~10 ~0 ~28 if loaded ~14 ~4 ~33 unless entity @e[type=minecraft:mannequin,tag=oa.exhibit_itori,distance=..60] run function oa:lobby/gallery/itori_build

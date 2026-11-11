@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_item",
+      "item": "minecraft:leather_helmet"
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:equippable": {
+          "slot": "head",
+          "swappable": true,
+          "damage_on_hurt": false,
+          "dispensable": false
+        },
+        "minecraft:item_model": "oa:yuua",
+        "minecraft:attribute_modifiers": []
+      }
+    },
+    {
+      "type": "minecraft:set_attributes",
+      "replace": false,
+      "modifiers": [
+        {
+          "id": "oa:yuua_soft_hit",
+          "attribute": "minecraft:attack_damage",
+          "amount": -0.9999,
+          "operation": "add_multiplied_total",
+          "slot": "head"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{visual_v140:1b}}"
+    }
+  ]
+}

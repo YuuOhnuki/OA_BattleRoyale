@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:lore": [
+          {
+            "text": "右クリック：周囲3mの敵を2.5秒拘束／CT15秒",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "通常攻撃：出血／魚ジャンプと息切れを検知",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:enchantments"
+          ]
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{lore_release1:1b}}"
+    }
+  ]
+}

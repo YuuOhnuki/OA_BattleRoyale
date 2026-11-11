@@ -1,0 +1,554 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_sword",
+          "weight": 1862
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_axe",
+          "weight": 1862
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "weight": 26068
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe",
+          "weight": 14896
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_spear",
+          "weight": 5586
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "weight": 5586
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "weight": 13034
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "weight": 9310
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 85652
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "weight": 3724,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "木のノックバック棒",
+                  "color": "yellow",
+                  "italic": false
+                },
+                "minecraft:enchantments": {
+                  "minecraft:knockback": 2
+                },
+                "minecraft:custom_data": {
+                  "oa_normal": "kb_stick"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "通常武器／固有装備の所持制限対象外",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "weight": 3724,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "木のバット",
+                  "color": "gold",
+                  "italic": false
+                },
+                "minecraft:enchantments": {
+                  "oa:bat": 1
+                },
+                "minecraft:custom_data": {
+                  "oa_normal": "bat"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "通常武器／固有装備の所持制限対象外",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:item_model": "oa:wooden_bat",
+                "minecraft:max_stack_size": 1
+              }
+            },
+            {
+              "type": "minecraft:set_attributes",
+              "replace": true,
+              "modifiers": [
+                {
+                  "id": "oa:bat_damage",
+                  "attribute": "minecraft:attack_damage",
+                  "amount": 3.0,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "id": "oa:bat_speed",
+                  "attribute": "minecraft:attack_speed",
+                  "amount": -3.2,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_axe",
+          "weight": 2793
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_sword",
+          "weight": 4655
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_helmet",
+          "weight": 4500
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "weight": 4500
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_leggings",
+          "weight": 4500
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_boots",
+          "weight": 4500
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_helmet",
+          "weight": 18000
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_chestplate",
+          "weight": 18000
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_leggings",
+          "weight": 18000
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_boots",
+          "weight": 18000
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_helmet",
+          "weight": 45000
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_chestplate",
+          "weight": 45000
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_leggings",
+          "weight": 45000
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_boots",
+          "weight": 45000
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_helmet",
+          "weight": 13500
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_chestplate",
+          "weight": 13500
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_leggings",
+          "weight": 13500
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_boots",
+          "weight": 13500
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 324000
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 70
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "weight": 65,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 5
+              }
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 35
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_beef",
+          "weight": 16,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bread",
+          "weight": 54,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 130
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 570,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "包帯",
+                  "color": "green",
+                  "italic": false
+                },
+                "minecraft:custom_data": {
+                  "br_heal": true,
+                  "br_heal_kind": 1,
+                  "medical_v170": true
+                },
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 0.05,
+                  "animation": "eat",
+                  "sound": "minecraft:entity.generic.eat",
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:regeneration",
+                          "duration": 3,
+                          "amplifier": 5,
+                          "show_particles": false,
+                          "show_icon": false
+                        }
+                      ],
+                      "probability": 1.0
+                    }
+                  ],
+                  "has_consume_particles": false
+                },
+                "minecraft:use_cooldown": {
+                  "seconds": 1.0,
+                  "cooldown_group": "oa:bandage"
+                },
+                "minecraft:item_model": "oa:bandage",
+                "minecraft:lore": [
+                  {
+                    "text": "3HP回復 / 右クリックですぐ使用",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:max_stack_size": 64
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "weight": 30,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "応急キット",
+                  "color": "green",
+                  "italic": false
+                },
+                "minecraft:custom_data": {
+                  "br_heal": true,
+                  "br_heal_kind": 2,
+                  "medical_v170": true
+                },
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 2.0,
+                  "animation": "eat",
+                  "sound": "minecraft:entity.generic.eat",
+                  "on_consume_effects": [],
+                  "has_consume_particles": false
+                },
+                "minecraft:item_model": "oa:firstaid",
+                "minecraft:lore": [
+                  {
+                    "text": "右クリックを2秒長押しして回復",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:max_stack_size": 64
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 1400
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "weight": 35,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 10
+              }
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:egg",
+          "weight": 35,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 10
+              }
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 130
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "ふろボール",
+                  "color": "gold",
+                  "italic": false
+                },
+                "minecraft:custom_data": {
+                  "oa_furoball": true,
+                  "furo_lore182": true,
+                  "furo_stack1927": true
+                },
+                "minecraft:item_model": "minecraft:fire_charge",
+                "minecraft:max_stack_size": 64,
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 0.05,
+                  "animation": "none",
+                  "sound": "minecraft:item.firecharge.use",
+                  "has_consume_particles": false,
+                  "on_consume_effects": []
+                },
+                "minecraft:use_cooldown": {
+                  "seconds": 1.0,
+                  "cooldown_group": "oa:furoball"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "右クリック：爆風で周囲を吹き飛ばす",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "自分は約2.5m上昇／着地まで落下ダメージ無効",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "使い切り／再使用1秒／64個までスタック可",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ],
+          "weight": 15
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 85
+        }
+      ]
+    }
+  ]
+}

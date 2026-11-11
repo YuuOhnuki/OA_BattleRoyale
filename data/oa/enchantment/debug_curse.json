@@ -1,0 +1,121 @@
+{
+  "description": {
+    "text": "OA curse"
+  },
+  "supported_items": "#minecraft:enchantable/equippable",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "head"
+  ],
+  "effects": {
+    "minecraft:damage_immunity": [
+      {
+        "effect": {},
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:player",
+                "minecraft:nbt": "{Tags:[\"oa.player\"]}"
+              }
+            },
+            {
+              "type": "minecraft:any_of",
+              "terms": [
+                {
+                  "type": "minecraft:entity_properties",
+                  "entity": "attacker",
+                  "predicate": {
+                    "minecraft:entity_type": "minecraft:player",
+                    "minecraft:nbt": "{Tags:[\"oa.player\"]}"
+                  }
+                },
+                {
+                  "type": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "type": "minecraft:entity_properties",
+                      "entity": "attacker",
+                      "predicate": {
+                        "minecraft:nbt": "{Tags:[\"oa.debug_mob\"]}"
+                      }
+                    },
+                    {
+                      "type": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "minecraft:nbt": "{Tags:[\"oa.db_mobs\"]}"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:nbt": "{Tags:[\"oa.curse_guard\"]}"
+              }
+            },
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_properties",
+                "entity": "attacker",
+                "predicate": {
+                  "minecraft:entity_type": "minecraft:player",
+                  "minecraft:nbt": "{Tags:[\"oa.routed_damage\"]}"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:change_item_damage",
+          "amount": 1
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:player",
+                "minecraft:nbt": "{Tags:[\"oa.player\"]}"
+              }
+            },
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:nbt": "{Tags:[\"oa.db_keepwear\"]}"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

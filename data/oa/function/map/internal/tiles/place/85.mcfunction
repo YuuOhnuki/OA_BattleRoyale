@@ -1,0 +1,35 @@
+scoreboard players set #stage oa.map2 1
+fill ~8 ~-20 ~104 ~39 ~0 ~135 minecraft:air
+fill ~8 ~-20 ~104 ~39 ~-20 ~135 minecraft:bedrock
+fill ~8 ~-19 ~104 ~26 ~-19 ~104 minecraft:sand
+fill ~27 ~-19 ~104 ~36 ~-19 ~104 minecraft:dirt
+fill ~37 ~-19 ~104 ~39 ~-19 ~104 minecraft:sand
+fill ~8 ~-19 ~105 ~39 ~-19 ~135 minecraft:sand
+fill ~27 ~-18 ~104 ~36 ~-18 ~104 minecraft:sand
+# 1.9.97 map update patches
+fill ~8 ~-19 ~113 ~8 ~-19 ~113 minecraft:gravel
+fill ~8 ~-19 ~112 ~9 ~-19 ~112 minecraft:gravel
+fill ~9 ~-19 ~116 ~9 ~-19 ~116 minecraft:gravel
+fill ~10 ~-19 ~117 ~11 ~-19 ~117 minecraft:gravel
+fill ~11 ~-19 ~114 ~11 ~-19 ~114 minecraft:gravel
+fill ~11 ~-19 ~118 ~12 ~-19 ~118 minecraft:gravel
+fill ~12 ~-19 ~119 ~16 ~-19 ~119 minecraft:gravel
+fill ~13 ~-19 ~120 ~15 ~-19 ~120 minecraft:gravel
+fill ~13 ~-19 ~128 ~15 ~-19 ~128 minecraft:gravel
+fill ~14 ~-19 ~121 ~15 ~-19 ~121 minecraft:gravel
+fill ~14 ~-19 ~131 ~15 ~-19 ~131 minecraft:gravel
+fill ~15 ~-19 ~122 ~16 ~-19 ~122 minecraft:gravel
+fill ~16 ~-19 ~125 ~16 ~-19 ~125 minecraft:gravel
+fill ~25 ~-19 ~113 ~25 ~-19 ~113 minecraft:gravel
+fill ~25 ~-19 ~111 ~27 ~-19 ~112 minecraft:gravel
+fill ~25 ~-19 ~110 ~30 ~-19 ~110 minecraft:gravel
+fill ~25 ~-19 ~108 ~34 ~-19 ~109 minecraft:gravel
+fill ~26 ~-19 ~107 ~36 ~-19 ~107 minecraft:gravel
+fill ~27 ~-19 ~116 ~31 ~-19 ~116 minecraft:gravel
+fill ~28 ~-19 ~114 ~32 ~-19 ~115 minecraft:gravel
+fill ~28 ~-19 ~113 ~35 ~-19 ~113 minecraft:gravel
+fill ~33 ~-19 ~110 ~36 ~-19 ~112 minecraft:gravel
+fillbiome ~8 ~-20 ~104 ~23 ~8 ~119 minecraft:ocean
+fillbiome ~24 ~-20 ~104 ~39 ~8 ~119 minecraft:ocean
+fillbiome ~8 ~-20 ~120 ~23 ~8 ~135 minecraft:ocean
+fillbiome ~24 ~-20 ~120 ~39 ~8 ~135 minecraft:ocean

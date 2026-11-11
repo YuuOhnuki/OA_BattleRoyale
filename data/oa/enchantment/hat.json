@@ -1,0 +1,513 @@
+{
+  "description": {
+    "text": "OA hat"
+  },
+  "supported_items": "#minecraft:enchantable/equippable",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "head"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:change_item_damage",
+          "amount": 1
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:entity_type": "minecraft:player",
+                "minecraft:nbt": "{Tags:[\"oa.player\"]}"
+              }
+            },
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "minecraft:nbt": "{Tags:[\"oa.db_keepwear\"]}"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "oa:yuua/counter_prepare"
+        },
+        "requirements": {
+          "type": "minecraft:any_of",
+          "terms": [
+            {
+              "type": "minecraft:all_of",
+              "terms": [
+                {
+                  "type": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "type": "minecraft:all_of",
+                      "terms": [
+                        {
+                          "type": "minecraft:entity_properties",
+                          "entity": "attacker",
+                          "predicate": {
+                            "minecraft:entity_type": "minecraft:player",
+                            "minecraft:nbt": "{Tags:[\"oa.player\"]}"
+                          }
+                        },
+                        {
+                          "type": "minecraft:entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                            "minecraft:entity_type": "minecraft:player",
+                            "minecraft:nbt": "{Tags:[\"oa.player\"]}"
+                          }
+                        },
+                        {
+                          "type": "minecraft:inverted",
+                          "term": {
+                            "type": "minecraft:damage_source_properties",
+                            "predicate": {
+                              "tags": [
+                                {
+                                  "id": [
+                                    "oa:execution",
+                                    "oa:yuua_counter"
+                                  ],
+                                  "expected": true
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "minecraft:all_of",
+                      "terms": [
+                        {
+                          "type": "minecraft:inverted",
+                          "term": {
+                            "type": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                              "minecraft:entity_type": "minecraft:player",
+                              "minecraft:nbt": "{Tags:[\"oa.self_decoy\"]}"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:inverted",
+                          "term": {
+                            "type": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                              "minecraft:entity_type": "minecraft:player",
+                              "minecraft:nbt": "{Tags:[\"oa.decoy_grace\"]}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "minecraft:all_of",
+                      "terms": [
+                        {
+                          "type": "minecraft:inverted",
+                          "term": {
+                            "type": "minecraft:entity_properties",
+                            "entity": "attacker",
+                            "predicate": {
+                              "minecraft:entity_type": "minecraft:player",
+                              "minecraft:nbt": "{Tags:[\"oa.self_decoy\"]}"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:inverted",
+                          "term": {
+                            "type": "minecraft:entity_properties",
+                            "entity": "attacker",
+                            "predicate": {
+                              "minecraft:entity_type": "minecraft:player",
+                              "minecraft:nbt": "{Tags:[\"oa.decoy_grace\"]}"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:inverted",
+                  "term": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "minecraft:entity_type": "minecraft:player",
+                      "minecraft:nbt": "{Tags:[\"br.pvp_grace\"]}"
+                    }
+                  }
+                },
+                {
+                  "type": "minecraft:inverted",
+                  "term": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                      "minecraft:nbt": "{Tags:[\"br.pvp_grace\"]}"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:all_of",
+              "terms": [
+                {
+                  "type": "minecraft:entity_properties",
+                  "entity": "attacker",
+                  "predicate": {
+                    "minecraft:nbt": "{Tags:[\"oa.debug_mob\"]}"
+                  }
+                },
+                {
+                  "type": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "minecraft:nbt": "{Tags:[\"oa.db_mobs\"]}"
+                  }
+                },
+                {
+                  "type": "minecraft:inverted",
+                  "term": {
+                    "type": "minecraft:damage_source_properties",
+                    "predicate": {
+                      "tags": [
+                        {
+                          "id": [
+                            "oa:execution",
+                            "oa:yuua_counter"
+                          ],
+                          "expected": true
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "enchanted": "victim",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:run_function",
+              "function": "oa:yuua/silence_begin"
+            },
+            {
+              "type": "minecraft:run_function",
+              "function": "oa:yuua/counter_strike"
+            },
+            {
+              "type": "minecraft:run_function",
+              "function": "oa:yuua/silence_end"
+            },
+            {
+              "type": "minecraft:run_function",
+              "function": "oa:yuua/counter_cleanup"
+            }
+          ]
+        },
+        "requirements": {
+          "type": "minecraft:any_of",
+          "terms": [
+            {
+              "type": "minecraft:all_of",
+              "terms": [
+                {
+                  "type": "minecraft:all_of",
+                  "terms": [
+                    {
+                      "type": "minecraft:all_of",
+                      "terms": [
+                        {
+                          "type": "minecraft:entity_properties",
+                          "entity": "attacker",
+                          "predicate": {
+                            "minecraft:entity_type": "minecraft:player",
+                            "minecraft:nbt": "{Tags:[\"oa.player\"]}"
+                          }
+                        },
+                        {
+                          "type": "minecraft:entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                            "minecraft:entity_type": "minecraft:player",
+                            "minecraft:nbt": "{Tags:[\"oa.player\"]}"
+                          }
+                        },
+                        {
+                          "type": "minecraft:inverted",
+                          "term": {
+                            "type": "minecraft:damage_source_properties",
+                            "predicate": {
+                              "tags": [
+                                {
+                                  "id": [
+                                    "oa:execution",
+                                    "oa:yuua_counter"
+                                  ],
+                                  "expected": true
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "minecraft:all_of",
+                      "terms": [
+                        {
+                          "type": "minecraft:inverted",
+                          "term": {
+                            "type": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                              "minecraft:entity_type": "minecraft:player",
+                              "minecraft:nbt": "{Tags:[\"oa.self_decoy\"]}"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:inverted",
+                          "term": {
+                            "type": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                              "minecraft:entity_type": "minecraft:player",
+                              "minecraft:nbt": "{Tags:[\"oa.decoy_grace\"]}"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "minecraft:all_of",
+                      "terms": [
+                        {
+                          "type": "minecraft:inverted",
+                          "term": {
+                            "type": "minecraft:entity_properties",
+                            "entity": "attacker",
+                            "predicate": {
+                              "minecraft:entity_type": "minecraft:player",
+                              "minecraft:nbt": "{Tags:[\"oa.self_decoy\"]}"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:inverted",
+                          "term": {
+                            "type": "minecraft:entity_properties",
+                            "entity": "attacker",
+                            "predicate": {
+                              "minecraft:entity_type": "minecraft:player",
+                              "minecraft:nbt": "{Tags:[\"oa.decoy_grace\"]}"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:inverted",
+                  "term": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "minecraft:entity_type": "minecraft:player",
+                      "minecraft:nbt": "{Tags:[\"br.pvp_grace\"]}"
+                    }
+                  }
+                },
+                {
+                  "type": "minecraft:inverted",
+                  "term": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                      "minecraft:nbt": "{Tags:[\"br.pvp_grace\"]}"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:all_of",
+              "terms": [
+                {
+                  "type": "minecraft:entity_properties",
+                  "entity": "attacker",
+                  "predicate": {
+                    "minecraft:nbt": "{Tags:[\"oa.debug_mob\"]}"
+                  }
+                },
+                {
+                  "type": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "minecraft:nbt": "{Tags:[\"oa.db_mobs\"]}"
+                  }
+                },
+                {
+                  "type": "minecraft:inverted",
+                  "term": {
+                    "type": "minecraft:damage_source_properties",
+                    "predicate": {
+                      "tags": [
+                        {
+                          "id": [
+                            "oa:execution",
+                            "oa:yuua_counter"
+                          ],
+                          "expected": true
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "oa:yuua/counter_prepare"
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "minecraft:nbt": "{Tags:[\"oa.db_mobs\"]}"
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:nbt": "{Tags:[\"oa.debug_mob\"]}"
+              }
+            },
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:damage_source_properties",
+                "predicate": {
+                  "tags": [
+                    {
+                      "id": [
+                        "oa:execution",
+                        "oa:yuua_counter"
+                      ],
+                      "expected": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:run_function",
+              "function": "oa:debug/hat_execute"
+            },
+            {
+              "type": "minecraft:run_function",
+              "function": "oa:yuua/counter_cleanup"
+            }
+          ]
+        },
+        "requirements": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "attacker",
+              "predicate": {
+                "minecraft:nbt": "{Tags:[\"oa.db_mobs\"]}"
+              }
+            },
+            {
+              "type": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "minecraft:nbt": "{Tags:[\"oa.debug_mob\"]}"
+              }
+            },
+            {
+              "type": "minecraft:inverted",
+              "term": {
+                "type": "minecraft:damage_source_properties",
+                "predicate": {
+                  "tags": [
+                    {
+                      "id": [
+                        "oa:execution",
+                        "oa:yuua_counter"
+                      ],
+                      "expected": true
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

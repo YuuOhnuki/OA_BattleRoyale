@@ -1,0 +1,14 @@
+{
+  "values": [
+    "minecraft:item",
+    "minecraft:experience_orb",
+    "minecraft:arrow",
+    "minecraft:spectral_arrow",
+    "minecraft:trident",
+    "minecraft:snowball",
+    "minecraft:egg",
+    "minecraft:experience_bottle",
+    "minecraft:splash_potion",
+    "minecraft:lingering_potion"
+  ]
+}

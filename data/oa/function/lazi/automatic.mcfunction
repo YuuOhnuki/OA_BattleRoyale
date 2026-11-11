@@ -1,0 +1,1 @@
+function oa:lazi/interval

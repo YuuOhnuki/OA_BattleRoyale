@@ -1,0 +1,5 @@
+$execute in minecraft:overworld run kill @e[distance=0..,type=minecraft:item_display,tag=oa.itori_charge_fx,scores={oa.owner=$(id)}]
+$execute in oa:br run kill @e[distance=0..,type=minecraft:item_display,tag=oa.itori_charge_fx,scores={oa.owner=$(id)}]
+$execute in oa:practice run kill @e[distance=0..,type=minecraft:item_display,tag=oa.itori_charge_fx,scores={oa.owner=$(id)}]
+$execute in minecraft:the_nether run kill @e[distance=0..,type=minecraft:item_display,tag=oa.itori_charge_fx,scores={oa.owner=$(id)}]
+$execute in minecraft:the_end run kill @e[distance=0..,type=minecraft:item_display,tag=oa.itori_charge_fx,scores={oa.owner=$(id)}]

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:paper",
+    "minecraft:arrow",
+    "minecraft:bread",
+    "minecraft:cooked_beef",
+    "minecraft:cooked_porkchop",
+    "minecraft:apple",
+    "minecraft:golden_apple",
+    "minecraft:snowball",
+    "minecraft:egg"
+  ]
+}

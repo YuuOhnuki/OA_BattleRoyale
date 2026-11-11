@@ -1,0 +1,10 @@
+{
+  "version": "1.9.53",
+  "json": 201,
+  "functions": 1988,
+  "function_references": 3783,
+  "structural_checks": "passed",
+  "gacha_distribution": "15 equally likely results; hop removed, three self penalties added",
+  "spawn_plan": "validated before enter; natural ground and clear headroom, bounded retries",
+  "runtime": "Minecraft server/client not available; no runtime performance measurement"
+}

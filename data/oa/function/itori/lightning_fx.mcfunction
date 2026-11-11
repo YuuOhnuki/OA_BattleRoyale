@@ -1,0 +1,12 @@
+particle minecraft:flash{color:[0.72,0.42,1.0,1.0]} ~ ~1 ~ 0 0 0 0 1 force @a[distance=..32]
+particle minecraft:dust{color:[0.65,0.3,1.0],scale:1.4} ~-0.16 ~0 ~0 0.04 0.08 0.04 0 5 force @a[distance=..32]
+particle minecraft:dust{color:[0.65,0.3,1.0],scale:1.4} ~0 ~0.55 ~0 0.04 0.08 0.04 0 5 force @a[distance=..32]
+particle minecraft:dust{color:[0.65,0.3,1.0],scale:1.4} ~0.16 ~1.1 ~0 0.04 0.08 0.04 0 5 force @a[distance=..32]
+particle minecraft:dust{color:[0.65,0.3,1.0],scale:1.4} ~-0.16 ~1.65 ~0 0.04 0.08 0.04 0 5 force @a[distance=..32]
+particle minecraft:dust{color:[0.65,0.3,1.0],scale:1.4} ~0 ~2.2 ~0 0.04 0.08 0.04 0 5 force @a[distance=..32]
+particle minecraft:dust{color:[0.65,0.3,1.0],scale:1.4} ~0.16 ~2.75 ~0 0.04 0.08 0.04 0 5 force @a[distance=..32]
+particle minecraft:dust{color:[0.65,0.3,1.0],scale:1.4} ~-0.16 ~3.3 ~0 0.04 0.08 0.04 0 5 force @a[distance=..32]
+particle minecraft:dust{color:[0.65,0.3,1.0],scale:1.4} ~0 ~3.85 ~0 0.04 0.08 0.04 0 5 force @a[distance=..32]
+particle minecraft:dust{color:[0.65,0.3,1.0],scale:1.4} ~0.16 ~4.4 ~0 0.04 0.08 0.04 0 5 force @a[distance=..32]
+particle minecraft:electric_spark ~ ~1 ~ 0.35 0.8 0.35 0.12 22 normal @a[distance=..32]
+playsound minecraft:entity.lightning_bolt.impact player @a[distance=..32] ~ ~ ~ 0.75 1.35

@@ -1,0 +1,1 @@
+execute as @e[tag=oa.target] at @s run function oa:tayayuyu/fire

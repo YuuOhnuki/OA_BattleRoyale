@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:set_components",
+  "components": {
+    "minecraft:custom_name": {
+      "text": "ゆー | オーバーワーク",
+      "color": "gold",
+      "italic": false
+    },
+    "minecraft:item_model": "oa:yu",
+    "minecraft:lore": [
+      {
+        "text": "手に持っていると致死ダメージ時に身代わりになる",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": "発動後に強化、その後は毒・吐き気・鈍足",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "minecraft:tooltip_display": {
+      "hidden_components": [
+        "minecraft:enchantments"
+      ]
+    }
+  }
+}

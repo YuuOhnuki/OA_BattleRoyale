@@ -1,0 +1,8 @@
+{
+  "method": "built-in image_gen",
+  "prompts": {
+    "bandage": "Transparent pixel-art gauze roll, beige layers and red tab",
+    "firstaid": "Transparent pixel-art red first-aid case with ivory cross",
+    "tayayuyu": "Attached geographical silhouette, emerald-green faceted pixel-art talisman; no labels"
+  }
+}

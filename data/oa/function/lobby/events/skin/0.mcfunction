@@ -1,0 +1,2 @@
+execute positioned ~-31.5 ~1 ~-17.5 as @e[type=minecraft:mannequin,tag=oa.gallery,distance=..0.3,limit=1] unless data entity @s profile.properties[0] run data modify entity @s profile set value {"name":"pichipichi_256"}
+execute positioned ~-31.5 ~1 ~-17.5 as @e[type=minecraft:mannequin,tag=oa.gallery,distance=..0.3,limit=1] if data storage oa:lobby_events {force_skins:1b} if data entity @s profile.properties[0] run data modify entity @s profile set value {"name":"pichipichi_256"}

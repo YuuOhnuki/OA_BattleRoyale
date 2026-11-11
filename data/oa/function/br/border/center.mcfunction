@@ -1,0 +1,1 @@
+$worldborder center $(x) $(z)

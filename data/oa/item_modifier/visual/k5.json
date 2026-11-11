@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_item",
+      "item": "minecraft:leather_helmet"
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:equippable": {
+          "slot": "head",
+          "swappable": true,
+          "damage_on_hurt": false,
+          "dispensable": false,
+          "asset_id": "oa:killing_mask"
+        },
+        "minecraft:item_model": "oa:killing"
+      }
+    },
+    {
+      "type": "minecraft:set_attributes",
+      "replace": true,
+      "modifiers": [
+        {
+          "id": "oa:unique_speed",
+          "attribute": "minecraft:attack_speed",
+          "amount": -2.2,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{visual_v140:1b,mask_v161:1b,speed_v160:1b}}"
+    }
+  ]
+}

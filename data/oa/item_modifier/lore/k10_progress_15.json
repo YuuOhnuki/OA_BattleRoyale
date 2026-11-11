@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:lore": [
+          {
+            "text": "現在の解放段階：Ⅵ   15 / 15",
+            "color": "light_purple",
+            "italic": false
+          },
+          {
+            "text": "通常攻撃：紫弾 1.5HP／射程10m",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "攻撃速度：1.4回／秒",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "スキル：右クリックで順番に使用",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "再使用：1周後に10秒",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "解放：鉱石3個またはチェスト2個で進行度＋1",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "解放段階：進行度1・5・7・10・15",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "新スキルは次の周回から使用可能",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        "minecraft:custom_name": {
+          "text": "いとり：昭心 Ⅵ",
+          "color": "light_purple",
+          "italic": false
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{itori_stage:6,itori_lore1972:15}}"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "used": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "oa_furoball": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "oa:furoball/use"
+  }
+}

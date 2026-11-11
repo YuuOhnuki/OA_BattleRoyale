@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "oa:execution",
+      "required": false
+    },
+    {
+      "id": "oa:sonic",
+      "required": false
+    },
+    {
+      "id": "oa:zone",
+      "required": false
+    },
+    {
+      "id": "oa:yuua_counter",
+      "required": false
+    },
+    {
+      "id": "oa:gacha_penalty",
+      "required": false
+    },
+    {
+      "id": "oa:gacha_critical",
+      "required": false
+    },
+    {
+      "id": "oa:flins_lightning",
+      "required": false
+    }
+  ]
+}

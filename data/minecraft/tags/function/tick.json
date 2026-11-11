@@ -1,0 +1,7 @@
+{
+  "values": [
+    "oa:tick",
+    "oa:map/internal/weather",
+    "jumppad:tick"
+  ]
+}

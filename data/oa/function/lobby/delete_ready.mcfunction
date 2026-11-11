@@ -1,0 +1,39 @@
+scoreboard players set #lready oa.tmp 1
+execute unless loaded ~-40 ~0 ~-40 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-40 ~0 ~-24 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-40 ~0 ~-8 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-40 ~0 ~8 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-40 ~0 ~24 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-40 ~0 ~40 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-24 ~0 ~-40 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-24 ~0 ~-24 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-24 ~0 ~-8 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-24 ~0 ~8 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-24 ~0 ~24 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-24 ~0 ~40 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-8 ~0 ~-40 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-8 ~0 ~-24 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-8 ~0 ~-8 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-8 ~0 ~8 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-8 ~0 ~24 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~-8 ~0 ~40 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~8 ~0 ~-40 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~8 ~0 ~-24 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~8 ~0 ~-8 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~8 ~0 ~8 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~8 ~0 ~24 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~8 ~0 ~40 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~24 ~0 ~-40 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~24 ~0 ~-24 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~24 ~0 ~-8 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~24 ~0 ~8 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~24 ~0 ~24 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~24 ~0 ~40 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~40 ~0 ~-40 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~40 ~0 ~-24 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~40 ~0 ~-8 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~40 ~0 ~8 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~40 ~0 ~24 run scoreboard players set #lready oa.tmp 0
+execute unless loaded ~40 ~0 ~40 run scoreboard players set #lready oa.tmp 0
+execute if score #lready oa.tmp matches 0 run return run schedule function oa:lobby/delete_wait 2t replace
+function oa:lobby/delete_blocks

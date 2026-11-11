@@ -1,0 +1,7 @@
+{
+  "values": [
+    "oa:load",
+    "oa:map/internal/load",
+    "jumppad:load"
+  ]
+}

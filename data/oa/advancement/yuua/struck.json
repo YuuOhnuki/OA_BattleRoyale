@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "hit": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:player",
+            "minecraft:nbt": "{Tags:[\"oa.player\"]}"
+          }
+        },
+        "damage": {
+          "type": {
+            "source_entity": {
+              "minecraft:entity_type": "minecraft:player"
+            },
+            "tags": [
+              {
+                "id": [
+                  "oa:execution",
+                  "oa:yuua_counter"
+                ],
+                "expected": false
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "oa:yuua/check_attacker"
+  }
+}

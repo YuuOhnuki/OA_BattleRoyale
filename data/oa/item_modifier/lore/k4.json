@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:lore": [
+          {
+            "text": "右クリック：印を飛ばす／もう一度で帰還",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "しゃがみ＋右クリック：本人デコイ",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "共通CT10秒／夜は能力が上がる",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:enchantments"
+          ]
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{lore_release1:1b}}"
+    }
+  ]
+}

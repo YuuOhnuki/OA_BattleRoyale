@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "hurt": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:nbt": "{Tags:[\"oa.gacha_exposed\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "oa:tayayuyu/exposed_hurt"
+  }
+}

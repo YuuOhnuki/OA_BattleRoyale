@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "oa:wooden_bat"
+      }
+    },
+    {
+      "type": "minecraft:set_attributes",
+      "replace": true,
+      "modifiers": [
+        {
+          "id": "oa:bat_damage",
+          "attribute": "minecraft:attack_damage",
+          "amount": 3.0,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "id": "oa:bat_speed",
+          "attribute": "minecraft:attack_speed",
+          "amount": -3.2,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa_bat_v150:1b}"
+    },
+    {
+      "type": "minecraft:set_enchantments",
+      "enchantments": {
+        "minecraft:knockback": 0
+      },
+      "add": false
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa_bat_v151:1b}"
+    }
+  ]
+}

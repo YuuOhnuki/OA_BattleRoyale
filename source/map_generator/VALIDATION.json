@@ -1,0 +1,75 @@
+{
+  "version": "1.6.0",
+  "size": [
+    305,
+    305
+  ],
+  "y_range": [
+    -20,
+    0
+  ],
+  "nbt_readback": 100,
+  "direct_fill_replay": "all 100 tiles match source voxels",
+  "registration_alignment_regression": "pass for 5 anchors and all locations; old mismatch reproduced",
+  "solid_block_records_checked": 900787,
+  "water_tiles": 32,
+  "solid_buildings": 12,
+  "ship_access_model": "boarding/lower deck/cabin reachable",
+  "shoreline_exit_samples": [
+    [
+      -140,
+      80
+    ],
+    [
+      -110,
+      88
+    ],
+    [
+      -60,
+      81
+    ],
+    [
+      -30,
+      79
+    ],
+    [
+      0,
+      87
+    ],
+    [
+      30,
+      93
+    ],
+    [
+      80,
+      80
+    ],
+    [
+      110,
+      74
+    ],
+    [
+      140,
+      81
+    ]
+  ],
+  "oak_columns_with_7_or_more_logs": 219,
+  "exact_coverage": "pass",
+  "force_load_ownership": "pass for 16x16 possible origin alignments",
+  "registered_records": {
+    "chests": 48,
+    "ores": 108,
+    "conditional_self_initialization": "static checked; runtime not tested"
+  },
+  "ore_regions": {
+    "north": 72,
+    "road": 32,
+    "south": 4
+  },
+  "chests_unreachable_in_model": [],
+  "ores_unreachable_in_model": [],
+  "json_refs_macros": "pass",
+  "server_load": "not tested",
+  "player_tests": "not tested",
+  "multiplayer_tests": "not tested"
+}

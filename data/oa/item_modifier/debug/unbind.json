@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:set_enchantments",
+  "enchantments": {
+    "oa:curse": 0,
+    "oa:debug_curse": 1
+  },
+  "add": false
+}

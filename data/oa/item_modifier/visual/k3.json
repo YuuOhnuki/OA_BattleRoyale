@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_item",
+      "item": "minecraft:carved_pumpkin"
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:equippable": {
+          "slot": "head",
+          "swappable": true,
+          "damage_on_hurt": false,
+          "dispensable": false
+        },
+        "minecraft:item_model": "oa:raji",
+        "!minecraft:profile": {}
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{visual_v140:1b,head_v130:1b,mask_v197:1b}}"
+    }
+  ]
+}

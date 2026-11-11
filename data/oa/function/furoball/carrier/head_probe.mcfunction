@@ -1,0 +1,9 @@
+$execute unless block ~$(neg) ~$(height) ~$(neg) #minecraft:air run scoreboard players set #f_roof_clear oa.tmp 0
+$execute unless block ~$(neg) ~$(height) ~0 #minecraft:air run scoreboard players set #f_roof_clear oa.tmp 0
+$execute unless block ~$(neg) ~$(height) ~$(width) #minecraft:air run scoreboard players set #f_roof_clear oa.tmp 0
+$execute unless block ~0 ~$(height) ~$(neg) #minecraft:air run scoreboard players set #f_roof_clear oa.tmp 0
+$execute unless block ~0 ~$(height) ~0 #minecraft:air run scoreboard players set #f_roof_clear oa.tmp 0
+$execute unless block ~0 ~$(height) ~$(width) #minecraft:air run scoreboard players set #f_roof_clear oa.tmp 0
+$execute unless block ~$(width) ~$(height) ~$(neg) #minecraft:air run scoreboard players set #f_roof_clear oa.tmp 0
+$execute unless block ~$(width) ~$(height) ~0 #minecraft:air run scoreboard players set #f_roof_clear oa.tmp 0
+$execute unless block ~$(width) ~$(height) ~$(width) #minecraft:air run scoreboard players set #f_roof_clear oa.tmp 0

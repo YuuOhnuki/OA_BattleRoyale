@@ -1,0 +1,2 @@
+execute positioned ~12.5 ~1 ~31.5 as @e[type=minecraft:mannequin,tag=oa.exhibit_itori,distance=..0.3,limit=1] unless data entity @s profile.properties[0] run data modify entity @s profile set value {name:"itori0814"}
+execute positioned ~12.5 ~1 ~31.5 as @e[type=minecraft:mannequin,tag=oa.exhibit_itori,distance=..0.3,limit=1] if data storage oa:lobby_events {force_skins:1b} if data entity @s profile.properties[0] run data modify entity @s profile set value {name:"itori0814"}

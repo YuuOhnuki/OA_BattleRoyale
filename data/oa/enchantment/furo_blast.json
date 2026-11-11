@@ -1,0 +1,55 @@
+{
+  "description": {
+    "text": "OA radial fireball blast"
+  },
+  "supported_items": [
+    "minecraft:paper"
+  ],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "oa:furoball/native_prepare"
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:explode",
+          "attribute_to_user": false,
+          "radius": 1.75,
+          "knockback_multiplier": 2.6,
+          "create_fire": false,
+          "block_interaction": "none",
+          "small_particle": {
+            "type": "minecraft:explosion"
+          },
+          "large_particle": {
+            "type": "minecraft:explosion_emitter"
+          },
+          "sound": "minecraft:entity.generic.explode"
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "oa:furoball/native_cleanup"
+        }
+      }
+    ]
+  }
+}

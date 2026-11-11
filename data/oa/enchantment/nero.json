@@ -1,0 +1,40 @@
+{
+  "description": {
+    "text": "OA \u30cd\u30ed\u306e\u56ee"
+  },
+  "supported_items": [
+    "minecraft:carrot_on_a_stick"
+  ],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:damage": [
+      {
+        "effect": {
+          "type": "minecraft:set",
+          "value": 0
+        },
+        "requirements": {
+          "type": "minecraft:entity_properties",
+          "entity": "attacker",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:player",
+            "minecraft:nbt": "{Tags:[\"oa.self_decoy\"]}"
+          }
+        }
+      }
+    ]
+  }
+}
