@@ -1979,3 +1979,4 @@ summon minecraft:marker ~27.5 ~1 ~8.5 {Tags:["oa.physical_button","oa.button_pra
 setblock ~27 ~1 ~6 minecraft:stone_button[face=wall,facing=north]
 summon minecraft:marker ~27.5 ~1 ~6.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/cooldown"}}
 summon minecraft:text_display ~27.5 ~2.85 ~7.5 {Tags:["oa.practice_controls"],text:{text:"CTリセット",color:"aqua"},billboard:"center",shadow:1b,view_range:0.5f}
+function oa:practice/ext_build

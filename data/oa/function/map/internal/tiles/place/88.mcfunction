@@ -484,6 +484,8 @@ fill ~117 ~-9 ~134 ~117 ~-9 ~134 minecraft:short_grass
 fill ~119 ~-9 ~133 ~119 ~-9 ~133 minecraft:short_grass
 fill ~120 ~-9 ~130 ~120 ~-9 ~130 minecraft:short_grass
 fill ~133 ~-9 ~133 ~133 ~-9 ~133 minecraft:tall_grass[half=upper]
+# 1.9.100 map update patches
+fill ~127 ~-19 ~110 ~133 ~-19 ~116 minecraft:prismarine_bricks
 fillbiome ~104 ~-20 ~104 ~119 ~8 ~119 minecraft:ocean
 fillbiome ~120 ~-20 ~104 ~135 ~8 ~119 minecraft:ocean
 fillbiome ~104 ~-20 ~120 ~119 ~8 ~135 minecraft:ocean

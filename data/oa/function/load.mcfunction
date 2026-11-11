@@ -370,3 +370,24 @@ scoreboard objectives add br.st_kp dummy
 scoreboard objectives add br.gacha dummy
 scoreboard objectives add oa.result trigger
 scoreboard objectives add oa.achv trigger
+scoreboard objectives add oa.tutorial trigger
+scoreboard objectives add oa.tutdone dummy
+scoreboard objectives add oa.mission trigger
+scoreboard objectives add oa.mclear dummy
+scoreboard objectives add br.mdone dummy
+scoreboard objectives add br.st_jmp minecraft.custom:minecraft.jump
+scoreboard players add #nobeginner br.flag 0
+scoreboard objectives add br.suptype dummy
+scoreboard objectives add oa.t_games dummy
+scoreboard objectives add oa.t_win dummy
+scoreboard objectives add oa.t_kill dummy
+scoreboard objectives add oa.t_ach dummy
+scoreboard objectives add oa.t_rank dummy
+scoreboard objectives add oa.dps trigger
+scoreboard objectives add oa.spar trigger
+scoreboard objectives add oa.dpsb dummy
+scoreboard objectives add oa.dpst dummy
+scoreboard objectives add oa.sparko dummy
+team add oa_spar
+team modify oa_spar friendlyFire true
+team modify oa_spar collisionRule never

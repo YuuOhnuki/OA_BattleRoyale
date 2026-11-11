@@ -18,3 +18,5 @@ advancement revoke @s only oa:ach/tayayuyu_kill
 advancement revoke @s only oa:ach/komame_big
 advancement revoke @s only oa:ach/furoball_blast
 advancement revoke @s only oa:ach/itori_kill
+advancement revoke @s only oa:ach/mission1
+advancement revoke @s only oa:ach/mission5

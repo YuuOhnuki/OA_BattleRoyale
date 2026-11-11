@@ -5,3 +5,5 @@ scoreboard players set @s br.st_sprint 0
 scoreboard players set @s br.st_open 0
 scoreboard players set @s br.st_kp 0
 scoreboard players set @s br.gacha 0
+scoreboard players set @s br.mdone 0
+scoreboard players set @s br.st_jmp 0

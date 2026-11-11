@@ -10,6 +10,8 @@ fill ~-152 ~-14 ~104 ~-152 ~-14 ~135 minecraft:sand
 fill ~-152 ~-13 ~104 ~-152 ~-13 ~135 minecraft:sand
 # 1.9.97 map update patches
 fill ~-146 ~-19 ~108 ~-145 ~-19 ~108 minecraft:gravel
+# 1.9.100 map update patches
+fill ~-135 ~-19 ~122 ~-129 ~-19 ~128 minecraft:prismarine_bricks
 fillbiome ~-152 ~-20 ~104 ~-137 ~8 ~119 minecraft:ocean
 fillbiome ~-136 ~-20 ~104 ~-121 ~8 ~119 minecraft:ocean
 fillbiome ~-152 ~-20 ~120 ~-137 ~8 ~135 minecraft:ocean

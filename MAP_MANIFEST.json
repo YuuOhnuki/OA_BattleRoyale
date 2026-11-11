@@ -250,7 +250,7 @@
   ]
  ],
  "trees": 246,
- "chests": 63,
+ "chests": 67,
  "ore_nodes": 108,
  "ore_by_region": {
   "north": 72,
@@ -2192,5 +2192,32 @@
    ]
   ],
   "note": "chest_upgraded loot from the start, tag br.rich"
+ },
+ "sites_1_9_100": {
+  "snow_caves": [
+   [
+    27,
+    -6,
+    -117
+   ],
+   [
+    -117,
+    -11,
+    -129
+   ]
+  ],
+  "sea_ruins": [
+   [
+    -133,
+    -18,
+    125
+   ],
+   [
+    131,
+    -18,
+    113
+   ]
+  ],
+  "note": "rich chests (chest_upgraded, br.rich); ruin chests registered in water pass"
  }
 }

@@ -251,3 +251,4 @@ setblock ~36 ~-1 ~32 minecraft:sea_lantern
 function oa:lobby/map_labels_build
 
 function oa:lobby/gallery/build
+data remove storage oa:lobby board_built

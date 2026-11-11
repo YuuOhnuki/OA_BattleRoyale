@@ -63,7 +63,7 @@ execute in oa:practice unless loaded 48 64 16 run return run schedule function o
 execute in oa:practice unless loaded 48 64 32 run return run schedule function oa:practice/build_wait 2t replace
 execute in oa:practice unless loaded 48 64 48 run return run schedule function oa:practice/build_wait 2t replace
 execute in oa:practice positioned 0.0 64 0.0 run function oa:practice/build
-data modify storage oa:practice layout set value 1996
+data modify storage oa:practice layout set value 1997
 execute in oa:practice run time set 6000t
 execute in oa:practice run time pause
 execute in oa:practice run weather clear 1000000t

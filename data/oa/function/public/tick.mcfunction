@@ -48,3 +48,17 @@ scoreboard players enable @a oa.result
 execute as @a[scores={oa.achv=1..}] run function oa:ach/list
 scoreboard players set @a oa.achv 0
 scoreboard players enable @a oa.achv
+
+execute as @a[scores={oa.tutorial=1..}] run function oa:tutorial/dispatch
+scoreboard players set @a oa.tutorial 0
+scoreboard players enable @a oa.tutorial
+execute as @a[scores={oa.mission=1..}] run function oa:br/mission/show
+scoreboard players set @a oa.mission 0
+scoreboard players enable @a oa.mission
+
+execute as @a[scores={oa.dps=1..}] run function oa:practice/dps/start
+scoreboard players set @a oa.dps 0
+scoreboard players enable @a oa.dps
+execute as @a[scores={oa.spar=1..}] run function oa:practice/spar/toggle
+scoreboard players set @a oa.spar 0
+scoreboard players enable @a oa.spar

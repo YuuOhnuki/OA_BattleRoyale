@@ -1,0 +1,23 @@
+scoreboard players set @s oa.t_ach 0
+execute if entity @s[advancements={oa:ach/chests10=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/first_kill=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/furoball_blast=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/hotchikisu_kill=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/hotchikisu_root=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/itori_kill=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/killing_guard=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/kills3=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/komame_big=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/lazi_kill=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/lazi_tired=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/mission1=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/mission5=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/nero_decoy=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/nero_kill=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/pichi_20s=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/tayayuyu_gacha3=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/tayayuyu_kill=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/winner=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/yuttari_back=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/yuttari_kill=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/yuua_counter=true}] run scoreboard players add @s oa.t_ach 1

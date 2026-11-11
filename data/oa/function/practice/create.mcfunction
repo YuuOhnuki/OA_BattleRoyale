@@ -1,5 +1,5 @@
 execute unless score #state br.state matches 0 run return run tellraw @s {text:"試合待機中に練習場を生成してください。",color:"yellow"}
-execute if data storage oa:practice {layout:1996} run return run tellraw @s {text:"練習庭園は生成済みです。ロビーから入場できます。",color:"green"}
+execute if data storage oa:practice {layout:1997} run return run tellraw @s {text:"練習庭園は生成済みです。ロビーから入場できます。",color:"green"}
 execute if data storage oa:practice {building:1b} run return 0
 scoreboard players set #practice_dim oa.tmp 0
 execute in oa:practice run scoreboard players set #practice_dim oa.tmp 1

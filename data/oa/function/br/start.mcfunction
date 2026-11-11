@@ -116,6 +116,9 @@ scoreboard players set @a[tag=br.playing] br.open 0
 execute as @a[tag=br.playing] run function oa:br/result/reset
 scoreboard players set #pid br.tmp 0
 execute as @a[tag=br.playing] run function oa:ach/assign_pid
+function oa:br/mission/pick
+execute as @a[tag=br.playing] unless entity @s[advancements={oa:ach/first_kill=true}] run function oa:br/beginner/support
+execute as @a[tag=br.playing] run function oa:br/beginner/hint
 function oa:br/intro
 execute as @a[tag=br.playing] at @s run playsound minecraft:entity.ender_dragon.growl player @s ~ ~ ~ 1 1
 

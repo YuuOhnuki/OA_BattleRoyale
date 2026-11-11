@@ -1,9 +1,16 @@
-tag @s remove br.supply_new
+tag @s remove br.supply_wait
 tag @s add br.supply_fx
 scoreboard players set @s br.sup 0
-loot spawn ~ ~0.5 ~ loot oa:br/chest_upgraded
-loot spawn ~ ~0.5 ~ loot oa:br/chest_upgraded
-loot spawn ~ ~0.5 ~ loot oa:br/heal
+execute if score @s br.suptype matches 1 run loot spawn ~ ~0.5 ~ loot oa:br/chest_upgraded
+execute if score @s br.suptype matches 1 run loot spawn ~ ~0.5 ~ loot oa:br/chest_upgraded
+execute if score @s br.suptype matches 1 run loot spawn ~ ~0.5 ~ loot oa:br/heal
+execute if score @s br.suptype matches 2 run loot spawn ~ ~0.5 ~ loot oa:br/heal
+execute if score @s br.suptype matches 2 run loot spawn ~ ~0.5 ~ loot oa:br/heal
+execute if score @s br.suptype matches 2 run loot spawn ~ ~0.5 ~ loot oa:br/heal
+execute if score @s br.suptype matches 2 run loot spawn ~ ~0.5 ~ loot oa:br/food
+execute if score @s br.suptype matches 3 run loot spawn ~ ~0.5 ~ loot oa:br/chest_upgraded
+execute if score @s br.suptype matches 3 run loot spawn ~ ~0.5 ~ loot oa:br/chest_upgraded
+execute if score @s br.suptype matches 3 run loot spawn ~ ~0.5 ~ loot oa:br/chest_upgraded
 execute as @e[type=minecraft:item,distance=..3,nbt={Age:0s}] run data merge entity @s {Glowing:1b}
 execute store result score #sx br.tmp run data get entity @s Pos[0]
 execute store result score #sz br.tmp run data get entity @s Pos[2]
