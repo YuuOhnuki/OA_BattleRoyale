@@ -1,0 +1,1 @@
+tellraw @s [{text:"観戦：",color:"gray"},{text:"[◀前]",color:"aqua",click_event:{action:"run_command",command:"/trigger oa.spec set 2"}},{text:" "},{text:"[次▶]",color:"aqua",click_event:{action:"run_command",command:"/trigger oa.spec set 1"}},{text:" "},{text:"[自由視点]",color:"green",click_event:{action:"run_command",command:"/trigger oa.spec set 3"}}]

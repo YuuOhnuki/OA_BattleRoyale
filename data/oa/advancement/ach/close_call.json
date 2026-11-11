@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:glistering_melon_slice"
+    },
+    "title": {
+      "text": "紙一重"
+    },
+    "description": {
+      "text": "体力1ハート以下で優勝した"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

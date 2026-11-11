@@ -21,3 +21,20 @@ execute if entity @s[advancements={oa:ach/winner=true}] run scoreboard players a
 execute if entity @s[advancements={oa:ach/yuttari_back=true}] run scoreboard players add @s oa.t_ach 1
 execute if entity @s[advancements={oa:ach/yuttari_kill=true}] run scoreboard players add @s oa.t_ach 1
 execute if entity @s[advancements={oa:ach/yuua_counter=true}] run scoreboard players add @s oa.t_ach 1
+
+execute if entity @s[advancements={oa:ach/yuua_master=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/fish_master=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/lazi_master=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/nero_master=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/curse_master=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/yuttari_master=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/hotchikisu_master=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/komame_master=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/tayayuyu_master=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/itori_master=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/peace_win=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/walker=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/jumper=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/close_call=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/first_out=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/weapon_all=true}] run scoreboard players add @s oa.t_ach 1

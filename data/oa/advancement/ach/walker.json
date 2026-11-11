@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:leather_boots"
+    },
+    "title": {
+      "text": "地平線の向こうへ"
+    },
+    "description": {
+      "text": "1試合で3000m以上移動した"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:spider_eye"
+    },
+    "title": {
+      "text": "疫病神"
+    },
+    "description": {
+      "text": "ネロノワール：固有武器を装備したまま3キル連続した"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:skeleton_skull"
+    },
+    "title": {
+      "text": "開幕ダッシュ失敗"
+    },
+    "description": {
+      "text": "試合で最初に脱落した"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

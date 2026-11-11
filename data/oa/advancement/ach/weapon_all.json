@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:beacon"
+    },
+    "title": {
+      "text": "武器博士"
+    },
+    "description": {
+      "text": "10種すべての固有武器マスター実績を解除した"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -7,3 +7,9 @@ scoreboard players set @s br.st_kp 0
 scoreboard players set @s br.gacha 0
 scoreboard players set @s br.mdone 0
 scoreboard players set @s br.st_jmp 0
+scoreboard players set @s br.sp 0
+scoreboard players set @s br.wkk 0
+scoreboard players set @s br.wkc 0
+scoreboard players set @s br.surv 0
+scoreboard players set @s br.st_dist 0
+tag @s remove oa.spec_init

@@ -62,3 +62,6 @@ scoreboard players enable @a oa.dps
 execute as @a[scores={oa.spar=1..}] run function oa:practice/spar/toggle
 scoreboard players set @a oa.spar 0
 scoreboard players enable @a oa.spar
+execute as @a[scores={oa.spec=1..}] at @s run function oa:br/spec/dispatch
+scoreboard players set @a oa.spec 0
+scoreboard players enable @a oa.spec

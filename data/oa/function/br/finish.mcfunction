@@ -13,6 +13,8 @@ tag @a[tag=br.playing] remove br.pvp_grace
 function oa:br/border/idle
 execute if score #respawn br.flag matches 0 run gamerule minecraft:immediate_respawn false
 execute if score #respawn br.flag matches 1 run gamerule minecraft:immediate_respawn true
+execute as @a[tag=oa.spec_init] run spectate
+tag @a remove oa.spec_init
 execute as @a[tag=br.playing,tag=!oa.practice] if score @s br.round = #round br.round at @s run function oa:br/finish_player
 function oa:br/cleanup/finish
 tellraw @a[tag=br.lobby] {text:"試合終了。ロビーへ戻りました。",color:"green"}

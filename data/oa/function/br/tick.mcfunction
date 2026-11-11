@@ -20,6 +20,7 @@ execute if score #time br.time matches 10800.. run function oa:br/finale/tick
 execute as @a[tag=br.playing,tag=br.alive] unless score @s br.left = @s oa.left at @s run function oa:br/surrender
 execute as @a[tag=br.playing,tag=br.alive,nbt={Health:0.0f}] at @s run function oa:br/eliminate
 execute as @a[tag=br.playing,tag=!br.alive,tag=!br.gm_override,gamemode=!spectator] run gamemode spectator @s
+execute if score #state br.state matches 1 as @a[tag=br.playing,tag=!br.alive,tag=!oa.spec_init,gamemode=spectator] run function oa:br/spec/begin
 execute if score #time br.time matches 1200 as @a[tag=br.spawn_protection] run effect clear @s minecraft:resistance
 execute if score #time br.time matches 1200 run tag @a[tag=br.playing] remove br.spawn_protection
 execute if score #time br.time matches 1200 run function oa:br/protection_end

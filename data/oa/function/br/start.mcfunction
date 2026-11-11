@@ -114,6 +114,7 @@ execute in oa:br run kill @e[distance=0..,tag=br.spawn]
 function oa:br/ui/start
 scoreboard players set @a[tag=br.playing] br.open 0
 execute as @a[tag=br.playing] run function oa:br/result/reset
+scoreboard players set #firstdead br.tmp 0
 scoreboard players set #pid br.tmp 0
 execute as @a[tag=br.playing] run function oa:ach/assign_pid
 function oa:br/mission/pick

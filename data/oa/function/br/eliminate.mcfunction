@@ -6,6 +6,7 @@ tag @s remove br.pvp_grace
 tag @s remove br.mining_allowed
 execute unless entity @s[tag=br.alive] run return 0
 tag @s remove br.alive
+execute if score #state br.state matches 1 if score #firstdead br.tmp matches 0 run function oa:ach/first_out
 tag @s remove br.spawn_protection
 function oa:status/reset
 function oa:internal/cleanup
@@ -16,6 +17,7 @@ tag @s remove oa.external_blind
 tag @s remove oa.external_slow
 tag @s remove oa.external_speed
 effect clear @s minecraft:resistance
+scoreboard players operation @s br.surv = #time br.time
 scoreboard players set @s oa.death 0
 gamemode spectator @s
 execute if entity @s[nbt={Health:0.0f}] run return 0

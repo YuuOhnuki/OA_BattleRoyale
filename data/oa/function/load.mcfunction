@@ -391,3 +391,11 @@ scoreboard objectives add oa.sparko dummy
 team add oa_spar
 team modify oa_spar friendlyFire true
 team modify oa_spar collisionRule never
+
+# 1.9.107: spectator camera, highlights, weapon mastery
+scoreboard objectives add oa.spec trigger
+scoreboard objectives add br.sp dummy
+scoreboard objectives add br.wkk dummy
+scoreboard objectives add br.wkc dummy
+scoreboard objectives add br.surv dummy
+scoreboard objectives add br.st_dist dummy

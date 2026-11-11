@@ -20,3 +20,20 @@ advancement revoke @s only oa:ach/furoball_blast
 advancement revoke @s only oa:ach/itori_kill
 advancement revoke @s only oa:ach/mission1
 advancement revoke @s only oa:ach/mission5
+
+advancement revoke @s only oa:ach/yuua_master
+advancement revoke @s only oa:ach/fish_master
+advancement revoke @s only oa:ach/lazi_master
+advancement revoke @s only oa:ach/nero_master
+advancement revoke @s only oa:ach/curse_master
+advancement revoke @s only oa:ach/yuttari_master
+advancement revoke @s only oa:ach/hotchikisu_master
+advancement revoke @s only oa:ach/komame_master
+advancement revoke @s only oa:ach/tayayuyu_master
+advancement revoke @s only oa:ach/itori_master
+advancement revoke @s only oa:ach/peace_win
+advancement revoke @s only oa:ach/walker
+advancement revoke @s only oa:ach/jumper
+advancement revoke @s only oa:ach/close_call
+advancement revoke @s only oa:ach/first_out
+advancement revoke @s only oa:ach/weapon_all
