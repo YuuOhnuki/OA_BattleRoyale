@@ -1,12 +1,22 @@
 {
   "display": {
-    "icon": {"id": "minecraft:carved_pumpkin"},
-    "title": {"text": "25%の奇跡"},
-    "description": {"text": "キリング：攻撃を無効化した"},
+    "icon": {
+      "id": "minecraft:carved_pumpkin"
+    },
+    "title": {
+      "text": "25%の奇跡"
+    },
+    "description": {
+      "text": "キリング：攻撃を無効化した"
+    },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false
   },
-  "criteria": {"done": {"trigger": "minecraft:impossible"}}
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
 }

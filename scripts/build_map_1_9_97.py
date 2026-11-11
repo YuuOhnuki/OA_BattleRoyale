@@ -339,7 +339,7 @@ def runs_to_boxes(cells):
         out.append((s, y, a, e, y, p, b))
     return out
 
-def emit(root, old, new, boxes):
+def emit(root, old, new, boxes, label='1.9.97'):
     changed = np.argwhere(old.V != new.V)
     per_tile = {i: {'place': {}, 'water': {}} for i in boxes}
     def tile_of(x, z):
@@ -361,7 +361,7 @@ def emit(root, old, new, boxes):
             if not cells and not (kind == 'place' and i in tops): continue
             path = Path(root) / f'data/oa/function/map/internal/tiles/{kind}/{i}.mcfunction'
             lines = path.read_text().splitlines()
-            patch = ['# 1.9.97 map update patches'] + [f'fill ~{a} ~{b} ~{c} ~{d} ~{e} ~{f} {blk}' for a, b, c, d, e, f, blk in runs_to_boxes(cells)] if cells else []
+            patch = [f'# {label} map update patches'] + [f'fill ~{a} ~{b} ~{c} ~{d} ~{e} ~{f} {blk}' for a, b, c, d, e, f, blk in runs_to_boxes(cells)] if cells else []
             if kind == 'place':
                 # insert upper clear after the first air clear, and patches before the first fillbiome
                 if i in tops:

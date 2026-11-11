@@ -9,3 +9,4 @@ execute if items entity @s armor.head *[minecraft:custom_data~{oa:{kind:5}}] run
 execute if score @s oa.blocked matches 1 run return 0
 execute if entity @a[tag=oa.f_source] run damage @s 3 minecraft:explosion by @a[tag=oa.f_source,limit=1]
 execute unless entity @a[tag=oa.f_source] run damage @s 3 minecraft:explosion
+execute as @a[tag=oa.f_source,limit=1] run function oa:ach/give {id:"furoball_blast",name:"爆風の洗礼"}

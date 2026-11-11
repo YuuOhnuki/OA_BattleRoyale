@@ -41,3 +41,10 @@ scoreboard players enable @a[tag=br.admin] oa.debug_cmd
 execute as @a[scores={oa.gallery=10}] run function oa:lobby/gallery/gacha_results
 scoreboard players set @a oa.gallery 0
 scoreboard players enable @a oa.gallery
+
+execute as @a[scores={oa.result=1..}] run function oa:br/result/replay
+scoreboard players set @a oa.result 0
+scoreboard players enable @a oa.result
+execute as @a[scores={oa.achv=1..}] run function oa:ach/list
+scoreboard players set @a oa.achv 0
+scoreboard players enable @a oa.achv

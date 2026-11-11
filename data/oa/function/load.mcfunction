@@ -352,7 +352,7 @@ function oa:br/team/setup
 execute in oa:practice as @e[type=minecraft:zombie,tag=oa.practice_dummy,tag=!oa.practice_quiet,distance=0..] run function oa:practice/dummy_unname
 
 # 1.9.98 終了時リザルト用の統計
-scoreboard objectives add br.st_kill minecraft.custom:minecraft.player_kills
+scoreboard objectives add br.st_kill playerKillCount
 scoreboard objectives add br.st_dmg minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add br.st_walk minecraft.custom:minecraft.walk_one_cm
 scoreboard objectives add br.st_sprint minecraft.custom:minecraft.sprint_one_cm
@@ -366,3 +366,7 @@ scoreboard objectives add br.hopby dummy
 
 # 1.9.98 空中補給
 scoreboard objectives add br.sup dummy
+scoreboard objectives add br.st_kp dummy
+scoreboard objectives add br.gacha dummy
+scoreboard objectives add oa.result trigger
+scoreboard objectives add oa.achv trigger

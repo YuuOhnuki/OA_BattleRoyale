@@ -9,3 +9,4 @@ execute at @s rotated as @s anchored eyes positioned ^ ^ ^0.1 anchored feet run 
 execute if score #open_found br.flag matches 0 at @s as @e[type=minecraft:marker,tag=br.chest,distance=..5,sort=nearest,limit=1] at @s run function oa:br/loot/mark_open
 execute if score #open_reward br.flag matches 1 if entity @s[tag=br.alive] run function oa:itori/count_chest
 execute if score #open_reward br.flag matches 1 if entity @s[tag=br.alive] run scoreboard players add @s br.st_open 1
+execute if score @s br.st_open matches 10 run function oa:ach/give {id:"chests10",name:"宝探し"}

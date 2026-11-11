@@ -25,6 +25,7 @@ effect give @e[tag=oa.chosen,limit=1] minecraft:glowing 3 0 true
 tag @s add oa.external_glow
 tag @e[tag=oa.chosen,limit=1] add oa.external_glow
 tag @s add oa.ambush_active
+function oa:ach/give {id:"yuttari_back",name:"背後の死神"}
 scoreboard players set @s oa.back 20
 execute at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.4 0.6 0.4 0.04 24 normal @a[distance=..32]
 data modify storage oa:damage amount set value 0.5

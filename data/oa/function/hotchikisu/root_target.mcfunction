@@ -10,6 +10,7 @@ attribute @s minecraft:jump_strength modifier remove oa:staple_root
 attribute @s minecraft:movement_speed modifier add oa:staple_root -1 add_multiplied_total
 attribute @s minecraft:jump_strength modifier add oa:staple_root -1 add_multiplied_total
 tag @s add oa.stapled
+execute as @a[tag=oa.caster,limit=1] run function oa:ach/give {id:"hotchikisu_root",name:"拘束コンボ"}
 function oa:nero/save
 execute store result storage oa:args id int 1 run scoreboard players get @s oa.id
 function oa:hotchikisu/root_save with storage oa:args

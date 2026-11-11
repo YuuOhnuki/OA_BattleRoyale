@@ -55,6 +55,7 @@ execute unless entity @s[tag=br.playing] unless entity @s[tag=br.lobby_now,tag=!
 execute if entity @s[tag=br.lobby_now,tag=!br.playing,tag=!oa.debug] if score #perf oa.tmp matches 0 run function oa:br/zone/hud
 tag @s remove oa.current
 
+execute if entity @s[tag=br.playing] if score @s br.st_kill > @s br.st_kp run function oa:ach/new_kill
 execute if score #clock oa.beat matches 1 if items entity @s weapon.mainhand *[minecraft:custom_data~{oa_overwork:1b}] run item modify entity @s weapon.mainhand oa:lore/yu
 execute if score #clock oa.beat matches 1 if items entity @s weapon.offhand *[minecraft:custom_data~{oa_overwork:1b}] run item modify entity @s weapon.offhand oa:lore/yu
 

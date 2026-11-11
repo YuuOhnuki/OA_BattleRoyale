@@ -5,6 +5,8 @@ execute unless entity @s[tag=oa.db_free_match] unless score #state br.state matc
 execute unless entity @s[tag=oa.db_free_match] unless entity @s[tag=br.alive] run return 0
 execute unless entity @s[tag=oa.db_free_cd] if score @s oa.cd matches 1.. run return 0
 scoreboard players set @s oa.cd 900
+scoreboard players add @s br.gacha 1
+execute if score @s br.gacha matches 3 run function oa:ach/give {id:"tayayuyu_gacha3",name:"引きの強さ"}
 scoreboard players operation #gacha_caster oa.tmp = @s oa.id
 scoreboard players add #serial oa.serial 1
 scoreboard players operation #gacha_event oa.tmp = #serial oa.serial

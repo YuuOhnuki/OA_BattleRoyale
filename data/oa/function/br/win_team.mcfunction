@@ -6,5 +6,6 @@ tellraw @a[tag=br.playing] [{text:"★ 優勝チーム：",color:"gold",bold:tru
 title @a[tag=br.playing] times 10 90 20
 title @a[tag=br.playing] subtitle [{text:"チーム "},{score:{name:"#winner",objective:"oa.team"}},{text:"："},{selector:"@a[tag=br.winner]"}]
 title @a[tag=br.playing] title {text:"チーム優勝！",color:"gold",bold:true}
+execute as @a[tag=br.winner] run function oa:ach/give {id:"winner",name:"最後の一人"}
 function oa:br/result/show
 function oa:br/celebration/start
