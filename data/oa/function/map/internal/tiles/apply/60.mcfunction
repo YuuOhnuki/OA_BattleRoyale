@@ -9,7 +9,7 @@ scoreboard players set #expectedo oa.map2 0
 scoreboard players set #localc oa.map2 0
 scoreboard players set #localo oa.map2 0
 execute positioned ~-136 ~-4 ~58 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest_rich
-execute if score #mode oa.map2 matches 0 positioned ~-136 ~-4 ~58 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_upgraded
+execute if score #mode oa.map2 matches 0 positioned ~-136 ~-4 ~58 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_site
 execute unless score #localc oa.map2 matches 1 run return run function oa:map/internal/job/failed
 execute unless score #localo oa.map2 matches 0 run return run function oa:map/internal/job/failed
 scoreboard players operation #chests oa.map2 += #localc oa.map2

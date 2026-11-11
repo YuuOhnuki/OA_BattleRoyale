@@ -15,7 +15,7 @@ execute positioned ~-39 ~-11 ~18 if block ~ ~ ~ minecraft:redstone_ore align xyz
 execute positioned ~-41 ~-11 ~16 if block ~ ~ ~ minecraft:redstone_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_3
 execute positioned ~-41 ~-11 ~20 if block ~ ~ ~ minecraft:redstone_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_3
 execute positioned ~-48 ~-4 ~34 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest_rich
-execute if score #mode oa.map2 matches 0 positioned ~-48 ~-4 ~34 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_upgraded
+execute if score #mode oa.map2 matches 0 positioned ~-48 ~-4 ~34 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_site
 execute unless score #localc oa.map2 matches 2 run return run function oa:map/internal/job/failed
 execute unless score #localo oa.map2 matches 4 run return run function oa:map/internal/job/failed
 scoreboard players operation #chests oa.map2 += #localc oa.map2
