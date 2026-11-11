@@ -4,8 +4,16 @@
     {
       "rolls": 1,
       "entries": [
-        {"type": "minecraft:loot_table", "value": "oa:br/chest_upgraded", "weight": 1},
-        {"type": "minecraft:loot_table", "value": "oa:br/chest_basic", "weight": 1}
+        {
+          "type": "minecraft:loot_table",
+          "value": "oa:br/chest_upgraded",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "oa:br/chest_basic",
+          "weight": 3
+        }
       ]
     }
   ]

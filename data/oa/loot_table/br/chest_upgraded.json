@@ -32,7 +32,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_sword",
-          "weight": 5586
+          "weight": 1862
         },
         {
           "type": "minecraft:item",
@@ -209,22 +209,22 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_helmet",
-          "weight": 13500
+          "weight": 4500
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_chestplate",
-          "weight": 13500
+          "weight": 4500
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_leggings",
-          "weight": 13500
+          "weight": 4500
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_boots",
-          "weight": 13500
+          "weight": 4500
         },
         {
           "type": "minecraft:empty",

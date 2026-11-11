@@ -9,9 +9,11 @@ execute store result storage oa:br_spawn range int 1 run scoreboard players get 
 execute in oa:br run function oa:br/loot/random_ground with storage oa:br_spawn
 execute in oa:br run function oa:br/loot/random_ground with storage oa:br_spawn
 execute in oa:br run function oa:br/loot/random_ground with storage oa:br_spawn
+execute in oa:br run function oa:br/loot/random_ground with storage oa:br_spawn
+execute in oa:br run function oa:br/loot/random_ground with storage oa:br_spawn
 scoreboard players set #extra_chance br.tmp 0
-execute if score #time br.time matches 4800.. run scoreboard players set #extra_chance br.tmp 500
-execute if score #time br.time matches 7200.. run scoreboard players set #extra_chance br.tmp 900
+execute if score #time br.time matches 4800.. run scoreboard players set #extra_chance br.tmp 650
+execute if score #time br.time matches 7200.. run scoreboard players set #extra_chance br.tmp 1000
 execute if score #time br.time matches 9600.. run scoreboard players set #extra_chance br.tmp 350
 execute if score #time br.time matches 9600.. in oa:br run function oa:br/loot/random_ground with storage oa:br_spawn
 execute store result score #extra_roll br.tmp run random value 1..1000
