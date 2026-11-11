@@ -580,6 +580,11 @@ fill ~-120 ~-8 ~-127 ~-120 ~-8 ~-127 minecraft:air
 fill ~-120 ~-8 ~-130 ~-119 ~-8 ~-130 minecraft:air
 fill ~-120 ~-8 ~-128 ~-119 ~-8 ~-128 minecraft:air
 fill ~-120 ~-8 ~-129 ~-118 ~-8 ~-129 minecraft:air
+# 1.9.102 map update patches
+fill ~-120 ~-12 ~-130 ~-120 ~-12 ~-130 minecraft:blue_ice
+fill ~-120 ~-12 ~-127 ~-119 ~-12 ~-127 minecraft:blue_ice
+fill ~-119 ~-12 ~-129 ~-119 ~-12 ~-129 minecraft:blue_ice
+fill ~-118 ~-12 ~-128 ~-118 ~-12 ~-128 minecraft:blue_ice
 fillbiome ~-120 ~-20 ~-152 ~-105 ~8 ~-137 minecraft:plains
 fillbiome ~-104 ~-20 ~-152 ~-89 ~8 ~-137 minecraft:plains
 fillbiome ~-120 ~-20 ~-136 ~-105 ~8 ~-121 minecraft:plains

@@ -3,6 +3,7 @@ tag @s add oa.practice_dummy
 function oa:practice/dummy_unname
 attribute @s minecraft:max_health base set 20
 attribute @s minecraft:armor base set 0
+function oa:practice/no_burn
 data merge entity @s {Health:20.0f,IsBaby:0b,PersistenceRequired:1b,DeathLootTable:"minecraft:empty"}
 scoreboard players operation #practice_spawned oa.tmp = @s oa.id
 scoreboard players operation @s oa.kind = #practice_tier oa.tmp

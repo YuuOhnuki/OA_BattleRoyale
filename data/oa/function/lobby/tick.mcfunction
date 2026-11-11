@@ -26,3 +26,6 @@ execute if score #perf oa.tmp matches 0 unless data storage oa:lobby_job {workin
 execute if score #perf oa.tmp matches 0 run function oa:lobby/board/tick
 
 execute if score #perf oa.tmp matches 0 if score #state br.state matches 0 unless data storage oa:lobby_job {working:1b} unless data storage oa:lobby origin{gallery:1981} run function oa:lobby/gallery/ensure with storage oa:lobby origin
+scoreboard players add #amb oa.tmp 1
+execute if score #amb oa.tmp matches 10.. run scoreboard players set #amb oa.tmp 0
+execute if score #perf oa.tmp matches 0 if score #amb oa.tmp matches 0 if entity @a[tag=br.lobby_now,limit=1] run function oa:lobby/ambience with storage oa:lobby origin

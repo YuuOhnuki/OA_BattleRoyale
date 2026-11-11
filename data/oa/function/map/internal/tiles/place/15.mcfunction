@@ -661,6 +661,11 @@ fill ~26 ~-4 ~-117 ~28 ~-4 ~-117 minecraft:air
 fill ~25 ~-3 ~-120 ~29 ~-3 ~-120 minecraft:air
 fill ~26 ~-3 ~-119 ~28 ~-3 ~-119 minecraft:air
 fill ~27 ~-3 ~-118 ~27 ~-3 ~-118 minecraft:air
+# 1.9.102 map update patches
+fill ~25 ~-7 ~-120 ~25 ~-7 ~-118 minecraft:blue_ice
+fill ~27 ~-7 ~-119 ~27 ~-7 ~-118 minecraft:blue_ice
+fill ~28 ~-3 ~-119 ~28 ~-3 ~-119 minecraft:pointed_dripstone[thickness=tip,vertical_direction=down,waterlogged=false]
+fill ~29 ~-3 ~-120 ~29 ~-3 ~-120 minecraft:pointed_dripstone[thickness=tip,vertical_direction=down,waterlogged=false]
 fillbiome ~8 ~-20 ~-120 ~23 ~8 ~-105 minecraft:plains
 fillbiome ~24 ~-20 ~-120 ~39 ~8 ~-105 minecraft:plains
 fillbiome ~8 ~-20 ~-104 ~23 ~8 ~-89 minecraft:plains

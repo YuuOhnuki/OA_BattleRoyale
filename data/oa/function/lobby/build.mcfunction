@@ -14,6 +14,7 @@ fill ~-40 ~40 ~-40 ~40 ~43 ~40 minecraft:air
 fill ~-40 ~44 ~-40 ~40 ~44 ~40 minecraft:air
 fill ~-40 ~-3 ~-40 ~40 ~-2 ~40 minecraft:stone_bricks
 fill ~-40 ~-1 ~-40 ~40 ~-1 ~40 minecraft:smooth_quartz
+function oa:lobby/decor_floor
 fill ~-40 ~0 ~-39 ~40 ~1 ~-39 minecraft:polished_deepslate_wall
 fill ~-39 ~0 ~-40 ~-39 ~1 ~40 minecraft:polished_deepslate_wall
 fill ~-40 ~0 ~39 ~40 ~1 ~39 minecraft:polished_deepslate_wall
@@ -248,6 +249,7 @@ setblock ~36 ~-1 ~16 minecraft:sea_lantern
 setblock ~36 ~-1 ~24 minecraft:sea_lantern
 setblock ~36 ~-1 ~32 minecraft:sea_lantern
 
+function oa:lobby/decor
 function oa:lobby/map_labels_build
 
 function oa:lobby/gallery/build
