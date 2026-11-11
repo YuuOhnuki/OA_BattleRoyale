@@ -102,7 +102,7 @@ def ship(g):
     for x in range(-77, -72): put(x, 0, 110, 'minecraft:blue_wool', True)
     for x in range(-77, -73): put(x, -1, 110, 'minecraft:white_wool', True)
     for x in (-83, -73):
-        for y in range(-3, -9, -1): put(x, y, 110, 'minecraft:chain[axis=y,waterlogged=false]')
+        for y in range(-3, -9, -1): put(x, y, 110, 'minecraft:iron_chain[axis=y,waterlogged=false]')
         put(x, -9, 110, 'minecraft:lantern[hanging=true,waterlogged=false]')
     # extra emblem on the main sail (blue diamond on white) at z=109
     for (x, y) in ((-78, -7), (-79, -5), (-77, -5), (-78, -4), (-78, -5)):

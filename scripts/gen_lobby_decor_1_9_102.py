@@ -59,7 +59,7 @@ for a in (-36, -20, 20, 36):
     D.append(f'fill ~{a} ~12 ~-36 ~{a} ~12 ~36 minecraft:quartz_slab[type=top]')
     D.append(f'fill ~-36 ~12 ~{a} ~36 ~12 ~{a} minecraft:quartz_slab[type=top]')
 def hang(x, z):
-    return [f'fill ~{x} ~10 ~{z} ~{x} ~11 ~{z} minecraft:chain[axis=y]', f'setblock ~{x} ~9 ~{z} minecraft:lantern[hanging=true]']
+    return [f'fill ~{x} ~10 ~{z} ~{x} ~11 ~{z} minecraft:iron_chain[axis=y]', f'setblock ~{x} ~9 ~{z} minecraft:lantern[hanging=true]']
 pos = set()
 for a in (-36, -20, 20, 36):
     for t in (-28, -14, 0, 14, 28):
