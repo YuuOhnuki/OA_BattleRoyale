@@ -1,4 +1,5 @@
 {
+  "parent": "oa:ach/root",
   "display": {
     "icon": {
       "id": "minecraft:chest"

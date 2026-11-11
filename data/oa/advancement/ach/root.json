@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_sword"
+    },
+    "title": {
+      "text": "OA 実績"
+    },
+    "description": {
+      "text": "OAバトルロイヤルの実績"
+    },
+    "background": "minecraft:gui/advancements/backgrounds/stone",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "auto": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}
