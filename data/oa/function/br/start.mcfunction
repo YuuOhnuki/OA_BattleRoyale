@@ -113,6 +113,9 @@ execute unless score #spawn_live br.flag matches 1 run return run function oa:br
 execute in oa:br run kill @e[distance=0..,tag=br.spawn]
 function oa:br/ui/start
 scoreboard players set @a[tag=br.playing] br.open 0
+execute as @a[tag=br.playing] run function oa:br/result/reset
+scoreboard players set #pid br.tmp 0
+execute as @a[tag=br.playing] run function oa:ach/assign_pid
 function oa:br/intro
 execute as @a[tag=br.playing] at @s run playsound minecraft:entity.ender_dragon.growl player @s ~ ~ ~ 1 1
 

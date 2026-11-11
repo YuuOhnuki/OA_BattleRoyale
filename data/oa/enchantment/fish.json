@@ -80,7 +80,7 @@
         "affected": "victim",
         "effect": {
           "type": "minecraft:run_function",
-          "function": "oa:fish/hit"
+          "function": "oa:fish/hit_credit"
         },
         "requirements": {
           "type": "minecraft:any_of",

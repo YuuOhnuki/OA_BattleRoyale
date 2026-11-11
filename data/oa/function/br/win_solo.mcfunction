@@ -5,4 +5,5 @@ tellraw @a[tag=br.playing] [{text:"★ 優勝：",color:"gold",bold:true},{selec
 title @a[tag=br.playing] times 10 90 20
 title @a[tag=br.playing] subtitle [{text:"WINNER：",color:"yellow"},{selector:"@a[tag=br.winner]"}]
 title @a[tag=br.playing] title {text:"優勝！",color:"gold",bold:true}
+function oa:br/result/show
 function oa:br/celebration/start

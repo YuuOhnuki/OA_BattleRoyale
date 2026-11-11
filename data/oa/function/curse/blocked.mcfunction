@@ -1,4 +1,5 @@
 scoreboard players set @s oa.blocked 1
+execute if entity @s[type=minecraft:player,tag=br.playing] run function oa:ach/killing_guard
 execute if score @s oa.guard_fx = #total oa.gtime run return 0
 scoreboard players operation @s oa.guard_fx = #total oa.gtime
 particle minecraft:flash{color:[0.8,0.3,1.0,1.0]} ~ ~1 ~ 0 0 0 0 1 normal @a[distance=..40]

@@ -1,0 +1,12 @@
+{
+  "display": {
+    "icon": {"id": "minecraft:cod"},
+    "title": {"text": "魚のまま20秒"},
+    "description": {"text": "ぴちぴち：敵を20秒間連続で跳ねさせた"},
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {"done": {"trigger": "minecraft:impossible"}}
+}

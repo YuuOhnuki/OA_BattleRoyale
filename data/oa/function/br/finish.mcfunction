@@ -1,6 +1,8 @@
 execute if score #state br.state matches 0 run return 0
 execute if data storage oa:br center run function oa:br/cleanup_loose with storage oa:br center
 scoreboard players set #state br.state 2
+function oa:br/finale/stop
+function oa:br/supply/clear
 execute as @a[tag=br.playing,tag=!oa.practice] if score @s br.round = #round br.round run function oa:br/locator/restore
 tag @a[tag=br.playing] remove br.winner
 function oa:br/ui/stop
