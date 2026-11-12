@@ -4,6 +4,7 @@ scoreboard players operation #rx br.tmp = #mx br.tmp
 scoreboard players operation #rx br.tmp -= #cx br.tmp
 scoreboard players operation #rz br.tmp = #mz br.tmp
 scoreboard players operation #rz br.tmp -= #cz br.tmp
+execute if score #map oa.mapid matches 1 run return run function oa:maps/nether/supply_region
 data modify storage oa:supply region set value "南の草原"
 execute if score #rz br.tmp matches ..-25 if score #rx br.tmp matches -29..29 run data modify storage oa:supply region set value "北の湖のまわり"
 execute if score #rx br.tmp matches 30.. run data modify storage oa:supply region set value "東の森"

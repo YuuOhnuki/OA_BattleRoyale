@@ -1,8 +1,0 @@
-{
-  "version": "1.9.30",
-  "json_function_and_macro_checks": "passed via validate1929.py",
-  "debug_reset_button": "passed",
-  "itori_get_button": "passed",
-  "permission": "admin and debug required; resets executor only",
-  "minecraft_runtime": "not tested"
-}

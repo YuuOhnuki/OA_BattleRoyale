@@ -1,5 +1,7 @@
 execute if data storage oa_map2:args center_y unless data storage oa_map2:args dim run data modify storage oa_map2:args dim set value "minecraft:overworld"
 scoreboard objectives add oa.map2 dummy
+function oa:map/internal/defs
+execute if data storage oa_map2:args center_y unless data storage oa_map2:args tiles run data modify storage oa_map2:args tiles set value "oa:map/internal/tiles"
 scoreboard players add #state oa.map2 0
 schedule clear oa:map/internal/job/next
 schedule clear oa:map/internal/job/wait

@@ -10,11 +10,16 @@ execute unless score #state br.state matches 1 run return 0
 scoreboard players add #time br.time 1
 function oa:br/day/tick
 function oa:br/weather/tick
-execute if score #time br.time matches 2400 in oa:br run worldborder set 230 60s
-execute if score #time br.time matches 4800 in oa:br run worldborder set 160 60s
-execute if score #time br.time matches 7200 in oa:br run worldborder set 90 60s
-execute if score #time br.time matches 10800 in oa:br run worldborder set 20 60s
-execute if score #time br.time matches 12000 in oa:br run worldborder set 2 60s
+execute if score #time br.time matches 2400 if score #map oa.mapid matches 0 in oa:br run worldborder set 230 60s
+execute if score #time br.time matches 2400 if score #map oa.mapid matches 1 in oa:br_nether run worldborder set 230 60s
+execute if score #time br.time matches 4800 if score #map oa.mapid matches 0 in oa:br run worldborder set 160 60s
+execute if score #time br.time matches 4800 if score #map oa.mapid matches 1 in oa:br_nether run worldborder set 160 60s
+execute if score #time br.time matches 7200 if score #map oa.mapid matches 0 in oa:br run worldborder set 90 60s
+execute if score #time br.time matches 7200 if score #map oa.mapid matches 1 in oa:br_nether run worldborder set 90 60s
+execute if score #time br.time matches 10800 if score #map oa.mapid matches 0 in oa:br run worldborder set 20 60s
+execute if score #time br.time matches 10800 if score #map oa.mapid matches 1 in oa:br_nether run worldborder set 20 60s
+execute if score #time br.time matches 12000 if score #map oa.mapid matches 0 in oa:br run worldborder set 2 60s
+execute if score #time br.time matches 12000 if score #map oa.mapid matches 1 in oa:br_nether run worldborder set 2 60s
 scoreboard players add #pulse br.tmp 1
 execute if score #time br.time matches 10800.. run function oa:br/finale/tick
 execute as @a[tag=br.playing,tag=br.alive] unless score @s br.left = @s oa.left at @s run function oa:br/surrender

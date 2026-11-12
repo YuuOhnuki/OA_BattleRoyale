@@ -1,4 +1,4 @@
-execute unless dimension oa:br run return run function oa:br/zone/damage with storage oa:br_zone
+execute unless dimension oa:br unless dimension oa:br_nether run return run function oa:br/zone/damage with storage oa:br_zone
 execute store result score #px br.x run data get entity @s Pos[0] 1000
 execute store result score #pz br.z run data get entity @s Pos[2] 1000
 scoreboard players set #out br.flag 0

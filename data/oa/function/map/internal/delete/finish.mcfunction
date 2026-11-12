@@ -1,5 +1,6 @@
 scoreboard players set #same_map_dim br.flag 0
 execute if data storage oa_map2:args {dim:"oa:br"} if data storage oa:br center{dim:"oa:br"} run scoreboard players set #same_map_dim br.flag 1
+execute if data storage oa_map2:args {dim:"oa:br_nether"} if data storage oa:br center{dim:"oa:br_nether"} run scoreboard players set #same_map_dim br.flag 1
 execute if data storage oa_map2:args {dim:"minecraft:overworld"} if data storage oa:br center{dim:"minecraft:overworld"} run scoreboard players set #same_map_dim br.flag 1
 data modify storage oa_map2:job working set value 0b
 data modify storage oa_map2:job deleting set value 0b

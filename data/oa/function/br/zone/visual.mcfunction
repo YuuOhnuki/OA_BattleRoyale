@@ -1,4 +1,4 @@
-execute unless dimension oa:br run return 0
+execute unless dimension oa:br unless dimension oa:br_nether run return 0
 execute store result score #px br.x run data get entity @s Pos[0] 1000
 execute store result score #pz br.z run data get entity @s Pos[2] 1000
 data modify storage oa:br_zone x set from entity @s Pos[0]

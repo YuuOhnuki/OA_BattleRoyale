@@ -5,7 +5,8 @@ execute if score #g_move_ok oa.tmp matches 0 run return run function oa:tayayuyu
 execute as @a[tag=br.alive,gamemode=!spectator,nbt=!{Health:0.0f},sort=random] at @s run function oa:tayayuyu/move/capture
 execute if score #g_move_ok oa.tmp matches 0 run return run function oa:tayayuyu/move/abort
 execute unless score #g_count oa.tmp matches 1.. run return run function oa:tayayuyu/move/abort
-execute in oa:br as @e[distance=0..,type=minecraft:marker,tag=oa.g_move_plan] run function oa:tayayuyu/move/gather_plan
+execute if score #map oa.mapid matches 0 in oa:br as @e[distance=0..,type=minecraft:marker,tag=oa.g_move_plan] run function oa:tayayuyu/move/gather_plan
+execute if score #map oa.mapid matches 1 in oa:br_nether as @e[distance=0..,type=minecraft:marker,tag=oa.g_move_plan] run function oa:tayayuyu/move/gather_plan
 execute if score #g_move_ok oa.tmp matches 0 run return run function oa:tayayuyu/move/abort
 scoreboard players set #g_offset oa.tmp 0
 function oa:tayayuyu/move/commit

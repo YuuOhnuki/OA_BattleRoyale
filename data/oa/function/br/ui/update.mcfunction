@@ -1,4 +1,5 @@
-execute in oa:br store result score #shown_width br.tmp run worldborder get
+execute if score #map oa.mapid matches 0 in oa:br store result score #shown_width br.tmp run worldborder get
+execute if score #map oa.mapid matches 1 in oa:br_nether store result score #shown_width br.tmp run worldborder get
 scoreboard players set #remaining br.tmp 600
 scoreboard players operation #remaining br.tmp -= #sec br.sec
 execute if score #remaining br.tmp matches ..-1 run scoreboard players set #remaining br.tmp 0

@@ -9,3 +9,4 @@ data modify storage oa:position value.pitch set from entity @s Rotation[1]
 
 execute if dimension oa:practice run data modify storage oa:position value.dim set value "oa:practice"
 execute if dimension oa:br run data modify storage oa:position value.dim set value "oa:br"
+execute if dimension oa:br_nether run data modify storage oa:position value.dim set value "oa:br_nether"

@@ -1,8 +1,0 @@
-{
-  "version": "1.9.31",
-  "static_checks": "passed via validate1929.py",
-  "visual_scales": "shield x2.5; frost x2; orange sigil x2.5; flame blade and ground sigil x3",
-  "combat_logic_comparison_to_1930": "10 relevant functions byte-identical",
-  "resource_pack": "1.9.29; no change needed",
-  "runtime": "not tested"
-}

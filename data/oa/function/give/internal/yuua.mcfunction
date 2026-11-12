@@ -7,6 +7,7 @@ item modify entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents oa:visu
 scoreboard players set @e[tag=oa.spawn] oa.wait 20
 execute if entity @s[tag=br.chest] run tag @e[tag=oa.spawn] add br.newunique
 execute if score #state br.state matches 1 if dimension oa:br unless entity @s[tag=oa.debug] run tag @e[tag=oa.spawn] add br.matchloot
+execute if score #state br.state matches 1 if dimension oa:br_nether unless entity @s[tag=oa.debug] run tag @e[tag=oa.spawn] add br.matchloot
 execute unless items entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents *[minecraft:custom_data~{oa:{speed_v160:1b}}] run item modify entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents oa:unique_speed
 execute if entity @s[tag=br.chest] run item modify entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents oa:br_hat
 execute if entity @s[tag=br.ground_new] run item modify entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents oa:br_hat

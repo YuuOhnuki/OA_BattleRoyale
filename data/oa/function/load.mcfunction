@@ -298,7 +298,8 @@ scoreboard objectives add oa.i_leap dummy
 scoreboard objectives add oa.i_yaw dummy
 scoreboard objectives add oa.i_frame dummy
 execute in minecraft:overworld run kill @e[distance=0..,tag=oa.itori_proxy]
-execute in oa:br run kill @e[distance=0..,tag=oa.itori_proxy]
+execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,tag=oa.itori_proxy]
+execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,tag=oa.itori_proxy]
 execute in minecraft:the_nether run kill @e[distance=0..,tag=oa.itori_proxy]
 execute in minecraft:the_end run kill @e[distance=0..,tag=oa.itori_proxy]
 
@@ -307,14 +308,17 @@ scoreboard objectives add oa.i_fxlife dummy
 scoreboard objectives add oa.i_ver dummy
 execute as @a run function oa:itori/migrate1932
 execute in minecraft:overworld run kill @e[distance=0..,tag=oa.i_orange_floor]
-execute in oa:br run kill @e[distance=0..,tag=oa.i_orange_floor]
+execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,tag=oa.i_orange_floor]
+execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,tag=oa.i_orange_floor]
 execute in minecraft:the_nether run kill @e[distance=0..,tag=oa.i_orange_floor]
 execute in minecraft:the_end run kill @e[distance=0..,tag=oa.i_orange_floor]
 
 execute in minecraft:overworld run kill @e[distance=0..,tag=oa.i_citlali_circle]
-execute in oa:br run kill @e[distance=0..,tag=oa.i_citlali_circle]
+execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,tag=oa.i_citlali_circle]
+execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,tag=oa.i_citlali_circle]
 execute in minecraft:overworld run kill @e[distance=0..,tag=oa.i_citlali_column]
-execute in oa:br run kill @e[distance=0..,tag=oa.i_citlali_column]
+execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,tag=oa.i_citlali_column]
+execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,tag=oa.i_citlali_column]
 execute in minecraft:the_nether run kill @e[distance=0..,tag=oa.i_citlali_circle]
 execute in minecraft:the_nether run kill @e[distance=0..,tag=oa.i_citlali_column]
 execute in minecraft:the_end run kill @e[distance=0..,tag=oa.i_citlali_circle]
@@ -399,3 +403,7 @@ scoreboard objectives add br.wkk dummy
 scoreboard objectives add br.wkc dummy
 scoreboard objectives add br.surv dummy
 scoreboard objectives add br.st_dist dummy
+scoreboard objectives add br.mqz minecraft.mined:minecraft.nether_quartz_ore
+scoreboard objectives add br.mng minecraft.mined:minecraft.nether_gold_ore
+scoreboard objectives add oa.mapid dummy
+scoreboard players add #map oa.mapid 0

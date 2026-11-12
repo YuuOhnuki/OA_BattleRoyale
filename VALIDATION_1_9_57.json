@@ -1,8 +1,0 @@
-{
-  "version": "1.9.57",
-  "json": 209,
-  "functions": 2030,
-  "function_references": 3863,
-  "checks": "static JSON, macro brackets, function references, six-stage boundaries and damage/status routes passed",
-  "runtime": "not tested in Minecraft"
-}

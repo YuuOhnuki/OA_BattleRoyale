@@ -1,6 +1,8 @@
 # Find a safe current-border spawn before touching inventory or existing backup.
-execute in oa:br run kill @e[distance=0..,type=minecraft:armor_stand,tag=oa.admin_spawn]
-execute store result score #width oa.tmp in oa:br run worldborder get
+execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,type=minecraft:armor_stand,tag=oa.admin_spawn]
+execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,type=minecraft:armor_stand,tag=oa.admin_spawn]
+execute store result score #width oa.tmp if score #map oa.mapid matches 0 in oa:br run worldborder get
+execute store result score #width oa.tmp if score #map oa.mapid matches 1 in oa:br_nether run worldborder get
 scoreboard players set #two oa.tmp 2
 scoreboard players operation #width oa.tmp /= #two oa.tmp
 scoreboard players remove #width oa.tmp 2
@@ -14,8 +16,10 @@ execute unless score @s br.saved matches 1 run return run function oa:admin/play
 scoreboard players operation @s br.flag = @s br.pick
 tag @s remove br.watch
 tag @s add br.lobby
-execute in oa:br at @e[distance=0..,type=minecraft:armor_stand,tag=oa.admin_spawn,limit=1] run tp @s ~ ~ ~
-execute in oa:br run kill @e[distance=0..,type=minecraft:armor_stand,tag=oa.admin_spawn]
+execute if score #map oa.mapid matches 0 in oa:br at @e[distance=0..,type=minecraft:armor_stand,tag=oa.admin_spawn,limit=1] run tp @s ~ ~ ~
+execute if score #map oa.mapid matches 1 in oa:br_nether at @e[distance=0..,type=minecraft:armor_stand,tag=oa.admin_spawn,limit=1] run tp @s ~ ~ ~
+execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,type=minecraft:armor_stand,tag=oa.admin_spawn]
+execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,type=minecraft:armor_stand,tag=oa.admin_spawn]
 function oa:br/enter
 execute if score #time br.time matches 1200.. run effect clear @s minecraft:resistance
 execute if score #time br.time matches 1200.. run tag @s remove br.pvp_grace

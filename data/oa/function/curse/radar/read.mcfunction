@@ -22,4 +22,5 @@ execute if score #rz oa.tmp matches ..-1 run scoreboard players operation #rz oa
 execute store result storage oa:radar rx int 1 run scoreboard players get #rx oa.tmp
 execute store result storage oa:radar rz int 1 run scoreboard players get #rz oa.tmp
 execute if dimension oa:br run data modify storage oa:radar dim_name set value "BR会場"
+execute if dimension oa:br_nether run data modify storage oa:radar dim_name set value "BR会場"
 execute if dimension oa:practice run data modify storage oa:radar dim_name set value "練習場"

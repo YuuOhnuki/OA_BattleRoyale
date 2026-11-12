@@ -50,6 +50,8 @@ give @s minecraft:iron_pickaxe[minecraft:custom_name={text:"資源採掘用ツ�
 scoreboard players set @s br.mcoal 0
 scoreboard players set @s br.mdcoal 0
 scoreboard players set @s br.mred 0
+scoreboard players set @s br.mqz 0
+scoreboard players set @s br.mng 0
 scoreboard players set @s br.mdred 0
 
 
