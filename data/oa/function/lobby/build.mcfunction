@@ -174,8 +174,8 @@ setblock ~4 ~-1 ~2 minecraft:sea_lantern
 summon minecraft:text_display ~0 ~4.5 ~-12 {Tags:["oa.lobby_label"],text:{"text": "OAバトルロワイヤル", "color": "gold", "bold": true},billboard:"center",background:0,shadow:1b,view_range:1.2}
 summon minecraft:text_display ~0 ~4.5 ~12 {Tags:["oa.lobby_label"],text:{"text": "入場で参加登録／羊毛でチーム選択\nホスト：開始パッドで5秒待機", "color": "gold", "bold": true},billboard:"center",background:0,shadow:1b,view_range:1.2}
 
-fill ~-1 ~-1 ~13 ~1 ~-1 ~15 minecraft:gray_wool
-summon minecraft:text_display ~0.5 ~1 ~14.5 {Tags:["oa.lobby_label"],text:{text:"観戦者",color:"gray"},billboard:"center",background:0}
+fill ~-13 ~-1 ~32 ~-11 ~-1 ~34 minecraft:gray_wool
+summon minecraft:text_display ~-11.5 ~1 ~33.5 {Tags:["oa.lobby_label"],text:{text:"観戦者",color:"gray"},billboard:"center",background:0}
 
 summon minecraft:text_display ~0 ~3 ~20 {"Tags":["oa.lobby_label"],"text":{"text":"遊び方\n羊毛でチーム選択／灰色は観戦\nホストが開始パッドに5秒立つと開始\n最初の1分は保護／6分でチェスト補充\n縮小する安置で最後まで生き残ろう！","color":"aqua"},"billboard":"center","background":1073741824,"shadow":true,"line_width":260,"view_range":0.5}
 summon minecraft:text_display ~0 ~3 ~-28 {"Tags":["oa.lobby_label"],"text":{"text":"アイテム案内\n固有装備は1人1個／右クリックでスキル\n包帯・救急キット：右クリックで回復\n石炭鉱石：食料／レッドストーン鉱石：医療品\n装備ごとの操作はアイテム説明を確認","color":"yellow"},"billboard":"center","background":1073741824,"shadow":true,"line_width":260,"view_range":0.5}
