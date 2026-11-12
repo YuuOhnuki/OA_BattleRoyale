@@ -192,6 +192,35 @@ fill ~6 ~0 ~-19 ~6 ~0 ~-17 minecraft:spruce_slab[type=bottom,waterlogged=false]
 fill ~-5 ~0 ~36 ~5 ~10 ~36 minecraft:polished_blackstone_bricks
 fill ~-4 ~1 ~35 ~4 ~9 ~35 minecraft:smooth_quartz
 
+# 1.9.125 明るさ：チーム選択エリアとアスレ周辺（床のシーランタン＋見えない光源）
+fill ~-16 ~-1 ~26 ~16 ~-1 ~26 minecraft:sea_lantern
+fill ~-16 ~-1 ~20 ~16 ~-1 ~20 minecraft:sea_lantern
+fill ~-8 ~-1 ~-21 ~8 ~-1 ~-21 minecraft:sea_lantern
+setblock ~-14 ~3 ~21 minecraft:light[level=15]
+setblock ~-7 ~3 ~21 minecraft:light[level=15]
+setblock ~0 ~3 ~21 minecraft:light[level=15]
+setblock ~7 ~3 ~21 minecraft:light[level=15]
+setblock ~14 ~3 ~21 minecraft:light[level=15]
+setblock ~-14 ~3 ~26 minecraft:light[level=15]
+setblock ~-7 ~3 ~26 minecraft:light[level=15]
+setblock ~0 ~3 ~26 minecraft:light[level=15]
+setblock ~7 ~3 ~26 minecraft:light[level=15]
+setblock ~14 ~3 ~26 minecraft:light[level=15]
+setblock ~-14 ~3 ~31 minecraft:light[level=15]
+setblock ~-7 ~3 ~31 minecraft:light[level=15]
+setblock ~0 ~3 ~31 minecraft:light[level=15]
+setblock ~7 ~3 ~31 minecraft:light[level=15]
+setblock ~14 ~3 ~31 minecraft:light[level=15]
+setblock ~-6 ~3 ~-24 minecraft:light[level=15]
+setblock ~0 ~3 ~-24 minecraft:light[level=15]
+setblock ~6 ~3 ~-24 minecraft:light[level=15]
+setblock ~-6 ~3 ~-21 minecraft:light[level=15]
+setblock ~0 ~3 ~-21 minecraft:light[level=15]
+setblock ~6 ~3 ~-21 minecraft:light[level=15]
+setblock ~-6 ~3 ~-18 minecraft:light[level=15]
+setblock ~0 ~3 ~-18 minecraft:light[level=15]
+setblock ~6 ~3 ~-18 minecraft:light[level=15]
+
 function oa:lobby/protect_exhibits
 setblock ~-36 ~-1 ~-32 minecraft:sea_lantern
 setblock ~-36 ~-1 ~-24 minecraft:sea_lantern
