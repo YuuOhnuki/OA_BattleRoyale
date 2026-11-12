@@ -14,4 +14,15 @@ execute positioned ~0.5 ~6.2 ~34 run kill @e[type=minecraft:text_display,tag=oa.
 execute positioned ~0.5 ~0.4 ~33 run kill @e[type=minecraft:text_display,tag=oa.lobby_label,distance=..0.3]
 fill ~-5 ~0 ~36 ~5 ~10 ~36 minecraft:polished_blackstone_bricks
 fill ~-5 ~0 ~35 ~5 ~10 ~35 minecraft:polished_blackstone_bricks
-summon minecraft:item_display ~0.5 ~5.5 ~34.35 {Tags:["oa.lobby_exhibit","oa.lobby_map","oa.map_panel1982"],billboard:"fixed",Rotation:[0.0f,0.0f],item_display:"none",brightness:{block:15,sky:15},view_range:1.0f,item:{id:"minecraft:paper",count:1,components:{"minecraft:item_model":"oa:lobby_map_panel"}},transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[9.0f,9.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
+summon minecraft:item_display ~0.5 ~5.5 ~34.35 {Tags:["oa.lobby_exhibit","oa.lobby_map","oa.map_panel1116"],billboard:"fixed",Rotation:[0.0f,0.0f],item_display:"none",brightness:{block:15,sky:15},view_range:1.0f,item:{id:"minecraft:paper",count:1,components:{"minecraft:item_model":"oa:lobby_map_panel"}},transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[9.0f,9.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
+kill @e[type=minecraft:item_display,tag=oa.map_panel1982,distance=..45]
+kill @e[type=minecraft:marker,tag=oa.button_mapsel,distance=..45]
+kill @e[type=minecraft:text_display,tag=oa.mapsel_text,distance=..45]
+# 1.9.116: マップ選択ボタン（壁の足元、左＝地上／右＝ネザー）。パネルの下端に文字を表示
+setblock ~-2 ~0 ~34 minecraft:stone_button[face=wall,facing=north,powered=false]
+setblock ~2 ~0 ~34 minecraft:stone_button[face=wall,facing=north,powered=false]
+summon minecraft:marker ~-1.5 ~0.2 ~34.5 {Tags:["oa.lobby_exhibit","oa.button_mapsel","oa.mapsel_br"]}
+summon minecraft:marker ~2.5 ~0.2 ~34.5 {Tags:["oa.lobby_exhibit","oa.button_mapsel","oa.mapsel_nether"]}
+summon minecraft:text_display ~-1.5 ~1.25 ~34.1 {Tags:["oa.lobby_exhibit","oa.mapsel_text","oa.mapsel_t_br"],billboard:"fixed",Rotation:[0.0f,0.0f],text:{text:"地上"},background:-1073741824,view_range:0.6f,transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
+summon minecraft:text_display ~2.5 ~1.25 ~34.1 {Tags:["oa.lobby_exhibit","oa.mapsel_text","oa.mapsel_t_nether"],billboard:"fixed",Rotation:[0.0f,0.0f],text:{text:"ネザー"},background:-1073741824,view_range:0.6f,transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
+function oa:lobby/map_panel_update

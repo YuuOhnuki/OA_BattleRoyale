@@ -20,6 +20,7 @@ execute as @a[tag=br.pad_latched] at @s unless block ~ ~-0.1 ~ minecraft:emerald
 
 function oa:practice/lobby_gate_tick with storage oa:lobby origin
 execute as @e[type=minecraft:marker,tag=oa.button_lobby,tag=!oa.practice_entry] at @s run function oa:lobby/gallery/button_tick
+execute as @e[type=minecraft:marker,tag=oa.button_mapsel] at @s run function oa:lobby/mapsel/button_tick
 scoreboard players remove @a[scores={oa.exread=1..}] oa.exread 1
 
 execute if score #perf oa.tmp matches 0 unless data storage oa:lobby_job {working:1b} run function oa:lobby/map_labels with storage oa:lobby origin
