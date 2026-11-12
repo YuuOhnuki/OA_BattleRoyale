@@ -1091,20 +1091,8 @@ fill ~70 ~-11 ~12 ~70 ~-11 ~12 minecraft:tall_grass[half=lower]
 fill ~41 ~-10 ~31 ~41 ~-10 ~31 minecraft:tall_grass[half=upper]
 fill ~70 ~-10 ~12 ~70 ~-10 ~12 minecraft:tall_grass[half=upper]
 # 1.9.117 relief map update patches
-fill ~40 ~-13 ~39 ~40 ~-13 ~39 minecraft:grass_block
 fill ~48 ~-13 ~39 ~48 ~-13 ~39 minecraft:grass_block
-fill ~67 ~-13 ~25 ~67 ~-13 ~25 minecraft:grass_block
-fill ~67 ~-13 ~24 ~68 ~-13 ~24 minecraft:grass_block
-fill ~71 ~-13 ~8 ~71 ~-13 ~9 minecraft:grass_block
-fill ~71 ~-13 ~11 ~71 ~-13 ~11 minecraft:grass_block
-fill ~40 ~-12 ~39 ~40 ~-12 ~39 minecraft:air
 fill ~48 ~-12 ~39 ~48 ~-12 ~39 minecraft:air
-fill ~67 ~-12 ~24 ~67 ~-12 ~25 minecraft:air
-fill ~71 ~-12 ~8 ~71 ~-12 ~9 minecraft:air
-fill ~68 ~-12 ~24 ~68 ~-12 ~24 minecraft:short_grass
-fill ~71 ~-12 ~11 ~71 ~-12 ~11 minecraft:short_grass
-fill ~68 ~-11 ~24 ~68 ~-11 ~24 minecraft:air
-fill ~71 ~-11 ~11 ~71 ~-11 ~11 minecraft:air
 fillbiome ~40 ~-20 ~8 ~55 ~8 ~23 minecraft:forest
 fillbiome ~56 ~-20 ~8 ~71 ~8 ~23 minecraft:forest
 fillbiome ~40 ~-20 ~24 ~55 ~8 ~39 minecraft:forest

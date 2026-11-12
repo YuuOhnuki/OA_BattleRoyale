@@ -669,8 +669,7 @@ fill ~-23 ~-5 ~-126 ~-23 ~-5 ~-126 minecraft:stone
 fill ~2 ~-4 ~-121 ~5 ~-4 ~-121 minecraft:snow_block
 fill ~3 ~-4 ~-122 ~5 ~-4 ~-122 minecraft:snow_block
 fill ~5 ~-4 ~-123 ~6 ~-4 ~-123 minecraft:snow_block
-fill ~6 ~-3 ~-121 ~6 ~-3 ~-121 minecraft:snow_block
-fill ~6 ~-3 ~-122 ~7 ~-3 ~-122 minecraft:snow_block
+fill ~6 ~-3 ~-122 ~7 ~-3 ~-121 minecraft:snow_block
 fill ~7 ~-3 ~-123 ~7 ~-3 ~-123 minecraft:snow_block
 fillbiome ~-24 ~-20 ~-152 ~-9 ~8 ~-137 minecraft:plains
 fillbiome ~-8 ~-20 ~-152 ~7 ~8 ~-137 minecraft:plains

@@ -1229,9 +1229,8 @@ fill ~84 ~-6 ~-57 ~84 ~-6 ~-57 minecraft:grass_block
 fill ~85 ~-6 ~-58 ~91 ~-6 ~-58 minecraft:grass_block
 fill ~86 ~-6 ~-60 ~86 ~-6 ~-60 minecraft:grass_block
 fill ~86 ~-6 ~-59 ~90 ~-6 ~-59 minecraft:grass_block
-fill ~88 ~-6 ~-57 ~88 ~-6 ~-57 minecraft:grass_block
+fill ~88 ~-6 ~-57 ~92 ~-6 ~-57 minecraft:grass_block
 fill ~90 ~-6 ~-60 ~91 ~-6 ~-60 minecraft:grass_block
-fill ~91 ~-6 ~-57 ~92 ~-6 ~-57 minecraft:grass_block
 fill ~92 ~-6 ~-61 ~92 ~-6 ~-61 minecraft:grass_block
 fill ~92 ~-6 ~-59 ~92 ~-6 ~-59 minecraft:grass_block
 fill ~93 ~-6 ~-60 ~93 ~-6 ~-60 minecraft:grass_block

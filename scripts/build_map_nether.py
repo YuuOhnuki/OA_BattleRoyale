@@ -145,10 +145,8 @@ def fence_pass():
             put(x,y,z,FENCE+st)
 chests=[];riches=[];ores=[]
 CHEST=lambda f:f'minecraft:chest[facing={f},type=single,waterlogged=false]'
-for (cx,cz) in [(-6,-6),(6,-6),(-6,6),(6,6),(0,-6),(0,6)]:
+for (cx,cz) in [(-6,-6),(6,-6),(-6,6),(6,6)]:   # 1.9.120: 中央の宝物庫のチェストは4つ（上位）のみ
     put(cx,YG+2,cz,CHEST('south' if cz<=0 else 'north')); riches.append((cx,YG+2,cz))
-for (cx,cz) in [(-17,-17),(17,-17),(-17,17),(17,17),(0,-17),(0,17),(-17,0),(17,0),(0,0)]:
-    put(cx,YG+2,cz,CHEST('south' if cz<=0 else 'north')); chests.append((cx,YG+2,cz))
 # --- 1.9.111: 大要塞（約61×61＝マップ幅の約1/5）。小屋・植生・鉱石・開始地点はここを避ける ---
 # 高さは外壁4（胸壁5）・隅の塔5まで。階段・屋根なし。溶岩なし。チェスト 通常8＋上位2 を内部に置く。
 FX,FZ,FH=-72,0,30
@@ -514,7 +512,7 @@ def thin(lst,keep):
     drop=rng3.choice(len(cand),size=len(lst)-keep,replace=False)
     for i in drop:
         x,y,z=cand[int(i)]; put(x,y,z,'minecraft:air'); lst.remove(cand[int(i)])
-thin(chests,67); thin(riches,12)
+thin(chests,58); thin(riches,10)
 # --- 到達性の検算（歩いて行けるか） ---
 from collections import deque
 SOLID=lambda b: b not in ('minecraft:air','minecraft:lava') and 'roots' not in b and 'lantern' not in b
@@ -547,7 +545,7 @@ print("reach",len(seen),"max_r",round(maxr,1),"bad spawn/chest/ore",len(bad_sp),
 print("bad_ch",bad_ch,"bad_sp",bad_sp)
 assert not bad_sp and not bad_ch and not bad_or and maxr<123
 # --- 検算 ---
-assert len(chests)==67 and len(riches)==12 and len(ores)==108
+assert len(chests)==58 and len(riches)==10 and len(ores)==108
 assert not (g[:,:,-1]!=0).any() or True
 # 保存
 np.savez_compressed(f"{ROOT}/source/map_nether_target.npz",grid=g,palette=np.array(pal))

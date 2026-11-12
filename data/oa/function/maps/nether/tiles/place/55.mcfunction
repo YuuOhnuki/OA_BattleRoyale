@@ -836,7 +836,6 @@ fill ~22 ~-10 ~16 ~22 ~-10 ~17 minecraft:polished_blackstone_bricks
 fill ~22 ~-6 ~16 ~22 ~-6 ~17 minecraft:polished_blackstone_bricks
 setblock ~36 ~-10 ~17 minecraft:basalt
 fill ~34 ~-10 ~17 ~35 ~-10 ~17 minecraft:blackstone
-setblock ~17 ~-10 ~17 minecraft:chest[facing=north,type=single,waterlogged=false]
 setblock ~34 ~-10 ~18 minecraft:soul_soil
 fill ~37 ~-10 ~18 ~37 ~-9 ~18 minecraft:blackstone
 fill ~35 ~-10 ~18 ~35 ~-9 ~18 minecraft:blackstone

@@ -856,7 +856,6 @@ fill ~98 ~-15 ~66 ~103 ~-15 ~66 minecraft:air
 fill ~99 ~-15 ~54 ~99 ~-15 ~54 minecraft:air
 fill ~99 ~-15 ~65 ~103 ~-15 ~65 minecraft:air
 fill ~100 ~-15 ~64 ~101 ~-15 ~64 minecraft:air
-fill ~72 ~-15 ~45 ~72 ~-15 ~45 minecraft:grass_block
 fill ~96 ~-15 ~52 ~96 ~-15 ~52 minecraft:grass_block
 fill ~97 ~-15 ~50 ~97 ~-15 ~50 minecraft:grass_block
 fill ~97 ~-15 ~53 ~97 ~-15 ~53 minecraft:grass_block
@@ -879,7 +878,6 @@ fill ~95 ~-15 ~67 ~96 ~-15 ~67 minecraft:sand
 fill ~95 ~-15 ~71 ~103 ~-15 ~71 minecraft:sand
 fill ~97 ~-15 ~66 ~97 ~-15 ~66 minecraft:sand
 fill ~98 ~-15 ~65 ~98 ~-15 ~65 minecraft:sand
-fill ~72 ~-14 ~45 ~72 ~-14 ~45 minecraft:air
 fill ~87 ~-14 ~70 ~103 ~-14 ~71 minecraft:air
 fill ~89 ~-14 ~69 ~89 ~-14 ~69 minecraft:air
 fill ~91 ~-14 ~69 ~103 ~-14 ~69 minecraft:air
@@ -895,9 +893,7 @@ fill ~98 ~-14 ~65 ~103 ~-14 ~65 minecraft:air
 fill ~99 ~-14 ~55 ~99 ~-14 ~55 minecraft:air
 fill ~100 ~-14 ~62 ~101 ~-14 ~62 minecraft:air
 fill ~100 ~-14 ~63 ~103 ~-14 ~64 minecraft:air
-fill ~72 ~-14 ~44 ~73 ~-14 ~44 minecraft:grass_block
-fill ~72 ~-14 ~46 ~73 ~-14 ~46 minecraft:grass_block
-fill ~73 ~-14 ~45 ~73 ~-14 ~45 minecraft:grass_block
+fill ~72 ~-14 ~44 ~73 ~-14 ~45 minecraft:grass_block
 fill ~95 ~-14 ~52 ~95 ~-14 ~52 minecraft:grass_block
 fill ~95 ~-14 ~53 ~96 ~-14 ~53 minecraft:grass_block
 fill ~96 ~-14 ~50 ~96 ~-14 ~51 minecraft:grass_block
@@ -924,7 +920,7 @@ fill ~95 ~-14 ~66 ~96 ~-14 ~66 minecraft:sand
 fill ~97 ~-14 ~65 ~97 ~-14 ~65 minecraft:sand
 fill ~99 ~-14 ~64 ~99 ~-14 ~64 minecraft:short_grass
 fill ~100 ~-14 ~53 ~100 ~-14 ~53 minecraft:short_grass
-fill ~72 ~-13 ~44 ~73 ~-13 ~46 minecraft:air
+fill ~72 ~-13 ~44 ~73 ~-13 ~45 minecraft:air
 fill ~75 ~-13 ~71 ~76 ~-13 ~71 minecraft:air
 fill ~86 ~-13 ~70 ~103 ~-13 ~71 minecraft:air
 fill ~87 ~-13 ~69 ~103 ~-13 ~69 minecraft:air
@@ -946,8 +942,9 @@ fill ~100 ~-13 ~61 ~101 ~-13 ~61 minecraft:air
 fill ~100 ~-13 ~63 ~103 ~-13 ~63 minecraft:air
 fill ~101 ~-13 ~52 ~101 ~-13 ~52 minecraft:air
 fill ~72 ~-13 ~47 ~73 ~-13 ~47 minecraft:grass_block
+fill ~72 ~-13 ~46 ~74 ~-13 ~46 minecraft:grass_block
 fill ~72 ~-13 ~43 ~75 ~-13 ~43 minecraft:grass_block
-fill ~74 ~-13 ~44 ~74 ~-13 ~46 minecraft:grass_block
+fill ~74 ~-13 ~44 ~74 ~-13 ~45 minecraft:grass_block
 fill ~74 ~-13 ~71 ~74 ~-13 ~71 minecraft:grass_block
 fill ~75 ~-13 ~70 ~76 ~-13 ~70 minecraft:grass_block
 fill ~93 ~-13 ~53 ~94 ~-13 ~53 minecraft:grass_block

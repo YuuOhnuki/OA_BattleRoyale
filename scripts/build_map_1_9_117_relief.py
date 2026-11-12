@@ -45,6 +45,7 @@ def main(root, dry=False):
     root = Path(root)
     old = B.replay(root)
     top, tname, elig = build(old)
+    X_, Z_ = np.meshgrid(np.arange(B.X0, B.X0 + B.W), np.arange(B.Z0, B.Z0 + B.W)); R = np.hypot(X_, Z_)
     # 非対象列からの距離（4近傍）
     dist = np.where(elig, 999, 0)
     for _ in range(400):
@@ -57,7 +58,8 @@ def main(root, dry=False):
     n1 = B.value_noise(SEED, 90.0)
     v = (n1 - 0.5) * 14.0
     hf = np.where(v >= 0, v, v * 0.7)
-    h = np.rint(np.clip(hf, -2, UP_MAX)).astype(int)
+    damp = np.clip((R - 60) / 50.0, 0, 1)          # 1.9.120: 中央付近の草原は平坦に（R<=60で0、R>=110で全開）
+    h = np.rint(np.clip(hf, -2, UP_MAX) * damp).astype(int)
     # 2) 建物まわり：建物の周囲2マスは平ら、そこから外側へ2マスごとに1段下がり（最大-3）、さらに外で戻る＝建物が小高い所に建つ
     nat_like = {'grass_block', 'dirt', 'coarse_dirt', 'podzol', 'stone', 'gravel', 'snow_block', 'andesite', 'sand', 'dirt_path',
                 'oak_leaves', 'spruce_leaves', 'birch_leaves', 'water', 'bedrock', 'deepslate', 'cobblestone', 'mossy_cobblestone'}
@@ -72,6 +74,7 @@ def main(root, dry=False):
     for d in range(3, 16):
         prof[ds == d] = -min(3, (d - 1) // 2, (16 - d) // 2 + 1) if d <= 14 else 0
     prof[ds >= 15] = 0
+    prof = np.rint(prof * np.clip((R - 60) / 60.0, 0.34, 1)).astype(int)   # 中央付近は建物まわりの段差も最大-1
     h = np.clip(h + prof, -4, UP_MAX)
     print('structure columns', int(struct.sum()))
     h = np.minimum(h, -1 - top); h = np.maximum(h, -16 - top)

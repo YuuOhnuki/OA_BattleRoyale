@@ -187,24 +187,15 @@ fill ~97 ~-19 ~92 ~103 ~-19 ~92 minecraft:gravel
 fill ~101 ~-19 ~98 ~101 ~-19 ~98 minecraft:gravel
 fill ~103 ~-19 ~101 ~103 ~-19 ~103 minecraft:gravel
 # 1.9.117 relief map update patches
-fill ~73 ~-16 ~77 ~74 ~-16 ~77 minecraft:sand
-fill ~74 ~-16 ~76 ~74 ~-16 ~76 minecraft:sand
-fill ~75 ~-16 ~73 ~75 ~-16 ~73 minecraft:sand
 fill ~88 ~-16 ~72 ~90 ~-16 ~72 minecraft:sand
-fill ~73 ~-15 ~77 ~74 ~-15 ~77 minecraft:air
-fill ~74 ~-15 ~76 ~74 ~-15 ~76 minecraft:air
-fill ~75 ~-15 ~73 ~75 ~-15 ~73 minecraft:air
 fill ~88 ~-15 ~72 ~90 ~-15 ~72 minecraft:air
-fill ~72 ~-15 ~77 ~72 ~-15 ~77 minecraft:sand
 fill ~72 ~-15 ~79 ~74 ~-15 ~79 minecraft:sand
 fill ~72 ~-15 ~78 ~77 ~-15 ~78 minecraft:sand
-fill ~73 ~-15 ~76 ~73 ~-15 ~76 minecraft:sand
-fill ~74 ~-15 ~73 ~74 ~-15 ~73 minecraft:sand
+fill ~72 ~-15 ~77 ~78 ~-15 ~77 minecraft:sand
+fill ~73 ~-15 ~76 ~76 ~-15 ~76 minecraft:sand
 fill ~74 ~-15 ~74 ~76 ~-15 ~75 minecraft:sand
+fill ~74 ~-15 ~73 ~77 ~-15 ~73 minecraft:sand
 fill ~75 ~-15 ~72 ~76 ~-15 ~72 minecraft:sand
-fill ~75 ~-15 ~76 ~76 ~-15 ~76 minecraft:sand
-fill ~75 ~-15 ~77 ~78 ~-15 ~77 minecraft:sand
-fill ~76 ~-15 ~73 ~77 ~-15 ~73 minecraft:sand
 fill ~86 ~-15 ~75 ~86 ~-15 ~75 minecraft:sand
 fill ~86 ~-15 ~72 ~87 ~-15 ~72 minecraft:sand
 fill ~87 ~-15 ~74 ~90 ~-15 ~74 minecraft:sand

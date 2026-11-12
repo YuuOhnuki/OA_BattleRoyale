@@ -1223,7 +1223,6 @@ fill ~22 ~-7 ~-18 ~22 ~-6 ~-18 minecraft:cracked_polished_blackstone_bricks
 setblock ~22 ~-10 ~-17 minecraft:polished_blackstone
 setblock ~22 ~-6 ~-17 minecraft:polished_blackstone
 setblock ~39 ~-10 ~-17 minecraft:polished_blackstone
-setblock ~17 ~-10 ~-17 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~12 ~-10 ~-16 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 fill ~13 ~-10 ~-16 ~15 ~-10 ~-16 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~16 ~-10 ~-16 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
@@ -1264,7 +1263,6 @@ fill ~9 ~-6 ~-4 ~9 ~-5 ~-4 minecraft:cracked_polished_blackstone_bricks
 fill ~9 ~-10 ~-3 ~9 ~-10 ~-2 minecraft:polished_blackstone_bricks
 fill ~9 ~-8 ~-3 ~9 ~-8 ~-2 minecraft:polished_blackstone_bricks
 fill ~9 ~-6 ~-3 ~9 ~-6 ~-2 minecraft:polished_blackstone_bricks
-setblock ~17 ~-10 ~0 minecraft:chest[facing=south,type=single,waterlogged=false]
 fill ~9 ~-10 ~2 ~9 ~-8 ~2 minecraft:cracked_polished_blackstone_bricks
 fill ~9 ~-6 ~2 ~9 ~-5 ~2 minecraft:cracked_polished_blackstone_bricks
 fill ~9 ~-10 ~3 ~9 ~-10 ~4 minecraft:polished_blackstone_bricks
