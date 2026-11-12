@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.123 時点）
+# 引き継ぎメモ（1.9.124 時点）
 
 ## 現状
+- 1.9.124：ロビーのチーム羊毛は lobby/build.mcfunction の「TEAM n」の行（地図手前 z=23/29）。選択判定は br/team/select の足元ブロック。旧位置の羊毛は消えないので、反映はロビー更新（oa.admin 14）で再構築する。
 - 1.9.123：実績は scripts/gen_ach_1_9_123.py の表から advancement/ach・ach/list・count_ach・revoke_all を生成。新実績は表に足して再実行し、付与箇所（ach/give呼び出し）を実装する。練習場は ach/give 先頭のガードで無効。
 - 1.9.122：block_display の block_state は 26.3 では文字列（"minecraft:barrel[facing=up,open=false]"）で書く。{Name:..,Properties:..} はエラーになる（br/supply/launch、tayayuyu/bomb_spawn を修正）。
 - 1.9.121：湧き許可は data/oa/tags/block/ground_spawn_surface.json と spawn_clear.json、loot/random_ground→ground_try（4回試行）。天候は defs の weather と br/weather/gate（#wx）。nbt の文字列表示は interpret:true。ロビーボードの更新時計 #bclock は board/tick が #perf=0 の1秒1回しか呼ばれないので閾値は5。練習場の本は practice/book、dispatch の oa.lobby 201〜207。
@@ -16,7 +17,7 @@
 - 1.9.111：ネザーに建築物・障害物を追加（scripts/build_map_nether.py の rng2 ブロック）、版数のTAB表示と /trigger oa.ver、load_done メッセージ。version.mcfunction は先頭に oa.vtab 作成、末尾に storage と表示形式（版数を含む行）。
 - 1.9.110：map/internal の root 直指定 data modify（select_load、load_saved、args_from_def）をキー単位のコピーに修正。
 - 1.9.109：複数マップ基盤（map/internal/defs、select、create_nether）、ネザー会場（scripts/build_map_nether.py が maps/nether を生成）、固定参照の展開（scripts/multimap_expand.py）。検証・変更履歴は docs/changelog.md。
-- 【最新】データパック 1.9.123 ＋ リソースパック 1.9.36（ネザー用ロビー地図パネル）
+- 【最新】データパック 1.9.124 ＋ リソースパック 1.9.36（ネザー用ロビー地図パネル）
 - データパック 1.9.108（`OA_BattleRoyale_v1.9.108.zip`）＋リソースパック 1.9.35（ロビー地図を再描画）。
 - 1.9.99：遺跡の塔4基（scripts/build_map_1_9_99_towers.py）、実績20種を永続化、前回結果・実績一覧の trigger。`UPDATE_1_9_99_JA.md` 参照。
 - 1.9.102：ロビー装飾（scripts/gen_lobby_decor_1_9_102.py）、洞窟入口・帆船（scripts/build_map_1_9_102_decor.py）、花火・補給・練習場モブ。リソースパックの地図画像は resourcepack/source/build_lobby_map_1_9_34.py で再生成。
