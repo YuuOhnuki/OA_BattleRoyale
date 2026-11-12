@@ -421,6 +421,7 @@ setblock ~-53 ~-11 ~80 minecraft:basalt
 setblock ~-44 ~-11 ~80 minecraft:nether_quartz_ore
 setblock ~-51 ~-11 ~80 minecraft:basalt
 fill ~-55 ~-11 ~80 ~-54 ~-11 ~80 minecraft:blackstone
+setblock ~-35 ~-11 ~80 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~-43 ~-11 ~80 minecraft:crimson_roots
 fill ~-52 ~-11 ~80 ~-52 ~-11 ~81 minecraft:blackstone
 setblock ~-53 ~-11 ~81 minecraft:smooth_basalt
@@ -429,6 +430,7 @@ setblock ~-35 ~-11 ~82 minecraft:gilded_blackstone
 setblock ~-53 ~-11 ~83 minecraft:crimson_roots
 setblock ~-50 ~-11 ~83 minecraft:crimson_roots
 fill ~-43 ~-11 ~83 ~-43 ~-11 ~84 minecraft:crimson_roots
+setblock ~-35 ~-11 ~84 minecraft:chest[facing=north,type=single,waterlogged=false]
 fill ~-28 ~-11 ~84 ~-28 ~-11 ~85 minecraft:crimson_roots
 setblock ~-26 ~-11 ~85 minecraft:nether_quartz_ore
 fill ~-38 ~-11 ~85 ~-38 ~-10 ~85 minecraft:nether_bricks
@@ -449,6 +451,7 @@ setblock ~-36 ~-11 ~88 minecraft:red_nether_bricks
 setblock ~-55 ~-11 ~89 minecraft:cracked_nether_bricks
 setblock ~-40 ~-11 ~89 minecraft:crimson_roots
 fill ~-54 ~-11 ~89 ~-53 ~-11 ~89 minecraft:nether_bricks
+setblock ~-54 ~-11 ~91 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~-50 ~-11 ~91 minecraft:crimson_roots
 setblock ~-35 ~-11 ~92 minecraft:crimson_roots
 fill ~-29 ~-11 ~92 ~-29 ~-8 ~92 minecraft:crimson_stem

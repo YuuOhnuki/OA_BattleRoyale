@@ -396,6 +396,7 @@ setblock ~-56 ~-9 ~-80 minecraft:polished_blackstone
 setblock ~-42 ~-11 ~-80 minecraft:cracked_polished_blackstone_bricks
 setblock ~-41 ~-11 ~-80 minecraft:nether_bricks
 fill ~-43 ~-11 ~-80 ~-43 ~-11 ~-79 minecraft:cracked_nether_bricks
+setblock ~-41 ~-11 ~-78 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~-47 ~-11 ~-77 minecraft:warped_roots
 fill ~-34 ~-11 ~-77 ~-34 ~-8 ~-77 minecraft:warped_stem
 fill ~-39 ~-11 ~-80 ~-39 ~-11 ~-76 minecraft:nether_bricks
@@ -423,6 +424,7 @@ setblock ~-28 ~-11 ~-69 minecraft:cracked_nether_bricks
 setblock ~-56 ~-11 ~-69 minecraft:smooth_basalt
 fill ~-31 ~-11 ~-72 ~-31 ~-11 ~-68 minecraft:nether_bricks
 setblock ~-47 ~-11 ~-68 minecraft:nether_gold_ore
+setblock ~-25 ~-11 ~-68 minecraft:chest[facing=south,type=single,waterlogged=false]
 fill ~-50 ~-11 ~-68 ~-50 ~-11 ~-67 minecraft:polished_blackstone_bricks
 setblock ~-47 ~-11 ~-66 minecraft:warped_roots
 setblock ~-25 ~-11 ~-66 minecraft:gilded_blackstone
@@ -435,6 +437,7 @@ setblock ~-46 ~-11 ~-65 minecraft:warped_roots
 setblock ~-50 ~-11 ~-65 minecraft:polished_blackstone_bricks
 fill ~-39 ~-11 ~-65 ~-38 ~-11 ~-65 minecraft:polished_blackstone_bricks
 fill ~-38 ~-11 ~-64 ~-38 ~-9 ~-64 minecraft:polished_blackstone_bricks
+setblock ~-25 ~-11 ~-64 minecraft:chest[facing=north,type=single,waterlogged=false]
 fill ~-42 ~-11 ~-64 ~-42 ~-10 ~-64 minecraft:cracked_polished_blackstone_bricks
 setblock ~-47 ~-11 ~-63 minecraft:warped_roots
 fill ~-38 ~-11 ~-63 ~-38 ~-9 ~-63 minecraft:cracked_polished_blackstone_bricks

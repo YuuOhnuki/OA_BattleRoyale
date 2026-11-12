@@ -299,8 +299,11 @@ def bastion(x,z):
     for (a,c) in ((-3,-3),(3,-3),(-3,3),(3,3)):
         for y in range(YG+1,YG+4): put(x+a,y,z+c,mat(x+a,y,z+c,b))
     put(x,YG+1,z,GB)
+    put(x,YG+1,z+2,CHEST('north')); riches.append((x,YG+1,z+2))   # 1.9.113: 砦に上位1＋通常1
+    put(x,YG+1,z-2,CHEST('south')); chests.append((x,YG+1,z-2))
 def tower(x,z):
     b=int(BIO[x+OFF,z+OFF]); door=int(rng2.integers(0,4))
+    put(x,YG+1,z,CHEST('south')); chests.append((x,YG+1,z))   # 1.9.113: 見張り塔に通常1
     for a in range(-2,3):
         for c in range(-2,3):
             put(x+a,YG,z+c,PB)
@@ -473,7 +476,7 @@ print("reach",len(seen),"max_r",round(maxr,1),"bad spawn/chest/ore",len(bad_sp),
 print("bad_ch",bad_ch,"bad_sp",bad_sp)
 assert not bad_sp and not bad_ch and not bad_or and maxr<123
 # --- 検算 ---
-assert len(chests)==67 and len(riches)==8 and len(ores)==108
+assert len(chests)==89 and len(riches)==16 and len(ores)==108
 assert not (g[:,:,-1]!=0).any() or True
 # 保存
 np.savez_compressed(f"{ROOT}/source/map_nether_target.npz",grid=g,palette=np.array(pal))

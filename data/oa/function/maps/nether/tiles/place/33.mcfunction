@@ -356,6 +356,7 @@ setblock ~-56 ~-11 ~-46 minecraft:nether_bricks
 setblock ~-42 ~-11 ~-46 minecraft:smooth_basalt
 fill ~-45 ~-11 ~-46 ~-44 ~-11 ~-46 minecraft:smooth_basalt
 setblock ~-53 ~-11 ~-46 minecraft:warped_roots
+setblock ~-35 ~-11 ~-46 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~-54 ~-11 ~-46 minecraft:nether_bricks
 setblock ~-54 ~-9 ~-46 minecraft:nether_bricks
 fill ~-41 ~-11 ~-46 ~-41 ~-9 ~-46 minecraft:basalt

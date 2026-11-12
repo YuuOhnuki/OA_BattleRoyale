@@ -541,6 +541,7 @@ setblock ~38 ~-11 ~61 minecraft:blackstone
 setblock ~38 ~-9 ~61 minecraft:blackstone
 fill ~39 ~-11 ~61 ~39 ~-11 ~62 minecraft:basalt
 fill ~24 ~-11 ~61 ~24 ~-11 ~62 minecraft:basalt
+setblock ~12 ~-11 ~62 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~32 ~-11 ~62 minecraft:nether_quartz_ore
 fill ~25 ~-11 ~62 ~26 ~-11 ~62 minecraft:soul_soil
 fill ~10 ~-11 ~60 ~10 ~-11 ~64 minecraft:polished_blackstone

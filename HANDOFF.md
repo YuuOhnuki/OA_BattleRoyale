@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.112 時点）
+# 引き継ぎメモ（1.9.113 時点）
 
 ## 現状
+- 1.9.113：ネザーのチェストを75→105（砦に上位1＋通常1、見張り塔に通常1）。補給物資のアクションバーは #sup_phase（br.tmp）で3秒ごとに通常バーと交互（supply/second と ui/actionbar）。
 - 1.9.112：ネザーの大要塞（build_map_nether.py の FX,FZ,FH ブロック、チェスト75）、マップ別コマンド（map/do ＋ map/op/*、admin コード 60..71＝地上／80..91＝ネザー）、管理ブックは scripts/gen_admin_book.py で生成。
 - 1.9.111：ネザーに建築物・障害物を追加（scripts/build_map_nether.py の rng2 ブロック）、版数のTAB表示と /trigger oa.ver、load_done メッセージ。version.mcfunction は先頭に oa.vtab 作成、末尾に storage と表示形式（版数を含む行）。
 - 1.9.110：map/internal の root 直指定 data modify（select_load、load_saved、args_from_def）をキー単位のコピーに修正。

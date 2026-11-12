@@ -470,11 +470,12 @@ setblock ~1 ~-11 ~63 minecraft:polished_blackstone_bricks
 setblock ~-24 ~-11 ~63 minecraft:crimson_roots
 setblock ~2 ~-11 ~63 minecraft:cracked_polished_blackstone_bricks
 fill ~3 ~-11 ~63 ~3 ~-11 ~64 minecraft:nether_bricks
+setblock ~1 ~-11 ~65 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock ~-14 ~-11 ~65 minecraft:polished_blackstone_bricks
+setblock ~-14 ~-9 ~65 minecraft:polished_blackstone_bricks
 setblock ~-13 ~-11 ~65 minecraft:polished_blackstone
 setblock ~-13 ~-9 ~65 minecraft:polished_blackstone
 fill ~-17 ~-11 ~65 ~-16 ~-11 ~65 minecraft:polished_blackstone_bricks
-setblock ~-14 ~-11 ~65 minecraft:polished_blackstone_bricks
-setblock ~-14 ~-9 ~65 minecraft:polished_blackstone_bricks
 fill ~-17 ~-11 ~66 ~-17 ~-9 ~66 minecraft:cracked_polished_blackstone_bricks
 fill ~-13 ~-11 ~66 ~-13 ~-10 ~66 minecraft:polished_blackstone_bricks
 fill ~-1 ~-11 ~63 ~-1 ~-11 ~67 minecraft:polished_blackstone_bricks

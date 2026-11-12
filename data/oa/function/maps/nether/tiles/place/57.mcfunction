@@ -498,6 +498,7 @@ fill ~88 ~-11 ~35 ~88 ~-11 ~36 minecraft:blackstone
 setblock ~91 ~-11 ~36 minecraft:soul_soil
 setblock ~90 ~-11 ~36 minecraft:basalt
 setblock ~89 ~-11 ~36 minecraft:soul_soil
+setblock ~100 ~-11 ~36 minecraft:chest[facing=south,type=single,waterlogged=false]
 fill ~92 ~-11 ~36 ~93 ~-11 ~36 minecraft:basalt
 fill ~88 ~-11 ~37 ~89 ~-11 ~37 minecraft:basalt
 setblock ~103 ~-11 ~37 minecraft:nether_quartz_ore

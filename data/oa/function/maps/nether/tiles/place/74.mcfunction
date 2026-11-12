@@ -404,9 +404,12 @@ setblock ~-2 ~-11 ~78 minecraft:polished_blackstone_bricks
 fill ~-8 ~-11 ~78 ~-8 ~-10 ~78 minecraft:nether_bricks
 fill ~1 ~-11 ~75 ~1 ~-11 ~79 minecraft:nether_bricks
 fill ~-11 ~-11 ~75 ~-11 ~-11 ~79 minecraft:red_nether_bricks
+setblock ~-5 ~-11 ~79 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~-5 ~-11 ~81 minecraft:gilded_blackstone
 setblock ~-21 ~-11 ~81 minecraft:red_nether_bricks
 fill ~-24 ~-11 ~81 ~-23 ~-11 ~81 minecraft:nether_bricks
+setblock ~-22 ~-11 ~83 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock ~-5 ~-11 ~83 minecraft:chest[facing=north,type=single,waterlogged=false]
 fill ~-24 ~-11 ~82 ~-24 ~-11 ~84 minecraft:nether_bricks
 fill ~-19 ~-11 ~83 ~-19 ~-11 ~84 minecraft:crimson_roots
 fill ~-8 ~-11 ~84 ~-8 ~-10 ~84 minecraft:nether_bricks

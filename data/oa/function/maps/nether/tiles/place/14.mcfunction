@@ -423,6 +423,7 @@ setblock ~-6 ~-11 ~-104 minecraft:nether_bricks
 setblock ~-4 ~-11 ~-104 minecraft:nether_bricks
 setblock ~-4 ~-9 ~-104 minecraft:nether_bricks
 fill ~-7 ~-11 ~-104 ~-7 ~-11 ~-103 minecraft:cracked_polished_blackstone_bricks
+setblock ~-5 ~-11 ~-102 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~-15 ~-11 ~-101 minecraft:polished_blackstone_bricks
 fill ~-3 ~-11 ~-104 ~-3 ~-11 ~-100 minecraft:cracked_nether_bricks
 fill ~-7 ~-11 ~-101 ~-7 ~-11 ~-100 minecraft:cracked_polished_blackstone_bricks
