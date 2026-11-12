@@ -256,6 +256,7 @@ try {
 } catch {
     Log ('ERROR: ' + $_.Exception.Message)
 } finally {
+    $global:LASTEXITCODE = 0   # robocopy の終了コード(1=コピー成功)を CI の失敗扱いにしない
     if ($lock) { $lock.Close() }
     $t = Join-Path $Root 'tmp'
     if (Test-Path $t) { Remove-Item $t -Recurse -Force -ErrorAction SilentlyContinue }

@@ -28,3 +28,4 @@ jobs:
             if (-not $s -or -not $s.pendingSha) { break }
             Start-Sleep -Seconds 60
           }
+          exit 0
