@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.121 時点）
+# 引き継ぎメモ（1.9.122 時点）
 
 ## 現状
+- 1.9.122：block_display の block_state は 26.3 では文字列（"minecraft:barrel[facing=up,open=false]"）で書く。{Name:..,Properties:..} はエラーになる（br/supply/launch、tayayuyu/bomb_spawn を修正）。
 - 1.9.121：湧き許可は data/oa/tags/block/ground_spawn_surface.json と spawn_clear.json、loot/random_ground→ground_try（4回試行）。天候は defs の weather と br/weather/gate（#wx）。nbt の文字列表示は interpret:true。ロビーボードの更新時計 #bclock は board/tick が #perf=0 の1秒1回しか呼ばれないので閾値は5。練習場の本は practice/book、dispatch の oa.lobby 201〜207。
 - 1.9.120：ネザー宝物庫は上位4つのみ、thin(chests,58)/thin(riches,10)。地上の起伏は R 60以内なし（damp）。再適用は git checkout 7704f35 -- data/oa/function/map/internal/tiles のあと build_map_1_9_117_relief.py。
 - 1.9.119：補給3回（loot/tick）、補給案内30秒（supply/second の br.sup=..30）、ネザーのチェスト79（build_map_nether.py の thin()）、起伏は build_map_1_9_117_relief.py（replay版を git checkout 7704f35 -- tiles で戻してから適用）と nether relief() をなだらか＋建物ノールに、終盤演出を控えめに、ロビーボードは board_at で原点ずれを検知（board/check,move,clear）。
@@ -14,7 +15,7 @@
 - 1.9.111：ネザーに建築物・障害物を追加（scripts/build_map_nether.py の rng2 ブロック）、版数のTAB表示と /trigger oa.ver、load_done メッセージ。version.mcfunction は先頭に oa.vtab 作成、末尾に storage と表示形式（版数を含む行）。
 - 1.9.110：map/internal の root 直指定 data modify（select_load、load_saved、args_from_def）をキー単位のコピーに修正。
 - 1.9.109：複数マップ基盤（map/internal/defs、select、create_nether）、ネザー会場（scripts/build_map_nether.py が maps/nether を生成）、固定参照の展開（scripts/multimap_expand.py）。検証・変更履歴は docs/changelog.md。
-- 【最新】データパック 1.9.121 ＋ リソースパック 1.9.36（ネザー用ロビー地図パネル）
+- 【最新】データパック 1.9.122 ＋ リソースパック 1.9.36（ネザー用ロビー地図パネル）
 - データパック 1.9.108（`OA_BattleRoyale_v1.9.108.zip`）＋リソースパック 1.9.35（ロビー地図を再描画）。
 - 1.9.99：遺跡の塔4基（scripts/build_map_1_9_99_towers.py）、実績20種を永続化、前回結果・実績一覧の trigger。`UPDATE_1_9_99_JA.md` 参照。
 - 1.9.102：ロビー装飾（scripts/gen_lobby_decor_1_9_102.py）、洞窟入口・帆船（scripts/build_map_1_9_102_decor.py）、花火・補給・練習場モブ。リソースパックの地図画像は resourcepack/source/build_lobby_map_1_9_34.py で再生成。

@@ -1,5 +1,5 @@
 {
- "version": "1.9.121",
+ "version": "1.9.122",
  "checks": "static: JSON, function references, nether model (lava containment, reachability, y<=0), no runtime test",
  "runtime": "not tested in Minecraft 26.3"
 }
