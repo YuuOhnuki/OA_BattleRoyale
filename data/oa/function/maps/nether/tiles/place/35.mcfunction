@@ -632,32 +632,32 @@ setblock ~27 ~-12 ~-25 minecraft:smooth_basalt
 fill ~31 ~-11 ~-49 ~31 ~-5 ~-49 minecraft:basalt
 fill ~10 ~-11 ~-48 ~10 ~-8 ~-48 minecraft:basalt
 setblock ~39 ~-11 ~-46 minecraft:nether_gold_ore
-setblock ~13 ~-11 ~-41 minecraft:cracked_polished_blackstone_bricks
-setblock ~13 ~-9 ~-41 minecraft:cracked_polished_blackstone_bricks
+setblock ~13 ~-11 ~-41 minecraft:polished_blackstone
+setblock ~13 ~-9 ~-41 minecraft:polished_blackstone
+fill ~14 ~-11 ~-41 ~14 ~-9 ~-41 minecraft:cracked_polished_blackstone_bricks
 fill ~15 ~-11 ~-41 ~16 ~-11 ~-41 minecraft:polished_blackstone_bricks
 fill ~27 ~-11 ~-41 ~27 ~-4 ~-41 minecraft:basalt
 setblock ~12 ~-11 ~-41 minecraft:polished_blackstone_bricks
 setblock ~12 ~-9 ~-41 minecraft:polished_blackstone_bricks
-fill ~14 ~-11 ~-41 ~14 ~-9 ~-41 minecraft:blackstone_bricks
 fill ~16 ~-11 ~-40 ~16 ~-9 ~-40 minecraft:polished_blackstone_bricks
-fill ~12 ~-11 ~-40 ~12 ~-9 ~-40 minecraft:blackstone_bricks
+fill ~12 ~-11 ~-40 ~12 ~-9 ~-40 minecraft:cracked_polished_blackstone_bricks
+fill ~16 ~-11 ~-39 ~16 ~-9 ~-39 minecraft:cracked_polished_blackstone_bricks
 setblock ~14 ~-11 ~-39 minecraft:chest[facing=south,type=single,waterlogged=false]
-fill ~16 ~-11 ~-39 ~16 ~-9 ~-39 minecraft:blackstone_bricks
 fill ~12 ~-11 ~-39 ~12 ~-11 ~-38 minecraft:polished_blackstone_bricks
-setblock ~16 ~-11 ~-38 minecraft:cracked_polished_blackstone_bricks
+setblock ~16 ~-11 ~-38 minecraft:polished_blackstone
 setblock ~16 ~-11 ~-37 minecraft:polished_blackstone_bricks
 setblock ~16 ~-9 ~-37 minecraft:polished_blackstone_bricks
 fill ~13 ~-11 ~-37 ~13 ~-9 ~-37 minecraft:polished_blackstone_bricks
-fill ~15 ~-11 ~-37 ~15 ~-10 ~-37 minecraft:blackstone_bricks
-fill ~12 ~-11 ~-37 ~12 ~-9 ~-37 minecraft:blackstone_bricks
+fill ~12 ~-11 ~-37 ~12 ~-9 ~-37 minecraft:cracked_polished_blackstone_bricks
+fill ~15 ~-11 ~-37 ~15 ~-10 ~-37 minecraft:cracked_polished_blackstone_bricks
 fill ~38 ~-11 ~-33 ~38 ~-7 ~-33 minecraft:basalt
 setblock ~15 ~-11 ~-31 minecraft:nether_gold_ore
 setblock ~39 ~-11 ~-28 minecraft:nether_gold_ore
 fill ~35 ~-11 ~-26 ~35 ~-9 ~-26 minecraft:basalt
 fill ~12 ~-10 ~-41 ~13 ~-10 ~-41 minecraft:polished_blackstone_bricks
+setblock ~16 ~-10 ~-41 minecraft:polished_blackstone
 fill ~15 ~-10 ~-41 ~15 ~-9 ~-41 minecraft:polished_blackstone_bricks
-setblock ~16 ~-10 ~-41 minecraft:cracked_polished_blackstone_bricks
-setblock ~12 ~-10 ~-39 minecraft:cracked_polished_blackstone_bricks
+setblock ~12 ~-10 ~-39 minecraft:polished_blackstone
 fill ~12 ~-10 ~-38 ~12 ~-9 ~-38 minecraft:polished_blackstone_bricks
 fill ~16 ~-10 ~-38 ~16 ~-10 ~-37 minecraft:polished_blackstone_bricks
 setblock ~35 ~-8 ~-26 minecraft:polished_basalt

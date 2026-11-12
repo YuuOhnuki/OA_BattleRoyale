@@ -4,7 +4,6 @@ data remove storage oa:br center
 data remove storage oa:br border_restore
 data remove storage oa:spawn_points points
 data remove storage oa:spawn_points dim
-data remove storage oa_map2:args
 data modify storage oa_map2:args set value {tile:0}
 data modify storage oa_map2:args merge from storage oa:maps new
 data remove storage oa_map2:args center_y

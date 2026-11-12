@@ -145,9 +145,9 @@ setblock ~74 ~-13 ~18 minecraft:soul_sand
 setblock ~80 ~-13 ~18 minecraft:soul_sand
 fill ~72 ~-13 ~19 ~103 ~-13 ~39 minecraft:netherrack
 setblock ~101 ~-12 ~8 minecraft:smooth_basalt
-setblock ~88 ~-12 ~8 minecraft:nether_gold_ore
 setblock ~103 ~-12 ~8 minecraft:blackstone
 setblock ~95 ~-12 ~8 minecraft:blackstone
+setblock ~88 ~-12 ~8 minecraft:nether_gold_ore
 fill ~99 ~-12 ~8 ~100 ~-12 ~8 minecraft:basalt
 setblock ~102 ~-12 ~8 minecraft:magma_block
 setblock ~96 ~-12 ~8 minecraft:smooth_basalt
@@ -450,43 +450,43 @@ setblock ~95 ~-12 ~39 minecraft:soul_sand
 fill ~78 ~-12 ~39 ~79 ~-12 ~39 minecraft:soul_soil
 setblock ~77 ~-12 ~39 minecraft:soul_sand
 fill ~103 ~-11 ~11 ~103 ~-9 ~11 minecraft:polished_blackstone_bricks
-fill ~103 ~-11 ~12 ~103 ~-9 ~12 minecraft:blackstone_bricks
+fill ~103 ~-11 ~12 ~103 ~-9 ~12 minecraft:cracked_polished_blackstone_bricks
 fill ~103 ~-11 ~14 ~103 ~-9 ~14 minecraft:polished_blackstone_bricks
-fill ~103 ~-11 ~15 ~103 ~-9 ~15 minecraft:blackstone_bricks
+fill ~103 ~-11 ~15 ~103 ~-9 ~15 minecraft:cracked_polished_blackstone_bricks
 setblock ~87 ~-11 ~16 minecraft:nether_brick_fence[east=false,north=false,south=false,west=false]
 setblock ~98 ~-11 ~21 minecraft:nether_quartz_ore
-fill ~87 ~-11 ~32 ~87 ~-9 ~32 minecraft:blackstone_bricks
+fill ~90 ~-11 ~32 ~90 ~-10 ~32 minecraft:cracked_polished_blackstone_bricks
 fill ~91 ~-11 ~32 ~91 ~-9 ~32 minecraft:polished_blackstone_bricks
+fill ~87 ~-11 ~32 ~87 ~-9 ~32 minecraft:cracked_polished_blackstone_bricks
 fill ~88 ~-11 ~32 ~89 ~-11 ~32 minecraft:polished_blackstone_bricks
 fill ~88 ~-9 ~32 ~89 ~-9 ~32 minecraft:polished_blackstone_bricks
 setblock ~76 ~-11 ~32 minecraft:nether_gold_ore
-fill ~90 ~-11 ~32 ~90 ~-10 ~32 minecraft:blackstone_bricks
-fill ~91 ~-11 ~33 ~91 ~-9 ~33 minecraft:blackstone_bricks
-setblock ~87 ~-11 ~33 minecraft:cracked_polished_blackstone_bricks
-setblock ~87 ~-9 ~33 minecraft:cracked_polished_blackstone_bricks
+fill ~91 ~-11 ~33 ~91 ~-9 ~33 minecraft:cracked_polished_blackstone_bricks
+setblock ~87 ~-11 ~33 minecraft:polished_blackstone
+setblock ~87 ~-9 ~33 minecraft:polished_blackstone
 setblock ~89 ~-11 ~34 minecraft:chest[facing=south,type=single,waterlogged=false]
 fill ~91 ~-11 ~34 ~91 ~-11 ~35 minecraft:polished_blackstone_bricks
 fill ~91 ~-9 ~34 ~91 ~-9 ~35 minecraft:polished_blackstone_bricks
-fill ~87 ~-11 ~35 ~87 ~-9 ~35 minecraft:blackstone_bricks
+fill ~87 ~-11 ~35 ~87 ~-9 ~35 minecraft:cracked_polished_blackstone_bricks
 setblock ~87 ~-11 ~36 minecraft:polished_blackstone_bricks
 setblock ~87 ~-9 ~36 minecraft:polished_blackstone_bricks
-fill ~91 ~-11 ~36 ~91 ~-9 ~36 minecraft:blackstone_bricks
-setblock ~90 ~-11 ~36 minecraft:cracked_polished_blackstone_bricks
-setblock ~90 ~-9 ~36 minecraft:cracked_polished_blackstone_bricks
-fill ~88 ~-11 ~36 ~88 ~-9 ~36 minecraft:blackstone_bricks
+setblock ~90 ~-11 ~36 minecraft:polished_blackstone
+setblock ~90 ~-9 ~36 minecraft:polished_blackstone
+fill ~91 ~-11 ~36 ~91 ~-9 ~36 minecraft:cracked_polished_blackstone_bricks
 setblock ~89 ~-11 ~36 minecraft:polished_blackstone_bricks
 setblock ~89 ~-9 ~36 minecraft:polished_blackstone_bricks
+fill ~88 ~-11 ~36 ~88 ~-9 ~36 minecraft:cracked_polished_blackstone_bricks
 fill ~98 ~-11 ~38 ~98 ~-10 ~38 minecraft:nether_brick_fence[east=false,north=false,south=false,west=false]
 fill ~80 ~-11 ~38 ~80 ~-10 ~38 minecraft:nether_brick_fence[east=false,north=false,south=false,west=false]
 setblock ~87 ~-10 ~16 minecraft:soul_lantern[hanging=false]
-setblock ~89 ~-10 ~32 minecraft:cracked_polished_blackstone_bricks
 setblock ~88 ~-10 ~32 minecraft:polished_blackstone_bricks
+setblock ~89 ~-10 ~32 minecraft:polished_blackstone
 setblock ~87 ~-10 ~33 minecraft:polished_blackstone_bricks
-setblock ~91 ~-10 ~34 minecraft:cracked_polished_blackstone_bricks
+setblock ~91 ~-10 ~34 minecraft:polished_blackstone
 setblock ~91 ~-10 ~35 minecraft:polished_blackstone_bricks
 fill ~89 ~-10 ~36 ~90 ~-10 ~36 minecraft:polished_blackstone_bricks
-setblock ~87 ~-10 ~36 minecraft:cracked_polished_blackstone_bricks
-setblock ~103 ~-9 ~13 minecraft:cracked_polished_blackstone_bricks
+setblock ~87 ~-10 ~36 minecraft:polished_blackstone
+setblock ~103 ~-9 ~13 minecraft:polished_blackstone
 setblock ~87 ~-9 ~34 minecraft:polished_blackstone_bricks
 setblock ~98 ~-9 ~38 minecraft:soul_lantern[hanging=false]
 setblock ~80 ~-9 ~38 minecraft:soul_lantern[hanging=false]

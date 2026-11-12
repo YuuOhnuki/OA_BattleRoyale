@@ -373,16 +373,16 @@ setblock ~109 ~-12 ~7 minecraft:magma_block
 setblock ~114 ~-12 ~7 minecraft:netherrack
 setblock ~120 ~-12 ~7 minecraft:polished_blackstone
 setblock ~120 ~-11 ~-24 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~120 ~-11 ~-23 minecraft:nether_brick_fence[east=true,north=true,south=true,west=false]
 setblock ~121 ~-11 ~-23 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
+setblock ~120 ~-11 ~-23 minecraft:nether_brick_fence[east=true,north=true,south=true,west=false]
 setblock ~120 ~-11 ~-22 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~121 ~-11 ~-22 minecraft:nether_brick_fence[east=false,north=true,south=true,west=true]
 fill ~121 ~-11 ~-21 ~121 ~-11 ~-18 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~122 ~-11 ~-17 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 fill ~121 ~-11 ~-17 ~121 ~-11 ~-16 minecraft:nether_brick_fence[east=true,north=true,south=true,west=false]
 fill ~122 ~-11 ~-16 ~122 ~-11 ~-15 minecraft:nether_brick_fence[east=false,north=true,south=true,west=true]
-setblock ~121 ~-11 ~-15 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 fill ~105 ~-11 ~-15 ~105 ~-8 ~-15 minecraft:basalt
+setblock ~121 ~-11 ~-15 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 fill ~122 ~-11 ~-14 ~122 ~-11 ~-9 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~123 ~-11 ~-8 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 fill ~106 ~-11 ~1 ~106 ~-6 ~1 minecraft:basalt

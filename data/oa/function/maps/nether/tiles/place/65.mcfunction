@@ -439,73 +439,73 @@ fill ~25 ~-12 ~71 ~29 ~-12 ~71 minecraft:polished_blackstone
 setblock ~21 ~-12 ~71 minecraft:basalt
 fill ~10 ~-11 ~42 ~10 ~-10 ~42 minecraft:nether_brick_fence[east=false,north=false,south=false,west=false]
 setblock ~14 ~-11 ~42 minecraft:nether_quartz_ore
-fill ~20 ~-11 ~45 ~20 ~-10 ~45 minecraft:nether_brick_fence[east=false,north=false,south=false,west=false]
 fill ~28 ~-11 ~45 ~28 ~-10 ~45 minecraft:bone_block[axis=y]
-setblock ~35 ~-11 ~47 minecraft:cracked_polished_blackstone_bricks
-setblock ~35 ~-9 ~47 minecraft:cracked_polished_blackstone_bricks
+fill ~20 ~-11 ~45 ~20 ~-10 ~45 minecraft:nether_brick_fence[east=false,north=false,south=false,west=false]
+fill ~39 ~-11 ~47 ~39 ~-9 ~47 minecraft:cracked_polished_blackstone_bricks
+setblock ~35 ~-11 ~47 minecraft:polished_blackstone
+setblock ~35 ~-9 ~47 minecraft:polished_blackstone
 setblock ~38 ~-11 ~47 minecraft:polished_blackstone_bricks
-fill ~39 ~-11 ~47 ~39 ~-9 ~47 minecraft:blackstone_bricks
-fill ~36 ~-11 ~47 ~36 ~-9 ~47 minecraft:blackstone_bricks
+fill ~36 ~-11 ~47 ~36 ~-9 ~47 minecraft:cracked_polished_blackstone_bricks
 setblock ~35 ~-11 ~48 minecraft:polished_blackstone_bricks
 setblock ~35 ~-9 ~48 minecraft:polished_blackstone_bricks
 fill ~39 ~-11 ~48 ~39 ~-11 ~49 minecraft:polished_blackstone_bricks
 fill ~39 ~-9 ~48 ~39 ~-9 ~49 minecraft:polished_blackstone_bricks
-fill ~35 ~-11 ~49 ~35 ~-9 ~49 minecraft:blackstone_bricks
+fill ~35 ~-11 ~49 ~35 ~-9 ~49 minecraft:cracked_polished_blackstone_bricks
 setblock ~37 ~-11 ~49 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~35 ~-11 ~50 minecraft:polished_blackstone_bricks
 setblock ~35 ~-9 ~50 minecraft:polished_blackstone_bricks
-fill ~39 ~-11 ~50 ~39 ~-9 ~50 minecraft:blackstone_bricks
-setblock ~39 ~-11 ~51 minecraft:cracked_polished_blackstone_bricks
-setblock ~39 ~-9 ~51 minecraft:cracked_polished_blackstone_bricks
+fill ~39 ~-11 ~50 ~39 ~-9 ~50 minecraft:cracked_polished_blackstone_bricks
+setblock ~39 ~-11 ~51 minecraft:polished_blackstone
+setblock ~39 ~-9 ~51 minecraft:polished_blackstone
+fill ~37 ~-11 ~51 ~37 ~-9 ~51 minecraft:cracked_polished_blackstone_bricks
 fill ~35 ~-11 ~51 ~36 ~-11 ~51 minecraft:polished_blackstone_bricks
 fill ~35 ~-9 ~51 ~36 ~-9 ~51 minecraft:polished_blackstone_bricks
 setblock ~38 ~-11 ~51 minecraft:polished_blackstone_bricks
 setblock ~38 ~-9 ~51 minecraft:polished_blackstone_bricks
-fill ~37 ~-11 ~51 ~37 ~-9 ~51 minecraft:blackstone_bricks
 fill ~12 ~-11 ~55 ~12 ~-9 ~55 minecraft:polished_blackstone_bricks
-fill ~11 ~-11 ~55 ~11 ~-9 ~55 minecraft:blackstone_bricks
+fill ~11 ~-11 ~55 ~11 ~-9 ~55 minecraft:cracked_polished_blackstone_bricks
 fill ~9 ~-11 ~55 ~9 ~-10 ~55 minecraft:polished_blackstone_bricks
-fill ~8 ~-11 ~55 ~8 ~-9 ~55 minecraft:blackstone_bricks
-setblock ~8 ~-11 ~56 minecraft:cracked_polished_blackstone_bricks
-fill ~12 ~-11 ~56 ~12 ~-10 ~56 minecraft:blackstone_bricks
+fill ~8 ~-11 ~55 ~8 ~-9 ~55 minecraft:cracked_polished_blackstone_bricks
+setblock ~8 ~-11 ~56 minecraft:polished_blackstone
+fill ~12 ~-11 ~56 ~12 ~-10 ~56 minecraft:cracked_polished_blackstone_bricks
 setblock ~8 ~-11 ~57 minecraft:polished_blackstone_bricks
 setblock ~8 ~-9 ~57 minecraft:polished_blackstone_bricks
 setblock ~10 ~-11 ~57 minecraft:chest[facing=south,type=single,waterlogged=false]
 fill ~12 ~-11 ~57 ~12 ~-11 ~58 minecraft:polished_blackstone_bricks
 fill ~29 ~-11 ~58 ~29 ~-9 ~58 minecraft:bone_block[axis=y]
-fill ~8 ~-11 ~58 ~8 ~-9 ~58 minecraft:blackstone_bricks
-setblock ~11 ~-11 ~59 minecraft:cracked_polished_blackstone_bricks
-setblock ~11 ~-9 ~59 minecraft:cracked_polished_blackstone_bricks
-fill ~9 ~-11 ~59 ~9 ~-9 ~59 minecraft:blackstone_bricks
+fill ~8 ~-11 ~58 ~8 ~-9 ~58 minecraft:cracked_polished_blackstone_bricks
+fill ~12 ~-11 ~59 ~12 ~-10 ~59 minecraft:cracked_polished_blackstone_bricks
 setblock ~8 ~-11 ~59 minecraft:polished_blackstone_bricks
 setblock ~8 ~-9 ~59 minecraft:polished_blackstone_bricks
+fill ~9 ~-11 ~59 ~9 ~-9 ~59 minecraft:cracked_polished_blackstone_bricks
 fill ~21 ~-11 ~59 ~21 ~-9 ~59 minecraft:bone_block[axis=y]
+setblock ~11 ~-11 ~59 minecraft:polished_blackstone
+setblock ~11 ~-9 ~59 minecraft:polished_blackstone
 setblock ~10 ~-11 ~59 minecraft:polished_blackstone_bricks
 setblock ~10 ~-9 ~59 minecraft:polished_blackstone_bricks
-fill ~12 ~-11 ~59 ~12 ~-10 ~59 minecraft:blackstone_bricks
 setblock ~28 ~-11 ~71 minecraft:polished_blackstone_bricks
 setblock ~28 ~-9 ~71 minecraft:polished_blackstone_bricks
-setblock ~29 ~-11 ~71 minecraft:cracked_polished_blackstone_bricks
+setblock ~29 ~-11 ~71 minecraft:polished_blackstone
 fill ~25 ~-11 ~71 ~26 ~-11 ~71 minecraft:polished_blackstone_bricks
 fill ~25 ~-9 ~71 ~26 ~-9 ~71 minecraft:polished_blackstone_bricks
-setblock ~38 ~-10 ~47 minecraft:cracked_polished_blackstone_bricks
+setblock ~38 ~-10 ~47 minecraft:polished_blackstone
 fill ~35 ~-10 ~47 ~35 ~-10 ~48 minecraft:polished_blackstone_bricks
-setblock ~39 ~-10 ~48 minecraft:cracked_polished_blackstone_bricks
+setblock ~39 ~-10 ~48 minecraft:polished_blackstone
 setblock ~39 ~-10 ~49 minecraft:polished_blackstone_bricks
-setblock ~35 ~-10 ~50 minecraft:cracked_polished_blackstone_bricks
+setblock ~35 ~-10 ~50 minecraft:polished_blackstone
 setblock ~35 ~-10 ~51 minecraft:polished_blackstone_bricks
-setblock ~36 ~-10 ~51 minecraft:cracked_polished_blackstone_bricks
+setblock ~36 ~-10 ~51 minecraft:polished_blackstone
 fill ~38 ~-10 ~51 ~39 ~-10 ~51 minecraft:polished_blackstone_bricks
 fill ~8 ~-10 ~56 ~8 ~-10 ~57 minecraft:polished_blackstone_bricks
-setblock ~12 ~-10 ~57 minecraft:cracked_polished_blackstone_bricks
+setblock ~12 ~-10 ~57 minecraft:polished_blackstone
 fill ~12 ~-10 ~58 ~12 ~-9 ~58 minecraft:polished_blackstone_bricks
-setblock ~8 ~-10 ~59 minecraft:cracked_polished_blackstone_bricks
+setblock ~8 ~-10 ~59 minecraft:polished_blackstone
 fill ~10 ~-10 ~59 ~11 ~-10 ~59 minecraft:polished_blackstone_bricks
-setblock ~26 ~-10 ~71 minecraft:cracked_polished_blackstone_bricks
+setblock ~26 ~-10 ~71 minecraft:polished_blackstone
 setblock ~25 ~-10 ~71 minecraft:polished_blackstone_bricks
 fill ~28 ~-10 ~71 ~29 ~-10 ~71 minecraft:polished_blackstone_bricks
 setblock ~10 ~-9 ~42 minecraft:soul_lantern[hanging=false]
 setblock ~20 ~-9 ~45 minecraft:soul_lantern[hanging=false]
 fill ~37 ~-9 ~47 ~38 ~-9 ~47 minecraft:polished_blackstone_bricks
 setblock ~10 ~-9 ~55 minecraft:polished_blackstone_bricks
-setblock ~27 ~-9 ~71 minecraft:blackstone_bricks
+setblock ~27 ~-9 ~71 minecraft:cracked_polished_blackstone_bricks

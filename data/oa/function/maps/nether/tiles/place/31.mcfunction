@@ -316,12 +316,12 @@ setblock ~-110 ~-12 ~-25 minecraft:warped_wart_block
 fill ~-90 ~-11 ~-56 ~-90 ~-9 ~-56 minecraft:polished_blackstone_bricks
 setblock ~-109 ~-11 ~-56 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-109 ~-11 ~-55 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+fill ~-90 ~-11 ~-55 ~-90 ~-9 ~-55 minecraft:cracked_polished_blackstone_bricks
 setblock ~-110 ~-11 ~-55 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-fill ~-90 ~-11 ~-55 ~-90 ~-9 ~-55 minecraft:blackstone_bricks
-fill ~-89 ~-11 ~-54 ~-89 ~-9 ~-54 minecraft:blackstone_bricks
+fill ~-89 ~-11 ~-54 ~-89 ~-9 ~-54 minecraft:cracked_polished_blackstone_bricks
 setblock ~-110 ~-11 ~-54 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~-90 ~-11 ~-54 minecraft:cracked_polished_blackstone_bricks
-setblock ~-90 ~-9 ~-54 minecraft:cracked_polished_blackstone_bricks
+setblock ~-90 ~-11 ~-54 minecraft:polished_blackstone
+setblock ~-90 ~-9 ~-54 minecraft:polished_blackstone
 setblock ~-94 ~-11 ~-53 minecraft:warped_roots
 setblock ~-110 ~-11 ~-53 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-99 ~-11 ~-53 minecraft:warped_roots
@@ -336,33 +336,33 @@ setblock ~-100 ~-11 ~-50 minecraft:warped_roots
 setblock ~-113 ~-11 ~-49 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-112 ~-11 ~-49 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 fill ~-113 ~-11 ~-48 ~-113 ~-11 ~-47 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~-113 ~-11 ~-46 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-114 ~-11 ~-46 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 fill ~-96 ~-11 ~-46 ~-96 ~-7 ~-46 minecraft:warped_stem
+setblock ~-113 ~-11 ~-46 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-114 ~-11 ~-45 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~-114 ~-11 ~-44 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-115 ~-11 ~-44 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~-114 ~-11 ~-44 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 fill ~-115 ~-11 ~-43 ~-115 ~-11 ~-42 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-96 ~-11 ~-42 minecraft:warped_roots
-setblock ~-98 ~-11 ~-41 minecraft:warped_roots
 setblock ~-116 ~-11 ~-41 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-115 ~-11 ~-41 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~-98 ~-11 ~-41 minecraft:warped_roots
 fill ~-116 ~-11 ~-40 ~-116 ~-11 ~-39 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~-107 ~-11 ~-39 minecraft:warped_roots
 fill ~-89 ~-11 ~-39 ~-89 ~-8 ~-39 minecraft:warped_stem
 setblock ~-97 ~-11 ~-39 minecraft:nether_quartz_ore
+setblock ~-107 ~-11 ~-39 minecraft:warped_roots
+setblock ~-116 ~-11 ~-38 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-97 ~-11 ~-38 minecraft:warped_roots
 setblock ~-117 ~-11 ~-38 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~-116 ~-11 ~-38 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 fill ~-117 ~-11 ~-37 ~-117 ~-11 ~-36 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-111 ~-11 ~-36 minecraft:warped_roots
-setblock ~-117 ~-11 ~-35 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-118 ~-11 ~-35 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-89 ~-11 ~-35 minecraft:warped_roots
+setblock ~-117 ~-11 ~-35 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-92 ~-11 ~-34 minecraft:warped_roots
 fill ~-118 ~-11 ~-34 ~-118 ~-11 ~-33 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~-113 ~-11 ~-33 minecraft:warped_roots
 setblock ~-93 ~-11 ~-33 minecraft:warped_roots
+setblock ~-113 ~-11 ~-33 minecraft:warped_roots
 fill ~-105 ~-11 ~-33 ~-105 ~-7 ~-33 minecraft:warped_stem
 setblock ~-118 ~-11 ~-32 minecraft:nether_brick_fence[east=false,north=true,south=true,west=true]
 setblock ~-119 ~-11 ~-32 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
@@ -372,19 +372,19 @@ setblock ~-119 ~-11 ~-31 minecraft:nether_brick_fence[east=true,north=true,south
 setblock ~-99 ~-11 ~-31 minecraft:warped_roots
 setblock ~-109 ~-11 ~-30 minecraft:warped_roots
 fill ~-119 ~-11 ~-30 ~-119 ~-11 ~-29 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-fill ~-102 ~-11 ~-28 ~-101 ~-11 ~-28 minecraft:warped_roots
-setblock ~-119 ~-11 ~-28 minecraft:nether_brick_fence[east=false,north=true,south=true,west=true]
 setblock ~-120 ~-11 ~-28 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~-119 ~-11 ~-28 minecraft:nether_brick_fence[east=false,north=true,south=true,west=true]
 setblock ~-108 ~-11 ~-28 minecraft:nether_quartz_ore
+fill ~-102 ~-11 ~-28 ~-101 ~-11 ~-28 minecraft:warped_roots
 setblock ~-119 ~-11 ~-27 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-120 ~-11 ~-27 minecraft:nether_brick_fence[east=true,north=true,south=true,west=false]
 setblock ~-89 ~-11 ~-27 minecraft:nether_quartz_ore
 setblock ~-107 ~-11 ~-26 minecraft:warped_roots
 fill ~-120 ~-11 ~-26 ~-120 ~-11 ~-25 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-fill ~-95 ~-11 ~-25 ~-95 ~-7 ~-25 minecraft:warped_stem
-setblock ~-89 ~-11 ~-25 minecraft:warped_roots
 setblock ~-110 ~-11 ~-25 minecraft:warped_roots
 setblock ~-113 ~-11 ~-25 minecraft:warped_roots
+fill ~-95 ~-11 ~-25 ~-95 ~-7 ~-25 minecraft:warped_stem
+setblock ~-89 ~-11 ~-25 minecraft:warped_roots
 setblock ~-90 ~-10 ~-54 minecraft:polished_blackstone_bricks
 fill ~-90 ~-8 ~-41 ~-89 ~-7 ~-41 minecraft:warped_wart_block
 fill ~-91 ~-8 ~-40 ~-89 ~-8 ~-40 minecraft:warped_wart_block

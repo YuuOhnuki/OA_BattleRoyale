@@ -341,29 +341,29 @@ fill ~-104 ~-12 ~39 ~-100 ~-12 ~39 minecraft:crimson_nylium
 fill ~-112 ~-12 ~39 ~-110 ~-12 ~39 minecraft:crimson_nylium
 setblock ~-97 ~-12 ~39 minecraft:netherrack
 setblock ~-95 ~-11 ~8 minecraft:crimson_roots
-setblock ~-91 ~-11 ~9 minecraft:crimson_roots
-fill ~-107 ~-11 ~9 ~-107 ~-9 ~9 minecraft:blackstone_bricks
+setblock ~-89 ~-11 ~9 minecraft:crimson_roots
+setblock ~-105 ~-11 ~9 minecraft:polished_blackstone
 setblock ~-106 ~-11 ~9 minecraft:polished_blackstone_bricks
 setblock ~-106 ~-9 ~9 minecraft:polished_blackstone_bricks
-fill ~-104 ~-11 ~9 ~-104 ~-9 ~9 minecraft:blackstone_bricks
-setblock ~-105 ~-11 ~9 minecraft:cracked_polished_blackstone_bricks
-setblock ~-89 ~-11 ~9 minecraft:crimson_roots
+setblock ~-91 ~-11 ~9 minecraft:crimson_roots
+fill ~-107 ~-11 ~9 ~-107 ~-9 ~9 minecraft:cracked_polished_blackstone_bricks
+fill ~-104 ~-11 ~9 ~-104 ~-9 ~9 minecraft:cracked_polished_blackstone_bricks
 fill ~-108 ~-11 ~9 ~-108 ~-11 ~10 minecraft:polished_blackstone_bricks
 fill ~-108 ~-9 ~9 ~-108 ~-9 ~10 minecraft:polished_blackstone_bricks
-setblock ~-104 ~-11 ~10 minecraft:cracked_polished_blackstone_bricks
 setblock ~-100 ~-11 ~10 minecraft:crimson_roots
+setblock ~-104 ~-11 ~10 minecraft:polished_blackstone
 setblock ~-106 ~-11 ~11 minecraft:chest[facing=south,type=single,waterlogged=false]
-fill ~-108 ~-11 ~11 ~-108 ~-10 ~11 minecraft:blackstone_bricks
-fill ~-104 ~-11 ~12 ~-104 ~-10 ~12 minecraft:blackstone_bricks
+fill ~-108 ~-11 ~11 ~-108 ~-10 ~11 minecraft:cracked_polished_blackstone_bricks
+fill ~-104 ~-11 ~12 ~-104 ~-10 ~12 minecraft:cracked_polished_blackstone_bricks
 setblock ~-112 ~-11 ~12 minecraft:nether_gold_ore
-setblock ~-108 ~-11 ~12 minecraft:cracked_polished_blackstone_bricks
-setblock ~-108 ~-9 ~12 minecraft:cracked_polished_blackstone_bricks
+setblock ~-108 ~-11 ~12 minecraft:polished_blackstone
+setblock ~-108 ~-9 ~12 minecraft:polished_blackstone
 fill ~-105 ~-11 ~13 ~-104 ~-11 ~13 minecraft:polished_blackstone_bricks
 fill ~-105 ~-9 ~13 ~-104 ~-9 ~13 minecraft:polished_blackstone_bricks
-setblock ~-107 ~-11 ~13 minecraft:cracked_polished_blackstone_bricks
+setblock ~-107 ~-11 ~13 minecraft:polished_blackstone
+fill ~-106 ~-11 ~13 ~-106 ~-9 ~13 minecraft:cracked_polished_blackstone_bricks
 setblock ~-108 ~-11 ~13 minecraft:polished_blackstone_bricks
 setblock ~-108 ~-9 ~13 minecraft:polished_blackstone_bricks
-fill ~-106 ~-11 ~13 ~-106 ~-9 ~13 minecraft:blackstone_bricks
 setblock ~-113 ~-11 ~14 minecraft:crimson_roots
 fill ~-95 ~-11 ~14 ~-95 ~-6 ~14 minecraft:crimson_stem
 setblock ~-115 ~-11 ~18 minecraft:crimson_roots
@@ -371,22 +371,22 @@ fill ~-102 ~-11 ~20 ~-102 ~-6 ~20 minecraft:crimson_stem
 fill ~-111 ~-11 ~21 ~-111 ~-7 ~21 minecraft:crimson_stem
 setblock ~-120 ~-11 ~22 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~-89 ~-11 ~22 minecraft:crimson_roots
-setblock ~-120 ~-11 ~23 minecraft:nether_brick_fence[east=false,north=true,south=true,west=true]
 setblock ~-115 ~-11 ~23 minecraft:crimson_roots
+setblock ~-120 ~-11 ~23 minecraft:nether_brick_fence[east=false,north=true,south=true,west=true]
 setblock ~-102 ~-11 ~24 minecraft:crimson_roots
-setblock ~-110 ~-11 ~25 minecraft:crimson_roots
 setblock ~-97 ~-11 ~25 minecraft:nether_quartz_ore
+setblock ~-110 ~-11 ~25 minecraft:crimson_roots
 setblock ~-100 ~-11 ~25 minecraft:crimson_roots
 fill ~-120 ~-11 ~24 ~-120 ~-11 ~26 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-93 ~-11 ~26 minecraft:crimson_roots
-setblock ~-120 ~-11 ~27 minecraft:nether_brick_fence[east=true,north=true,south=true,west=false]
 setblock ~-119 ~-11 ~27 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
+setblock ~-120 ~-11 ~27 minecraft:nether_brick_fence[east=true,north=true,south=true,west=false]
 setblock ~-99 ~-11 ~27 minecraft:crimson_roots
 setblock ~-103 ~-11 ~27 minecraft:crimson_roots
 setblock ~-119 ~-11 ~28 minecraft:nether_brick_fence[east=false,north=true,south=true,west=true]
 setblock ~-120 ~-11 ~28 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
-setblock ~-105 ~-11 ~29 minecraft:crimson_roots
 setblock ~-92 ~-11 ~29 minecraft:crimson_roots
+setblock ~-105 ~-11 ~29 minecraft:crimson_roots
 fill ~-119 ~-11 ~29 ~-119 ~-11 ~30 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-118 ~-11 ~31 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~-119 ~-11 ~31 minecraft:nether_brick_fence[east=true,north=true,south=true,west=false]
@@ -399,26 +399,26 @@ setblock ~-118 ~-11 ~35 minecraft:nether_brick_fence[east=true,north=true,south=
 fill ~-117 ~-11 ~36 ~-117 ~-11 ~37 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-101 ~-11 ~37 minecraft:crimson_roots
 fill ~-92 ~-11 ~38 ~-92 ~-9 ~38 minecraft:polished_blackstone_bricks
+setblock ~-94 ~-11 ~38 minecraft:polished_blackstone
+fill ~-93 ~-11 ~38 ~-93 ~-10 ~38 minecraft:cracked_polished_blackstone_bricks
+fill ~-96 ~-11 ~38 ~-96 ~-9 ~38 minecraft:cracked_polished_blackstone_bricks
 setblock ~-117 ~-11 ~38 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~-116 ~-11 ~38 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
-setblock ~-94 ~-11 ~38 minecraft:cracked_polished_blackstone_bricks
 setblock ~-95 ~-11 ~38 minecraft:polished_blackstone_bricks
 setblock ~-103 ~-11 ~38 minecraft:nether_quartz_ore
-fill ~-93 ~-11 ~38 ~-93 ~-10 ~38 minecraft:blackstone_bricks
-fill ~-96 ~-11 ~38 ~-96 ~-9 ~38 minecraft:blackstone_bricks
+fill ~-92 ~-11 ~39 ~-92 ~-9 ~39 minecraft:cracked_polished_blackstone_bricks
 setblock ~-96 ~-11 ~39 minecraft:polished_blackstone_bricks
-fill ~-92 ~-11 ~39 ~-92 ~-9 ~39 minecraft:blackstone_bricks
 setblock ~-116 ~-11 ~39 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 fill ~-106 ~-10 ~9 ~-105 ~-10 ~9 minecraft:polished_blackstone_bricks
-setblock ~-108 ~-10 ~9 minecraft:cracked_polished_blackstone_bricks
+setblock ~-108 ~-10 ~9 minecraft:polished_blackstone
 setblock ~-104 ~-10 ~10 minecraft:polished_blackstone_bricks
 setblock ~-108 ~-10 ~10 minecraft:polished_blackstone_bricks
 setblock ~-108 ~-10 ~12 minecraft:polished_blackstone_bricks
 fill ~-108 ~-10 ~13 ~-107 ~-10 ~13 minecraft:polished_blackstone_bricks
-setblock ~-104 ~-10 ~13 minecraft:cracked_polished_blackstone_bricks
 setblock ~-105 ~-10 ~13 minecraft:polished_blackstone_bricks
+setblock ~-104 ~-10 ~13 minecraft:polished_blackstone
 fill ~-95 ~-10 ~38 ~-94 ~-10 ~38 minecraft:polished_blackstone_bricks
-setblock ~-96 ~-10 ~39 minecraft:cracked_polished_blackstone_bricks
+setblock ~-96 ~-10 ~39 minecraft:polished_blackstone
 setblock ~-104 ~-9 ~11 minecraft:polished_blackstone_bricks
 fill ~-89 ~-8 ~26 ~-89 ~-7 ~26 minecraft:nether_wart_block
 setblock ~-90 ~-8 ~27 minecraft:nether_wart_block
@@ -427,16 +427,16 @@ fill ~-90 ~-8 ~28 ~-89 ~-8 ~29 minecraft:nether_wart_block
 fill ~-89 ~-8 ~30 ~-89 ~-7 ~30 minecraft:nether_wart_block
 fill ~-107 ~-8 ~32 ~-105 ~-7 ~32 minecraft:nether_wart_block
 setblock ~-107 ~-8 ~33 minecraft:shroomlight
-setblock ~-108 ~-8 ~33 minecraft:nether_wart_block
 fill ~-106 ~-8 ~33 ~-104 ~-8 ~33 minecraft:nether_wart_block
+setblock ~-108 ~-8 ~33 minecraft:nether_wart_block
 fill ~-108 ~-8 ~34 ~-107 ~-8 ~34 minecraft:nether_wart_block
 fill ~-105 ~-8 ~34 ~-104 ~-8 ~34 minecraft:nether_wart_block
 fill ~-108 ~-8 ~35 ~-104 ~-8 ~35 minecraft:nether_wart_block
 fill ~-107 ~-8 ~36 ~-105 ~-7 ~36 minecraft:nether_wart_block
 fill ~-112 ~-7 ~19 ~-110 ~-6 ~19 minecraft:nether_wart_block
 fill ~-113 ~-7 ~20 ~-109 ~-7 ~20 minecraft:nether_wart_block
-setblock ~-109 ~-7 ~21 minecraft:nether_wart_block
 setblock ~-110 ~-7 ~21 minecraft:shroomlight
+setblock ~-109 ~-7 ~21 minecraft:nether_wart_block
 fill ~-113 ~-7 ~21 ~-112 ~-7 ~22 minecraft:nether_wart_block
 fill ~-110 ~-7 ~22 ~-109 ~-7 ~22 minecraft:nether_wart_block
 setblock ~-111 ~-7 ~22 minecraft:shroomlight
@@ -444,8 +444,8 @@ fill ~-112 ~-7 ~23 ~-110 ~-6 ~23 minecraft:nether_wart_block
 fill ~-90 ~-7 ~27 ~-89 ~-7 ~29 minecraft:nether_wart_block
 fill ~-108 ~-7 ~33 ~-104 ~-7 ~35 minecraft:nether_wart_block
 fill ~-96 ~-6 ~12 ~-94 ~-5 ~12 minecraft:nether_wart_block
-setblock ~-96 ~-6 ~13 minecraft:shroomlight
 setblock ~-97 ~-6 ~13 minecraft:nether_wart_block
+setblock ~-96 ~-6 ~13 minecraft:shroomlight
 fill ~-95 ~-6 ~13 ~-93 ~-6 ~13 minecraft:nether_wart_block
 setblock ~-94 ~-6 ~14 minecraft:shroomlight
 setblock ~-93 ~-6 ~14 minecraft:nether_wart_block

@@ -86,7 +86,7 @@ for xi in range(N):
 for (x,z) in fence_cells: put(x,YG+1,z,FENCE)
 used[R>=118]=True
 # --- 中央の宝物庫 ---
-PB='minecraft:polished_blackstone_bricks'; BB='minecraft:blackstone_bricks'; CB='minecraft:chiseled_polished_blackstone'; GB='minecraft:gilded_blackstone'; CPB='minecraft:cracked_polished_blackstone_bricks'
+PB='minecraft:polished_blackstone_bricks'; BB='minecraft:cracked_polished_blackstone_bricks'; CB='minecraft:chiseled_polished_blackstone'; GB='minecraft:gilded_blackstone'; CPB='minecraft:polished_blackstone'
 def mixw(x,y,z): return [PB,PB,BB,CPB,PB,BB][(x*5+y*3+z*7)%6]
 H=22
 for x in range(-H,H+1):

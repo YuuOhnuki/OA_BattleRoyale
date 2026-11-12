@@ -468,12 +468,12 @@ setblock ~101 ~-12 ~65 minecraft:blackstone
 setblock ~94 ~-12 ~65 minecraft:soul_sand
 fill ~89 ~-12 ~66 ~90 ~-12 ~66 minecraft:soul_soil
 fill ~101 ~-12 ~66 ~103 ~-12 ~66 minecraft:blackstone
+fill ~80 ~-12 ~66 ~80 ~-10 ~66 minecraft:bone_block[axis=y]
 setblock ~100 ~-12 ~66 minecraft:basalt
 fill ~92 ~-12 ~66 ~99 ~-12 ~66 minecraft:soul_soil
 setblock ~88 ~-12 ~66 minecraft:soul_sand
 setblock ~86 ~-12 ~66 minecraft:soul_sand
 setblock ~87 ~-12 ~66 minecraft:soul_soil
-fill ~80 ~-12 ~66 ~80 ~-10 ~66 minecraft:bone_block[axis=y]
 fill ~91 ~-12 ~65 ~91 ~-12 ~67 minecraft:soul_sand
 setblock ~96 ~-12 ~67 minecraft:soul_sand
 setblock ~95 ~-12 ~67 minecraft:soul_soil
@@ -525,11 +525,11 @@ fill ~73 ~-11 ~56 ~73 ~-9 ~56 minecraft:bone_block[axis=y]
 setblock ~83 ~-11 ~56 minecraft:nether_brick_fence[east=false,north=false,south=false,west=false]
 fill ~91 ~-11 ~62 ~91 ~-9 ~62 minecraft:bone_block[axis=y]
 setblock ~103 ~-11 ~66 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~103 ~-11 ~67 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~102 ~-11 ~67 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~103 ~-11 ~67 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~102 ~-11 ~68 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~101 ~-11 ~69 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~102 ~-11 ~69 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~101 ~-11 ~69 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~100 ~-11 ~70 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~101 ~-11 ~70 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~100 ~-11 ~71 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]

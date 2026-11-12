@@ -324,18 +324,18 @@ fill ~-35 ~-12 ~103 ~-30 ~-12 ~103 minecraft:crimson_nylium
 setblock ~-28 ~-12 ~103 minecraft:crimson_nylium
 setblock ~-50 ~-12 ~103 minecraft:nether_wart_block
 setblock ~-36 ~-12 ~103 minecraft:nether_wart_block
-setblock ~-30 ~-11 ~72 minecraft:crimson_roots
 setblock ~-55 ~-11 ~72 minecraft:crimson_roots
-setblock ~-40 ~-11 ~73 minecraft:crimson_roots
-setblock ~-47 ~-11 ~73 minecraft:crimson_roots
+setblock ~-30 ~-11 ~72 minecraft:crimson_roots
 setblock ~-33 ~-11 ~73 minecraft:crimson_roots
+setblock ~-47 ~-11 ~73 minecraft:crimson_roots
+setblock ~-40 ~-11 ~73 minecraft:crimson_roots
 setblock ~-27 ~-11 ~74 minecraft:crimson_roots
 setblock ~-46 ~-11 ~74 minecraft:crimson_roots
-setblock ~-28 ~-11 ~75 minecraft:nether_quartz_ore
 setblock ~-51 ~-11 ~75 minecraft:crimson_roots
 setblock ~-54 ~-11 ~75 minecraft:crimson_roots
-setblock ~-27 ~-11 ~76 minecraft:crimson_roots
+setblock ~-28 ~-11 ~75 minecraft:nether_quartz_ore
 setblock ~-47 ~-11 ~76 minecraft:crimson_roots
+setblock ~-27 ~-11 ~76 minecraft:crimson_roots
 fill ~-42 ~-11 ~77 ~-42 ~-8 ~77 minecraft:crimson_stem
 fill ~-53 ~-11 ~77 ~-52 ~-11 ~77 minecraft:crimson_roots
 setblock ~-49 ~-11 ~78 minecraft:crimson_roots
@@ -350,16 +350,16 @@ fill ~-28 ~-11 ~84 ~-28 ~-11 ~85 minecraft:crimson_roots
 fill ~-50 ~-11 ~87 ~-50 ~-7 ~87 minecraft:crimson_stem
 setblock ~-39 ~-11 ~88 minecraft:polished_blackstone_bricks
 setblock ~-39 ~-9 ~88 minecraft:polished_blackstone_bricks
-setblock ~-38 ~-11 ~88 minecraft:cracked_polished_blackstone_bricks
-setblock ~-38 ~-9 ~88 minecraft:cracked_polished_blackstone_bricks
 fill ~-42 ~-11 ~88 ~-41 ~-11 ~88 minecraft:polished_blackstone_bricks
+setblock ~-38 ~-11 ~88 minecraft:polished_blackstone
+setblock ~-38 ~-9 ~88 minecraft:polished_blackstone
 setblock ~-31 ~-11 ~88 minecraft:nether_gold_ore
 fill ~-38 ~-11 ~89 ~-38 ~-9 ~89 minecraft:polished_blackstone_bricks
-fill ~-42 ~-11 ~89 ~-42 ~-9 ~89 minecraft:blackstone_bricks
+fill ~-42 ~-11 ~89 ~-42 ~-9 ~89 minecraft:cracked_polished_blackstone_bricks
 setblock ~-30 ~-11 ~89 minecraft:crimson_roots
-setblock ~-42 ~-11 ~90 minecraft:cracked_polished_blackstone_bricks
-setblock ~-42 ~-9 ~90 minecraft:cracked_polished_blackstone_bricks
-fill ~-38 ~-11 ~90 ~-38 ~-9 ~90 minecraft:blackstone_bricks
+setblock ~-42 ~-11 ~90 minecraft:polished_blackstone
+setblock ~-42 ~-9 ~90 minecraft:polished_blackstone
+fill ~-38 ~-11 ~90 ~-38 ~-9 ~90 minecraft:cracked_polished_blackstone_bricks
 setblock ~-40 ~-11 ~90 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~-42 ~-11 ~91 minecraft:polished_blackstone_bricks
 setblock ~-42 ~-9 ~91 minecraft:polished_blackstone_bricks
@@ -367,10 +367,10 @@ setblock ~-50 ~-11 ~91 minecraft:crimson_roots
 fill ~-38 ~-11 ~91 ~-38 ~-11 ~92 minecraft:polished_blackstone_bricks
 setblock ~-41 ~-11 ~92 minecraft:polished_blackstone_bricks
 setblock ~-41 ~-9 ~92 minecraft:polished_blackstone_bricks
-setblock ~-40 ~-11 ~92 minecraft:cracked_polished_blackstone_bricks
-setblock ~-40 ~-9 ~92 minecraft:cracked_polished_blackstone_bricks
-fill ~-39 ~-11 ~92 ~-39 ~-9 ~92 minecraft:blackstone_bricks
-fill ~-42 ~-11 ~92 ~-42 ~-9 ~92 minecraft:blackstone_bricks
+fill ~-42 ~-11 ~92 ~-42 ~-9 ~92 minecraft:cracked_polished_blackstone_bricks
+setblock ~-40 ~-11 ~92 minecraft:polished_blackstone
+setblock ~-40 ~-9 ~92 minecraft:polished_blackstone
+fill ~-39 ~-11 ~92 ~-39 ~-9 ~92 minecraft:cracked_polished_blackstone_bricks
 fill ~-25 ~-11 ~94 ~-25 ~-7 ~94 minecraft:crimson_stem
 setblock ~-46 ~-11 ~95 minecraft:crimson_roots
 setblock ~-32 ~-11 ~96 minecraft:crimson_roots
@@ -381,12 +381,12 @@ setblock ~-32 ~-11 ~101 minecraft:crimson_roots
 setblock ~-50 ~-11 ~103 minecraft:crimson_roots
 setblock ~-42 ~-10 ~88 minecraft:polished_blackstone_bricks
 fill ~-39 ~-10 ~88 ~-38 ~-10 ~88 minecraft:polished_blackstone_bricks
-setblock ~-41 ~-10 ~88 minecraft:cracked_polished_blackstone_bricks
+setblock ~-41 ~-10 ~88 minecraft:polished_blackstone
 fill ~-42 ~-10 ~90 ~-42 ~-10 ~91 minecraft:polished_blackstone_bricks
-setblock ~-38 ~-10 ~91 minecraft:cracked_polished_blackstone_bricks
+setblock ~-38 ~-10 ~91 minecraft:polished_blackstone
 fill ~-41 ~-10 ~92 ~-40 ~-10 ~92 minecraft:polished_blackstone_bricks
 setblock ~-38 ~-10 ~92 minecraft:polished_blackstone_bricks
-setblock ~-40 ~-9 ~88 minecraft:blackstone_bricks
+setblock ~-40 ~-9 ~88 minecraft:cracked_polished_blackstone_bricks
 setblock ~-41 ~-9 ~88 minecraft:polished_blackstone_bricks
 fill ~-43 ~-8 ~75 ~-41 ~-7 ~75 minecraft:nether_wart_block
 fill ~-44 ~-8 ~76 ~-40 ~-8 ~76 minecraft:nether_wart_block
@@ -422,12 +422,12 @@ setblock ~-45 ~-7 ~102 minecraft:shroomlight
 fill ~-47 ~-7 ~103 ~-45 ~-6 ~103 minecraft:nether_wart_block
 fill ~-43 ~-6 ~76 ~-41 ~-6 ~78 minecraft:nether_wart_block
 fill ~-34 ~-6 ~78 ~-32 ~-5 ~78 minecraft:nether_wart_block
-setblock ~-32 ~-6 ~79 minecraft:shroomlight
 setblock ~-31 ~-6 ~79 minecraft:nether_wart_block
+setblock ~-32 ~-6 ~79 minecraft:shroomlight
 fill ~-35 ~-6 ~79 ~-33 ~-6 ~79 minecraft:nether_wart_block
 setblock ~-35 ~-6 ~80 minecraft:nether_wart_block
-setblock ~-34 ~-6 ~80 minecraft:shroomlight
 fill ~-32 ~-6 ~80 ~-31 ~-6 ~80 minecraft:nether_wart_block
+setblock ~-34 ~-6 ~80 minecraft:shroomlight
 fill ~-35 ~-6 ~81 ~-31 ~-6 ~81 minecraft:nether_wart_block
 fill ~-34 ~-6 ~82 ~-32 ~-5 ~82 minecraft:nether_wart_block
 fill ~-52 ~-6 ~86 ~-48 ~-6 ~88 minecraft:nether_wart_block
