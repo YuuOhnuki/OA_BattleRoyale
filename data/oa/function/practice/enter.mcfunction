@@ -32,5 +32,6 @@ function oa:itori/progress_reset
 scoreboard players set @s oa.i_points 15
 execute in oa:practice run tp @s 0.5 65 35.5 180 0
 function oa:lobby/guide/book
+function oa:practice/book
 tellraw @s {text:"入口の操作盤で天候・時間・CTを変更。武器札を右クリックで試用。ロビーへ戻るには出口札か案内ブックを使用。",color:"aqua"}
-tellraw @s {text:"練習用：/trigger oa.dps（10秒のダメージ計測）／ /trigger oa.spar（模擬戦のON・OFF）。奥（南側）に射程レーンと高さの的があります。",color:"aqua"}
+tellraw @s {text:"練習用：「練習場メニュー」の本をクリックで、ダメージ計測・模擬戦・昼夜・天候・クールタイムを操作できます（従来の /trigger oa.dps ・ oa.spar も使えます）。奥（南側）に射程レーンと高さの的があります。",color:"aqua"}

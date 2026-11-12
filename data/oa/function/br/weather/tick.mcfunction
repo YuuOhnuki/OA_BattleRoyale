@@ -1,3 +1,4 @@
+execute unless score #wx br.tmp matches 1 run return 0
 scoreboard players operation #weather_mod br.tmp = #time br.time
 scoreboard players set #weather_period br.tmp 3600
 scoreboard players operation #weather_mod br.tmp %= #weather_period br.tmp

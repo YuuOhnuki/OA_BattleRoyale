@@ -13,6 +13,22 @@
     "minecraft:sand",
     "minecraft:red_sand",
     "minecraft:snow_block",
-    "minecraft:packed_ice"
+    "minecraft:packed_ice",
+    "minecraft:andesite",
+    "minecraft:cobblestone",
+    "minecraft:mossy_cobblestone",
+    "minecraft:netherrack",
+    "minecraft:crimson_nylium",
+    "minecraft:warped_nylium",
+    "minecraft:soul_soil",
+    "minecraft:soul_sand",
+    "minecraft:basalt",
+    "minecraft:smooth_basalt",
+    "minecraft:blackstone",
+    "minecraft:polished_blackstone",
+    "minecraft:polished_blackstone_bricks",
+    "minecraft:cracked_polished_blackstone_bricks",
+    "minecraft:chiseled_polished_blackstone",
+    "minecraft:gilded_blackstone"
   ]
 }

@@ -15,5 +15,5 @@ scoreboard players set #state oa.map2 0
 data modify storage oa:maps ctx.key set from storage oa:maps new.key
 function oa:map/internal/load_saved with storage oa:maps ctx
 function oa:br/border/auto
-tellraw @a[tag=br.admin] [{text:"試合用マップを切り替えました：",color:"green"},{nbt:"new.name",storage:"oa:maps"},{text:"（生成済みでなければ /function oa:map/create）",color:"gray"}]
+tellraw @a[tag=br.admin] [{text:"試合用マップを切り替えました：",color:"green"},{nbt:"new.name",storage:"oa:maps",interpret:true},{text:"（生成済みでなければ /function oa:map/create）",color:"gray"}]
 execute if data storage oa:lobby origin{ready:1b} run function oa:lobby/map_panel_update_at with storage oa:lobby origin

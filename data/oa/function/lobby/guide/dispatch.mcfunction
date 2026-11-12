@@ -1,3 +1,11 @@
+execute if entity @s[tag=oa.practice] if score @s oa.lobby matches 201 run return run function oa:practice/dps/start
+execute if entity @s[tag=oa.practice] if score @s oa.lobby matches 202 run return run function oa:practice/spar/toggle
+execute if entity @s[tag=oa.practice] if score @s oa.lobby matches 203 run return run function oa:practice/click/day
+execute if entity @s[tag=oa.practice] if score @s oa.lobby matches 204 run return run function oa:practice/click/night
+execute if entity @s[tag=oa.practice] if score @s oa.lobby matches 205 run return run function oa:practice/click/rain
+execute if entity @s[tag=oa.practice] if score @s oa.lobby matches 206 run return run function oa:practice/click/clear
+execute if entity @s[tag=oa.practice] if score @s oa.lobby matches 207 run return run function oa:practice/click/cooldown
+execute if score @s oa.lobby matches 201..299 run return 0
 execute if score @s oa.lobby matches 8 run return run function oa:practice/enter
 execute if entity @s[tag=oa.practice] if score @s oa.lobby matches 1..2 run return run function oa:practice/leave
 execute if entity @s[tag=oa.practice] if score @s oa.lobby matches 101..110 run return 0

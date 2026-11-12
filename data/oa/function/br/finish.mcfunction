@@ -24,6 +24,7 @@ gamerule minecraft:locator_bar false
 
 function oa:br/day/restore
 function oa:br/weather/restore
+scoreboard players set #bclock oa.tmp 4
 
 execute if score #map oa.mapid matches 0 in oa:br as @e[distance=0..,type=minecraft:armor_stand,tag=jp_vehicle] at @s run function jumppad:land
 execute if score #map oa.mapid matches 1 in oa:br_nether as @e[distance=0..,type=minecraft:armor_stand,tag=jp_vehicle] at @s run function jumppad:land
