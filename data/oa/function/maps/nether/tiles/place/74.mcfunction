@@ -431,7 +431,7 @@ setblock ~-5 ~-11 ~87 minecraft:cracked_nether_bricks
 setblock ~-6 ~-11 ~87 minecraft:red_nether_bricks
 setblock ~-9 ~-11 ~88 minecraft:crimson_roots
 setblock ~-17 ~-11 ~90 minecraft:crimson_roots
-setblock ~-12 ~-11 ~90 minecraft:nether_gold_ore
+setblock ~-12 ~-11 ~90 minecraft:redstone_ore
 setblock ~-23 ~-11 ~90 minecraft:crimson_roots
 fill ~-1 ~-11 ~90 ~-1 ~-7 ~90 minecraft:crimson_stem
 setblock ~-7 ~-11 ~91 minecraft:smooth_basalt
@@ -461,7 +461,7 @@ fill ~-7 ~-11 ~94 ~-6 ~-11 ~94 minecraft:netherrack
 setblock ~-5 ~-11 ~94 minecraft:blackstone
 setblock ~-22 ~-11 ~94 minecraft:crimson_roots
 setblock ~-15 ~-11 ~94 minecraft:smooth_basalt
-setblock ~0 ~-11 ~94 minecraft:nether_quartz_ore
+setblock ~0 ~-11 ~94 minecraft:coal_ore
 fill ~-10 ~-11 ~94 ~-8 ~-11 ~94 minecraft:blackstone
 setblock ~-14 ~-11 ~95 minecraft:smooth_basalt
 fill ~-16 ~-11 ~95 ~-15 ~-11 ~95 minecraft:basalt
@@ -490,7 +490,7 @@ setblock ~-6 ~-9 ~97 minecraft:blackstone
 setblock ~-8 ~-11 ~97 minecraft:netherrack
 setblock ~-10 ~-11 ~97 minecraft:netherrack
 fill ~-16 ~-11 ~98 ~-15 ~-11 ~98 minecraft:basalt
-setblock ~-10 ~-11 ~98 minecraft:nether_quartz_ore
+setblock ~-10 ~-11 ~98 minecraft:coal_ore
 setblock ~-13 ~-11 ~98 minecraft:crimson_roots
 setblock ~-17 ~-11 ~98 minecraft:blackstone
 setblock ~-11 ~-11 ~98 minecraft:crimson_roots

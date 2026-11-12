@@ -306,7 +306,7 @@ setblock ~-114 ~-11 ~44 minecraft:nether_brick_fence[east=false,north=false,sout
 setblock ~-114 ~-11 ~45 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-114 ~-11 ~46 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~-113 ~-11 ~46 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
-setblock ~-92 ~-11 ~47 minecraft:nether_gold_ore
+setblock ~-92 ~-11 ~47 minecraft:redstone_ore
 fill ~-113 ~-11 ~47 ~-113 ~-11 ~48 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-95 ~-11 ~48 minecraft:crimson_roots
 setblock ~-103 ~-11 ~48 minecraft:crimson_roots

@@ -241,7 +241,7 @@ setblock ~54 ~-13 ~92 minecraft:soul_sand
 fill ~40 ~-13 ~92 ~53 ~-13 ~92 minecraft:netherrack
 setblock ~55 ~-13 ~92 minecraft:soul_soil
 fill ~40 ~-13 ~93 ~71 ~-13 ~102 minecraft:netherrack
-setblock ~59 ~-12 ~73 minecraft:nether_gold_ore
+setblock ~59 ~-12 ~73 minecraft:redstone_ore
 fill ~59 ~-12 ~78 ~59 ~-11 ~78 minecraft:bone_block[axis=y]
 setblock ~70 ~-12 ~78 minecraft:nether_brick_fence
 fill ~45 ~-12 ~76 ~49 ~-12 ~80 minecraft:polished_blackstone
@@ -302,7 +302,7 @@ setblock ~65 ~-12 ~91 minecraft:soul_sand
 fill ~45 ~-12 ~91 ~46 ~-12 ~91 minecraft:soul_sand
 setblock ~40 ~-12 ~92 minecraft:soul_soil
 fill ~52 ~-12 ~92 ~53 ~-12 ~92 minecraft:soul_soil
-setblock ~56 ~-12 ~92 minecraft:nether_quartz_ore
+setblock ~56 ~-12 ~92 minecraft:coal_ore
 setblock ~41 ~-12 ~92 minecraft:soul_sand
 fill ~45 ~-12 ~92 ~46 ~-12 ~92 minecraft:soul_soil
 setblock ~42 ~-12 ~92 minecraft:soul_soil

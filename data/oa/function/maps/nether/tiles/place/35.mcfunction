@@ -738,7 +738,7 @@ fill ~13 ~-11 ~-41 ~13 ~-9 ~-41 minecraft:polished_blackstone_bricks
 setblock ~13 ~-7 ~-41 minecraft:polished_blackstone_bricks
 fill ~10 ~-11 ~-41 ~10 ~-9 ~-41 minecraft:polished_blackstone_bricks
 fill ~24 ~-11 ~-39 ~24 ~-9 ~-39 minecraft:basalt
-setblock ~8 ~-11 ~-37 minecraft:nether_gold_ore
+setblock ~8 ~-11 ~-37 minecraft:redstone_ore
 setblock ~38 ~-11 ~-36 minecraft:cracked_nether_bricks
 setblock ~38 ~-9 ~-36 minecraft:cracked_nether_bricks
 fill ~30 ~-11 ~-36 ~30 ~-8 ~-36 minecraft:polished_blackstone_bricks
@@ -778,7 +778,7 @@ setblock ~29 ~-9 ~-30 minecraft:polished_blackstone
 setblock ~35 ~-11 ~-30 minecraft:gilded_blackstone
 fill ~29 ~-11 ~-29 ~29 ~-8 ~-29 minecraft:cracked_polished_blackstone_bricks
 setblock ~35 ~-11 ~-28 minecraft:chest[facing=north,type=single,waterlogged=false]
-setblock ~27 ~-11 ~-28 minecraft:nether_gold_ore
+setblock ~27 ~-11 ~-28 minecraft:redstone_ore
 setblock ~32 ~-11 ~-27 minecraft:polished_blackstone
 setblock ~32 ~-9 ~-27 minecraft:polished_blackstone
 setblock ~38 ~-11 ~-27 minecraft:polished_blackstone

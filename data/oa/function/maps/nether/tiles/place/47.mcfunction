@@ -671,7 +671,7 @@ setblock ~74 ~-11 ~-8 minecraft:blackstone
 setblock ~102 ~-11 ~-8 minecraft:netherrack
 setblock ~87 ~-11 ~-8 minecraft:polished_blackstone_bricks
 fill ~76 ~-11 ~-8 ~76 ~-10 ~-8 minecraft:basalt
-setblock ~101 ~-11 ~-8 minecraft:nether_quartz_ore
+setblock ~101 ~-11 ~-8 minecraft:coal_ore
 fill ~86 ~-11 ~-8 ~86 ~-10 ~-8 minecraft:cracked_polished_blackstone_bricks
 setblock ~96 ~-11 ~-8 minecraft:cracked_nether_bricks
 setblock ~75 ~-11 ~-8 minecraft:netherrack

@@ -357,7 +357,7 @@ setblock ~-35 ~-11 ~37 minecraft:polished_blackstone
 setblock ~-35 ~-9 ~37 minecraft:polished_blackstone
 fill ~-34 ~-11 ~37 ~-34 ~-9 ~37 minecraft:cracked_polished_blackstone_bricks
 setblock ~-25 ~-11 ~38 minecraft:crimson_roots
-setblock ~-43 ~-11 ~39 minecraft:nether_quartz_ore
+setblock ~-43 ~-11 ~39 minecraft:coal_ore
 fill ~-35 ~-10 ~12 ~-35 ~-9 ~12 minecraft:netherrack
 setblock ~-53 ~-10 ~12 minecraft:polished_blackstone_bricks
 setblock ~-34 ~-10 ~12 minecraft:basalt

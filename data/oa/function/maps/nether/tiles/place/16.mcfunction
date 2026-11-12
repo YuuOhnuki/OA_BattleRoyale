@@ -497,13 +497,13 @@ setblock ~69 ~-11 ~-101 minecraft:nether_brick_fence[east=true,north=true,south=
 setblock ~70 ~-11 ~-101 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~71 ~-11 ~-100 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~70 ~-11 ~-100 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
-setblock ~44 ~-11 ~-98 minecraft:nether_quartz_ore
+setblock ~44 ~-11 ~-98 minecraft:coal_ore
 setblock ~46 ~-11 ~-97 minecraft:polished_blackstone
 setblock ~46 ~-9 ~-97 minecraft:polished_blackstone
 fill ~58 ~-11 ~-97 ~58 ~-9 ~-97 minecraft:basalt
 setblock ~46 ~-11 ~-91 minecraft:polished_blackstone
 setblock ~46 ~-9 ~-91 minecraft:polished_blackstone
-setblock ~50 ~-11 ~-91 minecraft:nether_quartz_ore
+setblock ~50 ~-11 ~-91 minecraft:coal_ore
 fill ~63 ~-11 ~-89 ~64 ~-11 ~-89 minecraft:polished_blackstone_bricks
 setblock ~60 ~-11 ~-89 minecraft:polished_blackstone_bricks
 setblock ~61 ~-11 ~-89 minecraft:polished_blackstone

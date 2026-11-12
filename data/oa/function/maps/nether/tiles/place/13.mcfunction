@@ -409,7 +409,7 @@ setblock ~-52 ~-11 ~-98 minecraft:warped_roots
 setblock ~-40 ~-11 ~-97 minecraft:warped_roots
 setblock ~-32 ~-11 ~-97 minecraft:warped_roots
 setblock ~-28 ~-11 ~-97 minecraft:warped_roots
-setblock ~-52 ~-11 ~-97 minecraft:nether_gold_ore
+setblock ~-52 ~-11 ~-97 minecraft:redstone_ore
 fill ~-47 ~-11 ~-96 ~-47 ~-8 ~-96 minecraft:warped_stem
 setblock ~-33 ~-11 ~-96 minecraft:warped_roots
 setblock ~-27 ~-11 ~-95 minecraft:warped_roots
@@ -419,7 +419,7 @@ setblock ~-25 ~-11 ~-94 minecraft:warped_roots
 setblock ~-39 ~-11 ~-94 minecraft:warped_roots
 fill ~-52 ~-11 ~-93 ~-51 ~-11 ~-93 minecraft:warped_roots
 setblock ~-33 ~-11 ~-93 minecraft:warped_roots
-setblock ~-32 ~-11 ~-93 minecraft:nether_quartz_ore
+setblock ~-32 ~-11 ~-93 minecraft:coal_ore
 setblock ~-31 ~-11 ~-92 minecraft:warped_roots
 setblock ~-49 ~-11 ~-91 minecraft:warped_roots
 fill ~-35 ~-11 ~-96 ~-35 ~-11 ~-90 minecraft:polished_blackstone_bricks

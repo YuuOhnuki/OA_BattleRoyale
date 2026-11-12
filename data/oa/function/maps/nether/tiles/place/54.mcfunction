@@ -835,7 +835,7 @@ fill ~-13 ~-11 ~33 ~-12 ~-11 ~33 minecraft:polished_blackstone_bricks
 setblock ~-19 ~-11 ~34 minecraft:crimson_roots
 fill ~-9 ~-11 ~34 ~-9 ~-9 ~34 minecraft:polished_blackstone_bricks
 fill ~-13 ~-11 ~34 ~-13 ~-9 ~34 minecraft:cracked_polished_blackstone_bricks
-setblock ~-24 ~-11 ~34 minecraft:nether_gold_ore
+setblock ~-24 ~-11 ~34 minecraft:redstone_ore
 setblock ~-13 ~-11 ~35 minecraft:polished_blackstone
 setblock ~-13 ~-9 ~35 minecraft:polished_blackstone
 setblock ~-11 ~-11 ~35 minecraft:chest[facing=south,type=single,waterlogged=false]

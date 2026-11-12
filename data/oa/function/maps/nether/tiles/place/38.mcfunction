@@ -321,5 +321,5 @@ setblock ~119 ~-11 ~-28 minecraft:nether_brick_fence[east=true,north=true,south=
 setblock ~120 ~-11 ~-27 minecraft:nether_brick_fence[east=false,north=true,south=true,west=true]
 setblock ~119 ~-11 ~-27 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 fill ~120 ~-11 ~-26 ~120 ~-11 ~-25 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~106 ~-11 ~-25 minecraft:nether_gold_ore
+setblock ~106 ~-11 ~-25 minecraft:redstone_ore
 setblock ~104 ~-7 ~-34 minecraft:polished_basalt

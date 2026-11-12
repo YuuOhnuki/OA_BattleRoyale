@@ -276,7 +276,7 @@ setblock ~-78 ~-8 ~30 minecraft:nether_bricks
 setblock ~-77 ~-11 ~30 minecraft:cracked_nether_bricks
 setblock ~-58 ~-11 ~33 minecraft:crimson_roots
 setblock ~-72 ~-11 ~33 minecraft:crimson_roots
-setblock ~-77 ~-11 ~35 minecraft:nether_gold_ore
+setblock ~-77 ~-11 ~35 minecraft:redstone_ore
 setblock ~-80 ~-11 ~37 minecraft:crimson_roots
 setblock ~-65 ~-11 ~37 minecraft:crimson_roots
 fill ~-82 ~-10 ~8 ~-82 ~-10 ~10 minecraft:nether_bricks

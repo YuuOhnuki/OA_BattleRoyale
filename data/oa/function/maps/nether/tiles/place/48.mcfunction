@@ -419,7 +419,7 @@ setblock ~108 ~-11 ~-4 minecraft:blackstone
 fill ~107 ~-11 ~-4 ~107 ~-11 ~-3 minecraft:netherrack
 fill ~105 ~-11 ~-3 ~106 ~-11 ~-3 minecraft:blackstone
 setblock ~104 ~-11 ~-3 minecraft:smooth_basalt
-setblock ~109 ~-11 ~-1 minecraft:nether_gold_ore
+setblock ~109 ~-11 ~-1 minecraft:redstone_ore
 fill ~114 ~-11 ~0 ~114 ~-8 ~0 minecraft:basalt
 fill ~104 ~-11 ~6 ~105 ~-11 ~6 minecraft:polished_blackstone_bricks
 fill ~104 ~-9 ~6 ~105 ~-9 ~6 minecraft:polished_blackstone_bricks

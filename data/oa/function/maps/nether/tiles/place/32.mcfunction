@@ -308,7 +308,7 @@ setblock ~-86 ~-11 ~-54 minecraft:chest[facing=north,type=single,waterlogged=fal
 fill ~-66 ~-11 ~-54 ~-66 ~-11 ~-53 minecraft:nether_bricks
 setblock ~-83 ~-11 ~-53 minecraft:cracked_nether_bricks
 fill ~-64 ~-11 ~-53 ~-64 ~-11 ~-52 minecraft:warped_roots
-setblock ~-63 ~-11 ~-52 minecraft:nether_gold_ore
+setblock ~-63 ~-11 ~-52 minecraft:redstone_ore
 fill ~-80 ~-11 ~-56 ~-80 ~-11 ~-50 minecraft:polished_blackstone_bricks
 fill ~-68 ~-11 ~-50 ~-68 ~-6 ~-50 minecraft:warped_stem
 setblock ~-82 ~-11 ~-50 minecraft:cracked_polished_blackstone_bricks

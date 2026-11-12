@@ -146,7 +146,7 @@ setblock ~42 ~-12 ~15 minecraft:soul_soil
 fill ~40 ~-12 ~15 ~40 ~-12 ~16 minecraft:soul_soil
 fill ~41 ~-12 ~15 ~41 ~-12 ~16 minecraft:soul_sand
 fill ~43 ~-12 ~16 ~44 ~-12 ~16 minecraft:soul_soil
-setblock ~71 ~-12 ~16 minecraft:nether_quartz_ore
+setblock ~71 ~-12 ~16 minecraft:coal_ore
 fill ~49 ~-12 ~16 ~52 ~-12 ~16 minecraft:soul_soil
 setblock ~48 ~-12 ~16 minecraft:soul_sand
 fill ~59 ~-12 ~16 ~61 ~-12 ~16 minecraft:soul_soil
@@ -492,7 +492,7 @@ fill ~46 ~-11 ~15 ~46 ~-9 ~15 minecraft:cracked_polished_blackstone_bricks
 setblock ~44 ~-11 ~15 minecraft:polished_blackstone_bricks
 setblock ~44 ~-9 ~15 minecraft:polished_blackstone_bricks
 fill ~43 ~-11 ~15 ~43 ~-10 ~15 minecraft:cracked_polished_blackstone_bricks
-setblock ~56 ~-11 ~18 minecraft:nether_gold_ore
+setblock ~56 ~-11 ~18 minecraft:redstone_ore
 fill ~64 ~-11 ~21 ~64 ~-9 ~21 minecraft:cracked_polished_blackstone_bricks
 fill ~67 ~-11 ~21 ~67 ~-9 ~21 minecraft:cracked_polished_blackstone_bricks
 fill ~65 ~-11 ~21 ~66 ~-11 ~21 minecraft:polished_blackstone_bricks
@@ -551,7 +551,7 @@ fill ~63 ~-11 ~37 ~66 ~-11 ~37 minecraft:blackstone
 setblock ~61 ~-11 ~37 minecraft:blackstone
 setblock ~63 ~-11 ~38 minecraft:blackstone
 fill ~64 ~-11 ~38 ~65 ~-11 ~38 minecraft:soul_soil
-setblock ~47 ~-11 ~39 minecraft:nether_quartz_ore
+setblock ~47 ~-11 ~39 minecraft:coal_ore
 setblock ~44 ~-10 ~11 minecraft:polished_blackstone
 fill ~46 ~-10 ~11 ~47 ~-10 ~11 minecraft:polished_blackstone_bricks
 setblock ~43 ~-10 ~11 minecraft:polished_blackstone_bricks

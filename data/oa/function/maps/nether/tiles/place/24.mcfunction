@@ -477,7 +477,7 @@ fill ~-24 ~-12 ~-57 ~-20 ~-12 ~-57 minecraft:warped_nylium
 setblock ~-17 ~-12 ~-57 minecraft:warped_nylium
 setblock ~5 ~-12 ~-57 minecraft:netherrack
 setblock ~-2 ~-12 ~-57 minecraft:basalt
-setblock ~1 ~-11 ~-87 minecraft:nether_quartz_ore
+setblock ~1 ~-11 ~-87 minecraft:coal_ore
 fill ~-24 ~-11 ~-85 ~-24 ~-10 ~-85 minecraft:cracked_polished_blackstone_bricks
 fill ~-23 ~-11 ~-85 ~-22 ~-11 ~-85 minecraft:polished_blackstone_bricks
 fill ~6 ~-11 ~-84 ~6 ~-8 ~-84 minecraft:polished_blackstone_bricks
@@ -516,7 +516,7 @@ fill ~-2 ~-11 ~-72 ~-2 ~-10 ~-72 minecraft:cracked_polished_blackstone_bricks
 setblock ~-12 ~-11 ~-71 minecraft:polished_blackstone_bricks
 setblock ~-12 ~-9 ~-71 minecraft:polished_blackstone_bricks
 fill ~-2 ~-11 ~-71 ~-2 ~-10 ~-71 minecraft:polished_blackstone_bricks
-setblock ~6 ~-11 ~-71 minecraft:nether_quartz_ore
+setblock ~6 ~-11 ~-71 minecraft:coal_ore
 fill ~-8 ~-11 ~-71 ~-8 ~-11 ~-70 minecraft:polished_blackstone_bricks
 fill ~-8 ~-9 ~-71 ~-8 ~-9 ~-70 minecraft:polished_blackstone_bricks
 fill ~-12 ~-11 ~-70 ~-12 ~-9 ~-70 minecraft:cracked_polished_blackstone_bricks

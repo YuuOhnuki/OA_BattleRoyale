@@ -219,7 +219,7 @@ setblock ~-101 ~-11 ~-69 minecraft:nether_brick_fence[east=false,north=true,sout
 setblock ~-102 ~-11 ~-69 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-102 ~-11 ~-68 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-103 ~-11 ~-67 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~-89 ~-11 ~-67 minecraft:nether_gold_ore
+setblock ~-89 ~-11 ~-67 minecraft:redstone_ore
 setblock ~-102 ~-11 ~-67 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-103 ~-11 ~-66 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-104 ~-11 ~-66 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]

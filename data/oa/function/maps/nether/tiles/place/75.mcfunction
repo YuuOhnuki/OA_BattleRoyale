@@ -143,7 +143,7 @@ setblock ~13 ~-12 ~79 minecraft:soul_soil
 fill ~22 ~-12 ~79 ~23 ~-12 ~79 minecraft:soul_soil
 fill ~9 ~-12 ~79 ~11 ~-12 ~79 minecraft:soul_soil
 setblock ~16 ~-12 ~79 minecraft:soul_soil
-setblock ~29 ~-12 ~79 minecraft:nether_quartz_ore
+setblock ~29 ~-12 ~79 minecraft:coal_ore
 fill ~21 ~-12 ~79 ~21 ~-12 ~80 minecraft:soul_sand
 setblock ~18 ~-12 ~80 minecraft:basalt
 fill ~8 ~-12 ~80 ~11 ~-12 ~80 minecraft:soul_soil
@@ -453,7 +453,7 @@ setblock ~8 ~-9 ~77 minecraft:polished_blackstone_bricks
 setblock ~10 ~-11 ~77 minecraft:polished_blackstone_bricks
 setblock ~10 ~-9 ~77 minecraft:polished_blackstone_bricks
 fill ~9 ~-11 ~77 ~9 ~-9 ~77 minecraft:cracked_polished_blackstone_bricks
-setblock ~19 ~-11 ~78 minecraft:nether_gold_ore
+setblock ~19 ~-11 ~78 minecraft:redstone_ore
 setblock ~15 ~-11 ~83 minecraft:soul_soil
 fill ~13 ~-11 ~83 ~13 ~-11 ~84 minecraft:basalt
 fill ~14 ~-11 ~83 ~14 ~-11 ~84 minecraft:blackstone
@@ -471,12 +471,12 @@ fill ~15 ~-11 ~87 ~16 ~-11 ~87 minecraft:basalt
 fill ~11 ~-11 ~88 ~12 ~-11 ~88 minecraft:soul_soil
 fill ~15 ~-11 ~88 ~15 ~-10 ~88 minecraft:blackstone
 fill ~13 ~-11 ~88 ~14 ~-11 ~88 minecraft:basalt
-setblock ~34 ~-11 ~88 minecraft:nether_quartz_ore
+setblock ~34 ~-11 ~88 minecraft:coal_ore
 setblock ~14 ~-11 ~89 minecraft:basalt
 setblock ~13 ~-11 ~89 minecraft:soul_soil
 setblock ~12 ~-11 ~89 minecraft:blackstone
 setblock ~12 ~-9 ~89 minecraft:blackstone
-setblock ~26 ~-11 ~90 minecraft:nether_gold_ore
+setblock ~26 ~-11 ~90 minecraft:redstone_ore
 setblock ~21 ~-11 ~93 minecraft:polished_blackstone_bricks
 setblock ~21 ~-9 ~93 minecraft:polished_blackstone_bricks
 setblock ~22 ~-11 ~93 minecraft:cracked_polished_blackstone_bricks
@@ -528,7 +528,7 @@ setblock ~9 ~-11 ~99 minecraft:polished_blackstone
 setblock ~9 ~-9 ~99 minecraft:polished_blackstone
 fill ~11 ~-11 ~99 ~12 ~-11 ~99 minecraft:polished_blackstone_bricks
 fill ~10 ~-11 ~99 ~10 ~-10 ~99 minecraft:cracked_polished_blackstone_bricks
-setblock ~16 ~-11 ~103 minecraft:nether_quartz_ore
+setblock ~16 ~-11 ~103 minecraft:coal_ore
 setblock ~10 ~-10 ~73 minecraft:polished_blackstone
 fill ~25 ~-10 ~73 ~25 ~-10 ~74 minecraft:polished_blackstone_bricks
 setblock ~11 ~-10 ~74 minecraft:polished_blackstone

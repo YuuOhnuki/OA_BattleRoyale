@@ -160,8 +160,8 @@ fill ~80 ~-12 ~10 ~80 ~-10 ~10 minecraft:bone_block[axis=y]
 setblock ~100 ~-12 ~10 minecraft:netherrack
 setblock ~102 ~-12 ~10 minecraft:magma_block
 setblock ~103 ~-12 ~11 minecraft:blackstone
-setblock ~85 ~-12 ~12 minecraft:nether_gold_ore
-setblock ~78 ~-12 ~16 minecraft:nether_quartz_ore
+setblock ~85 ~-12 ~12 minecraft:redstone_ore
+setblock ~78 ~-12 ~16 minecraft:coal_ore
 setblock ~89 ~-12 ~18 minecraft:basalt
 fill ~90 ~-12 ~18 ~91 ~-12 ~18 minecraft:soul_sand
 fill ~92 ~-12 ~18 ~93 ~-12 ~18 minecraft:soul_soil
@@ -452,7 +452,7 @@ setblock ~77 ~-12 ~39 minecraft:soul_sand
 fill ~103 ~-11 ~9 ~103 ~-9 ~9 minecraft:cracked_polished_blackstone_bricks
 setblock ~103 ~-11 ~10 minecraft:polished_blackstone_bricks
 setblock ~103 ~-9 ~10 minecraft:polished_blackstone_bricks
-setblock ~89 ~-11 ~18 minecraft:nether_gold_ore
+setblock ~89 ~-11 ~18 minecraft:redstone_ore
 setblock ~93 ~-11 ~22 minecraft:polished_blackstone_bricks
 fill ~92 ~-11 ~22 ~92 ~-9 ~22 minecraft:cracked_polished_blackstone_bricks
 fill ~95 ~-11 ~22 ~95 ~-10 ~22 minecraft:cracked_polished_blackstone_bricks
@@ -475,9 +475,9 @@ setblock ~91 ~-9 ~26 minecraft:polished_blackstone_bricks
 fill ~94 ~-11 ~26 ~95 ~-11 ~26 minecraft:polished_blackstone_bricks
 fill ~94 ~-9 ~26 ~95 ~-9 ~26 minecraft:polished_blackstone_bricks
 fill ~93 ~-11 ~26 ~93 ~-10 ~26 minecraft:cracked_polished_blackstone_bricks
-setblock ~102 ~-11 ~27 minecraft:nether_gold_ore
+setblock ~102 ~-11 ~27 minecraft:redstone_ore
 setblock ~80 ~-11 ~29 minecraft:polished_blackstone
-setblock ~86 ~-11 ~32 minecraft:nether_gold_ore
+setblock ~86 ~-11 ~32 minecraft:redstone_ore
 setblock ~90 ~-11 ~33 minecraft:basalt
 fill ~91 ~-11 ~33 ~91 ~-11 ~34 minecraft:soul_soil
 fill ~92 ~-11 ~33 ~92 ~-11 ~34 minecraft:blackstone
@@ -501,7 +501,7 @@ setblock ~89 ~-11 ~36 minecraft:soul_soil
 setblock ~100 ~-11 ~36 minecraft:chest[facing=south,type=single,waterlogged=false]
 fill ~92 ~-11 ~36 ~93 ~-11 ~36 minecraft:basalt
 fill ~88 ~-11 ~37 ~89 ~-11 ~37 minecraft:basalt
-setblock ~103 ~-11 ~37 minecraft:nether_quartz_ore
+setblock ~103 ~-11 ~37 minecraft:coal_ore
 setblock ~93 ~-11 ~37 minecraft:blackstone
 setblock ~91 ~-11 ~37 minecraft:blackstone
 setblock ~92 ~-11 ~37 minecraft:basalt

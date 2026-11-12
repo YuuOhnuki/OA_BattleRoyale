@@ -362,7 +362,7 @@ fill ~-96 ~-11 ~38 ~-96 ~-9 ~38 minecraft:cracked_polished_blackstone_bricks
 fill ~-92 ~-11 ~38 ~-92 ~-9 ~38 minecraft:polished_blackstone_bricks
 setblock ~-95 ~-11 ~38 minecraft:polished_blackstone_bricks
 setblock ~-95 ~-9 ~38 minecraft:polished_blackstone_bricks
-setblock ~-107 ~-11 ~38 minecraft:nether_gold_ore
+setblock ~-107 ~-11 ~38 minecraft:redstone_ore
 setblock ~-96 ~-11 ~39 minecraft:polished_blackstone_bricks
 setblock ~-96 ~-9 ~39 minecraft:polished_blackstone_bricks
 setblock ~-116 ~-11 ~39 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]

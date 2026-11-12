@@ -433,7 +433,7 @@ fill ~-23 ~-11 ~40 ~-23 ~-10 ~41 minecraft:nether_bricks
 fill ~1 ~-11 ~41 ~3 ~-11 ~41 minecraft:blackstone
 fill ~-19 ~-11 ~41 ~-19 ~-4 ~41 minecraft:crimson_stem
 setblock ~5 ~-11 ~41 minecraft:blackstone
-setblock ~-14 ~-11 ~41 minecraft:nether_gold_ore
+setblock ~-14 ~-11 ~41 minecraft:redstone_ore
 fill ~4 ~-11 ~41 ~4 ~-11 ~42 minecraft:soul_soil
 setblock ~-14 ~-11 ~42 minecraft:crimson_roots
 setblock ~2 ~-11 ~42 minecraft:soul_soil
@@ -463,7 +463,7 @@ fill ~-3 ~-11 ~56 ~-3 ~-9 ~56 minecraft:cracked_polished_blackstone_bricks
 setblock ~-23 ~-11 ~56 minecraft:crimson_roots
 setblock ~-11 ~-11 ~57 minecraft:crimson_roots
 fill ~-17 ~-11 ~52 ~-17 ~-11 ~58 minecraft:polished_blackstone_bricks
-setblock ~-16 ~-11 ~59 minecraft:nether_quartz_ore
+setblock ~-16 ~-11 ~59 minecraft:coal_ore
 setblock ~0 ~-11 ~63 minecraft:polished_blackstone
 setblock ~-22 ~-11 ~63 minecraft:crimson_roots
 setblock ~1 ~-11 ~63 minecraft:polished_blackstone_bricks
@@ -490,7 +490,7 @@ setblock ~1 ~-11 ~67 minecraft:polished_blackstone_bricks
 setblock ~2 ~-11 ~67 minecraft:cracked_polished_blackstone_bricks
 setblock ~-17 ~-11 ~68 minecraft:polished_blackstone_bricks
 setblock ~-17 ~-9 ~68 minecraft:polished_blackstone_bricks
-setblock ~-24 ~-11 ~68 minecraft:nether_gold_ore
+setblock ~-24 ~-11 ~68 minecraft:redstone_ore
 fill ~-13 ~-11 ~68 ~-13 ~-11 ~69 minecraft:polished_blackstone_bricks
 fill ~-17 ~-11 ~69 ~-17 ~-9 ~69 minecraft:cracked_polished_blackstone_bricks
 setblock ~-16 ~-11 ~69 minecraft:polished_blackstone_bricks

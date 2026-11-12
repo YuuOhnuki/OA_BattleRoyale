@@ -542,7 +542,7 @@ setblock ~38 ~-9 ~61 minecraft:blackstone
 fill ~39 ~-11 ~61 ~39 ~-11 ~62 minecraft:basalt
 fill ~24 ~-11 ~61 ~24 ~-11 ~62 minecraft:basalt
 setblock ~12 ~-11 ~62 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock ~32 ~-11 ~62 minecraft:nether_quartz_ore
+setblock ~32 ~-11 ~62 minecraft:coal_ore
 fill ~25 ~-11 ~62 ~26 ~-11 ~62 minecraft:soul_soil
 fill ~10 ~-11 ~60 ~10 ~-11 ~64 minecraft:polished_blackstone
 fill ~14 ~-11 ~63 ~14 ~-11 ~64 minecraft:polished_blackstone_bricks
@@ -551,8 +551,8 @@ fill ~20 ~-11 ~64 ~20 ~-10 ~64 minecraft:nether_brick_fence[east=false,north=fal
 setblock ~11 ~-11 ~64 minecraft:polished_blackstone_bricks
 setblock ~11 ~-9 ~64 minecraft:polished_blackstone_bricks
 setblock ~13 ~-11 ~64 minecraft:nether_bricks
-setblock ~9 ~-11 ~65 minecraft:nether_gold_ore
-setblock ~16 ~-11 ~67 minecraft:nether_quartz_ore
+setblock ~9 ~-11 ~65 minecraft:redstone_ore
+setblock ~16 ~-11 ~67 minecraft:coal_ore
 setblock ~28 ~-11 ~71 minecraft:polished_blackstone_bricks
 setblock ~28 ~-9 ~71 minecraft:polished_blackstone_bricks
 setblock ~29 ~-11 ~71 minecraft:polished_blackstone

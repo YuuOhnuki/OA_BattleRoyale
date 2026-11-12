@@ -684,7 +684,7 @@ fill ~11 ~-11 ~22 ~11 ~-9 ~22 minecraft:cracked_polished_blackstone_bricks
 fill ~11 ~-7 ~22 ~11 ~-6 ~22 minecraft:cracked_polished_blackstone_bricks
 setblock ~10 ~-11 ~22 minecraft:polished_blackstone_bricks
 fill ~36 ~-11 ~22 ~37 ~-11 ~22 minecraft:soul_soil
-setblock ~27 ~-11 ~23 minecraft:nether_quartz_ore
+setblock ~27 ~-11 ~23 minecraft:coal_ore
 setblock ~35 ~-11 ~29 minecraft:polished_blackstone
 setblock ~35 ~-9 ~29 minecraft:polished_blackstone
 fill ~33 ~-11 ~29 ~33 ~-10 ~29 minecraft:cracked_polished_blackstone_bricks
@@ -696,7 +696,7 @@ setblock ~33 ~-11 ~30 minecraft:polished_blackstone_bricks
 fill ~15 ~-11 ~30 ~15 ~-10 ~30 minecraft:nether_brick_fence[east=false,north=false,south=false,west=false]
 fill ~37 ~-11 ~30 ~37 ~-9 ~30 minecraft:cracked_polished_blackstone_bricks
 setblock ~35 ~-11 ~31 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock ~23 ~-11 ~31 minecraft:nether_quartz_ore
+setblock ~23 ~-11 ~31 minecraft:coal_ore
 setblock ~37 ~-11 ~31 minecraft:polished_blackstone
 fill ~33 ~-11 ~32 ~33 ~-10 ~32 minecraft:cracked_polished_blackstone_bricks
 setblock ~19 ~-11 ~32 minecraft:polished_blackstone_bricks
@@ -717,7 +717,7 @@ fill ~22 ~-11 ~32 ~22 ~-11 ~36 minecraft:cracked_polished_blackstone_bricks
 setblock ~21 ~-11 ~36 minecraft:polished_blackstone_bricks
 setblock ~21 ~-9 ~36 minecraft:polished_blackstone_bricks
 setblock ~19 ~-11 ~36 minecraft:polished_blackstone_bricks
-setblock ~35 ~-11 ~38 minecraft:nether_quartz_ore
+setblock ~35 ~-11 ~38 minecraft:coal_ore
 fill ~9 ~-10 ~8 ~9 ~-8 ~8 minecraft:cracked_polished_blackstone_bricks
 fill ~9 ~-6 ~8 ~9 ~-5 ~8 minecraft:cracked_polished_blackstone_bricks
 fill ~8 ~-10 ~9 ~9 ~-10 ~9 minecraft:polished_blackstone_bricks

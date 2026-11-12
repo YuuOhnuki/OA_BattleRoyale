@@ -655,7 +655,7 @@ fill ~43 ~-11 ~-82 ~43 ~-4 ~-82 minecraft:basalt
 setblock ~63 ~-11 ~-80 minecraft:netherrack
 fill ~64 ~-11 ~-80 ~65 ~-11 ~-80 minecraft:smooth_basalt
 fill ~63 ~-11 ~-79 ~64 ~-11 ~-79 minecraft:basalt
-setblock ~56 ~-11 ~-79 minecraft:nether_quartz_ore
+setblock ~56 ~-11 ~-79 minecraft:coal_ore
 setblock ~62 ~-11 ~-79 minecraft:blackstone
 setblock ~65 ~-11 ~-79 minecraft:blackstone
 setblock ~66 ~-11 ~-79 minecraft:netherrack
@@ -702,7 +702,7 @@ fill ~45 ~-11 ~-70 ~45 ~-9 ~-70 minecraft:cracked_polished_blackstone_bricks
 fill ~49 ~-11 ~-70 ~49 ~-10 ~-70 minecraft:polished_blackstone_bricks
 fill ~49 ~-11 ~-69 ~49 ~-9 ~-69 minecraft:cracked_polished_blackstone_bricks
 setblock ~45 ~-11 ~-69 minecraft:polished_blackstone
-setblock ~66 ~-11 ~-69 minecraft:nether_quartz_ore
+setblock ~66 ~-11 ~-69 minecraft:coal_ore
 setblock ~47 ~-11 ~-69 minecraft:chest[facing=south,type=single,waterlogged=false]
 fill ~56 ~-11 ~-68 ~56 ~-9 ~-68 minecraft:cracked_polished_blackstone_bricks
 setblock ~45 ~-11 ~-68 minecraft:polished_blackstone_bricks

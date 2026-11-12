@@ -61,8 +61,8 @@ execute if score @s oa.admin matches 41 run function oa:debug/book
 
 execute if score @s oa.admin matches 42 run loot give @s loot oa:debug/bandage
 execute if score @s oa.admin matches 43 run loot give @s loot oa:debug/kit
-execute if score @s oa.admin matches 44 run give @s minecraft:snowball 16
-execute if score @s oa.admin matches 45 run give @s minecraft:egg 16
+execute if score @s oa.admin matches 44 run give @s minecraft:snowball[minecraft:max_stack_size=64] 16
+execute if score @s oa.admin matches 45 run give @s minecraft:egg[minecraft:max_stack_size=64] 16
 
 execute if score @s oa.admin matches 46 run function oa:lobby/gallery/update
 

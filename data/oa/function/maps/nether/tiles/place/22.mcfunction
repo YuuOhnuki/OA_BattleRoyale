@@ -344,7 +344,7 @@ fill ~-76 ~-11 ~-84 ~-76 ~-8 ~-84 minecraft:warped_stem
 setblock ~-60 ~-11 ~-84 minecraft:polished_blackstone
 setblock ~-60 ~-9 ~-84 minecraft:polished_blackstone
 fill ~-59 ~-11 ~-84 ~-59 ~-9 ~-84 minecraft:cracked_polished_blackstone_bricks
-setblock ~-72 ~-11 ~-84 minecraft:nether_gold_ore
+setblock ~-72 ~-11 ~-84 minecraft:redstone_ore
 fill ~-58 ~-11 ~-84 ~-57 ~-11 ~-84 minecraft:polished_blackstone_bricks
 fill ~-71 ~-11 ~-84 ~-71 ~-11 ~-83 minecraft:warped_roots
 setblock ~-60 ~-11 ~-83 minecraft:polished_blackstone_bricks
@@ -372,7 +372,7 @@ setblock ~-58 ~-11 ~-73 minecraft:basalt
 setblock ~-67 ~-11 ~-73 minecraft:netherrack
 setblock ~-60 ~-11 ~-73 minecraft:basalt
 setblock ~-68 ~-11 ~-73 minecraft:blackstone
-setblock ~-72 ~-11 ~-73 minecraft:nether_gold_ore
+setblock ~-72 ~-11 ~-73 minecraft:redstone_ore
 setblock ~-57 ~-11 ~-73 minecraft:smooth_basalt
 fill ~-69 ~-11 ~-73 ~-69 ~-11 ~-72 minecraft:netherrack
 fill ~-86 ~-11 ~-73 ~-86 ~-11 ~-72 minecraft:warped_roots

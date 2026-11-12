@@ -186,7 +186,7 @@ setblock ~-26 ~-11 ~104 minecraft:basalt
 setblock ~-26 ~-9 ~104 minecraft:basalt
 setblock ~-27 ~-11 ~104 minecraft:blackstone
 setblock ~-46 ~-11 ~104 minecraft:crimson_roots
-setblock ~-35 ~-11 ~104 minecraft:nether_quartz_ore
+setblock ~-35 ~-11 ~104 minecraft:coal_ore
 fill ~-29 ~-11 ~105 ~-28 ~-11 ~105 minecraft:blackstone
 setblock ~-25 ~-11 ~105 minecraft:netherrack
 setblock ~-26 ~-11 ~105 minecraft:blackstone
@@ -199,7 +199,7 @@ fill ~-25 ~-11 ~107 ~-25 ~-10 ~107 minecraft:smooth_basalt
 setblock ~-31 ~-11 ~108 minecraft:crimson_roots
 setblock ~-56 ~-11 ~109 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~-55 ~-11 ~109 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
-setblock ~-27 ~-11 ~109 minecraft:nether_gold_ore
+setblock ~-27 ~-11 ~109 minecraft:redstone_ore
 setblock ~-28 ~-11 ~110 minecraft:crimson_roots
 setblock ~-54 ~-11 ~110 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~-55 ~-11 ~110 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]

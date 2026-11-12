@@ -272,7 +272,7 @@ setblock ~-46 ~-11 ~-20 minecraft:nether_bricks
 setblock ~-45 ~-11 ~-20 minecraft:red_nether_bricks
 setblock ~-47 ~-11 ~-20 minecraft:cracked_nether_bricks
 setblock ~-54 ~-11 ~-18 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock ~-28 ~-11 ~-16 minecraft:nether_gold_ore
+setblock ~-28 ~-11 ~-16 minecraft:redstone_ore
 setblock ~-29 ~-11 ~-16 minecraft:warped_roots
 fill ~-51 ~-11 ~-21 ~-51 ~-11 ~-15 minecraft:nether_bricks
 setblock ~-56 ~-11 ~-15 minecraft:nether_bricks
@@ -298,7 +298,7 @@ fill ~-48 ~-11 ~-6 ~-48 ~-9 ~-6 minecraft:polished_blackstone
 fill ~-34 ~-11 ~-6 ~-34 ~-7 ~-6 minecraft:crimson_stem
 fill ~-42 ~-11 ~-24 ~-42 ~-11 ~-3 minecraft:cracked_nether_bricks
 setblock ~-36 ~-11 ~-1 minecraft:crimson_roots
-setblock ~-37 ~-11 ~3 minecraft:nether_gold_ore
+setblock ~-37 ~-11 ~3 minecraft:redstone_ore
 setblock ~-36 ~-11 ~3 minecraft:crimson_roots
 setblock ~-30 ~-11 ~4 minecraft:crimson_roots
 setblock ~-54 ~-11 ~5 minecraft:polished_blackstone_bricks

@@ -1,1 +1,1 @@
-$give @s minecraft:egg $(count)
+$give @s minecraft:egg[minecraft:max_stack_size=64] $(count)

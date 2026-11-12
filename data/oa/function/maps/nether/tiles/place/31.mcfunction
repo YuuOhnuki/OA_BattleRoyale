@@ -329,7 +329,7 @@ setblock ~-111 ~-11 ~-53 minecraft:nether_brick_fence[east=true,north=false,sout
 setblock ~-94 ~-11 ~-53 minecraft:warped_roots
 setblock ~-110 ~-11 ~-53 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-111 ~-11 ~-52 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~-100 ~-11 ~-52 minecraft:nether_gold_ore
+setblock ~-100 ~-11 ~-52 minecraft:redstone_ore
 setblock ~-102 ~-11 ~-51 minecraft:warped_roots
 setblock ~-112 ~-11 ~-51 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-111 ~-11 ~-51 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
@@ -392,7 +392,7 @@ fill ~-90 ~-11 ~-38 ~-89 ~-11 ~-38 minecraft:polished_blackstone_bricks
 setblock ~-117 ~-11 ~-38 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-116 ~-11 ~-38 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 fill ~-117 ~-11 ~-37 ~-117 ~-11 ~-36 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~-101 ~-11 ~-36 minecraft:nether_quartz_ore
+setblock ~-101 ~-11 ~-36 minecraft:coal_ore
 setblock ~-111 ~-11 ~-36 minecraft:warped_roots
 setblock ~-118 ~-11 ~-35 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-106 ~-11 ~-35 minecraft:warped_roots

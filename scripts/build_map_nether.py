@@ -411,7 +411,7 @@ while len(oc)<108:
     oc.append((x,z,'quartz' if len(oc)%2==0 else 'gold'))
 for (x,z,k) in oc:
     y=int(surf[x+OFF,z+OFF])+1
-    put(x,y,z,'minecraft:nether_quartz_ore' if k=='quartz' else 'minecraft:nether_gold_ore'); ores.append((x,y,z,5 if k=='quartz' else 6))
+    put(x,y,z,'minecraft:coal_ore' if k=='quartz' else 'minecraft:redstone_ore'); ores.append((x,y,z,1 if k=='quartz' else 3))   # 1.9.114: 地上と同じ石炭(1)とレッドストーン(3)
 # 柵セルの再収集（ランタン柱など）と接続計算
 for xi,zi in zip(*np.nonzero(g[:,:,YG+2-Y0]==pid[FENCE])): pass
 fence_pass()
@@ -567,7 +567,7 @@ for n in range(100):
     A.append(f"execute positioned ~{x1} ~{Y0} ~{z1} run kill @e[type=minecraft:marker,tag=br.chest,dx={x2-x1},dy=20,dz={z2-z1}]")
     A.append(f"execute positioned ~{x1} ~{Y0} ~{z1} run kill @e[type=minecraft:marker,tag=br.ore,dx={x2-x1},dy=20,dz={z2-z1}]")
     A+=["scoreboard players set #stage oa.map2 2",f"scoreboard players set #expectedc oa.map2 {len(cs)+len(rs)}",f"scoreboard players set #expectedo oa.map2 {len(os_)}","scoreboard players set #localc oa.map2 0","scoreboard players set #localo oa.map2 0"]
-    for (x,y,z,k) in os_: A.append(f"execute positioned ~{x} ~{y} ~{z} if block ~ ~ ~ minecraft:{'nether_quartz_ore' if k==5 else 'nether_gold_ore'} align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_{k}")
+    for (x,y,z,k) in os_: A.append(f"execute positioned ~{x} ~{y} ~{z} if block ~ ~ ~ minecraft:{'coal_ore' if k==1 else 'redstone_ore'} align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_{k}")
     for (x,y,z) in rs: A.append(f"execute positioned ~{x} ~{y} ~{z} if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest_rich")
     for (x,y,z) in cs: A.append(f"execute positioned ~{x} ~{y} ~{z} if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest")
     for (x,y,z) in rs: A.append(f"execute if score #mode oa.map2 matches 0 positioned ~{x} ~{y} ~{z} if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_site")

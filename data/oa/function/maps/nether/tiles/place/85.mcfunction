@@ -243,7 +243,7 @@ fill ~8 ~-12 ~120 ~8 ~-12 ~122 minecraft:polished_blackstone
 fill ~9 ~-12 ~122 ~27 ~-12 ~122 minecraft:blackstone
 fill ~8 ~-12 ~123 ~22 ~-12 ~123 minecraft:blackstone
 fill ~8 ~-12 ~124 ~15 ~-12 ~124 minecraft:blackstone
-setblock ~36 ~-11 ~104 minecraft:nether_quartz_ore
+setblock ~36 ~-11 ~104 minecraft:coal_ore
 setblock ~15 ~-11 ~105 minecraft:polished_blackstone
 setblock ~18 ~-11 ~105 minecraft:nether_bricks
 setblock ~10 ~-11 ~105 minecraft:polished_blackstone

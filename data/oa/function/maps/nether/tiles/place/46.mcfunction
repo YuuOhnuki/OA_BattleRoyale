@@ -586,7 +586,7 @@ setblock ~63 ~-12 ~0 minecraft:nether_brick_fence
 fill ~43 ~-12 ~0 ~43 ~-10 ~0 minecraft:bone_block[axis=y]
 fill ~52 ~-12 ~2 ~52 ~-10 ~2 minecraft:bone_block[axis=y]
 fill ~59 ~-12 ~6 ~59 ~-10 ~6 minecraft:bone_block[axis=y]
-setblock ~53 ~-12 ~6 minecraft:nether_quartz_ore
+setblock ~53 ~-12 ~6 minecraft:coal_ore
 setblock ~40 ~-12 ~7 minecraft:soul_soil
 setblock ~41 ~-12 ~7 minecraft:soul_sand
 setblock ~69 ~-12 ~7 minecraft:nether_brick_fence
