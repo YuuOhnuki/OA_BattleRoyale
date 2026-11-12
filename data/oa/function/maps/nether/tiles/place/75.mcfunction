@@ -101,38 +101,33 @@ fill ~9 ~-12 ~72 ~14 ~-12 ~72 minecraft:soul_soil
 setblock ~8 ~-12 ~72 minecraft:soul_sand
 setblock ~15 ~-12 ~72 minecraft:soul_sand
 fill ~16 ~-12 ~72 ~21 ~-12 ~72 minecraft:soul_soil
-setblock ~9 ~-12 ~73 minecraft:soul_soil
-setblock ~10 ~-12 ~73 minecraft:soul_sand
-fill ~11 ~-12 ~73 ~16 ~-12 ~73 minecraft:soul_soil
 setblock ~17 ~-12 ~73 minecraft:soul_sand
 fill ~20 ~-12 ~73 ~21 ~-12 ~73 minecraft:soul_sand
+fill ~12 ~-12 ~73 ~16 ~-12 ~73 minecraft:soul_soil
 fill ~18 ~-12 ~73 ~19 ~-12 ~73 minecraft:soul_soil
-fill ~8 ~-12 ~73 ~8 ~-12 ~74 minecraft:basalt
 setblock ~12 ~-12 ~74 minecraft:soul_sand
 fill ~16 ~-12 ~74 ~20 ~-12 ~74 minecraft:soul_sand
 setblock ~21 ~-12 ~74 minecraft:soul_soil
-fill ~9 ~-12 ~74 ~11 ~-12 ~74 minecraft:soul_soil
 fill ~13 ~-12 ~74 ~15 ~-12 ~74 minecraft:soul_soil
 fill ~25 ~-12 ~72 ~29 ~-12 ~75 minecraft:polished_blackstone
 setblock ~18 ~-12 ~75 minecraft:basalt
-fill ~8 ~-12 ~75 ~12 ~-12 ~75 minecraft:soul_soil
+fill ~14 ~-12 ~75 ~15 ~-12 ~75 minecraft:soul_soil
 setblock ~16 ~-12 ~75 minecraft:basalt
 fill ~19 ~-12 ~75 ~21 ~-12 ~75 minecraft:soul_soil
-fill ~14 ~-12 ~75 ~15 ~-12 ~75 minecraft:soul_soil
+setblock ~12 ~-12 ~75 minecraft:soul_soil
 setblock ~13 ~-12 ~75 minecraft:soul_sand
 setblock ~17 ~-12 ~75 minecraft:soul_soil
 fill ~13 ~-12 ~76 ~17 ~-12 ~76 minecraft:soul_soil
 fill ~18 ~-12 ~76 ~20 ~-12 ~76 minecraft:soul_sand
 setblock ~21 ~-12 ~76 minecraft:basalt
+fill ~8 ~-12 ~73 ~11 ~-12 ~77 minecraft:polished_blackstone
 fill ~12 ~-12 ~76 ~12 ~-12 ~77 minecraft:soul_sand
-fill ~8 ~-12 ~76 ~11 ~-12 ~77 minecraft:soul_soil
 setblock ~18 ~-12 ~77 minecraft:soul_soil
 fill ~20 ~-12 ~77 ~21 ~-12 ~77 minecraft:soul_soil
 setblock ~17 ~-12 ~77 minecraft:soul_sand
 setblock ~19 ~-12 ~77 minecraft:soul_sand
 fill ~13 ~-12 ~77 ~16 ~-12 ~77 minecraft:soul_soil
 fill ~8 ~-12 ~78 ~10 ~-12 ~78 minecraft:soul_soil
-setblock ~36 ~-12 ~78 minecraft:nether_quartz_ore
 fill ~19 ~-12 ~78 ~22 ~-12 ~78 minecraft:soul_soil
 setblock ~11 ~-12 ~78 minecraft:soul_sand
 setblock ~18 ~-12 ~78 minecraft:soul_sand
@@ -148,6 +143,7 @@ setblock ~13 ~-12 ~79 minecraft:soul_soil
 fill ~22 ~-12 ~79 ~23 ~-12 ~79 minecraft:soul_soil
 fill ~9 ~-12 ~79 ~11 ~-12 ~79 minecraft:soul_soil
 setblock ~16 ~-12 ~79 minecraft:soul_soil
+setblock ~29 ~-12 ~79 minecraft:nether_quartz_ore
 fill ~21 ~-12 ~79 ~21 ~-12 ~80 minecraft:soul_sand
 setblock ~18 ~-12 ~80 minecraft:basalt
 fill ~8 ~-12 ~80 ~11 ~-12 ~80 minecraft:soul_soil
@@ -198,7 +194,7 @@ setblock ~15 ~-12 ~84 minecraft:soul_sand
 fill ~32 ~-12 ~84 ~34 ~-12 ~84 minecraft:soul_soil
 setblock ~26 ~-12 ~85 minecraft:soul_sand
 fill ~37 ~-12 ~85 ~39 ~-12 ~85 minecraft:soul_soil
-setblock ~14 ~-12 ~85 minecraft:basalt
+fill ~14 ~-12 ~85 ~14 ~-11 ~85 minecraft:basalt
 setblock ~8 ~-12 ~85 minecraft:soul_sand
 fill ~9 ~-12 ~85 ~13 ~-12 ~85 minecraft:soul_soil
 fill ~21 ~-12 ~85 ~22 ~-12 ~85 minecraft:soul_soil
@@ -214,10 +210,10 @@ fill ~23 ~-12 ~85 ~23 ~-12 ~86 minecraft:soul_sand
 fill ~36 ~-12 ~86 ~39 ~-12 ~86 minecraft:soul_soil
 setblock ~32 ~-12 ~86 minecraft:basalt
 fill ~16 ~-12 ~86 ~22 ~-12 ~86 minecraft:soul_soil
-setblock ~14 ~-12 ~86 minecraft:soul_soil
-setblock ~12 ~-12 ~86 minecraft:soul_soil
+fill ~14 ~-12 ~86 ~14 ~-11 ~86 minecraft:soul_soil
+fill ~12 ~-12 ~86 ~12 ~-11 ~86 minecraft:soul_soil
 setblock ~13 ~-12 ~86 minecraft:soul_sand
-setblock ~11 ~-12 ~86 minecraft:basalt
+fill ~11 ~-12 ~86 ~11 ~-11 ~86 minecraft:basalt
 setblock ~27 ~-12 ~86 minecraft:soul_soil
 fill ~34 ~-12 ~86 ~35 ~-12 ~86 minecraft:soul_sand
 fill ~29 ~-12 ~86 ~30 ~-12 ~86 minecraft:soul_soil
@@ -306,104 +302,90 @@ setblock ~20 ~-12 ~92 minecraft:soul_sand
 fill ~14 ~-12 ~92 ~19 ~-12 ~92 minecraft:soul_soil
 fill ~12 ~-12 ~92 ~13 ~-12 ~92 minecraft:soul_sand
 fill ~8 ~-12 ~92 ~11 ~-12 ~93 minecraft:soul_soil
-setblock ~22 ~-12 ~93 minecraft:basalt
+setblock ~37 ~-12 ~93 minecraft:basalt
 setblock ~12 ~-12 ~93 minecraft:soul_sand
-setblock ~23 ~-12 ~93 minecraft:soul_sand
 setblock ~15 ~-12 ~93 minecraft:basalt
 fill ~17 ~-12 ~93 ~18 ~-12 ~93 minecraft:soul_sand
-setblock ~24 ~-12 ~93 minecraft:soul_soil
 setblock ~36 ~-12 ~93 minecraft:soul_sand
 fill ~13 ~-12 ~93 ~14 ~-12 ~93 minecraft:soul_soil
 fill ~28 ~-12 ~93 ~35 ~-12 ~93 minecraft:soul_soil
-fill ~19 ~-12 ~93 ~21 ~-12 ~93 minecraft:soul_soil
 setblock ~25 ~-12 ~93 minecraft:soul_sand
+fill ~38 ~-12 ~93 ~39 ~-12 ~93 minecraft:soul_soil
 setblock ~16 ~-12 ~93 minecraft:soul_soil
+setblock ~19 ~-12 ~93 minecraft:soul_soil
 fill ~27 ~-12 ~93 ~27 ~-12 ~94 minecraft:soul_sand
 fill ~26 ~-12 ~93 ~26 ~-12 ~94 minecraft:soul_soil
 setblock ~25 ~-12 ~94 minecraft:basalt
 setblock ~18 ~-12 ~94 minecraft:soul_soil
 fill ~8 ~-12 ~94 ~16 ~-12 ~94 minecraft:soul_soil
 setblock ~17 ~-12 ~94 minecraft:soul_sand
-fill ~19 ~-12 ~94 ~21 ~-12 ~94 minecraft:soul_sand
+setblock ~19 ~-12 ~94 minecraft:soul_sand
+fill ~35 ~-12 ~94 ~39 ~-12 ~94 minecraft:soul_soil
 setblock ~28 ~-12 ~94 minecraft:soul_soil
-fill ~22 ~-12 ~94 ~23 ~-12 ~94 minecraft:soul_soil
-setblock ~24 ~-12 ~94 minecraft:soul_sand
-fill ~30 ~-12 ~94 ~36 ~-12 ~94 minecraft:soul_soil
 fill ~29 ~-12 ~94 ~29 ~-12 ~95 minecraft:basalt
-fill ~30 ~-12 ~95 ~32 ~-12 ~95 minecraft:soul_soil
-fill ~10 ~-12 ~95 ~14 ~-12 ~95 minecraft:soul_soil
-setblock ~34 ~-12 ~95 minecraft:soul_soil
 setblock ~36 ~-12 ~95 minecraft:soul_soil
-fill ~24 ~-12 ~95 ~28 ~-12 ~95 minecraft:soul_soil
-fill ~19 ~-12 ~95 ~22 ~-12 ~95 minecraft:soul_soil
 setblock ~18 ~-12 ~95 minecraft:soul_sand
+fill ~25 ~-12 ~95 ~28 ~-12 ~95 minecraft:soul_soil
+fill ~38 ~-12 ~95 ~39 ~-12 ~95 minecraft:soul_soil
 fill ~16 ~-12 ~95 ~17 ~-12 ~95 minecraft:soul_soil
-setblock ~15 ~-12 ~95 minecraft:soul_sand
+setblock ~37 ~-12 ~95 minecraft:soul_sand
 setblock ~35 ~-12 ~95 minecraft:soul_sand
-setblock ~33 ~-12 ~95 minecraft:soul_sand
-fill ~8 ~-12 ~95 ~8 ~-12 ~96 minecraft:soul_soil
-fill ~23 ~-12 ~95 ~23 ~-12 ~96 minecraft:soul_sand
-fill ~9 ~-12 ~95 ~9 ~-12 ~96 minecraft:soul_sand
+setblock ~19 ~-12 ~95 minecraft:soul_soil
+fill ~13 ~-12 ~95 ~14 ~-12 ~96 minecraft:soul_soil
 setblock ~26 ~-12 ~96 minecraft:soul_sand
-setblock ~31 ~-12 ~96 minecraft:soul_soil
+setblock ~39 ~-12 ~96 minecraft:soul_soil
 fill ~27 ~-12 ~96 ~29 ~-12 ~96 minecraft:soul_soil
-setblock ~12 ~-12 ~96 minecraft:basalt
-fill ~34 ~-12 ~96 ~36 ~-12 ~96 minecraft:soul_soil
-setblock ~22 ~-12 ~96 minecraft:soul_soil
-fill ~24 ~-12 ~96 ~25 ~-12 ~96 minecraft:soul_soil
-fill ~13 ~-12 ~96 ~14 ~-12 ~96 minecraft:soul_soil
-setblock ~21 ~-12 ~96 minecraft:soul_sand
-setblock ~30 ~-12 ~96 minecraft:soul_sand
-fill ~32 ~-12 ~96 ~33 ~-12 ~96 minecraft:soul_sand
-fill ~10 ~-12 ~96 ~11 ~-12 ~96 minecraft:soul_soil
-fill ~37 ~-12 ~93 ~39 ~-12 ~97 minecraft:polished_blackstone_bricks
-fill ~20 ~-12 ~96 ~20 ~-12 ~97 minecraft:soul_soil
-fill ~30 ~-12 ~97 ~32 ~-12 ~97 minecraft:soul_soil
+setblock ~25 ~-12 ~96 minecraft:soul_soil
+fill ~37 ~-12 ~96 ~38 ~-12 ~96 minecraft:soul_sand
+fill ~16 ~-12 ~96 ~19 ~-12 ~96 minecraft:soul_soil
+fill ~35 ~-12 ~96 ~36 ~-12 ~96 minecraft:soul_soil
+fill ~20 ~-12 ~93 ~24 ~-12 ~97 minecraft:polished_blackstone_bricks
+fill ~15 ~-12 ~95 ~15 ~-12 ~97 minecraft:soul_sand
 fill ~26 ~-12 ~97 ~28 ~-12 ~97 minecraft:soul_soil
-fill ~8 ~-12 ~97 ~11 ~-12 ~97 minecraft:soul_soil
-fill ~12 ~-12 ~97 ~13 ~-12 ~97 minecraft:soul_sand
-setblock ~29 ~-12 ~97 minecraft:soul_sand
+fill ~37 ~-12 ~97 ~39 ~-12 ~97 minecraft:soul_soil
 setblock ~36 ~-12 ~97 minecraft:soul_sand
-fill ~23 ~-12 ~97 ~24 ~-12 ~97 minecraft:soul_soil
-fill ~33 ~-12 ~97 ~34 ~-12 ~97 minecraft:soul_sand
 setblock ~35 ~-12 ~97 minecraft:soul_soil
 setblock ~25 ~-12 ~97 minecraft:soul_sand
+fill ~16 ~-12 ~97 ~17 ~-12 ~97 minecraft:soul_soil
 setblock ~14 ~-12 ~97 minecraft:soul_soil
-fill ~21 ~-12 ~97 ~22 ~-12 ~97 minecraft:basalt
-fill ~20 ~-12 ~98 ~24 ~-12 ~98 minecraft:soul_soil
+setblock ~13 ~-12 ~97 minecraft:soul_sand
+setblock ~19 ~-12 ~97 minecraft:soul_soil
+fill ~30 ~-12 ~94 ~34 ~-12 ~98 minecraft:polished_blackstone
+fill ~29 ~-12 ~97 ~29 ~-12 ~98 minecraft:soul_sand
+fill ~18 ~-12 ~97 ~18 ~-12 ~98 minecraft:soul_sand
 setblock ~26 ~-12 ~98 minecraft:soul_sand
 setblock ~25 ~-12 ~98 minecraft:basalt
 fill ~27 ~-12 ~98 ~28 ~-12 ~98 minecraft:soul_soil
 fill ~35 ~-12 ~98 ~39 ~-12 ~98 minecraft:soul_soil
-fill ~29 ~-12 ~98 ~30 ~-12 ~98 minecraft:soul_sand
-fill ~8 ~-12 ~98 ~14 ~-12 ~98 minecraft:soul_soil
-fill ~31 ~-12 ~98 ~33 ~-12 ~98 minecraft:soul_soil
-setblock ~34 ~-12 ~98 minecraft:soul_sand
-setblock ~8 ~-12 ~99 minecraft:soul_soil
-fill ~9 ~-12 ~99 ~11 ~-12 ~99 minecraft:soul_sand
+fill ~13 ~-12 ~98 ~17 ~-12 ~98 minecraft:soul_soil
+fill ~19 ~-12 ~98 ~24 ~-12 ~98 minecraft:soul_soil
+fill ~8 ~-12 ~95 ~12 ~-12 ~99 minecraft:polished_blackstone
+setblock ~24 ~-12 ~99 minecraft:soul_sand
 setblock ~32 ~-12 ~99 minecraft:soul_sand
 fill ~28 ~-12 ~99 ~29 ~-12 ~99 minecraft:soul_soil
 setblock ~31 ~-12 ~99 minecraft:soul_soil
-fill ~31 ~-10 ~99 ~31 ~-9 ~99 minecraft:soul_soil
 setblock ~39 ~-12 ~99 minecraft:soul_soil
-fill ~25 ~-12 ~99 ~26 ~-12 ~99 minecraft:soul_soil
 fill ~37 ~-12 ~99 ~38 ~-12 ~99 minecraft:soul_sand
 setblock ~27 ~-12 ~99 minecraft:soul_sand
 fill ~33 ~-12 ~99 ~36 ~-12 ~99 minecraft:soul_soil
+setblock ~16 ~-12 ~99 minecraft:basalt
 setblock ~30 ~-12 ~99 minecraft:soul_sand
-setblock ~24 ~-12 ~99 minecraft:soul_sand
-fill ~12 ~-12 ~99 ~14 ~-12 ~99 minecraft:soul_soil
+fill ~13 ~-12 ~99 ~15 ~-12 ~99 minecraft:soul_soil
+fill ~25 ~-12 ~99 ~26 ~-12 ~99 minecraft:soul_soil
+fill ~17 ~-12 ~99 ~19 ~-12 ~99 minecraft:soul_sand
 fill ~20 ~-12 ~99 ~23 ~-12 ~99 minecraft:soul_soil
-fill ~15 ~-12 ~96 ~19 ~-12 ~100 minecraft:polished_blackstone
-fill ~20 ~-12 ~100 ~30 ~-12 ~100 minecraft:soul_soil
 fill ~37 ~-12 ~100 ~39 ~-12 ~100 minecraft:soul_soil
 fill ~8 ~-12 ~100 ~10 ~-12 ~100 minecraft:soul_soil
 fill ~33 ~-12 ~100 ~35 ~-12 ~100 minecraft:soul_soil
 setblock ~14 ~-12 ~100 minecraft:basalt
 fill ~12 ~-12 ~100 ~13 ~-12 ~100 minecraft:soul_soil
 setblock ~36 ~-12 ~100 minecraft:soul_sand
+fill ~19 ~-12 ~100 ~30 ~-12 ~100 minecraft:soul_soil
 setblock ~11 ~-12 ~100 minecraft:soul_sand
+setblock ~18 ~-12 ~100 minecraft:soul_sand
 fill ~31 ~-12 ~100 ~32 ~-12 ~100 minecraft:soul_sand
+fill ~15 ~-12 ~100 ~16 ~-12 ~100 minecraft:soul_sand
+setblock ~17 ~-12 ~100 minecraft:soul_soil
 setblock ~37 ~-12 ~101 minecraft:basalt
 fill ~38 ~-12 ~101 ~39 ~-12 ~101 minecraft:soul_sand
 setblock ~26 ~-12 ~101 minecraft:soul_sand
@@ -444,193 +426,182 @@ fill ~15 ~-12 ~103 ~16 ~-12 ~103 minecraft:soul_soil
 setblock ~33 ~-12 ~103 minecraft:soul_sand
 fill ~29 ~-11 ~72 ~29 ~-9 ~72 minecraft:polished_blackstone_bricks
 fill ~25 ~-11 ~72 ~25 ~-9 ~72 minecraft:cracked_polished_blackstone_bricks
+fill ~29 ~-11 ~73 ~29 ~-10 ~73 minecraft:cracked_polished_blackstone_bricks
+fill ~8 ~-11 ~73 ~8 ~-9 ~73 minecraft:cracked_polished_blackstone_bricks
 setblock ~27 ~-11 ~73 minecraft:chest[facing=south,type=single,waterlogged=false]
+fill ~11 ~-11 ~73 ~11 ~-9 ~73 minecraft:cracked_polished_blackstone_bricks
+setblock ~10 ~-11 ~73 minecraft:polished_blackstone_bricks
 setblock ~25 ~-11 ~73 minecraft:polished_blackstone
 setblock ~25 ~-9 ~73 minecraft:polished_blackstone
-fill ~29 ~-11 ~73 ~29 ~-9 ~73 minecraft:cracked_polished_blackstone_bricks
 setblock ~25 ~-11 ~74 minecraft:polished_blackstone_bricks
+setblock ~25 ~-9 ~74 minecraft:polished_blackstone_bricks
 fill ~29 ~-11 ~74 ~29 ~-11 ~75 minecraft:polished_blackstone_bricks
-fill ~29 ~-9 ~74 ~29 ~-9 ~75 minecraft:polished_blackstone_bricks
-fill ~28 ~-11 ~75 ~28 ~-10 ~75 minecraft:cracked_polished_blackstone_bricks
+fill ~11 ~-11 ~74 ~11 ~-11 ~75 minecraft:polished_blackstone_bricks
+fill ~11 ~-9 ~74 ~11 ~-9 ~75 minecraft:polished_blackstone_bricks
+fill ~28 ~-11 ~75 ~28 ~-9 ~75 minecraft:cracked_polished_blackstone_bricks
+setblock ~9 ~-11 ~75 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~27 ~-11 ~75 minecraft:polished_blackstone
 setblock ~27 ~-9 ~75 minecraft:polished_blackstone
 setblock ~26 ~-11 ~75 minecraft:polished_blackstone_bricks
 setblock ~26 ~-9 ~75 minecraft:polished_blackstone_bricks
-fill ~25 ~-11 ~75 ~25 ~-10 ~75 minecraft:cracked_polished_blackstone_bricks
-setblock ~16 ~-11 ~77 minecraft:polished_blackstone_bricks
-setblock ~16 ~-9 ~77 minecraft:polished_blackstone_bricks
-fill ~17 ~-11 ~80 ~17 ~-10 ~80 minecraft:nether_brick_fence[east=false,north=false,south=false,west=false]
-setblock ~16 ~-11 ~84 minecraft:polished_blackstone_bricks
-setblock ~16 ~-9 ~84 minecraft:polished_blackstone_bricks
-setblock ~13 ~-11 ~84 minecraft:nether_quartz_ore
-setblock ~19 ~-11 ~84 minecraft:polished_blackstone_bricks
-setblock ~21 ~-11 ~84 minecraft:polished_blackstone_bricks
-setblock ~21 ~-9 ~84 minecraft:polished_blackstone_bricks
-setblock ~24 ~-11 ~84 minecraft:polished_blackstone_bricks
-setblock ~17 ~-11 ~84 minecraft:cracked_polished_blackstone_bricks
-setblock ~22 ~-11 ~84 minecraft:cracked_polished_blackstone_bricks
-setblock ~28 ~-11 ~84 minecraft:nether_gold_ore
-setblock ~23 ~-11 ~84 minecraft:nether_bricks
+fill ~25 ~-11 ~75 ~25 ~-9 ~75 minecraft:cracked_polished_blackstone_bricks
+fill ~11 ~-11 ~76 ~11 ~-10 ~76 minecraft:cracked_polished_blackstone_bricks
+setblock ~11 ~-11 ~77 minecraft:polished_blackstone
+setblock ~11 ~-9 ~77 minecraft:polished_blackstone
+setblock ~8 ~-11 ~77 minecraft:polished_blackstone_bricks
+setblock ~8 ~-9 ~77 minecraft:polished_blackstone_bricks
+setblock ~10 ~-11 ~77 minecraft:polished_blackstone_bricks
+setblock ~10 ~-9 ~77 minecraft:polished_blackstone_bricks
+fill ~9 ~-11 ~77 ~9 ~-9 ~77 minecraft:cracked_polished_blackstone_bricks
+setblock ~19 ~-11 ~78 minecraft:nether_gold_ore
+setblock ~15 ~-11 ~83 minecraft:soul_soil
+fill ~13 ~-11 ~83 ~13 ~-11 ~84 minecraft:basalt
+fill ~14 ~-11 ~83 ~14 ~-11 ~84 minecraft:blackstone
+setblock ~15 ~-11 ~84 minecraft:basalt
+setblock ~16 ~-11 ~84 minecraft:soul_soil
+setblock ~12 ~-11 ~84 minecraft:blackstone
+setblock ~12 ~-11 ~85 minecraft:basalt
+setblock ~15 ~-11 ~85 minecraft:soul_soil
+fill ~27 ~-11 ~85 ~27 ~-9 ~85 minecraft:bone_block[axis=y]
+setblock ~16 ~-11 ~85 minecraft:basalt
+fill ~13 ~-11 ~85 ~13 ~-11 ~86 minecraft:blackstone
+fill ~15 ~-11 ~86 ~16 ~-11 ~86 minecraft:blackstone
+fill ~11 ~-11 ~87 ~14 ~-11 ~87 minecraft:soul_soil
+fill ~15 ~-11 ~87 ~16 ~-11 ~87 minecraft:basalt
+fill ~11 ~-11 ~88 ~12 ~-11 ~88 minecraft:soul_soil
+fill ~15 ~-11 ~88 ~15 ~-10 ~88 minecraft:blackstone
+fill ~13 ~-11 ~88 ~14 ~-11 ~88 minecraft:basalt
 setblock ~34 ~-11 ~88 minecraft:nether_quartz_ore
-setblock ~29 ~-11 ~90 minecraft:polished_blackstone_bricks
-setblock ~32 ~-11 ~90 minecraft:cracked_polished_blackstone_bricks
-setblock ~19 ~-11 ~90 minecraft:polished_blackstone_bricks
-setblock ~21 ~-11 ~90 minecraft:polished_blackstone_bricks
-setblock ~24 ~-11 ~90 minecraft:polished_blackstone_bricks
-setblock ~31 ~-11 ~90 minecraft:polished_blackstone_bricks
-setblock ~31 ~-9 ~90 minecraft:polished_blackstone_bricks
-setblock ~27 ~-11 ~90 minecraft:cracked_polished_blackstone_bricks
-setblock ~28 ~-11 ~90 minecraft:nether_bricks
-setblock ~30 ~-11 ~90 minecraft:polished_blackstone
-setblock ~20 ~-11 ~90 minecraft:polished_blackstone
-setblock ~26 ~-11 ~90 minecraft:polished_blackstone_bricks
-setblock ~26 ~-9 ~90 minecraft:polished_blackstone_bricks
-setblock ~22 ~-11 ~90 minecraft:cracked_polished_blackstone_bricks
-setblock ~25 ~-11 ~90 minecraft:polished_blackstone
-setblock ~23 ~-11 ~90 minecraft:nether_bricks
-setblock ~39 ~-11 ~93 minecraft:polished_blackstone_bricks
-setblock ~38 ~-11 ~93 minecraft:nether_bricks
-setblock ~30 ~-11 ~95 minecraft:soul_soil
-setblock ~29 ~-11 ~95 minecraft:basalt
-fill ~31 ~-11 ~95 ~31 ~-10 ~95 minecraft:blackstone
-fill ~29 ~-11 ~96 ~30 ~-11 ~96 minecraft:blackstone
-fill ~27 ~-11 ~96 ~28 ~-11 ~96 minecraft:soul_soil
-fill ~16 ~-11 ~96 ~16 ~-9 ~96 minecraft:cracked_polished_blackstone_bricks
-fill ~19 ~-11 ~96 ~19 ~-9 ~96 minecraft:cracked_polished_blackstone_bricks
-setblock ~18 ~-11 ~96 minecraft:polished_blackstone
-setblock ~18 ~-9 ~96 minecraft:polished_blackstone
-setblock ~32 ~-11 ~96 minecraft:soul_soil
-fill ~31 ~-11 ~96 ~31 ~-10 ~96 minecraft:basalt
-fill ~37 ~-11 ~93 ~37 ~-11 ~97 minecraft:cracked_polished_blackstone_bricks
-fill ~15 ~-11 ~96 ~15 ~-11 ~97 minecraft:polished_blackstone_bricks
-fill ~29 ~-11 ~97 ~32 ~-11 ~97 minecraft:blackstone
-setblock ~39 ~-11 ~97 minecraft:polished_blackstone_bricks
-setblock ~19 ~-11 ~97 minecraft:polished_blackstone
-setblock ~28 ~-11 ~97 minecraft:soul_soil
-setblock ~38 ~-11 ~97 minecraft:nether_bricks
-setblock ~27 ~-11 ~97 minecraft:basalt
-setblock ~26 ~-11 ~97 minecraft:blackstone
-fill ~15 ~-11 ~98 ~15 ~-9 ~98 minecraft:cracked_polished_blackstone_bricks
-setblock ~19 ~-11 ~98 minecraft:polished_blackstone_bricks
-setblock ~19 ~-9 ~98 minecraft:polished_blackstone_bricks
-setblock ~26 ~-11 ~98 minecraft:basalt
-fill ~27 ~-11 ~98 ~30 ~-11 ~98 minecraft:soul_soil
-setblock ~17 ~-11 ~98 minecraft:chest[facing=south,type=single,waterlogged=false]
-fill ~31 ~-11 ~98 ~32 ~-11 ~98 minecraft:blackstone
-setblock ~15 ~-11 ~99 minecraft:polished_blackstone
-setblock ~15 ~-9 ~99 minecraft:polished_blackstone
-setblock ~29 ~-11 ~99 minecraft:soul_soil
-setblock ~29 ~-9 ~99 minecraft:soul_soil
-fill ~26 ~-11 ~99 ~28 ~-11 ~99 minecraft:blackstone
-fill ~19 ~-11 ~99 ~19 ~-9 ~99 minecraft:cracked_polished_blackstone_bricks
-fill ~30 ~-11 ~99 ~31 ~-11 ~99 minecraft:basalt
-fill ~9 ~-11 ~99 ~9 ~-10 ~99 minecraft:nether_brick_fence[east=false,north=false,south=false,west=false]
-fill ~18 ~-11 ~100 ~19 ~-11 ~100 minecraft:polished_blackstone_bricks
-setblock ~27 ~-11 ~100 minecraft:blackstone
-setblock ~16 ~-11 ~100 minecraft:polished_blackstone
-setblock ~15 ~-11 ~100 minecraft:polished_blackstone_bricks
-setblock ~15 ~-9 ~100 minecraft:polished_blackstone_bricks
-fill ~17 ~-11 ~100 ~17 ~-10 ~100 minecraft:cracked_polished_blackstone_bricks
-setblock ~28 ~-11 ~100 minecraft:soul_soil
-fill ~29 ~-11 ~100 ~31 ~-11 ~100 minecraft:blackstone
-setblock ~30 ~-11 ~101 minecraft:soul_soil
-setblock ~30 ~-9 ~101 minecraft:soul_soil
-fill ~28 ~-11 ~101 ~29 ~-11 ~101 minecraft:blackstone
+setblock ~14 ~-11 ~89 minecraft:basalt
+setblock ~13 ~-11 ~89 minecraft:soul_soil
+setblock ~12 ~-11 ~89 minecraft:blackstone
+setblock ~12 ~-9 ~89 minecraft:blackstone
+setblock ~26 ~-11 ~90 minecraft:nether_gold_ore
+setblock ~21 ~-11 ~93 minecraft:polished_blackstone_bricks
+setblock ~21 ~-9 ~93 minecraft:polished_blackstone_bricks
+setblock ~22 ~-11 ~93 minecraft:cracked_polished_blackstone_bricks
+setblock ~23 ~-11 ~93 minecraft:nether_bricks
+fill ~24 ~-11 ~93 ~24 ~-11 ~94 minecraft:polished_blackstone_bricks
+setblock ~34 ~-11 ~94 minecraft:polished_blackstone
+setblock ~34 ~-9 ~94 minecraft:polished_blackstone
+fill ~30 ~-11 ~94 ~31 ~-11 ~94 minecraft:polished_blackstone_bricks
+setblock ~33 ~-11 ~94 minecraft:polished_blackstone_bricks
+setblock ~33 ~-9 ~94 minecraft:polished_blackstone_bricks
+fill ~12 ~-11 ~95 ~12 ~-9 ~95 minecraft:cracked_polished_blackstone_bricks
+fill ~9 ~-11 ~95 ~9 ~-9 ~95 minecraft:cracked_polished_blackstone_bricks
+fill ~34 ~-11 ~95 ~34 ~-9 ~95 minecraft:polished_blackstone_bricks
+setblock ~11 ~-11 ~95 minecraft:polished_blackstone
+setblock ~11 ~-9 ~95 minecraft:polished_blackstone
+fill ~30 ~-11 ~95 ~30 ~-9 ~95 minecraft:cracked_polished_blackstone_bricks
+fill ~8 ~-11 ~95 ~8 ~-11 ~96 minecraft:polished_blackstone_bricks
+fill ~8 ~-9 ~95 ~8 ~-9 ~96 minecraft:polished_blackstone_bricks
+setblock ~12 ~-11 ~96 minecraft:polished_blackstone
+setblock ~12 ~-9 ~96 minecraft:polished_blackstone
+setblock ~32 ~-11 ~96 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock ~30 ~-11 ~96 minecraft:polished_blackstone
+setblock ~30 ~-9 ~96 minecraft:polished_blackstone
+fill ~34 ~-11 ~96 ~34 ~-9 ~96 minecraft:cracked_polished_blackstone_bricks
+fill ~20 ~-11 ~93 ~20 ~-11 ~97 minecraft:polished_blackstone
+fill ~24 ~-11 ~96 ~24 ~-11 ~97 minecraft:polished_blackstone_bricks
+setblock ~10 ~-11 ~97 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock ~21 ~-11 ~97 minecraft:polished_blackstone_bricks
+setblock ~21 ~-9 ~97 minecraft:polished_blackstone_bricks
+setblock ~30 ~-11 ~97 minecraft:polished_blackstone_bricks
+setblock ~30 ~-9 ~97 minecraft:polished_blackstone_bricks
+fill ~8 ~-11 ~97 ~8 ~-9 ~97 minecraft:cracked_polished_blackstone_bricks
+setblock ~12 ~-11 ~97 minecraft:polished_blackstone_bricks
+setblock ~12 ~-9 ~97 minecraft:polished_blackstone_bricks
+setblock ~22 ~-11 ~97 minecraft:cracked_polished_blackstone_bricks
+setblock ~23 ~-11 ~97 minecraft:nether_bricks
+fill ~34 ~-11 ~97 ~34 ~-11 ~98 minecraft:polished_blackstone_bricks
+fill ~12 ~-11 ~98 ~12 ~-10 ~98 minecraft:cracked_polished_blackstone_bricks
+fill ~33 ~-11 ~98 ~33 ~-9 ~98 minecraft:cracked_polished_blackstone_bricks
+setblock ~32 ~-11 ~98 minecraft:polished_blackstone
+setblock ~32 ~-9 ~98 minecraft:polished_blackstone
+setblock ~31 ~-11 ~98 minecraft:polished_blackstone_bricks
+setblock ~31 ~-9 ~98 minecraft:polished_blackstone_bricks
+setblock ~8 ~-11 ~98 minecraft:polished_blackstone
+fill ~30 ~-11 ~98 ~30 ~-10 ~98 minecraft:cracked_polished_blackstone_bricks
+setblock ~8 ~-11 ~99 minecraft:polished_blackstone_bricks
+setblock ~9 ~-11 ~99 minecraft:polished_blackstone
+setblock ~9 ~-9 ~99 minecraft:polished_blackstone
+fill ~11 ~-11 ~99 ~12 ~-11 ~99 minecraft:polished_blackstone_bricks
+fill ~10 ~-11 ~99 ~10 ~-10 ~99 minecraft:cracked_polished_blackstone_bricks
+setblock ~16 ~-11 ~103 minecraft:nether_quartz_ore
+setblock ~10 ~-10 ~73 minecraft:polished_blackstone
 fill ~25 ~-10 ~73 ~25 ~-10 ~74 minecraft:polished_blackstone_bricks
+setblock ~11 ~-10 ~74 minecraft:polished_blackstone
 setblock ~29 ~-10 ~74 minecraft:polished_blackstone
 setblock ~29 ~-10 ~75 minecraft:polished_blackstone_bricks
+setblock ~11 ~-10 ~75 minecraft:polished_blackstone_bricks
 fill ~26 ~-10 ~75 ~27 ~-10 ~75 minecraft:polished_blackstone_bricks
-setblock ~16 ~-10 ~77 minecraft:polished_blackstone
-setblock ~19 ~-10 ~84 minecraft:nether_bricks
-setblock ~24 ~-10 ~84 minecraft:nether_bricks
-setblock ~16 ~-10 ~84 minecraft:polished_blackstone
-setblock ~23 ~-10 ~84 minecraft:cracked_polished_blackstone_bricks
-setblock ~22 ~-10 ~84 minecraft:polished_blackstone_bricks
-setblock ~21 ~-10 ~84 minecraft:polished_blackstone
-setblock ~17 ~-10 ~84 minecraft:polished_blackstone_bricks
-setblock ~19 ~-10 ~90 minecraft:nether_bricks
-setblock ~28 ~-10 ~90 minecraft:cracked_polished_blackstone_bricks
-setblock ~20 ~-10 ~90 minecraft:polished_blackstone_bricks
-setblock ~27 ~-10 ~90 minecraft:polished_blackstone_bricks
-setblock ~24 ~-10 ~90 minecraft:nether_bricks
-setblock ~26 ~-10 ~90 minecraft:polished_blackstone
-setblock ~30 ~-10 ~90 minecraft:polished_blackstone_bricks
-setblock ~23 ~-10 ~90 minecraft:cracked_polished_blackstone_bricks
-setblock ~22 ~-10 ~90 minecraft:polished_blackstone_bricks
-setblock ~25 ~-10 ~90 minecraft:polished_blackstone_bricks
-setblock ~32 ~-10 ~90 minecraft:polished_blackstone_bricks
-setblock ~21 ~-10 ~90 minecraft:polished_blackstone
-setblock ~29 ~-10 ~90 minecraft:nether_bricks
-setblock ~31 ~-10 ~90 minecraft:polished_blackstone
-setblock ~39 ~-10 ~93 minecraft:nether_bricks
-setblock ~38 ~-10 ~93 minecraft:cracked_polished_blackstone_bricks
-setblock ~30 ~-10 ~95 minecraft:basalt
-fill ~29 ~-10 ~95 ~29 ~-10 ~96 minecraft:blackstone
-setblock ~15 ~-10 ~96 minecraft:polished_blackstone
-setblock ~30 ~-10 ~96 minecraft:soul_soil
-setblock ~18 ~-10 ~96 minecraft:polished_blackstone_bricks
-setblock ~28 ~-10 ~96 minecraft:soul_soil
-setblock ~32 ~-10 ~96 minecraft:blackstone
-fill ~37 ~-10 ~93 ~37 ~-10 ~97 minecraft:polished_blackstone_bricks
-fill ~31 ~-10 ~97 ~32 ~-10 ~97 minecraft:basalt
-setblock ~39 ~-10 ~97 minecraft:nether_bricks
-fill ~28 ~-10 ~97 ~29 ~-10 ~97 minecraft:soul_soil
-setblock ~38 ~-10 ~97 minecraft:cracked_polished_blackstone_bricks
-setblock ~27 ~-10 ~97 minecraft:blackstone
-fill ~15 ~-10 ~97 ~15 ~-9 ~97 minecraft:polished_blackstone_bricks
-fill ~30 ~-10 ~97 ~30 ~-9 ~97 minecraft:blackstone
-fill ~19 ~-10 ~97 ~19 ~-10 ~98 minecraft:polished_blackstone_bricks
-fill ~30 ~-10 ~98 ~30 ~-9 ~98 minecraft:soul_soil
-setblock ~32 ~-10 ~98 minecraft:soul_soil
-setblock ~31 ~-10 ~98 minecraft:basalt
-fill ~27 ~-10 ~98 ~29 ~-10 ~99 minecraft:blackstone
-setblock ~15 ~-10 ~99 minecraft:polished_blackstone_bricks
-fill ~30 ~-10 ~99 ~30 ~-9 ~99 minecraft:basalt
-fill ~27 ~-10 ~100 ~27 ~-9 ~100 minecraft:soul_soil
-setblock ~18 ~-10 ~100 minecraft:polished_blackstone_bricks
-setblock ~19 ~-10 ~100 minecraft:polished_blackstone
-fill ~15 ~-10 ~100 ~16 ~-10 ~100 minecraft:polished_blackstone_bricks
-fill ~29 ~-10 ~100 ~31 ~-10 ~100 minecraft:soul_soil
-fill ~28 ~-10 ~100 ~28 ~-10 ~101 minecraft:basalt
-setblock ~30 ~-10 ~101 minecraft:basalt
-setblock ~29 ~-10 ~101 minecraft:blackstone
-setblock ~17 ~-9 ~80 minecraft:soul_lantern[hanging=false]
-setblock ~22 ~-9 ~84 minecraft:polished_blackstone
-setblock ~23 ~-9 ~84 minecraft:polished_blackstone_bricks
-setblock ~19 ~-9 ~84 minecraft:cracked_polished_blackstone_bricks
-setblock ~24 ~-9 ~84 minecraft:cracked_polished_blackstone_bricks
-setblock ~23 ~-9 ~90 minecraft:polished_blackstone_bricks
-setblock ~25 ~-9 ~90 minecraft:nether_bricks
-setblock ~29 ~-9 ~90 minecraft:cracked_polished_blackstone_bricks
-setblock ~19 ~-9 ~90 minecraft:cracked_polished_blackstone_bricks
-setblock ~27 ~-9 ~90 minecraft:polished_blackstone
-setblock ~28 ~-9 ~90 minecraft:polished_blackstone_bricks
-setblock ~20 ~-9 ~90 minecraft:nether_bricks
-setblock ~38 ~-9 ~93 minecraft:polished_blackstone_bricks
-setblock ~38 ~-7 ~93 minecraft:polished_blackstone_bricks
-fill ~37 ~-9 ~93 ~37 ~-9 ~94 minecraft:polished_blackstone
-setblock ~17 ~-9 ~96 minecraft:polished_blackstone_bricks
-fill ~37 ~-9 ~96 ~37 ~-9 ~97 minecraft:polished_blackstone
-setblock ~29 ~-9 ~97 minecraft:soul_soil
-fill ~27 ~-9 ~97 ~28 ~-9 ~97 minecraft:basalt
-setblock ~38 ~-9 ~97 minecraft:polished_blackstone_bricks
-setblock ~31 ~-9 ~98 minecraft:blackstone
-setblock ~28 ~-9 ~98 minecraft:soul_soil
-setblock ~29 ~-9 ~98 minecraft:basalt
-setblock ~27 ~-9 ~98 minecraft:basalt
-fill ~27 ~-9 ~99 ~28 ~-9 ~99 minecraft:blackstone
-setblock ~9 ~-9 ~99 minecraft:soul_lantern[hanging=false]
-fill ~29 ~-9 ~100 ~30 ~-9 ~100 minecraft:soul_soil
-setblock ~19 ~-9 ~100 minecraft:polished_blackstone_bricks
-setblock ~28 ~-9 ~100 minecraft:basalt
-setblock ~31 ~-9 ~100 minecraft:blackstone
-fill ~28 ~-9 ~101 ~29 ~-9 ~101 minecraft:basalt
-setblock ~16 ~-8 ~77 minecraft:nether_bricks
-setblock ~39 ~-8 ~93 minecraft:chiseled_polished_blackstone
-fill ~37 ~-8 ~94 ~37 ~-8 ~95 minecraft:chiseled_polished_blackstone
-setblock ~39 ~-8 ~97 minecraft:chiseled_polished_blackstone
-fill ~16 ~-7 ~72 ~16 ~-7 ~76 minecraft:cracked_polished_blackstone_bricks
-setblock ~16 ~-7 ~77 minecraft:chiseled_polished_blackstone
-setblock ~39 ~-7 ~93 minecraft:polished_blackstone
-setblock ~37 ~-7 ~96 minecraft:nether_bricks
-setblock ~39 ~-7 ~97 minecraft:polished_blackstone
+setblock ~8 ~-10 ~77 minecraft:polished_blackstone
+fill ~10 ~-10 ~77 ~11 ~-10 ~77 minecraft:polished_blackstone_bricks
+setblock ~14 ~-10 ~85 minecraft:soul_soil
+fill ~12 ~-10 ~85 ~13 ~-10 ~85 minecraft:basalt
+fill ~15 ~-10 ~85 ~15 ~-10 ~86 minecraft:basalt
+fill ~13 ~-10 ~86 ~14 ~-10 ~86 minecraft:soul_soil
+fill ~16 ~-10 ~85 ~16 ~-10 ~87 minecraft:soul_soil
+fill ~11 ~-10 ~86 ~12 ~-10 ~87 minecraft:blackstone
+setblock ~13 ~-10 ~87 minecraft:soul_soil
+fill ~14 ~-10 ~87 ~15 ~-10 ~87 minecraft:basalt
+setblock ~11 ~-10 ~88 minecraft:basalt
+setblock ~14 ~-10 ~88 minecraft:soul_soil
+setblock ~13 ~-10 ~88 minecraft:blackstone
+fill ~12 ~-10 ~88 ~12 ~-10 ~89 minecraft:soul_soil
+fill ~13 ~-10 ~89 ~14 ~-10 ~89 minecraft:basalt
+setblock ~23 ~-10 ~93 minecraft:cracked_polished_blackstone_bricks
+setblock ~22 ~-10 ~93 minecraft:polished_blackstone_bricks
+setblock ~21 ~-10 ~93 minecraft:polished_blackstone
+fill ~24 ~-10 ~93 ~24 ~-10 ~94 minecraft:nether_bricks
+setblock ~30 ~-10 ~94 minecraft:polished_blackstone_bricks
+fill ~33 ~-10 ~94 ~34 ~-10 ~94 minecraft:polished_blackstone_bricks
+setblock ~31 ~-10 ~94 minecraft:polished_blackstone
+setblock ~11 ~-10 ~95 minecraft:polished_blackstone_bricks
+setblock ~8 ~-10 ~95 minecraft:polished_blackstone
+setblock ~8 ~-10 ~96 minecraft:polished_blackstone_bricks
+fill ~20 ~-10 ~93 ~20 ~-10 ~97 minecraft:polished_blackstone_bricks
+fill ~24 ~-10 ~96 ~24 ~-10 ~97 minecraft:nether_bricks
+fill ~30 ~-10 ~96 ~30 ~-10 ~97 minecraft:polished_blackstone_bricks
+fill ~12 ~-10 ~96 ~12 ~-10 ~97 minecraft:polished_blackstone_bricks
+setblock ~34 ~-10 ~97 minecraft:polished_blackstone
+setblock ~23 ~-10 ~97 minecraft:cracked_polished_blackstone_bricks
+setblock ~22 ~-10 ~97 minecraft:polished_blackstone_bricks
+setblock ~21 ~-10 ~97 minecraft:polished_blackstone
+setblock ~8 ~-10 ~98 minecraft:polished_blackstone_bricks
+fill ~31 ~-10 ~98 ~32 ~-10 ~98 minecraft:polished_blackstone_bricks
+setblock ~34 ~-10 ~98 minecraft:polished_blackstone_bricks
+setblock ~12 ~-10 ~99 minecraft:polished_blackstone
+fill ~8 ~-10 ~99 ~9 ~-10 ~99 minecraft:polished_blackstone_bricks
+fill ~11 ~-10 ~99 ~11 ~-9 ~99 minecraft:polished_blackstone_bricks
+setblock ~9 ~-9 ~73 minecraft:polished_blackstone_bricks
+setblock ~29 ~-9 ~74 minecraft:polished_blackstone_bricks
+setblock ~12 ~-9 ~85 minecraft:soul_soil
+fill ~14 ~-9 ~85 ~15 ~-9 ~86 minecraft:blackstone
+fill ~13 ~-9 ~85 ~13 ~-9 ~86 minecraft:basalt
+fill ~16 ~-9 ~85 ~16 ~-9 ~86 minecraft:soul_soil
+setblock ~11 ~-9 ~86 minecraft:soul_soil
+setblock ~12 ~-9 ~86 minecraft:blackstone
+fill ~13 ~-9 ~87 ~16 ~-9 ~87 minecraft:blackstone
+fill ~11 ~-9 ~87 ~12 ~-9 ~87 minecraft:basalt
+fill ~14 ~-9 ~88 ~15 ~-9 ~88 minecraft:blackstone
+setblock ~12 ~-9 ~88 minecraft:basalt
+setblock ~13 ~-9 ~88 minecraft:soul_soil
+setblock ~11 ~-9 ~88 minecraft:blackstone
+setblock ~13 ~-9 ~89 minecraft:basalt
+setblock ~14 ~-9 ~89 minecraft:blackstone
+setblock ~23 ~-9 ~93 minecraft:polished_blackstone_bricks
+fill ~20 ~-9 ~93 ~20 ~-9 ~94 minecraft:nether_bricks
+fill ~24 ~-9 ~93 ~24 ~-9 ~97 minecraft:cracked_polished_blackstone_bricks
+fill ~20 ~-9 ~96 ~20 ~-9 ~97 minecraft:nether_bricks
+setblock ~23 ~-9 ~97 minecraft:polished_blackstone_bricks
+setblock ~34 ~-9 ~97 minecraft:polished_blackstone_bricks
+setblock ~22 ~-8 ~93 minecraft:chiseled_polished_blackstone
+setblock ~24 ~-8 ~93 minecraft:chiseled_polished_blackstone
+fill ~20 ~-8 ~93 ~20 ~-8 ~96 minecraft:chiseled_polished_blackstone
+fill ~24 ~-8 ~95 ~24 ~-8 ~96 minecraft:chiseled_polished_blackstone
+fill ~21 ~-8 ~97 ~24 ~-8 ~97 minecraft:chiseled_polished_blackstone
+setblock ~20 ~-7 ~93 minecraft:polished_blackstone_bricks
+setblock ~21 ~-7 ~93 minecraft:cracked_polished_blackstone_bricks
+fill ~24 ~-7 ~93 ~24 ~-7 ~95 minecraft:polished_blackstone
+setblock ~20 ~-7 ~96 minecraft:polished_blackstone_bricks

@@ -147,17 +147,94 @@ for (cx,cz) in [(-6,-6),(6,-6),(-6,6),(6,6),(0,-6),(0,6)]:
     put(cx,YG+2,cz,CHEST('south' if cz<=0 else 'north')); riches.append((cx,YG+2,cz))
 for (cx,cz) in [(-17,-17),(17,-17),(-17,17),(17,17),(0,-17),(0,17),(-17,0),(17,0),(0,0)]:
     put(cx,YG+2,cz,CHEST('south' if cz<=0 else 'north')); chests.append((cx,YG+2,cz))
+# --- 1.9.111: 大要塞（約61×61＝マップ幅の約1/5）。小屋・植生・鉱石・開始地点はここを避ける ---
+# 高さは外壁4（胸壁5）・隅の塔5まで。階段・屋根なし。溶岩なし。チェスト 通常8＋上位2 を内部に置く。
+FX,FZ,FH=-72,0,30
+FB=['minecraft:nether_bricks','minecraft:red_nether_bricks','minecraft:cracked_nether_bricks','minecraft:polished_blackstone_bricks','minecraft:nether_bricks']
+def fmat(x,y,z): return FB[(x*7+y*3+z*5)%len(FB)]
+def in_fort(x,z,m=0): return FX-FH-m<=x<=FX+FH+m and FZ-FH-m<=z<=FZ+FH+m
+_sl=surf[FX+OFF-FH-2:FX+OFF+FH+3,FZ+OFF-FH-2:FZ+OFF+FH+3]
+assert (_sl==YG).all() and max(math.hypot(a,b) for a in (FX-FH,FX+FH) for b in (FZ-FH,FZ+FH))<110
+def fput(a,y,c,b): put(FX+a,y,FZ+c,b)
+for a in range(-FH,FH+1):
+    for c in range(-FH,FH+1):
+        fput(a,YG,c,'minecraft:polished_blackstone' if (abs(a)<=2 or abs(c)<=2) else fmat(a,YG,c))
+        e=max(abs(a),abs(c))
+        if e==FH:
+            gate=min(abs(a),abs(c))<=2
+            for y in range(YG+1,YG+5):
+                if gate and y<=YG+3: continue
+                fput(a,y,c,'minecraft:chiseled_polished_blackstone' if gate else fmat(a,y,c))
+            if not gate and (a+c)%2==0: fput(a,YG+5,c,fmat(a,YG+5,c))
+# 隅の塔（内部に通常チェスト1、出入口は内側向き）
+fchests=[];frich=[]
+CH=lambda f:f'minecraft:chest[facing={f},type=single,waterlogged=false]'
+for sx in (-1,1):
+    for sz in (-1,1):
+        cx,cz=sx*26,sz*26
+        for a in range(-3,4):
+            for c in range(-3,4):
+                if max(abs(a),abs(c))!=3: fput(cx+a,YG,cz+c,'minecraft:polished_blackstone'); continue
+                inner=(a==-3*sx and abs(c)<=0) or (c==-3*sz and abs(a)<=0)
+                for y in range(YG+1,YG+6):
+                    if inner and y<=YG+2: continue
+                    fput(cx+a,y,cz+c,fmat(cx+a,y,cz+c))
+        fput(cx,YG+1,cz,CH('east' if sx<0 else 'west')); fchests.append((FX+cx,YG+1,FZ+cz))
+# 中央の城（21×21、壁高4、四方に幅3の出入口、上位チェスト2）
+for a in range(-10,11):
+    for c in range(-10,11):
+        fput(a,YG,c,'minecraft:gilded_blackstone' if (abs(a)+abs(c))%5==0 else ('minecraft:chiseled_polished_blackstone' if (a+c)%2==0 else 'minecraft:polished_blackstone_bricks'))
+        if max(abs(a),abs(c))==10:
+            gate=min(abs(a),abs(c))<=1
+            for y in range(YG+1,YG+(6 if (abs(a)==10 and abs(c)==10) else 5)):
+                if gate and y<=YG+3: continue
+                fput(a,y,c,fmat(a,y,c))
+for (a,c) in ((-5,-5),(5,-5),(-5,5),(5,5)):
+    for y in range(YG+1,YG+4): fput(a,y,c,'minecraft:polished_blackstone_bricks')
+for (a,c,f) in ((-7,0,'east'),(7,0,'west')):
+    fput(a,YG+1,c,CH(f)); frich.append((FX+a,YG+1,FZ+c))
+# 四隅の小さな東屋（屋根なしの廃墟、通常チェスト1）
+for sx in (-1,1):
+    for sz in (-1,1):
+        cx,cz=sx*18,sz*18
+        for a in range(-3,4):
+            for c in range(-3,4):
+                if max(abs(a),abs(c))!=3: continue
+                door=(a==-3*sx and c==0) or (c==-3*sz and a==0)
+                for y in range(YG+1,YG+4):
+                    if door and y<=YG+2: continue
+                    if y==YG+3 and (a+c)%2==0: continue
+                    fput(cx+a,y,cz+c,fmat(cx+a,y,cz+c))
+        fput(cx,YG+1,cz,CH('south' if sz<0 else 'north')); fchests.append((FX+cx,YG+1,FZ+cz))
+# 中庭の障害物：崩れた低い壁と柱
+_fr=np.random.default_rng(SEED+11)
+for _ in range(40):
+    a=int(_fr.integers(-25,26)); c=int(_fr.integers(-25,26)); ln=int(_fr.integers(3,6)); ax=int(_fr.integers(0,2)); h=int(_fr.integers(2,4))
+    if abs(a)<=13 and abs(c)<=13: continue            # 城の周りは空ける
+    if abs(a)<=4 or abs(c)<=4: continue               # 十字の参道は空ける
+    if (abs(a)>=14 and abs(c)>=14 and abs(a)<=21 and abs(c)<=21) or (abs(a)>=22 and abs(c)>=22): continue
+    for i in range(ln):
+        for y in range(YG+1,YG+1+h): fput(a+(i if ax==0 else 0),y,c+(i if ax==1 else 0),fmat(a+i,y,c))
+for a in range(-24,25,6):
+    for c in range(-24,25,6):
+        if abs(a)<=4 or abs(c)<=4 or max(abs(a),abs(c))<=12 or (abs(a)>=14 and abs(c)>=14): continue
+        for y in range(YG+1,YG+5): fput(a,y,c,'minecraft:polished_blackstone' if y<YG+4 else 'minecraft:chiseled_polished_blackstone')
+for a in range(-FH-2,FH+3):
+    for c in range(-FH-2,FH+3): pass
+mark(FX,FZ,FH+2)
+for (x,y,z) in fchests: chests.append((x,y,z))
+for (x,y,z) in frich: riches.append((x,y,z))
 # --- 小屋（チェスト1個ずつ）50 ---
 huts=[]
 cand=[]
 for cx in range(-120,121,8):
     for cz in range(-120,121,8):
         x=cx+int(rng.integers(-3,4)); z=cz+int(rng.integers(-3,4)); r=math.hypot(x,z)
-        if 34<=r<=108: cand.append((x,z))
+        if 34<=r<=108 and max(abs(x),abs(z))>=33 and not in_fort(x,z,8): cand.append((x,z))
 rng.shuffle(cand)
 for (x,z) in cand:
     if len(huts)>=50: break
-    if any(math.hypot(x-a,z-b)<20 for a,b in huts): continue
+    if any(math.hypot(x-a,z-b)<18 for a,b in huts): continue
     huts.append((x,z))
 assert len(huts)==50,len(huts)
 for (x,z) in huts:
@@ -196,7 +273,7 @@ def free(x,z,rad):
     xa,xb,za,zb=x+OFF-rad,x+OFF+rad+1,z+OFF-rad,z+OFF+rad+1
     if used[xa:xb,za:zb].any() or spu[xa:xb,za:zb].any() or (surf[xa:xb,za:zb]!=YG).any() or (~np.isin(g[xa:xb,za:zb,YG+1-Y0],OKG)).any(): return False
     return True
-def place_many(count,half,builder,tries=6000,margin=2):
+def place_many(count,half,builder,tries=40000,margin=2):
     n=0;t=0;rad=half+margin
     while n<count and t<tries:
         t+=1
@@ -343,7 +420,7 @@ for k in range(40):
     for dr in range(0,12):
         for da in (0,0.02,-0.02,0.04,-0.04):
             x=int(round(rr*math.cos(ang+da)))+0; z=int(round(rr*math.sin(ang+da)))
-            if math.hypot(x,z)>112: continue
+            if math.hypot(x,z)>112 or in_fort(x,z,2): continue
             s=int(surf[x+OFF,z+OFF]); ok=True
             for a in range(-1,2):
                 for c in range(-1,2):
@@ -353,6 +430,15 @@ for k in range(40):
                 best=(x,s+1,z); break
         if best: break
         rr+=1
+    if not best:   # 大要塞の前などで見つからない場合は、角度を大きくずらして探す
+        for da in (0.1,-0.1,0.2,-0.2,0.3,-0.3,0.4,-0.4):
+            for rr2 in (70,86,100,60):
+                x=int(round(rr2*math.cos(ang+da))); z=int(round(rr2*math.sin(ang+da)))
+                if math.hypot(x,z)>112 or in_fort(x,z,2): continue
+                s=int(surf[x+OFF,z+OFF])
+                if all(get(x+a,y,z+c)=='minecraft:air' for a in range(-1,2) for c in range(-1,2) for y in range(s+1,s+4)) and get(x,s,z) not in ('minecraft:lava','minecraft:air') and (x,s+1,z) not in sp:
+                    best=(x,s+1,z); break
+            if best: break
     assert best,k
     sp.append(best)
 assert len(set(sp))==40
@@ -384,13 +470,14 @@ bad_ch=[c for c in chests+riches if not reach(c[0],c[2])]
 bad_or=[o for o in ores if not reach(o[0],o[2])]
 maxr=max(math.hypot(a-OFF,b-OFF) for a,b in seen)
 print("reach",len(seen),"max_r",round(maxr,1),"bad spawn/chest/ore",len(bad_sp),len(bad_ch),len(bad_or))
+print("bad_ch",bad_ch,"bad_sp",bad_sp)
 assert not bad_sp and not bad_ch and not bad_or and maxr<123
 # --- 検算 ---
-assert len(chests)==59 and len(riches)==6 and len(ores)==108
+assert len(chests)==67 and len(riches)==8 and len(ores)==108
 assert not (g[:,:,-1]!=0).any() or True
 # 保存
 np.savez_compressed(f"{ROOT}/source/map_nether_target.npz",grid=g,palette=np.array(pal))
-json.dump({"size":[N,N],"y_range":[Y0,0],"ground_y":YG,"chests":chests,"rich":riches,"ores":ores,"huts":huts,"extras":EXTRA,"trees":len(trees),"spires":len(spires),"spawn_points":sp},open(f"{ROOT}/MAP_NETHER_MANIFEST.json","w"),ensure_ascii=False)
+json.dump({"size":[N,N],"y_range":[Y0,0],"ground_y":YG,"chests":chests,"rich":riches,"ores":ores,"huts":huts,"fortress":[FX,FZ,FH],"extras":EXTRA,"trees":len(trees),"spires":len(spires),"spawn_points":sp},open(f"{ROOT}/MAP_NETHER_MANIFEST.json","w"),ensure_ascii=False)
 # --- 関数出力 ---
 os.makedirs(OUT,exist_ok=True)
 for d in ('preload','wait','release','apply','place'): os.makedirs(f"{OUT}/{d}",exist_ok=True)

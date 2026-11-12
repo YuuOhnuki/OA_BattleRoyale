@@ -184,63 +184,68 @@ fill ~-80 ~-12 ~-89 ~-79 ~-12 ~-89 minecraft:warped_nylium
 setblock ~-78 ~-12 ~-89 minecraft:netherrack
 fill ~-74 ~-12 ~-89 ~-73 ~-12 ~-89 minecraft:netherrack
 setblock ~-57 ~-11 ~-109 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~-57 ~-11 ~-108 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-58 ~-11 ~-108 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~-59 ~-11 ~-108 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~-57 ~-11 ~-108 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~-61 ~-11 ~-107 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-60 ~-11 ~-107 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~-59 ~-11 ~-107 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
-setblock ~-61 ~-11 ~-107 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~-61 ~-11 ~-106 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-62 ~-11 ~-106 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~-63 ~-11 ~-105 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
+setblock ~-61 ~-11 ~-106 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-64 ~-11 ~-105 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~-63 ~-11 ~-105 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~-62 ~-11 ~-105 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
-setblock ~-65 ~-11 ~-104 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~-64 ~-11 ~-104 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-66 ~-11 ~-104 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~-66 ~-11 ~-103 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~-65 ~-11 ~-104 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~-67 ~-11 ~-103 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~-66 ~-11 ~-103 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~-67 ~-11 ~-102 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-68 ~-11 ~-102 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~-69 ~-11 ~-102 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~-67 ~-11 ~-102 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-69 ~-11 ~-101 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-70 ~-11 ~-101 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-72 ~-11 ~-100 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-71 ~-11 ~-100 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~-70 ~-11 ~-100 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
-setblock ~-73 ~-11 ~-99 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-72 ~-11 ~-99 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~-73 ~-11 ~-99 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-73 ~-11 ~-98 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-74 ~-11 ~-98 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~-74 ~-11 ~-97 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-76 ~-11 ~-97 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-75 ~-11 ~-97 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~-65 ~-11 ~-97 minecraft:warped_roots
 setblock ~-61 ~-11 ~-97 minecraft:warped_roots
-setblock ~-74 ~-11 ~-97 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+fill ~-57 ~-11 ~-96 ~-57 ~-7 ~-96 minecraft:warped_stem
 setblock ~-76 ~-11 ~-96 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-77 ~-11 ~-96 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-77 ~-11 ~-95 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-78 ~-11 ~-95 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~-69 ~-11 ~-94 minecraft:warped_roots
 setblock ~-78 ~-11 ~-94 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-79 ~-11 ~-94 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~-69 ~-11 ~-94 minecraft:warped_roots
 setblock ~-70 ~-11 ~-93 minecraft:warped_roots
+setblock ~-67 ~-11 ~-93 minecraft:warped_roots
 setblock ~-80 ~-11 ~-93 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-79 ~-11 ~-93 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
-setblock ~-67 ~-11 ~-93 minecraft:warped_roots
+setblock ~-81 ~-11 ~-92 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~-80 ~-11 ~-92 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-82 ~-11 ~-92 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~-81 ~-11 ~-92 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
-setblock ~-61 ~-11 ~-91 minecraft:warped_roots
+setblock ~-73 ~-11 ~-91 minecraft:warped_roots
 setblock ~-82 ~-11 ~-91 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~-71 ~-11 ~-91 minecraft:warped_roots
 setblock ~-83 ~-11 ~-91 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~-61 ~-11 ~-91 minecraft:warped_roots
 setblock ~-84 ~-11 ~-90 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-83 ~-11 ~-90 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~-68 ~-11 ~-90 minecraft:warped_roots
 setblock ~-85 ~-11 ~-89 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-84 ~-11 ~-89 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
-fill ~-72 ~-4 ~-90 ~-70 ~-3 ~-90 minecraft:warped_wart_block
-fill ~-70 ~-4 ~-89 ~-69 ~-4 ~-89 minecraft:warped_wart_block
-setblock ~-71 ~-4 ~-89 minecraft:shroomlight
-fill ~-73 ~-4 ~-89 ~-72 ~-4 ~-89 minecraft:warped_wart_block
-fill ~-73 ~-3 ~-89 ~-69 ~-3 ~-89 minecraft:warped_wart_block
-fill ~-72 ~-2 ~-89 ~-70 ~-2 ~-89 minecraft:warped_wart_block
+fill ~-58 ~-7 ~-98 ~-57 ~-6 ~-98 minecraft:warped_wart_block
+fill ~-59 ~-7 ~-97 ~-57 ~-7 ~-97 minecraft:warped_wart_block
+fill ~-59 ~-7 ~-96 ~-58 ~-7 ~-96 minecraft:warped_wart_block
+fill ~-59 ~-7 ~-95 ~-57 ~-7 ~-95 minecraft:warped_wart_block
+fill ~-58 ~-7 ~-94 ~-57 ~-6 ~-94 minecraft:warped_wart_block
+fill ~-59 ~-6 ~-97 ~-57 ~-6 ~-95 minecraft:warped_wart_block
+fill ~-58 ~-5 ~-97 ~-57 ~-5 ~-95 minecraft:warped_wart_block

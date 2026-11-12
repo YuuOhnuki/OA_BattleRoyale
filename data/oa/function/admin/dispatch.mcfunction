@@ -84,3 +84,29 @@ execute if score @s oa.admin matches 56 at @s run function oa:br/spawn_points/re
 execute if score @s oa.admin matches 57 at @s run function oa:br/spawn_points/clear
 
 execute if score @s oa.admin matches 58 run function oa:practice/create
+
+# 1.9.111: マップ別の操作（地上=60..71、ネザー=80..91）。旧コード 3/13/29-31/48/49/54-57 は「選択中のマップ」が対象
+execute if score @s oa.admin matches 60 run function oa:map/do {key:"br",op:"teleport"}
+execute if score @s oa.admin matches 61 run function oa:map/do {key:"br",op:"create"}
+execute if score @s oa.admin matches 62 run function oa:map/do {key:"br",op:"rebuild"}
+execute if score @s oa.admin matches 63 run function oa:map/do {key:"br",op:"delete"}
+execute if score @s oa.admin matches 64 run function oa:map/do {key:"br",op:"center"}
+execute if score @s oa.admin matches 65 run function oa:map/do {key:"br",op:"gen_center"}
+execute if score @s oa.admin matches 66 run function oa:map/do {key:"br",op:"border"}
+execute if score @s oa.admin matches 67 run function oa:map/do {key:"br",op:"sp_add"}
+execute if score @s oa.admin matches 68 run function oa:map/do {key:"br",op:"sp_list"}
+execute if score @s oa.admin matches 69 run function oa:map/do {key:"br",op:"sp_remove"}
+execute if score @s oa.admin matches 70 run function oa:map/do {key:"br",op:"sp_clear"}
+execute if score @s oa.admin matches 71 run function oa:map/do {key:"br",op:"select"}
+execute if score @s oa.admin matches 80 run function oa:map/do {key:"nether",op:"teleport"}
+execute if score @s oa.admin matches 81 run function oa:map/do {key:"nether",op:"create"}
+execute if score @s oa.admin matches 82 run function oa:map/do {key:"nether",op:"rebuild"}
+execute if score @s oa.admin matches 83 run function oa:map/do {key:"nether",op:"delete"}
+execute if score @s oa.admin matches 84 run function oa:map/do {key:"nether",op:"center"}
+execute if score @s oa.admin matches 85 run function oa:map/do {key:"nether",op:"gen_center"}
+execute if score @s oa.admin matches 86 run function oa:map/do {key:"nether",op:"border"}
+execute if score @s oa.admin matches 87 run function oa:map/do {key:"nether",op:"sp_add"}
+execute if score @s oa.admin matches 88 run function oa:map/do {key:"nether",op:"sp_list"}
+execute if score @s oa.admin matches 89 run function oa:map/do {key:"nether",op:"sp_remove"}
+execute if score @s oa.admin matches 90 run function oa:map/do {key:"nether",op:"sp_clear"}
+execute if score @s oa.admin matches 91 run function oa:map/do {key:"nether",op:"select"}

@@ -1369,10 +1369,10 @@ setblock ~-22 ~-10 ~-19 minecraft:polished_blackstone
 setblock ~-22 ~-6 ~-19 minecraft:polished_blackstone
 setblock ~0 ~-10 ~-17 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~-17 ~-10 ~-17 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock ~-12 ~-10 ~-16 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
+setblock ~-16 ~-10 ~-16 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 fill ~-15 ~-10 ~-16 ~-13 ~-10 ~-16 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 fill ~-5 ~-10 ~-16 ~-5 ~-7 ~-16 minecraft:polished_blackstone
-setblock ~-16 ~-10 ~-16 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~-12 ~-10 ~-16 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 fill ~5 ~-10 ~-16 ~5 ~-7 ~-16 minecraft:polished_blackstone
 fill ~-22 ~-10 ~-16 ~-22 ~-10 ~-15 minecraft:polished_blackstone_bricks
 fill ~-22 ~-6 ~-16 ~-22 ~-6 ~-15 minecraft:polished_blackstone_bricks
@@ -1382,9 +1382,9 @@ fill ~-16 ~-10 ~-15 ~-16 ~-10 ~-13 minecraft:nether_brick_fence[east=false,north
 fill ~-12 ~-10 ~-15 ~-12 ~-10 ~-13 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-22 ~-10 ~-13 minecraft:polished_blackstone
 setblock ~-22 ~-6 ~-13 minecraft:polished_blackstone
-setblock ~-12 ~-10 ~-12 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 fill ~-15 ~-10 ~-12 ~-13 ~-10 ~-12 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~-16 ~-10 ~-12 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
+setblock ~-12 ~-10 ~-12 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 fill ~-22 ~-10 ~-10 ~-22 ~-10 ~-9 minecraft:polished_blackstone_bricks
 fill ~-22 ~-6 ~-10 ~-22 ~-6 ~-9 minecraft:polished_blackstone_bricks
 setblock ~6 ~-10 ~-9 minecraft:polished_blackstone

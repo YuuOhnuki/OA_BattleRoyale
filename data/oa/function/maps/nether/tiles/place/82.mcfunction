@@ -38,18 +38,18 @@ fill ~-62 ~-12 ~108 ~-57 ~-12 ~108 minecraft:blackstone
 fill ~-61 ~-12 ~109 ~-57 ~-12 ~109 minecraft:blackstone
 fill ~-59 ~-12 ~110 ~-57 ~-12 ~110 minecraft:blackstone
 setblock ~-57 ~-12 ~111 minecraft:blackstone
+setblock ~-64 ~-11 ~104 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~-66 ~-11 ~104 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~-65 ~-11 ~104 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
-setblock ~-64 ~-11 ~104 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~-63 ~-11 ~105 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~-64 ~-11 ~105 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~-62 ~-11 ~105 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
-setblock ~-62 ~-11 ~106 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~-61 ~-11 ~106 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
+setblock ~-62 ~-11 ~106 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
+setblock ~-60 ~-11 ~107 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~-61 ~-11 ~107 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~-59 ~-11 ~107 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
-setblock ~-60 ~-11 ~107 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
-setblock ~-58 ~-11 ~108 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~-57 ~-11 ~108 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~-59 ~-11 ~108 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
+setblock ~-58 ~-11 ~108 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~-57 ~-11 ~109 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]

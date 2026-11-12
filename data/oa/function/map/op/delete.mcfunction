@@ -1,0 +1,1 @@
+function oa:map/delete

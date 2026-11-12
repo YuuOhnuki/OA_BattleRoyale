@@ -104,23 +104,22 @@ fill ~90 ~-12 ~72 ~94 ~-12 ~72 minecraft:soul_soil
 fill ~86 ~-12 ~72 ~87 ~-12 ~72 minecraft:soul_sand
 setblock ~97 ~-12 ~73 minecraft:polished_blackstone
 fill ~92 ~-12 ~73 ~95 ~-12 ~73 minecraft:soul_soil
-fill ~80 ~-12 ~73 ~83 ~-12 ~73 minecraft:soul_soil
 setblock ~84 ~-12 ~73 minecraft:soul_sand
 setblock ~90 ~-12 ~73 minecraft:soul_soil
 setblock ~91 ~-12 ~73 minecraft:soul_sand
 fill ~86 ~-12 ~73 ~87 ~-12 ~73 minecraft:soul_soil
+fill ~81 ~-12 ~73 ~83 ~-12 ~73 minecraft:soul_soil
 fill ~98 ~-12 ~73 ~101 ~-12 ~73 minecraft:blackstone
 fill ~88 ~-12 ~73 ~89 ~-12 ~73 minecraft:soul_sand
 setblock ~85 ~-12 ~73 minecraft:basalt
 setblock ~96 ~-12 ~73 minecraft:blackstone
+fill ~76 ~-12 ~72 ~80 ~-12 ~74 minecraft:polished_blackstone
 setblock ~90 ~-12 ~74 minecraft:soul_sand
 fill ~85 ~-12 ~74 ~89 ~-12 ~74 minecraft:soul_soil
-setblock ~80 ~-12 ~74 minecraft:soul_sand
 fill ~91 ~-12 ~74 ~92 ~-12 ~74 minecraft:soul_soil
 setblock ~94 ~-12 ~74 minecraft:soul_soil
 fill ~95 ~-12 ~74 ~100 ~-12 ~74 minecraft:blackstone
 setblock ~93 ~-12 ~74 minecraft:soul_sand
-setblock ~79 ~-12 ~74 minecraft:soul_soil
 setblock ~82 ~-12 ~74 minecraft:soul_sand
 setblock ~84 ~-12 ~74 minecraft:basalt
 setblock ~81 ~-12 ~74 minecraft:soul_soil
@@ -292,60 +291,76 @@ fill ~72 ~-12 ~100 ~74 ~-12 ~100 minecraft:blackstone
 fill ~72 ~-12 ~101 ~73 ~-12 ~101 minecraft:blackstone
 setblock ~72 ~-12 ~102 minecraft:blackstone
 setblock ~99 ~-11 ~72 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+fill ~80 ~-11 ~72 ~80 ~-9 ~72 minecraft:polished_blackstone_bricks
 setblock ~100 ~-11 ~72 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~78 ~-11 ~72 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~99 ~-11 ~73 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~76 ~-11 ~73 minecraft:polished_blackstone_bricks
+setblock ~76 ~-9 ~73 minecraft:polished_blackstone_bricks
 setblock ~98 ~-11 ~73 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~97 ~-11 ~74 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+fill ~80 ~-11 ~73 ~80 ~-9 ~73 minecraft:cracked_polished_blackstone_bricks
+fill ~78 ~-11 ~74 ~78 ~-9 ~74 minecraft:cracked_polished_blackstone_bricks
 setblock ~98 ~-11 ~74 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+fill ~76 ~-11 ~74 ~77 ~-11 ~74 minecraft:polished_blackstone_bricks
+fill ~76 ~-9 ~74 ~77 ~-9 ~74 minecraft:polished_blackstone_bricks
+setblock ~80 ~-11 ~74 minecraft:polished_blackstone
+setblock ~80 ~-9 ~74 minecraft:polished_blackstone
+setblock ~79 ~-11 ~74 minecraft:polished_blackstone_bricks
+setblock ~79 ~-9 ~74 minecraft:polished_blackstone_bricks
+setblock ~97 ~-11 ~74 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~97 ~-11 ~75 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~97 ~-11 ~76 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~96 ~-11 ~76 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~95 ~-11 ~77 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~96 ~-11 ~77 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
-fill ~76 ~-11 ~77 ~76 ~-9 ~77 minecraft:bone_block[axis=y]
-setblock ~95 ~-11 ~78 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~95 ~-11 ~77 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~94 ~-11 ~78 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~94 ~-11 ~79 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~95 ~-11 ~78 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~93 ~-11 ~79 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~94 ~-11 ~79 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~93 ~-11 ~80 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~92 ~-11 ~80 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~92 ~-11 ~81 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~91 ~-11 ~82 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~92 ~-11 ~82 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~91 ~-11 ~82 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~91 ~-11 ~83 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~90 ~-11 ~83 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~89 ~-11 ~84 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~90 ~-11 ~84 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
-setblock ~88 ~-11 ~85 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~89 ~-11 ~85 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
-setblock ~87 ~-11 ~86 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~88 ~-11 ~85 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~88 ~-11 ~86 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~87 ~-11 ~86 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~87 ~-11 ~87 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~86 ~-11 ~87 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~86 ~-11 ~88 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~85 ~-11 ~88 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~84 ~-11 ~89 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~86 ~-11 ~88 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~85 ~-11 ~89 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~84 ~-11 ~89 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~84 ~-11 ~90 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~83 ~-11 ~90 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~83 ~-11 ~91 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~82 ~-11 ~91 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~81 ~-11 ~92 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~80 ~-11 ~92 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~82 ~-11 ~92 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
-setblock ~81 ~-11 ~92 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~80 ~-11 ~93 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~79 ~-11 ~93 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~79 ~-11 ~94 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~78 ~-11 ~94 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~78 ~-11 ~95 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~77 ~-11 ~95 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~78 ~-11 ~95 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~76 ~-11 ~96 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~77 ~-11 ~96 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
-setblock ~76 ~-11 ~97 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~75 ~-11 ~97 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~74 ~-11 ~97 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~76 ~-11 ~97 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~74 ~-11 ~98 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~73 ~-11 ~98 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~73 ~-11 ~99 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~72 ~-11 ~99 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~73 ~-11 ~99 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~72 ~-11 ~100 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~76 ~-10 ~73 minecraft:polished_blackstone
+fill ~79 ~-10 ~74 ~80 ~-10 ~74 minecraft:polished_blackstone_bricks
+setblock ~76 ~-10 ~74 minecraft:polished_blackstone_bricks
+setblock ~77 ~-10 ~74 minecraft:polished_blackstone
+setblock ~76 ~-9 ~72 minecraft:cracked_polished_blackstone_bricks

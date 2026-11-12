@@ -130,6 +130,7 @@ fill ~-98 ~-12 ~51 ~-93 ~-12 ~51 minecraft:crimson_nylium
 setblock ~-103 ~-12 ~51 minecraft:netherrack
 fill ~-93 ~-12 ~52 ~-92 ~-12 ~52 minecraft:netherrack
 setblock ~-90 ~-12 ~52 minecraft:netherrack
+setblock ~-90 ~-10 ~52 minecraft:netherrack
 setblock ~-89 ~-12 ~52 minecraft:crimson_nylium
 setblock ~-109 ~-12 ~52 minecraft:blackstone
 setblock ~-91 ~-12 ~52 minecraft:crimson_nylium
@@ -146,6 +147,7 @@ fill ~-110 ~-12 ~52 ~-110 ~-12 ~54 minecraft:polished_blackstone
 fill ~-109 ~-12 ~53 ~-108 ~-12 ~54 minecraft:blackstone
 setblock ~-96 ~-12 ~54 minecraft:nether_wart_block
 setblock ~-90 ~-12 ~54 minecraft:netherrack
+setblock ~-90 ~-9 ~54 minecraft:netherrack
 setblock ~-89 ~-12 ~54 minecraft:crimson_nylium
 fill ~-105 ~-12 ~54 ~-104 ~-12 ~54 minecraft:netherrack
 fill ~-95 ~-12 ~54 ~-93 ~-12 ~54 minecraft:crimson_nylium
@@ -285,115 +287,123 @@ fill ~-96 ~-12 ~71 ~-95 ~-12 ~71 minecraft:crimson_nylium
 setblock ~-89 ~-12 ~71 minecraft:netherrack
 fill ~-102 ~-12 ~71 ~-97 ~-12 ~71 minecraft:blackstone
 setblock ~-94 ~-12 ~71 minecraft:nether_wart_block
-fill ~-96 ~-11 ~40 ~-96 ~-10 ~40 minecraft:polished_blackstone_bricks
-setblock ~-116 ~-11 ~40 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
+fill ~-96 ~-11 ~40 ~-96 ~-9 ~40 minecraft:polished_blackstone_bricks
 setblock ~-94 ~-11 ~40 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock ~-116 ~-11 ~41 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
-fill ~-92 ~-11 ~41 ~-92 ~-9 ~41 minecraft:polished_blackstone_bricks
-fill ~-96 ~-11 ~41 ~-96 ~-9 ~41 minecraft:cracked_polished_blackstone_bricks
+setblock ~-116 ~-11 ~40 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-115 ~-11 ~41 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
-fill ~-106 ~-11 ~41 ~-106 ~-6 ~41 minecraft:crimson_stem
-fill ~-95 ~-11 ~42 ~-95 ~-9 ~42 minecraft:cracked_polished_blackstone_bricks
+setblock ~-116 ~-11 ~41 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
+fill ~-96 ~-11 ~41 ~-96 ~-9 ~41 minecraft:cracked_polished_blackstone_bricks
+fill ~-92 ~-11 ~41 ~-92 ~-9 ~41 minecraft:polished_blackstone_bricks
+fill ~-95 ~-11 ~42 ~-95 ~-10 ~42 minecraft:cracked_polished_blackstone_bricks
 setblock ~-96 ~-11 ~42 minecraft:polished_blackstone
-fill ~-92 ~-11 ~42 ~-92 ~-10 ~42 minecraft:cracked_polished_blackstone_bricks
+setblock ~-96 ~-9 ~42 minecraft:polished_blackstone
+fill ~-92 ~-11 ~42 ~-92 ~-9 ~42 minecraft:cracked_polished_blackstone_bricks
 fill ~-94 ~-11 ~42 ~-93 ~-11 ~42 minecraft:polished_blackstone_bricks
 fill ~-115 ~-11 ~42 ~-115 ~-11 ~43 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
+fill ~-104 ~-11 ~44 ~-104 ~-7 ~44 minecraft:crimson_stem
 setblock ~-115 ~-11 ~44 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~-114 ~-11 ~44 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~-114 ~-11 ~45 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-fill ~-102 ~-11 ~45 ~-101 ~-11 ~45 minecraft:crimson_roots
-setblock ~-104 ~-11 ~46 minecraft:crimson_roots
-setblock ~-113 ~-11 ~46 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~-114 ~-11 ~46 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
+setblock ~-113 ~-11 ~46 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
+setblock ~-92 ~-11 ~47 minecraft:nether_gold_ore
 fill ~-113 ~-11 ~47 ~-113 ~-11 ~48 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~-103 ~-11 ~48 minecraft:crimson_roots
 setblock ~-95 ~-11 ~48 minecraft:crimson_roots
-setblock ~-112 ~-11 ~49 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
-fill ~-90 ~-11 ~49 ~-90 ~-4 ~49 minecraft:crimson_stem
+setblock ~-103 ~-11 ~48 minecraft:crimson_roots
 setblock ~-113 ~-11 ~49 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
+setblock ~-112 ~-11 ~49 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
+setblock ~-92 ~-11 ~49 minecraft:crimson_roots
 setblock ~-112 ~-11 ~50 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
+setblock ~-89 ~-11 ~50 minecraft:smooth_basalt
+setblock ~-90 ~-11 ~50 minecraft:basalt
 fill ~-99 ~-11 ~50 ~-99 ~-11 ~51 minecraft:crimson_roots
-setblock ~-112 ~-11 ~51 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
+setblock ~-92 ~-11 ~51 minecraft:crimson_roots
 setblock ~-111 ~-11 ~51 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
+setblock ~-89 ~-11 ~51 minecraft:netherrack
+setblock ~-89 ~-9 ~51 minecraft:netherrack
 setblock ~-101 ~-11 ~51 minecraft:crimson_roots
+setblock ~-112 ~-11 ~51 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
+fill ~-91 ~-11 ~51 ~-90 ~-11 ~51 minecraft:basalt
+fill ~-91 ~-11 ~52 ~-90 ~-11 ~52 minecraft:smooth_basalt
 setblock ~-111 ~-11 ~52 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~-110 ~-11 ~53 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
+fill ~-89 ~-11 ~52 ~-89 ~-10 ~52 minecraft:blackstone
+setblock ~-91 ~-11 ~53 minecraft:basalt
 setblock ~-111 ~-11 ~53 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
-setblock ~-110 ~-11 ~54 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~-92 ~-11 ~54 minecraft:crimson_roots
+setblock ~-110 ~-11 ~53 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
+setblock ~-89 ~-11 ~53 minecraft:smooth_basalt
+fill ~-90 ~-11 ~53 ~-90 ~-11 ~54 minecraft:netherrack
+fill ~-89 ~-11 ~54 ~-89 ~-10 ~54 minecraft:blackstone
 setblock ~-96 ~-11 ~54 minecraft:crimson_roots
-setblock ~-109 ~-11 ~55 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
+setblock ~-92 ~-11 ~54 minecraft:crimson_roots
+setblock ~-110 ~-11 ~54 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-110 ~-11 ~55 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
+setblock ~-109 ~-11 ~55 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~-109 ~-11 ~56 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~-108 ~-11 ~57 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
-setblock ~-94 ~-11 ~57 minecraft:nether_gold_ore
+setblock ~-101 ~-11 ~56 minecraft:crimson_roots
 setblock ~-109 ~-11 ~57 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
-fill ~-98 ~-11 ~58 ~-98 ~-8 ~58 minecraft:crimson_stem
+setblock ~-108 ~-11 ~57 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~-108 ~-11 ~58 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
+setblock ~-96 ~-11 ~58 minecraft:crimson_roots
+setblock ~-102 ~-11 ~59 minecraft:crimson_roots
 setblock ~-107 ~-11 ~59 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~-108 ~-11 ~59 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
-setblock ~-102 ~-11 ~59 minecraft:crimson_roots
+setblock ~-95 ~-11 ~60 minecraft:crimson_roots
 setblock ~-107 ~-11 ~60 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~-107 ~-11 ~61 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~-106 ~-11 ~61 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
-setblock ~-105 ~-11 ~62 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
+setblock ~-107 ~-11 ~61 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~-106 ~-11 ~62 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
-fill ~-92 ~-11 ~63 ~-92 ~-6 ~63 minecraft:crimson_stem
+fill ~-91 ~-11 ~62 ~-91 ~-8 ~62 minecraft:crimson_stem
+setblock ~-105 ~-11 ~62 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~-105 ~-11 ~63 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-104 ~-11 ~64 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~-105 ~-11 ~64 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~-104 ~-11 ~65 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-103 ~-11 ~66 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~-104 ~-11 ~66 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
-setblock ~-103 ~-11 ~67 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~-102 ~-11 ~67 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
-setblock ~-102 ~-11 ~68 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
+setblock ~-103 ~-11 ~67 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~-89 ~-11 ~68 minecraft:crimson_roots
 setblock ~-93 ~-11 ~68 minecraft:crimson_roots
-setblock ~-101 ~-11 ~69 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
+setblock ~-102 ~-11 ~68 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-102 ~-11 ~69 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
-setblock ~-101 ~-11 ~70 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
+setblock ~-101 ~-11 ~69 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~-91 ~-11 ~70 minecraft:crimson_roots
 setblock ~-100 ~-11 ~70 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
+setblock ~-101 ~-11 ~70 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~-100 ~-11 ~71 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-93 ~-10 ~42 minecraft:polished_blackstone
-setblock ~-94 ~-10 ~42 minecraft:polished_blackstone_bricks
+fill ~-94 ~-10 ~42 ~-94 ~-9 ~42 minecraft:polished_blackstone_bricks
 setblock ~-96 ~-10 ~42 minecraft:polished_blackstone_bricks
-setblock ~-93 ~-9 ~42 minecraft:polished_blackstone_bricks
-fill ~-99 ~-8 ~56 ~-97 ~-7 ~56 minecraft:nether_wart_block
-setblock ~-98 ~-8 ~57 minecraft:shroomlight
-fill ~-100 ~-8 ~57 ~-99 ~-8 ~58 minecraft:nether_wart_block
-fill ~-97 ~-8 ~57 ~-96 ~-8 ~58 minecraft:nether_wart_block
-fill ~-98 ~-8 ~59 ~-96 ~-8 ~59 minecraft:nether_wart_block
-setblock ~-99 ~-8 ~59 minecraft:shroomlight
-setblock ~-100 ~-8 ~59 minecraft:nether_wart_block
-fill ~-99 ~-8 ~60 ~-97 ~-7 ~60 minecraft:nether_wart_block
-fill ~-100 ~-7 ~57 ~-96 ~-7 ~59 minecraft:nether_wart_block
-fill ~-106 ~-6 ~40 ~-104 ~-6 ~40 minecraft:nether_wart_block
-fill ~-108 ~-6 ~40 ~-108 ~-6 ~41 minecraft:nether_wart_block
-fill ~-107 ~-6 ~40 ~-107 ~-6 ~41 minecraft:shroomlight
-fill ~-105 ~-6 ~41 ~-104 ~-6 ~41 minecraft:nether_wart_block
-fill ~-108 ~-6 ~42 ~-104 ~-6 ~42 minecraft:nether_wart_block
-fill ~-107 ~-6 ~43 ~-105 ~-5 ~43 minecraft:nether_wart_block
-fill ~-99 ~-6 ~57 ~-97 ~-6 ~59 minecraft:nether_wart_block
-fill ~-93 ~-6 ~61 ~-91 ~-5 ~61 minecraft:nether_wart_block
-setblock ~-92 ~-6 ~62 minecraft:shroomlight
-fill ~-91 ~-6 ~62 ~-90 ~-6 ~63 minecraft:nether_wart_block
-fill ~-94 ~-6 ~62 ~-93 ~-6 ~63 minecraft:nether_wart_block
-setblock ~-93 ~-6 ~64 minecraft:shroomlight
-setblock ~-94 ~-6 ~64 minecraft:nether_wart_block
-fill ~-92 ~-6 ~64 ~-90 ~-6 ~64 minecraft:nether_wart_block
-fill ~-93 ~-6 ~65 ~-91 ~-5 ~65 minecraft:nether_wart_block
-fill ~-108 ~-5 ~40 ~-104 ~-5 ~42 minecraft:nether_wart_block
-fill ~-94 ~-5 ~62 ~-90 ~-5 ~64 minecraft:nether_wart_block
-fill ~-107 ~-4 ~40 ~-105 ~-4 ~42 minecraft:nether_wart_block
-fill ~-91 ~-4 ~47 ~-89 ~-3 ~47 minecraft:nether_wart_block
-fill ~-90 ~-4 ~48 ~-89 ~-4 ~48 minecraft:nether_wart_block
-fill ~-92 ~-4 ~48 ~-92 ~-4 ~49 minecraft:nether_wart_block
-fill ~-91 ~-4 ~48 ~-91 ~-4 ~49 minecraft:shroomlight
-setblock ~-89 ~-4 ~49 minecraft:nether_wart_block
-fill ~-92 ~-4 ~50 ~-89 ~-4 ~50 minecraft:nether_wart_block
-fill ~-91 ~-4 ~51 ~-89 ~-3 ~51 minecraft:nether_wart_block
-fill ~-93 ~-4 ~62 ~-91 ~-4 ~64 minecraft:nether_wart_block
-fill ~-92 ~-3 ~48 ~-89 ~-3 ~50 minecraft:nether_wart_block
-fill ~-91 ~-2 ~48 ~-89 ~-2 ~50 minecraft:nether_wart_block
+fill ~-90 ~-10 ~50 ~-89 ~-10 ~51 minecraft:blackstone
+setblock ~-91 ~-10 ~51 minecraft:smooth_basalt
+setblock ~-91 ~-10 ~52 minecraft:blackstone
+fill ~-91 ~-10 ~53 ~-89 ~-10 ~53 minecraft:basalt
+setblock ~-90 ~-10 ~54 minecraft:basalt
+fill ~-90 ~-9 ~50 ~-89 ~-9 ~50 minecraft:smooth_basalt
+setblock ~-90 ~-9 ~51 minecraft:basalt
+fill ~-91 ~-9 ~51 ~-91 ~-9 ~52 minecraft:blackstone
+fill ~-90 ~-9 ~52 ~-89 ~-9 ~52 minecraft:netherrack
+setblock ~-91 ~-9 ~53 minecraft:smooth_basalt
+setblock ~-90 ~-9 ~53 minecraft:basalt
+setblock ~-89 ~-9 ~53 minecraft:blackstone
+setblock ~-89 ~-9 ~54 minecraft:smooth_basalt
+fill ~-92 ~-8 ~60 ~-90 ~-7 ~60 minecraft:nether_wart_block
+fill ~-93 ~-8 ~61 ~-91 ~-8 ~61 minecraft:nether_wart_block
+setblock ~-90 ~-8 ~61 minecraft:shroomlight
+setblock ~-89 ~-8 ~61 minecraft:nether_wart_block
+setblock ~-92 ~-8 ~62 minecraft:shroomlight
+setblock ~-93 ~-8 ~62 minecraft:nether_wart_block
+fill ~-90 ~-8 ~62 ~-89 ~-8 ~62 minecraft:nether_wart_block
+fill ~-93 ~-8 ~63 ~-89 ~-8 ~63 minecraft:nether_wart_block
+fill ~-92 ~-8 ~64 ~-90 ~-7 ~64 minecraft:nether_wart_block
+fill ~-105 ~-7 ~42 ~-103 ~-6 ~42 minecraft:nether_wart_block
+fill ~-106 ~-7 ~43 ~-102 ~-7 ~43 minecraft:nether_wart_block
+setblock ~-102 ~-7 ~44 minecraft:nether_wart_block
+fill ~-106 ~-7 ~44 ~-105 ~-7 ~44 minecraft:nether_wart_block
+setblock ~-103 ~-7 ~44 minecraft:shroomlight
+fill ~-106 ~-7 ~45 ~-102 ~-7 ~45 minecraft:nether_wart_block
+fill ~-105 ~-7 ~46 ~-103 ~-6 ~46 minecraft:nether_wart_block
+fill ~-93 ~-7 ~61 ~-89 ~-7 ~63 minecraft:nether_wart_block
+fill ~-106 ~-6 ~43 ~-102 ~-6 ~45 minecraft:nether_wart_block
+fill ~-92 ~-6 ~61 ~-90 ~-6 ~63 minecraft:nether_wart_block
+fill ~-105 ~-5 ~43 ~-103 ~-5 ~45 minecraft:nether_wart_block

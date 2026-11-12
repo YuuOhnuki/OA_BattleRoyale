@@ -1,3 +1,5 @@
+data modify storage oa:maps ctx.key set from storage oa:maps current
+function oa:map/internal/status_name with storage oa:maps ctx
 execute if score #state oa.map2 matches 0 run tellraw @s {"text": "マップ：未生成", "color": "gray"}
 execute if score #state oa.map2 matches 1 run tellraw @s {"text": "マップ：処理中", "color": "yellow"}
 execute if score #state oa.map2 matches 2 run tellraw @s {"text": "マップ：停止中", "color": "gold"}
