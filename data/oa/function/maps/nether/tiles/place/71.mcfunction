@@ -3,10 +3,10 @@ fill ~-120 ~-20 ~72 ~-89 ~0 ~103 minecraft:air
 fill ~-120 ~-20 ~72 ~-89 ~-20 ~103 minecraft:bedrock
 fill ~-120 ~-19 ~72 ~-89 ~-19 ~103 minecraft:netherrack
 fill ~-120 ~-18 ~72 ~-103 ~-13 ~72 minecraft:lava
-fill ~-102 ~-18 ~72 ~-89 ~-13 ~72 minecraft:netherrack
-fill ~-101 ~-18 ~73 ~-89 ~-13 ~73 minecraft:netherrack
+fill ~-102 ~-18 ~72 ~-89 ~-16 ~72 minecraft:netherrack
+fill ~-101 ~-18 ~73 ~-89 ~-15 ~73 minecraft:netherrack
 fill ~-120 ~-18 ~73 ~-102 ~-13 ~73 minecraft:lava
-fill ~-100 ~-18 ~74 ~-89 ~-13 ~74 minecraft:netherrack
+fill ~-100 ~-18 ~74 ~-89 ~-14 ~74 minecraft:netherrack
 fill ~-120 ~-18 ~74 ~-101 ~-13 ~74 minecraft:lava
 fill ~-120 ~-18 ~75 ~-100 ~-13 ~76 minecraft:lava
 fill ~-99 ~-18 ~75 ~-89 ~-13 ~76 minecraft:netherrack
@@ -31,18 +31,27 @@ fill ~-120 ~-18 ~86 ~-91 ~-13 ~86 minecraft:lava
 fill ~-120 ~-18 ~87 ~-90 ~-13 ~87 minecraft:lava
 fill ~-89 ~-18 ~87 ~-89 ~-13 ~87 minecraft:netherrack
 fill ~-120 ~-18 ~88 ~-89 ~-13 ~103 minecraft:lava
+setblock ~-89 ~-15 ~72 minecraft:crimson_nylium
+fill ~-102 ~-15 ~72 ~-90 ~-15 ~72 minecraft:netherrack
+fill ~-102 ~-14 ~72 ~-91 ~-13 ~72 minecraft:netherrack
+setblock ~-90 ~-14 ~72 minecraft:crimson_nylium
+fill ~-101 ~-14 ~73 ~-90 ~-14 ~73 minecraft:netherrack
+setblock ~-89 ~-14 ~73 minecraft:crimson_nylium
+fill ~-101 ~-13 ~73 ~-91 ~-13 ~73 minecraft:netherrack
+setblock ~-90 ~-13 ~73 minecraft:crimson_nylium
+setblock ~-89 ~-13 ~74 minecraft:crimson_nylium
+fill ~-100 ~-13 ~74 ~-90 ~-13 ~74 minecraft:netherrack
 fill ~-102 ~-12 ~72 ~-98 ~-12 ~72 minecraft:blackstone
 fill ~-95 ~-12 ~72 ~-94 ~-12 ~72 minecraft:crimson_nylium
-fill ~-92 ~-12 ~72 ~-91 ~-12 ~72 minecraft:netherrack
-fill ~-90 ~-12 ~72 ~-89 ~-12 ~72 minecraft:crimson_nylium
+setblock ~-92 ~-12 ~72 minecraft:netherrack
 setblock ~-97 ~-12 ~72 minecraft:polished_blackstone
 setblock ~-93 ~-12 ~72 minecraft:nether_wart_block
 setblock ~-96 ~-12 ~72 minecraft:blackstone
-fill ~-95 ~-12 ~73 ~-89 ~-12 ~73 minecraft:crimson_nylium
 fill ~-101 ~-12 ~73 ~-96 ~-12 ~73 minecraft:blackstone
-fill ~-90 ~-12 ~74 ~-89 ~-12 ~74 minecraft:crimson_nylium
+fill ~-95 ~-12 ~73 ~-91 ~-12 ~73 minecraft:crimson_nylium
 setblock ~-91 ~-12 ~74 minecraft:netherrack
 fill ~-94 ~-12 ~74 ~-92 ~-12 ~74 minecraft:crimson_nylium
+setblock ~-90 ~-12 ~74 minecraft:crimson_nylium
 fill ~-100 ~-12 ~74 ~-95 ~-12 ~74 minecraft:blackstone
 fill ~-93 ~-12 ~75 ~-89 ~-12 ~75 minecraft:crimson_nylium
 fill ~-99 ~-12 ~75 ~-94 ~-12 ~75 minecraft:blackstone

@@ -21,6 +21,7 @@ execute if score #time br.time matches 10800 if score #map oa.mapid matches 1 in
 execute if score #time br.time matches 12000 if score #map oa.mapid matches 0 in oa:br run worldborder set 2 60s
 execute if score #time br.time matches 12000 if score #map oa.mapid matches 1 in oa:br_nether run worldborder set 2 60s
 scoreboard players add #pulse br.tmp 1
+execute if score #time br.time matches 10800 run function oa:br/finale/announce
 execute if score #time br.time matches 10800.. run function oa:br/finale/tick
 execute as @a[tag=br.playing,tag=br.alive] unless score @s br.left = @s oa.left at @s run function oa:br/surrender
 execute as @a[tag=br.playing,tag=br.alive,nbt={Health:0.0f}] at @s run function oa:br/eliminate

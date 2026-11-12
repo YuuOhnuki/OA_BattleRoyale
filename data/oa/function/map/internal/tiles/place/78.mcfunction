@@ -365,6 +365,10 @@ fill ~121 ~-19 ~95 ~125 ~-19 ~96 minecraft:gravel
 fill ~132 ~-19 ~100 ~135 ~-19 ~103 minecraft:gravel
 fill ~133 ~-19 ~99 ~135 ~-19 ~99 minecraft:gravel
 fill ~134 ~-19 ~98 ~135 ~-19 ~98 minecraft:gravel
+# 1.9.117 relief map update patches
+fill ~108 ~-13 ~72 ~108 ~-13 ~72 minecraft:sand
+fill ~124 ~-13 ~75 ~124 ~-13 ~75 minecraft:sand
+fill ~126 ~-12 ~72 ~126 ~-12 ~72 minecraft:sand
 fillbiome ~104 ~-20 ~72 ~119 ~8 ~87 minecraft:ocean
 fillbiome ~120 ~-20 ~72 ~135 ~8 ~87 minecraft:ocean
 fillbiome ~104 ~-20 ~88 ~119 ~8 ~103 minecraft:ocean

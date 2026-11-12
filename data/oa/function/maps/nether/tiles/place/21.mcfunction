@@ -47,8 +47,11 @@ fill ~-109 ~-18 ~-61 ~-89 ~-13 ~-60 minecraft:netherrack
 fill ~-120 ~-18 ~-61 ~-110 ~-13 ~-60 minecraft:lava
 fill ~-110 ~-18 ~-59 ~-89 ~-13 ~-58 minecraft:netherrack
 fill ~-120 ~-18 ~-59 ~-111 ~-13 ~-58 minecraft:lava
-fill ~-111 ~-18 ~-57 ~-89 ~-13 ~-57 minecraft:netherrack
+fill ~-111 ~-18 ~-57 ~-89 ~-14 ~-57 minecraft:netherrack
 fill ~-120 ~-18 ~-57 ~-112 ~-13 ~-57 minecraft:lava
+fill ~-100 ~-13 ~-57 ~-89 ~-13 ~-57 minecraft:netherrack
+fill ~-111 ~-13 ~-57 ~-102 ~-13 ~-57 minecraft:netherrack
+setblock ~-101 ~-13 ~-57 minecraft:warped_nylium
 setblock ~-89 ~-12 ~-87 minecraft:blackstone
 fill ~-90 ~-12 ~-86 ~-89 ~-12 ~-86 minecraft:blackstone
 fill ~-91 ~-12 ~-85 ~-89 ~-12 ~-85 minecraft:blackstone
@@ -93,11 +96,13 @@ setblock ~-93 ~-12 ~-72 minecraft:netherrack
 fill ~-102 ~-12 ~-72 ~-96 ~-12 ~-72 minecraft:blackstone
 fill ~-92 ~-12 ~-72 ~-90 ~-12 ~-72 minecraft:warped_nylium
 setblock ~-89 ~-12 ~-72 minecraft:netherrack
+setblock ~-89 ~-9 ~-72 minecraft:netherrack
 fill ~-96 ~-12 ~-71 ~-89 ~-12 ~-71 minecraft:warped_nylium
 fill ~-102 ~-12 ~-71 ~-97 ~-12 ~-71 minecraft:blackstone
 fill ~-103 ~-12 ~-70 ~-99 ~-12 ~-70 minecraft:blackstone
 setblock ~-97 ~-12 ~-70 minecraft:warped_nylium
 setblock ~-89 ~-12 ~-70 minecraft:netherrack
+fill ~-89 ~-9 ~-70 ~-89 ~-8 ~-70 minecraft:netherrack
 fill ~-95 ~-12 ~-70 ~-90 ~-12 ~-70 minecraft:warped_nylium
 setblock ~-98 ~-12 ~-70 minecraft:polished_blackstone
 fill ~-96 ~-12 ~-70 ~-96 ~-12 ~-69 minecraft:netherrack
@@ -106,16 +111,21 @@ fill ~-95 ~-12 ~-69 ~-89 ~-12 ~-69 minecraft:warped_nylium
 fill ~-104 ~-12 ~-69 ~-99 ~-12 ~-68 minecraft:blackstone
 fill ~-93 ~-12 ~-68 ~-91 ~-12 ~-68 minecraft:warped_nylium
 setblock ~-90 ~-12 ~-68 minecraft:warped_wart_block
+setblock ~-90 ~-9 ~-68 minecraft:warped_wart_block
 fill ~-98 ~-12 ~-68 ~-95 ~-12 ~-68 minecraft:warped_nylium
 setblock ~-89 ~-12 ~-68 minecraft:warped_nylium
+setblock ~-89 ~-9 ~-68 minecraft:warped_nylium
 setblock ~-94 ~-12 ~-68 minecraft:netherrack
 fill ~-99 ~-12 ~-67 ~-94 ~-12 ~-67 minecraft:warped_nylium
 setblock ~-93 ~-12 ~-67 minecraft:netherrack
+setblock ~-93 ~-10 ~-67 minecraft:netherrack
 fill ~-105 ~-12 ~-67 ~-103 ~-12 ~-67 minecraft:blackstone
 setblock ~-102 ~-12 ~-67 minecraft:polished_blackstone
 fill ~-92 ~-12 ~-67 ~-90 ~-12 ~-67 minecraft:warped_nylium
+fill ~-92 ~-10 ~-67 ~-90 ~-10 ~-67 minecraft:warped_nylium
 fill ~-101 ~-12 ~-67 ~-100 ~-12 ~-67 minecraft:blackstone
 setblock ~-89 ~-12 ~-67 minecraft:netherrack
+setblock ~-89 ~-10 ~-67 minecraft:netherrack
 fill ~-96 ~-12 ~-66 ~-89 ~-12 ~-66 minecraft:warped_nylium
 setblock ~-97 ~-12 ~-66 minecraft:netherrack
 fill ~-100 ~-12 ~-66 ~-98 ~-12 ~-66 minecraft:warped_nylium
@@ -162,6 +172,7 @@ fill ~-103 ~-12 ~-60 ~-102 ~-12 ~-60 minecraft:warped_nylium
 setblock ~-104 ~-12 ~-60 minecraft:blackstone
 fill ~-101 ~-12 ~-60 ~-100 ~-12 ~-60 minecraft:netherrack
 setblock ~-98 ~-12 ~-60 minecraft:netherrack
+setblock ~-98 ~-10 ~-60 minecraft:netherrack
 fill ~-97 ~-12 ~-60 ~-93 ~-12 ~-60 minecraft:warped_nylium
 setblock ~-102 ~-12 ~-59 minecraft:warped_wart_block
 fill ~-110 ~-12 ~-59 ~-105 ~-12 ~-59 minecraft:blackstone
@@ -181,12 +192,12 @@ setblock ~-107 ~-12 ~-58 minecraft:polished_blackstone
 fill ~-105 ~-12 ~-58 ~-97 ~-12 ~-58 minecraft:warped_nylium
 fill ~-111 ~-12 ~-57 ~-106 ~-12 ~-57 minecraft:blackstone
 fill ~-103 ~-12 ~-57 ~-102 ~-12 ~-57 minecraft:netherrack
-fill ~-101 ~-12 ~-57 ~-93 ~-12 ~-57 minecraft:warped_nylium
 setblock ~-91 ~-12 ~-57 minecraft:polished_blackstone_bricks
 setblock ~-90 ~-12 ~-57 minecraft:nether_bricks
 fill ~-105 ~-12 ~-57 ~-104 ~-12 ~-57 minecraft:warped_nylium
 setblock ~-89 ~-12 ~-57 minecraft:cracked_nether_bricks
 setblock ~-92 ~-12 ~-57 minecraft:nether_bricks
+fill ~-100 ~-12 ~-57 ~-93 ~-12 ~-57 minecraft:warped_nylium
 setblock ~-89 ~-11 ~-85 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-90 ~-11 ~-84 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-89 ~-11 ~-84 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
@@ -208,35 +219,56 @@ setblock ~-97 ~-11 ~-76 minecraft:nether_brick_fence[east=true,north=false,south
 setblock ~-97 ~-11 ~-75 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-98 ~-11 ~-74 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-97 ~-11 ~-74 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~-89 ~-11 ~-74 minecraft:warped_nylium
 setblock ~-99 ~-11 ~-73 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-98 ~-11 ~-73 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~-89 ~-11 ~-73 minecraft:netherrack
+setblock ~-90 ~-11 ~-73 minecraft:warped_nylium
 setblock ~-99 ~-11 ~-72 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-100 ~-11 ~-72 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+fill ~-90 ~-11 ~-72 ~-89 ~-11 ~-71 minecraft:netherrack
+fill ~-91 ~-11 ~-72 ~-91 ~-11 ~-71 minecraft:warped_nylium
 setblock ~-100 ~-11 ~-71 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-100 ~-11 ~-70 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~-92 ~-11 ~-70 minecraft:warped_nylium
 setblock ~-101 ~-11 ~-70 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+fill ~-91 ~-11 ~-70 ~-89 ~-11 ~-70 minecraft:netherrack
+setblock ~-93 ~-11 ~-69 minecraft:warped_nylium
 setblock ~-101 ~-11 ~-69 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+fill ~-92 ~-11 ~-69 ~-89 ~-11 ~-69 minecraft:netherrack
 setblock ~-102 ~-11 ~-69 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-102 ~-11 ~-68 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
+fill ~-94 ~-11 ~-68 ~-89 ~-11 ~-68 minecraft:netherrack
+fill ~-93 ~-11 ~-67 ~-89 ~-11 ~-67 minecraft:netherrack
 setblock ~-103 ~-11 ~-67 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~-89 ~-11 ~-67 minecraft:redstone_ore
+setblock ~-94 ~-11 ~-67 minecraft:warped_nylium
 setblock ~-102 ~-11 ~-67 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-103 ~-11 ~-66 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-104 ~-11 ~-66 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+fill ~-95 ~-11 ~-66 ~-89 ~-11 ~-66 minecraft:warped_nylium
 setblock ~-104 ~-11 ~-65 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
+fill ~-96 ~-11 ~-65 ~-95 ~-11 ~-65 minecraft:warped_nylium
 setblock ~-104 ~-11 ~-64 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-105 ~-11 ~-64 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~-96 ~-11 ~-64 minecraft:warped_nylium
 setblock ~-105 ~-11 ~-63 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 setblock ~-92 ~-11 ~-63 minecraft:warped_roots
+setblock ~-96 ~-11 ~-63 minecraft:netherrack
+setblock ~-97 ~-11 ~-63 minecraft:warped_nylium
 setblock ~-89 ~-11 ~-62 minecraft:nether_bricks
 setblock ~-91 ~-11 ~-62 minecraft:nether_bricks
 setblock ~-91 ~-8 ~-62 minecraft:nether_bricks
+fill ~-98 ~-11 ~-62 ~-97 ~-11 ~-62 minecraft:netherrack
 setblock ~-105 ~-11 ~-62 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-106 ~-11 ~-62 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-90 ~-11 ~-62 minecraft:polished_blackstone_bricks
-setblock ~-107 ~-11 ~-61 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~-106 ~-11 ~-61 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~-107 ~-11 ~-61 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~-98 ~-11 ~-61 minecraft:warped_nylium
+setblock ~-97 ~-11 ~-61 minecraft:netherrack
 setblock ~-107 ~-11 ~-60 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
+fill ~-96 ~-11 ~-62 ~-96 ~-11 ~-59 minecraft:warped_nylium
+fill ~-98 ~-11 ~-60 ~-97 ~-11 ~-59 minecraft:netherrack
 setblock ~-107 ~-11 ~-59 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~-89 ~-11 ~-59 minecraft:nether_bricks
 setblock ~-89 ~-9 ~-59 minecraft:nether_bricks
@@ -244,17 +276,39 @@ setblock ~-108 ~-11 ~-59 minecraft:nether_brick_fence[east=true,north=false,sout
 setblock ~-102 ~-11 ~-59 minecraft:warped_roots
 fill ~-92 ~-11 ~-62 ~-92 ~-11 ~-58 minecraft:cracked_polished_blackstone_bricks
 setblock ~-108 ~-11 ~-58 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
-setblock ~-108 ~-11 ~-57 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+fill ~-98 ~-11 ~-58 ~-96 ~-11 ~-58 minecraft:netherrack
+fill ~-99 ~-11 ~-60 ~-99 ~-11 ~-57 minecraft:warped_nylium
+setblock ~-96 ~-11 ~-57 minecraft:warped_nylium
 setblock ~-109 ~-11 ~-57 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+fill ~-98 ~-11 ~-57 ~-97 ~-11 ~-57 minecraft:netherrack
+setblock ~-108 ~-11 ~-57 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~-89 ~-10 ~-73 minecraft:warped_nylium
+fill ~-89 ~-10 ~-72 ~-89 ~-10 ~-71 minecraft:netherrack
+fill ~-90 ~-10 ~-72 ~-90 ~-10 ~-71 minecraft:warped_nylium
+setblock ~-91 ~-10 ~-70 minecraft:warped_nylium
+fill ~-90 ~-10 ~-70 ~-89 ~-10 ~-70 minecraft:netherrack
+fill ~-91 ~-10 ~-69 ~-89 ~-10 ~-69 minecraft:netherrack
+setblock ~-92 ~-10 ~-69 minecraft:warped_nylium
+setblock ~-93 ~-10 ~-68 minecraft:warped_nylium
+fill ~-92 ~-10 ~-68 ~-89 ~-10 ~-68 minecraft:netherrack
 setblock ~-89 ~-10 ~-62 minecraft:polished_blackstone_bricks
-setblock ~-91 ~-10 ~-62 minecraft:cracked_polished_blackstone_bricks
 setblock ~-90 ~-10 ~-62 minecraft:nether_bricks
+setblock ~-91 ~-10 ~-62 minecraft:cracked_polished_blackstone_bricks
+fill ~-97 ~-10 ~-62 ~-97 ~-10 ~-60 minecraft:warped_nylium
 setblock ~-89 ~-10 ~-59 minecraft:polished_blackstone_bricks
 fill ~-92 ~-10 ~-62 ~-92 ~-10 ~-58 minecraft:cracked_nether_bricks
+fill ~-98 ~-10 ~-59 ~-97 ~-10 ~-57 minecraft:warped_nylium
+setblock ~-89 ~-9 ~-71 minecraft:warped_nylium
+setblock ~-90 ~-9 ~-70 minecraft:warped_nylium
+setblock ~-91 ~-9 ~-69 minecraft:warped_nylium
+fill ~-90 ~-9 ~-69 ~-89 ~-9 ~-69 minecraft:netherrack
+fill ~-92 ~-9 ~-68 ~-91 ~-9 ~-68 minecraft:warped_nylium
+setblock ~-89 ~-9 ~-67 minecraft:redstone_ore
 setblock ~-91 ~-9 ~-62 minecraft:cracked_nether_bricks
 setblock ~-90 ~-9 ~-62 minecraft:cracked_polished_blackstone_bricks
 fill ~-92 ~-9 ~-62 ~-92 ~-9 ~-60 minecraft:nether_bricks
 setblock ~-92 ~-9 ~-58 minecraft:nether_bricks
+fill ~-90 ~-8 ~-69 ~-89 ~-8 ~-69 minecraft:warped_nylium
 setblock ~-92 ~-8 ~-62 minecraft:polished_blackstone_bricks
 setblock ~-89 ~-8 ~-62 minecraft:cracked_polished_blackstone_bricks
 setblock ~-90 ~-8 ~-62 minecraft:cracked_nether_bricks

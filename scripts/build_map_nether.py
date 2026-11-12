@@ -349,6 +349,51 @@ def boulder(x,z):
                 if a*a+c*c>rr*rr+1: continue
                 for y in range(YG+1,YG+1+h): put(x+ox+a,y,z+oz+c,Lm[int(rng2.integers(0,len(Lm)))])
 EXTRA={'bastions':place_many(8,6,bastion),'towers':place_many(14,2,tower),'walls':wallseg(28),'arches':place_many(14,3,arch),'boulders':place_many(40,3,boulder,margin=1)}
+# --- 1.9.117: 高低差（建築物・道具の無い自然地のみ。坂は1マスずつ・最大+6／-3） ---
+def relief():
+    occ=used|spu|(g[:,:,YG+1-Y0:]!=0).any(axis=2)|(surf!=YG)|(R<30)|(R>=117)
+    dist=np.where(occ,0,999)
+    for _ in range(400):
+        sh=np.pad(dist,1,mode='constant',constant_values=0)
+        nb=np.minimum.reduce([sh[:-2,1:-1],sh[2:,1:-1],sh[1:-1,:-2],sh[1:-1,2:]])+1
+        nd=np.minimum(dist,nb)
+        if (nd==dist).all(): break
+        dist=nd
+    lim=np.maximum(dist-1,0)
+    v=((0.65*smooth(30,31)+0.35*smooth(15,32))-0.5)*6.0
+    hf=np.where(v>=0,v*6,v*3/0.6)
+    h=np.clip(np.rint(hf).astype(int),-3,6); h=np.clip(h,-lim,lim); h[occ]=0
+    def nbs(a,fill):
+        p=np.pad(a,1,mode='constant',constant_values=fill); return [p[:-2,1:-1],p[2:,1:-1],p[1:-1,:-2],p[1:-1,2:]]
+    pin=occ|(lim==0)
+    for _ in range(200):
+        lo=np.full(h.shape,-99); hi=np.full(h.shape,99)
+        for s_ in nbs(h,0): lo=np.maximum(lo,s_-1); hi=np.minimum(hi,s_+1)
+        hn=np.where(pin,h,np.clip(h,lo,np.maximum(lo,hi))); hn=np.clip(hn,-lim,lim)
+        if (hn==h).all(): break
+        h=hn
+    for _ in range(500):
+        bad=np.zeros(h.shape,bool)
+        for s_ in nbs(h,0): bad|=(abs(h-s_)>1)&~occ
+        if not bad.any(): break
+        z=bad.copy()
+        for sb in nbs(bad,False): z|=sb&~occ
+        h[z]=0
+    for s_ in nbs(h,0): assert (abs(h-s_)[~occ]<=1).all()
+    top_id=np.take_along_axis(g,np.full((N,N,1),YG-Y0),axis=2)[:,:,0].copy()
+    nat=(~occ)&(h!=0)
+    for xi,zi in zip(*np.nonzero(nat)):
+        d=int(h[xi,zi]); tid=int(top_id[xi,zi])
+        if d>0:
+            g[xi,zi,YG+1-Y0:YG+d-Y0+1]=pid['minecraft:netherrack']
+            g[xi,zi,YG+d-Y0]=tid
+        else:
+            g[xi,zi,YG+d+1-Y0:YG+1-Y0]=0
+            g[xi,zi,YG+d-Y0]=tid
+        surf[xi,zi]=YG+d
+    return nat
+ELEV=relief()
+print("relief columns",int(ELEV.sum()),"up",int((surf[ELEV]>YG).sum()),"down",int((surf[ELEV]<YG).sum()))
 # --- 植生・柱 ---
 cells=[(x,z) for x in range(-118,119,7) for z in range(-118,119,7)]
 trees=[];spires=[]
@@ -360,6 +405,7 @@ for (bx,bz) in cells:
     if rng.random()<0.45: continue
     if b in (2,3):
         h=int(rng.integers(5,8)) if rng.random()<0.85 else 9
+        h=max(4,min(h,-s-2))
         stem='minecraft:crimson_stem' if b==2 else 'minecraft:warped_stem'
         wart='minecraft:nether_wart_block' if b==2 else 'minecraft:warped_wart_block'
         for y in range(s+1,s+h+1): put(x,y,z,stem)
@@ -378,6 +424,7 @@ for (bx,bz) in cells:
     elif b==0:
         h=int(rng.integers(4,10)); big=rng.random()<0.12
         if big: h=11
+        h=max(3,min(h,-s-1))
         sz=2 if big else 1
         for a in range(sz):
             for c in range(sz):
@@ -397,10 +444,11 @@ for xi in range(N):
     for zi in range(N):
         x=xi-OFF; z=zi-OFF
         if used[xi,zi] or R[xi,zi]<30 or R[xi,zi]>118: continue
-        if hsh[xi,zi]>0.965 and surf[xi,zi]==YG and g[xi,zi,YG+1-Y0+0]==0 if False else (hsh[xi,zi]>0.96 and get(x,YG+1,z)=='minecraft:air' and surf[xi,zi]==YG):
+        if hsh[xi,zi]>0.965 and surf[xi,zi]==YG and g[xi,zi,YG+1-Y0+0]==0 if False else (hsh[xi,zi]>0.96 and get(x,int(surf[xi,zi])+1,z)=='minecraft:air' and (surf[xi,zi]==YG or ELEV[xi,zi])):
             b=int(BIO[xi,zi])
-            if b==2: put(x,YG+1,z,'minecraft:crimson_roots')
-            elif b==3: put(x,YG+1,z,'minecraft:warped_roots')
+            sy=int(surf[xi,zi])+1
+            if b==2: put(x,sy,z,'minecraft:crimson_roots')
+            elif b==3: put(x,sy,z,'minecraft:warped_roots')
 # --- 鉱石 108（クォーツ54／金54） ---
 oc=[]
 while len(oc)<108:
@@ -452,7 +500,8 @@ BASE_OK=lambda b: SOLID(b) and 'fence' not in b
 sol=np.zeros((N,N,NY),bool); base=np.zeros((N,N,NY),bool)
 for i,b in enumerate(pal): sol[g==i]=SOLID(b); base[g==i]=BASE_OK(b)
 def stand(xi,zi):
-    for y in (YG+1,YG,YG-1):
+    sy0=int(surf[xi,zi])
+    for y in (sy0+1,sy0,sy0-1):
         yi=y-Y0
         if base[xi,zi,yi] and not sol[xi,zi,yi+1] and not sol[xi,zi,yi+2] and g[xi,zi,yi+1]!=pid.get('minecraft:lava',-1): return y
     return None

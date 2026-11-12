@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.116 時点）
+# 引き継ぎメモ（1.9.117 時点）
 
 ## 現状
+- 1.9.117：高低差（地上は scripts/build_map_1_9_117_relief.py が現行タイルをreplayして追記、1回だけ適用。ネザーは build_map_nether.py の relief()）。終盤演出は defs の finale → oa:finale/tick/step/exec、地上=finale/br、ネザー=finale/nether、既定=finale/default。昭心進行度は itori/progress_save・progress_restore（oa.ib_*）で練習場の出入りに退避・復元。lobby/center・warp の向きは南向き(0)。
 - 1.9.116：ロビー中央の柱に埋まらないよう lobby/center の移動先を z+5.5 に。ロビーからのマップ選択（lobby/mapsel/*、stone_button 2個＋マーカー oa.button_mapsel、map_panel_update、sentinel oa.map_panel1116）。パネルは選択中のマップで item_model を切り替え（要リソースパック1.9.36）。
 - 1.9.115：食料テーブル(br/food)の雪玉・卵・矢にスタック上限64を付与（チェストと同じ）。ネザーの鉱石を石炭(ore 1)・レッドストーン(ore 3)に変更。ore 5/6（クォーツ・金）の処理は互換のため残置。
 - 1.9.114：空中補給の予告・降下の文言を変更（supply/preview, launch）。
@@ -9,7 +10,7 @@
 - 1.9.111：ネザーに建築物・障害物を追加（scripts/build_map_nether.py の rng2 ブロック）、版数のTAB表示と /trigger oa.ver、load_done メッセージ。version.mcfunction は先頭に oa.vtab 作成、末尾に storage と表示形式（版数を含む行）。
 - 1.9.110：map/internal の root 直指定 data modify（select_load、load_saved、args_from_def）をキー単位のコピーに修正。
 - 1.9.109：複数マップ基盤（map/internal/defs、select、create_nether）、ネザー会場（scripts/build_map_nether.py が maps/nether を生成）、固定参照の展開（scripts/multimap_expand.py）。検証・変更履歴は docs/changelog.md。
-- 【最新】データパック 1.9.116 ＋ リソースパック 1.9.36（ネザー用ロビー地図パネル）
+- 【最新】データパック 1.9.117 ＋ リソースパック 1.9.36（ネザー用ロビー地図パネル）
 - データパック 1.9.108（`OA_BattleRoyale_v1.9.108.zip`）＋リソースパック 1.9.35（ロビー地図を再描画）。
 - 1.9.99：遺跡の塔4基（scripts/build_map_1_9_99_towers.py）、実績20種を永続化、前回結果・実績一覧の trigger。`UPDATE_1_9_99_JA.md` 参照。
 - 1.9.102：ロビー装飾（scripts/gen_lobby_decor_1_9_102.py）、洞窟入口・帆船（scripts/build_map_1_9_102_decor.py）、花火・補給・練習場モブ。リソースパックの地図画像は resourcepack/source/build_lobby_map_1_9_34.py で再生成。

@@ -27,6 +27,7 @@ team join oa_practice @s
 gamemode adventure @s
 effect give @s minecraft:resistance infinite 4 true
 effect give @s minecraft:saturation 2 3 true
+function oa:itori/progress_save
 function oa:itori/progress_reset
 scoreboard players set @s oa.i_points 15
 execute in oa:practice run tp @s 0.5 65 35.5 180 0

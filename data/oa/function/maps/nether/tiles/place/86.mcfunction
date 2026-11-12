@@ -49,27 +49,30 @@ fill ~47 ~-12 ~104 ~48 ~-12 ~104 minecraft:soul_sand
 fill ~61 ~-12 ~104 ~63 ~-12 ~104 minecraft:blackstone
 fill ~60 ~-12 ~104 ~60 ~-12 ~105 minecraft:polished_blackstone
 fill ~40 ~-12 ~104 ~41 ~-12 ~105 minecraft:soul_soil
-setblock ~44 ~-12 ~105 minecraft:soul_sand
-setblock ~42 ~-12 ~105 minecraft:soul_sand
+fill ~44 ~-12 ~105 ~44 ~-11 ~105 minecraft:soul_sand
+fill ~42 ~-12 ~105 ~42 ~-11 ~105 minecraft:soul_sand
 fill ~52 ~-12 ~105 ~54 ~-12 ~105 minecraft:soul_sand
-setblock ~43 ~-12 ~105 minecraft:soul_soil
+fill ~43 ~-12 ~105 ~43 ~-11 ~105 minecraft:soul_soil
 fill ~61 ~-12 ~105 ~67 ~-12 ~105 minecraft:blackstone
 setblock ~59 ~-12 ~105 minecraft:blackstone
-fill ~45 ~-12 ~105 ~49 ~-12 ~105 minecraft:soul_soil
+fill ~45 ~-12 ~105 ~49 ~-11 ~105 minecraft:soul_soil
 setblock ~50 ~-12 ~105 minecraft:soul_sand
 fill ~55 ~-12 ~105 ~58 ~-12 ~105 minecraft:soul_soil
 setblock ~51 ~-12 ~105 minecraft:soul_soil
 setblock ~40 ~-12 ~106 minecraft:soul_soil
+setblock ~40 ~-10 ~106 minecraft:soul_soil
 fill ~53 ~-12 ~106 ~56 ~-12 ~106 minecraft:soul_soil
 fill ~58 ~-12 ~106 ~59 ~-12 ~106 minecraft:polished_blackstone
 fill ~60 ~-12 ~106 ~66 ~-12 ~106 minecraft:blackstone
 setblock ~41 ~-12 ~106 minecraft:soul_sand
+setblock ~41 ~-10 ~106 minecraft:soul_sand
 fill ~42 ~-12 ~106 ~44 ~-12 ~106 minecraft:soul_soil
+fill ~42 ~-10 ~106 ~44 ~-10 ~106 minecraft:soul_soil
 setblock ~57 ~-12 ~106 minecraft:blackstone
 setblock ~52 ~-12 ~106 minecraft:basalt
 fill ~46 ~-12 ~106 ~51 ~-12 ~106 minecraft:soul_soil
-setblock ~45 ~-12 ~106 minecraft:soul_sand
-setblock ~44 ~-12 ~107 minecraft:soul_sand
+fill ~45 ~-12 ~106 ~45 ~-11 ~106 minecraft:soul_sand
+fill ~44 ~-12 ~107 ~44 ~-11 ~107 minecraft:soul_sand
 setblock ~48 ~-12 ~107 minecraft:soul_sand
 setblock ~46 ~-12 ~107 minecraft:basalt
 setblock ~47 ~-12 ~107 minecraft:soul_soil
@@ -78,6 +81,7 @@ fill ~60 ~-12 ~107 ~64 ~-12 ~107 minecraft:blackstone
 setblock ~59 ~-12 ~107 minecraft:polished_blackstone
 fill ~41 ~-12 ~107 ~43 ~-12 ~107 minecraft:soul_soil
 setblock ~40 ~-12 ~107 minecraft:basalt
+setblock ~40 ~-10 ~107 minecraft:basalt
 fill ~55 ~-12 ~107 ~58 ~-12 ~107 minecraft:blackstone
 fill ~49 ~-12 ~107 ~54 ~-12 ~107 minecraft:soul_soil
 setblock ~45 ~-12 ~108 minecraft:basalt
@@ -122,20 +126,28 @@ fill ~40 ~-12 ~116 ~46 ~-12 ~116 minecraft:blackstone
 fill ~40 ~-12 ~117 ~43 ~-12 ~117 minecraft:blackstone
 fill ~40 ~-12 ~118 ~41 ~-12 ~118 minecraft:blackstone
 setblock ~64 ~-11 ~104 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~65 ~-11 ~104 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
+setblock ~48 ~-11 ~104 minecraft:soul_sand
 setblock ~66 ~-11 ~104 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+setblock ~49 ~-11 ~104 minecraft:netherrack
+setblock ~65 ~-11 ~104 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
+fill ~50 ~-11 ~104 ~51 ~-11 ~104 minecraft:soul_soil
+fill ~40 ~-11 ~105 ~41 ~-11 ~105 minecraft:soul_soil
+setblock ~63 ~-11 ~105 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~64 ~-11 ~105 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~62 ~-11 ~105 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-fill ~43 ~-11 ~105 ~43 ~-10 ~105 minecraft:nether_brick_fence[east=false,north=false,south=false,west=false]
-setblock ~63 ~-11 ~105 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
-setblock ~61 ~-11 ~106 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~62 ~-11 ~106 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
-setblock ~61 ~-11 ~107 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
-setblock ~60 ~-11 ~107 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
+setblock ~61 ~-11 ~106 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+fill ~40 ~-11 ~106 ~44 ~-11 ~106 minecraft:netherrack
+fill ~46 ~-11 ~106 ~47 ~-11 ~106 minecraft:soul_soil
+setblock ~43 ~-11 ~107 minecraft:soul_soil
 setblock ~59 ~-11 ~107 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+setblock ~60 ~-11 ~107 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
+setblock ~61 ~-11 ~107 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+fill ~40 ~-11 ~107 ~42 ~-11 ~107 minecraft:netherrack
 setblock ~58 ~-11 ~108 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~57 ~-11 ~108 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~59 ~-11 ~108 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+fill ~40 ~-11 ~108 ~42 ~-11 ~108 minecraft:soul_soil
 setblock ~57 ~-11 ~109 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~55 ~-11 ~109 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
 setblock ~56 ~-11 ~109 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
@@ -159,4 +171,8 @@ setblock ~44 ~-11 ~115 minecraft:nether_brick_fence[east=false,north=true,south=
 fill ~42 ~-11 ~115 ~43 ~-11 ~115 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~41 ~-11 ~116 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
 setblock ~40 ~-11 ~116 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
-setblock ~43 ~-9 ~105 minecraft:soul_lantern[hanging=false]
+setblock ~49 ~-10 ~104 minecraft:soul_soil
+setblock ~43 ~-10 ~105 minecraft:nether_brick_fence[east=false,north=false,south=false,west=false]
+fill ~41 ~-10 ~107 ~42 ~-10 ~107 minecraft:soul_soil
+setblock ~43 ~-9 ~105 minecraft:nether_brick_fence
+setblock ~43 ~-8 ~105 minecraft:soul_lantern[hanging=false]

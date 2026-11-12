@@ -752,6 +752,9 @@ fill ~-20 ~-10 ~-25 ~-20 ~-10 ~-25 minecraft:short_grass
 fill ~-18 ~-10 ~-27 ~-17 ~-10 ~-27 minecraft:short_grass
 fill ~-17 ~-10 ~-26 ~-17 ~-10 ~-26 minecraft:short_grass
 fill ~-5 ~12 ~-25 ~5 ~12 ~-25 minecraft:waxed_cut_copper
+# 1.9.117 relief map update patches
+fill ~-23 ~-10 ~-56 ~-23 ~-10 ~-56 minecraft:gravel
+fill ~-24 ~-10 ~-56 ~-24 ~-10 ~-56 minecraft:sand
 fillbiome ~-24 ~-20 ~-56 ~-9 ~8 ~-41 minecraft:plains
 fillbiome ~-8 ~-20 ~-56 ~7 ~8 ~-41 minecraft:plains
 fillbiome ~-24 ~-20 ~-40 ~-9 ~8 ~-25 minecraft:plains

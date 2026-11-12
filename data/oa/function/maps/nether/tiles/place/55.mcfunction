@@ -1,23 +1,189 @@
 scoreboard players set #stage oa.map2 1
 fill ~8 ~-20 ~8 ~39 ~0 ~39 minecraft:air
 fill ~8 ~-20 ~8 ~39 ~-20 ~39 minecraft:bedrock
-fill ~8 ~-19 ~8 ~39 ~-13 ~39 minecraft:netherrack
-setblock ~34 ~-12 ~8 minecraft:soul_sand
+fill ~8 ~-19 ~8 ~39 ~-16 ~39 minecraft:netherrack
+fill ~32 ~-15 ~8 ~33 ~-15 ~9 minecraft:soul_soil
+fill ~34 ~-15 ~8 ~39 ~-15 ~9 minecraft:netherrack
+fill ~8 ~-15 ~8 ~31 ~-15 ~10 minecraft:netherrack
+setblock ~32 ~-15 ~10 minecraft:soul_sand
+fill ~33 ~-15 ~10 ~34 ~-15 ~10 minecraft:soul_soil
+fill ~35 ~-15 ~10 ~39 ~-15 ~11 minecraft:netherrack
+fill ~31 ~-15 ~11 ~33 ~-15 ~11 minecraft:soul_soil
+setblock ~34 ~-15 ~11 minecraft:soul_sand
+fill ~8 ~-15 ~11 ~30 ~-15 ~11 minecraft:netherrack
+fill ~8 ~-15 ~12 ~39 ~-15 ~30 minecraft:netherrack
+fill ~8 ~-15 ~31 ~10 ~-15 ~31 minecraft:netherrack
+setblock ~12 ~-15 ~31 minecraft:soul_sand
+setblock ~11 ~-15 ~31 minecraft:soul_soil
+fill ~10 ~-15 ~32 ~12 ~-15 ~32 minecraft:soul_soil
+fill ~8 ~-15 ~32 ~9 ~-15 ~32 minecraft:soul_sand
+setblock ~9 ~-15 ~33 minecraft:soul_soil
+fill ~11 ~-15 ~33 ~12 ~-15 ~33 minecraft:soul_soil
+setblock ~10 ~-15 ~33 minecraft:soul_sand
+setblock ~8 ~-15 ~33 minecraft:netherrack
+fill ~8 ~-15 ~34 ~9 ~-15 ~34 minecraft:netherrack
+setblock ~12 ~-15 ~34 minecraft:basalt
+fill ~10 ~-15 ~34 ~11 ~-15 ~34 minecraft:soul_soil
+fill ~11 ~-15 ~35 ~12 ~-15 ~35 minecraft:soul_soil
+setblock ~12 ~-15 ~36 minecraft:soul_sand
+fill ~11 ~-15 ~36 ~11 ~-15 ~37 minecraft:soul_soil
+setblock ~12 ~-15 ~37 minecraft:basalt
+fill ~13 ~-15 ~31 ~39 ~-15 ~38 minecraft:netherrack
+fill ~11 ~-15 ~38 ~12 ~-15 ~38 minecraft:soul_soil
+fill ~8 ~-15 ~35 ~10 ~-15 ~39 minecraft:netherrack
+setblock ~12 ~-15 ~39 minecraft:basalt
+fill ~14 ~-15 ~39 ~39 ~-15 ~39 minecraft:netherrack
+setblock ~11 ~-15 ~39 minecraft:soul_sand
+setblock ~13 ~-15 ~39 minecraft:soul_soil
+setblock ~36 ~-14 ~8 minecraft:soul_sand
+setblock ~35 ~-14 ~8 minecraft:soul_soil
+setblock ~34 ~-14 ~8 minecraft:soul_sand
+fill ~37 ~-14 ~8 ~37 ~-14 ~9 minecraft:soul_soil
+setblock ~34 ~-14 ~9 minecraft:soul_soil
+fill ~35 ~-14 ~9 ~36 ~-14 ~9 minecraft:soul_sand
+fill ~31 ~-14 ~8 ~31 ~-14 ~10 minecraft:soul_soil
+fill ~8 ~-14 ~8 ~30 ~-14 ~10 minecraft:netherrack
+fill ~35 ~-14 ~10 ~36 ~-14 ~10 minecraft:soul_soil
+setblock ~37 ~-14 ~10 minecraft:soul_sand
+setblock ~30 ~-14 ~11 minecraft:soul_sand
+fill ~35 ~-14 ~11 ~37 ~-14 ~11 minecraft:soul_soil
+fill ~38 ~-14 ~8 ~39 ~-14 ~12 minecraft:netherrack
+setblock ~35 ~-14 ~12 minecraft:basalt
+fill ~32 ~-14 ~12 ~33 ~-14 ~12 minecraft:soul_soil
+setblock ~31 ~-14 ~12 minecraft:soul_sand
+setblock ~37 ~-14 ~12 minecraft:soul_sand
+setblock ~36 ~-14 ~12 minecraft:soul_soil
+setblock ~34 ~-14 ~12 minecraft:soul_sand
+fill ~8 ~-14 ~11 ~29 ~-14 ~13 minecraft:netherrack
+fill ~30 ~-14 ~12 ~30 ~-14 ~13 minecraft:soul_soil
+fill ~31 ~-14 ~13 ~39 ~-14 ~13 minecraft:netherrack
+fill ~8 ~-14 ~14 ~28 ~-14 ~14 minecraft:netherrack
+setblock ~29 ~-14 ~14 minecraft:soul_soil
+fill ~30 ~-14 ~14 ~39 ~-14 ~14 minecraft:netherrack
+fill ~8 ~-14 ~15 ~39 ~-14 ~23 minecraft:netherrack
+fill ~8 ~-14 ~24 ~28 ~-14 ~24 minecraft:netherrack
+fill ~30 ~-14 ~24 ~39 ~-14 ~24 minecraft:netherrack
+setblock ~29 ~-14 ~24 minecraft:soul_sand
+fill ~8 ~-14 ~25 ~39 ~-14 ~27 minecraft:netherrack
+fill ~8 ~-14 ~28 ~26 ~-14 ~28 minecraft:netherrack
+setblock ~26 ~-14 ~29 minecraft:soul_sand
+fill ~8 ~-14 ~29 ~13 ~-14 ~29 minecraft:netherrack
+setblock ~14 ~-14 ~29 minecraft:soul_soil
+fill ~15 ~-14 ~29 ~25 ~-14 ~29 minecraft:netherrack
+setblock ~12 ~-14 ~30 minecraft:soul_sand
+setblock ~11 ~-14 ~30 minecraft:soul_soil
+fill ~8 ~-14 ~30 ~10 ~-14 ~30 minecraft:netherrack
+fill ~9 ~-14 ~31 ~10 ~-14 ~31 minecraft:soul_sand
+setblock ~8 ~-14 ~31 minecraft:basalt
+setblock ~8 ~-14 ~33 minecraft:soul_soil
+fill ~27 ~-14 ~28 ~27 ~-14 ~34 minecraft:soul_soil
+setblock ~9 ~-14 ~34 minecraft:soul_soil
+setblock ~8 ~-14 ~34 minecraft:netherrack
+setblock ~27 ~-14 ~35 minecraft:soul_sand
+fill ~28 ~-14 ~28 ~39 ~-14 ~36 minecraft:netherrack
+fill ~10 ~-14 ~35 ~10 ~-14 ~36 minecraft:soul_soil
+setblock ~27 ~-14 ~36 minecraft:basalt
+setblock ~10 ~-14 ~37 minecraft:soul_sand
+fill ~27 ~-14 ~37 ~28 ~-14 ~37 minecraft:soul_soil
+fill ~29 ~-14 ~37 ~39 ~-14 ~37 minecraft:netherrack
+fill ~14 ~-14 ~30 ~26 ~-14 ~38 minecraft:netherrack
+fill ~13 ~-14 ~30 ~13 ~-14 ~38 minecraft:soul_soil
+fill ~8 ~-14 ~35 ~9 ~-14 ~39 minecraft:netherrack
+fill ~27 ~-14 ~38 ~27 ~-14 ~39 minecraft:soul_soil
+fill ~28 ~-14 ~38 ~39 ~-14 ~39 minecraft:netherrack
+fill ~10 ~-14 ~38 ~10 ~-14 ~39 minecraft:soul_soil
+setblock ~14 ~-14 ~39 minecraft:soul_sand
+setblock ~26 ~-14 ~39 minecraft:soul_sand
+fill ~15 ~-14 ~39 ~25 ~-14 ~39 minecraft:netherrack
+setblock ~30 ~-13 ~8 minecraft:soul_sand
+fill ~8 ~-13 ~8 ~29 ~-13 ~10 minecraft:netherrack
+fill ~30 ~-13 ~9 ~30 ~-13 ~10 minecraft:soul_soil
+fill ~38 ~-13 ~8 ~38 ~-13 ~11 minecraft:soul_soil
+setblock ~38 ~-13 ~12 minecraft:basalt
+fill ~39 ~-13 ~8 ~39 ~-13 ~13 minecraft:netherrack
+fill ~8 ~-13 ~11 ~28 ~-13 ~13 minecraft:netherrack
+fill ~29 ~-13 ~11 ~29 ~-13 ~13 minecraft:soul_soil
+fill ~31 ~-13 ~13 ~32 ~-13 ~13 minecraft:soul_soil
+setblock ~33 ~-13 ~13 minecraft:basalt
+setblock ~34 ~-13 ~13 minecraft:soul_soil
+setblock ~35 ~-13 ~13 minecraft:soul_sand
+fill ~36 ~-13 ~13 ~38 ~-13 ~13 minecraft:soul_soil
+setblock ~30 ~-13 ~14 minecraft:soul_sand
+setblock ~28 ~-13 ~14 minecraft:soul_soil
+fill ~31 ~-13 ~14 ~39 ~-13 ~14 minecraft:netherrack
+fill ~28 ~-13 ~15 ~29 ~-13 ~18 minecraft:soul_soil
+setblock ~28 ~-13 ~19 minecraft:soul_soil
+setblock ~29 ~-13 ~19 minecraft:soul_sand
+fill ~28 ~-13 ~20 ~29 ~-13 ~20 minecraft:soul_soil
+setblock ~29 ~-13 ~21 minecraft:soul_soil
+setblock ~28 ~-13 ~21 minecraft:soul_sand
+fill ~28 ~-13 ~22 ~29 ~-13 ~22 minecraft:soul_sand
+fill ~30 ~-13 ~15 ~39 ~-13 ~23 minecraft:netherrack
+fill ~28 ~-13 ~23 ~29 ~-13 ~23 minecraft:soul_soil
+setblock ~30 ~-13 ~24 minecraft:soul_sand
+setblock ~28 ~-13 ~24 minecraft:soul_soil
+fill ~31 ~-13 ~24 ~39 ~-13 ~24 minecraft:netherrack
+setblock ~29 ~-13 ~25 minecraft:soul_soil
+fill ~30 ~-13 ~25 ~39 ~-13 ~25 minecraft:netherrack
+setblock ~28 ~-13 ~25 minecraft:soul_sand
+fill ~8 ~-13 ~14 ~27 ~-13 ~26 minecraft:netherrack
+fill ~8 ~-13 ~27 ~26 ~-13 ~27 minecraft:netherrack
+setblock ~27 ~-13 ~27 minecraft:soul_sand
+fill ~17 ~-13 ~28 ~18 ~-13 ~28 minecraft:soul_soil
+setblock ~14 ~-13 ~28 minecraft:soul_sand
+setblock ~16 ~-13 ~28 minecraft:soul_sand
+fill ~8 ~-13 ~28 ~13 ~-13 ~28 minecraft:netherrack
+setblock ~24 ~-13 ~28 minecraft:soul_sand
+setblock ~19 ~-13 ~28 minecraft:basalt
+fill ~25 ~-13 ~28 ~26 ~-13 ~28 minecraft:soul_soil
+fill ~20 ~-13 ~28 ~23 ~-13 ~28 minecraft:soul_soil
+fill ~15 ~-13 ~28 ~15 ~-13 ~29 minecraft:soul_soil
+fill ~11 ~-13 ~29 ~12 ~-13 ~29 minecraft:soul_soil
+setblock ~13 ~-13 ~29 minecraft:basalt
+setblock ~25 ~-13 ~29 minecraft:soul_soil
+fill ~8 ~-13 ~29 ~10 ~-13 ~29 minecraft:netherrack
+fill ~16 ~-13 ~29 ~24 ~-13 ~29 minecraft:netherrack
+fill ~28 ~-13 ~26 ~28 ~-13 ~30 minecraft:soul_soil
+setblock ~8 ~-13 ~30 minecraft:soul_soil
+setblock ~14 ~-13 ~30 minecraft:soul_sand
+setblock ~9 ~-13 ~30 minecraft:soul_sand
+setblock ~10 ~-13 ~30 minecraft:soul_soil
+setblock ~28 ~-13 ~31 minecraft:soul_sand
+fill ~14 ~-13 ~31 ~14 ~-13 ~32 minecraft:soul_soil
+setblock ~28 ~-13 ~32 minecraft:basalt
+setblock ~14 ~-13 ~33 minecraft:soul_sand
+setblock ~28 ~-13 ~33 minecraft:soul_soil
+setblock ~8 ~-13 ~34 minecraft:soul_soil
+setblock ~28 ~-13 ~34 minecraft:basalt
+fill ~26 ~-13 ~30 ~26 ~-13 ~35 minecraft:soul_soil
+setblock ~9 ~-13 ~35 minecraft:soul_soil
+fill ~29 ~-13 ~26 ~39 ~-13 ~36 minecraft:netherrack
+fill ~28 ~-13 ~35 ~28 ~-13 ~36 minecraft:soul_soil
+setblock ~9 ~-13 ~36 minecraft:soul_sand
+setblock ~29 ~-13 ~37 minecraft:soul_soil
+fill ~30 ~-13 ~37 ~39 ~-13 ~37 minecraft:netherrack
+fill ~15 ~-13 ~30 ~25 ~-13 ~38 minecraft:netherrack
+fill ~14 ~-13 ~34 ~14 ~-13 ~38 minecraft:soul_soil
+fill ~26 ~-13 ~36 ~26 ~-13 ~38 minecraft:soul_sand
+setblock ~28 ~-13 ~38 minecraft:soul_sand
+fill ~8 ~-13 ~35 ~8 ~-13 ~39 minecraft:netherrack
+fill ~9 ~-13 ~37 ~9 ~-13 ~39 minecraft:soul_soil
+fill ~29 ~-13 ~38 ~39 ~-13 ~39 minecraft:netherrack
+setblock ~25 ~-13 ~39 minecraft:basalt
+setblock ~15 ~-13 ~39 minecraft:soul_soil
+setblock ~28 ~-13 ~39 minecraft:soul_soil
+fill ~16 ~-13 ~39 ~24 ~-13 ~39 minecraft:netherrack
 fill ~14 ~-12 ~8 ~18 ~-12 ~8 minecraft:soul_soil
 fill ~8 ~-12 ~8 ~9 ~-12 ~8 minecraft:soul_soil
-fill ~37 ~-12 ~8 ~39 ~-12 ~8 minecraft:soul_soil
+setblock ~39 ~-12 ~8 minecraft:soul_soil
 fill ~10 ~-12 ~8 ~11 ~-12 ~8 minecraft:soul_sand
 setblock ~19 ~-12 ~8 minecraft:soul_sand
 setblock ~28 ~-12 ~8 minecraft:basalt
-setblock ~36 ~-12 ~8 minecraft:soul_sand
-fill ~29 ~-12 ~8 ~30 ~-12 ~8 minecraft:soul_sand
-setblock ~35 ~-12 ~8 minecraft:soul_soil
+setblock ~29 ~-12 ~8 minecraft:soul_sand
 setblock ~12 ~-12 ~8 minecraft:soul_soil
-fill ~31 ~-12 ~8 ~33 ~-12 ~8 minecraft:soul_soil
 fill ~20 ~-12 ~8 ~27 ~-12 ~8 minecraft:soul_soil
 setblock ~13 ~-12 ~8 minecraft:soul_sand
-fill ~29 ~-12 ~9 ~34 ~-12 ~9 minecraft:soul_soil
-fill ~37 ~-12 ~9 ~38 ~-12 ~9 minecraft:soul_soil
+setblock ~29 ~-12 ~9 minecraft:soul_soil
 fill ~8 ~-12 ~9 ~10 ~-12 ~9 minecraft:soul_soil
 setblock ~16 ~-12 ~9 minecraft:soul_sand
 fill ~17 ~-12 ~9 ~20 ~-12 ~9 minecraft:soul_soil
@@ -29,10 +195,8 @@ setblock ~21 ~-12 ~9 minecraft:soul_sand
 setblock ~27 ~-12 ~9 minecraft:basalt
 fill ~13 ~-12 ~9 ~15 ~-12 ~9 minecraft:soul_soil
 setblock ~28 ~-12 ~9 minecraft:soul_sand
-fill ~35 ~-12 ~9 ~36 ~-12 ~9 minecraft:soul_sand
 setblock ~22 ~-12 ~10 minecraft:basalt
 setblock ~12 ~-12 ~10 minecraft:soul_sand
-setblock ~32 ~-12 ~10 minecraft:soul_sand
 fill ~20 ~-12 ~10 ~21 ~-12 ~10 minecraft:soul_soil
 setblock ~8 ~-12 ~10 minecraft:soul_sand
 fill ~18 ~-12 ~10 ~19 ~-12 ~10 minecraft:soul_sand
@@ -41,64 +205,44 @@ fill ~23 ~-12 ~10 ~24 ~-12 ~10 minecraft:soul_soil
 setblock ~26 ~-12 ~10 minecraft:soul_soil
 fill ~27 ~-12 ~10 ~28 ~-12 ~10 minecraft:soul_sand
 setblock ~29 ~-12 ~10 minecraft:basalt
-setblock ~38 ~-12 ~10 minecraft:soul_soil
 fill ~9 ~-12 ~10 ~11 ~-12 ~10 minecraft:soul_soil
 setblock ~25 ~-12 ~10 minecraft:soul_sand
-setblock ~37 ~-12 ~10 minecraft:soul_sand
-fill ~33 ~-12 ~10 ~36 ~-12 ~10 minecraft:soul_soil
-fill ~30 ~-12 ~10 ~31 ~-12 ~10 minecraft:soul_soil
 fill ~39 ~-12 ~9 ~39 ~-12 ~11 minecraft:soul_sand
-setblock ~29 ~-12 ~11 minecraft:soul_soil
 setblock ~27 ~-12 ~11 minecraft:soul_soil
 fill ~25 ~-12 ~11 ~26 ~-12 ~11 minecraft:soul_sand
 setblock ~19 ~-12 ~11 minecraft:soul_sand
 setblock ~28 ~-12 ~11 minecraft:basalt
 setblock ~24 ~-12 ~11 minecraft:soul_soil
-fill ~35 ~-12 ~11 ~38 ~-12 ~11 minecraft:soul_soil
 fill ~8 ~-12 ~11 ~14 ~-12 ~11 minecraft:soul_soil
 fill ~16 ~-12 ~11 ~18 ~-12 ~11 minecraft:soul_soil
 setblock ~23 ~-12 ~11 minecraft:basalt
-setblock ~30 ~-12 ~11 minecraft:soul_sand
-fill ~31 ~-12 ~11 ~33 ~-12 ~11 minecraft:soul_soil
 fill ~20 ~-12 ~11 ~22 ~-12 ~11 minecraft:soul_soil
 fill ~15 ~-12 ~11 ~15 ~-12 ~12 minecraft:soul_sand
-fill ~34 ~-12 ~11 ~34 ~-12 ~12 minecraft:soul_sand
-fill ~32 ~-12 ~12 ~33 ~-12 ~12 minecraft:soul_soil
 setblock ~11 ~-12 ~12 minecraft:basalt
-setblock ~38 ~-12 ~12 minecraft:basalt
-fill ~18 ~-12 ~12 ~19 ~-12 ~12 minecraft:basalt
-setblock ~16 ~-12 ~12 minecraft:basalt
-setblock ~21 ~-12 ~12 minecraft:soul_sand
-setblock ~36 ~-12 ~12 minecraft:soul_soil
-setblock ~17 ~-12 ~12 minecraft:soul_soil
 setblock ~26 ~-12 ~12 minecraft:soul_sand
-setblock ~35 ~-12 ~12 minecraft:basalt
-fill ~22 ~-12 ~12 ~25 ~-12 ~12 minecraft:soul_soil
-setblock ~31 ~-12 ~12 minecraft:soul_sand
 fill ~8 ~-12 ~12 ~9 ~-12 ~12 minecraft:soul_soil
 setblock ~10 ~-12 ~12 minecraft:soul_sand
 setblock ~20 ~-12 ~12 minecraft:soul_soil
-setblock ~39 ~-12 ~12 minecraft:soul_soil
+fill ~27 ~-12 ~12 ~28 ~-12 ~12 minecraft:soul_soil
 setblock ~14 ~-12 ~12 minecraft:basalt
 fill ~12 ~-12 ~12 ~13 ~-12 ~12 minecraft:soul_soil
-fill ~27 ~-12 ~12 ~30 ~-12 ~12 minecraft:soul_soil
-setblock ~37 ~-12 ~12 minecraft:soul_sand
+fill ~18 ~-12 ~12 ~19 ~-12 ~12 minecraft:basalt
+setblock ~16 ~-12 ~12 minecraft:basalt
+setblock ~21 ~-12 ~12 minecraft:soul_sand
+fill ~22 ~-12 ~12 ~25 ~-12 ~12 minecraft:soul_soil
+setblock ~17 ~-12 ~12 minecraft:soul_soil
+fill ~39 ~-12 ~12 ~39 ~-12 ~13 minecraft:soul_soil
 setblock ~8 ~-12 ~13 minecraft:soul_soil
 fill ~11 ~-12 ~13 ~12 ~-12 ~13 minecraft:soul_soil
-fill ~36 ~-12 ~13 ~39 ~-12 ~13 minecraft:soul_soil
 fill ~20 ~-12 ~13 ~21 ~-12 ~13 minecraft:soul_soil
-setblock ~33 ~-12 ~13 minecraft:basalt
-setblock ~34 ~-12 ~13 minecraft:soul_soil
 fill ~9 ~-12 ~13 ~10 ~-12 ~13 minecraft:soul_sand
-fill ~23 ~-12 ~13 ~32 ~-12 ~13 minecraft:soul_soil
 setblock ~22 ~-12 ~13 minecraft:soul_sand
-setblock ~35 ~-12 ~13 minecraft:soul_sand
+fill ~23 ~-12 ~13 ~28 ~-12 ~13 minecraft:soul_soil
 setblock ~16 ~-12 ~13 minecraft:soul_soil
 fill ~17 ~-12 ~13 ~19 ~-12 ~13 minecraft:soul_sand
 setblock ~9 ~-12 ~14 minecraft:soul_soil
 setblock ~12 ~-12 ~14 minecraft:soul_sand
 setblock ~26 ~-12 ~14 minecraft:soul_sand
-fill ~28 ~-12 ~14 ~29 ~-12 ~14 minecraft:soul_soil
 setblock ~11 ~-12 ~14 minecraft:soul_soil
 setblock ~19 ~-12 ~14 minecraft:soul_sand
 setblock ~10 ~-12 ~14 minecraft:basalt
@@ -108,78 +252,76 @@ fill ~24 ~-12 ~14 ~25 ~-12 ~14 minecraft:soul_soil
 fill ~16 ~-12 ~14 ~18 ~-12 ~14 minecraft:soul_soil
 setblock ~21 ~-12 ~14 minecraft:soul_sand
 setblock ~27 ~-12 ~14 minecraft:basalt
-setblock ~30 ~-12 ~14 minecraft:soul_sand
 setblock ~20 ~-12 ~14 minecraft:basalt
 fill ~13 ~-12 ~13 ~15 ~-11 ~15 minecraft:lava
 fill ~23 ~-12 ~14 ~23 ~-12 ~15 minecraft:soul_sand
 fill ~8 ~-12 ~14 ~8 ~-12 ~15 minecraft:soul_sand
+fill ~24 ~-12 ~15 ~27 ~-12 ~15 minecraft:soul_soil
 fill ~9 ~-12 ~15 ~12 ~-12 ~15 minecraft:soul_soil
-fill ~24 ~-12 ~15 ~30 ~-12 ~15 minecraft:soul_soil
 fill ~16 ~-12 ~15 ~22 ~-12 ~15 minecraft:soul_soil
 fill ~32 ~-12 ~15 ~33 ~-12 ~15 minecraft:soul_sand
 setblock ~31 ~-12 ~15 minecraft:basalt
 fill ~34 ~-12 ~15 ~36 ~-12 ~16 minecraft:soul_soil
+fill ~30 ~-12 ~15 ~30 ~-12 ~16 minecraft:soul_soil
 fill ~37 ~-12 ~15 ~37 ~-12 ~16 minecraft:soul_sand
 fill ~38 ~-12 ~15 ~39 ~-12 ~16 minecraft:soul_soil
 fill ~17 ~-12 ~16 ~25 ~-12 ~16 minecraft:soul_soil
 fill ~8 ~-12 ~16 ~10 ~-12 ~16 minecraft:soul_soil
 setblock ~16 ~-12 ~16 minecraft:soul_sand
 fill ~26 ~-12 ~16 ~27 ~-12 ~16 minecraft:soul_sand
-fill ~28 ~-12 ~16 ~30 ~-12 ~16 minecraft:soul_soil
 fill ~11 ~-12 ~16 ~12 ~-12 ~16 minecraft:soul_sand
 setblock ~31 ~-12 ~16 minecraft:soul_sand
 fill ~13 ~-12 ~16 ~15 ~-12 ~16 minecraft:soul_soil
 setblock ~32 ~-12 ~16 minecraft:soul_soil
 setblock ~33 ~-12 ~16 minecraft:soul_sand
+setblock ~12 ~-12 ~17 minecraft:soul_soil
+setblock ~13 ~-12 ~17 minecraft:soul_sand
+fill ~30 ~-12 ~17 ~31 ~-12 ~17 minecraft:soul_soil
 setblock ~11 ~-12 ~17 minecraft:basalt
-setblock ~34 ~-12 ~17 minecraft:soul_sand
+setblock ~21 ~-12 ~17 minecraft:soul_sand
+setblock ~20 ~-12 ~17 minecraft:basalt
+fill ~14 ~-12 ~17 ~15 ~-12 ~17 minecraft:soul_soil
 fill ~8 ~-12 ~17 ~9 ~-12 ~17 minecraft:soul_soil
 setblock ~10 ~-12 ~17 minecraft:soul_sand
 setblock ~32 ~-12 ~17 minecraft:soul_sand
 fill ~37 ~-12 ~17 ~39 ~-12 ~17 minecraft:soul_soil
-fill ~22 ~-12 ~17 ~31 ~-12 ~17 minecraft:soul_soil
 setblock ~36 ~-12 ~17 minecraft:soul_sand
+fill ~22 ~-12 ~17 ~27 ~-12 ~17 minecraft:soul_soil
 setblock ~35 ~-12 ~17 minecraft:soul_soil
 setblock ~33 ~-12 ~17 minecraft:soul_soil
-setblock ~20 ~-12 ~17 minecraft:basalt
-setblock ~21 ~-12 ~17 minecraft:soul_sand
-setblock ~12 ~-12 ~17 minecraft:soul_soil
-fill ~14 ~-12 ~17 ~15 ~-12 ~17 minecraft:soul_soil
-setblock ~13 ~-12 ~17 minecraft:soul_sand
+setblock ~34 ~-12 ~17 minecraft:soul_sand
 fill ~17 ~-12 ~17 ~18 ~-12 ~18 minecraft:soul_soil
 fill ~16 ~-12 ~17 ~16 ~-12 ~18 minecraft:basalt
-fill ~26 ~-12 ~18 ~33 ~-12 ~18 minecraft:soul_soil
 setblock ~34 ~-12 ~18 minecraft:basalt
 setblock ~23 ~-12 ~18 minecraft:soul_sand
 setblock ~24 ~-12 ~18 minecraft:soul_soil
 fill ~12 ~-12 ~18 ~15 ~-12 ~18 minecraft:soul_soil
 setblock ~39 ~-12 ~18 minecraft:soul_sand
-fill ~35 ~-12 ~18 ~36 ~-12 ~18 minecraft:soul_soil
+fill ~26 ~-12 ~18 ~27 ~-12 ~18 minecraft:soul_soil
 fill ~8 ~-12 ~18 ~11 ~-12 ~18 minecraft:soul_sand
-setblock ~38 ~-12 ~18 minecraft:soul_soil
+fill ~30 ~-12 ~18 ~33 ~-12 ~18 minecraft:soul_soil
+fill ~35 ~-12 ~18 ~36 ~-12 ~18 minecraft:soul_soil
 setblock ~37 ~-12 ~18 minecraft:soul_sand
+setblock ~38 ~-12 ~18 minecraft:soul_soil
 fill ~20 ~-12 ~18 ~22 ~-12 ~18 minecraft:soul_soil
 fill ~25 ~-12 ~18 ~25 ~-12 ~19 minecraft:soul_sand
-setblock ~32 ~-12 ~19 minecraft:basalt
-setblock ~26 ~-12 ~19 minecraft:soul_soil
-setblock ~12 ~-12 ~19 minecraft:soul_soil
-fill ~30 ~-12 ~19 ~31 ~-12 ~19 minecraft:soul_soil
 setblock ~11 ~-12 ~19 minecraft:basalt
+setblock ~34 ~-12 ~19 minecraft:soul_sand
 fill ~14 ~-12 ~19 ~18 ~-12 ~19 minecraft:soul_soil
-fill ~8 ~-12 ~19 ~10 ~-12 ~19 minecraft:soul_soil
-setblock ~29 ~-12 ~19 minecraft:soul_sand
-fill ~36 ~-12 ~19 ~39 ~-12 ~19 minecraft:soul_sand
-setblock ~28 ~-12 ~19 minecraft:soul_soil
-setblock ~27 ~-12 ~19 minecraft:soul_sand
 setblock ~20 ~-12 ~19 minecraft:soul_soil
+fill ~8 ~-12 ~19 ~10 ~-12 ~19 minecraft:soul_soil
+setblock ~32 ~-12 ~19 minecraft:basalt
+fill ~36 ~-12 ~19 ~39 ~-12 ~19 minecraft:soul_sand
+setblock ~27 ~-12 ~19 minecraft:soul_sand
 fill ~23 ~-12 ~19 ~24 ~-12 ~19 minecraft:soul_soil
+setblock ~26 ~-12 ~19 minecraft:soul_soil
 setblock ~33 ~-12 ~19 minecraft:soul_soil
 setblock ~35 ~-12 ~19 minecraft:soul_soil
 fill ~21 ~-12 ~19 ~22 ~-12 ~19 minecraft:soul_sand
-setblock ~34 ~-12 ~19 minecraft:soul_sand
+setblock ~12 ~-12 ~19 minecraft:soul_soil
 fill ~19 ~-12 ~17 ~19 ~-12 ~20 minecraft:soul_sand
 fill ~13 ~-12 ~19 ~13 ~-12 ~20 minecraft:soul_sand
-fill ~24 ~-12 ~20 ~31 ~-12 ~20 minecraft:soul_soil
+fill ~24 ~-12 ~20 ~27 ~-12 ~20 minecraft:soul_soil
 setblock ~18 ~-12 ~20 minecraft:soul_soil
 fill ~20 ~-12 ~20 ~21 ~-12 ~20 minecraft:soul_soil
 setblock ~17 ~-12 ~20 minecraft:soul_sand
@@ -192,6 +334,7 @@ fill ~32 ~-12 ~20 ~33 ~-12 ~20 minecraft:soul_sand
 setblock ~37 ~-12 ~20 minecraft:soul_sand
 setblock ~15 ~-12 ~20 minecraft:soul_sand
 setblock ~16 ~-12 ~20 minecraft:soul_soil
+fill ~30 ~-12 ~19 ~31 ~-12 ~21 minecraft:soul_soil
 setblock ~9 ~-12 ~21 minecraft:soul_soil
 fill ~11 ~-12 ~21 ~15 ~-12 ~21 minecraft:soul_soil
 setblock ~32 ~-12 ~21 minecraft:soul_sand
@@ -200,9 +343,7 @@ fill ~33 ~-12 ~21 ~39 ~-12 ~21 minecraft:soul_soil
 setblock ~8 ~-12 ~21 minecraft:soul_sand
 fill ~18 ~-12 ~21 ~19 ~-12 ~21 minecraft:soul_sand
 setblock ~16 ~-12 ~21 minecraft:basalt
-fill ~29 ~-12 ~21 ~31 ~-12 ~21 minecraft:soul_soil
 fill ~20 ~-12 ~21 ~27 ~-12 ~21 minecraft:soul_soil
-setblock ~28 ~-12 ~21 minecraft:soul_sand
 setblock ~17 ~-12 ~21 minecraft:soul_soil
 fill ~8 ~-12 ~22 ~13 ~-12 ~22 minecraft:soul_soil
 setblock ~14 ~-12 ~22 minecraft:soul_sand
@@ -211,15 +352,16 @@ fill ~15 ~-12 ~22 ~19 ~-12 ~22 minecraft:soul_soil
 fill ~32 ~-12 ~22 ~33 ~-12 ~22 minecraft:soul_soil
 fill ~35 ~-12 ~22 ~39 ~-12 ~22 minecraft:soul_soil
 setblock ~20 ~-12 ~22 minecraft:soul_sand
-fill ~28 ~-12 ~22 ~30 ~-12 ~22 minecraft:soul_sand
+setblock ~30 ~-12 ~22 minecraft:soul_sand
 setblock ~34 ~-12 ~22 minecraft:soul_sand
 setblock ~31 ~-12 ~22 minecraft:basalt
+setblock ~27 ~-12 ~23 minecraft:soul_soil
 fill ~37 ~-12 ~23 ~39 ~-12 ~23 minecraft:soul_soil
 fill ~17 ~-12 ~23 ~20 ~-12 ~23 minecraft:soul_soil
 setblock ~16 ~-12 ~23 minecraft:soul_sand
 fill ~25 ~-12 ~23 ~26 ~-12 ~23 minecraft:soul_sand
 fill ~33 ~-12 ~23 ~35 ~-12 ~23 minecraft:soul_soil
-fill ~27 ~-12 ~23 ~30 ~-12 ~23 minecraft:soul_soil
+setblock ~30 ~-12 ~23 minecraft:soul_soil
 fill ~9 ~-12 ~23 ~15 ~-12 ~23 minecraft:soul_soil
 setblock ~36 ~-12 ~23 minecraft:basalt
 fill ~22 ~-12 ~23 ~24 ~-12 ~23 minecraft:soul_soil
@@ -230,13 +372,13 @@ setblock ~14 ~-12 ~24 minecraft:soul_sand
 fill ~23 ~-12 ~24 ~24 ~-12 ~24 minecraft:soul_sand
 setblock ~20 ~-12 ~24 minecraft:soul_soil
 fill ~9 ~-12 ~24 ~10 ~-12 ~24 minecraft:soul_soil
-fill ~29 ~-12 ~24 ~31 ~-12 ~24 minecraft:soul_sand
 fill ~15 ~-12 ~24 ~18 ~-12 ~24 minecraft:soul_soil
 setblock ~19 ~-12 ~24 minecraft:soul_sand
 setblock ~13 ~-12 ~24 minecraft:basalt
 fill ~11 ~-12 ~24 ~12 ~-12 ~24 minecraft:soul_sand
 setblock ~22 ~-12 ~24 minecraft:soul_soil
-fill ~25 ~-12 ~24 ~28 ~-12 ~24 minecraft:soul_soil
+fill ~25 ~-12 ~24 ~27 ~-12 ~24 minecraft:soul_soil
+setblock ~31 ~-12 ~24 minecraft:soul_sand
 fill ~32 ~-12 ~24 ~39 ~-12 ~24 minecraft:soul_soil
 setblock ~32 ~-12 ~25 minecraft:soul_sand
 fill ~33 ~-12 ~25 ~39 ~-12 ~25 minecraft:soul_soil
@@ -247,10 +389,10 @@ fill ~13 ~-12 ~25 ~14 ~-12 ~25 minecraft:soul_sand
 fill ~23 ~-12 ~25 ~24 ~-12 ~25 minecraft:soul_soil
 setblock ~26 ~-12 ~25 minecraft:soul_soil
 setblock ~18 ~-12 ~25 minecraft:soul_sand
-fill ~27 ~-12 ~25 ~28 ~-12 ~25 minecraft:soul_sand
 setblock ~25 ~-12 ~25 minecraft:soul_sand
-fill ~29 ~-12 ~25 ~31 ~-12 ~25 minecraft:soul_soil
+fill ~30 ~-12 ~25 ~31 ~-12 ~25 minecraft:soul_soil
 setblock ~19 ~-12 ~25 minecraft:soul_soil
+fill ~27 ~-12 ~25 ~27 ~-12 ~26 minecraft:soul_sand
 setblock ~8 ~-12 ~26 minecraft:soul_soil
 fill ~10 ~-12 ~26 ~18 ~-12 ~26 minecraft:soul_soil
 fill ~29 ~-12 ~26 ~31 ~-12 ~26 minecraft:soul_sand
@@ -258,13 +400,10 @@ fill ~19 ~-12 ~26 ~20 ~-12 ~26 minecraft:soul_sand
 fill ~21 ~-12 ~26 ~26 ~-12 ~26 minecraft:soul_soil
 setblock ~33 ~-12 ~26 minecraft:basalt
 fill ~35 ~-12 ~26 ~39 ~-12 ~26 minecraft:soul_soil
-setblock ~28 ~-12 ~26 minecraft:soul_soil
 setblock ~9 ~-12 ~26 minecraft:basalt
 setblock ~32 ~-12 ~26 minecraft:soul_soil
 setblock ~34 ~-12 ~26 minecraft:soul_sand
-fill ~27 ~-12 ~26 ~27 ~-12 ~27 minecraft:soul_sand
 setblock ~39 ~-12 ~27 minecraft:soul_soil
-fill ~28 ~-12 ~27 ~33 ~-12 ~27 minecraft:soul_soil
 setblock ~17 ~-12 ~27 minecraft:soul_sand
 fill ~24 ~-12 ~27 ~26 ~-12 ~27 minecraft:soul_soil
 fill ~8 ~-12 ~27 ~12 ~-12 ~27 minecraft:soul_soil
@@ -272,164 +411,116 @@ fill ~18 ~-12 ~27 ~20 ~-12 ~27 minecraft:soul_soil
 setblock ~37 ~-12 ~27 minecraft:soul_soil
 fill ~15 ~-12 ~27 ~16 ~-12 ~27 minecraft:soul_soil
 fill ~34 ~-12 ~27 ~36 ~-12 ~27 minecraft:soul_sand
-fill ~21 ~-12 ~27 ~23 ~-12 ~27 minecraft:soul_sand
 setblock ~38 ~-12 ~27 minecraft:soul_sand
+fill ~21 ~-12 ~27 ~23 ~-12 ~27 minecraft:soul_sand
+fill ~29 ~-12 ~27 ~33 ~-12 ~27 minecraft:soul_soil
 fill ~13 ~-12 ~27 ~14 ~-12 ~27 minecraft:soul_sand
-fill ~17 ~-12 ~28 ~18 ~-12 ~28 minecraft:soul_soil
-setblock ~14 ~-12 ~28 minecraft:soul_sand
 fill ~31 ~-12 ~28 ~32 ~-12 ~28 minecraft:basalt
+fill ~29 ~-12 ~28 ~30 ~-12 ~28 minecraft:soul_soil
 fill ~8 ~-12 ~28 ~10 ~-12 ~28 minecraft:soul_soil
-setblock ~16 ~-12 ~28 minecraft:soul_sand
 fill ~12 ~-12 ~28 ~13 ~-12 ~28 minecraft:soul_soil
 fill ~34 ~-12 ~28 ~38 ~-12 ~28 minecraft:soul_soil
-setblock ~15 ~-12 ~28 minecraft:soul_soil
 setblock ~11 ~-12 ~28 minecraft:soul_sand
-fill ~25 ~-12 ~28 ~30 ~-12 ~28 minecraft:soul_soil
 setblock ~39 ~-12 ~28 minecraft:soul_sand
-setblock ~24 ~-12 ~28 minecraft:soul_sand
-setblock ~19 ~-12 ~28 minecraft:basalt
 setblock ~33 ~-12 ~28 minecraft:soul_sand
-fill ~20 ~-12 ~28 ~23 ~-12 ~28 minecraft:soul_soil
-setblock ~26 ~-12 ~29 minecraft:soul_sand
+setblock ~8 ~-12 ~29 minecraft:soul_soil
 fill ~30 ~-12 ~29 ~32 ~-12 ~29 minecraft:soul_soil
-fill ~14 ~-12 ~29 ~20 ~-12 ~29 minecraft:soul_soil
-fill ~27 ~-12 ~29 ~28 ~-12 ~29 minecraft:soul_soil
-setblock ~13 ~-12 ~29 minecraft:basalt
 setblock ~29 ~-12 ~29 minecraft:soul_sand
-fill ~10 ~-12 ~29 ~12 ~-12 ~29 minecraft:soul_soil
+setblock ~9 ~-12 ~29 minecraft:soul_sand
+fill ~22 ~-12 ~29 ~24 ~-12 ~29 minecraft:soul_soil
 setblock ~21 ~-12 ~29 minecraft:soul_sand
 fill ~38 ~-12 ~29 ~39 ~-12 ~29 minecraft:soul_soil
-fill ~22 ~-12 ~29 ~25 ~-12 ~29 minecraft:soul_soil
-fill ~8 ~-12 ~29 ~8 ~-12 ~30 minecraft:soul_soil
-fill ~9 ~-12 ~29 ~9 ~-12 ~30 minecraft:soul_sand
-fill ~14 ~-12 ~30 ~15 ~-12 ~30 minecraft:soul_sand
-setblock ~18 ~-12 ~30 minecraft:soul_soil
+fill ~16 ~-12 ~29 ~20 ~-12 ~29 minecraft:soul_soil
+setblock ~10 ~-12 ~29 minecraft:soul_soil
 setblock ~24 ~-12 ~30 minecraft:soul_sand
-setblock ~23 ~-12 ~30 minecraft:soul_soil
-fill ~25 ~-12 ~30 ~29 ~-12 ~30 minecraft:soul_soil
-setblock ~38 ~-12 ~30 minecraft:basalt
-setblock ~16 ~-12 ~30 minecraft:soul_soil
+setblock ~29 ~-12 ~30 minecraft:soul_soil
 setblock ~20 ~-12 ~30 minecraft:soul_soil
+setblock ~23 ~-12 ~30 minecraft:soul_soil
+setblock ~18 ~-12 ~30 minecraft:soul_soil
 fill ~31 ~-12 ~30 ~32 ~-12 ~30 minecraft:soul_soil
 setblock ~17 ~-12 ~30 minecraft:soul_sand
 setblock ~19 ~-12 ~30 minecraft:soul_sand
-setblock ~13 ~-12 ~30 minecraft:soul_soil
+setblock ~25 ~-12 ~30 minecraft:soul_soil
+setblock ~38 ~-12 ~30 minecraft:basalt
 setblock ~30 ~-12 ~30 minecraft:soul_sand
 fill ~21 ~-12 ~30 ~22 ~-12 ~30 minecraft:soul_sand
-fill ~10 ~-12 ~30 ~11 ~-12 ~30 minecraft:soul_soil
-fill ~12 ~-12 ~30 ~12 ~-12 ~31 minecraft:soul_sand
+setblock ~15 ~-12 ~30 minecraft:soul_sand
+setblock ~16 ~-12 ~30 minecraft:soul_soil
 fill ~21 ~-12 ~31 ~24 ~-12 ~31 minecraft:soul_soil
 setblock ~25 ~-12 ~31 minecraft:basalt
 fill ~29 ~-12 ~31 ~30 ~-12 ~31 minecraft:soul_soil
-setblock ~11 ~-12 ~31 minecraft:soul_soil
-fill ~9 ~-12 ~31 ~10 ~-12 ~31 minecraft:soul_sand
-fill ~13 ~-12 ~31 ~19 ~-12 ~31 minecraft:soul_soil
-fill ~26 ~-12 ~31 ~27 ~-12 ~31 minecraft:soul_soil
-setblock ~8 ~-12 ~31 minecraft:basalt
-setblock ~28 ~-12 ~31 minecraft:soul_sand
-setblock ~20 ~-12 ~31 minecraft:basalt
+fill ~15 ~-12 ~31 ~19 ~-12 ~31 minecraft:soul_soil
 fill ~31 ~-12 ~31 ~32 ~-12 ~31 minecraft:soul_sand
-setblock ~24 ~-12 ~32 minecraft:soul_sand
-fill ~30 ~-12 ~32 ~32 ~-12 ~32 minecraft:soul_soil
-fill ~10 ~-12 ~32 ~14 ~-12 ~32 minecraft:soul_soil
-setblock ~28 ~-12 ~32 minecraft:basalt
-setblock ~29 ~-12 ~32 minecraft:soul_sand
-fill ~8 ~-12 ~32 ~9 ~-12 ~32 minecraft:soul_sand
-fill ~25 ~-12 ~32 ~27 ~-12 ~32 minecraft:soul_soil
+setblock ~20 ~-12 ~31 minecraft:basalt
 fill ~16 ~-12 ~32 ~17 ~-12 ~32 minecraft:soul_soil
+fill ~30 ~-12 ~32 ~32 ~-12 ~32 minecraft:soul_soil
+setblock ~25 ~-12 ~32 minecraft:soul_soil
+setblock ~29 ~-12 ~32 minecraft:soul_sand
+setblock ~24 ~-12 ~32 minecraft:soul_sand
 setblock ~15 ~-12 ~32 minecraft:soul_sand
 setblock ~23 ~-12 ~32 minecraft:soul_soil
 fill ~33 ~-12 ~29 ~37 ~-12 ~33 minecraft:polished_blackstone
 fill ~39 ~-12 ~30 ~39 ~-12 ~33 minecraft:soul_sand
 fill ~38 ~-12 ~31 ~38 ~-12 ~33 minecraft:soul_soil
-fill ~26 ~-12 ~33 ~32 ~-12 ~33 minecraft:soul_soil
-setblock ~14 ~-12 ~33 minecraft:soul_sand
-fill ~8 ~-12 ~33 ~9 ~-12 ~33 minecraft:soul_soil
-setblock ~10 ~-12 ~33 minecraft:soul_sand
 setblock ~23 ~-12 ~33 minecraft:soul_sand
 setblock ~17 ~-12 ~33 minecraft:soul_sand
 setblock ~24 ~-12 ~33 minecraft:soul_soil
 fill ~15 ~-12 ~33 ~16 ~-12 ~33 minecraft:soul_soil
 setblock ~25 ~-12 ~33 minecraft:soul_sand
-fill ~11 ~-12 ~33 ~13 ~-12 ~33 minecraft:soul_soil
-fill ~8 ~-12 ~34 ~11 ~-12 ~34 minecraft:soul_soil
-setblock ~12 ~-12 ~34 minecraft:basalt
-setblock ~28 ~-12 ~34 minecraft:basalt
+fill ~29 ~-12 ~33 ~32 ~-12 ~33 minecraft:soul_soil
+fill ~23 ~-12 ~34 ~25 ~-12 ~34 minecraft:soul_soil
 setblock ~29 ~-12 ~34 minecraft:soul_sand
 setblock ~17 ~-12 ~34 minecraft:basalt
-fill ~13 ~-12 ~34 ~14 ~-12 ~34 minecraft:soul_soil
 fill ~38 ~-12 ~34 ~39 ~-12 ~34 minecraft:soul_soil
-fill ~23 ~-12 ~34 ~27 ~-12 ~34 minecraft:soul_soil
 setblock ~37 ~-12 ~34 minecraft:soul_sand
 fill ~30 ~-12 ~34 ~36 ~-12 ~34 minecraft:soul_soil
 fill ~15 ~-12 ~34 ~15 ~-12 ~35 minecraft:soul_sand
 fill ~16 ~-12 ~34 ~16 ~-12 ~35 minecraft:soul_soil
-fill ~28 ~-12 ~35 ~29 ~-12 ~35 minecraft:soul_soil
-setblock ~26 ~-12 ~35 minecraft:soul_soil
-setblock ~35 ~-12 ~35 minecraft:soul_sand
-setblock ~30 ~-12 ~35 minecraft:basalt
-setblock ~25 ~-12 ~35 minecraft:soul_sand
-fill ~32 ~-12 ~35 ~34 ~-12 ~35 minecraft:soul_soil
-setblock ~27 ~-12 ~35 minecraft:soul_sand
-setblock ~31 ~-12 ~35 minecraft:soul_sand
-fill ~9 ~-12 ~35 ~14 ~-12 ~35 minecraft:soul_soil
+setblock ~29 ~-12 ~35 minecraft:soul_soil
 setblock ~17 ~-12 ~35 minecraft:soul_sand
 setblock ~24 ~-12 ~35 minecraft:soul_soil
 setblock ~23 ~-12 ~35 minecraft:basalt
-setblock ~8 ~-12 ~35 minecraft:basalt
+setblock ~25 ~-12 ~35 minecraft:soul_sand
+setblock ~31 ~-12 ~35 minecraft:soul_sand
 fill ~36 ~-12 ~35 ~37 ~-12 ~35 minecraft:soul_soil
+setblock ~8 ~-12 ~35 minecraft:basalt
+setblock ~35 ~-12 ~35 minecraft:soul_sand
+setblock ~30 ~-12 ~35 minecraft:basalt
+fill ~32 ~-12 ~35 ~34 ~-12 ~35 minecraft:soul_soil
 fill ~18 ~-12 ~32 ~22 ~-12 ~36 minecraft:polished_blackstone_bricks
 fill ~38 ~-12 ~35 ~38 ~-12 ~36 minecraft:soul_sand
 fill ~23 ~-12 ~36 ~25 ~-12 ~36 minecraft:soul_soil
-setblock ~12 ~-12 ~36 minecraft:soul_sand
+fill ~29 ~-12 ~36 ~30 ~-12 ~36 minecraft:soul_soil
 setblock ~16 ~-12 ~36 minecraft:soul_sand
-fill ~28 ~-12 ~36 ~30 ~-12 ~36 minecraft:soul_soil
+setblock ~8 ~-12 ~36 minecraft:soul_sand
 setblock ~36 ~-12 ~36 minecraft:soul_sand
 setblock ~37 ~-12 ~36 minecraft:soul_soil
-fill ~8 ~-12 ~36 ~9 ~-12 ~36 minecraft:soul_sand
+setblock ~15 ~-12 ~36 minecraft:soul_soil
 setblock ~35 ~-12 ~36 minecraft:soul_soil
-setblock ~27 ~-12 ~36 minecraft:basalt
-fill ~13 ~-12 ~36 ~15 ~-12 ~36 minecraft:soul_soil
 fill ~31 ~-12 ~36 ~34 ~-12 ~36 minecraft:soul_sand
-fill ~10 ~-12 ~36 ~11 ~-12 ~36 minecraft:soul_soil
 setblock ~17 ~-12 ~36 minecraft:soul_soil
 fill ~39 ~-12 ~35 ~39 ~-12 ~37 minecraft:soul_soil
-fill ~26 ~-12 ~36 ~26 ~-12 ~37 minecraft:soul_sand
-fill ~8 ~-12 ~37 ~9 ~-12 ~37 minecraft:soul_soil
-setblock ~10 ~-12 ~37 minecraft:soul_sand
-setblock ~11 ~-12 ~37 minecraft:soul_soil
-fill ~27 ~-12 ~37 ~34 ~-12 ~37 minecraft:soul_soil
+fill ~30 ~-12 ~37 ~34 ~-12 ~37 minecraft:soul_soil
 setblock ~17 ~-12 ~37 minecraft:soul_sand
-setblock ~12 ~-12 ~37 minecraft:basalt
-fill ~18 ~-12 ~37 ~25 ~-12 ~37 minecraft:soul_soil
 setblock ~35 ~-12 ~37 minecraft:basalt
+fill ~18 ~-12 ~37 ~25 ~-12 ~37 minecraft:soul_soil
 fill ~36 ~-12 ~37 ~38 ~-12 ~37 minecraft:soul_sand
-fill ~13 ~-12 ~37 ~14 ~-12 ~37 minecraft:soul_soil
 setblock ~15 ~-12 ~37 minecraft:soul_sand
 setblock ~16 ~-12 ~37 minecraft:soul_soil
 fill ~20 ~-12 ~38 ~24 ~-12 ~38 minecraft:soul_soil
 fill ~17 ~-12 ~38 ~18 ~-12 ~38 minecraft:soul_soil
-setblock ~27 ~-12 ~38 minecraft:soul_soil
-fill ~8 ~-12 ~38 ~15 ~-12 ~38 minecraft:soul_soil
 fill ~31 ~-12 ~38 ~36 ~-12 ~38 minecraft:soul_soil
-fill ~25 ~-12 ~38 ~26 ~-12 ~38 minecraft:soul_sand
 setblock ~19 ~-12 ~38 minecraft:soul_sand
+setblock ~15 ~-12 ~38 minecraft:soul_soil
+fill ~29 ~-12 ~38 ~30 ~-12 ~38 minecraft:soul_sand
+setblock ~25 ~-12 ~38 minecraft:soul_sand
 fill ~38 ~-12 ~38 ~39 ~-12 ~38 minecraft:soul_soil
 setblock ~37 ~-12 ~38 minecraft:soul_sand
-fill ~28 ~-12 ~38 ~30 ~-12 ~38 minecraft:soul_sand
+fill ~8 ~-12 ~37 ~8 ~-12 ~39 minecraft:soul_soil
 fill ~16 ~-12 ~38 ~16 ~-12 ~39 minecraft:soul_sand
-setblock ~14 ~-12 ~39 minecraft:soul_sand
-setblock ~26 ~-12 ~39 minecraft:soul_sand
-setblock ~25 ~-12 ~39 minecraft:basalt
-fill ~8 ~-12 ~39 ~10 ~-12 ~39 minecraft:soul_soil
 fill ~18 ~-12 ~39 ~24 ~-12 ~39 minecraft:soul_soil
-fill ~27 ~-12 ~39 ~28 ~-12 ~39 minecraft:soul_soil
-setblock ~12 ~-12 ~39 minecraft:basalt
 setblock ~30 ~-12 ~39 minecraft:soul_soil
-setblock ~15 ~-12 ~39 minecraft:soul_soil
 setblock ~17 ~-12 ~39 minecraft:basalt
-setblock ~11 ~-12 ~39 minecraft:soul_sand
-setblock ~13 ~-12 ~39 minecraft:soul_soil
 setblock ~29 ~-12 ~39 minecraft:basalt
 setblock ~31 ~-12 ~39 minecraft:soul_sand
 fill ~32 ~-12 ~39 ~39 ~-12 ~39 minecraft:soul_soil

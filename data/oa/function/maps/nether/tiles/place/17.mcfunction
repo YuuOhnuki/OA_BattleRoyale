@@ -67,7 +67,7 @@ setblock ~76 ~-12 ~-90 minecraft:basalt
 setblock ~74 ~-12 ~-90 minecraft:basalt
 setblock ~75 ~-12 ~-90 minecraft:blackstone
 setblock ~81 ~-12 ~-90 minecraft:polished_blackstone
-setblock ~73 ~-12 ~-90 minecraft:smooth_basalt
+fill ~73 ~-12 ~-90 ~73 ~-11 ~-90 minecraft:smooth_basalt
 fill ~77 ~-12 ~-90 ~78 ~-12 ~-90 minecraft:blackstone
 setblock ~79 ~-12 ~-90 minecraft:netherrack
 fill ~72 ~-12 ~-90 ~72 ~-12 ~-89 minecraft:blackstone
@@ -75,6 +75,7 @@ fill ~75 ~-12 ~-89 ~77 ~-12 ~-89 minecraft:blackstone
 setblock ~74 ~-12 ~-89 minecraft:netherrack
 setblock ~78 ~-12 ~-89 minecraft:basalt
 setblock ~73 ~-12 ~-89 minecraft:basalt
+setblock ~73 ~-10 ~-89 minecraft:basalt
 fill ~79 ~-12 ~-89 ~87 ~-12 ~-89 minecraft:blackstone
 setblock ~72 ~-11 ~-100 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~72 ~-11 ~-99 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
@@ -96,8 +97,14 @@ setblock ~81 ~-11 ~-92 minecraft:nether_brick_fence[east=true,north=false,south=
 setblock ~80 ~-11 ~-92 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~82 ~-11 ~-92 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~82 ~-11 ~-91 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
+setblock ~72 ~-11 ~-91 minecraft:smooth_basalt
 setblock ~83 ~-11 ~-91 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~83 ~-11 ~-90 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~84 ~-11 ~-90 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
+setblock ~72 ~-11 ~-90 minecraft:netherrack
+fill ~72 ~-11 ~-89 ~74 ~-11 ~-89 minecraft:netherrack
 setblock ~85 ~-11 ~-89 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~84 ~-11 ~-89 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
+setblock ~72 ~-10 ~-90 minecraft:blackstone
+setblock ~72 ~-10 ~-89 minecraft:netherrack
+setblock ~72 ~-9 ~-89 minecraft:blackstone

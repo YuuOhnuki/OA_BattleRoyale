@@ -306,6 +306,12 @@ execute in minecraft:the_end run kill @e[distance=0..,tag=oa.itori_proxy]
 scoreboard objectives add oa.i_fxlife dummy
 
 scoreboard objectives add oa.i_ver dummy
+# 練習場に入る前の昭心の進行度の退避先（v1.9.117）
+scoreboard objectives add oa.ib_set dummy
+scoreboard objectives add oa.ib_pts dummy
+scoreboard objectives add oa.ib_ore dummy
+scoreboard objectives add oa.ib_chest dummy
+scoreboard objectives add oa.ib_round dummy
 execute as @a run function oa:itori/migrate1932
 execute in minecraft:overworld run kill @e[distance=0..,tag=oa.i_orange_floor]
 execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,tag=oa.i_orange_floor]
