@@ -4,8 +4,12 @@ data remove storage oa:br center
 data remove storage oa:br border_restore
 data remove storage oa:spawn_points points
 data remove storage oa:spawn_points dim
-data modify storage oa_map2:args set value {tile:0}
-data modify storage oa_map2:args merge from storage oa:maps new
+data modify storage oa_map2:args tile set value 0
+data modify storage oa_map2:args dim set from storage oa:maps new.dim
+data modify storage oa_map2:args x set from storage oa:maps new.x
+data modify storage oa_map2:args y set from storage oa:maps new.y
+data modify storage oa_map2:args z set from storage oa:maps new.z
+data modify storage oa_map2:args tiles set from storage oa:maps new.tiles
 data remove storage oa_map2:args center_y
 scoreboard players set #state oa.map2 0
 data modify storage oa:maps ctx.key set from storage oa:maps new.key

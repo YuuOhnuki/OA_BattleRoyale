@@ -1,6 +1,18 @@
 # 変更履歴
 版ごとの変更点・検証結果・導入手順（新しい順）。旧 `UPDATE_*_JA.md` と `VALIDATION_*.json` をここへ統合した。各版の検証は「検証」欄に1行で記す（静的確認／実測／未確認）。
 
+## v1.9.110
+
+対応：データパック 1.9.110 ＋ リソースパック 1.9.35（変更なし）
+
+### 修正
+- `Failed to load function oa:map/internal/select_load`（line 7）の原因：`data modify storage <ID> set/merge ...` はパス指定が必須なのに、ストレージ全体を直接指定していた。`select_load`・`load_saved`・`args_from_def` を、キー単位（tile/dim/x/y/z/tiles/center_y）のコピーに書き換え（`args_restore` を新設）。
+- 同種の「パスなし data modify/remove/get」が他にないか全関数を検索して確認（該当なし）。
+
+### 導入手順
+1. サーバー再起動または `/reload`。地上マップ・練習場・ロビーの更新は不要。
+2. 検証：静的確認のみ。実機での読み込みログは未確認。
+
 ## v1.9.109
 
 対応：データパック 1.9.109 ＋ リソースパック 1.9.35（変更なし）
