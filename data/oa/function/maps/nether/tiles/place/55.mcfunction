@@ -996,17 +996,18 @@ fill ~20 ~-8 ~36 ~22 ~-8 ~36 minecraft:chiseled_polished_blackstone
 setblock ~9 ~-7 ~8 minecraft:chiseled_polished_blackstone
 fill ~8 ~-7 ~9 ~9 ~-7 ~9 minecraft:chiseled_polished_blackstone
 fill ~20 ~-7 ~20 ~24 ~-7 ~20 minecraft:chiseled_polished_blackstone
-fill ~20 ~-3 ~20 ~24 ~-3 ~20 minecraft:chiseled_polished_blackstone
+fill ~20 ~-3 ~20 ~24 ~-2 ~20 minecraft:chiseled_polished_blackstone
 fill ~24 ~-7 ~21 ~24 ~-7 ~23 minecraft:chiseled_polished_blackstone
-fill ~24 ~-3 ~21 ~24 ~-3 ~23 minecraft:chiseled_polished_blackstone
+fill ~24 ~-3 ~21 ~24 ~-2 ~23 minecraft:chiseled_polished_blackstone
 fill ~20 ~-7 ~21 ~20 ~-7 ~23 minecraft:chiseled_polished_blackstone
-fill ~20 ~-3 ~21 ~20 ~-3 ~23 minecraft:chiseled_polished_blackstone
+fill ~20 ~-3 ~21 ~20 ~-2 ~23 minecraft:chiseled_polished_blackstone
 fill ~20 ~-7 ~24 ~24 ~-7 ~24 minecraft:chiseled_polished_blackstone
-fill ~20 ~-3 ~24 ~24 ~-3 ~24 minecraft:chiseled_polished_blackstone
+fill ~20 ~-3 ~24 ~24 ~-2 ~24 minecraft:chiseled_polished_blackstone
 setblock ~22 ~-7 ~32 minecraft:nether_bricks
 setblock ~21 ~-7 ~32 minecraft:cracked_polished_blackstone_bricks
 setblock ~22 ~-7 ~34 minecraft:nether_bricks
 setblock ~18 ~-7 ~34 minecraft:polished_blackstone_bricks
 setblock ~20 ~-7 ~36 minecraft:polished_blackstone_bricks
 setblock ~18 ~-7 ~36 minecraft:polished_blackstone_bricks
-setblock ~22 ~-2 ~22 minecraft:lantern[hanging=false]
+fill ~21 ~-2 ~21 ~23 ~-2 ~23 minecraft:polished_blackstone_bricks
+setblock ~22 ~-1 ~22 minecraft:lantern[hanging=false]

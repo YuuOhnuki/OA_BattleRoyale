@@ -1555,14 +1555,14 @@ setblock ~-22 ~-8 ~-21 minecraft:chiseled_polished_blackstone
 fill ~-22 ~-8 ~-19 ~-22 ~-8 ~-3 minecraft:chiseled_polished_blackstone
 fill ~-22 ~-8 ~3 ~-22 ~-8 ~7 minecraft:chiseled_polished_blackstone
 fill ~-24 ~-7 ~-24 ~-20 ~-7 ~-24 minecraft:chiseled_polished_blackstone
-fill ~-24 ~-3 ~-24 ~-20 ~-3 ~-24 minecraft:chiseled_polished_blackstone
+fill ~-24 ~-3 ~-24 ~-20 ~-2 ~-24 minecraft:chiseled_polished_blackstone
 setblock ~-19 ~-7 ~-22 minecraft:polished_blackstone_bricks
 fill ~-20 ~-7 ~-23 ~-20 ~-7 ~-21 minecraft:chiseled_polished_blackstone
-fill ~-20 ~-3 ~-23 ~-20 ~-3 ~-21 minecraft:chiseled_polished_blackstone
+fill ~-20 ~-3 ~-23 ~-20 ~-2 ~-21 minecraft:chiseled_polished_blackstone
 fill ~-24 ~-7 ~-23 ~-24 ~-7 ~-21 minecraft:chiseled_polished_blackstone
-fill ~-24 ~-3 ~-23 ~-24 ~-3 ~-21 minecraft:chiseled_polished_blackstone
+fill ~-24 ~-3 ~-23 ~-24 ~-2 ~-21 minecraft:chiseled_polished_blackstone
 fill ~-24 ~-7 ~-20 ~-20 ~-7 ~-20 minecraft:chiseled_polished_blackstone
-fill ~-24 ~-3 ~-20 ~-20 ~-3 ~-20 minecraft:chiseled_polished_blackstone
+fill ~-24 ~-3 ~-20 ~-20 ~-2 ~-20 minecraft:chiseled_polished_blackstone
 fill ~-9 ~-7 ~-9 ~-2 ~-7 ~-9 minecraft:chiseled_polished_blackstone
 fill ~2 ~-7 ~-9 ~7 ~-7 ~-9 minecraft:chiseled_polished_blackstone
 fill ~-9 ~-7 ~-8 ~-9 ~-7 ~-2 minecraft:chiseled_polished_blackstone
@@ -1576,4 +1576,5 @@ setblock ~-16 ~-6 ~5 minecraft:chiseled_polished_blackstone
 fill ~-20 ~-5 ~-23 ~-20 ~-5 ~-22 minecraft:polished_blackstone_bricks
 fill ~-1 ~-5 ~-9 ~1 ~-5 ~-9 minecraft:chiseled_polished_blackstone
 fill ~-9 ~-5 ~-1 ~-9 ~-5 ~1 minecraft:chiseled_polished_blackstone
-setblock ~-22 ~-2 ~-22 minecraft:lantern[hanging=false]
+fill ~-23 ~-2 ~-23 ~-21 ~-2 ~-21 minecraft:polished_blackstone_bricks
+setblock ~-22 ~-1 ~-22 minecraft:lantern[hanging=false]

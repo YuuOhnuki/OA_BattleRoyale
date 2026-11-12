@@ -106,7 +106,9 @@ for sx in (-1,1):
         put(cx,YG+2,cz,'minecraft:lava'); 
         put(cx,YG+2,cz,'minecraft:air')
         for y in range(YG+2,YG+8): put(cx,y,cz,'minecraft:air')
-        put(cx,YG+10,cz,'minecraft:lantern[hanging=false]')
+        for aa in range(-2,3):   # 1.9.118: 塔の上を塞ぐ（屋根）
+            for bb in range(-2,3): put(cx+aa,YG+10,cz+bb,CB if max(abs(aa),abs(bb))==2 else PB)
+        put(cx,YG+11,cz,'minecraft:lantern[hanging=false]')
 # 内室
 C=9
 for x in range(-C,C+1):
