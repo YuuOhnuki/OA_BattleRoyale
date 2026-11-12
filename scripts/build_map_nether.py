@@ -362,9 +362,21 @@ def relief():
         if (nd==dist).all(): break
         dist=nd
     lim=np.maximum(dist-1,0)
-    v=((0.65*smooth(30,31)+0.35*smooth(15,32))-0.5)*6.0
-    hf=np.where(v>=0,v*6,v*3/0.6)
-    h=np.clip(np.rint(hf).astype(int),-3,6); h=np.clip(h,-lim,lim); h[occ]=0
+    # 1.9.119: ゆるやかな起伏（大きな波のみ）＋建物まわりの高低差（建物の周囲2マスは平ら、外へ2マスごとに1段下がり最大-3、さらに外で戻る）
+    v=(smooth(60,31)-0.5)*12.0
+    hf=np.where(v>=0,v,v*0.7)
+    h=np.rint(np.clip(hf,-2,4)).astype(int)
+    struct=((g[:,:,YG+1-Y0:]!=0).any(axis=2)|spu|((R<30)&(R>=0)))&(surf==YG)&(R<117)
+    ds=np.where(struct,0,999)
+    for _ in range(60):
+        sh=np.pad(ds,1,mode='constant',constant_values=999)
+        nbd=np.minimum.reduce([sh[:-2,1:-1],sh[2:,1:-1],sh[1:-1,:-2],sh[1:-1,2:]])+1
+        nd=np.minimum(ds,nbd)
+        if (nd==ds).all(): break
+        ds=nd
+    prof=np.zeros_like(ds)
+    for d_ in range(3,15): prof[ds==d_]=-min(3,(d_-1)//2,(16-d_)//2+1)
+    h=np.clip(h+prof,-4,5); h=np.clip(h,-lim,lim); h[occ]=0
     def nbs(a,fill):
         p=np.pad(a,1,mode='constant',constant_values=fill); return [p[:-2,1:-1],p[2:,1:-1],p[1:-1,:-2],p[1:-1,2:]]
     pin=occ|(lim==0)
@@ -495,6 +507,14 @@ for k in range(40):
     assert best,k
     sp.append(best)
 assert len(set(sp))==40
+# --- 1.9.119: チェストを約75%に間引く（105→79：通常89→67、上位16→12。中央の宝物庫の分は残す） ---
+rng3=np.random.default_rng(SEED+11)
+def thin(lst,keep):
+    cand=[c for c in lst if max(abs(c[0]),abs(c[2]))>26]
+    drop=rng3.choice(len(cand),size=len(lst)-keep,replace=False)
+    for i in drop:
+        x,y,z=cand[int(i)]; put(x,y,z,'minecraft:air'); lst.remove(cand[int(i)])
+thin(chests,67); thin(riches,12)
 # --- 到達性の検算（歩いて行けるか） ---
 from collections import deque
 SOLID=lambda b: b not in ('minecraft:air','minecraft:lava') and 'roots' not in b and 'lantern' not in b
@@ -527,7 +547,7 @@ print("reach",len(seen),"max_r",round(maxr,1),"bad spawn/chest/ore",len(bad_sp),
 print("bad_ch",bad_ch,"bad_sp",bad_sp)
 assert not bad_sp and not bad_ch and not bad_or and maxr<123
 # --- 検算 ---
-assert len(chests)==89 and len(riches)==16 and len(ores)==108
+assert len(chests)==67 and len(riches)==12 and len(ores)==108
 assert not (g[:,:,-1]!=0).any() or True
 # 保存
 np.savez_compressed(f"{ROOT}/source/map_nether_target.npz",grid=g,palette=np.array(pal))

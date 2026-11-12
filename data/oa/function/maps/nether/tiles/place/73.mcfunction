@@ -294,7 +294,6 @@ setblock ~-25 ~-12 ~93 minecraft:netherrack
 setblock ~-25 ~-9 ~93 minecraft:netherrack
 fill ~-43 ~-12 ~93 ~-43 ~-12 ~94 minecraft:netherrack
 setblock ~-26 ~-12 ~94 minecraft:netherrack
-fill ~-26 ~-9 ~94 ~-26 ~-8 ~94 minecraft:netherrack
 setblock ~-25 ~-12 ~94 minecraft:crimson_nylium
 setblock ~-51 ~-12 ~94 minecraft:netherrack
 fill ~-50 ~-12 ~94 ~-48 ~-12 ~94 minecraft:crimson_nylium
@@ -306,6 +305,7 @@ setblock ~-38 ~-12 ~95 minecraft:netherrack
 fill ~-55 ~-12 ~95 ~-47 ~-12 ~95 minecraft:crimson_nylium
 fill ~-37 ~-12 ~95 ~-29 ~-12 ~95 minecraft:crimson_nylium
 fill ~-28 ~-12 ~95 ~-27 ~-12 ~95 minecraft:netherrack
+fill ~-28 ~-10 ~95 ~-27 ~-10 ~95 minecraft:netherrack
 fill ~-26 ~-12 ~95 ~-25 ~-12 ~95 minecraft:crimson_nylium
 setblock ~-46 ~-12 ~95 minecraft:nether_wart_block
 fill ~-45 ~-12 ~95 ~-39 ~-12 ~95 minecraft:crimson_nylium
@@ -338,7 +338,8 @@ fill ~-30 ~-12 ~98 ~-30 ~-11 ~98 minecraft:netherrack
 fill ~-29 ~-12 ~98 ~-25 ~-12 ~99 minecraft:crimson_nylium
 fill ~-55 ~-12 ~99 ~-35 ~-12 ~99 minecraft:crimson_nylium
 fill ~-31 ~-12 ~99 ~-30 ~-12 ~99 minecraft:netherrack
-fill ~-56 ~-12 ~99 ~-56 ~-11 ~99 minecraft:netherrack
+setblock ~-56 ~-12 ~99 minecraft:netherrack
+setblock ~-56 ~-10 ~99 minecraft:netherrack
 fill ~-33 ~-12 ~99 ~-32 ~-12 ~100 minecraft:crimson_nylium
 fill ~-34 ~-12 ~99 ~-34 ~-12 ~100 minecraft:netherrack
 setblock ~-29 ~-12 ~100 minecraft:netherrack
@@ -352,10 +353,9 @@ setblock ~-31 ~-12 ~100 minecraft:netherrack
 fill ~-32 ~-12 ~101 ~-32 ~-11 ~101 minecraft:nether_wart_block
 fill ~-43 ~-12 ~101 ~-33 ~-12 ~101 minecraft:crimson_nylium
 fill ~-43 ~-10 ~101 ~-33 ~-10 ~101 minecraft:crimson_nylium
-setblock ~-52 ~-12 ~101 minecraft:netherrack
-fill ~-56 ~-12 ~101 ~-53 ~-12 ~101 minecraft:crimson_nylium
+fill ~-52 ~-12 ~101 ~-52 ~-11 ~101 minecraft:netherrack
+fill ~-56 ~-12 ~101 ~-53 ~-11 ~101 minecraft:crimson_nylium
 fill ~-51 ~-12 ~101 ~-45 ~-12 ~101 minecraft:crimson_nylium
-fill ~-51 ~-10 ~101 ~-45 ~-10 ~101 minecraft:crimson_nylium
 setblock ~-44 ~-12 ~101 minecraft:netherrack
 setblock ~-44 ~-10 ~101 minecraft:netherrack
 fill ~-26 ~-12 ~101 ~-25 ~-12 ~101 minecraft:crimson_nylium
@@ -376,6 +376,7 @@ setblock ~-47 ~-10 ~102 minecraft:netherrack
 setblock ~-55 ~-12 ~102 minecraft:netherrack
 setblock ~-33 ~-12 ~102 minecraft:netherrack
 setblock ~-49 ~-12 ~102 minecraft:netherrack
+setblock ~-49 ~-10 ~102 minecraft:netherrack
 fill ~-32 ~-12 ~102 ~-25 ~-12 ~102 minecraft:crimson_nylium
 setblock ~-48 ~-12 ~102 minecraft:crimson_nylium
 setblock ~-48 ~-10 ~102 minecraft:crimson_nylium
@@ -385,16 +386,15 @@ setblock ~-25 ~-12 ~103 minecraft:crimson_nylium
 setblock ~-29 ~-12 ~103 minecraft:netherrack
 setblock ~-54 ~-12 ~103 minecraft:netherrack
 fill ~-56 ~-12 ~103 ~-55 ~-12 ~103 minecraft:crimson_nylium
-fill ~-49 ~-12 ~103 ~-44 ~-12 ~103 minecraft:crimson_nylium
+fill ~-49 ~-12 ~103 ~-44 ~-11 ~103 minecraft:crimson_nylium
 fill ~-42 ~-12 ~103 ~-37 ~-12 ~103 minecraft:crimson_nylium
-setblock ~-43 ~-12 ~103 minecraft:nether_wart_block
-setblock ~-43 ~-9 ~103 minecraft:nether_wart_block
+fill ~-43 ~-12 ~103 ~-43 ~-11 ~103 minecraft:nether_wart_block
 setblock ~-27 ~-12 ~103 minecraft:nether_wart_block
 fill ~-35 ~-12 ~103 ~-30 ~-12 ~103 minecraft:crimson_nylium
 setblock ~-28 ~-12 ~103 minecraft:crimson_nylium
 fill ~-50 ~-12 ~103 ~-50 ~-11 ~103 minecraft:nether_wart_block
 setblock ~-36 ~-12 ~103 minecraft:nether_wart_block
-setblock ~-36 ~-8 ~103 minecraft:nether_wart_block
+setblock ~-36 ~-10 ~103 minecraft:nether_wart_block
 setblock ~-37 ~-11 ~72 minecraft:blackstone
 setblock ~-31 ~-11 ~72 minecraft:crimson_nylium
 setblock ~-35 ~-11 ~72 minecraft:netherrack
@@ -441,7 +441,6 @@ setblock ~-53 ~-11 ~80 minecraft:basalt
 setblock ~-44 ~-11 ~80 minecraft:coal_ore
 setblock ~-51 ~-11 ~80 minecraft:basalt
 fill ~-55 ~-11 ~80 ~-54 ~-11 ~80 minecraft:blackstone
-setblock ~-35 ~-11 ~80 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~-43 ~-11 ~80 minecraft:crimson_roots
 fill ~-52 ~-11 ~80 ~-52 ~-11 ~81 minecraft:blackstone
 setblock ~-53 ~-11 ~81 minecraft:smooth_basalt
@@ -528,33 +527,31 @@ setblock ~-47 ~-11 ~96 minecraft:polished_blackstone_bricks
 fill ~-30 ~-11 ~94 ~-30 ~-11 ~97 minecraft:crimson_nylium
 fill ~-29 ~-11 ~94 ~-25 ~-11 ~97 minecraft:netherrack
 fill ~-52 ~-11 ~97 ~-51 ~-11 ~97 minecraft:crimson_nylium
-setblock ~-56 ~-11 ~98 minecraft:crimson_nylium
 fill ~-29 ~-11 ~98 ~-25 ~-11 ~98 minecraft:crimson_nylium
 setblock ~-35 ~-11 ~98 minecraft:crimson_roots
 setblock ~-51 ~-11 ~98 minecraft:crimson_nylium
-fill ~-55 ~-11 ~98 ~-52 ~-11 ~98 minecraft:netherrack
-fill ~-54 ~-11 ~99 ~-51 ~-11 ~99 minecraft:netherrack
-setblock ~-55 ~-11 ~99 minecraft:crimson_nylium
+fill ~-56 ~-11 ~98 ~-52 ~-11 ~98 minecraft:netherrack
 setblock ~-50 ~-11 ~99 minecraft:crimson_nylium
+fill ~-56 ~-11 ~99 ~-51 ~-11 ~99 minecraft:netherrack
 setblock ~-31 ~-11 ~99 minecraft:netherrack
-fill ~-52 ~-11 ~100 ~-50 ~-11 ~100 minecraft:netherrack
+fill ~-51 ~-11 ~100 ~-50 ~-11 ~100 minecraft:netherrack
 fill ~-33 ~-11 ~100 ~-32 ~-11 ~100 minecraft:crimson_nylium
+fill ~-54 ~-11 ~100 ~-52 ~-11 ~100 minecraft:crimson_nylium
 fill ~-49 ~-11 ~100 ~-37 ~-11 ~100 minecraft:crimson_nylium
 setblock ~-34 ~-11 ~100 minecraft:netherrack
-fill ~-54 ~-11 ~100 ~-53 ~-11 ~100 minecraft:crimson_nylium
+fill ~-50 ~-11 ~101 ~-33 ~-11 ~101 minecraft:netherrack
 setblock ~-26 ~-11 ~101 minecraft:smooth_basalt
-fill ~-52 ~-11 ~101 ~-33 ~-11 ~101 minecraft:netherrack
-fill ~-55 ~-11 ~101 ~-53 ~-11 ~101 minecraft:crimson_nylium
+setblock ~-51 ~-11 ~101 minecraft:crimson_nylium
 fill ~-25 ~-11 ~101 ~-25 ~-11 ~102 minecraft:netherrack
 setblock ~-28 ~-11 ~102 minecraft:blackstone
-fill ~-53 ~-11 ~102 ~-50 ~-11 ~102 minecraft:crimson_nylium
+fill ~-51 ~-11 ~102 ~-50 ~-11 ~102 minecraft:crimson_nylium
 fill ~-49 ~-11 ~102 ~-33 ~-11 ~102 minecraft:netherrack
 setblock ~-26 ~-11 ~102 minecraft:blackstone
 fill ~-27 ~-11 ~102 ~-27 ~-11 ~103 minecraft:basalt
 fill ~-32 ~-11 ~102 ~-32 ~-11 ~103 minecraft:crimson_nylium
-fill ~-49 ~-11 ~103 ~-46 ~-11 ~103 minecraft:crimson_nylium
-fill ~-45 ~-11 ~103 ~-33 ~-11 ~103 minecraft:netherrack
+fill ~-41 ~-11 ~103 ~-33 ~-11 ~103 minecraft:netherrack
 fill ~-29 ~-11 ~103 ~-28 ~-11 ~103 minecraft:smooth_basalt
+setblock ~-42 ~-11 ~103 minecraft:crimson_nylium
 fill ~-26 ~-11 ~103 ~-25 ~-11 ~103 minecraft:blackstone
 setblock ~-30 ~-10 ~72 minecraft:crimson_roots
 setblock ~-52 ~-10 ~76 minecraft:netherrack
@@ -634,8 +631,10 @@ fill ~-30 ~-10 ~93 ~-28 ~-10 ~93 minecraft:crimson_nylium
 setblock ~-55 ~-10 ~93 minecraft:red_nether_bricks
 setblock ~-27 ~-10 ~93 minecraft:nether_wart_block
 fill ~-53 ~-10 ~93 ~-52 ~-10 ~93 minecraft:nether_bricks
+fill ~-28 ~-10 ~94 ~-25 ~-10 ~94 minecraft:netherrack
+setblock ~-25 ~-10 ~95 minecraft:netherrack
+setblock ~-26 ~-10 ~95 minecraft:crimson_nylium
 fill ~-29 ~-10 ~94 ~-29 ~-10 ~96 minecraft:crimson_nylium
-fill ~-28 ~-10 ~94 ~-25 ~-10 ~96 minecraft:netherrack
 setblock ~-41 ~-10 ~96 minecraft:polished_blackstone_bricks
 fill ~-43 ~-10 ~96 ~-42 ~-10 ~96 minecraft:nether_bricks
 setblock ~-35 ~-10 ~96 minecraft:red_nether_bricks
@@ -644,6 +643,7 @@ setblock ~-45 ~-10 ~96 minecraft:red_nether_bricks
 setblock ~-46 ~-10 ~96 minecraft:polished_blackstone_bricks
 setblock ~-40 ~-10 ~96 minecraft:red_nether_bricks
 fill ~-38 ~-10 ~96 ~-37 ~-10 ~96 minecraft:nether_bricks
+fill ~-28 ~-10 ~96 ~-25 ~-10 ~96 minecraft:netherrack
 setblock ~-44 ~-10 ~96 minecraft:cracked_nether_bricks
 fill ~-47 ~-10 ~96 ~-47 ~-9 ~96 minecraft:nether_bricks
 setblock ~-34 ~-10 ~96 minecraft:cracked_nether_bricks
@@ -651,24 +651,26 @@ setblock ~-39 ~-10 ~96 minecraft:cracked_nether_bricks
 setblock ~-26 ~-10 ~97 minecraft:netherrack
 fill ~-29 ~-10 ~97 ~-27 ~-10 ~97 minecraft:crimson_nylium
 setblock ~-25 ~-10 ~97 minecraft:crimson_nylium
-fill ~-55 ~-10 ~98 ~-52 ~-10 ~98 minecraft:crimson_nylium
-fill ~-54 ~-10 ~99 ~-51 ~-10 ~99 minecraft:crimson_nylium
-fill ~-52 ~-10 ~100 ~-50 ~-10 ~100 minecraft:crimson_nylium
+fill ~-56 ~-10 ~98 ~-52 ~-10 ~98 minecraft:crimson_nylium
+fill ~-55 ~-10 ~99 ~-51 ~-10 ~99 minecraft:crimson_nylium
+fill ~-51 ~-10 ~100 ~-50 ~-10 ~100 minecraft:crimson_nylium
 fill ~-46 ~-10 ~100 ~-46 ~-5 ~100 minecraft:crimson_stem
 setblock ~-32 ~-10 ~101 minecraft:crimson_roots
+fill ~-50 ~-10 ~101 ~-45 ~-10 ~101 minecraft:crimson_nylium
 fill ~-27 ~-10 ~101 ~-25 ~-10 ~101 minecraft:basalt
+fill ~-39 ~-10 ~102 ~-33 ~-10 ~102 minecraft:netherrack
 fill ~-26 ~-10 ~102 ~-26 ~-9 ~102 minecraft:netherrack
 fill ~-28 ~-10 ~102 ~-27 ~-10 ~102 minecraft:blackstone
+fill ~-46 ~-10 ~102 ~-40 ~-10 ~102 minecraft:crimson_nylium
 setblock ~-25 ~-10 ~102 minecraft:blackstone
-fill ~-44 ~-10 ~102 ~-33 ~-10 ~102 minecraft:netherrack
-fill ~-46 ~-10 ~102 ~-45 ~-10 ~102 minecraft:crimson_nylium
-fill ~-43 ~-10 ~103 ~-34 ~-10 ~103 minecraft:netherrack
 fill ~-29 ~-10 ~103 ~-27 ~-10 ~103 minecraft:netherrack
 setblock ~-33 ~-10 ~103 minecraft:crimson_nylium
 setblock ~-50 ~-10 ~103 minecraft:crimson_roots
 setblock ~-25 ~-10 ~103 minecraft:netherrack
-fill ~-45 ~-10 ~103 ~-44 ~-10 ~103 minecraft:crimson_nylium
+setblock ~-34 ~-10 ~103 minecraft:netherrack
 setblock ~-26 ~-10 ~103 minecraft:blackstone
+fill ~-41 ~-10 ~103 ~-37 ~-10 ~103 minecraft:crimson_nylium
+setblock ~-35 ~-10 ~103 minecraft:crimson_nylium
 setblock ~-33 ~-9 ~76 minecraft:cracked_nether_bricks
 setblock ~-35 ~-9 ~76 minecraft:polished_blackstone_bricks
 setblock ~-38 ~-9 ~76 minecraft:cracked_nether_bricks
@@ -709,7 +711,7 @@ setblock ~-55 ~-9 ~93 minecraft:polished_blackstone_bricks
 setblock ~-54 ~-9 ~93 minecraft:red_nether_bricks
 setblock ~-53 ~-9 ~93 minecraft:cracked_nether_bricks
 fill ~-28 ~-9 ~94 ~-27 ~-9 ~94 minecraft:crimson_nylium
-fill ~-28 ~-9 ~95 ~-26 ~-9 ~95 minecraft:netherrack
+setblock ~-28 ~-9 ~95 minecraft:netherrack
 fill ~-25 ~-9 ~94 ~-25 ~-9 ~96 minecraft:crimson_nylium
 fill ~-28 ~-9 ~96 ~-27 ~-9 ~96 minecraft:crimson_nylium
 setblock ~-26 ~-9 ~96 minecraft:netherrack
@@ -722,15 +724,13 @@ setblock ~-37 ~-9 ~96 minecraft:nether_bricks
 fill ~-27 ~-9 ~101 ~-26 ~-9 ~101 minecraft:basalt
 setblock ~-25 ~-9 ~101 minecraft:netherrack
 setblock ~-27 ~-9 ~102 minecraft:smooth_basalt
+setblock ~-39 ~-9 ~102 minecraft:crimson_nylium
 setblock ~-28 ~-9 ~102 minecraft:basalt
 setblock ~-25 ~-9 ~102 minecraft:smooth_basalt
-fill ~-44 ~-9 ~102 ~-39 ~-9 ~102 minecraft:crimson_nylium
 fill ~-34 ~-9 ~102 ~-34 ~-9 ~103 minecraft:crimson_nylium
 setblock ~-28 ~-9 ~103 minecraft:blackstone
 setblock ~-27 ~-9 ~103 minecraft:basalt
 fill ~-26 ~-9 ~103 ~-25 ~-9 ~103 minecraft:netherrack
-setblock ~-42 ~-9 ~103 minecraft:crimson_nylium
-fill ~-41 ~-9 ~103 ~-35 ~-9 ~103 minecraft:netherrack
 fill ~-36 ~-8 ~76 ~-35 ~-8 ~76 minecraft:nether_bricks
 fill ~-31 ~-8 ~76 ~-30 ~-8 ~76 minecraft:nether_bricks
 setblock ~-34 ~-8 ~76 minecraft:polished_blackstone_bricks
@@ -757,10 +757,6 @@ setblock ~-53 ~-8 ~89 minecraft:chiseled_polished_blackstone
 fill ~-52 ~-8 ~90 ~-52 ~-8 ~92 minecraft:chiseled_polished_blackstone
 fill ~-56 ~-8 ~90 ~-56 ~-8 ~92 minecraft:chiseled_polished_blackstone
 fill ~-56 ~-8 ~93 ~-53 ~-8 ~93 minecraft:chiseled_polished_blackstone
-setblock ~-27 ~-8 ~95 minecraft:netherrack
-setblock ~-26 ~-8 ~95 minecraft:crimson_nylium
-fill ~-41 ~-8 ~103 ~-37 ~-8 ~103 minecraft:crimson_nylium
-setblock ~-35 ~-8 ~103 minecraft:crimson_nylium
 setblock ~-29 ~-7 ~76 minecraft:chiseled_polished_blackstone
 setblock ~-41 ~-7 ~76 minecraft:chiseled_polished_blackstone
 setblock ~-29 ~-7 ~88 minecraft:chiseled_polished_blackstone

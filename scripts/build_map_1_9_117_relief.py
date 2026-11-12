@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""OA Battle Royale 1.9.117: 地上マップ(oa:br)の平坦な草地・岩地に高低差を足す。
-使い方: python3 -I scripts/build_map_1_9_117_relief.py <pack_dir> [--dry]   （v1.9.116 の地上マップに1回だけ適用）
+"""OA Battle Royale 1.9.119: 地上マップ(oa:br)に、なだらかな起伏と建物まわりの高低差（建物が小高い所に建つ）を足す。
+使い方: python3 -I scripts/build_map_1_9_117_relief.py <pack_dir> [--dry]   （v1.9.116 のタイル関数に1回だけ適用。1.9.117 版のボコボコした起伏は1.9.119で差し替え済み）
 - 建物・道・木・水・チェスト・鉱石・ドームなど「自然な地面ではない」列は一切変えない（周囲2マスも平らのまま）
 - 変えるのは、地表が y=-13..-11 の自然ブロック（草・土・石・雪・砂利・安山岩）の列だけ。隆起は最大+7、くぼみは最大-3
 - 隣り合う列の高さの差は、元の差か1のうち大きいほう以下（歩いて登れる。1マスずつ登れる坂のみ。垂直な足場は作らない）
@@ -17,7 +17,7 @@ PLANTS = {'air', 'short_grass', 'tall_grass', 'fern', 'large_fern', 'poppy', 'da
           'allium', 'blue_orchid', 'red_tulip', 'pink_tulip', 'orange_tulip', 'white_tulip', 'lily_of_the_valley', 'dead_bush',
           'sweet_berry_bush', 'snow', 'rose_bush', 'peony', 'lilac', 'sunflower'}
 WATERY = {'water', 'seagrass', 'tall_seagrass', 'kelp', 'kelp_plant'}
-UP_MAX, DOWN_MAX, R_MIN, R_MAX, MARGIN = 7, 3, 44, 146, 1
+UP_MAX, DOWN_MAX, R_MIN, R_MAX, MARGIN = 4, 3, 44, 146, 2
 
 def nm(b): return b.split('[')[0].split(':')[1]
 
@@ -53,11 +53,27 @@ def main(root, dry=False):
         if (nd == dist).all(): break
         dist = nd
     lim = np.maximum(dist - MARGIN, 0)
-    # ゆるやかな起伏（尾根・盆地）
-    n1 = B.fbm(SEED, 34.0); n2 = B.fbm(SEED + 10, 17.0)
-    v = ((0.65 * n1 + 0.35 * n2) - 0.5) * 6.5
-    hf = np.where(v >= 0, v * UP_MAX, v * DOWN_MAX / 0.6)
-    h = np.rint(np.clip(hf, -DOWN_MAX, UP_MAX)).astype(int)
+    # 1) 地形のゆるやかな起伏（大きな波だけ。細かい凹凸なし）
+    n1 = B.value_noise(SEED, 90.0)
+    v = (n1 - 0.5) * 14.0
+    hf = np.where(v >= 0, v, v * 0.7)
+    h = np.rint(np.clip(hf, -2, UP_MAX)).astype(int)
+    # 2) 建物まわり：建物の周囲2マスは平ら、そこから外側へ2マスごとに1段下がり（最大-3）、さらに外で戻る＝建物が小高い所に建つ
+    nat_like = {'grass_block', 'dirt', 'coarse_dirt', 'podzol', 'stone', 'gravel', 'snow_block', 'andesite', 'sand', 'dirt_path',
+                'oak_leaves', 'spruce_leaves', 'birch_leaves', 'water', 'bedrock', 'deepslate', 'cobblestone', 'mossy_cobblestone'}
+    struct = ~np.isin(tname, list(nat_like)) & (top > -99)
+    ds = np.where(struct, 0, 999)
+    for _ in range(60):
+        nb = np.minimum.reduce(shifts(ds, 0)) + 1
+        nd = np.minimum(ds, nb)
+        if (nd == ds).all(): break
+        ds = nd
+    prof = np.zeros_like(ds)
+    for d in range(3, 16):
+        prof[ds == d] = -min(3, (d - 1) // 2, (16 - d) // 2 + 1) if d <= 14 else 0
+    prof[ds >= 15] = 0
+    h = np.clip(h + prof, -4, UP_MAX)
+    print('structure columns', int(struct.sum()))
     h = np.minimum(h, -1 - top); h = np.maximum(h, -16 - top)
     h = np.clip(h, -lim, lim); h[~elig] = 0
     # 隣り合う列の差を、元の差か1のうち大きいほう以下に収める

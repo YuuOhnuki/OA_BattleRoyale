@@ -518,10 +518,8 @@ fill ~-2 ~29 ~9 ~5 ~29 ~9 minecraft:waxed_oxidized_cut_copper
 fill ~3 ~29 ~8 ~3 ~29 ~8 minecraft:waxed_oxidized_cut_copper
 fill ~5 ~29 ~8 ~5 ~29 ~8 minecraft:waxed_oxidized_cut_copper
 # 1.9.117 relief map update patches
-fill ~-24 ~-11 ~39 ~-24 ~-11 ~39 minecraft:dirt
-fill ~-24 ~-11 ~38 ~-24 ~-11 ~38 minecraft:grass_block
-fill ~-23 ~-11 ~39 ~-23 ~-11 ~39 minecraft:grass_block
-fill ~-24 ~-10 ~39 ~-24 ~-10 ~39 minecraft:grass_block
+fill ~-24 ~-13 ~39 ~-24 ~-13 ~39 minecraft:grass_block
+fill ~-24 ~-12 ~39 ~-24 ~-12 ~39 minecraft:air
 fillbiome ~-24 ~-20 ~8 ~-9 ~8 ~23 minecraft:plains
 fillbiome ~-8 ~-20 ~8 ~7 ~8 ~23 minecraft:plains
 fillbiome ~-24 ~-20 ~24 ~-9 ~8 ~39 minecraft:plains

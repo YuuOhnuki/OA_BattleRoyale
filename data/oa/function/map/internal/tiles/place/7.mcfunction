@@ -491,13 +491,6 @@ fill ~94 ~-4 ~-126 ~94 ~-4 ~-126 minecraft:snow_block
 fill ~95 ~-4 ~-127 ~95 ~-4 ~-127 minecraft:snow_block
 fill ~96 ~-4 ~-128 ~96 ~-4 ~-128 minecraft:snow_block
 fill ~97 ~-4 ~-129 ~97 ~-4 ~-129 minecraft:snow_block
-# 1.9.117 relief map update patches
-fill ~72 ~-8 ~-126 ~72 ~-8 ~-126 minecraft:snow_block
-fill ~72 ~-7 ~-126 ~72 ~-7 ~-126 minecraft:air
-fill ~73 ~-6 ~-125 ~73 ~-6 ~-125 minecraft:snow_block
-fill ~75 ~-5 ~-123 ~75 ~-5 ~-123 minecraft:snow_block
-fill ~76 ~-5 ~-122 ~77 ~-5 ~-122 minecraft:snow_block
-fill ~77 ~-5 ~-121 ~79 ~-5 ~-121 minecraft:snow_block
 fillbiome ~72 ~-20 ~-152 ~87 ~8 ~-137 minecraft:plains
 fillbiome ~88 ~-20 ~-152 ~103 ~8 ~-137 minecraft:plains
 fillbiome ~72 ~-20 ~-136 ~87 ~8 ~-121 minecraft:plains

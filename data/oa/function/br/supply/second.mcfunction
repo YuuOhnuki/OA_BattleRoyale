@@ -1,8 +1,8 @@
 scoreboard players set #sup_on br.tmp 0
 execute if score #map oa.mapid matches 0 in oa:br as @e[type=minecraft:marker,tag=br.supply_wait,limit=1] run function oa:br/supply/coords
 execute if score #map oa.mapid matches 1 in oa:br_nether as @e[type=minecraft:marker,tag=br.supply_wait,limit=1] run function oa:br/supply/coords
-execute if score #map oa.mapid matches 0 in oa:br as @e[type=minecraft:marker,tag=br.supply_fx,scores={br.sup=..60},limit=1] run function oa:br/supply/coords
-execute if score #map oa.mapid matches 1 in oa:br_nether as @e[type=minecraft:marker,tag=br.supply_fx,scores={br.sup=..60},limit=1] run function oa:br/supply/coords
+execute if score #map oa.mapid matches 0 in oa:br as @e[type=minecraft:marker,tag=br.supply_fx,scores={br.sup=..30},limit=1] run function oa:br/supply/coords
+execute if score #map oa.mapid matches 1 in oa:br_nether as @e[type=minecraft:marker,tag=br.supply_fx,scores={br.sup=..30},limit=1] run function oa:br/supply/coords
 execute if score #sup_on br.tmp matches 1 run function oa:br/supply/region
 # 1.9.113: 補給物資のアクションバーは3秒ごとに通常のバーと交互に表示（#sup_phase=1 の間だけ補給、0の間は通常）
 scoreboard players set #c3 br.tmp 3

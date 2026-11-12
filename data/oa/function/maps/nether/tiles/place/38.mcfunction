@@ -15,99 +15,110 @@ fill ~104 ~-18 ~-48 ~115 ~-15 ~-47 minecraft:netherrack
 fill ~104 ~-18 ~-46 ~116 ~-16 ~-44 minecraft:netherrack
 fill ~117 ~-18 ~-46 ~135 ~-13 ~-44 minecraft:lava
 fill ~118 ~-18 ~-43 ~135 ~-13 ~-42 minecraft:lava
-fill ~104 ~-18 ~-43 ~117 ~-16 ~-42 minecraft:netherrack
+fill ~104 ~-18 ~-43 ~117 ~-17 ~-42 minecraft:netherrack
 fill ~119 ~-18 ~-41 ~135 ~-13 ~-39 minecraft:lava
-fill ~104 ~-18 ~-41 ~118 ~-16 ~-39 minecraft:netherrack
-fill ~104 ~-18 ~-38 ~119 ~-16 ~-35 minecraft:netherrack
+fill ~104 ~-18 ~-41 ~118 ~-17 ~-39 minecraft:netherrack
+fill ~104 ~-18 ~-38 ~119 ~-17 ~-35 minecraft:netherrack
 fill ~120 ~-18 ~-38 ~135 ~-13 ~-35 minecraft:lava
 fill ~121 ~-18 ~-34 ~135 ~-13 ~-32 minecraft:lava
-fill ~104 ~-18 ~-34 ~120 ~-16 ~-32 minecraft:netherrack
+fill ~104 ~-18 ~-34 ~120 ~-17 ~-32 minecraft:netherrack
 fill ~122 ~-18 ~-31 ~135 ~-13 ~-28 minecraft:lava
-fill ~104 ~-18 ~-31 ~121 ~-16 ~-28 minecraft:netherrack
+fill ~104 ~-18 ~-31 ~121 ~-17 ~-28 minecraft:netherrack
 fill ~104 ~-18 ~-27 ~122 ~-16 ~-25 minecraft:netherrack
 fill ~123 ~-18 ~-27 ~135 ~-13 ~-25 minecraft:lava
+fill ~104 ~-16 ~-43 ~117 ~-16 ~-43 minecraft:netherrack
+fill ~106 ~-16 ~-42 ~117 ~-16 ~-42 minecraft:netherrack
+setblock ~105 ~-16 ~-42 minecraft:magma_block
+fill ~104 ~-16 ~-42 ~104 ~-16 ~-41 minecraft:netherrack
+setblock ~105 ~-16 ~-41 minecraft:smooth_basalt
+fill ~106 ~-16 ~-41 ~118 ~-16 ~-41 minecraft:netherrack
+fill ~104 ~-16 ~-40 ~118 ~-16 ~-40 minecraft:netherrack
+setblock ~106 ~-16 ~-39 minecraft:blackstone
+fill ~107 ~-16 ~-39 ~118 ~-16 ~-39 minecraft:netherrack
+setblock ~105 ~-16 ~-39 minecraft:smooth_basalt
+fill ~105 ~-16 ~-38 ~106 ~-16 ~-38 minecraft:blackstone
+fill ~107 ~-16 ~-38 ~119 ~-16 ~-37 minecraft:netherrack
+setblock ~106 ~-16 ~-37 minecraft:blackstone
+setblock ~105 ~-16 ~-37 minecraft:smooth_basalt
+fill ~106 ~-16 ~-36 ~107 ~-16 ~-36 minecraft:blackstone
+setblock ~105 ~-16 ~-36 minecraft:basalt
+fill ~108 ~-16 ~-36 ~119 ~-16 ~-35 minecraft:netherrack
+setblock ~105 ~-16 ~-35 minecraft:blackstone
+setblock ~107 ~-16 ~-35 minecraft:blackstone
+setblock ~106 ~-16 ~-35 minecraft:magma_block
+fill ~107 ~-16 ~-34 ~120 ~-16 ~-34 minecraft:netherrack
+fill ~105 ~-16 ~-34 ~106 ~-16 ~-34 minecraft:basalt
+fill ~104 ~-16 ~-39 ~104 ~-16 ~-33 minecraft:netherrack
+setblock ~107 ~-16 ~-33 minecraft:smooth_basalt
+setblock ~106 ~-16 ~-33 minecraft:netherrack
+setblock ~105 ~-16 ~-33 minecraft:basalt
+fill ~109 ~-16 ~-33 ~120 ~-16 ~-32 minecraft:netherrack
+fill ~108 ~-16 ~-33 ~108 ~-16 ~-32 minecraft:blackstone
+setblock ~104 ~-16 ~-32 minecraft:blackstone
+fill ~106 ~-16 ~-32 ~107 ~-16 ~-32 minecraft:basalt
+setblock ~105 ~-16 ~-32 minecraft:netherrack
+fill ~109 ~-16 ~-31 ~121 ~-16 ~-31 minecraft:netherrack
+setblock ~108 ~-16 ~-31 minecraft:basalt
+setblock ~107 ~-16 ~-31 minecraft:blackstone
+fill ~104 ~-16 ~-31 ~106 ~-16 ~-31 minecraft:smooth_basalt
+fill ~104 ~-16 ~-30 ~106 ~-16 ~-30 minecraft:netherrack
+fill ~107 ~-16 ~-30 ~109 ~-16 ~-30 minecraft:blackstone
+fill ~110 ~-16 ~-30 ~121 ~-16 ~-29 minecraft:netherrack
+setblock ~109 ~-16 ~-29 minecraft:blackstone
+fill ~104 ~-16 ~-29 ~108 ~-16 ~-29 minecraft:netherrack
+fill ~104 ~-16 ~-28 ~121 ~-16 ~-28 minecraft:netherrack
 fill ~104 ~-15 ~-46 ~116 ~-15 ~-45 minecraft:netherrack
 fill ~106 ~-15 ~-44 ~116 ~-15 ~-44 minecraft:netherrack
-setblock ~104 ~-15 ~-44 minecraft:netherrack
+fill ~104 ~-15 ~-44 ~104 ~-14 ~-44 minecraft:netherrack
 fill ~105 ~-15 ~-44 ~105 ~-15 ~-43 minecraft:blackstone
 setblock ~104 ~-15 ~-43 minecraft:basalt
 fill ~106 ~-15 ~-43 ~117 ~-14 ~-43 minecraft:netherrack
-setblock ~105 ~-15 ~-42 minecraft:magma_block
-setblock ~104 ~-15 ~-42 minecraft:blackstone
-setblock ~106 ~-15 ~-42 minecraft:basalt
 fill ~107 ~-15 ~-42 ~117 ~-15 ~-42 minecraft:netherrack
+setblock ~106 ~-15 ~-42 minecraft:basalt
+setblock ~104 ~-15 ~-42 minecraft:blackstone
 setblock ~106 ~-15 ~-41 minecraft:blackstone
-setblock ~105 ~-15 ~-41 minecraft:smooth_basalt
 setblock ~104 ~-15 ~-41 minecraft:basalt
 fill ~107 ~-15 ~-41 ~118 ~-15 ~-40 minecraft:netherrack
 setblock ~106 ~-15 ~-40 minecraft:basalt
-setblock ~105 ~-15 ~-40 minecraft:netherrack
 fill ~104 ~-15 ~-40 ~104 ~-15 ~-39 minecraft:blackstone
-setblock ~106 ~-15 ~-39 minecraft:blackstone
 fill ~108 ~-15 ~-39 ~118 ~-15 ~-39 minecraft:netherrack
 setblock ~107 ~-15 ~-39 minecraft:smooth_basalt
-setblock ~105 ~-15 ~-39 minecraft:smooth_basalt
-fill ~105 ~-15 ~-38 ~106 ~-15 ~-38 minecraft:blackstone
 fill ~107 ~-15 ~-38 ~119 ~-15 ~-38 minecraft:netherrack
 fill ~104 ~-15 ~-38 ~104 ~-15 ~-37 minecraft:basalt
-setblock ~105 ~-15 ~-37 minecraft:smooth_basalt
-fill ~106 ~-15 ~-37 ~107 ~-15 ~-36 minecraft:blackstone
+setblock ~107 ~-15 ~-37 minecraft:blackstone
 fill ~108 ~-15 ~-37 ~119 ~-15 ~-36 minecraft:netherrack
-setblock ~105 ~-15 ~-36 minecraft:basalt
 fill ~104 ~-15 ~-36 ~104 ~-15 ~-35 minecraft:netherrack
-fill ~107 ~-15 ~-35 ~108 ~-15 ~-35 minecraft:blackstone
-setblock ~105 ~-15 ~-35 minecraft:blackstone
 fill ~109 ~-15 ~-35 ~119 ~-15 ~-35 minecraft:netherrack
-setblock ~106 ~-15 ~-35 minecraft:magma_block
+setblock ~108 ~-15 ~-35 minecraft:blackstone
+setblock ~108 ~-15 ~-34 minecraft:basalt
 setblock ~104 ~-15 ~-34 minecraft:magma_block
 fill ~109 ~-15 ~-34 ~120 ~-15 ~-34 minecraft:netherrack
-setblock ~108 ~-15 ~-34 minecraft:basalt
-fill ~105 ~-15 ~-34 ~106 ~-15 ~-34 minecraft:basalt
-setblock ~107 ~-15 ~-34 minecraft:netherrack
-setblock ~107 ~-15 ~-33 minecraft:smooth_basalt
 setblock ~104 ~-15 ~-33 minecraft:smooth_basalt
-setblock ~106 ~-15 ~-33 minecraft:netherrack
 setblock ~109 ~-15 ~-33 minecraft:smooth_basalt
-setblock ~105 ~-15 ~-33 minecraft:basalt
-setblock ~108 ~-15 ~-33 minecraft:blackstone
 fill ~110 ~-15 ~-33 ~120 ~-15 ~-32 minecraft:netherrack
-setblock ~104 ~-15 ~-32 minecraft:blackstone
-fill ~106 ~-15 ~-32 ~107 ~-15 ~-32 minecraft:basalt
-setblock ~105 ~-15 ~-32 minecraft:netherrack
-fill ~108 ~-15 ~-32 ~109 ~-15 ~-32 minecraft:blackstone
-setblock ~108 ~-15 ~-31 minecraft:basalt
-setblock ~107 ~-15 ~-31 minecraft:blackstone
+fill ~109 ~-15 ~-32 ~109 ~-15 ~-31 minecraft:blackstone
 fill ~110 ~-15 ~-31 ~121 ~-14 ~-31 minecraft:netherrack
-setblock ~109 ~-15 ~-31 minecraft:blackstone
-fill ~104 ~-15 ~-31 ~106 ~-15 ~-31 minecraft:smooth_basalt
+setblock ~106 ~-15 ~-30 minecraft:blackstone
 setblock ~104 ~-15 ~-30 minecraft:blackstone
 setblock ~105 ~-15 ~-30 minecraft:smooth_basalt
-fill ~106 ~-15 ~-30 ~109 ~-15 ~-30 minecraft:blackstone
 fill ~110 ~-15 ~-30 ~110 ~-15 ~-29 minecraft:smooth_basalt
 setblock ~107 ~-15 ~-29 minecraft:basalt
+setblock ~104 ~-15 ~-29 minecraft:smooth_basalt
 setblock ~105 ~-15 ~-29 minecraft:blackstone
 setblock ~106 ~-15 ~-29 minecraft:smooth_basalt
-fill ~108 ~-15 ~-29 ~109 ~-15 ~-29 minecraft:blackstone
-setblock ~104 ~-15 ~-29 minecraft:smooth_basalt
+setblock ~108 ~-15 ~-29 minecraft:blackstone
 fill ~111 ~-15 ~-30 ~121 ~-15 ~-28 minecraft:netherrack
-fill ~106 ~-15 ~-28 ~107 ~-15 ~-28 minecraft:blackstone
-setblock ~104 ~-15 ~-28 minecraft:magma_block
 setblock ~108 ~-15 ~-28 minecraft:basalt
-setblock ~105 ~-15 ~-28 minecraft:smooth_basalt
 fill ~109 ~-15 ~-28 ~110 ~-15 ~-28 minecraft:blackstone
+fill ~104 ~-15 ~-28 ~107 ~-15 ~-28 minecraft:netherrack
 setblock ~109 ~-15 ~-27 minecraft:basalt
-fill ~105 ~-15 ~-27 ~108 ~-15 ~-27 minecraft:blackstone
+fill ~104 ~-15 ~-27 ~108 ~-15 ~-27 minecraft:netherrack
 setblock ~110 ~-15 ~-27 minecraft:blackstone
 fill ~111 ~-15 ~-27 ~122 ~-15 ~-27 minecraft:netherrack
-fill ~104 ~-15 ~-27 ~104 ~-15 ~-26 minecraft:netherrack
-fill ~110 ~-15 ~-26 ~111 ~-15 ~-26 minecraft:basalt
-setblock ~109 ~-15 ~-26 minecraft:smooth_basalt
-fill ~106 ~-15 ~-26 ~107 ~-15 ~-26 minecraft:smooth_basalt
-setblock ~105 ~-15 ~-26 minecraft:basalt
-setblock ~108 ~-15 ~-26 minecraft:blackstone
-fill ~112 ~-15 ~-26 ~122 ~-15 ~-25 minecraft:netherrack
-setblock ~111 ~-15 ~-25 minecraft:basalt
-fill ~104 ~-15 ~-25 ~110 ~-15 ~-25 minecraft:netherrack
+setblock ~111 ~-15 ~-26 minecraft:basalt
+fill ~104 ~-15 ~-26 ~110 ~-15 ~-26 minecraft:netherrack
+fill ~112 ~-15 ~-26 ~122 ~-15 ~-26 minecraft:netherrack
+fill ~104 ~-15 ~-25 ~122 ~-15 ~-25 minecraft:netherrack
 fill ~104 ~-14 ~-51 ~114 ~-14 ~-50 minecraft:netherrack
 fill ~105 ~-14 ~-49 ~114 ~-14 ~-49 minecraft:netherrack
 setblock ~104 ~-14 ~-49 minecraft:blackstone
@@ -144,16 +155,19 @@ setblock ~110 ~-14 ~-32 minecraft:blackstone
 setblock ~111 ~-14 ~-30 minecraft:blackstone
 setblock ~111 ~-14 ~-29 minecraft:basalt
 fill ~112 ~-14 ~-30 ~121 ~-14 ~-28 minecraft:netherrack
+fill ~106 ~-14 ~-28 ~107 ~-14 ~-28 minecraft:blackstone
+setblock ~104 ~-14 ~-28 minecraft:magma_block
+setblock ~105 ~-14 ~-28 minecraft:smooth_basalt
 fill ~111 ~-14 ~-28 ~111 ~-14 ~-27 minecraft:blackstone
+fill ~104 ~-14 ~-27 ~108 ~-14 ~-27 minecraft:blackstone
 fill ~112 ~-14 ~-27 ~122 ~-14 ~-27 minecraft:netherrack
-setblock ~104 ~-14 ~-27 minecraft:blackstone
 setblock ~112 ~-14 ~-26 minecraft:blackstone
-setblock ~104 ~-14 ~-26 minecraft:netherrack
+setblock ~110 ~-14 ~-26 minecraft:basalt
+setblock ~109 ~-14 ~-26 minecraft:smooth_basalt
+fill ~104 ~-14 ~-26 ~108 ~-14 ~-26 minecraft:netherrack
 fill ~113 ~-14 ~-26 ~122 ~-14 ~-25 minecraft:netherrack
-fill ~104 ~-14 ~-25 ~106 ~-14 ~-25 minecraft:blackstone
-setblock ~109 ~-14 ~-25 minecraft:smooth_basalt
-fill ~107 ~-14 ~-25 ~108 ~-14 ~-25 minecraft:basalt
-setblock ~112 ~-14 ~-25 minecraft:basalt
+fill ~111 ~-14 ~-25 ~112 ~-14 ~-25 minecraft:basalt
+fill ~104 ~-14 ~-25 ~109 ~-14 ~-25 minecraft:netherrack
 setblock ~110 ~-14 ~-25 minecraft:blackstone
 fill ~104 ~-13 ~-51 ~114 ~-13 ~-51 minecraft:netherrack
 fill ~105 ~-13 ~-50 ~114 ~-13 ~-50 minecraft:netherrack
@@ -192,8 +206,14 @@ fill ~112 ~-13 ~-29 ~121 ~-13 ~-28 minecraft:netherrack
 fill ~113 ~-13 ~-27 ~122 ~-13 ~-27 minecraft:netherrack
 setblock ~112 ~-13 ~-27 minecraft:basalt
 setblock ~113 ~-13 ~-26 minecraft:blackstone
+fill ~106 ~-13 ~-26 ~107 ~-13 ~-26 minecraft:smooth_basalt
+setblock ~105 ~-13 ~-26 minecraft:basalt
+setblock ~104 ~-13 ~-26 minecraft:netherrack
+setblock ~108 ~-13 ~-26 minecraft:blackstone
 fill ~114 ~-13 ~-26 ~122 ~-13 ~-25 minecraft:netherrack
-setblock ~106 ~-13 ~-25 minecraft:redstone_ore
+fill ~104 ~-13 ~-25 ~106 ~-13 ~-25 minecraft:blackstone
+setblock ~109 ~-13 ~-25 minecraft:smooth_basalt
+fill ~107 ~-13 ~-25 ~108 ~-13 ~-25 minecraft:basalt
 setblock ~113 ~-13 ~-25 minecraft:smooth_basalt
 fill ~104 ~-12 ~-56 ~105 ~-12 ~-56 minecraft:netherrack
 setblock ~106 ~-12 ~-56 minecraft:smooth_basalt
@@ -343,6 +363,7 @@ setblock ~120 ~-12 ~-26 minecraft:polished_blackstone
 setblock ~118 ~-12 ~-25 minecraft:polished_blackstone
 fill ~116 ~-12 ~-25 ~117 ~-12 ~-25 minecraft:blackstone
 setblock ~114 ~-12 ~-25 minecraft:blackstone
+setblock ~106 ~-12 ~-25 minecraft:redstone_ore
 setblock ~115 ~-12 ~-25 minecraft:basalt
 fill ~119 ~-12 ~-25 ~122 ~-12 ~-25 minecraft:blackstone
 setblock ~109 ~-11 ~-56 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]

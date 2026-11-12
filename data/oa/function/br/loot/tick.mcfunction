@@ -15,8 +15,6 @@ execute if score #time br.time matches 7200 run function oa:br/loot/ground_event
 execute if score #time br.time matches 8400 run function oa:br/loot/ground_event
 execute if score #time br.time matches 9600 run function oa:br/loot/ground_event
 execute if score #time br.time matches 10800 run function oa:br/loot/ground_event
-execute if score #time br.time matches 2400 run function oa:br/supply/drop
-execute if score #time br.time matches 2820 run function oa:br/supply/reveal
 execute if score #time br.time matches 4800 run function oa:br/supply/drop
 execute if score #time br.time matches 5220 run function oa:br/supply/reveal
 execute if score #time br.time matches 7200 run function oa:br/supply/drop

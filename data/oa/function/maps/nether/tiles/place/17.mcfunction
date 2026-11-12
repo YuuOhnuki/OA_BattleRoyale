@@ -26,11 +26,21 @@ fill ~72 ~-18 ~-93 ~83 ~-13 ~-93 minecraft:netherrack
 fill ~72 ~-18 ~-92 ~84 ~-13 ~-92 minecraft:netherrack
 fill ~85 ~-18 ~-92 ~103 ~-13 ~-92 minecraft:lava
 fill ~86 ~-18 ~-91 ~103 ~-13 ~-91 minecraft:lava
-fill ~72 ~-18 ~-91 ~85 ~-13 ~-91 minecraft:netherrack
+fill ~72 ~-18 ~-91 ~85 ~-14 ~-91 minecraft:netherrack
 fill ~87 ~-18 ~-90 ~103 ~-13 ~-90 minecraft:lava
-fill ~72 ~-18 ~-90 ~86 ~-13 ~-90 minecraft:netherrack
-fill ~72 ~-18 ~-89 ~87 ~-13 ~-89 minecraft:netherrack
+fill ~72 ~-18 ~-90 ~86 ~-15 ~-90 minecraft:netherrack
+fill ~72 ~-18 ~-89 ~87 ~-16 ~-89 minecraft:netherrack
 fill ~88 ~-18 ~-89 ~103 ~-13 ~-89 minecraft:lava
+fill ~73 ~-15 ~-89 ~87 ~-15 ~-89 minecraft:netherrack
+setblock ~72 ~-15 ~-89 minecraft:blackstone
+fill ~73 ~-14 ~-90 ~86 ~-14 ~-90 minecraft:netherrack
+setblock ~72 ~-14 ~-90 minecraft:blackstone
+setblock ~73 ~-14 ~-89 minecraft:basalt
+fill ~74 ~-14 ~-89 ~87 ~-13 ~-89 minecraft:netherrack
+fill ~73 ~-13 ~-91 ~85 ~-13 ~-91 minecraft:netherrack
+setblock ~72 ~-13 ~-91 minecraft:smooth_basalt
+setblock ~73 ~-13 ~-90 minecraft:smooth_basalt
+fill ~74 ~-13 ~-90 ~86 ~-13 ~-90 minecraft:netherrack
 setblock ~72 ~-12 ~-102 minecraft:blackstone
 fill ~72 ~-12 ~-101 ~73 ~-12 ~-101 minecraft:blackstone
 fill ~72 ~-12 ~-100 ~74 ~-12 ~-100 minecraft:blackstone
@@ -57,7 +67,7 @@ fill ~78 ~-12 ~-92 ~84 ~-12 ~-92 minecraft:blackstone
 setblock ~77 ~-12 ~-92 minecraft:smooth_basalt
 setblock ~76 ~-12 ~-92 minecraft:magma_block
 fill ~73 ~-12 ~-92 ~75 ~-12 ~-92 minecraft:blackstone
-fill ~72 ~-12 ~-92 ~72 ~-12 ~-91 minecraft:smooth_basalt
+setblock ~72 ~-12 ~-92 minecraft:smooth_basalt
 setblock ~73 ~-12 ~-91 minecraft:blackstone
 fill ~74 ~-12 ~-91 ~76 ~-12 ~-91 minecraft:basalt
 fill ~77 ~-12 ~-91 ~85 ~-12 ~-91 minecraft:blackstone
@@ -67,15 +77,10 @@ setblock ~76 ~-12 ~-90 minecraft:basalt
 setblock ~74 ~-12 ~-90 minecraft:basalt
 setblock ~75 ~-12 ~-90 minecraft:blackstone
 setblock ~81 ~-12 ~-90 minecraft:polished_blackstone
-fill ~73 ~-12 ~-90 ~73 ~-11 ~-90 minecraft:smooth_basalt
 fill ~77 ~-12 ~-90 ~78 ~-12 ~-90 minecraft:blackstone
 setblock ~79 ~-12 ~-90 minecraft:netherrack
-fill ~72 ~-12 ~-90 ~72 ~-12 ~-89 minecraft:blackstone
-fill ~75 ~-12 ~-89 ~77 ~-12 ~-89 minecraft:blackstone
-setblock ~74 ~-12 ~-89 minecraft:netherrack
 setblock ~78 ~-12 ~-89 minecraft:basalt
-setblock ~73 ~-12 ~-89 minecraft:basalt
-setblock ~73 ~-10 ~-89 minecraft:basalt
+fill ~75 ~-12 ~-89 ~77 ~-12 ~-89 minecraft:blackstone
 fill ~79 ~-12 ~-89 ~87 ~-12 ~-89 minecraft:blackstone
 setblock ~72 ~-11 ~-100 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~72 ~-11 ~-99 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
@@ -97,14 +102,8 @@ setblock ~81 ~-11 ~-92 minecraft:nether_brick_fence[east=true,north=false,south=
 setblock ~80 ~-11 ~-92 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~82 ~-11 ~-92 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~82 ~-11 ~-91 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
-setblock ~72 ~-11 ~-91 minecraft:smooth_basalt
 setblock ~83 ~-11 ~-91 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~83 ~-11 ~-90 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~84 ~-11 ~-90 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
-setblock ~72 ~-11 ~-90 minecraft:netherrack
-fill ~72 ~-11 ~-89 ~74 ~-11 ~-89 minecraft:netherrack
 setblock ~85 ~-11 ~-89 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~84 ~-11 ~-89 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
-setblock ~72 ~-10 ~-90 minecraft:blackstone
-setblock ~72 ~-10 ~-89 minecraft:netherrack
-setblock ~72 ~-9 ~-89 minecraft:blackstone
