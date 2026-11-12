@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/weapon_root",
+  "parent": "oa:ach/cat_weapon",
   "display": {
     "icon": {
       "id": "minecraft:feather"

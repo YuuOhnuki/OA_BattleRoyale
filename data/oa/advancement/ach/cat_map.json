@@ -1,16 +1,16 @@
 {
+  "parent": "oa:ach/root",
   "display": {
     "icon": {
       "id": "minecraft:filled_map"
     },
     "title": {
-      "text": "OA：マップ"
+      "text": "マップ"
     },
     "description": {
       "text": "マップごとの実績"
     },
-    "background": "minecraft:gui/advancements/backgrounds/husbandry",
-    "frame": "task",
+    "frame": "goal",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": false

@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/secret_root",
+  "parent": "oa:ach/chests20",
   "display": {
     "icon": {
       "id": "minecraft:ender_chest"

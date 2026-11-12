@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/map_root",
+  "parent": "oa:ach/cat_map",
   "display": {
     "icon": {
       "id": "minecraft:grass_block"

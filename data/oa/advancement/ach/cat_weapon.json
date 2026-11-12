@@ -1,16 +1,16 @@
 {
+  "parent": "oa:ach/root",
   "display": {
     "icon": {
       "id": "minecraft:netherite_sword"
     },
     "title": {
-      "text": "OA：固有武器"
+      "text": "固有武器"
     },
     "description": {
       "text": "固有武器ごとの実績"
     },
-    "background": "minecraft:gui/advancements/backgrounds/nether",
-    "frame": "task",
+    "frame": "goal",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": false

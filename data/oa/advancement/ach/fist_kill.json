@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/secret_root",
+  "parent": "oa:ach/first_kill",
   "display": {
     "icon": {
       "id": "minecraft:leather"

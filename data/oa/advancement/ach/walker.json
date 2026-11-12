@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/secret_root",
+  "parent": "oa:ach/cat_br",
   "display": {
     "icon": {
       "id": "minecraft:leather_boots"

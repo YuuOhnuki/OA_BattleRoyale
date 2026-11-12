@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/secret_root",
+  "parent": "oa:ach/winner",
   "display": {
     "icon": {
       "id": "minecraft:barrel"

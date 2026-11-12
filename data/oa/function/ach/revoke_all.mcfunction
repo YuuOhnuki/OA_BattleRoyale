@@ -46,12 +46,12 @@ advancement revoke @s only oa:ach/itori_master
 advancement revoke @s only oa:ach/furoball_blast
 advancement revoke @s only oa:ach/weapon_all
 advancement revoke @s only oa:ach/peace_win
+advancement revoke @s only oa:ach/close_call
+advancement revoke @s only oa:ach/poor_win
+advancement revoke @s only oa:ach/no_jump_win
 advancement revoke @s only oa:ach/walker
 advancement revoke @s only oa:ach/jumper
-advancement revoke @s only oa:ach/close_call
 advancement revoke @s only oa:ach/first_out
-advancement revoke @s only oa:ach/poor_win
 advancement revoke @s only oa:ach/fist_kill
 advancement revoke @s only oa:ach/greedy30
 advancement revoke @s only oa:ach/games50
-advancement revoke @s only oa:ach/no_jump_win

@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/cat_br",
   "display": {
     "icon": {
       "id": "minecraft:totem_of_undying"

@@ -4,10 +4,10 @@
       "id": "minecraft:diamond_sword"
     },
     "title": {
-      "text": "OA：バトルロワイヤル"
+      "text": "OAバトルロワイヤル"
     },
     "description": {
-      "text": "試合全体の実績（キル・チェスト・お題・勝利）"
+      "text": "OAバトルロワイヤルの実績"
     },
     "background": "minecraft:gui/advancements/backgrounds/stone",
     "frame": "task",

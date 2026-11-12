@@ -1,16 +1,16 @@
 {
+  "parent": "oa:ach/root",
   "display": {
     "icon": {
-      "id": "minecraft:ender_eye"
+      "id": "minecraft:diamond_sword"
     },
     "title": {
-      "text": "OA：隠し実績"
+      "text": "バトルロワイヤル"
     },
     "description": {
-      "text": "解除するまで名前と条件が見えない実績"
+      "text": "試合全体の実績（キル・チェスト・お題・勝利）"
     },
-    "background": "minecraft:gui/advancements/backgrounds/end",
-    "frame": "task",
+    "frame": "goal",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": false
