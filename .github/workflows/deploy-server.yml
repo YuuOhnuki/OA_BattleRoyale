@@ -1,0 +1,22 @@
+# main への push で、自前サーバーPC（self-hosted runner）のデータパックを更新する。
+# runner が未登録の間は、ジョブが待機状態になるだけで他に影響しない。
+name: deploy-server
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+concurrency:
+  group: deploy-server
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  deploy:
+    runs-on: [self-hosted, windows, oa-server]
+    timeout-minutes: 10
+    steps:
+      - name: Update server datapack
+        shell: powershell
+        run: |
+          & "D:\MinecraftServer\oa_battle_royale\autoupdate\update.ps1"
+          if ($LASTEXITCODE -gt 0) { exit $LASTEXITCODE }
