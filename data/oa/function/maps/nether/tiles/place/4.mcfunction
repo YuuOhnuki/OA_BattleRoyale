@@ -25,14 +25,14 @@ fill ~-24 ~-12 ~-121 ~-18 ~-12 ~-121 minecraft:blackstone
 fill ~-10 ~-12 ~-121 ~-3 ~-12 ~-121 minecraft:blackstone
 setblock ~-11 ~-12 ~-121 minecraft:polished_blackstone
 fill ~-16 ~-12 ~-121 ~-12 ~-12 ~-121 minecraft:blackstone
-fill ~-7 ~-11 ~-123 ~7 ~-11 ~-123 minecraft:nether_brick_fence[east=true,north=false,south=true,west=true]
 setblock ~-8 ~-11 ~-123 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~-17 ~-11 ~-122 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-fill ~-14 ~-11 ~-122 ~-9 ~-11 ~-122 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
+fill ~-7 ~-11 ~-123 ~7 ~-11 ~-123 minecraft:nether_brick_fence[east=true,north=false,south=true,west=true]
 fill ~-16 ~-11 ~-122 ~-15 ~-11 ~-122 minecraft:nether_brick_fence[east=true,north=false,south=true,west=true]
 fill ~-8 ~-11 ~-122 ~7 ~-11 ~-122 minecraft:nether_brick_fence[east=true,north=true,south=false,west=true]
-setblock ~-15 ~-11 ~-121 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
-setblock ~-23 ~-11 ~-121 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~-22 ~-11 ~-121 minecraft:nether_brick_fence[east=true,north=false,south=true,west=true]
-fill ~-21 ~-11 ~-121 ~-18 ~-11 ~-121 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
+setblock ~-17 ~-11 ~-122 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
+fill ~-14 ~-11 ~-122 ~-9 ~-11 ~-122 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 fill ~-17 ~-11 ~-121 ~-16 ~-11 ~-121 minecraft:nether_brick_fence[east=true,north=true,south=false,west=true]
+setblock ~-15 ~-11 ~-121 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+fill ~-21 ~-11 ~-121 ~-18 ~-11 ~-121 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
+setblock ~-22 ~-11 ~-121 minecraft:nether_brick_fence[east=true,north=false,south=true,west=true]
+setblock ~-23 ~-11 ~-121 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]

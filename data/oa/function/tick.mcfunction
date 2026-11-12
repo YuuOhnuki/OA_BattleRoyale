@@ -1,3 +1,4 @@
+function oa:ver/tick
 execute if score #perf oa.tmp matches 19 run tag @a[tag=br.lobby_now] add oa.inv_dirty
 scoreboard players add #perf oa.tmp 1
 execute if score #perf oa.tmp matches 20.. run scoreboard players set #perf oa.tmp 0

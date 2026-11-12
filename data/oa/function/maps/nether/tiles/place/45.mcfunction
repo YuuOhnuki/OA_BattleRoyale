@@ -553,6 +553,7 @@ fill ~36 ~-12 ~4 ~37 ~-12 ~4 minecraft:soul_sand
 setblock ~24 ~-12 ~4 minecraft:soul_sand
 setblock ~8 ~-12 ~4 minecraft:basalt
 setblock ~23 ~-12 ~4 minecraft:soul_soil
+setblock ~38 ~-12 ~4 minecraft:nether_gold_ore
 setblock ~8 ~-12 ~5 minecraft:soul_soil
 setblock ~26 ~-12 ~5 minecraft:soul_sand
 fill ~28 ~-12 ~5 ~29 ~-12 ~5 minecraft:soul_soil
@@ -724,7 +725,6 @@ setblock ~39 ~-9 ~-15 minecraft:polished_blackstone
 setblock ~18 ~-11 ~-15 minecraft:cracked_polished_blackstone_bricks
 fill ~22 ~-11 ~-15 ~22 ~-9 ~-15 minecraft:cracked_polished_blackstone_bricks
 fill ~22 ~-7 ~-15 ~22 ~-6 ~-15 minecraft:cracked_polished_blackstone_bricks
-fill ~31 ~-11 ~-15 ~31 ~-7 ~-15 minecraft:basalt
 setblock ~17 ~-11 ~-15 minecraft:polished_blackstone_bricks
 setblock ~16 ~-11 ~-14 minecraft:polished_blackstone_bricks
 setblock ~20 ~-11 ~-14 minecraft:polished_blackstone_bricks
@@ -847,6 +847,7 @@ setblock ~16 ~-11 ~-6 minecraft:polished_blackstone_bricks
 setblock ~13 ~-11 ~-6 minecraft:cracked_polished_blackstone_bricks
 fill ~9 ~-11 ~-6 ~10 ~-11 ~-6 minecraft:polished_blackstone_bricks
 setblock ~20 ~-11 ~-6 minecraft:polished_blackstone_bricks
+setblock ~38 ~-11 ~-6 minecraft:nether_quartz_ore
 setblock ~18 ~-11 ~-6 minecraft:polished_blackstone_bricks
 setblock ~22 ~-11 ~-6 minecraft:polished_blackstone_bricks
 setblock ~17 ~-11 ~-6 minecraft:cracked_polished_blackstone_bricks
@@ -858,7 +859,6 @@ setblock ~11 ~-11 ~-6 minecraft:cracked_polished_blackstone_bricks
 setblock ~8 ~-11 ~-6 minecraft:chiseled_polished_blackstone
 setblock ~14 ~-11 ~-5 minecraft:cracked_polished_blackstone_bricks
 setblock ~12 ~-11 ~-5 minecraft:cracked_polished_blackstone_bricks
-fill ~34 ~-11 ~-5 ~34 ~-4 ~-5 minecraft:basalt
 setblock ~19 ~-11 ~-5 minecraft:polished_blackstone_bricks
 setblock ~8 ~-11 ~-5 minecraft:polished_blackstone_bricks
 setblock ~21 ~-11 ~-5 minecraft:polished_blackstone_bricks
@@ -922,6 +922,7 @@ setblock ~12 ~-11 ~-1 minecraft:cracked_polished_blackstone_bricks
 setblock ~19 ~-11 ~-1 minecraft:polished_blackstone_bricks
 setblock ~8 ~-11 ~-1 minecraft:polished_blackstone_bricks
 setblock ~21 ~-11 ~-1 minecraft:polished_blackstone_bricks
+fill ~35 ~-11 ~-1 ~35 ~-10 ~-1 minecraft:nether_brick_fence[east=false,north=false,south=false,west=false]
 setblock ~10 ~-11 ~-1 minecraft:cracked_polished_blackstone_bricks
 setblock ~11 ~-11 ~-1 minecraft:polished_blackstone_bricks
 setblock ~15 ~-11 ~-1 minecraft:polished_blackstone_bricks
@@ -975,7 +976,6 @@ setblock ~14 ~-11 ~2 minecraft:polished_blackstone_bricks
 setblock ~12 ~-11 ~2 minecraft:polished_blackstone_bricks
 setblock ~11 ~-11 ~2 minecraft:cracked_polished_blackstone_bricks
 setblock ~8 ~-11 ~2 minecraft:chiseled_polished_blackstone
-fill ~34 ~-11 ~2 ~34 ~-10 ~2 minecraft:bone_block[axis=y]
 setblock ~9 ~-11 ~3 minecraft:gilded_blackstone
 setblock ~14 ~-11 ~3 minecraft:cracked_polished_blackstone_bricks
 setblock ~12 ~-11 ~3 minecraft:cracked_polished_blackstone_bricks
@@ -1107,20 +1107,20 @@ fill ~22 ~-7 ~-18 ~22 ~-6 ~-18 minecraft:cracked_polished_blackstone_bricks
 setblock ~22 ~-10 ~-17 minecraft:polished_blackstone
 setblock ~22 ~-6 ~-17 minecraft:polished_blackstone
 setblock ~17 ~-10 ~-17 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock ~16 ~-10 ~-16 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 fill ~13 ~-10 ~-16 ~15 ~-10 ~-16 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~12 ~-10 ~-16 minecraft:nether_brick_fence[east=true,north=false,south=true,west=false]
-setblock ~16 ~-10 ~-16 minecraft:nether_brick_fence[east=false,north=false,south=true,west=true]
 setblock ~39 ~-10 ~-15 minecraft:polished_blackstone_bricks
 fill ~12 ~-10 ~-15 ~12 ~-10 ~-13 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 fill ~16 ~-10 ~-15 ~16 ~-10 ~-13 minecraft:nether_brick_fence[east=false,north=true,south=true,west=false]
 fill ~22 ~-10 ~-14 ~22 ~-10 ~-13 minecraft:polished_blackstone_bricks
 fill ~22 ~-6 ~-14 ~22 ~-6 ~-13 minecraft:polished_blackstone_bricks
-fill ~13 ~-10 ~-12 ~15 ~-10 ~-12 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
+setblock ~12 ~-10 ~-12 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~16 ~-10 ~-12 minecraft:nether_brick_fence[east=false,north=true,south=false,west=true]
+fill ~13 ~-10 ~-12 ~15 ~-10 ~-12 minecraft:nether_brick_fence[east=true,north=false,south=false,west=true]
 setblock ~39 ~-10 ~-12 minecraft:polished_blackstone
 fill ~22 ~-10 ~-12 ~22 ~-9 ~-12 minecraft:cracked_polished_blackstone_bricks
 fill ~22 ~-7 ~-12 ~22 ~-6 ~-12 minecraft:cracked_polished_blackstone_bricks
-setblock ~12 ~-10 ~-12 minecraft:nether_brick_fence[east=true,north=true,south=false,west=false]
 setblock ~22 ~-10 ~-11 minecraft:polished_blackstone
 setblock ~22 ~-6 ~-11 minecraft:polished_blackstone
 fill ~8 ~-10 ~-9 ~9 ~-10 ~-9 minecraft:polished_blackstone_bricks
@@ -1219,6 +1219,7 @@ setblock ~9 ~-9 ~-3 minecraft:polished_blackstone
 setblock ~9 ~-5 ~-3 minecraft:polished_blackstone
 setblock ~9 ~-9 ~-2 minecraft:polished_blackstone_bricks
 setblock ~9 ~-5 ~-2 minecraft:polished_blackstone_bricks
+setblock ~35 ~-9 ~-1 minecraft:soul_lantern[hanging=false]
 setblock ~9 ~-9 ~3 minecraft:polished_blackstone
 setblock ~9 ~-5 ~3 minecraft:polished_blackstone
 setblock ~22 ~-9 ~4 minecraft:polished_blackstone
@@ -1249,10 +1250,8 @@ fill ~20 ~-3 ~-20 ~24 ~-3 ~-20 minecraft:chiseled_polished_blackstone
 fill ~8 ~-7 ~-9 ~9 ~-7 ~-9 minecraft:chiseled_polished_blackstone
 fill ~9 ~-7 ~-8 ~9 ~-7 ~-2 minecraft:chiseled_polished_blackstone
 fill ~9 ~-7 ~2 ~9 ~-7 ~7 minecraft:chiseled_polished_blackstone
-setblock ~31 ~-6 ~-15 minecraft:polished_basalt
 setblock ~16 ~-6 ~-5 minecraft:chiseled_polished_blackstone
 fill ~22 ~-6 ~-2 ~22 ~-6 ~2 minecraft:chiseled_polished_blackstone
 setblock ~16 ~-6 ~5 minecraft:chiseled_polished_blackstone
 fill ~9 ~-5 ~-1 ~9 ~-5 ~1 minecraft:chiseled_polished_blackstone
-setblock ~34 ~-3 ~-5 minecraft:polished_basalt
 setblock ~22 ~-2 ~-22 minecraft:lantern[hanging=false]

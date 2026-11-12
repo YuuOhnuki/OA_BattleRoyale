@@ -407,3 +407,6 @@ scoreboard objectives add br.mqz minecraft.mined:minecraft.nether_quartz_ore
 scoreboard objectives add br.mng minecraft.mined:minecraft.nether_gold_ore
 scoreboard objectives add oa.mapid dummy
 scoreboard players add #map oa.mapid 0
+
+# 1.9.111: version display (TAB list + /trigger oa.ver) and load-complete message
+scoreboard objectives add oa.ver trigger

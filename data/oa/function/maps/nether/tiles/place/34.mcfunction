@@ -184,8 +184,6 @@ fill ~-22 ~-12 ~-44 ~-15 ~-12 ~-44 minecraft:warped_nylium
 setblock ~-14 ~-12 ~-44 minecraft:netherrack
 fill ~6 ~-12 ~-44 ~7 ~-12 ~-44 minecraft:blackstone
 setblock ~-1 ~-12 ~-43 minecraft:smooth_basalt
-fill ~1 ~-12 ~-43 ~4 ~-12 ~-43 minecraft:blackstone
-setblock ~5 ~-12 ~-43 minecraft:smooth_basalt
 setblock ~0 ~-12 ~-43 minecraft:basalt
 fill ~-24 ~-12 ~-43 ~-12 ~-12 ~-43 minecraft:warped_nylium
 setblock ~7 ~-12 ~-43 minecraft:netherrack
@@ -195,49 +193,39 @@ fill ~-6 ~-12 ~-43 ~-5 ~-12 ~-43 minecraft:warped_nylium
 fill ~-4 ~-12 ~-43 ~-2 ~-12 ~-43 minecraft:netherrack
 fill ~-8 ~-12 ~-43 ~-7 ~-12 ~-43 minecraft:warped_wart_block
 fill ~6 ~-12 ~-43 ~6 ~-12 ~-42 minecraft:blackstone
-setblock ~5 ~-12 ~-42 minecraft:basalt
 fill ~-12 ~-12 ~-42 ~-5 ~-12 ~-42 minecraft:warped_nylium
 setblock ~-18 ~-12 ~-42 minecraft:netherrack
 setblock ~-4 ~-12 ~-42 minecraft:warped_wart_block
 setblock ~-3 ~-12 ~-42 minecraft:warped_nylium
-setblock ~1 ~-12 ~-42 minecraft:smooth_basalt
 fill ~-24 ~-12 ~-42 ~-19 ~-12 ~-42 minecraft:warped_nylium
-fill ~2 ~-12 ~-42 ~4 ~-12 ~-42 minecraft:blackstone
 setblock ~7 ~-12 ~-42 minecraft:basalt
 setblock ~-13 ~-12 ~-42 minecraft:netherrack
 fill ~-17 ~-12 ~-42 ~-14 ~-12 ~-42 minecraft:warped_nylium
 fill ~-2 ~-12 ~-42 ~-1 ~-12 ~-42 minecraft:smooth_basalt
 setblock ~0 ~-12 ~-42 minecraft:blackstone
-setblock ~4 ~-12 ~-41 minecraft:blackstone
-setblock ~3 ~-12 ~-41 minecraft:netherrack
 fill ~-24 ~-12 ~-41 ~-10 ~-12 ~-41 minecraft:warped_nylium
+fill ~-1 ~-12 ~-41 ~0 ~-12 ~-41 minecraft:blackstone
 setblock ~-3 ~-12 ~-41 minecraft:warped_wart_block
 setblock ~-9 ~-12 ~-41 minecraft:netherrack
-fill ~-1 ~-12 ~-41 ~2 ~-12 ~-41 minecraft:blackstone
 fill ~-8 ~-12 ~-41 ~-4 ~-12 ~-41 minecraft:warped_nylium
-fill ~5 ~-12 ~-41 ~6 ~-12 ~-41 minecraft:basalt
 setblock ~-2 ~-12 ~-41 minecraft:basalt
 setblock ~7 ~-12 ~-41 minecraft:smooth_basalt
+fill ~6 ~-12 ~-41 ~6 ~-12 ~-40 minecraft:basalt
 setblock ~-20 ~-12 ~-40 minecraft:netherrack
 setblock ~7 ~-12 ~-40 minecraft:blackstone
-setblock ~6 ~-12 ~-40 minecraft:basalt
 setblock ~0 ~-12 ~-40 minecraft:smooth_basalt
 setblock ~-5 ~-12 ~-40 minecraft:netherrack
 fill ~-4 ~-12 ~-40 ~-2 ~-12 ~-40 minecraft:warped_nylium
 fill ~-19 ~-12 ~-40 ~-6 ~-12 ~-40 minecraft:warped_nylium
-fill ~1 ~-12 ~-40 ~4 ~-12 ~-40 minecraft:netherrack
-setblock ~5 ~-12 ~-40 minecraft:blackstone
 setblock ~-21 ~-12 ~-40 minecraft:warped_wart_block
+fill ~1 ~-12 ~-43 ~5 ~-12 ~-39 minecraft:polished_blackstone_bricks
 fill ~-1 ~-12 ~-40 ~-1 ~-12 ~-39 minecraft:blackstone
 fill ~-24 ~-12 ~-40 ~-22 ~-12 ~-39 minecraft:warped_nylium
 setblock ~-10 ~-12 ~-39 minecraft:warped_wart_block
-fill ~0 ~-12 ~-39 ~1 ~-12 ~-39 minecraft:basalt
-setblock ~2 ~-12 ~-39 minecraft:smooth_basalt
 fill ~-9 ~-12 ~-39 ~-2 ~-12 ~-39 minecraft:warped_nylium
+setblock ~0 ~-12 ~-39 minecraft:basalt
 setblock ~-11 ~-12 ~-39 minecraft:warped_nylium
 setblock ~-12 ~-12 ~-39 minecraft:netherrack
-setblock ~3 ~-12 ~-39 minecraft:blackstone
-fill ~4 ~-12 ~-39 ~5 ~-12 ~-39 minecraft:basalt
 setblock ~-21 ~-12 ~-39 minecraft:netherrack
 fill ~6 ~-12 ~-39 ~7 ~-12 ~-39 minecraft:blackstone
 fill ~-20 ~-12 ~-39 ~-13 ~-12 ~-39 minecraft:warped_nylium
@@ -425,48 +413,108 @@ fill ~-24 ~-12 ~-25 ~-23 ~-12 ~-25 minecraft:netherrack
 setblock ~-21 ~-12 ~-25 minecraft:warped_wart_block
 setblock ~4 ~-12 ~-25 minecraft:magma_block
 fill ~-19 ~-12 ~-25 ~-7 ~-12 ~-25 minecraft:warped_nylium
-setblock ~-9 ~-11 ~-56 minecraft:nether_gold_ore
-fill ~6 ~-11 ~-56 ~6 ~-6 ~-56 minecraft:basalt
-fill ~-1 ~-11 ~-56 ~-1 ~-9 ~-56 minecraft:basalt
-fill ~-14 ~-11 ~-53 ~-14 ~-7 ~-53 minecraft:warped_stem
+setblock ~3 ~-11 ~-56 minecraft:cracked_polished_blackstone_bricks
+setblock ~2 ~-11 ~-56 minecraft:cracked_nether_bricks
+setblock ~-1 ~-11 ~-56 minecraft:nether_bricks
+setblock ~1 ~-11 ~-56 minecraft:nether_bricks
+setblock ~5 ~-11 ~-56 minecraft:polished_blackstone_bricks
+setblock ~-10 ~-11 ~-56 minecraft:polished_blackstone_bricks
+setblock ~-6 ~-11 ~-56 minecraft:nether_bricks
+setblock ~-4 ~-11 ~-56 minecraft:nether_bricks
+setblock ~-4 ~-9 ~-56 minecraft:nether_bricks
+setblock ~-3 ~-11 ~-56 minecraft:cracked_nether_bricks
+setblock ~-7 ~-11 ~-56 minecraft:cracked_polished_blackstone_bricks
+setblock ~0 ~-11 ~-56 minecraft:polished_blackstone_bricks
+setblock ~4 ~-11 ~-56 minecraft:nether_bricks
+setblock ~-9 ~-11 ~-56 minecraft:nether_bricks
+setblock ~-9 ~-9 ~-56 minecraft:nether_bricks
+setblock ~-14 ~-11 ~-55 minecraft:warped_roots
+setblock ~-24 ~-11 ~-52 minecraft:nether_bricks
+setblock ~-24 ~-9 ~-52 minecraft:nether_bricks
 fill ~-7 ~-11 ~-52 ~-6 ~-11 ~-52 minecraft:warped_roots
+setblock ~-18 ~-11 ~-52 minecraft:cracked_nether_bricks
 setblock ~-5 ~-11 ~-51 minecraft:warped_roots
-setblock ~-1 ~-11 ~-51 minecraft:nether_gold_ore
-setblock ~-15 ~-11 ~-49 minecraft:warped_roots
+fill ~-15 ~-11 ~-50 ~-15 ~-11 ~-49 minecraft:warped_roots
 setblock ~-8 ~-11 ~-48 minecraft:warped_roots
-setblock ~-12 ~-11 ~-48 minecraft:nether_quartz_ore
-fill ~-4 ~-11 ~-46 ~-4 ~-7 ~-46 minecraft:warped_stem
-setblock ~5 ~-11 ~-45 minecraft:nether_gold_ore
-setblock ~-10 ~-11 ~-44 minecraft:warped_roots
+fill ~-19 ~-11 ~-46 ~-19 ~-6 ~-46 minecraft:warped_stem
+fill ~2 ~-11 ~-46 ~3 ~-2 ~-45 minecraft:basalt
+fill ~3 ~-11 ~-43 ~3 ~-10 ~-43 minecraft:cracked_polished_blackstone_bricks
+setblock ~3 ~-7 ~-43 minecraft:cracked_polished_blackstone_bricks
+setblock ~1 ~-11 ~-43 minecraft:cracked_nether_bricks
+setblock ~1 ~-9 ~-43 minecraft:cracked_nether_bricks
+fill ~-8 ~-11 ~-43 ~-8 ~-7 ~-43 minecraft:warped_stem
+fill ~5 ~-11 ~-43 ~5 ~-9 ~-43 minecraft:polished_blackstone_bricks
+setblock ~4 ~-11 ~-43 minecraft:polished_blackstone
+setblock ~4 ~-9 ~-43 minecraft:polished_blackstone
+setblock ~4 ~-7 ~-43 minecraft:polished_blackstone
+fill ~2 ~-11 ~-43 ~2 ~-9 ~-43 minecraft:polished_blackstone_bricks
 setblock ~-4 ~-11 ~-42 minecraft:warped_roots
+fill ~1 ~-11 ~-42 ~1 ~-9 ~-42 minecraft:cracked_polished_blackstone_bricks
+setblock ~1 ~-7 ~-42 minecraft:cracked_polished_blackstone_bricks
+setblock ~5 ~-11 ~-42 minecraft:polished_blackstone
+setblock ~5 ~-9 ~-42 minecraft:polished_blackstone
+fill ~1 ~-11 ~-41 ~1 ~-10 ~-41 minecraft:polished_blackstone_bricks
+setblock ~1 ~-7 ~-41 minecraft:polished_blackstone_bricks
+setblock ~1 ~-11 ~-40 minecraft:polished_blackstone
+setblock ~1 ~-9 ~-40 minecraft:polished_blackstone
+fill ~5 ~-11 ~-40 ~5 ~-9 ~-40 minecraft:polished_blackstone_bricks
+setblock ~5 ~-7 ~-40 minecraft:polished_blackstone_bricks
 setblock ~-21 ~-11 ~-40 minecraft:warped_roots
-setblock ~-6 ~-11 ~-39 minecraft:nether_gold_ore
+setblock ~5 ~-11 ~-39 minecraft:cracked_nether_bricks
+setblock ~5 ~-9 ~-39 minecraft:cracked_nether_bricks
+setblock ~5 ~-7 ~-39 minecraft:cracked_nether_bricks
+setblock ~2 ~-11 ~-39 minecraft:polished_blackstone
+setblock ~2 ~-9 ~-39 minecraft:polished_blackstone
+fill ~1 ~-11 ~-39 ~1 ~-9 ~-39 minecraft:cracked_polished_blackstone_bricks
+fill ~4 ~-11 ~-39 ~4 ~-9 ~-39 minecraft:cracked_polished_blackstone_bricks
+fill ~3 ~-11 ~-39 ~3 ~-10 ~-39 minecraft:polished_blackstone_bricks
+setblock ~3 ~-7 ~-39 minecraft:polished_blackstone_bricks
 setblock ~-14 ~-11 ~-37 minecraft:polished_blackstone_bricks
 setblock ~-14 ~-9 ~-37 minecraft:polished_blackstone_bricks
 setblock ~-13 ~-11 ~-37 minecraft:polished_blackstone
 fill ~-15 ~-11 ~-37 ~-15 ~-9 ~-37 minecraft:cracked_polished_blackstone_bricks
-setblock ~-22 ~-11 ~-37 minecraft:warped_roots
 fill ~-12 ~-11 ~-37 ~-12 ~-10 ~-37 minecraft:cracked_polished_blackstone_bricks
 fill ~-16 ~-11 ~-37 ~-16 ~-11 ~-36 minecraft:polished_blackstone_bricks
 setblock ~-12 ~-11 ~-36 minecraft:polished_blackstone
-setblock ~-24 ~-11 ~-36 minecraft:warped_roots
-setblock ~-7 ~-11 ~-36 minecraft:warped_roots
 setblock ~-12 ~-11 ~-35 minecraft:polished_blackstone_bricks
 setblock ~-14 ~-11 ~-35 minecraft:chest[facing=south,type=single,waterlogged=false]
 fill ~-16 ~-11 ~-35 ~-16 ~-9 ~-35 minecraft:cracked_polished_blackstone_bricks
-fill ~0 ~-11 ~-34 ~0 ~-9 ~-34 minecraft:basalt
 setblock ~-16 ~-11 ~-34 minecraft:polished_blackstone
 setblock ~-16 ~-9 ~-34 minecraft:polished_blackstone
+fill ~-6 ~-11 ~-34 ~-6 ~-6 ~-34 minecraft:warped_stem
 fill ~-12 ~-11 ~-34 ~-12 ~-9 ~-34 minecraft:cracked_polished_blackstone_bricks
-setblock ~-7 ~-11 ~-33 minecraft:warped_roots
 fill ~-13 ~-11 ~-33 ~-12 ~-11 ~-33 minecraft:polished_blackstone_bricks
 setblock ~-16 ~-11 ~-33 minecraft:polished_blackstone_bricks
 setblock ~-16 ~-9 ~-33 minecraft:polished_blackstone_bricks
 setblock ~-15 ~-11 ~-33 minecraft:polished_blackstone
+setblock ~-2 ~-11 ~-32 minecraft:warped_roots
+setblock ~-23 ~-11 ~-31 minecraft:nether_gold_ore
 setblock ~-7 ~-11 ~-30 minecraft:warped_roots
 setblock ~-23 ~-11 ~-30 minecraft:warped_roots
 setblock ~-16 ~-11 ~-28 minecraft:warped_roots
 setblock ~-14 ~-11 ~-27 minecraft:warped_roots
+setblock ~-6 ~-10 ~-56 minecraft:cracked_polished_blackstone_bricks
+setblock ~-9 ~-10 ~-56 minecraft:polished_blackstone_bricks
+setblock ~3 ~-10 ~-56 minecraft:cracked_nether_bricks
+setblock ~5 ~-10 ~-56 minecraft:nether_bricks
+setblock ~-10 ~-10 ~-56 minecraft:nether_bricks
+setblock ~2 ~-10 ~-56 minecraft:nether_bricks
+setblock ~4 ~-10 ~-56 minecraft:cracked_polished_blackstone_bricks
+setblock ~1 ~-10 ~-56 minecraft:polished_blackstone_bricks
+setblock ~0 ~-10 ~-56 minecraft:nether_bricks
+setblock ~-1 ~-10 ~-56 minecraft:cracked_polished_blackstone_bricks
+setblock ~-4 ~-10 ~-56 minecraft:polished_blackstone_bricks
+setblock ~-3 ~-10 ~-56 minecraft:nether_bricks
+setblock ~-7 ~-10 ~-56 minecraft:cracked_nether_bricks
+setblock ~-24 ~-10 ~-52 minecraft:polished_blackstone_bricks
+setblock ~-18 ~-10 ~-52 minecraft:nether_bricks
+setblock ~-18 ~-8 ~-52 minecraft:nether_bricks
+setblock ~1 ~-10 ~-43 minecraft:polished_blackstone
+setblock ~4 ~-10 ~-43 minecraft:cracked_nether_bricks
+setblock ~5 ~-10 ~-42 minecraft:cracked_nether_bricks
+setblock ~1 ~-10 ~-40 minecraft:cracked_nether_bricks
+setblock ~2 ~-10 ~-39 minecraft:cracked_nether_bricks
+setblock ~5 ~-10 ~-39 minecraft:polished_blackstone
 fill ~-14 ~-10 ~-37 ~-13 ~-10 ~-37 minecraft:polished_blackstone_bricks
 setblock ~-16 ~-10 ~-37 minecraft:polished_blackstone
 setblock ~-16 ~-10 ~-36 minecraft:polished_blackstone_bricks
@@ -475,39 +523,56 @@ setblock ~-16 ~-10 ~-34 minecraft:polished_blackstone_bricks
 fill ~-16 ~-10 ~-33 ~-15 ~-10 ~-33 minecraft:polished_blackstone_bricks
 setblock ~-12 ~-10 ~-33 minecraft:polished_blackstone
 setblock ~-13 ~-10 ~-33 minecraft:polished_blackstone_bricks
+setblock ~-6 ~-9 ~-56 minecraft:cracked_nether_bricks
+setblock ~-7 ~-9 ~-56 minecraft:nether_bricks
+setblock ~3 ~-9 ~-56 minecraft:nether_bricks
+setblock ~2 ~-9 ~-56 minecraft:polished_blackstone_bricks
+setblock ~5 ~-9 ~-56 minecraft:cracked_polished_blackstone_bricks
+setblock ~-10 ~-9 ~-56 minecraft:cracked_polished_blackstone_bricks
+setblock ~-18 ~-9 ~-52 minecraft:polished_blackstone_bricks
+setblock ~5 ~-9 ~-41 minecraft:cracked_polished_blackstone_bricks
+setblock ~5 ~-7 ~-41 minecraft:cracked_polished_blackstone_bricks
 setblock ~-16 ~-9 ~-37 minecraft:polished_blackstone_bricks
 setblock ~-14 ~-9 ~-33 minecraft:cracked_polished_blackstone_bricks
 setblock ~-12 ~-9 ~-33 minecraft:polished_blackstone_bricks
-setblock ~-1 ~-8 ~-56 minecraft:polished_basalt
-fill ~-24 ~-8 ~-44 ~-24 ~-7 ~-42 minecraft:warped_wart_block
-setblock ~0 ~-8 ~-34 minecraft:polished_basalt
-fill ~-15 ~-7 ~-55 ~-13 ~-6 ~-55 minecraft:warped_wart_block
-fill ~-16 ~-7 ~-54 ~-14 ~-7 ~-54 minecraft:warped_wart_block
-setblock ~-12 ~-7 ~-54 minecraft:warped_wart_block
-setblock ~-13 ~-7 ~-54 minecraft:shroomlight
-fill ~-13 ~-7 ~-53 ~-12 ~-7 ~-52 minecraft:warped_wart_block
-fill ~-16 ~-7 ~-53 ~-15 ~-7 ~-52 minecraft:warped_wart_block
-setblock ~-14 ~-7 ~-52 minecraft:shroomlight
-fill ~-15 ~-7 ~-51 ~-13 ~-6 ~-51 minecraft:warped_wart_block
-fill ~-5 ~-7 ~-48 ~-3 ~-6 ~-48 minecraft:warped_wart_block
-setblock ~-5 ~-7 ~-47 minecraft:shroomlight
-setblock ~-6 ~-7 ~-47 minecraft:warped_wart_block
-fill ~-4 ~-7 ~-47 ~-2 ~-7 ~-47 minecraft:warped_wart_block
-fill ~-6 ~-7 ~-46 ~-5 ~-7 ~-46 minecraft:warped_wart_block
-fill ~-3 ~-7 ~-46 ~-2 ~-7 ~-46 minecraft:warped_wart_block
-setblock ~-5 ~-7 ~-45 minecraft:shroomlight
-setblock ~-6 ~-7 ~-45 minecraft:warped_wart_block
-fill ~-4 ~-7 ~-45 ~-2 ~-7 ~-45 minecraft:warped_wart_block
-fill ~-5 ~-7 ~-44 ~-3 ~-6 ~-44 minecraft:warped_wart_block
-fill ~-16 ~-6 ~-54 ~-12 ~-6 ~-52 minecraft:warped_wart_block
-fill ~-6 ~-6 ~-47 ~-2 ~-6 ~-45 minecraft:warped_wart_block
-setblock ~6 ~-5 ~-56 minecraft:polished_basalt
-fill ~-15 ~-5 ~-54 ~-13 ~-5 ~-52 minecraft:warped_wart_block
-fill ~-5 ~-5 ~-47 ~-3 ~-5 ~-45 minecraft:warped_wart_block
-fill ~-24 ~-4 ~-56 ~-23 ~-4 ~-56 minecraft:warped_wart_block
-setblock ~-24 ~-4 ~-55 minecraft:shroomlight
-setblock ~-23 ~-4 ~-55 minecraft:warped_wart_block
-fill ~-24 ~-4 ~-54 ~-23 ~-4 ~-54 minecraft:warped_wart_block
-fill ~-24 ~-4 ~-53 ~-24 ~-3 ~-53 minecraft:warped_wart_block
-fill ~-24 ~-3 ~-56 ~-23 ~-3 ~-54 minecraft:warped_wart_block
-fill ~-24 ~-2 ~-56 ~-24 ~-2 ~-54 minecraft:warped_wart_block
+setblock ~-24 ~-8 ~-52 minecraft:cracked_polished_blackstone_bricks
+fill ~4 ~-8 ~-43 ~5 ~-8 ~-43 minecraft:chiseled_polished_blackstone
+fill ~5 ~-8 ~-42 ~5 ~-8 ~-40 minecraft:chiseled_polished_blackstone
+fill ~1 ~-8 ~-43 ~1 ~-8 ~-39 minecraft:chiseled_polished_blackstone
+fill ~3 ~-8 ~-39 ~5 ~-8 ~-39 minecraft:chiseled_polished_blackstone
+setblock ~-19 ~-7 ~-52 minecraft:cracked_nether_bricks
+setblock ~-23 ~-7 ~-52 minecraft:cracked_polished_blackstone_bricks
+setblock ~-21 ~-7 ~-52 minecraft:polished_blackstone_bricks
+setblock ~-18 ~-7 ~-52 minecraft:chiseled_polished_blackstone
+setblock ~-20 ~-7 ~-52 minecraft:nether_bricks
+setblock ~-22 ~-7 ~-52 minecraft:nether_bricks
+setblock ~-24 ~-7 ~-52 minecraft:chiseled_polished_blackstone
+fill ~-9 ~-7 ~-45 ~-7 ~-6 ~-45 minecraft:warped_wart_block
+fill ~-10 ~-7 ~-44 ~-6 ~-7 ~-44 minecraft:warped_wart_block
+fill ~-10 ~-7 ~-43 ~-9 ~-7 ~-43 minecraft:warped_wart_block
+fill ~-7 ~-7 ~-43 ~-7 ~-7 ~-42 minecraft:shroomlight
+fill ~-6 ~-7 ~-43 ~-6 ~-7 ~-42 minecraft:warped_wart_block
+fill ~-10 ~-7 ~-42 ~-8 ~-7 ~-42 minecraft:warped_wart_block
+fill ~-9 ~-7 ~-41 ~-7 ~-6 ~-41 minecraft:warped_wart_block
+fill ~-20 ~-6 ~-48 ~-18 ~-5 ~-48 minecraft:warped_wart_block
+fill ~-21 ~-6 ~-47 ~-17 ~-6 ~-47 minecraft:warped_wart_block
+setblock ~-17 ~-6 ~-46 minecraft:warped_wart_block
+setblock ~-18 ~-6 ~-46 minecraft:shroomlight
+fill ~-21 ~-6 ~-46 ~-20 ~-6 ~-46 minecraft:warped_wart_block
+fill ~-21 ~-6 ~-45 ~-17 ~-6 ~-45 minecraft:warped_wart_block
+fill ~-20 ~-6 ~-44 ~-18 ~-5 ~-44 minecraft:warped_wart_block
+fill ~-10 ~-6 ~-44 ~-6 ~-6 ~-42 minecraft:warped_wart_block
+fill ~-7 ~-6 ~-36 ~-5 ~-5 ~-36 minecraft:warped_wart_block
+fill ~-8 ~-6 ~-35 ~-4 ~-6 ~-35 minecraft:warped_wart_block
+setblock ~-7 ~-6 ~-34 minecraft:shroomlight
+setblock ~-4 ~-6 ~-34 minecraft:warped_wart_block
+setblock ~-8 ~-6 ~-34 minecraft:warped_wart_block
+setblock ~-5 ~-6 ~-34 minecraft:shroomlight
+fill ~-8 ~-6 ~-33 ~-4 ~-6 ~-33 minecraft:warped_wart_block
+fill ~-7 ~-6 ~-32 ~-5 ~-5 ~-32 minecraft:warped_wart_block
+fill ~-21 ~-5 ~-47 ~-17 ~-5 ~-45 minecraft:warped_wart_block
+fill ~-9 ~-5 ~-44 ~-7 ~-5 ~-42 minecraft:warped_wart_block
+fill ~-8 ~-5 ~-35 ~-4 ~-5 ~-33 minecraft:warped_wart_block
+fill ~-20 ~-4 ~-47 ~-18 ~-4 ~-45 minecraft:warped_wart_block
+fill ~-7 ~-4 ~-35 ~-5 ~-4 ~-33 minecraft:warped_wart_block
+fill ~2 ~-1 ~-46 ~3 ~-1 ~-45 minecraft:polished_basalt

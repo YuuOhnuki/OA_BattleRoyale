@@ -177,13 +177,105 @@ for (x,z) in huts:
                 put(x+a,YG+1,z+b,'minecraft:air')
     put(x,YG+1,z,CHEST('south' if side[0]=='z' and side[1]>0 else ('north' if side[0]=='z' else ('east' if side[1]>0 else 'west')).replace('east','west') if False else 'south'))
     chests.append((x,YG+1,z))
+# --- 1.9.111: 建築物・障害物の追加（既存の配置を変えないよう別の乱数列を使う） ---
+# 配置順: 小屋の後・植生/鉱石の前（植生と鉱石が避ける）。
+# 方針: 高さは最大5。内部に階段や足場を作らず、ぴちぴち等で登って一方的に有利になる場所を作らない。
+# 建築物どうし・既存構造物との間は5ブロック以上あけ、通路を確保する。チェスト・鉱石の数は変えない。
+rng2=np.random.default_rng(SEED+7)
+RB='minecraft:red_nether_bricks'; NBk='minecraft:nether_bricks'; CNB='minecraft:cracked_nether_bricks'
+def mat(x,y,z,b):
+    L={2:[RB,NBk,CNB,PB,NBk],3:[NBk,CNB,PB,BB,NBk],1:[PB,BB,CPB,NBk,PB]}.get(b,[PB,BB,CPB,PB,BB,CNB])
+    return L[(x*7+y*3+z*5)%len(L)]
+spu=np.zeros((N,N),bool)   # 建築物どうしの間隔用（植生には影響しない）
+def smark(x,z,rad):
+    spu[x+OFF-rad:x+OFF+rad+1,z+OFF-rad:z+OFF+rad+1]=True
+OKG=[0]+[pid[k] for k in ('minecraft:crimson_roots','minecraft:warped_roots') if k in pid]
+def free(x,z,rad):
+    r=math.hypot(x,z)
+    if r<38 or r>108: return False
+    xa,xb,za,zb=x+OFF-rad,x+OFF+rad+1,z+OFF-rad,z+OFF+rad+1
+    if used[xa:xb,za:zb].any() or spu[xa:xb,za:zb].any() or (surf[xa:xb,za:zb]!=YG).any() or (~np.isin(g[xa:xb,za:zb,YG+1-Y0],OKG)).any(): return False
+    return True
+def place_many(count,half,builder,tries=6000,margin=2):
+    n=0;t=0;rad=half+margin
+    while n<count and t<tries:
+        t+=1
+        x=int(rng2.integers(-108,109)); z=int(rng2.integers(-108,109))
+        if not free(x,z,rad): continue
+        builder(x,z); smark(x,z,rad); mark(x,z,half); n+=1
+    print('placed',builder.__name__,n,'/',count)
+    assert n>=count,(builder.__name__,n,count)
+    return n
+def bastion(x,z):
+    b=int(BIO[x+OFF,z+OFF]); Hh=6; doors=set(int(v) for v in rng2.permutation(4)[:2])
+    for a in range(-Hh,Hh+1):
+        for c in range(-Hh,Hh+1):
+            put(x+a,YG,z+c,mat(x+a,YG,z+c,b) if (a+c)%2==0 else NBk)
+            if max(abs(a),abs(c))!=Hh: continue
+            door=(0 in doors and a==Hh and abs(c)<=1) or (1 in doors and a==-Hh and abs(c)<=1) or (2 in doors and c==Hh and abs(a)<=1) or (3 in doors and c==-Hh and abs(a)<=1)
+            corner=abs(a)==Hh and abs(c)==Hh
+            for y in range(YG+1,YG+(6 if corner else 5)):
+                if door and y<=YG+3: continue
+                if not corner and y>=YG+3 and rng2.random()<0.25: continue
+                if not corner and y==YG+2 and not door and rng2.random()<0.06: continue
+                put(x+a,y,z+c,CB if (corner and y==YG+5) else mat(x+a,y,z+c,b))
+    for (a,c) in ((-3,-3),(3,-3),(-3,3),(3,3)):
+        for y in range(YG+1,YG+4): put(x+a,y,z+c,mat(x+a,y,z+c,b))
+    put(x,YG+1,z,GB)
+def tower(x,z):
+    b=int(BIO[x+OFF,z+OFF]); door=int(rng2.integers(0,4))
+    for a in range(-2,3):
+        for c in range(-2,3):
+            put(x+a,YG,z+c,PB)
+            if max(abs(a),abs(c))!=2: continue
+            isdoor=(door==0 and a==2 and c==0) or (door==1 and a==-2 and c==0) or (door==2 and c==2 and a==0) or (door==3 and c==-2 and a==0)
+            window=(a==0 or c==0) and not isdoor
+            for y in range(YG+1,YG+6):
+                if isdoor and y<=YG+2: continue
+                if window and y==YG+3: continue
+                if y==YG+5 and rng2.random()<0.5: continue
+                if y==YG+4 and rng2.random()<0.2: continue
+                put(x+a,y,z+c,CB if y==YG+4 else mat(x+a,y,z+c,b))
+def wallseg(count):
+    n=0;t=0
+    while n<count and t<6000:
+        t+=1
+        x=int(rng2.integers(-108,109)); z=int(rng2.integers(-108,109)); L=int(rng2.integers(9,18)); ax=int(rng2.integers(0,2))
+        pts=[(x+(i if ax==0 else 0),z+(i if ax==1 else 0)) for i in range(L)]
+        if not all(free(px,pz,2) for px,pz in pts[::3]+[pts[-1]]): continue
+        b=int(BIO[x+OFF,z+OFF])
+        for i,(px,pz) in enumerate(pts):
+            if rng2.random()<0.1 and 0<i<L-1: continue
+            h=int(rng2.integers(2,4)) if i%4 else 3
+            for y in range(YG+1,YG+1+h): put(px,y,pz,mat(px,y,pz,b))
+        for px,pz in pts[::3]+[pts[-1]]: smark(px,pz,2); mark(px,pz,0)
+        n+=1
+    print('placed wallseg',n,'/',count)
+    assert n>=count,('wallseg',n)
+    return n
+def arch(x,z):
+    b=int(BIO[x+OFF,z+OFF]); ax=int(rng2.integers(0,2))
+    for a in range(-3,4):
+        px,pz=(x+a,z) if ax==0 else (x,z+a)
+        if abs(a)==3:
+            for y in range(YG+1,YG+6): put(px,y,pz,CB if y==YG+5 else mat(px,y,pz,b))
+        elif rng2.random()<0.88: put(px,YG+5,pz,mat(px,YG+5,pz,b))
+def boulder(x,z):
+    b=int(BIO[x+OFF,z+OFF]); Lm=['minecraft:blackstone','minecraft:basalt','minecraft:smooth_basalt','minecraft:netherrack'] if b!=1 else ['minecraft:basalt','minecraft:blackstone','minecraft:soul_soil']
+    for _ in range(int(rng2.integers(4,8))):
+        ox=int(rng2.integers(-1,2)); oz=int(rng2.integers(-1,2)); rr=int(rng2.integers(1,3)); h=int(rng2.integers(1,4))
+        for a in range(-rr,rr+1):
+            for c in range(-rr,rr+1):
+                if a*a+c*c>rr*rr+1: continue
+                for y in range(YG+1,YG+1+h): put(x+ox+a,y,z+oz+c,Lm[int(rng2.integers(0,len(Lm)))])
+EXTRA={'bastions':place_many(8,6,bastion),'towers':place_many(14,2,tower),'walls':wallseg(28),'arches':place_many(14,3,arch),'boulders':place_many(40,3,boulder,margin=1)}
 # --- 植生・柱 ---
 cells=[(x,z) for x in range(-118,119,7) for z in range(-118,119,7)]
 trees=[];spires=[]
 for (bx,bz) in cells:
     x=bx+int(rng.integers(-2,3)); z=bz+int(rng.integers(-2,3)); r=math.hypot(x,z)
     if r<32 or r>114: continue
-    if used[x+OFF-3:x+OFF+4,z+OFF-3:z+OFF+4].any(): continue
+    if used[x+OFF-2:x+OFF+3,z+OFF-2:z+OFF+3].any(): continue
     b=int(BIO[x+OFF,z+OFF]); s=int(surf[x+OFF,z+OFF])
     if rng.random()<0.45: continue
     if b in (2,3):
@@ -264,12 +356,41 @@ for k in range(40):
     assert best,k
     sp.append(best)
 assert len(set(sp))==40
+# --- 到達性の検算（歩いて行けるか） ---
+from collections import deque
+SOLID=lambda b: b not in ('minecraft:air','minecraft:lava') and 'roots' not in b and 'lantern' not in b
+BASE_OK=lambda b: SOLID(b) and 'fence' not in b
+sol=np.zeros((N,N,NY),bool); base=np.zeros((N,N,NY),bool)
+for i,b in enumerate(pal): sol[g==i]=SOLID(b); base[g==i]=BASE_OK(b)
+def stand(xi,zi):
+    for y in (YG+1,YG,YG-1):
+        yi=y-Y0
+        if base[xi,zi,yi] and not sol[xi,zi,yi+1] and not sol[xi,zi,yi+2] and g[xi,zi,yi+1]!=pid.get('minecraft:lava',-1): return y
+    return None
+st={}
+for xi in range(N):
+    for zi in range(N):
+        v=stand(xi,zi)
+        if v is not None: st[(xi,zi)]=v
+start=min(st,key=lambda k:(k[0]-OFF-40)**2+(k[1]-OFF)**2); seen={start}; q=deque([start])
+while q:
+    cx,cz=q.popleft()
+    for dx,dz in ((1,0),(-1,0),(0,1),(0,-1)):
+        k=(cx+dx,cz+dz)
+        if k in st and k not in seen and abs(st[k]-st[(cx,cz)])<=1: seen.add(k); q.append(k)
+def reach(x,z): return any(((x+OFF+dx,z+OFF+dz) in seen) for dx,dz in ((0,0),(1,0),(-1,0),(0,1),(0,-1)))
+bad_sp=[p for p in sp if (p[0]+OFF,p[2]+OFF) not in seen]
+bad_ch=[c for c in chests+riches if not reach(c[0],c[2])]
+bad_or=[o for o in ores if not reach(o[0],o[2])]
+maxr=max(math.hypot(a-OFF,b-OFF) for a,b in seen)
+print("reach",len(seen),"max_r",round(maxr,1),"bad spawn/chest/ore",len(bad_sp),len(bad_ch),len(bad_or))
+assert not bad_sp and not bad_ch and not bad_or and maxr<123
 # --- 検算 ---
 assert len(chests)==59 and len(riches)==6 and len(ores)==108
 assert not (g[:,:,-1]!=0).any() or True
 # 保存
 np.savez_compressed(f"{ROOT}/source/map_nether_target.npz",grid=g,palette=np.array(pal))
-json.dump({"size":[N,N],"y_range":[Y0,0],"ground_y":YG,"chests":chests,"rich":riches,"ores":ores,"huts":huts,"trees":len(trees),"spires":len(spires),"spawn_points":sp},open(f"{ROOT}/MAP_NETHER_MANIFEST.json","w"),ensure_ascii=False)
+json.dump({"size":[N,N],"y_range":[Y0,0],"ground_y":YG,"chests":chests,"rich":riches,"ores":ores,"huts":huts,"extras":EXTRA,"trees":len(trees),"spires":len(spires),"spawn_points":sp},open(f"{ROOT}/MAP_NETHER_MANIFEST.json","w"),ensure_ascii=False)
 # --- 関数出力 ---
 os.makedirs(OUT,exist_ok=True)
 for d in ('preload','wait','release','apply','place'): os.makedirs(f"{OUT}/{d}",exist_ok=True)
@@ -372,4 +493,4 @@ for n in range(100):
 pts=",".join(f"{{x:{x}.5d,y:{y+80}.0d,z:{z}.5d}}" for x,y,z in sp)
 open(f"{ROOT}/data/oa/function/maps/nether/post.mcfunction",'w',encoding='utf8').write(
  f"# ネザー会場の生成完了後に呼ばれる（開始地点の登録）\ndata modify storage oa:spawn_points dim set value \"oa:br_nether\"\ndata modify storage oa:spawn_points points set value [{pts}]\ntellraw @a[tag=br.admin] {{text:\"ネザー会場の開始地点を40か所登録しました。\",color:\"green\"}}\n")
-print(json.dumps({"palette":len(pal),"chests":len(chests),"rich":len(riches),"ores":len(ores),"huts":len(huts),"trees":len(trees),"spires":len(spires),"spawn":len(sp)}))
+print(json.dumps({"extras":EXTRA,"palette":len(pal),"chests":len(chests),"rich":len(riches),"ores":len(ores),"huts":len(huts),"trees":len(trees),"spires":len(spires),"spawn":len(sp)}))

@@ -4,11 +4,12 @@ execute positioned ~104 ~-20 ~-24 run kill @e[type=minecraft:marker,tag=br.chest
 execute positioned ~104 ~-20 ~-24 run kill @e[type=minecraft:marker,tag=br.ore,dx=31,dy=20,dz=31]
 scoreboard players set #stage oa.map2 2
 scoreboard players set #expectedc oa.map2 0
-scoreboard players set #expectedo oa.map2 0
+scoreboard players set #expectedo oa.map2 1
 scoreboard players set #localc oa.map2 0
 scoreboard players set #localo oa.map2 0
+execute positioned ~109 ~-11 ~-1 if block ~ ~ ~ minecraft:nether_gold_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_6
 execute unless score #localc oa.map2 matches 0 run return run function oa:map/internal/job/failed
-execute unless score #localo oa.map2 matches 0 run return run function oa:map/internal/job/failed
+execute unless score #localo oa.map2 matches 1 run return run function oa:map/internal/job/failed
 scoreboard players operation #chests oa.map2 += #localc oa.map2
 scoreboard players operation #ores oa.map2 += #localo oa.map2
 function oa:maps/nether/tiles/release/48

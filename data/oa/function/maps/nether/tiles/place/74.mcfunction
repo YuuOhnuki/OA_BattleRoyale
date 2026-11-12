@@ -161,6 +161,7 @@ setblock ~1 ~-12 ~87 minecraft:soul_soil
 setblock ~4 ~-12 ~87 minecraft:basalt
 setblock ~7 ~-12 ~87 minecraft:basalt
 setblock ~-10 ~-12 ~87 minecraft:netherrack
+setblock ~-10 ~-10 ~87 minecraft:netherrack
 setblock ~2 ~-12 ~87 minecraft:soul_sand
 fill ~-24 ~-12 ~88 ~-17 ~-12 ~88 minecraft:crimson_nylium
 setblock ~-1 ~-12 ~88 minecraft:netherrack
@@ -206,7 +207,7 @@ fill ~-13 ~-12 ~91 ~0 ~-12 ~91 minecraft:crimson_nylium
 setblock ~2 ~-12 ~91 minecraft:soul_sand
 setblock ~1 ~-12 ~91 minecraft:netherrack
 fill ~-14 ~-12 ~91 ~-14 ~-12 ~92 minecraft:netherrack
-setblock ~0 ~-12 ~92 minecraft:netherrack
+fill ~0 ~-12 ~92 ~0 ~-11 ~92 minecraft:netherrack
 fill ~2 ~-12 ~92 ~4 ~-12 ~92 minecraft:soul_soil
 setblock ~1 ~-12 ~92 minecraft:crimson_nylium
 fill ~-13 ~-12 ~92 ~-8 ~-12 ~92 minecraft:crimson_nylium
@@ -256,7 +257,7 @@ fill ~3 ~-12 ~96 ~7 ~-12 ~96 minecraft:soul_soil
 setblock ~-9 ~-12 ~96 minecraft:netherrack
 setblock ~-11 ~-12 ~96 minecraft:nether_wart_block
 setblock ~2 ~-12 ~96 minecraft:netherrack
-setblock ~-1 ~-12 ~96 minecraft:netherrack
+fill ~-1 ~-12 ~96 ~-1 ~-10 ~96 minecraft:netherrack
 fill ~-24 ~-12 ~96 ~-22 ~-12 ~96 minecraft:netherrack
 setblock ~-17 ~-12 ~96 minecraft:netherrack
 setblock ~-7 ~-12 ~96 minecraft:netherrack
@@ -313,7 +314,6 @@ setblock ~3 ~-12 ~101 minecraft:netherrack
 fill ~-24 ~-12 ~101 ~-18 ~-12 ~101 minecraft:crimson_nylium
 fill ~-1 ~-12 ~101 ~2 ~-12 ~101 minecraft:crimson_nylium
 setblock ~-2 ~-12 ~101 minecraft:nether_wart_block
-setblock ~-2 ~-8 ~101 minecraft:nether_wart_block
 fill ~-16 ~-12 ~101 ~-4 ~-12 ~101 minecraft:crimson_nylium
 setblock ~-17 ~-12 ~101 minecraft:netherrack
 fill ~-3 ~-12 ~101 ~-3 ~-12 ~102 minecraft:netherrack
@@ -342,10 +342,10 @@ fill ~-3 ~-12 ~103 ~0 ~-12 ~103 minecraft:crimson_nylium
 setblock ~1 ~-12 ~103 minecraft:nether_wart_block
 setblock ~4 ~-11 ~76 minecraft:polished_blackstone
 setblock ~4 ~-9 ~76 minecraft:polished_blackstone
-setblock ~-14 ~-11 ~76 minecraft:nether_quartz_ore
 fill ~5 ~-11 ~76 ~5 ~-9 ~76 minecraft:cracked_polished_blackstone_bricks
 fill ~2 ~-11 ~76 ~2 ~-9 ~76 minecraft:cracked_polished_blackstone_bricks
 fill ~1 ~-11 ~76 ~1 ~-11 ~77 minecraft:polished_blackstone_bricks
+setblock ~-10 ~-11 ~77 minecraft:cracked_nether_bricks
 setblock ~5 ~-11 ~77 minecraft:polished_blackstone
 setblock ~5 ~-9 ~77 minecraft:polished_blackstone
 setblock ~3 ~-11 ~78 minecraft:chest[facing=south,type=single,waterlogged=false]
@@ -355,85 +355,183 @@ setblock ~5 ~-9 ~78 minecraft:polished_blackstone_bricks
 setblock ~1 ~-11 ~79 minecraft:polished_blackstone
 setblock ~1 ~-9 ~79 minecraft:polished_blackstone
 fill ~5 ~-11 ~79 ~5 ~-9 ~79 minecraft:cracked_polished_blackstone_bricks
+setblock ~1 ~-11 ~80 minecraft:polished_blackstone_bricks
 setblock ~2 ~-11 ~80 minecraft:polished_blackstone
 fill ~3 ~-11 ~80 ~3 ~-9 ~80 minecraft:cracked_polished_blackstone_bricks
 fill ~4 ~-11 ~80 ~5 ~-11 ~80 minecraft:polished_blackstone_bricks
 fill ~4 ~-9 ~80 ~5 ~-9 ~80 minecraft:polished_blackstone_bricks
-fill ~-18 ~-11 ~80 ~-18 ~-8 ~80 minecraft:crimson_stem
-setblock ~1 ~-11 ~80 minecraft:polished_blackstone_bricks
-setblock ~-24 ~-11 ~81 minecraft:crimson_roots
-fill ~-9 ~-11 ~82 ~-9 ~-11 ~83 minecraft:crimson_roots
-setblock ~-19 ~-11 ~84 minecraft:crimson_roots
-setblock ~2 ~-11 ~86 minecraft:nether_quartz_ore
-setblock ~-10 ~-11 ~86 minecraft:crimson_roots
-setblock ~-22 ~-11 ~88 minecraft:nether_gold_ore
-setblock ~-9 ~-11 ~88 minecraft:crimson_roots
-setblock ~-12 ~-11 ~89 minecraft:nether_quartz_ore
-setblock ~-17 ~-11 ~90 minecraft:crimson_roots
+setblock ~-9 ~-11 ~82 minecraft:blackstone
+fill ~-8 ~-11 ~82 ~-7 ~-11 ~82 minecraft:smooth_basalt
+fill ~-8 ~-11 ~83 ~-5 ~-11 ~83 minecraft:blackstone
+setblock ~-10 ~-11 ~83 minecraft:netherrack
+setblock ~-9 ~-11 ~83 minecraft:basalt
+fill ~-19 ~-11 ~83 ~-19 ~-11 ~84 minecraft:crimson_roots
+fill ~-15 ~-11 ~84 ~-15 ~-4 ~84 minecraft:crimson_stem
+fill ~-5 ~-11 ~84 ~-5 ~-10 ~84 minecraft:netherrack
+fill ~-8 ~-11 ~84 ~-7 ~-11 ~84 minecraft:netherrack
+fill ~-10 ~-11 ~84 ~-9 ~-11 ~85 minecraft:basalt
+fill ~-6 ~-11 ~84 ~-6 ~-11 ~85 minecraft:smooth_basalt
+fill ~-8 ~-11 ~85 ~-8 ~-10 ~85 minecraft:blackstone
+fill ~-5 ~-11 ~85 ~-5 ~-10 ~85 minecraft:basalt
+fill ~-9 ~-11 ~86 ~-8 ~-11 ~86 minecraft:basalt
+fill ~-6 ~-11 ~86 ~-5 ~-11 ~86 minecraft:blackstone
+setblock ~-10 ~-11 ~86 minecraft:netherrack
+fill ~-7 ~-11 ~85 ~-7 ~-11 ~87 minecraft:netherrack
+setblock ~-10 ~-11 ~87 minecraft:basalt
+fill ~-6 ~-11 ~87 ~-6 ~-9 ~87 minecraft:smooth_basalt
+fill ~-9 ~-11 ~87 ~-8 ~-11 ~87 minecraft:blackstone
+setblock ~-7 ~-11 ~88 minecraft:smooth_basalt
+setblock ~-9 ~-11 ~88 minecraft:smooth_basalt
+setblock ~-8 ~-11 ~88 minecraft:netherrack
 setblock ~-23 ~-11 ~90 minecraft:crimson_roots
+setblock ~-17 ~-11 ~90 minecraft:crimson_roots
+setblock ~4 ~-11 ~91 minecraft:nether_quartz_ore
+setblock ~-2 ~-11 ~92 minecraft:smooth_basalt
+setblock ~-3 ~-11 ~92 minecraft:blackstone
+setblock ~-1 ~-11 ~92 minecraft:blackstone
 setblock ~-7 ~-11 ~92 minecraft:crimson_roots
-setblock ~4 ~-11 ~93 minecraft:nether_gold_ore
-fill ~-13 ~-11 ~93 ~-13 ~-4 ~93 minecraft:crimson_stem
-setblock ~1 ~-11 ~93 minecraft:crimson_roots
-setblock ~-17 ~-11 ~95 minecraft:nether_quartz_ore
+fill ~-4 ~-11 ~92 ~-4 ~-11 ~93 minecraft:basalt
+fill ~-1 ~-11 ~93 ~1 ~-11 ~93 minecraft:basalt
+fill ~-3 ~-11 ~93 ~-2 ~-11 ~93 minecraft:smooth_basalt
+setblock ~-22 ~-11 ~94 minecraft:crimson_roots
+fill ~-2 ~-11 ~94 ~-1 ~-11 ~94 minecraft:smooth_basalt
+fill ~-11 ~-11 ~94 ~-11 ~-4 ~94 minecraft:crimson_stem
+setblock ~1 ~-11 ~94 minecraft:netherrack
+setblock ~0 ~-11 ~94 minecraft:blackstone
+fill ~-4 ~-11 ~94 ~-3 ~-11 ~95 minecraft:blackstone
+setblock ~-2 ~-11 ~95 minecraft:smooth_basalt
+setblock ~-15 ~-11 ~95 minecraft:crimson_roots
+setblock ~0 ~-11 ~95 minecraft:netherrack
+setblock ~1 ~-11 ~95 minecraft:blackstone
+fill ~-1 ~-11 ~95 ~-1 ~-10 ~95 minecraft:basalt
+setblock ~0 ~-11 ~96 minecraft:blackstone
+fill ~-3 ~-11 ~96 ~-2 ~-11 ~96 minecraft:basalt
+setblock ~-4 ~-11 ~96 minecraft:blackstone
+setblock ~-7 ~-11 ~97 minecraft:crimson_roots
+fill ~-3 ~-11 ~97 ~-2 ~-11 ~97 minecraft:blackstone
 setblock ~2 ~-11 ~97 minecraft:crimson_roots
-fill ~6 ~-11 ~98 ~6 ~-10 ~98 minecraft:bone_block[axis=y]
-setblock ~-13 ~-11 ~98 minecraft:crimson_roots
-setblock ~-11 ~-11 ~98 minecraft:crimson_roots
+setblock ~-1 ~-11 ~97 minecraft:basalt
 setblock ~-9 ~-11 ~98 minecraft:crimson_roots
-fill ~-4 ~-11 ~100 ~-4 ~-8 ~100 minecraft:crimson_stem
+setblock ~-11 ~-11 ~98 minecraft:crimson_roots
+setblock ~-10 ~-11 ~98 minecraft:nether_gold_ore
+setblock ~-13 ~-11 ~98 minecraft:crimson_roots
 setblock ~-22 ~-11 ~102 minecraft:crimson_roots
 setblock ~-17 ~-11 ~103 minecraft:polished_blackstone
 fill ~-15 ~-11 ~103 ~-14 ~-11 ~103 minecraft:polished_blackstone_bricks
 setblock ~-24 ~-11 ~103 minecraft:crimson_roots
-setblock ~1 ~-11 ~103 minecraft:crimson_roots
+setblock ~-4 ~-11 ~103 minecraft:basalt
+setblock ~-4 ~-9 ~103 minecraft:basalt
+setblock ~-5 ~-11 ~103 minecraft:netherrack
+setblock ~-6 ~-11 ~103 minecraft:blackstone
 setblock ~-18 ~-11 ~103 minecraft:polished_blackstone_bricks
 setblock ~1 ~-10 ~76 minecraft:polished_blackstone
 setblock ~4 ~-10 ~76 minecraft:polished_blackstone_bricks
 setblock ~1 ~-10 ~77 minecraft:polished_blackstone_bricks
+setblock ~-10 ~-10 ~77 minecraft:red_nether_bricks
 fill ~5 ~-10 ~77 ~5 ~-10 ~78 minecraft:polished_blackstone_bricks
 setblock ~1 ~-10 ~79 minecraft:polished_blackstone_bricks
 setblock ~4 ~-10 ~80 minecraft:polished_blackstone_bricks
 fill ~1 ~-10 ~80 ~2 ~-10 ~80 minecraft:polished_blackstone_bricks
 setblock ~5 ~-10 ~80 minecraft:polished_blackstone
+setblock ~-8 ~-10 ~83 minecraft:blackstone
+fill ~-7 ~-10 ~83 ~-6 ~-10 ~83 minecraft:smooth_basalt
+setblock ~-5 ~-10 ~83 minecraft:basalt
+fill ~-9 ~-10 ~84 ~-8 ~-10 ~84 minecraft:smooth_basalt
+fill ~-7 ~-10 ~84 ~-6 ~-10 ~84 minecraft:basalt
+setblock ~-10 ~-10 ~85 minecraft:smooth_basalt
+setblock ~-7 ~-10 ~85 minecraft:smooth_basalt
+setblock ~-9 ~-10 ~85 minecraft:netherrack
+setblock ~-6 ~-10 ~85 minecraft:blackstone
+fill ~-6 ~-10 ~86 ~-5 ~-10 ~86 minecraft:basalt
+fill ~-10 ~-10 ~86 ~-7 ~-10 ~86 minecraft:netherrack
+fill ~-8 ~-10 ~87 ~-7 ~-10 ~87 minecraft:netherrack
+setblock ~-9 ~-10 ~87 minecraft:smooth_basalt
+fill ~-9 ~-10 ~88 ~-7 ~-10 ~88 minecraft:blackstone
+setblock ~0 ~-10 ~92 minecraft:basalt
+fill ~-2 ~-10 ~92 ~-1 ~-10 ~92 minecraft:blackstone
+fill ~-3 ~-10 ~92 ~-3 ~-10 ~93 minecraft:basalt
+fill ~-4 ~-10 ~92 ~-4 ~-10 ~93 minecraft:blackstone
+setblock ~-2 ~-10 ~93 minecraft:smooth_basalt
+setblock ~1 ~-10 ~93 minecraft:basalt
+fill ~-1 ~-10 ~93 ~0 ~-10 ~93 minecraft:netherrack
+fill ~-1 ~-10 ~94 ~0 ~-10 ~94 minecraft:smooth_basalt
+setblock ~-2 ~-10 ~94 minecraft:blackstone
+setblock ~1 ~-10 ~94 minecraft:blackstone
+fill ~-4 ~-10 ~94 ~-3 ~-10 ~94 minecraft:basalt
+fill ~0 ~-10 ~95 ~1 ~-10 ~95 minecraft:smooth_basalt
+fill ~-4 ~-10 ~95 ~-2 ~-10 ~95 minecraft:blackstone
+setblock ~-2 ~-10 ~96 minecraft:smooth_basalt
+fill ~-4 ~-10 ~96 ~-3 ~-10 ~96 minecraft:basalt
+setblock ~0 ~-10 ~96 minecraft:smooth_basalt
+setblock ~-3 ~-10 ~97 minecraft:basalt
+fill ~-2 ~-10 ~97 ~-1 ~-10 ~97 minecraft:smooth_basalt
+setblock ~-4 ~-10 ~103 minecraft:smooth_basalt
 setblock ~-14 ~-10 ~103 minecraft:polished_blackstone
+fill ~-6 ~-10 ~103 ~-5 ~-9 ~103 minecraft:blackstone
 fill ~-18 ~-10 ~103 ~-17 ~-10 ~103 minecraft:polished_blackstone_bricks
 setblock ~-15 ~-10 ~103 minecraft:polished_blackstone_bricks
 setblock ~3 ~-9 ~76 minecraft:polished_blackstone_bricks
+setblock ~-10 ~-9 ~77 minecraft:polished_blackstone_bricks
+setblock ~-5 ~-9 ~83 minecraft:netherrack
+setblock ~-8 ~-9 ~83 minecraft:smooth_basalt
+setblock ~-6 ~-9 ~83 minecraft:smooth_basalt
+setblock ~-7 ~-9 ~83 minecraft:netherrack
+setblock ~-5 ~-9 ~84 minecraft:smooth_basalt
+setblock ~-6 ~-9 ~84 minecraft:netherrack
+fill ~-9 ~-9 ~84 ~-7 ~-9 ~84 minecraft:blackstone
+setblock ~-5 ~-9 ~85 minecraft:blackstone
+fill ~-9 ~-9 ~85 ~-8 ~-9 ~86 minecraft:basalt
+fill ~-7 ~-9 ~85 ~-6 ~-9 ~86 minecraft:smooth_basalt
+setblock ~-5 ~-9 ~86 minecraft:netherrack
+setblock ~-7 ~-9 ~87 minecraft:blackstone
+setblock ~-8 ~-9 ~87 minecraft:basalt
+fill ~-1 ~-9 ~92 ~0 ~-9 ~92 minecraft:basalt
+setblock ~-4 ~-9 ~92 minecraft:netherrack
+setblock ~-3 ~-9 ~92 minecraft:smooth_basalt
+fill ~-2 ~-9 ~92 ~-2 ~-9 ~93 minecraft:blackstone
+setblock ~0 ~-9 ~93 minecraft:netherrack
+setblock ~-3 ~-9 ~93 minecraft:netherrack
+setblock ~1 ~-9 ~93 minecraft:blackstone
+fill ~-1 ~-9 ~93 ~-1 ~-9 ~94 minecraft:smooth_basalt
+fill ~-4 ~-9 ~93 ~-4 ~-9 ~94 minecraft:basalt
+fill ~0 ~-9 ~94 ~1 ~-9 ~94 minecraft:basalt
+setblock ~-3 ~-9 ~94 minecraft:smooth_basalt
+fill ~-2 ~-9 ~94 ~-2 ~-9 ~95 minecraft:netherrack
+setblock ~-4 ~-9 ~95 minecraft:netherrack
+setblock ~-3 ~-9 ~95 minecraft:blackstone
+setblock ~1 ~-9 ~95 minecraft:basalt
+fill ~-1 ~-9 ~95 ~0 ~-9 ~95 minecraft:blackstone
+fill ~-4 ~-9 ~96 ~-3 ~-9 ~96 minecraft:blackstone
+setblock ~0 ~-9 ~96 minecraft:netherrack
+fill ~-2 ~-9 ~96 ~-1 ~-9 ~96 minecraft:basalt
+fill ~-3 ~-9 ~97 ~-2 ~-9 ~97 minecraft:smooth_basalt
+setblock ~-1 ~-9 ~97 minecraft:blackstone
 setblock ~-14 ~-9 ~103 minecraft:polished_blackstone_bricks
 setblock ~-16 ~-9 ~103 minecraft:cracked_polished_blackstone_bricks
-fill ~-19 ~-8 ~78 ~-17 ~-7 ~78 minecraft:nether_wart_block
-fill ~-20 ~-8 ~79 ~-19 ~-8 ~79 minecraft:nether_wart_block
-setblock ~-18 ~-8 ~79 minecraft:shroomlight
-fill ~-17 ~-8 ~79 ~-16 ~-8 ~80 minecraft:nether_wart_block
-setblock ~-19 ~-8 ~80 minecraft:shroomlight
-setblock ~-20 ~-8 ~80 minecraft:nether_wart_block
-fill ~-20 ~-8 ~81 ~-16 ~-8 ~81 minecraft:nether_wart_block
-fill ~-19 ~-8 ~82 ~-17 ~-7 ~82 minecraft:nether_wart_block
-fill ~-5 ~-8 ~98 ~-3 ~-7 ~98 minecraft:nether_wart_block
-fill ~-6 ~-8 ~99 ~-2 ~-8 ~99 minecraft:nether_wart_block
-fill ~-3 ~-8 ~100 ~-2 ~-8 ~100 minecraft:nether_wart_block
-fill ~-6 ~-8 ~100 ~-5 ~-8 ~101 minecraft:nether_wart_block
-fill ~-4 ~-8 ~101 ~-3 ~-8 ~101 minecraft:shroomlight
-fill ~-5 ~-8 ~102 ~-3 ~-7 ~102 minecraft:nether_wart_block
-fill ~-20 ~-7 ~79 ~-16 ~-7 ~81 minecraft:nether_wart_block
-fill ~-24 ~-7 ~92 ~-24 ~-6 ~92 minecraft:nether_wart_block
-fill ~-24 ~-7 ~93 ~-23 ~-7 ~93 minecraft:nether_wart_block
-setblock ~-23 ~-7 ~94 minecraft:nether_wart_block
-setblock ~-24 ~-7 ~94 minecraft:shroomlight
-fill ~-24 ~-7 ~95 ~-23 ~-7 ~95 minecraft:nether_wart_block
-fill ~-24 ~-7 ~96 ~-24 ~-6 ~96 minecraft:nether_wart_block
-fill ~-6 ~-7 ~99 ~-2 ~-7 ~101 minecraft:nether_wart_block
-fill ~-14 ~-6 ~72 ~-12 ~-5 ~72 minecraft:nether_wart_block
-fill ~-19 ~-6 ~79 ~-17 ~-6 ~81 minecraft:nether_wart_block
-fill ~-24 ~-6 ~93 ~-23 ~-6 ~95 minecraft:nether_wart_block
-fill ~-5 ~-6 ~99 ~-3 ~-6 ~101 minecraft:nether_wart_block
-fill ~-24 ~-5 ~93 ~-24 ~-5 ~95 minecraft:nether_wart_block
-fill ~-14 ~-4 ~91 ~-12 ~-3 ~91 minecraft:nether_wart_block
-fill ~-15 ~-4 ~92 ~-11 ~-4 ~92 minecraft:nether_wart_block
-fill ~-15 ~-4 ~93 ~-14 ~-4 ~94 minecraft:nether_wart_block
-fill ~-12 ~-4 ~93 ~-11 ~-4 ~94 minecraft:nether_wart_block
-setblock ~-13 ~-4 ~94 minecraft:shroomlight
-fill ~-14 ~-4 ~95 ~-12 ~-3 ~95 minecraft:nether_wart_block
-fill ~-15 ~-3 ~92 ~-11 ~-3 ~94 minecraft:nether_wart_block
-fill ~-14 ~-2 ~92 ~-12 ~-2 ~94 minecraft:nether_wart_block
+setblock ~-10 ~-8 ~77 minecraft:nether_bricks
+fill ~-10 ~-7 ~72 ~-10 ~-7 ~76 minecraft:nether_bricks
+setblock ~-10 ~-7 ~77 minecraft:chiseled_polished_blackstone
+fill ~-24 ~-6 ~96 ~-24 ~-5 ~98 minecraft:nether_wart_block
+fill ~-24 ~-4 ~79 ~-24 ~-3 ~81 minecraft:nether_wart_block
+fill ~-16 ~-4 ~82 ~-14 ~-3 ~82 minecraft:nether_wart_block
+fill ~-14 ~-4 ~83 ~-13 ~-4 ~83 minecraft:nether_wart_block
+setblock ~-15 ~-4 ~83 minecraft:shroomlight
+fill ~-17 ~-4 ~83 ~-16 ~-4 ~84 minecraft:nether_wart_block
+setblock ~-13 ~-4 ~84 minecraft:nether_wart_block
+setblock ~-14 ~-4 ~84 minecraft:shroomlight
+fill ~-17 ~-4 ~85 ~-13 ~-4 ~85 minecraft:nether_wart_block
+fill ~-16 ~-4 ~86 ~-14 ~-3 ~86 minecraft:nether_wart_block
+fill ~-12 ~-4 ~92 ~-10 ~-3 ~92 minecraft:nether_wart_block
+setblock ~-12 ~-4 ~93 minecraft:shroomlight
+setblock ~-13 ~-4 ~93 minecraft:nether_wart_block
+fill ~-11 ~-4 ~93 ~-9 ~-4 ~93 minecraft:nether_wart_block
+fill ~-13 ~-4 ~94 ~-12 ~-4 ~94 minecraft:nether_wart_block
+fill ~-10 ~-4 ~94 ~-9 ~-4 ~94 minecraft:nether_wart_block
+setblock ~-9 ~-4 ~95 minecraft:nether_wart_block
+fill ~-13 ~-4 ~95 ~-11 ~-4 ~95 minecraft:nether_wart_block
+setblock ~-10 ~-4 ~95 minecraft:shroomlight
+fill ~-12 ~-4 ~96 ~-10 ~-3 ~96 minecraft:nether_wart_block
+fill ~-17 ~-3 ~83 ~-13 ~-3 ~85 minecraft:nether_wart_block
+fill ~-13 ~-3 ~93 ~-9 ~-3 ~95 minecraft:nether_wart_block
+fill ~-16 ~-2 ~83 ~-14 ~-2 ~85 minecraft:nether_wart_block
+fill ~-12 ~-2 ~93 ~-10 ~-2 ~95 minecraft:nether_wart_block

@@ -2,6 +2,7 @@
   "values": [
     "oa:load",
     "oa:map/internal/load",
-    "jumppad:load"
+    "jumppad:load",
+    "oa:load_done"
   ]
 }
