@@ -3,7 +3,6 @@
   "branch": "main",
   "world": "world",
   "packName": "OA_BattleRoyale_auto",
-  "pollMinutes": 10,
   "applyWithoutRcon": true,
   "rollbackOnError": true,
   "retireOldPacks": true,

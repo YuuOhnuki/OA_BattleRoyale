@@ -1,7 +1,7 @@
 # サーバー自動更新（main への push で更新）
 
 `main` に push → GitHub Actions（`.github/workflows/deploy-server.yml`）→ サーバーPCの self-hosted runner → `autoupdate\update.ps1` → データパック差し替え＋RCON で `/reload`。
-外部からの接続は受けない（runner が GitHub へ取りに行く）。10分ごとのタスクは、試合中に保留した更新の再試行用。
+外部からの接続は受けない（runner が GitHub へ取りに行く）。定期実行のタスクはない。試合中に保留した更新は、ワークフローのジョブが1分ごとに再試行する（最大約3時間）。
 
 ## runner の登録
 1. GitHub の `YuuOhnuki/OA_BattleRoyale` → Settings → Actions → Runners → New self-hosted runner → Windows / x64。

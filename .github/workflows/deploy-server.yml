@@ -13,10 +13,18 @@ permissions:
 jobs:
   deploy:
     runs-on: [self-hosted, windows, oa-server]
-    timeout-minutes: 10
+    timeout-minutes: 190
     steps:
       - name: Update server datapack
         shell: powershell
         run: |
-          & "D:\MinecraftServer\oa_battle_royale\autoupdate\update.ps1"
-          if ($LASTEXITCODE -gt 0) { exit $LASTEXITCODE }
+          $u = "D:\MinecraftServer\oa_battle_royale\autoupdate\update.ps1"
+          $st = "D:\MinecraftServer\oa_battle_royale\autoupdate\state.json"
+          # 試合中などで保留になった場合は、1分ごとに再試行する（最大約3時間）
+          for ($i = 0; $i -lt 180; $i++) {
+            & $u
+            $s = $null
+            if (Test-Path $st) { $s = Get-Content -Raw -Encoding UTF8 $st | ConvertFrom-Json }
+            if (-not $s -or -not $s.pendingSha) { break }
+            Start-Sleep -Seconds 60
+          }
