@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/secret_root",
   "display": {
     "icon": {
       "id": "minecraft:glistering_melon_slice"

@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/curse_kill",
   "display": {
     "icon": {
       "id": "minecraft:carved_pumpkin"

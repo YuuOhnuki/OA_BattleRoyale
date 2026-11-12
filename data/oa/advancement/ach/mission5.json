@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/mission1",
   "display": {
     "icon": {
       "id": "minecraft:enchanted_book"

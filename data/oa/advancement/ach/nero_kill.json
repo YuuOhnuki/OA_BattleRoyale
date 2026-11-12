@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/weapon_root",
   "display": {
     "icon": {
       "id": "minecraft:bone"

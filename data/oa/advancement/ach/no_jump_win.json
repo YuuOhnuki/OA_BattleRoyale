@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/secret_root",
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_boots"
+    },
+    "title": {
+      "text": "地を這う者"
+    },
+    "description": {
+      "text": "1度もジャンプせずに優勝した"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

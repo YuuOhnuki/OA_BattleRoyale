@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/weapon_root",
+  "display": {
+    "icon": {
+      "id": "minecraft:cod"
+    },
+    "title": {
+      "text": "初釣果"
+    },
+    "description": {
+      "text": "ぴちぴち：初めてキルした"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

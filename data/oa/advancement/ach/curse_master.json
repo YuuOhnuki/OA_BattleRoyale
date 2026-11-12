@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/killing_guard",
   "display": {
     "icon": {
       "id": "minecraft:wither_skeleton_skull"

@@ -121,6 +121,7 @@ execute as @a[tag=br.playing] run function oa:br/result/reset
 scoreboard players set #firstdead br.tmp 0
 scoreboard players set #pid br.tmp 0
 execute as @a[tag=br.playing] run function oa:ach/assign_pid
+execute as @a[tag=br.playing] run function oa:ach/map_start
 function oa:br/mission/pick
 execute as @a[tag=br.playing] unless entity @s[advancements={oa:ach/first_kill=true}] run function oa:br/beginner/support
 execute as @a[tag=br.playing] run function oa:br/beginner/hint

@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/fish_kill",
   "display": {
     "icon": {
       "id": "minecraft:cod"

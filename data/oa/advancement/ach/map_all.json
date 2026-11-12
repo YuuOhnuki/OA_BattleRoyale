@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/map_nether_win",
+  "display": {
+    "icon": {
+      "id": "minecraft:nether_star"
+    },
+    "title": {
+      "text": "全マップ制覇"
+    },
+    "description": {
+      "text": "すべてのマップで優勝した"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

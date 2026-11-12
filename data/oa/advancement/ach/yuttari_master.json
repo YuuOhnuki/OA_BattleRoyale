@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/yuttari_back",
   "display": {
     "icon": {
       "id": "minecraft:ender_pearl"

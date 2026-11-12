@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/itori_kill",
   "display": {
     "icon": {
       "id": "minecraft:lightning_rod"

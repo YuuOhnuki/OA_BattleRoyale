@@ -1,6 +1,12 @@
 scoreboard players operation @s br.st_kp = @s br.st_kill
 function oa:ach/give {id:"first_kill",name:"初陣"}
 execute if score @s br.st_kill matches 3.. run function oa:ach/give {id:"kills3",name:"ハットトリック"}
+execute if score @s br.st_kill matches 5.. run function oa:ach/give {id:"kills5",name:"殲滅者"}
+execute unless items entity @s weapon.mainhand * run function oa:ach/give {id:"fist_kill",name:"拳で語る"}
+execute if score @s oa.kind matches 1 run function oa:ach/give {id:"yuua_kill",name:"帽子の洗礼"}
+execute if score @s oa.kind matches 2 run function oa:ach/give {id:"fish_kill",name:"初釣果"}
+execute if score @s oa.kind matches 5 run function oa:ach/give {id:"curse_kill",name:"呪いの一撃"}
+execute if score @s oa.kind matches 8 run function oa:ach/give {id:"komame_kill",name:"豆の一撃"}
 execute if score @s oa.kind matches 3 run function oa:ach/give {id:"lazi_kill",name:"音の洗礼"}
 execute if score @s oa.kind matches 4 run function oa:ach/give {id:"nero_kill",name:"疫病の洗礼"}
 execute if score @s oa.kind matches 6 run function oa:ach/give {id:"yuttari_kill",name:"奇襲の洗礼"}

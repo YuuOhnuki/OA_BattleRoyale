@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/yuua_counter",
   "display": {
     "icon": {
       "id": "minecraft:golden_helmet"

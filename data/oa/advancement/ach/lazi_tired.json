@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/lazi_kill",
   "display": {
     "icon": {
       "id": "minecraft:note_block"

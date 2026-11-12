@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/komame_kill",
   "display": {
     "icon": {
       "id": "minecraft:cookie"

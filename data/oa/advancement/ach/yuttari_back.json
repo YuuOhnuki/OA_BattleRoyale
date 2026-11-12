@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/yuttari_kill",
   "display": {
     "icon": {
       "id": "minecraft:clock"

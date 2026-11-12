@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/secret_root",
+  "display": {
+    "icon": {
+      "id": "minecraft:leather"
+    },
+    "title": {
+      "text": "拳で語る"
+    },
+    "description": {
+      "text": "素手でキルした"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

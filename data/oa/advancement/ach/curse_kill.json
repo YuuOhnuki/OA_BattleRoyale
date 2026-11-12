@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/weapon_root",
+  "display": {
+    "icon": {
+      "id": "minecraft:wither_skeleton_skull"
+    },
+    "title": {
+      "text": "呪いの一撃"
+    },
+    "description": {
+      "text": "キリング：初めてキルした"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

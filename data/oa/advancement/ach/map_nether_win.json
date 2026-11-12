@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/map_nether_play",
+  "display": {
+    "icon": {
+      "id": "minecraft:magma_block"
+    },
+    "title": {
+      "text": "灼熱の覇者"
+    },
+    "description": {
+      "text": "ネザーマップで優勝した"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

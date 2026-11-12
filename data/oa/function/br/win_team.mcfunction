@@ -7,5 +7,6 @@ title @a[tag=br.playing] times 10 90 20
 title @a[tag=br.playing] subtitle [{text:"チーム "},{score:{name:"#winner",objective:"oa.team"}},{text:"："},{selector:"@a[tag=br.winner]"}]
 title @a[tag=br.playing] title {text:"チーム優勝！",color:"gold",bold:true}
 execute as @a[tag=br.winner] run function oa:ach/give {id:"winner",name:"最後の一人"}
+execute as @a[tag=br.winner] run function oa:ach/map_win
 function oa:br/result/show
 function oa:br/celebration/start

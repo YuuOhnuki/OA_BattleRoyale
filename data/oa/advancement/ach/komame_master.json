@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/komame_big",
   "display": {
     "icon": {
       "id": "minecraft:slime_ball"

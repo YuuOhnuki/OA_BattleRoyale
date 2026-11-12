@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/hotchikisu_kill",
   "display": {
     "icon": {
       "id": "minecraft:iron_bars"

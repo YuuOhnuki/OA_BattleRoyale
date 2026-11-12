@@ -7,3 +7,5 @@ execute unless entity @s[tag=br.winner] run return 0
 execute if score @s br.st_kill matches 0 run function oa:ach/give {id:"peace_win",name:"平和主義者"}
 execute store result score #hp br.tmp run data get entity @s Health 1
 execute if score #hp br.tmp matches ..2 run function oa:ach/give {id:"close_call",name:"紙一重"}
+execute if score @s br.st_open matches 0 run function oa:ach/give {id:"poor_win",name:"清貧の勝者"}
+execute if score @s br.st_jmp matches 0 run function oa:ach/give {id:"no_jump_win",name:"地を這う者"}

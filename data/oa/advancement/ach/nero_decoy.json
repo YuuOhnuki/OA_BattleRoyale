@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/nero_kill",
   "display": {
     "icon": {
       "id": "minecraft:ender_pearl"

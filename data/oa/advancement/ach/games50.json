@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/secret_root",
+  "display": {
+    "icon": {
+      "id": "minecraft:clock"
+    },
+    "title": {
+      "text": "皆勤賞"
+    },
+    "description": {
+      "text": "通算50試合に参加した"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/map_root",
+  "display": {
+    "icon": {
+      "id": "minecraft:netherrack"
+    },
+    "title": {
+      "text": "炎獄の戦場へ"
+    },
+    "description": {
+      "text": "ネザーマップで試合に参加した"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

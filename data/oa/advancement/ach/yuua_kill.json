@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/weapon_root",
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_helmet"
+    },
+    "title": {
+      "text": "帽子の洗礼"
+    },
+    "description": {
+      "text": "ゆうあ：初めてキルした"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

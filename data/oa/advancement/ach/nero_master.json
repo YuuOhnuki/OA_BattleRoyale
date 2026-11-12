@@ -1,5 +1,5 @@
 {
-  "parent": "oa:ach/root",
+  "parent": "oa:ach/nero_decoy",
   "display": {
     "icon": {
       "id": "minecraft:spider_eye"
