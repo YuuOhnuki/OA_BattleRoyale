@@ -1,5 +1,5 @@
 function oa:br/spawn_points/check
-execute unless score #spawn_floor br.flag matches 1 run return run tellraw @s {text:"登録できません。自然の地面の上で、頭上に2ブロックの空間がある場所を選んでください",color:"red"}
+execute unless score #spawn_floor br.flag matches 1 run return run tellraw @s {text:"登録できません。足元がブロックで（溶岩・火・水・クモの巣などの上は不可）、頭上に2ブロックの空間がある場所を選んでください",color:"red"}
 summon minecraft:marker ~ ~ ~ {Tags:["br.point_new"]}
 data modify storage oa:spawn_points new set value {}
 data modify storage oa:spawn_points new.x set from entity @e[type=minecraft:marker,tag=br.point_new,limit=1] Pos[0]

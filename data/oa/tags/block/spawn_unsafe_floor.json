@@ -1,0 +1,18 @@
+{
+  "values": [
+    "minecraft:magma_block",
+    "minecraft:cactus",
+    "minecraft:campfire",
+    "minecraft:soul_campfire",
+    "minecraft:lava",
+    "minecraft:fire",
+    "minecraft:soul_fire",
+    "minecraft:powder_snow",
+    "minecraft:water",
+    "minecraft:bubble_column",
+    "minecraft:cobweb",
+    "minecraft:sweet_berry_bush",
+    "minecraft:wither_rose",
+    "minecraft:pointed_dripstone"
+  ]
+}

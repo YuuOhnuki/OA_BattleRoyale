@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.128 時点）
+# 引き継ぎメモ（1.9.129 時点）
 
 ## 現状
+- 1.9.129：開始地点の足元判定は #oa:spawn_unsafe_floor（不可）と #oa:spawn_clear（通れるブロックは不可）。br/spawn_points/check と br/spawn_check の2か所。
 - 1.9.128：災害・ギミックは data/oa/function/disaster/（second→begin→pool→kN/start、active→kN/second→end）。抽選プールはマップ定義の disasters。無効化は #dis_off / #gm_off（br.tmp）。印は tag br.dis のマーカー（br/finish と init で削除）。
 - 1.9.127：観戦パッド（灰色の羊毛）は lobby/build.mcfunction の gray_wool の行（x=-13..-11, z=32..34）。判定は lobby/tick の足元ブロック。
 - 1.9.126：ロビーの明かりは lobby/build.mcfunction の「1.9.125 明るさ」ブロック（シーランタンの帯と light ブロック）。ロビー更新で再構築される。
@@ -21,7 +22,7 @@
 - 1.9.111：ネザーに建築物・障害物を追加（scripts/build_map_nether.py の rng2 ブロック）、版数のTAB表示と /trigger oa.ver、load_done メッセージ。version.mcfunction は先頭に oa.vtab 作成、末尾に storage と表示形式（版数を含む行）。
 - 1.9.110：map/internal の root 直指定 data modify（select_load、load_saved、args_from_def）をキー単位のコピーに修正。
 - 1.9.109：複数マップ基盤（map/internal/defs、select、create_nether）、ネザー会場（scripts/build_map_nether.py が maps/nether を生成）、固定参照の展開（scripts/multimap_expand.py）。検証・変更履歴は docs/changelog.md。
-- 【最新】データパック 1.9.128 ＋ リソースパック 1.9.36（ネザー用ロビー地図パネル）
+- 【最新】データパック 1.9.129 ＋ リソースパック 1.9.36（ネザー用ロビー地図パネル）
 - データパック 1.9.108（`OA_BattleRoyale_v1.9.108.zip`）＋リソースパック 1.9.35（ロビー地図を再描画）。
 - 1.9.99：遺跡の塔4基（scripts/build_map_1_9_99_towers.py）、実績20種を永続化、前回結果・実績一覧の trigger。`UPDATE_1_9_99_JA.md` 参照。
 - 1.9.102：ロビー装飾（scripts/gen_lobby_decor_1_9_102.py）、洞窟入口・帆船（scripts/build_map_1_9_102_decor.py）、花火・補給・練習場モブ。リソースパックの地図画像は resourcepack/source/build_lobby_map_1_9_34.py で再生成。
