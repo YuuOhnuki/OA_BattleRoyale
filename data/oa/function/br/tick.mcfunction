@@ -36,6 +36,7 @@ execute if score #state br.state matches 1 as @a[tag=br.playing] at @s run funct
 
 execute if score #state br.state matches 1 if score #vclock br.tmp matches 0 as @a[tag=br.playing] run function oa:br/zone/hud
 execute if score #state br.state matches 1 if score #vclock br.tmp matches 5 as @a[tag=br.playing] run function oa:br/zone/hud
+execute if score #state br.state matches 1 as @a[tag=br.alive,limit=1] at @s as @e[type=minecraft:interaction,tag=br.relic,distance=..500] at @s run function oa:disaster/relic/tick
 
 execute if score #state br.state matches 1 as @a[tag=br.playing,scores={br.open=1..}] at @s run function oa:br/loot/open_sound
 
