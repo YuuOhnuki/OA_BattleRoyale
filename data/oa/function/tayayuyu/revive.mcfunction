@@ -7,7 +7,9 @@ execute if score #time br.time matches ..1199 if score #mode br.mode matches 0 r
 # 1.9.148: 猶予後のソロ戦はチームに入れ直す（入らないと名前が見えたままになる）
 execute if score #time br.time matches 1200.. if score #mode br.mode matches 0 run team join oa_brsolo @s
 execute if score #time br.time matches ..1199 if score #mode br.mode matches 0 run tag @s add br.native_grace
-give @s minecraft:stone_sword
+# 1.9.149: 復活時の武器はチェスト補充（tick 7200）の前後で分ける。前半は石の剣、終盤は石の槍
+execute if score #time br.time matches ..7199 run give @s minecraft:stone_sword
+execute if score #time br.time matches 7200.. run give @s minecraft:stone_spear
 function oa:internal/tp with storage oa:br center
 scoreboard players add #serial oa.serial 1
 execute store result storage oa:args serial int 1 run scoreboard players get #serial oa.serial
