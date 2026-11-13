@@ -1,5 +1,6 @@
 tellraw @a[tag=br.playing] {text:"たやゆゆ変態ガチャ：足が棒",color:"red"}
 tellraw @a[tag=br.playing] {"text": " → 使用者だけ：移動速度−80%・ジャンプ不可（10秒）", "color": "gray"}
+function oa:tayayuyu/self_glow
 attribute @s minecraft:movement_speed modifier remove oa:gacha_stiff
 attribute @s minecraft:jump_strength modifier remove oa:gacha_stiff
 attribute @s minecraft:movement_speed modifier add oa:gacha_stiff -0.8 add_multiplied_total
