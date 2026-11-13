@@ -75,6 +75,7 @@ execute if score @s oa.admin matches 51 run function oa:admin/update_skins
 execute if score @s oa.admin matches 53 run function oa:test/join
 execute if score @s oa.admin matches 53 run function oa:give/itori
 
+# 54-57 は旧ボタン（管理ブックからは外した）。選択中のマップが対象で、メッセージにマップ名を表示する
 execute if score @s oa.admin matches 54 at @s run function oa:br/spawn_points/add
 
 execute if score @s oa.admin matches 55 at @s run function oa:br/spawn_points/list

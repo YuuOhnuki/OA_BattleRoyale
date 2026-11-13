@@ -114,6 +114,8 @@ execute as @a[tag=br.playing,tag=br.alive] run function oa:br/spawn_commit
 scoreboard players set #spawn_live br.flag 1
 execute if entity @a[tag=br.playing,tag=br.alive,scores={br.tp_ok=0}] run scoreboard players set #spawn_live br.flag 0
 execute unless score #spawn_live br.flag matches 1 run return run function oa:br/tp_abort
+scoreboard players set #tpfix_t br.flag 0
+schedule function oa:br/tp_fix_all 3t
 execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,tag=br.spawn]
 execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,tag=br.spawn]
 function oa:br/ui/start
