@@ -418,4 +418,8 @@ scoreboard players add #map oa.mapid 0
 scoreboard objectives add oa.ver trigger
 scoreboard objectives add br.dtmr dummy
 scoreboard objectives add br.gkind dummy
+scoreboard objectives add br.qwalk minecraft.custom:minecraft.walk_one_cm
+scoreboard objectives add br.qspr minecraft.custom:minecraft.sprint_one_cm
+scoreboard objectives add br.qsneak minecraft.custom:minecraft.crouch_one_cm
+scoreboard objectives add br.qjump minecraft.custom:minecraft.jump
 scoreboard players set #3 br.tmp 3

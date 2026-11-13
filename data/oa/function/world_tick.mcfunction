@@ -2,6 +2,7 @@ execute if score #state br.state matches 1 as @e[distance=0..,type=minecraft:arr
 execute if score #state br.state matches 1 as @e[distance=0..,type=minecraft:spectral_arrow,tag=!oa.bow_checked,nbt={weapon:{id:"minecraft:bow"}}] run function oa:br/combat/bow_arrow
 execute if entity @a[tag=oa.gacha_exposed] as @e[distance=0..,type=#oa:gacha_projectiles] run function oa:tayayuyu/projectile_check
 execute as @e[distance=0..,type=minecraft:item,tag=!oa.ground] if items entity @s contents *[minecraft:custom_data~{oa:{unique:1b}}] run function oa:ground/init
+execute as @e[distance=0..,type=minecraft:item,tag=!oa.yu_ground] if items entity @s contents *[minecraft:custom_data~{oa_overwork:1b}] run function oa:overwork/ground_init
 execute as @e[distance=0..,type=minecraft:armor_stand,tag=oa.furo_carrier] at @s run function oa:furoball/carrier/tick
 scoreboard players remove @e[distance=0..,type=minecraft:item,tag=oa.ground,scores={oa.wait=1..}] oa.wait 1
 kill @e[distance=0..,tag=oa.projectile,scores={oa.wait=0}]
