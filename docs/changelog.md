@@ -1,6 +1,20 @@
 # 変更履歴
 版ごとの変更点・検証結果・導入手順（新しい順）。旧 `UPDATE_*_JA.md` と `VALIDATION_*.json` をここへ統合した。各版の検証は「検証」欄に1行で記す（静的確認／実測／未確認）。
 
+## v1.9.134
+
+対応：データパック 1.9.134 ＋ リソースパック 1.9.36（変更なし）。マップの再生成、ロビー・練習場の更新は不要。
+
+### 修正
+- 補給物資の落下演出（樽と鎖の `block_display`）で、2分ごとにログへ出ていた `Serialization errors: Failed to decode value ... from field 'block_state'` を修正。`"minecraft:barrel[facing=up,open=false]"` のような文字列は26.3では読めないため、`{Name:"minecraft:barrel",Properties:{facing:"up",open:"false"}}` の形式にした（1.9.122 の修正が誤りだった）。
+
+### 調査メモ（コードは未変更）
+- 参加者が突然落ちる件：サーバーログの 01:22:46 に、2人が `was kicked for floating too long!`（`Flying is not enabled on this server`）でキックされていた。バニラの飛行対策で、足元にブロックがない状態が約4秒続くと切断される。サーバー設定 `allow-flight=true` で防げる（`server.properties` は変更していない）。データパック側で空中に留まる原因は、静的には特定できなかった。
+
+### 導入手順
+1. データパックを差し替え、サーバー再起動または `/reload`。
+2. 検証：静的確認のみ（関数の参照先、旧形式の `block_state` 文字列が残っていないこと）。ログの消失は実機で未確認。
+
 ## v1.9.133
 
 対応：データパック 1.9.133 ＋ リソースパック 1.9.36（変更なし）。マップの再生成、ロビー・練習場の更新は不要。
