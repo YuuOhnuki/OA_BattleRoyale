@@ -74,6 +74,7 @@ scoreboard players set #state br.state 1
 data modify storage oa:gacha_hits hits set value {}
 function oa:br/day/start
 function oa:br/weather/start
+function oa:disaster/init
 scoreboard players set #yuua_issued br.tmp 0
 function oa:br/locator/start
 function oa:br/world/setup_normal

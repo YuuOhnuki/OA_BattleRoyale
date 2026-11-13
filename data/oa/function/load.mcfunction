@@ -416,3 +416,6 @@ scoreboard players add #map oa.mapid 0
 
 # 1.9.111: version display (TAB list + /trigger oa.ver) and load-complete message
 scoreboard objectives add oa.ver trigger
+scoreboard objectives add br.dtmr dummy
+scoreboard objectives add br.gkind dummy
+scoreboard players set #3 br.tmp 3

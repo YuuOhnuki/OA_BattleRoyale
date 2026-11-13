@@ -23,6 +23,7 @@ execute if data storage oa:lobby origin{ready:1b} as @a[tag=br.watch] run functi
 gamerule minecraft:locator_bar false
 
 function oa:br/day/restore
+function oa:disaster/clear
 function oa:br/weather/restore
 scoreboard players set #bclock oa.tmp 4
 

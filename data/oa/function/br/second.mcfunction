@@ -12,3 +12,4 @@ execute if score #state br.state matches 1 run function oa:br/phase/notify
 execute if score #state br.state matches 1 run function oa:br/ui/update
 
 execute if data storage oa:br center run function oa:br/world/clear_mobs with storage oa:br center
+execute if score #state br.state matches 1 run function oa:disaster/second
