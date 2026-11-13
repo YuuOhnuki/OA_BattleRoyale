@@ -11,7 +11,8 @@ scoreboard players operation #gacha_caster oa.tmp = @s oa.id
 scoreboard players add #serial oa.serial 1
 scoreboard players operation #gacha_event oa.tmp = #serial oa.serial
 execute store result score #gacha_roll oa.tmp run random value 1..15
-playsound minecraft:block.end_portal.spawn player @a[tag=br.playing] ~ ~ ~ 1.2 1.5
+# 1.9.146: 距離で聞こえなくならないよう、各参加者の位置で鳴らして全員に聞こえるようにする
+execute as @a[tag=br.playing] at @s run playsound minecraft:block.end_portal.spawn player @s ~ ~ ~ 1.2 1.5
 particle minecraft:totem_of_undying ~ ~1 ~ 0.7 1 0.7 0.2 60 normal @a[distance=..48]
 execute if score #gacha_roll oa.tmp matches 1 run function oa:tayayuyu/health_all
 execute if score #gacha_roll oa.tmp matches 2 run function oa:tayayuyu/fire_all
