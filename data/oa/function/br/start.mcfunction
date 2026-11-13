@@ -6,7 +6,7 @@ scoreboard players set #clean_ready br.clean 0
 execute if data storage oa_map2:job {working:1b} run return run tellraw @s {text:"マップ生成・登録が未完了です。完了してから試合を開始してください",color:"red"}
 execute unless data storage oa:br center.dim run return run tellraw @s {text:"先に /function oa:map/create で専用ディメンションにBRマップを生成してください。",color:"red"}
 function oa:br/border/auto
-execute if entity @a[tag=br.lobby,scores={br.saved=1}] run return run tellraw @s {text:"復元待ちの参加者がいます",color:"red"}
+execute if entity @a[tag=br.lobby,tag=!oa.practice,scores={br.saved=1}] run return run tellraw @s {text:"復元待ちの参加者がいます",color:"red"}
 execute if entity @a[tag=br.lobby,nbt={Health:0.0f}] run return run tellraw @s {text:"死亡中の参加者がいます。復活してから開始してください",color:"red"}
 scoreboard players set #players br.tmp 0
 execute as @a[tag=br.lobby] run scoreboard players add #players br.tmp 1
@@ -58,6 +58,9 @@ execute if score #count br.tmp matches 4.. run scoreboard players set #bad br.fl
 execute if score #mode br.mode matches 1 if score #bad br.flag matches 1 run return run tellraw @s {text:"1チームは最大3人です",color:"red"}
 execute if score #mode br.mode matches 1 unless score #teams br.tmp matches 2.. run return run tellraw @s {text:"チーム戦には2チーム以上必要です",color:"red"}
 execute unless score #skip_clean br.clean matches 1 run return run function oa:br/cleanup/start
+# 1.9.143: 練習場にいる参加者は、荷物を復元してロビーへ戻してから開始する
+execute as @a[tag=br.lobby,tag=oa.practice] at @s run function oa:practice/leave
+execute if entity @a[tag=br.lobby,scores={br.saved=1}] run return run tellraw @s {text:"復元待ちの参加者がいます",color:"red"}
 execute as @a[tag=br.lobby] unless score @s oa.id matches 1.. run function oa:internal/id
 execute as @a[tag=br.lobby] at @s run function oa:br/save_player
 execute if entity @a[tag=br.lobby,scores={br.saved=0}] run return run function oa:br/save_failed

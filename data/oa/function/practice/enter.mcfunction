@@ -10,7 +10,7 @@ function oa:br/save_player
 execute unless score @s br.saved matches 1 run return run tellraw @s {text:"持ち物の保存に失敗しました。",color:"red"}
 tag @s add oa.practice
 tag @s remove oa.practice_wait
-tag @s remove br.lobby
+# 1.9.143: 練習中も参加登録（br.lobby）とチーム選択（br.pick）は保持する
 tag @s remove br.lobby_now
 tag @s remove br.in_lobby
 tag @s remove br.login_pending
