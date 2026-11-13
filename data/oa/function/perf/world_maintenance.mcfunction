@@ -2,7 +2,6 @@ execute as @e[distance=0..,type=minecraft:item] if items entity @s contents *[mi
 execute as @e[distance=0..,type=minecraft:item] if items entity @s contents *[minecraft:custom_data~{oa_status_paper:1b}] run kill @s
 execute as @e[distance=0..,type=minecraft:item,tag=oa.ground,tag=!oa.named_ground] at @s run function oa:ground/label
 execute as @e[distance=0..,type=minecraft:item,tag=oa.ground] run function oa:ground/age
-execute if score #vclock br.tmp matches 0 as @e[distance=0..,type=minecraft:item] at @s if items entity @s contents *[minecraft:custom_data~{oa_overwork:1b}] run function oa:overwork/ground
 execute as @e[distance=0..,type=minecraft:item] unless items entity @s contents *[minecraft:max_stack_size=1] at @s if items entity @s contents *[minecraft:custom_data~{oa_normal:"bat"}] run function oa:normal/nonstack/split
 execute as @e[distance=0..,type=minecraft:item] unless items entity @s contents *[minecraft:max_stack_size=1] at @s if items entity @s contents *[minecraft:custom_data~{oa_normal:"kb_stick"}] run function oa:normal/nonstack/split
 execute as @e[distance=0..,type=minecraft:item] unless items entity @s contents *[minecraft:max_stack_size=1] at @s if items entity @s contents *[minecraft:custom_data~{oa_overwork:1b}] run function oa:normal/nonstack/split

@@ -14,6 +14,7 @@ execute as @e[distance=0..,type=minecraft:marker,tag=oa.note_wave] at @s run fun
 
 
 execute if score #vclock br.tmp matches 0 as @e[type=minecraft:item,tag=oa.ground] at @s if entity @a[tag=oa.player,distance=..32] run function oa:ground/fx
+execute if score #vclock br.tmp matches 0 as @e[type=minecraft:item,tag=oa.yu_ground] at @s if entity @a[tag=oa.player,distance=..32] run function oa:overwork/ground
 
 # Snowballs/eggs now use vanilla collision and entity_hurt_player rewards.
 
