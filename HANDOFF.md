@@ -1,9 +1,10 @@
-# 引き継ぎメモ（1.9.137 時点）
+# 引き継ぎメモ（1.9.138 時点）
 
 ## 現状
 - 1.9.131：述語JSONは 26.3 では "condition" でなく "type" が必須。酸性雨・寒波の屋外判定は述語を使わず k1/check・k2/check（world_surface）で行う。
 - 1.9.130：ハズレガチャ3種（critical/stiff/exposed）の冒頭で tayayuyu/self_glow を呼ぶ。発光の管理は oa.gglow。
 - 1.9.129：開始地点の足元判定は #oa:spawn_unsafe_floor（不可）と #oa:spawn_clear（通れるブロックは不可）。br/spawn_points/check と br/spawn_check の2か所。
+- 1.9.138：「最大値を探す」処理は `execute as … if score @s X > #m run … operation #m = @s X` をやめ、`execute as … run … operation #m > @s X`（順序に依存しない書き方）に統一（戦績ボード・ハイライト・観戦の前後）。
 - 1.9.137：チームの表示は名前の色だけ（br/team/setup の suffix は空）。
 - 1.9.136：ロビーの「前回の試合結果」は生存時間→キルの順で並べ、番号を付ける（lobby/board/last_key、スコア br.lkey）。戦績・実績数は元から降順。
 - 1.9.135：地震は統計（br.qwalk/qspr/qsneak/qjump）で「動いたらダメージ」。ゆーの地面アイテムは overwork/ground_init で拾得待ち解除＋ground の演出。
@@ -29,7 +30,7 @@
 - 1.9.111：ネザーに建築物・障害物を追加（scripts/build_map_nether.py の rng2 ブロック）、版数のTAB表示と /trigger oa.ver、load_done メッセージ。version.mcfunction は先頭に oa.vtab 作成、末尾に storage と表示形式（版数を含む行）。
 - 1.9.110：map/internal の root 直指定 data modify（select_load、load_saved、args_from_def）をキー単位のコピーに修正。
 - 1.9.109：複数マップ基盤（map/internal/defs、select、create_nether）、ネザー会場（scripts/build_map_nether.py が maps/nether を生成）、固定参照の展開（scripts/multimap_expand.py）。検証・変更履歴は docs/changelog.md。
-- 【最新】データパック 1.9.137 ＋ リソースパック 1.9.36（ネザー用ロビー地図パネル）
+- 【最新】データパック 1.9.138 ＋ リソースパック 1.9.36（ネザー用ロビー地図パネル）
 - データパック 1.9.108（`OA_BattleRoyale_v1.9.108.zip`）＋リソースパック 1.9.35（ロビー地図を再描画）。
 - 1.9.99：遺跡の塔4基（scripts/build_map_1_9_99_towers.py）、実績20種を永続化、前回結果・実績一覧の trigger。`UPDATE_1_9_99_JA.md` 参照。
 - 1.9.102：ロビー装飾（scripts/gen_lobby_decor_1_9_102.py）、洞窟入口・帆船（scripts/build_map_1_9_102_decor.py）、花火・補給・練習場モブ。リソースパックの地図画像は resourcepack/source/build_lobby_map_1_9_34.py で再生成。
