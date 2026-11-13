@@ -10,6 +10,8 @@ execute if score #state br.state matches 1 if score #map oa.mapid matches 1 in o
 execute if score #state br.state matches 1 run function oa:br/supply/second
 execute if score #state br.state matches 1 run function oa:br/phase/notify
 execute if score #state br.state matches 1 run function oa:br/ui/update
+# 1.9.148: 試合中の観戦者（脱落者・観戦者）が会場の外（ロビー等）にいたら、会場の中心へ戻す
+execute if score #state br.state matches 1 if data storage oa:br center as @a[gamemode=spectator,nbt=!{Health:0.0f}] unless entity @s[tag=oa.practice] unless dimension oa:br unless dimension oa:br_nether run function oa:br/spec/return_center
 
 execute if data storage oa:br center run function oa:br/world/clear_mobs with storage oa:br center
 execute if score #state br.state matches 1 run function oa:disaster/second

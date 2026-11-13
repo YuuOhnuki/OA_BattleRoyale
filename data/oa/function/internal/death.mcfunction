@@ -1,6 +1,8 @@
 function oa:tayayuyu/clear
 function oa:overwork/cleanup
 function oa:hotchikisu/cleanup
+# 1.9.148: 先に脱落処理が済んでいると eliminate が何もせず、復活位置（ロビー）に残るため、観戦者は会場の中心へ戻す
+execute if entity @s[tag=br.playing,tag=!br.alive,tag=!br.watch] if score #state br.state matches 1 if data storage oa:br center run function oa:internal/tp with storage oa:br center
 execute if entity @s[tag=br.playing] run return run function oa:br/eliminate
 execute if entity @s[tag=oa.external_blind] run effect clear @s minecraft:blindness
 tag @s remove oa.external_blind

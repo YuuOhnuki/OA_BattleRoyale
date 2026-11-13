@@ -4,6 +4,8 @@ execute if score #time br.time matches 1200.. run effect clear @s minecraft:resi
 execute if score #time br.time matches 1200.. run tag @s remove br.pvp_grace
 execute if score #time br.time matches 1200.. run tag @s remove br.spawn_protection
 execute if score #time br.time matches ..1199 if score #mode br.mode matches 0 run team join oa_brgrace @s
+# 1.9.148: 猶予後のソロ戦はチームに入れ直す（入らないと名前が見えたままになる）
+execute if score #time br.time matches 1200.. if score #mode br.mode matches 0 run team join oa_brsolo @s
 execute if score #time br.time matches ..1199 if score #mode br.mode matches 0 run tag @s add br.native_grace
 give @s minecraft:stone_sword
 function oa:internal/tp with storage oa:br center
