@@ -1,6 +1,6 @@
 $execute if items entity @s $(slot) *[minecraft:custom_data~{oa:{kind:1}}] unless items entity @s $(slot) *[minecraft:custom_data~{oa:{visual_v140:1b}}] run item modify entity @s $(slot) oa:visual/k1
 $execute if items entity @s $(slot) *[minecraft:custom_data~{oa:{kind:2}}] unless items entity @s $(slot) *[minecraft:custom_data~{oa:{visual_v140:1b}}] run item modify entity @s $(slot) oa:visual/k2
-$execute if items entity @s $(slot) *[minecraft:custom_data~{oa:{kind:3}}] unless items entity @s $(slot) *[minecraft:custom_data~{oa:{mask_v197:1b}}] run item modify entity @s $(slot) oa:visual/k3
+$execute if items entity @s $(slot) *[minecraft:custom_data~{oa:{kind:3}}] unless items entity @s $(slot) *[minecraft:custom_data~{oa:{mask_v1177:1b}}] run item modify entity @s $(slot) oa:visual/k3
 $execute if items entity @s $(slot) *[minecraft:custom_data~{oa:{kind:4}}] unless items entity @s $(slot) *[minecraft:custom_data~{oa:{visual_v140:1b}}] run item modify entity @s $(slot) oa:visual/k4
 $execute if items entity @s $(slot) *[minecraft:custom_data~{oa:{kind:5}}] unless items entity @s $(slot) *[minecraft:custom_data~{oa:{mask_v161:1b}}] run item modify entity @s $(slot) oa:visual/k5
 $execute if items entity @s $(slot) *[minecraft:custom_data~{oa:{kind:6}}] unless items entity @s $(slot) *[minecraft:custom_data~{oa:{visual_v140:1b}}] run item modify entity @s $(slot) oa:visual/k6
