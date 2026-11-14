@@ -649,7 +649,8 @@ fill ~5 ~-21 ~121 ~7 ~-20 ~121 minecraft:moss_block
 fill ~-8 ~-30 ~121 ~-5 ~-30 ~121 minecraft:moss_block
 fill ~-8 ~-21 ~121 ~-5 ~-20 ~121 minecraft:moss_block
 fill ~-20 ~-30 ~121 ~-17 ~-30 ~121 minecraft:stone
-fill ~-16 ~-30 ~121 ~-16 ~-22 ~121 minecraft:mossy_cobblestone
+setblock ~-16 ~-30 ~121 minecraft:mossy_cobblestone
+fill ~-16 ~-28 ~121 ~-16 ~-22 ~121 minecraft:mossy_cobblestone
 setblock ~-21 ~-30 ~121 minecraft:gravel
 setblock ~-22 ~-30 ~121 minecraft:stone
 fill ~-15 ~-30 ~121 ~-9 ~-30 ~121 minecraft:stone
@@ -697,6 +698,7 @@ fill ~-18 ~-30 ~127 ~-16 ~-30 ~127 minecraft:stone
 fill ~-24 ~-30 ~128 ~-16 ~-25 ~128 minecraft:granite
 setblock ~-15 ~-30 ~128 minecraft:andesite
 fill ~-13 ~-30 ~129 ~-12 ~-26 ~129 minecraft:stone
+setblock ~-1 ~-30 ~130 minecraft:chest
 fill ~-12 ~-30 ~130 ~-3 ~-26 ~130 minecraft:stone
 fill ~1 ~-30 ~131 ~2 ~-30 ~131 minecraft:stone
 fill ~-12 ~-30 ~131 ~-1 ~-26 ~131 minecraft:stone
@@ -728,6 +730,7 @@ fill ~-13 ~-29 ~121 ~-13 ~-21 ~121 minecraft:moss_block
 fill ~4 ~-29 ~121 ~7 ~-29 ~121 minecraft:moss_block
 setblock ~-2 ~-29 ~121 minecraft:moss_carpet
 fill ~1 ~-29 ~121 ~2 ~-29 ~121 minecraft:moss_block
+setblock ~-16 ~-29 ~121 minecraft:redstone_ore
 fill ~-18 ~-29 ~121 ~-17 ~-25 ~121 minecraft:stone
 fill ~-15 ~-29 ~121 ~-14 ~-25 ~121 minecraft:stone
 fill ~-12 ~-29 ~121 ~-12 ~-24 ~121 minecraft:stone

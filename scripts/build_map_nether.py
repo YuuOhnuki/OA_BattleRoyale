@@ -514,6 +514,11 @@ def thin(lst,keep):
     for i in drop:
         x,y,z=cand[int(i)]; put(x,y,z,'minecraft:air'); lst.remove(cand[int(i)])
 # 1.9.156: 間引きをやめた（チェストを約1.5倍に：通常58→88、上位10→14、計68→102）。thin() は使わない
+# --- 1.9.169: 中央の宝物庫の中庭（内室と外壁の間）に通常チェストを8つ足す（乱数を使わない。ほかの配置は変わらない） ---
+for (x,z) in [(12,4),(12,-4),(-12,4),(-12,-4),(4,12),(-4,12),(4,-12),(-4,-12)]:
+    assert get(x,YG+2,z)=='minecraft:air' and get(x,YG+3,z)=='minecraft:air', (x,z,get(x,YG+2,z))
+    f='west' if x>=10 else ('east' if x<=-10 else ('north' if z>0 else 'south'))
+    put(x,YG+2,z,CHEST(f)); chests.append((x,YG+2,z))
 # --- 到達性の検算（歩いて行けるか） ---
 from collections import deque
 SOLID=lambda b: b not in ('minecraft:air','minecraft:lava') and 'roots' not in b and 'lantern' not in b
@@ -546,7 +551,7 @@ print("reach",len(seen),"max_r",round(maxr,1),"bad spawn/chest/ore",len(bad_sp),
 print("bad_ch",bad_ch,"bad_sp",bad_sp)
 assert not bad_sp and not bad_ch and not bad_or and maxr<123
 # --- 検算 ---
-assert len(chests)==88 and len(riches)==14 and len(ores)==108
+assert len(chests)==96 and len(riches)==14 and len(ores)==108
 assert not (g[:,:,-1]!=0).any() or True
 # 保存
 np.savez_compressed(f"{ROOT}/source/map_nether_target.npz",grid=g,palette=np.array(pal))

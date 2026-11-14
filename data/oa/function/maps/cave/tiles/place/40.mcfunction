@@ -331,7 +331,8 @@ fill ~-152 ~-30 ~-10 ~-129 ~-26 ~-10 minecraft:tuff
 fill ~-152 ~-30 ~-9 ~-130 ~-26 ~-9 minecraft:tuff
 setblock ~-152 ~-30 ~-6 minecraft:stone
 fill ~-151 ~-30 ~-6 ~-133 ~-30 ~-6 minecraft:tuff
-fill ~-147 ~-30 ~-5 ~-133 ~-30 ~-5 minecraft:tuff
+setblock ~-133 ~-30 ~-5 minecraft:redstone_ore
+fill ~-147 ~-30 ~-5 ~-134 ~-30 ~-5 minecraft:tuff
 fill ~-152 ~-30 ~-5 ~-148 ~-30 ~-5 minecraft:stone
 fill ~-152 ~-30 ~-4 ~-145 ~-30 ~-4 minecraft:stone
 fill ~-144 ~-30 ~-4 ~-133 ~-30 ~-4 minecraft:tuff

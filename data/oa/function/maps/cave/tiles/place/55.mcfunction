@@ -373,6 +373,7 @@ setblock ~14 ~-30 ~24 minecraft:stone
 fill ~15 ~-30 ~24 ~15 ~-25 ~24 minecraft:tuff
 setblock ~13 ~-30 ~25 minecraft:gravel
 setblock ~12 ~-30 ~25 minecraft:stone
+setblock ~28 ~-30 ~25 minecraft:chest
 setblock ~16 ~-30 ~25 minecraft:stone
 fill ~8 ~-30 ~25 ~11 ~-30 ~25 minecraft:deepslate
 fill ~8 ~-23 ~25 ~11 ~-22 ~25 minecraft:deepslate
@@ -476,7 +477,6 @@ fill ~21 ~-29 ~15 ~21 ~-19 ~15 minecraft:deepslate_bricks
 setblock ~23 ~-29 ~15 minecraft:stone
 setblock ~39 ~-29 ~15 minecraft:stone
 fill ~22 ~-29 ~15 ~22 ~-19 ~15 minecraft:deepslate
-setblock ~10 ~-29 ~16 minecraft:chest
 fill ~20 ~-29 ~16 ~20 ~-19 ~16 minecraft:deepslate_bricks
 fill ~22 ~-29 ~16 ~39 ~-19 ~16 minecraft:tuff
 fill ~21 ~-29 ~16 ~21 ~-19 ~16 minecraft:deepslate

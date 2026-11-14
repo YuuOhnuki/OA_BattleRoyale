@@ -561,9 +561,9 @@ fill ~133 ~-28 ~62 ~135 ~-28 ~62 minecraft:andesite
 fill ~104 ~-28 ~63 ~111 ~-24 ~63 minecraft:stone
 fill ~132 ~-28 ~63 ~135 ~-28 ~63 minecraft:andesite
 fill ~116 ~-28 ~63 ~131 ~-28 ~63 minecraft:stone
+setblock ~106 ~-28 ~64 minecraft:coal_ore
 fill ~115 ~-28 ~64 ~130 ~-28 ~64 minecraft:stone
-fill ~104 ~-28 ~64 ~106 ~-24 ~64 minecraft:stone
-fill ~104 ~-20 ~64 ~106 ~-20 ~64 minecraft:stone
+fill ~104 ~-28 ~64 ~105 ~-28 ~64 minecraft:stone
 fill ~131 ~-28 ~64 ~135 ~-28 ~65 minecraft:andesite
 fill ~114 ~-28 ~65 ~130 ~-28 ~65 minecraft:stone
 fill ~112 ~-28 ~66 ~131 ~-28 ~66 minecraft:stone
@@ -639,6 +639,8 @@ fill ~116 ~-19 ~62 ~135 ~-19 ~62 minecraft:stone
 fill ~116 ~-27 ~63 ~134 ~-27 ~63 minecraft:stone
 setblock ~135 ~-27 ~63 minecraft:andesite
 fill ~115 ~-27 ~64 ~133 ~-27 ~64 minecraft:stone
+fill ~104 ~-27 ~64 ~106 ~-24 ~64 minecraft:stone
+fill ~104 ~-20 ~64 ~106 ~-20 ~64 minecraft:stone
 fill ~134 ~-27 ~64 ~135 ~-27 ~64 minecraft:andesite
 fill ~114 ~-27 ~65 ~132 ~-27 ~65 minecraft:stone
 fill ~133 ~-27 ~65 ~135 ~-27 ~65 minecraft:andesite

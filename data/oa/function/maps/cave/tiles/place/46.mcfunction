@@ -229,6 +229,7 @@ fill ~46 ~-30 ~-22 ~56 ~-30 ~-22 minecraft:stone
 setblock ~47 ~-30 ~-21 minecraft:gravel
 fill ~48 ~-30 ~-21 ~56 ~-30 ~-20 minecraft:stone
 fill ~57 ~-30 ~-21 ~70 ~-30 ~-20 minecraft:tuff
+setblock ~47 ~-30 ~-20 minecraft:chest
 fill ~48 ~-30 ~-19 ~55 ~-30 ~-19 minecraft:stone
 fill ~71 ~-30 ~-21 ~71 ~-30 ~-17 minecraft:stone
 fill ~56 ~-30 ~-19 ~70 ~-30 ~-17 minecraft:tuff
@@ -330,7 +331,8 @@ setblock ~48 ~-30 ~1 minecraft:gravel
 setblock ~57 ~-30 ~1 minecraft:andesite
 setblock ~58 ~-30 ~1 minecraft:stone
 fill ~54 ~-30 ~1 ~56 ~-30 ~1 minecraft:stone
-fill ~70 ~-30 ~1 ~71 ~-25 ~1 minecraft:stone
+fill ~70 ~-30 ~1 ~71 ~-30 ~1 minecraft:stone
+fill ~70 ~-28 ~1 ~71 ~-25 ~1 minecraft:stone
 setblock ~63 ~-30 ~1 minecraft:stone
 setblock ~60 ~-30 ~1 minecraft:andesite
 setblock ~53 ~-30 ~1 minecraft:gravel
@@ -548,9 +550,12 @@ fill ~63 ~-29 ~-4 ~69 ~-29 ~-4 minecraft:tuff
 fill ~67 ~-29 ~-3 ~71 ~-29 ~-3 minecraft:stone
 fill ~64 ~-29 ~-3 ~66 ~-29 ~-3 minecraft:tuff
 fill ~65 ~-29 ~-2 ~71 ~-28 ~-2 minecraft:stone
-fill ~49 ~-29 ~-1 ~56 ~-24 ~-1 minecraft:stone
+fill ~49 ~-29 ~-1 ~55 ~-29 ~-1 minecraft:stone
+setblock ~56 ~-29 ~-1 minecraft:redstone_ore
 fill ~66 ~-29 ~-1 ~71 ~-26 ~0 minecraft:stone
 fill ~51 ~-29 ~0 ~54 ~-24 ~0 minecraft:stone
+setblock ~70 ~-29 ~1 minecraft:coal_ore
+setblock ~71 ~-29 ~1 minecraft:stone
 fill ~68 ~-29 ~4 ~69 ~-25 ~4 minecraft:stone
 fill ~69 ~-29 ~5 ~70 ~-25 ~5 minecraft:stone
 setblock ~69 ~-29 ~6 minecraft:andesite
@@ -635,9 +640,11 @@ fill ~57 ~-28 ~-4 ~59 ~-28 ~-4 minecraft:tuff
 fill ~70 ~-28 ~-3 ~71 ~-28 ~-3 minecraft:stone
 fill ~64 ~-28 ~-3 ~69 ~-28 ~-3 minecraft:tuff
 setblock ~65 ~-28 ~-1 minecraft:glow_lichen[east=true]
-fill ~48 ~-28 ~5 ~54 ~-28 ~5 minecraft:stone
+fill ~49 ~-28 ~-1 ~56 ~-24 ~-1 minecraft:stone
+setblock ~54 ~-28 ~5 minecraft:coal_ore
 setblock ~47 ~-28 ~5 minecraft:coal_ore
 fill ~45 ~-28 ~5 ~46 ~-28 ~5 minecraft:stone
+fill ~48 ~-28 ~5 ~53 ~-28 ~5 minecraft:stone
 setblock ~61 ~-28 ~6 minecraft:coal_ore
 fill ~61 ~-27 ~-24 ~70 ~-27 ~-24 minecraft:tuff
 setblock ~71 ~-27 ~-24 minecraft:stone

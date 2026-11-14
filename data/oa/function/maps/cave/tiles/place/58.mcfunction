@@ -465,9 +465,10 @@ fill ~105 ~-19 ~10 ~105 ~-18 ~10 minecraft:calcite
 fill ~114 ~-28 ~10 ~115 ~-24 ~10 minecraft:smooth_basalt
 fill ~111 ~-28 ~10 ~113 ~-27 ~10 minecraft:calcite
 fill ~125 ~-28 ~10 ~135 ~-28 ~11 minecraft:stone
+setblock ~117 ~-28 ~11 minecraft:coal_ore
 fill ~114 ~-28 ~11 ~114 ~-27 ~11 minecraft:calcite
 fill ~107 ~-28 ~11 ~109 ~-28 ~11 minecraft:amethyst_block
-fill ~115 ~-28 ~11 ~117 ~-23 ~11 minecraft:smooth_basalt
+fill ~115 ~-28 ~11 ~116 ~-28 ~11 minecraft:smooth_basalt
 fill ~110 ~-28 ~11 ~113 ~-28 ~11 minecraft:stone
 fill ~104 ~-28 ~11 ~106 ~-27 ~11 minecraft:calcite
 fill ~104 ~-18 ~11 ~106 ~-17 ~11 minecraft:calcite
@@ -811,6 +812,7 @@ setblock ~110 ~-27 ~10 minecraft:stone
 setblock ~118 ~-27 ~11 minecraft:stone
 fill ~112 ~-27 ~11 ~113 ~-27 ~11 minecraft:stone
 fill ~107 ~-27 ~11 ~111 ~-27 ~11 minecraft:amethyst_block
+fill ~115 ~-27 ~11 ~117 ~-23 ~11 minecraft:smooth_basalt
 fill ~119 ~-27 ~11 ~120 ~-27 ~11 minecraft:tuff
 fill ~110 ~-27 ~12 ~112 ~-27 ~12 minecraft:amethyst_block
 setblock ~113 ~-27 ~12 minecraft:calcite
@@ -862,7 +864,8 @@ fill ~118 ~-27 ~32 ~119 ~-23 ~32 minecraft:calcite
 fill ~114 ~-27 ~33 ~115 ~-27 ~33 minecraft:amethyst_block
 fill ~114 ~-18 ~33 ~115 ~-18 ~33 minecraft:amethyst_block
 fill ~124 ~-27 ~33 ~124 ~-24 ~33 minecraft:stone
-fill ~119 ~-27 ~33 ~120 ~-23 ~33 minecraft:smooth_basalt
+fill ~119 ~-27 ~33 ~120 ~-27 ~33 minecraft:smooth_basalt
+fill ~119 ~-25 ~33 ~120 ~-23 ~33 minecraft:smooth_basalt
 setblock ~129 ~-27 ~34 minecraft:redstone_ore
 fill ~130 ~-27 ~34 ~135 ~-27 ~34 minecraft:stone
 fill ~124 ~-27 ~34 ~128 ~-27 ~34 minecraft:stone
@@ -871,8 +874,7 @@ setblock ~114 ~-18 ~35 minecraft:amethyst_block
 fill ~125 ~-27 ~35 ~135 ~-27 ~35 minecraft:stone
 setblock ~135 ~-27 ~36 minecraft:tuff
 fill ~125 ~-27 ~36 ~134 ~-27 ~36 minecraft:stone
-fill ~114 ~-27 ~37 ~114 ~-23 ~37 minecraft:calcite
-setblock ~114 ~-19 ~37 minecraft:calcite
+setblock ~114 ~-27 ~37 minecraft:coal_ore
 setblock ~124 ~-27 ~37 minecraft:andesite
 fill ~111 ~-27 ~38 ~113 ~-27 ~38 minecraft:amethyst_block
 fill ~114 ~-27 ~38 ~115 ~-22 ~38 minecraft:calcite
@@ -925,10 +927,14 @@ fill ~118 ~-26 ~28 ~118 ~-20 ~30 minecraft:amethyst_block
 fill ~119 ~-26 ~30 ~120 ~-23 ~30 minecraft:calcite
 fill ~119 ~-26 ~31 ~119 ~-23 ~31 minecraft:stone
 fill ~117 ~-26 ~31 ~117 ~-20 ~32 minecraft:amethyst_block
+setblock ~119 ~-26 ~33 minecraft:smooth_basalt
+setblock ~120 ~-26 ~33 minecraft:coal_ore
 fill ~124 ~-26 ~34 ~135 ~-26 ~34 minecraft:stone
 fill ~123 ~-26 ~35 ~123 ~-26 ~36 minecraft:andesite
 fill ~124 ~-26 ~35 ~134 ~-26 ~37 minecraft:stone
 fill ~135 ~-26 ~35 ~135 ~-26 ~37 minecraft:tuff
+fill ~114 ~-26 ~37 ~114 ~-23 ~37 minecraft:calcite
+setblock ~114 ~-19 ~37 minecraft:calcite
 fill ~113 ~-26 ~38 ~113 ~-20 ~38 minecraft:amethyst_block
 fill ~125 ~-26 ~38 ~135 ~-26 ~39 minecraft:stone
 fill ~114 ~-26 ~39 ~114 ~-23 ~39 minecraft:stone

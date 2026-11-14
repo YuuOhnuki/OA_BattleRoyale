@@ -430,8 +430,10 @@ fill ~55 ~-28 ~28 ~66 ~-28 ~28 minecraft:stone
 fill ~40 ~-28 ~27 ~41 ~-28 ~29 minecraft:tuff
 fill ~71 ~-28 ~28 ~71 ~-27 ~29 minecraft:calcite
 fill ~71 ~-16 ~28 ~71 ~-15 ~29 minecraft:calcite
+setblock ~53 ~-28 ~29 minecraft:coal_ore
+fill ~54 ~-28 ~29 ~67 ~-28 ~29 minecraft:stone
 fill ~68 ~-28 ~29 ~70 ~-28 ~29 minecraft:amethyst_block
-fill ~42 ~-28 ~29 ~67 ~-28 ~29 minecraft:stone
+fill ~42 ~-28 ~29 ~52 ~-28 ~29 minecraft:stone
 setblock ~50 ~-28 ~30 minecraft:stone
 setblock ~51 ~-28 ~30 minecraft:gravel
 fill ~69 ~-28 ~30 ~69 ~-27 ~30 minecraft:amethyst_block

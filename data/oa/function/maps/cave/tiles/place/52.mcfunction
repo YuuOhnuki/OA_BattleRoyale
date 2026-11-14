@@ -362,7 +362,8 @@ fill ~-60 ~-28 ~10 ~-59 ~-28 ~10 minecraft:tuff
 fill ~-62 ~-28 ~10 ~-62 ~-21 ~10 minecraft:dripstone_block
 fill ~-61 ~-28 ~10 ~-61 ~-24 ~10 minecraft:stone
 fill ~-58 ~-28 ~10 ~-57 ~-28 ~10 minecraft:stone
-fill ~-65 ~-28 ~10 ~-63 ~-23 ~10 minecraft:stone
+fill ~-65 ~-28 ~10 ~-63 ~-28 ~10 minecraft:stone
+fill ~-65 ~-26 ~10 ~-63 ~-23 ~10 minecraft:stone
 fill ~-61 ~-28 ~11 ~-59 ~-28 ~11 minecraft:granite
 setblock ~-57 ~-28 ~11 minecraft:gravel
 setblock ~-58 ~-28 ~11 minecraft:tuff
@@ -389,6 +390,10 @@ setblock ~-65 ~-28 ~31 minecraft:coal_ore
 fill ~-70 ~-27 ~8 ~-69 ~-24 ~8 minecraft:dripstone_block
 setblock ~-61 ~-27 ~9 minecraft:chest
 fill ~-69 ~-27 ~9 ~-68 ~-24 ~9 minecraft:dripstone_block
+setblock ~-65 ~-27 ~10 minecraft:stone
+setblock ~-65 ~-22 ~10 minecraft:stone
+setblock ~-64 ~-27 ~10 minecraft:redstone_ore
+setblock ~-63 ~-27 ~10 minecraft:stone
 fill ~-63 ~-27 ~11 ~-62 ~-23 ~11 minecraft:stone
 fill ~-66 ~-27 ~11 ~-64 ~-24 ~11 minecraft:dripstone_block
 fill ~-61 ~-27 ~11 ~-61 ~-22 ~11 minecraft:dripstone_block
@@ -486,7 +491,6 @@ fill ~-69 ~-22 ~8 ~-68 ~-22 ~8 minecraft:dripstone_block
 fill ~-68 ~-22 ~9 ~-66 ~-22 ~9 minecraft:dripstone_block
 fill ~-74 ~-22 ~9 ~-70 ~-22 ~9 minecraft:dripstone_block
 setblock ~-69 ~-22 ~9 minecraft:stone
-setblock ~-65 ~-22 ~10 minecraft:stone
 fill ~-72 ~-22 ~10 ~-66 ~-22 ~10 minecraft:dripstone_block
 fill ~-64 ~-22 ~10 ~-63 ~-22 ~10 minecraft:tuff
 setblock ~-80 ~-22 ~10 minecraft:pointed_dripstone[vertical_direction=down,thickness=frustum]

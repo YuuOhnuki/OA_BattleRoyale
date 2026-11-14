@@ -387,6 +387,8 @@ fill ~-6 ~-13 ~14 ~-5 ~-13 ~15 minecraft:chiseled_deepslate
 fill ~-21 ~-29 ~15 ~-21 ~-20 ~15 minecraft:deepslate_bricks
 fill ~-23 ~-29 ~15 ~-22 ~-23 ~15 minecraft:deepslate
 fill ~-20 ~-29 ~16 ~-20 ~-20 ~16 minecraft:deepslate_bricks
+setblock ~7 ~-29 ~18 minecraft:chest
+setblock ~-7 ~-29 ~18 minecraft:chest
 fill ~-24 ~-29 ~20 ~-24 ~-24 ~20 minecraft:stone
 fill ~-24 ~-29 ~21 ~-20 ~-25 ~22 minecraft:stone
 fill ~-12 ~-29 ~23 ~-12 ~-25 ~23 minecraft:deepslate

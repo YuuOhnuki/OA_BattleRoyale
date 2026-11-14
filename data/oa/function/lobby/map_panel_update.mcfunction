@@ -5,3 +5,4 @@ execute if data storage oa:maps {current:"cave"} run data modify entity @e[type=
 execute if data storage oa:maps {current:"br"} run data modify entity @e[type=minecraft:text_display,tag=oa.mapsel_t_cur,limit=1,distance=..45] text set value {text:"地上",color:"gold",bold:true}
 execute if data storage oa:maps {current:"nether"} run data modify entity @e[type=minecraft:text_display,tag=oa.mapsel_t_cur,limit=1,distance=..45] text set value {text:"ネザー",color:"gold",bold:true}
 execute if data storage oa:maps {current:"cave"} run data modify entity @e[type=minecraft:text_display,tag=oa.mapsel_t_cur,limit=1,distance=..45] text set value {text:"洞窟",color:"gold",bold:true}
+function oa:lobby/mapsel/labels

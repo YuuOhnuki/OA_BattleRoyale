@@ -366,7 +366,8 @@ fill ~-77 ~-30 ~-43 ~-60 ~-26 ~-43 minecraft:stone
 fill ~-77 ~-30 ~-42 ~-61 ~-26 ~-42 minecraft:stone
 fill ~-80 ~-30 ~-40 ~-63 ~-26 ~-40 minecraft:stone
 fill ~-84 ~-30 ~-39 ~-65 ~-26 ~-39 minecraft:stone
-fill ~-57 ~-30 ~-39 ~-57 ~-26 ~-39 minecraft:stone
+setblock ~-57 ~-30 ~-39 minecraft:stone
+fill ~-57 ~-28 ~-39 ~-57 ~-26 ~-39 minecraft:stone
 fill ~-59 ~-30 ~-38 ~-57 ~-26 ~-38 minecraft:stone
 fill ~-63 ~-30 ~-36 ~-63 ~-28 ~-36 minecraft:oak_fence
 fill ~-67 ~-30 ~-36 ~-67 ~-28 ~-36 minecraft:oak_fence
@@ -464,6 +465,7 @@ fill ~-81 ~-29 ~-45 ~-80 ~-29 ~-45 minecraft:andesite
 fill ~-88 ~-29 ~-45 ~-82 ~-29 ~-45 minecraft:stone
 fill ~-78 ~-29 ~-45 ~-58 ~-27 ~-45 minecraft:stone
 setblock ~-60 ~-29 ~-42 minecraft:glow_lichen[west=true]
+setblock ~-57 ~-29 ~-39 minecraft:coal_ore
 fill ~-87 ~-29 ~-36 ~-68 ~-28 ~-36 minecraft:stone
 fill ~-87 ~-29 ~-35 ~-69 ~-28 ~-35 minecraft:stone
 fill ~-87 ~-29 ~-34 ~-70 ~-29 ~-34 minecraft:stone

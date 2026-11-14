@@ -19,6 +19,8 @@ SRC = f"{ROOT}/data/oa/function/map/internal/tiles"
 SEED = 20261115
 rng = np.random.default_rng(SEED)
 N = 305; OFF = 152; Y0 = -40; NY = 41; TOP = 0
+NCH = 100    # 通常チェスト（1.9.169 で88→100。中央の神殿と中間の空洞に足した）
+NORE = 180   # 鉱石（1.9.169 で108→180）
 
 pal = ['minecraft:air']; pid = {'minecraft:air': 0}
 def P(b):
@@ -325,9 +327,9 @@ for k in range(8):
     c = ce(x, z)
     for y in range(c - 1, c - 4, -1): put(x, y, z, 'minecraft:iron_chain[axis=y]')
     put(x, c - 4, z, 'minecraft:soul_lantern[hanging=true]')
-# 神殿の普通のチェスト（壁ぎわ3つ）
-for k in range(3):
-    x, z = pol(19, 60 + 120 * k); x, z = int(round(x)), int(round(z))
+# 神殿の普通のチェスト（壁ぎわ8つ。1.9.169 で3→8：中央付近のチェストを増やす）
+for k in range(8):
+    x, z = pol(19, 22.5 + 45 * k); x, z = int(round(x)), int(round(z))
     if opn(x, z): put(x, TF + 1, z, 'minecraft:chest'); chests.append((x, TF + 1, z)); used[x + OFF, z + OFF] = True
 
 # ---------------- エリアの飾り ----------------
@@ -516,20 +518,20 @@ def wall_spot(cands, k, kind, lst):
 for (cx, cz) in CHAMBERS:
     cs = [(x, z) for x, z in cells(7) if math.hypot(x - cx, z - cz) < 9]
     wall_spot(cs, 2, 'n', chests)
-for (cx, cz) in MIDS:
+for (cx, cz) in MIDS:   # 1.9.169: 中間の空洞は各2→3
     cs = [(x, z) for x, z in cells(8) if math.hypot(x - cx, z - cz) < 12]
-    wall_spot(cs, 2, 'n', chests)
+    wall_spot(cs, 3, 'n', chests)
 for a, k in ((1, 4), (2, 5), (3, 4), (4, 4)):
     wall_spot(cells(a), k, 'n', chests)
 side4 = [(x, z) for x, z in cells(4) if (x - d4['c'][0]) * math.cos(math.radians(d4['ang'])) + (z - d4['c'][1]) * math.sin(math.radians(d4['ang'])) >= 0]
 wall_spot(side4, 3, 'r', riches)
 wall_spot(cells(1), 2, 'r', riches)
 # 足りない分はトンネルの壁ぎわに
-need = 88 - len(chests)
+need = NCH - len(chests)
 if need > 0:
     cs = [(x, z) for x, z in cells(6) if 40 < math.hypot(x, z) < 145]
     wall_spot(cs, need, 'n', chests)
-while len(chests) > 88:
+while len(chests) > NCH:
     x, y, z = chests.pop(); put(x, y, z, 'minecraft:air'); used[x + OFF, z + OFF] = False
 print('chests', len(chests), 'rich', len(riches), 'houses', len(houses), 'chambers', len(CHAMBERS))
 
@@ -538,7 +540,7 @@ oc = []
 cand = cells(6) + cells(7)
 rd.shuffle(cand)
 for x, z in cand:
-    if len(oc) >= 108: break
+    if len(oc) >= NORE: break
     if math.hypot(x, z) < 30: continue
     f = fl(x, z)
     for (a, b) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
@@ -596,7 +598,7 @@ for o in bad_or:
 cand = [k for k in seen if area(*k) in (6, 7) and math.hypot(*k) > 30]
 rd.shuffle(cand)
 for x, z in cand:
-    if len(ores) >= 108: break
+    if len(ores) >= NORE: break
     f = fl(x, z)
     for (a, b) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
         wx, wz = x + a, z + b
@@ -614,7 +616,7 @@ print('reach', len(seen), '/', openwalk, 'bad spawn/chest/ore', len(bad_sp), len
 if bad_ch: print('bad_ch', bad_ch[:10])
 if bad_sp: print('bad_sp', bad_sp[:10])
 assert not bad_sp and not bad_ch and not bad_or
-assert len(chests) == 88 and len(riches) == 14 and len(ores) == 108, (len(chests), len(riches), len(ores))
+assert len(chests) == NCH and len(riches) == 14 and len(ores) == NORE, (len(chests), len(riches), len(ores))
 
 # ---------------- 画像（確認用） ----------------
 if PNG:

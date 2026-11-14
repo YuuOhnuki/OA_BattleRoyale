@@ -501,11 +501,15 @@ fill ~6 ~-29 ~-25 ~7 ~-20 ~-25 minecraft:deepslate_bricks
 fill ~-24 ~-29 ~-25 ~-11 ~-28 ~-25 minecraft:stone
 fill ~-8 ~-29 ~-25 ~-6 ~-20 ~-25 minecraft:deepslate_bricks
 fill ~-10 ~-29 ~-25 ~-9 ~-20 ~-25 minecraft:deepslate
+fill ~4 ~-28 ~-55 ~7 ~-28 ~-54 minecraft:stone
 setblock ~-15 ~-28 ~-54 minecraft:lantern[hanging=true]
 fill ~-24 ~-28 ~-53 ~-17 ~-26 ~-53 minecraft:stone
+fill ~5 ~-28 ~-53 ~7 ~-28 ~-53 minecraft:stone
+setblock ~4 ~-28 ~-53 minecraft:coal_ore
 fill ~-22 ~-28 ~-52 ~-21 ~-28 ~-52 minecraft:andesite
 fill ~-24 ~-28 ~-52 ~-23 ~-28 ~-52 minecraft:stone
-fill ~4 ~-28 ~-55 ~7 ~-25 ~-51 minecraft:stone
+fill ~4 ~-28 ~-52 ~7 ~-28 ~-51 minecraft:stone
+fill ~4 ~-24 ~-52 ~7 ~-24 ~-51 minecraft:stone
 fill ~-20 ~-28 ~-52 ~-18 ~-28 ~-51 minecraft:stone
 fill ~-24 ~-28 ~-51 ~-24 ~-28 ~-50 minecraft:stone
 fill ~-23 ~-28 ~-51 ~-21 ~-28 ~-50 minecraft:andesite
@@ -518,9 +522,11 @@ fill ~-24 ~-28 ~-48 ~-16 ~-26 ~-48 minecraft:stone
 setblock ~-9 ~-28 ~-42 minecraft:chest
 fill ~-24 ~-28 ~-36 ~-10 ~-25 ~-35 minecraft:stone
 setblock ~7 ~-28 ~-34 minecraft:chest
+setblock ~-7 ~-28 ~-34 minecraft:chest
 fill ~-16 ~-27 ~-54 ~-12 ~-27 ~-54 minecraft:stripped_oak_log[axis=x]
 setblock ~-22 ~-27 ~-52 minecraft:andesite
 fill ~-21 ~-27 ~-52 ~-18 ~-27 ~-52 minecraft:stone
+fill ~4 ~-27 ~-55 ~7 ~-25 ~-51 minecraft:stone
 fill ~-20 ~-27 ~-51 ~-18 ~-27 ~-51 minecraft:stone
 fill ~-24 ~-27 ~-52 ~-23 ~-27 ~-50 minecraft:stone
 fill ~-22 ~-27 ~-51 ~-21 ~-27 ~-50 minecraft:andesite
@@ -586,7 +592,6 @@ fill ~3 ~-24 ~-54 ~4 ~-24 ~-53 minecraft:tuff
 fill ~5 ~-24 ~-54 ~7 ~-24 ~-53 minecraft:stone
 fill ~-12 ~-24 ~-54 ~-11 ~-24 ~-52 minecraft:granite
 setblock ~3 ~-24 ~-52 minecraft:tuff
-fill ~4 ~-24 ~-52 ~7 ~-24 ~-51 minecraft:stone
 fill ~-12 ~-24 ~-51 ~-10 ~-24 ~-51 minecraft:granite
 fill ~-12 ~-24 ~-50 ~-5 ~-22 ~-50 minecraft:granite
 fill ~-11 ~-24 ~-49 ~-6 ~-24 ~-49 minecraft:tuff

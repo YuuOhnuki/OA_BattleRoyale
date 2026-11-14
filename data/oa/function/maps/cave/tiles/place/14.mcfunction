@@ -33,7 +33,8 @@ fill ~-23 ~-33 ~-114 ~-22 ~-33 ~-114 minecraft:stone
 setblock ~-14 ~-33 ~-114 minecraft:stone
 fill ~-11 ~-33 ~-114 ~7 ~-33 ~-114 minecraft:stone
 setblock ~-24 ~-33 ~-114 minecraft:tuff
-fill ~-13 ~-33 ~-114 ~-12 ~-28 ~-114 minecraft:granite
+fill ~-13 ~-33 ~-114 ~-12 ~-33 ~-114 minecraft:granite
+fill ~-13 ~-31 ~-114 ~-12 ~-28 ~-114 minecraft:granite
 setblock ~-21 ~-33 ~-114 minecraft:tuff
 fill ~-19 ~-33 ~-114 ~-18 ~-33 ~-114 minecraft:stone
 setblock ~-20 ~-33 ~-114 minecraft:andesite
@@ -158,6 +159,8 @@ fill ~-5 ~-32 ~-114 ~7 ~-32 ~-114 minecraft:stone
 fill ~-8 ~-32 ~-114 ~-7 ~-32 ~-114 minecraft:stone
 setblock ~-6 ~-32 ~-114 minecraft:andesite
 fill ~-15 ~-32 ~-114 ~-15 ~-30 ~-114 minecraft:oak_fence
+setblock ~-12 ~-32 ~-114 minecraft:granite
+setblock ~-13 ~-32 ~-114 minecraft:coal_ore
 fill ~-9 ~-32 ~-114 ~-9 ~-32 ~-113 minecraft:andesite
 setblock ~-8 ~-32 ~-113 minecraft:gravel
 fill ~-7 ~-32 ~-113 ~7 ~-32 ~-113 minecraft:stone

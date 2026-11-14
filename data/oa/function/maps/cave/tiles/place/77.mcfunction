@@ -286,7 +286,8 @@ fill ~87 ~-29 ~84 ~88 ~-29 ~84 minecraft:stone
 setblock ~83 ~-29 ~84 minecraft:gravel
 setblock ~86 ~-29 ~85 minecraft:cobbled_deepslate
 setblock ~83 ~-29 ~85 minecraft:tuff
-fill ~74 ~-29 ~85 ~82 ~-29 ~85 minecraft:stone
+fill ~75 ~-29 ~85 ~82 ~-29 ~85 minecraft:stone
+setblock ~74 ~-29 ~85 minecraft:coal_ore
 setblock ~84 ~-29 ~85 minecraft:andesite
 fill ~88 ~-29 ~85 ~103 ~-29 ~85 minecraft:stone
 setblock ~85 ~-29 ~85 minecraft:stone
@@ -363,10 +364,12 @@ fill ~96 ~-28 ~80 ~103 ~-28 ~80 minecraft:stone
 fill ~72 ~-28 ~81 ~74 ~-28 ~81 minecraft:stone
 fill ~75 ~-28 ~81 ~80 ~-28 ~81 minecraft:tuff
 fill ~95 ~-28 ~81 ~103 ~-24 ~81 minecraft:stone
-fill ~94 ~-28 ~82 ~103 ~-24 ~82 minecraft:stone
+fill ~94 ~-28 ~82 ~103 ~-28 ~82 minecraft:stone
+fill ~94 ~-26 ~82 ~103 ~-24 ~82 minecraft:stone
 fill ~77 ~-28 ~82 ~79 ~-28 ~82 minecraft:tuff
 fill ~72 ~-28 ~82 ~76 ~-28 ~82 minecraft:stone
-fill ~93 ~-28 ~83 ~103 ~-24 ~83 minecraft:stone
+fill ~93 ~-28 ~83 ~103 ~-28 ~83 minecraft:stone
+fill ~93 ~-26 ~83 ~103 ~-24 ~83 minecraft:stone
 fill ~72 ~-28 ~83 ~79 ~-28 ~84 minecraft:stone
 fill ~92 ~-28 ~84 ~103 ~-24 ~84 minecraft:stone
 fill ~91 ~-28 ~85 ~103 ~-23 ~85 minecraft:stone
@@ -401,6 +404,8 @@ fill ~72 ~-27 ~78 ~77 ~-1 ~80 minecraft:tuff
 fill ~72 ~-27 ~81 ~80 ~-24 ~81 minecraft:tuff
 fill ~74 ~-27 ~82 ~79 ~-27 ~82 minecraft:tuff
 fill ~72 ~-27 ~82 ~73 ~-27 ~82 minecraft:stone
+fill ~94 ~-27 ~82 ~103 ~-27 ~83 minecraft:stone
+setblock ~93 ~-27 ~83 minecraft:coal_ore
 fill ~77 ~-27 ~83 ~79 ~-27 ~83 minecraft:tuff
 fill ~72 ~-27 ~83 ~76 ~-27 ~83 minecraft:stone
 fill ~72 ~-27 ~84 ~79 ~-27 ~84 minecraft:stone

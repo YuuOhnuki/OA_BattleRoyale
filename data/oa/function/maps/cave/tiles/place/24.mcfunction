@@ -291,14 +291,16 @@ setblock ~-1 ~-30 ~-63 minecraft:gravel
 fill ~-16 ~-30 ~-63 ~-16 ~-28 ~-63 minecraft:oak_fence
 setblock ~1 ~-30 ~-63 minecraft:gravel
 fill ~-15 ~-30 ~-63 ~-2 ~-30 ~-63 minecraft:stone
+setblock ~-8 ~-30 ~-62 minecraft:stone
 fill ~-4 ~-30 ~-62 ~-3 ~-30 ~-62 minecraft:stone
 fill ~2 ~-30 ~-62 ~7 ~-30 ~-62 minecraft:stone
 setblock ~-5 ~-30 ~-62 minecraft:tuff
 setblock ~-6 ~-30 ~-62 minecraft:stone
 fill ~0 ~-30 ~-62 ~1 ~-30 ~-62 minecraft:andesite
-setblock ~-2 ~-30 ~-62 minecraft:tuff
 setblock ~-1 ~-30 ~-62 minecraft:cobbled_deepslate
-fill ~-12 ~-30 ~-62 ~-8 ~-26 ~-62 minecraft:stone
+setblock ~-2 ~-30 ~-62 minecraft:tuff
+fill ~-12 ~-30 ~-62 ~-10 ~-30 ~-62 minecraft:stone
+setblock ~-9 ~-30 ~-62 minecraft:coal_ore
 fill ~-24 ~-30 ~-63 ~-22 ~-26 ~-61 minecraft:stone
 fill ~5 ~-30 ~-61 ~7 ~-30 ~-61 minecraft:stone
 fill ~-7 ~-30 ~-61 ~-3 ~-30 ~-61 minecraft:stone
@@ -410,6 +412,7 @@ fill ~5 ~-29 ~-62 ~7 ~-29 ~-62 minecraft:stone
 setblock ~-2 ~-29 ~-62 minecraft:chest
 setblock ~4 ~-29 ~-62 minecraft:gravel
 setblock ~3 ~-29 ~-62 minecraft:stone
+fill ~-12 ~-29 ~-62 ~-8 ~-26 ~-62 minecraft:stone
 fill ~3 ~-29 ~-61 ~4 ~-29 ~-61 minecraft:andesite
 setblock ~6 ~-29 ~-61 minecraft:tuff
 fill ~7 ~-29 ~-61 ~7 ~-29 ~-60 minecraft:stone

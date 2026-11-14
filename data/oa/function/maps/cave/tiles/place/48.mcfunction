@@ -475,7 +475,8 @@ fill ~122 ~-27 ~-19 ~135 ~-27 ~-19 minecraft:stone
 fill ~104 ~-27 ~-12 ~110 ~-27 ~-12 minecraft:stone
 fill ~104 ~-27 ~-11 ~106 ~-27 ~-11 minecraft:tuff
 fill ~107 ~-27 ~-11 ~110 ~-27 ~-11 minecraft:stone
-fill ~118 ~-27 ~-10 ~134 ~-27 ~-10 minecraft:stone
+setblock ~118 ~-27 ~-10 minecraft:redstone_ore
+fill ~119 ~-27 ~-10 ~134 ~-27 ~-10 minecraft:stone
 setblock ~135 ~-27 ~-10 minecraft:tuff
 fill ~104 ~-27 ~-10 ~110 ~-26 ~-10 minecraft:tuff
 fill ~133 ~-27 ~-9 ~135 ~-27 ~-9 minecraft:tuff

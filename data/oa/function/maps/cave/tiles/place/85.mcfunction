@@ -46,7 +46,8 @@ fill ~15 ~-33 ~122 ~22 ~-33 ~122 minecraft:stone
 fill ~24 ~-33 ~122 ~30 ~-33 ~122 minecraft:stone
 fill ~24 ~-31 ~122 ~30 ~-31 ~122 minecraft:stone
 fill ~31 ~-33 ~122 ~39 ~-33 ~122 minecraft:tuff
-fill ~31 ~-31 ~122 ~39 ~-26 ~122 minecraft:tuff
+fill ~31 ~-31 ~122 ~39 ~-30 ~122 minecraft:tuff
+fill ~31 ~-28 ~122 ~39 ~-26 ~122 minecraft:tuff
 fill ~8 ~-33 ~122 ~14 ~-33 ~122 minecraft:tuff
 fill ~8 ~-33 ~123 ~15 ~-33 ~123 minecraft:tuff
 fill ~16 ~-33 ~123 ~29 ~-33 ~123 minecraft:stone
@@ -242,7 +243,8 @@ fill ~16 ~-31 ~121 ~16 ~-30 ~121 minecraft:moss_block
 fill ~16 ~-24 ~121 ~16 ~-21 ~121 minecraft:moss_block
 setblock ~8 ~-31 ~121 minecraft:tuff
 setblock ~8 ~-21 ~121 minecraft:tuff
-fill ~32 ~-31 ~121 ~39 ~-26 ~121 minecraft:tuff
+fill ~32 ~-31 ~121 ~39 ~-30 ~121 minecraft:tuff
+fill ~32 ~-28 ~121 ~39 ~-26 ~121 minecraft:tuff
 fill ~17 ~-31 ~121 ~22 ~-31 ~121 minecraft:stone
 setblock ~15 ~-31 ~121 minecraft:tuff
 fill ~15 ~-24 ~121 ~15 ~-21 ~121 minecraft:tuff
@@ -605,6 +607,8 @@ fill ~12 ~-29 ~121 ~13 ~-29 ~121 minecraft:moss_carpet
 fill ~24 ~-29 ~121 ~24 ~-26 ~121 minecraft:tuff
 setblock ~10 ~-29 ~121 minecraft:moss_carpet
 fill ~21 ~-29 ~121 ~22 ~-29 ~122 minecraft:stone
+fill ~32 ~-29 ~121 ~39 ~-29 ~122 minecraft:tuff
+setblock ~31 ~-29 ~122 minecraft:coal_ore
 fill ~8 ~-29 ~122 ~8 ~-25 ~122 minecraft:tuff
 fill ~24 ~-29 ~122 ~25 ~-26 ~122 minecraft:tuff
 fill ~16 ~-29 ~122 ~20 ~-29 ~122 minecraft:tuff
@@ -623,9 +627,10 @@ fill ~12 ~-29 ~127 ~18 ~-29 ~127 minecraft:tuff
 fill ~19 ~-29 ~128 ~29 ~-29 ~128 minecraft:stone
 fill ~11 ~-29 ~128 ~18 ~-29 ~128 minecraft:tuff
 fill ~30 ~-29 ~128 ~39 ~-29 ~128 minecraft:tuff
+setblock ~9 ~-29 ~129 minecraft:coal_ore
 fill ~18 ~-29 ~129 ~32 ~-29 ~129 minecraft:stone
 fill ~33 ~-29 ~129 ~39 ~-29 ~129 minecraft:tuff
-fill ~9 ~-29 ~129 ~17 ~-29 ~129 minecraft:tuff
+fill ~10 ~-29 ~129 ~17 ~-29 ~129 minecraft:tuff
 fill ~18 ~-29 ~130 ~37 ~-29 ~130 minecraft:stone
 fill ~38 ~-29 ~130 ~39 ~-29 ~130 minecraft:tuff
 fill ~8 ~-29 ~130 ~17 ~-29 ~131 minecraft:tuff

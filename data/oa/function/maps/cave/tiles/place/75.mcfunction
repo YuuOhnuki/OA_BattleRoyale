@@ -610,7 +610,9 @@ fill ~29 ~-29 ~102 ~30 ~-29 ~102 minecraft:tuff
 fill ~8 ~-29 ~103 ~27 ~-29 ~103 minecraft:moss_block
 fill ~29 ~-29 ~103 ~39 ~-29 ~103 minecraft:stone
 setblock ~28 ~-29 ~103 minecraft:tuff
-fill ~19 ~-28 ~72 ~31 ~-28 ~72 minecraft:stone
+setblock ~24 ~-28 ~72 minecraft:redstone_ore
+fill ~19 ~-28 ~72 ~23 ~-28 ~72 minecraft:stone
+fill ~25 ~-28 ~72 ~31 ~-28 ~72 minecraft:stone
 fill ~8 ~-28 ~73 ~9 ~-28 ~73 minecraft:moss_carpet
 fill ~16 ~-28 ~73 ~31 ~-28 ~73 minecraft:stone
 fill ~32 ~-28 ~72 ~39 ~-28 ~74 minecraft:tuff

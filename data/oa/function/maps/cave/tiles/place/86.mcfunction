@@ -210,7 +210,8 @@ fill ~40 ~-29 ~108 ~59 ~-27 ~109 minecraft:stone
 fill ~68 ~-29 ~108 ~71 ~-29 ~109 minecraft:stone
 fill ~66 ~-29 ~109 ~67 ~-28 ~109 minecraft:tuff
 fill ~67 ~-29 ~110 ~71 ~-29 ~111 minecraft:stone
-fill ~40 ~-29 ~110 ~58 ~-26 ~111 minecraft:stone
+fill ~40 ~-29 ~110 ~58 ~-29 ~111 minecraft:stone
+fill ~40 ~-27 ~110 ~58 ~-26 ~111 minecraft:stone
 fill ~64 ~-29 ~111 ~66 ~-29 ~111 minecraft:tuff
 setblock ~63 ~-29 ~112 minecraft:stone
 fill ~64 ~-29 ~112 ~65 ~-29 ~112 minecraft:tuff
@@ -266,7 +267,10 @@ fill ~53 ~-29 ~135 ~56 ~-29 ~135 minecraft:tuff
 fill ~57 ~-29 ~135 ~71 ~-29 ~135 minecraft:stone
 setblock ~60 ~-28 ~108 minecraft:glow_lichen[west=true]
 fill ~65 ~-28 ~110 ~67 ~-28 ~110 minecraft:tuff
+fill ~40 ~-28 ~110 ~57 ~-28 ~110 minecraft:stone
+setblock ~58 ~-28 ~110 minecraft:redstone_ore
 fill ~68 ~-28 ~108 ~71 ~-28 ~111 minecraft:stone
+fill ~40 ~-28 ~111 ~58 ~-28 ~111 minecraft:stone
 fill ~64 ~-28 ~111 ~67 ~-27 ~111 minecraft:tuff
 fill ~67 ~-28 ~112 ~71 ~-28 ~113 minecraft:stone
 fill ~63 ~-28 ~112 ~66 ~-28 ~113 minecraft:tuff

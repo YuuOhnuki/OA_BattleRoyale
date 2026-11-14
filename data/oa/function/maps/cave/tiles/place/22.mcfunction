@@ -1162,9 +1162,10 @@ fill ~-79 ~-27 ~-88 ~-78 ~-27 ~-88 minecraft:sculk
 fill ~-84 ~-27 ~-87 ~-82 ~-23 ~-87 minecraft:deepslate
 setblock ~-79 ~-27 ~-87 minecraft:deepslate
 setblock ~-81 ~-27 ~-87 minecraft:stone
-fill ~-85 ~-27 ~-86 ~-83 ~-23 ~-86 minecraft:deepslate
+fill ~-84 ~-27 ~-86 ~-83 ~-27 ~-86 minecraft:deepslate
 fill ~-80 ~-27 ~-86 ~-79 ~-27 ~-86 minecraft:deepslate
 fill ~-82 ~-27 ~-86 ~-81 ~-27 ~-86 minecraft:stone
+setblock ~-85 ~-27 ~-86 minecraft:redstone_ore
 fill ~-81 ~-27 ~-85 ~-80 ~-27 ~-85 minecraft:deepslate
 setblock ~-80 ~-27 ~-84 minecraft:deepslate
 fill ~-85 ~-27 ~-84 ~-82 ~-27 ~-84 minecraft:stone
@@ -1210,6 +1211,7 @@ setblock ~-79 ~-26 ~-88 minecraft:stone
 setblock ~-76 ~-26 ~-88 minecraft:deepslate
 setblock ~-77 ~-26 ~-87 minecraft:sculk
 fill ~-81 ~-26 ~-87 ~-80 ~-26 ~-87 minecraft:stone
+fill ~-85 ~-26 ~-86 ~-83 ~-23 ~-86 minecraft:deepslate
 fill ~-79 ~-26 ~-86 ~-77 ~-26 ~-86 minecraft:deepslate
 fill ~-82 ~-26 ~-86 ~-80 ~-26 ~-86 minecraft:stone
 fill ~-84 ~-26 ~-85 ~-81 ~-26 ~-85 minecraft:stone
