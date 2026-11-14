@@ -65,3 +65,7 @@ execute in minecraft:the_nether run kill @e[distance=0..,tag=oa.itori_fx,tag=!oa
 execute in minecraft:the_nether run kill @e[distance=0..,tag=oa.itori_shield_mesh,tag=!oa.db_projectile]
 execute in minecraft:the_end run kill @e[distance=0..,tag=oa.itori_fx,tag=!oa.db_projectile]
 execute in minecraft:the_end run kill @e[distance=0..,tag=oa.itori_shield_mesh,tag=!oa.db_projectile]
+
+# 1.9.157: 再補充までの時間を出していたチェストの名前を消す（読み込まれている会場のチェスト。残りは次の試合で上書きされる）
+execute if score #map oa.mapid matches 0 in oa:br as @e[distance=0..,type=minecraft:marker,tag=br.chest,tag=!br.rich] at @s if block ~ ~ ~ minecraft:chest run data remove block ~ ~ ~ CustomName
+execute if score #map oa.mapid matches 1 in oa:br_nether as @e[distance=0..,type=minecraft:marker,tag=br.chest,tag=!br.rich] at @s if block ~ ~ ~ minecraft:chest run data remove block ~ ~ ~ CustomName

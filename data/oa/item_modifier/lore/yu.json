@@ -2,7 +2,7 @@
   "type": "minecraft:set_components",
   "components": {
     "minecraft:custom_name": {
-      "text": "ゆー | オーバーワーク",
+      "text": "ゆー：オーバーワーク",
       "color": "gold",
       "italic": false
     },

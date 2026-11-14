@@ -258,7 +258,7 @@ fill ~31 ~0 ~-10 ~33 ~0 ~-8 minecraft:chiseled_quartz_block
 setblock ~32 ~0 ~-9 minecraft:sea_lantern
 summon minecraft:mannequin ~32.5 ~1 ~-8.5 {"profile":{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTc5MzUxMTQ2NzU4OSwKICAicHJvZmlsZUlkIiA6ICIwMTdlMTcyMTJlMmY0NTEzODQ0ODhkMTVmZDJmNzg5NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJZXzA0MDIiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDNhYTM2MTEwNzZhOGI2NGY2ZjhiOWM0N2ViMDgwN2M5ZmQ0NTYzZGZiYTUzZTc3ZTFjZjFiM2NkYmNlMTQ5MCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"}]},"pose":"standing","immovable":true,"hide_description":true,"Invulnerable":true,"NoGravity":true,"Silent":true,"PersistenceRequired":true,"Rotation":[90.0,0.0],"Tags":["oa.lobby_exhibit","oa.gallery","oa.exhibit_yu"]}
 item replace entity @e[type=minecraft:mannequin,tag=oa.exhibit_yu,limit=1] weapon.mainhand with minecraft:totem_of_undying[minecraft:item_model="oa:yu"]
-summon minecraft:text_display ~32.5 ~4 ~-8.5 {"Tags":["oa.lobby_label","oa.gallery"],"text":{"text":"ゆー | オーバーワーク\nY_0402","color":"gold"},"billboard":"center","background":1073741824,"shadow":true,"line_width":260,"view_range":0.5}
+summon minecraft:text_display ~32.5 ~4 ~-8.5 {"Tags":["oa.lobby_label","oa.gallery"],"text":{"text":"ゆー：オーバーワーク\nY_0402","color":"gold"},"billboard":"center","background":1073741824,"shadow":true,"line_width":260,"view_range":0.5}
 setblock ~29 ~0 ~-9 minecraft:chiseled_quartz_block
 setblock ~29 ~1 ~-9 minecraft:stone_button[face=floor,facing=west,powered=false]
 summon minecraft:marker ~29.5 ~1 ~-8.5 {Tags:["oa.lobby_button_new","oa.button_lobby","oa.gallery"]}

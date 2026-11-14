@@ -147,4 +147,11 @@ open(f"{FN}/br/stats/count_ach.mcfunction", "w", encoding="utf-8").write(
         f"execute if entity @s[advancements={{oa:ach/{i}=true}}] run scoreboard players add @s oa.t_ach 1" for i in ids) + "\n")
 open(f"{FN}/ach/revoke_all.mcfunction", "w", encoding="utf-8").write(
     "\n".join(f"advancement revoke @s only oa:ach/{i}" for i in ids) + "\n")
+# 1.9.157: 実績の名前と説明をストレージに置く（チャットの解除メッセージでカーソルを合わせると説明が出る。ach/give → ach/announce）
+info_lines = ["# 生成: scripts/gen_ach_1_9_123.py（直接編集しない）。load から呼ぶ", "data modify storage oa:ach_info set value {}"]
+for i in ids:
+    t, dsc, h = info[i]
+    assert not any(ch in t + dsc for ch in '"\\$'), i   # マクロで文字列に埋め込むため
+    info_lines.append(f'data modify storage oa:ach_info {i} set value {{name:"{t}",desc:"{dsc}"}}')
+open(f"{FN}/ach/info.mcfunction", "w", encoding="utf-8").write("\n".join(info_lines) + "\n")
 print(len(ids), "achievements,", len(CATS), "categories")

@@ -8,7 +8,7 @@
       "text": "お題マスター"
     },
     "description": {
-      "text": "今日のお題を通算5回達成した"
+      "text": "今回のお題を通算5回達成した"
     },
     "frame": "goal",
     "show_toast": true,

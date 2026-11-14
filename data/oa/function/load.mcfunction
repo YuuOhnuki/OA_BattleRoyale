@@ -424,3 +424,4 @@ scoreboard objectives add br.qspr minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add br.qsneak minecraft.custom:minecraft.crouch_one_cm
 scoreboard objectives add br.qjump minecraft.custom:minecraft.jump
 scoreboard players set #3 br.tmp 3
+function oa:ach/info

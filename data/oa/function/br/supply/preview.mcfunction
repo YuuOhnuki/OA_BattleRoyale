@@ -13,7 +13,8 @@ title @a[tag=br.playing] title {text:"✈ 空中補給用意",color:"gold",bold:
 tellraw @a[tag=br.playing] [{text:"━━ ✈ 空中補給の予告 ━━",color:"gold",bold:true}]
 tellraw @a[tag=br.playing] [{text:"約30秒後に空から降ってきます。場所：",color:"yellow"},{storage:"oa:supply",nbt:"region",interpret:true,color:"aqua",bold:true},{text:"（X:",color:"gray"},{score:{name:"#mx",objective:"br.tmp"},color:"white"},{text:" Z:",color:"gray"},{score:{name:"#mz",objective:"br.tmp"},color:"white"},{text:"）",color:"gray"}]
 execute as @a[tag=br.playing] at @s run function oa:br/supply/guide_chat
-execute if score @s br.suptype matches 1 run tellraw @a[tag=br.playing] {text:"第1便：通常（武器・防具・回復・食料）",color:"aqua"}
-execute if score @s br.suptype matches 2 run tellraw @a[tag=br.playing] {text:"第2便：良品（良い武器・防具が出やすい）",color:"green"}
-execute if score @s br.suptype matches 3 run tellraw @a[tag=br.playing] {text:"第3便：最上級（鉄・ダイヤ装備が出やすい。取り合い注意！）",color:"red"}
+# 1.9.157: 便と強さ（★）だけを表示する
+execute if score @s br.suptype matches 1 run tellraw @a[tag=br.playing] [{text:"第1便 ",color:"aqua",bold:true},{text:"★",color:"gold"},{text:"☆☆",color:"dark_gray"}]
+execute if score @s br.suptype matches 2 run tellraw @a[tag=br.playing] [{text:"第2便 ",color:"aqua",bold:true},{text:"★★",color:"gold"},{text:"☆",color:"dark_gray"}]
+execute if score @s br.suptype matches 3 run tellraw @a[tag=br.playing] [{text:"第3便 ",color:"aqua",bold:true},{text:"★★★",color:"gold"}]
 execute as @a[tag=br.playing] at @s run playsound minecraft:block.note_block.bell player @s ~ ~ ~ 1.2 1.4
