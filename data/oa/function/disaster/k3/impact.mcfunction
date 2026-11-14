@@ -1,3 +1,5 @@
+# 1.9.167: 洞窟は「落盤」：屋根の判定なし（天井の下で起きる）、岩の崩れる演出
+execute if score #map oa.mapid matches 2 run return run function oa:disaster/k3/impact_cave
 playsound minecraft:entity.generic.explode hostile @a[distance=..48] ~ ~ ~ 2 0.8
 particle minecraft:explosion_emitter ~ ~0.5 ~
 particle minecraft:flame ~ ~0.5 ~ 1 0.5 1 0.1 40 force @a[distance=..64]

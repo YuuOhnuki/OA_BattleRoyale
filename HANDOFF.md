@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.166 時点）
+# 引き継ぎメモ（1.9.167 時点）
 
 ## 現状
+- 1.9.167：洞窟マップ（key `cave`、id 2、`oa:br_cave`）。生成は `scripts/build_map_cave.py`（2Dの「開いた場所・床・天井までの高さ・エリア」を描いてから3Dに起こす。床は隣と1段以内になるまでならす。到達性はBFSで検査）。地図パネルは `scripts/render_cave_panel.py`。マップごとの分岐は `#map oa.mapid matches 1 in oa:br_nether` の行を機械的に複製して `matches 2 in oa:br_cave` を足した（74ファイル112行）ほか、`unless dimension oa:br unless dimension oa:br_nether` に `unless dimension oa:br_cave` を足した。洞窟だけ動きを変えたのは：補給（launch_cave、place_try の under、ground_ok の頭上8、cave_fallback）、地面の武器（ground_try の under、random_ground の追加試行）、途中参加（admin/players/spawn_cave）、spawn_reroll、k3（warn_cave・impact_cave＝落盤）、finale/cave、pool/cave。`spreadplayers under` は岩だけの列では奈落（最低高度）に置くので、必ず床の判定で落とすこと。バリアを `#oa:spawn_unsafe_floor` に足した。
 - 1.9.166：ぴちぴちの速度（oa:fish 1.5 add_multiplied_total）を廃止。ユーザーが v1.9.165.1（7101ee7）で fish/speed_upgrade の追加行を消し、active_changed の追加行も削除。外す処理（speed_upgrade・active_changed・cleanup の remove）は残す（古い付与を外すため）。
 - 1.9.165：練習場の武器の名札の z を 14.5／18.5 → 15.5／19.5（台座のブロックの中心＝item_display と同じ）。1.9.161 以前から1ブロックずれていた。レイアウト版 1999。
 - 1.9.164：ぴちぴちの激流を2に（fish_riptide_on.json）。所持中のアイテムを差し替えるため custom_data の目印を `{oa:{riptide1916:1b,rip2:1b}}` にして riptide_tick の判定も合わせた（この目印を変えないと、既存のトライデントが古いレベルのまま残る）。

@@ -10,4 +10,5 @@ scoreboard players set #dis_phase br.tmp 0
 function oa:disaster/clear_marks
 execute unless score #relic_off br.tmp matches 1 if score #map oa.mapid matches 0 in oa:br as @e[type=minecraft:marker,tag=br.chest,sort=random,limit=6] at @s run function oa:disaster/relic/make
 execute unless score #relic_off br.tmp matches 1 if score #map oa.mapid matches 1 in oa:br_nether as @e[type=minecraft:marker,tag=br.chest,sort=random,limit=6] at @s run function oa:disaster/relic/make
+execute unless score #relic_off br.tmp matches 1 if score #map oa.mapid matches 2 in oa:br_cave as @e[type=minecraft:marker,tag=br.chest,sort=random,limit=6] at @s run function oa:disaster/relic/make
 execute unless score #relic_off br.tmp matches 1 run tellraw @a[tag=br.playing] [{text:"✦ ",color:"light_purple"},{text:"建物の中に「封印の宝珠」がある。右クリックで5秒かけて解錠すると、戦利品がもらえる（光と音で場所が知られる）",color:"gray"}]

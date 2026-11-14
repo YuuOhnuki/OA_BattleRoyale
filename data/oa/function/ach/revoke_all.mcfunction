@@ -13,6 +13,8 @@ advancement revoke @s only oa:ach/map_br_play
 advancement revoke @s only oa:ach/map_br_win
 advancement revoke @s only oa:ach/map_nether_play
 advancement revoke @s only oa:ach/map_nether_win
+advancement revoke @s only oa:ach/map_cave_play
+advancement revoke @s only oa:ach/map_cave_win
 advancement revoke @s only oa:ach/map_all
 advancement revoke @s only oa:ach/yuua_kill
 advancement revoke @s only oa:ach/yuua_counter

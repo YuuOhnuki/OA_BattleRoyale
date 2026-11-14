@@ -66,11 +66,14 @@ execute as @a[tag=br.lobby] at @s run function oa:br/save_player
 execute if entity @a[tag=br.lobby,scores={br.saved=0}] run return run function oa:br/save_failed
 execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,type=minecraft:marker,tag=br.spawn]
 execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,type=minecraft:marker,tag=br.spawn]
+execute if score #map oa.mapid matches 2 in oa:br_cave run kill @e[distance=0..,type=minecraft:marker,tag=br.spawn]
 execute if score #map oa.mapid matches 0 in oa:br run function oa:br/preflight with storage oa:br center
 execute if score #map oa.mapid matches 1 in oa:br_nether run function oa:br/preflight with storage oa:br center
+execute if score #map oa.mapid matches 2 in oa:br_cave run function oa:br/preflight with storage oa:br center
 execute unless score #spawn_ok br.flag matches 1 run return run function oa:br/spawn_plan_abort
 execute if score #map oa.mapid matches 0 in oa:br as @a[tag=br.lobby] run function oa:br/cache_player
 execute if score #map oa.mapid matches 1 in oa:br_nether as @a[tag=br.lobby] run function oa:br/cache_player
+execute if score #map oa.mapid matches 2 in oa:br_cave as @a[tag=br.lobby] run function oa:br/cache_player
 execute unless score #spawn_ok br.flag matches 1 run return run function oa:br/spawn_plan_abort
 scoreboard players add #round br.round 1
 scoreboard players set #state br.state 1
@@ -122,6 +125,7 @@ scoreboard players set #tpfix_t br.flag 0
 schedule function oa:br/tp_fix_all 3t
 execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,tag=br.spawn]
 execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,tag=br.spawn]
+execute if score #map oa.mapid matches 2 in oa:br_cave run kill @e[distance=0..,tag=br.spawn]
 function oa:br/ui/start
 scoreboard players set @a[tag=br.playing] br.open 0
 execute as @a[tag=br.playing] run function oa:br/result/reset

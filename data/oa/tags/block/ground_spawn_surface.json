@@ -29,6 +29,16 @@
     "minecraft:polished_blackstone_bricks",
     "minecraft:cracked_polished_blackstone_bricks",
     "minecraft:chiseled_polished_blackstone",
-    "minecraft:gilded_blackstone"
+    "minecraft:gilded_blackstone",
+    "minecraft:tuff",
+    "minecraft:calcite",
+    "minecraft:dripstone_block",
+    "minecraft:sculk",
+    "minecraft:polished_deepslate",
+    "minecraft:deepslate_tiles",
+    "minecraft:cobbled_deepslate",
+    "minecraft:moss_block",
+    "minecraft:clay",
+    "minecraft:amethyst_block"
   ]
 }

@@ -12,4 +12,9 @@ execute if block ~2 ~-1 ~ #oa:spawn_clear if block ~2 ~-2 ~ #oa:spawn_clear run 
 execute if block ~-2 ~-1 ~ #oa:spawn_clear if block ~-2 ~-2 ~ #oa:spawn_clear run return 0
 execute if block ~ ~-1 ~2 #oa:spawn_clear if block ~ ~-2 ~2 #oa:spawn_clear run return 0
 execute if block ~ ~-1 ~-2 #oa:spawn_clear if block ~ ~-2 ~-2 #oa:spawn_clear run return 0
+# 1.9.167: 洞窟は天井から吊り下ろすので、上に8ブロックの空きが要る
+execute if score #map oa.mapid matches 2 unless block ~ ~3 ~ #oa:spawn_clear run return 0
+execute if score #map oa.mapid matches 2 unless block ~ ~5 ~ #oa:spawn_clear run return 0
+execute if score #map oa.mapid matches 2 unless block ~ ~7 ~ #oa:spawn_clear run return 0
+execute if score #map oa.mapid matches 2 unless block ~ ~8 ~ #oa:spawn_clear run return 0
 scoreboard players set #sup_good br.tmp 1

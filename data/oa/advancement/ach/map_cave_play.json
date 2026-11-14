@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/cat_map",
+  "display": {
+    "icon": {
+      "id": "minecraft:amethyst_shard"
+    },
+    "title": {
+      "text": "地底の戦場へ"
+    },
+    "description": {
+      "text": "洞窟マップで試合に参加した"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

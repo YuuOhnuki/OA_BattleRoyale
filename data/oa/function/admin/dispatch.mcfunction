@@ -111,3 +111,16 @@ execute if score @s oa.admin matches 88 run function oa:map/do {key:"nether",op:
 execute if score @s oa.admin matches 89 run function oa:map/do {key:"nether",op:"sp_remove"}
 execute if score @s oa.admin matches 90 run function oa:map/do {key:"nether",op:"sp_clear"}
 execute if score @s oa.admin matches 91 run function oa:map/do {key:"nether",op:"select"}
+# 1.9.167: 洞窟マップ（100〜111、並びはネザーの80〜91と同じ）
+execute if score @s oa.admin matches 100 run function oa:map/do {key:"cave",op:"teleport"}
+execute if score @s oa.admin matches 101 run function oa:map/do {key:"cave",op:"create"}
+execute if score @s oa.admin matches 102 run function oa:map/do {key:"cave",op:"rebuild"}
+execute if score @s oa.admin matches 103 run function oa:map/do {key:"cave",op:"delete"}
+execute if score @s oa.admin matches 104 run function oa:map/do {key:"cave",op:"center"}
+execute if score @s oa.admin matches 105 run function oa:map/do {key:"cave",op:"gen_center"}
+execute if score @s oa.admin matches 106 run function oa:map/do {key:"cave",op:"border"}
+execute if score @s oa.admin matches 107 run function oa:map/do {key:"cave",op:"sp_add"}
+execute if score @s oa.admin matches 108 run function oa:map/do {key:"cave",op:"sp_list"}
+execute if score @s oa.admin matches 109 run function oa:map/do {key:"cave",op:"sp_remove"}
+execute if score @s oa.admin matches 110 run function oa:map/do {key:"cave",op:"sp_clear"}
+execute if score @s oa.admin matches 111 run function oa:map/do {key:"cave",op:"select"}

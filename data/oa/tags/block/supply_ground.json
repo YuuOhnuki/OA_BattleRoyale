@@ -26,6 +26,15 @@
     "minecraft:soul_sand",
     "minecraft:blackstone",
     "minecraft:basalt",
-    "minecraft:smooth_basalt"
+    "minecraft:smooth_basalt",
+    "minecraft:tuff",
+    "minecraft:calcite",
+    "minecraft:dripstone_block",
+    "minecraft:sculk",
+    "minecraft:polished_deepslate",
+    "minecraft:deepslate_tiles",
+    "minecraft:cobbled_deepslate",
+    "minecraft:clay",
+    "minecraft:amethyst_block"
   ]
 }

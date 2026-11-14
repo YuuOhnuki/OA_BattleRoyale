@@ -51,6 +51,10 @@ execute if entity @s[advancements={oa:ach/map_nether_play=true}] run tellraw @s 
 execute unless entity @s[advancements={oa:ach/map_nether_play=true}] run tellraw @s [{text:"・ ",color:"dark_gray"},{text:"炎獄の戦場へ",color:"white"},{text:" ／ ネザーマップで試合に参加した",color:"dark_gray"}]
 execute if entity @s[advancements={oa:ach/map_nether_win=true}] run tellraw @s [{text:"✔ ",color:"green"},{text:"灼熱の覇者",color:"gold"},{text:" ／ ネザーマップで優勝した",color:"gray"}]
 execute unless entity @s[advancements={oa:ach/map_nether_win=true}] run tellraw @s [{text:"・ ",color:"dark_gray"},{text:"灼熱の覇者",color:"white"},{text:" ／ ネザーマップで優勝した",color:"dark_gray"}]
+execute if entity @s[advancements={oa:ach/map_cave_play=true}] run tellraw @s [{text:"✔ ",color:"green"},{text:"地底の戦場へ",color:"gold"},{text:" ／ 洞窟マップで試合に参加した",color:"gray"}]
+execute unless entity @s[advancements={oa:ach/map_cave_play=true}] run tellraw @s [{text:"・ ",color:"dark_gray"},{text:"地底の戦場へ",color:"white"},{text:" ／ 洞窟マップで試合に参加した",color:"dark_gray"}]
+execute if entity @s[advancements={oa:ach/map_cave_win=true}] run tellraw @s [{text:"✔ ",color:"green"},{text:"地底の覇者",color:"gold"},{text:" ／ 洞窟マップで優勝した",color:"gray"}]
+execute unless entity @s[advancements={oa:ach/map_cave_win=true}] run tellraw @s [{text:"・ ",color:"dark_gray"},{text:"地底の覇者",color:"white"},{text:" ／ 洞窟マップで優勝した",color:"dark_gray"}]
 execute if entity @s[advancements={oa:ach/map_all=true}] run tellraw @s [{text:"✔ ",color:"green"},{text:"全マップ制覇",color:"gold"},{text:" ／ すべてのマップで優勝した",color:"gray"}]
 execute unless entity @s[advancements={oa:ach/map_all=true}] run tellraw @s [{text:"・ ",color:"dark_gray"},{text:"全マップ制覇",color:"white"},{text:" ／ すべてのマップで優勝した",color:"dark_gray"}]
 tellraw @s {text:"▼ 固有武器",color:"aqua",bold:true}

@@ -14,6 +14,8 @@ data modify storage oa:ach_info map_br_play set value {name:"草原の戦場へ"
 data modify storage oa:ach_info map_br_win set value {name:"草原の覇者",desc:"地上マップで優勝した"}
 data modify storage oa:ach_info map_nether_play set value {name:"炎獄の戦場へ",desc:"ネザーマップで試合に参加した"}
 data modify storage oa:ach_info map_nether_win set value {name:"灼熱の覇者",desc:"ネザーマップで優勝した"}
+data modify storage oa:ach_info map_cave_play set value {name:"地底の戦場へ",desc:"洞窟マップで試合に参加した"}
+data modify storage oa:ach_info map_cave_win set value {name:"地底の覇者",desc:"洞窟マップで優勝した"}
 data modify storage oa:ach_info map_all set value {name:"全マップ制覇",desc:"すべてのマップで優勝した"}
 data modify storage oa:ach_info yuua_kill set value {name:"帽子の洗礼",desc:"ゆうあ：初めてキルした"}
 data modify storage oa:ach_info yuua_counter set value {name:"帽子の逆襲",desc:"ゆうあ：社会的制裁（帽子の反撃）で敵を倒した"}

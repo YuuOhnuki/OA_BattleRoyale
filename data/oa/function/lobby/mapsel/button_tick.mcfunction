@@ -5,3 +5,4 @@ tag @s add oa.button_latched
 execute unless entity @p[tag=br.lobby_now,gamemode=!spectator,distance=..6] run return 0
 execute if entity @s[tag=oa.mapsel_br] as @p[tag=br.lobby_now,gamemode=!spectator,distance=..6] run function oa:lobby/mapsel/pick {key:"br"}
 execute if entity @s[tag=oa.mapsel_nether] as @p[tag=br.lobby_now,gamemode=!spectator,distance=..6] run function oa:lobby/mapsel/pick {key:"nether"}
+execute if entity @s[tag=oa.mapsel_cave] as @p[tag=br.lobby_now,gamemode=!spectator,distance=..6] run function oa:lobby/mapsel/pick {key:"cave"}

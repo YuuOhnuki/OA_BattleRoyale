@@ -1,3 +1,5 @@
+# 1.9.167: 洞窟は空がないので、天井の下（7ブロック上）からゆっくり降ろす（br/supply/launch_cave）
+execute if score #map oa.mapid matches 2 run return run function oa:br/supply/launch_cave
 tag @s add br.supply_drop
 scoreboard players set #falling br.tmp 1
 summon minecraft:block_display ~ ~90 ~ {Tags:["br.supply_crate","br.supply_main"],block_state:{id:"minecraft:barrel",properties:{facing:"up",open:"false"}},teleport_duration:2,Glowing:1b,glow_color_override:16755200,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[-0.75f,0f,-0.75f],scale:[1.5f,1.5f,1.5f]}}

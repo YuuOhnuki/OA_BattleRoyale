@@ -37,6 +37,8 @@ a("map_br_play", "cat_map", "草原の戦場へ", "地上マップで試合に�
 a("map_br_win", "map_br_play", "草原の覇者", "地上マップで優勝した", "golden_helmet", "goal", False)
 a("map_nether_play", "cat_map", "炎獄の戦場へ", "ネザーマップで試合に参加した", "netherrack", "task", False)
 a("map_nether_win", "map_nether_play", "灼熱の覇者", "ネザーマップで優勝した", "magma_block", "goal", False)
+a("map_cave_play", "cat_map", "地底の戦場へ", "洞窟マップで試合に参加した", "amethyst_shard", "task", False)
+a("map_cave_win", "map_cave_play", "地底の覇者", "洞窟マップで優勝した", "sculk_catalyst", "goal", False)
 a("map_all", "map_nether_win", "全マップ制覇", "すべてのマップで優勝した", "nether_star", "challenge", False)
 # map_all の親は1つしか持てないので、地上側の枝とはゲーム内の条件で結ぶ。
 
