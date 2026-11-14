@@ -46,7 +46,7 @@ execute store result storage oa:br_args id int 1 run scoreboard players get @s o
 effect give @s minecraft:resistance 61 4 true
 tag @s add br.spawn_protection
 tag @s add br.pvp_grace
-give @s minecraft:iron_pickaxe[minecraft:custom_name={text:"資源採掘用ツルハシ",color:"aqua",italic:false},minecraft:custom_data={br_pick:1b},minecraft:unbreakable={},minecraft:can_break={blocks:"minecraft:barrier"}]
+give @s minecraft:iron_pickaxe[minecraft:custom_name={text:"資源採掘用ツルハシ",color:"aqua",italic:false},minecraft:custom_data={br_pick:1b},minecraft:unbreakable={},minecraft:can_break={blocks:["minecraft:coal_ore","minecraft:deepslate_coal_ore","minecraft:redstone_ore","minecraft:deepslate_redstone_ore","minecraft:nether_quartz_ore","minecraft:nether_gold_ore"]}]
 scoreboard players set @s br.mcoal 0
 scoreboard players set @s br.mdcoal 0
 scoreboard players set @s br.mred 0

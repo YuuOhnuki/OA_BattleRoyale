@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.173 時点）
+# 引き継ぎメモ（1.9.174 時点）
 
 ## 現状
+- 1.9.174：ツルハシの can_break を固定（br/enter）、br/mining/player は廃止（return 0）。報酬は loot give、鉱石の位置のアイテムは tp で本人へ。洞窟の終盤演出を減らした。チェストの再補充の札の秒ずれは静的には原因不明（処理落ちを推定）。
 - 1.9.173：実績の作り直し（表は scripts/gen_ach_1_9_123.py）。キルの相手が要る実績は、倒された側のタグ（oa.nm_*／oa.stapled／oa.tired）を条件にした進捗 advancement/ach_trig/*.json と、そのご褒美 function ach/trig/*（自分で進捗を取り消して何度でも判定）。毎秒の判定は ach/second（br/second から生存者ごと）、防具の破損は ach/armor_check（統計 minecraft.broken、目的 oa.ab0〜oa.ab24）。試合ごとの数は ach/reset（br/start の assign_pid）で0に戻す。
 - 1.9.172：特別チェストの削減。地上はタイルの apply／water_apply の該当行を直接書き換え（register/chest ↔ chest_rich、loot chest_basic ↔ chest_site。地上のタイルは生成スクリプトで作り直さない）。ネザーは build_map_nether.py の最後で riches の一部を chests へ移す（_keep）。洞窟は build_map_cave.py の各配置の数と、祭壇・島の移し替え。
 - 1.9.171：finale/step はマップ定義の y（全マップ 80）で演出関数を呼ぶ。洞窟は天井の上になるので finale/cave で 29 下げて finale/cave_at を呼ぶ。ランプ（神殿の床の輪 A/B/C と天井 D）は build_map_cave.py が置き、点滅の関数 maps/cave/finale_lamps・finale_all_on・finale_pillars も書き出す（神殿の床の立ち位置 y51 を原点とした相対座標）。br/finale/lamps_on（試合の終わり）に洞窟のランプを全部つける行を足した。地図パネルの描き直しは scripts/voxelize_tiles.py（地上のタイル関数→3D）と、リソースパックの source/build_lobby_map_*_1_9_39.py。
