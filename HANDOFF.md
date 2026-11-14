@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.158 時点）
+# 引き継ぎメモ（1.9.159 時点）
 
 ## 現状
+- 1.9.159：再補充までの残り時間を、チェストの名前から「開封済み」の札（text_display `br.open_label`）の2行目へ移した（br/loot/open_label が storage oa:br open_label を作り、open_label_all が毎秒札を書き換える。tick 7240 以降は書き換えない。特別チェストの札は `br.open_rich` で対象外。mark_open は `br.open_new` を付けて召喚直後に書き換える）。chest_tick の CustomName の書き換えはやめ、残った名前は br/finish と chest_initial で消す。災害のアクションバー（k1/hit・k2/hit・k4/zone・k5/shake）からダメージ量を外した。
 - 1.9.158：1.9.157 は `ach/info` の2行目（`data modify storage oa:ach_info set value {}`、パスなし）が読み込みエラーで、本番の自動更新に巻き戻された（更新スクリプトの1件のエラーでも巻き戻す修正が正しく働いた）。生成スクリプトからその行を外し、`check_release.py` に「data modify のパスなし」の検査を追加。内容は 1.9.157 と同じ。
 - 1.9.157：表示の改善。ゆーの名前を「ゆー：オーバーワーク」に。補給の便は「第N便 ★」だけ。「今回のお題」「達成するとごほうびがもらえます。」。開始の案内を3行に。通常チェストの名前（画面の題名）に再補充までの残り時間（br/loot/chest_title → chest_tick が1秒に1回 CustomName を書き換え、br/finish で消す）。実績の解除メッセージに説明のホバー（gen_ach が ach/info を書き出し、ach/give → ach/announce）。固有装備を拾ったお知らせに show_item のホバー（inventory/pick_notice。説明文を付けたあとに読み直す）。災害は3秒前から効果音だけでカウントダウン（disaster/warn）、チャットの説明は効果時間と一言だけ。ロビーの展示の看板は `oa.admin 46` で更新。
 - 1.9.156：ネザーのチェストを約1.5倍（68→102：通常58→88、上位10→14）。`scripts/build_map_nether.py` の間引き（thin、1.9.119/1.9.120）をやめ、砦の廃墟の中央の東2マスに通常チェストを1つ追加。生成スクリプトは決定的で、変更前のコードで現行の出力を完全に再現できることを確かめてから変えた（地形の差は「空気→チェスト」34マスだけ）。ネザー会場の再生成が必要。地面の固有武器は序盤（tick 1200〜3600）も50%で追加の抽選（br/loot/ground_event）。

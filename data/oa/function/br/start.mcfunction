@@ -83,7 +83,7 @@ function oa:br/locator/start
 function oa:br/world/setup_normal
 execute if data storage oa:br center run function oa:br/cleanup_loose with storage oa:br center
 scoreboard players set #time br.time 0
-function oa:br/loot/chest_title
+function oa:br/loot/open_label
 execute store result score #adv_msg br.flag run gamerule minecraft:show_advancement_messages
 gamerule minecraft:show_advancement_messages false
 execute store result score #natural br.flag run gamerule minecraft:natural_health_regeneration

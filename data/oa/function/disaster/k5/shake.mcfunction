@@ -16,6 +16,6 @@ scoreboard players set @s br.qspr 0
 scoreboard players set @s br.qsneak 0
 scoreboard players set @s br.qjump 0
 tag @s add br.dis_msg
-execute if score #dis_phase br.tmp matches 1 run title @s actionbar {text:"⚠ 地震！ 動くと毎秒3ダメージ｜止まって耐えよう",color:"gold"}
+execute if score #dis_phase br.tmp matches 1 run title @s actionbar {text:"⚠ 地震！ 動くとダメージ｜止まって耐えよう",color:"gold"}
 # 開始から最初の2秒は猶予（反応と通信の遅れのため）。#dis_left は開始時10で、1秒ごとに減る
 execute if score #q_moved br.tmp matches 1 if score #dis_left br.tmp matches ..7 run damage @s 3 minecraft:fall
