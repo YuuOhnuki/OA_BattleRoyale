@@ -1,6 +1,6 @@
-# OA Battle Royale 仕様書（1.9.157 時点）
+# OA Battle Royale 仕様書（1.9.158 時点）
 
-データパック **1.9.157** ＋ リソースパック **1.9.36**／Minecraft Java Edition 26.3（`pack.mcmeta` の format 121.0）。
+データパック **1.9.158** ＋ リソースパック **1.9.36**／Minecraft Java Edition 26.3（`pack.mcmeta` の format 121.0）。
 
 ## 0. この文書について
 

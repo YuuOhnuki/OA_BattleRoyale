@@ -59,6 +59,9 @@ for f in glob.glob('data/**/*.mcfunction', recursive=True):
         # 実体の読み込みで Serialization errors になる（1.9.122〜1.9.153 の補給の樽・鎖）
         if re.search(r'\bName:"minecraft:|\bProperties:\{|(block_state|BlockState):"[^"]*\[', s):
             errors.append(f'ブロック状態の旧形式: {f}:{n}')
+        # data modify の対象のあとにパスがない（1.9.157: `data modify storage oa:ach_info set value {}` で関数ごと読み込めなかった）
+        if re.search(r'\bdata modify (storage \S+|block \S+ \S+ \S+|entity \S+) (set|merge|append|prepend|insert)\b', s):
+            errors.append(f'data modify のパスがない: {f}:{n}')
 
 # 3. versions
 ver = None

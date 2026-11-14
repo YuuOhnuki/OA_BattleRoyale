@@ -1,5 +1,4 @@
 # 生成: scripts/gen_ach_1_9_123.py（直接編集しない）。load から呼ぶ
-data modify storage oa:ach_info set value {}
 data modify storage oa:ach_info first_kill set value {name:"初陣",desc:"試合で最初のキルをした"}
 data modify storage oa:ach_info kills3 set value {name:"ハットトリック",desc:"1試合で3キルした"}
 data modify storage oa:ach_info kills5 set value {name:"殲滅者",desc:"1試合で5キルした"}

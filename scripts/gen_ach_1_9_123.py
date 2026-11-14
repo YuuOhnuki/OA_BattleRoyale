@@ -148,7 +148,8 @@ open(f"{FN}/br/stats/count_ach.mcfunction", "w", encoding="utf-8").write(
 open(f"{FN}/ach/revoke_all.mcfunction", "w", encoding="utf-8").write(
     "\n".join(f"advancement revoke @s only oa:ach/{i}" for i in ids) + "\n")
 # 1.9.157: 実績の名前と説明をストレージに置く（チャットの解除メッセージでカーソルを合わせると説明が出る。ach/give → ach/announce）
-info_lines = ["# 生成: scripts/gen_ach_1_9_123.py（直接編集しない）。load から呼ぶ", "data modify storage oa:ach_info set value {}"]
+# 1.9.158: 先頭の「data modify storage oa:ach_info set value {}」はパスがなく読み込みエラーだったので削除（各IDを個別に上書きする）
+info_lines = ["# 生成: scripts/gen_ach_1_9_123.py（直接編集しない）。load から呼ぶ"]
 for i in ids:
     t, dsc, h = info[i]
     assert not any(ch in t + dsc for ch in '"\\$'), i   # マクロで文字列に埋め込むため
