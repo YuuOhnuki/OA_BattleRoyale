@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.174 時点）
+# 引き継ぎメモ（1.9.175 時点）
 
 ## 現状
+- 1.9.175：lazi の音波4HP、抽選 息切れ25%／攻撃75%、攻撃4連続の次は息切れ（oa.lzn、load で作成、lazi/out_of_breath で0）。
 - 1.9.174：ツルハシの can_break を固定（br/enter）、br/mining/player は廃止（return 0）。報酬は loot give、鉱石の位置のアイテムは tp で本人へ。洞窟の終盤演出を減らした。チェストの再補充の札の秒ずれは静的には原因不明（処理落ちを推定）。
 - 1.9.173：実績の作り直し（表は scripts/gen_ach_1_9_123.py）。キルの相手が要る実績は、倒された側のタグ（oa.nm_*／oa.stapled／oa.tired）を条件にした進捗 advancement/ach_trig/*.json と、そのご褒美 function ach/trig/*（自分で進捗を取り消して何度でも判定）。毎秒の判定は ach/second（br/second から生存者ごと）、防具の破損は ach/armor_check（統計 minecraft.broken、目的 oa.ab0〜oa.ab24）。試合ごとの数は ach/reset（br/start の assign_pid）で0に戻す。
 - 1.9.172：特別チェストの削減。地上はタイルの apply／water_apply の該当行を直接書き換え（register/chest ↔ chest_rich、loot chest_basic ↔ chest_site。地上のタイルは生成スクリプトで作り直さない）。ネザーは build_map_nether.py の最後で riches の一部を chests へ移す（_keep）。洞窟は build_map_cave.py の各配置の数と、祭壇・島の移し替え。

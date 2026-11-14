@@ -1,4 +1,5 @@
 scoreboard players set @s oa.breath 100
+scoreboard players set @s oa.lzn 0
 tag @s add oa.tired
 function oa:ach/give {id:"lazi_tired",name:"すり抜け"}
 effect give @s minecraft:slowness 5 2 true
