@@ -37,12 +37,12 @@ scoreboard players operation #rdx br.tmp += #rdz br.tmp
 execute if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "廃坑とディープダークのあたり"
 execute if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
 scoreboard players operation #rdx br.tmp = #rx br.tmp
-scoreboard players remove #rdx br.tmp 56
+scoreboard players remove #rdx br.tmp 58
 scoreboard players operation #rdx br.tmp *= #rdx br.tmp
 scoreboard players operation #rdz br.tmp = #rz br.tmp
-scoreboard players add #rdz br.tmp 78
+scoreboard players add #rdz br.tmp 79
 scoreboard players operation #rdz br.tmp *= #rdz br.tmp
 scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "古代都市の町並みのあたり"
+execute if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "古代都市のあたり"
 execute if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
 execute if score #rx br.tmp matches -27..27 if score #rz br.tmp matches -27..27 run data modify storage oa:supply region set value "地下神殿"

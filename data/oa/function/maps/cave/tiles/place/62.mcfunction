@@ -219,7 +219,6 @@ fill ~-72 ~-24 ~45 ~-70 ~-23 ~45 minecraft:dripstone_block
 fill ~-69 ~-30 ~45 ~-67 ~-30 ~45 minecraft:stone
 fill ~-66 ~-30 ~45 ~-57 ~-30 ~45 minecraft:tuff
 fill ~-68 ~-30 ~46 ~-57 ~-30 ~46 minecraft:tuff
-setblock ~-73 ~-30 ~46 minecraft:chest
 fill ~-70 ~-30 ~46 ~-69 ~-30 ~46 minecraft:stone
 fill ~-72 ~-30 ~46 ~-71 ~-24 ~46 minecraft:dripstone_block
 fill ~-73 ~-30 ~47 ~-72 ~-24 ~47 minecraft:dripstone_block
@@ -300,6 +299,7 @@ fill ~-80 ~-29 ~58 ~-74 ~-29 ~58 minecraft:stone
 fill ~-81 ~-29 ~59 ~-74 ~-29 ~59 minecraft:stone
 fill ~-82 ~-29 ~60 ~-74 ~-29 ~60 minecraft:stone
 fill ~-83 ~-29 ~61 ~-74 ~-29 ~61 minecraft:stone
+setblock ~-87 ~-29 ~61 minecraft:glow_lichen[east=true]
 fill ~-85 ~-29 ~62 ~-74 ~-29 ~62 minecraft:stone
 fill ~-73 ~-29 ~55 ~-57 ~-29 ~64 minecraft:tuff
 fill ~-86 ~-29 ~63 ~-74 ~-29 ~64 minecraft:stone

@@ -4,16 +4,14 @@ execute positioned ~8 ~-40 ~-56 run kill @e[type=minecraft:marker,tag=br.chest,d
 execute positioned ~8 ~-40 ~-56 run kill @e[type=minecraft:marker,tag=br.ore,dx=31,dy=40,dz=31]
 scoreboard players set #stage oa.map2 2
 scoreboard players set #expectedc oa.map2 0
-scoreboard players set #expectedo oa.map2 5
+scoreboard players set #expectedo oa.map2 3
 scoreboard players set #localc oa.map2 0
 scoreboard players set #localo oa.map2 0
-execute positioned ~13 ~-27 ~-33 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
-execute positioned ~16 ~-27 ~-26 if block ~ ~ ~ minecraft:redstone_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_3
-execute positioned ~36 ~-28 ~-51 if block ~ ~ ~ minecraft:redstone_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_3
-execute positioned ~28 ~-26 ~-49 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
-execute positioned ~15 ~-27 ~-41 if block ~ ~ ~ minecraft:redstone_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_3
+execute positioned ~11 ~-27 ~-55 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
+execute positioned ~15 ~-28 ~-40 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
+execute positioned ~18 ~-26 ~-51 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute unless score #localc oa.map2 matches 0 run return run function oa:map/internal/job/failed
-execute unless score #localo oa.map2 matches 5 run return run function oa:map/internal/job/failed
+execute unless score #localo oa.map2 matches 3 run return run function oa:map/internal/job/failed
 scoreboard players operation #chests oa.map2 += #localc oa.map2
 scoreboard players operation #ores oa.map2 += #localo oa.map2
 function oa:maps/cave/tiles/release/35

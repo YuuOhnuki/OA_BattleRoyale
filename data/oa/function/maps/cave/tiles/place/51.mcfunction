@@ -235,6 +235,7 @@ fill ~-118 ~-30 ~11 ~-116 ~-24 ~11 minecraft:dripstone_block
 fill ~-119 ~-30 ~11 ~-119 ~-26 ~11 minecraft:stone
 fill ~-120 ~-30 ~12 ~-120 ~-24 ~12 minecraft:stone
 fill ~-119 ~-30 ~12 ~-118 ~-24 ~12 minecraft:dripstone_block
+setblock ~-118 ~-30 ~13 minecraft:chest
 fill ~-120 ~-30 ~13 ~-119 ~-24 ~13 minecraft:dripstone_block
 fill ~-120 ~-30 ~14 ~-120 ~-24 ~14 minecraft:dripstone_block
 fill ~-100 ~-30 ~31 ~-99 ~-30 ~31 minecraft:chest

@@ -363,7 +363,9 @@ fill ~-120 ~-27 ~-100 ~-89 ~-27 ~-96 minecraft:stone
 fill ~-93 ~-27 ~-95 ~-89 ~-27 ~-92 minecraft:stone
 fill ~-94 ~-27 ~-95 ~-94 ~-27 ~-92 minecraft:andesite
 fill ~-120 ~-27 ~-95 ~-95 ~-27 ~-92 minecraft:stone
-fill ~-120 ~-27 ~-91 ~-89 ~-27 ~-90 minecraft:stone
+fill ~-120 ~-27 ~-91 ~-89 ~-27 ~-91 minecraft:stone
+fill ~-120 ~-27 ~-90 ~-90 ~-27 ~-90 minecraft:stone
+setblock ~-89 ~-27 ~-90 minecraft:coal_ore
 fill ~-120 ~-27 ~-89 ~-91 ~-24 ~-89 minecraft:stone
 fill ~-120 ~-26 ~-120 ~-103 ~-25 ~-119 minecraft:tuff
 fill ~-102 ~-26 ~-120 ~-89 ~-26 ~-118 minecraft:stone
@@ -465,6 +467,7 @@ fill ~-109 ~-24 ~-94 ~-108 ~-24 ~-91 minecraft:tuff
 fill ~-120 ~-24 ~-94 ~-110 ~-24 ~-90 minecraft:stone
 fill ~-108 ~-24 ~-90 ~-89 ~-24 ~-90 minecraft:stone
 setblock ~-109 ~-24 ~-90 minecraft:tuff
+setblock ~-90 ~-24 ~-89 minecraft:lantern[hanging=true]
 fill ~-103 ~-23 ~-115 ~-102 ~-23 ~-115 minecraft:tuff
 fill ~-104 ~-23 ~-114 ~-102 ~-23 ~-114 minecraft:tuff
 fill ~-105 ~-23 ~-113 ~-102 ~-23 ~-113 minecraft:tuff

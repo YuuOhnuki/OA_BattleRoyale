@@ -9,10 +9,10 @@ scoreboard players set #localc oa.map2 0
 scoreboard players set #localo oa.map2 0
 execute positioned ~7 ~-29 ~18 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
 execute positioned ~-7 ~-29 ~18 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
-execute positioned ~-15 ~-28 ~33 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
+execute positioned ~-22 ~-28 ~24 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
 execute if score #mode oa.map2 matches 0 positioned ~7 ~-29 ~18 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
 execute if score #mode oa.map2 matches 0 positioned ~-7 ~-29 ~18 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
-execute if score #mode oa.map2 matches 0 positioned ~-15 ~-28 ~33 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
+execute if score #mode oa.map2 matches 0 positioned ~-22 ~-28 ~24 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
 execute unless score #localc oa.map2 matches 3 run return run function oa:map/internal/job/failed
 execute unless score #localo oa.map2 matches 0 run return run function oa:map/internal/job/failed
 scoreboard players operation #chests oa.map2 += #localc oa.map2

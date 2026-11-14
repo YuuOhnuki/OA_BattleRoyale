@@ -510,10 +510,10 @@ fill ~-10 ~-29 ~39 ~3 ~-29 ~39 minecraft:stone
 fill ~-19 ~-29 ~39 ~-11 ~-29 ~39 minecraft:tuff
 fill ~6 ~-28 ~14 ~7 ~-14 ~15 minecraft:polished_deepslate
 fill ~-6 ~-28 ~14 ~-5 ~-14 ~15 minecraft:polished_deepslate
-setblock ~-19 ~-28 ~22 minecraft:glow_lichen[west=true]
 fill ~-24 ~-28 ~23 ~-21 ~-25 ~23 minecraft:stone
 fill ~-24 ~-17 ~23 ~-21 ~-17 ~23 minecraft:stone
 fill ~-24 ~-28 ~24 ~-23 ~-23 ~24 minecraft:stone
+setblock ~-22 ~-28 ~24 minecraft:chest
 fill ~-12 ~-28 ~25 ~-9 ~-28 ~25 minecraft:tuff
 fill ~-14 ~-28 ~25 ~-13 ~-28 ~26 minecraft:stone
 fill ~-12 ~-28 ~26 ~-5 ~-28 ~26 minecraft:tuff
@@ -523,7 +523,6 @@ fill ~-14 ~-28 ~28 ~7 ~-28 ~32 minecraft:tuff
 fill ~-6 ~-28 ~33 ~7 ~-28 ~33 minecraft:tuff
 fill ~-8 ~-28 ~33 ~-7 ~-28 ~33 minecraft:stone
 fill ~-14 ~-28 ~33 ~-9 ~-28 ~33 minecraft:tuff
-setblock ~-15 ~-28 ~33 minecraft:chest
 fill ~-9 ~-28 ~34 ~-5 ~-28 ~34 minecraft:stone
 fill ~-4 ~-28 ~34 ~7 ~-28 ~34 minecraft:tuff
 fill ~-14 ~-28 ~34 ~-10 ~-28 ~35 minecraft:tuff
@@ -564,6 +563,9 @@ fill ~-7 ~-26 ~36 ~-7 ~-26 ~37 minecraft:stone
 fill ~-15 ~-26 ~38 ~7 ~-26 ~38 minecraft:tuff
 fill ~-16 ~-26 ~39 ~7 ~-23 ~39 minecraft:tuff
 fill ~-15 ~-25 ~36 ~7 ~-23 ~38 minecraft:tuff
+setblock ~-22 ~-24 ~17 minecraft:lantern[hanging=true]
+setblock ~-21 ~-24 ~18 minecraft:lantern[hanging=true]
+setblock ~-17 ~-24 ~20 minecraft:lantern[hanging=true]
 fill ~-14 ~-24 ~21 ~-14 ~-20 ~21 minecraft:deepslate_bricks
 setblock ~-15 ~-24 ~21 minecraft:deepslate
 setblock ~-15 ~-19 ~21 minecraft:deepslate
@@ -692,8 +694,10 @@ fill ~1 ~-19 ~26 ~7 ~-19 ~26 minecraft:tuff
 setblock ~0 ~-19 ~26 minecraft:deepslate
 fill ~-24 ~-19 ~27 ~7 ~-19 ~27 minecraft:tuff
 fill ~-19 ~-19 ~28 ~7 ~-19 ~28 minecraft:tuff
+setblock ~-24 ~-19 ~28 minecraft:lantern[hanging=true]
 fill ~-18 ~-19 ~29 ~7 ~-19 ~30 minecraft:tuff
 fill ~-17 ~-19 ~31 ~7 ~-19 ~33 minecraft:tuff
+setblock ~-19 ~-19 ~33 minecraft:lantern[hanging=true]
 fill ~-18 ~-19 ~34 ~7 ~-19 ~37 minecraft:tuff
 fill ~-19 ~-19 ~38 ~7 ~-19 ~38 minecraft:tuff
 fill ~-20 ~-19 ~39 ~7 ~-19 ~39 minecraft:tuff

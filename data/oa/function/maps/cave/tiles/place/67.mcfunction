@@ -705,8 +705,8 @@ fill ~76 ~-27 ~62 ~81 ~-27 ~62 minecraft:tuff
 fill ~90 ~-27 ~62 ~103 ~-23 ~63 minecraft:stone
 fill ~76 ~-27 ~63 ~82 ~-27 ~63 minecraft:tuff
 fill ~76 ~-27 ~64 ~83 ~-26 ~64 minecraft:tuff
-setblock ~102 ~-27 ~65 minecraft:glow_lichen[west=true]
-fill ~91 ~-27 ~65 ~101 ~-24 ~65 minecraft:stone
+setblock ~91 ~-27 ~65 minecraft:redstone_ore
+fill ~92 ~-27 ~65 ~101 ~-27 ~65 minecraft:stone
 fill ~91 ~-27 ~66 ~99 ~-24 ~66 minecraft:stone
 setblock ~85 ~-27 ~66 minecraft:stone
 fill ~85 ~-27 ~67 ~86 ~-27 ~67 minecraft:stone
@@ -714,11 +714,11 @@ fill ~92 ~-27 ~67 ~98 ~-24 ~67 minecraft:stone
 fill ~72 ~-27 ~57 ~75 ~-27 ~69 minecraft:stone
 fill ~76 ~-27 ~65 ~84 ~-27 ~69 minecraft:tuff
 fill ~85 ~-27 ~68 ~87 ~-27 ~69 minecraft:stone
+setblock ~103 ~-27 ~70 minecraft:glow_lichen[east=true]
 fill ~72 ~-27 ~70 ~74 ~-27 ~71 minecraft:stone
 fill ~75 ~-27 ~70 ~85 ~-27 ~71 minecraft:tuff
 fill ~86 ~-27 ~70 ~87 ~-27 ~71 minecraft:stone
 fill ~72 ~-26 ~40 ~72 ~-19 ~40 minecraft:amethyst_block
-setblock ~74 ~-26 ~42 minecraft:chest
 fill ~72 ~-26 ~41 ~72 ~-20 ~43 minecraft:calcite
 fill ~73 ~-26 ~42 ~73 ~-20 ~43 minecraft:amethyst_block
 fill ~73 ~-26 ~44 ~73 ~-20 ~45 minecraft:calcite
@@ -727,24 +727,24 @@ fill ~72 ~-26 ~44 ~72 ~-20 ~45 minecraft:tuff
 fill ~72 ~-26 ~46 ~73 ~-20 ~46 minecraft:tuff
 fill ~74 ~-26 ~46 ~75 ~-20 ~46 minecraft:calcite
 fill ~75 ~-26 ~47 ~75 ~-20 ~47 minecraft:calcite
+setblock ~77 ~-26 ~47 minecraft:chest
 fill ~76 ~-26 ~47 ~76 ~-20 ~47 minecraft:amethyst_block
 fill ~72 ~-26 ~47 ~74 ~-20 ~48 minecraft:tuff
 fill ~75 ~-26 ~48 ~76 ~-20 ~48 minecraft:calcite
 fill ~77 ~-26 ~49 ~77 ~-20 ~49 minecraft:amethyst_block
 fill ~76 ~-26 ~49 ~76 ~-20 ~49 minecraft:calcite
-setblock ~103 ~-26 ~50 minecraft:chest
 fill ~103 ~-26 ~51 ~103 ~-20 ~51 minecraft:amethyst_block
 fill ~102 ~-26 ~52 ~102 ~-20 ~52 minecraft:amethyst_block
 fill ~103 ~-26 ~52 ~103 ~-20 ~52 minecraft:calcite
 fill ~72 ~-26 ~49 ~75 ~-23 ~53 minecraft:tuff
 fill ~102 ~-26 ~53 ~102 ~-20 ~53 minecraft:calcite
 setblock ~103 ~-26 ~53 minecraft:stone
-setblock ~94 ~-26 ~54 minecraft:chest
 fill ~102 ~-26 ~54 ~103 ~-26 ~54 minecraft:stone
 fill ~72 ~-26 ~54 ~76 ~-22 ~54 minecraft:tuff
 fill ~98 ~-26 ~54 ~99 ~-20 ~54 minecraft:amethyst_block
 fill ~100 ~-26 ~54 ~101 ~-20 ~54 minecraft:calcite
 setblock ~92 ~-26 ~55 minecraft:amethyst_cluster[facing=up]
+setblock ~90 ~-26 ~55 minecraft:chest
 fill ~96 ~-26 ~55 ~99 ~-20 ~55 minecraft:calcite
 fill ~100 ~-26 ~55 ~103 ~-25 ~55 minecraft:stone
 fill ~72 ~-26 ~55 ~77 ~-23 ~56 minecraft:tuff
@@ -763,8 +763,10 @@ fill ~75 ~-26 ~61 ~80 ~-26 ~61 minecraft:tuff
 fill ~75 ~-26 ~62 ~81 ~-26 ~62 minecraft:tuff
 fill ~72 ~-26 ~60 ~74 ~-26 ~63 minecraft:stone
 fill ~75 ~-26 ~63 ~82 ~-25 ~63 minecraft:tuff
+setblock ~90 ~-26 ~64 minecraft:glow_lichen[east=true]
 fill ~72 ~-26 ~64 ~75 ~-26 ~65 minecraft:stone
 fill ~76 ~-26 ~65 ~84 ~-26 ~65 minecraft:tuff
+fill ~91 ~-26 ~65 ~101 ~-24 ~65 minecraft:stone
 setblock ~86 ~-26 ~67 minecraft:stone
 fill ~75 ~-26 ~66 ~85 ~-26 ~69 minecraft:tuff
 fill ~86 ~-26 ~68 ~87 ~-26 ~69 minecraft:stone
@@ -808,9 +810,9 @@ fill ~74 ~-24 ~65 ~84 ~-24 ~65 minecraft:tuff
 fill ~74 ~-24 ~66 ~85 ~-24 ~66 minecraft:tuff
 fill ~72 ~-24 ~63 ~73 ~-24 ~67 minecraft:stone
 fill ~74 ~-24 ~67 ~86 ~-24 ~67 minecraft:tuff
+setblock ~100 ~-24 ~68 minecraft:lantern[hanging=true]
 fill ~73 ~-24 ~68 ~87 ~-24 ~70 minecraft:tuff
 fill ~72 ~-24 ~68 ~72 ~-24 ~70 minecraft:stone
-setblock ~97 ~-24 ~70 minecraft:lantern[hanging=true]
 fill ~72 ~-24 ~71 ~87 ~-24 ~71 minecraft:tuff
 fill ~103 ~-23 ~53 ~103 ~-20 ~53 minecraft:tuff
 fill ~102 ~-23 ~54 ~103 ~-23 ~55 minecraft:tuff

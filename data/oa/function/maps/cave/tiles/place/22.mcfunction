@@ -976,7 +976,6 @@ fill ~-88 ~-33 ~-82 ~-84 ~-33 ~-81 minecraft:andesite
 fill ~-64 ~-33 ~-82 ~-64 ~-33 ~-81 minecraft:sculk_vein[down=true]
 fill ~-62 ~-33 ~-81 ~-61 ~-33 ~-81 minecraft:sculk_vein[down=true]
 fill ~-83 ~-33 ~-81 ~-83 ~-28 ~-81 minecraft:deepslate
-setblock ~-81 ~-33 ~-81 minecraft:chest
 fill ~-70 ~-33 ~-81 ~-69 ~-33 ~-81 minecraft:sculk_vein[down=true]
 setblock ~-67 ~-33 ~-81 minecraft:sculk_vein[down=true]
 setblock ~-77 ~-33 ~-81 minecraft:sculk_vein[down=true]
@@ -1028,7 +1027,6 @@ setblock ~-84 ~-33 ~-74 minecraft:sculk_vein[down=true]
 setblock ~-67 ~-33 ~-74 minecraft:sculk_vein[down=true]
 fill ~-75 ~-33 ~-74 ~-74 ~-33 ~-74 minecraft:sculk_vein[down=true]
 fill ~-83 ~-33 ~-73 ~-82 ~-33 ~-73 minecraft:sculk_vein[down=true]
-setblock ~-84 ~-33 ~-73 minecraft:chest
 setblock ~-73 ~-33 ~-73 minecraft:sculk_vein[down=true]
 setblock ~-77 ~-33 ~-73 minecraft:sculk_vein[down=true]
 setblock ~-75 ~-33 ~-73 minecraft:sculk_vein[down=true]
@@ -1098,6 +1096,7 @@ fill ~-88 ~-19 ~-59 ~-84 ~-19 ~-59 minecraft:stone
 setblock ~-88 ~-33 ~-58 minecraft:andesite
 setblock ~-57 ~-33 ~-58 minecraft:sculk
 fill ~-57 ~-25 ~-58 ~-57 ~-24 ~-58 minecraft:sculk
+setblock ~-81 ~-33 ~-58 minecraft:chest
 fill ~-83 ~-33 ~-58 ~-82 ~-28 ~-58 minecraft:deepslate
 fill ~-87 ~-33 ~-58 ~-84 ~-33 ~-58 minecraft:stone
 fill ~-88 ~-33 ~-57 ~-86 ~-33 ~-57 minecraft:andesite
@@ -1112,6 +1111,7 @@ setblock ~-85 ~-32 ~-80 minecraft:stone
 fill ~-86 ~-32 ~-79 ~-85 ~-32 ~-79 minecraft:stone
 fill ~-88 ~-32 ~-79 ~-87 ~-32 ~-79 minecraft:andesite
 fill ~-88 ~-32 ~-78 ~-86 ~-28 ~-76 minecraft:stone
+setblock ~-84 ~-32 ~-71 minecraft:glow_lichen[west=true]
 fill ~-88 ~-32 ~-59 ~-84 ~-28 ~-58 minecraft:stone
 setblock ~-88 ~-32 ~-57 minecraft:andesite
 fill ~-87 ~-32 ~-57 ~-83 ~-32 ~-57 minecraft:stone
@@ -1162,10 +1162,10 @@ fill ~-79 ~-27 ~-88 ~-78 ~-27 ~-88 minecraft:sculk
 fill ~-84 ~-27 ~-87 ~-82 ~-23 ~-87 minecraft:deepslate
 setblock ~-79 ~-27 ~-87 minecraft:deepslate
 setblock ~-81 ~-27 ~-87 minecraft:stone
-fill ~-84 ~-27 ~-86 ~-83 ~-27 ~-86 minecraft:deepslate
 fill ~-80 ~-27 ~-86 ~-79 ~-27 ~-86 minecraft:deepslate
+fill ~-85 ~-27 ~-86 ~-83 ~-23 ~-86 minecraft:deepslate
+setblock ~-86 ~-27 ~-86 minecraft:glow_lichen[east=true]
 fill ~-82 ~-27 ~-86 ~-81 ~-27 ~-86 minecraft:stone
-setblock ~-85 ~-27 ~-86 minecraft:redstone_ore
 fill ~-81 ~-27 ~-85 ~-80 ~-27 ~-85 minecraft:deepslate
 setblock ~-80 ~-27 ~-84 minecraft:deepslate
 fill ~-85 ~-27 ~-84 ~-82 ~-27 ~-84 minecraft:stone
@@ -1211,7 +1211,6 @@ setblock ~-79 ~-26 ~-88 minecraft:stone
 setblock ~-76 ~-26 ~-88 minecraft:deepslate
 setblock ~-77 ~-26 ~-87 minecraft:sculk
 fill ~-81 ~-26 ~-87 ~-80 ~-26 ~-87 minecraft:stone
-fill ~-85 ~-26 ~-86 ~-83 ~-23 ~-86 minecraft:deepslate
 fill ~-79 ~-26 ~-86 ~-77 ~-26 ~-86 minecraft:deepslate
 fill ~-82 ~-26 ~-86 ~-80 ~-26 ~-86 minecraft:stone
 fill ~-84 ~-26 ~-85 ~-81 ~-26 ~-85 minecraft:stone

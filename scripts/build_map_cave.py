@@ -5,8 +5,8 @@
 - モデル全体を source/map_cave_target.npz、配置一覧を MAP_CAVE_MANIFEST.json に保存
 座標は中心(0,0)基準 x,z∈[-152,152]、y∈[-40,0]（会場の原点 y=80 に置くので絶対座標は 40〜80）。
 y=0 はバリア（天井の上へ抜けないように）、y=-40 は岩盤。床はおおむね y=-30（絶対50）前後。
-エリア：中央=地下神殿、1=紫水晶の晶洞、2=繁茂した洞窟、3=鍾乳洞と地底湖、4=廃坑とディープダーク、5=古代都市の町並み。
-明るさは暗め（トンネルはまばらなヒカリゴケ・ランタン、エリアは結晶・ベリー・魂のランタンなど）。
+エリア：中央=地下神殿、1=紫水晶の晶洞、2=繁茂した洞窟、3=鍾乳洞と地底湖、4=廃坑とディープダーク、5=古代都市。
+明るさはやや暗め（1.9.170 で明るくした。トンネルはヒカリゴケ・ランタン、エリアは結晶・ベリー・魂のランタン・ろうそくなど）。
 """
 import sys, os, re, glob, json, math
 from collections import deque
@@ -64,7 +64,7 @@ FLT = np.full((N, N), -30.0)          # 床の高さの目標
 HT = np.zeros((N, N), int)             # 床から天井までの空き（ブロック数）
 AREA = np.full((N, N), -1, int)        # 0神殿 1晶洞 2繁茂 3鍾乳洞 4廃坑/深層 5町 6トンネル 7小部屋 8中間空洞
 PRI = np.zeros((N, N), int)
-AREA_NAME = {0: '地下神殿', 1: '紫水晶の晶洞', 2: '繁茂した洞窟', 3: '鍾乳洞と地底湖', 4: '廃坑とディープダーク', 5: '古代都市の町並み'}
+AREA_NAME = {0: '地下神殿', 1: '紫水晶の晶洞', 2: '繁茂した洞窟', 3: '鍾乳洞と地底湖', 4: '廃坑とディープダーク', 5: '古代都市'}
 
 def carve_blob(cx, cz, r, floor, hmax, hmin, area, pri, wob=0.22):
     x1, x2 = int(cx - r * 1.4) - 2, int(cx + r * 1.4) + 2
@@ -117,7 +117,7 @@ AREAS = {1: dict(ang=18, r=96, rad=25, floor=-27, hmax=16, hmin=7),
          2: dict(ang=90, r=98, rad=26, floor=-29, hmax=14, hmin=7),
          3: dict(ang=162, r=98, rad=29, floor=-31, hmax=18, hmin=7),
          4: dict(ang=234, r=98, rad=27, floor=-34, hmax=13, hmin=6),
-         5: dict(ang=306, r=96, rad=31, floor=-30, hmax=20, hmin=8)}
+         5: dict(ang=306, r=98, rad=36, floor=-30, hmax=20, hmin=9)}   # 1.9.170: 古代都市を広げた（31→36）
 for a, d in AREAS.items():
     d['c'] = pol(d['r'], d['ang'])
 
@@ -425,77 +425,129 @@ for x, z in cells(6):
     if math.hypot(x - d4['c'][0], z - d4['c'][1]) < d4['rad'] + 30 and (x % 5 == 0 and z % 9 == 0):
         if ce(x, z) - fl(x, z) >= 5: frame(x, z, 'x' if rd.random() < 0.5 else 'z')
 
-# 5 古代都市の町並み：通りの格子、家（深層岩レンガ）、魂のランタンの街灯
+# 5 古代都市（1.9.170 で建物と飾りを増やした）：通りの格子（9ブロックごと、幅2）、区画ごとに建物（家・塔・廃墟）、
+#   魂のランタンの街灯、ろうそく、玄武岩の柱、スカルク、ドクロ、広場の大門とじゅうたん
 d5 = AREAS[5]; cx5, cz5 = int(round(d5['c'][0])), int(round(d5['c'][1]))
 F5 = fl(cx5, cz5)
+rt = np.random.default_rng(SEED + 55)
 for x, z in cells(5):
     if abs(fl(x, z) - F5) <= 2:
         on_street = ((x - cx5) % 9 in (0, 1)) or ((z - cz5) % 9 in (0, 1))
-        put(x, fl(x, z), z, 'minecraft:polished_deepslate' if on_street else 'minecraft:deepslate_tiles')
-houses = []
-for gx in range(-3, 4):
-    for gz in range(-3, 4):
-        hx, hz = cx5 + gx * 9 + 2, cz5 + gz * 9 + 2      # 家の北西の角（通りの内側）
-        sx, sz = 6, 6
-        cs = [(hx + a, hz + c) for a in range(sx) for c in range(sz)]
+        put(x, fl(x, z), z, 'minecraft:polished_deepslate' if on_street else ('minecraft:deepslate_tiles' if rt.random() < 0.8 else 'minecraft:cracked_deepslate_tiles'))
+houses = []   # (hx, hz, base, size, height, kind)
+for gx in range(-4, 5):
+    for gz in range(-4, 5):
+        if gx in (-1, 0) and gz in (-1, 0): continue   # 中央の交差点のまわり4区画は広場（約16×16）
+        size = int(rt.choice([5, 6, 7]))
+        kind = str(rt.choice(['house', 'house', 'house', 'tower', 'ruin']))
+        if kind == 'tower': size = 5
+        hx = cx5 + gx * 9 + 2 + int(rt.integers(0, 8 - size))
+        hz = cz5 + gz * 9 + 2 + int(rt.integers(0, 8 - size))
+        cs = [(hx + a, hz + c) for a in range(size) for c in range(size)]
         if not all(opn(*p) and area(*p) == 5 for p in cs): continue
         base = fl(hx, hz)
         if any(abs(fl(*p) - base) > 1 for p in cs): continue
-        if min(ce(*p) for p in cs) - base < 8: continue
-        if (gx, gz) == (0, 0): continue          # 中央は広場
-        if (gx + gz) % 2: continue               # 市松模様に間引く（通りを広く、チェストを町に集めすぎない）
-        houses.append((hx, hz, base))
-for (hx, hz, base) in houses:
-    hgt = 4
-    for a in range(6):
-        for c in range(6):
+        hgt = {'house': int(rt.integers(4, 7)), 'tower': int(rt.integers(8, 11)), 'ruin': int(rt.integers(3, 5))}[kind]
+        if min(ce(*p) for p in cs) - base < hgt + 3: continue
+        houses.append((hx, hz, base, size, hgt, kind))
+for (hx, hz, base, size, hgt, kind) in houses:
+    L = size - 1; mid = L // 2
+    for a in range(size):
+        for c in range(size):
             x, z = hx + a, hz + c
             put(x, base, z, 'minecraft:polished_deepslate')
-            edge = a in (0, 5) or c in (0, 5)
+            edge = a in (0, L) or c in (0, L)
+            corner = a in (0, L) and c in (0, L)
             for y in range(base + 1, base + hgt + 1):
-                put(x, y, z, ('minecraft:deepslate_bricks' if (a, c) not in ((0, 0), (0, 5), (5, 0), (5, 5)) else 'minecraft:polished_deepslate') if edge else 'minecraft:air')
-            put(x, base + hgt + 1, z, 'minecraft:deepslate_tile_slab[type=bottom]')
+                if not edge: b = 'minecraft:air'
+                elif corner: b = 'minecraft:polished_deepslate' if kind != 'tower' else 'minecraft:polished_basalt[axis=y]'
+                elif kind == 'tower' and (y - base) % 4 == 0: b = 'minecraft:chiseled_deepslate'
+                else: b = 'minecraft:deepslate_bricks' if rt.random() > 0.15 else 'minecraft:cracked_deepslate_bricks'
+                if kind == 'ruin' and edge and not corner and y > base + 1 and rt.random() < 0.45: b = 'minecraft:air'
+                put(x, y, z, b)
+            if kind != 'ruin':
+                put(x, base + hgt + 1, z, 'minecraft:chiseled_deepslate' if corner else 'minecraft:deepslate_tile_slab[type=bottom]')
             FL[x + OFF, z + OFF] = base
-            used[x + OFF, z + OFF] = edge and not (c == 5 and a in (2, 3))   # 壁だけ通れない（入口と中は通れる）
-    # 入口（通りに面した南側の中央2マス）と窓
-    for a in (2, 3):
-        put(hx + a, base + 1, hz + 5, 'minecraft:air'); put(hx + a, base + 2, hz + 5, 'minecraft:air')
-    put(hx, base + 2, hz + 2, 'minecraft:air'); put(hx + 5, base + 2, hz + 3, 'minecraft:air')
-    if len(houses) and houses.index((hx, hz, base)) % 2 == 0: put(hx + 1, base + 1, hz + 1, 'minecraft:chest')
-    put(hx + 4, base + 3, hz + 1, 'minecraft:soul_lantern[hanging=false]') if False else None
-    put(hx + 2, base + hgt, hz + 2, 'minecraft:soul_lantern[hanging=true]')
-RICH_HOUSES = houses[:3]
-for i, (hx, hz, base) in enumerate(houses):
-    if i % 2 == 0: (riches if i < 6 else chests).append((hx + 1, base + 1, hz + 1))   # 家の半分にチェスト（最初の3軒は特別）
+            used[x + OFF, z + OFF] = edge and not (c == L and a in (mid, mid + 1))
+    # 入口（南側の中央2マス）と窓（東西の目の高さ）
+    for a in (mid, mid + 1):
+        put(hx + a, base + 1, hz + L, 'minecraft:air'); put(hx + a, base + 2, hz + L, 'minecraft:air')
+    put(hx, base + 2, hz + mid, 'minecraft:air'); put(hx + L, base + 2, hz + mid, 'minecraft:air')
+    if kind == 'tower':
+        for y in range(base + 5, base + hgt, 3):
+            put(hx + mid, y, hz, 'minecraft:air'); put(hx + mid, y, hz + L, 'minecraft:air')
+    if kind != 'ruin':
+        put(hx + mid, base + hgt, hz + mid, 'minecraft:soul_lantern[hanging=true]')
+        for (a, c) in ((0, 0), (L, 0), (0, L), (L, L)):     # 屋根の四隅（模様入りの深層岩）の上にろうそく
+            if rt.random() < 0.6: put(hx + a, base + hgt + 2, hz + c, 'minecraft:candle[candles=%d,lit=true]' % int(rt.integers(1, 5)))
+    elif rt.random() < 0.5:
+        put(hx + 1, base + 1, hz + 1, 'minecraft:skeleton_skull[rotation=%d]' % int(rt.integers(0, 16)))
+# チェスト：廃墟以外の3軒に1軒（最初の3つは特別）
+k = 0
+for (hx, hz, base, size, hgt, kind) in houses:
+    if kind == 'ruin': continue
+    if k % 3 == 0:
+        put(hx + 1, base + 1, hz + 1, 'minecraft:chest'); (riches if k < 9 else chests).append((hx + 1, base + 1, hz + 1))
+    k += 1
 # 街灯（通りの交差点に、魂のランタン）
-for gx in range(-3, 4):
-    for gz in range(-3, 4):
+for gx in range(-4, 5):
+    for gz in range(-4, 5):
         x, z = cx5 + gx * 9, cz5 + gz * 9
         if opn(x, z) and area(x, z) == 5 and not used[x + OFF, z + OFF] and ce(x, z) - fl(x, z) > 6:
             f = fl(x, z)
             put(x, f + 1, z, 'minecraft:polished_deepslate_wall'); put(x, f + 2, z, 'minecraft:polished_deepslate_wall'); put(x, f + 3, z, 'minecraft:soul_lantern')
             used[x + OFF, z + OFF] = True
-# 広場の門（中央）：深層岩タイルのアーチ
-for o in (-4, 4):
-    for y in range(F5 + 1, F5 + 7): put(cx5 + o, y, cz5, 'minecraft:chiseled_deepslate' if y == F5 + 6 else 'minecraft:deepslate_tiles')
-    used[cx5 + o + OFF, cz5 + OFF] = True
-for a in range(-4, 5): put(cx5 + a, F5 + 7, cz5, 'minecraft:deepslate_tile_slab[type=bottom]')
+# 通りの飾り：スカルクのしみ、スカルクの筋、ドクロ、ろうそく
+for x, z in cells(5):
+    if used[x + OFF, z + OFF] or not is_air(x, fl(x, z) + 1, z): continue
+    h = rt.random()
+    nb_wall = any(not opn(x + a, z + b) or used[x + a + OFF, z + b + OFF] for a, b in ((1, 0), (-1, 0), (0, 1), (0, -1)))
+    if h < 0.04: put(x, fl(x, z), z, 'minecraft:sculk')
+    elif h < 0.07: put(x, fl(x, z) + 1, z, 'minecraft:sculk_vein[down=true]')
+    elif h < 0.075 and nb_wall:
+        put(x, fl(x, z) + 1, z, 'minecraft:skeleton_skull[rotation=%d]' % int(rt.integers(0, 16))); used[x + OFF, z + OFF] = True
+    elif h < 0.09 and nb_wall:
+        put(x, fl(x, z) + 1, z, 'minecraft:candle[candles=%d,lit=true]' % int(rt.integers(2, 5))); used[x + OFF, z + OFF] = True
+# 広場：じゅうたん（空色と灰色の市松）
+for a in range(-5, 6):
+    for b in range(-5, 6):
+        x, z = cx5 + a, cz5 + b
+        if opn(x, z) and not used[x + OFF, z + OFF] and abs(fl(x, z) - F5) <= 1 and is_air(x, fl(x, z) + 1, z):
+            put(x, fl(x, z) + 1, z, 'minecraft:light_blue_carpet' if (a + b) % 2 == 0 else 'minecraft:gray_carpet')
+# 広場の北の大門（幅13・高さ9。玄武岩の柱、模様入りの深層岩、魂のランタン）
+GZ = cz5 - 7
+for o in (-6, 6):
+    for y in range(F5 + 1, F5 + 9):
+        put(cx5 + o, y, GZ, 'minecraft:chiseled_deepslate' if y in (F5 + 1, F5 + 8) else 'minecraft:polished_basalt[axis=y]')
+    put(cx5 + o, F5 + 10, GZ, 'minecraft:soul_lantern')
+    used[cx5 + o + OFF, GZ + OFF] = True
+for a in range(-6, 7):
+    put(cx5 + a, F5 + 9, GZ, 'minecraft:chiseled_deepslate' if a in (-6, 6) else 'minecraft:deepslate_tiles')
+    if abs(a) <= 5: put(cx5 + a, F5 + 8, GZ, 'minecraft:deepslate_tile_slab[type=top]') if abs(a) >= 4 else None
+for a in (-3, 0, 3):
+    put(cx5 + a, F5 + 8, GZ, 'minecraft:soul_lantern[hanging=true]')
+# 広場の四隅の玄武岩の柱（高さ4、上にろうそく）
+for a, b in ((-5, -5), (5, -5), (-5, 5), (5, 5)):
+    x, z = cx5 + a, cz5 + b
+    if opn(x, z) and not used[x + OFF, z + OFF]:
+        for y in range(fl(x, z) + 1, fl(x, z) + 5): put(x, y, z, 'minecraft:polished_basalt[axis=y]')
+        put(x, fl(x, z) + 5, z, 'minecraft:candle[candles=4,lit=true]'); used[x + OFF, z + OFF] = True
 
 # ---------------- トンネルと小部屋の明かり（暗め）・チェスト ----------------
 LIGHT_FACES = {(1, 0): 'east', (-1, 0): 'west', (0, 1): 'south', (0, -1): 'north'}
 for x, z in cells(6) + cells(7) + cells(8):
     if used[x + OFF, z + OFF]: continue
     f = fl(x, z); c = ce(x, z); h = rd.random()
-    if h < 0.012:   # 壁のヒカリゴケ（目の高さ）
+    if h < 0.03:   # 壁のヒカリゴケ（目の高さ）。1.9.170 で 0.012→0.03（明るく）
         for (a, b), face in LIGHT_FACES.items():
             if not opn(x + a, z + b) and is_air(x, f + 2, z):
                 put(x, f + 2, z, f'minecraft:glow_lichen[{face}=true]'); break
-    elif h < 0.016 and c - f >= 5:
+    elif h < 0.04 and c - f >= 5:   # 吊りランタン（1.9.170 で約2.5倍）
         hang(x, z, 'minecraft:lantern[hanging=true]')
-    elif h < 0.04:
-        put(x, f + 1, z, 'minecraft:gravel' if False else 'minecraft:air')
+    elif h < 0.06:
+        put(x, f + 1, z, 'minecraft:air')
 # エリアの明かりの補い（晶洞はヒカリゴケ、町と深層は少なめ）
-for a, p in ((1, 0.01), (3, 0.008), (5, 0.004), (8, 0.01)):
+for a, p in ((1, 0.025), (3, 0.02), (4, 0.012), (5, 0.012), (8, 0.025), (0, 0.01)):   # 1.9.170: 約2.5倍、深層・神殿にも
     for x, z in cells(a):
         if rd.random() < p and not used[x + OFF, z + OFF]:
             for (dx, dz), face in LIGHT_FACES.items():

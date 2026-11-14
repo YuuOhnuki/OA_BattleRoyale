@@ -929,7 +929,6 @@ fill ~-22 ~-29 ~89 ~7 ~-29 ~89 minecraft:moss_block
 fill ~-24 ~-29 ~89 ~-23 ~-29 ~89 minecraft:stone
 fill ~-24 ~-29 ~90 ~7 ~-29 ~103 minecraft:moss_block
 setblock ~-5 ~-28 ~72 minecraft:flowering_azalea
-setblock ~-11 ~-28 ~72 minecraft:chest
 setblock ~-2 ~-28 ~72 minecraft:flowering_azalea
 setblock ~1 ~-28 ~72 minecraft:moss_carpet
 fill ~-13 ~-28 ~72 ~-13 ~-22 ~72 minecraft:mossy_cobblestone
@@ -998,7 +997,6 @@ setblock ~2 ~-28 ~81 minecraft:azalea
 fill ~3 ~-28 ~80 ~3 ~-28 ~82 minecraft:moss_carpet
 setblock ~-1 ~-28 ~82 minecraft:moss_carpet
 setblock ~-2 ~-28 ~82 minecraft:flowering_azalea
-setblock ~-19 ~-28 ~82 minecraft:chest
 setblock ~1 ~-28 ~82 minecraft:moss_carpet
 fill ~-18 ~-28 ~82 ~-17 ~-28 ~82 minecraft:moss_carpet
 setblock ~-15 ~-28 ~82 minecraft:moss_carpet
@@ -1026,7 +1024,6 @@ fill ~-7 ~-28 ~85 ~-3 ~-28 ~85 minecraft:moss_carpet
 fill ~1 ~-28 ~85 ~2 ~-28 ~85 minecraft:moss_carpet
 setblock ~5 ~-28 ~85 minecraft:moss_carpet
 setblock ~-15 ~-28 ~85 minecraft:moss_carpet
-setblock ~-21 ~-28 ~86 minecraft:chest
 setblock ~6 ~-28 ~86 minecraft:small_dripleaf[half=lower,facing=north]
 setblock ~-2 ~-28 ~86 minecraft:moss_carpet
 fill ~-17 ~-28 ~86 ~-16 ~-28 ~86 minecraft:moss_carpet

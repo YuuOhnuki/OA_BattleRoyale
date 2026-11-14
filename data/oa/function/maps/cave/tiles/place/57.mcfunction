@@ -1012,6 +1012,7 @@ setblock ~75 ~-27 ~10 minecraft:amethyst_block
 fill ~77 ~-27 ~10 ~80 ~-27 ~10 minecraft:amethyst_block
 fill ~74 ~-27 ~11 ~76 ~-27 ~11 minecraft:amethyst_block
 fill ~74 ~-17 ~11 ~76 ~-17 ~11 minecraft:amethyst_block
+setblock ~73 ~-27 ~11 minecraft:chest
 setblock ~73 ~-27 ~12 minecraft:calcite
 setblock ~73 ~-17 ~12 minecraft:calcite
 fill ~86 ~-26 ~8 ~86 ~-19 ~8 minecraft:calcite
@@ -1020,7 +1021,6 @@ fill ~100 ~-26 ~8 ~101 ~-20 ~8 minecraft:amethyst_block
 fill ~93 ~-26 ~8 ~95 ~-20 ~8 minecraft:amethyst_block
 fill ~102 ~-26 ~8 ~103 ~-19 ~8 minecraft:calcite
 fill ~85 ~-26 ~8 ~85 ~-23 ~8 minecraft:amethyst_block
-setblock ~95 ~-26 ~9 minecraft:chest
 fill ~95 ~-26 ~18 ~95 ~-25 ~18 minecraft:calcite
 fill ~95 ~-23 ~18 ~95 ~-21 ~18 minecraft:calcite
 fill ~95 ~-19 ~18 ~95 ~-17 ~18 minecraft:calcite
@@ -1037,6 +1037,7 @@ fill ~82 ~-26 ~37 ~82 ~-25 ~37 minecraft:calcite
 fill ~82 ~-23 ~37 ~82 ~-21 ~37 minecraft:calcite
 fill ~82 ~-19 ~37 ~82 ~-17 ~37 minecraft:calcite
 fill ~82 ~-15 ~37 ~82 ~-13 ~37 minecraft:calcite
+setblock ~72 ~-26 ~38 minecraft:chest
 setblock ~95 ~-24 ~18 minecraft:amethyst_block
 setblock ~95 ~-20 ~18 minecraft:amethyst_block
 setblock ~95 ~-16 ~18 minecraft:amethyst_block

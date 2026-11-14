@@ -210,7 +210,7 @@ setblock ~110 ~-30 ~-55 minecraft:gravel
 setblock ~112 ~-30 ~-54 minecraft:tuff
 setblock ~111 ~-30 ~-54 minecraft:stone
 fill ~113 ~-30 ~-54 ~135 ~-30 ~-54 minecraft:stone
-fill ~104 ~-30 ~-54 ~109 ~-29 ~-54 minecraft:stone
+fill ~104 ~-30 ~-54 ~109 ~-30 ~-54 minecraft:stone
 setblock ~110 ~-30 ~-54 minecraft:tuff
 fill ~104 ~-30 ~-53 ~134 ~-30 ~-53 minecraft:stone
 setblock ~135 ~-30 ~-53 minecraft:tuff
@@ -225,10 +225,12 @@ setblock ~111 ~-30 ~-51 minecraft:gravel
 fill ~126 ~-30 ~-52 ~133 ~-30 ~-50 minecraft:stone
 fill ~111 ~-30 ~-49 ~133 ~-30 ~-49 minecraft:stone
 fill ~104 ~-30 ~-49 ~109 ~-30 ~-49 minecraft:stone
+fill ~104 ~-28 ~-49 ~109 ~-28 ~-49 minecraft:stone
 setblock ~110 ~-30 ~-49 minecraft:andesite
-fill ~104 ~-30 ~-48 ~111 ~-30 ~-48 minecraft:stone
-setblock ~112 ~-30 ~-48 minecraft:andesite
+fill ~105 ~-30 ~-48 ~111 ~-30 ~-48 minecraft:stone
 fill ~113 ~-30 ~-48 ~133 ~-30 ~-48 minecraft:stone
+setblock ~104 ~-30 ~-48 minecraft:gravel
+setblock ~112 ~-30 ~-48 minecraft:andesite
 fill ~112 ~-30 ~-47 ~133 ~-30 ~-47 minecraft:stone
 fill ~104 ~-30 ~-47 ~110 ~-30 ~-47 minecraft:stone
 setblock ~111 ~-30 ~-47 minecraft:tuff
@@ -240,9 +242,8 @@ setblock ~115 ~-30 ~-46 minecraft:andesite
 setblock ~114 ~-30 ~-45 minecraft:andesite
 setblock ~118 ~-30 ~-45 minecraft:andesite
 fill ~112 ~-30 ~-45 ~113 ~-30 ~-45 minecraft:stone
-fill ~109 ~-30 ~-45 ~109 ~-25 ~-45 minecraft:stone
-setblock ~110 ~-30 ~-45 minecraft:andesite
 fill ~119 ~-30 ~-45 ~133 ~-30 ~-45 minecraft:stone
+fill ~109 ~-30 ~-45 ~110 ~-30 ~-45 minecraft:andesite
 setblock ~111 ~-30 ~-45 minecraft:tuff
 fill ~106 ~-30 ~-45 ~107 ~-30 ~-45 minecraft:stone
 setblock ~116 ~-30 ~-45 minecraft:andesite
@@ -284,17 +285,14 @@ fill ~109 ~-30 ~-42 ~110 ~-30 ~-42 minecraft:stone
 setblock ~111 ~-30 ~-42 minecraft:tuff
 fill ~118 ~-30 ~-42 ~121 ~-30 ~-42 minecraft:tuff
 setblock ~116 ~-30 ~-42 minecraft:stone
-fill ~125 ~-30 ~-41 ~131 ~-26 ~-41 minecraft:stone
+fill ~111 ~-30 ~-41 ~118 ~-30 ~-41 minecraft:stone
 setblock ~107 ~-30 ~-41 minecraft:stone
 setblock ~124 ~-30 ~-41 minecraft:cobbled_deepslate
-setblock ~111 ~-30 ~-41 minecraft:stone
-setblock ~112 ~-30 ~-41 minecraft:gravel
 setblock ~109 ~-30 ~-41 minecraft:stone
 setblock ~108 ~-30 ~-41 minecraft:andesite
 setblock ~119 ~-30 ~-41 minecraft:cobbled_deepslate
 fill ~104 ~-30 ~-41 ~106 ~-25 ~-41 minecraft:granite
-fill ~113 ~-30 ~-41 ~118 ~-30 ~-41 minecraft:stone
-fill ~113 ~-24 ~-41 ~118 ~-24 ~-41 minecraft:stone
+fill ~125 ~-30 ~-41 ~131 ~-26 ~-41 minecraft:stone
 fill ~120 ~-30 ~-41 ~123 ~-30 ~-41 minecraft:stone
 setblock ~110 ~-30 ~-41 minecraft:gravel
 fill ~114 ~-30 ~-40 ~120 ~-30 ~-40 minecraft:stone
@@ -303,7 +301,7 @@ setblock ~122 ~-30 ~-40 minecraft:stone
 fill ~124 ~-30 ~-40 ~125 ~-30 ~-40 minecraft:tuff
 setblock ~121 ~-30 ~-40 minecraft:tuff
 fill ~109 ~-30 ~-40 ~112 ~-30 ~-40 minecraft:stone
-fill ~126 ~-30 ~-40 ~131 ~-29 ~-40 minecraft:stone
+fill ~126 ~-30 ~-40 ~131 ~-28 ~-40 minecraft:stone
 setblock ~123 ~-30 ~-40 minecraft:cobbled_deepslate
 setblock ~112 ~-30 ~-39 minecraft:tuff
 setblock ~114 ~-30 ~-39 minecraft:stone
@@ -441,38 +439,40 @@ setblock ~124 ~-30 ~-25 minecraft:stone
 fill ~125 ~-30 ~-25 ~128 ~-30 ~-25 minecraft:andesite
 fill ~116 ~-30 ~-25 ~121 ~-30 ~-25 minecraft:andesite
 fill ~129 ~-30 ~-25 ~135 ~-30 ~-25 minecraft:stone
-fill ~114 ~-29 ~-56 ~135 ~-29 ~-55 minecraft:stone
-setblock ~113 ~-29 ~-55 minecraft:coal_ore
+fill ~114 ~-29 ~-56 ~135 ~-27 ~-56 minecraft:stone
+fill ~113 ~-29 ~-55 ~135 ~-28 ~-55 minecraft:stone
 setblock ~135 ~-29 ~-54 minecraft:tuff
 fill ~113 ~-29 ~-54 ~134 ~-29 ~-54 minecraft:stone
-setblock ~109 ~-29 ~-53 minecraft:redstone_ore
 fill ~113 ~-29 ~-53 ~133 ~-29 ~-53 minecraft:stone
-fill ~104 ~-29 ~-53 ~108 ~-29 ~-53 minecraft:stone
 fill ~134 ~-29 ~-53 ~135 ~-29 ~-52 minecraft:tuff
 fill ~126 ~-29 ~-52 ~133 ~-29 ~-52 minecraft:stone
 fill ~113 ~-29 ~-51 ~122 ~-25 ~-51 minecraft:stone
 fill ~126 ~-29 ~-51 ~132 ~-29 ~-50 minecraft:stone
 fill ~113 ~-29 ~-50 ~123 ~-25 ~-50 minecraft:stone
 fill ~113 ~-17 ~-50 ~123 ~-17 ~-50 minecraft:stone
-fill ~104 ~-29 ~-52 ~109 ~-29 ~-49 minecraft:stone
+fill ~104 ~-29 ~-54 ~109 ~-29 ~-49 minecraft:stone
+fill ~104 ~-27 ~-54 ~109 ~-25 ~-49 minecraft:stone
 fill ~113 ~-29 ~-49 ~132 ~-29 ~-49 minecraft:stone
-setblock ~104 ~-29 ~-48 minecraft:redstone_ore
-fill ~105 ~-29 ~-48 ~110 ~-29 ~-47 minecraft:stone
 fill ~114 ~-29 ~-48 ~132 ~-29 ~-47 minecraft:stone
+fill ~105 ~-29 ~-48 ~110 ~-25 ~-47 minecraft:stone
 fill ~116 ~-29 ~-46 ~132 ~-28 ~-46 minecraft:stone
-fill ~106 ~-29 ~-46 ~111 ~-25 ~-46 minecraft:stone
+fill ~107 ~-29 ~-46 ~111 ~-25 ~-46 minecraft:stone
 fill ~120 ~-29 ~-45 ~132 ~-28 ~-45 minecraft:stone
 fill ~133 ~-29 ~-51 ~135 ~-29 ~-44 minecraft:tuff
 fill ~122 ~-29 ~-44 ~132 ~-28 ~-44 minecraft:stone
 fill ~123 ~-29 ~-43 ~132 ~-28 ~-43 minecraft:stone
 fill ~124 ~-29 ~-42 ~131 ~-26 ~-42 minecraft:stone
-fill ~114 ~-29 ~-40 ~115 ~-25 ~-40 minecraft:stone
+fill ~112 ~-29 ~-41 ~112 ~-25 ~-41 minecraft:stone
+fill ~114 ~-29 ~-40 ~115 ~-29 ~-40 minecraft:stone
+fill ~114 ~-27 ~-40 ~115 ~-25 ~-40 minecraft:stone
 fill ~126 ~-29 ~-39 ~132 ~-28 ~-38 minecraft:stone
 fill ~104 ~-29 ~-39 ~104 ~-29 ~-38 minecraft:stone
 setblock ~105 ~-29 ~-38 minecraft:tuff
 setblock ~111 ~-29 ~-38 minecraft:stone
 fill ~112 ~-29 ~-37 ~113 ~-29 ~-37 minecraft:stone
-fill ~127 ~-29 ~-37 ~133 ~-29 ~-36 minecraft:stone
+fill ~128 ~-29 ~-37 ~133 ~-29 ~-37 minecraft:stone
+setblock ~127 ~-29 ~-37 minecraft:coal_ore
+fill ~127 ~-29 ~-36 ~133 ~-29 ~-36 minecraft:stone
 fill ~134 ~-29 ~-36 ~135 ~-29 ~-36 minecraft:tuff
 setblock ~112 ~-29 ~-36 minecraft:stone
 fill ~104 ~-29 ~-37 ~111 ~-29 ~-35 minecraft:tuff
@@ -487,11 +487,11 @@ fill ~108 ~-29 ~-33 ~109 ~-29 ~-33 minecraft:tuff
 fill ~104 ~-29 ~-33 ~107 ~-29 ~-33 minecraft:stone
 fill ~110 ~-29 ~-33 ~111 ~-28 ~-33 minecraft:stone
 fill ~128 ~-29 ~-33 ~135 ~-29 ~-32 minecraft:stone
-fill ~104 ~-29 ~-32 ~111 ~-29 ~-30 minecraft:stone
+fill ~104 ~-29 ~-32 ~111 ~-28 ~-30 minecraft:stone
 fill ~129 ~-29 ~-31 ~135 ~-26 ~-30 minecraft:stone
 fill ~104 ~-29 ~-29 ~112 ~-25 ~-29 minecraft:stone
-setblock ~113 ~-29 ~-29 minecraft:chest
 fill ~104 ~-29 ~-28 ~114 ~-25 ~-28 minecraft:stone
+setblock ~121 ~-29 ~-27 minecraft:chest
 fill ~104 ~-29 ~-27 ~119 ~-29 ~-27 minecraft:stone
 fill ~104 ~-27 ~-27 ~119 ~-25 ~-27 minecraft:stone
 setblock ~126 ~-29 ~-26 minecraft:andesite
@@ -501,28 +501,25 @@ fill ~127 ~-29 ~-27 ~135 ~-29 ~-25 minecraft:stone
 fill ~104 ~-29 ~-25 ~117 ~-29 ~-25 minecraft:stone
 fill ~125 ~-29 ~-25 ~126 ~-29 ~-25 minecraft:andesite
 fill ~118 ~-29 ~-25 ~121 ~-29 ~-25 minecraft:andesite
-fill ~114 ~-28 ~-56 ~135 ~-27 ~-56 minecraft:stone
-fill ~113 ~-28 ~-55 ~135 ~-28 ~-55 minecraft:stone
 fill ~113 ~-28 ~-54 ~133 ~-28 ~-54 minecraft:stone
 fill ~134 ~-28 ~-54 ~135 ~-28 ~-54 minecraft:tuff
 fill ~113 ~-28 ~-53 ~132 ~-28 ~-53 minecraft:stone
 fill ~133 ~-28 ~-53 ~135 ~-28 ~-52 minecraft:tuff
 fill ~126 ~-28 ~-52 ~132 ~-28 ~-52 minecraft:stone
+fill ~104 ~-28 ~-54 ~109 ~-28 ~-51 minecraft:stone
+setblock ~112 ~-28 ~-51 minecraft:glow_lichen[east=true]
 fill ~126 ~-28 ~-51 ~131 ~-28 ~-50 minecraft:stone
-fill ~104 ~-28 ~-54 ~109 ~-25 ~-49 minecraft:stone
-setblock ~112 ~-28 ~-49 minecraft:glow_lichen[east=true]
-setblock ~110 ~-28 ~-49 minecraft:glow_lichen[west=true]
+fill ~104 ~-28 ~-50 ~108 ~-28 ~-50 minecraft:stone
+setblock ~109 ~-28 ~-50 minecraft:redstone_ore
 fill ~113 ~-28 ~-49 ~131 ~-27 ~-49 minecraft:stone
 fill ~132 ~-28 ~-51 ~135 ~-28 ~-48 minecraft:tuff
 fill ~114 ~-28 ~-48 ~131 ~-28 ~-48 minecraft:stone
-fill ~104 ~-28 ~-48 ~110 ~-25 ~-48 minecraft:stone
 fill ~114 ~-28 ~-47 ~132 ~-28 ~-47 minecraft:stone
-fill ~105 ~-28 ~-47 ~109 ~-28 ~-47 minecraft:stone
-setblock ~110 ~-28 ~-47 minecraft:redstone_ore
+setblock ~106 ~-28 ~-46 minecraft:glow_lichen[east=true]
+setblock ~115 ~-28 ~-46 minecraft:glow_lichen[east=true]
 fill ~133 ~-28 ~-47 ~135 ~-28 ~-44 minecraft:tuff
-setblock ~120 ~-28 ~-44 minecraft:glow_lichen[north=true]
-fill ~127 ~-28 ~-40 ~131 ~-28 ~-40 minecraft:stone
-setblock ~126 ~-28 ~-40 minecraft:redstone_ore
+setblock ~115 ~-28 ~-40 minecraft:redstone_ore
+setblock ~114 ~-28 ~-40 minecraft:stone
 fill ~107 ~-28 ~-38 ~111 ~-25 ~-38 minecraft:tuff
 fill ~104 ~-28 ~-38 ~105 ~-1 ~-38 minecraft:tuff
 fill ~133 ~-28 ~-37 ~133 ~-27 ~-37 minecraft:tuff
@@ -533,23 +530,21 @@ fill ~133 ~-28 ~-36 ~135 ~-28 ~-36 minecraft:tuff
 fill ~127 ~-28 ~-35 ~133 ~-28 ~-35 minecraft:stone
 fill ~104 ~-28 ~-35 ~111 ~-28 ~-35 minecraft:tuff
 fill ~134 ~-28 ~-35 ~135 ~-28 ~-35 minecraft:tuff
+setblock ~127 ~-28 ~-34 minecraft:glow_lichen[east=true]
 fill ~104 ~-28 ~-34 ~110 ~-28 ~-34 minecraft:tuff
-fill ~128 ~-28 ~-34 ~134 ~-28 ~-33 minecraft:stone
 fill ~135 ~-28 ~-34 ~135 ~-28 ~-33 minecraft:tuff
+fill ~128 ~-28 ~-34 ~134 ~-28 ~-33 minecraft:stone
 fill ~106 ~-28 ~-33 ~109 ~-28 ~-33 minecraft:tuff
 fill ~104 ~-28 ~-33 ~105 ~-28 ~-33 minecraft:stone
 fill ~128 ~-28 ~-32 ~135 ~-28 ~-32 minecraft:stone
-fill ~104 ~-28 ~-32 ~110 ~-28 ~-32 minecraft:stone
-setblock ~111 ~-28 ~-32 minecraft:coal_ore
-fill ~104 ~-28 ~-31 ~111 ~-27 ~-30 minecraft:stone
+setblock ~127 ~-28 ~-29 minecraft:glow_lichen[east=true]
 fill ~127 ~-28 ~-27 ~135 ~-25 ~-27 minecraft:stone
 fill ~104 ~-28 ~-27 ~119 ~-28 ~-26 minecraft:stone
 fill ~120 ~-28 ~-26 ~122 ~-28 ~-26 minecraft:andesite
 fill ~126 ~-28 ~-26 ~135 ~-28 ~-25 minecraft:stone
 fill ~119 ~-28 ~-25 ~121 ~-28 ~-25 minecraft:andesite
-setblock ~124 ~-28 ~-25 minecraft:glow_lichen[east=true]
-fill ~104 ~-28 ~-25 ~118 ~-28 ~-25 minecraft:stone
 setblock ~125 ~-28 ~-25 minecraft:andesite
+fill ~104 ~-28 ~-25 ~118 ~-28 ~-25 minecraft:stone
 fill ~113 ~-27 ~-55 ~133 ~-27 ~-55 minecraft:stone
 fill ~134 ~-27 ~-55 ~135 ~-27 ~-55 minecraft:tuff
 fill ~113 ~-27 ~-54 ~132 ~-27 ~-54 minecraft:stone
@@ -557,7 +552,6 @@ fill ~133 ~-27 ~-54 ~135 ~-27 ~-54 minecraft:tuff
 fill ~113 ~-27 ~-53 ~131 ~-27 ~-53 minecraft:stone
 fill ~126 ~-27 ~-52 ~131 ~-27 ~-50 minecraft:stone
 fill ~114 ~-27 ~-48 ~131 ~-27 ~-47 minecraft:stone
-fill ~105 ~-27 ~-47 ~110 ~-25 ~-47 minecraft:stone
 fill ~116 ~-27 ~-46 ~131 ~-27 ~-46 minecraft:stone
 fill ~120 ~-27 ~-45 ~131 ~-27 ~-45 minecraft:stone
 fill ~132 ~-27 ~-53 ~135 ~-27 ~-44 minecraft:tuff
@@ -581,6 +575,7 @@ fill ~135 ~-27 ~-33 ~135 ~-27 ~-32 minecraft:tuff
 fill ~110 ~-27 ~-32 ~111 ~-27 ~-32 minecraft:stone
 fill ~106 ~-27 ~-32 ~109 ~-27 ~-32 minecraft:tuff
 fill ~104 ~-27 ~-32 ~105 ~-27 ~-32 minecraft:stone
+fill ~104 ~-27 ~-31 ~111 ~-27 ~-30 minecraft:stone
 fill ~126 ~-27 ~-26 ~135 ~-25 ~-26 minecraft:stone
 fill ~104 ~-27 ~-26 ~121 ~-27 ~-26 minecraft:stone
 setblock ~122 ~-27 ~-26 minecraft:andesite
@@ -633,6 +628,7 @@ fill ~123 ~-25 ~-43 ~130 ~-25 ~-43 minecraft:stone
 fill ~124 ~-25 ~-42 ~130 ~-25 ~-42 minecraft:stone
 fill ~125 ~-25 ~-41 ~130 ~-25 ~-41 minecraft:stone
 fill ~131 ~-25 ~-42 ~131 ~-25 ~-40 minecraft:tuff
+setblock ~111 ~-25 ~-39 minecraft:lantern[hanging=true]
 fill ~126 ~-25 ~-40 ~130 ~-25 ~-38 minecraft:stone
 fill ~131 ~-25 ~-39 ~132 ~-24 ~-38 minecraft:tuff
 fill ~127 ~-25 ~-37 ~130 ~-25 ~-37 minecraft:stone
@@ -651,6 +647,7 @@ fill ~104 ~-25 ~-31 ~110 ~-24 ~-31 minecraft:tuff
 fill ~109 ~-25 ~-30 ~111 ~-25 ~-30 minecraft:stone
 fill ~104 ~-25 ~-30 ~107 ~-25 ~-30 minecraft:stone
 setblock ~108 ~-25 ~-30 minecraft:tuff
+setblock ~115 ~-25 ~-28 minecraft:lantern[hanging=true]
 fill ~128 ~-24 ~-56 ~135 ~-24 ~-56 minecraft:tuff
 fill ~104 ~-24 ~-56 ~127 ~-24 ~-56 minecraft:stone
 fill ~104 ~-24 ~-55 ~128 ~-24 ~-54 minecraft:stone
@@ -669,6 +666,7 @@ fill ~109 ~-24 ~-42 ~112 ~-24 ~-42 minecraft:tuff
 fill ~113 ~-24 ~-42 ~129 ~-24 ~-42 minecraft:stone
 fill ~130 ~-24 ~-42 ~131 ~-24 ~-41 minecraft:tuff
 fill ~110 ~-24 ~-41 ~112 ~-24 ~-41 minecraft:tuff
+fill ~113 ~-24 ~-41 ~118 ~-24 ~-41 minecraft:stone
 fill ~124 ~-24 ~-41 ~129 ~-24 ~-41 minecraft:stone
 fill ~114 ~-24 ~-40 ~116 ~-24 ~-40 minecraft:stone
 fill ~109 ~-24 ~-40 ~113 ~-24 ~-40 minecraft:tuff
@@ -744,11 +742,10 @@ fill ~126 ~-23 ~-34 ~130 ~-23 ~-34 minecraft:stone
 fill ~104 ~-23 ~-34 ~113 ~-23 ~-33 minecraft:tuff
 fill ~132 ~-23 ~-33 ~135 ~-23 ~-33 minecraft:tuff
 fill ~126 ~-23 ~-33 ~131 ~-23 ~-33 minecraft:stone
-setblock ~115 ~-23 ~-32 minecraft:lantern[hanging=true]
-fill ~104 ~-23 ~-32 ~112 ~-23 ~-32 minecraft:tuff
 setblock ~113 ~-23 ~-32 minecraft:stone
-fill ~133 ~-23 ~-32 ~135 ~-23 ~-31 minecraft:tuff
+fill ~104 ~-23 ~-32 ~112 ~-23 ~-32 minecraft:tuff
 fill ~126 ~-23 ~-32 ~132 ~-23 ~-31 minecraft:stone
+fill ~133 ~-23 ~-32 ~135 ~-23 ~-31 minecraft:tuff
 fill ~104 ~-23 ~-31 ~111 ~-23 ~-31 minecraft:tuff
 fill ~112 ~-23 ~-31 ~114 ~-23 ~-31 minecraft:stone
 fill ~126 ~-23 ~-30 ~133 ~-23 ~-30 minecraft:stone

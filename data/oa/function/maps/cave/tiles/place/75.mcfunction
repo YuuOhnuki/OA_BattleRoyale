@@ -650,6 +650,7 @@ setblock ~16 ~-28 ~83 minecraft:moss_carpet
 setblock ~17 ~-28 ~84 minecraft:azalea
 fill ~29 ~-28 ~84 ~39 ~-28 ~84 minecraft:tuff
 setblock ~8 ~-28 ~84 minecraft:flowering_azalea
+setblock ~18 ~-28 ~84 minecraft:chest
 fill ~24 ~-28 ~84 ~28 ~-28 ~84 minecraft:stone
 setblock ~15 ~-28 ~84 minecraft:moss_carpet
 setblock ~13 ~-28 ~84 minecraft:moss_carpet
@@ -763,6 +764,7 @@ fill ~31 ~-28 ~103 ~39 ~-28 ~103 minecraft:stone
 fill ~28 ~-28 ~103 ~30 ~-28 ~103 minecraft:tuff
 fill ~26 ~-28 ~103 ~27 ~-28 ~103 minecraft:moss_carpet
 fill ~18 ~-28 ~103 ~19 ~-28 ~103 minecraft:moss_carpet
+setblock ~18 ~-27 ~72 minecraft:glow_lichen[east=true]
 fill ~19 ~-27 ~72 ~30 ~-27 ~72 minecraft:stone
 fill ~16 ~-27 ~73 ~30 ~-27 ~73 minecraft:stone
 fill ~31 ~-27 ~72 ~39 ~-27 ~75 minecraft:tuff
@@ -797,8 +799,10 @@ fill ~29 ~-27 ~102 ~34 ~-27 ~102 minecraft:tuff
 fill ~28 ~-27 ~103 ~32 ~-27 ~103 minecraft:tuff
 fill ~33 ~-27 ~103 ~39 ~-27 ~103 minecraft:stone
 fill ~19 ~-26 ~72 ~29 ~-26 ~72 minecraft:stone
+setblock ~30 ~-26 ~72 minecraft:coal_ore
+fill ~31 ~-26 ~72 ~39 ~-26 ~72 minecraft:tuff
 fill ~16 ~-26 ~73 ~29 ~-26 ~73 minecraft:stone
-fill ~30 ~-26 ~72 ~39 ~-26 ~75 minecraft:tuff
+fill ~30 ~-26 ~73 ~39 ~-26 ~75 minecraft:tuff
 fill ~15 ~-26 ~74 ~29 ~-26 ~75 minecraft:stone
 fill ~15 ~-26 ~76 ~30 ~-26 ~76 minecraft:stone
 fill ~31 ~-26 ~76 ~39 ~-26 ~78 minecraft:tuff

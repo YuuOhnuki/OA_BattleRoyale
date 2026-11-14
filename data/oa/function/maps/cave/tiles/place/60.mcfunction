@@ -106,8 +106,7 @@ fill ~-131 ~-32 ~66 ~-121 ~-32 ~66 minecraft:tuff
 fill ~-152 ~-32 ~66 ~-132 ~-32 ~66 minecraft:stone
 fill ~-152 ~-32 ~67 ~-128 ~-32 ~67 minecraft:stone
 fill ~-127 ~-32 ~67 ~-121 ~-32 ~67 minecraft:tuff
-fill ~-147 ~-31 ~40 ~-125 ~-31 ~40 minecraft:stone
-fill ~-147 ~-29 ~40 ~-125 ~-29 ~40 minecraft:stone
+fill ~-147 ~-31 ~40 ~-125 ~-29 ~40 minecraft:stone
 fill ~-146 ~-31 ~41 ~-125 ~-30 ~41 minecraft:stone
 fill ~-146 ~-31 ~42 ~-124 ~-31 ~42 minecraft:stone
 fill ~-125 ~-31 ~43 ~-122 ~-31 ~43 minecraft:tuff
@@ -116,9 +115,8 @@ fill ~-144 ~-31 ~44 ~-127 ~-31 ~44 minecraft:stone
 fill ~-126 ~-31 ~44 ~-122 ~-31 ~44 minecraft:tuff
 fill ~-143 ~-31 ~45 ~-129 ~-31 ~45 minecraft:stone
 fill ~-128 ~-31 ~45 ~-122 ~-31 ~45 minecraft:tuff
+fill ~-130 ~-31 ~46 ~-122 ~-31 ~46 minecraft:tuff
 fill ~-142 ~-31 ~46 ~-131 ~-31 ~46 minecraft:stone
-setblock ~-122 ~-31 ~46 minecraft:redstone_ore
-fill ~-130 ~-31 ~46 ~-123 ~-31 ~46 minecraft:tuff
 fill ~-133 ~-31 ~47 ~-122 ~-31 ~47 minecraft:tuff
 fill ~-142 ~-31 ~47 ~-134 ~-31 ~47 minecraft:stone
 fill ~-141 ~-31 ~48 ~-136 ~-31 ~48 minecraft:stone
@@ -146,9 +144,6 @@ fill ~-152 ~-31 ~67 ~-131 ~-31 ~67 minecraft:stone
 fill ~-130 ~-31 ~67 ~-121 ~-31 ~67 minecraft:tuff
 fill ~-152 ~-31 ~68 ~-126 ~-31 ~68 minecraft:stone
 fill ~-125 ~-31 ~68 ~-121 ~-31 ~68 minecraft:tuff
-setblock ~-125 ~-30 ~40 minecraft:redstone_ore
-fill ~-147 ~-30 ~40 ~-126 ~-30 ~40 minecraft:stone
-fill ~-147 ~-28 ~40 ~-126 ~-28 ~40 minecraft:stone
 fill ~-125 ~-30 ~42 ~-124 ~-30 ~42 minecraft:tuff
 fill ~-146 ~-30 ~42 ~-126 ~-30 ~42 minecraft:stone
 fill ~-126 ~-30 ~43 ~-122 ~-30 ~43 minecraft:tuff
@@ -217,6 +212,7 @@ fill ~-132 ~-29 ~68 ~-121 ~-29 ~68 minecraft:tuff
 fill ~-126 ~-29 ~69 ~-121 ~-29 ~69 minecraft:tuff
 fill ~-140 ~-29 ~69 ~-127 ~-29 ~69 minecraft:stone
 fill ~-140 ~-29 ~70 ~-121 ~-29 ~70 minecraft:stone
+fill ~-147 ~-28 ~40 ~-126 ~-28 ~40 minecraft:stone
 setblock ~-125 ~-28 ~40 minecraft:tuff
 fill ~-146 ~-28 ~41 ~-127 ~-28 ~41 minecraft:stone
 fill ~-126 ~-28 ~41 ~-125 ~-28 ~41 minecraft:tuff
