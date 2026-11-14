@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.170 時点）
+# 引き継ぎメモ（1.9.171 時点）
 
 ## 現状
+- 1.9.171：finale/step はマップ定義の y（全マップ 80）で演出関数を呼ぶ。洞窟は天井の上になるので finale/cave で 29 下げて finale/cave_at を呼ぶ。ランプ（神殿の床の輪 A/B/C と天井 D）は build_map_cave.py が置き、点滅の関数 maps/cave/finale_lamps・finale_all_on・finale_pillars も書き出す（神殿の床の立ち位置 y51 を原点とした相対座標）。br/finale/lamps_on（試合の終わり）に洞窟のランプを全部つける行を足した。地図パネルの描き直しは scripts/voxelize_tiles.py（地上のタイル関数→3D）と、リソースパックの source/build_lobby_map_*_1_9_39.py。
 - 1.9.170：洞窟の古代都市（build_map_cave.py の「# 5 古代都市」の節、乱数 SEED+55）を作り直し：中央の4区画は広場、残りの区画に家・塔・廃墟。明るさは dimension_type の ambient_light 0.1 と、トンネル・エリアの明かりの確率。リソースパック 1.9.38（地図パネルの名前）。
 - 1.9.169：ネザーの生成スクリプトの最後（到達性の検算の前）に、宝物庫の中庭の通常チェスト8を乱数なしで追加（変わるのは apply/place の 44・45・54 だけ）。洞窟は NCH=100・NORE=180（定数）、神殿の壁ぎわ8、中間の空洞3ずつ。マップ選択の文字は lobby/mapsel/labels（peek で行き先を探す。step_try と同じ順）。
 - 1.9.168：特別チェストの最低保証（loot_table br/rich_iron を chest_site のプールに、chest_initial_late は rich のとき loot insert）。補給の着地後の光の柱（supply/fx の end_rod）を削除。マップ選択は前へ／次へ（lobby/mapsel/step・step_try、マーカー oa.mapsel_prev/next、文字 oa.mapsel_t_cur。マップを増やしたら step_try に1行足し、折り返しの数を直す）。左右は「パネルの前に立つと東が左」という推定で、前へ＝+x 側。

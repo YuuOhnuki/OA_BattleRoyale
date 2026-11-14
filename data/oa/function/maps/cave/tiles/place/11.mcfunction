@@ -364,8 +364,8 @@ fill ~-93 ~-27 ~-95 ~-89 ~-27 ~-92 minecraft:stone
 fill ~-94 ~-27 ~-95 ~-94 ~-27 ~-92 minecraft:andesite
 fill ~-120 ~-27 ~-95 ~-95 ~-27 ~-92 minecraft:stone
 fill ~-120 ~-27 ~-91 ~-89 ~-27 ~-91 minecraft:stone
-fill ~-120 ~-27 ~-90 ~-90 ~-27 ~-90 minecraft:stone
 setblock ~-89 ~-27 ~-90 minecraft:coal_ore
+fill ~-120 ~-27 ~-90 ~-90 ~-27 ~-90 minecraft:stone
 fill ~-120 ~-27 ~-89 ~-91 ~-24 ~-89 minecraft:stone
 fill ~-120 ~-26 ~-120 ~-103 ~-25 ~-119 minecraft:tuff
 fill ~-102 ~-26 ~-120 ~-89 ~-26 ~-118 minecraft:stone

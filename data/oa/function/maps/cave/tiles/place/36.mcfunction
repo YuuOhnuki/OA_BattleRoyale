@@ -121,10 +121,10 @@ setblock ~65 ~-29 ~-33 minecraft:andesite
 fill ~40 ~-31 ~-33 ~64 ~-31 ~-33 minecraft:stone
 fill ~66 ~-31 ~-33 ~71 ~-31 ~-33 minecraft:stone
 setblock ~48 ~-30 ~-56 minecraft:cracked_deepslate_tiles
+setblock ~57 ~-30 ~-56 minecraft:cracked_deepslate_tiles
 fill ~62 ~-30 ~-56 ~64 ~-30 ~-56 minecraft:polished_deepslate
 setblock ~65 ~-30 ~-56 minecraft:sculk
 fill ~40 ~-30 ~-56 ~47 ~-30 ~-56 minecraft:polished_deepslate
-setblock ~57 ~-30 ~-56 minecraft:cracked_deepslate_tiles
 fill ~66 ~-30 ~-56 ~71 ~-30 ~-56 minecraft:polished_deepslate
 fill ~58 ~-30 ~-56 ~59 ~-30 ~-55 minecraft:polished_deepslate
 fill ~51 ~-30 ~-56 ~51 ~-30 ~-55 minecraft:deepslate_tiles
@@ -137,20 +137,20 @@ fill ~40 ~-30 ~-55 ~43 ~-30 ~-55 minecraft:polished_deepslate
 fill ~52 ~-30 ~-56 ~56 ~-30 ~-54 minecraft:polished_deepslate
 setblock ~58 ~-30 ~-54 minecraft:polished_deepslate
 fill ~60 ~-30 ~-54 ~66 ~-30 ~-54 minecraft:deepslate_tiles
-setblock ~59 ~-30 ~-54 minecraft:sculk
 setblock ~51 ~-30 ~-54 minecraft:cracked_deepslate_tiles
-fill ~40 ~-30 ~-54 ~47 ~-30 ~-54 minecraft:polished_deepslate
+setblock ~59 ~-30 ~-54 minecraft:sculk
 setblock ~57 ~-30 ~-54 minecraft:cracked_deepslate_tiles
+fill ~40 ~-30 ~-54 ~47 ~-30 ~-54 minecraft:polished_deepslate
 fill ~49 ~-30 ~-56 ~50 ~-30 ~-53 minecraft:polished_deepslate
 fill ~48 ~-30 ~-55 ~48 ~-30 ~-53 minecraft:deepslate_tiles
 fill ~67 ~-30 ~-54 ~71 ~-30 ~-53 minecraft:polished_deepslate
 fill ~63 ~-30 ~-53 ~66 ~-30 ~-53 minecraft:deepslate_tiles
 fill ~45 ~-30 ~-53 ~47 ~-30 ~-53 minecraft:polished_deepslate
+setblock ~62 ~-30 ~-53 minecraft:cracked_deepslate_tiles
 setblock ~56 ~-30 ~-53 minecraft:cracked_deepslate_tiles
+fill ~57 ~-30 ~-53 ~59 ~-30 ~-53 minecraft:sculk
 setblock ~44 ~-30 ~-53 minecraft:sculk
 fill ~51 ~-30 ~-53 ~55 ~-30 ~-53 minecraft:deepslate_tiles
-fill ~57 ~-30 ~-53 ~59 ~-30 ~-53 minecraft:sculk
-setblock ~62 ~-30 ~-53 minecraft:cracked_deepslate_tiles
 fill ~40 ~-30 ~-53 ~43 ~-30 ~-53 minecraft:polished_deepslate
 fill ~60 ~-30 ~-53 ~61 ~-30 ~-53 minecraft:deepslate_tiles
 fill ~40 ~-30 ~-52 ~52 ~-30 ~-52 minecraft:polished_deepslate
@@ -159,47 +159,47 @@ fill ~54 ~-30 ~-52 ~63 ~-30 ~-52 minecraft:polished_deepslate
 fill ~65 ~-30 ~-52 ~71 ~-30 ~-52 minecraft:polished_deepslate
 setblock ~64 ~-30 ~-52 minecraft:sculk
 fill ~40 ~-30 ~-51 ~71 ~-30 ~-51 minecraft:polished_deepslate
-setblock ~60 ~-30 ~-50 minecraft:cracked_deepslate_tiles
+setblock ~48 ~-30 ~-50 minecraft:cracked_deepslate_tiles
 fill ~58 ~-30 ~-50 ~59 ~-30 ~-50 minecraft:polished_deepslate
-setblock ~64 ~-30 ~-50 minecraft:cracked_deepslate_tiles
-setblock ~42 ~-30 ~-50 minecraft:cracked_deepslate_tiles
 fill ~51 ~-30 ~-50 ~52 ~-30 ~-50 minecraft:sculk
 fill ~40 ~-30 ~-50 ~41 ~-30 ~-50 minecraft:polished_deepslate
 fill ~65 ~-30 ~-50 ~66 ~-30 ~-50 minecraft:deepslate_tiles
-setblock ~70 ~-30 ~-50 minecraft:cracked_deepslate_tiles
 setblock ~47 ~-30 ~-50 minecraft:deepslate_tiles
-setblock ~48 ~-30 ~-50 minecraft:cracked_deepslate_tiles
 fill ~49 ~-30 ~-50 ~50 ~-30 ~-50 minecraft:polished_deepslate
+setblock ~57 ~-30 ~-50 minecraft:cracked_deepslate_tiles
+setblock ~46 ~-30 ~-50 minecraft:cracked_deepslate_tiles
 fill ~53 ~-30 ~-50 ~56 ~-30 ~-50 minecraft:deepslate_tiles
 fill ~43 ~-30 ~-50 ~45 ~-30 ~-50 minecraft:deepslate_tiles
 setblock ~71 ~-30 ~-50 minecraft:deepslate_tiles
 setblock ~69 ~-30 ~-50 minecraft:sculk
-setblock ~57 ~-30 ~-50 minecraft:cracked_deepslate_tiles
-setblock ~46 ~-30 ~-50 minecraft:cracked_deepslate_tiles
+setblock ~60 ~-30 ~-50 minecraft:cracked_deepslate_tiles
+setblock ~64 ~-30 ~-50 minecraft:cracked_deepslate_tiles
+setblock ~42 ~-30 ~-50 minecraft:cracked_deepslate_tiles
 fill ~61 ~-30 ~-50 ~63 ~-30 ~-50 minecraft:deepslate_tiles
+setblock ~70 ~-30 ~-50 minecraft:cracked_deepslate_tiles
 fill ~60 ~-30 ~-49 ~66 ~-30 ~-49 minecraft:deepslate_tiles
 setblock ~59 ~-30 ~-49 minecraft:polished_deepslate
 fill ~40 ~-30 ~-49 ~58 ~-29 ~-49 minecraft:deepslate
 fill ~40 ~-23 ~-49 ~58 ~-21 ~-49 minecraft:deepslate
 fill ~69 ~-30 ~-49 ~71 ~-30 ~-49 minecraft:deepslate_tiles
 setblock ~71 ~-30 ~-48 minecraft:deepslate_tiles
-setblock ~70 ~-30 ~-48 minecraft:cracked_deepslate_tiles
 setblock ~69 ~-30 ~-48 minecraft:deepslate_tiles
 setblock ~66 ~-30 ~-48 minecraft:deepslate_tiles
+setblock ~70 ~-30 ~-48 minecraft:cracked_deepslate_tiles
 fill ~44 ~-30 ~-48 ~58 ~-30 ~-48 minecraft:stone
 setblock ~65 ~-30 ~-48 minecraft:sculk
 fill ~59 ~-30 ~-48 ~61 ~-30 ~-48 minecraft:deepslate
 fill ~62 ~-30 ~-48 ~64 ~-30 ~-48 minecraft:deepslate_tiles
 fill ~40 ~-30 ~-48 ~43 ~-30 ~-48 minecraft:deepslate
+fill ~69 ~-30 ~-47 ~71 ~-30 ~-47 minecraft:cracked_deepslate_tiles
 fill ~62 ~-30 ~-47 ~63 ~-30 ~-47 minecraft:deepslate
 fill ~45 ~-30 ~-47 ~61 ~-30 ~-47 minecraft:stone
-fill ~69 ~-30 ~-47 ~71 ~-30 ~-47 minecraft:cracked_deepslate_tiles
 fill ~64 ~-30 ~-47 ~66 ~-30 ~-47 minecraft:deepslate_tiles
 fill ~40 ~-30 ~-47 ~44 ~-30 ~-47 minecraft:deepslate
 fill ~40 ~-22 ~-47 ~44 ~-22 ~-47 minecraft:deepslate
 fill ~67 ~-30 ~-50 ~68 ~-30 ~-46 minecraft:polished_deepslate
-setblock ~66 ~-30 ~-46 minecraft:cracked_deepslate_tiles
 setblock ~71 ~-30 ~-46 minecraft:cracked_deepslate_tiles
+setblock ~66 ~-30 ~-46 minecraft:cracked_deepslate_tiles
 fill ~64 ~-30 ~-46 ~65 ~-30 ~-46 minecraft:deepslate
 fill ~69 ~-30 ~-46 ~70 ~-30 ~-46 minecraft:deepslate_tiles
 fill ~40 ~-30 ~-46 ~63 ~-30 ~-46 minecraft:stone
@@ -232,47 +232,47 @@ fill ~40 ~-30 ~-33 ~71 ~-30 ~-26 minecraft:stone
 setblock ~45 ~-30 ~-25 minecraft:andesite
 fill ~46 ~-30 ~-25 ~71 ~-30 ~-25 minecraft:stone
 fill ~40 ~-30 ~-25 ~44 ~-29 ~-25 minecraft:stone
+setblock ~64 ~-29 ~-56 minecraft:sculk_vein[down=true]
 setblock ~42 ~-29 ~-56 minecraft:deepslate_bricks
 setblock ~42 ~-27 ~-56 minecraft:deepslate_bricks
-setblock ~58 ~-29 ~-56 minecraft:sculk_vein[down=true]
 setblock ~52 ~-29 ~-56 minecraft:deepslate_bricks
-setblock ~64 ~-29 ~-56 minecraft:sculk_vein[down=true]
 setblock ~62 ~-29 ~-56 minecraft:deepslate_bricks
 fill ~62 ~-27 ~-56 ~62 ~-25 ~-56 minecraft:deepslate_bricks
 fill ~66 ~-29 ~-56 ~66 ~-25 ~-56 minecraft:deepslate_bricks
 setblock ~47 ~-29 ~-56 minecraft:deepslate_bricks
 setblock ~47 ~-25 ~-56 minecraft:deepslate_bricks
+setblock ~58 ~-29 ~-56 minecraft:sculk_vein[down=true]
 fill ~56 ~-29 ~-56 ~56 ~-29 ~-55 minecraft:deepslate_bricks
 fill ~56 ~-27 ~-56 ~56 ~-26 ~-55 minecraft:deepslate_bricks
-setblock ~52 ~-29 ~-55 minecraft:cracked_deepslate_bricks
-setblock ~63 ~-29 ~-55 minecraft:deepslate_bricks
 setblock ~47 ~-29 ~-55 minecraft:cracked_deepslate_bricks
 setblock ~47 ~-25 ~-55 minecraft:cracked_deepslate_bricks
+fill ~66 ~-29 ~-55 ~66 ~-25 ~-55 minecraft:polished_deepslate
+setblock ~63 ~-29 ~-55 minecraft:deepslate_bricks
 setblock ~42 ~-29 ~-55 minecraft:cracked_deepslate_bricks
 fill ~62 ~-29 ~-55 ~62 ~-25 ~-55 minecraft:polished_deepslate
-fill ~66 ~-29 ~-55 ~66 ~-25 ~-55 minecraft:polished_deepslate
+setblock ~52 ~-29 ~-55 minecraft:cracked_deepslate_bricks
 fill ~69 ~-29 ~-56 ~69 ~-29 ~-54 minecraft:deepslate_bricks
 fill ~69 ~-27 ~-56 ~69 ~-27 ~-54 minecraft:deepslate_bricks
 setblock ~42 ~-29 ~-54 minecraft:deepslate_bricks
-fill ~56 ~-29 ~-54 ~56 ~-26 ~-54 minecraft:polished_deepslate
 setblock ~61 ~-29 ~-54 minecraft:sculk_vein[down=true]
+fill ~56 ~-29 ~-54 ~56 ~-26 ~-54 minecraft:polished_deepslate
 fill ~53 ~-29 ~-54 ~53 ~-28 ~-54 minecraft:deepslate_bricks
 fill ~52 ~-29 ~-54 ~52 ~-26 ~-54 minecraft:polished_deepslate
 setblock ~47 ~-29 ~-54 minecraft:deepslate_bricks
 setblock ~47 ~-25 ~-54 minecraft:deepslate_bricks
 setblock ~46 ~-29 ~-53 minecraft:deepslate_bricks
 fill ~47 ~-29 ~-53 ~47 ~-24 ~-53 minecraft:polished_deepslate
+setblock ~56 ~-29 ~-53 minecraft:candle[candles=4,lit=true]
 setblock ~71 ~-29 ~-53 minecraft:deepslate_bricks
 fill ~42 ~-29 ~-53 ~42 ~-24 ~-53 minecraft:polished_deepslate
-fill ~43 ~-29 ~-53 ~43 ~-28 ~-53 minecraft:deepslate_bricks
-setblock ~56 ~-29 ~-53 minecraft:candle[candles=4,lit=true]
-fill ~69 ~-29 ~-53 ~69 ~-26 ~-53 minecraft:polished_deepslate
 setblock ~70 ~-29 ~-53 minecraft:cracked_deepslate_bricks
+fill ~43 ~-29 ~-53 ~43 ~-28 ~-53 minecraft:deepslate_bricks
+fill ~69 ~-29 ~-53 ~69 ~-26 ~-53 minecraft:polished_deepslate
+fill ~40 ~-29 ~-52 ~40 ~-28 ~-52 minecraft:polished_deepslate_wall
+fill ~67 ~-29 ~-52 ~67 ~-28 ~-52 minecraft:polished_deepslate_wall
+fill ~58 ~-29 ~-52 ~58 ~-28 ~-52 minecraft:polished_deepslate_wall
 setblock ~54 ~-29 ~-52 minecraft:sculk_vein[down=true]
 fill ~49 ~-29 ~-52 ~49 ~-28 ~-52 minecraft:polished_deepslate_wall
-fill ~40 ~-29 ~-52 ~40 ~-28 ~-52 minecraft:polished_deepslate_wall
-fill ~58 ~-29 ~-52 ~58 ~-28 ~-52 minecraft:polished_deepslate_wall
-fill ~67 ~-29 ~-52 ~67 ~-28 ~-52 minecraft:polished_deepslate_wall
 setblock ~50 ~-29 ~-50 minecraft:sculk_vein[down=true]
 setblock ~60 ~-29 ~-49 minecraft:candle[candles=2,lit=true]
 fill ~40 ~-29 ~-48 ~61 ~-29 ~-48 minecraft:deepslate
@@ -537,8 +537,8 @@ fill ~63 ~-25 ~-55 ~65 ~-25 ~-55 minecraft:deepslate_bricks
 fill ~47 ~-27 ~-56 ~47 ~-26 ~-54 minecraft:deepslate_bricks
 fill ~47 ~-24 ~-56 ~47 ~-24 ~-54 minecraft:deepslate_bricks
 fill ~42 ~-27 ~-55 ~42 ~-27 ~-54 minecraft:cracked_deepslate_bricks
-setblock ~55 ~-27 ~-54 minecraft:cracked_deepslate_bricks
 fill ~53 ~-27 ~-54 ~54 ~-27 ~-54 minecraft:deepslate_bricks
+setblock ~55 ~-27 ~-54 minecraft:cracked_deepslate_bricks
 fill ~43 ~-27 ~-53 ~46 ~-26 ~-53 minecraft:deepslate_bricks
 fill ~70 ~-27 ~-53 ~71 ~-27 ~-53 minecraft:deepslate_bricks
 setblock ~67 ~-27 ~-52 minecraft:soul_lantern
@@ -567,8 +567,8 @@ fill ~43 ~-27 ~-36 ~44 ~-27 ~-36 minecraft:stone
 fill ~40 ~-27 ~-37 ~42 ~-27 ~-35 minecraft:tuff
 setblock ~47 ~-27 ~-35 minecraft:glow_lichen[west=true]
 fill ~43 ~-27 ~-35 ~46 ~-27 ~-35 minecraft:stone
-setblock ~69 ~-27 ~-34 minecraft:glow_lichen[east=true]
 setblock ~44 ~-27 ~-34 minecraft:stone
+setblock ~69 ~-27 ~-34 minecraft:glow_lichen[east=true]
 fill ~40 ~-27 ~-34 ~43 ~-27 ~-33 minecraft:tuff
 fill ~40 ~-27 ~-32 ~42 ~-24 ~-30 minecraft:tuff
 setblock ~44 ~-27 ~-29 minecraft:glow_lichen[west=true]
@@ -615,9 +615,9 @@ fill ~69 ~-25 ~-56 ~71 ~-25 ~-54 minecraft:deepslate_tile_slab[type=bottom]
 setblock ~56 ~-25 ~-54 minecraft:chiseled_deepslate
 fill ~53 ~-25 ~-54 ~55 ~-25 ~-54 minecraft:deepslate_tile_slab[type=bottom]
 setblock ~52 ~-25 ~-54 minecraft:chiseled_deepslate
+setblock ~43 ~-25 ~-53 minecraft:cracked_deepslate_bricks
 fill ~70 ~-25 ~-53 ~71 ~-25 ~-53 minecraft:deepslate_tile_slab[type=bottom]
 setblock ~69 ~-25 ~-53 minecraft:chiseled_deepslate
-setblock ~43 ~-25 ~-53 minecraft:cracked_deepslate_bricks
 fill ~44 ~-25 ~-53 ~46 ~-25 ~-53 minecraft:deepslate_bricks
 fill ~40 ~-25 ~-44 ~41 ~-25 ~-42 minecraft:stone
 setblock ~40 ~-25 ~-41 minecraft:tuff
@@ -657,8 +657,8 @@ fill ~59 ~-24 ~-27 ~68 ~-24 ~-27 minecraft:tuff
 fill ~40 ~-24 ~-27 ~44 ~-24 ~-26 minecraft:tuff
 fill ~61 ~-24 ~-26 ~70 ~-24 ~-26 minecraft:tuff
 setblock ~71 ~-24 ~-26 minecraft:stone
-setblock ~54 ~-24 ~-25 minecraft:lantern[hanging=true]
 fill ~61 ~-24 ~-25 ~71 ~-23 ~-25 minecraft:tuff
+setblock ~54 ~-24 ~-25 minecraft:lantern[hanging=true]
 fill ~40 ~-24 ~-25 ~46 ~-24 ~-25 minecraft:tuff
 setblock ~66 ~-23 ~-55 minecraft:candle[candles=4,lit=true]
 fill ~42 ~-23 ~-56 ~47 ~-23 ~-54 minecraft:deepslate_tile_slab[type=bottom]

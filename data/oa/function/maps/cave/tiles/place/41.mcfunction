@@ -281,16 +281,16 @@ setblock ~-119 ~-30 ~-22 minecraft:andesite
 fill ~-98 ~-30 ~-22 ~-91 ~-30 ~-22 minecraft:stone
 fill ~-90 ~-30 ~-22 ~-89 ~-30 ~-22 minecraft:tuff
 setblock ~-116 ~-30 ~-22 minecraft:tuff
-setblock ~-120 ~-30 ~-21 minecraft:redstone_ore
 fill ~-108 ~-30 ~-21 ~-107 ~-30 ~-21 minecraft:stone
 fill ~-113 ~-30 ~-21 ~-110 ~-30 ~-21 minecraft:stone
 setblock ~-109 ~-30 ~-21 minecraft:tuff
 setblock ~-89 ~-30 ~-21 minecraft:tuff
+fill ~-100 ~-30 ~-21 ~-90 ~-30 ~-21 minecraft:stone
 setblock ~-115 ~-30 ~-21 minecraft:stone
 fill ~-105 ~-30 ~-21 ~-102 ~-30 ~-21 minecraft:stone
 setblock ~-106 ~-30 ~-21 minecraft:tuff
 setblock ~-101 ~-30 ~-21 minecraft:cobbled_deepslate
-fill ~-100 ~-30 ~-21 ~-90 ~-30 ~-21 minecraft:stone
+setblock ~-120 ~-30 ~-21 minecraft:redstone_ore
 setblock ~-114 ~-30 ~-21 minecraft:gravel
 fill ~-107 ~-30 ~-20 ~-106 ~-30 ~-20 minecraft:stone
 setblock ~-105 ~-30 ~-20 minecraft:tuff
@@ -378,9 +378,9 @@ fill ~-120 ~-30 ~6 ~-110 ~-24 ~6 minecraft:stone
 fill ~-101 ~-30 ~6 ~-90 ~-26 ~6 minecraft:dripstone_block
 fill ~-109 ~-30 ~6 ~-107 ~-26 ~6 minecraft:dripstone_block
 fill ~-120 ~-30 ~7 ~-113 ~-24 ~7 minecraft:stone
-setblock ~-96 ~-30 ~7 minecraft:pointed_dripstone[vertical_direction=up,thickness=tip]
 fill ~-112 ~-30 ~7 ~-108 ~-30 ~7 minecraft:dripstone_block
 setblock ~-107 ~-30 ~7 minecraft:redstone_ore
+setblock ~-96 ~-30 ~7 minecraft:pointed_dripstone[vertical_direction=up,thickness=tip]
 fill ~-93 ~-29 ~-24 ~-92 ~-29 ~-24 minecraft:stone
 fill ~-90 ~-29 ~-24 ~-89 ~-29 ~-24 minecraft:stone
 fill ~-95 ~-29 ~-24 ~-94 ~-29 ~-24 minecraft:gravel
@@ -433,8 +433,8 @@ fill ~-120 ~-29 ~-2 ~-108 ~-29 ~-2 minecraft:stone
 fill ~-120 ~-29 ~-1 ~-109 ~-29 ~-1 minecraft:stone
 setblock ~-108 ~-29 ~-1 minecraft:redstone_ore
 setblock ~-106 ~-29 ~3 minecraft:glow_lichen[west=true]
-fill ~-112 ~-29 ~7 ~-107 ~-26 ~7 minecraft:dripstone_block
 setblock ~-92 ~-29 ~7 minecraft:glow_lichen[north=true]
+fill ~-112 ~-29 ~7 ~-107 ~-26 ~7 minecraft:dripstone_block
 fill ~-97 ~-28 ~-24 ~-97 ~-27 ~-24 minecraft:stone
 fill ~-97 ~-28 ~-23 ~-96 ~-27 ~-23 minecraft:stone
 fill ~-98 ~-28 ~-22 ~-95 ~-28 ~-22 minecraft:stone

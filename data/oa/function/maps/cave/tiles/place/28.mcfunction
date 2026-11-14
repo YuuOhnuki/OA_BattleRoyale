@@ -306,11 +306,11 @@ fill ~107 ~-29 ~-71 ~112 ~-25 ~-71 minecraft:stone
 fill ~107 ~-20 ~-71 ~112 ~-20 ~-71 minecraft:stone
 fill ~117 ~-29 ~-71 ~135 ~-28 ~-71 minecraft:stone
 setblock ~116 ~-29 ~-71 minecraft:chest
-setblock ~111 ~-29 ~-70 minecraft:chest
+setblock ~107 ~-29 ~-70 minecraft:coal_ore
 fill ~108 ~-29 ~-70 ~110 ~-25 ~-70 minecraft:stone
 fill ~108 ~-18 ~-70 ~110 ~-18 ~-70 minecraft:stone
 fill ~118 ~-29 ~-70 ~135 ~-29 ~-70 minecraft:stone
-setblock ~107 ~-29 ~-70 minecraft:coal_ore
+setblock ~111 ~-29 ~-70 minecraft:chest
 fill ~118 ~-29 ~-69 ~122 ~-29 ~-69 minecraft:stone
 setblock ~123 ~-29 ~-69 minecraft:tuff
 fill ~124 ~-29 ~-69 ~135 ~-29 ~-69 minecraft:stone

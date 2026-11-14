@@ -509,11 +509,11 @@ fill ~108 ~-16 ~15 ~109 ~-16 ~15 minecraft:amethyst_block
 fill ~120 ~-28 ~15 ~121 ~-24 ~16 minecraft:smooth_basalt
 fill ~116 ~-28 ~15 ~119 ~-28 ~16 minecraft:stone
 fill ~130 ~-28 ~16 ~135 ~-28 ~16 minecraft:stone
-setblock ~129 ~-28 ~16 minecraft:coal_ore
 fill ~109 ~-28 ~16 ~109 ~-27 ~16 minecraft:calcite
 fill ~109 ~-16 ~16 ~109 ~-15 ~16 minecraft:calcite
 fill ~104 ~-28 ~16 ~108 ~-27 ~16 minecraft:amethyst_block
 fill ~104 ~-15 ~16 ~108 ~-15 ~16 minecraft:amethyst_block
+setblock ~129 ~-28 ~16 minecraft:coal_ore
 fill ~110 ~-28 ~16 ~115 ~-28 ~16 minecraft:amethyst_block
 fill ~104 ~-28 ~17 ~111 ~-27 ~17 minecraft:amethyst_block
 fill ~113 ~-28 ~17 ~116 ~-27 ~17 minecraft:amethyst_block
@@ -529,9 +529,9 @@ fill ~115 ~-28 ~18 ~115 ~-27 ~18 minecraft:amethyst_block
 setblock ~115 ~-17 ~18 minecraft:amethyst_block
 fill ~104 ~-28 ~18 ~104 ~-27 ~18 minecraft:amethyst_block
 setblock ~104 ~-14 ~18 minecraft:amethyst_block
+setblock ~134 ~-28 ~18 minecraft:redstone_ore
 fill ~108 ~-28 ~18 ~108 ~-27 ~18 minecraft:calcite
 fill ~108 ~-15 ~18 ~108 ~-14 ~18 minecraft:calcite
-setblock ~134 ~-28 ~18 minecraft:redstone_ore
 fill ~109 ~-28 ~18 ~109 ~-27 ~18 minecraft:amethyst_block
 fill ~109 ~-16 ~18 ~109 ~-15 ~18 minecraft:amethyst_block
 fill ~105 ~-28 ~18 ~105 ~-27 ~18 minecraft:calcite
@@ -825,8 +825,8 @@ setblock ~115 ~-27 ~14 minecraft:calcite
 setblock ~115 ~-19 ~14 minecraft:calcite
 fill ~111 ~-27 ~15 ~116 ~-27 ~15 minecraft:amethyst_block
 fill ~117 ~-27 ~15 ~119 ~-27 ~16 minecraft:stone
-setblock ~128 ~-27 ~16 minecraft:glow_lichen[east=true]
 fill ~110 ~-27 ~16 ~116 ~-27 ~16 minecraft:amethyst_block
+setblock ~128 ~-27 ~16 minecraft:glow_lichen[east=true]
 fill ~129 ~-27 ~16 ~135 ~-24 ~16 minecraft:stone
 fill ~129 ~-19 ~16 ~135 ~-19 ~16 minecraft:stone
 setblock ~117 ~-27 ~17 minecraft:calcite
@@ -866,9 +866,9 @@ fill ~120 ~-27 ~32 ~120 ~-23 ~32 minecraft:smooth_basalt
 fill ~118 ~-27 ~32 ~119 ~-23 ~32 minecraft:calcite
 fill ~114 ~-27 ~33 ~115 ~-27 ~33 minecraft:amethyst_block
 fill ~114 ~-18 ~33 ~115 ~-18 ~33 minecraft:amethyst_block
+setblock ~128 ~-27 ~33 minecraft:glow_lichen[south=true]
 fill ~124 ~-27 ~33 ~124 ~-24 ~33 minecraft:stone
 fill ~119 ~-27 ~33 ~120 ~-23 ~33 minecraft:smooth_basalt
-setblock ~128 ~-27 ~33 minecraft:glow_lichen[south=true]
 setblock ~131 ~-27 ~34 minecraft:redstone_ore
 fill ~132 ~-27 ~34 ~135 ~-27 ~34 minecraft:stone
 fill ~124 ~-27 ~34 ~130 ~-27 ~34 minecraft:stone
@@ -931,8 +931,8 @@ fill ~119 ~-26 ~28 ~119 ~-23 ~29 minecraft:calcite
 fill ~118 ~-26 ~28 ~118 ~-20 ~30 minecraft:amethyst_block
 setblock ~117 ~-26 ~30 minecraft:chest
 fill ~119 ~-26 ~30 ~120 ~-23 ~30 minecraft:calcite
-fill ~119 ~-26 ~31 ~119 ~-23 ~31 minecraft:stone
 setblock ~122 ~-26 ~31 minecraft:glow_lichen[west=true]
+fill ~119 ~-26 ~31 ~119 ~-23 ~31 minecraft:stone
 fill ~117 ~-26 ~31 ~117 ~-20 ~32 minecraft:amethyst_block
 fill ~124 ~-26 ~34 ~135 ~-26 ~34 minecraft:stone
 fill ~123 ~-26 ~35 ~123 ~-26 ~36 minecraft:andesite
@@ -948,8 +948,8 @@ fill ~124 ~-25 ~9 ~127 ~-25 ~9 minecraft:tuff
 fill ~128 ~-25 ~9 ~135 ~-25 ~9 minecraft:stone
 fill ~124 ~-25 ~10 ~126 ~-25 ~10 minecraft:tuff
 fill ~127 ~-25 ~10 ~135 ~-25 ~11 minecraft:stone
-fill ~125 ~-25 ~11 ~126 ~-25 ~11 minecraft:tuff
 setblock ~108 ~-25 ~11 minecraft:glow_lichen[north=true]
+fill ~125 ~-25 ~11 ~126 ~-25 ~11 minecraft:tuff
 fill ~115 ~-25 ~12 ~115 ~-24 ~12 minecraft:tuff
 fill ~116 ~-25 ~13 ~118 ~-24 ~13 minecraft:tuff
 fill ~120 ~-25 ~13 ~120 ~-24 ~13 minecraft:tuff
@@ -1209,8 +1209,8 @@ fill ~108 ~-19 ~11 ~111 ~-19 ~11 minecraft:amethyst_block
 fill ~132 ~-19 ~8 ~135 ~-19 ~12 minecraft:stone
 fill ~114 ~-19 ~12 ~131 ~-19 ~12 minecraft:tuff
 fill ~111 ~-19 ~12 ~112 ~-19 ~12 minecraft:amethyst_block
-setblock ~110 ~-19 ~13 minecraft:amethyst_cluster[facing=down]
 fill ~115 ~-19 ~13 ~130 ~-19 ~13 minecraft:tuff
+setblock ~110 ~-19 ~13 minecraft:amethyst_cluster[facing=down]
 fill ~131 ~-19 ~13 ~135 ~-19 ~14 minecraft:stone
 fill ~116 ~-19 ~14 ~130 ~-19 ~14 minecraft:tuff
 fill ~113 ~-19 ~14 ~114 ~-19 ~14 minecraft:amethyst_block
@@ -1272,9 +1272,9 @@ fill ~111 ~-18 ~11 ~132 ~-18 ~11 minecraft:tuff
 fill ~107 ~-18 ~11 ~110 ~-18 ~11 minecraft:amethyst_block
 fill ~107 ~-18 ~12 ~108 ~-18 ~12 minecraft:amethyst_block
 fill ~112 ~-18 ~12 ~131 ~-18 ~12 minecraft:tuff
+setblock ~105 ~-18 ~13 minecraft:amethyst_cluster[facing=down]
 fill ~107 ~-18 ~13 ~108 ~-18 ~13 minecraft:amethyst_cluster[facing=down]
 fill ~114 ~-18 ~13 ~131 ~-18 ~13 minecraft:tuff
-setblock ~105 ~-18 ~13 minecraft:amethyst_cluster[facing=down]
 fill ~109 ~-18 ~13 ~111 ~-18 ~13 minecraft:amethyst_block
 fill ~115 ~-18 ~14 ~131 ~-18 ~14 minecraft:tuff
 fill ~111 ~-18 ~14 ~114 ~-18 ~14 minecraft:amethyst_block
@@ -1287,8 +1287,8 @@ fill ~113 ~-18 ~16 ~115 ~-18 ~16 minecraft:amethyst_block
 fill ~114 ~-18 ~17 ~116 ~-18 ~17 minecraft:amethyst_block
 fill ~117 ~-18 ~17 ~129 ~-18 ~17 minecraft:tuff
 fill ~130 ~-18 ~17 ~135 ~-18 ~17 minecraft:stone
-fill ~117 ~-18 ~18 ~127 ~-18 ~18 minecraft:tuff
 setblock ~113 ~-18 ~18 minecraft:amethyst_cluster[facing=down]
+fill ~117 ~-18 ~18 ~127 ~-18 ~18 minecraft:tuff
 fill ~128 ~-18 ~18 ~135 ~-18 ~18 minecraft:stone
 fill ~115 ~-18 ~18 ~115 ~-18 ~19 minecraft:amethyst_block
 fill ~118 ~-18 ~19 ~122 ~-18 ~19 minecraft:tuff
@@ -1316,8 +1316,8 @@ fill ~132 ~-18 ~27 ~135 ~-18 ~28 minecraft:tuff
 fill ~116 ~-18 ~29 ~117 ~-18 ~30 minecraft:amethyst_block
 fill ~118 ~-18 ~29 ~130 ~-18 ~30 minecraft:stone
 fill ~131 ~-18 ~29 ~135 ~-18 ~31 minecraft:tuff
-setblock ~114 ~-18 ~31 minecraft:large_amethyst_bud[facing=down]
 fill ~117 ~-18 ~31 ~130 ~-18 ~31 minecraft:stone
+setblock ~114 ~-18 ~31 minecraft:large_amethyst_bud[facing=down]
 fill ~115 ~-18 ~31 ~116 ~-18 ~32 minecraft:amethyst_block
 fill ~117 ~-18 ~32 ~129 ~-18 ~32 minecraft:stone
 setblock ~114 ~-18 ~32 minecraft:calcite
@@ -1342,8 +1342,8 @@ setblock ~110 ~-17 ~12 minecraft:amethyst_block
 fill ~112 ~-17 ~13 ~132 ~-17 ~13 minecraft:tuff
 setblock ~107 ~-17 ~14 minecraft:calcite
 fill ~113 ~-17 ~14 ~132 ~-17 ~14 minecraft:tuff
-setblock ~106 ~-17 ~14 minecraft:amethyst_cluster[facing=down]
 fill ~108 ~-17 ~14 ~112 ~-17 ~14 minecraft:amethyst_block
+setblock ~106 ~-17 ~14 minecraft:amethyst_cluster[facing=down]
 fill ~114 ~-17 ~15 ~132 ~-17 ~15 minecraft:tuff
 fill ~111 ~-17 ~15 ~113 ~-17 ~15 minecraft:amethyst_block
 setblock ~109 ~-17 ~15 minecraft:amethyst_block
@@ -1360,8 +1360,8 @@ setblock ~116 ~-17 ~19 minecraft:calcite
 fill ~129 ~-17 ~19 ~135 ~-17 ~19 minecraft:stone
 fill ~123 ~-17 ~20 ~135 ~-17 ~20 minecraft:stone
 fill ~113 ~-17 ~20 ~116 ~-17 ~20 minecraft:amethyst_block
-setblock ~112 ~-17 ~20 minecraft:amethyst_cluster[facing=down]
 fill ~117 ~-17 ~20 ~122 ~-17 ~20 minecraft:tuff
+setblock ~112 ~-17 ~20 minecraft:amethyst_cluster[facing=down]
 fill ~114 ~-17 ~21 ~115 ~-17 ~21 minecraft:amethyst_block
 fill ~122 ~-17 ~21 ~135 ~-17 ~21 minecraft:stone
 fill ~118 ~-17 ~21 ~121 ~-17 ~21 minecraft:tuff
@@ -1376,8 +1376,8 @@ fill ~118 ~-17 ~23 ~119 ~-17 ~24 minecraft:tuff
 fill ~120 ~-17 ~24 ~131 ~-17 ~24 minecraft:stone
 fill ~114 ~-17 ~24 ~117 ~-17 ~24 minecraft:amethyst_block
 fill ~132 ~-17 ~24 ~135 ~-17 ~25 minecraft:tuff
-setblock ~114 ~-17 ~25 minecraft:amethyst_block
 setblock ~113 ~-17 ~25 minecraft:amethyst_cluster[facing=down]
+setblock ~114 ~-17 ~25 minecraft:amethyst_block
 setblock ~118 ~-17 ~25 minecraft:tuff
 fill ~119 ~-17 ~25 ~131 ~-17 ~25 minecraft:stone
 fill ~114 ~-17 ~26 ~115 ~-17 ~26 minecraft:amethyst_block
@@ -1391,8 +1391,8 @@ fill ~114 ~-17 ~29 ~116 ~-17 ~29 minecraft:amethyst_block
 fill ~117 ~-17 ~29 ~129 ~-17 ~30 minecraft:stone
 setblock ~116 ~-17 ~30 minecraft:amethyst_block
 setblock ~113 ~-17 ~30 minecraft:calcite
-setblock ~112 ~-17 ~31 minecraft:amethyst_cluster[facing=down]
 fill ~113 ~-17 ~31 ~115 ~-17 ~31 minecraft:amethyst_block
+setblock ~112 ~-17 ~31 minecraft:amethyst_cluster[facing=down]
 fill ~116 ~-17 ~31 ~129 ~-17 ~32 minecraft:stone
 setblock ~115 ~-17 ~32 minecraft:amethyst_block
 fill ~130 ~-17 ~28 ~135 ~-17 ~33 minecraft:tuff
@@ -1431,8 +1431,8 @@ fill ~135 ~-16 ~14 ~135 ~-16 ~17 minecraft:stone
 fill ~114 ~-16 ~17 ~134 ~-16 ~17 minecraft:tuff
 fill ~108 ~-16 ~17 ~111 ~-16 ~17 minecraft:amethyst_block
 fill ~113 ~-16 ~17 ~113 ~-16 ~18 minecraft:amethyst_block
-fill ~114 ~-16 ~18 ~135 ~-16 ~18 minecraft:tuff
 setblock ~107 ~-16 ~18 minecraft:large_amethyst_bud[facing=down]
+fill ~114 ~-16 ~18 ~135 ~-16 ~18 minecraft:tuff
 fill ~110 ~-16 ~18 ~110 ~-16 ~19 minecraft:calcite
 fill ~113 ~-16 ~19 ~114 ~-16 ~19 minecraft:amethyst_block
 fill ~115 ~-16 ~19 ~135 ~-16 ~20 minecraft:tuff
@@ -1516,13 +1516,13 @@ fill ~113 ~-15 ~26 ~113 ~-15 ~27 minecraft:amethyst_block
 fill ~114 ~-15 ~26 ~119 ~-15 ~27 minecraft:tuff
 fill ~120 ~-15 ~26 ~127 ~-15 ~27 minecraft:stone
 fill ~114 ~-15 ~28 ~118 ~-15 ~28 minecraft:tuff
-setblock ~108 ~-15 ~28 minecraft:amethyst_cluster[facing=down]
 fill ~119 ~-15 ~28 ~127 ~-15 ~28 minecraft:stone
 fill ~110 ~-15 ~28 ~112 ~-15 ~28 minecraft:amethyst_block
+setblock ~108 ~-15 ~28 minecraft:amethyst_cluster[facing=down]
 fill ~118 ~-15 ~29 ~127 ~-15 ~29 minecraft:stone
 fill ~114 ~-15 ~29 ~117 ~-15 ~29 minecraft:tuff
-fill ~111 ~-15 ~29 ~113 ~-15 ~29 minecraft:amethyst_block
 fill ~108 ~-15 ~29 ~109 ~-15 ~29 minecraft:large_amethyst_bud[facing=down]
+fill ~111 ~-15 ~29 ~113 ~-15 ~29 minecraft:amethyst_block
 fill ~113 ~-15 ~30 ~116 ~-15 ~30 minecraft:tuff
 setblock ~112 ~-15 ~30 minecraft:calcite
 fill ~117 ~-15 ~30 ~127 ~-15 ~30 minecraft:stone
@@ -1566,8 +1566,8 @@ fill ~109 ~-14 ~21 ~110 ~-14 ~21 minecraft:amethyst_block
 fill ~106 ~-14 ~21 ~107 ~-14 ~21 minecraft:amethyst_block
 fill ~123 ~-14 ~22 ~124 ~-14 ~22 minecraft:stone
 fill ~125 ~-14 ~22 ~135 ~-14 ~22 minecraft:tuff
-setblock ~104 ~-14 ~22 minecraft:large_amethyst_bud[facing=down]
 setblock ~107 ~-14 ~22 minecraft:amethyst_block
+setblock ~104 ~-14 ~22 minecraft:large_amethyst_bud[facing=down]
 fill ~112 ~-14 ~22 ~122 ~-14 ~23 minecraft:tuff
 fill ~123 ~-14 ~23 ~125 ~-14 ~23 minecraft:stone
 fill ~107 ~-14 ~23 ~111 ~-14 ~23 minecraft:amethyst_block
@@ -1581,9 +1581,9 @@ fill ~112 ~-14 ~26 ~120 ~-14 ~27 minecraft:tuff
 setblock ~111 ~-14 ~27 minecraft:calcite
 setblock ~108 ~-14 ~27 minecraft:amethyst_block
 fill ~120 ~-14 ~28 ~126 ~-14 ~28 minecraft:stone
+setblock ~106 ~-14 ~28 minecraft:large_amethyst_bud[facing=down]
 fill ~112 ~-14 ~28 ~119 ~-14 ~28 minecraft:tuff
 fill ~109 ~-14 ~28 ~111 ~-14 ~28 minecraft:amethyst_block
-setblock ~106 ~-14 ~28 minecraft:large_amethyst_bud[facing=down]
 fill ~108 ~-14 ~29 ~109 ~-14 ~29 minecraft:amethyst_block
 setblock ~111 ~-14 ~29 minecraft:amethyst_block
 fill ~112 ~-14 ~29 ~118 ~-14 ~29 minecraft:tuff

@@ -392,8 +392,8 @@ setblock ~-44 ~-30 ~41 minecraft:andesite
 setblock ~-43 ~-30 ~41 minecraft:stone
 fill ~-38 ~-30 ~40 ~-25 ~-30 ~42 minecraft:tuff
 setblock ~-39 ~-30 ~42 minecraft:stone
-setblock ~-41 ~-30 ~42 minecraft:stone
 setblock ~-46 ~-30 ~42 minecraft:coal_ore
+setblock ~-41 ~-30 ~42 minecraft:stone
 setblock ~-40 ~-30 ~42 minecraft:gravel
 fill ~-48 ~-30 ~42 ~-47 ~-30 ~42 minecraft:tuff
 fill ~-45 ~-30 ~42 ~-42 ~-30 ~42 minecraft:tuff
@@ -416,8 +416,8 @@ setblock ~-37 ~-30 ~46 minecraft:stone
 fill ~-39 ~-30 ~46 ~-39 ~-30 ~47 minecraft:stone
 fill ~-30 ~-30 ~47 ~-26 ~-30 ~47 minecraft:stone
 fill ~-32 ~-30 ~47 ~-31 ~-30 ~47 minecraft:tuff
-setblock ~-38 ~-30 ~47 minecraft:tuff
 setblock ~-50 ~-30 ~47 minecraft:glow_lichen[west=true]
+setblock ~-38 ~-30 ~47 minecraft:tuff
 fill ~-32 ~-30 ~48 ~-29 ~-30 ~48 minecraft:stone
 fill ~-39 ~-30 ~48 ~-38 ~-30 ~48 minecraft:stone
 fill ~-31 ~-30 ~49 ~-30 ~-29 ~49 minecraft:stone
@@ -607,10 +607,10 @@ fill ~-56 ~-26 ~59 ~-44 ~-26 ~59 minecraft:tuff
 fill ~-43 ~-26 ~59 ~-26 ~-26 ~59 minecraft:stone
 fill ~-44 ~-26 ~60 ~-25 ~-26 ~61 minecraft:stone
 fill ~-56 ~-26 ~60 ~-45 ~-26 ~61 minecraft:tuff
-fill ~-30 ~-26 ~62 ~-25 ~-26 ~62 minecraft:stone
 fill ~-56 ~-26 ~62 ~-46 ~-26 ~62 minecraft:tuff
-setblock ~-32 ~-26 ~62 minecraft:lantern[hanging=true]
+fill ~-30 ~-26 ~62 ~-25 ~-26 ~62 minecraft:stone
 fill ~-45 ~-26 ~62 ~-36 ~-26 ~62 minecraft:stone
+setblock ~-32 ~-26 ~62 minecraft:lantern[hanging=true]
 fill ~-56 ~-26 ~63 ~-47 ~-26 ~64 minecraft:tuff
 fill ~-28 ~-26 ~63 ~-25 ~-26 ~64 minecraft:stone
 fill ~-46 ~-26 ~64 ~-40 ~-26 ~64 minecraft:stone

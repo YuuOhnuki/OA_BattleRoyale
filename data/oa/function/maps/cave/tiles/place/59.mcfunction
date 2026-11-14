@@ -321,9 +321,9 @@ fill ~142 ~-23 ~21 ~152 ~-23 ~23 minecraft:tuff
 fill ~137 ~-23 ~22 ~141 ~-23 ~23 minecraft:stone
 fill ~141 ~-23 ~24 ~152 ~-23 ~24 minecraft:tuff
 fill ~138 ~-23 ~24 ~140 ~-23 ~24 minecraft:stone
+setblock ~138 ~-23 ~25 minecraft:lantern[hanging=true]
 setblock ~139 ~-23 ~25 minecraft:stone
 fill ~140 ~-23 ~25 ~152 ~-23 ~25 minecraft:tuff
-setblock ~138 ~-23 ~25 minecraft:lantern[hanging=true]
 setblock ~138 ~-23 ~27 minecraft:lantern[hanging=true]
 fill ~139 ~-23 ~26 ~152 ~-23 ~30 minecraft:tuff
 fill ~138 ~-23 ~31 ~152 ~-23 ~31 minecraft:tuff

@@ -140,9 +140,9 @@ fill ~26 ~-30 ~-125 ~39 ~-30 ~-125 minecraft:stone
 fill ~13 ~-30 ~-125 ~16 ~-27 ~-125 minecraft:stone
 fill ~21 ~-30 ~-125 ~25 ~-30 ~-125 minecraft:andesite
 fill ~30 ~-30 ~-124 ~39 ~-30 ~-124 minecraft:stone
-setblock ~13 ~-30 ~-124 minecraft:glow_lichen[east=true]
 fill ~16 ~-30 ~-124 ~17 ~-26 ~-124 minecraft:stone
 fill ~21 ~-30 ~-124 ~29 ~-30 ~-124 minecraft:andesite
+setblock ~13 ~-30 ~-124 minecraft:glow_lichen[east=true]
 fill ~32 ~-30 ~-123 ~39 ~-30 ~-123 minecraft:stone
 fill ~15 ~-30 ~-123 ~17 ~-27 ~-123 minecraft:stone
 fill ~22 ~-30 ~-123 ~31 ~-30 ~-123 minecraft:andesite
@@ -290,8 +290,8 @@ setblock ~36 ~-25 ~-134 minecraft:tuff
 fill ~37 ~-25 ~-134 ~39 ~-25 ~-134 minecraft:stone
 fill ~8 ~-25 ~-134 ~35 ~-25 ~-134 minecraft:stone
 fill ~8 ~-25 ~-133 ~39 ~-25 ~-127 minecraft:stone
-setblock ~8 ~-25 ~-126 minecraft:lantern[hanging=true]
 fill ~9 ~-25 ~-126 ~39 ~-25 ~-126 minecraft:stone
+setblock ~8 ~-25 ~-126 minecraft:lantern[hanging=true]
 fill ~10 ~-25 ~-125 ~39 ~-25 ~-125 minecraft:stone
 fill ~11 ~-25 ~-124 ~13 ~-25 ~-124 minecraft:stone
 fill ~11 ~-19 ~-124 ~13 ~-19 ~-124 minecraft:stone

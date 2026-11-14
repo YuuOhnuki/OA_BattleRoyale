@@ -332,6 +332,31 @@ for k in range(8):
     x, z = pol(19, 22.5 + 45 * k); x, z = int(round(x)), int(round(z))
     if opn(x, z): put(x, TF + 1, z, 'minecraft:chest'); chests.append((x, TF + 1, z)); used[x + OFF, z + OFF] = True
 
+# 1.9.171: 終盤演出で点滅させるランプ（シーランタン）を神殿に埋め込む。床に3重の輪（A 半径6・B 半径11・C 半径21）、天井に1重（D 半径8）
+# 点滅は oa:maps/cave/finale_lamps（finale/cave から0.4秒ごと）、試合の終わりに oa:maps/cave/finale_all_on で全部つける
+LAMP = 'minecraft:sea_lantern'
+LAMPS = {}   # 輪の名前 -> [(x, y, z, 消灯時のブロック)]
+def ring_pts(r, n, ph):
+    out = []
+    for k in range(n):
+        x, z = pol(r, ph + 360 * k / n); x, z = int(round(x)), int(round(z))
+        if (x, z) not in [(p[0], p[2]) for p in out]: out.append((x, 0, z))
+    return out
+for name, r, n, ph in (('A', 6, 16, 0), ('B', 11, 24, 7.5), ('C', 21, 32, 5.625)):
+    pts = []
+    for (x, _, z) in ring_pts(r, n, ph):
+        if used[x + OFF, z + OFF] or not opn(x, z) or fl(x, z) != TF: continue
+        if not is_air(x, TF + 1, z): continue
+        put(x, TF, z, LAMP); pts.append((x, TF, z, 'minecraft:polished_deepslate'))
+    LAMPS[name] = pts
+pts = []
+for (x, _, z) in ring_pts(8, 16, 11.25):
+    c = ce(x, z)
+    if not opn(x, z) or c - TF < 12 or not is_air(x, c - 1, z): continue
+    put(x, c, z, LAMP); pts.append((x, c, z, 'minecraft:deepslate'))
+LAMPS['D'] = pts
+print('lamps', {k: len(v) for k, v in LAMPS.items()})
+
 # ---------------- エリアの飾り ----------------
 rd = np.random.default_rng(SEED + 7)
 def cells(a):
@@ -803,3 +828,32 @@ for a, d in AREAS.items():
           "execute if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp"]
 L.append('execute if score #rx br.tmp matches -27..27 if score #rz br.tmp matches -27..27 run data modify storage oa:supply region set value "地下神殿"')
 open(f"{ROOT}/data/oa/function/maps/cave/supply_region.mcfunction", 'w', encoding='utf8').write('\n'.join(L) + '\n')
+
+# ---------------- 1.9.171: 終盤演出のランプの点滅（神殿の床の立ち位置＝絶対 y51 を原点にした相対座標） ----------------
+def lamp_lines(x, y, z, off, on_cond, off_cond):
+    pos = f"~{x} ~{y + 80 - 51} ~{z}"
+    return [f"execute {on_cond} if block {pos} {off} run setblock {pos} {LAMP}",
+            f"execute {off_cond} if block {pos} {LAMP} run setblock {pos} {off}"]
+FL_ = ["# 生成: scripts/build_map_cave.py（直接編集しない）。洞窟の終盤演出のランプの点滅（finale/cave から、神殿の床の立ち位置で0.4秒ごと）",
+       "# A（床・半径6）：#fstep 0 だけ点灯／B（床・半径11）：3つおきに回る／C（床・半径21）：逆回り／D（天井・半径8）：#fstep 1 だけ消灯"]
+for (x, y, z, off) in LAMPS['A']:
+    FL_ += lamp_lines(x, y, z, off, 'if score #fstep br.tmp matches 0', 'unless score #fstep br.tmp matches 0')
+for k, (x, y, z, off) in enumerate(LAMPS['B']):
+    FL_ += lamp_lines(x, y, z, off, f'if score #fstep br.tmp matches {k % 3}', f'unless score #fstep br.tmp matches {k % 3}')
+for k, (x, y, z, off) in enumerate(LAMPS['C']):
+    FL_ += lamp_lines(x, y, z, off, f'if score #fstep br.tmp matches {(2 - k) % 3}', f'unless score #fstep br.tmp matches {(2 - k) % 3}')
+for (x, y, z, off) in LAMPS['D']:
+    FL_ += lamp_lines(x, y, z, off, 'unless score #fstep br.tmp matches 1', 'if score #fstep br.tmp matches 1')
+open(f"{ROOT}/data/oa/function/maps/cave/finale_lamps.mcfunction", 'w', encoding='utf8').write('\n'.join(FL_) + '\n')
+ON = ["# 生成: scripts/build_map_cave.py（直接編集しない）。終盤演出のランプを全部つけた状態に戻す（br/finale/lamps_on から、神殿の床の立ち位置で）"]
+for name in 'ABCD':
+    for (x, y, z, off) in LAMPS[name]:
+        pos = f"~{x} ~{y + 80 - 51} ~{z}"
+        ON.append(f"execute if block {pos} {off} run setblock {pos} {LAMP}")
+open(f"{ROOT}/data/oa/function/maps/cave/finale_all_on.mcfunction", 'w', encoding='utf8').write('\n'.join(ON) + '\n')
+# 光の柱を立てる8本の柱の位置（finale/cave から）
+PL = ["# 生成: scripts/build_map_cave.py（直接編集しない）。神殿の8本の柱に沿って光の柱（finale/cave から、神殿の床の立ち位置で）"]
+for k in range(8):
+    px, pz = pol(15, 22.5 + 45 * k); px, pz = int(round(px)) + 1, int(round(pz)) + 1
+    PL.append(f"particle minecraft:end_rod ~{px} ~6 ~{pz} 0.2 5 0.2 0.01 18 force @a[tag=br.playing,distance=..160]")
+open(f"{ROOT}/data/oa/function/maps/cave/finale_pillars.mcfunction", 'w', encoding='utf8').write('\n'.join(PL) + '\n')

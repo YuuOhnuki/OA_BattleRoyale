@@ -65,8 +65,8 @@ fill ~-34 ~-32 ~-55 ~-25 ~-32 ~-54 minecraft:stone
 fill ~-47 ~-32 ~-55 ~-38 ~-32 ~-54 minecraft:stone
 fill ~-37 ~-32 ~-55 ~-35 ~-32 ~-54 minecraft:tuff
 fill ~-50 ~-32 ~-54 ~-49 ~-28 ~-54 minecraft:deepslate
-fill ~-51 ~-32 ~-54 ~-51 ~-30 ~-54 minecraft:oak_fence
 fill ~-48 ~-32 ~-54 ~-48 ~-31 ~-54 minecraft:andesite
+fill ~-51 ~-32 ~-54 ~-51 ~-30 ~-54 minecraft:oak_fence
 fill ~-56 ~-32 ~-56 ~-55 ~-32 ~-53 minecraft:deepslate
 fill ~-56 ~-25 ~-56 ~-55 ~-25 ~-53 minecraft:deepslate
 fill ~-37 ~-32 ~-53 ~-36 ~-32 ~-53 minecraft:tuff
@@ -298,8 +298,8 @@ fill ~-35 ~-31 ~-50 ~-33 ~-31 ~-50 minecraft:stone
 setblock ~-36 ~-31 ~-50 minecraft:tuff
 setblock ~-30 ~-31 ~-50 minecraft:gravel
 fill ~-46 ~-31 ~-50 ~-37 ~-31 ~-50 minecraft:stone
-fill ~-30 ~-31 ~-49 ~-25 ~-31 ~-49 minecraft:stone
 fill ~-50 ~-31 ~-49 ~-50 ~-29 ~-49 minecraft:oak_fence
+fill ~-30 ~-31 ~-49 ~-25 ~-31 ~-49 minecraft:stone
 setblock ~-31 ~-31 ~-49 minecraft:andesite
 fill ~-36 ~-31 ~-49 ~-35 ~-31 ~-49 minecraft:tuff
 fill ~-55 ~-31 ~-49 ~-55 ~-29 ~-49 minecraft:oak_fence
@@ -346,8 +346,8 @@ setblock ~-42 ~-31 ~-36 minecraft:coal_ore
 fill ~-41 ~-31 ~-36 ~-25 ~-31 ~-35 minecraft:stone
 fill ~-56 ~-31 ~-39 ~-53 ~-27 ~-34 minecraft:stone
 fill ~-39 ~-31 ~-34 ~-25 ~-26 ~-34 minecraft:stone
-fill ~-45 ~-31 ~-33 ~-45 ~-29 ~-33 minecraft:oak_fence
 fill ~-38 ~-31 ~-33 ~-25 ~-26 ~-33 minecraft:stone
+fill ~-45 ~-31 ~-33 ~-45 ~-29 ~-33 minecraft:oak_fence
 fill ~-48 ~-31 ~-33 ~-46 ~-27 ~-33 minecraft:stone
 fill ~-56 ~-31 ~-33 ~-52 ~-27 ~-32 minecraft:stone
 fill ~-48 ~-31 ~-32 ~-45 ~-26 ~-32 minecraft:stone
@@ -357,8 +357,8 @@ setblock ~-49 ~-31 ~-32 minecraft:tuff
 setblock ~-51 ~-31 ~-32 minecraft:tuff
 fill ~-56 ~-31 ~-31 ~-53 ~-26 ~-31 minecraft:stone
 fill ~-52 ~-31 ~-31 ~-51 ~-31 ~-31 minecraft:tuff
-fill ~-50 ~-31 ~-31 ~-44 ~-31 ~-31 minecraft:stone
 fill ~-40 ~-31 ~-31 ~-40 ~-29 ~-31 minecraft:oak_fence
+fill ~-50 ~-31 ~-31 ~-44 ~-31 ~-31 minecraft:stone
 setblock ~-37 ~-31 ~-31 minecraft:stone
 fill ~-35 ~-31 ~-31 ~-25 ~-31 ~-30 minecraft:stone
 fill ~-56 ~-31 ~-30 ~-54 ~-26 ~-30 minecraft:stone
@@ -435,9 +435,9 @@ fill ~-45 ~-28 ~-47 ~-38 ~-28 ~-47 minecraft:stone
 fill ~-31 ~-30 ~-47 ~-25 ~-26 ~-47 minecraft:stone
 fill ~-45 ~-30 ~-46 ~-39 ~-28 ~-46 minecraft:stone
 setblock ~-36 ~-30 ~-45 minecraft:glow_lichen[east=true]
+setblock ~-45 ~-30 ~-41 minecraft:glow_lichen[north=true]
 fill ~-55 ~-30 ~-41 ~-55 ~-28 ~-41 minecraft:oak_fence
 fill ~-54 ~-30 ~-41 ~-54 ~-27 ~-41 minecraft:stone
-setblock ~-45 ~-30 ~-41 minecraft:glow_lichen[north=true]
 setblock ~-52 ~-30 ~-38 minecraft:glow_lichen[west=true]
 fill ~-42 ~-30 ~-36 ~-25 ~-26 ~-36 minecraft:stone
 fill ~-41 ~-30 ~-35 ~-25 ~-26 ~-35 minecraft:stone
@@ -446,8 +446,8 @@ fill ~-50 ~-30 ~-32 ~-50 ~-28 ~-32 minecraft:oak_fence
 fill ~-35 ~-30 ~-31 ~-25 ~-26 ~-31 minecraft:stone
 fill ~-48 ~-30 ~-31 ~-44 ~-26 ~-31 minecraft:stone
 fill ~-34 ~-30 ~-30 ~-25 ~-26 ~-30 minecraft:stone
-setblock ~-42 ~-30 ~-30 minecraft:glow_lichen[west=true]
 fill ~-35 ~-30 ~-30 ~-35 ~-28 ~-30 minecraft:oak_fence
+setblock ~-42 ~-30 ~-30 minecraft:glow_lichen[west=true]
 fill ~-49 ~-30 ~-30 ~-43 ~-26 ~-29 minecraft:stone
 fill ~-56 ~-30 ~-29 ~-55 ~-26 ~-29 minecraft:stone
 fill ~-49 ~-30 ~-28 ~-42 ~-26 ~-28 minecraft:stone
@@ -483,8 +483,8 @@ fill ~-29 ~-29 ~-25 ~-25 ~-28 ~-25 minecraft:stone
 fill ~-40 ~-28 ~-56 ~-34 ~-27 ~-56 minecraft:tuff
 fill ~-49 ~-28 ~-56 ~-41 ~-28 ~-55 minecraft:stone
 fill ~-40 ~-28 ~-55 ~-35 ~-28 ~-55 minecraft:tuff
-fill ~-56 ~-28 ~-54 ~-55 ~-28 ~-54 minecraft:stripped_oak_log[axis=x]
 fill ~-39 ~-28 ~-54 ~-35 ~-28 ~-54 minecraft:tuff
+fill ~-56 ~-28 ~-54 ~-55 ~-28 ~-54 minecraft:stripped_oak_log[axis=x]
 fill ~-47 ~-28 ~-53 ~-40 ~-28 ~-53 minecraft:stone
 fill ~-39 ~-28 ~-53 ~-36 ~-28 ~-52 minecraft:tuff
 fill ~-48 ~-28 ~-52 ~-40 ~-28 ~-52 minecraft:stone
@@ -519,8 +519,8 @@ setblock ~-52 ~-27 ~-49 minecraft:stone
 setblock ~-38 ~-27 ~-47 minecraft:tuff
 fill ~-45 ~-27 ~-48 ~-39 ~-27 ~-46 minecraft:stone
 fill ~-55 ~-27 ~-48 ~-55 ~-27 ~-41 minecraft:stripped_oak_log[axis=z]
-setblock ~-45 ~-27 ~-40 minecraft:lantern[hanging=true]
 setblock ~-39 ~-27 ~-40 minecraft:lantern[hanging=true]
+setblock ~-45 ~-27 ~-40 minecraft:lantern[hanging=true]
 setblock ~-50 ~-27 ~-32 minecraft:stripped_oak_log[axis=z]
 fill ~-40 ~-27 ~-29 ~-40 ~-27 ~-26 minecraft:stripped_oak_log[axis=z]
 fill ~-55 ~-27 ~-28 ~-55 ~-27 ~-26 minecraft:stripped_oak_log[axis=z]

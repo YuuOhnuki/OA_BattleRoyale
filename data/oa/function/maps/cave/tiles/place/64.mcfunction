@@ -266,8 +266,8 @@ setblock ~-7 ~-31 ~62 minecraft:stone
 fill ~-1 ~-31 ~62 ~5 ~-31 ~62 minecraft:stone
 setblock ~-2 ~-31 ~62 minecraft:gravel
 fill ~6 ~-31 ~62 ~7 ~-31 ~62 minecraft:tuff
-fill ~-12 ~-31 ~63 ~-6 ~-31 ~63 minecraft:stone
 setblock ~-13 ~-31 ~63 minecraft:coal_ore
+fill ~-12 ~-31 ~63 ~-6 ~-31 ~63 minecraft:stone
 setblock ~-5 ~-31 ~63 minecraft:gravel
 fill ~-19 ~-31 ~63 ~-14 ~-31 ~63 minecraft:stone
 fill ~2 ~-31 ~63 ~7 ~-31 ~63 minecraft:tuff
@@ -299,11 +299,11 @@ fill ~-18 ~-30 ~43 ~-12 ~-30 ~43 minecraft:tuff
 fill ~-24 ~-30 ~43 ~-21 ~-30 ~43 minecraft:tuff
 setblock ~7 ~-30 ~43 minecraft:stone
 fill ~4 ~-30 ~44 ~7 ~-30 ~44 minecraft:stone
+setblock ~-17 ~-30 ~44 minecraft:redstone_ore
 fill ~-22 ~-30 ~44 ~-21 ~-30 ~44 minecraft:tuff
 setblock ~3 ~-30 ~44 minecraft:cobbled_deepslate
 setblock ~2 ~-30 ~44 minecraft:stone
 setblock ~0 ~-30 ~44 minecraft:cobbled_deepslate
-setblock ~-17 ~-30 ~44 minecraft:redstone_ore
 setblock ~1 ~-30 ~44 minecraft:tuff
 fill ~-11 ~-30 ~44 ~-1 ~-30 ~44 minecraft:stone
 setblock ~-23 ~-30 ~44 minecraft:stone
@@ -409,10 +409,10 @@ fill ~-10 ~-30 ~58 ~-8 ~-30 ~58 minecraft:stone
 fill ~-9 ~-30 ~59 ~-6 ~-30 ~59 minecraft:stone
 setblock ~-7 ~-30 ~60 minecraft:stone
 fill ~1 ~-30 ~60 ~7 ~-30 ~61 minecraft:stone
-fill ~-11 ~-30 ~62 ~-11 ~-27 ~62 minecraft:stone
+setblock ~-12 ~-30 ~62 minecraft:glow_lichen[east=true]
 fill ~0 ~-30 ~62 ~7 ~-26 ~62 minecraft:tuff
 setblock ~-14 ~-30 ~62 minecraft:glow_lichen[south=true]
-setblock ~-12 ~-30 ~62 minecraft:glow_lichen[east=true]
+fill ~-11 ~-30 ~62 ~-11 ~-27 ~62 minecraft:stone
 fill ~-19 ~-30 ~63 ~-9 ~-30 ~63 minecraft:stone
 fill ~-1 ~-30 ~63 ~7 ~-26 ~63 minecraft:tuff
 fill ~-19 ~-30 ~64 ~-7 ~-29 ~64 minecraft:stone
@@ -522,8 +522,8 @@ fill ~1 ~-29 ~61 ~7 ~-29 ~61 minecraft:tuff
 fill ~-20 ~-29 ~63 ~-9 ~-29 ~63 minecraft:stone
 setblock ~-21 ~-29 ~63 minecraft:andesite
 fill ~-3 ~-29 ~64 ~7 ~-26 ~64 minecraft:tuff
-setblock ~-5 ~-29 ~65 minecraft:coal_ore
 fill ~-19 ~-29 ~65 ~-6 ~-29 ~65 minecraft:stone
+setblock ~-5 ~-29 ~65 minecraft:coal_ore
 fill ~-4 ~-29 ~65 ~7 ~-29 ~66 minecraft:tuff
 fill ~-19 ~-29 ~66 ~-5 ~-29 ~66 minecraft:stone
 fill ~-24 ~-29 ~65 ~-20 ~-29 ~67 minecraft:andesite
@@ -595,24 +595,24 @@ fill ~-7 ~-28 ~68 ~-6 ~-22 ~68 minecraft:mossy_cobblestone
 fill ~-5 ~-28 ~68 ~-4 ~-22 ~68 minecraft:tuff
 fill ~6 ~-28 ~68 ~7 ~-22 ~68 minecraft:tuff
 fill ~5 ~-28 ~68 ~5 ~-22 ~68 minecraft:mossy_cobblestone
-setblock ~-1 ~-28 ~69 minecraft:moss_carpet
-fill ~-5 ~-28 ~69 ~-4 ~-28 ~69 minecraft:moss_carpet
 fill ~3 ~-28 ~69 ~3 ~-22 ~69 minecraft:moss_block
 fill ~-21 ~-28 ~69 ~-8 ~-28 ~69 minecraft:stone
+fill ~-5 ~-28 ~69 ~-4 ~-28 ~69 minecraft:moss_carpet
 fill ~-7 ~-28 ~69 ~-6 ~-22 ~69 minecraft:moss_block
+setblock ~-1 ~-28 ~69 minecraft:moss_carpet
 fill ~-24 ~-28 ~69 ~-22 ~-28 ~70 minecraft:andesite
 fill ~-4 ~-28 ~70 ~-2 ~-28 ~70 minecraft:moss_carpet
 fill ~-21 ~-28 ~70 ~-10 ~-28 ~70 minecraft:stone
 fill ~-9 ~-28 ~70 ~-8 ~-22 ~70 minecraft:moss_block
 fill ~6 ~-28 ~70 ~6 ~-22 ~70 minecraft:moss_block
 fill ~-6 ~-28 ~70 ~-6 ~-28 ~71 minecraft:moss_carpet
+setblock ~-1 ~-28 ~71 minecraft:azalea
 setblock ~7 ~-28 ~71 minecraft:chest
 fill ~-24 ~-28 ~71 ~-11 ~-26 ~71 minecraft:stone
-setblock ~-1 ~-28 ~71 minecraft:azalea
-fill ~-10 ~-28 ~71 ~-10 ~-22 ~71 minecraft:moss_block
+setblock ~3 ~-28 ~71 minecraft:moss_carpet
 setblock ~-4 ~-28 ~71 minecraft:moss_carpet
 setblock ~1 ~-28 ~71 minecraft:azalea
-setblock ~3 ~-28 ~71 minecraft:moss_carpet
+fill ~-10 ~-28 ~71 ~-10 ~-22 ~71 minecraft:moss_block
 setblock ~-2 ~-28 ~71 minecraft:small_dripleaf[half=lower,facing=north]
 fill ~-16 ~-27 ~40 ~7 ~-23 ~41 minecraft:tuff
 setblock ~-18 ~-27 ~42 minecraft:glow_lichen[east=true]
@@ -665,9 +665,9 @@ fill ~-15 ~-26 ~55 ~-14 ~-26 ~55 minecraft:stone
 fill ~-12 ~-26 ~56 ~-4 ~-26 ~56 minecraft:tuff
 fill ~-15 ~-26 ~56 ~-13 ~-26 ~57 minecraft:stone
 fill ~-12 ~-26 ~57 ~-5 ~-26 ~57 minecraft:tuff
+setblock ~-4 ~-26 ~58 minecraft:lantern[hanging=true]
 fill ~-15 ~-26 ~58 ~-12 ~-26 ~58 minecraft:stone
 fill ~3 ~-26 ~58 ~4 ~-26 ~58 minecraft:tuff
-setblock ~-4 ~-26 ~58 minecraft:lantern[hanging=true]
 fill ~-11 ~-26 ~58 ~-6 ~-26 ~58 minecraft:tuff
 fill ~-10 ~-26 ~59 ~-6 ~-26 ~59 minecraft:tuff
 fill ~-16 ~-26 ~59 ~-11 ~-26 ~60 minecraft:stone
@@ -702,9 +702,9 @@ fill ~-16 ~-25 ~56 ~-14 ~-25 ~56 minecraft:stone
 setblock ~7 ~-25 ~57 minecraft:stone
 fill ~-17 ~-25 ~57 ~-14 ~-25 ~57 minecraft:stone
 fill ~-13 ~-25 ~57 ~6 ~-25 ~57 minecraft:tuff
+setblock ~-22 ~-25 ~58 minecraft:lantern[hanging=true]
 fill ~-12 ~-25 ~58 ~7 ~-25 ~58 minecraft:tuff
 fill ~-17 ~-25 ~58 ~-13 ~-25 ~58 minecraft:stone
-setblock ~-22 ~-25 ~58 minecraft:lantern[hanging=true]
 fill ~-18 ~-25 ~59 ~-12 ~-25 ~59 minecraft:stone
 setblock ~-24 ~-25 ~59 minecraft:stone
 fill ~-11 ~-25 ~59 ~7 ~-25 ~60 minecraft:tuff
@@ -798,8 +798,8 @@ fill ~-24 ~-23 ~67 ~-12 ~-23 ~69 minecraft:stone
 fill ~-11 ~-23 ~68 ~-8 ~-23 ~69 minecraft:tuff
 fill ~-12 ~-23 ~70 ~-10 ~-22 ~70 minecraft:tuff
 fill ~-24 ~-23 ~70 ~-13 ~-23 ~71 minecraft:stone
-fill ~-12 ~-23 ~71 ~-11 ~-23 ~71 minecraft:tuff
 setblock ~-2 ~-23 ~71 minecraft:cave_vines[age=25,berries=true]
+fill ~-12 ~-23 ~71 ~-11 ~-23 ~71 minecraft:tuff
 setblock ~2 ~-23 ~71 minecraft:cave_vines[age=25,berries=true]
 fill ~-16 ~-22 ~40 ~7 ~-22 ~40 minecraft:tuff
 fill ~-17 ~-22 ~41 ~7 ~-22 ~41 minecraft:tuff
@@ -839,8 +839,8 @@ fill ~-11 ~-22 ~64 ~7 ~-22 ~66 minecraft:tuff
 fill ~-24 ~-22 ~64 ~-12 ~-22 ~67 minecraft:stone
 fill ~-12 ~-22 ~68 ~-8 ~-22 ~69 minecraft:tuff
 fill ~-24 ~-22 ~68 ~-13 ~-22 ~70 minecraft:stone
-setblock ~-2 ~-22 ~71 minecraft:cave_vines_plant[berries=false]
 fill ~-24 ~-22 ~71 ~-14 ~-22 ~71 minecraft:stone
+setblock ~-2 ~-22 ~71 minecraft:cave_vines_plant[berries=false]
 setblock ~2 ~-22 ~71 minecraft:cave_vines_plant[berries=false]
 fill ~-13 ~-22 ~71 ~-11 ~-21 ~71 minecraft:tuff
 fill ~-17 ~-21 ~40 ~7 ~-21 ~40 minecraft:tuff
@@ -891,9 +891,9 @@ fill ~5 ~-21 ~70 ~6 ~-21 ~70 minecraft:moss_block
 fill ~-13 ~-21 ~70 ~-10 ~-21 ~70 minecraft:tuff
 setblock ~3 ~-21 ~70 minecraft:moss_block
 fill ~-24 ~-21 ~68 ~-14 ~-21 ~71 minecraft:stone
-setblock ~2 ~-21 ~71 minecraft:cave_vines_plant[berries=true]
 fill ~-10 ~-21 ~71 ~-8 ~-21 ~71 minecraft:moss_block
 setblock ~-2 ~-21 ~71 minecraft:cave_vines_plant[berries=true]
+setblock ~2 ~-21 ~71 minecraft:cave_vines_plant[berries=true]
 fill ~-19 ~-20 ~40 ~7 ~-20 ~40 minecraft:tuff
 setblock ~-20 ~-20 ~40 minecraft:lantern[hanging=true]
 fill ~-20 ~-20 ~41 ~7 ~-20 ~41 minecraft:tuff

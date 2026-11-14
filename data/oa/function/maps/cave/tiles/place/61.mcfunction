@@ -36,13 +36,13 @@ fill ~-117 ~-33 ~41 ~-116 ~-33 ~41 minecraft:dripstone_block
 fill ~-117 ~-26 ~41 ~-116 ~-25 ~41 minecraft:dripstone_block
 fill ~-119 ~-33 ~41 ~-119 ~-32 ~41 minecraft:dripstone_block
 fill ~-119 ~-26 ~41 ~-119 ~-25 ~41 minecraft:dripstone_block
+setblock ~-92 ~-33 ~41 minecraft:sea_pickle[pickles=3,waterlogged=true]
 fill ~-91 ~-33 ~41 ~-89 ~-33 ~41 minecraft:water
 fill ~-118 ~-33 ~41 ~-118 ~-32 ~41 minecraft:stone
 fill ~-120 ~-33 ~41 ~-120 ~-32 ~41 minecraft:stone
-setblock ~-92 ~-33 ~41 minecraft:sea_pickle[pickles=3,waterlogged=true]
-fill ~-107 ~-33 ~41 ~-107 ~-33 ~42 minecraft:sea_pickle[pickles=3,waterlogged=true]
 fill ~-115 ~-33 ~41 ~-115 ~-33 ~42 minecraft:stone
 fill ~-114 ~-33 ~41 ~-108 ~-33 ~42 minecraft:water
+fill ~-107 ~-33 ~41 ~-107 ~-33 ~42 minecraft:sea_pickle[pickles=3,waterlogged=true]
 fill ~-120 ~-33 ~42 ~-120 ~-32 ~42 minecraft:dripstone_block
 fill ~-120 ~-26 ~42 ~-120 ~-25 ~42 minecraft:dripstone_block
 fill ~-90 ~-33 ~42 ~-89 ~-33 ~42 minecraft:water
@@ -50,18 +50,18 @@ setblock ~-91 ~-33 ~42 minecraft:sea_pickle[pickles=3,waterlogged=true]
 fill ~-104 ~-33 ~42 ~-92 ~-33 ~42 minecraft:water
 fill ~-118 ~-33 ~42 ~-116 ~-33 ~42 minecraft:dripstone_block
 fill ~-118 ~-26 ~42 ~-116 ~-25 ~42 minecraft:dripstone_block
+setblock ~-105 ~-33 ~42 minecraft:sea_pickle[pickles=3,waterlogged=true]
 setblock ~-106 ~-33 ~42 minecraft:water
 fill ~-119 ~-33 ~42 ~-119 ~-32 ~42 minecraft:stone
-setblock ~-105 ~-33 ~42 minecraft:sea_pickle[pickles=3,waterlogged=true]
-setblock ~-109 ~-33 ~43 minecraft:sea_pickle[pickles=3,waterlogged=true]
 fill ~-120 ~-33 ~43 ~-117 ~-32 ~43 minecraft:stone
-setblock ~-97 ~-33 ~43 minecraft:sea_pickle[pickles=3,waterlogged=true]
 fill ~-96 ~-33 ~43 ~-89 ~-33 ~43 minecraft:water
 fill ~-116 ~-33 ~43 ~-115 ~-33 ~43 minecraft:dripstone_block
 fill ~-116 ~-26 ~43 ~-115 ~-26 ~43 minecraft:dripstone_block
 fill ~-108 ~-33 ~43 ~-98 ~-33 ~43 minecraft:water
 setblock ~-114 ~-33 ~43 minecraft:stone
+setblock ~-109 ~-33 ~43 minecraft:sea_pickle[pickles=3,waterlogged=true]
 fill ~-113 ~-33 ~43 ~-110 ~-33 ~43 minecraft:water
+setblock ~-97 ~-33 ~43 minecraft:sea_pickle[pickles=3,waterlogged=true]
 setblock ~-89 ~-33 ~44 minecraft:stone
 fill ~-120 ~-33 ~44 ~-118 ~-33 ~44 minecraft:tuff
 fill ~-120 ~-26 ~44 ~-118 ~-26 ~44 minecraft:tuff
@@ -70,15 +70,15 @@ fill ~-113 ~-33 ~44 ~-90 ~-31 ~44 minecraft:water
 fill ~-120 ~-33 ~45 ~-120 ~-32 ~45 minecraft:dripstone_block
 fill ~-120 ~-26 ~45 ~-120 ~-25 ~45 minecraft:dripstone_block
 fill ~-112 ~-33 ~45 ~-106 ~-33 ~45 minecraft:water
+setblock ~-105 ~-33 ~45 minecraft:sea_pickle[pickles=3,waterlogged=true]
 fill ~-90 ~-33 ~45 ~-89 ~-33 ~45 minecraft:stone
 fill ~-119 ~-33 ~45 ~-113 ~-33 ~45 minecraft:tuff
 fill ~-104 ~-33 ~45 ~-91 ~-33 ~45 minecraft:water
-setblock ~-105 ~-33 ~45 minecraft:sea_pickle[pickles=3,waterlogged=true]
 fill ~-91 ~-33 ~46 ~-89 ~-33 ~46 minecraft:stone
 fill ~-98 ~-33 ~46 ~-92 ~-33 ~46 minecraft:water
 fill ~-120 ~-33 ~46 ~-112 ~-33 ~46 minecraft:tuff
-fill ~-111 ~-33 ~46 ~-100 ~-33 ~46 minecraft:water
 setblock ~-99 ~-33 ~46 minecraft:sea_pickle[pickles=3,waterlogged=true]
+fill ~-111 ~-33 ~46 ~-100 ~-33 ~46 minecraft:water
 fill ~-117 ~-33 ~47 ~-111 ~-33 ~47 minecraft:tuff
 setblock ~-97 ~-33 ~47 minecraft:sea_pickle[pickles=3,waterlogged=true]
 fill ~-120 ~-33 ~47 ~-119 ~-33 ~47 minecraft:tuff
@@ -336,9 +336,9 @@ fill ~-109 ~-30 ~60 ~-109 ~-26 ~60 minecraft:granite
 fill ~-116 ~-30 ~60 ~-111 ~-26 ~60 minecraft:granite
 fill ~-108 ~-30 ~60 ~-106 ~-24 ~60 minecraft:dripstone_block
 fill ~-107 ~-30 ~61 ~-104 ~-24 ~61 minecraft:dripstone_block
+setblock ~-97 ~-30 ~61 minecraft:pointed_dripstone[vertical_direction=up,thickness=base]
 fill ~-109 ~-30 ~61 ~-108 ~-24 ~61 minecraft:granite
 setblock ~-92 ~-30 ~61 minecraft:pointed_dripstone[vertical_direction=up,thickness=tip]
-setblock ~-97 ~-30 ~61 minecraft:pointed_dripstone[vertical_direction=up,thickness=base]
 fill ~-105 ~-30 ~62 ~-101 ~-30 ~62 minecraft:dripstone_block
 fill ~-105 ~-24 ~62 ~-101 ~-24 ~62 minecraft:dripstone_block
 fill ~-89 ~-30 ~62 ~-89 ~-24 ~62 minecraft:dripstone_block
@@ -384,12 +384,12 @@ setblock ~-115 ~-29 ~51 minecraft:glow_lichen[east=true]
 setblock ~-120 ~-29 ~54 minecraft:redstone_ore
 setblock ~-108 ~-29 ~58 minecraft:pointed_dripstone[vertical_direction=up,thickness=tip]
 setblock ~-97 ~-29 ~61 minecraft:pointed_dripstone[vertical_direction=up,thickness=tip]
+setblock ~-92 ~-29 ~62 minecraft:glow_lichen[south=true]
 fill ~-105 ~-29 ~62 ~-102 ~-29 ~62 minecraft:dripstone_block
 fill ~-105 ~-27 ~62 ~-102 ~-25 ~62 minecraft:dripstone_block
-setblock ~-92 ~-29 ~62 minecraft:glow_lichen[south=true]
 fill ~-120 ~-29 ~63 ~-104 ~-24 ~63 minecraft:tuff
-fill ~-103 ~-29 ~63 ~-101 ~-25 ~63 minecraft:dripstone_block
 setblock ~-97 ~-29 ~63 minecraft:coal_ore
+fill ~-103 ~-29 ~63 ~-101 ~-25 ~63 minecraft:dripstone_block
 setblock ~-96 ~-29 ~63 minecraft:dripstone_block
 fill ~-96 ~-29 ~64 ~-90 ~-25 ~64 minecraft:dripstone_block
 fill ~-120 ~-29 ~64 ~-102 ~-29 ~65 minecraft:tuff
@@ -480,8 +480,8 @@ fill ~-113 ~-25 ~55 ~-111 ~-24 ~55 minecraft:dripstone_block
 setblock ~-106 ~-25 ~56 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
 fill ~-112 ~-25 ~56 ~-111 ~-24 ~56 minecraft:dripstone_block
 fill ~-111 ~-25 ~57 ~-110 ~-24 ~57 minecraft:dripstone_block
-fill ~-112 ~-25 ~58 ~-109 ~-24 ~58 minecraft:dripstone_block
 fill ~-107 ~-25 ~58 ~-106 ~-25 ~58 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
+fill ~-112 ~-25 ~58 ~-109 ~-24 ~58 minecraft:dripstone_block
 setblock ~-94 ~-25 ~60 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
 fill ~-116 ~-25 ~60 ~-109 ~-24 ~60 minecraft:granite
 setblock ~-98 ~-25 ~61 minecraft:pointed_dripstone[vertical_direction=down,thickness=frustum]
@@ -505,8 +505,8 @@ setblock ~-106 ~-24 ~56 minecraft:pointed_dripstone[vertical_direction=down,thic
 fill ~-107 ~-24 ~58 ~-106 ~-24 ~58 minecraft:pointed_dripstone[vertical_direction=down,thickness=frustum]
 fill ~-111 ~-24 ~59 ~-110 ~-24 ~59 minecraft:granite
 fill ~-109 ~-24 ~59 ~-108 ~-24 ~59 minecraft:dripstone_block
-setblock ~-99 ~-24 ~60 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
 setblock ~-94 ~-24 ~60 minecraft:pointed_dripstone[vertical_direction=down,thickness=frustum]
+setblock ~-99 ~-24 ~60 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
 setblock ~-98 ~-24 ~61 minecraft:pointed_dripstone[vertical_direction=down,thickness=middle]
 fill ~-99 ~-24 ~65 ~-98 ~-24 ~65 minecraft:tuff
 fill ~-94 ~-24 ~65 ~-89 ~-24 ~66 minecraft:tuff
@@ -528,8 +528,8 @@ fill ~-116 ~-23 ~41 ~-115 ~-23 ~43 minecraft:dripstone_block
 fill ~-120 ~-23 ~41 ~-117 ~-23 ~43 minecraft:tuff
 fill ~-120 ~-23 ~44 ~-116 ~-23 ~46 minecraft:tuff
 fill ~-115 ~-23 ~44 ~-114 ~-23 ~46 minecraft:dripstone_block
-setblock ~-111 ~-23 ~47 minecraft:pointed_dripstone[vertical_direction=down,thickness=middle]
 setblock ~-112 ~-23 ~47 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
+setblock ~-111 ~-23 ~47 minecraft:pointed_dripstone[vertical_direction=down,thickness=middle]
 setblock ~-111 ~-23 ~48 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
 fill ~-114 ~-23 ~47 ~-113 ~-23 ~50 minecraft:dripstone_block
 fill ~-120 ~-23 ~47 ~-115 ~-23 ~50 minecraft:tuff
@@ -549,8 +549,8 @@ fill ~-109 ~-23 ~58 ~-108 ~-23 ~58 minecraft:dripstone_block
 fill ~-107 ~-23 ~58 ~-106 ~-23 ~58 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
 fill ~-111 ~-23 ~59 ~-109 ~-23 ~59 minecraft:granite
 fill ~-108 ~-23 ~59 ~-106 ~-23 ~59 minecraft:dripstone_block
-fill ~-107 ~-23 ~60 ~-105 ~-23 ~60 minecraft:dripstone_block
 setblock ~-94 ~-23 ~60 minecraft:pointed_dripstone[vertical_direction=down,thickness=middle]
+fill ~-107 ~-23 ~60 ~-105 ~-23 ~60 minecraft:dripstone_block
 setblock ~-99 ~-23 ~60 minecraft:pointed_dripstone[vertical_direction=down,thickness=frustum]
 setblock ~-98 ~-23 ~61 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
 fill ~-105 ~-23 ~61 ~-102 ~-23 ~61 minecraft:dripstone_block
@@ -586,8 +586,8 @@ fill ~-120 ~-22 ~41 ~-116 ~-22 ~43 minecraft:tuff
 fill ~-115 ~-22 ~43 ~-113 ~-22 ~43 minecraft:dripstone_block
 fill ~-114 ~-22 ~44 ~-113 ~-22 ~45 minecraft:dripstone_block
 fill ~-120 ~-22 ~44 ~-115 ~-22 ~46 minecraft:tuff
-fill ~-113 ~-22 ~47 ~-112 ~-22 ~48 minecraft:dripstone_block
 fill ~-111 ~-22 ~47 ~-111 ~-22 ~48 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
+fill ~-113 ~-22 ~47 ~-112 ~-22 ~48 minecraft:dripstone_block
 fill ~-120 ~-22 ~47 ~-114 ~-22 ~50 minecraft:tuff
 fill ~-113 ~-22 ~49 ~-111 ~-22 ~50 minecraft:dripstone_block
 fill ~-112 ~-22 ~51 ~-111 ~-22 ~51 minecraft:dripstone_block
@@ -598,11 +598,11 @@ fill ~-120 ~-22 ~53 ~-112 ~-22 ~54 minecraft:tuff
 fill ~-111 ~-22 ~54 ~-109 ~-22 ~54 minecraft:dripstone_block
 fill ~-110 ~-22 ~55 ~-109 ~-22 ~55 minecraft:dripstone_block
 fill ~-120 ~-22 ~55 ~-111 ~-22 ~56 minecraft:tuff
+setblock ~-95 ~-22 ~56 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
+fill ~-110 ~-22 ~56 ~-108 ~-22 ~56 minecraft:dripstone_block
+setblock ~-89 ~-22 ~56 minecraft:pointed_dripstone[vertical_direction=down,thickness=frustum]
 setblock ~-106 ~-22 ~56 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
 setblock ~-101 ~-22 ~56 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
-fill ~-110 ~-22 ~56 ~-108 ~-22 ~56 minecraft:dripstone_block
-setblock ~-95 ~-22 ~56 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
-setblock ~-89 ~-22 ~56 minecraft:pointed_dripstone[vertical_direction=down,thickness=frustum]
 fill ~-120 ~-22 ~57 ~-110 ~-22 ~57 minecraft:tuff
 fill ~-109 ~-22 ~57 ~-107 ~-22 ~57 minecraft:dripstone_block
 setblock ~-105 ~-22 ~58 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
@@ -610,9 +610,9 @@ fill ~-108 ~-22 ~58 ~-106 ~-22 ~58 minecraft:dripstone_block
 fill ~-120 ~-22 ~58 ~-109 ~-22 ~58 minecraft:tuff
 setblock ~-92 ~-22 ~59 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
 fill ~-107 ~-22 ~59 ~-104 ~-22 ~59 minecraft:dripstone_block
-setblock ~-94 ~-22 ~60 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
-setblock ~-89 ~-22 ~60 minecraft:dripstone_block
 setblock ~-99 ~-22 ~60 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
+setblock ~-89 ~-22 ~60 minecraft:dripstone_block
+setblock ~-94 ~-22 ~60 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
 fill ~-105 ~-22 ~60 ~-101 ~-22 ~60 minecraft:dripstone_block
 fill ~-92 ~-22 ~61 ~-89 ~-22 ~61 minecraft:dripstone_block
 fill ~-109 ~-22 ~61 ~-105 ~-22 ~61 minecraft:granite
@@ -659,9 +659,9 @@ fill ~-108 ~-21 ~57 ~-105 ~-21 ~57 minecraft:dripstone_block
 fill ~-120 ~-21 ~57 ~-109 ~-21 ~57 minecraft:tuff
 fill ~-120 ~-21 ~58 ~-108 ~-21 ~58 minecraft:tuff
 fill ~-107 ~-21 ~58 ~-103 ~-21 ~58 minecraft:dripstone_block
-fill ~-111 ~-21 ~59 ~-106 ~-21 ~59 minecraft:granite
 setblock ~-98 ~-21 ~59 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
 setblock ~-92 ~-21 ~59 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
+fill ~-111 ~-21 ~59 ~-106 ~-21 ~59 minecraft:granite
 fill ~-90 ~-21 ~59 ~-89 ~-21 ~59 minecraft:dripstone_block
 fill ~-105 ~-21 ~59 ~-100 ~-21 ~59 minecraft:dripstone_block
 fill ~-116 ~-21 ~60 ~-105 ~-21 ~60 minecraft:granite
@@ -701,10 +701,10 @@ setblock ~-100 ~-20 ~54 minecraft:pointed_dripstone[vertical_direction=down,thic
 fill ~-120 ~-20 ~54 ~-109 ~-20 ~55 minecraft:tuff
 fill ~-108 ~-20 ~55 ~-104 ~-20 ~55 minecraft:dripstone_block
 fill ~-107 ~-20 ~56 ~-103 ~-20 ~56 minecraft:dripstone_block
-fill ~-120 ~-20 ~56 ~-108 ~-20 ~56 minecraft:tuff
-setblock ~-101 ~-20 ~56 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
 setblock ~-89 ~-20 ~56 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
+fill ~-120 ~-20 ~56 ~-108 ~-20 ~56 minecraft:tuff
 setblock ~-95 ~-20 ~56 minecraft:pointed_dripstone[vertical_direction=down,thickness=middle]
+setblock ~-101 ~-20 ~56 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
 fill ~-120 ~-20 ~57 ~-107 ~-20 ~57 minecraft:tuff
 fill ~-106 ~-20 ~57 ~-101 ~-20 ~57 minecraft:dripstone_block
 fill ~-105 ~-20 ~58 ~-98 ~-20 ~58 minecraft:dripstone_block
@@ -738,15 +738,15 @@ fill ~-108 ~-19 ~50 ~-106 ~-19 ~50 minecraft:dripstone_block
 fill ~-120 ~-19 ~50 ~-109 ~-19 ~51 minecraft:tuff
 fill ~-108 ~-19 ~51 ~-105 ~-19 ~51 minecraft:dripstone_block
 setblock ~-104 ~-19 ~51 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
+setblock ~-89 ~-19 ~52 minecraft:pointed_dripstone[vertical_direction=down,thickness=frustum]
 setblock ~-98 ~-19 ~52 minecraft:pointed_dripstone[vertical_direction=down,thickness=frustum]
 fill ~-107 ~-19 ~52 ~-104 ~-19 ~52 minecraft:dripstone_block
-setblock ~-89 ~-19 ~52 minecraft:pointed_dripstone[vertical_direction=down,thickness=frustum]
 fill ~-120 ~-19 ~52 ~-108 ~-19 ~53 minecraft:tuff
 fill ~-107 ~-19 ~53 ~-103 ~-19 ~53 minecraft:dripstone_block
-setblock ~-100 ~-19 ~54 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
 fill ~-106 ~-19 ~54 ~-102 ~-19 ~54 minecraft:dripstone_block
 fill ~-120 ~-19 ~54 ~-107 ~-19 ~54 minecraft:tuff
 setblock ~-94 ~-19 ~54 minecraft:pointed_dripstone[vertical_direction=down,thickness=frustum]
+setblock ~-100 ~-19 ~54 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
 fill ~-105 ~-19 ~55 ~-101 ~-19 ~55 minecraft:dripstone_block
 setblock ~-98 ~-19 ~55 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
 fill ~-120 ~-19 ~55 ~-106 ~-19 ~56 minecraft:tuff
@@ -772,22 +772,22 @@ fill ~-109 ~-18 ~45 ~-106 ~-18 ~45 minecraft:dripstone_block
 fill ~-108 ~-18 ~46 ~-106 ~-18 ~46 minecraft:dripstone_block
 fill ~-120 ~-18 ~46 ~-109 ~-18 ~48 minecraft:tuff
 fill ~-108 ~-18 ~47 ~-105 ~-18 ~48 minecraft:dripstone_block
-setblock ~-95 ~-18 ~49 minecraft:pointed_dripstone[vertical_direction=down,thickness=frustum]
 fill ~-107 ~-18 ~49 ~-104 ~-18 ~49 minecraft:dripstone_block
+setblock ~-95 ~-18 ~49 minecraft:pointed_dripstone[vertical_direction=down,thickness=frustum]
 fill ~-120 ~-18 ~49 ~-108 ~-18 ~50 minecraft:tuff
 setblock ~-92 ~-18 ~50 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
 fill ~-107 ~-18 ~50 ~-103 ~-18 ~50 minecraft:dripstone_block
 fill ~-106 ~-18 ~51 ~-102 ~-18 ~51 minecraft:dripstone_block
 fill ~-120 ~-18 ~51 ~-107 ~-18 ~51 minecraft:tuff
-setblock ~-99 ~-18 ~52 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
 setblock ~-89 ~-18 ~52 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
-fill ~-105 ~-18 ~52 ~-101 ~-18 ~52 minecraft:dripstone_block
 setblock ~-98 ~-18 ~52 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
+fill ~-105 ~-18 ~52 ~-101 ~-18 ~52 minecraft:dripstone_block
+setblock ~-99 ~-18 ~52 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
 fill ~-120 ~-18 ~52 ~-106 ~-18 ~53 minecraft:tuff
 fill ~-105 ~-18 ~53 ~-100 ~-18 ~53 minecraft:dripstone_block
+fill ~-91 ~-18 ~54 ~-89 ~-18 ~54 minecraft:dripstone_block
 fill ~-120 ~-18 ~54 ~-105 ~-18 ~54 minecraft:tuff
 setblock ~-94 ~-18 ~54 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
-fill ~-91 ~-18 ~54 ~-89 ~-18 ~54 minecraft:dripstone_block
 fill ~-104 ~-18 ~54 ~-97 ~-18 ~54 minecraft:dripstone_block
 fill ~-103 ~-18 ~55 ~-89 ~-18 ~55 minecraft:dripstone_block
 fill ~-120 ~-18 ~55 ~-104 ~-18 ~55 minecraft:tuff
@@ -812,8 +812,8 @@ fill ~-106 ~-17 ~48 ~-102 ~-17 ~48 minecraft:dripstone_block
 fill ~-105 ~-17 ~49 ~-101 ~-17 ~49 minecraft:dripstone_block
 setblock ~-95 ~-17 ~49 minecraft:pointed_dripstone[vertical_direction=down,thickness=middle]
 fill ~-120 ~-17 ~49 ~-106 ~-17 ~50 minecraft:tuff
-setblock ~-92 ~-17 ~50 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
 fill ~-105 ~-17 ~50 ~-100 ~-17 ~50 minecraft:dripstone_block
+setblock ~-92 ~-17 ~50 minecraft:pointed_dripstone[vertical_direction=down,thickness=base]
 fill ~-120 ~-17 ~51 ~-105 ~-17 ~51 minecraft:tuff
 fill ~-104 ~-17 ~51 ~-98 ~-17 ~51 minecraft:dripstone_block
 setblock ~-89 ~-17 ~51 minecraft:dripstone_block

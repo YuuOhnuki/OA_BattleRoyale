@@ -107,25 +107,32 @@ fill ~-11 ~-30 ~-23 ~7 ~-30 ~-23 minecraft:deepslate_bricks
 fill ~-16 ~-30 ~-23 ~-12 ~-30 ~-23 minecraft:stone
 fill ~-13 ~-30 ~-22 ~7 ~-30 ~-22 minecraft:deepslate_bricks
 fill ~-19 ~-30 ~-22 ~-14 ~-30 ~-22 minecraft:stone
-fill ~-2 ~-30 ~-21 ~2 ~-30 ~-21 minecraft:deepslate_tiles
 setblock ~3 ~-30 ~-21 minecraft:polished_deepslate
 fill ~-14 ~-30 ~-21 ~-5 ~-30 ~-21 minecraft:deepslate_bricks
 setblock ~-4 ~-30 ~-21 minecraft:deepslate_tiles
 setblock ~-3 ~-30 ~-21 minecraft:polished_deepslate
 fill ~5 ~-30 ~-21 ~7 ~-30 ~-21 minecraft:deepslate_bricks
+fill ~-1 ~-30 ~-21 ~1 ~-30 ~-21 minecraft:deepslate_tiles
 fill ~-24 ~-30 ~-21 ~-15 ~-30 ~-21 minecraft:stone
 setblock ~4 ~-30 ~-21 minecraft:deepslate_tiles
+setblock ~-2 ~-30 ~-21 minecraft:sea_lantern
+setblock ~2 ~-30 ~-21 minecraft:sea_lantern
+setblock ~7 ~-30 ~-20 minecraft:deepslate_tiles
+setblock ~-6 ~-30 ~-20 minecraft:sea_lantern
 fill ~-24 ~-30 ~-20 ~-16 ~-30 ~-20 minecraft:stone
 setblock ~-4 ~-30 ~-20 minecraft:polished_deepslate
-fill ~-7 ~-30 ~-20 ~-5 ~-30 ~-20 minecraft:deepslate_tiles
+setblock ~-7 ~-30 ~-20 minecraft:deepslate_tiles
+setblock ~6 ~-30 ~-20 minecraft:sea_lantern
+setblock ~5 ~-30 ~-20 minecraft:deepslate_tiles
 fill ~-15 ~-30 ~-20 ~-8 ~-30 ~-20 minecraft:deepslate_bricks
 setblock ~4 ~-30 ~-20 minecraft:polished_deepslate
 fill ~-3 ~-30 ~-20 ~3 ~-30 ~-20 minecraft:deepslate_tiles
-fill ~5 ~-30 ~-20 ~7 ~-30 ~-20 minecraft:deepslate_tiles
+setblock ~-5 ~-30 ~-20 minecraft:deepslate_tiles
 fill ~-24 ~-30 ~-19 ~-17 ~-30 ~-19 minecraft:stone
+setblock ~-10 ~-30 ~-19 minecraft:sea_lantern
 fill ~-4 ~-30 ~-19 ~4 ~-30 ~-19 minecraft:deepslate_tiles
 fill ~-16 ~-30 ~-19 ~-11 ~-30 ~-19 minecraft:deepslate_bricks
-fill ~-10 ~-30 ~-19 ~-6 ~-30 ~-19 minecraft:deepslate_tiles
+fill ~-9 ~-30 ~-19 ~-6 ~-30 ~-19 minecraft:deepslate_tiles
 setblock ~-5 ~-30 ~-19 minecraft:polished_deepslate
 fill ~6 ~-30 ~-19 ~7 ~-30 ~-19 minecraft:deepslate_tiles
 setblock ~5 ~-30 ~-19 minecraft:polished_deepslate
@@ -154,11 +161,12 @@ fill ~-24 ~-30 ~-17 ~-21 ~-28 ~-16 minecraft:stone
 fill ~-7 ~-30 ~-16 ~-3 ~-30 ~-16 minecraft:deepslate_tiles
 fill ~-20 ~-30 ~-16 ~-20 ~-25 ~-16 minecraft:deepslate
 fill ~3 ~-30 ~-16 ~7 ~-30 ~-16 minecraft:deepslate_tiles
+setblock ~-8 ~-30 ~-16 minecraft:polished_deepslate
 fill ~-17 ~-30 ~-16 ~-15 ~-30 ~-16 minecraft:deepslate_bricks
 fill ~-17 ~-17 ~-16 ~-15 ~-17 ~-16 minecraft:deepslate_bricks
+setblock ~-13 ~-30 ~-16 minecraft:sea_lantern
 fill ~-1 ~-30 ~-16 ~1 ~-30 ~-16 minecraft:deepslate_tiles
-fill ~-13 ~-30 ~-16 ~-9 ~-30 ~-16 minecraft:deepslate_tiles
-setblock ~-8 ~-30 ~-16 minecraft:polished_deepslate
+fill ~-12 ~-30 ~-16 ~-9 ~-30 ~-16 minecraft:deepslate_tiles
 setblock ~-14 ~-30 ~-16 minecraft:polished_deepslate
 setblock ~-2 ~-30 ~-16 minecraft:polished_deepslate
 setblock ~2 ~-30 ~-16 minecraft:polished_deepslate
@@ -181,12 +189,13 @@ fill ~-9 ~-30 ~-14 ~-5 ~-30 ~-14 minecraft:deepslate_tiles
 setblock ~-10 ~-30 ~-14 minecraft:polished_deepslate
 fill ~-3 ~-30 ~-14 ~3 ~-30 ~-14 minecraft:deepslate_tiles
 fill ~5 ~-30 ~-14 ~7 ~-30 ~-14 minecraft:deepslate_tiles
+fill ~-15 ~-30 ~-13 ~-12 ~-30 ~-13 minecraft:deepslate_tiles
 setblock ~-17 ~-30 ~-13 minecraft:polished_deepslate
 fill ~-4 ~-30 ~-13 ~4 ~-30 ~-13 minecraft:deepslate_tiles
 fill ~-10 ~-30 ~-13 ~-6 ~-30 ~-13 minecraft:deepslate_tiles
+setblock ~-16 ~-30 ~-13 minecraft:sea_lantern
 setblock ~-5 ~-30 ~-13 minecraft:polished_deepslate
 fill ~6 ~-30 ~-13 ~7 ~-30 ~-13 minecraft:deepslate_tiles
-fill ~-16 ~-30 ~-13 ~-12 ~-30 ~-13 minecraft:deepslate_tiles
 setblock ~-11 ~-30 ~-13 minecraft:polished_deepslate
 setblock ~5 ~-30 ~-13 minecraft:polished_deepslate
 fill ~-20 ~-30 ~-13 ~-18 ~-30 ~-12 minecraft:deepslate_bricks
@@ -199,37 +208,45 @@ setblock ~6 ~-30 ~-12 minecraft:polished_deepslate
 setblock ~-12 ~-30 ~-12 minecraft:polished_deepslate
 fill ~1 ~-30 ~-12 ~5 ~-30 ~-12 minecraft:deepslate_tiles
 fill ~-5 ~-30 ~-12 ~-1 ~-30 ~-12 minecraft:deepslate_tiles
-setblock ~1 ~-30 ~-11 minecraft:polished_deepslate
+setblock ~1 ~-30 ~-11 minecraft:sea_lantern
 fill ~-21 ~-30 ~-11 ~-19 ~-30 ~-11 minecraft:deepslate_bricks
 fill ~2 ~-30 ~-11 ~6 ~-30 ~-11 minecraft:deepslate_tiles
 setblock ~-13 ~-30 ~-11 minecraft:polished_deepslate
 setblock ~0 ~-30 ~-11 minecraft:deepslate_tiles
 setblock ~7 ~-30 ~-11 minecraft:polished_deepslate
 fill ~-6 ~-30 ~-11 ~-2 ~-30 ~-11 minecraft:deepslate_tiles
-setblock ~-1 ~-30 ~-11 minecraft:polished_deepslate
+setblock ~-1 ~-30 ~-11 minecraft:sea_lantern
 fill ~-12 ~-30 ~-11 ~-8 ~-30 ~-11 minecraft:deepslate_tiles
 fill ~-18 ~-30 ~-11 ~-14 ~-30 ~-11 minecraft:deepslate_tiles
 setblock ~-7 ~-30 ~-11 minecraft:polished_deepslate
-fill ~-7 ~-30 ~-10 ~-3 ~-30 ~-10 minecraft:deepslate_tiles
+setblock ~-4 ~-30 ~-10 minecraft:sea_lantern
 fill ~-21 ~-30 ~-10 ~-20 ~-30 ~-10 minecraft:deepslate_bricks
-fill ~3 ~-30 ~-10 ~7 ~-30 ~-10 minecraft:deepslate_tiles
-fill ~-19 ~-30 ~-10 ~-15 ~-30 ~-10 minecraft:deepslate_tiles
+setblock ~-19 ~-30 ~-10 minecraft:sea_lantern
+fill ~-7 ~-30 ~-10 ~-5 ~-30 ~-10 minecraft:deepslate_tiles
+setblock ~3 ~-30 ~-10 minecraft:deepslate_tiles
+setblock ~4 ~-30 ~-10 minecraft:sea_lantern
 fill ~-1 ~-30 ~-10 ~1 ~-30 ~-10 minecraft:deepslate_tiles
 fill ~-13 ~-30 ~-10 ~-9 ~-30 ~-10 minecraft:deepslate_tiles
 setblock ~-8 ~-30 ~-10 minecraft:polished_deepslate
+fill ~-18 ~-30 ~-10 ~-15 ~-30 ~-10 minecraft:deepslate_tiles
 setblock ~-14 ~-30 ~-10 minecraft:polished_deepslate
+setblock ~-3 ~-30 ~-10 minecraft:deepslate_tiles
 setblock ~-2 ~-30 ~-10 minecraft:polished_deepslate
 setblock ~2 ~-30 ~-10 minecraft:polished_deepslate
+fill ~5 ~-30 ~-10 ~7 ~-30 ~-10 minecraft:deepslate_tiles
 fill ~-2 ~-30 ~-9 ~2 ~-30 ~-9 minecraft:deepslate_tiles
 setblock ~3 ~-30 ~-9 minecraft:polished_deepslate
-fill ~-8 ~-30 ~-9 ~-4 ~-30 ~-9 minecraft:deepslate_tiles
+setblock ~-8 ~-30 ~-9 minecraft:deepslate_tiles
 setblock ~-3 ~-30 ~-9 minecraft:polished_deepslate
 setblock ~-9 ~-30 ~-9 minecraft:polished_deepslate
 setblock ~-15 ~-30 ~-9 minecraft:polished_deepslate
+setblock ~-7 ~-30 ~-9 minecraft:sea_lantern
+setblock ~7 ~-30 ~-9 minecraft:sea_lantern
 fill ~-19 ~-30 ~-9 ~-16 ~-30 ~-9 minecraft:deepslate_tiles
+fill ~4 ~-30 ~-9 ~6 ~-30 ~-9 minecraft:deepslate_tiles
 fill ~-22 ~-30 ~-9 ~-20 ~-30 ~-9 minecraft:deepslate_bricks
-fill ~4 ~-30 ~-9 ~7 ~-30 ~-9 minecraft:deepslate_tiles
 fill ~-14 ~-30 ~-9 ~-10 ~-30 ~-9 minecraft:deepslate_tiles
+fill ~-6 ~-30 ~-9 ~-4 ~-30 ~-9 minecraft:deepslate_tiles
 fill ~-15 ~-30 ~-8 ~-11 ~-30 ~-8 minecraft:deepslate_tiles
 setblock ~-4 ~-30 ~-8 minecraft:polished_deepslate
 setblock ~4 ~-30 ~-8 minecraft:polished_deepslate
@@ -244,7 +261,9 @@ fill ~-3 ~-30 ~-8 ~3 ~-30 ~-8 minecraft:deepslate_tiles
 fill ~5 ~-30 ~-8 ~7 ~-30 ~-8 minecraft:deepslate_tiles
 setblock ~-17 ~-30 ~-7 minecraft:polished_deepslate
 fill ~-4 ~-30 ~-7 ~4 ~-30 ~-7 minecraft:deepslate_tiles
-fill ~-10 ~-30 ~-7 ~-6 ~-30 ~-7 minecraft:deepslate_tiles
+setblock ~-10 ~-30 ~-7 minecraft:deepslate_tiles
+fill ~-8 ~-30 ~-7 ~-6 ~-30 ~-7 minecraft:deepslate_tiles
+setblock ~-9 ~-30 ~-7 minecraft:sea_lantern
 setblock ~-5 ~-30 ~-7 minecraft:polished_deepslate
 fill ~6 ~-30 ~-7 ~7 ~-30 ~-7 minecraft:deepslate_tiles
 fill ~-16 ~-30 ~-7 ~-12 ~-30 ~-7 minecraft:deepslate_tiles
@@ -256,12 +275,17 @@ setblock ~7 ~-30 ~-6 minecraft:deepslate_tiles
 setblock ~-18 ~-30 ~-6 minecraft:polished_deepslate
 setblock ~-6 ~-30 ~-6 minecraft:polished_deepslate
 fill ~-17 ~-30 ~-6 ~-13 ~-30 ~-6 minecraft:deepslate_tiles
-fill ~-20 ~-30 ~-6 ~-19 ~-30 ~-6 minecraft:deepslate_tiles
-setblock ~0 ~-30 ~-6 minecraft:polished_deepslate
+fill ~-5 ~-30 ~-6 ~-3 ~-30 ~-6 minecraft:deepslate_tiles
 setblock ~6 ~-30 ~-6 minecraft:polished_deepslate
+setblock ~-20 ~-30 ~-6 minecraft:sea_lantern
+setblock ~0 ~-30 ~-6 minecraft:sea_lantern
+setblock ~-19 ~-30 ~-6 minecraft:deepslate_tiles
+setblock ~1 ~-30 ~-6 minecraft:deepslate_tiles
+fill ~3 ~-30 ~-6 ~5 ~-30 ~-6 minecraft:deepslate_tiles
 setblock ~-12 ~-30 ~-6 minecraft:polished_deepslate
-fill ~1 ~-30 ~-6 ~5 ~-30 ~-6 minecraft:deepslate_tiles
-fill ~-5 ~-30 ~-6 ~-1 ~-30 ~-6 minecraft:deepslate_tiles
+setblock ~-2 ~-30 ~-6 minecraft:sea_lantern
+setblock ~2 ~-30 ~-6 minecraft:sea_lantern
+setblock ~-1 ~-30 ~-6 minecraft:deepslate_tiles
 fill ~-24 ~-30 ~-7 ~-21 ~-30 ~-5 minecraft:deepslate_bricks
 setblock ~1 ~-30 ~-5 minecraft:polished_deepslate
 setblock ~-19 ~-30 ~-5 minecraft:polished_deepslate
@@ -276,16 +300,22 @@ fill ~-12 ~-30 ~-5 ~-8 ~-30 ~-5 minecraft:deepslate_tiles
 fill ~-18 ~-30 ~-5 ~-14 ~-30 ~-5 minecraft:deepslate_tiles
 setblock ~-7 ~-30 ~-5 minecraft:polished_deepslate
 setblock ~-21 ~-30 ~-4 minecraft:deepslate_tiles
-fill ~-7 ~-30 ~-4 ~-3 ~-30 ~-4 minecraft:deepslate_tiles
+setblock ~-10 ~-30 ~-4 minecraft:sea_lantern
+setblock ~-4 ~-30 ~-4 minecraft:sea_lantern
 setblock ~-20 ~-30 ~-4 minecraft:polished_deepslate
-fill ~3 ~-30 ~-4 ~7 ~-30 ~-4 minecraft:deepslate_tiles
 fill ~-19 ~-30 ~-4 ~-15 ~-30 ~-4 minecraft:deepslate_tiles
+fill ~-7 ~-30 ~-4 ~-5 ~-30 ~-4 minecraft:deepslate_tiles
+setblock ~3 ~-30 ~-4 minecraft:deepslate_tiles
+setblock ~4 ~-30 ~-4 minecraft:sea_lantern
+fill ~-13 ~-30 ~-4 ~-11 ~-30 ~-4 minecraft:deepslate_tiles
 fill ~-1 ~-30 ~-4 ~1 ~-30 ~-4 minecraft:deepslate_tiles
-fill ~-13 ~-30 ~-4 ~-9 ~-30 ~-4 minecraft:deepslate_tiles
+setblock ~-9 ~-30 ~-4 minecraft:deepslate_tiles
 setblock ~-8 ~-30 ~-4 minecraft:polished_deepslate
 setblock ~-14 ~-30 ~-4 minecraft:polished_deepslate
+setblock ~-3 ~-30 ~-4 minecraft:deepslate_tiles
 setblock ~-2 ~-30 ~-4 minecraft:polished_deepslate
 setblock ~2 ~-30 ~-4 minecraft:polished_deepslate
+fill ~5 ~-30 ~-4 ~7 ~-30 ~-4 minecraft:deepslate_tiles
 fill ~-8 ~-30 ~-3 ~-4 ~-30 ~-3 minecraft:deepslate_tiles
 fill ~-20 ~-30 ~-3 ~-16 ~-30 ~-3 minecraft:deepslate_tiles
 setblock ~-9 ~-30 ~-3 minecraft:polished_deepslate
@@ -294,13 +324,18 @@ fill ~-3 ~-30 ~-3 ~3 ~-30 ~-3 minecraft:polished_deepslate
 setblock ~-21 ~-30 ~-3 minecraft:polished_deepslate
 fill ~4 ~-30 ~-3 ~7 ~-30 ~-3 minecraft:deepslate_tiles
 fill ~-14 ~-30 ~-3 ~-10 ~-30 ~-3 minecraft:deepslate_tiles
+setblock ~7 ~-30 ~-2 minecraft:deepslate_tiles
+setblock ~-6 ~-30 ~-2 minecraft:sea_lantern
 fill ~-15 ~-30 ~-2 ~-11 ~-30 ~-2 minecraft:deepslate_tiles
+setblock ~6 ~-30 ~-2 minecraft:sea_lantern
+setblock ~5 ~-30 ~-2 minecraft:deepslate_tiles
+fill ~-20 ~-30 ~-2 ~-17 ~-30 ~-2 minecraft:deepslate_tiles
+fill ~-9 ~-30 ~-2 ~-7 ~-30 ~-2 minecraft:deepslate_tiles
 setblock ~-16 ~-30 ~-2 minecraft:polished_deepslate
-fill ~-9 ~-30 ~-2 ~-5 ~-30 ~-2 minecraft:deepslate_tiles
+setblock ~-21 ~-30 ~-2 minecraft:sea_lantern
 setblock ~-10 ~-30 ~-2 minecraft:polished_deepslate
 fill ~-4 ~-30 ~-2 ~4 ~-30 ~-2 minecraft:polished_deepslate
-fill ~-21 ~-30 ~-2 ~-17 ~-30 ~-2 minecraft:deepslate_tiles
-fill ~5 ~-30 ~-2 ~7 ~-30 ~-2 minecraft:deepslate_tiles
+setblock ~-5 ~-30 ~-2 minecraft:deepslate_tiles
 setblock ~-17 ~-30 ~-1 minecraft:polished_deepslate
 setblock ~4 ~-30 ~-1 minecraft:deepslate_tiles
 fill ~-10 ~-30 ~-1 ~-6 ~-30 ~-1 minecraft:deepslate_tiles
@@ -308,16 +343,16 @@ setblock ~-4 ~-30 ~-1 minecraft:deepslate_tiles
 setblock ~-5 ~-30 ~-1 minecraft:polished_deepslate
 fill ~-16 ~-30 ~-1 ~-12 ~-30 ~-1 minecraft:deepslate_tiles
 fill ~6 ~-30 ~-1 ~7 ~-30 ~-1 minecraft:deepslate_tiles
-setblock ~-11 ~-30 ~-1 minecraft:polished_deepslate
+setblock ~-11 ~-30 ~-1 minecraft:sea_lantern
 setblock ~5 ~-30 ~-1 minecraft:polished_deepslate
 fill ~-21 ~-30 ~-1 ~-18 ~-30 ~-1 minecraft:deepslate_tiles
 fill ~-11 ~-30 ~0 ~-7 ~-30 ~0 minecraft:deepslate_tiles
 fill ~-5 ~-30 ~0 ~-4 ~-30 ~0 minecraft:deepslate_tiles
-setblock ~7 ~-30 ~0 minecraft:deepslate_tiles
+setblock ~-6 ~-30 ~0 minecraft:sea_lantern
 setblock ~-18 ~-30 ~0 minecraft:polished_deepslate
-setblock ~-6 ~-30 ~0 minecraft:polished_deepslate
+setblock ~7 ~-30 ~0 minecraft:deepslate_tiles
 fill ~-17 ~-30 ~0 ~-13 ~-30 ~0 minecraft:deepslate_tiles
-setblock ~6 ~-30 ~0 minecraft:polished_deepslate
+setblock ~6 ~-30 ~0 minecraft:sea_lantern
 fill ~4 ~-30 ~0 ~5 ~-30 ~0 minecraft:deepslate_tiles
 setblock ~-12 ~-30 ~0 minecraft:polished_deepslate
 fill ~-21 ~-30 ~0 ~-19 ~-30 ~0 minecraft:deepslate_tiles
@@ -329,16 +364,21 @@ setblock ~-4 ~-30 ~1 minecraft:deepslate_tiles
 setblock ~-5 ~-30 ~1 minecraft:polished_deepslate
 fill ~-16 ~-30 ~1 ~-12 ~-30 ~1 minecraft:deepslate_tiles
 fill ~6 ~-30 ~1 ~7 ~-30 ~1 minecraft:deepslate_tiles
-setblock ~-11 ~-30 ~1 minecraft:polished_deepslate
+setblock ~-11 ~-30 ~1 minecraft:sea_lantern
 setblock ~5 ~-30 ~1 minecraft:polished_deepslate
 fill ~-21 ~-30 ~1 ~-18 ~-30 ~1 minecraft:deepslate_tiles
+setblock ~7 ~-30 ~2 minecraft:deepslate_tiles
+setblock ~-6 ~-30 ~2 minecraft:sea_lantern
 fill ~-15 ~-30 ~2 ~-11 ~-30 ~2 minecraft:deepslate_tiles
+setblock ~6 ~-30 ~2 minecraft:sea_lantern
+setblock ~5 ~-30 ~2 minecraft:deepslate_tiles
+fill ~-20 ~-30 ~2 ~-17 ~-30 ~2 minecraft:deepslate_tiles
+fill ~-9 ~-30 ~2 ~-7 ~-30 ~2 minecraft:deepslate_tiles
 setblock ~-16 ~-30 ~2 minecraft:polished_deepslate
-fill ~-9 ~-30 ~2 ~-5 ~-30 ~2 minecraft:deepslate_tiles
+setblock ~-21 ~-30 ~2 minecraft:sea_lantern
 setblock ~-10 ~-30 ~2 minecraft:polished_deepslate
 fill ~-4 ~-30 ~2 ~4 ~-30 ~2 minecraft:polished_deepslate
-fill ~-21 ~-30 ~2 ~-17 ~-30 ~2 minecraft:deepslate_tiles
-fill ~5 ~-30 ~2 ~7 ~-30 ~2 minecraft:deepslate_tiles
+setblock ~-5 ~-30 ~2 minecraft:deepslate_tiles
 fill ~-8 ~-30 ~3 ~-4 ~-30 ~3 minecraft:deepslate_tiles
 fill ~-20 ~-30 ~3 ~-16 ~-30 ~3 minecraft:deepslate_tiles
 setblock ~-9 ~-30 ~3 minecraft:polished_deepslate
@@ -349,16 +389,22 @@ fill ~4 ~-30 ~3 ~7 ~-30 ~3 minecraft:deepslate_tiles
 fill ~-14 ~-30 ~3 ~-10 ~-30 ~3 minecraft:deepslate_tiles
 fill ~-24 ~-30 ~-4 ~-22 ~-30 ~4 minecraft:deepslate_bricks
 setblock ~-21 ~-30 ~4 minecraft:deepslate_tiles
-fill ~-7 ~-30 ~4 ~-3 ~-30 ~4 minecraft:deepslate_tiles
+setblock ~-10 ~-30 ~4 minecraft:sea_lantern
+setblock ~-4 ~-30 ~4 minecraft:sea_lantern
 setblock ~-20 ~-30 ~4 minecraft:polished_deepslate
-fill ~3 ~-30 ~4 ~7 ~-30 ~4 minecraft:deepslate_tiles
 fill ~-19 ~-30 ~4 ~-15 ~-30 ~4 minecraft:deepslate_tiles
+fill ~-7 ~-30 ~4 ~-5 ~-30 ~4 minecraft:deepslate_tiles
+setblock ~3 ~-30 ~4 minecraft:deepslate_tiles
+setblock ~4 ~-30 ~4 minecraft:sea_lantern
+fill ~-13 ~-30 ~4 ~-11 ~-30 ~4 minecraft:deepslate_tiles
 fill ~-1 ~-30 ~4 ~1 ~-30 ~4 minecraft:deepslate_tiles
-fill ~-13 ~-30 ~4 ~-9 ~-30 ~4 minecraft:deepslate_tiles
+setblock ~-9 ~-30 ~4 minecraft:deepslate_tiles
 setblock ~-8 ~-30 ~4 minecraft:polished_deepslate
 setblock ~-14 ~-30 ~4 minecraft:polished_deepslate
+setblock ~-3 ~-30 ~4 minecraft:deepslate_tiles
 setblock ~-2 ~-30 ~4 minecraft:polished_deepslate
 setblock ~2 ~-30 ~4 minecraft:polished_deepslate
+fill ~5 ~-30 ~4 ~7 ~-30 ~4 minecraft:deepslate_tiles
 setblock ~1 ~-30 ~5 minecraft:polished_deepslate
 setblock ~-19 ~-30 ~5 minecraft:polished_deepslate
 fill ~2 ~-30 ~5 ~6 ~-30 ~5 minecraft:deepslate_tiles
@@ -376,16 +422,23 @@ setblock ~7 ~-30 ~6 minecraft:deepslate_tiles
 setblock ~-18 ~-30 ~6 minecraft:polished_deepslate
 setblock ~-6 ~-30 ~6 minecraft:polished_deepslate
 fill ~-17 ~-30 ~6 ~-13 ~-30 ~6 minecraft:deepslate_tiles
-fill ~-20 ~-30 ~6 ~-19 ~-30 ~6 minecraft:deepslate_tiles
-setblock ~0 ~-30 ~6 minecraft:polished_deepslate
+fill ~-5 ~-30 ~6 ~-3 ~-30 ~6 minecraft:deepslate_tiles
 setblock ~6 ~-30 ~6 minecraft:polished_deepslate
+setblock ~-20 ~-30 ~6 minecraft:sea_lantern
+setblock ~0 ~-30 ~6 minecraft:sea_lantern
+setblock ~-19 ~-30 ~6 minecraft:deepslate_tiles
+setblock ~1 ~-30 ~6 minecraft:deepslate_tiles
+fill ~3 ~-30 ~6 ~5 ~-30 ~6 minecraft:deepslate_tiles
 setblock ~-12 ~-30 ~6 minecraft:polished_deepslate
-fill ~1 ~-30 ~6 ~5 ~-30 ~6 minecraft:deepslate_tiles
-fill ~-5 ~-30 ~6 ~-1 ~-30 ~6 minecraft:deepslate_tiles
+setblock ~-2 ~-30 ~6 minecraft:sea_lantern
+setblock ~2 ~-30 ~6 minecraft:sea_lantern
+setblock ~-1 ~-30 ~6 minecraft:deepslate_tiles
 fill ~-24 ~-30 ~5 ~-21 ~-30 ~7 minecraft:deepslate_bricks
 setblock ~-17 ~-30 ~7 minecraft:polished_deepslate
 fill ~-4 ~-30 ~7 ~4 ~-30 ~7 minecraft:deepslate_tiles
-fill ~-10 ~-30 ~7 ~-6 ~-30 ~7 minecraft:deepslate_tiles
+setblock ~-10 ~-30 ~7 minecraft:deepslate_tiles
+fill ~-8 ~-30 ~7 ~-6 ~-30 ~7 minecraft:deepslate_tiles
+setblock ~-9 ~-30 ~7 minecraft:sea_lantern
 setblock ~-5 ~-30 ~7 minecraft:polished_deepslate
 fill ~6 ~-30 ~7 ~7 ~-30 ~7 minecraft:deepslate_tiles
 fill ~-16 ~-30 ~7 ~-12 ~-30 ~7 minecraft:deepslate_tiles
@@ -973,32 +1026,57 @@ fill ~6 ~-8 ~-10 ~7 ~-8 ~-10 minecraft:tuff
 fill ~-24 ~-8 ~-9 ~-7 ~-8 ~-9 minecraft:tuff
 fill ~-6 ~-8 ~-9 ~6 ~-8 ~-9 minecraft:deepslate_bricks
 setblock ~7 ~-8 ~-9 minecraft:tuff
-fill ~-7 ~-8 ~-8 ~7 ~-8 ~-8 minecraft:deepslate_bricks
+fill ~-1 ~-8 ~-8 ~1 ~-8 ~-8 minecraft:deepslate_bricks
 fill ~-24 ~-8 ~-8 ~-8 ~-8 ~-8 minecraft:tuff
+fill ~-7 ~-8 ~-8 ~-3 ~-8 ~-8 minecraft:deepslate_bricks
+fill ~3 ~-8 ~-8 ~7 ~-8 ~-8 minecraft:deepslate_bricks
+setblock ~-2 ~-8 ~-8 minecraft:sea_lantern
+setblock ~2 ~-8 ~-8 minecraft:sea_lantern
+setblock ~-4 ~-8 ~-7 minecraft:sea_lantern
+fill ~-3 ~-8 ~-7 ~3 ~-8 ~-7 minecraft:deepslate_bricks
+setblock ~4 ~-8 ~-7 minecraft:sea_lantern
+fill ~5 ~-8 ~-7 ~7 ~-8 ~-7 minecraft:deepslate_bricks
+fill ~-8 ~-8 ~-7 ~-5 ~-8 ~-7 minecraft:deepslate_bricks
 fill ~-24 ~-8 ~-7 ~-9 ~-8 ~-7 minecraft:tuff
-fill ~-8 ~-8 ~-7 ~7 ~-8 ~-7 minecraft:deepslate_bricks
 fill ~-9 ~-8 ~-6 ~7 ~-8 ~-6 minecraft:deepslate_bricks
 fill ~-24 ~-8 ~-6 ~-10 ~-8 ~-5 minecraft:tuff
 fill ~2 ~-8 ~-5 ~7 ~-8 ~-5 minecraft:deepslate_bricks
 fill ~-9 ~-8 ~-5 ~-2 ~-8 ~-5 minecraft:deepslate_bricks
-fill ~-10 ~-8 ~-4 ~-4 ~-8 ~-3 minecraft:deepslate_bricks
-fill ~4 ~-8 ~-4 ~7 ~-8 ~-3 minecraft:deepslate_bricks
+fill ~4 ~-8 ~-4 ~6 ~-8 ~-4 minecraft:deepslate_bricks
+fill ~-6 ~-8 ~-4 ~-4 ~-8 ~-4 minecraft:deepslate_bricks
+setblock ~-7 ~-8 ~-4 minecraft:sea_lantern
+setblock ~7 ~-8 ~-4 minecraft:sea_lantern
+fill ~-10 ~-8 ~-4 ~-8 ~-8 ~-4 minecraft:deepslate_bricks
+fill ~-10 ~-8 ~-3 ~-4 ~-8 ~-3 minecraft:deepslate_bricks
+fill ~4 ~-8 ~-3 ~7 ~-8 ~-3 minecraft:deepslate_bricks
 fill ~-24 ~-8 ~-4 ~-11 ~-8 ~-2 minecraft:tuff
-fill ~-10 ~-8 ~-2 ~-5 ~-8 ~-2 minecraft:deepslate_bricks
+setblock ~-8 ~-8 ~-2 minecraft:sea_lantern
+fill ~-7 ~-8 ~-2 ~-5 ~-8 ~-2 minecraft:deepslate_bricks
+fill ~-10 ~-8 ~-2 ~-9 ~-8 ~-2 minecraft:deepslate_bricks
 fill ~5 ~-8 ~-2 ~7 ~-8 ~-1 minecraft:deepslate_bricks
 fill ~-11 ~-8 ~-1 ~-5 ~-8 ~-1 minecraft:deepslate_bricks
 fill ~-11 ~-8 ~0 ~-6 ~-8 ~1 minecraft:deepslate_bricks
 fill ~6 ~-8 ~0 ~7 ~-8 ~1 minecraft:deepslate_bricks
+fill ~-11 ~-8 ~2 ~-9 ~-8 ~2 minecraft:deepslate_bricks
+setblock ~-8 ~-8 ~2 minecraft:sea_lantern
+fill ~-7 ~-8 ~2 ~-5 ~-8 ~2 minecraft:deepslate_bricks
 fill ~-24 ~-8 ~-1 ~-12 ~-8 ~3 minecraft:tuff
-fill ~-11 ~-8 ~2 ~-5 ~-8 ~3 minecraft:deepslate_bricks
 fill ~5 ~-8 ~2 ~7 ~-8 ~3 minecraft:deepslate_bricks
-fill ~-10 ~-8 ~4 ~-4 ~-8 ~4 minecraft:deepslate_bricks
-fill ~4 ~-8 ~4 ~7 ~-8 ~4 minecraft:deepslate_bricks
+fill ~-11 ~-8 ~3 ~-5 ~-8 ~3 minecraft:deepslate_bricks
+fill ~4 ~-8 ~4 ~6 ~-8 ~4 minecraft:deepslate_bricks
+fill ~-6 ~-8 ~4 ~-4 ~-8 ~4 minecraft:deepslate_bricks
+setblock ~7 ~-8 ~4 minecraft:sea_lantern
+fill ~-10 ~-8 ~4 ~-8 ~-8 ~4 minecraft:deepslate_bricks
+setblock ~-7 ~-8 ~4 minecraft:sea_lantern
 fill ~-20 ~-8 ~4 ~-11 ~-8 ~5 minecraft:tuff
 fill ~-10 ~-8 ~5 ~7 ~-8 ~6 minecraft:deepslate_bricks
 fill ~-24 ~-8 ~6 ~-11 ~-8 ~6 minecraft:tuff
+fill ~-9 ~-8 ~7 ~-5 ~-8 ~7 minecraft:deepslate_bricks
 fill ~-24 ~-8 ~7 ~-10 ~-8 ~7 minecraft:tuff
-fill ~-9 ~-8 ~7 ~7 ~-8 ~7 minecraft:deepslate_bricks
+setblock ~-4 ~-8 ~7 minecraft:sea_lantern
+fill ~-3 ~-8 ~7 ~3 ~-8 ~7 minecraft:deepslate_bricks
+setblock ~4 ~-8 ~7 minecraft:sea_lantern
+fill ~5 ~-8 ~7 ~7 ~-8 ~7 minecraft:deepslate_bricks
 fill ~-24 ~-7 ~-13 ~7 ~-7 ~-10 minecraft:tuff
 fill ~-24 ~-7 ~-9 ~-2 ~-7 ~-9 minecraft:tuff
 fill ~-1 ~-7 ~-9 ~1 ~-7 ~-9 minecraft:deepslate_bricks

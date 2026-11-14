@@ -535,8 +535,8 @@ fill ~53 ~-27 ~53 ~57 ~-24 ~54 minecraft:tuff
 fill ~42 ~-27 ~53 ~42 ~-27 ~54 minecraft:stone
 fill ~43 ~-27 ~54 ~46 ~-27 ~54 minecraft:tuff
 fill ~61 ~-27 ~52 ~71 ~-24 ~55 minecraft:tuff
-setblock ~60 ~-27 ~55 minecraft:glow_lichen[east=true]
 setblock ~48 ~-27 ~55 minecraft:chest
+setblock ~60 ~-27 ~55 minecraft:glow_lichen[east=true]
 setblock ~41 ~-27 ~55 minecraft:stone
 fill ~42 ~-27 ~55 ~47 ~-27 ~55 minecraft:tuff
 fill ~60 ~-27 ~56 ~63 ~-27 ~56 minecraft:tuff
@@ -561,8 +561,8 @@ fill ~58 ~-26 ~43 ~71 ~-23 ~43 minecraft:tuff
 fill ~61 ~-26 ~47 ~71 ~-26 ~47 minecraft:tuff
 setblock ~61 ~-26 ~48 minecraft:redstone_ore
 fill ~62 ~-26 ~48 ~71 ~-26 ~48 minecraft:tuff
-fill ~61 ~-26 ~49 ~71 ~-26 ~49 minecraft:tuff
 setblock ~52 ~-26 ~49 minecraft:glow_lichen[east=true]
+fill ~61 ~-26 ~49 ~71 ~-26 ~49 minecraft:tuff
 setblock ~44 ~-26 ~53 minecraft:coal_ore
 fill ~42 ~-26 ~53 ~43 ~-26 ~53 minecraft:tuff
 fill ~42 ~-26 ~54 ~46 ~-23 ~54 minecraft:tuff

@@ -318,12 +318,12 @@ fill ~77 ~-29 ~90 ~78 ~-29 ~90 minecraft:stone
 setblock ~81 ~-29 ~90 minecraft:andesite
 setblock ~80 ~-29 ~90 minecraft:stone
 setblock ~77 ~-29 ~91 minecraft:gravel
-setblock ~85 ~-29 ~91 minecraft:redstone_ore
 fill ~86 ~-29 ~91 ~103 ~-29 ~91 minecraft:stone
 setblock ~78 ~-29 ~91 minecraft:stone
 setblock ~79 ~-29 ~91 minecraft:tuff
 setblock ~80 ~-29 ~91 minecraft:andesite
 fill ~81 ~-29 ~91 ~82 ~-29 ~91 minecraft:stone
+setblock ~85 ~-29 ~91 minecraft:redstone_ore
 fill ~78 ~-29 ~92 ~79 ~-29 ~92 minecraft:gravel
 fill ~80 ~-29 ~92 ~81 ~-29 ~92 minecraft:stone
 setblock ~77 ~-29 ~92 minecraft:tuff
@@ -376,8 +376,8 @@ fill ~74 ~-28 ~85 ~79 ~-26 ~85 minecraft:stone
 setblock ~88 ~-28 ~86 minecraft:chest
 fill ~77 ~-28 ~88 ~77 ~-25 ~89 minecraft:stone
 fill ~85 ~-28 ~87 ~103 ~-28 ~92 minecraft:stone
-setblock ~103 ~-28 ~93 minecraft:tuff
 setblock ~84 ~-28 ~93 minecraft:glow_lichen[east=true]
+setblock ~103 ~-28 ~93 minecraft:tuff
 fill ~85 ~-28 ~93 ~102 ~-28 ~93 minecraft:stone
 fill ~85 ~-28 ~94 ~101 ~-28 ~94 minecraft:stone
 fill ~102 ~-28 ~94 ~103 ~-28 ~94 minecraft:tuff

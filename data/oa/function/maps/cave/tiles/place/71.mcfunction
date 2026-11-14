@@ -637,8 +637,8 @@ fill ~-105 ~-23 ~89 ~-105 ~-23 ~90 minecraft:stone
 fill ~-104 ~-23 ~90 ~-91 ~-23 ~90 minecraft:tuff
 fill ~-112 ~-23 ~90 ~-108 ~-23 ~90 minecraft:stone
 fill ~-120 ~-23 ~90 ~-113 ~-23 ~91 minecraft:tuff
-setblock ~-89 ~-23 ~91 minecraft:lantern[hanging=true]
 fill ~-112 ~-23 ~91 ~-107 ~-23 ~91 minecraft:stone
+setblock ~-89 ~-23 ~91 minecraft:lantern[hanging=true]
 fill ~-105 ~-23 ~91 ~-90 ~-23 ~91 minecraft:tuff
 fill ~-111 ~-23 ~92 ~-107 ~-23 ~94 minecraft:stone
 fill ~-120 ~-23 ~92 ~-112 ~-23 ~94 minecraft:tuff

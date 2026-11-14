@@ -451,13 +451,13 @@ fill ~-95 ~-29 ~-54 ~-89 ~-29 ~-53 minecraft:andesite
 fill ~-103 ~-29 ~-53 ~-96 ~-29 ~-53 minecraft:stone
 fill ~-103 ~-29 ~-52 ~-97 ~-29 ~-52 minecraft:stone
 fill ~-96 ~-29 ~-52 ~-89 ~-29 ~-51 minecraft:andesite
-fill ~-105 ~-29 ~-51 ~-105 ~-27 ~-51 minecraft:oak_fence
 fill ~-104 ~-29 ~-51 ~-97 ~-29 ~-51 minecraft:stone
+fill ~-105 ~-29 ~-51 ~-105 ~-27 ~-51 minecraft:oak_fence
 fill ~-105 ~-29 ~-50 ~-96 ~-29 ~-50 minecraft:stone
 fill ~-95 ~-29 ~-50 ~-89 ~-29 ~-50 minecraft:andesite
+setblock ~-106 ~-29 ~-49 minecraft:coal_ore
 fill ~-91 ~-29 ~-49 ~-89 ~-29 ~-49 minecraft:andesite
 fill ~-105 ~-29 ~-49 ~-92 ~-29 ~-49 minecraft:stone
-setblock ~-106 ~-29 ~-49 minecraft:coal_ore
 fill ~-108 ~-29 ~-48 ~-89 ~-25 ~-48 minecraft:stone
 fill ~-108 ~-20 ~-48 ~-89 ~-20 ~-48 minecraft:stone
 fill ~-110 ~-29 ~-47 ~-89 ~-29 ~-47 minecraft:stone
