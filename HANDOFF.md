@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.165 時点）
+# 引き継ぎメモ（1.9.166 時点）
 
 ## 現状
+- 1.9.166：ぴちぴちの速度（oa:fish 1.5 add_multiplied_total）を廃止。ユーザーが v1.9.165.1（7101ee7）で fish/speed_upgrade の追加行を消し、active_changed の追加行も削除。外す処理（speed_upgrade・active_changed・cleanup の remove）は残す（古い付与を外すため）。
 - 1.9.165：練習場の武器の名札の z を 14.5／18.5 → 15.5／19.5（台座のブロックの中心＝item_display と同じ）。1.9.161 以前から1ブロックずれていた。レイアウト版 1999。
 - 1.9.164：ぴちぴちの激流を2に（fish_riptide_on.json）。所持中のアイテムを差し替えるため custom_data の目印を `{oa:{riptide1916:1b,rip2:1b}}` にして riptide_tick の判定も合わせた（この目印を変えないと、既存のトライデントが古いレベルのまま残る）。
 - 1.9.163：k1/check・k2/check・k3/impact の屋根判定 `positioned over world_surface positioned ~ ~-40.9 ~ unless entity @s[dx=0,dy=40,dz=0]` は、箱が高さ41（dy+1）で上端が最上面+0.1 になり、外の人も常に「屋根の下」だった（1.9.131 から酸性雨・寒波、隕石群も同じ書き方でダメージなし）。−41.9 に直した。

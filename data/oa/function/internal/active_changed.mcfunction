@@ -24,7 +24,6 @@ scoreboard players set @s oa.breath 0
 execute store result storage oa:args id int 1 run scoreboard players get @s oa.id
 function oa:internal/clear_owned with storage oa:args
 
-execute if score @s oa.kind matches 2 run attribute @s minecraft:movement_speed modifier add oa:fish 1.5 add_multiplied_total
 execute if score @s oa.kind matches 5 run attribute @s minecraft:movement_speed modifier add oa:curse 1.75 add_multiplied_total
 tag @s remove oa.night
 

@@ -6,7 +6,7 @@
       "components": {
         "minecraft:lore": [
           {
-            "text": "主手：足が速くなり、高く跳べる。落下ダメージ無効",
+            "text": "主手：高く跳べる。落下ダメージ無効",
             "color": "gray",
             "italic": false
           },
