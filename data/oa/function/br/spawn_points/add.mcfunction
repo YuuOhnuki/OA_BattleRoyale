@@ -8,4 +8,4 @@ execute unless data storage oa:spawn_points dim run function oa:br/spawn_points/
 execute unless data storage oa:spawn_points points run data modify storage oa:spawn_points points set value []
 execute store result score #point_count br.tmp run data get storage oa:spawn_points points
 execute if score #point_count br.tmp matches 64.. run return run tellraw @s [{text:"【",color:"gray"},{nbt:"label",storage:"oa:spawn_points",color:"aqua"},{text:"】",color:"gray"},{text:"開始地点は最大64個です",color:"red"}]
-execute at @s align xyz positioned ~0.5 ~ ~0.5 run function oa:br/spawn_points/add_here
+execute at @s align xyz positioned ~0.5 ~ ~0.5 run function oa:br/spawn_points/add_find
