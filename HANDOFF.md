@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.164 時点）
+# 引き継ぎメモ（1.9.165 時点）
 
 ## 現状
+- 1.9.165：練習場の武器の名札の z を 14.5／18.5 → 15.5／19.5（台座のブロックの中心＝item_display と同じ）。1.9.161 以前から1ブロックずれていた。レイアウト版 1999。
 - 1.9.164：ぴちぴちの激流を2に（fish_riptide_on.json）。所持中のアイテムを差し替えるため custom_data の目印を `{oa:{riptide1916:1b,rip2:1b}}` にして riptide_tick の判定も合わせた（この目印を変えないと、既存のトライデントが古いレベルのまま残る）。
 - 1.9.163：k1/check・k2/check・k3/impact の屋根判定 `positioned over world_surface positioned ~ ~-40.9 ~ unless entity @s[dx=0,dy=40,dz=0]` は、箱が高さ41（dy+1）で上端が最上面+0.1 になり、外の人も常に「屋根の下」だった（1.9.131 から酸性雨・寒波、隕石群も同じ書き方でダメージなし）。−41.9 に直した。
 - 1.9.162：ロビーの飾りは lobby/decor_v162（scripts/gen_lobby_decor_1_9_162.py で生成、build の decor の直後）。戦績ボードの行は `execute if entity @a[tag=oa.bsN]` 付きで召喚。ぴちぴちの跳躍 oa:fish_jump 0.5。練習場の台座は practice/build の各ブロック（11行ずつ）と showcase をずらし（平面図は build を Python でボクセルに展開して確認）、建物の名前の text_display を削除、レイアウト版 1998。練習場メニューの本は2ページ（custom_data practice_book_v162、古い本は practice/book で消して配り直す）、208＝practice/click/clear_items。
