@@ -25,7 +25,8 @@ fill ~92 ~-33 ~-49 ~95 ~-33 ~-49 minecraft:andesite
 fill ~72 ~-33 ~-49 ~91 ~-33 ~-49 minecraft:stone
 fill ~72 ~-33 ~-48 ~103 ~-33 ~-43 minecraft:stone
 fill ~72 ~-33 ~-42 ~102 ~-33 ~-42 minecraft:stone
-fill ~103 ~-33 ~-42 ~103 ~-1 ~-41 minecraft:granite
+fill ~103 ~-33 ~-42 ~103 ~-29 ~-41 minecraft:granite
+fill ~103 ~-27 ~-42 ~103 ~-1 ~-41 minecraft:granite
 fill ~74 ~-33 ~-41 ~102 ~-33 ~-41 minecraft:stone
 fill ~72 ~-33 ~-41 ~73 ~-33 ~-41 minecraft:andesite
 fill ~72 ~-33 ~-40 ~75 ~-33 ~-39 minecraft:andesite
@@ -135,7 +136,8 @@ fill ~72 ~-30 ~-56 ~86 ~-30 ~-56 minecraft:polished_deepslate
 fill ~87 ~-30 ~-56 ~91 ~-30 ~-56 minecraft:deepslate_tiles
 setblock ~92 ~-30 ~-56 minecraft:cracked_deepslate_tiles
 setblock ~93 ~-30 ~-56 minecraft:deepslate_tiles
-fill ~97 ~-30 ~-56 ~97 ~-25 ~-55 minecraft:granite
+fill ~97 ~-30 ~-56 ~97 ~-30 ~-55 minecraft:granite
+fill ~97 ~-28 ~-56 ~97 ~-25 ~-55 minecraft:granite
 fill ~98 ~-30 ~-56 ~103 ~-25 ~-55 minecraft:stone
 setblock ~80 ~-30 ~-55 minecraft:sculk
 fill ~93 ~-30 ~-55 ~95 ~-30 ~-55 minecraft:deepslate
@@ -322,7 +324,8 @@ fill ~93 ~-30 ~-41 ~95 ~-30 ~-41 minecraft:stone
 fill ~101 ~-30 ~-41 ~102 ~-25 ~-41 minecraft:stone
 setblock ~96 ~-30 ~-41 minecraft:tuff
 fill ~92 ~-30 ~-40 ~93 ~-30 ~-40 minecraft:stone
-fill ~101 ~-30 ~-40 ~103 ~-26 ~-40 minecraft:stone
+fill ~101 ~-30 ~-40 ~103 ~-29 ~-40 minecraft:stone
+fill ~101 ~-27 ~-40 ~103 ~-26 ~-40 minecraft:stone
 fill ~90 ~-30 ~-40 ~91 ~-30 ~-40 minecraft:cobbled_deepslate
 fill ~96 ~-30 ~-40 ~97 ~-30 ~-40 minecraft:stone
 setblock ~89 ~-30 ~-40 minecraft:tuff
@@ -351,9 +354,12 @@ fill ~93 ~-30 ~-36 ~94 ~-30 ~-36 minecraft:stone
 fill ~96 ~-30 ~-35 ~103 ~-29 ~-35 minecraft:stone
 fill ~72 ~-30 ~-35 ~93 ~-30 ~-35 minecraft:stone
 fill ~94 ~-30 ~-35 ~95 ~-30 ~-35 minecraft:tuff
+setblock ~97 ~-29 ~-56 minecraft:granite
+setblock ~97 ~-24 ~-56 minecraft:granite
 fill ~95 ~-29 ~-56 ~96 ~-25 ~-56 minecraft:deepslate
 fill ~84 ~-29 ~-56 ~84 ~-29 ~-55 minecraft:deepslate_bricks
 fill ~75 ~-29 ~-56 ~75 ~-29 ~-55 minecraft:deepslate_bricks
+setblock ~97 ~-29 ~-55 minecraft:redstone_ore
 fill ~78 ~-29 ~-56 ~78 ~-29 ~-54 minecraft:deepslate_bricks
 setblock ~75 ~-29 ~-54 minecraft:cracked_deepslate_bricks
 fill ~99 ~-29 ~-54 ~103 ~-25 ~-54 minecraft:stone
@@ -367,13 +373,11 @@ fill ~83 ~-29 ~-53 ~83 ~-28 ~-53 minecraft:cracked_deepslate_bricks
 fill ~75 ~-29 ~-53 ~75 ~-26 ~-53 minecraft:polished_deepslate
 fill ~79 ~-29 ~-53 ~80 ~-29 ~-53 minecraft:deepslate_bricks
 fill ~100 ~-29 ~-53 ~103 ~-25 ~-53 minecraft:stone
-fill ~101 ~-29 ~-52 ~103 ~-29 ~-52 minecraft:stone
-fill ~101 ~-27 ~-52 ~103 ~-25 ~-52 minecraft:stone
+fill ~101 ~-29 ~-52 ~103 ~-25 ~-52 minecraft:stone
 fill ~85 ~-29 ~-52 ~85 ~-28 ~-52 minecraft:polished_deepslate_wall
 fill ~76 ~-29 ~-52 ~76 ~-28 ~-52 minecraft:polished_deepslate_wall
-fill ~102 ~-29 ~-51 ~103 ~-29 ~-51 minecraft:stone
-fill ~102 ~-27 ~-51 ~103 ~-25 ~-51 minecraft:stone
-setblock ~89 ~-29 ~-51 minecraft:redstone_ore
+fill ~102 ~-29 ~-51 ~103 ~-25 ~-51 minecraft:stone
+fill ~89 ~-29 ~-51 ~89 ~-25 ~-51 minecraft:deepslate
 fill ~78 ~-29 ~-50 ~78 ~-26 ~-50 minecraft:polished_deepslate
 fill ~81 ~-29 ~-50 ~81 ~-28 ~-50 minecraft:deepslate_bricks
 fill ~80 ~-29 ~-50 ~80 ~-28 ~-50 minecraft:cracked_deepslate_bricks
@@ -401,7 +405,8 @@ fill ~72 ~-29 ~-42 ~78 ~-21 ~-42 minecraft:deepslate
 setblock ~101 ~-29 ~-42 minecraft:chest
 fill ~72 ~-29 ~-39 ~82 ~-29 ~-39 minecraft:stone
 fill ~83 ~-29 ~-39 ~84 ~-29 ~-39 minecraft:tuff
-fill ~100 ~-29 ~-39 ~103 ~-27 ~-39 minecraft:stone
+fill ~100 ~-29 ~-39 ~103 ~-29 ~-39 minecraft:stone
+fill ~100 ~-27 ~-39 ~103 ~-27 ~-39 minecraft:stone
 fill ~85 ~-29 ~-39 ~86 ~-29 ~-39 minecraft:stone
 fill ~72 ~-29 ~-38 ~79 ~-24 ~-38 minecraft:stone
 fill ~84 ~-29 ~-38 ~86 ~-29 ~-38 minecraft:stone
@@ -416,8 +421,7 @@ setblock ~98 ~-29 ~-37 minecraft:chest
 fill ~72 ~-29 ~-37 ~78 ~-29 ~-37 minecraft:stone
 setblock ~79 ~-29 ~-37 minecraft:tuff
 setblock ~80 ~-29 ~-37 minecraft:stone
-fill ~85 ~-29 ~-37 ~90 ~-29 ~-37 minecraft:stone
-fill ~85 ~-27 ~-37 ~90 ~-25 ~-37 minecraft:stone
+fill ~85 ~-29 ~-37 ~90 ~-25 ~-37 minecraft:stone
 fill ~98 ~-29 ~-36 ~102 ~-29 ~-36 minecraft:stone
 setblock ~81 ~-29 ~-36 minecraft:tuff
 setblock ~82 ~-29 ~-36 minecraft:andesite
@@ -469,9 +473,6 @@ setblock ~78 ~-28 ~-55 minecraft:deepslate_bricks
 fill ~75 ~-28 ~-55 ~75 ~-28 ~-54 minecraft:deepslate_bricks
 fill ~84 ~-28 ~-54 ~84 ~-27 ~-54 minecraft:deepslate_bricks
 setblock ~80 ~-28 ~-53 minecraft:deepslate_bricks
-setblock ~101 ~-28 ~-52 minecraft:redstone_ore
-fill ~102 ~-28 ~-52 ~103 ~-28 ~-51 minecraft:stone
-fill ~89 ~-28 ~-51 ~89 ~-25 ~-51 minecraft:deepslate
 setblock ~78 ~-28 ~-49 minecraft:deepslate_bricks
 setblock ~78 ~-26 ~-49 minecraft:deepslate_bricks
 setblock ~82 ~-28 ~-49 minecraft:deepslate_bricks
@@ -479,13 +480,15 @@ setblock ~103 ~-28 ~-49 minecraft:glow_lichen[east=true]
 setblock ~78 ~-28 ~-47 minecraft:deepslate_bricks
 setblock ~78 ~-26 ~-47 minecraft:deepslate_bricks
 setblock ~82 ~-28 ~-47 minecraft:deepslate_bricks
+setblock ~103 ~-28 ~-42 minecraft:coal_ore
+setblock ~103 ~-28 ~-41 minecraft:granite
+fill ~101 ~-28 ~-40 ~103 ~-28 ~-39 minecraft:stone
+setblock ~100 ~-28 ~-39 minecraft:coal_ore
 fill ~72 ~-28 ~-39 ~81 ~-24 ~-39 minecraft:stone
 fill ~99 ~-28 ~-38 ~103 ~-28 ~-38 minecraft:stone
+fill ~72 ~-28 ~-37 ~77 ~-24 ~-37 minecraft:stone
 fill ~99 ~-28 ~-37 ~102 ~-28 ~-37 minecraft:stone
 setblock ~103 ~-28 ~-37 minecraft:tuff
-setblock ~90 ~-28 ~-37 minecraft:coal_ore
-fill ~85 ~-28 ~-37 ~89 ~-28 ~-37 minecraft:stone
-fill ~72 ~-28 ~-37 ~77 ~-24 ~-37 minecraft:stone
 fill ~98 ~-28 ~-36 ~101 ~-28 ~-36 minecraft:stone
 fill ~102 ~-28 ~-36 ~103 ~-28 ~-36 minecraft:tuff
 fill ~84 ~-28 ~-36 ~91 ~-25 ~-36 minecraft:stone
@@ -497,12 +500,12 @@ fill ~96 ~-28 ~-35 ~102 ~-28 ~-35 minecraft:stone
 fill ~82 ~-28 ~-34 ~103 ~-28 ~-34 minecraft:stone
 fill ~72 ~-28 ~-34 ~73 ~-24 ~-34 minecraft:stone
 fill ~72 ~-15 ~-34 ~73 ~-15 ~-34 minecraft:stone
-fill ~81 ~-28 ~-33 ~85 ~-24 ~-33 minecraft:stone
+fill ~81 ~-28 ~-33 ~85 ~-28 ~-33 minecraft:stone
+fill ~81 ~-26 ~-33 ~85 ~-24 ~-33 minecraft:stone
 fill ~79 ~-28 ~-31 ~85 ~-24 ~-31 minecraft:stone
 fill ~78 ~-28 ~-30 ~85 ~-24 ~-30 minecraft:stone
 fill ~74 ~-28 ~-28 ~103 ~-24 ~-28 minecraft:stone
-fill ~72 ~-28 ~-27 ~103 ~-28 ~-25 minecraft:stone
-fill ~72 ~-26 ~-27 ~103 ~-25 ~-25 minecraft:stone
+fill ~72 ~-28 ~-27 ~103 ~-25 ~-25 minecraft:stone
 setblock ~84 ~-27 ~-56 minecraft:deepslate_bricks
 fill ~75 ~-27 ~-56 ~75 ~-26 ~-54 minecraft:deepslate_bricks
 setblock ~81 ~-27 ~-53 minecraft:deepslate_bricks
@@ -524,9 +527,8 @@ fill ~96 ~-27 ~-35 ~101 ~-27 ~-35 minecraft:stone
 fill ~102 ~-27 ~-35 ~103 ~-27 ~-35 minecraft:tuff
 fill ~82 ~-27 ~-34 ~102 ~-27 ~-34 minecraft:stone
 setblock ~103 ~-27 ~-34 minecraft:tuff
-setblock ~72 ~-27 ~-27 minecraft:coal_ore
-fill ~73 ~-27 ~-27 ~103 ~-27 ~-27 minecraft:stone
-fill ~72 ~-27 ~-26 ~103 ~-27 ~-25 minecraft:stone
+fill ~82 ~-27 ~-33 ~85 ~-27 ~-33 minecraft:stone
+setblock ~81 ~-27 ~-33 minecraft:coal_ore
 setblock ~72 ~-26 ~-56 minecraft:soul_lantern[hanging=true]
 setblock ~72 ~-26 ~-53 minecraft:deepslate_bricks
 setblock ~73 ~-26 ~-53 minecraft:cracked_deepslate_bricks
@@ -572,7 +574,6 @@ fill ~89 ~-25 ~-32 ~100 ~-25 ~-32 minecraft:stone
 fill ~89 ~-25 ~-31 ~102 ~-25 ~-31 minecraft:stone
 setblock ~103 ~-25 ~-31 minecraft:tuff
 fill ~89 ~-25 ~-30 ~103 ~-25 ~-30 minecraft:stone
-setblock ~97 ~-24 ~-56 minecraft:granite
 setblock ~75 ~-24 ~-53 minecraft:candle[candles=3,lit=true]
 setblock ~88 ~-24 ~-50 minecraft:deepslate
 setblock ~78 ~-24 ~-50 minecraft:candle[candles=4,lit=true]

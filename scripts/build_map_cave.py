@@ -327,9 +327,9 @@ for k in range(8):
     c = ce(x, z)
     for y in range(c - 1, c - 4, -1): put(x, y, z, 'minecraft:iron_chain[axis=y]')
     put(x, c - 4, z, 'minecraft:soul_lantern[hanging=true]')
-# 神殿の普通のチェスト（壁ぎわ8つ。1.9.169 で3→8：中央付近のチェストを増やす）
-for k in range(8):
-    x, z = pol(19, 22.5 + 45 * k); x, z = int(round(x)), int(round(z))
+# 神殿の普通のチェスト（壁ぎわ4つ。1.9.169 で3→8、1.9.172 で8→4：中央付近を減らした）
+for k in range(4):
+    x, z = pol(19, 45 + 90 * k); x, z = int(round(x)), int(round(z))
     if opn(x, z): put(x, TF + 1, z, 'minecraft:chest'); chests.append((x, TF + 1, z)); used[x + OFF, z + OFF] = True
 
 # 1.9.171: 終盤演出で点滅させるランプ（シーランタン）を神殿に埋め込む。床に3重の輪（A 半径6・B 半径11・C 半径21）、天井に1重（D 半径8）
@@ -512,7 +512,7 @@ k = 0
 for (hx, hz, base, size, hgt, kind) in houses:
     if kind == 'ruin': continue
     if k % 3 == 0:
-        put(hx + 1, base + 1, hz + 1, 'minecraft:chest'); (riches if k < 9 else chests).append((hx + 1, base + 1, hz + 1))
+        put(hx + 1, base + 1, hz + 1, 'minecraft:chest'); (riches if k < 6 else chests).append((hx + 1, base + 1, hz + 1))
     k += 1
 # 街灯（通りの交差点に、魂のランタン）
 for gx in range(-4, 5):
@@ -595,14 +595,20 @@ def wall_spot(cands, k, kind, lst):
 for (cx, cz) in CHAMBERS:
     cs = [(x, z) for x, z in cells(7) if math.hypot(x - cx, z - cz) < 9]
     wall_spot(cs, 2, 'n', chests)
-for (cx, cz) in MIDS:   # 1.9.169: 中間の空洞は各2→3
+for (cx, cz) in MIDS:   # 1.9.169: 中間の空洞は各2→3、1.9.172 で3→2
     cs = [(x, z) for x, z in cells(8) if math.hypot(x - cx, z - cz) < 12]
-    wall_spot(cs, 3, 'n', chests)
+    wall_spot(cs, 2, 'n', chests)
 for a, k in ((1, 4), (2, 5), (3, 4), (4, 4)):
     wall_spot(cells(a), k, 'n', chests)
 side4 = [(x, z) for x, z in cells(4) if (x - d4['c'][0]) * math.cos(math.radians(d4['ang'])) + (z - d4['c'][1]) * math.sin(math.radians(d4['ang'])) >= 0]
-wall_spot(side4, 3, 'r', riches)
-wall_spot(cells(1), 2, 'r', riches)
+wall_spot(side4, 2, 'r', riches)   # 1.9.172: ディープダーク 3→2
+wall_spot(cells(1), 1, 'r', riches)   # 1.9.172: 晶洞 2→1
+# 1.9.172: 祭壇の4つ（十字に並ぶ）のうち、東西の2つを特別、南北の2つを通常に。地底湖の島は1つだけ特別に
+for c in [c for c in riches if (abs(c[0]), abs(c[2])) == (0, 2)]:
+    riches.remove(c); chests.insert(0, c)
+_isl = [c for c in riches if math.hypot(c[0] - isl[0], c[2] - isl[1]) <= 4]
+for c in _isl[1:]:
+    riches.remove(c); chests.insert(0, c)
 # 足りない分はトンネルの壁ぎわに
 need = NCH - len(chests)
 if need > 0:
@@ -693,7 +699,7 @@ print('reach', len(seen), '/', openwalk, 'bad spawn/chest/ore', len(bad_sp), len
 if bad_ch: print('bad_ch', bad_ch[:10])
 if bad_sp: print('bad_sp', bad_sp[:10])
 assert not bad_sp and not bad_ch and not bad_or
-assert len(chests) == NCH and len(riches) == 14 and len(ores) == NORE, (len(chests), len(riches), len(ores))
+assert len(chests) == NCH and len(riches) == 8 and len(ores) == NORE, (len(chests), len(riches), len(ores))
 
 # ---------------- 画像（確認用） ----------------
 if PNG:

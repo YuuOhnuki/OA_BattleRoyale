@@ -685,7 +685,8 @@ fill ~-24 ~-30 ~125 ~-22 ~-30 ~125 minecraft:stone
 setblock ~-16 ~-30 ~125 minecraft:tuff
 setblock ~-17 ~-30 ~125 minecraft:andesite
 fill ~-19 ~-30 ~125 ~-18 ~-30 ~125 minecraft:stone
-fill ~-9 ~-30 ~125 ~-3 ~-27 ~125 minecraft:stone
+fill ~-9 ~-30 ~125 ~-3 ~-30 ~125 minecraft:stone
+fill ~-9 ~-28 ~125 ~-3 ~-27 ~125 minecraft:stone
 setblock ~-20 ~-30 ~125 minecraft:tuff
 fill ~-21 ~-30 ~125 ~-21 ~-30 ~126 minecraft:gravel
 setblock ~-22 ~-30 ~126 minecraft:tuff
@@ -694,13 +695,12 @@ fill ~-24 ~-30 ~126 ~-23 ~-25 ~126 minecraft:granite
 fill ~-19 ~-30 ~126 ~-16 ~-30 ~126 minecraft:stone
 fill ~-24 ~-30 ~127 ~-19 ~-25 ~127 minecraft:granite
 fill ~-18 ~-30 ~127 ~-16 ~-30 ~127 minecraft:stone
-fill ~-24 ~-30 ~128 ~-16 ~-30 ~128 minecraft:granite
-fill ~-24 ~-28 ~128 ~-16 ~-25 ~128 minecraft:granite
+fill ~-24 ~-30 ~128 ~-16 ~-29 ~128 minecraft:granite
+fill ~-24 ~-27 ~128 ~-16 ~-25 ~128 minecraft:granite
 setblock ~-15 ~-30 ~128 minecraft:andesite
 fill ~-13 ~-30 ~129 ~-12 ~-26 ~129 minecraft:stone
-fill ~-7 ~-30 ~130 ~-3 ~-30 ~130 minecraft:stone
-fill ~-12 ~-30 ~130 ~-9 ~-30 ~130 minecraft:stone
-setblock ~-8 ~-30 ~130 minecraft:redstone_ore
+fill ~-12 ~-30 ~130 ~-3 ~-30 ~130 minecraft:stone
+fill ~-12 ~-28 ~130 ~-3 ~-26 ~130 minecraft:stone
 fill ~1 ~-30 ~131 ~2 ~-30 ~131 minecraft:stone
 fill ~-12 ~-30 ~131 ~-1 ~-26 ~131 minecraft:stone
 fill ~-11 ~-30 ~132 ~2 ~-30 ~132 minecraft:stone
@@ -720,20 +720,17 @@ fill ~-19 ~-29 ~117 ~7 ~-29 ~118 minecraft:moss_block
 fill ~-24 ~-29 ~117 ~-20 ~-29 ~119 minecraft:stone
 fill ~-19 ~-29 ~119 ~-19 ~-22 ~119 minecraft:mossy_cobblestone
 fill ~-18 ~-29 ~119 ~7 ~-29 ~119 minecraft:moss_block
-fill ~-23 ~-29 ~120 ~-19 ~-29 ~120 minecraft:stone
-fill ~-23 ~-27 ~120 ~-19 ~-27 ~120 minecraft:stone
-setblock ~-24 ~-29 ~120 minecraft:coal_ore
 fill ~-14 ~-29 ~120 ~-14 ~-25 ~120 minecraft:stone
 fill ~-18 ~-29 ~120 ~-18 ~-22 ~120 minecraft:mossy_cobblestone
 fill ~-17 ~-29 ~120 ~-16 ~-25 ~120 minecraft:stone
 fill ~-13 ~-29 ~120 ~7 ~-29 ~120 minecraft:moss_block
+fill ~-24 ~-29 ~120 ~-19 ~-28 ~120 minecraft:stone
 fill ~-15 ~-29 ~120 ~-15 ~-21 ~120 minecraft:moss_block
-setblock ~-17 ~-29 ~121 minecraft:redstone_ore
 fill ~-11 ~-29 ~121 ~-3 ~-29 ~121 minecraft:moss_block
 fill ~-13 ~-29 ~121 ~-13 ~-21 ~121 minecraft:moss_block
 fill ~4 ~-29 ~121 ~7 ~-29 ~121 minecraft:moss_block
 fill ~1 ~-29 ~121 ~2 ~-29 ~121 minecraft:moss_block
-setblock ~-18 ~-29 ~121 minecraft:stone
+fill ~-18 ~-29 ~121 ~-17 ~-25 ~121 minecraft:stone
 fill ~-15 ~-29 ~121 ~-14 ~-25 ~121 minecraft:stone
 setblock ~-2 ~-29 ~121 minecraft:moss_carpet
 fill ~-12 ~-29 ~121 ~-12 ~-24 ~121 minecraft:stone
@@ -747,10 +744,14 @@ fill ~5 ~-29 ~122 ~5 ~-21 ~122 minecraft:tuff
 fill ~-6 ~-29 ~122 ~-6 ~-21 ~122 minecraft:moss_block
 fill ~6 ~-29 ~122 ~7 ~-21 ~122 minecraft:moss_block
 fill ~-12 ~-29 ~123 ~-4 ~-29 ~123 minecraft:stone
-setblock ~-16 ~-29 ~128 minecraft:coal_ore
-fill ~-24 ~-29 ~128 ~-17 ~-29 ~128 minecraft:granite
-fill ~-12 ~-29 ~130 ~-3 ~-26 ~130 minecraft:stone
-fill ~3 ~-29 ~130 ~7 ~-26 ~130 minecraft:tuff
+setblock ~-3 ~-29 ~125 minecraft:redstone_ore
+fill ~-9 ~-29 ~125 ~-4 ~-29 ~125 minecraft:stone
+fill ~-9 ~-26 ~125 ~-4 ~-26 ~125 minecraft:stone
+setblock ~-7 ~-29 ~130 minecraft:redstone_ore
+fill ~4 ~-29 ~130 ~7 ~-29 ~130 minecraft:tuff
+setblock ~3 ~-29 ~130 minecraft:coal_ore
+fill ~-6 ~-29 ~130 ~-3 ~-29 ~130 minecraft:stone
+fill ~-12 ~-29 ~130 ~-8 ~-29 ~130 minecraft:stone
 setblock ~1 ~-29 ~131 minecraft:stone
 fill ~2 ~-29 ~131 ~7 ~-29 ~132 minecraft:tuff
 fill ~-11 ~-29 ~132 ~1 ~-28 ~132 minecraft:stone
@@ -900,13 +901,11 @@ fill ~5 ~-28 ~119 ~6 ~-28 ~120 minecraft:moss_carpet
 fill ~-2 ~-28 ~120 ~-1 ~-28 ~120 minecraft:moss_carpet
 setblock ~-8 ~-28 ~120 minecraft:small_dripleaf[half=lower,facing=north]
 setblock ~-10 ~-28 ~120 minecraft:small_dripleaf[half=lower,facing=north]
-fill ~-24 ~-28 ~120 ~-19 ~-28 ~120 minecraft:stone
 fill ~-6 ~-28 ~119 ~-6 ~-28 ~121 minecraft:moss_carpet
 setblock ~7 ~-28 ~121 minecraft:chest
 setblock ~2 ~-28 ~121 minecraft:azalea
 setblock ~6 ~-28 ~121 minecraft:flowering_azalea
 fill ~-11 ~-28 ~121 ~-10 ~-21 ~121 minecraft:moss_block
-fill ~-18 ~-28 ~121 ~-17 ~-25 ~121 minecraft:stone
 fill ~4 ~-28 ~121 ~5 ~-28 ~121 minecraft:moss_carpet
 fill ~-9 ~-28 ~122 ~-9 ~-25 ~122 minecraft:stone
 fill ~-14 ~-28 ~122 ~-11 ~-25 ~122 minecraft:stone
@@ -917,6 +916,9 @@ fill ~-7 ~-28 ~123 ~-6 ~-26 ~123 minecraft:stone
 fill ~-12 ~-28 ~123 ~-9 ~-25 ~123 minecraft:stone
 fill ~-8 ~-28 ~123 ~-8 ~-22 ~123 minecraft:mossy_cobblestone
 setblock ~-19 ~-28 ~126 minecraft:glow_lichen[south=true]
+setblock ~-16 ~-28 ~128 minecraft:coal_ore
+fill ~-24 ~-28 ~128 ~-17 ~-28 ~128 minecraft:granite
+fill ~3 ~-28 ~130 ~7 ~-26 ~130 minecraft:tuff
 fill ~1 ~-28 ~131 ~7 ~-28 ~131 minecraft:tuff
 fill ~1 ~-26 ~131 ~7 ~-26 ~131 minecraft:tuff
 fill ~2 ~-28 ~132 ~7 ~-28 ~134 minecraft:tuff
@@ -939,6 +941,7 @@ setblock ~-7 ~-27 ~118 minecraft:small_dripleaf[half=upper,facing=north]
 setblock ~-18 ~-27 ~118 minecraft:small_dripleaf[half=upper,facing=north]
 fill ~-24 ~-27 ~118 ~-22 ~-27 ~119 minecraft:tuff
 fill ~-21 ~-27 ~119 ~-20 ~-27 ~119 minecraft:stone
+fill ~-23 ~-27 ~120 ~-19 ~-27 ~120 minecraft:stone
 setblock ~-8 ~-27 ~120 minecraft:small_dripleaf[half=upper,facing=north]
 setblock ~-24 ~-27 ~120 minecraft:tuff
 setblock ~-10 ~-27 ~120 minecraft:small_dripleaf[half=upper,facing=north]
@@ -960,7 +963,6 @@ fill ~-5 ~-26 ~122 ~-4 ~-26 ~122 minecraft:stone
 setblock ~-3 ~-26 ~122 minecraft:tuff
 fill ~-10 ~-26 ~124 ~-5 ~-26 ~124 minecraft:stone
 fill ~-4 ~-26 ~124 ~-3 ~-26 ~124 minecraft:tuff
-fill ~-9 ~-26 ~125 ~-4 ~-26 ~125 minecraft:stone
 fill ~-3 ~-26 ~125 ~-3 ~-26 ~126 minecraft:tuff
 fill ~-7 ~-26 ~126 ~-4 ~-26 ~126 minecraft:stone
 setblock ~-5 ~-26 ~128 minecraft:lantern[hanging=true]

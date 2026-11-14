@@ -546,7 +546,6 @@ fill ~-85 ~-32 ~-95 ~-78 ~-32 ~-95 minecraft:stone
 fill ~-88 ~-32 ~-95 ~-86 ~-32 ~-95 minecraft:andesite
 fill ~-77 ~-32 ~-95 ~-76 ~-32 ~-94 minecraft:deepslate
 fill ~-84 ~-32 ~-94 ~-78 ~-32 ~-94 minecraft:stone
-setblock ~-76 ~-32 ~-93 minecraft:chest
 fill ~-78 ~-32 ~-93 ~-77 ~-31 ~-93 minecraft:deepslate
 fill ~-78 ~-24 ~-93 ~-77 ~-24 ~-93 minecraft:deepslate
 fill ~-84 ~-32 ~-93 ~-79 ~-32 ~-92 minecraft:stone
@@ -634,9 +633,11 @@ fill ~-80 ~-30 ~-109 ~-68 ~-30 ~-109 minecraft:tuff
 fill ~-88 ~-30 ~-109 ~-81 ~-30 ~-108 minecraft:stone
 fill ~-69 ~-30 ~-108 ~-66 ~-30 ~-108 minecraft:deepslate
 fill ~-80 ~-30 ~-108 ~-70 ~-30 ~-108 minecraft:tuff
-fill ~-79 ~-30 ~-107 ~-71 ~-30 ~-107 minecraft:tuff
-fill ~-70 ~-30 ~-107 ~-68 ~-30 ~-107 minecraft:deepslate
 fill ~-88 ~-30 ~-107 ~-80 ~-30 ~-107 minecraft:stone
+setblock ~-70 ~-30 ~-107 minecraft:deepslate
+setblock ~-68 ~-30 ~-107 minecraft:deepslate
+setblock ~-69 ~-30 ~-107 minecraft:coal_ore
+fill ~-79 ~-30 ~-107 ~-71 ~-30 ~-107 minecraft:tuff
 fill ~-88 ~-30 ~-106 ~-78 ~-30 ~-106 minecraft:stone
 fill ~-77 ~-30 ~-106 ~-73 ~-30 ~-106 minecraft:tuff
 fill ~-72 ~-30 ~-106 ~-70 ~-30 ~-106 minecraft:deepslate
@@ -823,7 +824,8 @@ fill ~-88 ~-27 ~-106 ~-82 ~-27 ~-106 minecraft:stone
 fill ~-81 ~-27 ~-106 ~-78 ~-27 ~-106 minecraft:tuff
 fill ~-80 ~-27 ~-105 ~-78 ~-27 ~-105 minecraft:tuff
 fill ~-88 ~-27 ~-105 ~-81 ~-27 ~-104 minecraft:stone
-fill ~-80 ~-27 ~-104 ~-79 ~-27 ~-104 minecraft:tuff
+setblock ~-80 ~-27 ~-104 minecraft:tuff
+setblock ~-79 ~-27 ~-104 minecraft:coal_ore
 fill ~-88 ~-27 ~-103 ~-79 ~-27 ~-101 minecraft:stone
 fill ~-79 ~-27 ~-100 ~-79 ~-23 ~-100 minecraft:deepslate
 setblock ~-58 ~-27 ~-100 minecraft:soul_lantern[hanging=true]
@@ -833,7 +835,8 @@ fill ~-81 ~-27 ~-96 ~-80 ~-24 ~-95 minecraft:deepslate
 fill ~-72 ~-27 ~-95 ~-72 ~-26 ~-95 minecraft:iron_chain[axis=y]
 fill ~-82 ~-27 ~-94 ~-80 ~-25 ~-94 minecraft:deepslate
 fill ~-88 ~-27 ~-94 ~-83 ~-23 ~-93 minecraft:stone
-fill ~-83 ~-27 ~-92 ~-83 ~-23 ~-92 minecraft:deepslate
+setblock ~-83 ~-27 ~-92 minecraft:deepslate
+fill ~-83 ~-25 ~-92 ~-83 ~-23 ~-92 minecraft:deepslate
 fill ~-84 ~-27 ~-90 ~-84 ~-25 ~-90 minecraft:oak_fence
 fill ~-79 ~-27 ~-90 ~-79 ~-23 ~-90 minecraft:deepslate
 fill ~-81 ~-27 ~-90 ~-80 ~-25 ~-90 minecraft:oak_fence
@@ -887,6 +890,7 @@ setblock ~-72 ~-26 ~-98 minecraft:deepslate
 setblock ~-73 ~-26 ~-97 minecraft:sculk
 fill ~-74 ~-26 ~-95 ~-74 ~-26 ~-94 minecraft:deepslate
 setblock ~-75 ~-26 ~-93 minecraft:sculk
+setblock ~-83 ~-26 ~-92 minecraft:coal_ore
 fill ~-75 ~-26 ~-92 ~-75 ~-26 ~-91 minecraft:deepslate
 fill ~-78 ~-26 ~-91 ~-77 ~-24 ~-91 minecraft:deepslate
 fill ~-76 ~-26 ~-91 ~-76 ~-26 ~-89 minecraft:sculk

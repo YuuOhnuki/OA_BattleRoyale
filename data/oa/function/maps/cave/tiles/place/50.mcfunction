@@ -239,13 +239,12 @@ fill ~-152 ~-30 ~8 ~-148 ~-30 ~8 minecraft:andesite
 setblock ~-147 ~-30 ~8 minecraft:stone
 fill ~-140 ~-30 ~8 ~-140 ~-26 ~8 minecraft:stone
 fill ~-152 ~-30 ~9 ~-150 ~-30 ~9 minecraft:andesite
-setblock ~-126 ~-30 ~9 minecraft:coal_ore
 fill ~-141 ~-30 ~9 ~-139 ~-26 ~9 minecraft:stone
 fill ~-141 ~-19 ~9 ~-139 ~-19 ~9 minecraft:stone
 fill ~-149 ~-30 ~9 ~-146 ~-30 ~9 minecraft:stone
+fill ~-126 ~-30 ~9 ~-126 ~-26 ~10 minecraft:stone
 setblock ~-152 ~-30 ~10 minecraft:andesite
 fill ~-141 ~-30 ~10 ~-138 ~-26 ~10 minecraft:stone
-setblock ~-126 ~-30 ~10 minecraft:stone
 fill ~-151 ~-30 ~10 ~-146 ~-30 ~10 minecraft:stone
 fill ~-121 ~-30 ~8 ~-121 ~-26 ~11 minecraft:stone
 fill ~-128 ~-30 ~11 ~-126 ~-26 ~11 minecraft:stone
@@ -288,7 +287,6 @@ fill ~-152 ~-29 ~8 ~-150 ~-29 ~8 minecraft:andesite
 fill ~-149 ~-29 ~8 ~-147 ~-29 ~8 minecraft:stone
 setblock ~-152 ~-29 ~9 minecraft:andesite
 fill ~-151 ~-29 ~9 ~-146 ~-29 ~9 minecraft:stone
-fill ~-126 ~-29 ~9 ~-126 ~-26 ~10 minecraft:stone
 fill ~-152 ~-29 ~10 ~-146 ~-29 ~10 minecraft:stone
 setblock ~-137 ~-29 ~10 minecraft:glow_lichen[west=true]
 fill ~-122 ~-29 ~14 ~-121 ~-26 ~14 minecraft:dripstone_block

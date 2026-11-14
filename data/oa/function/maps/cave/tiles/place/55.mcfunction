@@ -365,11 +365,11 @@ fill ~16 ~-30 ~21 ~17 ~-30 ~21 minecraft:deepslate
 fill ~16 ~-24 ~21 ~17 ~-24 ~21 minecraft:deepslate
 setblock ~18 ~-30 ~22 minecraft:stone
 setblock ~17 ~-30 ~22 minecraft:andesite
-fill ~19 ~-30 ~22 ~39 ~-29 ~22 minecraft:tuff
-fill ~19 ~-27 ~22 ~39 ~-25 ~22 minecraft:tuff
+fill ~19 ~-30 ~22 ~39 ~-25 ~22 minecraft:tuff
 setblock ~19 ~-30 ~23 minecraft:tuff
 setblock ~20 ~-30 ~23 minecraft:gravel
-fill ~22 ~-30 ~23 ~39 ~-25 ~23 minecraft:tuff
+fill ~22 ~-30 ~23 ~39 ~-29 ~23 minecraft:tuff
+fill ~22 ~-27 ~23 ~39 ~-25 ~23 minecraft:tuff
 setblock ~21 ~-30 ~23 minecraft:stone
 fill ~16 ~-30 ~23 ~18 ~-30 ~24 minecraft:stone
 fill ~8 ~-30 ~24 ~9 ~-30 ~24 minecraft:deepslate_bricks
@@ -472,6 +472,7 @@ fill ~25 ~-29 ~10 ~25 ~-20 ~11 minecraft:deepslate
 fill ~24 ~-29 ~12 ~24 ~-20 ~13 minecraft:deepslate
 fill ~23 ~-29 ~12 ~23 ~-20 ~13 minecraft:deepslate_bricks
 fill ~25 ~-29 ~12 ~39 ~-28 ~13 minecraft:stone
+setblock ~13 ~-29 ~13 minecraft:chest
 fill ~37 ~-29 ~14 ~39 ~-29 ~14 minecraft:stone
 fill ~24 ~-29 ~14 ~33 ~-29 ~14 minecraft:stone
 fill ~34 ~-29 ~14 ~36 ~-29 ~14 minecraft:tuff
@@ -526,9 +527,8 @@ fill ~15 ~-29 ~39 ~16 ~-24 ~39 minecraft:tuff
 fill ~24 ~-28 ~14 ~37 ~-28 ~14 minecraft:tuff
 fill ~38 ~-28 ~14 ~39 ~-28 ~14 minecraft:stone
 fill ~23 ~-28 ~15 ~39 ~-20 ~15 minecraft:tuff
-fill ~21 ~-28 ~22 ~39 ~-28 ~22 minecraft:tuff
-setblock ~20 ~-28 ~22 minecraft:coal_ore
-setblock ~19 ~-28 ~22 minecraft:tuff
+setblock ~22 ~-28 ~23 minecraft:coal_ore
+fill ~23 ~-28 ~23 ~39 ~-28 ~23 minecraft:tuff
 fill ~8 ~-28 ~27 ~8 ~-28 ~28 minecraft:glow_lichen[west=true]
 fill ~35 ~-28 ~36 ~36 ~-28 ~36 minecraft:stone
 fill ~25 ~-27 ~12 ~39 ~-27 ~12 minecraft:stone

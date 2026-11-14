@@ -519,6 +519,13 @@ for (x,z) in [(12,4),(12,-4),(-12,4),(-12,-4),(4,12),(-4,12),(4,-12),(-4,-12)]:
     assert get(x,YG+2,z)=='minecraft:air' and get(x,YG+3,z)=='minecraft:air', (x,z,get(x,YG+2,z))
     f='west' if x>=10 else ('east' if x<=-10 else ('north' if z>0 else 'south'))
     put(x,YG+2,z,CHEST(f)); chests.append((x,YG+2,z))
+# --- 1.9.172: 特別チェストを減らす（14→7）。ブロックはそのままで、通常チェストとして登録する ---
+# 並び：中央の宝物庫4（(-6,-6),(6,-6),(-6,6),(6,6)）→ 大要塞の城2 → 砦の廃墟8。宝物庫は対角の2つ、城は1つ、砦は1つおきに残す
+assert len(riches) == 14, len(riches)
+_keep = [0, 3, 4, 6, 8, 10, 12]
+_new_rich = [c for i, c in enumerate(riches) if i in _keep]
+chests += [c for i, c in enumerate(riches) if i not in _keep]
+riches = _new_rich
 # --- 到達性の検算（歩いて行けるか） ---
 from collections import deque
 SOLID=lambda b: b not in ('minecraft:air','minecraft:lava') and 'roots' not in b and 'lantern' not in b
@@ -551,7 +558,7 @@ print("reach",len(seen),"max_r",round(maxr,1),"bad spawn/chest/ore",len(bad_sp),
 print("bad_ch",bad_ch,"bad_sp",bad_sp)
 assert not bad_sp and not bad_ch and not bad_or and maxr<123
 # --- 検算 ---
-assert len(chests)==96 and len(riches)==14 and len(ores)==108
+assert len(chests)==103 and len(riches)==7 and len(ores)==108
 assert not (g[:,:,-1]!=0).any() or True
 # 保存
 np.savez_compressed(f"{ROOT}/source/map_nether_target.npz",grid=g,palette=np.array(pal))

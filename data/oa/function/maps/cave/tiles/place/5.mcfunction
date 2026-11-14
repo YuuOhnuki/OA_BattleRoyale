@@ -33,7 +33,8 @@ fill ~8 ~-33 ~-122 ~14 ~-33 ~-122 minecraft:stone
 fill ~15 ~-33 ~-122 ~39 ~-33 ~-122 minecraft:andesite
 fill ~8 ~-33 ~-121 ~15 ~-33 ~-121 minecraft:stone
 fill ~16 ~-33 ~-121 ~39 ~-33 ~-121 minecraft:andesite
-fill ~8 ~-32 ~-149 ~39 ~-29 ~-130 minecraft:stone
+fill ~8 ~-32 ~-149 ~39 ~-32 ~-130 minecraft:stone
+fill ~8 ~-30 ~-149 ~39 ~-29 ~-130 minecraft:stone
 setblock ~10 ~-32 ~-129 minecraft:andesite
 fill ~12 ~-32 ~-129 ~39 ~-32 ~-129 minecraft:stone
 fill ~12 ~-21 ~-129 ~39 ~-21 ~-129 minecraft:stone
@@ -85,6 +86,10 @@ fill ~35 ~-32 ~-121 ~37 ~-32 ~-121 minecraft:stone
 fill ~9 ~-32 ~-121 ~11 ~-32 ~-121 minecraft:tuff
 fill ~38 ~-32 ~-121 ~39 ~-32 ~-121 minecraft:andesite
 setblock ~8 ~-32 ~-121 minecraft:stone
+fill ~8 ~-31 ~-149 ~39 ~-31 ~-131 minecraft:stone
+fill ~13 ~-31 ~-130 ~39 ~-31 ~-130 minecraft:stone
+setblock ~12 ~-31 ~-130 minecraft:coal_ore
+fill ~8 ~-31 ~-130 ~11 ~-31 ~-130 minecraft:stone
 setblock ~15 ~-31 ~-129 minecraft:tuff
 fill ~16 ~-31 ~-129 ~39 ~-31 ~-128 minecraft:stone
 fill ~18 ~-31 ~-127 ~39 ~-31 ~-127 minecraft:stone
