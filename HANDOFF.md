@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.162 時点）
+# 引き継ぎメモ（1.9.163 時点）
 
 ## 現状
+- 1.9.163：k1/check・k2/check・k3/impact の屋根判定 `positioned over world_surface positioned ~ ~-40.9 ~ unless entity @s[dx=0,dy=40,dz=0]` は、箱が高さ41（dy+1）で上端が最上面+0.1 になり、外の人も常に「屋根の下」だった（1.9.131 から酸性雨・寒波、隕石群も同じ書き方でダメージなし）。−41.9 に直した。
 - 1.9.162：ロビーの飾りは lobby/decor_v162（scripts/gen_lobby_decor_1_9_162.py で生成、build の decor の直後）。戦績ボードの行は `execute if entity @a[tag=oa.bsN]` 付きで召喚。ぴちぴちの跳躍 oa:fish_jump 0.5。練習場の台座は practice/build の各ブロック（11行ずつ）と showcase をずらし（平面図は build を Python でボクセルに展開して確認）、建物の名前の text_display を削除、レイアウト版 1998。練習場メニューの本は2ページ（custom_data practice_book_v162、古い本は practice/book で消して配り直す）、208＝practice/click/clear_items。
 - 1.9.161：保護期間中のチームの名前表示を hideForOtherTeams に（br/grace/start）。補給の予告を tick 3900/6300/8700 に（br/loot/tick。中身の段階は preview の時刻範囲 ..6000/6001..8400/8401.. のまま合う）。災害は disaster/busy の秒の範囲では始めず、#dis_cd を0のまま待つ。補給の着地点は br/supply/place_try（spreadplayers を最大20回）→ ground_ok（#oa:supply_ground、#oa:spawn_clear で足・頭・上、前後左右2ブロック先の2段の段差。草の上なら ground_down で下げる）。特別チェストは chest_site の重み 上位2:通常3、chest_rare で当選率2倍。
 - 1.9.160：特別チェスト（`br.rich`）に金色の粒（br/loot/chest_tick の末尾、0.5秒ごと）と、開封後の札「★ 特別チェスト／開封済み」。空中補給の落下範囲（br/supply/drop）を、縮小後のエリア（第1便 半分80、第2・3便 半分45）から10引いた値に。以前は予告の瞬間の #half（縮小開始時で、縮む前の大きさ）から8引いていた。
