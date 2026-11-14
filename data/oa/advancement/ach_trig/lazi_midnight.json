@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "k": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:player",
+            "minecraft:nbt": "{Tags:[\"oa.tired\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "oa:ach/trig/lazi_midnight"
+  }
+}

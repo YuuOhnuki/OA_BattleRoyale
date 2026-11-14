@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/hotchikisu_kill",
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head"
+    },
+    "title": {
+      "text": "いとりちゅあん"
+    },
+    "description": {
+      "text": "ほちきす：ほちきすの武器で itori0814 をキルした"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

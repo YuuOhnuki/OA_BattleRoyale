@@ -1,19 +1,19 @@
 {
-  "parent": "oa:ach/yuua_counter",
+  "parent": "oa:ach/lazi_kill",
   "display": {
     "icon": {
-      "id": "minecraft:golden_helmet"
+      "id": "minecraft:clock"
     },
     "title": {
-      "text": "帽子の主"
+      "text": "午前0時"
     },
     "description": {
-      "text": "ゆうあ：固有武器を装備したまま3キル連続した"
+      "text": "lazi：息切れしているときに倒された"
     },
-    "frame": "goal",
+    "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
-    "hidden": false
+    "hidden": true
   },
   "criteria": {
     "done": {

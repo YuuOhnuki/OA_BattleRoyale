@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/yuua_kill",
+  "display": {
+    "icon": {
+      "id": "minecraft:red_bed"
+    },
+    "title": {
+      "text": "明日早いので寝ます"
+    },
+    "description": {
+      "text": "ゆうあ：1試合で帽子を被ったのに、一度もキルできなかった"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

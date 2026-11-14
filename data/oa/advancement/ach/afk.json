@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/cat_br",
+  "display": {
+    "icon": {
+      "id": "minecraft:armor_stand"
+    },
+    "title": {
+      "text": "一旦離席"
+    },
+    "description": {
+      "text": "試合中、30秒間動かずに立ち止まった"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

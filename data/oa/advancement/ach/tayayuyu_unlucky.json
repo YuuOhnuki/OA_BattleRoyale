@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/tayayuyu_kill",
+  "display": {
+    "icon": {
+      "id": "minecraft:poisonous_potato"
+    },
+    "title": {
+      "text": "たやゆゆに愛される"
+    },
+    "description": {
+      "text": "たやゆゆ：1試合でハズレの効果を3回引いた"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

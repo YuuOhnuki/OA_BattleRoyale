@@ -5,10 +5,10 @@
       "id": "minecraft:iron_bars"
     },
     "title": {
-      "text": "拘束コンボ"
+      "text": "人が病んでるところみると興奮する"
     },
     "description": {
-      "text": "ほちきす：敵を拘束した"
+      "text": "ほちきす：拘束している敵をキルした"
     },
     "frame": "goal",
     "show_toast": true,

@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/cat_br",
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_chestplate"
+    },
+    "title": {
+      "text": "腹は使い捨てですわ～"
+    },
+    "description": {
+      "text": "固有装備以外の防具を、耐久値0まで使って壊した"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

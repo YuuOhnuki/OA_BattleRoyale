@@ -1,19 +1,19 @@
 {
-  "parent": "oa:ach/nero_decoy",
+  "parent": "oa:ach/hotchikisu_kill",
   "display": {
     "icon": {
-      "id": "minecraft:spider_eye"
+      "id": "minecraft:player_head"
     },
     "title": {
-      "text": "疫病神"
+      "text": "れろのあーるはん"
     },
     "description": {
-      "text": "ネロノワール：固有武器を装備したまま3キル連続した"
+      "text": "ほちきす：ほちきすの武器で NeroNoir9696 をキルした"
     },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": false,
-    "hidden": false
+    "hidden": true
   },
   "criteria": {
     "done": {

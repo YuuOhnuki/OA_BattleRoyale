@@ -5,10 +5,10 @@
       "id": "minecraft:ender_pearl"
     },
     "title": {
-      "text": "身代わりの術"
+      "text": "ビビらせてやる！"
     },
     "description": {
-      "text": "ネロノワール：デコイで攻撃を受け流した"
+      "text": "ネロノワール：身代わりの術で初めて攻撃を受け流した"
     },
     "frame": "goal",
     "show_toast": true,

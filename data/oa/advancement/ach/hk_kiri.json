@@ -1,19 +1,19 @@
 {
-  "parent": "oa:ach/killing_guard",
+  "parent": "oa:ach/hotchikisu_kill",
   "display": {
     "icon": {
-      "id": "minecraft:wither_skeleton_skull"
+      "id": "minecraft:player_head"
     },
     "title": {
-      "text": "呪われし者"
+      "text": "きりんぐしね"
     },
     "description": {
-      "text": "キリング：固有武器を装備したまま3キル連続した"
+      "text": "ほちきす：ほちきすの武器で KiRiSaN_1110 をキルした"
     },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": false,
-    "hidden": false
+    "hidden": true
   },
   "criteria": {
     "done": {

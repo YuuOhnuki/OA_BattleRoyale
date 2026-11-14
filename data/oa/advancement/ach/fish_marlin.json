@@ -1,14 +1,14 @@
 {
-  "parent": "oa:ach/pichi_20s",
+  "parent": "oa:ach/fish_kill",
   "display": {
     "icon": {
-      "id": "minecraft:cod"
+      "id": "minecraft:trident"
     },
     "title": {
-      "text": "大漁旗"
+      "text": "カジキマグロ"
     },
     "description": {
-      "text": "ぴちぴち：固有武器を装備したまま3キル連続した"
+      "text": "ぴちぴち：激流の勢いで敵をキルした"
     },
     "frame": "goal",
     "show_toast": true,

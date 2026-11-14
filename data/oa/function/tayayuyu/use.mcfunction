@@ -7,6 +7,7 @@ execute unless entity @s[tag=oa.db_free_cd] if score @s oa.cd matches 1.. run re
 scoreboard players set @s oa.cd 900
 scoreboard players add @s br.gacha 1
 execute if score @s br.gacha matches 3 run function oa:ach/give {id:"tayayuyu_gacha3",name:"引きの強さ"}
+execute if score @s br.gacha matches 5 run function oa:ach/give {id:"tayayuyu_master",name:"たやゆゆの申し子"}
 scoreboard players operation #gacha_caster oa.tmp = @s oa.id
 scoreboard players add #serial oa.serial 1
 scoreboard players operation #gacha_event oa.tmp = #serial oa.serial
@@ -26,6 +27,9 @@ execute if score #gacha_roll oa.tmp matches 9 run function oa:tayayuyu/mood_all
 execute if score #gacha_roll oa.tmp matches 10 run function oa:tayayuyu/reveal_all
 execute if score #gacha_roll oa.tmp matches 11 run function oa:tayayuyu/hunger_all
 execute if score #gacha_roll oa.tmp matches 12 run function oa:tayayuyu/giant_all
+# 1.9.173: ハズレ（13〜15）を1試合で3回引くと「たやゆゆに愛される」
+execute if score #gacha_roll oa.tmp matches 13..15 run scoreboard players add @s br.a_haz 1
+execute if score #gacha_roll oa.tmp matches 13..15 if score @s br.a_haz matches 3.. run function oa:ach/give {id:"tayayuyu_unlucky",name:"たやゆゆに愛される"}
 execute if score #gacha_roll oa.tmp matches 13 run function oa:tayayuyu/critical
 execute if score #gacha_roll oa.tmp matches 14 run function oa:tayayuyu/stiff
 execute if score #gacha_roll oa.tmp matches 15 run function oa:tayayuyu/exposed

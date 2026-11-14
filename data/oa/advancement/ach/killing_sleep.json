@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/curse_kill",
+  "display": {
+    "icon": {
+      "id": "minecraft:white_bed"
+    },
+    "title": {
+      "text": "そろそろ寝るか...。"
+    },
+    "description": {
+      "text": "キリング：1試合でマスクを被ったのに、一度もキルできなかった"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

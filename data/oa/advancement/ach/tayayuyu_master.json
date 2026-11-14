@@ -5,12 +5,12 @@
       "id": "minecraft:amethyst_shard"
     },
     "title": {
-      "text": "ガチャの申し子"
+      "text": "たやゆゆの申し子"
     },
     "description": {
-      "text": "たやゆゆ：固有武器を装備したまま3キル連続した"
+      "text": "たやゆゆ：1試合でガチャを5回回した"
     },
-    "frame": "goal",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": false

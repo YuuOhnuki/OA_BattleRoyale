@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/nero_decoy",
+  "display": {
+    "icon": {
+      "id": "minecraft:shield"
+    },
+    "title": {
+      "text": "弱さを見せるな、絶対にだ！"
+    },
+    "description": {
+      "text": "ネロノワール：1試合で10回、身代わりの術で攻撃を受け流した"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

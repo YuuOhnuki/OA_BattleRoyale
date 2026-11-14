@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/hotchikisu_kill",
+  "display": {
+    "icon": {
+      "id": "minecraft:player_head"
+    },
+    "title": {
+      "text": "おやすみぴちこたん"
+    },
+    "description": {
+      "text": "ほちきす：ほちきすの武器で pichipichi_256 をキルした"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

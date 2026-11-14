@@ -429,3 +429,14 @@ scoreboard objectives add br.qsneak minecraft.custom:minecraft.crouch_one_cm
 scoreboard objectives add br.qjump minecraft.custom:minecraft.jump
 scoreboard players set #3 br.tmp 3
 function oa:ach/info
+# 1.9.173: 新しい実績の数と位置
+scoreboard objectives add br.a_y1k dummy
+scoreboard objectives add br.a_haz dummy
+scoreboard objectives add br.a_ndec dummy
+scoreboard objectives add br.a_kstr dummy
+scoreboard objectives add br.a_yhold dummy
+scoreboard objectives add br.a_afk dummy
+scoreboard objectives add br.a_px dummy
+scoreboard objectives add br.a_py dummy
+scoreboard objectives add br.a_pz dummy
+function oa:ach/armor_objectives

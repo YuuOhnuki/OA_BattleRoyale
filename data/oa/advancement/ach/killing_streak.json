@@ -1,19 +1,19 @@
 {
-  "parent": "oa:ach/hotchikisu_root",
+  "parent": "oa:ach/killing_guard",
   "display": {
     "icon": {
       "id": "minecraft:arrow"
     },
     "title": {
-      "text": "針山"
+      "text": "走り撃ち"
     },
     "description": {
-      "text": "ほちきす：固有武器を装備したまま3キル連続した"
+      "text": "キリング：3回続けてダメージを無効化した"
     },
-    "frame": "goal",
+    "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": false,
-    "hidden": false
+    "hidden": true
   },
   "criteria": {
     "done": {

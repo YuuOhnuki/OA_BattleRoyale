@@ -1,14 +1,14 @@
 {
-  "parent": "oa:ach/itori_kill",
+  "parent": "oa:ach/yuua_kill",
   "display": {
     "icon": {
-      "id": "minecraft:lightning_rod"
+      "id": "minecraft:gold_ingot"
     },
     "title": {
-      "text": "いとりの申し子"
+      "text": "私こそが企業だ"
     },
     "description": {
-      "text": "いとり：固有武器を装備したまま3キル連続した"
+      "text": "ゆうあ：帽子を被って1試合で3キルした"
     },
     "frame": "goal",
     "show_toast": true,
