@@ -1,5 +1,5 @@
 function oa:combat/select_targets
-data modify storage oa:damage amount set value 4
+data modify storage oa:damage amount set value 2
 data modify storage oa:damage type set value "oa:sonic"
 execute as @e[tag=oa.target,distance=..4] at @s run function oa:combat/gated_damage
 function oa:lazi/ring

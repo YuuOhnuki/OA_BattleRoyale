@@ -1,8 +1,7 @@
-scoreboard players set @s oa.breath 100
-scoreboard players set @s oa.lzn 0
+scoreboard players set @s oa.breath 40
 tag @s add oa.tired
 function oa:ach/give {id:"lazi_tired",name:"すり抜け"}
-effect give @s minecraft:slowness 5 2 true
+effect give @s minecraft:slowness 2 2 true
 playsound minecraft:entity.player.breath player @a[distance=..20] ~ ~ ~ 0.666667 0.7
 playsound minecraft:entity.player.hurt player @s ~ ~ ~ 0.233333 0.8
 particle minecraft:cloud ~ ~1.5 ~ 0.2 0.15 0.2 0.02 12 normal @a[distance=..24]

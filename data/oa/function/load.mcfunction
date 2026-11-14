@@ -10,7 +10,6 @@ scoreboard objectives add oa.cd dummy
 scoreboard objectives add oa.mark dummy
 scoreboard objectives add oa.decoy dummy
 scoreboard objectives add oa.breath dummy
-scoreboard objectives add oa.lzn dummy
 scoreboard objectives add oa.beat dummy
 scoreboard objectives add oa.use minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add oa.skill trigger
