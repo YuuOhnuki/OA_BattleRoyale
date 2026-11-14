@@ -34,6 +34,32 @@ for f in glob.glob('data/oa/function/**/*.mcfunction', recursive=True):
             if m.group(1) not in funcs and '$(' not in line:
                 errors.append(f'参照先なし: {f}:{n}: oa:{m.group(1)}')
 
+# 2b. command names: 各行の先頭と `run` の直後が実在するコマンドであること
+#     （1.9.141〜1.9.153: `run return run [{text:…}]` と tellraw が抜け、関数ごと読み込めなかった）
+COMMANDS = set('''advancement attribute ban ban-ip banlist bossbar clear clone damage data datapack
+debug defaultgamemode deop dialog difficulty effect enchant execute experience fetchprofile fill
+fillbiome forceload function gamemode gamerule give help item jfr kick kill list locate loot me msg
+op pardon pardon-ip particle perf place playsound publish random recipe reload return ride rotate
+save-all save-off save-on say schedule scoreboard seed setblock setidletimeout setworldspawn
+spawnpoint spectate spreadplayers stop stopsound stopwatch summon swing tag team teammsg teleport
+tell tellraw test tick time title tm tp transfer trigger version w waypoint weather whitelist
+worldborder xp'''.split())
+for f in glob.glob('data/**/*.mcfunction', recursive=True):
+    for n, line in enumerate(rd(f).split('\n'), 1):
+        s = line.strip()
+        if not s or s.startswith('#'):
+            continue
+        if s.startswith('$'):
+            s = s[1:].lstrip()
+        heads = [s.split()[0]] + re.findall(r'\brun\s+(\S+)', s)
+        for h in heads:
+            if h not in COMMANDS:
+                errors.append(f'コマンド名: {f}:{n}: {h[:40]}')
+        # 26.3 のブロック状態は {id:"…",properties:{…}}。旧形式 Name/Properties と "id[prop=…]" の文字列は
+        # 実体の読み込みで Serialization errors になる（1.9.122〜1.9.153 の補給の樽・鎖）
+        if re.search(r'\bName:"minecraft:|\bProperties:\{|(block_state|BlockState):"[^"]*\[', s):
+            errors.append(f'ブロック状態の旧形式: {f}:{n}')
+
 # 3. versions
 ver = None
 m = re.search(r'OA バトルロワイヤル (\d+\.\d+\.\d+)', rd('pack.mcmeta'))

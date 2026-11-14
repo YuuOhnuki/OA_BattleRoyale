@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.153 時点）
+# 引き継ぎメモ（1.9.154 時点）
 
 ## 現状
+- 1.9.154：`br/spawn_points/add_here` の2行目で `tellraw @s` が抜けていた（1.9.141 で混入、`run return run [{text:…}]`）。関数ごと読み込めず、開始地点の登録が動かなかった。さらに自動更新が読み込みエラーで巻き戻すため、本番は 1.9.150〜1.9.153 が入らず 1.9.149 のままだった（1.9.141〜1.9.149 は `update.ps1` の `$errs[0].Trim()` の不具合で判定が落ち、誤りを含んだまま入っていた）。`tools/check_release.py` に「行頭と `run` の直後が実在するコマンドか」の検査を追加。`update.ps1` は `$errs = @(…)` に修正（サーバー側のコピーは手で差し替える）。補給の樽・鎖の `block_display` は 26.3 の新形式 `{id:…,properties:…}` に（1.9.134 の `{Name:…,Properties:…}` も誤りだった。本番ログの Serialization errors で判明）。
 - 1.9.131：述語JSONは 26.3 では "condition" でなく "type" が必須。酸性雨・寒波の屋外判定は述語を使わず k1/check・k2/check（world_surface）で行う。
 - 1.9.130：ハズレガチャ3種（critical/stiff/exposed）の冒頭で tayayuyu/self_glow を呼ぶ。発光の管理は oa.gglow。
 - 1.9.129：開始地点の足元判定は #oa:spawn_unsafe_floor（不可）と #oa:spawn_clear（通れるブロックは不可）。br/spawn_points/check と br/spawn_check の2か所。

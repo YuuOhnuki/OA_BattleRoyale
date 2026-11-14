@@ -232,7 +232,7 @@ try {
             Log "Enabled $PackId"
             Start-Sleep -Seconds $cfg.reloadWaitSec
         }
-        $errs = Get-LogErrors $logPos
+        $errs = @(Get-LogErrors $logPos)   # 1件だけのとき文字列になり $errs[0] が1文字になるのを防ぐ
         if ($errs.Count -gt 0 -and $cfg.rollbackOnError -and $hadPack) {
             Log ("Load errors after reload ({0}); rolling back. First: {1}" -f $errs.Count, $errs[0].Trim())
             $bk = Get-ChildItem (Join-Path $Root 'backup') -Directory | Sort-Object LastWriteTime -Descending | Select-Object -First 1
