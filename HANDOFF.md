@@ -31,7 +31,7 @@
 - 1.9.125：実績のタブは oa:ach/root の1つ。カテゴリは cat_br/cat_map/cat_weapon（枝の頭）。隠し実績は関連する枝の中。scripts/gen_ach_1_9_123.py の CATS と a(...) の親を編集して再実行する。
 - 1.9.124：ロビーのチーム羊毛は lobby/build.mcfunction の「TEAM n」の行（地図手前 z=23/29）。選択判定は br/team/select の足元ブロック。旧位置の羊毛は消えないので、反映はロビー更新（oa.admin 14）で再構築する。
 - 1.9.123：実績は scripts/gen_ach_1_9_123.py の表から advancement/ach・ach/list・count_ach・revoke_all を生成。新実績は表に足して再実行し、付与箇所（ach/give呼び出し）を実装する。練習場は ach/give 先頭のガードで無効。
-- 1.9.122：block_display の block_state は 26.3 では文字列（"minecraft:barrel[facing=up,open=false]"）で書く。{Name:..,Properties:..} はエラーになる（br/supply/launch、tayayuyu/bomb_spawn を修正）。
+- 1.9.122（**誤り。1.9.134 で訂正済み**）：プロパティ付きの block_state を文字列で書くとエラー（Serialization errors）になる。正しくは {Name:"minecraft:barrel",Properties:{facing:"up",open:"false"}} の形式。プロパティなしなら文字列でよい。
 - 1.9.121：湧き許可は data/oa/tags/block/ground_spawn_surface.json と spawn_clear.json、loot/random_ground→ground_try（4回試行）。天候は defs の weather と br/weather/gate（#wx）。nbt の文字列表示は interpret:true。ロビーボードの更新時計 #bclock は board/tick が #perf=0 の1秒1回しか呼ばれないので閾値は5。練習場の本は practice/book、dispatch の oa.lobby 201〜207。
 - 1.9.120：ネザー宝物庫は上位4つのみ、thin(chests,58)/thin(riches,10)。地上の起伏は R 60以内なし（damp）。再適用は git checkout 7704f35 -- data/oa/function/map/internal/tiles のあと build_map_1_9_117_relief.py。
 - 1.9.119：補給3回（loot/tick）、補給案内30秒（supply/second の br.sup=..30）、ネザーのチェスト79（build_map_nether.py の thin()）、起伏は build_map_1_9_117_relief.py（replay版を git checkout 7704f35 -- tiles で戻してから適用）と nether relief() をなだらか＋建物ノールに、終盤演出を控えめに、ロビーボードは board_at で原点ずれを検知（board/check,move,clear）。
