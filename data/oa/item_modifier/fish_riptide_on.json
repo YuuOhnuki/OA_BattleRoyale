@@ -10,14 +10,14 @@
       "components": {
         "minecraft:enchantments": {
           "oa:fish": 1,
-          "minecraft:riptide": 3
+          "minecraft:riptide": 2
         },
         "minecraft:enchantment_glint_override": false
       }
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{riptide1916:1b}}"
+      "tag": "{oa:{riptide1916:1b,rip2:1b}}"
     }
   ]
 }
