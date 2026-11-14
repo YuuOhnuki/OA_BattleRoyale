@@ -50,6 +50,7 @@ advancement revoke @s only oa:ach/tayayuyu_kill
 advancement revoke @s only oa:ach/tayayuyu_gacha3
 advancement revoke @s only oa:ach/tayayuyu_master
 advancement revoke @s only oa:ach/tayayuyu_unlucky
+advancement revoke @s only oa:ach/tayayuyu_dqn
 advancement revoke @s only oa:ach/itori_kill
 advancement revoke @s only oa:ach/furoball_blast
 advancement revoke @s only oa:ach/weapon_all

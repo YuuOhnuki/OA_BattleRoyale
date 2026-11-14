@@ -3,6 +3,7 @@ scoreboard players set @s br.hopby 0
 scoreboard players set @s br.gacha 0
 # 1.9.173: 新しい実績の試合ごとの数・印
 scoreboard players set @s br.a_y1k 0
+tag @s remove oa.dqn
 scoreboard players set @s br.a_haz 0
 scoreboard players set @s br.a_ndec 0
 scoreboard players set @s br.a_kstr 0

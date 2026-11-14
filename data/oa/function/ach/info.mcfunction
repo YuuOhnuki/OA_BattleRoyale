@@ -51,6 +51,7 @@ data modify storage oa:ach_info tayayuyu_kill set value {name:"変態の洗礼",
 data modify storage oa:ach_info tayayuyu_gacha3 set value {name:"引きの強さ",desc:"たやゆゆ：1試合でガチャを3回回した"}
 data modify storage oa:ach_info tayayuyu_master set value {name:"たやゆゆの申し子",desc:"たやゆゆ：1試合でガチャを5回回した"}
 data modify storage oa:ach_info tayayuyu_unlucky set value {name:"たやゆゆに愛される",desc:"たやゆゆ：1試合でハズレの効果を3回引いた"}
+data modify storage oa:ach_info tayayuyu_dqn set value {name:"DQNに屈した",desc:"たやゆゆ：自分のガチャで帽子の効果を引き、その帽子を被った人に倒された"}
 data modify storage oa:ach_info itori_kill set value {name:"いとりの一撃",desc:"いとり：初めてキルした"}
 data modify storage oa:ach_info furoball_blast set value {name:"爆風の洗礼",desc:"ふろボール：爆風を敵に当てた"}
 data modify storage oa:ach_info weapon_all set value {name:"武器博士",desc:"10種すべての固有武器で初めてキルした"}

@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.177 時点）
+# 引き継ぎメモ（1.9.178 時点）
 
 ## 現状
+- 1.9.178：実績 tayayuyu_dqn。tayayuyu/hat_all で引いた本人に oa.dqn、advancement/ach_trig/dqn.json（entity_killed_player、倒した人の頭が kind:1）→ ach/trig/dqn。
 - 1.9.177：lazi のマスクに防具力3・防具強度2（item_modifier visual/k3 の set_attributes、replace:false。印 mask_v1177 で既存品にも1回）。
 - 1.9.176：lazi は CT2秒（oa.cd 40）、音波2HP、息切れ30%（oa.breath 40＝鈍足2秒）。1.9.175 の連続回数 oa.lzn は廃止（load からも削除。既存ワールドの目的は残るが未使用）。
 - 1.9.175：lazi の音波4HP、抽選 息切れ25%／攻撃75%、攻撃4連続の次は息切れ（oa.lzn、load で作成、lazi/out_of_breath で0）。

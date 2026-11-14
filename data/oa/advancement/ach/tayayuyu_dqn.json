@@ -1,0 +1,23 @@
+{
+  "parent": "oa:ach/tayayuyu_kill",
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_helmet"
+    },
+    "title": {
+      "text": "DQNに屈した"
+    },
+    "description": {
+      "text": "たやゆゆ：自分のガチャで帽子の効果を引き、その帽子を被った人に倒された"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

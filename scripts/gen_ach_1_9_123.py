@@ -77,6 +77,7 @@ a("tayayuyu_kill", "cat_weapon", "変態の洗礼", "たやゆゆ：初めてキ
 a("tayayuyu_gacha3", "tayayuyu_kill", "引きの強さ", "たやゆゆ：1試合でガチャを3回回した", "nether_star", "goal", False)
 a("tayayuyu_master", "tayayuyu_gacha3", "たやゆゆの申し子", "たやゆゆ：1試合でガチャを5回回した", "amethyst_shard", "challenge", False)
 a("tayayuyu_unlucky", "tayayuyu_kill", "たやゆゆに愛される", "たやゆゆ：1試合でハズレの効果を3回引いた", "poisonous_potato", "goal", False)
+a("tayayuyu_dqn", "tayayuyu_kill", "DQNに屈した", "たやゆゆ：自分のガチャで帽子の効果を引き、その帽子を被った人に倒された", "golden_helmet", "goal", False)
 a("itori_kill", "cat_weapon", "いとりの一撃", "いとり：初めてキルした", "blaze_rod", "task", False)
 a("furoball_blast", "cat_weapon")
 a("weapon_all", "cat_weapon", "武器博士", "10種すべての固有武器で初めてキルした", "beacon", "challenge", True)

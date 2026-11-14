@@ -51,6 +51,7 @@ execute if entity @s[advancements={oa:ach/tayayuyu_kill=true}] run scoreboard pl
 execute if entity @s[advancements={oa:ach/tayayuyu_gacha3=true}] run scoreboard players add @s oa.t_ach 1
 execute if entity @s[advancements={oa:ach/tayayuyu_master=true}] run scoreboard players add @s oa.t_ach 1
 execute if entity @s[advancements={oa:ach/tayayuyu_unlucky=true}] run scoreboard players add @s oa.t_ach 1
+execute if entity @s[advancements={oa:ach/tayayuyu_dqn=true}] run scoreboard players add @s oa.t_ach 1
 execute if entity @s[advancements={oa:ach/itori_kill=true}] run scoreboard players add @s oa.t_ach 1
 execute if entity @s[advancements={oa:ach/furoball_blast=true}] run scoreboard players add @s oa.t_ach 1
 execute if entity @s[advancements={oa:ach/weapon_all=true}] run scoreboard players add @s oa.t_ach 1
