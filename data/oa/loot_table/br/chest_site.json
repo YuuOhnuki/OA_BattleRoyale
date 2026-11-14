@@ -7,7 +7,7 @@
         {
           "type": "minecraft:loot_table",
           "value": "oa:br/chest_upgraded",
-          "weight": 1
+          "weight": 2
         },
         {
           "type": "minecraft:loot_table",

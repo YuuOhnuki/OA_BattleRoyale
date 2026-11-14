@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.160 時点）
+# 引き継ぎメモ（1.9.161 時点）
 
 ## 現状
+- 1.9.161：保護期間中のチームの名前表示を hideForOtherTeams に（br/grace/start）。補給の予告を tick 3900/6300/8700 に（br/loot/tick。中身の段階は preview の時刻範囲 ..6000/6001..8400/8401.. のまま合う）。災害は disaster/busy の秒の範囲では始めず、#dis_cd を0のまま待つ。補給の着地点は br/supply/place_try（spreadplayers を最大20回）→ ground_ok（#oa:supply_ground、#oa:spawn_clear で足・頭・上、前後左右2ブロック先の2段の段差。草の上なら ground_down で下げる）。特別チェストは chest_site の重み 上位2:通常3、chest_rare で当選率2倍。
 - 1.9.160：特別チェスト（`br.rich`）に金色の粒（br/loot/chest_tick の末尾、0.5秒ごと）と、開封後の札「★ 特別チェスト／開封済み」。空中補給の落下範囲（br/supply/drop）を、縮小後のエリア（第1便 半分80、第2・3便 半分45）から10引いた値に。以前は予告の瞬間の #half（縮小開始時で、縮む前の大きさ）から8引いていた。
 - 1.9.159：再補充までの残り時間を、チェストの名前から「開封済み」の札（text_display `br.open_label`）の2行目へ移した（br/loot/open_label が storage oa:br open_label を作り、open_label_all が毎秒札を書き換える。tick 7240 以降は書き換えない。特別チェストの札は `br.open_rich` で対象外。mark_open は `br.open_new` を付けて召喚直後に書き換える）。chest_tick の CustomName の書き換えはやめ、残った名前は br/finish と chest_initial で消す。災害のアクションバー（k1/hit・k2/hit・k4/zone・k5/shake）からダメージ量を外した。
 - 1.9.158：1.9.157 は `ach/info` の2行目（`data modify storage oa:ach_info set value {}`、パスなし）が読み込みエラーで、本番の自動更新に巻き戻された（更新スクリプトの1件のエラーでも巻き戻す修正が正しく働いた）。生成スクリプトからその行を外し、`check_release.py` に「data modify のパスなし」の検査を追加。内容は 1.9.157 と同じ。

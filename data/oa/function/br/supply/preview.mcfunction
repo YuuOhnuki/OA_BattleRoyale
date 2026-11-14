@@ -1,6 +1,6 @@
 tag @s remove br.supply_new
 tag @s add br.supply_wait
-# 1.9.142: 補給は回を追うごとに中身が良くなる（1回目=予告tick4800、2回目=7200、3回目=9600）
+# 1.9.142: 補給は回を追うごとに中身が良くなる。1.9.161 から予告は tick 3900・6300・8700（縮小と重ならない時刻）
 scoreboard players set @s br.suptype 1
 execute if score #time br.time matches 6001..8400 run scoreboard players set @s br.suptype 2
 execute if score #time br.time matches 8401.. run scoreboard players set @s br.suptype 3
