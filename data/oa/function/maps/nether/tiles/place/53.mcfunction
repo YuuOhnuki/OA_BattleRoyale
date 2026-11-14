@@ -367,6 +367,7 @@ fill ~-45 ~-11 ~34 ~-40 ~-11 ~34 minecraft:crimson_nylium
 fill ~-35 ~-11 ~34 ~-35 ~-11 ~35 minecraft:polished_blackstone_bricks
 setblock ~-31 ~-11 ~35 minecraft:polished_blackstone
 setblock ~-31 ~-9 ~35 minecraft:polished_blackstone
+setblock ~-33 ~-11 ~35 minecraft:chest[facing=south,type=single,waterlogged=false]
 fill ~-56 ~-11 ~35 ~-41 ~-11 ~36 minecraft:netherrack
 setblock ~-31 ~-11 ~36 minecraft:polished_blackstone_bricks
 setblock ~-31 ~-9 ~36 minecraft:polished_blackstone_bricks

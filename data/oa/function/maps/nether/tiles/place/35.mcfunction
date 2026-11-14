@@ -755,6 +755,7 @@ setblock ~28 ~-11 ~-49 minecraft:polished_blackstone_bricks
 setblock ~20 ~-11 ~-49 minecraft:smooth_basalt
 fill ~18 ~-11 ~-49 ~19 ~-11 ~-49 minecraft:basalt
 fill ~32 ~-11 ~-49 ~32 ~-11 ~-48 minecraft:polished_blackstone_bricks
+setblock ~30 ~-11 ~-48 minecraft:chest[facing=south,type=single,waterlogged=false]
 fill ~28 ~-11 ~-48 ~28 ~-9 ~-48 minecraft:cracked_polished_blackstone_bricks
 setblock ~28 ~-11 ~-47 minecraft:polished_blackstone_bricks
 setblock ~28 ~-9 ~-47 minecraft:polished_blackstone_bricks
@@ -781,6 +782,7 @@ fill ~10 ~-11 ~-44 ~10 ~-9 ~-44 minecraft:polished_blackstone_bricks
 setblock ~10 ~-7 ~-44 minecraft:polished_blackstone_bricks
 fill ~14 ~-11 ~-44 ~14 ~-9 ~-44 minecraft:cracked_polished_blackstone_bricks
 setblock ~14 ~-7 ~-44 minecraft:cracked_polished_blackstone_bricks
+setblock ~12 ~-11 ~-43 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~10 ~-11 ~-43 minecraft:polished_blackstone
 setblock ~10 ~-7 ~-43 minecraft:polished_blackstone
 setblock ~37 ~-11 ~-42 minecraft:blackstone
@@ -840,6 +842,7 @@ setblock ~17 ~-11 ~-31 minecraft:polished_blackstone
 setblock ~29 ~-11 ~-30 minecraft:polished_blackstone
 setblock ~29 ~-9 ~-30 minecraft:polished_blackstone
 setblock ~35 ~-11 ~-30 minecraft:gilded_blackstone
+setblock ~37 ~-11 ~-30 minecraft:chest[facing=west,type=single,waterlogged=false]
 fill ~29 ~-11 ~-29 ~29 ~-8 ~-29 minecraft:cracked_polished_blackstone_bricks
 setblock ~35 ~-11 ~-28 minecraft:chest[facing=north,type=single,waterlogged=false]
 setblock ~27 ~-11 ~-28 minecraft:redstone_ore

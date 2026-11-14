@@ -688,6 +688,7 @@ fill ~82 ~-11 ~-22 ~83 ~-10 ~-22 minecraft:blackstone
 fill ~73 ~-11 ~-22 ~73 ~-9 ~-22 minecraft:polished_blackstone_bricks
 setblock ~98 ~-11 ~-22 minecraft:polished_blackstone
 setblock ~98 ~-9 ~-22 minecraft:polished_blackstone
+setblock ~96 ~-11 ~-22 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~81 ~-11 ~-22 minecraft:smooth_basalt
 fill ~81 ~-11 ~-21 ~82 ~-11 ~-21 minecraft:netherrack
 fill ~73 ~-11 ~-21 ~73 ~-9 ~-21 minecraft:cracked_polished_blackstone_bricks

@@ -612,6 +612,8 @@ fill ~47 ~-11 ~45 ~47 ~-11 ~49 minecraft:cracked_polished_blackstone_bricks
 setblock ~53 ~-11 ~49 minecraft:chest[facing=south,type=single,waterlogged=false]
 fill ~63 ~-11 ~50 ~63 ~-10 ~50 minecraft:bone_block[axis=y]
 setblock ~53 ~-11 ~51 minecraft:gilded_blackstone
+setblock ~55 ~-11 ~51 minecraft:chest[facing=west,type=single,waterlogged=false]
+setblock ~53 ~-11 ~53 minecraft:chest[facing=north,type=single,waterlogged=false]
 setblock ~50 ~-11 ~54 minecraft:polished_blackstone
 setblock ~56 ~-11 ~54 minecraft:polished_blackstone_bricks
 setblock ~56 ~-9 ~54 minecraft:polished_blackstone_bricks

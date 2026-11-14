@@ -349,6 +349,7 @@ setblock ~-45 ~-11 ~-23 minecraft:red_nether_bricks
 setblock ~-47 ~-11 ~-23 minecraft:cracked_nether_bricks
 setblock ~-35 ~-11 ~-23 minecraft:polished_blackstone
 setblock ~-35 ~-9 ~-23 minecraft:polished_blackstone
+setblock ~-33 ~-11 ~-23 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~-48 ~-11 ~-23 minecraft:nether_bricks
 setblock ~-48 ~-8 ~-23 minecraft:nether_bricks
 setblock ~-35 ~-11 ~-22 minecraft:polished_blackstone_bricks

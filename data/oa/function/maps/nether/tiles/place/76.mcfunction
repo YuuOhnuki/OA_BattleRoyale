@@ -519,6 +519,7 @@ fill ~45 ~-11 ~77 ~45 ~-10 ~77 minecraft:cracked_polished_blackstone_bricks
 fill ~49 ~-11 ~77 ~49 ~-10 ~77 minecraft:polished_blackstone_bricks
 fill ~49 ~-11 ~78 ~49 ~-9 ~78 minecraft:cracked_polished_blackstone_bricks
 setblock ~70 ~-11 ~78 minecraft:nether_brick_fence[east=false,north=false,south=false,west=false]
+setblock ~47 ~-11 ~78 minecraft:chest[facing=south,type=single,waterlogged=false]
 fill ~45 ~-11 ~78 ~45 ~-11 ~79 minecraft:polished_blackstone_bricks
 fill ~45 ~-9 ~78 ~45 ~-9 ~79 minecraft:polished_blackstone_bricks
 setblock ~49 ~-11 ~79 minecraft:polished_blackstone

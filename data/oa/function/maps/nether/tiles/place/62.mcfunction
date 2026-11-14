@@ -495,6 +495,7 @@ setblock ~-59 ~-11 ~62 minecraft:crimson_roots
 setblock ~-61 ~-11 ~62 minecraft:crimson_roots
 setblock ~-83 ~-11 ~62 minecraft:polished_blackstone_bricks
 setblock ~-83 ~-9 ~62 minecraft:polished_blackstone_bricks
+setblock ~-81 ~-11 ~62 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~-62 ~-11 ~63 minecraft:basalt
 fill ~-83 ~-11 ~63 ~-83 ~-10 ~63 minecraft:cracked_polished_blackstone_bricks
 setblock ~-58 ~-11 ~63 minecraft:crimson_roots

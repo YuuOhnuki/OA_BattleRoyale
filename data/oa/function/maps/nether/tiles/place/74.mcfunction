@@ -428,9 +428,11 @@ fill ~-16 ~-11 ~79 ~-15 ~-11 ~79 minecraft:crimson_nylium
 setblock ~-5 ~-11 ~79 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~-5 ~-11 ~81 minecraft:gilded_blackstone
 fill ~-24 ~-11 ~81 ~-23 ~-11 ~81 minecraft:nether_bricks
+setblock ~-3 ~-11 ~81 minecraft:chest[facing=west,type=single,waterlogged=false]
 setblock ~-21 ~-11 ~81 minecraft:red_nether_bricks
 fill ~5 ~-11 ~82 ~7 ~-11 ~82 minecraft:soul_soil
 setblock ~-22 ~-11 ~83 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock ~-5 ~-11 ~83 minecraft:chest[facing=north,type=single,waterlogged=false]
 fill ~-24 ~-11 ~82 ~-24 ~-11 ~84 minecraft:nether_bricks
 fill ~-19 ~-11 ~83 ~-19 ~-11 ~84 minecraft:crimson_roots
 fill ~5 ~-11 ~83 ~5 ~-11 ~84 minecraft:soul_soil

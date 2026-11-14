@@ -542,6 +542,7 @@ fill ~3 ~-11 ~66 ~3 ~-11 ~67 minecraft:nether_bricks
 setblock ~-17 ~-11 ~67 minecraft:polished_blackstone
 setblock ~0 ~-11 ~67 minecraft:polished_blackstone
 setblock ~-22 ~-11 ~67 minecraft:crimson_roots
+setblock ~-15 ~-11 ~67 minecraft:chest[facing=south,type=single,waterlogged=false]
 fill ~-13 ~-11 ~67 ~-13 ~-9 ~67 minecraft:cracked_polished_blackstone_bricks
 setblock ~1 ~-11 ~67 minecraft:polished_blackstone_bricks
 setblock ~2 ~-11 ~67 minecraft:cracked_polished_blackstone_bricks

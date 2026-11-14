@@ -8,7 +8,8 @@ scoreboard players remove #range br.tmp 4
 execute store result storage oa:br_spawn range int 1 run scoreboard players get #range br.tmp
 execute if score #map oa.mapid matches 0 in oa:br run function oa:br/loot/random_ground with storage oa:br_spawn
 execute if score #map oa.mapid matches 1 in oa:br_nether run function oa:br/loot/random_ground with storage oa:br_spawn
-scoreboard players set #extra_chance br.tmp 0
+# 1.9.156: 序盤（tick 1200〜3600）も50%で追加の抽選（従来は追加なし）
+scoreboard players set #extra_chance br.tmp 500
 execute if score #time br.time matches 4800.. run scoreboard players set #extra_chance br.tmp 650
 execute if score #time br.time matches 7200.. run scoreboard players set #extra_chance br.tmp 1000
 execute if score #time br.time matches 9600.. run scoreboard players set #extra_chance br.tmp 350

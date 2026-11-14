@@ -552,6 +552,7 @@ setblock ~14 ~-11 ~50 minecraft:polished_blackstone
 setblock ~14 ~-9 ~50 minecraft:polished_blackstone
 fill ~25 ~-11 ~50 ~28 ~-11 ~50 minecraft:basalt
 fill ~24 ~-11 ~50 ~24 ~-10 ~50 minecraft:blackstone
+setblock ~16 ~-11 ~50 minecraft:chest[facing=south,type=single,waterlogged=false]
 fill ~39 ~-11 ~50 ~39 ~-9 ~50 minecraft:cracked_polished_blackstone_bricks
 setblock ~35 ~-11 ~50 minecraft:polished_blackstone_bricks
 fill ~18 ~-11 ~50 ~18 ~-9 ~50 minecraft:cracked_polished_blackstone_bricks

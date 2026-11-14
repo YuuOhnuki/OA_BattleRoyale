@@ -622,6 +622,7 @@ fill ~78 ~-11 ~53 ~78 ~-9 ~53 minecraft:cracked_polished_blackstone_bricks
 fill ~82 ~-11 ~53 ~82 ~-10 ~53 minecraft:polished_blackstone_bricks
 setblock ~99 ~-11 ~54 minecraft:soul_soil
 setblock ~97 ~-11 ~54 minecraft:soul_soil
+setblock ~80 ~-11 ~54 minecraft:chest[facing=south,type=single,waterlogged=false]
 fill ~82 ~-11 ~54 ~82 ~-9 ~54 minecraft:cracked_polished_blackstone_bricks
 setblock ~102 ~-11 ~55 minecraft:soul_soil
 fill ~78 ~-11 ~55 ~78 ~-9 ~55 minecraft:polished_blackstone_bricks

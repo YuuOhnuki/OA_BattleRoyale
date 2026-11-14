@@ -512,6 +512,7 @@ fill ~-58 ~-11 ~-84 ~-57 ~-11 ~-84 minecraft:polished_blackstone_bricks
 fill ~-78 ~-11 ~-85 ~-74 ~-11 ~-83 minecraft:warped_wart_block
 setblock ~-60 ~-11 ~-83 minecraft:polished_blackstone_bricks
 setblock ~-83 ~-11 ~-83 minecraft:warped_roots
+setblock ~-58 ~-11 ~-82 minecraft:chest[facing=south,type=single,waterlogged=false]
 fill ~-60 ~-11 ~-82 ~-60 ~-9 ~-82 minecraft:cracked_polished_blackstone_bricks
 setblock ~-60 ~-11 ~-81 minecraft:polished_blackstone_bricks
 fill ~-57 ~-11 ~-80 ~-57 ~-9 ~-80 minecraft:polished_blackstone_bricks

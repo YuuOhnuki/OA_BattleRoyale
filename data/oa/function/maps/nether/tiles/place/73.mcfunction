@@ -441,6 +441,7 @@ setblock ~-53 ~-11 ~80 minecraft:basalt
 setblock ~-44 ~-11 ~80 minecraft:coal_ore
 setblock ~-51 ~-11 ~80 minecraft:basalt
 fill ~-55 ~-11 ~80 ~-54 ~-11 ~80 minecraft:blackstone
+setblock ~-35 ~-11 ~80 minecraft:chest[facing=south,type=single,waterlogged=false]
 setblock ~-43 ~-11 ~80 minecraft:crimson_roots
 fill ~-52 ~-11 ~80 ~-52 ~-11 ~81 minecraft:blackstone
 setblock ~-53 ~-11 ~81 minecraft:smooth_basalt
@@ -448,6 +449,7 @@ setblock ~-54 ~-11 ~81 minecraft:basalt
 fill ~-46 ~-11 ~76 ~-46 ~-11 ~82 minecraft:netherrack
 fill ~-47 ~-11 ~77 ~-47 ~-11 ~82 minecraft:crimson_nylium
 setblock ~-35 ~-11 ~82 minecraft:gilded_blackstone
+setblock ~-33 ~-11 ~82 minecraft:chest[facing=west,type=single,waterlogged=false]
 fill ~-45 ~-11 ~76 ~-45 ~-11 ~83 minecraft:crimson_nylium
 setblock ~-50 ~-11 ~83 minecraft:crimson_roots
 fill ~-47 ~-11 ~83 ~-46 ~-11 ~83 minecraft:netherrack

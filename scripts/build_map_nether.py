@@ -301,6 +301,7 @@ def bastion(x,z):
     put(x,YG+1,z,GB)
     put(x,YG+1,z+2,CHEST('north')); riches.append((x,YG+1,z+2))   # 1.9.113: 砦に上位1＋通常1
     put(x,YG+1,z-2,CHEST('south')); chests.append((x,YG+1,z-2))
+    put(x+2,YG+1,z,CHEST('west')); chests.append((x+2,YG+1,z))   # 1.9.156: 砦に通常をもう1つ（チェスト約1.5倍）
 def tower(x,z):
     b=int(BIO[x+OFF,z+OFF]); door=int(rng2.integers(0,4))
     put(x,YG+1,z,CHEST('south')); chests.append((x,YG+1,z))   # 1.9.113: 見張り塔に通常1
@@ -512,7 +513,7 @@ def thin(lst,keep):
     drop=rng3.choice(len(cand),size=len(lst)-keep,replace=False)
     for i in drop:
         x,y,z=cand[int(i)]; put(x,y,z,'minecraft:air'); lst.remove(cand[int(i)])
-thin(chests,58); thin(riches,10)
+# 1.9.156: 間引きをやめた（チェストを約1.5倍に：通常58→88、上位10→14、計68→102）。thin() は使わない
 # --- 到達性の検算（歩いて行けるか） ---
 from collections import deque
 SOLID=lambda b: b not in ('minecraft:air','minecraft:lava') and 'roots' not in b and 'lantern' not in b
@@ -545,7 +546,7 @@ print("reach",len(seen),"max_r",round(maxr,1),"bad spawn/chest/ore",len(bad_sp),
 print("bad_ch",bad_ch,"bad_sp",bad_sp)
 assert not bad_sp and not bad_ch and not bad_or and maxr<123
 # --- 検算 ---
-assert len(chests)==58 and len(riches)==10 and len(ores)==108
+assert len(chests)==88 and len(riches)==14 and len(ores)==108
 assert not (g[:,:,-1]!=0).any() or True
 # 保存
 np.savez_compressed(f"{ROOT}/source/map_nether_target.npz",grid=g,palette=np.array(pal))

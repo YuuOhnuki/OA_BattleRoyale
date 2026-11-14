@@ -374,6 +374,7 @@ fill ~-61 ~-12 ~-30 ~-61 ~-12 ~-25 minecraft:red_nether_bricks
 fill ~-69 ~-12 ~-30 ~-69 ~-12 ~-25 minecraft:nether_bricks
 fill ~-60 ~-11 ~-56 ~-59 ~-11 ~-56 minecraft:polished_blackstone_bricks
 fill ~-57 ~-11 ~-56 ~-57 ~-9 ~-56 minecraft:polished_blackstone_bricks
+setblock ~-84 ~-11 ~-56 minecraft:chest[facing=west,type=single,waterlogged=false]
 setblock ~-86 ~-11 ~-56 minecraft:gilded_blackstone
 setblock ~-70 ~-11 ~-56 minecraft:warped_roots
 setblock ~-86 ~-11 ~-54 minecraft:chest[facing=north,type=single,waterlogged=false]
