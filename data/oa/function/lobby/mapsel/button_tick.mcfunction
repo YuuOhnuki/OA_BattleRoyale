@@ -3,6 +3,6 @@ execute unless block ~ ~ ~ minecraft:stone_button[powered=true] run return run t
 execute if entity @s[tag=oa.button_latched] run return 0
 tag @s add oa.button_latched
 execute unless entity @p[tag=br.lobby_now,gamemode=!spectator,distance=..6] run return 0
-execute if entity @s[tag=oa.mapsel_br] as @p[tag=br.lobby_now,gamemode=!spectator,distance=..6] run function oa:lobby/mapsel/pick {key:"br"}
-execute if entity @s[tag=oa.mapsel_nether] as @p[tag=br.lobby_now,gamemode=!spectator,distance=..6] run function oa:lobby/mapsel/pick {key:"nether"}
-execute if entity @s[tag=oa.mapsel_cave] as @p[tag=br.lobby_now,gamemode=!spectator,distance=..6] run function oa:lobby/mapsel/pick {key:"cave"}
+# 1.9.168: 前へ／次へ（生成済みのマップを順に回す。lobby/mapsel/step）
+execute if entity @s[tag=oa.mapsel_prev] as @p[tag=br.lobby_now,gamemode=!spectator,distance=..6] run function oa:lobby/mapsel/step {dir:-1}
+execute if entity @s[tag=oa.mapsel_next] as @p[tag=br.lobby_now,gamemode=!spectator,distance=..6] run function oa:lobby/mapsel/step {dir:1}

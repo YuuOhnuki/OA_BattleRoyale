@@ -15,6 +15,16 @@
           "weight": 3
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "oa:br/rich_iron",
+          "weight": 1
+        }
+      ]
     }
   ]
 }
