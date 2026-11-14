@@ -260,6 +260,7 @@ setblock ~36 ~-1 ~24 minecraft:sea_lantern
 setblock ~36 ~-1 ~32 minecraft:sea_lantern
 
 function oa:lobby/decor
+function oa:lobby/decor_v162
 function oa:lobby/map_labels_build
 
 function oa:lobby/gallery/build

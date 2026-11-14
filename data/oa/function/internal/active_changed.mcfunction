@@ -36,7 +36,7 @@ execute if entity @s[tag=oa.curse_blind] run stopsound @s player minecraft:entit
 execute if entity @s[tag=oa.curse_blind] unless entity @s[tag=oa.gacha_mood] run effect clear @s minecraft:blindness
 tag @s remove oa.curse_blind
 
-execute if score @s oa.kind matches 2 run attribute @s minecraft:jump_strength modifier add oa:fish_jump 0.6 add_value
+execute if score @s oa.kind matches 2 run attribute @s minecraft:jump_strength modifier add oa:fish_jump 0.5 add_value
 
 attribute @s minecraft:max_health modifier remove oa:lazi_health
 tag @s remove oa.lazi_hp
