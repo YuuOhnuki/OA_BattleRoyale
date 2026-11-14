@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.159 時点）
+# 引き継ぎメモ（1.9.160 時点）
 
 ## 現状
+- 1.9.160：特別チェスト（`br.rich`）に金色の粒（br/loot/chest_tick の末尾、0.5秒ごと）と、開封後の札「★ 特別チェスト／開封済み」。空中補給の落下範囲（br/supply/drop）を、縮小後のエリア（第1便 半分80、第2・3便 半分45）から10引いた値に。以前は予告の瞬間の #half（縮小開始時で、縮む前の大きさ）から8引いていた。
 - 1.9.159：再補充までの残り時間を、チェストの名前から「開封済み」の札（text_display `br.open_label`）の2行目へ移した（br/loot/open_label が storage oa:br open_label を作り、open_label_all が毎秒札を書き換える。tick 7240 以降は書き換えない。特別チェストの札は `br.open_rich` で対象外。mark_open は `br.open_new` を付けて召喚直後に書き換える）。chest_tick の CustomName の書き換えはやめ、残った名前は br/finish と chest_initial で消す。災害のアクションバー（k1/hit・k2/hit・k4/zone・k5/shake）からダメージ量を外した。
 - 1.9.158：1.9.157 は `ach/info` の2行目（`data modify storage oa:ach_info set value {}`、パスなし）が読み込みエラーで、本番の自動更新に巻き戻された（更新スクリプトの1件のエラーでも巻き戻す修正が正しく働いた）。生成スクリプトからその行を外し、`check_release.py` に「data modify のパスなし」の検査を追加。内容は 1.9.157 と同じ。
 - 1.9.157：表示の改善。ゆーの名前を「ゆー：オーバーワーク」に。補給の便は「第N便 ★」だけ。「今回のお題」「達成するとごほうびがもらえます。」。開始の案内を3行に。通常チェストの名前（画面の題名）に再補充までの残り時間（br/loot/chest_title → chest_tick が1秒に1回 CustomName を書き換え、br/finish で消す）。実績の解除メッセージに説明のホバー（gen_ach が ach/info を書き出し、ach/give → ach/announce）。固有装備を拾ったお知らせに show_item のホバー（inventory/pick_notice。説明文を付けたあとに読み直す）。災害は3秒前から効果音だけでカウントダウン（disaster/warn）、チャットの説明は効果時間と一言だけ。ロビーの展示の看板は `oa.admin 46` で更新。
