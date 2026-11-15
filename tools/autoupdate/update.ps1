@@ -1,9 +1,11 @@
 ﻿# OA Battle Royale: GitHub main -> server datapack auto updater (Windows PowerShell 5.1)
-param([switch]$Force, [switch]$NoReload)
+param([switch]$Force, [switch]$NoReload, [switch]$Apply)
 # 反映のしかた（2026-11-15〜）：config.json の applyMode が "restart"（既定）なら、ファイルを置いたあと
 #   30秒予告してサーバーを再起動する（start-server.bat のループ起動のときだけ。試合中・生成中・練習場に人がいる間は待つ）。
 #   "reload" なら従来どおり /reload。大きなデータパックの /reload は60秒以上サーバーを止め、Paper の watchdog に止められたことがある。
 # -NoReload：/reload は使わない（restart のときはそのまま再起動する。reload のときはファイルを置くだけ）。
+# applyMode "manual"（2026-11-16〜）：push ではファイルを置くだけ。ゲーム内の /oaplugin update apply（プラグインが apply.ps1 を起動）
+#   → update.ps1 -Apply で、置いてある版を30秒予告の再起動で反映する。
 $ErrorActionPreference = 'Stop'
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -15,6 +17,7 @@ $PackId = 'file/' + $cfg.packName
 $DatapacksDir = Join-Path $ServerDir ($cfg.world + '\datapacks')
 $PackDir = Join-Path $DatapacksDir $cfg.packName
 $RestartMode = ($cfg.applyMode -ne 'reload')
+$ManualMode = ($cfg.applyMode -eq 'manual')
 
 function Log([string]$m) {
     if ((Test-Path $LogFile) -and ((Get-Item $LogFile).Length -gt 1MB)) { Move-Item $LogFile ($LogFile + '.old') -Force }
@@ -246,6 +249,21 @@ $lock = $null
 try { $lock = [IO.File]::Open((Join-Path $Root 'update.lock'), 'OpenOrCreate', 'ReadWrite', 'None') } catch { exit 0 }
 try {
     $state = Load-State
+    # 置いたあとにサーバーが起動し直していれば（プラグインの更新の再起動など）、置いてある版はもう読み込まれている
+    if ($state.installedSha -and ($state.loadedSha -ne $state.installedSha) -and $state.installedAt) {
+        $st0 = Get-ServerStartTime
+        if ($st0 -and ($st0 -gt [datetime]::Parse($state.installedAt))) {
+            $state.loadedSha = $state.installedSha; $state.pendingSha = ''; Save-State $state
+            Log "Loaded $($state.installedSha.Substring(0, 7)) (the server restarted after it was installed)."
+        }
+    }
+    if ($Apply) {
+        if ($state.installedSha -and ($state.loadedSha -ne $state.installedSha) -and (Test-Rcon)) {
+            if ((Test-Busy) -or (Test-PracticeUsed)) { Say '[OA] 試合・練習・生成の最中なので、更新は反映しませんでした'; Log 'Manual apply refused: a match, map job or practice is running.'; exit 0 }
+            Apply-ByRestart $state.installedSha $state.installedSha.Substring(0, 7)
+        } else { Log 'Manual apply: nothing to apply (the installed datapack is already loaded).' }
+        exit 0
+    }
     $remote = Get-RemoteSha ($(if ($Force) { '' } else { $state.etag }))
     $target = $remote.sha
     if (-not $target) { $target = $state.pendingSha }          # 304: use pending if any
@@ -259,6 +277,7 @@ try {
             $st = Get-ServerStartTime
             if ($st -and ($st -gt [datetime]::Parse($state.installedAt))) { $state.loadedSha = $target; $state.pendingSha = ''; Save-State $state; Log "Loaded $($target.Substring(0, 7)) (the server restarted after it was installed)."; exit 0 }
         }
+        if ($ManualMode) { $state.etag = $remote.etag; $state.pendingSha = ''; Save-State $state; exit 0 }
         if ($RestartMode -and ($state.loadedSha -ne $target) -and (Test-Rcon)) {
             if ((Test-Busy) -or (Test-PracticeUsed)) { $state.pendingSha = $target; Save-State $state; exit 0 }
             Apply-ByRestart $target $target.Substring(0, 7)
@@ -269,7 +288,7 @@ try {
     if (($target -eq $state.badSha) -and -not $Force) { exit 0 }
     $short = $target.Substring(0, 7)
     $rconOk = (Test-Rcon) -and ($RestartMode -or (-not $NoReload))
-    if ($rconOk -and $packExists -and ((Test-Busy) -or ($RestartMode -and (Test-PracticeUsed)))) {
+    if ((-not $ManualMode) -and $rconOk -and $packExists -and ((Test-Busy) -or ($RestartMode -and (Test-PracticeUsed)))) {
         if ($state.pendingSha -ne $target) { Log "Update $short pending: a match, map job or practice is running."; }
         $state.pendingSha = $target; $state.etag = ''; Save-State $state; exit 0
     }
@@ -332,7 +351,10 @@ try {
         }
     }
 
-    if ($rconOk -and $RestartMode) {
+    if ($ManualMode) {
+        Say "[OA] データパックの更新 ($short) を置きました。管理者が /oaplugin update apply（管理メニュー）で反映します"
+        Log "Installed $short; waiting for manual apply (/oaplugin update apply)."
+    } elseif ($rconOk -and $RestartMode) {
         Apply-ByRestart $target $short
     } elseif ($rconOk) {
         Say "[OA] データパックを更新します ($short)"

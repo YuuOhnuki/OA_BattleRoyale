@@ -14,6 +14,17 @@ world\datapacks\OA_BattleRoyale_auto を差し替え、起動中のサーバー�
 3. サーバーを起動（新しいデータパックは起動時に自動で有効化されます）。
    ※ サーバーを動かしたまま導入しても、RCON が有効なら古いパックを無効化して切り替えます。
 
+■ 手動で反映する（2026-11-16〜、applyMode "manual"）
+- config.json に "applyMode": "manual" を書くと、push のたびに
+  データパックは world\datapacks\OA_BattleRoyale_auto に置くだけ、プラグインの jar は autoupdate\pending\ に置くだけになります。
+- 反映は、ゲーム内の /oaplugin update apply、または管理メニュー（/oamenu →「その他」→「更新を反映する（再起動）」）。
+  プラグインが autoupdate\apply.ps1 を起動し、30秒予告してサーバーを再起動します（jar の入れ替え・起動の確認・失敗なら戻す）。
+  試合中・会場の生成中・練習場に人がいるときは反映できません。
+- 状態は /oaplugin update（反映待ちのデータパック・プラグイン）。
+- 入れ替えるファイル：autoupdate\update.ps1、autoupdate\apply.ps1（新規）、autoupdate\plugin-update.ps1（プラグインのリポジトリ）、
+  config.json に "applyMode": "manual" を1行追加。
+- サーバーが別の理由で再起動したときも、置いてあった版はそのとき読み込まれます。
+
 ■ 反映のしかた（2026-11-15〜：再起動方式）
 - config.json の applyMode が "restart"（書いていなければこちら）なら、データパックを置いたあと
   「30秒後にサーバーを再起動します」と予告して再起動し、起動時に読み込ませます（/reload は使いません）。
