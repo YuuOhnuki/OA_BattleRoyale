@@ -30,6 +30,9 @@ execute unless score @s oa.kind = @s oa.old run function oa:internal/active_chan
 execute if entity @s[tag=oa.db_multi] if score @s oa.kind matches 5 run function oa:debug/read_owner
 execute if score @s oa.kind matches 1 run function oa:yuua/tick
 execute if score @s oa.kind matches 2 run function oa:fish/tick
+# 1.9.187: ぴちぴちで落ちている途中に持ち替えても落下ダメージを受けない
+execute if score @s oa.kind matches 2 run function oa:fish/fall_guard
+execute if entity @s[tag=oa.fish_fall] unless score @s oa.kind matches 2 run function oa:fish/fall_guard
 scoreboard players set @s oa.riptide 0
 execute if items entity @s weapon.offhand minecraft:trident[minecraft:custom_data~{oa:{kind:2}}] run item modify entity @s weapon.offhand oa:fish_riptide_off
 execute if score @s oa.kind matches 3 run function oa:lazi/tick

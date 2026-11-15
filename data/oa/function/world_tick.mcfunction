@@ -10,6 +10,9 @@ scoreboard players remove @e[distance=0..,tag=oa.projectile,scores={oa.wait=1..}
 # Loaded stale decoys disappear even if their owner logged out or the pack reloaded.
 kill @e[distance=0..,tag=oa.decoy]
 execute as @e[distance=0..,type=minecraft:armor_stand,tag=oa.nero_anchor] at @s run function oa:nero/anchor_tick
+# 1.9.187: ネロの印の目印は、印が動かさなくなって3 tick で消す
+execute as @e[distance=0..,type=minecraft:item_display,tag=oa.nero_vis] run scoreboard players remove @s oa.mvis 1
+kill @e[distance=0..,type=minecraft:item_display,tag=oa.nero_vis,scores={oa.mvis=..0}]
 execute as @e[distance=0..,type=minecraft:marker,tag=oa.note_wave] at @s run function oa:lazi/wave_tick
 
 

@@ -4,6 +4,10 @@ function oa:nero/load_owned with storage oa:args
 execute unless data storage oa:position value.dim run return 0
 execute if score #state br.state matches 1 run function oa:br/border/check_saved
 execute if score #state br.state matches 1 if score #inside br.flag matches 0 run return run function oa:nero/border_reject
+# 1.9.187: ほちきすで固められていても帰還できる（拘束を解いてから飛ぶ。解かないと次の tick で元の場所へ戻されていた）
+execute if entity @s[tag=oa.stapled] run scoreboard players set @s oa.root 0
+execute if entity @s[tag=oa.stapled] run function oa:hotchikisu/release_root
+execute store result storage oa:args id int 1 run scoreboard players get @s oa.id
 function oa:nero/teleport_out
 # Prefer actual armor stand; checkpoint is fallback if it is in an unloaded chunk.
 scoreboard players set #moved oa.tmp 0

@@ -252,6 +252,10 @@ scoreboard objectives add oa.fvel dummy
 scoreboard objectives add oa.fid dummy
 # 1.9.186: ネロの印が前に段差を上がってからの回数
 scoreboard objectives add oa.mclimb dummy
+# 1.9.187: ぴちぴちの落下ダメージ無効を、着地してから外すまでの tick
+scoreboard objectives add oa.ffall dummy
+# 1.9.187: ネロの印の目印の残り tick
+scoreboard objectives add oa.mvis dummy
 scoreboard objectives add oa.fhb dummy
 scoreboard players set #f_accel oa.tmp 187500
 scoreboard players set #f_air95 oa.tmp 95
