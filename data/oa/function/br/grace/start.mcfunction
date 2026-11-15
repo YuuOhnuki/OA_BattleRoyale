@@ -13,6 +13,6 @@ execute if score #mode br.mode matches 1 run team modify oa_br7 nametagVisibilit
 execute if score #mode br.mode matches 1 run team modify oa_br8 nametagVisibility hideForOtherTeams
 execute if score #mode br.mode matches 1 run team modify oa_br9 nametagVisibility hideForOtherTeams
 execute if score #mode br.mode matches 1 run team modify oa_br10 nametagVisibility hideForOtherTeams
-tellraw @a[tag=br.playing] {text:"開始1分間はPvP禁止。試合のチーム分けは保持しています",color:"aqua"}
+# 1.9.186: 保護期間の案内は br/intro の中に入れた
 
 team modify oa_brgrace nametagVisibility never

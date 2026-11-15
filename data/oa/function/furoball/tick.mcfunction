@@ -8,6 +8,8 @@ tag @s add oa.f_current
 scoreboard players operation #f_owner oa.tmp = @s oa.fowner
 scoreboard players operation #f_team oa.tmp = @s oa.fteam
 scoreboard players set #f_hit oa.tmp 0
+# 1.9.186: 打ち返し（ガストの火の玉と同じく、殴る・矢を当てると、その人の向いている方へ飛び、その人の弾になる）
+function oa:furoball/deflect_check
 scoreboard players operation @s oa.fvel += #f_accel oa.tmp
 scoreboard players operation @s oa.fvel *= #f_air95 oa.tmp
 scoreboard players operation @s oa.fvel /= #f_air100 oa.tmp

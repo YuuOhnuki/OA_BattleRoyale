@@ -248,6 +248,11 @@ scoreboard objectives add oa.exread dummy
 scoreboard objectives add oa.gallery trigger
 
 scoreboard objectives add oa.fvel dummy
+# 1.9.186: ふろボールの打ち返し（ボールと当たり判定を結ぶ番号、当たり判定の残り tick）
+scoreboard objectives add oa.fid dummy
+# 1.9.186: ネロの印が前に段差を上がってからの回数
+scoreboard objectives add oa.mclimb dummy
+scoreboard objectives add oa.fhb dummy
 scoreboard players set #f_accel oa.tmp 187500
 scoreboard players set #f_air95 oa.tmp 95
 scoreboard players set #f_air100 oa.tmp 100

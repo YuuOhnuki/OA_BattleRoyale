@@ -29,6 +29,9 @@ execute as @e[distance=0..,type=minecraft:block_display,tag=oa.gacha_bomb] at @s
 
 execute if entity @e[distance=0..,type=minecraft:item_display,tag=oa.furoball] run function oa:furoball/border_prepare
 execute as @e[distance=0..,type=minecraft:item_display,tag=oa.furoball] at @s run function oa:furoball/tick
+# 1.9.186: ふろボールの当たり判定は、ボールが動かさなくなって3 tick で消す
+execute as @e[distance=0..,type=minecraft:interaction,tag=oa.furo_hitbox] run scoreboard players remove @s oa.fhb 1
+kill @e[distance=0..,type=minecraft:interaction,tag=oa.furo_hitbox,scores={oa.fhb=..0}]
 
 
 

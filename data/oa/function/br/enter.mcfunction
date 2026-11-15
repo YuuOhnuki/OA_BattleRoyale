@@ -15,7 +15,9 @@ tag @s remove oa.external_slow
 function oa:status/reset
 function oa:internal/cleanup
 function oa:br/clear_inventory
+tag @s add oa.quiet_join
 execute unless entity @s[tag=oa.player] run function oa:test/join
+tag @s remove oa.quiet_join
 scoreboard players set @s oa.cd 0
 scoreboard players set @s oa.death 0
 scoreboard players set @s oa.owner 0

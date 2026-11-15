@@ -14,11 +14,15 @@ scoreboard players set @e[tag=oa.anchor_new,limit=1] oa.mfx 40
 scoreboard players operation @e[tag=oa.anchor_new,limit=1] oa.life = #mark oa.mark
 data modify entity @e[tag=oa.anchor_new,limit=1] Rotation set from entity @s Rotation
 execute store result score #pitch oa.tmp run data get entity @s Rotation[1] 1000
-execute if score #pitch oa.tmp matches ..-1 run data modify entity @e[tag=oa.anchor_new,limit=1] Rotation[1] set value 0.0f
+# 1.9.186: 真下に近い向き（75°以上）なら自分の場所に置く。それ以外は（上・下とも）水平に進む
+data modify entity @e[tag=oa.anchor_new,limit=1] Rotation[1] set value 0.0f
+execute if score #pitch oa.tmp matches 75000.. run scoreboard players set @e[tag=oa.anchor_new,limit=1] oa.steps 0
+scoreboard players set @e[tag=oa.anchor_new,limit=1] oa.mclimb 99
 # Save dimension from the player; individual non-player entity NBT does not guarantee Dimension.
 function oa:nero/save
 function oa:nero/save_owned with storage oa:args
 scoreboard players operation @s oa.mark = #mark oa.mark
 tag @e[tag=oa.anchor_new] remove oa.anchor_new
 playsound minecraft:block.respawn_anchor.charge player @a[distance=..24] ~ ~ ~ 0.84 1.4
-particle minecraft:reverse_portal ~ ~1 ~ 0.3 0.5 0.3 0.03 14 normal @a[distance=..32]
+# 1.9.186: 印の粒は本人にだけ
+particle minecraft:reverse_portal ~ ~1 ~ 0.3 0.5 0.3 0.03 14 normal @s

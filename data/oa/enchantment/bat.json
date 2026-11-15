@@ -29,7 +29,7 @@
           "function": "oa:normal/bat_hit"
         },
         "requirements": {
-          "type": "minecraft:all_of",
+          "type": "minecraft:any_of",
           "terms": [
             {
               "type": "minecraft:all_of",
@@ -38,85 +38,109 @@
                   "type": "minecraft:all_of",
                   "terms": [
                     {
-                      "type": "minecraft:entity_properties",
-                      "entity": "attacker",
-                      "predicate": {
-                        "minecraft:entity_type": "minecraft:player",
-                        "minecraft:nbt": "{Tags:[\"oa.player\"]}"
-                      }
+                      "type": "minecraft:all_of",
+                      "terms": [
+                        {
+                          "type": "minecraft:entity_properties",
+                          "entity": "attacker",
+                          "predicate": {
+                            "minecraft:entity_type": "minecraft:player",
+                            "minecraft:nbt": "{Tags:[\"oa.player\"]}"
+                          }
+                        },
+                        {
+                          "type": "minecraft:entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                            "minecraft:entity_type": "minecraft:player",
+                            "minecraft:nbt": "{Tags:[\"oa.player\"]}"
+                          }
+                        }
+                      ]
                     },
                     {
-                      "type": "minecraft:entity_properties",
-                      "entity": "this",
-                      "predicate": {
-                        "minecraft:entity_type": "minecraft:player",
-                        "minecraft:nbt": "{Tags:[\"oa.player\"]}"
-                      }
+                      "type": "minecraft:all_of",
+                      "terms": [
+                        {
+                          "type": "minecraft:inverted",
+                          "term": {
+                            "type": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                              "minecraft:entity_type": "minecraft:player",
+                              "minecraft:nbt": "{Tags:[\"oa.self_decoy\"]}"
+                            }
+                          }
+                        },
+                        {
+                          "type": "minecraft:inverted",
+                          "term": {
+                            "type": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                              "minecraft:entity_type": "minecraft:player",
+                              "minecraft:nbt": "{Tags:[\"oa.decoy_grace\"]}"
+                            }
+                          }
+                        }
+                      ]
                     }
                   ]
                 },
                 {
-                  "type": "minecraft:all_of",
-                  "terms": [
-                    {
-                      "type": "minecraft:inverted",
-                      "term": {
-                        "type": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                          "minecraft:entity_type": "minecraft:player",
-                          "minecraft:nbt": "{Tags:[\"oa.self_decoy\"]}"
-                        }
-                      }
-                    },
-                    {
-                      "type": "minecraft:inverted",
-                      "term": {
-                        "type": "minecraft:entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                          "minecraft:entity_type": "minecraft:player",
-                          "minecraft:nbt": "{Tags:[\"oa.decoy_grace\"]}"
-                        }
-                      }
+                  "type": "minecraft:inverted",
+                  "term": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "minecraft:entity_type": "minecraft:player",
+                      "minecraft:nbt": "{Tags:[\"br.pvp_grace\"]}"
                     }
-                  ]
+                  }
+                },
+                {
+                  "type": "minecraft:inverted",
+                  "term": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                      "minecraft:nbt": "{Tags:[\"br.pvp_grace\"]}"
+                    }
+                  }
+                },
+                {
+                  "type": "minecraft:damage_source_properties",
+                  "predicate": {
+                    "tags": [
+                      {
+                        "id": [
+                          "minecraft:player_attack"
+                        ],
+                        "expected": true
+                      }
+                    ]
+                  }
                 }
               ]
             },
             {
-              "type": "minecraft:inverted",
-              "term": {
-                "type": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "minecraft:entity_type": "minecraft:player",
-                  "minecraft:nbt": "{Tags:[\"br.pvp_grace\"]}"
-                }
-              }
-            },
-            {
-              "type": "minecraft:inverted",
-              "term": {
-                "type": "minecraft:entity_properties",
-                "entity": "attacker",
-                "predicate": {
-                  "minecraft:nbt": "{Tags:[\"br.pvp_grace\"]}"
-                }
-              }
-            },
-            {
-              "type": "minecraft:damage_source_properties",
-              "predicate": {
-                "tags": [
-                  {
-                    "id": [
-                      "minecraft:player_attack"
-                    ],
-                    "expected": true
+              "type": "minecraft:all_of",
+              "terms": [
+                {
+                  "type": "minecraft:entity_properties",
+                  "entity": "attacker",
+                  "predicate": {
+                    "minecraft:nbt": "{Tags:[\"oa.db_mobs\"]}"
                   }
-                ]
-              }
+                },
+                {
+                  "type": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "minecraft:nbt": "{Tags:[\"oa.debug_mob\"]}"
+                  }
+                }
+              ]
             }
           ]
         }

@@ -1,7 +1,7 @@
 execute unless data storage oa:lobby origin{ready:1b} run return 0
 tag @a remove br.lobby_now
 function oa:lobby/select_area with storage oa:lobby origin
-execute if score #state br.state matches 0 as @a[tag=br.lobby_now,tag=!br.watch,tag=!br.in_lobby,tag=!br.playing] at @s run function oa:br/join
+execute if score #state br.state matches 0 as @a[tag=br.lobby_now,tag=!br.watch,tag=!br.in_lobby,tag=!br.playing,tag=!br.optout] at @s run function oa:br/join
 tag @a[tag=br.lobby_now] add br.in_lobby
 tag @a[tag=!br.lobby_now] remove br.in_lobby
 scoreboard players set @a[tag=!br.lobby_now] br.lcnt 0

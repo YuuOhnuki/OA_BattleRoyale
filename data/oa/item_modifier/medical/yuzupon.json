@@ -8,11 +8,12 @@
     },
     "minecraft:custom_data": {
       "oa_buff": "yuzupon",
-      "medical_v170": true
+      "medical_v170": true,
+      "buff_v1186": true
     },
     "minecraft:max_stack_size": 64,
     "minecraft:food": {
-      "nutrition": 0,
+      "nutrition": 5,
       "saturation": 0,
       "can_always_eat": true
     },
@@ -27,7 +28,7 @@
           "effects": [
             {
               "id": "minecraft:speed",
-              "duration": 200,
+              "duration": 400,
               "amplifier": 0,
               "show_particles": true,
               "show_icon": true
@@ -40,12 +41,17 @@
     "minecraft:item_model": "oa:buff_yuzupon",
     "minecraft:lore": [
       {
-        "text": "飲むと移動速度上昇I（10秒）",
+        "text": "飲むと移動速度上昇I（20秒）",
         "color": "gray",
         "italic": false
       },
       {
         "text": "右クリックで使用／1個消費",
+        "color": "gray",
+        "italic": false
+      },
+      {
+        "text": "満腹度 +2.5",
         "color": "gray",
         "italic": false
       }

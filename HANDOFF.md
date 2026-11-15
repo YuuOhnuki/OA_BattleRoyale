@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.185 時点）
+# 引き継ぎメモ（1.9.186 時点）
 
 ## 現状
+- 1.9.186：参加しない印 br.optout（br/leave で付き br/join で外れる。lobby/tick の自動登録は除外、br/team/select は未登録なら br/join）。admin/players/sit_out・set_team {n}・clear_team、admin/reset/*（プラグインから本人として呼ぶ）。試合開始の案内は br/intro → 初心者サポート → br/intro_end。お題のごほうび loot oa:br/medkit。ふろボールの打ち返し：interaction の当たり判定（oa.furo_hitbox、oa.fid で結ぶ、oa.fhb が0で消える）、furoball/deflect_check・deflect。バフ品 400tick・nutrition 5（印 buff_v1186）。補給 br/supply/far_check（#sup_min2）・cave_chest。毒霧 k4 は中心の目印1つ、半径 #fog_r。ネロの印 #flight 48・mark_step 0.25m×4・mark_clear（#oa:spawn_clear）・mark_climb（oa.mclimb）、粒は oa.mark_owner だけ。練習場 practice/vanilla/*、curse/radar はダミーも（@e[tag=oa.radar_target]）、enchantment/bat に debug_mob の分岐。tools/autoupdate/update.ps1 は applyMode restart（loadedSha・installedAt で置いただけかを見分ける）。
 - 1.9.185：br/team/reset は br.pick を消さない（試合後も保つ）、cleanup/done・abort・br/restore の最後に br/team/sync。保護期間はソロでも oa_brgrace に入れない（live_join・tayayuyu/peace・revive も）、プレイヤー同士のダメージはプラグイン 0.9.0 の GraceProtection（EntityDamageByEntityEvent）。応急キットは consume 1秒・14HP・再生 I 10秒、印 kit_v1185（medical/upgrade）。medical/cap の上限は2tick後に cap_clear で外す（同じ tick に外すと即時回復が満タンまで効いていた）。yuua/strike の相手は @a（死んだプレイヤーは @e で選べない）。
 - 1.9.184：即時リスポーン・実績メッセージ（br/start→finish・cleanup）とゆうあの死亡メッセージ（yuua/silence_*）をディメンションごとに設定（internal/gamerule_match・gamerule_all、引数 rule・value のマクロ）。保存・戻しはオーバーワールドの値。自然回復と br/world/* のスポーン系はまだ実行位置だけ。
 - 1.9.183：ロケーターバーを全ディメンションで OFF（br/locator/all_off、毎秒 br/locator/tick から。true のワールドだけ書き換え）。Paper のゲームルールはワールドごと。同じ理由で、br/start の自然回復・即時リスポーン・実績メッセージ、ゆうあの show_death_messages、br/world/* のスポーン系は、実行位置（多くはオーバーワールド）にしか効いていない（未修正）。

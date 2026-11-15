@@ -8,6 +8,8 @@ tag @s remove br.watch
 execute unless score @s oa.id matches 1.. run function oa:internal/id
 scoreboard players add @s br.pick 0
 scoreboard players add @s br.saved 0
+# 1.9.186: 参加したら「参加しない」印を外す
+tag @s remove br.optout
 tag @s add br.lobby
 function oa:br/team/sync
 tellraw @s {text:"参加登録しました。羊毛でチームを選択できます。",color:"aqua"}

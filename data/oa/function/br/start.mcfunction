@@ -134,9 +134,11 @@ scoreboard players set #pid br.tmp 0
 execute as @a[tag=br.playing] run function oa:ach/assign_pid
 execute as @a[tag=br.playing] run function oa:ach/map_start
 function oa:br/mission/pick
+# 1.9.186: 案内（intro）→ 本人だけの初心者サポート・ヒント → 締め（intro_end）の順で、1つのまとまりにする
+function oa:br/intro
 execute as @a[tag=br.playing] unless entity @s[advancements={oa:ach/first_kill=true}] run function oa:br/beginner/support
 execute as @a[tag=br.playing] run function oa:br/beginner/hint
-function oa:br/intro
+function oa:br/intro_end
 execute as @a[tag=br.playing] at @s run playsound minecraft:entity.ender_dragon.growl player @s ~ ~ ~ 1 1
 
 team modify oa_br1 nametagVisibility hideForOtherTeams

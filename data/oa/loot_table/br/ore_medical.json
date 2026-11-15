@@ -124,11 +124,12 @@
                 },
                 "minecraft:custom_data": {
                   "oa_buff": "doria",
-                  "medical_v170": true
+                  "medical_v170": true,
+                  "buff_v1186": true
                 },
                 "minecraft:max_stack_size": 64,
                 "minecraft:food": {
-                  "nutrition": 0,
+                  "nutrition": 5,
                   "saturation": 0,
                   "can_always_eat": true
                 },
@@ -143,7 +144,7 @@
                       "effects": [
                         {
                           "id": "minecraft:resistance",
-                          "duration": 200,
+                          "duration": 400,
                           "amplifier": 0,
                           "show_particles": true,
                           "show_icon": true
@@ -156,12 +157,17 @@
                 "minecraft:item_model": "oa:buff_doria",
                 "minecraft:lore": [
                   {
-                    "text": "食べると耐性I（10秒）",
+                    "text": "食べると耐性I（20秒）",
                     "color": "gray",
                     "italic": false
                   },
                   {
                     "text": "右クリックで使用／1個消費",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "満腹度 +2.5",
                     "color": "gray",
                     "italic": false
                   }
@@ -186,11 +192,12 @@
                 "minecraft:custom_data": {
                   "oa_buff": "paimon",
                   "medical_v170": true,
-                  "paimon_v1926": true
+                  "paimon_v1926": true,
+                  "buff_v1186": true
                 },
                 "minecraft:max_stack_size": 64,
                 "minecraft:food": {
-                  "nutrition": 0,
+                  "nutrition": 5,
                   "saturation": 0,
                   "can_always_eat": true
                 },
@@ -205,28 +212,28 @@
                       "effects": [
                         {
                           "id": "minecraft:speed",
-                          "duration": 200,
+                          "duration": 400,
                           "amplifier": 1,
                           "show_particles": true,
                           "show_icon": true
                         },
                         {
                           "id": "minecraft:jump_boost",
-                          "duration": 200,
+                          "duration": 400,
                           "amplifier": 1,
                           "show_particles": true,
                           "show_icon": true
                         },
                         {
                           "id": "minecraft:strength",
-                          "duration": 200,
+                          "duration": 400,
                           "amplifier": 1,
                           "show_particles": true,
                           "show_icon": true
                         },
                         {
                           "id": "minecraft:regeneration",
-                          "duration": 200,
+                          "duration": 400,
                           "amplifier": 0,
                           "show_particles": true,
                           "show_icon": true
@@ -239,12 +246,17 @@
                 "minecraft:item_model": "oa:buff_paimon",
                 "minecraft:lore": [
                   {
-                    "text": "速度上昇II・跳躍力上昇II・攻撃力上昇II・再生I（各10秒）",
+                    "text": "速度上昇II・跳躍力上昇II・攻撃力上昇II・再生I（各20秒）",
                     "color": "gray",
                     "italic": false
                   },
                   {
                     "text": "右クリックで使用／1個消費",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "満腹度 +2.5",
                     "color": "gray",
                     "italic": false
                   }
@@ -268,11 +280,12 @@
                 },
                 "minecraft:custom_data": {
                   "oa_buff": "yuzupon",
-                  "medical_v170": true
+                  "medical_v170": true,
+                  "buff_v1186": true
                 },
                 "minecraft:max_stack_size": 64,
                 "minecraft:food": {
-                  "nutrition": 0,
+                  "nutrition": 5,
                   "saturation": 0,
                   "can_always_eat": true
                 },
@@ -287,7 +300,7 @@
                       "effects": [
                         {
                           "id": "minecraft:speed",
-                          "duration": 200,
+                          "duration": 400,
                           "amplifier": 0,
                           "show_particles": true,
                           "show_icon": true
@@ -300,12 +313,17 @@
                 "minecraft:item_model": "oa:buff_yuzupon",
                 "minecraft:lore": [
                   {
-                    "text": "飲むと移動速度上昇I（10秒）",
+                    "text": "飲むと移動速度上昇I（20秒）",
                     "color": "gray",
                     "italic": false
                   },
                   {
                     "text": "右クリックで使用／1個消費",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "満腹度 +2.5",
                     "color": "gray",
                     "italic": false
                   }
@@ -330,11 +348,12 @@
                 "minecraft:custom_data": {
                   "oa_buff": "azuki",
                   "medical_v170": true,
-                  "azuki_v1971": true
+                  "azuki_v1971": true,
+                  "buff_v1186": true
                 },
                 "minecraft:max_stack_size": 64,
                 "minecraft:food": {
-                  "nutrition": 0,
+                  "nutrition": 5,
                   "saturation": 0,
                   "can_always_eat": true
                 },
@@ -349,14 +368,14 @@
                       "effects": [
                         {
                           "id": "minecraft:health_boost",
-                          "duration": 200,
+                          "duration": 400,
                           "amplifier": 0,
                           "show_particles": true,
                           "show_icon": true
                         },
                         {
                           "id": "minecraft:regeneration",
-                          "duration": 200,
+                          "duration": 400,
                           "amplifier": 0,
                           "show_particles": true,
                           "show_icon": true
@@ -382,12 +401,17 @@
                 "minecraft:item_model": "oa:buff_azuki",
                 "minecraft:lore": [
                   {
-                    "text": "体力増強I・再生I（10秒）",
+                    "text": "体力増強I・再生I（20秒）",
                     "color": "gray",
                     "italic": false
                   },
                   {
                     "text": "右クリックで使用／1個消費",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "満腹度 +2.5",
                     "color": "gray",
                     "italic": false
                   }

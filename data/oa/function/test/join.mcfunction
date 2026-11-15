@@ -16,4 +16,5 @@ scoreboard players set @s oa.skill 0
 scoreboard players set @s oa.alt 0
 scoreboard players set @s oa.use 0
 tag @s add oa.player
-tellraw @s {text:"装備テストに参加しました。",color:"aqua"}
+# 1.9.186: 試合開始（br/enter）のときは出さない
+execute unless entity @s[tag=oa.quiet_join] run tellraw @s {text:"装備テストに参加しました。",color:"aqua"}

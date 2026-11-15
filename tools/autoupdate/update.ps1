@@ -1,5 +1,9 @@
 ﻿# OA Battle Royale: GitHub main -> server datapack auto updater (Windows PowerShell 5.1)
 param([switch]$Force, [switch]$NoReload)
+# 反映のしかた（2026-11-15〜）：config.json の applyMode が "restart"（既定）なら、ファイルを置いたあと
+#   30秒予告してサーバーを再起動する（start-server.bat のループ起動のときだけ。試合中・生成中・練習場に人がいる間は待つ）。
+#   "reload" なら従来どおり /reload。大きなデータパックの /reload は60秒以上サーバーを止め、Paper の watchdog に止められたことがある。
+# -NoReload：/reload は使わない（restart のときはそのまま再起動する。reload のときはファイルを置くだけ）。
 $ErrorActionPreference = 'Stop'
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -10,6 +14,7 @@ $StateFile = Join-Path $Root 'state.json'
 $PackId = 'file/' + $cfg.packName
 $DatapacksDir = Join-Path $ServerDir ($cfg.world + '\datapacks')
 $PackDir = Join-Path $DatapacksDir $cfg.packName
+$RestartMode = ($cfg.applyMode -ne 'reload')
 
 function Log([string]$m) {
     if ((Test-Path $LogFile) -and ((Get-Item $LogFile).Length -gt 1MB)) { Move-Item $LogFile ($LogFile + '.old') -Force }
@@ -18,8 +23,11 @@ function Log([string]$m) {
     Write-Host $l
 }
 function Load-State {
-    if (Test-Path $StateFile) { return (Get-Content -Raw -Encoding UTF8 $StateFile | ConvertFrom-Json) }
-    return ([pscustomobject]@{ installedSha = ''; etag = ''; pendingSha = ''; badSha = '' })
+    if (Test-Path $StateFile) { $s = Get-Content -Raw -Encoding UTF8 $StateFile | ConvertFrom-Json }
+    else { $s = [pscustomobject]@{ installedSha = ''; etag = ''; pendingSha = ''; badSha = '' } }
+    # loadedSha：サーバーが実際に読み込んでいる版（restart のとき、置いただけで再起動待ちかを見分ける）
+    if (-not ($s.PSObject.Properties.Name -contains 'loadedSha')) { $s | Add-Member -NotePropertyName loadedSha -NotePropertyValue $s.installedSha }
+    return $s
 }
 function Save-State($s) { $s | ConvertTo-Json | Set-Content -Encoding UTF8 $StateFile }
 
@@ -170,6 +178,68 @@ function Restart-IfPossible {
     try { [void](Invoke-Rcon 'stop' 30000) } catch { }
     Log 'Restarting the server for dimension/type changes (start-server.bat will start it again).'
 }
+# サーバー（java）が起動した時刻。動いていなければ $null
+function Get-ServerStartTime {
+    $port = if ($props['server-port']) { [int]$props['server-port'] } else { 25565 }
+    $c = Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue | Select-Object -First 1
+    if (-not $c) { return $null }
+    try { return (Get-Process -Id $c.OwningProcess -ErrorAction Stop).StartTime } catch { return $null }
+}
+function Test-PracticeUsed { return ((Invoke-Rcon 'execute if entity @a[tag=oa.practice]') -match 'Test passed') }
+function Test-RconQuiet { if (-not $RconEnabled) { return $false }; try { [void](Invoke-Rcon 'list'); return $true } catch { return $false } }
+# 止めたあと、起動し直して RCON に応えるまで待つ
+function Wait-ServerBack([int]$sec) {
+    Start-Sleep -Seconds 15
+    $t = 15
+    while ($t -lt $sec) {
+        if (Test-RconQuiet) { return $true }
+        Start-Sleep -Seconds 5; $t += 5
+    }
+    return $false
+}
+# 予告して再起動し、読み込みエラーがあれば前の版に戻す（restart のとき）
+function Apply-ByRestart([string]$sha, [string]$short) {
+    if (-not (Test-LoopManaged)) {
+        $state.pendingSha = ''; Save-State $state
+        Say "[OA] データパック ($short) を置きました。サーバーを再起動すると反映されます"
+        Log "Installed $short, but the server is not run by start-server.bat: restart it manually to apply."
+        return
+    }
+    Say "[OA] データパックを更新します ($short)。30秒後にサーバーを再起動します（1分ほどで戻ります）"
+    Start-Sleep -Seconds 20
+    Say '[OA] 再起動まで 10 秒'
+    Start-Sleep -Seconds 10
+    if ((Test-Busy) -or (Test-PracticeUsed)) {
+        Say '[OA] 試合・練習などが始まったので、再起動を延期します（終わると自動で再起動します）'
+        $state.pendingSha = $sha; Save-State $state
+        Log "Restart for $short postponed: a match, map job or practice started."
+        return
+    }
+    [void](Invoke-Rcon 'save-all flush' 120000)
+    try { [void](Invoke-Rcon 'stop' 30000) } catch { }
+    $state.pendingSha = ''; Save-State $state
+    Log "Restarting the server to apply $short (start-server.bat will start it again)."
+    $up = Wait-ServerBack 420
+    $errs = @(Get-LogErrors 0)
+    $bk = $null
+    if (Test-Path (Join-Path $Root 'backup')) { $bk = Get-ChildItem (Join-Path $Root 'backup') -Directory | Sort-Object LastWriteTime -Descending | Select-Object -First 1 }
+    if (((-not $up) -or ($errs.Count -gt 0)) -and $cfg.rollbackOnError -and $bk) {
+        if ($up) { Log ("Load errors after restart ({0}); rolling back. First: {1}" -f $errs.Count, $errs[0].Trim()) }
+        else { Log 'The server did not come back within 7 minutes; rolling back the datapack.' }
+        & robocopy $bk.FullName $PackDir /MIR /NFL /NDL /NJH /NJS /NP | Out-Null
+        $state.badSha = $sha; $state.installedSha = ''; $state.loadedSha = ''; Save-State $state
+        if ($up) {
+            Say "[OA] 更新 ($short) に読み込みエラーがあったため、元の版に戻して再起動します"
+            [void](Invoke-Rcon 'save-all flush' 120000)
+            try { [void](Invoke-Rcon 'stop' 30000) } catch { }
+        }
+        Log 'Rolled back to the previous version.'
+        return
+    }
+    if ($errs.Count -gt 0) { Log ("Load errors after restart ({0}), no rollback. First: {1}" -f $errs.Count, $errs[0].Trim()) }
+    $state.loadedSha = $sha; Save-State $state
+    Log "Restarted ($short)."
+}
 
 # ---------- main ----------
 $lock = $null
@@ -183,13 +253,24 @@ try {
     if (-not $target) { exit 0 }
     $packExists = Test-Path (Join-Path $PackDir 'pack.mcmeta')
     if (($target -eq $state.installedSha) -and $packExists -and -not $Force) {
+        # restart のとき：置いてあるが、まだ再起動していない版（延期された）なら、空いていれば再起動する
+        # 置いたあとにサーバーが起動し直していれば（プラグインの更新の再起動など）、もう読み込まれている
+        if ($RestartMode -and ($state.loadedSha -ne $target) -and $state.installedAt) {
+            $st = Get-ServerStartTime
+            if ($st -and ($st -gt [datetime]::Parse($state.installedAt))) { $state.loadedSha = $target; $state.pendingSha = ''; Save-State $state; Log "Loaded $($target.Substring(0, 7)) (the server restarted after it was installed)."; exit 0 }
+        }
+        if ($RestartMode -and ($state.loadedSha -ne $target) -and (Test-Rcon)) {
+            if ((Test-Busy) -or (Test-PracticeUsed)) { $state.pendingSha = $target; Save-State $state; exit 0 }
+            Apply-ByRestart $target $target.Substring(0, 7)
+            exit 0
+        }
         $state.etag = $remote.etag; $state.pendingSha = ''; Save-State $state; exit 0
     }
     if (($target -eq $state.badSha) -and -not $Force) { exit 0 }
     $short = $target.Substring(0, 7)
-    $rconOk = (-not $NoReload) -and (Test-Rcon)
-    if ($rconOk -and (Test-Busy) -and $packExists) {
-        if ($state.pendingSha -ne $target) { Log "Update $short pending: a match or map job is running."; }
+    $rconOk = (Test-Rcon) -and ($RestartMode -or (-not $NoReload))
+    if ($rconOk -and $packExists -and ((Test-Busy) -or ($RestartMode -and (Test-PracticeUsed)))) {
+        if ($state.pendingSha -ne $target) { Log "Update $short pending: a match, map job or practice is running."; }
         $state.pendingSha = $target; $state.etag = ''; Save-State $state; exit 0
     }
     if ((-not $rconOk) -and (-not $cfg.applyWithoutRcon)) { Log 'RCON unavailable and applyWithoutRcon=false: skipped.'; exit 0 }
@@ -237,7 +318,9 @@ try {
     $logPos = Get-LogPos
     & robocopy $stage $PackDir /MIR /NFL /NDL /NJH /NJS /NP | Out-Null
     if ($LASTEXITCODE -ge 8) { throw "robocopy failed ($LASTEXITCODE)" }
-    $state.installedSha = $target; $state.pendingSha = ''; $state.etag = $remote.etag; Save-State $state
+    $state.installedSha = $target; $state.pendingSha = ''; $state.etag = $remote.etag
+    if (-not ($state.PSObject.Properties.Name -contains 'installedAt')) { $state | Add-Member -NotePropertyName installedAt -NotePropertyValue '' }
+    $state.installedAt = (Get-Date).ToString('o'); Save-State $state
     Log "Installed $short into $PackDir"
 
     # retire old manually placed OA packs (zip/folders) so only the managed one is loaded
@@ -249,7 +332,9 @@ try {
         }
     }
 
-    if ($rconOk) {
+    if ($rconOk -and $RestartMode) {
+        Apply-ByRestart $target $short
+    } elseif ($rconOk) {
         Say "[OA] データパックを更新します ($short)"
         [void](Invoke-Rcon 'reload' 90000)   # reload は数十秒かかることがある（返事が来るまでサーバーが止まる）
         Start-Sleep -Seconds $cfg.reloadWaitSec
@@ -276,6 +361,7 @@ try {
             Log 'Rolled back to the previous version.'
         } else {
             if ($errs.Count -gt 0) { Log ("Load errors after reload ({0}), no rollback. First: {1}" -f $errs.Count, $errs[0].Trim()) }
+            $state.loadedSha = $target; Save-State $state
             Log "Reloaded ($short)."
             if ($needsRestart) { Restart-IfPossible }
         }

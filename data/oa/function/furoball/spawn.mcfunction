@@ -5,6 +5,11 @@ scoreboard players operation @e[tag=oa.furo_new] oa.fteam = #f_team oa.tmp
 scoreboard players operation @e[tag=oa.furo_new] br.round = #round br.round
 scoreboard players operation @e[tag=oa.furo_new] oa.fvel = #f_accel oa.tmp
 execute if entity @s[tag=oa.debug] run tag @e[tag=oa.furo_new] add oa.db_projectile
+# 1.9.186: 殴って打ち返すための当たり判定（interaction、0.9ブロック四方）。furoball/tick が毎 tick ボールの位置へ動かす
+summon minecraft:interaction ~ ~-0.45 ~ {Tags:["oa.furo_hitbox","oa.furo_new"],width:0.9f,height:0.9f,response:1b}
+scoreboard players add #fid oa.tmp 1
+scoreboard players operation @e[tag=oa.furo_new] oa.fid = #fid oa.tmp
+scoreboard players set @e[type=minecraft:interaction,tag=oa.furo_new] oa.fhb 3
 tag @e[tag=oa.furo_new] remove oa.furo_new
 
 
