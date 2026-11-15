@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.189 時点）
+# 引き継ぎメモ（1.9.190 時点）
 
 ## 現状
+- 1.9.190：practice/enter の待機中の条件を外した（試合に出ていない人は試合中も入れる）。不参加パッド（brown_wool、ロビー原点から x=-9〜-7・z=32〜34、lobby/tick で br/sit_out）。今あるロビーには lobby/pad_optout（ストレージ oa:lobby optout_pad）が1回置く。lobby/build にも追加。
 - 1.9.189：エリア外の猶予2秒。br/zone/out_track（br/tick から5 tick ごと、br.outt に外にいる tick）、br/zone/player は br.outt 40 以上のときだけダメージ。
 - 1.9.188：武器の毎 tick の処理をプラグイン 0.13.0 へ（weapon/FuroballService・NeroMarkService・RootHoldService・ItoriBoltService）。データパックに残すのは、出す（furoball/spawn・nero/mark_or_return・itori/bolt_spawn・hotchikisu/root_target）と当たったあと（furoball/explode・itori/bolt_hit・kill_effect）と粒。プラグインは当たったら `execute as <弾> at @s run function …` を呼ぶ。ふろボールは #f_owner・#f_team・oa.f_current をプラグインが用意。
 - 1.9.187：ネロの印の目印 item_display（oa.nero_vis、oa.id＝持ち主、oa.mvis が0で消える。プラグインの OwnerOnlyVisibility が本人以外から隠す）、mark_tick の粒は常時 oa.mark_owner に。nero/return は oa.stapled なら release_root してから飛ぶ。ぴちぴちの fish/fall_guard（fall_damage_multiplier oa:fish_fall、predicate oa:airborne、oa.ffall）。combat/select_targets は debug/select_targets のあとに模擬戦の相手を足す（debug 側が最初に全部消すため）。debug/furo_pool・itori/bolt_step に模擬戦の相手。

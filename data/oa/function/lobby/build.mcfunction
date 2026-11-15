@@ -176,8 +176,12 @@ summon minecraft:text_display ~0 ~4.5 ~12 {Tags:["oa.lobby_label"],text:{"text":
 
 fill ~-13 ~-1 ~32 ~-11 ~-1 ~34 minecraft:gray_wool
 summon minecraft:text_display ~-11.5 ~1 ~33.5 {Tags:["oa.lobby_label"],text:{text:"観戦者",color:"gray"},billboard:"center",background:0}
+# 1.9.190: 不参加パッド（茶色の羊毛）。乗ると参加登録を外してロビー・練習場で待てる
+fill ~-9 ~-1 ~32 ~-7 ~-1 ~34 minecraft:brown_wool
+summon minecraft:text_display ~-8 ~1 ~33.5 {Tags:["oa.lobby_label","oa.optout_label"],text:{text:"不参加\n（ロビー・練習場で待つ）",color:"#b07040"},billboard:"center",background:0}
+data modify storage oa:lobby optout_pad set value 1b
 
-summon minecraft:text_display ~0 ~3 ~20 {"Tags":["oa.lobby_label"],"text":{"text":"遊び方\n羊毛でチーム選択／灰色は観戦\nホストが開始パッドに5秒立つと開始\n最初の1分は保護／6分でチェスト補充\n縮小する安置で最後まで生き残ろう！","color":"aqua"},"billboard":"center","background":1073741824,"shadow":true,"line_width":260,"view_range":0.5}
+summon minecraft:text_display ~0 ~3 ~20 {"Tags":["oa.lobby_label"],"text":{"text":"遊び方\n羊毛でチーム選択／灰色は観戦・茶色は不参加\nホストが開始パッドに5秒立つと開始\n最初の1分は保護／6分でチェスト補充\n縮小する安置で最後まで生き残ろう！","color":"aqua"},"billboard":"center","background":1073741824,"shadow":true,"line_width":260,"view_range":0.5}
 summon minecraft:text_display ~0 ~3 ~-28 {"Tags":["oa.lobby_label"],"text":{"text":"アイテム案内\n固有装備は1人1個／右クリックでスキル\n包帯・救急キット：右クリックで回復\n石炭鉱石：食料／レッドストーン鉱石：医療品\n装備ごとの操作はアイテム説明を確認","color":"yellow"},"billboard":"center","background":1073741824,"shadow":true,"line_width":260,"view_range":0.5}
 fill ~-6 ~0 ~-25 ~-6 ~0 ~-23 minecraft:oak_slab[type=bottom,waterlogged=false]
 fill ~-3 ~0 ~-25 ~-3 ~0 ~-23 minecraft:oak_planks

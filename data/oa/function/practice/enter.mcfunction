@@ -1,7 +1,7 @@
 execute if entity @s[tag=oa.practice] run return 0
 execute unless dimension minecraft:overworld run return 0
 execute unless entity @s[tag=br.lobby_now,tag=!br.playing,tag=!oa.debug,gamemode=!spectator] run return run tellraw @s {text:"ロビーから練習場へ入ってください。",color:"yellow"}
-execute unless score #state br.state matches 0 run return run tellraw @s {text:"試合待機中に練習場へ入れます。",color:"yellow"}
+# 1.9.190: 試合中でも、試合に出ていない人（不参加・まだ登録していない人）は入れる（以前は待機中だけ）
 execute if score @s br.saved matches 1 run return run tellraw @s {text:"先に保存中の持ち物を復元してください。",color:"yellow"}
 execute unless data storage oa:practice {layout:1999} run return run function oa:practice/prepare
 execute unless score @s oa.id matches 1.. run function oa:internal/id

@@ -7,6 +7,9 @@ tag @a[tag=!br.lobby_now] remove br.in_lobby
 scoreboard players set @a[tag=!br.lobby_now] br.lcnt 0
 execute if score #state br.state matches 0 as @a[tag=br.lobby_now,tag=br.lobby,tag=br.host] at @s run function oa:lobby/host_tick
 execute if score #state br.state matches 0 as @a[tag=br.lobby_now,tag=!br.watch] at @s if block ~ ~-0.1 ~ minecraft:gray_wool run function oa:lobby/watch
+# 1.9.190: 不参加パッド（茶色の羊毛）に乗ると、参加登録を外す（ロビー・練習場で待てる。羊毛でチームを選ぶと戻る）
+execute if score #state br.state matches 0 as @a[tag=br.lobby_now,tag=br.lobby,tag=!br.playing] at @s if block ~ ~-0.1 ~ minecraft:brown_wool run function oa:br/sit_out
+execute unless data storage oa:lobby {optout_pad:1b} run function oa:lobby/pad_optout with storage oa:lobby origin
 execute as @a[tag=br.lobby_now] at @s run function oa:lobby/comfort
 execute as @a[tag=oa.lobby_safe,tag=!br.lobby_now] run attribute @s minecraft:fall_damage_multiplier modifier remove oa:lobby_fall
 tag @a[tag=oa.lobby_safe,tag=!br.lobby_now] remove oa.lobby_safe
