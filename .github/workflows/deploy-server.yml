@@ -4,6 +4,17 @@ name: deploy-server
 on:
   push:
     branches: [main]
+    # 文書・ツールだけの変更では本番を /reload しない（大きなデータパックの reload は数十秒サーバーを止め、
+    # 2026-11-15 には同じPCでのビルドと重なって watchdog の上限 60 秒を超え、サーバーが止まった）。
+    # 次にデータを変えたコミットで、その時点の HEAD がまとめて入る
+    paths-ignore:
+      - 'docs/**'
+      - '**.md'
+      - 'scripts/**'
+      - 'tools/**'
+      - '.github/**'
+      - 'VALIDATION.json'
+      - 'MAP_*.json'
   workflow_dispatch:
 concurrency:
   group: deploy-server
