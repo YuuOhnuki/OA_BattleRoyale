@@ -62,3 +62,5 @@ execute if score #time br.time matches 10780 as @a[tag=br.playing] at @s run pla
 execute if score #time br.time matches 11940 as @a[tag=br.playing] at @s run playsound minecraft:block.bell.use player @s ~ ~ ~ 1 1
 execute if score #time br.time matches 11960 as @a[tag=br.playing] at @s run playsound minecraft:block.bell.use player @s ~ ~ ~ 1 1
 execute if score #time br.time matches 11980 as @a[tag=br.playing] at @s run playsound minecraft:block.bell.use player @s ~ ~ ~ 1 1
+# 1.9.189: エリアの外にいる時間を5 tick ごとに数える（外に出て2秒はダメージなし）
+execute if score #state br.state matches 1 if score #clock oa.beat matches 0 as @a[tag=br.alive] at @s run function oa:br/zone/out_track

@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.188 時点）
+# 引き継ぎメモ（1.9.189 時点）
 
 ## 現状
+- 1.9.189：エリア外の猶予2秒。br/zone/out_track（br/tick から5 tick ごと、br.outt に外にいる tick）、br/zone/player は br.outt 40 以上のときだけダメージ。
 - 1.9.188：武器の毎 tick の処理をプラグイン 0.13.0 へ（weapon/FuroballService・NeroMarkService・RootHoldService・ItoriBoltService）。データパックに残すのは、出す（furoball/spawn・nero/mark_or_return・itori/bolt_spawn・hotchikisu/root_target）と当たったあと（furoball/explode・itori/bolt_hit・kill_effect）と粒。プラグインは当たったら `execute as <弾> at @s run function …` を呼ぶ。ふろボールは #f_owner・#f_team・oa.f_current をプラグインが用意。
 - 1.9.187：ネロの印の目印 item_display（oa.nero_vis、oa.id＝持ち主、oa.mvis が0で消える。プラグインの OwnerOnlyVisibility が本人以外から隠す）、mark_tick の粒は常時 oa.mark_owner に。nero/return は oa.stapled なら release_root してから飛ぶ。ぴちぴちの fish/fall_guard（fall_damage_multiplier oa:fish_fall、predicate oa:airborne、oa.ffall）。combat/select_targets は debug/select_targets のあとに模擬戦の相手を足す（debug 側が最初に全部消すため）。debug/furo_pool・itori/bolt_step に模擬戦の相手。
 - 1.9.186：参加しない印 br.optout（br/leave で付き br/join で外れる。lobby/tick の自動登録は除外、br/team/select は未登録なら br/join）。admin/players/sit_out・set_team {n}・clear_team、admin/reset/*（プラグインから本人として呼ぶ）。試合開始の案内は br/intro → 初心者サポート → br/intro_end。お題のごほうび loot oa:br/medkit。ふろボールの打ち返し：interaction の当たり判定（oa.furo_hitbox、oa.fid で結ぶ、oa.fhb が0で消える）、furoball/deflect_check・deflect。バフ品 400tick・nutrition 5（印 buff_v1186）。補給 br/supply/far_check（#sup_min2）・cave_chest。毒霧 k4 は中心の目印1つ、半径 #fog_r。ネロの印 #flight 48・mark_step 0.25m×4・mark_clear（#oa:spawn_clear）・mark_climb（oa.mclimb）、粒は oa.mark_owner だけ。練習場 practice/vanilla/*、curse/radar はダミーも（@e[tag=oa.radar_target]）、enchantment/bat に debug_mob の分岐。tools/autoupdate/update.ps1 は applyMode restart（loadedSha・installedAt で置いただけかを見分ける）。

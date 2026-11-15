@@ -69,6 +69,8 @@ scoreboard objectives add br.edge dummy
 scoreboard players set #minus1 br.tmp -1
 
 scoreboard objectives add br.out dummy
+# 1.9.189: エリアの外にいる時間（tick）。2秒までダメージなし
+scoreboard objectives add br.outt dummy
 scoreboard objectives add br.preview dummy
 scoreboard players add #vclock br.tmp 0
 
