@@ -1,6 +1,6 @@
 # 1.9.180: 帽子・マスクを被ったまま倒された・試合が終わった＝被っている期間の終わり。その間にキルしていなければ実績（勝敗に関係なく）
-execute if entity @s[tag=oa.a_on1] if score @s br.st_kill = @s br.a_k1 run function oa:ach/give {id:"yuua_sleep",name:"明日早いので寝ます"}
-execute if entity @s[tag=oa.a_on5] if score @s br.st_kill = @s br.a_k5 run function oa:ach/give {id:"killing_sleep",name:"そろそろ寝るか...。"}
+execute if entity @s[tag=oa.a_on1] if score @s br.a_w1 matches 30.. if score @s br.st_kill = @s br.a_k1 run function oa:ach/give {id:"yuua_sleep",name:"明日早いので寝ます"}
+execute if entity @s[tag=oa.a_on5] if score @s br.a_w5 matches 30.. if score @s br.st_kill = @s br.a_k5 run function oa:ach/give {id:"killing_sleep",name:"そろそろ寝るか...。"}
 tag @s remove oa.a_on1
 tag @s remove oa.a_on5
 # 試合終了時の隠し実績。br.playing 全員を実行者として呼ぶ（br.winner は設定済み）

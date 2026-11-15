@@ -7,4 +7,4 @@ scoreboard players set @s br.dtmr 100
 playsound minecraft:block.beacon.activate block @a[distance=..48] ~ ~ ~ 1.2 1.4
 title @a[tag=br.alive,distance=..6] times 0 30 5
 title @a[tag=br.alive,distance=..6] title {text:" "}
-title @a[tag=br.alive,distance=..6] subtitle {text:"✦ 封印の宝珠を解錠中… 離れると中断",color:"light_purple"}
+title @a[tag=br.alive,distance=..6] subtitle [{text:"✦ 解錠まで あと ",color:"light_purple"},{text:"5",color:"white"},{text:" 秒（離れると中断）",color:"light_purple"}]

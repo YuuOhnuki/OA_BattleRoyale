@@ -5,7 +5,7 @@ execute as @a[tag=br.playing,tag=br.alive] run scoreboard players operation @s b
 execute as @a[tag=br.playing] run function oa:br/result/prep_dmg
 execute as @a[tag=br.playing] run function oa:ach/finish_check
 execute as @a[tag=br.playing] run function oa:br/stats/add
-execute as @a[tag=br.playing] run function oa:ach/stats_check
+# 1.9.181: 通算の実績（oa:ach/stats_check）は、プラグインが通算を書き込んだあとに呼ぶ
 tag @a[tag=br.playing] add oa.last_result
 tag @a[tag=br.playing] add oa.res_view
 function oa:br/result/body

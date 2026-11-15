@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.180 時点）
+# 引き継ぎメモ（1.9.181 時点）
 
 ## 現状
+- 1.9.181：通算（oa.t_games・t_win・t_kill）はプラグインの試合の記録が正本（br/stats/add で足さない、result/show で ach/stats_check を呼ばない。プラグインが書き込んで呼ぶ）。実績 yuua_sleep・killing_sleep は続けて30秒以上（br.a_w1/a_w5）。封印の宝珠の残り秒数の表示を1つずれていたのを修正（disaster/relic/pulse は dtmr/20、開始時に「あと5秒」）。
 - 1.9.180：admin/players/live_join（途中参加）にも tp_fix（TP直後）と tp_fix_all（3tick後から10tickごと7回）、保存の前に internal/id。br/restore の保存データなし → br/restore_missing（br.retry=1 で毎tickのくり返しを止める）。admin/players/spawn_cave_try の高さ判定を体積の選択から Pos[1] のスコアに（大きさ0の防具立てが選ばれず洞窟の途中参加が毎回失敗）、admin/players/spawn の目印は生存者の位置に出す。実績 yuua_sleep・killing_sleep を被っている期間ごとに（br.a_k1/a_k5、oa.a_on1/a_on5）。どれもプラグインの自動テスト（途中参加の検査）で発見・確認。
 - 1.9.179：1.9.178 の advancement/ach_trig/dqn.json が読み込めず、サーバーが起動しない不具合を修正。26.3 の entity_killed_player の player／entity は条件1つ（オブジェクト）で、配列は不可（Paper 26.3 のテスト用サーバーで発見・修正後に起動を確認）。
 - 1.9.178：実績 tayayuyu_dqn。tayayuyu/hat_all で引いた本人に oa.dqn、advancement/ach_trig/dqn.json（entity_killed_player、倒した人の頭が kind:1）→ ach/trig/dqn。

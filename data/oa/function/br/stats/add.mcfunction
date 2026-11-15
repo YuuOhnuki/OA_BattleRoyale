@@ -1,3 +1,2 @@
-scoreboard players add @s oa.t_games 1
-scoreboard players operation @s oa.t_kill += @s br.st_kill
-execute if entity @s[tag=br.winner] run scoreboard players add @s oa.t_win 1
+# 1.9.181: 通算（oa.t_games・oa.t_win・oa.t_kill）はプラグインの試合の記録が正本。ここでは足さない。
+# プラグインが試合を記録したあと、通算を同じスコアに書き込み、oa:ach/stats_check（通算の実績）を呼ぶ。
