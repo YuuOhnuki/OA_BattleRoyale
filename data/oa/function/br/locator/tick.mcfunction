@@ -1,4 +1,4 @@
-gamerule minecraft:locator_bar false
+function oa:br/locator/all_off
 execute as @a[tag=br.loc_hidden] run function oa:br/locator/restore
 execute as @a[tag=br.loc_shown] run function oa:br/locator/restore
 execute as @a[tag=br.loc_transmit] run function oa:br/locator/restore

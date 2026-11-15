@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.182 時点）
+# 引き継ぎメモ（1.9.183 時点）
 
 ## 現状
+- 1.9.183：ロケーターバーを全ディメンションで OFF（br/locator/all_off、毎秒 br/locator/tick から。true のワールドだけ書き換え）。Paper のゲームルールはワールドごと。同じ理由で、br/start の自然回復・即時リスポーン・実績メッセージ、ゆうあの show_death_messages、br/world/* のスポーン系は、実行位置（多くはオーバーワールド）にしか効いていない（未修正）。
 - 1.9.182：軽量化。毎tick全員の持ち物の1マスずつの確認に、先頭で「対象の物がどこにもなければ return 0」の行（`items entity @s container.*` などのワイルドカード）。inventory/check のマスごとの処理は inventory/scan_slots、player_tick の oa.kind の11行は internal/kind_scan に移しただけ（順番も元のまま）。ground/pick は足もと1.5に拾える物がなければ終了、oa.pick の検索に type・distance。鉱石の点は br.ostg の4組に分けて1秒に1回＋生存者から8以内は5tickごと（ご褒美は7以内の人に渡すため）。測り方：テスト用サーバーで `tick query`（smoke_test.py の --max-mspt）と `/debug function oa:tick` → `oa_battleroyale_plugin/tools/trace_summary.py`。残る重いもの：ach/armor_check（毎秒1人50コマンド）、br/loot/chest_tick、br/zone/hud、br/ui/item_name。
 - 1.9.181：通算（oa.t_games・t_win・t_kill）はプラグインの試合の記録が正本（br/stats/add で足さない、result/show で ach/stats_check を呼ばない。プラグインが書き込んで呼ぶ）。実績 yuua_sleep・killing_sleep は続けて30秒以上（br.a_w1/a_w5）。封印の宝珠の残り秒数の表示を1つずれていたのを修正（disaster/relic/pulse は dtmr/20、開始時に「あと5秒」）。
 - 1.9.180：admin/players/live_join（途中参加）にも tp_fix（TP直後）と tp_fix_all（3tick後から10tickごと7回）、保存の前に internal/id。br/restore の保存データなし → br/restore_missing（br.retry=1 で毎tickのくり返しを止める）。admin/players/spawn_cave_try の高さ判定を体積の選択から Pos[1] のスコアに（大きさ0の防具立てが選ばれず洞窟の途中参加が毎回失敗）、admin/players/spawn の目印は生存者の位置に出す。実績 yuua_sleep・killing_sleep を被っている期間ごとに（br.a_k1/a_k5、oa.a_on1/a_on5）。どれもプラグインの自動テスト（途中参加の検査）で発見・確認。

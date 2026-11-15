@@ -150,7 +150,7 @@ scoreboard objectives add br.login_leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add br.login_seen dummy
 scoreboard players add @a br.login_leave 0
 execute as @a run scoreboard players operation @s br.login_seen = @s br.login_leave
-gamerule minecraft:locator_bar false
+function oa:br/locator/all_off
 execute unless score #state br.state matches 1 run function oa:br/border/idle
 scoreboard objectives add br.login_epoch dummy
 scoreboard players add #epoch br.login_epoch 1

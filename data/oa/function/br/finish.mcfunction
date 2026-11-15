@@ -20,7 +20,7 @@ function oa:br/cleanup/finish
 tellraw @a[tag=br.lobby] {text:"試合終了。ロビーへ戻りました。",color:"green"}
 function oa:br/bars/hide
 execute if data storage oa:lobby origin{ready:1b} as @a[tag=br.watch] run function oa:lobby/center with storage oa:lobby origin
-gamerule minecraft:locator_bar false
+function oa:br/locator/all_off
 
 function oa:br/day/restore
 function oa:disaster/clear

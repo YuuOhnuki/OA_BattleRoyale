@@ -1,1 +1,1 @@
-gamerule minecraft:locator_bar false
+function oa:br/locator/all_off
