@@ -1,5 +1,5 @@
-scoreboard players reset * br.pick
-scoreboard players set @a br.pick 0
+# 1.9.185: ロビーで選んだチーム（br.pick）は試合のあとも保つ（ユーザーの指示）。ロビーに戻ると br/team/sync で同じチームに入り直す
+scoreboard players add @a br.pick 0
 tag @a[tag=br.lobby] add br.pick_rearm
 execute as @a[tag=br.playing,tag=!oa.practice] if score @s br.round = #round br.round run team leave @s
 team empty oa_br1

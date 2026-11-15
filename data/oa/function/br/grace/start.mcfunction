@@ -1,9 +1,8 @@
 team add oa_brgrace
 team modify oa_brgrace color dark_aqua
 team modify oa_brgrace friendlyFire false
-scoreboard objectives setdisplay sidebar.team.dark_aqua br.ui0
-execute if score #mode br.mode matches 0 run team join oa_brgrace @a[tag=br.playing]
-execute if score #mode br.mode matches 0 run tag @a[tag=br.playing] add br.native_grace
+# 1.9.185: ソロでも全員を同じチーム（oa_brgrace）に入れない。保護期間中のプレイヤー同士のダメージは、
+# プラグイン（0.9.0〜）が br.pvp_grace を見て止める（データパックの武器は従来どおり各処理で br.pvp_grace を見る）
 execute if score #mode br.mode matches 1 run team modify oa_br1 nametagVisibility hideForOtherTeams
 execute if score #mode br.mode matches 1 run team modify oa_br2 nametagVisibility hideForOtherTeams
 execute if score #mode br.mode matches 1 run team modify oa_br3 nametagVisibility hideForOtherTeams

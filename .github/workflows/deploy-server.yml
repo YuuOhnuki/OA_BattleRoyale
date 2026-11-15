@@ -33,7 +33,9 @@ jobs:
           $st = "D:\MinecraftServer\oa_battle_royale\autoupdate\state.json"
           # 試合中などで保留になった場合は、1分ごとに再試行する（最大約3時間）
           for ($i = 0; $i -lt 180; $i++) {
-            & $u
+            # 2026-11-15 から一時的に -NoReload（ファイルを置くだけ）。本番の /reload が60秒を超えて watchdog に止められるため。
+            # 反映はサーバーの再起動のとき（プラグインの更新の再起動など）。決まったら元に戻すか、再起動方式に変える
+            & $u -NoReload
             $s = $null
             if (Test-Path $st) { $s = Get-Content -Raw -Encoding UTF8 $st | ConvertFrom-Json }
             if (-not $s -or -not $s.pendingSha) { break }

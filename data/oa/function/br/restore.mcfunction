@@ -263,3 +263,5 @@ execute if data storage oa:lobby origin{ready:1b} run function oa:lobby/center w
 function oa:tayayuyu/clear
 
 function oa:furoball/clear_up
+# 1.9.185: ロビーで選んでいたチームに入り直す（待機中のときだけ。試合の後片付け中なら cleanup/done で行う）
+function oa:br/team/sync

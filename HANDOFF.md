@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.184 時点）
+# 引き継ぎメモ（1.9.185 時点）
 
 ## 現状
+- 1.9.185：br/team/reset は br.pick を消さない（試合後も保つ）、cleanup/done・abort・br/restore の最後に br/team/sync。保護期間はソロでも oa_brgrace に入れない（live_join・tayayuyu/peace・revive も）、プレイヤー同士のダメージはプラグイン 0.9.0 の GraceProtection（EntityDamageByEntityEvent）。応急キットは consume 1秒・14HP・再生 I 10秒、印 kit_v1185（medical/upgrade）。medical/cap の上限は2tick後に cap_clear で外す（同じ tick に外すと即時回復が満タンまで効いていた）。yuua/strike の相手は @a（死んだプレイヤーは @e で選べない）。
 - 1.9.184：即時リスポーン・実績メッセージ（br/start→finish・cleanup）とゆうあの死亡メッセージ（yuua/silence_*）をディメンションごとに設定（internal/gamerule_match・gamerule_all、引数 rule・value のマクロ）。保存・戻しはオーバーワールドの値。自然回復と br/world/* のスポーン系はまだ実行位置だけ。
 - 1.9.183：ロケーターバーを全ディメンションで OFF（br/locator/all_off、毎秒 br/locator/tick から。true のワールドだけ書き換え）。Paper のゲームルールはワールドごと。同じ理由で、br/start の自然回復・即時リスポーン・実績メッセージ、ゆうあの show_death_messages、br/world/* のスポーン系は、実行位置（多くはオーバーワールド）にしか効いていない（未修正）。
 - 1.9.182：軽量化。毎tick全員の持ち物の1マスずつの確認に、先頭で「対象の物がどこにもなければ return 0」の行（`items entity @s container.*` などのワイルドカード）。inventory/check のマスごとの処理は inventory/scan_slots、player_tick の oa.kind の11行は internal/kind_scan に移しただけ（順番も元のまま）。ground/pick は足もと1.5に拾える物がなければ終了、oa.pick の検索に type・distance。鉱石の点は br.ostg の4組に分けて1秒に1回＋生存者から8以内は5tickごと（ご褒美は7以内の人に渡すため）。測り方：テスト用サーバーで `tick query`（smoke_test.py の --max-mspt）と `/debug function oa:tick` → `oa_battleroyale_plugin/tools/trace_summary.py`。残る重いもの：ach/armor_check（毎秒1人50コマンド）、br/loot/chest_tick、br/zone/hud、br/ui/item_name。

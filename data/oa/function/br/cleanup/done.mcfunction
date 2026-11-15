@@ -6,3 +6,5 @@ execute if score #mode br.clean matches 1 unless entity @a[tag=br.lobby] run sco
 execute if score #mode br.clean matches 1 as @a[tag=br.lobby,limit=1] at @s run function oa:br/start
 execute if score #mode br.clean matches 2 if score #adv_msg br.flag matches 0 run function oa:internal/gamerule_match {rule:"show_advancement_messages",value:"false"}
 execute if score #mode br.clean matches 2 if score #adv_msg br.flag matches 1 run function oa:internal/gamerule_match {rule:"show_advancement_messages",value:"true"}
+# 1.9.185: 試合のあと、ロビーで選んでいたチームに入り直す（br.pick を保つ）
+execute as @a[tag=br.lobby,tag=!br.playing] run function oa:br/team/sync
