@@ -1,6 +1,17 @@
-execute if score #state br.state matches 1 if score #clock oa.beat matches 0 if score #map oa.mapid matches 0 in oa:br as @e[distance=0..,type=minecraft:marker,tag=br.ore] at @s run function oa:br/mining/node
-execute if score #state br.state matches 1 if score #clock oa.beat matches 0 if score #map oa.mapid matches 1 in oa:br_nether as @e[distance=0..,type=minecraft:marker,tag=br.ore] at @s run function oa:br/mining/node
-execute if score #state br.state matches 1 if score #clock oa.beat matches 0 if score #map oa.mapid matches 2 in oa:br_cave as @e[distance=0..,type=minecraft:marker,tag=br.ore] at @s run function oa:br/mining/node
+# 1.9.182: 軽量化。鉱石の点（約100〜180個）を4組（br.ostg 0〜3）に分け、5tickごとに1組ずつ調べる（どの点も1秒に1回）。
+# 以前は5tickごとに全部を調べていて、その tick だけ重かった。組の番号がない点は、ここで振る
+execute if score #state br.state matches 1 if score #clock oa.beat matches 0 run scoreboard players add #ostg br.tmp 1
+execute if score #ostg br.tmp matches 4.. run scoreboard players set #ostg br.tmp 0
+execute if score #state br.state matches 1 if score #clock oa.beat matches 0 if score #map oa.mapid matches 0 in oa:br as @e[distance=0..,type=minecraft:marker,tag=br.ore] unless score @s br.ostg matches 0..3 run function oa:br/mining/assign_stagger
+execute if score #state br.state matches 1 if score #clock oa.beat matches 0 if score #map oa.mapid matches 1 in oa:br_nether as @e[distance=0..,type=minecraft:marker,tag=br.ore] unless score @s br.ostg matches 0..3 run function oa:br/mining/assign_stagger
+execute if score #state br.state matches 1 if score #clock oa.beat matches 0 if score #map oa.mapid matches 2 in oa:br_cave as @e[distance=0..,type=minecraft:marker,tag=br.ore] unless score @s br.ostg matches 0..3 run function oa:br/mining/assign_stagger
+# 1.9.182: 生存者から8ブロック以内の鉱石の点は、これまでどおり5tickごとに調べる（掘ったご褒美は7ブロック以内の人に渡すので、1秒待つと受け取れないことがある。2回調べても、壊れたあとの点はすぐ終わる）
+execute if score #state br.state matches 1 if score #clock oa.beat matches 0 if score #map oa.mapid matches 0 as @a[tag=br.alive] at @s if dimension oa:br as @e[type=minecraft:marker,tag=br.ore,distance=..8] at @s run function oa:br/mining/node
+execute if score #state br.state matches 1 if score #clock oa.beat matches 0 if score #map oa.mapid matches 1 as @a[tag=br.alive] at @s if dimension oa:br_nether as @e[type=minecraft:marker,tag=br.ore,distance=..8] at @s run function oa:br/mining/node
+execute if score #state br.state matches 1 if score #clock oa.beat matches 0 if score #map oa.mapid matches 2 as @a[tag=br.alive] at @s if dimension oa:br_cave as @e[type=minecraft:marker,tag=br.ore,distance=..8] at @s run function oa:br/mining/node
+execute if score #state br.state matches 1 if score #clock oa.beat matches 0 if score #map oa.mapid matches 0 in oa:br as @e[distance=0..,type=minecraft:marker,tag=br.ore] if score @s br.ostg = #ostg br.tmp at @s run function oa:br/mining/node
+execute if score #state br.state matches 1 if score #clock oa.beat matches 0 if score #map oa.mapid matches 1 in oa:br_nether as @e[distance=0..,type=minecraft:marker,tag=br.ore] if score @s br.ostg = #ostg br.tmp at @s run function oa:br/mining/node
+execute if score #state br.state matches 1 if score #clock oa.beat matches 0 if score #map oa.mapid matches 2 in oa:br_cave as @e[distance=0..,type=minecraft:marker,tag=br.ore] if score @s br.ostg = #ostg br.tmp at @s run function oa:br/mining/node
 execute unless score #state br.state matches 1 if score #clock oa.beat matches 0 if score #map oa.mapid matches 0 in oa:br as @e[distance=0..,type=minecraft:marker,tag=br.ore,scores={br.regen=1..}] at @s run function oa:br/mining/reset_if_spent
 execute unless score #state br.state matches 1 if score #clock oa.beat matches 0 if score #map oa.mapid matches 1 in oa:br_nether as @e[distance=0..,type=minecraft:marker,tag=br.ore,scores={br.regen=1..}] at @s run function oa:br/mining/reset_if_spent
 execute unless score #state br.state matches 1 if score #clock oa.beat matches 0 if score #map oa.mapid matches 2 in oa:br_cave as @e[distance=0..,type=minecraft:marker,tag=br.ore,scores={br.regen=1..}] at @s run function oa:br/mining/reset_if_spent

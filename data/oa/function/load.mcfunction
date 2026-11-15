@@ -442,6 +442,8 @@ scoreboard objectives add br.a_k5 dummy
 # 1.9.181: 帽子・マスクを続けて被っている秒数（30秒以上で実績の対象）
 scoreboard objectives add br.a_w1 dummy
 scoreboard objectives add br.a_w5 dummy
+# 1.9.182: 鉱石の点を4組に分けて調べる（br/loot/tick）
+scoreboard objectives add br.ostg dummy
 scoreboard objectives add br.a_px dummy
 scoreboard objectives add br.a_py dummy
 scoreboard objectives add br.a_pz dummy

@@ -1,3 +1,5 @@
+# 1.9.182: 軽量化。手・もう片方の手・頭に固有武器がなければ、45行を調べずに終わる
+execute unless items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{unique:1b}}] unless items entity @s weapon.offhand *[minecraft:custom_data~{oa:{unique:1b}}] unless items entity @s armor.head *[minecraft:custom_data~{oa:{unique:1b}}] run return 0
 scoreboard players set #held_color oa.tmp 0
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{unique:1b,kind:1}}] run scoreboard players set #held_color oa.tmp 1
 execute if items entity @s weapon.offhand *[minecraft:custom_data~{oa:{unique:1b,kind:1}}] run scoreboard players set #held_color oa.tmp 1

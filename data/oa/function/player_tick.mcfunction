@@ -22,17 +22,10 @@ execute unless entity @s[tag=oa.db_multi] if score @s oa.have matches 0 run func
 # Newly acquired curse is equipped next tick; all effects are resolved from actual slots.
 scoreboard players operation @s oa.old = @s oa.kind
 scoreboard players set @s oa.kind 0
-execute if items entity @s armor.head *[minecraft:custom_data~{oa:{kind:1}}] run scoreboard players set @s oa.kind 1
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{kind:2}}] run scoreboard players set @s oa.kind 2
-execute if items entity @s armor.head *[minecraft:custom_data~{oa:{kind:3}}] run scoreboard players set @s oa.kind 3
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{kind:4}}] run scoreboard players set @s oa.kind 4
-execute if items entity @s armor.head *[minecraft:custom_data~{oa:{kind:5}}] run scoreboard players set @s oa.kind 5
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{kind:6}}] run scoreboard players set @s oa.kind 6
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{kind:7}}] run scoreboard players set @s oa.kind 7
-execute if items entity @s weapon.offhand *[minecraft:custom_data~{oa:{kind:7}}] run scoreboard players set @s oa.kind 7
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{kind:8}}] run scoreboard players set @s oa.kind 8
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{kind:9}}] run scoreboard players set @s oa.kind 9
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{kind:10}}] run scoreboard players set @s oa.kind 10
+# 1.9.182: 軽量化。手・もう片方の手・頭のどれにも OA の装備（custom_data の oa）がなければ、11回の判定（internal/kind_scan）を飛ばす
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{}}] run function oa:internal/kind_scan
+execute unless items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{}}] if items entity @s weapon.offhand *[minecraft:custom_data~{oa:{}}] run function oa:internal/kind_scan
+execute unless items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{}}] unless items entity @s weapon.offhand *[minecraft:custom_data~{oa:{}}] if items entity @s armor.head *[minecraft:custom_data~{oa:{}}] run function oa:internal/kind_scan
 execute unless score @s oa.kind = @s oa.old run function oa:internal/active_changed
 execute if entity @s[tag=oa.db_multi] if score @s oa.kind matches 5 run function oa:debug/read_owner
 execute if score @s oa.kind matches 1 run function oa:yuua/tick

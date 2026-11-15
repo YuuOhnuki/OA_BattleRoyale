@@ -1,3 +1,5 @@
+# 1.9.182: 軽量化。デバッグで書き換えた持ち物（oa_db_patch）がどこにもなければ、マスごとに調べずに終わる
+execute unless items entity @s container.* *[minecraft:custom_data~{oa_db_patch:1b}] unless items entity @s weapon.offhand *[minecraft:custom_data~{oa_db_patch:1b}] unless items entity @s armor.* *[minecraft:custom_data~{oa_db_patch:1b}] run return 0
 execute if items entity @s hotbar.0 *[minecraft:custom_data~{oa_db_patch:1b}] run function oa:debug/restore_slot {slot:"hotbar.0"}
 execute if items entity @s hotbar.1 *[minecraft:custom_data~{oa_db_patch:1b}] run function oa:debug/restore_slot {slot:"hotbar.1"}
 execute if items entity @s hotbar.2 *[minecraft:custom_data~{oa_db_patch:1b}] run function oa:debug/restore_slot {slot:"hotbar.2"}
