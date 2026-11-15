@@ -13,6 +13,8 @@ data modify storage oa:roster_spawn args set from storage oa:br center
 execute store result storage oa:roster_spawn args.range int 1 run scoreboard players get #width oa.tmp
 function oa:admin/players/spawn with storage oa:roster_spawn args
 execute unless score #roster_spawn oa.tmp matches 1 run return run function oa:admin/players/spawn_failed
+# 1.9.180: 開始時（br/start）と同じく、保存の前に ID を付ける（ID がないと保存先が p0 になり、試合後に復元できない）
+execute unless score @s oa.id matches 1.. run function oa:internal/id
 execute unless score @s br.saved matches 1 run function oa:br/save_player
 execute unless score @s br.saved matches 1 run return run function oa:admin/players/spawn_failed
 scoreboard players operation @s br.flag = @s br.pick
@@ -24,6 +26,11 @@ execute if score #map oa.mapid matches 2 in oa:br_cave at @e[distance=0..,type=m
 execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,type=minecraft:armor_stand,tag=oa.admin_spawn]
 execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,type=minecraft:armor_stand,tag=oa.admin_spawn]
 execute if score #map oa.mapid matches 2 in oa:br_cave run kill @e[distance=0..,type=minecraft:armor_stand,tag=oa.admin_spawn]
+# 1.9.180: 途中参加も、開始時（tp_position・tp_fix_all）と同じく地中埋まりを補正する。TPの直後と、3tick後から10tickごとに7回
+execute at @s run function oa:br/tp_fix
+tag @s add br.tpfix
+scoreboard players set #tpfix_t br.flag 0
+schedule function oa:br/tp_fix_all 3t
 function oa:br/enter
 execute if score #time br.time matches 1200.. run effect clear @s minecraft:resistance
 execute if score #time br.time matches 1200.. run tag @s remove br.pvp_grace

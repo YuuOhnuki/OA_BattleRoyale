@@ -11,4 +11,6 @@ scoreboard players set @s br.a_yhold 0
 scoreboard players set @s br.a_afk 0
 tag @s remove oa.a_wore1
 tag @s remove oa.a_wore5
+tag @s remove oa.a_on1
+tag @s remove oa.a_on5
 function oa:ach/name_tags

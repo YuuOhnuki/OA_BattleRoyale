@@ -436,6 +436,9 @@ scoreboard objectives add br.a_ndec dummy
 scoreboard objectives add br.a_kstr dummy
 scoreboard objectives add br.a_yhold dummy
 scoreboard objectives add br.a_afk dummy
+# 1.9.180: 帽子・マスクを被り始めたときのキル数（被っている間にキルしたかを見る）
+scoreboard objectives add br.a_k1 dummy
+scoreboard objectives add br.a_k5 dummy
 scoreboard objectives add br.a_px dummy
 scoreboard objectives add br.a_py dummy
 scoreboard objectives add br.a_pz dummy

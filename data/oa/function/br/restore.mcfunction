@@ -4,7 +4,7 @@ function oa:hotchikisu/cleanup
 tag @s remove br.native_grace
 tag @s remove br.pvp_grace
 tag @s remove br.mining_allowed
-$execute unless data storage oa:br_backup p$(id).position run return run tellraw @s {text:"保存データがありません。復元を中断しました",color:"red"}
+$execute unless data storage oa:br_backup p$(id).position run return run function oa:br/restore_missing
 kill @e[tag=br.restore_item]
 scoreboard players set #prepared br.tmp 0
 $execute if data storage oa:br_backup p$(id).slots.s0 run summon minecraft:item_display ~ ~ ~ {Tags:["br.restore_item","br.slot0"]}

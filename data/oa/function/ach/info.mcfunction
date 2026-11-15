@@ -20,7 +20,7 @@ data modify storage oa:ach_info map_all set value {name:"全マップ制覇",des
 data modify storage oa:ach_info yuua_kill set value {name:"Hi 👋 I'm yuuaHP",desc:"ゆうあ：初めてキルした"}
 data modify storage oa:ach_info yuua_counter set value {name:"今何かしたか？",desc:"ゆうあ：社会的制裁（帽子の反撃）で敵を倒した"}
 data modify storage oa:ach_info yuua_corp set value {name:"私こそが企業だ",desc:"ゆうあ：帽子を被って1試合で3キルした"}
-data modify storage oa:ach_info yuua_sleep set value {name:"明日早いので寝ます",desc:"ゆうあ：1試合で帽子を被ったのに、一度もキルできなかった"}
+data modify storage oa:ach_info yuua_sleep set value {name:"明日早いので寝ます",desc:"ゆうあ：帽子を被ったのに、被っている間に一度もキルできなかった"}
 data modify storage oa:ach_info fish_kill set value {name:"おはようございます",desc:"ぴちぴち：初めてキルした"}
 data modify storage oa:ach_info fish_marlin set value {name:"カジキマグロ",desc:"ぴちぴち：激流の勢いで敵をキルした"}
 data modify storage oa:ach_info pichi_20s set value {name:"僕は4次元です()",desc:"ぴちぴち：敵を20秒間連続で跳ねさせた"}
@@ -33,7 +33,7 @@ data modify storage oa:ach_info nero_decoy10 set value {name:"弱さを見せる
 data modify storage oa:ach_info curse_kill set value {name:"魚と肉と白飯の頭文字取ったらsnsになるな...。",desc:"キリング：初めてキルした"}
 data modify storage oa:ach_info killing_guard set value {name:"やっべ思い出忘れてきた！",desc:"キリング：攻撃を無効化した"}
 data modify storage oa:ach_info killing_streak set value {name:"走り撃ち",desc:"キリング：3回続けてダメージを無効化した"}
-data modify storage oa:ach_info killing_sleep set value {name:"そろそろ寝るか...。",desc:"キリング：1試合でマスクを被ったのに、一度もキルできなかった"}
+data modify storage oa:ach_info killing_sleep set value {name:"そろそろ寝るか...。",desc:"キリング：マスクを被ったのに、被っている間に一度もキルできなかった"}
 data modify storage oa:ach_info yuttari_kill set value {name:"奇襲の洗礼",desc:"ゆったり：初めてキルした"}
 data modify storage oa:ach_info yuttari_back set value {name:"親フラ",desc:"ゆったり：敵の背後へ瞬間移動した"}
 data modify storage oa:ach_info yuttari_haves set value {name:"haves",desc:"ゆったり：ゆったりの武器を1分間持ち続けた"}
