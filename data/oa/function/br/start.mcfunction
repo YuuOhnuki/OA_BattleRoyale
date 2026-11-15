@@ -87,15 +87,15 @@ function oa:br/world/setup_normal
 execute if data storage oa:br center run function oa:br/cleanup_loose with storage oa:br center
 scoreboard players set #time br.time 0
 function oa:br/loot/open_label
-execute store result score #adv_msg br.flag run gamerule minecraft:show_advancement_messages
-gamerule minecraft:show_advancement_messages false
+execute in minecraft:overworld store result score #adv_msg br.flag run gamerule minecraft:show_advancement_messages
+function oa:internal/gamerule_match {rule:"show_advancement_messages",value:"false"}
 execute store result score #natural br.flag run gamerule minecraft:natural_health_regeneration
 gamerule minecraft:natural_health_regeneration true
 scoreboard players set #notice br.tmp -1
 function oa:br/border/start
 scoreboard players set #pulse br.tmp 0
-execute store result score #respawn br.flag run gamerule minecraft:immediate_respawn
-gamerule minecraft:immediate_respawn true
+execute in minecraft:overworld store result score #respawn br.flag run gamerule minecraft:immediate_respawn
+function oa:internal/gamerule_match {rule:"immediate_respawn",value:"true"}
 team add oa_br1
 team modify oa_br1 friendlyFire false
 team add oa_br2

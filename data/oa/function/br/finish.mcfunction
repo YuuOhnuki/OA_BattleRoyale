@@ -11,8 +11,8 @@ execute if score #natural br.flag matches 0 run gamerule minecraft:natural_healt
 execute if score #natural br.flag matches 1 run gamerule minecraft:natural_health_regeneration true
 tag @a[tag=br.playing] remove br.pvp_grace
 function oa:br/border/idle
-execute if score #respawn br.flag matches 0 run gamerule minecraft:immediate_respawn false
-execute if score #respawn br.flag matches 1 run gamerule minecraft:immediate_respawn true
+execute if score #respawn br.flag matches 0 run function oa:internal/gamerule_match {rule:"immediate_respawn",value:"false"}
+execute if score #respawn br.flag matches 1 run function oa:internal/gamerule_match {rule:"immediate_respawn",value:"true"}
 execute as @a[tag=oa.spec_init] run spectate
 tag @a remove oa.spec_init
 execute as @a[tag=br.playing,tag=!oa.practice] if score @s br.round = #round br.round at @s run function oa:br/finish_player
