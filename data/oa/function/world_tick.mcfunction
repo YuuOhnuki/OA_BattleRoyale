@@ -30,11 +30,9 @@ execute as @e[distance=0..,type=minecraft:block_display,tag=oa.gacha_bomb] at @s
 
 
 
-execute if entity @e[distance=0..,type=minecraft:item_display,tag=oa.furoball] run function oa:furoball/border_prepare
-execute as @e[distance=0..,type=minecraft:item_display,tag=oa.furoball] at @s run function oa:furoball/tick
-# 1.9.186: ふろボールの当たり判定は、ボールが動かさなくなって3 tick で消す
-execute as @e[distance=0..,type=minecraft:interaction,tag=oa.furo_hitbox] run scoreboard players remove @s oa.fhb 1
-kill @e[distance=0..,type=minecraft:interaction,tag=oa.furo_hitbox,scores={oa.fhb=..0}]
+# 1.9.188: ふろボールの飛行・当たり判定・打ち返しはプラグイン（weapon/FuroballService）。当たったらプラグインが furoball/explode を呼ぶ
+# 1.9.186〜187 の打ち返し用の当たり判定（interaction）が残っていれば消す
+kill @e[distance=0..,type=minecraft:interaction,tag=oa.furo_hitbox]
 
 
 
@@ -43,7 +41,7 @@ function oa:debug/world
 execute if score #clock oa.beat matches 5.. run function oa:perf/world_maintenance
 
 execute as @e[distance=0..,type=minecraft:interaction,tag=oa.itori_proxy] at @s run function oa:itori/proxy_tick
-execute as @e[distance=0..,type=minecraft:item_display,tag=oa.itori_bolt] at @s run function oa:itori/bolt_tick
+# 1.9.188: いとりの雷の弾の飛行・当たり判定はプラグイン（weapon/ItoriBoltService）。当たったらプラグインが itori/bolt_hit を呼ぶ
 execute as @e[distance=0..,type=minecraft:marker,tag=oa.itori_sweep] at @s run function oa:itori/sweep_tick
 
 execute as @e[distance=0..,type=minecraft:item_display,tag=oa.itori_fx] at @s run function oa:itori/fx/display_tick

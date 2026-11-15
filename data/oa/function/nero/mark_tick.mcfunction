@@ -1,9 +1,4 @@
-# 1.9.186: 1 tick に 0.25m を4回（1m/tick）。ブロックをすり抜けないよう細かく調べる。段差は nero/mark_step で上がる
-execute if score @s oa.steps matches 1.. at @s rotated as @s positioned ^ ^ ^0.25 run function oa:nero/mark_step
-execute if score @s oa.steps matches 1.. at @s rotated as @s positioned ^ ^ ^0.25 run function oa:nero/mark_step
-execute if score @s oa.steps matches 1.. at @s rotated as @s positioned ^ ^ ^0.25 run function oa:nero/mark_step
-execute if score @s oa.steps matches 1.. at @s rotated as @s positioned ^ ^ ^0.25 run function oa:nero/mark_step
-scoreboard players remove @s[scores={oa.steps=1..}] oa.steps 1
+# 1.9.188: 印の前進（0.25m×4回/tick・段差・ボーダー）はプラグイン（weapon/NeroMarkService）。ここは位置の保存・粒・目印だけ
 execute store result storage oa:args id int 1 run scoreboard players get @s oa.id
 function oa:nero/checkpoint with storage oa:args
 # 1.9.186: 印の粒は本人にだけ見せる（oa.mark_owner は nero/anchor_tick が付ける）
