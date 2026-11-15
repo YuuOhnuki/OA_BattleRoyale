@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.178 時点）
+# 引き継ぎメモ（1.9.179 時点）
 
 ## 現状
+- 1.9.179：1.9.178 の advancement/ach_trig/dqn.json が読み込めず、サーバーが起動しない不具合を修正。26.3 の entity_killed_player の player／entity は条件1つ（オブジェクト）で、配列は不可（Paper 26.3 のテスト用サーバーで発見・修正後に起動を確認）。
 - 1.9.178：実績 tayayuyu_dqn。tayayuyu/hat_all で引いた本人に oa.dqn、advancement/ach_trig/dqn.json（entity_killed_player、倒した人の頭が kind:1）→ ach/trig/dqn。
 - 1.9.177：lazi のマスクに防具力3・防具強度2（item_modifier visual/k3 の set_attributes、replace:false。印 mask_v1177 で既存品にも1回）。
 - 1.9.176：lazi は CT2秒（oa.cd 40）、音波2HP、息切れ30%（oa.breath 40＝鈍足2秒）。1.9.175 の連続回数 oa.lzn は廃止（load からも削除。既存ワールドの目的は残るが未使用）。

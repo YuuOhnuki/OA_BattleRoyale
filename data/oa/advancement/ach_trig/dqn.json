@@ -3,22 +3,20 @@
     "k": {
       "trigger": "minecraft:entity_killed_player",
       "conditions": {
-        "entity": [
-          {
-            "type": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:entity_type": "minecraft:player",
-              "equipment": {
-                "head": {
-                  "predicates": {
-                    "minecraft:custom_data": "{oa:{kind:1}}"
-                  }
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:player",
+            "equipment": {
+              "head": {
+                "predicates": {
+                  "minecraft:custom_data": "{oa:{kind:1}}"
                 }
               }
             }
           }
-        ]
+        }
       }
     }
   },

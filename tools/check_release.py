@@ -25,6 +25,18 @@ for p in glob.glob('data/**/*.json', recursive=True) + ['pack.mcmeta']:
     except Exception as e:
         errors.append(f'JSON: {p}: {e}')
 
+# 1b. 進捗の条件：26.3 のトリガーの player／entity などは条件1つ（オブジェクト）。配列は読み込みに失敗し、
+#     サーバーが起動しなくなる（1.9.178 の ach_trig/dqn.json）。複数なら minecraft:all_of で包む。
+for p in glob.glob('data/*/advancement/**/*.json', recursive=True):
+    try:
+        adv = json.loads(rd(p))
+    except Exception:
+        continue
+    for cname, crit in (adv.get('criteria') or {}).items():
+        for key, val in ((crit or {}).get('conditions') or {}).items():
+            if key in ('player', 'entity', 'parent', 'partner', 'child', 'projectile', 'shooter', 'victim', 'source', 'zombie', 'villager', 'lightning', 'bystander') and isinstance(val, list):
+                errors.append(f'進捗の条件が配列: {p}: {cname}.{key}（26.3 は条件1つのオブジェクト）')
+
 # 2. function references
 funcs = {f[len('data/oa/function/'):-len('.mcfunction')].replace(os.sep, '/')
          for f in glob.glob('data/oa/function/**/*.mcfunction', recursive=True)}
