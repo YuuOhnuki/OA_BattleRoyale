@@ -60,10 +60,10 @@ function Read-Packet($stream) {
     if ($len -gt 10) { $body = [Text.Encoding]::UTF8.GetString($data, 8, $len - 10) }
     return [pscustomobject]@{ id = $id; type = $type; body = $body }
 }
-function Invoke-Rcon([string]$command) {
+function Invoke-Rcon([string]$command, [int]$timeoutMs = 8000) {
     $c = New-Object Net.Sockets.TcpClient
     try {
-        $c.ReceiveTimeout = 8000; $c.SendTimeout = 5000
+        $c.ReceiveTimeout = $timeoutMs; $c.SendTimeout = 5000
         $iar = $c.BeginConnect($RconHost, $RconPort, $null, $null)
         if (-not $iar.AsyncWaitHandle.WaitOne(3000)) { throw 'rcon: connect timeout' }
         $c.EndConnect($iar)
@@ -166,8 +166,8 @@ function Restart-IfPossible {
     Say '[OA] 再起動まで 10 秒'
     Start-Sleep -Seconds 10
     if ((Test-Busy)) { Say '[OA] 試合などが始まったので、再起動を延期します'; Log 'Restart postponed: a match or map job started.'; return }
-    [void](Invoke-Rcon 'save-all flush')
-    [void](Invoke-Rcon 'stop')
+    [void](Invoke-Rcon 'save-all flush' 120000)
+    try { [void](Invoke-Rcon 'stop' 30000) } catch { }
     Log 'Restarting the server for dimension/type changes (start-server.bat will start it again).'
 }
 
@@ -251,7 +251,7 @@ try {
 
     if ($rconOk) {
         Say "[OA] データパックを更新します ($short)"
-        [void](Invoke-Rcon 'reload')
+        [void](Invoke-Rcon 'reload' 90000)   # reload は数十秒かかることがある（返事が来るまでサーバーが止まる）
         Start-Sleep -Seconds $cfg.reloadWaitSec
         # make sure the managed pack is enabled; disable old OA packs
         $list = Invoke-Rcon 'datapack list enabled'
@@ -259,9 +259,9 @@ try {
         # （以前は付いた形で比べていたため、更新のたびに自分自身を無効化→有効化していた）
         if ($list -notmatch ([regex]::Escape('[' + $PackId) + '[\] ]')) {
             foreach ($m in [regex]::Matches($list, '\[(file/OA_BattleRoyale[^\]\s]*)[^\]]*\]')) {
-                if ($m.Groups[1].Value -ne $PackId) { [void](Invoke-Rcon ('datapack disable "' + $m.Groups[1].Value + '"')); Log ('Disabled old pack ' + $m.Groups[1].Value) }
+                if ($m.Groups[1].Value -ne $PackId) { [void](Invoke-Rcon ('datapack disable "' + $m.Groups[1].Value + '"') 90000); Log ('Disabled old pack ' + $m.Groups[1].Value) }
             }
-            [void](Invoke-Rcon ('datapack enable "' + $PackId + '"'))
+            [void](Invoke-Rcon ('datapack enable "' + $PackId + '"') 90000)
             Log "Enabled $PackId"
             Start-Sleep -Seconds $cfg.reloadWaitSec
         }
@@ -270,7 +270,7 @@ try {
             Log ("Load errors after reload ({0}); rolling back. First: {1}" -f $errs.Count, $errs[0].Trim())
             $bk = Get-ChildItem (Join-Path $Root 'backup') -Directory | Sort-Object LastWriteTime -Descending | Select-Object -First 1
             & robocopy $bk.FullName $PackDir /MIR /NFL /NDL /NJH /NJS /NP | Out-Null
-            [void](Invoke-Rcon 'reload')
+            [void](Invoke-Rcon 'reload' 90000)
             $state.badSha = $target; $state.installedSha = ''; Save-State $state
             Say "[OA] 更新 ($short) に読み込みエラーがあったため元に戻しました"
             Log 'Rolled back to the previous version.'
