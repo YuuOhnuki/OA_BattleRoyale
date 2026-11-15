@@ -139,6 +139,37 @@ function Get-LogPos {
     return 0
 }
 function Say([string]$msg) { if ($cfg.announce) { try { [void](Invoke-Rcon ('say ' + $msg)) } catch { } } }
+# サーバーが start-server.bat（ループ起動）で動いているか。そうなら stop しても自動で起動し直す。
+function Test-LoopManaged {
+    $port = if ($props['server-port']) { [int]$props['server-port'] } else { 25565 }
+    $c = Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue | Select-Object -First 1
+    if (-not $c) { return $false }
+    $p = Get-CimInstance Win32_Process -Filter ("ProcessId=" + $c.OwningProcess) -ErrorAction SilentlyContinue
+    if (-not $p) { return $false }
+    $parent = Get-CimInstance Win32_Process -Filter ("ProcessId=" + $p.ParentProcessId) -ErrorAction SilentlyContinue
+    return [bool]($parent -and $parent.CommandLine -match 'start-server\.bat')
+}
+# ディメンション等が変わった更新：ループ起動中で、練習場に人がいなければ予告して再起動する
+function Restart-IfPossible {
+    if (-not (Test-LoopManaged)) {
+        Say '[OA] ディメンション等が変わったため、完全に反映するにはサーバーの再起動が必要です'
+        Log 'Dimension/type files changed: restart required (server is not run by start-server.bat, so not restarting automatically).'
+        return
+    }
+    if ((Invoke-Rcon 'execute if entity @a[tag=oa.practice]') -match 'Test passed') {
+        Say '[OA] ディメンション等が変わったため、練習場が空いたら再起動してください'
+        Log 'Dimension/type files changed: restart required (practice in use, not restarting).'
+        return
+    }
+    Say '[OA] ディメンション等の更新を反映するため、30秒後にサーバーを再起動します（1分ほどで戻ります）'
+    Start-Sleep -Seconds 20
+    Say '[OA] 再起動まで 10 秒'
+    Start-Sleep -Seconds 10
+    if ((Test-Busy)) { Say '[OA] 試合などが始まったので、再起動を延期します'; Log 'Restart postponed: a match or map job started.'; return }
+    [void](Invoke-Rcon 'save-all flush')
+    [void](Invoke-Rcon 'stop')
+    Log 'Restarting the server for dimension/type changes (start-server.bat will start it again).'
+}
 
 # ---------- main ----------
 $lock = $null
@@ -244,10 +275,7 @@ try {
         } else {
             if ($errs.Count -gt 0) { Log ("Load errors after reload ({0}), no rollback. First: {1}" -f $errs.Count, $errs[0].Trim()) }
             Log "Reloaded ($short)."
-            if ($needsRestart) {
-                Say '[OA] ディメンション等が変わったため、完全に反映するにはサーバーの再起動が必要です'
-                Log 'Dimension/type/biome/timeline files changed: a server restart is required.'
-            }
+            if ($needsRestart) { Restart-IfPossible }
         }
     } else {
         Log 'No RCON reload. Run /reload (or restart) on the server to apply.'
