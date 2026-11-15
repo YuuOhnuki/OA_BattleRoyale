@@ -255,8 +255,10 @@ try {
         Start-Sleep -Seconds $cfg.reloadWaitSec
         # make sure the managed pack is enabled; disable old OA packs
         $list = Invoke-Rcon 'datapack list enabled'
-        if ($list -notmatch [regex]::Escape('[' + $PackId + ']')) {
-            foreach ($m in [regex]::Matches($list, '\[(file/OA_BattleRoyale[^\]]*)\]')) {
+        # 一覧は「[file/OA_BattleRoyale_auto (world)]」のように後ろに出どころが付くので、名前だけで比べる
+        # （以前は付いた形で比べていたため、更新のたびに自分自身を無効化→有効化していた）
+        if ($list -notmatch ([regex]::Escape('[' + $PackId) + '[\] ]')) {
+            foreach ($m in [regex]::Matches($list, '\[(file/OA_BattleRoyale[^\]\s]*)[^\]]*\]')) {
                 if ($m.Groups[1].Value -ne $PackId) { [void](Invoke-Rcon ('datapack disable "' + $m.Groups[1].Value + '"')); Log ('Disabled old pack ' + $m.Groups[1].Value) }
             }
             [void](Invoke-Rcon ('datapack enable "' + $PackId + '"'))
