@@ -1,4 +1,4 @@
-# 1.9.192: 大当たりで決着した試合の、優勝のタイトルのあと（br/win_solo・win_team から schedule）
+# 1.9.192: 大当たりで決着した試合の、優勝のタイトルが出て約1秒後に切り替える（br/win_solo・win_team から 20 tick 後に schedule。1.9.193）
 tag @a remove oa.g_jp_view
 tag @a[tag=br.playing] add oa.g_jp_view
 tag @a[tag=br.winner] add oa.g_jp_view

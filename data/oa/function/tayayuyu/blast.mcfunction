@@ -9,6 +9,10 @@ particle minecraft:flash{color:[1.0,0.2,0.1,1.0]} ~ ~1 ~ 0 0 0 0 1 force @a[dist
 playsound minecraft:entity.generic.explode player @a[distance=..96] ~ ~ ~ 4 0.5
 playsound minecraft:entity.wither.death player @a[distance=..96] ~ ~ ~ 1.5 1.2
 execute as @a[tag=br.playing] at @s run playsound minecraft:entity.dragon_fireball.explode master @s ~ ~ ~ 1 0.6
+# 1.9.193: 画面に「たやゆゆの負け」
+title @a[tag=br.playing] times 5 60 20
+title @a[tag=br.playing] subtitle [{selector:"@s",color:"yellow"},{text:" が大ハズレを引いた",color:"white"}]
+title @a[tag=br.playing] title {text:"たやゆゆの負け",color:"dark_red",bold:true}
 tag @a remove oa.g_source
 tag @s add oa.g_source
 execute as @a[tag=br.alive,tag=!oa.g_source,tag=!br.pvp_grace,distance=..10] run function oa:tayayuyu/blast_hit
