@@ -1,4 +1,6 @@
 scoreboard players operation @s br.st_kp = @s br.st_kill
+# 1.9.191: たやゆゆのガチャで復活した人が、お面を着けたままキル → 新しいお面
+execute if entity @s[tag=oa.g_revived] if items entity @s armor.head *[minecraft:custom_data~{oa:{kind:5}}] run function oa:tayayuyu/revive_rearm
 function oa:ach/give {id:"first_kill",name:"初陣"}
 execute if score @s br.st_kill matches 3.. run function oa:ach/give {id:"kills3",name:"ハットトリック"}
 execute if score @s br.st_kill matches 5.. run function oa:ach/give {id:"kills5",name:"殲滅者"}

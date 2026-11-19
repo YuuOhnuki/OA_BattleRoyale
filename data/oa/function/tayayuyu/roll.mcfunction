@@ -1,0 +1,11 @@
+# 1.9.191: ガチャの抽選。1〜1300 の乱数で、1〜13（1%）が大当たり（14）、残りを13種に99ずつ（各約7.6%）。
+# 管理者が次の1回を固定していれば（#gacha_force、tayayuyu/force）その結果にする（1回で外れる）
+execute store result score #gacha_r oa.tmp run random value 1..1300
+scoreboard players set #c99 oa.tmp 99
+scoreboard players set #gacha_roll oa.tmp 14
+execute if score #gacha_r oa.tmp matches 14.. run scoreboard players operation #gacha_roll oa.tmp = #gacha_r oa.tmp
+execute if score #gacha_r oa.tmp matches 14.. run scoreboard players remove #gacha_roll oa.tmp 14
+execute if score #gacha_r oa.tmp matches 14.. run scoreboard players operation #gacha_roll oa.tmp /= #c99 oa.tmp
+execute if score #gacha_r oa.tmp matches 14.. run scoreboard players add #gacha_roll oa.tmp 1
+execute if score #gacha_force oa.tmp matches 1..14 run scoreboard players operation #gacha_roll oa.tmp = #gacha_force oa.tmp
+scoreboard players set #gacha_force oa.tmp 0

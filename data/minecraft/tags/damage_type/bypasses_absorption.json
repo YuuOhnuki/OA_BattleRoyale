@@ -3,6 +3,10 @@
     {
       "id": "oa:gacha_critical",
       "required": false
+    },
+    {
+      "id": "oa:gacha_jackpot",
+      "required": false
     }
   ]
 }

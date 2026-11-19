@@ -24,6 +24,10 @@
     {
       "id": "oa:flins_lightning",
       "required": false
+    },
+    {
+      "id": "oa:gacha_jackpot",
+      "required": false
     }
   ]
 }

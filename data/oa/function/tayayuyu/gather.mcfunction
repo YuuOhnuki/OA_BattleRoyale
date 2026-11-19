@@ -1,5 +1,5 @@
 tellraw @a[tag=br.playing] {text:"たやゆゆ変態ガチャ：強制集合",color:"green"}
-tellraw @a[tag=br.playing] {"text": " → 全員を中央付近へ集合・1秒保護", "color": "gray"}
+tellraw @a[tag=br.playing] {"text": " → 全員を中央付近へ集合・3秒保護", "color": "gray"}
 function oa:tayayuyu/move/prepare
 execute if score #g_move_ok oa.tmp matches 0 run return run function oa:tayayuyu/move/abort
 execute as @a[tag=br.alive,gamemode=!spectator,nbt=!{Health:0.0f},sort=random] at @s run function oa:tayayuyu/move/capture
@@ -12,4 +12,4 @@ execute if score #g_move_ok oa.tmp matches 0 run return run function oa:tayayuyu
 scoreboard players set #g_offset oa.tmp 0
 function oa:tayayuyu/move/commit
 execute unless score #g_commit_ok oa.tmp matches 1 run return 0
-execute as @a[tag=br.alive,gamemode=!spectator,nbt=!{Health:0.0f}] at @s run function oa:tayayuyu/peace {seconds:1,ticks:20}
+execute as @a[tag=br.alive,gamemode=!spectator,nbt=!{Health:0.0f}] at @s run function oa:tayayuyu/peace {seconds:3,ticks:60}

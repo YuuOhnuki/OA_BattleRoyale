@@ -19,3 +19,5 @@ execute if score #state br.state matches 1 if data storage oa:br center as @a[ga
 
 execute if data storage oa:br center run function oa:br/world/clear_mobs with storage oa:br center
 execute if score #state br.state matches 1 run function oa:disaster/second
+# 1.9.191: たやゆゆのガチャ「TNTの雨」の1秒
+execute if score #state br.state matches 1 if score #g_tnt oa.tmp matches 1.. run function oa:tayayuyu/tnt_second

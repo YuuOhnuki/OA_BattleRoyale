@@ -1,4 +1,5 @@
 tag @s remove br.gm_override
+tag @s remove oa.g_revived
 function oa:overwork/cleanup
 function oa:hotchikisu/cleanup
 scoreboard players operation @s br.round = #round br.round

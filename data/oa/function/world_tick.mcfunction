@@ -27,6 +27,8 @@ function oa:throwable/observe/world
 
 
 execute as @e[distance=0..,type=minecraft:block_display,tag=oa.gacha_bomb] at @s run function oa:tayayuyu/bomb_tick
+# 1.9.191: たやゆゆのガチャ「TNTの雨」
+execute as @e[distance=0..,type=minecraft:tnt,tag=oa.g_tnt] at @s run function oa:tayayuyu/tnt_tick
 
 
 

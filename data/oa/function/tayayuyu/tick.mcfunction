@@ -4,6 +4,8 @@ scoreboard players remove @s[scores={oa.ghp=1..}] oa.ghp 1
 execute if entity @s[tag=oa.gacha_hp] if score @s oa.ghp matches 0 run attribute @s minecraft:max_health modifier remove oa:gacha_hp
 scoreboard players remove @s[scores={oa.gspeed=1..}] oa.gspeed 1
 execute if entity @s[tag=oa.gacha_speed] if score @s oa.gspeed matches 0 run attribute @s minecraft:movement_speed modifier remove oa:gacha_speed
+execute if score @s oa.gfire matches 200 run function oa:tayayuyu/fire_hit
+execute if score @s oa.gfire matches 180 run function oa:tayayuyu/fire_hit
 execute if score @s oa.gfire matches 160 run function oa:tayayuyu/fire_hit
 execute if score @s oa.gfire matches 140 run function oa:tayayuyu/fire_hit
 execute if score @s oa.gfire matches 120 run function oa:tayayuyu/fire_hit
@@ -23,6 +25,9 @@ execute if score @s oa.gsize matches 0 if entity @s[tag=oa.gacha_size] run funct
 scoreboard players remove @s[tag=oa.gacha_peace,scores={oa.gres_left=1..}] oa.gres_left 1
 scoreboard players remove @s[scores={oa.gpeace=1..}] oa.gpeace 1
 execute if score @s oa.gpeace matches 0 if entity @s[tag=oa.gacha_peace] run function oa:tayayuyu/peace_end
+scoreboard players remove @s[scores={oa.grush=1..}] oa.grush 1
+execute if score @s oa.grush matches 0 if entity @s[tag=oa.gacha_rush] run function oa:tayayuyu/rush_end
+execute if entity @s[tag=oa.gacha_rush] if score #vclock br.tmp matches 0 run particle minecraft:cloud ~ ~0.2 ~ 0.2 0.1 0.2 0.02 3 normal @a[distance=..24]
 scoreboard players remove @s[scores={oa.gmood=1..}] oa.gmood 1
 execute if score @s oa.gmood matches 0 if entity @s[tag=oa.gacha_mood] run function oa:tayayuyu/mood_end
 scoreboard players remove @s[scores={oa.gglow=1..}] oa.gglow 1
@@ -32,6 +37,7 @@ execute if score @s oa.gexpose matches 1.. run return 0
 execute if score @s oa.gsize matches 1.. run return 0
 execute if score @s oa.gpeace matches 1.. run return 0
 execute if score @s oa.gmood matches 1.. run return 0
+execute if score @s oa.grush matches 1.. run return 0
 execute if score @s oa.gglow matches 1.. run return 0
 
 execute if score @s oa.ghp matches 1.. run return 0

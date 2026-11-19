@@ -1,5 +1,6 @@
 function oa:tayayuyu/stiff_end
 function oa:tayayuyu/exposed_end
+function oa:tayayuyu/rush_end
 execute if entity @s[tag=oa.gacha_peace] if data entity @s active_effects[{id:"minecraft:resistance",amplifier:4}] run effect clear @s minecraft:resistance
 execute if entity @s[tag=oa.gacha_peace] run function oa:tayayuyu/peace_end
 execute if entity @s[tag=oa.gacha_mood] unless items entity @s armor.head *[minecraft:custom_data~{oa:{kind:5}}] run effect clear @s minecraft:blindness

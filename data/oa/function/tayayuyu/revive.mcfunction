@@ -17,3 +17,5 @@ function oa:give/internal/killing with storage oa:args
 function oa:tayayuyu/equip_mask with storage oa:args
 particle minecraft:totem_of_undying ~ ~1 ~ 0.6 1 0.6 0.15 60 normal @a[distance=..40]
 playsound minecraft:item.totem.use player @a[distance=..40] ~ ~ ~ 1.4 1
+# 1.9.191: お面が壊れる（60秒）前にキルすると、新しいお面に付け替える（ach/new_kill → tayayuyu/revive_rearm）
+tag @s add oa.g_revived

@@ -1,6 +1,8 @@
 # 試合終了・中止時に呼ぶ（br/finish）。天候を戻し、印と効果を片付ける。
 execute if score #dis_kind br.tmp matches 1 run function oa:disaster/k1/end
 scoreboard players set #dis_kind br.tmp 0
+# 1.9.191: 災害コンボ・TNTの雨を止める
+function oa:disaster/combo/reset
 scoreboard players set #dis_warn br.tmp 0
 scoreboard players set #dis_left br.tmp 0
 scoreboard players set #dis_phase br.tmp 0

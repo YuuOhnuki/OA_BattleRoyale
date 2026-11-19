@@ -1,6 +1,7 @@
 # Explicitly authorized consumable expiry; remove only the equipped Killing mask.
 execute unless items entity @s armor.head *[minecraft:custom_data~{oa:{kind:5}}] run return 0
 item replace entity @s armor.head with minecraft:air
+tag @s remove oa.g_revived
 function oa:internal/cleanup
 scoreboard players set @s oa.owner 0
 scoreboard players set @s oa.have 0

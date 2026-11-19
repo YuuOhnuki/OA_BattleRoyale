@@ -1,5 +1,7 @@
 # 1秒ごと（br/second から、試合中のみ）。災害の抽選・進行。
 execute unless score #state br.state matches 1 run return 0
+# 1.9.191: たやゆゆのガチャ「災害コンボ」
+execute if score #dc_on br.tmp matches 1 run function oa:disaster/combo/second
 execute if score #dis_off br.tmp matches 1 run return 0
 execute if score #dis_warn br.tmp matches 1.. run return run function oa:disaster/warn
 execute if score #dis_kind br.tmp matches 1.. run return run function oa:disaster/active
