@@ -14,3 +14,4 @@ execute unless score #relic_off br.tmp matches 1 if score #map oa.mapid matches 
 execute unless score #relic_off br.tmp matches 1 run tellraw @a[tag=br.playing] [{text:"✦ ",color:"light_purple"},{text:"建物の中に「封印の宝珠」がある。右クリックで5秒かけて解錠すると、戦利品がもらえる（光と音で場所が知られる）",color:"gray"}]
 # 1.9.191: 災害コンボ・TNTの雨を止める
 function oa:disaster/combo/reset
+scoreboard players set #g_jp_win oa.tmp 0

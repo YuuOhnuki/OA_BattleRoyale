@@ -24,6 +24,10 @@
     {
       "id": "oa:gacha_jackpot",
       "required": false
+    },
+    {
+      "id": "oa:gacha_blast",
+      "required": false
     }
   ]
 }

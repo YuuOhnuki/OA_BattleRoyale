@@ -54,6 +54,8 @@ execute if data storage oa:lobby origin{ready:1b} as @a[tag=br.login_pending] at
 execute as @a[scores={oa.tpush=1..}] at @s run function oa:throwable/push/tick
 
 execute as @a[tag=oa.gacha_affected] at @s run function oa:tayayuyu/tick
+# 1.9.192: たやゆゆのガチャ「時限爆弾」
+execute if score #g_oni oa.tmp matches 1.. run function oa:tayayuyu/oni_tick
 
 execute as @a[tag=oa.furo_fall] at @s run function oa:furoball/up_tick
 

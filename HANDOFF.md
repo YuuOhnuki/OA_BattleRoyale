@@ -1,6 +1,7 @@
-# 引き継ぎメモ（1.9.191 時点）
+# 引き継ぎメモ（1.9.192 時点）
 
 ## 現状
+- 1.9.192：ガチャに時限爆弾（tayayuyu/oni_*、tick → oni_tick、#g_oni 残り tick、頭のTNTは item_display oa.g_oni_hat を毎 tick 目の上へ tp、押しつけは進捗 oa:tayayuyu/oni_pass＝鬼に直接殴られた人）と大爆発（blast、oa:gacha_blast）。抽選は1〜1500。大当たりのタイトルは win_solo/win_team から schedule。
 - 1.9.191：たやゆゆのガチャを入れ替え（spec §7.3）。抽選 tayayuyu/roll（1〜1300、≤13 が大当たり14）、実行 tayayuyu/apply、テスト tayayuyu/test・force・test_menu。TNTの雨は br/second → tnt_second、降るTNT（タグ oa.g_tnt）は world_tick → tnt_tick。災害コンボは disaster/combo/*（#dc1〜6 に種類ごとの残り秒、#dis_left を一時的に入れ替えて kN/second を呼ぶ）。復活のお面は ach/new_kill → revive_rearm（タグ oa.g_revived）。爆速の止まれない動きはプラグイン 0.14.0 の RushService。
 - 1.9.190：practice/enter の待機中の条件を外した（試合に出ていない人は試合中も入れる）。不参加パッド（brown_wool、ロビー原点から x=-9〜-7・z=32〜34、lobby/tick で br/sit_out）。今あるロビーには lobby/pad_optout（ストレージ oa:lobby optout_pad）が1回置く。lobby/build にも追加。
 - 1.9.189：エリア外の猶予2秒。br/zone/out_track（br/tick から5 tick ごと、br.outt に外にいる tick）、br/zone/player は br.outt 40 以上のときだけダメージ。

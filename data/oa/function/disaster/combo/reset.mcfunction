@@ -9,3 +9,5 @@ scoreboard players set #dc4 br.tmp 0
 scoreboard players set #dc5 br.tmp 0
 scoreboard players set #dc6 br.tmp 0
 scoreboard players set #g_tnt oa.tmp 0
+# 1.9.192: 時限爆弾
+function oa:tayayuyu/oni_reset

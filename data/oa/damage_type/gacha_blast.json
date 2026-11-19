@@ -1,0 +1,6 @@
+{
+  "message_id": "explosion.player",
+  "exhaustion": 0.1,
+  "scaling": "never",
+  "effects": "hurt"
+}

@@ -1,0 +1,1 @@
+summon minecraft:item_display ~ ~2 ~ {Tags:["oa.g_oni_hat"],item:{id:"minecraft:tnt",count:1},teleport_duration:1,view_range:1.0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.7f,0.7f,0.7f]}}

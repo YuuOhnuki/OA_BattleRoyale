@@ -27,7 +27,7 @@ scoreboard players remove @s[scores={oa.gpeace=1..}] oa.gpeace 1
 execute if score @s oa.gpeace matches 0 if entity @s[tag=oa.gacha_peace] run function oa:tayayuyu/peace_end
 scoreboard players remove @s[scores={oa.grush=1..}] oa.grush 1
 execute if score @s oa.grush matches 0 if entity @s[tag=oa.gacha_rush] run function oa:tayayuyu/rush_end
-execute if entity @s[tag=oa.gacha_rush] if score #vclock br.tmp matches 0 run particle minecraft:cloud ~ ~0.2 ~ 0.2 0.1 0.2 0.02 3 normal @a[distance=..24]
+execute if entity @s[tag=oa.gacha_rush] run function oa:tayayuyu/rush_fx
 scoreboard players remove @s[scores={oa.gmood=1..}] oa.gmood 1
 execute if score @s oa.gmood matches 0 if entity @s[tag=oa.gacha_mood] run function oa:tayayuyu/mood_end
 scoreboard players remove @s[scores={oa.gglow=1..}] oa.gglow 1

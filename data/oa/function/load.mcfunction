@@ -192,6 +192,8 @@ scoreboard objectives add oa.gpeace dummy
 scoreboard objectives add oa.gmood dummy
 # 1.9.191: たやゆゆのガチャ「爆速」の残り tick
 scoreboard objectives add oa.grush dummy
+# 1.9.192: 時限爆弾を押しつけたあとの待ち（tick）
+scoreboard objectives add oa.goni_cd dummy
 
 scoreboard objectives add oa.gglow dummy
 

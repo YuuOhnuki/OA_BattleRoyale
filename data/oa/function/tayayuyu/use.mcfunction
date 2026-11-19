@@ -15,7 +15,8 @@ function oa:tayayuyu/roll
 # 1.9.146: 距離で聞こえなくならないよう、各参加者の位置で鳴らして全員に聞こえるようにする
 execute as @a[tag=br.playing] at @s run playsound minecraft:block.end_portal.spawn player @s ~ ~ ~ 1.2 1.5
 particle minecraft:totem_of_undying ~ ~1 ~ 0.7 1 0.7 0.2 60 normal @a[distance=..48]
-# 1.9.173: ハズレを1試合で3回引くと「たやゆゆに愛される」（1.9.191 からハズレは12・13）
+# 1.9.173: ハズレを1試合で3回引くと「たやゆゆに愛される」（1.9.192 からハズレは12・13・16）
 execute if score #gacha_roll oa.tmp matches 12..13 run scoreboard players add @s br.a_haz 1
-execute if score #gacha_roll oa.tmp matches 12..13 if score @s br.a_haz matches 3.. run function oa:ach/give {id:"tayayuyu_unlucky",name:"たやゆゆに愛される"}
+execute if score #gacha_roll oa.tmp matches 16 run scoreboard players add @s br.a_haz 1
+execute if score #gacha_roll oa.tmp matches 12..16 unless score #gacha_roll oa.tmp matches 14..15 if score @s br.a_haz matches 3.. run function oa:ach/give {id:"tayayuyu_unlucky",name:"たやゆゆに愛される"}
 function oa:tayayuyu/apply

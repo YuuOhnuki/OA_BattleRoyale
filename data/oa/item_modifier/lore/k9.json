@@ -6,7 +6,7 @@
       "components": {
         "minecraft:lore": [
           {
-            "text": "右クリック：全体効果・自分への罰を含む13種のガチャ／CT45秒",
+            "text": "右クリック：全体効果・自分への罰を含む15種のガチャ／CT45秒",
             "color": "gray",
             "italic": false
           },

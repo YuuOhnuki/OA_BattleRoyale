@@ -3,9 +3,9 @@ tellraw @a[tag=br.playing] ""
 tellraw @a[tag=br.playing] {text:"★★★ たやゆゆ変態ガチャ：大当たり！ 神引き ★★★",color:"gold",bold:true}
 tellraw @a[tag=br.playing] [{text:" → ",color:"gray"},{selector:"@s",color:"yellow"},{text:" 以外の全員が消し飛ぶ",color:"gray"}]
 tellraw @a[tag=br.playing] ""
-title @a[tag=br.playing] times 5 100 30
-title @a[tag=br.playing] subtitle [{selector:"@s",color:"yellow"},{text:" が神を引いた",color:"white"}]
-title @a[tag=br.playing] title {text:"たやゆゆの勝ち",color:"gold",bold:true}
+# 1.9.192: 「たやゆゆの勝ち」は、優勝のタイトルのあとに出す（br/win_solo・win_team → tayayuyu/jackpot_title）
+scoreboard players set #g_jp_win oa.tmp 1
+scoreboard players operation #g_jp_by oa.tmp = @s oa.id
 execute as @a[tag=br.playing] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 1
 execute as @a[tag=br.playing] at @s run playsound minecraft:entity.wither.spawn master @s ~ ~ ~ 0.8 1.3
 execute as @a[tag=br.playing] at @s run playsound minecraft:entity.generic.explode master @s ~ ~ ~ 1 0.5

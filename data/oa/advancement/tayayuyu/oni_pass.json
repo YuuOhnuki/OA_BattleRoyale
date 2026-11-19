@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "hit": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:player",
+            "minecraft:nbt": "{Tags:[\"br.alive\"]}"
+          }
+        },
+        "damage": {
+          "type": {
+            "is_direct": true,
+            "source_entity": {
+              "minecraft:entity_type": "minecraft:player",
+              "minecraft:nbt": "{Tags:[\"oa.g_oni\"]}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "oa:tayayuyu/oni_pass"
+  }
+}

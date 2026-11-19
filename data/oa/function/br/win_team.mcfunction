@@ -10,3 +10,6 @@ execute as @a[tag=br.winner] run function oa:ach/give {id:"winner",name:"最後�
 execute as @a[tag=br.winner] run function oa:ach/map_win
 function oa:br/result/show
 function oa:br/celebration/start
+# 1.9.192: たやゆゆの大当たりで決着したら、優勝のタイトルのあとに「たやゆゆの勝ち」
+execute if score #g_jp_win oa.tmp matches 1 run schedule function oa:tayayuyu/jackpot_title 120t replace
+scoreboard players set #g_jp_win oa.tmp 0

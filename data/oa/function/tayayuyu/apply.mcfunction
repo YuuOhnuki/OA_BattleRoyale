@@ -1,4 +1,4 @@
-# 1.9.191: ガチャの結果 #gacha_roll（1〜14）を実行する（使用者として。tayayuyu/use・test から）
+# 1.9.191: ガチャの結果 #gacha_roll（1〜16）を実行する（使用者として。tayayuyu/use・test から）
 execute if score #gacha_roll oa.tmp matches 1 run function oa:tayayuyu/health_all
 execute if score #gacha_roll oa.tmp matches 2 run function oa:tayayuyu/fire_all
 execute if score #gacha_roll oa.tmp matches 3 run function oa:tayayuyu/revive_all
@@ -13,3 +13,5 @@ execute if score #gacha_roll oa.tmp matches 11 run function oa:tayayuyu/giant_al
 execute if score #gacha_roll oa.tmp matches 12 run function oa:tayayuyu/critical
 execute if score #gacha_roll oa.tmp matches 13 run function oa:tayayuyu/exposed
 execute if score #gacha_roll oa.tmp matches 14 run function oa:tayayuyu/jackpot
+execute if score #gacha_roll oa.tmp matches 15 run function oa:tayayuyu/oni_all
+execute if score #gacha_roll oa.tmp matches 16 run function oa:tayayuyu/blast
