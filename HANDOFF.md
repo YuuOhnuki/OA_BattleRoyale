@@ -1,6 +1,12 @@
-# 引き継ぎメモ（1.9.201 時点）
+# 引き継ぎメモ（1.9.202 時点）
 
 ## 現状
+- 生成試験でtext/item_displayのtransformationはscaleだけではSerialization errorsになることを確認。translationと左右のquaternionも生成元で明示し、再生成で警告なしを確認。起動だけではsummon時の不備は見えない。
+
+- 1.9.202：lobby/buildはgen_lobby_terminal.py生成のterminal/buildのみ。save_originのterminal:202で新tickへ分岐し、旧gallery/map_labels/練習ゲート/羊毛パッドの再生成を避ける。旧ロビーは手動再建まで旧tick。右ギャラリーへboard処理を原点+26X/+20Zで移設。
+- PlayerMenuは /oa とinteractionの実クリック者を使う。oa.ui=1で一般画面へ。旧公開triggerやbr.pick/tdm.teamは維持。map/selectは登録ホストも選択だけ許可。生成・削除は管理者のmap/doのまま。
+- 本はgen_player_book.py、管理本はgen_admin_book.py→gen_admin_terminal_book.py。admin/book_contentはmode/map/stateのマクロ、取得時の状態と明記。
+
 - 1.9.201：キル時tdm.foodはキル差分×8。heal_takeはHP10＋tdm.food10。foodLevelの実値も見て、HP・満腹度の両方満タンの場合だけ消費しない。既存プラグイン0.20.0が2tickごとに上限20まで加算。
 
 - 1.9.200：TDMの開始時title times 0/25/0が終了まで残るため、finishで5/60/10に明示。冒険モードの待機者はcombat/select_targetsで除外し、yuttari/use・returnにも待機ガード、clean_playerで保存原点と入力を破棄。

@@ -1,5 +1,5 @@
 {
-  "version": "1.9.201",
-  "checks": "static JSON/functions/commands/versions",
-  "runtime": "passed: Paper 26.3 startup with plugin 0.20.0, no loading errors; no match tests per user request; actual healing/food gameplay unverified"
+  "version": "1.9.202",
+  "checks": "static JSON/functions/commands/versions; plugin build; terminal route geometry",
+  "runtime": "passed: Paper 26.3 startup with plugin 0.21.0 and test-world terminal generation, no loading/serialization errors; route/canopy/counter/interactions/legacy removal/book macro checked; no match tests per user request; client visuals/walking/book pagination/menu interactions unverified"
 }

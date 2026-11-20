@@ -4,4 +4,3 @@ execute if score @s oa.game matches 1 run scoreboard players set #game oa.game 0
 execute if score @s oa.game matches 2 run scoreboard players set #game oa.game 1
 execute if score #game oa.game matches 0 run tellraw @a[tag=br.lobby] {text:"ゲームモード：バトルロワイヤル",color:"green"}
 execute if score #game oa.game matches 1 run tellraw @a[tag=br.lobby] {text:"ゲームモード：チームデスマッチ（5分）",color:"gold"}
-execute if score #game oa.game matches 1 as @a[tag=br.lobby] run function oa:tdm/menu

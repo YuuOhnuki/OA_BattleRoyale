@@ -1,3 +1,4 @@
+scoreboard objectives add oa.ui dummy
 scoreboard objectives add oa.admin trigger
 scoreboard objectives add oa.return trigger
 scoreboard objectives add oa.id dummy

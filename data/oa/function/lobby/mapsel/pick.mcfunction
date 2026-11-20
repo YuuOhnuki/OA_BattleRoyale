@@ -1,3 +1,4 @@
+execute unless entity @s[tag=br.host] unless entity @s[tag=br.admin] run return run tellraw @s {text:"会場の変更はホスト・管理者が行います",color:"yellow"}
 # macro: key  プレイヤー(@s)が押したボタンのマップへ、試合用マップを切り替える
 $execute if data storage oa:maps {current:"$(key)"} run return run tellraw @s {text:"すでにこのマップが選ばれています。",color:"yellow"}
 execute unless score #state br.state matches 0 run return run tellraw @s {text:"試合中・清掃中はマップを切り替えられません。",color:"red"}

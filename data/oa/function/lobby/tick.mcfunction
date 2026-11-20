@@ -1,3 +1,4 @@
+execute if data storage oa:lobby origin{ready:1b,terminal:202} run return run function oa:lobby/terminal/tick
 execute unless data storage oa:lobby origin{ready:1b} run return 0
 tag @a remove br.lobby_now
 function oa:lobby/select_area with storage oa:lobby origin

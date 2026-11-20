@@ -1,3 +1,4 @@
+execute if score @s oa.lobby matches 101..110 if score #game oa.game matches 1 run return run function oa:lobby/terminal/team_trigger
 execute if entity @s[tag=oa.practice] if score @s oa.lobby matches 201 run return run function oa:practice/dps/start
 execute if entity @s[tag=oa.practice] if score @s oa.lobby matches 202 run return run function oa:practice/spar/toggle
 execute if entity @s[tag=oa.practice] if score @s oa.lobby matches 203 run return run function oa:practice/click/day

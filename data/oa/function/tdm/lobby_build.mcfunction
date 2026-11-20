@@ -1,3 +1,4 @@
+execute if data storage oa:lobby origin{terminal:202} run return run data modify storage oa:lobby tdm_station set value 1b
 $execute in minecraft:overworld positioned $(x) $(y) $(z) unless loaded ~8 ~ ~33 run return 0
 execute in minecraft:overworld run kill @e[tag=tdm.station]
 $execute in minecraft:overworld positioned $(x) $(y) $(z) run fill ~7 ~-1 ~32 ~9 ~-1 ~34 minecraft:orange_wool
