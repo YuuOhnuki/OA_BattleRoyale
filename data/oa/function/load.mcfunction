@@ -46,6 +46,7 @@ scoreboard objectives add br.time dummy
 scoreboard objectives add br.sec dummy
 scoreboard objectives add br.live dummy
 scoreboard objectives add br.mode dummy
+scoreboard players add #pref br.mode 0
 scoreboard objectives add br.saved dummy
 scoreboard objectives add br.left dummy
 scoreboard objectives add br.tmp dummy

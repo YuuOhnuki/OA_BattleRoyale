@@ -13,7 +13,7 @@ scoreboard players set #players br.tmp 0
 execute as @a[tag=br.lobby] run scoreboard players add #players br.tmp 1
 execute unless score #players br.tmp matches 1..10 run return run tellraw @s {text:"参加者は1～10人必要です",color:"red"}
 execute if score #mode br.mode matches 1 unless entity @a[tag=br.lobby,scores={br.pick=1..10}] run return 0
-execute if score #mode br.mode matches 1 if entity @a[tag=br.lobby,scores={br.pick=0}] run return run tellraw @s {text:"全員が羊毛でチームを選択してください",color:"red"}
+execute if score #mode br.mode matches 1 if entity @a[tag=br.lobby,scores={br.pick=0}] run return run tellraw @s {text:"チーム戦は全員のチーム選択が必要です（出撃受付のチーム端末か /oa team）",color:"red"}
 scoreboard players set #teams br.tmp 0
 scoreboard players set #bad br.flag 0
 scoreboard players set #count br.tmp 0

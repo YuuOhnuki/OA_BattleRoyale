@@ -38,13 +38,13 @@ execute unless items entity @s inventory.24 * run scoreboard players set #admin_
 execute unless items entity @s inventory.25 * run scoreboard players set #admin_free oa.tmp 1
 execute unless items entity @s inventory.26 * run scoreboard players set #admin_free oa.tmp 1
 execute if score #admin_free oa.tmp matches 0 run return run tellraw @s {text:"本を受け取るため持ち物に空きを作ってください",color:"yellow"}
-data modify storage oa:admin_book mode set value "BR"
-execute if score #game oa.game matches 1 run data modify storage oa:admin_book mode set value "TDM"
+data modify storage oa:admin_book mode set value "バトルロワイヤル"
+execute if score #game oa.game matches 1 run data modify storage oa:admin_book mode set value "チームデスマッチ"
 data modify storage oa:admin_book map set value "地上"
 execute if score #map oa.mapid matches 1 run data modify storage oa:admin_book map set value "ネザー"
-execute if score #map oa.mapid matches 2 run data modify storage oa:admin_book map set value "古代都市"
+execute if score #map oa.mapid matches 2 run data modify storage oa:admin_book map set value "地下（古代都市）"
 execute if score #game oa.game matches 1 run data modify storage oa:admin_book map set value "立体工廠"
 data modify storage oa:admin_book state set value "待機中（取得時点）"
 execute if score #state br.state matches 1.. run data modify storage oa:admin_book state set value "試合進行中（取得時点）"
 function oa:admin/book_content with storage oa:admin_book
-tellraw @s {text:"管理ブックを更新しました。最新状態は /oamenu で確認",color:"gold"}
+tellraw @s {text:"管理ブックを更新しました。最新の状態は /oamenu で確認できます",color:"gold"}

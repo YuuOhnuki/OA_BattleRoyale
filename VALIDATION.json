@@ -1,5 +1,5 @@
 {
-  "version": "1.9.202",
-  "checks": "static JSON/functions/commands/versions; plugin build; terminal route geometry",
-  "runtime": "passed: Paper 26.3 startup with plugin 0.21.0 and test-world terminal generation, no loading/serialization errors; route/canopy/counter/interactions/legacy removal/book macro checked; no match tests per user request; client visuals/walking/book pagination/menu interactions unverified"
+  "version": "1.9.203",
+  "checks": "static JSON/functions/commands/versions (check_release.py); generator checks (routes, reach, interaction overlap, block light, floating, connections); plugin build",
+  "runtime": "passed: Paper 26.3 test server with plugin 0.22.0 — startup without load errors, lobby build at (300,100,300), 1500 block samples match the generator, entity counts/positions, exhibit alignment, no duplicates after refresh/rebuild, legacy fixtures absent, fake-player terminal/menu/permission/mode checks, books (37 checks, dist/lobby-terminal-validation-1.9.203.json); no match tests per user request; client visuals/walking/book pagination/GUI clicks unverified"
 }

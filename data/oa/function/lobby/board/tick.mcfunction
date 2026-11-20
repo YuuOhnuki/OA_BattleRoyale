@@ -1,3 +1,5 @@
+# 1.9.203: 新しい出撃ターミナルでは戦績をプラグインが描く（壁の再建・表示の再生成をしない）
+execute if data storage oa:lobby origin{terminal:203} run return 0
 execute unless data storage oa:lobby origin{ready:1b} run return 0
 execute if data storage oa:lobby_job {working:1b} run return 0
 execute unless data storage oa:lobby {board_built:1b,board_ver:106} run function oa:lobby/board/build with storage oa:lobby origin

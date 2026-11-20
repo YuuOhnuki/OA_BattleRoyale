@@ -1,6 +1,13 @@
-# 引き継ぎメモ（1.9.202 時点）
+# 引き継ぎメモ（1.9.203 時点）
 
 ## 現状
+- 1.9.203：ロビーを空間構成から再設計（出撃ターミナル v203）。生成元は scripts/gen_lobby_terminal.py（＋lobby_models.py で武器モデルの見かけの中心、render_lobby_preview.py でプレビュー）。生成時に、主通路・端末前の到達・当たり判定の重なり・ブロック光（舗装9／芝生7／端末前13以上）・浮き・ガラス板／柵／塀の接続を検査し、失敗すると書き出さない。範囲は1.9.202と同じ X/Z±40・Y-3〜+44。印は origin.terminal:203、202は tick_202 のまま。203では board/tick・gallery/update(46→terminal/refresh)・update_skins(51)・tdm/lobby_build が旧設備を作らない。
+- 受付端末は interaction タグ oa.term.<action>。処理はプラグイン PlayerMenu.terminal（本人＝クリックしたプレイヤー）。DP側の入口は lobby/terminal/br_team・tdm_team・set_format・start_br・start_tdm（モード違いは拒否）。BR形式は #pref br.mode（load で 0 に初期化）。
+- 表示の文字はプラグイン LobbyBoards が更新（oa.screen.*・oa.terminal.*・oa.gallery.*）。戦績ギャラリーは StatsStore の全期間と前回の試合、実績は oa.t_ach。DPの戦績ボード（board/*）は203では動かない。
+- 一般化：text_display の大きさ1は1行が約0.25ブロック（1px=1/40ブロック）。看板の文字は離れて読む距離から大きさを決める（1.9.202の端末の文字は0.4〜0.7で小さすぎた）。
+- 一般化：整数座標の `positioned X Y Z` は X/Z がブロック中心（+0.5）になる。ブロック（fill/setblock の ~）は影響しないが、summon した表示・当たり判定は0.5ずれる。lobby/build は `align xyz` を通す（1.9.202 までの表示も0.5ずれていた。tools/lobby_check.py の位置検査で発見）。
+- 一般化：26.3 では chain → iron_chain。旧名の fill/setblock は関数ごと読み込めない（check_release.py が検出）。
+- 一般化：テスト用サーバーの起動ログの oshi（Windows の性能カウンタ）の ERROR はデータパックと無関係。
 - 生成試験でtext/item_displayのtransformationはscaleだけではSerialization errorsになることを確認。translationと左右のquaternionも生成元で明示し、再生成で警告なしを確認。起動だけではsummon時の不備は見えない。
 
 - 1.9.202：lobby/buildはgen_lobby_terminal.py生成のterminal/buildのみ。save_originのterminal:202で新tickへ分岐し、旧gallery/map_labels/練習ゲート/羊毛パッドの再生成を避ける。旧ロビーは手動再建まで旧tick。右ギャラリーへboard処理を原点+26X/+20Zで移設。
