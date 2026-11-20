@@ -1,6 +1,11 @@
-# 引き継ぎメモ（1.9.199 時点）
+# 引き継ぎメモ（1.9.200 時点）
 
 ## 現状
+- 1.9.200：TDMの開始時title times 0/25/0が終了まで残るため、finishで5/60/10に明示。冒険モードの待機者はcombat/select_targetsで除外し、yuttari/use・returnにも待機ガード、clean_playerで保存原点と入力を破棄。
+- TdmMenuは固有item_model付き8アイコンを2段配置。管理操作は試合前のbr.host/br.adminだけに表示・実行。warmup中も選択可能、開始時tdm.ui=1。選択の許可はDP側も一致。
+- OverworkServiceはインベントリ発動時、復活statusより先にクライアントだけへ実物ゆーを手のスロットに送信し、次tick実スロットを再送。実在庫・手持ちは移動せず、消費は従来どおり1個。
+- BR順位は保存するMatchResultと同じ2＋長く生存した非優勝者数。jackpot_titleは優勝者だけへ送り、敗者の順位を上書きしない。
+
 - 1.9.199：oni_hatを実際のTNT頭装備へ変更。inventory/dropで元の頭を落とし、失敗時は上書きしない。oa_tnt_oniタグの固定装備。oni_dropで自前TNTのみ消し、equip_curse/equip_yuua/equipは鬼の間停止。curse/tickは本当にマスクを装着している時だけ走り、TNTへマスクのモデルを上書きしない。
 - キリング：enchantment/curseのdamage_immunityを削除して通常攻撃をプラグインcombat/KillingParryで止め、curse/rollを呼ぶ。oa.curse_guardの既存抽選を共有、oa.routed_damageはDP側へ任せる。保護キャンセル後のHIGHEST/ignoreCancelledでパリィの誤発火を防ぐ。必ずプラグイン0.19.0を先に配置し、ペアで反映する。
 - TDM再生IV/速度II5秒、tdm.healをプラグインで実HPへ加算して10HPを保証。loadoutは#warmup>0の間は選択武器を配らず、warmup終了時に配布。

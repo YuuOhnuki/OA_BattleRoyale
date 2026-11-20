@@ -1,4 +1,6 @@
 execute unless score #active tdm.sys matches 1 run return 0
+title @a[tag=tdm.player] times 5 60 10
+title @a[tag=tdm.player] subtitle [{text:"赤 ",color:"red"},{score:{name:"#red",objective:"tdm.points"}},{text:" : ",color:"gray"},{score:{name:"#blue",objective:"tdm.points"},color:"aqua"},{text:" 青",color:"aqua"}]
 execute if score #red tdm.points > #blue tdm.points run title @a[tag=tdm.player] title {text:"赤チームの勝ち！",color:"red"}
 execute if score #blue tdm.points > #red tdm.points run title @a[tag=tdm.player] title {text:"青チームの勝ち！",color:"blue"}
 execute if score #red tdm.points = #blue tdm.points run title @a[tag=tdm.player] title {text:"引き分け！",color:"gold"}

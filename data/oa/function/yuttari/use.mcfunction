@@ -1,3 +1,5 @@
+execute if entity @s[tag=tdm.player,tag=!br.alive] run return 0
+execute if entity @s[tag=tdm.player,scores={tdm.wait=1..}] run return 0
 execute if entity @s[tag=oa.gacha_exposed] run return 0
 execute if entity @s[tag=oa.debug,tag=!oa.db_free_match] unless score #state br.state matches 1 run return 0
 execute if entity @s[tag=oa.debug,tag=!oa.db_free_match,tag=!br.alive] run return 0

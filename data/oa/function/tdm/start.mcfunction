@@ -54,3 +54,5 @@ scoreboard objectives setdisplay sidebar.team.red tdm.board
 scoreboard objectives setdisplay sidebar.team.blue tdm.board
 tellraw @a[tag=tdm.player] {text:"配置完了！10秒後にTDM開始。石の剣・弓・矢10本を支給しました",color:"gold"}
 execute as @a[tag=tdm.player] run function oa:tdm/warmup_lock
+
+scoreboard players set @a[tag=tdm.player] tdm.ui 1

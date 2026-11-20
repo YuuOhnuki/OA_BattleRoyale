@@ -1,5 +1,5 @@
 {
-  "version": "1.9.199",
+  "version": "1.9.200",
   "checks": "static JSON/functions/commands/versions; plugin build",
-  "runtime": "passed: Paper 26.3 startup with plugin 0.19.0, no loading errors; no match tests per user request; real parry/equipped TNT and gameplay unverified"
+  "runtime": "passed: Paper 26.3 startup with plugin 0.20.0, no loading errors; no match tests per user request; actual menu/model/combat/title gameplay unverified"
 }

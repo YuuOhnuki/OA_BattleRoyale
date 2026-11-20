@@ -1,3 +1,7 @@
+function oa:yuttari/cancel
+scoreboard players set @s oa.use 0
+scoreboard players set @s oa.skill 0
+scoreboard players set @s oa.alt 0
 attribute @s minecraft:movement_speed modifier remove oa:tdm_start
 function oa:br/clear_match_effects
 function oa:overwork/cleanup
