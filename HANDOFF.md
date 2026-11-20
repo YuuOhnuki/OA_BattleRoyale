@@ -1,6 +1,8 @@
-# 引き継ぎメモ（1.9.200 時点）
+# 引き継ぎメモ（1.9.201 時点）
 
 ## 現状
+- 1.9.201：キル時tdm.foodはキル差分×8。heal_takeはHP10＋tdm.food10。foodLevelの実値も見て、HP・満腹度の両方満タンの場合だけ消費しない。既存プラグイン0.20.0が2tickごとに上限20まで加算。
+
 - 1.9.200：TDMの開始時title times 0/25/0が終了まで残るため、finishで5/60/10に明示。冒険モードの待機者はcombat/select_targetsで除外し、yuttari/use・returnにも待機ガード、clean_playerで保存原点と入力を破棄。
 - TdmMenuは固有item_model付き8アイコンを2段配置。管理操作は試合前のbr.host/br.adminだけに表示・実行。warmup中も選択可能、開始時tdm.ui=1。選択の許可はDP側も一致。
 - OverworkServiceはインベントリ発動時、復活statusより先にクライアントだけへ実物ゆーを手のスロットに送信し、次tick実スロットを再送。実在庫・手持ちは移動せず、消費は従来どおり1個。

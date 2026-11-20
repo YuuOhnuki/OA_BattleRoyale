@@ -8,8 +8,8 @@ execute if score @s tdm.team matches 2 run scoreboard players operation #blue td
 effect give @s minecraft:regeneration 5 3 true
 effect give @s minecraft:speed 5 1 true
 scoreboard players operation #food_reward tdm.sys = #delta tdm.sys
-scoreboard players set #four tdm.sys 4
-scoreboard players operation #food_reward tdm.sys *= #four tdm.sys
+scoreboard players set #eight tdm.sys 8
+scoreboard players operation #food_reward tdm.sys *= #eight tdm.sys
 scoreboard players operation @s tdm.food += #food_reward tdm.sys
 execute at @s run function oa:tdm/fx/kill
 function oa:tdm/reward_arrows
