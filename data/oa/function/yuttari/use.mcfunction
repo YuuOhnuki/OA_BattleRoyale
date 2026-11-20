@@ -20,23 +20,27 @@ function oa:yuttari/save_origin with storage oa:args
 execute at @e[tag=oa.chosen,limit=1] rotated as @e[tag=oa.chosen,limit=1] rotated ~ 0 positioned ^ ^ ^-1.5 run tp @s ~ ~ ~ facing entity @e[tag=oa.chosen,limit=1] feet
 execute at @s run rotate @s ~ 0
 execute at @s run function oa:yuttari/teleport_fx
-effect give @s minecraft:glowing 3 0 true
-effect give @e[tag=oa.chosen,limit=1] minecraft:glowing 3 0 true
+effect give @s minecraft:glowing 5 0 true
+effect give @e[tag=oa.chosen,limit=1] minecraft:glowing 5 0 true
 tag @s add oa.external_glow
 tag @e[tag=oa.chosen,limit=1] add oa.external_glow
 tag @s add oa.ambush_active
 function oa:ach/give {id:"yuttari_back",name:"親フラ"}
 scoreboard players set @s oa.back 20
 execute at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.4 0.6 0.4 0.04 24 normal @a[distance=..32]
-data modify storage oa:damage amount set value 0.5
+data modify storage oa:damage amount set value 1.0
 data modify storage oa:damage type set value "oa:ambush"
 execute as @e[tag=oa.chosen,limit=1] at @s run function oa:combat/gated_damage
 execute as @e[tag=oa.chosen,limit=1] at @s if score @s oa.blocked matches 0 unless entity @s[nbt={Health:0.0f}] run function oa:yuttari/queue_push
 execute store result score #roll oa.tmp run random value 0..1
-execute if score #roll oa.tmp matches 0 run effect give @s minecraft:speed 5 0 true
-execute if score #roll oa.tmp matches 0 run effect give @e[tag=oa.chosen] minecraft:slowness 5 0 true
-execute if score #roll oa.tmp matches 1 run effect give @s minecraft:slowness 5 0 true
-execute if score #roll oa.tmp matches 1 run effect give @e[tag=oa.chosen] minecraft:speed 5 0 true
+execute if score #roll oa.tmp matches 0 run effect give @s minecraft:speed 5 1 true
+execute if score #roll oa.tmp matches 0 run effect give @e[tag=oa.chosen] minecraft:slowness 5 1 true
+execute if score #roll oa.tmp matches 1 run effect give @s minecraft:slowness 5 1 true
+execute if score #roll oa.tmp matches 1 run effect give @e[tag=oa.chosen] minecraft:speed 5 1 true
+execute store result score #dark_roll oa.tmp run random value 0..1
+execute if score #dark_roll oa.tmp matches 0 run effect give @s minecraft:darkness 3 0 true
+execute if score #dark_roll oa.tmp matches 1 run effect give @e[tag=oa.chosen,limit=1] minecraft:darkness 3 0 true
+
 tag @s add oa.external_slow
 tag @s add oa.external_speed
 tag @e[tag=oa.chosen] add oa.external_slow

@@ -11,7 +11,7 @@
             "italic": false
           },
           {
-            "text": "通常攻撃：紫弾 1.5HP／射程10m",
+            "text": "通常攻撃：紫弾 2HP（補充後3HP）／射程10m",
             "color": "gray",
             "italic": false
           },
@@ -55,7 +55,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{itori_stage:6,itori_lore1972:15}}"
+      "tag": "{oa:{itori_stage:6,itori_lore194:15}}"
     }
   ]
 }

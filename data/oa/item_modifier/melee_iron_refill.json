@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_attributes",
+      "replace": true,
+      "modifiers": [
+        {
+          "id": "oa:unique_melee",
+          "attribute": "minecraft:attack_damage",
+          "amount": 5,
+          "operation": "add_value",
+          "slot": "mainhand"
+        },
+        {
+          "id": "oa:unique_speed",
+          "attribute": "minecraft:attack_speed",
+          "amount": -2.2,
+          "operation": "add_value",
+          "slot": "mainhand"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{damage194:1b,damage194_up:1b,speed_v160:1b}}"
+    }
+  ]
+}

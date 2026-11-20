@@ -1,5 +1,5 @@
 {
- "version": "1.9.193",
- "checks": "static: JSON, function references, command names, nether model (lava containment, reachability, y<=0), no runtime test",
- "runtime": "automated smoke test on Paper 26.3 test server (oa_battleroyale_plugin/tools/smoke_test.py, fake players); not played by humans"
+  "version": "1.9.194",
+  "checks": "static: JSON, function references, command names, nether model (lava containment, reachability, y<=0), no runtime test",
+  "runtime": "Paper 26.3 test server startup and reload passed; match smoke test cancelled at user request; combat and visuals not tested by humans"
 }

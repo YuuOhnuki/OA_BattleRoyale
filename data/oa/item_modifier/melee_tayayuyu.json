@@ -23,7 +23,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{komame_damage151:1b,speed_v160:1b}}"
+      "tag": "{oa:{damage194:1b,damage194_up:0b,speed_v160:1b}}"
     }
   ]
 }
