@@ -10,6 +10,7 @@ attribute @s minecraft:movement_speed modifier remove oa:gacha_mood
 tag @s remove oa.gacha_size
 tag @s remove oa.gacha_mood
 tag @s remove oa.gacha_glow
+execute if entity @s[tag=oa.goni_glow] unless score #g_oni oa.tmp matches 1.. run function oa:tayayuyu/oni_reveal_end
 scoreboard players set @s oa.gsize 0
 scoreboard players set @s oa.gpeace 0
 scoreboard players set @s oa.gmood 0

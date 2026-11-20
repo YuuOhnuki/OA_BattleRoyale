@@ -17,6 +17,7 @@ execute if score @s br.suptype matches 3 run loot spawn ~ ~0.5 ~ loot oa:br/ches
 execute if score @s br.suptype matches 3 run loot spawn ~ ~0.5 ~ loot oa:br/chest_upgraded
 execute if score @s br.suptype matches 3 run loot spawn ~ ~0.5 ~ loot oa:br/heal
 execute if score @s br.suptype matches 3 run loot spawn ~ ~0.5 ~ loot oa:br/heal
+execute if score @s br.suptype matches 1..3 run function oa:br/supply/unique
 execute as @e[type=minecraft:item,distance=..3,nbt={Age:0s}] run data merge entity @s {Glowing:1b}
 execute store result score #sx br.tmp run data get entity @s Pos[0]
 execute store result score #sz br.tmp run data get entity @s Pos[2]

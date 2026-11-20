@@ -1,5 +1,5 @@
 {
-  "version": "1.9.197",
-  "checks": "static JSON/commands/references/versions; map connectivity and 151 loot positions; plugin build",
-  "runtime": "passed: Paper 26.3 startup with plugin 0.17.0 and dedicated oa:tdm dimension type; no load errors; no match tests per user request; in-game visual/audio/interaction unverified"
+  "version": "1.9.198",
+  "checks": "static JSON/functions/commands/versions; plugin compile/build; inspected Paper resurrection bytecode",
+  "runtime": "passed: Paper 26.3 startup with plugin 0.18.0, no load errors; no match tests per user request; actual resurrection and visuals unverified"
 }

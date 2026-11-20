@@ -1,6 +1,8 @@
-# 引き継ぎメモ（1.9.197 時点）
+# 引き継ぎメモ（1.9.198 時点）
 
 ## 現状
+- 1.9.198：補給spawnからbr/supply/unique（固有10種、ゆー除外、ゆうあ1個制限）を必ず1回呼ぶ。元気百倍はhealth_revealを全生存者へ10秒、強化は従来どおり使用者だけ。TNT鬼はoni_revealを開始時と毎秒呼び、oa.goni_glowをoni_resetで解除。鬼の押しつけでは全員発光を消さない。
+- ゆー：プラグイン0.18.0 weapon/OverworkServiceが手のトーテムなしでキャンセル初期値のEntityResurrectEventを受け、通常インベントリのoa_overwork付きトーテム1個を消費して復活を許可。overwork/usedで従来の2tick待ちへ接続。手にトーテムがある場合は介入しない。PaperのLivingEntityバイトコードで、手にない場合も復活イベント・既定トーテム効果が使われ、used_totem進捗は実物がある場合だけ発火することを確認。実際の致死イベントでの試験は未実施。
 - 1.9.197：TDM HUD（hud_player→hud_lineマクロ、保有武器とCT）、回復ドロップ104=4HP、キル時の再生II/速度II/tdm.food+4。満腹度の実数加算はプラグイン0.17.0 TdmMenu。地面はシフトで武器交換し、drop_fromが実アイテムをtdm.savedのitem_displayへコピー。tdm.dropidで本体と名前表示を対応させremoveで両方を消す。tdm.lock=20、tdm.swap_latchedで即時拾い直しを防止。
 - マップ#ready=197、生成元gen_tdm_map_v197.py。専用dimension_type oa:tdm（ambient_light0.25）、光源・看板・2方向から登れる整備通路。151候補の静的検査。勝利の音・粒子はロビーへ戻った2tick後に再生。マクロのname/slotとstorageを目視で照合。
 - 1.9.196：nero/saveのdimension分岐にoa:tdmがなく、TDM位置がoverworldとして保存されていた。ネロ帰還の境界拒否とゆったり帰還の誤ディメンションにつながる。プラグインNeroMarkServiceもTDMを境界判定の対象外にしていたため対応。死亡時のクライアント再出現はプラグインTdmMenuのPlayerRespawnEventでTDM待機室へ固定し、lobby/login_warpもtdm.playerを除外。

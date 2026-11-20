@@ -9,7 +9,7 @@
     "minecraft:item_model": "oa:yu",
     "minecraft:lore": [
       {
-        "text": "手に持っていると致死ダメージ時に身代わりになる",
+        "text": "インベントリにあると致死時に自動発動（1個消費）",
         "color": "gray",
         "italic": false
       },
