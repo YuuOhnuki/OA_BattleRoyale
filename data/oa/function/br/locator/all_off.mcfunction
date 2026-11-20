@@ -15,3 +15,4 @@ execute in oa:br_cave store result score #lbar oa.tmp run gamerule minecraft:loc
 execute if score #lbar oa.tmp matches 1 in oa:br_cave run gamerule minecraft:locator_bar false
 execute in oa:practice store result score #lbar oa.tmp run gamerule minecraft:locator_bar
 execute if score #lbar oa.tmp matches 1 in oa:practice run gamerule minecraft:locator_bar false
+execute in oa:tdm run gamerule minecraft:locator_bar false

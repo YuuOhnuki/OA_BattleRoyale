@@ -13,5 +13,8 @@ execute if score #drop_kind tdm.sys matches 10 run item replace entity @e[tag=td
 execute if score #drop_kind tdm.sys matches 101 run item replace entity @e[tag=tdm.fresh,limit=1] contents with minecraft:iron_chestplate
 execute if score #drop_kind tdm.sys matches 102 run item replace entity @e[tag=tdm.fresh,limit=1] contents with minecraft:diamond_chestplate
 execute if score #drop_kind tdm.sys matches 103 run item replace entity @e[tag=tdm.fresh,limit=1] contents with minecraft:totem_of_undying[minecraft:item_model="oa:yu"]
+execute if score #drop_kind tdm.sys matches 104 run item replace entity @e[tag=tdm.fresh,limit=1] contents with minecraft:golden_apple
+scoreboard players set @e[tag=tdm.fresh] tdm.lock 0
+execute as @e[tag=tdm.fresh,limit=1] at @s run function oa:tdm/loot/label
 tag @e[tag=tdm.fresh] remove tdm.fresh
 particle minecraft:happy_villager ~ ~1 ~ 0.3 0.3 0.3 0 8 normal @a[distance=..32]

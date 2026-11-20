@@ -7,6 +7,8 @@ function oa:internal/cleanup
 function oa:itori/effects_end
 function oa:itori/windup_cancel
 effect clear @s
+scoreboard players set @s tdm.food 0
+tag @s remove tdm.swap_latched
 scoreboard players set @s oa.death 0
 scoreboard players set @s oa.cd 0
 scoreboard players set @s oa.i_lock 0

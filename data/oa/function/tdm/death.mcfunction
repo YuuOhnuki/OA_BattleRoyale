@@ -1,5 +1,6 @@
 scoreboard players set @s oa.death 0
 execute if score @s tdm.wait matches 1.. run return 0
+execute at @s run function oa:tdm/fx/death
 tag @s remove br.alive
 function oa:tdm/clean_player
 function oa:br/clear_inventory

@@ -1,6 +1,8 @@
-# 引き継ぎメモ（1.9.196 時点）
+# 引き継ぎメモ（1.9.197 時点）
 
 ## 現状
+- 1.9.197：TDM HUD（hud_player→hud_lineマクロ、保有武器とCT）、回復ドロップ104=4HP、キル時の再生II/速度II/tdm.food+4。満腹度の実数加算はプラグイン0.17.0 TdmMenu。地面はシフトで武器交換し、drop_fromが実アイテムをtdm.savedのitem_displayへコピー。tdm.dropidで本体と名前表示を対応させremoveで両方を消す。tdm.lock=20、tdm.swap_latchedで即時拾い直しを防止。
+- マップ#ready=197、生成元gen_tdm_map_v197.py。専用dimension_type oa:tdm（ambient_light0.25）、光源・看板・2方向から登れる整備通路。151候補の静的検査。勝利の音・粒子はロビーへ戻った2tick後に再生。マクロのname/slotとstorageを目視で照合。
 - 1.9.196：nero/saveのdimension分岐にoa:tdmがなく、TDM位置がoverworldとして保存されていた。ネロ帰還の境界拒否とゆったり帰還の誤ディメンションにつながる。プラグインNeroMarkServiceもTDMを境界判定の対象外にしていたため対応。死亡時のクライアント再出現はプラグインTdmMenuのPlayerRespawnEventでTDM待機室へ固定し、lobby/login_warpもtdm.playerを除外。
 - TDM: GUIはプラグインtdm/TdmMenu、ゲーム本体はデータパックtdm/*。tdm.ui=1でGUI、tdm.wait=200tick、#warmup tdm.sys=200tick、マップ#ready=196。新会場生成元scripts/gen_tdm_map_v196.py（既存gen_tdm_map.pyから起動）。155出現候補・通常移動経路を静的検査。標準装備とキルごと矢5本、重み付きランダム出現、ゆうあ150秒、ゆー不定期。
 - 一般化：共通の位置保存・プラグインのディメンション判定・バニラの復活イベントも新ディメンション追加時の点検対象。起動できることはTPや復活が正常である証拠にはならない。

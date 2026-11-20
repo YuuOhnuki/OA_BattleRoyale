@@ -1,3 +1,8 @@
+scoreboard objectives add tdm.food dummy
+scoreboard objectives add tdm.weapon dummy
+scoreboard objectives add tdm.ct dummy
+scoreboard objectives add tdm.dropid dummy
+scoreboard objectives add tdm.lock dummy
 scoreboard objectives add oa.game trigger
 scoreboard objectives add oa.tdm trigger
 scoreboard objectives add tdm.sys dummy

@@ -1,0 +1,1 @@
+$title @s actionbar [{text:"赤 ",color:"red"},{score:{name:"#red",objective:"tdm.points"}},{text:" : ",color:"gray"},{score:{name:"#blue",objective:"tdm.points"},color:"aqua"},{text:" 青  |  $(name)  CT ",color:"gold"},{score:{name:"@s",objective:"tdm.ct"},color:"white"},{text:"秒  | ",color:"gray"},{score:{name:"#seconds",objective:"tdm.sys"}},{text:"秒",color:"gray"}]

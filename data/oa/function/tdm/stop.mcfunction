@@ -3,6 +3,7 @@ scoreboard players set #active tdm.sys 0
 scoreboard players set #state br.state 2
 execute as @a[tag=tdm.player] at @s run function oa:tdm/withdraw
 execute in oa:tdm run kill @e[tag=tdm.pickup]
+execute in oa:tdm run kill @e[tag=tdm.loot_label]
 execute in oa:tdm run kill @e[type=minecraft:item]
 execute in oa:tdm run kill @e[tag=oa.projectile]
 execute in oa:tdm run kill @e[tag=oa.itori_proxy]

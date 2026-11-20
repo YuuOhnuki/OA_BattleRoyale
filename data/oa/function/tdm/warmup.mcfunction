@@ -10,4 +10,6 @@ execute as @a[tag=tdm.player] run attribute @s minecraft:movement_speed modifier
 effect clear @a[tag=tdm.player] minecraft:resistance
 tag @a[tag=tdm.player] remove br.pvp_grace
 scoreboard players set @a[tag=tdm.player] tdm.guard 0
+scoreboard players set #seconds tdm.sys 300
 title @a[tag=tdm.player] title {text:"START!",color:"green"}
+execute as @a[tag=tdm.player] at @s run playsound minecraft:entity.ender_dragon.growl player @s ~ ~ ~ 0.4 1.4

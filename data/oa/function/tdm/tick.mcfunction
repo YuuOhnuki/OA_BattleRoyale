@@ -14,3 +14,6 @@ execute as @a[tag=tdm.player,tag=br.alive] at @s unless dimension oa:tdm run fun
 execute in oa:tdm run function oa:world_tick
 execute in oa:tdm run function oa:tdm/loot/tick
 execute if score #perf oa.tmp matches 0 run function oa:tdm/hud
+execute if score #perf oa.tmp matches 5 as @a[tag=tdm.player,tag=br.alive] run function oa:tdm/hud_player
+execute if score #perf oa.tmp matches 10 as @a[tag=tdm.player,tag=br.alive] run function oa:tdm/hud_player
+execute if score #perf oa.tmp matches 15 as @a[tag=tdm.player,tag=br.alive] run function oa:tdm/hud_player

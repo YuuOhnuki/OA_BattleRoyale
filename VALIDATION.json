@@ -1,5 +1,5 @@
 {
-  "version": "1.9.196",
-  "checks": "static commands/JSON/references/version; map graph and 155 loot positions; plugin build",
-  "runtime": "passed: Paper 26.3 test-server startup with plugin 0.16.0 and oa:tdm; no load errors; full match tests omitted per user request; human gameplay, respawn GUI, TP and visuals unverified"
+  "version": "1.9.197",
+  "checks": "static JSON/commands/references/versions; map connectivity and 151 loot positions; plugin build",
+  "runtime": "passed: Paper 26.3 startup with plugin 0.17.0 and dedicated oa:tdm dimension type; no load errors; no match tests per user request; in-game visual/audio/interaction unverified"
 }

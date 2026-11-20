@@ -16,3 +16,5 @@ effect give @s minecraft:saturation 1 20 true
 scoreboard players set @s tdm.guard 40
 tag @s add br.pvp_grace
 effect give @s minecraft:resistance 2 4 true
+scoreboard players set @s tdm.food 0
+execute at @s run function oa:tdm/fx/respawn

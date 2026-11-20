@@ -8,7 +8,7 @@ execute as @a[tag=br.lobby] run scoreboard players add #players tdm.sys 1
 execute unless score #players tdm.sys matches 2..10 run return run tellraw @s {text:"TDMには2～10人必要です",color:"red"}
 execute as @a[tag=br.lobby,tag=oa.practice] at @s run function oa:practice/leave
 execute as @a[tag=br.lobby,tag=oa.debug] at @s run function oa:debug/stop
-execute unless score #ready tdm.sys matches 196 run return run function oa:tdm/map/prepare
+execute unless score #ready tdm.sys matches 197 run return run function oa:tdm/map/prepare
 execute as @a[tag=br.lobby] unless score @s oa.id matches 1.. run function oa:internal/id
 execute as @a[tag=br.lobby] at @s run function oa:br/save_player
 execute if entity @a[tag=br.lobby,scores={br.saved=0}] run return run function oa:tdm/save_failed
@@ -19,6 +19,7 @@ scoreboard players set #state br.state 1
 scoreboard players set #active tdm.sys 1
 scoreboard players set #time tdm.sys 0
 scoreboard players set #warmup tdm.sys 200
+execute in oa:tdm run gamerule minecraft:locator_bar false
 scoreboard players set #time br.time 0
 scoreboard players set #red tdm.points 0
 scoreboard players set #blue tdm.points 0

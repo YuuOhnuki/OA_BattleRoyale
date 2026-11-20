@@ -1,7 +1,10 @@
 # Synchronous claim: first eligible player consumes it, so two players cannot both receive it.
 tag @e[tag=tdm.claim] remove tdm.claim
-tag @e[tag=tdm.pickup,distance=..1.4,sort=nearest,limit=1] add tdm.claim
+tag @e[tag=tdm.pickup,scores={tdm.lock=0},distance=..1.4,sort=nearest,limit=1] add tdm.claim
 scoreboard players operation #pickup tdm.sys = @e[tag=tdm.claim,limit=1] tdm.type
+execute if score #pickup tdm.sys matches ..10 unless predicate oa:sneaking run return 0
+execute if score #pickup tdm.sys matches ..10 if entity @s[tag=tdm.swap_latched] run return 0
+execute if score #pickup tdm.sys matches 104 run return run function oa:tdm/loot/heal_take
 execute if score #pickup tdm.sys matches 103 if items entity @s container.* *[minecraft:custom_data~{oa_overwork:1b}] run return 0
 execute if score #pickup tdm.sys matches 103 if items entity @s weapon.offhand *[minecraft:custom_data~{oa_overwork:1b}] run return 0
 execute if score #pickup tdm.sys matches 101 if score @s tdm.armor matches 1.. run return 0
@@ -11,7 +14,9 @@ execute if score #pickup tdm.sys matches 101 run scoreboard players set @s tdm.a
 execute if score #pickup tdm.sys matches 102 run function oa:tdm/armor/diamond
 execute if score #pickup tdm.sys matches 102 run scoreboard players set @s tdm.armor 2
 execute if score #pickup tdm.sys matches ..10 run function oa:tdm/loot/swap
+execute if score #pickup tdm.sys matches ..10 unless score #swap_ok tdm.sys matches 1 run return 0
 execute if score #pickup tdm.sys matches 103 run function oa:tdm/loot/take_overwork
 execute if score #pickup tdm.sys matches 101..102 run title @s actionbar {text:"防具が強化されました！死亡するとチェーンに戻ります",color:"aqua"}
+function oa:tdm/fx/pickup
 playsound minecraft:entity.player.levelup player @s ~ ~ ~ 0.6 1.4
-kill @e[tag=tdm.claim]
+execute as @e[tag=tdm.claim] run function oa:tdm/loot/remove
