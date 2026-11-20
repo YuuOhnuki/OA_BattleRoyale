@@ -1,3 +1,4 @@
+execute if score #game oa.game matches 1 run return run tellraw @s {text:"TDMは専用アリーナを使います。BRのマップ選択は保存されています",color:"yellow"}
 # macro: dir（-1＝前へ、1＝次へ）。@s＝押したプレイヤー。生成済みのマップを、選択中の次（前）から順に探して切り替える
 # マップの並び：0 地上（br）→ 1 ネザー（nether）→ 2 洞窟（cave）→ 0 …（マップを増やしたら step_try の行と、3 の折り返しを直す）
 $scoreboard players set #ms_dir oa.tmp $(dir)

@@ -1,0 +1,14 @@
+gamemode adventure @s
+tag @s add br.alive
+execute if score @s tdm.team matches 1 run team join oa_tdm_red @s
+execute if score @s tdm.team matches 2 run team join oa_tdm_blue @s
+scoreboard players operation @s oa.team = @s tdm.team
+scoreboard players set @s tdm.wait 0
+scoreboard players set @s tdm.armor 0
+function oa:tdm/armor/chain
+function oa:tdm/equip
+effect give @s minecraft:instant_health 1 20 true
+effect give @s minecraft:saturation 1 20 true
+scoreboard players set @s tdm.guard 40
+tag @s add br.pvp_grace
+effect give @s minecraft:resistance 2 4 true

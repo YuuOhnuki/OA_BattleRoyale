@@ -1,3 +1,4 @@
+execute if score #active tdm.sys matches 1 run return run tellraw @s {text:"TDMの途中参加はできません。次の試合から参加してください",color:"yellow"}
 # Find a safe current-border spawn before touching inventory or existing backup.
 execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,type=minecraft:armor_stand,tag=oa.admin_spawn]
 execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,type=minecraft:armor_stand,tag=oa.admin_spawn]

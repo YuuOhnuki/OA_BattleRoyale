@@ -1,5 +1,5 @@
 {
-  "version": "1.9.194",
-  "checks": "static: JSON, function references, command names, nether model (lava containment, reachability, y<=0), no runtime test",
-  "runtime": "Paper 26.3 test server startup and reload passed; match smoke test cancelled at user request; combat and visuals not tested by humans"
+  "version": "1.9.195",
+  "checks": "passed: static JSON/function references/command names/version; clean staged plugin build and existing unit tests",
+  "runtime": "passed: Paper 26.3 startup with plugin 0.15.0 and oa:tdm dimension, no loading errors; no match simulation per user request; gameplay, map construction and visuals unverified"
 }

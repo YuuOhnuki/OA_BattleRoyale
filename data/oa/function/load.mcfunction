@@ -463,3 +463,5 @@ scoreboard objectives add br.a_px dummy
 scoreboard objectives add br.a_py dummy
 scoreboard objectives add br.a_pz dummy
 function oa:ach/armor_objectives
+
+function oa:tdm/load

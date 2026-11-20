@@ -1,3 +1,4 @@
+execute if entity @s[tag=tdm.player] run return run function oa:tdm/death
 function oa:tayayuyu/clear
 function oa:overwork/cleanup
 function oa:hotchikisu/cleanup

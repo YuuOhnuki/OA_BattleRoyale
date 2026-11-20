@@ -1,3 +1,4 @@
+execute if entity @s[tag=tdm.player] run return run function oa:tdm/rejoin
 scoreboard players operation @s br.login_epoch = #epoch br.login_epoch
 scoreboard players add @s br.login_leave 0
 scoreboard players operation @s br.login_seen = @s br.login_leave

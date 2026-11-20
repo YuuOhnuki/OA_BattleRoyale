@@ -1,3 +1,4 @@
+execute if score #active tdm.sys matches 1 run return 0
 execute unless score #state br.state matches 1 run return run function oa:br/bars/hide
 bossbar set oa:pvp_grace players @a[tag=br.playing]
 bossbar set oa:zone_timer players @a[tag=br.playing]

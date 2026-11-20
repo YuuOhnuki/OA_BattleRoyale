@@ -1,3 +1,4 @@
+execute if score #active tdm.sys matches 1 run return 0
 # 1.9.182: 軽量化。鉱石の点（約100〜180個）を4組（br.ostg 0〜3）に分け、5tickごとに1組ずつ調べる（どの点も1秒に1回）。
 # 以前は5tickごとに全部を調べていて、その tick だけ重かった。組の番号がない点は、ここで振る
 execute if score #state br.state matches 1 if score #clock oa.beat matches 0 run scoreboard players add #ostg br.tmp 1

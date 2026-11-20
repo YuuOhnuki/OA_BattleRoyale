@@ -1,3 +1,4 @@
+execute if entity @s[tag=tdm.player] run return 0
 scoreboard players operation #cd br.tmp = @s oa.cd
 scoreboard players add #cd br.tmp 19
 scoreboard players operation #cd br.tmp /= #20 br.tmp

@@ -1,6 +1,9 @@
-# 引き継ぎメモ（1.9.194 時点）
+# 引き継ぎメモ（1.9.195 時点）
 
 ## 現状
+- 1.9.195：TDMを追加。tdm/*が進行・武器選択・拾得・復活・得点を担当。#game oa.game（0=BR/1=TDM）は選択、#active tdm.sysは進行中。br.state=1とbr.playing/br.aliveを武器・参加保護用に共用するが、BRのtick/loot/終了判定は入口で分岐する。BRの保存ID・br.pickは維持。専用dimensionはoa:tdm、マップ生成元はscripts/gen_tdm_map.py。
+- 新ディメンションを足すときは武器のマクロ内のディメンション列挙（特にnero/return_live・clear_mark、internal/clear_owned、itoriの演出解除）も足す。TDMではBR境界判定を使わない。プラグイン側はTDMの地図配布除外と味方発光に対応（0.15.0）。
+- 検証はユーザー指示により静的・起動チェックまで。試合進行・マップの実地確認は未確認。
 - 1.9.194：武器調整。inventory/refill_damageで主手の数値を試合状態に合わせて置換し、加算の重複・練習場への持ち越しを防ぐ。いとりはnormal_damageで補充後の基礎値を3HPに。
 - 1.9.193：大爆発（tayayuyu/blast）に「たやゆゆの負け」のタイトル。大当たりのタイトルは win_solo/win_team から 20 tick 後。
 - 1.9.192：ガチャに時限爆弾（tayayuyu/oni_*、tick → oni_tick、#g_oni 残り tick、頭のTNTは item_display oa.g_oni_hat を毎 tick 目の上へ tp、押しつけは進捗 oa:tayayuyu/oni_pass＝鬼に直接殴られた人）と大爆発（blast、oa:gacha_blast）。抽選は1〜1500。大当たりのタイトルは win_solo/win_team から schedule。

@@ -1,3 +1,4 @@
+execute if score #active tdm.sys matches 1 run return run function oa:tdm/watch
 execute if score #state br.state matches 1 if entity @s[tag=br.alive] run return run function oa:br/surrender
 execute if score #state br.state matches 0 run return run function oa:lobby/watch
 execute if entity @s[tag=br.playing] run return 0

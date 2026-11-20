@@ -1,3 +1,4 @@
+execute if score #active tdm.sys matches 1 run return run function oa:tdm/tick
 execute if score #state br.state matches 3 run function oa:br/celebration/tick
 scoreboard players add #vclock br.tmp 1
 execute if score #vclock br.tmp matches 10.. run scoreboard players set #vclock br.tmp 0

@@ -1,3 +1,5 @@
+execute if entity @s[tag=tdm.player] run scoreboard players set @s oa.i_points 15
+execute if entity @s[tag=tdm.player] run return run scoreboard players set @s oa.i_unlock 6
 execute if entity @s[tag=oa.practice] run scoreboard players set @s oa.i_points 15
 execute if entity @s[tag=oa.practice] run return run scoreboard players set @s oa.i_unlock 6
 execute unless score @s oa.i_round = #round br.round run function oa:itori/progress_reset

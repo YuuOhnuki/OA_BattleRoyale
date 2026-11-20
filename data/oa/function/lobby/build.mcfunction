@@ -269,3 +269,5 @@ function oa:lobby/map_labels_build
 
 function oa:lobby/gallery/build
 data remove storage oa:lobby board_built
+
+data remove storage oa:lobby tdm_station

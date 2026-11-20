@@ -1,3 +1,4 @@
+tellraw @s {text:"[ゲームモード・TDMの武器／チーム選択]",color:"gold",click_event:{action:"run_command",command:"/trigger oa.tdm set 10"}}
 execute if items entity @s inventory.* *[minecraft:custom_data~{oa_player_book:1b,guide_v1976:1b}] run return 0
 execute if items entity @s hotbar.* *[minecraft:custom_data~{oa_player_book:1b,guide_v1976:1b}] run return 0
 execute if items entity @s weapon.offhand *[minecraft:custom_data~{oa_player_book:1b,guide_v1976:1b}] run return 0
