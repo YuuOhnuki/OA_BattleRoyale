@@ -9,7 +9,7 @@ attribute @s minecraft:movement_speed modifier remove oa:curse
 attribute @s minecraft:movement_speed modifier remove oa:night
 attribute @s minecraft:attack_damage modifier remove oa:night
 attribute @s minecraft:armor modifier remove oa:night
-execute if entity @s[tag=oa.glow] unless entity @s[tag=oa.gacha_glow] run effect clear @s minecraft:glowing
+execute if entity @s[tag=oa.glow] unless entity @s[tag=oa.gacha_glow] unless entity @s[tag=oa.goni_glow] run effect clear @s minecraft:glowing
 execute if entity @s[tag=oa.dark] run effect clear @s minecraft:darkness
 execute if entity @s[tag=oa.tired] run effect clear @s minecraft:slowness
 tag @s remove oa.glow

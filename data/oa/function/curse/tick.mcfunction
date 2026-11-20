@@ -1,3 +1,4 @@
+execute unless items entity @s armor.head *[minecraft:custom_data~{oa:{kind:5}}] run return 0
 execute unless items entity @s armor.head *[minecraft:custom_data~{oa:{mask_v161:1b}}] run item modify entity @s armor.head oa:visual/k5
 execute unless entity @s[tag=oa.db_keepwear] run item modify entity @s armor.head oa:killing_wear
 execute unless entity @s[tag=oa.curse_v1911] run attribute @s minecraft:movement_speed modifier remove oa:curse

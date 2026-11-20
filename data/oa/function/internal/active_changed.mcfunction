@@ -10,7 +10,7 @@ attribute @s minecraft:movement_speed modifier remove oa:curse
 attribute @s minecraft:movement_speed modifier remove oa:night
 attribute @s minecraft:attack_damage modifier remove oa:night
 attribute @s minecraft:armor modifier remove oa:night
-execute if entity @s[tag=oa.glow] unless entity @s[tag=oa.gacha_glow] run effect clear @s minecraft:glowing
+execute if entity @s[tag=oa.glow] unless entity @s[tag=oa.gacha_glow] unless entity @s[tag=oa.goni_glow] run effect clear @s minecraft:glowing
 execute if entity @s[tag=oa.dark] run effect clear @s minecraft:darkness
 execute if entity @s[tag=oa.tired] run effect clear @s minecraft:slowness
 tag @s remove oa.glow
@@ -24,7 +24,7 @@ scoreboard players set @s oa.breath 0
 execute store result storage oa:args id int 1 run scoreboard players get @s oa.id
 function oa:internal/clear_owned with storage oa:args
 
-execute if score @s oa.kind matches 5 run attribute @s minecraft:movement_speed modifier add oa:curse 1.75 add_multiplied_total
+execute if score @s oa.kind matches 5 if items entity @s armor.head *[minecraft:custom_data~{oa:{kind:5}}] run attribute @s minecraft:movement_speed modifier add oa:curse 1.75 add_multiplied_total
 tag @s remove oa.night
 
 scoreboard players set @s oa.sonic 0

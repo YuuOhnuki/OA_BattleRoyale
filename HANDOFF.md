@@ -1,6 +1,9 @@
-# 引き継ぎメモ（1.9.198 時点）
+# 引き継ぎメモ（1.9.199 時点）
 
 ## 現状
+- 1.9.199：oni_hatを実際のTNT頭装備へ変更。inventory/dropで元の頭を落とし、失敗時は上書きしない。oa_tnt_oniタグの固定装備。oni_dropで自前TNTのみ消し、equip_curse/equip_yuua/equipは鬼の間停止。curse/tickは本当にマスクを装着している時だけ走り、TNTへマスクのモデルを上書きしない。
+- キリング：enchantment/curseのdamage_immunityを削除して通常攻撃をプラグインcombat/KillingParryで止め、curse/rollを呼ぶ。oa.curse_guardの既存抽選を共有、oa.routed_damageはDP側へ任せる。保護キャンセル後のHIGHEST/ignoreCancelledでパリィの誤発火を防ぐ。必ずプラグイン0.19.0を先に配置し、ペアで反映する。
+- TDM再生IV/速度II5秒、tdm.healをプラグインで実HPへ加算して10HPを保証。loadoutは#warmup>0の間は選択武器を配らず、warmup終了時に配布。
 - 1.9.198：補給spawnからbr/supply/unique（固有10種、ゆー除外、ゆうあ1個制限）を必ず1回呼ぶ。元気百倍はhealth_revealを全生存者へ10秒、強化は従来どおり使用者だけ。TNT鬼はoni_revealを開始時と毎秒呼び、oa.goni_glowをoni_resetで解除。鬼の押しつけでは全員発光を消さない。
 - ゆー：プラグイン0.18.0 weapon/OverworkServiceが手のトーテムなしでキャンセル初期値のEntityResurrectEventを受け、通常インベントリのoa_overwork付きトーテム1個を消費して復活を許可。overwork/usedで従来の2tick待ちへ接続。手にトーテムがある場合は介入しない。PaperのLivingEntityバイトコードで、手にない場合も復活イベント・既定トーテム効果が使われ、used_totem進捗は実物がある場合だけ発火することを確認。実際の致死イベントでの試験は未実施。
 - 1.9.197：TDM HUD（hud_player→hud_lineマクロ、保有武器とCT）、回復ドロップ104=4HP、キル時の再生II/速度II/tdm.food+4。満腹度の実数加算はプラグイン0.17.0 TdmMenu。地面はシフトで武器交換し、drop_fromが実アイテムをtdm.savedのitem_displayへコピー。tdm.dropidで本体と名前表示を対応させremoveで両方を消す。tdm.lock=20、tdm.swap_latchedで即時拾い直しを防止。

@@ -1,3 +1,4 @@
+execute if entity @s[tag=oa.g_oni] run return 0
 # 1.9.182: 軽量化。帽子（マスク）が頭以外のどこにもなければ、40マスを1つずつ調べずに終わる（毎tick・全員）
 execute unless items entity @s container.* *[minecraft:custom_data~{oa:{kind:5}}] unless items entity @s weapon.offhand *[minecraft:custom_data~{oa:{kind:5}}] unless items entity @s armor.chest *[minecraft:custom_data~{oa:{kind:5}}] unless items entity @s armor.legs *[minecraft:custom_data~{oa:{kind:5}}] unless items entity @s armor.feet *[minecraft:custom_data~{oa:{kind:5}}] run return 0
 execute if items entity @s hotbar.0 *[minecraft:custom_data~{oa:{kind:5}}] run return run function oa:inventory/equip {slot:"hotbar.0"}

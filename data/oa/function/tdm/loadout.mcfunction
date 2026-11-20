@@ -6,7 +6,7 @@ scoreboard players operation @s oa.team = @s tdm.team
 scoreboard players set @s tdm.wait 0
 scoreboard players set @s tdm.armor 0
 function oa:tdm/armor/chain
-function oa:tdm/equip
+execute unless score #warmup tdm.sys matches 1.. run function oa:tdm/equip
 item replace entity @s hotbar.1 with minecraft:stone_sword[minecraft:unbreakable={}]
 item replace entity @s hotbar.2 with minecraft:bow[minecraft:unbreakable={}]
 item replace entity @s hotbar.8 with minecraft:arrow 10
@@ -17,4 +17,5 @@ scoreboard players set @s tdm.guard 40
 tag @s add br.pvp_grace
 effect give @s minecraft:resistance 2 4 true
 scoreboard players set @s tdm.food 0
+scoreboard players set @s tdm.heal 0
 execute at @s run function oa:tdm/fx/respawn

@@ -1,4 +1,4 @@
-# 1.9.192: 時限爆弾の鬼になる（本人として）。頭にTNT（表示のエンティティ）、生存者全員発光、移動速度＋200%。押しつけ直後の1秒は押しつけ返せない
+# 時限爆弾の鬼になる。頭装備を落としてTNTを実装着し、全員発光・速度強化。
 tag @s add oa.g_oni
 scoreboard players set @s oa.goni_cd 20
 attribute @s minecraft:movement_speed modifier remove oa:gacha_oni

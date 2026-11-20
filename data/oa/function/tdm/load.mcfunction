@@ -1,3 +1,4 @@
+scoreboard objectives add tdm.heal dummy
 scoreboard objectives add tdm.food dummy
 scoreboard objectives add tdm.weapon dummy
 scoreboard objectives add tdm.ct dummy

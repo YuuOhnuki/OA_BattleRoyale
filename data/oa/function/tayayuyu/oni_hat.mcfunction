@@ -1,1 +1,9 @@
-summon minecraft:item_display ~ ~2 ~ {Tags:["oa.g_oni_hat"],item:{id:"minecraft:tnt",count:1},teleport_duration:1,view_range:1.0,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.7f,0.7f,0.7f]}}
+# A real equipped TNT item, not a floating display. Never overwrite a failed drop.
+kill @e[type=minecraft:item_display,tag=oa.g_oni_hat]
+execute if items entity @s armor.head *[minecraft:custom_data~{oa_tnt_oni:1b}] run return 0
+execute if items entity @s armor.head * run function oa:inventory/drop {slot:"armor.head"}
+execute if items entity @s armor.head * run return 0
+attribute @s minecraft:movement_speed modifier remove oa:curse
+tag @s remove oa.curse_v1911
+clear @s *[minecraft:custom_data~{oa_tnt_oni:1b}]
+item replace entity @s armor.head with minecraft:tnt[minecraft:custom_name={text:"TNT鬼",color:"red",italic:false},minecraft:custom_data={oa_tnt_oni:1b},minecraft:max_stack_size=1,minecraft:equippable={slot:"head",swappable:false,damage_on_hurt:false,dispensable:false},minecraft:enchantments={"minecraft:binding_curse":1,"minecraft:vanishing_curse":1},minecraft:enchantment_glint_override=false]
