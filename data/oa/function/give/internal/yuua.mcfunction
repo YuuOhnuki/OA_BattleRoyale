@@ -13,4 +13,5 @@ execute unless items entity @e[type=minecraft:item,tag=oa.spawn,limit=1] content
 execute if entity @s[tag=br.chest] run item modify entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents oa:br_hat
 execute if entity @s[tag=br.ground_new] run item modify entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents oa:br_hat
 execute if entity @s[tag=br.playing,tag=!oa.practice] if score @s br.round = #round br.round if score #state br.state matches 1 run item modify entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents oa:br_hat
+execute if entity @s[tag=tdm.equip] run function oa:tdm/take_spawn
 tag @e[tag=oa.spawn] remove oa.spawn

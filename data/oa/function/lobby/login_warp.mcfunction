@@ -1,3 +1,4 @@
+execute if entity @s[tag=tdm.player] run return run tag @s remove br.login_pending
 execute if entity @s[tag=oa.practice] run return run tag @s remove br.login_pending
 execute if entity @s[tag=br.playing,tag=br.alive] run return run tag @s remove br.login_pending
 execute if entity @s[nbt={Health:0.0f}] run return 0

@@ -1,9 +1,13 @@
-execute unless score @s tdm.wait matches 1.. run function oa:tdm/clean_player
 scoreboard players set @s oa.death 0
+execute if score @s tdm.wait matches 1.. run return 0
 tag @s remove br.alive
-scoreboard players set @s tdm.wait 60
+function oa:tdm/clean_player
+function oa:br/clear_inventory
+scoreboard players set @s tdm.wait 200
 scoreboard players set @s tdm.guard 0
 scoreboard players set @s tdm.armor 0
-function oa:br/clear_inventory
-gamemode spectator @s
-title @s actionbar {text:"3秒後に復活します（防具強化は解除）",color:"yellow"}
+tag @s add br.pvp_grace
+execute unless entity @s[nbt={Health:0.0f}] run gamemode spectator @s
+scoreboard players set @s tdm.ui 1
+execute unless entity @s[nbt={Health:0.0f}] run function oa:tdm/wait_tick
+title @s actionbar {text:"10秒後に復活。画面で次の固有武器を選択してください",color:"yellow"}

@@ -1,5 +1,5 @@
 {
-  "version": "1.9.195",
-  "checks": "passed: static JSON/function references/command names/version; clean staged plugin build and existing unit tests",
-  "runtime": "passed: Paper 26.3 startup with plugin 0.15.0 and oa:tdm dimension, no loading errors; no match simulation per user request; gameplay, map construction and visuals unverified"
+  "version": "1.9.196",
+  "checks": "static commands/JSON/references/version; map graph and 155 loot positions; plugin build",
+  "runtime": "passed: Paper 26.3 test-server startup with plugin 0.16.0 and oa:tdm; no load errors; full match tests omitted per user request; human gameplay, respawn GUI, TP and visuals unverified"
 }

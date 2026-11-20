@@ -1,3 +1,4 @@
+attribute @s minecraft:movement_speed modifier remove oa:tdm_start
 function oa:br/clear_match_effects
 function oa:overwork/cleanup
 function oa:hotchikisu/cleanup

@@ -75,6 +75,13 @@ for f in glob.glob('data/**/*.mcfunction', recursive=True):
         if re.search(r'\bdata modify (storage \S+|block \S+ \S+ \S+|entity \S+) (set|merge|append|prepend|insert)\b', s):
             errors.append(f'data modify のパスがない: {f}:{n}')
 
+# Every custom dimension must be represented in the shared coordinate snapshot.
+# Otherwise skill return positions silently fall back to the overworld (TDM 1.9.195).
+for dim_file in glob.glob('data/oa/dimension/*.json'):
+    dim = 'oa:' + os.path.splitext(os.path.basename(dim_file))[0]
+    if 'if dimension ' + dim + ' run data modify storage oa:position value.dim' not in rd('data/oa/function/nero/save.mcfunction'):
+        errors.append(f'座標保存のディメンションが未対応: {dim}')
+
 # 3. versions
 ver = None
 m = re.search(r'OA バトルロワイヤル (\d+\.\d+\.\d+)', rd('pack.mcmeta'))

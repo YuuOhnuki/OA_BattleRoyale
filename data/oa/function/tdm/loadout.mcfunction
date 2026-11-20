@@ -7,6 +7,10 @@ scoreboard players set @s tdm.wait 0
 scoreboard players set @s tdm.armor 0
 function oa:tdm/armor/chain
 function oa:tdm/equip
+item replace entity @s hotbar.1 with minecraft:stone_sword[minecraft:unbreakable={}]
+item replace entity @s hotbar.2 with minecraft:bow[minecraft:unbreakable={}]
+item replace entity @s hotbar.8 with minecraft:arrow 10
+scoreboard players set @s tdm.ui 0
 effect give @s minecraft:instant_health 1 20 true
 effect give @s minecraft:saturation 1 20 true
 scoreboard players set @s tdm.guard 40

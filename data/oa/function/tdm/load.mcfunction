@@ -1,6 +1,7 @@
 scoreboard objectives add oa.game trigger
 scoreboard objectives add oa.tdm trigger
 scoreboard objectives add tdm.sys dummy
+scoreboard objectives add tdm.ui dummy
 scoreboard objectives add tdm.load dummy
 scoreboard objectives add tdm.team dummy
 scoreboard objectives add tdm.kills playerKillCount

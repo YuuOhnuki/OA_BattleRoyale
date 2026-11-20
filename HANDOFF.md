@@ -1,6 +1,9 @@
-# 引き継ぎメモ（1.9.195 時点）
+# 引き継ぎメモ（1.9.196 時点）
 
 ## 現状
+- 1.9.196：nero/saveのdimension分岐にoa:tdmがなく、TDM位置がoverworldとして保存されていた。ネロ帰還の境界拒否とゆったり帰還の誤ディメンションにつながる。プラグインNeroMarkServiceもTDMを境界判定の対象外にしていたため対応。死亡時のクライアント再出現はプラグインTdmMenuのPlayerRespawnEventでTDM待機室へ固定し、lobby/login_warpもtdm.playerを除外。
+- TDM: GUIはプラグインtdm/TdmMenu、ゲーム本体はデータパックtdm/*。tdm.ui=1でGUI、tdm.wait=200tick、#warmup tdm.sys=200tick、マップ#ready=196。新会場生成元scripts/gen_tdm_map_v196.py（既存gen_tdm_map.pyから起動）。155出現候補・通常移動経路を静的検査。標準装備とキルごと矢5本、重み付きランダム出現、ゆうあ150秒、ゆー不定期。
+- 一般化：共通の位置保存・プラグインのディメンション判定・バニラの復活イベントも新ディメンション追加時の点検対象。起動できることはTPや復活が正常である証拠にはならない。
 - 1.9.195：TDMを追加。tdm/*が進行・武器選択・拾得・復活・得点を担当。#game oa.game（0=BR/1=TDM）は選択、#active tdm.sysは進行中。br.state=1とbr.playing/br.aliveを武器・参加保護用に共用するが、BRのtick/loot/終了判定は入口で分岐する。BRの保存ID・br.pickは維持。専用dimensionはoa:tdm、マップ生成元はscripts/gen_tdm_map.py。
 - 新ディメンションを足すときは武器のマクロ内のディメンション列挙（特にnero/return_live・clear_mark、internal/clear_owned、itoriの演出解除）も足す。TDMではBR境界判定を使わない。プラグイン側はTDMの地図配布除外と味方発光に対応（0.15.0）。
 - 検証はユーザー指示により静的・起動チェックまで。試合進行・マップの実地確認は未確認。

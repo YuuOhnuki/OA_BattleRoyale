@@ -11,3 +11,4 @@ execute if dimension oa:practice run data modify storage oa:position value.dim s
 execute if dimension oa:br run data modify storage oa:position value.dim set value "oa:br"
 execute if dimension oa:br_nether run data modify storage oa:position value.dim set value "oa:br_nether"
 execute if dimension oa:br_cave run data modify storage oa:position value.dim set value "oa:br_cave"
+execute if dimension oa:tdm run data modify storage oa:position value.dim set value "oa:tdm"
