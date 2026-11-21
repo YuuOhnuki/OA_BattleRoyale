@@ -32,39 +32,6 @@
             "italic": false,
             "extra": [
               {
-                "text": "通常攻撃：",
-                "color": "gray",
-                "italic": false
-              },
-              {
-                "text": "",
-                "color": "red",
-                "italic": false,
-                "font": "oa:icons"
-              },
-              {
-                "text": "×0.5（1HP）・攻撃速度4回／秒。追加効果なし",
-                "color": "white",
-                "italic": false
-              }
-            ]
-          },
-          {
-            "text": "",
-            "italic": false,
-            "extra": [
-              {
-                "text": "  。",
-                "color": "white",
-                "italic": false
-              }
-            ]
-          },
-          {
-            "text": "",
-            "italic": false,
-            "extra": [
-              {
                 "text": "右クリック：",
                 "color": "gray",
                 "italic": false
@@ -92,7 +59,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "  5（3HP）と爆風。",
+                "text": "  5と爆風。",
                 "color": "white",
                 "italic": false
               }
@@ -146,7 +113,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{furo_lore204:1b,furo_lore182:1b}"
+      "tag": "{furo_lore205:1b,furo_lore182:1b}"
     }
   ]
 }

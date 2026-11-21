@@ -43,18 +43,7 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×2.5（5HP）。攻撃速度1.8回／秒。追加効果な",
-                "color": "white",
-                "italic": false
-              }
-            ]
-          },
-          {
-            "text": "",
-            "italic": false,
-            "extra": [
-              {
-                "text": "  し。",
+                "text": "×2.5。攻撃速度1.8回／秒。追加効果なし。",
                 "color": "white",
                 "italic": false
               }
@@ -81,7 +70,7 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×0.5（1HP）と",
+                "text": "×0.5と押し出し",
                 "color": "white",
                 "italic": false
               }
@@ -92,7 +81,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "  押し出し。1秒後に元の場所へ帰還。",
+                "text": "  。1秒後に元の場所へ帰還。",
                 "color": "white",
                 "italic": false
               }
@@ -136,7 +125,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{description204:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
+      "tag": "{oa:{description205:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
     }
   ]
 }

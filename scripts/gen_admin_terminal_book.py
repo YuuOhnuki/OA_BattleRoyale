@@ -64,7 +64,7 @@ pages[1] = page('目次 1/2', [nav(n, p) for n, p in starts[:half]] + [nav('次�
 pages[2] = page('目次 2/2', [nav(n, p) for n, p in starts[half:]] + [nav('‹ 前の目次', 2)])
 book = {'title': {'raw': 'OA 管理ブック'}, 'author': 'OA', 'generation': 0, 'resolved': False, 'pages': pages}
 (out / 'book_content.mcfunction').write_text('$give @s minecraft:written_book[minecraft:written_book_content=' + json.dumps(book, ensure_ascii=False, separators=(',', ':'))
-                                             + ',minecraft:custom_name={text:"OA 管理ブック",color:"gold",italic:false},minecraft:custom_data={oa_admin_book:1b,book_v204:1b},minecraft:max_stack_size=1] 1\n', encoding='utf-8')
+                                             + ',minecraft:custom_name={text:"OA 管理ブック",color:"gold",italic:false},minecraft:custom_data={oa_admin_book:1b,book_v205:1b},minecraft:max_stack_size=1] 1\n', encoding='utf-8')
 lines = ['execute unless entity @s[tag=br.admin] run return 0', 'clear @s *[minecraft:custom_data~{oa_admin_book:1b}]', 'scoreboard players set #admin_free oa.tmp 0']
 for slot in [f'hotbar.{n}' for n in range(9)] + [f'inventory.{n}' for n in range(27)]:
     lines.append(f'execute unless items entity @s {slot} * run scoreboard players set #admin_free oa.tmp 1')

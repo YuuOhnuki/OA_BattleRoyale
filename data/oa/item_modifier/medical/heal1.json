@@ -84,7 +84,7 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×1.5（3HP）",
+                "text": "×1.5",
                 "color": "white",
                 "italic": false
               },
@@ -122,7 +122,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{medical_text204:1b}"
+      "tag": "{medical_text205:1b}"
     }
   ]
 }

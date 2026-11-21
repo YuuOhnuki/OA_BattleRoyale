@@ -43,18 +43,7 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×2（4HP）。攻撃速度1.8回／秒。鈍足Iを2秒付",
-                "color": "white",
-                "italic": false
-              }
-            ]
-          },
-          {
-            "text": "",
-            "italic": false,
-            "extra": [
-              {
-                "text": "  与。",
+                "text": "×2。攻撃速度1.8回／秒。鈍足Iを2秒付与。",
                 "color": "white",
                 "italic": false
               }
@@ -125,7 +114,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{description204:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
+      "tag": "{oa:{description205:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
     }
   ]
 }

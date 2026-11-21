@@ -43,7 +43,7 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×1.5（3HP）（＋",
+                "text": "×1.5（＋",
                 "color": "white",
                 "italic": false
               },
@@ -54,7 +54,7 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×0.5（1HP））。攻撃速度",
+                "text": "×0.5）。攻撃速度1.4回／秒。満充",
                 "color": "white",
                 "italic": false
               }
@@ -65,7 +65,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "  1.4回／秒。満充填の左クリックで射程10mの紫弾。",
+                "text": "  填の左クリックで射程10mの紫弾。",
                 "color": "white",
                 "italic": false
               }
@@ -141,7 +141,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{description204:1b,description_up:1b,name_v172:1b,name_v204:1b,itori_text204:10,itori_stage:5,itori_lore194:10}}"
+      "tag": "{oa:{description205:1b,description_up:1b,name_v172:1b,name_v204:1b,itori_text205:10,itori_stage:5,itori_lore194:10}}"
     }
   ]
 }

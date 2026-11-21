@@ -81,7 +81,7 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×2.5ゲージ（内部5ポイント）",
+                "text": "×2.5ゲージ",
                 "color": "white",
                 "italic": false
               },
@@ -118,7 +118,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{medical_text204:1b}"
+      "tag": "{medical_text205:1b}"
     }
   ]
 }

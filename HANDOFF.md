@@ -1,6 +1,8 @@
-# 引き継ぎメモ（1.9.204 時点）
+# 引き継ぎメモ（1.9.205 時点）
 
 ## 現状
+- 1.9.205：rich/UnitTextはアイコン個数のみ。共通fields()でゆーの通常攻撃と右クリック、ふろっしゅの通常攻撃を省略。description205系の版印で既存品も更新。
+
 - 1.9.204：weapon_catalog.py→gen_weapon_text.pyが説明の正本。タグdescription204/description_up、name_v204、itori_text204で既存品も更新。melee_*の実値は変更せずrefill_damage後にloreを更新。いとりは独立した通常ダメージ条件と同じ判定で表示＋1を切替。
 - カスタムデータの版フラグは必ず1b（intの1だと既存の述語1bに一致せず毎tick更新になる）。進行度はintで保持。
 

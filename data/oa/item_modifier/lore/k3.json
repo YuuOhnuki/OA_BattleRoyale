@@ -59,7 +59,7 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×0.5（1HP）・4回／秒）。",
+                "text": "×0.5・4回／秒）。",
                 "color": "white",
                 "italic": false
               }
@@ -97,7 +97,7 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×1（2HP）の音波、30%で息切れ。",
+                "text": "×1の音波、30%で息切れ。",
                 "color": "white",
                 "italic": false
               }
@@ -141,7 +141,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{description204:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
+      "tag": "{oa:{description205:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
     }
   ]
 }
