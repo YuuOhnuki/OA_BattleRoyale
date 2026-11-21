@@ -24,9 +24,9 @@ data modify storage oa:ach_info yuua_sleep set value {name:"明日早いので�
 data modify storage oa:ach_info fish_kill set value {name:"おはようございます",desc:"ぴちぴち：初めてキルした"}
 data modify storage oa:ach_info fish_marlin set value {name:"カジキマグロ",desc:"ぴちぴち：激流の勢いで敵をキルした"}
 data modify storage oa:ach_info pichi_20s set value {name:"僕は4次元です()",desc:"ぴちぴち：敵を20秒間連続で跳ねさせた"}
-data modify storage oa:ach_info lazi_kill set value {name:"音の洗礼",desc:"lazi：初めてキルした"}
-data modify storage oa:ach_info lazi_tired set value {name:"すり抜け",desc:"lazi：息切れした"}
-data modify storage oa:ach_info lazi_midnight set value {name:"午前0時",desc:"lazi：息切れしているときに倒された"}
+data modify storage oa:ach_info lazi_kill set value {name:"音の洗礼",desc:"らじ：初めてキルした"}
+data modify storage oa:ach_info lazi_tired set value {name:"すり抜け",desc:"らじ：息切れした"}
+data modify storage oa:ach_info lazi_midnight set value {name:"午前0時",desc:"らじ：息切れしているときに倒された"}
 data modify storage oa:ach_info nero_kill set value {name:"雑魚はすっこんでな。",desc:"ネロノワール：初めてキルした"}
 data modify storage oa:ach_info nero_decoy set value {name:"ビビらせてやる！",desc:"ネロノワール：身代わりの術で初めて攻撃を受け流した"}
 data modify storage oa:ach_info nero_decoy10 set value {name:"弱さを見せるな、絶対にだ！",desc:"ネロノワール：1試合で10回、身代わりの術で攻撃を受け流した"}
@@ -53,7 +53,7 @@ data modify storage oa:ach_info tayayuyu_master set value {name:"たやゆゆの
 data modify storage oa:ach_info tayayuyu_unlucky set value {name:"たやゆゆに愛される",desc:"たやゆゆ：1試合でハズレの効果を3回引いた"}
 data modify storage oa:ach_info tayayuyu_dqn set value {name:"DQNに屈した",desc:"たやゆゆ：自分のガチャで帽子の効果を引き、その帽子を被った人に倒された"}
 data modify storage oa:ach_info itori_kill set value {name:"いとりの一撃",desc:"いとり：初めてキルした"}
-data modify storage oa:ach_info furoball_blast set value {name:"爆風の洗礼",desc:"ふろボール：爆風を敵に当てた"}
+data modify storage oa:ach_info furoball_blast set value {name:"爆風の洗礼",desc:"ふろっしゅ：ふろボール：爆風を敵に当てた"}
 data modify storage oa:ach_info weapon_all set value {name:"武器博士",desc:"10種すべての固有武器で初めてキルした"}
 data modify storage oa:ach_info peace_win set value {name:"平和主義者",desc:"1キルもせずに優勝した"}
 data modify storage oa:ach_info close_call set value {name:"紙一重",desc:"体力1ハート以下で優勝した"}
@@ -66,4 +66,4 @@ data modify storage oa:ach_info fist_kill set value {name:"拳で語る",desc:"�
 data modify storage oa:ach_info greedy30 set value {name:"強欲な探検家",desc:"1試合でチェストを30個開けた"}
 data modify storage oa:ach_info games50 set value {name:"皆勤賞",desc:"通算50試合に参加した"}
 data modify storage oa:ach_info afk set value {name:"一旦離席",desc:"試合中、30秒間動かずに立ち止まった"}
-data modify storage oa:ach_info armor_break set value {name:"腹は使い捨てですわ～",desc:"固有装備以外の防具を、耐久値0まで使って壊した"}
+data modify storage oa:ach_info armor_break set value {name:"服は使い捨てですわ～",desc:"バニラの防具を耐久値0まで使って壊した（固有装備の時間切れは対象外）"}

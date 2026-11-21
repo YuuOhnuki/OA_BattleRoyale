@@ -1,5 +1,5 @@
 {
-  "version": "1.9.208",
-  "checks": "static JSON/functions/commands/versions, canonical consumable components and labels",
-  "runtime": "Paper 26.3 startup and plugin build passed; all 6 medical types / 19 loot component definitions match inventory modifiers; no match tests; actual mining, stacking, map rendering and combat unverified"
+  "version": "1.9.209",
+  "checks": "static JSON/functions/commands/versions, lobby geometry and BR-derived practice catalog",
+  "runtime": "pending startup; no match tests; player interaction, visual and combat checks unverified"
 }

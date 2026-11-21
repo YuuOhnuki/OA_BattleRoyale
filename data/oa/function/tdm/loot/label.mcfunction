@@ -18,12 +18,12 @@ execute if score @s tdm.type matches 104 run data modify storage oa:tdm_label na
 data modify storage oa:tdm_label component set value {text:"",extra:[]}
 data modify storage oa:tdm_label component.text set from storage oa:tdm_label name
 execute if score @s tdm.type matches 1 run data modify storage oa:tdm_label component set value {"text":"","extra":[{"text":"ゆうあ","color":"#fdc5f9","italic":false,"bold":true},{"text":" [シフトで交換]","color":"gray"}]}
-execute if score @s tdm.type matches 2 run data modify storage oa:tdm_label component set value {"text":"","extra":[{"text":"ぴちぴち","color":"#7B8CFF","italic":false,"bold":true},{"text":" [シフトで交換]","color":"gray"}]}
+execute if score @s tdm.type matches 2 run data modify storage oa:tdm_label component set value {"text":"","extra":[{"text":"ぴちぴち","color":"#2529ff","italic":false,"bold":true},{"text":" [シフトで交換]","color":"gray"}]}
 execute if score @s tdm.type matches 3 run data modify storage oa:tdm_label component set value {"text":"","extra":[{"text":"らじ","color":"#ffad29","italic":false,"bold":true},{"text":" [シフトで交換]","color":"gray"}]}
 execute if score @s tdm.type matches 4 run data modify storage oa:tdm_label component set value {"text":"","extra":[{"text":"ネロノワール","color":"#B5B5C2","italic":false,"bold":true},{"text":" [シフトで交換]","color":"gray"}]}
 execute if score @s tdm.type matches 5 run data modify storage oa:tdm_label component set value {"text":"","extra":[{"text":"キリング","color":"#8d59ff","italic":false,"bold":true},{"text":" [シフトで交換]","color":"gray"}]}
 execute if score @s tdm.type matches 6 run data modify storage oa:tdm_label component set value {"text":"","extra":[{"text":"ゆったり","color":"#65fff0","italic":false,"bold":true},{"text":" [シフトで交換]","color":"gray"}]}
-execute if score @s tdm.type matches 7 run data modify storage oa:tdm_label component set value {"text":"","extra":[{"text":"ほちきす","color":"#DE6868","italic":false,"bold":true},{"text":" [シフトで交換]","color":"gray"}]}
+execute if score @s tdm.type matches 7 run data modify storage oa:tdm_label component set value {"text":"","extra":[{"text":"ほちきす","color":"#851c1c","italic":false,"bold":true},{"text":" [シフトで交換]","color":"gray"}]}
 execute if score @s tdm.type matches 8 run data modify storage oa:tdm_label component set value {"text":"","extra":[{"text":"こまめ","color":"#51c5ff","italic":false,"bold":true},{"text":" [シフトで交換]","color":"gray"}]}
 execute if score @s tdm.type matches 10 run data modify storage oa:tdm_label component set value {"text":"","extra":[{"text":"いとり","color":"#006dff","italic":false,"bold":true},{"text":" [シフトで交換]","color":"gray"}]}
 execute if score @s tdm.type matches 103 run data modify storage oa:tdm_label component set value {"text":"","extra":[{"text":"ゆー","color":"#55C985","italic":false,"bold":true},{"text":" [近づくと取得]","color":"gray"}]}

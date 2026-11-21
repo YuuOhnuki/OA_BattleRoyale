@@ -305,135 +305,39 @@ fill ~3 ~ ~13 ~15 ~ ~13 minecraft:mossy_stone_bricks
 fill ~-15 ~ ~21 ~-3 ~ ~21 minecraft:mossy_stone_bricks
 fill ~3 ~ ~21 ~15 ~ ~21 minecraft:mossy_stone_bricks
 setblock ~-13 ~1 ~15 minecraft:chiseled_stone_bricks
-setblock ~-13 ~1 ~14 minecraft:stone_button[face=wall,facing=north]
-summon minecraft:marker ~-12.5 ~1 ~14.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_1"}}
-setblock ~-14 ~1 ~15 minecraft:stone_button[face=wall,facing=west]
-summon minecraft:marker ~-13.5 ~1 ~15.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_1"}}
-setblock ~-12 ~1 ~15 minecraft:stone_button[face=wall,facing=east]
-summon minecraft:marker ~-11.5 ~1 ~15.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_1"}}
-setblock ~-13 ~1 ~16 minecraft:stone_button[face=wall,facing=south]
-summon minecraft:marker ~-12.5 ~1 ~16.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_1"}}
-summon minecraft:text_display ~-12.5 ~3.5 ~15.5 {"Tags": ["oa.practice_weapon_1"], "text": {"text":"ぴちぴち","color":"#7B8CFF","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
+summon minecraft:text_display ~-12.5 ~3.5 ~15.5 {"Tags": ["oa.practice_weapon_1"], "text": {"text":"ぴちぴち","color":"#2529ff","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~-9 ~1 ~15 minecraft:chiseled_stone_bricks
-setblock ~-9 ~1 ~14 minecraft:stone_button[face=wall,facing=north]
-summon minecraft:marker ~-8.5 ~1 ~14.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_2"}}
-setblock ~-10 ~1 ~15 minecraft:stone_button[face=wall,facing=west]
-summon minecraft:marker ~-9.5 ~1 ~15.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_2"}}
-setblock ~-8 ~1 ~15 minecraft:stone_button[face=wall,facing=east]
-summon minecraft:marker ~-7.5 ~1 ~15.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_2"}}
-setblock ~-9 ~1 ~16 minecraft:stone_button[face=wall,facing=south]
-summon minecraft:marker ~-8.5 ~1 ~16.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_2"}}
 summon minecraft:text_display ~-8.5 ~3.5 ~15.5 {"Tags": ["oa.practice_weapon_2"], "text": {"text":"ゆうあ","color":"#fdc5f9","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~-5 ~1 ~15 minecraft:chiseled_stone_bricks
-setblock ~-5 ~1 ~14 minecraft:stone_button[face=wall,facing=north]
-summon minecraft:marker ~-4.5 ~1 ~14.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_3"}}
-setblock ~-6 ~1 ~15 minecraft:stone_button[face=wall,facing=west]
-summon minecraft:marker ~-5.5 ~1 ~15.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_3"}}
-setblock ~-4 ~1 ~15 minecraft:stone_button[face=wall,facing=east]
-summon minecraft:marker ~-3.5 ~1 ~15.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_3"}}
-setblock ~-5 ~1 ~16 minecraft:stone_button[face=wall,facing=south]
-summon minecraft:marker ~-4.5 ~1 ~16.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_3"}}
 summon minecraft:text_display ~-4.5 ~3.5 ~15.5 {"Tags": ["oa.practice_weapon_3"], "text": {"text":"ゆったり","color":"#65fff0","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~5 ~1 ~15 minecraft:chiseled_stone_bricks
-setblock ~5 ~1 ~14 minecraft:stone_button[face=wall,facing=north]
-summon minecraft:marker ~5.5 ~1 ~14.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_4"}}
-setblock ~4 ~1 ~15 minecraft:stone_button[face=wall,facing=west]
-summon minecraft:marker ~4.5 ~1 ~15.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_4"}}
-setblock ~6 ~1 ~15 minecraft:stone_button[face=wall,facing=east]
-summon minecraft:marker ~6.5 ~1 ~15.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_4"}}
-setblock ~5 ~1 ~16 minecraft:stone_button[face=wall,facing=south]
-summon minecraft:marker ~5.5 ~1 ~16.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_4"}}
 summon minecraft:text_display ~5.5 ~3.5 ~15.5 {"Tags": ["oa.practice_weapon_4"], "text": {"text":"キリング","color":"#8d59ff","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~9 ~1 ~15 minecraft:chiseled_stone_bricks
-setblock ~9 ~1 ~14 minecraft:stone_button[face=wall,facing=north]
-summon minecraft:marker ~9.5 ~1 ~14.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_5"}}
-setblock ~8 ~1 ~15 minecraft:stone_button[face=wall,facing=west]
-summon minecraft:marker ~8.5 ~1 ~15.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_5"}}
-setblock ~10 ~1 ~15 minecraft:stone_button[face=wall,facing=east]
-summon minecraft:marker ~10.5 ~1 ~15.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_5"}}
-setblock ~9 ~1 ~16 minecraft:stone_button[face=wall,facing=south]
-summon minecraft:marker ~9.5 ~1 ~16.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_5"}}
 summon minecraft:text_display ~9.5 ~3.5 ~15.5 {"Tags": ["oa.practice_weapon_5"], "text": {"text":"らじ","color":"#ffad29","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~13 ~1 ~15 minecraft:chiseled_stone_bricks
-setblock ~13 ~1 ~14 minecraft:stone_button[face=wall,facing=north]
-summon minecraft:marker ~13.5 ~1 ~14.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_6"}}
-setblock ~12 ~1 ~15 minecraft:stone_button[face=wall,facing=west]
-summon minecraft:marker ~12.5 ~1 ~15.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_6"}}
-setblock ~14 ~1 ~15 minecraft:stone_button[face=wall,facing=east]
-summon minecraft:marker ~14.5 ~1 ~15.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_6"}}
-setblock ~13 ~1 ~16 minecraft:stone_button[face=wall,facing=south]
-summon minecraft:marker ~13.5 ~1 ~16.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_6"}}
 summon minecraft:text_display ~13.5 ~3.5 ~15.5 {"Tags": ["oa.practice_weapon_6"], "text": {"text":"こまめ","color":"#51c5ff","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~-13 ~1 ~19 minecraft:chiseled_stone_bricks
-setblock ~-13 ~1 ~18 minecraft:stone_button[face=wall,facing=north]
-summon minecraft:marker ~-12.5 ~1 ~18.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_7"}}
-setblock ~-14 ~1 ~19 minecraft:stone_button[face=wall,facing=west]
-summon minecraft:marker ~-13.5 ~1 ~19.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_7"}}
-setblock ~-12 ~1 ~19 minecraft:stone_button[face=wall,facing=east]
-summon minecraft:marker ~-11.5 ~1 ~19.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_7"}}
-setblock ~-13 ~1 ~20 minecraft:stone_button[face=wall,facing=south]
-summon minecraft:marker ~-12.5 ~1 ~20.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_7"}}
 summon minecraft:text_display ~-12.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_7"], "text": {"text":"ネロノワール","color":"#B5B5C2","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~-9 ~1 ~19 minecraft:chiseled_stone_bricks
-setblock ~-9 ~1 ~18 minecraft:stone_button[face=wall,facing=north]
-summon minecraft:marker ~-8.5 ~1 ~18.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_8"}}
-setblock ~-10 ~1 ~19 minecraft:stone_button[face=wall,facing=west]
-summon minecraft:marker ~-9.5 ~1 ~19.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_8"}}
-setblock ~-8 ~1 ~19 minecraft:stone_button[face=wall,facing=east]
-summon minecraft:marker ~-7.5 ~1 ~19.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_8"}}
-setblock ~-9 ~1 ~20 minecraft:stone_button[face=wall,facing=south]
-summon minecraft:marker ~-8.5 ~1 ~20.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_8"}}
 summon minecraft:text_display ~-8.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_8"], "text": {"text":"ゆー","color":"#55C985","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~-5 ~1 ~19 minecraft:chiseled_stone_bricks
-setblock ~-5 ~1 ~18 minecraft:stone_button[face=wall,facing=north]
-summon minecraft:marker ~-4.5 ~1 ~18.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_9"}}
-setblock ~-6 ~1 ~19 minecraft:stone_button[face=wall,facing=west]
-summon minecraft:marker ~-5.5 ~1 ~19.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_9"}}
-setblock ~-4 ~1 ~19 minecraft:stone_button[face=wall,facing=east]
-summon minecraft:marker ~-3.5 ~1 ~19.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_9"}}
-setblock ~-5 ~1 ~20 minecraft:stone_button[face=wall,facing=south]
-summon minecraft:marker ~-4.5 ~1 ~20.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_9"}}
-summon minecraft:text_display ~-4.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_9"], "text": {"text":"ほちきす","color":"#DE6868","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
+summon minecraft:text_display ~-4.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_9"], "text": {"text":"ほちきす","color":"#851c1c","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~5 ~1 ~19 minecraft:chiseled_stone_bricks
-setblock ~5 ~1 ~18 minecraft:stone_button[face=wall,facing=north]
-summon minecraft:marker ~5.5 ~1 ~18.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_10"}}
-setblock ~4 ~1 ~19 minecraft:stone_button[face=wall,facing=west]
-summon minecraft:marker ~4.5 ~1 ~19.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_10"}}
-setblock ~6 ~1 ~19 minecraft:stone_button[face=wall,facing=east]
-summon minecraft:marker ~6.5 ~1 ~19.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_10"}}
-setblock ~5 ~1 ~20 minecraft:stone_button[face=wall,facing=south]
-summon minecraft:marker ~5.5 ~1 ~20.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_10"}}
 summon minecraft:text_display ~5.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_10"], "text": {"text":"たやゆゆ","color":"#12a88f","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~9 ~1 ~19 minecraft:chiseled_stone_bricks
-setblock ~9 ~1 ~18 minecraft:stone_button[face=wall,facing=north]
-summon minecraft:marker ~9.5 ~1 ~18.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_11"}}
-setblock ~8 ~1 ~19 minecraft:stone_button[face=wall,facing=west]
-summon minecraft:marker ~8.5 ~1 ~19.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_11"}}
-setblock ~10 ~1 ~19 minecraft:stone_button[face=wall,facing=east]
-summon minecraft:marker ~10.5 ~1 ~19.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_11"}}
-setblock ~9 ~1 ~20 minecraft:stone_button[face=wall,facing=south]
-summon minecraft:marker ~9.5 ~1 ~20.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_11"}}
 summon minecraft:text_display ~9.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_11"], "text": {"text":"ふろっしゅ：ふろボール","color":"#58B5DD","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~13 ~1 ~19 minecraft:chiseled_stone_bricks
-setblock ~13 ~1 ~18 minecraft:stone_button[face=wall,facing=north]
-summon minecraft:marker ~13.5 ~1 ~18.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_12"}}
-setblock ~12 ~1 ~19 minecraft:stone_button[face=wall,facing=west]
-summon minecraft:marker ~12.5 ~1 ~19.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_12"}}
-setblock ~14 ~1 ~19 minecraft:stone_button[face=wall,facing=east]
-summon minecraft:marker ~14.5 ~1 ~19.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_12"}}
-setblock ~13 ~1 ~20 minecraft:stone_button[face=wall,facing=south]
-summon minecraft:marker ~13.5 ~1 ~20.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_12"}}
 summon minecraft:text_display ~13.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_12"], "text": {"text":"いとり","color":"#006dff","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~-18 ~ ~-8 minecraft:lily_pad
@@ -1983,3 +1887,4 @@ setblock ~27 ~1 ~6 minecraft:stone_button[face=wall,facing=north]
 summon minecraft:marker ~27.5 ~1 ~6.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/cooldown"}}
 summon minecraft:text_display ~27.5 ~2.85 ~7.5 {Tags:["oa.practice_controls"],text:{text:"CTリセット",color:"aqua"},billboard:"center",shadow:1b,view_range:0.5f}
 function oa:practice/ext_build
+function oa:practice/catalog/build

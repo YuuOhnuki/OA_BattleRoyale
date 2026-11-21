@@ -1,7 +1,10 @@
-give @s minecraft:iron_sword
-give @s minecraft:diamond_sword
-give @s minecraft:netherite_sword
-give @s minecraft:iron_axe
-give @s minecraft:diamond_axe
-give @s minecraft:netherite_axe
-tellraw @s {text:"剣と斧を受け取りました。",color:"green"}
+function oa:practice/catalog/give_3
+function oa:practice/catalog/give_4
+function oa:practice/catalog/give_5
+function oa:practice/catalog/give_6
+function oa:practice/catalog/give_8
+function oa:practice/catalog/give_9
+function oa:practice/catalog/give_10
+function oa:practice/catalog/give_11
+function oa:practice/catalog/give_12
+function oa:practice/catalog/give_13

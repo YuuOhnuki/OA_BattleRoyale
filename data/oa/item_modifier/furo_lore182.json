@@ -124,7 +124,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{furo_lore208:1b,furo_lore182:1b}"
+      "tag": "{furo_lore209:1b,furo_lore182:1b}"
     }
   ]
 }

@@ -5,10 +5,10 @@
       "id": "minecraft:iron_chestplate"
     },
     "title": {
-      "text": "腹は使い捨てですわ～"
+      "text": "服は使い捨てですわ～"
     },
     "description": {
-      "text": "固有装備以外の防具を、耐久値0まで使って壊した"
+      "text": "バニラの防具を耐久値0まで使って壊した（固有装備の時間切れは対象外）"
     },
     "frame": "task",
     "show_toast": true,

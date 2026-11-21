@@ -50,9 +50,9 @@ a("yuua_sleep", "yuua_kill", "明日早いので寝ます", "ゆうあ：帽子�
 a("fish_kill", "cat_weapon", "おはようございます", "ぴちぴち：初めてキルした", "cod", "task", False)
 a("fish_marlin", "fish_kill", "カジキマグロ", "ぴちぴち：激流の勢いで敵をキルした", "trident", "goal", False)
 a("pichi_20s", "fish_kill", "僕は4次元です()", "ぴちぴち：敵を20秒間連続で跳ねさせた", "cod", "goal", True)
-a("lazi_kill", "cat_weapon", "音の洗礼", "lazi：初めてキルした", "jukebox", "task", False)
-a("lazi_tired", "lazi_kill", "すり抜け", "lazi：息切れした", "note_block", "task", False)
-a("lazi_midnight", "lazi_kill", "午前0時", "lazi：息切れしているときに倒された", "clock", "task", True)
+a("lazi_kill", "cat_weapon", "音の洗礼", "らじ：初めてキルした", "jukebox", "task", False)
+a("lazi_tired", "lazi_kill", "すり抜け", "らじ：息切れした", "note_block", "task", False)
+a("lazi_midnight", "lazi_kill", "午前0時", "らじ：息切れしているときに倒された", "clock", "task", True)
 a("nero_kill", "cat_weapon", "雑魚はすっこんでな。", "ネロノワール：初めてキルした", "bone", "task", False)
 a("nero_decoy", "nero_kill", "ビビらせてやる！", "ネロノワール：身代わりの術で初めて攻撃を受け流した", "ender_pearl", "goal", False)
 a("nero_decoy10", "nero_decoy", "弱さを見せるな、絶対にだ！", "ネロノワール：1試合で10回、身代わりの術で攻撃を受け流した", "shield", "challenge", True)
@@ -94,7 +94,7 @@ a("fist_kill", "first_kill", "拳で語る", "素手でキルした", "leather",
 a("greedy30", "chests20", "強欲な探検家", "1試合でチェストを30個開けた", "ender_chest", "goal", True)
 a("games50", "games10", "皆勤賞", "通算50試合に参加した", "clock", "goal", True)
 a("afk", "cat_br", "一旦離席", "試合中、30秒間動かずに立ち止まった", "armor_stand", "task", True)
-a("armor_break", "cat_br", "腹は使い捨てですわ～", "固有装備以外の防具を、耐久値0まで使って壊した", "iron_chestplate", "task", True)
+a("armor_break", "cat_br", "服は使い捨てですわ～", "バニラの防具を耐久値0まで使って壊した（固有装備の時間切れは対象外）", "iron_chestplate", "task", True)
 
 def cat_of(id):
     p = {e[0]: e[1] for e in E}
@@ -116,6 +116,8 @@ for cid, title, desc, icon in CATS:
         "description": {"text": desc}, "frame": "goal", "show_toast": False, "announce_to_chat": False, "hidden": False},
         "criteria": {"auto": {"trigger": "minecraft:tick"}}})
 
+profiles=json.load(open(f"{R}/source/gallery_profiles191.json",encoding="utf-8"))
+head_owners={"hk_lazi":"lazi_3253","hk_itori":"itori0814","hk_pichi":"pichipichi_256","hk_nero":"NeroNoir9696","hk_kiri":"F_KiRiSaN_1110"}
 info = {}  # id -> (title, desc, hidden)
 for id, parent, title, desc, icon, frame, hidden in E:
     path = f"{ADV}/{id}.json"
@@ -127,6 +129,11 @@ for id, parent, title, desc, icon, frame, hidden in E:
             "title": {"text": title}, "description": {"text": desc}, "frame": frame,
             "show_toast": True, "announce_to_chat": False, "hidden": hidden},
             "criteria": {"done": {"trigger": "minecraft:impossible"}}}
+    if id in head_owners:
+        owner=head_owners[id]
+        profile={"name":owner}
+        if owner in profiles:profile["properties"]=profiles[owner]["properties"]
+        d["display"]["icon"]["components"]={"minecraft:profile":profile}
     write(id, d)
     x = d["display"]
     info[id] = (x["title"]["text"], x["description"]["text"], x["hidden"])

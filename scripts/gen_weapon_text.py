@@ -65,12 +65,12 @@ def lore(w,up=False,progress=None):
  rows.append(t(note(w),'gray'))
  return [line for component in rows for line in wrap(component)]
 def modifier(w,up=False,progress=None):
- data={'description208':1,'description_up':int(up),'name_v172':1,'name_v204':1}
+ data={'description209':1,'description_up':int(up),'name_v172':1,'name_v204':1}
  if progress is not None:
-  data['itori_text208']=progress;data['itori_stage']=sum(progress>=n for n in [0,1,5,7,10,15]);data['itori_lore194']=progress
- tag='{oa:{'+','.join(k+':'+str(v)+('' if k in ['itori_text208','itori_stage','itori_lore194'] else 'b') for k,v in data.items())+'}}'
+  data['itori_text209']=progress;data['itori_stage']=sum(progress>=n for n in [0,1,5,7,10,15]);data['itori_lore194']=progress
+ tag='{oa:{'+','.join(k+':'+str(v)+('' if k in ['itori_text209','itori_stage','itori_lore194'] else 'b') for k,v in data.items())+'}}'
  return {'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':{'minecraft:custom_name':named(w),'minecraft:lore':lore(w,up,progress),'minecraft:tooltip_display':{'hidden_components':['minecraft:enchantments','minecraft:attribute_modifiers']}}},{'type':'minecraft:set_custom_data','tag':tag}]}
-menu={};reference=['# 固有武器・消耗品の説明（1.9.208）','', '記載は初期の性能。強化中の増加分はゲーム内の実物の説明欄だけへ表示。','', '体力は♥、満腹度は食料アイコンのゲージ数で表示。ダメージは軽減前。','']
+menu={};reference=['# 固有武器・消耗品の説明（1.9.209）','', '記載は初期の性能。強化中の増加分はゲーム内の実物の説明欄だけへ表示。','', '体力は♥、満腹度は食料アイコンのゲージ数で表示。ダメージは軽減前。','']
 for w in WEAPONS:
  kind=w['kind'];key=f'k{kind}' if kind<=10 else 'yu' if kind==11 else 'frosch'
  jwrite(D/f'item_modifier/lore/{key}.json',modifier(w))
@@ -90,7 +90,7 @@ for w in WEAPONS:
  if kind==11:jwrite(D/'item_modifier/lore/yu.json',modifier(w))
  if kind==12:
   # A description modifier must not rewrite consumable components or stack size.
-  jwrite(D/'item_modifier/furo_lore182.json',{'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':{'minecraft:custom_name':named(w),'minecraft:lore':lore(w)}},{'type':'minecraft:set_custom_data','tag':'{furo_lore208:1b,furo_lore182:1b}'}]})
+  jwrite(D/'item_modifier/furo_lore182.json',{'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':{'minecraft:custom_name':named(w),'minecraft:lore':lore(w)}},{'type':'minecraft:set_custom_data','tag':'{furo_lore209:1b,furo_lore182:1b}'}]})
   def update_furo(node):
    if isinstance(node,list):
     for n in node:update_furo(n)
@@ -145,8 +145,8 @@ for w in WEAPONS[:9]:
  if k in [4,6,8,9]:
   for up in [0,1]:
    cond=('if' if up else 'unless')+' items entity @s $(slot) *[minecraft:custom_data~{oa:{damage194_up:1b}}]'
-   lines.append(base+' '+cond+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description208:1b,description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k{k}'+('_plus1' if up else ''))
- else:lines.append(base+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description208:1b}}}}] run item modify entity @s $(slot) oa:lore/k{k}')
+   lines.append(base+' '+cond+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description209:1b,description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k{k}'+('_plus1' if up else ''))
+ else:lines.append(base+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description209:1b}}}}] run item modify entity @s $(slot) oa:lore/k{k}')
 lines.append('$execute if items entity @s $(slot) *[minecraft:custom_data~{oa:{kind:10}}] run function oa:itori/item_stage {slot:"$(slot)"}')
 write(D/'function/inventory/lore.mcfunction','\n'.join(lines)+'\n')
 lines=[]
@@ -154,11 +154,11 @@ for up in [0,1]:
  cond=('if score #state br.state matches 1 if score #time br.time matches 7200.. if entity @s[tag=br.alive,tag=!oa.practice]' if up else '')
  # Explicit flag computed by the same condition as normal_damage, even for a head/offhand slot.
  if up==0:lines+=['scoreboard players set #itori_text_up oa.tmp 0','execute if entity @s[tag=br.alive,tag=!oa.practice] if score #state br.state matches 1 if score #time br.time matches 7200.. run scoreboard players set #itori_text_up oa.tmp 1']
- lines.append(f'$execute if score #itori_text_up oa.tmp matches {up} unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description208:1b,itori_text208:$(points),description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k10_progress_$(points)'+('_plus1' if up else ''))
+ lines.append(f'$execute if score #itori_text_up oa.tmp matches {up} unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description209:1b,itori_text209:$(points),description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k10_progress_$(points)'+('_plus1' if up else ''))
 write(D/'function/itori/item_progress.mcfunction','\n'.join(lines)+'\n')
 # Update held items as soon as the actual refill modifier changes.
 f=D/'function/inventory/refill_damage.mcfunction';s=f.read_text(encoding='utf-8')
-if 'description208' not in s:s+='\n# description208: show the actual strengthened item, never forecast refill stats.\nfunction oa:inventory/lore {slot:"weapon.mainhand"}\n'
+if 'description209' not in s:s+='\n# description209: show the actual strengthened item, never forecast refill stats.\nfunction oa:inventory/lore {slot:"weapon.mainhand"}\n'
 write(f,s)
 # Current gacha list is derived from the same result announcements used by gameplay.
 names=['health_all','fire_all','revive_all','hat_all','tnt_all','rush_all','chaos_all','gather','mood_all','combo_all','giant_all','critical','exposed','jackpot','oni_all','blast']

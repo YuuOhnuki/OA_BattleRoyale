@@ -1,4 +1,4 @@
-# 1.9.173: 防具が耐久値0で壊れた回数（統計 minecraft.broken）。ach/armor_check が見て「腹は使い捨てですわ～」
+# 1.9.173: 防具が耐久値0で壊れた回数（統計 minecraft.broken）。ach/armor_check が見て「服は使い捨てですわ～」
 scoreboard objectives add oa.ab0 minecraft.broken:minecraft.leather_helmet
 scoreboard objectives add oa.ab1 minecraft.broken:minecraft.leather_chestplate
 scoreboard objectives add oa.ab2 minecraft.broken:minecraft.leather_leggings

@@ -11,7 +11,7 @@ from book_layout import check_page
 
 r = Path(__file__).resolve().parents[1]
 f = r / 'data/oa/function/lobby/guide/book.mcfunction'
-VER = 'guide_v206'
+VER = 'guide_v209'
 
 def page(title, body, links):
     e = [{'text': title + '\n', 'color': 'dark_aqua', 'bold': True}, {'text': body + '\n', 'color': 'black'}]
@@ -52,7 +52,7 @@ pages = [
          '地面の武器はシフトで交換。',
          [('TDM受付', '/oa tdm'), ('出撃武器を選ぶ', '/tdm')]),
     page('練習場と荷物',
-         '練習場では今の荷物を預けて、武器を自由に試せます。\n'
+         '荷物を預け、バトロワの武器を試せます。\n展示の武器を右クリックで受け取れます。\n'
          '出るときは練習の荷物が消え、預けた荷物が戻ります。\n'
          '参加登録とチームはそのまま。',
          [('練習場メニュー', '/oa practice')]),

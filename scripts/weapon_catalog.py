@@ -36,7 +36,7 @@ MEDICINE={
  'paimon':('非常食','1秒で使用。速度II・跳躍II・攻撃力II・再生Iを20秒。満腹度2.5ゲージ（内部5ポイント）。')}
 
 # Presentation only; saved kinds and gameplay are unchanged.
-COLORS={1:'#fdc5f9',2:'#7B8CFF',3:'#ffad29',4:'#B5B5C2',5:'#8d59ff',6:'#65fff0',7:'#DE6868',8:'#51c5ff',9:'#12a88f',10:'#006dff',11:'#55C985',12:'#58B5DD'}
+COLORS={1:'#fdc5f9',2:'#2529ff',3:'#ffad29',4:'#B5B5C2',5:'#8d59ff',6:'#65fff0',7:'#851c1c',8:'#51c5ff',9:'#12a88f',10:'#006dff',11:'#55C985',12:'#58B5DD'}
 for w in WEAPONS:
  w['color']=COLORS[w['kind']];w['outline']=False
  if w['kind']==1:w['equip']='拾うと頭へ強制装着。攻撃した敵・攻撃してきた敵へ即死攻撃。装着中は発光。'

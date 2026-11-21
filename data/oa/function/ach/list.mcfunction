@@ -44,7 +44,7 @@ execute if entity @s[advancements={oa:ach/games50=true}] run tellraw @s [{text:"
 execute unless entity @s[advancements={oa:ach/games50=true}] run tellraw @s [{text:"・ ",color:"dark_gray"},{text:"？？？",color:"dark_gray"},{text:" ／ 隠し実績",color:"dark_gray"}]
 execute if entity @s[advancements={oa:ach/afk=true}] run tellraw @s [{text:"✔ ",color:"green"},{text:"一旦離席",color:"gold"},{text:" ／ 試合中、30秒間動かずに立ち止まった",color:"gray"}]
 execute unless entity @s[advancements={oa:ach/afk=true}] run tellraw @s [{text:"・ ",color:"dark_gray"},{text:"？？？",color:"dark_gray"},{text:" ／ 隠し実績",color:"dark_gray"}]
-execute if entity @s[advancements={oa:ach/armor_break=true}] run tellraw @s [{text:"✔ ",color:"green"},{text:"腹は使い捨てですわ～",color:"gold"},{text:" ／ 固有装備以外の防具を、耐久値0まで使って壊した",color:"gray"}]
+execute if entity @s[advancements={oa:ach/armor_break=true}] run tellraw @s [{text:"✔ ",color:"green"},{text:"服は使い捨てですわ～",color:"gold"},{text:" ／ バニラの防具を耐久値0まで使って壊した（固有装備の時間切れは対象外）",color:"gray"}]
 execute unless entity @s[advancements={oa:ach/armor_break=true}] run tellraw @s [{text:"・ ",color:"dark_gray"},{text:"？？？",color:"dark_gray"},{text:" ／ 隠し実績",color:"dark_gray"}]
 tellraw @s {text:"▼ マップ",color:"aqua",bold:true}
 execute if entity @s[advancements={oa:ach/map_br_play=true}] run tellraw @s [{text:"✔ ",color:"green"},{text:"草原の戦場へ",color:"gold"},{text:" ／ 地上マップで試合に参加した",color:"gray"}]

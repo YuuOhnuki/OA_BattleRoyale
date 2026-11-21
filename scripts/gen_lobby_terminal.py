@@ -17,7 +17,7 @@ from lobby_models import placement
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'data/oa/function/lobby/terminal'
 OUT.mkdir(parents=True, exist_ok=True)
-VER = 203
+VER = 209
 LIM, YMIN, YMAX = 40, -3, 44
 
 ops = []          # ('fill', x1,y1,z1,x2,y2,z2,block) in order
@@ -229,7 +229,7 @@ for side in (-1, 1):
     # benches facing the plaza centre along the wing walls (x=±14)
     face = 'w' if side > 0 else 'e'
     bench(side * 14, -3, 3, face)
-    bench(side * 14, 3, 3, face)
+    bench(side * 14, -7, 3, face)
     lamp_post(side * 13, -9)
     lamp_post(side * 13, 11)
 # plaza corner fill light (flush)
@@ -400,9 +400,9 @@ box(13, 3, 22, 19, 3, 22, DARK); put(14, 3, 22, BR_LIGHT); put(16, 3, 22, BR_LIG
 box(13, 0, 22, 13, 3, 22, DARK); box(19, 0, 22, 19, 3, 22, DARK)
 # TDM consoles (mirrored)
 console(-11, 21, 'n', '会場案内', '立体工廠', 'tdm_info', 'waxed_cut_copper', 'gold', TDM_LIGHT)
-console(-14, 21, 'n', '赤チーム', '希望する', 'tdm_red', 'red_wool', 'red', TDM_LIGHT)
+console(-18, 21, 'n', '赤チーム', '希望する', 'tdm_red', 'red_wool', 'red', TDM_LIGHT)
 console(-16, 21, 'n', '出撃武器', '固有武器を選ぶ', 'tdm_weapon', ('m', 'hotchikisu'), 'gold', TDM_LIGHT)
-console(-18, 21, 'n', '青チーム', '希望する', 'tdm_blue', 'blue_wool', 'blue', TDM_LIGHT)
+console(-14, 21, 'n', '青チーム', '希望する', 'tdm_blue', 'blue_wool', 'blue', TDM_LIGHT)
 console(-21, 21, 'n', '出撃設定', 'モード・開始', 'tdm_host', 'target', 'gold', TDM_LIGHT)
 box(-15, 0, 22, -15, 3, 22, DARK); box(-17, 0, 22, -17, 3, 22, DARK)
 box(-19, 3, 22, -13, 3, 22, DARK); put(-14, 3, 22, TDM_LIGHT); put(-16, 3, 22, TDM_LIGHT); put(-18, 3, 22, TDM_LIGHT)
@@ -432,9 +432,9 @@ box(-21, 1, 32, -11, 1, 32, WHITE_T); box(-21, 11, 32, -11, 11, 32, DARK_S)
 for x in (-19, -16, -13): put(x, 2, 33, TDM_LIGHT)
 for x in (-20, -18): put(x, 8, 32, 'red_wall_banner[facing=north]')
 for x in (-14, -12): put(x, 8, 32, 'blue_wall_banner[facing=north]')
-text(-18.0, 5.6, 32.9, {'text': '赤', 'color': 'white', 'bold': True}, 'n', 5.5)
-text(-13.0, 5.6, 32.9, {'text': '青', 'color': 'white', 'bold': True}, 'n', 5.5)
-text(-15.5, 4.3, 32.9, {'text': '赤 0人　青 0人', 'color': 'white'}, 'n', 1.0, tags=['oa.terminal.tdm_counts'], width=300)
+# Separate columns stay aligned with their own coloured panel from either view.
+text(-18.5, 4.3, 32.85, {'text': '赤チーム\n参加者なし', 'color': 'red'}, 'n', 0.9, tags=['oa.terminal.tdm_red_list'], width=155, bg=1073741824)
+text(-13.5, 4.3, 32.85, {'text': '青チーム\n参加者なし', 'color': 'blue'}, 'n', 0.9, tags=['oa.terminal.tdm_blue_list'], width=155, bg=1073741824)
 # venue miniature on a plinth (立体工廠: stacked copper decks)
 box(-18, 0, 27, -14, 0, 29, DARK)
 box(-17, 1, 28, -15, 1, 28, 'waxed_cut_copper'); put(-16, 2, 28, 'waxed_copper_grate'); put(-17, 2, 28, 'waxed_cut_copper_slab[type=bottom]'); put(-15, 2, 28, 'waxed_exposed_cut_copper_slab[type=bottom]')
@@ -513,7 +513,7 @@ WEAPONS = [  # (model, name, subtitle, info id)
     ('hotchikisu', 'ほちきす', 'ホッチキス', 9), ('komame', 'こまめ', '小豆バー', 6),
     ('tayayuyu', 'たやゆゆ', '変態ガチャ', 10), ('itori', 'いとり', '昭心', 12),
     ('yu', 'ゆー', 'オーバーワーク', 8), ('furoball', 'ふろっしゅ：ふろボール', '投てき武器', 11)]
-SHOW_Z = [-26, -20, -14, -8, -2, 4]
+SHOW_Z = [-28, -23, -18, -13, -8, -3]
 for i, (model, name, subtitle, info) in enumerate(WEAPONS):
     row = 0 if i < 6 else 1
     z = SHOW_Z[i % 6] if row == 0 else SHOW_Z[5 - i % 6]
@@ -570,8 +570,12 @@ for x in (25, 28, 31): put(x, -1, -25, BR_LIGHT)
 text(28.5, 7.35, -29.45, [{'text': '前回のバトルロワイヤル', 'color': 'gold', 'bold': True}], 's', 1.6, width=300)
 text(28.5, 6.75, -29.45, {'text': '記録なし', 'color': 'gray'}, 's', 0.9, tags=['oa.gallery.last_title'], width=400)
 for x, h, tag in ((28.5, 2.0, 'oa.gallery.p1'), (25.5, 1.0, 'oa.gallery.p2'), (31.5, 1.0, 'oa.gallery.p3')):
-    text(x, h + 0.35, -27.5, {'text': '—', 'color': 'gray'}, 's', 0.9, tags=[tag], width=150)
-text(28.5, 3.9, -29.45, {'text': '', 'color': 'white'}, 's', 0.62, tags=['oa.gallery.last_rows'], width=420)
+    text(x, h + 2.25, -27.5, {'text': '—', 'color': 'gray'}, 's', 0.75, tags=[tag], width=180)
+# Remaining participants stand on low plinths in front, leaving 1.8m aisles.
+for x in (20, 23, 25, 28, 30, 33, 35):
+    put(x, 0, -24, 'smooth_quartz_slab[type=bottom]')
+    put(x, -1, -24, BR_LIGHT)
+text(28.5, 5.5, -29.45, {'text': '', 'color': 'white'}, 's', 0.48, tags=['oa.gallery.last_rows'], width=420)
 # ranking boards on the east wall (face west), achievements on the west wall (face east)
 def board(x_wall, zc, face, title, tag, col):
     s = 1 if face == 'w' else -1      # wall at +x when facing west
@@ -780,6 +784,13 @@ for x in range(-3, 4):
         if z >= 13 and abs(x) > 3: continue
         assert walk_ok(x, z, 3), ('main approach blocked', x, z, at(x, -1, z), [at(x, y, z) for y in range(3)])
 # 2) every console / exhibit / interaction has a reachable standing cell right in front of it
+# Side entrance must be directly traversable, not merely reachable by a detour.
+for x in range(-28, -15):
+    for z in range(3, 8):
+        assert walk_ok(x, z, 3), ('armory entrance blocked', x, z)
+for x in range(-15, -11):
+    for z in range(4, 7):
+        assert walk_ok(x, z, 3), ('armory approach blocked', x, z)
 problems = []
 for it in meta['interactions']:
     cx, cz = (it['x0'] + it['x1']) / 2, (it['z0'] + it['z1']) / 2

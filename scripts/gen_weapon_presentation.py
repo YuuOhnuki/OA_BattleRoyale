@@ -49,9 +49,9 @@ def generate(weapons,named,repo,rp):
  # Existing placed practice labels are migrated once. No rebuilding is needed.
  lines=[]
  for w in weapons:
-  sel=f'@e[type=minecraft:text_display,tag=oa.practice_weapon_{w["info"]},tag=!oa.text207]'
+  sel=f'@e[type=minecraft:text_display,tag=oa.practice_weapon_{w["info"]},tag=!oa.text209]'
   label=w['name'] if w['kind']!=12 else 'ふろっしゅ：ふろボール'
-  lines += [f'execute in oa:practice as {sel} run data modify entity @s text set value '+dump(named(w,label)),f'execute in oa:practice run tag {sel} add oa.text207']
+  lines += [f'execute in oa:practice as {sel} run data modify entity @s text set value '+dump(named(w,label)),f'execute in oa:practice run tag {sel} add oa.text209']
  (d/'presentation/refresh_labels.mcfunction').write_text('\n'.join(lines)+'\n',encoding='utf-8')
  # Static labels and exact weapon name components in generated/build sources.
  names={}
