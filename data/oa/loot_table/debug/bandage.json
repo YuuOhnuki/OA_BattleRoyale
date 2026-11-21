@@ -13,8 +13,9 @@
               "components": {
                 "minecraft:custom_name": {
                   "text": "包帯",
-                  "color": "green",
-                  "italic": false
+                  "color": "gold",
+                  "italic": false,
+                  "bold": true
                 },
                 "minecraft:custom_data": {
                   "br_heal": true,
@@ -54,7 +55,71 @@
                 "minecraft:item_model": "oa:bandage",
                 "minecraft:lore": [
                   {
-                    "text": "3HP回復 / 右クリックですぐ使用",
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "通常攻撃：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "追加効果なし。",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "右クリック：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "すぐに",
+                        "color": "white",
+                        "italic": false
+                      },
+                      {
+                        "text": "",
+                        "color": "red",
+                        "italic": false,
+                        "font": "oa:icons"
+                      },
+                      {
+                        "text": "×1.5（3HP）",
+                        "color": "white",
+                        "italic": false
+                      },
+                      {
+                        "text": "回復する。",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "CT：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "なし／1個消費",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "※固有武器と一緒に所持できます。",
                     "color": "gray",
                     "italic": false
                   }

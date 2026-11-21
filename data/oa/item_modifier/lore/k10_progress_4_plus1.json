@@ -1,0 +1,147 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:custom_name": {
+          "text": "いとり：昭心",
+          "color": "gold",
+          "italic": false,
+          "bold": true
+        },
+        "minecraft:lore": [
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "モチーフ：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "itori0814",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "通常攻撃：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "",
+                "color": "red",
+                "italic": false,
+                "font": "oa:icons"
+              },
+              {
+                "text": "×1.5（3HP）（＋",
+                "color": "white",
+                "italic": false
+              },
+              {
+                "text": "",
+                "color": "red",
+                "italic": false,
+                "font": "oa:icons"
+              },
+              {
+                "text": "×0.5（1HP））。攻撃速度",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "  1.4回／秒。満充填の左クリックで射程10mの紫弾。",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "右クリック：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "解放したスキルを順番に使用する。",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "CT：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "1周後に10秒",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "解放：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "段階2／6・進行度4／次は5",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "※固有武器は1人1個です。",
+                "color": "gray",
+                "italic": false
+              }
+            ]
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:enchantments",
+            "minecraft:attribute_modifiers"
+          ]
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{description204:1b,description_up:1b,name_v172:1b,name_v204:1b,itori_text204:4,itori_stage:2,itori_lore194:4}}"
+    }
+  ]
+}

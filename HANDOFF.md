@@ -1,6 +1,9 @@
-# 引き継ぎメモ（1.9.203 時点）
+# 引き継ぎメモ（1.9.204 時点）
 
 ## 現状
+- 1.9.204：weapon_catalog.py→gen_weapon_text.pyが説明の正本。タグdescription204/description_up、name_v204、itori_text204で既存品も更新。melee_*の実値は変更せずrefill_damage後にloreを更新。いとりは独立した通常ダメージ条件と同じ判定で表示＋1を切替。
+- カスタムデータの版フラグは必ず1b（intの1だと既存の述語1bに一致せず毎tick更新になる）。進行度はintで保持。
+
 - 1.9.203：ロビーを空間構成から再設計（出撃ターミナル v203）。生成元は scripts/gen_lobby_terminal.py（＋lobby_models.py で武器モデルの見かけの中心、render_lobby_preview.py でプレビュー）。生成時に、主通路・端末前の到達・当たり判定の重なり・ブロック光（舗装9／芝生7／端末前13以上）・浮き・ガラス板／柵／塀の接続を検査し、失敗すると書き出さない。範囲は1.9.202と同じ X/Z±40・Y-3〜+44。印は origin.terminal:203、202は tick_202 のまま。203では board/tick・gallery/update(46→terminal/refresh)・update_skins(51)・tdm/lobby_build が旧設備を作らない。
 - 受付端末は interaction タグ oa.term.<action>。処理はプラグイン PlayerMenu.terminal（本人＝クリックしたプレイヤー）。DP側の入口は lobby/terminal/br_team・tdm_team・set_format・start_br・start_tdm（モード違いは拒否）。BR形式は #pref br.mode（load で 0 に初期化）。
 - 表示の文字はプラグイン LobbyBoards が更新（oa.screen.*・oa.terminal.*・oa.gallery.*）。戦績ギャラリーは StatsStore の全期間と前回の試合、実績は oa.t_ach。DPの戦績ボード（board/*）は203では動かない。

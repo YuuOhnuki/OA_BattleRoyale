@@ -225,7 +225,7 @@ fill ~-33 ~0 ~8 ~-31 ~0 ~10 minecraft:chiseled_quartz_block
 setblock ~-32 ~0 ~9 minecraft:sea_lantern
 summon minecraft:mannequin ~-31.5 ~1 ~9.5 {"Tags":["oa.lobby_exhibit","oa.gallery","oa.exhibit_raji"],"profile":{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTc5MzQzNjE1NzA0MiwKICAicHJvZmlsZUlkIiA6ICIyOGU2MWNlMDE5YjU0ZTYyOGZhZDkxZjA4MDA3YTk1MyIsCiAgInByb2ZpbGVOYW1lIiA6ICJsYXppXzMyNTMiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjlkMTY4ZmRiY2M3Mzg3NzIxY2Q2MGM0NTYyMGRmNjJkOTk0MmU5YmMxNDYyM2NhOTZmMDA5ZjI5YWZkYzJmZiIKICAgIH0KICB9Cn0="}]},"pose":"standing","immovable":true,"hide_description":true,"Invulnerable":true,"NoGravity":true,"Silent":true,"PersistenceRequired":true,"Rotation":[-90.0,0.0]}
 item replace entity @e[type=minecraft:mannequin,tag=oa.exhibit_raji,limit=1] weapon.mainhand with minecraft:carrot_on_a_stick[minecraft:item_model="oa:raji"]
-summon minecraft:text_display ~-31.5 ~4 ~9.5 {"Tags":["oa.lobby_label","oa.gallery"],"text":{"text":"lazi：防音マイク付きマスク\nlazi_3253","color":"gold"},"billboard":"center","background":1073741824,"shadow":true,"line_width":260,"view_range":0.5}
+summon minecraft:text_display ~-31.5 ~4 ~9.5 {"Tags":["oa.lobby_label","oa.gallery"],"text":{"text":"らじ：防音マイク付きマスク\nlazi_3253","color":"gold"},"billboard":"center","background":1073741824,"shadow":true,"line_width":260,"view_range":0.5}
 setblock ~-29 ~0 ~9 minecraft:chiseled_quartz_block
 setblock ~-29 ~1 ~9 minecraft:stone_button[face=floor,facing=east,powered=false]
 summon minecraft:marker ~-28.5 ~1 ~9.5 {Tags:["oa.lobby_button_new","oa.button_lobby","oa.gallery"]}
@@ -291,7 +291,7 @@ fill ~31 ~0 ~8 ~33 ~0 ~10 minecraft:chiseled_quartz_block
 setblock ~32 ~0 ~9 minecraft:sea_lantern
 summon minecraft:mannequin ~32.5 ~1 ~9.5 {"profile":{"properties":[{"name":"textures","value":"ewogICJ0aW1lc3RhbXAiIDogMTc5MzUxMTQ5MzUzNSwKICAicHJvZmlsZUlkIiA6ICJlOThlYzY1ZWE3N2I0MGNlYjQ2YmE2ZTllMjJmNmZkNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJmcm9zY2hfeSIsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zNWVmNjc5MzA4NTZiZDI1YTcyZmNmZWFhZWJmOGM4OTg1YTk3MjI5YjVhMDRiMTExZDUyOTRhOGZiODA2MTNmIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0="}]},"pose":"standing","immovable":true,"hide_description":true,"Invulnerable":true,"NoGravity":true,"Silent":true,"PersistenceRequired":true,"Rotation":[90.0,0.0],"Tags":["oa.lobby_exhibit","oa.gallery","oa.exhibit_furoball"]}
 item replace entity @e[type=minecraft:mannequin,tag=oa.exhibit_furoball,limit=1] weapon.mainhand with minecraft:fire_charge[minecraft:item_model="minecraft:fire_charge"]
-summon minecraft:text_display ~32.5 ~4 ~9.5 {"Tags":["oa.lobby_label","oa.gallery"],"text":{"text":"ふろボール\nfrosch_y","color":"gold"},"billboard":"center","background":1073741824,"shadow":true,"line_width":260,"view_range":0.5}
+summon minecraft:text_display ~32.5 ~4 ~9.5 {"Tags":["oa.lobby_label","oa.gallery"],"text":{"text":"ふろっしゅ：ふろボール\nfrosch_y","color":"gold"},"billboard":"center","background":1073741824,"shadow":true,"line_width":260,"view_range":0.5}
 setblock ~29 ~0 ~9 minecraft:chiseled_quartz_block
 setblock ~29 ~1 ~9 minecraft:stone_button[face=floor,facing=west,powered=false]
 summon minecraft:marker ~29.5 ~1 ~9.5 {Tags:["oa.lobby_button_new","oa.button_lobby","oa.gallery"]}
@@ -302,7 +302,7 @@ fill ~31 ~0 ~14 ~33 ~0 ~16 minecraft:chiseled_quartz_block
 setblock ~32 ~0 ~15 minecraft:sea_lantern
 summon minecraft:mannequin ~32.5 ~1 ~15.5 {Tags:["oa.lobby_exhibit","oa.gallery","oa.exhibit_itori"],profile:{name:"itori0814"},pose:"standing",immovable:1b,hide_description:1b,Invulnerable:1b,NoGravity:1b,Silent:1b,PersistenceRequired:1b,"Rotation":[90.0,0.0]}
 item replace entity @e[type=minecraft:mannequin,tag=oa.exhibit_itori,limit=1] weapon.mainhand with minecraft:carrot_on_a_stick[minecraft:item_model="oa:itori"]
-summon minecraft:text_display ~32.5 ~4 ~15.5 {Tags:["oa.lobby_label","oa.gallery","oa.exhibit_itori"],text:{text:"昭心\nitori0814",color:"gold"},billboard:"center",background:1073741824,shadow:1b,line_width:200,view_range:0.5f}
+summon minecraft:text_display ~32.5 ~4 ~15.5 {Tags:["oa.lobby_label","oa.gallery","oa.exhibit_itori"],text:{text:"いとり\nitori0814",color:"gold"},billboard:"center",background:1073741824,shadow:1b,line_width:200,view_range:0.5f}
 setblock ~29 ~0 ~15 minecraft:chiseled_quartz_block
 setblock ~29 ~1 ~15 minecraft:stone_button[face=floor,facing=west,powered=false]
 summon minecraft:marker ~29.5 ~1 ~15.5 {Tags:["oa.lobby_button_new","oa.button_lobby","oa.gallery"]}

@@ -15,7 +15,8 @@
                 "minecraft:custom_name": {
                   "text": "木のバット",
                   "color": "gold",
-                  "italic": false
+                  "italic": false,
+                  "bold": true
                 },
                 "minecraft:enchantments": {
                   "oa:bat": 1
@@ -25,7 +26,66 @@
                 },
                 "minecraft:lore": [
                   {
-                    "text": "通常武器／固有装備の所持制限対象外",
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "通常攻撃：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "",
+                        "color": "red",
+                        "italic": false,
+                        "font": "oa:icons"
+                      },
+                      {
+                        "text": "×2（4HP）",
+                        "color": "white",
+                        "italic": false
+                      },
+                      {
+                        "text": "・攻撃速度0.8回／秒。ノックバック。",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "右クリック：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "なし（通常攻撃用）",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "CT：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "なし",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "※固有武器と一緒に所持できます。",
                     "color": "gray",
                     "italic": false
                   }

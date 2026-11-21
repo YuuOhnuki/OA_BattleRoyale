@@ -4,33 +4,128 @@
     {
       "type": "minecraft:set_components",
       "components": {
+        "minecraft:custom_name": {
+          "text": "ネロノワール：ペスト医師の杖",
+          "color": "gold",
+          "italic": false,
+          "bold": true
+        },
         "minecraft:lore": [
           {
-            "text": "右クリック：印を飛ばす／もう一度で帰還",
-            "color": "gray",
-            "italic": false
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "モチーフ：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "NeroNoir9696",
+                "color": "white",
+                "italic": false
+              }
+            ]
           },
           {
-            "text": "しゃがみ＋右クリック：本人デコイ",
-            "color": "gray",
-            "italic": false
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "通常攻撃：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "",
+                "color": "red",
+                "italic": false,
+                "font": "oa:icons"
+              },
+              {
+                "text": "×2.5（5HP）。攻撃速度1.8回／秒。追加効果な",
+                "color": "white",
+                "italic": false
+              }
+            ]
           },
           {
-            "text": "共通CT10秒／夜は能力が上がる",
-            "color": "gray",
-            "italic": false
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "  し。",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "右クリック：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "印を飛ばし、再使用で印へ帰還。しゃがみ＋右ク",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "  リックで本人デコイ。",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "CT：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "10秒（印への帰還・本人デコイで共有）",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "※固有武器は1人1個です。",
+                "color": "gray",
+                "italic": false
+              }
+            ]
           }
         ],
         "minecraft:tooltip_display": {
           "hidden_components": [
-            "minecraft:enchantments"
+            "minecraft:enchantments",
+            "minecraft:attribute_modifiers"
           ]
         }
       }
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{lore_release1:1b}}"
+      "tag": "{oa:{description204:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
     }
   ]
 }

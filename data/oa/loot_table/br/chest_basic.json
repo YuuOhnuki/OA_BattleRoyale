@@ -259,8 +259,9 @@
               "components": {
                 "minecraft:custom_name": {
                   "text": "包帯",
-                  "color": "green",
-                  "italic": false
+                  "color": "gold",
+                  "italic": false,
+                  "bold": true
                 },
                 "minecraft:custom_data": {
                   "br_heal": true,
@@ -300,7 +301,71 @@
                 "minecraft:item_model": "oa:bandage",
                 "minecraft:lore": [
                   {
-                    "text": "3HP回復 / 右クリックですぐ使用",
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "通常攻撃：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "追加効果なし。",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "右クリック：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "すぐに",
+                        "color": "white",
+                        "italic": false
+                      },
+                      {
+                        "text": "",
+                        "color": "red",
+                        "italic": false,
+                        "font": "oa:icons"
+                      },
+                      {
+                        "text": "×1.5（3HP）",
+                        "color": "white",
+                        "italic": false
+                      },
+                      {
+                        "text": "回復する。",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "CT：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "なし／1個消費",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "※固有武器と一緒に所持できます。",
                     "color": "gray",
                     "italic": false
                   }
@@ -320,8 +385,9 @@
               "components": {
                 "minecraft:custom_name": {
                   "text": "応急キット",
-                  "color": "green",
-                  "italic": false
+                  "color": "gold",
+                  "italic": false,
+                  "bold": true
                 },
                 "minecraft:custom_data": {
                   "br_heal": true,
@@ -344,7 +410,71 @@
                 "minecraft:item_model": "oa:firstaid",
                 "minecraft:lore": [
                   {
-                    "text": "右クリックを1秒長押しして回復",
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "通常攻撃：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "追加効果なし。",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "右クリック：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "1秒長押しで",
+                        "color": "white",
+                        "italic": false
+                      },
+                      {
+                        "text": "",
+                        "color": "red",
+                        "italic": false,
+                        "font": "oa:icons"
+                      },
+                      {
+                        "text": "×7（14HP）",
+                        "color": "white",
+                        "italic": false
+                      },
+                      {
+                        "text": "回復し、再生Iを10秒。",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "CT：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "なし／1個消費",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "※固有武器と一緒に所持できます。",
                     "color": "gray",
                     "italic": false
                   }
@@ -431,9 +561,10 @@
               "type": "minecraft:set_components",
               "components": {
                 "minecraft:custom_name": {
-                  "text": "ふろボール",
+                  "text": "ふろっしゅ：ふろボール",
                   "color": "gold",
-                  "italic": false
+                  "italic": false,
+                  "bold": true
                 },
                 "minecraft:custom_data": {
                   "oa_furoball": true,
@@ -460,19 +591,134 @@
                 },
                 "minecraft:lore": [
                   {
-                    "text": "右クリック：爆風で周囲を吹き飛ばす",
-                    "color": "gray",
-                    "italic": false
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "モチーフ：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "frosch_y",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
                   },
                   {
-                    "text": "自分は約2.5m上昇／着地まで落下ダメージ無効",
-                    "color": "gray",
-                    "italic": false
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "通常攻撃：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "",
+                        "color": "red",
+                        "italic": false,
+                        "font": "oa:icons"
+                      },
+                      {
+                        "text": "×0.5（1HP）・攻撃速度4回／秒。追加効果なし",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
                   },
                   {
-                    "text": "使い切り／再使用1秒／64個までスタック可",
-                    "color": "gray",
-                    "italic": false
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "  。",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "右クリック：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "火の玉を投げる。着弾時、半径3.5mの敵へ",
+                        "color": "white",
+                        "italic": false
+                      },
+                      {
+                        "text": "",
+                        "color": "red",
+                        "italic": false,
+                        "font": "oa:icons"
+                      },
+                      {
+                        "text": "×1.",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "  5（3HP）と爆風。",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "CT：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "1秒／1回につき1個消費",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "※このアイテムは固有武器と一緒に所持できます（固有武器の",
+                        "color": "gray",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "  ",
+                        "color": "white",
+                        "italic": false
+                      },
+                      {
+                        "text": "所持数に含みません）。",
+                        "color": "gray",
+                        "italic": false
+                      }
+                    ]
                   }
                 ]
               }

@@ -10,4 +10,4 @@ $execute if items entity @s $(slot) *[minecraft:custom_data~{oa:{unique:1b}}] un
 
 $execute if items entity @s $(slot) *[minecraft:custom_data~{oa:{kind:1}}] if entity @s[tag=br.playing,tag=!oa.practice] if score #state br.state matches 1 if score @s br.round = #round br.round if score #hat_round oa.serial = #round br.round run function oa:tayayuyu/prune_slot {slot:"$(slot)"}
 
-$execute unless items entity @s $(slot) *[minecraft:custom_data~{oa:{name_v172:1b}}] run function oa:inventory/name {slot:"$(slot)"}
+$execute unless items entity @s $(slot) *[minecraft:custom_data~{oa:{name_v204:1b}}] run function oa:inventory/name {slot:"$(slot)"}

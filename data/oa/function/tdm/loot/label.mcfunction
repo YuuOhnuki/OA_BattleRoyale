@@ -13,7 +13,7 @@ execute if score @s tdm.type matches 10 run data modify storage oa:tdm_label nam
 execute if score @s tdm.type matches 101 run data modify storage oa:tdm_label name set value "鉄防具一式 [近づくと取得]"
 execute if score @s tdm.type matches 102 run data modify storage oa:tdm_label name set value "ダイヤ防具一式 [近づくと取得]"
 execute if score @s tdm.type matches 103 run data modify storage oa:tdm_label name set value "ゆー：オーバーワーク [近づくと取得]"
-execute if score @s tdm.type matches 104 run data modify storage oa:tdm_label name set value "回復 +10HP・満腹度5ゲージ [近づくと取得]"
+execute if score @s tdm.type matches 104 run data modify storage oa:tdm_label name set value "回復 ♥×5（10HP）・満腹度5ゲージ（内部10ポイント） [近づくと取得]"
 function oa:tdm/loot/label_spawn with storage oa:tdm_label
 scoreboard players operation @e[tag=tdm.label_new,limit=1] tdm.dropid = @s tdm.dropid
 tag @e[tag=tdm.label_new] remove tdm.label_new

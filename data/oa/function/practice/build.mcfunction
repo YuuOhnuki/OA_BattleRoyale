@@ -379,7 +379,7 @@ setblock ~-12 ~1 ~19 minecraft:stone_button[face=wall,facing=east]
 summon minecraft:marker ~-11.5 ~1 ~19.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_7"}}
 setblock ~-13 ~1 ~20 minecraft:stone_button[face=wall,facing=south]
 summon minecraft:marker ~-12.5 ~1 ~20.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_7"}}
-summon minecraft:text_display ~-12.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_7"], "text": {"text": "ねろ", "color": "gold", "bold": true}, "billboard": "center", "shadow": true, "view_range": 0.5}
+summon minecraft:text_display ~-12.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_7"], "text": {"text": "ネロノワール", "color": "gold", "bold": true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~-9 ~1 ~19 minecraft:chiseled_stone_bricks
 setblock ~-9 ~1 ~18 minecraft:stone_button[face=wall,facing=north]
@@ -423,7 +423,7 @@ setblock ~10 ~1 ~19 minecraft:stone_button[face=wall,facing=east]
 summon minecraft:marker ~10.5 ~1 ~19.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_11"}}
 setblock ~9 ~1 ~20 minecraft:stone_button[face=wall,facing=south]
 summon minecraft:marker ~9.5 ~1 ~20.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_11"}}
-summon minecraft:text_display ~9.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_11"], "text": {"text": "ふろボール", "color": "gold", "bold": true}, "billboard": "center", "shadow": true, "view_range": 0.5}
+summon minecraft:text_display ~9.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_11"], "text": {"text": "ふろっしゅ：ふろボール", "color": "gold", "bold": true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~13 ~1 ~19 minecraft:chiseled_stone_bricks
 setblock ~13 ~1 ~18 minecraft:stone_button[face=wall,facing=north]
@@ -434,7 +434,7 @@ setblock ~14 ~1 ~19 minecraft:stone_button[face=wall,facing=east]
 summon minecraft:marker ~14.5 ~1 ~19.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_12"}}
 setblock ~13 ~1 ~20 minecraft:stone_button[face=wall,facing=south]
 summon minecraft:marker ~13.5 ~1 ~20.5 {Tags:["oa.physical_button","oa.button_practice"],data:{action:"practice/click/weapon_12"}}
-summon minecraft:text_display ~13.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_12"], "text": {"text": "昭心", "color": "gold", "bold": true}, "billboard": "center", "shadow": true, "view_range": 0.5}
+summon minecraft:text_display ~13.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_12"], "text": {"text": "いとり", "color": "gold", "bold": true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~-18 ~ ~-8 minecraft:lily_pad
 setblock ~-11 ~ ~-8 minecraft:lily_pad

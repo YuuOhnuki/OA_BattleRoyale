@@ -1,0 +1,153 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:custom_name": {
+          "text": "ゆったり：瞬間奇襲アイテム",
+          "color": "gold",
+          "italic": false,
+          "bold": true
+        },
+        "minecraft:lore": [
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "モチーフ：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "HitoriYuu",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "通常攻撃：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "",
+                "color": "red",
+                "italic": false,
+                "font": "oa:icons"
+              },
+              {
+                "text": "×3（6HP）（＋",
+                "color": "white",
+                "italic": false
+              },
+              {
+                "text": "",
+                "color": "red",
+                "italic": false,
+                "font": "oa:icons"
+              },
+              {
+                "text": "×0.5（1HP））。攻撃速度1.",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "  8回／秒。追加効果なし。",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "右クリック：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "ランダムな敵の背後へ転移して",
+                "color": "white",
+                "italic": false
+              },
+              {
+                "text": "",
+                "color": "red",
+                "italic": false,
+                "font": "oa:icons"
+              },
+              {
+                "text": "×0.5（1HP）と",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "  押し出し。1秒後に元の場所へ帰還。",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "CT：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "10秒",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "※固有武器は1人1個です。",
+                "color": "gray",
+                "italic": false
+              }
+            ]
+          }
+        ],
+        "minecraft:tooltip_display": {
+          "hidden_components": [
+            "minecraft:enchantments",
+            "minecraft:attribute_modifiers"
+          ]
+        }
+      }
+    },
+    {
+      "type": "minecraft:set_custom_data",
+      "tag": "{oa:{description204:1b,description_up:1b,name_v172:1b,name_v204:1b}}"
+    }
+  ]
+}

@@ -6,14 +6,15 @@
       "components": {
         "minecraft:custom_name": {
           "text": "キリング：呪いの「き」マスク",
-          "color": "dark_purple",
-          "italic": false
+          "color": "gold",
+          "italic": false,
+          "bold": true
         }
       }
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{name_v172:1b}}"
+      "tag": "{oa:{name_v172:1b,name_v204:1b}}"
     }
   ]
 }

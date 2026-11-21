@@ -467,3 +467,5 @@ scoreboard objectives add br.a_pz dummy
 function oa:ach/armor_objectives
 
 function oa:tdm/load
+
+schedule function oa:presentation/refresh_labels 20t replace

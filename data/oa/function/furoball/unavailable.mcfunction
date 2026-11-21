@@ -1,2 +1,2 @@
 function oa:furoball/refund
-tellraw @s {text:"今はふろボールを使用できません。",color:"yellow"}
+tellraw @s {text:"今はふろっしゅ：ふろボールを使用できません。",color:"yellow"}

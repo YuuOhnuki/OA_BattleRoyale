@@ -28,7 +28,7 @@ groups += [
     ('記録／実績', [('記録・実績メニュー', '/oamenu records'), ('自分の戦績', '/stats'), ('全員分の削除', '/oamenu wipe')]),
     ('サーバー更新', [('更新メニュー', '/oamenu updates'), ('版数を表示', '/function oa:version')]),
     ('診断／開発', [('基本設定を補完', 33), ('飛び道具の診断', 34), ('デバッグ開始', 40), ('デバッグ本', 41), ('管理ブックを更新', 16)]),
-    ('固有装備（検証）', list(zip(['ゆうあ', 'ぴちぴち', 'lazi', 'ネロ', 'キリング', 'ゆったり', 'ほちきす', 'こまめ', 'たやゆゆ', 'いとり'], [20, 21, 22, 23, 24, 25, 26, 27, 36, 53]))),
+    ('固有装備（検証）', list(zip(['ゆうあ', 'ぴちぴち', 'らじ', 'ネロノワール', 'キリング', 'ゆったり', 'ほちきす', 'こまめ', 'たやゆゆ', 'いとり'], [20, 21, 22, 23, 24, 25, 26, 27, 36, 53]))),
     ('消耗品・武器（検証）', [('ゆー', 28), ('ふろボール', 37), ('木のバット', 9), ('ノックバック棒', 10), ('バフ医療品4種', 17), ('包帯', 42), ('応急キット', 43), ('雪玉16個', 44), ('卵16個', 45)]),
     ('旧操作（互換）', [('開始地点を追加', 54), ('開始地点を確認', 55), ('近くの地点を削除', 56), ('全開始地点を削除', 57), ('展示スキン更新', 51)]),
 ]
@@ -64,7 +64,7 @@ pages[1] = page('目次 1/2', [nav(n, p) for n, p in starts[:half]] + [nav('次�
 pages[2] = page('目次 2/2', [nav(n, p) for n, p in starts[half:]] + [nav('‹ 前の目次', 2)])
 book = {'title': {'raw': 'OA 管理ブック'}, 'author': 'OA', 'generation': 0, 'resolved': False, 'pages': pages}
 (out / 'book_content.mcfunction').write_text('$give @s minecraft:written_book[minecraft:written_book_content=' + json.dumps(book, ensure_ascii=False, separators=(',', ':'))
-                                             + ',minecraft:custom_name={text:"OA 管理ブック",color:"gold",italic:false},minecraft:custom_data={oa_admin_book:1b,book_v203:1b},minecraft:max_stack_size=1] 1\n', encoding='utf-8')
+                                             + ',minecraft:custom_name={text:"OA 管理ブック",color:"gold",italic:false},minecraft:custom_data={oa_admin_book:1b,book_v204:1b},minecraft:max_stack_size=1] 1\n', encoding='utf-8')
 lines = ['execute unless entity @s[tag=br.admin] run return 0', 'clear @s *[minecraft:custom_data~{oa_admin_book:1b}]', 'scoreboard players set #admin_free oa.tmp 0']
 for slot in [f'hotbar.{n}' for n in range(9)] + [f'inventory.{n}' for n in range(27)]:
     lines.append(f'execute unless items entity @s {slot} * run scoreboard players set #admin_free oa.tmp 1')

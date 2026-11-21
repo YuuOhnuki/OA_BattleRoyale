@@ -8,7 +8,7 @@ execute as @e[distance=0..,type=minecraft:item] unless items entity @s contents 
 execute if dimension oa:br if score #state br.state matches 1 if score #hat_round oa.serial = #round br.round as @e[distance=0..,type=minecraft:item] if items entity @s contents *[minecraft:custom_data~{oa:{kind:1}}] run function oa:tayayuyu/prune_ground_hat
 execute if dimension oa:br_nether if score #state br.state matches 1 if score #hat_round oa.serial = #round br.round as @e[distance=0..,type=minecraft:item] if items entity @s contents *[minecraft:custom_data~{oa:{kind:1}}] run function oa:tayayuyu/prune_ground_hat
 execute if dimension oa:br_cave if score #state br.state matches 1 if score #hat_round oa.serial = #round br.round as @e[distance=0..,type=minecraft:item] if items entity @s contents *[minecraft:custom_data~{oa:{kind:1}}] run function oa:tayayuyu/prune_ground_hat
-execute as @e[distance=0..,type=minecraft:item,tag=oa.ground] unless items entity @s contents *[minecraft:custom_data~{oa:{name_v172:1b}}] run function oa:ground/rename
+execute as @e[distance=0..,type=minecraft:item,tag=oa.ground] unless items entity @s contents *[minecraft:custom_data~{oa:{name_v204:1b}}] run function oa:ground/rename
 execute as @e[distance=0..,type=minecraft:item,tag=!oa.furo_named] if items entity @s contents *[minecraft:custom_data~{oa_furoball:1b}] run function oa:furoball/ground
 execute as @e[distance=0..,type=minecraft:item] if items entity @s contents *[minecraft:custom_data~{oa_player_book:1b}] run kill @s
 execute as @e[distance=0..,type=minecraft:item] if items entity @s contents *[minecraft:custom_data~{oa_db_patch:1b}] run function oa:debug/restore_ground

@@ -27,4 +27,4 @@ fill ~22 ~1 ~44 ~24 ~9 ~45 minecraft:stone_bricks
 fill ~22 ~10 ~44 ~24 ~10 ~45 minecraft:smooth_stone_slab[type=bottom]
 execute positioned ~23.5 ~11 ~44.5 summon minecraft:marker run function oa:practice/dummy_spawn_init {tier:0}
 summon minecraft:text_display ~23.5 ~13.3 ~44.5 {Tags:["oa.practice_landmark","oa.practice_station"],text:{text:"高さ10m",color:"yellow",bold:true},billboard:"center",shadow:1b,view_range:0.7f}
-summon minecraft:text_display ~-40.5 ~4.6 ~44.5 {Tags:["oa.practice_landmark","oa.practice_station"],text:[{text:"武器ごとの課題\n",color:"gold",bold:true},{text:"ぴちぴち：高さ6mの的に跳んで当てる\nふろボール：高さ10mの的を狙う\nlazi：音波が届く距離を見る\nネロ：遠い的へ印を飛ばす\nほちきす：拘束して10秒の連続ダメージ\n（/trigger oa.dps で計測）",color:"white"}],billboard:"center",shadow:1b,view_range:0.9f}
+summon minecraft:text_display ~-40.5 ~4.6 ~44.5 {Tags:["oa.practice_landmark","oa.practice_station"],text:[{text:"武器ごとの課題\n",color:"gold",bold:true},{text:"ぴちぴち：高さ6mの的に跳んで当てる\nふろっしゅ：ふろボール：高さ10mの的を狙う\nらじ：音波が届く距離を見る\nネロノワール：遠い的へ印を飛ばす\nほちきす：拘束して10秒の連続ダメージ\n（/trigger oa.dps で計測）",color:"white"}],billboard:"center",shadow:1b,view_range:0.9f}

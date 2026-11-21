@@ -4,28 +4,128 @@
     {
       "type": "minecraft:set_components",
       "components": {
+        "minecraft:custom_name": {
+          "text": "こまめ：小豆バー",
+          "color": "gold",
+          "italic": false,
+          "bold": true
+        },
         "minecraft:lore": [
           {
-            "text": "右クリック：10秒小型化し、移動速度上昇・耐性・体力増強",
-            "color": "gray",
-            "italic": false
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "モチーフ：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "komame_azuki",
+                "color": "white",
+                "italic": false
+              }
+            ]
           },
           {
-            "text": "CT20秒／通常攻撃：相手の足を遅くする",
-            "color": "gray",
-            "italic": false
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "通常攻撃：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "",
+                "color": "red",
+                "italic": false,
+                "font": "oa:icons"
+              },
+              {
+                "text": "×2（4HP）。攻撃速度1.8回／秒。鈍足Iを2秒付",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "  与。",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "右クリック：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "10秒間、体を半分にして速度I・耐性I・体力増強",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "  I。増えた最大体力分を回復。",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "CT：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "20秒",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "※固有武器は1人1個です。",
+                "color": "gray",
+                "italic": false
+              }
+            ]
           }
         ],
         "minecraft:tooltip_display": {
           "hidden_components": [
-            "minecraft:enchantments"
+            "minecraft:enchantments",
+            "minecraft:attribute_modifiers"
           ]
         }
       }
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{lore_release1:1b}}"
+      "tag": "{oa:{description204:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
     }
   ]
 }
