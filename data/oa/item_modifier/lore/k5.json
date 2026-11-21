@@ -6,7 +6,7 @@
       "components": {
         "minecraft:custom_name": {
           "text": "キリング：呪いの「き」マスク",
-          "color": "gold",
+          "color": "#8d59ff",
           "italic": false,
           "bold": true
         },
@@ -32,12 +32,12 @@
             "italic": false,
             "extra": [
               {
-                "text": "通常攻撃：",
+                "text": "特徴：",
                 "color": "gray",
                 "italic": false
               },
               {
-                "text": "攻撃力・攻撃速度は手持ちの通常武器に準ずる（素",
+                "text": "視界を犠牲に、高速移動と確率防御を得るお面。",
                 "color": "white",
                 "italic": false
               }
@@ -48,18 +48,12 @@
             "italic": false,
             "extra": [
               {
-                "text": "  手",
-                "color": "white",
+                "text": "装備効果：",
+                "color": "gray",
                 "italic": false
               },
               {
-                "text": "",
-                "color": "red",
-                "italic": false,
-                "font": "oa:icons"
-              },
-              {
-                "text": "×0.5・4回／秒）。お面の追加ダメージはなし。",
+                "text": "拾うと頭へ強制装着。移動速度＋175%、盲目と大音",
                 "color": "white",
                 "italic": false
               }
@@ -70,12 +64,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "右クリック：",
-                "color": "gray",
-                "italic": false
-              },
-              {
-                "text": "拾うと頭へ強制装着。",
+                "text": "  量。最寄りの敵を発光表示。参加者の攻撃を25%で無効化。",
                 "color": "white",
                 "italic": false
               }
@@ -102,7 +91,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "※固有武器は1人1個です。",
+                "text": "※固有武器は一人一個まで所持可能",
                 "color": "gray",
                 "italic": false
               }
@@ -119,7 +108,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{description205:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
+      "tag": "{oa:{description206:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
     }
   ]
 }

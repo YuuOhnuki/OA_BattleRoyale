@@ -6,9 +6,11 @@
       "components": {
         "minecraft:custom_name": {
           "text": "ネロノワール：ペスト医師の杖",
-          "color": "gold",
+          "color": "white",
           "italic": false,
-          "bold": true
+          "font": "oa:weapon_neronoir",
+          "bold": false,
+          "shadow_color": 0
         }
       }
     },

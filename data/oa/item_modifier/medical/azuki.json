@@ -139,7 +139,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{medical_text205:1b}"
+      "tag": "{medical_text206:1b}"
     }
   ]
 }

@@ -6,7 +6,7 @@
       "components": {
         "minecraft:custom_name": {
           "text": "いとり：昭心",
-          "color": "gold",
+          "color": "#006dff",
           "italic": false,
           "bold": true
         },
@@ -22,6 +22,22 @@
               },
               {
                 "text": "itori0814",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "特徴：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "探索で技を解放し、順番に繰り出す紫弾の武器。",
                 "color": "white",
                 "italic": false
               }
@@ -113,7 +129,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "※固有武器は1人1個です。",
+                "text": "※固有武器は一人一個まで所持可能",
                 "color": "gray",
                 "italic": false
               }
@@ -130,7 +146,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{description205:1b,description_up:0b,name_v172:1b,name_v204:1b,itori_text205:8,itori_stage:4,itori_lore194:8}}"
+      "tag": "{oa:{description206:1b,description_up:0b,name_v172:1b,name_v204:1b,itori_text206:8,itori_stage:4,itori_lore194:8}}"
     }
   ]
 }

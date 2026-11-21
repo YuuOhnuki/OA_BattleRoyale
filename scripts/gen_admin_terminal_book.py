@@ -8,6 +8,7 @@ import json, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from book_layout import check_page
+_weapon_data=json.loads((Path(__file__).resolve().parents[2]/'oa_battleroyale_plugin/src/main/resources/weapon-descriptions.json').read_text(encoding='utf-8'))
 
 r = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parents[1]
 out = r / 'data/oa/function/admin'
@@ -35,6 +36,9 @@ groups += [
 
 def t(s, color='black', **kw): return dict(text=s, color=color, **kw)
 def act(label, target):
+    for w in _weapon_data.values():
+        if label in [w['short'],w['name']] or label=='ふろボール' and w['id']=='frosch':
+            return dict(text='▸ ',color='black',extra=[w['short_component'],t('\n')],click_event={'action':'run_command','command':'/trigger oa.admin set '+str(target)})
     if isinstance(target, str):
         return t('▸ ' + label + '\n', 'dark_blue', underlined=True, click_event={'action': 'run_command', 'command': target})
     if target in danger:
@@ -64,7 +68,7 @@ pages[1] = page('目次 1/2', [nav(n, p) for n, p in starts[:half]] + [nav('次�
 pages[2] = page('目次 2/2', [nav(n, p) for n, p in starts[half:]] + [nav('‹ 前の目次', 2)])
 book = {'title': {'raw': 'OA 管理ブック'}, 'author': 'OA', 'generation': 0, 'resolved': False, 'pages': pages}
 (out / 'book_content.mcfunction').write_text('$give @s minecraft:written_book[minecraft:written_book_content=' + json.dumps(book, ensure_ascii=False, separators=(',', ':'))
-                                             + ',minecraft:custom_name={text:"OA 管理ブック",color:"gold",italic:false},minecraft:custom_data={oa_admin_book:1b,book_v205:1b},minecraft:max_stack_size=1] 1\n', encoding='utf-8')
+                                             + ',minecraft:custom_name={text:"OA 管理ブック",color:"gold",italic:false},minecraft:custom_data={oa_admin_book:1b,book_v206:1b},minecraft:max_stack_size=1] 1\n', encoding='utf-8')
 lines = ['execute unless entity @s[tag=br.admin] run return 0', 'clear @s *[minecraft:custom_data~{oa_admin_book:1b}]', 'scoreboard players set #admin_free oa.tmp 0']
 for slot in [f'hotbar.{n}' for n in range(9)] + [f'inventory.{n}' for n in range(27)]:
     lines.append(f'execute unless items entity @s {slot} * run scoreboard players set #admin_free oa.tmp 1')

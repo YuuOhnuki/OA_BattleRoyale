@@ -6,7 +6,7 @@
       "components": {
         "minecraft:custom_name": {
           "text": "ゆったり：瞬間奇襲アイテム",
-          "color": "gold",
+          "color": "#65fff0",
           "italic": false,
           "bold": true
         }

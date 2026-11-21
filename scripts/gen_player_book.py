@@ -11,7 +11,7 @@ from book_layout import check_page
 
 r = Path(__file__).resolve().parents[1]
 f = r / 'data/oa/function/lobby/guide/book.mcfunction'
-VER = 'guide_v205'
+VER = 'guide_v206'
 
 def page(title, body, links):
     e = [{'text': title + '\n', 'color': 'dark_aqua', 'bold': True}, {'text': body + '\n', 'color': 'black'}]
@@ -65,8 +65,6 @@ pages = [
 ]
 
 legend=[{'text':'説明と数値の見方\n','color':'dark_aqua','bold':True},
-        {'text':'\ue100','font':'oa:icons','color':'red'},{'text':'はハートの数\n','color':'black'},
-        {'text':'\ue101','font':'oa:icons'},{'text':'は満腹度ゲージの数\n','color':'black'},
         {'text':'効果量はアイコンと数値を併記。\nCTは次に使えるまでの時間。\n武器の詳細は展示を右クリック。\n練習場では同じ説明を詳しく表示。\n','color':'black'},
         {'text':'▸ 武器の説明一覧','color':'dark_blue','underlined':True,'click_event':{'action':'run_command','command':'/oaweapon'}}]
 check_page(legend)

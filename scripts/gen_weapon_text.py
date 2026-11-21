@@ -43,11 +43,18 @@ def attack(w,up=False):
  if w['hp'] is not None:s=f"{w['hp']+(1 if up else 0):g}HP"+('（＋1HP）' if up else '')+'。'
  if w['speed'] is not None:s+=f"攻撃速度{w['speed']:g}回／秒。"
  return s+w['attack']
-def note(w):return '※このアイテムは固有武器と一緒に所持できます（固有武器の所持数に含みません）。' if w.get('consumable') else '※固有武器は1人1個です。'
+def note(w):return '※このアイテムは固有武器と一緒に所持できます（固有武器の所持数に含みません）。' if w.get('consumable') else '※固有武器は一人一個まで所持可能'
+
+def named(w,s=None):
+ if w.get('outline'):return t(s or title(w),'white',font='oa:weapon_'+w['id'],bold=False,shadow_color=0)
+ return t(s or title(w),w['color'],bold=True)
 def fields(w,up=False):
- rows=[('モチーフ',w['motif'])]
- if w['kind'] not in [11,12]:rows.append(('通常攻撃',attack(w,up)))
- rows.append(('発動' if w['kind']==11 else '右クリック',w['right']))
+ rows=[('モチーフ',w['motif']),('特徴',w['sentence'])]
+ if w['kind'] in [1,3,5]:rows.append(('装備効果',w['equip']))
+ else:
+  if w['kind'] not in [11,12]:rows.append(('通常攻撃',attack(w,up)))
+  rows.append(('発動' if w['kind']==11 else '右クリック',w['right']))
+ if w['kind']==4:rows.append(('シフト右クリック',w['shift']))
  rows.append(('CT',w['ct']))
  return rows
 def lore(w,up=False,progress=None):
@@ -58,47 +65,47 @@ def lore(w,up=False,progress=None):
  rows.append(t(note(w),'gray'))
  return [line for component in rows for line in wrap(component)]
 def modifier(w,up=False,progress=None):
- data={'description205':1,'description_up':int(up),'name_v172':1,'name_v204':1}
+ data={'description206':1,'description_up':int(up),'name_v172':1,'name_v204':1}
  if progress is not None:
-  data['itori_text205']=progress;data['itori_stage']=sum(progress>=n for n in [0,1,5,7,10,15]);data['itori_lore194']=progress
- tag='{oa:{'+','.join(k+':'+str(v)+('' if k in ['itori_text205','itori_stage','itori_lore194'] else 'b') for k,v in data.items())+'}}'
- return {'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':{'minecraft:custom_name':t(title(w),'gold',bold=True),'minecraft:lore':lore(w,up,progress),'minecraft:tooltip_display':{'hidden_components':['minecraft:enchantments','minecraft:attribute_modifiers']}}},{'type':'minecraft:set_custom_data','tag':tag}]}
-menu={};reference=['# 固有武器・消耗品の説明（1.9.205）','', '記載は初期の性能。強化中の＋1HPはゲーム内の実物の説明欄だけへ表示。','', '体力は♥、満腹度は食料アイコンのゲージ数で表示。ダメージは軽減前。','']
+  data['itori_text206']=progress;data['itori_stage']=sum(progress>=n for n in [0,1,5,7,10,15]);data['itori_lore194']=progress
+ tag='{oa:{'+','.join(k+':'+str(v)+('' if k in ['itori_text206','itori_stage','itori_lore194'] else 'b') for k,v in data.items())+'}}'
+ return {'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':{'minecraft:custom_name':named(w),'minecraft:lore':lore(w,up,progress),'minecraft:tooltip_display':{'hidden_components':['minecraft:enchantments','minecraft:attribute_modifiers']}}},{'type':'minecraft:set_custom_data','tag':tag}]}
+menu={};reference=['# 固有武器・消耗品の説明（1.9.206）','', '記載は初期の性能。強化中の増加分はゲーム内の実物の説明欄だけへ表示。','', '体力は♥、満腹度は食料アイコンのゲージ数で表示。ダメージは軽減前。','']
 for w in WEAPONS:
  kind=w['kind'];key=f'k{kind}' if kind<=10 else 'yu' if kind==11 else 'frosch'
  jwrite(D/f'item_modifier/lore/{key}.json',modifier(w))
  if kind<=10:
-  if kind<10:jwrite(D/f'item_modifier/name/k{kind}.json',{'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':{'minecraft:custom_name':t(title(w),'gold',bold=True)}},{'type':'minecraft:set_custom_data','tag':'{oa:{name_v172:1b,name_v204:1b}}'}]})
+  if kind<10:jwrite(D/f'item_modifier/name/k{kind}.json',{'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':{'minecraft:custom_name':named(w)}},{'type':'minecraft:set_custom_data','tag':'{oa:{name_v172:1b,name_v204:1b}}'}]})
   if kind in [4,6,8,9]:jwrite(D/f'item_modifier/lore/k{kind}_plus1.json',modifier(w,True))
   if kind==10:
    for n in range(16):
     jwrite(D/f'item_modifier/lore/k10_progress_{n}.json',modifier(w,False,n))
     jwrite(D/f'item_modifier/lore/k10_progress_{n}_plus1.json',modifier(w,True,n))
- body=[t('\n━━ '+title(w)+' ━━\n','gold',bold=True)]
- for label,value in fields(w)+[('特徴',w['sentence'])]+w['extra']:
+ body=[t('\n━━ ','gold'),named(w),t(' ━━\n','gold')]
+ for label,value in fields(w)+w['extra']:
   body.extend([row(label,value),t('\n')])
- body += [t(note(w)+'\n','gray'),t('※ダメージは防具・耐性による軽減前。\n','gray')]
+ body += [t(note(w)+'\n','gray')]
  if kind==9:body.append(t('［ガチャ全16結果を見る］','green',underlined=True,click_event={'action':'run_command','command':'/trigger oa.gallery set 10'}))
  write(D/f'function/lobby/gallery/info/{w["info"]}.mcfunction','tellraw @s '+dump(body)+'\n')
  if kind==11:jwrite(D/'item_modifier/lore/yu.json',modifier(w))
  if kind==12:
   # A description modifier must not rewrite consumable components or stack size.
-  jwrite(D/'item_modifier/furo_lore182.json',{'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':{'minecraft:custom_name':t(title(w),'gold',bold=True),'minecraft:lore':lore(w)}},{'type':'minecraft:set_custom_data','tag':'{furo_lore205:1b,furo_lore182:1b}'}]})
+  jwrite(D/'item_modifier/furo_lore182.json',{'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':{'minecraft:custom_name':named(w),'minecraft:lore':lore(w)}},{'type':'minecraft:set_custom_data','tag':'{furo_lore206:1b,furo_lore182:1b}'}]})
   def update_furo(node):
    if isinstance(node,list):
     for n in node:update_furo(n)
    elif isinstance(node,dict):
     c=node.get('components',{})
-    if 'minecraft:lore' in c:c['minecraft:lore']=lore(w);c['minecraft:custom_name']=t(title(w),'gold',bold=True)
+    if 'minecraft:lore' in c:c['minecraft:lore']=lore(w);c['minecraft:custom_name']=named(w)
     for n in node.values():update_furo(n)
   for old in ['furo_lore181','furo_stack1927']:
    f=D/f'item_modifier/{old}.json';j=json.loads(f.read_text(encoding='utf-8'));update_furo(j);jwrite(f,j)
  if kind==11:
-  give='give @s minecraft:totem_of_undying[minecraft:custom_name='+dump(t(title(w),'gold',bold=True))+',minecraft:custom_data={oa_overwork:1b},minecraft:max_stack_size=1,minecraft:item_model="oa:yu",minecraft:lore='+dump(lore(w))+'] 1'
+  give='give @s minecraft:totem_of_undying[minecraft:custom_name='+dump(named(w))+',minecraft:custom_data={oa_overwork:1b},minecraft:max_stack_size=1,minecraft:item_model="oa:yu",minecraft:lore='+dump(lore(w))+'] 1'
   f=D/'function/give/overwork.mcfunction';s=f.read_text(encoding='utf-8');s=re.sub(r'^give @s minecraft:totem_of_undying.*$',lambda m:give,s,flags=re.M);write(f,s)
  # Canonical English entry points; legacy functions and all saved kind/serial IDs remain.
  if w['id']!=w['legacy']:write(D/f'function/give/{w["id"]}.mcfunction',f'function oa:give/{w["legacy"]}\n')
- menu[str(kind)]={'id':w['id'],'info':w['info'],'name':title(w),'short':w['name'],'lore':lore(w),'sentence':w['sentence']}
+ menu[str(kind)]={'id':w['id'],'info':w['info'],'name':title(w),'short':w['name'],'lore':lore(w),'sentence':w['sentence'],'name_component':named(w),'short_component':named(w,w['name']),'color':w['color'],'outline':w['outline']}
  reference+=['## '+title(w),'',w['sentence'],'',f'- コマンドID：`{w["id"]}`',f'- モチーフ：{w["motif"]}',*[f'- {a}：{b}' for a,b in fields(w) if a!='モチーフ']]+[f'- {a}：{b}' for a,b in w['extra']]+['',note(w),'', '**改善案（未実装・性能変更なし）：** '+w['idea'],'']
 jwrite(P/'src/main/resources/weapon-descriptions.json',menu)
 reference=[re.sub(r'([0-9]+(?:\.[0-9]+)?)HP',lambda m:f'♥×{float(m[1])/2:g}',line) if line.startswith('- ') else line for line in reference]
@@ -110,7 +117,7 @@ for key,(name,use) in MEDICINE.items():
  f=D/f'item_modifier/medical/{key}.json';j=json.loads(f.read_text(encoding='utf-8'))
  comp=j['components'] if 'components' in j else j['functions'][0]['components']
  comp['minecraft:custom_name']=t(name,'gold',bold=True);comp['minecraft:lore']=lines
- jwrite(f,{'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':comp},{'type':'minecraft:set_custom_data','tag':'{medical_text205:1b}'}]})
+ jwrite(f,{'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':comp},{'type':'minecraft:set_custom_data','tag':'{medical_text206:1b}'}]})
  reference += [f'- **{name}**：'+re.sub(r'([0-9]+(?:\.[0-9]+)?)HP',lambda m:f'♥×{float(m[1])/2:g}',use)]
 def refresh_loot(node):
  if isinstance(node,list):
@@ -118,7 +125,7 @@ def refresh_loot(node):
  elif isinstance(node,dict):
   c=node.get('components',{});data=c.get('minecraft:custom_data',{});key={1:'heal1',2:'heal2'}.get(data.get('br_heal_kind')) or data.get('oa_buff')
   if key in MEDICINE:c['minecraft:custom_name']=t(MEDICINE[key][0],'gold',bold=True);c['minecraft:lore']=med_lore[key]
-  if data.get('oa_furoball'):c['minecraft:custom_name']=t(title(WEAPONS[-1]),'gold',bold=True);c['minecraft:lore']=lore(WEAPONS[-1])
+  if data.get('oa_furoball'):c['minecraft:custom_name']=named(WEAPONS[-1]);c['minecraft:lore']=lore(WEAPONS[-1])
   for n in node.values():refresh_loot(n)
 for f in (D/'loot_table').rglob('*.json'):
  before=f.read_text(encoding='utf-8');j=json.loads(before);refresh_loot(j)
@@ -133,8 +140,8 @@ for w in WEAPONS[:9]:
  if k in [4,6,8,9]:
   for up in [0,1]:
    cond=('if' if up else 'unless')+' items entity @s $(slot) *[minecraft:custom_data~{oa:{damage194_up:1b}}]'
-   lines.append(base+' '+cond+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description205:1b,description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k{k}'+('_plus1' if up else ''))
- else:lines.append(base+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description205:1b}}}}] run item modify entity @s $(slot) oa:lore/k{k}')
+   lines.append(base+' '+cond+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description206:1b,description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k{k}'+('_plus1' if up else ''))
+ else:lines.append(base+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description206:1b}}}}] run item modify entity @s $(slot) oa:lore/k{k}')
 lines.append('$execute if items entity @s $(slot) *[minecraft:custom_data~{oa:{kind:10}}] run function oa:itori/item_stage {slot:"$(slot)"}')
 write(D/'function/inventory/lore.mcfunction','\n'.join(lines)+'\n')
 lines=[]
@@ -142,11 +149,11 @@ for up in [0,1]:
  cond=('if score #state br.state matches 1 if score #time br.time matches 7200.. if entity @s[tag=br.alive,tag=!oa.practice]' if up else '')
  # Explicit flag computed by the same condition as normal_damage, even for a head/offhand slot.
  if up==0:lines+=['scoreboard players set #itori_text_up oa.tmp 0','execute if entity @s[tag=br.alive,tag=!oa.practice] if score #state br.state matches 1 if score #time br.time matches 7200.. run scoreboard players set #itori_text_up oa.tmp 1']
- lines.append(f'$execute if score #itori_text_up oa.tmp matches {up} unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description205:1b,itori_text205:$(points),description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k10_progress_$(points)'+('_plus1' if up else ''))
+ lines.append(f'$execute if score #itori_text_up oa.tmp matches {up} unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description206:1b,itori_text206:$(points),description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k10_progress_$(points)'+('_plus1' if up else ''))
 write(D/'function/itori/item_progress.mcfunction','\n'.join(lines)+'\n')
 # Update held items as soon as the actual refill modifier changes.
 f=D/'function/inventory/refill_damage.mcfunction';s=f.read_text(encoding='utf-8')
-if 'description205' not in s:s+='\n# description205: show the actual strengthened item, never forecast refill stats.\nfunction oa:inventory/lore {slot:"weapon.mainhand"}\n'
+if 'description206' not in s:s+='\n# description206: show the actual strengthened item, never forecast refill stats.\nfunction oa:inventory/lore {slot:"weapon.mainhand"}\n'
 write(f,s)
 # Current gacha list is derived from the same result announcements used by gameplay.
 names=['health_all','fire_all','revive_all','hat_all','tnt_all','rush_all','chaos_all','gather','mood_all','combo_all','giant_all','critical','exposed','jackpot','oni_all','blast']
@@ -173,4 +180,6 @@ for offset,pattern,col in [(0,heart,(255,255,255,255)),(8,food,(229,162,78,255))
    if ch=='#':pix[x+offset,y]=col
 path=RP/'assets/oa/textures/font/status_icons.png';path.parent.mkdir(parents=True,exist_ok=True);im.save(path)
 jwrite(RP/'assets/oa/font/icons.json',{'providers':[{'type':'bitmap','file':'oa:font/status_icons.png','ascent':7,'height':8,'chars':['\ue100\ue101']}]})
-print('Generated unified weapon descriptions, English aliases, progression/refill variants and status icons.')
+from gen_weapon_presentation import generate
+generate(WEAPONS,named,R,RP)
+print('Generated unified weapon descriptions, colours, outlined fonts, progression/refill variants and status icons.')

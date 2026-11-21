@@ -6,7 +6,7 @@
       "components": {
         "minecraft:custom_name": {
           "text": "キリング：呪いの「き」マスク",
-          "color": "gold",
+          "color": "#8d59ff",
           "italic": false,
           "bold": true
         }

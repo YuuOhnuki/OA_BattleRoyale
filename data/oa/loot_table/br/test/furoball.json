@@ -13,9 +13,11 @@
               "components": {
                 "minecraft:custom_name": {
                   "text": "ふろっしゅ：ふろボール",
-                  "color": "gold",
+                  "color": "white",
                   "italic": false,
-                  "bold": true
+                  "font": "oa:weapon_frosch",
+                  "bold": false,
+                  "shadow_color": 0
                 },
                 "minecraft:custom_data": {
                   "oa_furoball": true,
@@ -52,6 +54,33 @@
                       },
                       {
                         "text": "frosch_y",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "特徴：",
+                        "color": "gray",
+                        "italic": false
+                      },
+                      {
+                        "text": "敵を爆風で押し出し、自分の移動にも使える投てき消耗",
+                        "color": "white",
+                        "italic": false
+                      }
+                    ]
+                  },
+                  {
+                    "text": "",
+                    "italic": false,
+                    "extra": [
+                      {
+                        "text": "  品。",
                         "color": "white",
                         "italic": false
                       }

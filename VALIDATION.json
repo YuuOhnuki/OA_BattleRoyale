@@ -1,5 +1,5 @@
 {
-  "version": "1.9.205",
-  "checks": "static JSON/functions/commands/versions",
-  "runtime": "Paper 26.3 startup passed; plugin build passed; no match tests per user request; client rendering unverified"
+  "version": "1.9.206",
+  "checks": "static JSON/functions/commands/versions and presentation coverage",
+  "runtime": "Paper 26.3 startup passed; plugin build passed; generated outlined glyphs inspected; no match tests; client rendering unverified"
 }

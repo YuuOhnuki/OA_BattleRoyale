@@ -6,9 +6,11 @@
       "components": {
         "minecraft:custom_name": {
           "text": "ぴちぴち：冷凍さかな",
-          "color": "gold",
+          "color": "white",
           "italic": false,
-          "bold": true
+          "font": "oa:weapon_pichipichi",
+          "bold": false,
+          "shadow_color": 0
         }
       }
     },

@@ -6,7 +6,7 @@
       "components": {
         "minecraft:custom_name": {
           "text": "らじ：防音マイク付きマスク",
-          "color": "gold",
+          "color": "#ffad29",
           "italic": false,
           "bold": true
         },
@@ -32,12 +32,12 @@
             "italic": false,
             "extra": [
               {
-                "text": "通常攻撃：",
+                "text": "特徴：",
                 "color": "gray",
                 "italic": false
               },
               {
-                "text": "攻撃力・攻撃速度は手持ちの通常武器に準ずる（素",
+                "text": "体力を増やし、音波と息切れを繰り返すマスク。",
                 "color": "white",
                 "italic": false
               }
@@ -48,7 +48,12 @@
             "italic": false,
             "extra": [
               {
-                "text": "  手",
+                "text": "装備効果：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "装着中は最大体力＋",
                 "color": "white",
                 "italic": false
               },
@@ -59,7 +64,7 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×0.5・4回／秒）。",
+                "text": "×3、防具力＋3・防具強度＋2",
                 "color": "white",
                 "italic": false
               }
@@ -70,23 +75,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "右クリック：",
-                "color": "gray",
-                "italic": false
-              },
-              {
-                "text": "装着する。装着中は2秒ごとに抽選し、70%で周囲",
-                "color": "white",
-                "italic": false
-              }
-            ]
-          },
-          {
-            "text": "",
-            "italic": false,
-            "extra": [
-              {
-                "text": "  4mへ",
+                "text": "  。2秒ごとに70%で周囲4mへ",
                 "color": "white",
                 "italic": false
               },
@@ -124,7 +113,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "※固有武器は1人1個です。",
+                "text": "※固有武器は一人一個まで所持可能",
                 "color": "gray",
                 "italic": false
               }
@@ -141,7 +130,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{description205:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
+      "tag": "{oa:{description206:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
     }
   ]
 }

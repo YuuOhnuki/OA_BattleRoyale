@@ -6,7 +6,7 @@
       "components": {
         "minecraft:custom_name": {
           "text": "ほちきす：ホッチキス",
-          "color": "gold",
+          "color": "#851c1c",
           "italic": false,
           "bold": true
         },
@@ -22,6 +22,22 @@
               },
               {
                 "text": "hochikisu_",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "特徴：",
+                "color": "gray",
+                "italic": false
+              },
+              {
+                "text": "敵をその場に留め、出血で追い詰めるホッチキス。",
                 "color": "white",
                 "italic": false
               }
@@ -119,7 +135,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "※固有武器は1人1個です。",
+                "text": "※固有武器は一人一個まで所持可能",
                 "color": "gray",
                 "italic": false
               }
@@ -136,7 +152,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{description205:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
+      "tag": "{oa:{description206:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
     }
   ]
 }

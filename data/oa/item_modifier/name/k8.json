@@ -6,7 +6,7 @@
       "components": {
         "minecraft:custom_name": {
           "text": "こまめ：小豆バー",
-          "color": "gold",
+          "color": "#51c5ff",
           "italic": false,
           "bold": true
         }

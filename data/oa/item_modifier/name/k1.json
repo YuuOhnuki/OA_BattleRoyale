@@ -6,7 +6,7 @@
       "components": {
         "minecraft:custom_name": {
           "text": "ゆうあ：ピンク帯の麦わら帽子",
-          "color": "gold",
+          "color": "#fdc5f9",
           "italic": false,
           "bold": true
         }

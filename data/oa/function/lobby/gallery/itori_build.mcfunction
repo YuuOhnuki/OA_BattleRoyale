@@ -3,7 +3,7 @@ fill ~10 ~0 ~29 ~14 ~0 ~33 minecraft:chiseled_quartz_block
 setblock ~12 ~0 ~31 minecraft:sea_lantern
 summon minecraft:mannequin ~12.5 ~1 ~31.5 {Tags:["oa.lobby_exhibit","oa.gallery","oa.exhibit_itori"],profile:{name:"itori0814"},pose:"standing",immovable:1b,hide_description:1b,Invulnerable:1b,NoGravity:1b,Silent:1b,PersistenceRequired:1b,Rotation:[180f,0f]}
 item replace entity @e[type=minecraft:mannequin,tag=oa.exhibit_itori,limit=1] weapon.mainhand with minecraft:carrot_on_a_stick[minecraft:item_model="oa:itori"]
-summon minecraft:text_display ~12.5 ~4 ~31.5 {Tags:["oa.lobby_label","oa.gallery","oa.exhibit_itori"],text:{text:"いとり\nitori0814",color:"gold"},billboard:"center",background:1073741824,shadow:1b,line_width:200,view_range:0.5f}
+summon minecraft:text_display ~12.5 ~4 ~31.5 {Tags:["oa.lobby_label","oa.gallery","oa.exhibit_itori"],text:{"text":"","extra":[{"text":"いとり","color":"#006dff","italic":false,"bold":true},{"text":"\nitori0814","color":"gray","font":"minecraft:default"}]},billboard:"center",background:1073741824,shadow:1b,line_width:200,view_range:0.5f}
 setblock ~12 ~0 ~28 minecraft:chiseled_quartz_block
 setblock ~12 ~1 ~28 minecraft:stone_button[face=floor,facing=north,powered=false]
 summon minecraft:interaction ~12.5 ~1 ~28.5 {Tags:["oa.gallery","oa.gallery_button","oa.gallery_12","oa.gallery_new","oa.exhibit_itori"],width:0.9f,height:0.75f,response:1b}
