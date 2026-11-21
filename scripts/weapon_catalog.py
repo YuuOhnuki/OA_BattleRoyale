@@ -36,9 +36,9 @@ MEDICINE={
  'paimon':('非常食','1秒で使用。速度II・跳躍II・攻撃力II・再生Iを20秒。満腹度2.5ゲージ（内部5ポイント）。')}
 
 # Presentation only; saved kinds and gameplay are unchanged.
-COLORS={1:'#fdc5f9',2:'#2529ff',3:'#ffad29',4:'#19191c',5:'#8d59ff',6:'#65fff0',7:'#851c1c',8:'#51c5ff',9:'#12a88f',10:'#006dff',11:'#095d2c',12:'#0e4666'}
+COLORS={1:'#fdc5f9',2:'#7B8CFF',3:'#ffad29',4:'#B5B5C2',5:'#8d59ff',6:'#65fff0',7:'#DE6868',8:'#51c5ff',9:'#12a88f',10:'#006dff',11:'#55C985',12:'#58B5DD'}
 for w in WEAPONS:
- w['color']=COLORS[w['kind']];w['outline']=w['kind'] in [2,4,11,12]
+ w['color']=COLORS[w['kind']];w['outline']=False
  if w['kind']==1:w['equip']='拾うと頭へ強制装着。攻撃した敵・攻撃してきた敵へ即死攻撃。装着中は発光。'
  if w['kind']==3:w['equip']='装着中は最大体力＋6HP、防具力＋3・防具強度＋2。2秒ごとに70%で周囲4mへ2HPの音波、30%で息切れ。'
  if w['kind']==5:w['equip']='拾うと頭へ強制装着。移動速度＋175%、盲目と大音量。最寄りの敵を発光表示。参加者の攻撃を25%で無効化。'

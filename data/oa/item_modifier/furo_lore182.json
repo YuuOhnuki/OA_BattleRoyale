@@ -6,11 +6,9 @@
       "components": {
         "minecraft:custom_name": {
           "text": "ふろっしゅ：ふろボール",
-          "color": "white",
+          "color": "#58B5DD",
           "italic": false,
-          "font": "oa:weapon_frosch",
-          "bold": false,
-          "shadow_color": 0
+          "bold": true
         },
         "minecraft:lore": [
           {
@@ -142,7 +140,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{furo_lore206:1b,furo_lore182:1b}"
+      "tag": "{furo_lore207:1b,furo_lore182:1b}"
     }
   ]
 }

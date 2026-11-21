@@ -1,4 +1,4 @@
-"""Name colours and four outlined bitmap fonts, shared by every entry point.
+"""Name colours shared by every entry point (outlined fonts kept for compatibility).
 Bitmap source: Noto Sans CJK JP Regular (SIL OFL 1.1, licence in resourcepack).
 No gameplay or saved IDs are changed.
 """
@@ -30,9 +30,10 @@ def generate(weapons,named,repo,rp):
  f=d/'tdm/hud_line.mcfunction';s=f.read_text(encoding='utf-8').replace('{text:" 青  |  $(name)  CT ",color:"gold"}','{text:" 青  |  ",color:"aqua"},{nbt:"name",storage:"oa:tdm_hud",interpret:true},{text:"  CT ",color:"white"}').lstrip('$');f.write_text(s,encoding='utf-8')
  # Ground labels receive their own text component at creation, not a live storage reference.
  f=d/'tdm/loot/label.mcfunction';s=f.read_text(encoding='utf-8')
+ s=re.sub(r'# weapon-colour\d+\n.*?(?=function oa:tdm/loot/label_spawn)', '',s,flags=re.S)
  pos=s.index('function oa:tdm/loot/label_spawn')
- if '# weapon-colour206' not in s:
-  lines=['# weapon-colour206','data modify storage oa:tdm_label component set value {text:"",extra:[]}', 'data modify storage oa:tdm_label component.text set from storage oa:tdm_label name']
+ if '# weapon-colour207' not in s:
+  lines=['# weapon-colour207','data modify storage oa:tdm_label component set value {text:"",extra:[]}', 'data modify storage oa:tdm_label component.text set from storage oa:tdm_label name']
   for w in weapons:
    if w['kind']==9 or w['kind']==12:continue
    k=103 if w['kind']==11 else w['kind']
@@ -48,9 +49,9 @@ def generate(weapons,named,repo,rp):
  # Existing placed practice labels are migrated once. No rebuilding is needed.
  lines=[]
  for w in weapons:
-  sel=f'@e[type=minecraft:text_display,tag=oa.practice_weapon_{w["info"]},tag=!oa.text206]'
+  sel=f'@e[type=minecraft:text_display,tag=oa.practice_weapon_{w["info"]},tag=!oa.text207]'
   label=w['name'] if w['kind']!=12 else 'ふろっしゅ：ふろボール'
-  lines += [f'execute in oa:practice as {sel} run data modify entity @s text set value '+dump(named(w,label)),f'execute in oa:practice run tag {sel} add oa.text206']
+  lines += [f'execute in oa:practice as {sel} run data modify entity @s text set value '+dump(named(w,label)),f'execute in oa:practice run tag {sel} add oa.text207']
  (d/'presentation/refresh_labels.mcfunction').write_text('\n'.join(lines)+'\n',encoding='utf-8')
  # Static labels and exact weapon name components in generated/build sources.
  names={}
@@ -66,5 +67,7 @@ def generate(weapons,named,repo,rp):
    c=named(w,w['name'] if label in ['ねろ','ネロ'] else label)
    if '\n' in raw:c={'text':'','extra':[c,{'text':'\n'+raw.split('\n',1)[1],'color':'gray','font':'minecraft:default'}]}
    return dump(c)
-  s2=re.sub(r'\{(?:"text"|text)\s*:\s*"(?P<label>(?:[^"\\]|\\.)*)"\s*,\s*(?:"color"|color)\s*:\s*"[^"\n]+"(?:\s*,\s*(?:"bold"|bold)\s*:\s*(?:true|false))?\s*\}',replace,s)
+  # Rebuild previously styled names too: remove the old font/shadow overrides.
+  s2=re.sub(r'\{"text"\s*:\s*"(?P<label>(?:[^"\\]|\\.)*)",[^{}\n]*\}',replace,s)
+  s2=re.sub(r'\{(?:"text"|text)\s*:\s*"(?P<label>(?:[^"\\]|\\.)*)"\s*,\s*(?:"color"|color)\s*:\s*"[^"\n]+"(?:\s*,\s*(?:"bold"|bold)\s*:\s*(?:true|false))?\s*\}',replace,s2)
   if s2!=s:f.write_text(s2,encoding='utf-8')

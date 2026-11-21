@@ -6,7 +6,7 @@
       "components": {
         "minecraft:custom_name": {
           "text": "ほちきす：ホッチキス",
-          "color": "#851c1c",
+          "color": "#DE6868",
           "italic": false,
           "bold": true
         }

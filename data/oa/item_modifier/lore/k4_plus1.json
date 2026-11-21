@@ -6,11 +6,9 @@
       "components": {
         "minecraft:custom_name": {
           "text": "ネロノワール：ペスト医師の杖",
-          "color": "white",
+          "color": "#B5B5C2",
           "italic": false,
-          "font": "oa:weapon_neronoir",
-          "bold": false,
-          "shadow_color": 0
+          "bold": true
         },
         "minecraft:lore": [
           {
@@ -170,7 +168,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{description206:1b,description_up:1b,name_v172:1b,name_v204:1b}}"
+      "tag": "{oa:{description207:1b,description_up:1b,name_v172:1b,name_v204:1b}}"
     }
   ]
 }

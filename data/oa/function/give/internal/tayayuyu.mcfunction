@@ -1,5 +1,5 @@
 summon minecraft:item ~ ~0.5 ~ {Tags:["oa.spawn"],PickupDelay:32767s,Item:{id:"minecraft:stone",count:1}}
-$item replace entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents with minecraft:carrot_on_a_stick[minecraft:custom_name={"text":"たやゆゆ：変態ガチャ","color":"green","italic":false},minecraft:custom_data={"oa":{"unique":true,"kind":9,"serial":$(serial)}},minecraft:max_stack_size=1,minecraft:item_model="oa:tayayuyu",minecraft:enchantment_glint_override=false,minecraft:unbreakable={},minecraft:lore=[{"text":"OA試作版 / 固有装備は1人1個","color":"gray","italic":false}]]
+$item replace entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents with minecraft:carrot_on_a_stick[minecraft:custom_name={"text":"たやゆゆ：変態ガチャ","color":"#12a88f","italic":false,"bold":true},minecraft:custom_data={"oa":{"unique":true,"kind":9,"serial":$(serial)}},minecraft:max_stack_size=1,minecraft:item_model="oa:tayayuyu",minecraft:enchantment_glint_override=false,minecraft:unbreakable={},minecraft:lore=[{"text":"OA試作版 / 固有装備は1人1個","color":"gray","italic":false}]]
 item modify entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents oa:melee_tayayuyu
 item modify entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents oa:lore/k9
 item modify entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents oa:tayayuyu_upgrade

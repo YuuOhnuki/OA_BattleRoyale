@@ -1,5 +1,5 @@
 summon minecraft:item ~ ~0.5 ~ {Tags:["oa.spawn"],PickupDelay:32767s,Item:{id:"minecraft:stone",count:1}}
-$item replace entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents with minecraft:carrot_on_a_stick[minecraft:custom_name={"text":"ネロノワール：ペスト医師の杖","color":"dark_gray","italic":false},minecraft:custom_data={"oa":{"unique":true,"kind":4,"serial":$(serial)}},minecraft:max_stack_size=1,minecraft:item_model="oa:nero",minecraft:enchantment_glint_override=false,minecraft:unbreakable={},minecraft:lore=[{"text":"OA試作版 / 固有装備は1人1個","color":"gray","italic":false}]]
+$item replace entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents with minecraft:carrot_on_a_stick[minecraft:custom_name={"text":"ネロノワール：ペスト医師の杖","color":"#B5B5C2","italic":false,"bold":true},minecraft:custom_data={"oa":{"unique":true,"kind":4,"serial":$(serial)}},minecraft:max_stack_size=1,minecraft:item_model="oa:nero",minecraft:enchantment_glint_override=false,minecraft:unbreakable={},minecraft:lore=[{"text":"OA試作版 / 固有装備は1人1個","color":"gray","italic":false}]]
 item modify entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents oa:melee_iron
 item modify entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents oa:lore/k4
 item modify entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents oa:visual/k4

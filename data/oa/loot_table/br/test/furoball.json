@@ -13,11 +13,9 @@
               "components": {
                 "minecraft:custom_name": {
                   "text": "ふろっしゅ：ふろボール",
-                  "color": "white",
+                  "color": "#58B5DD",
                   "italic": false,
-                  "font": "oa:weapon_frosch",
-                  "bold": false,
-                  "shadow_color": 0
+                  "bold": true
                 },
                 "minecraft:custom_data": {
                   "oa_furoball": true,

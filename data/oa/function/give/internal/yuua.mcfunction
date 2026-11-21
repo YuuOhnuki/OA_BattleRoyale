@@ -1,7 +1,7 @@
 execute unless entity @s[tag=oa.debug] if score #yuua_issued br.tmp matches 1 run return 0
 execute unless entity @s[tag=oa.debug] run scoreboard players set #yuua_issued br.tmp 1
 summon minecraft:item ~ ~0.5 ~ {Tags:["oa.spawn"],PickupDelay:32767s,Item:{id:"minecraft:stone",count:1}}
-$item replace entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents with minecraft:carrot_on_a_stick[minecraft:custom_name={"text":"ゆうあ：ピンク帯の麦わら帽子","color":"light_purple","italic":false},minecraft:custom_data={"oa":{"unique":true,"kind":1,"serial":$(serial)}},minecraft:max_stack_size=1,minecraft:item_model="oa:yuua",minecraft:enchantment_glint_override=false,minecraft:lore=[{"text":"OA試作版 / 固有装備は1人1個","color":"gray","italic":false}],minecraft:equippable={"slot":"head","swappable":true,"damage_on_hurt":false,"dispensable":false},minecraft:max_damage=600,minecraft:damage=0,minecraft:enchantments={"oa:hat":1}]
+$item replace entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents with minecraft:carrot_on_a_stick[minecraft:custom_name={"text":"ゆうあ：ピンク帯の麦わら帽子","color":"#fdc5f9","italic":false,"bold":true},minecraft:custom_data={"oa":{"unique":true,"kind":1,"serial":$(serial)}},minecraft:max_stack_size=1,minecraft:item_model="oa:yuua",minecraft:enchantment_glint_override=false,minecraft:lore=[{"text":"OA試作版 / 固有装備は1人1個","color":"gray","italic":false}],minecraft:equippable={"slot":"head","swappable":true,"damage_on_hurt":false,"dispensable":false},minecraft:max_damage=600,minecraft:damage=0,minecraft:enchantments={"oa:hat":1}]
 item modify entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents oa:lore/k1
 item modify entity @e[type=minecraft:item,tag=oa.spawn,limit=1] contents oa:visual/k1
 scoreboard players set @e[tag=oa.spawn] oa.wait 20
