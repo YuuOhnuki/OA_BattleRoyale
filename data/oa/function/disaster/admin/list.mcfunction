@@ -1,0 +1,13 @@
+# 生成：scripts/gen_disasters.py（直接編集しない）
+# 管理者用：災害の一覧（番号・危険度・秒・重み）
+tellraw @s [{"text":"k1 ","color":"gray"},{"text":"酸性雨","color":"green"},{"text":" ★★★★☆ 30秒 重み","color":"white"},{"nbt":"cfg.weight.k1","storage":"oa:disaster","color":"white"},{"text":" マップ br","color":"gray"}]
+tellraw @s [{"text":"k2 ","color":"gray"},{"text":"寒波","color":"aqua"},{"text":" ★★★★☆ 30秒 重み","color":"white"},{"nbt":"cfg.weight.k2","storage":"oa:disaster","color":"white"},{"text":" マップ br","color":"gray"}]
+tellraw @s [{"text":"k3 ","color":"gray"},{"text":"隕石群","color":"red"},{"text":" ★★★★★ 24秒 重み","color":"white"},{"nbt":"cfg.weight.k3","storage":"oa:disaster","color":"white"},{"text":" マップ br,nether,cave","color":"gray"}]
+tellraw @s [{"text":"k4 ","color":"gray"},{"text":"毒霧","color":"dark_green"},{"text":" ★★★★☆ 40秒 重み","color":"white"},{"nbt":"cfg.weight.k4","storage":"oa:disaster","color":"white"},{"text":" マップ br,nether,cave","color":"gray"}]
+tellraw @s [{"text":"k5 ","color":"gray"},{"text":"地震","color":"gold"},{"text":" ★★★☆☆ 10秒 重み","color":"white"},{"nbt":"cfg.weight.k5","storage":"oa:disaster","color":"white"},{"text":" マップ br,nether,cave","color":"gray"}]
+tellraw @s [{"text":"k6 ","color":"gray"},{"text":"濃霧","color":"gray"},{"text":" ★★☆☆☆ 30秒 重み","color":"white"},{"nbt":"cfg.weight.k6","storage":"oa:disaster","color":"white"},{"text":" マップ br,nether,cave","color":"gray"}]
+tellraw @s [{"text":"k7 ","color":"gray"},{"text":"重力異常","color":"light_purple"},{"text":" ★★☆☆☆ 15秒 重み","color":"white"},{"nbt":"cfg.weight.k7","storage":"oa:disaster","color":"white"},{"text":" マップ br,nether,cave","color":"gray"}]
+tellraw @s [{"text":"k8 ","color":"gray"},{"text":"ニワトリ大量発生","color":"yellow"},{"text":" ★☆☆☆☆ 12秒 重み","color":"white"},{"nbt":"cfg.weight.k8","storage":"oa:disaster","color":"white"},{"text":" マップ br,nether,cave","color":"gray"}]
+tellraw @s [{"text":"k9 ","color":"gray"},{"text":"血の月・強制パーティー","color":"dark_red"},{"text":" ★★☆☆☆ 15秒 重み","color":"white"},{"nbt":"cfg.weight.k9","storage":"oa:disaster","color":"white"},{"text":" マップ br,nether,cave","color":"gray"}]
+tellraw @s [{"text":"k10 ","color":"gray"},{"text":"竜巻","color":"white"},{"text":" ★★★★☆ 15秒 重み","color":"white"},{"nbt":"cfg.weight.k10","storage":"oa:disaster","color":"white"},{"text":" マップ br,nether","color":"gray"}]
+tellraw @s [{"text":"k11 ","color":"gray"},{"text":"ブタの大行進","color":"light_purple"},{"text":" ★★☆☆☆ 15秒 重み","color":"white"},{"nbt":"cfg.weight.k11","storage":"oa:disaster","color":"white"},{"text":" マップ br,nether,cave","color":"gray"}]

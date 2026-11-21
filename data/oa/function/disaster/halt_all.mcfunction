@@ -1,0 +1,14 @@
+# 生成：scripts/gen_disasters.py（直接編集しない）
+function oa:disaster/halt/k1
+function oa:disaster/halt/k2
+function oa:disaster/halt/k3
+function oa:disaster/halt/k4
+function oa:disaster/halt/k5
+function oa:disaster/halt/k6
+function oa:disaster/halt/k7
+function oa:disaster/halt/k8
+function oa:disaster/halt/k9
+function oa:disaster/halt/k10
+function oa:disaster/halt/k11
+function oa:disaster/plan_clear
+function oa:disaster/count

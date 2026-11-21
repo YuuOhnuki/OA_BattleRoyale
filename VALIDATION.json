@@ -1,5 +1,5 @@
 {
-  "version": "1.9.211",
-  "checks": "static; loot item parity on test server (tools/item_parity.py)",
-  "runtime": "test server startup only; no match tests; kill log, practice armory, itori skills unverified in game"
+  "version": "1.9.212",
+  "checks": "static; disaster automated test on test server (tools/disaster_test.py)",
+  "runtime": "test server: 11 disasters single/2/3/combo/cleanup with fake players; feel and visuals unverified"
 }

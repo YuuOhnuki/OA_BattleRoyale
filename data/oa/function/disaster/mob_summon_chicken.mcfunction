@@ -1,0 +1,1 @@
+$summon minecraft:chicken ~ ~0.4 ~ {Tags:["oa.dis_mob","oa.dis_chicken"],DeathLootTable:"minecraft:empty",EggLayTime:1000000,Motion:[$(mx)d,0.45d,$(mz)d],attributes:[{id:"minecraft:max_health",base:100.0d},{id:"minecraft:movement_speed",base:0.4d}],Health:100.0f}

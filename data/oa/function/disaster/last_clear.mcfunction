@@ -1,0 +1,12 @@
+# 生成：scripts/gen_disasters.py（直接編集しない）
+scoreboard players set #last1 br.tmp 0
+scoreboard players set #last2 br.tmp 0
+scoreboard players set #last3 br.tmp 0
+scoreboard players set #last4 br.tmp 0
+scoreboard players set #last5 br.tmp 0
+scoreboard players set #last6 br.tmp 0
+scoreboard players set #last7 br.tmp 0
+scoreboard players set #last8 br.tmp 0
+scoreboard players set #last9 br.tmp 0
+scoreboard players set #last10 br.tmp 0
+scoreboard players set #last11 br.tmp 0

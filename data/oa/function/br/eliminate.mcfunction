@@ -10,6 +10,8 @@ tag @s remove br.alive
 execute if score #state br.state matches 1 if score #firstdead br.tmp matches 0 run function oa:ach/first_out
 tag @s remove br.spawn_protection
 function oa:status/reset
+# 1.9.212: 災害の効果（重力・落下無効など）を外す
+function oa:disaster/player_clear
 function oa:internal/cleanup
 execute if entity @s[tag=oa.external_blind] run effect clear @s minecraft:blindness
 execute if entity @s[tag=oa.external_slow] run effect clear @s minecraft:slowness

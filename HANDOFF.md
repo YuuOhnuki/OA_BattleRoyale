@@ -1,6 +1,8 @@
-# 引き継ぎメモ（1.9.211 時点）
+# 引き継ぎメモ（1.9.212 時点）
 
 ## 現状
+- 1.9.212：災害は種類ごとの残り秒 #dsN で複数同時に進む（通常の抽選・災害コンボ共通）。定義の正本は scripts/gen_disasters.py（直接編集しない生成物：disaster/go・run・stop・halt・pick・available・announce・bar・start_planned・run_all・count・cfg_defaults・admin/start・multi・list・combo/plan_all）。災害の中身は disaster/k<N>/start・second・end。kN/second は #dis_left を「この災害の残り秒」として読める（run/kN が入れ替える）。継続ダメージは disaster/dmg を通す（同時発生中の上限）。プレイヤーに付ける属性は名前 oa:dis_* にして、終わるときはその名前だけ外す。竜巻・動物の動きはプラグインの DisasterService。マップ定義の disasters（pool）は使わない。
+
 - 1.9.211：持ち物の更新処理（inventory/text_refresh・normal/visual_tick など、目印がない物を書き換える）を足したら、ドロップ表にも同じ目印・同じ中身を入れる。確かめるのは tools/item_parity.py（data get は深い所を {.. と省略するので、種類と custom_data などで区別している）。練習場の通常装備は gen_practice_catalog.py がドロップ表の modifier をそのまま写す。キルログはプラグインの KillLog（ダメージの種類→固有武器の表、攻撃した人のタグ→武器）。新しいダメージの種類・発生源タグを足したら KillLog の表にも足す。医療品の中身を変えたら目印の版（medical_text211）を上げる。
 
 - 1.9.210：プレイヤーの nbt={Health:0.0f} を毎 tick 読むのをやめ、プラグインのタグ oa.dead に。新しく書く「倒れていない人」の条件は tag=!oa.dead（プレイヤー）を使い、NBT はモブだけ。プラグインがないときは internal/life_fallback が同じタグを付ける（#life oa.plugin はプラグインが毎 tick 1、tick の終わりに0）。接地は述語 oa:airborne。固有武器の粒はプラグインの HeldParticles（データパックの visual/held_particles は削除）。

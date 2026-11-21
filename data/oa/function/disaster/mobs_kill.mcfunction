@@ -1,0 +1,7 @@
+# 1.9.212：災害で出したニワトリ・ブタだけを消す（タグ oa.dis_mob。もとからいる動物には触れない）
+execute in oa:br run kill @e[tag=oa.dis_mob]
+execute in oa:br_nether run kill @e[tag=oa.dis_mob]
+execute in oa:br_cave run kill @e[tag=oa.dis_mob]
+execute in oa:br run kill @e[type=minecraft:marker,tag=oa.dis_tornado]
+execute in oa:br_nether run kill @e[type=minecraft:marker,tag=oa.dis_tornado]
+execute in oa:br_cave run kill @e[type=minecraft:marker,tag=oa.dis_tornado]

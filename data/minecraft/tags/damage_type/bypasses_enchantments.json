@@ -28,6 +28,10 @@
     {
       "id": "oa:gacha_blast",
       "required": false
+    },
+    {
+      "id": "oa:pig_blast",
+      "required": false
     }
   ]
 }

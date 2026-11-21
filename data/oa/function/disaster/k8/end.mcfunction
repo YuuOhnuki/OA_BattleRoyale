@@ -1,0 +1,3 @@
+execute in oa:br run kill @e[type=minecraft:chicken,tag=oa.dis_chicken]
+execute in oa:br_nether run kill @e[type=minecraft:chicken,tag=oa.dis_chicken]
+execute in oa:br_cave run kill @e[type=minecraft:chicken,tag=oa.dis_chicken]

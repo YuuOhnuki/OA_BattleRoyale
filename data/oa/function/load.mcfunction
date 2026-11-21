@@ -144,6 +144,7 @@ scoreboard objectives add br.lobby trigger
 
 scoreboard objectives add oa.mfx dummy
 function oa:br/bars/load
+function oa:disaster/cfg_defaults
 
 scoreboard objectives add oa.root dummy
 scoreboard objectives add oa.bleed dummy
@@ -439,6 +440,9 @@ scoreboard players add #map oa.mapid 0
 # 1.9.111: version display (TAB list + /trigger oa.ver) and load-complete message
 scoreboard objectives add oa.ver trigger
 scoreboard objectives add br.dtmr dummy
+scoreboard objectives add br.ddmg dummy
+scoreboard objectives add br.dfall dummy
+scoreboard objectives add br.dpig dummy
 scoreboard objectives add br.gkind dummy
 scoreboard objectives add br.lkey dummy
 scoreboard objectives add br.qwalk minecraft.custom:minecraft.walk_one_cm

@@ -1,8 +1,9 @@
-execute if score #dis_kind br.tmp matches 1 run function oa:disaster/k1/end
-tellraw @a[tag=br.playing] {text:"✔ 災害が収まりました",color:"green"}
-scoreboard players set #dis_kind br.tmp 0
+# 1.9.212：起きていた災害がすべて収まった（disaster/second から）。次の通常の抽選までの間隔は cfg.cd_min〜cd_max 秒
+tellraw @a[tag=br.playing] {text:"✔ 災害がすべて収まりました",color:"green"}
+execute if score #dc_on br.tmp matches 1 run function oa:disaster/combo/end
 scoreboard players set #dis_left br.tmp 0
 scoreboard players set #dis_phase br.tmp 0
 tag @a remove br.dis_msg
 function oa:disaster/clear_marks
-execute store result score #dis_cd br.tmp run random value 70..110
+function oa:disaster/mobs_kill
+function oa:disaster/cooldown with storage oa:disaster cfg
