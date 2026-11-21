@@ -21,7 +21,7 @@ effect clear @s minecraft:resistance
 scoreboard players operation @s br.surv = #time br.time
 scoreboard players set @s oa.death 0
 gamemode spectator @s
-execute if entity @s[nbt={Health:0.0f}] run return 0
+execute if entity @s[tag=oa.dead] run return 0
 function oa:internal/tp with storage oa:br center
 tellraw @a[tag=br.playing] [{selector:"@s"},{text:" が脱落しました",color:"red"}]
 

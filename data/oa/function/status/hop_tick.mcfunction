@@ -9,7 +9,7 @@ execute if entity @s[tag=oa.decoy_grace] run return 0
 execute if entity @s[tag=br.pvp_grace] run return 0
 scoreboard players add @s oa.hoparc 0
 execute if score @s oa.hoparc matches 1.. run return run scoreboard players remove @s oa.hoparc 1
-execute unless entity @s[nbt={OnGround:1b}] run return 0
+execute unless entity @s[predicate=!oa:airborne] run return 0
 execute if data entity @s active_effects[{id:"minecraft:levitation"}] run return 0
 execute unless block ~ ~1 ~ #minecraft:air run return 0
 execute unless block ~ ~2 ~ #minecraft:air run return 0

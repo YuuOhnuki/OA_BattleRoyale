@@ -1,6 +1,8 @@
-# 引き継ぎメモ（1.9.209 時点）
+# 引き継ぎメモ（1.9.210 時点）
 
 ## 現状
+- 1.9.210：プレイヤーの nbt={Health:0.0f} を毎 tick 読むのをやめ、プラグインのタグ oa.dead に。新しく書く「倒れていない人」の条件は tag=!oa.dead（プレイヤー）を使い、NBT はモブだけ。プラグインがないときは internal/life_fallback が同じタグを付ける（#life oa.plugin はプラグインが毎 tick 1、tick の終わりに0）。接地は述語 oa:airborne。固有武器の粒はプラグインの HeldParticles（データパックの visual/held_particles は削除）。
+
 - 1.9.209：展示背面とベンチが正面入口を塞いでいた。gen_lobby_terminalの見た目と別に直通経路を検査する。練習場はgen_practice_catalog.pyでBRのlootから品揃え／見た目／直接配布／旧入口の制限を生成。armor_breakは集計されたbroken統計でなくPlayerItemBreakEventで実物の材質・OAタグ／モデルを確認（誤解除済みの履歴はそのまま）。前回結果JSONへuuidを追加し表示側は非同期プロフィールを利用、未解決ならSteve模型を出さない。実際のゲーム内操作・描画は未確認。
 
 - 1.9.208：医療品の説明更新だけに付くmedical_textフラグで生成直後と差があった。共通compにmedical_text208を含め、全lootへdeepcopy、modifierも同じcompだけを設定。採掘側と所持更新側のデータ一致を保つこと。ユーザー確認で対象は医療品。石炭の通常食料は元からチェストと同じ設定。実際の採掘操作は未確認。出血2/20tick、地図表示の着地判定は変更なし。

@@ -19,6 +19,7 @@ scoreboard objectives add oa.death deathCount
 scoreboard objectives add oa.left minecraft.custom:minecraft.leave_game
 scoreboard objectives add oa.seen dummy
 scoreboard objectives add oa.tmp dummy
+scoreboard objectives add oa.plugin dummy
 scoreboard objectives add oa.wait dummy
 scoreboard objectives add oa.team dummy
 scoreboard objectives add oa.epoch dummy

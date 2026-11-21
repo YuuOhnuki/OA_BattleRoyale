@@ -2,7 +2,7 @@ execute unless score #state br.state matches 0 run return 0
 execute if data storage oa_map2:job {working:1b} run return run tellraw @s {text:"マップ生成が終わるまで待ってください",color:"red"}
 execute if score #busy br.clean matches 1 run return 0
 execute if entity @a[tag=br.lobby,scores={br.saved=1},tag=!oa.practice] run return run tellraw @s {text:"持ち物の復元待ちの参加者がいます",color:"red"}
-execute if entity @a[tag=br.lobby,nbt={Health:0.0f}] run return run tellraw @s {text:"全員が復活してから開始してください",color:"red"}
+execute if entity @a[tag=br.lobby,tag=oa.dead] run return run tellraw @s {text:"全員が復活してから開始してください",color:"red"}
 scoreboard players set #players tdm.sys 0
 execute as @a[tag=br.lobby] run scoreboard players add #players tdm.sys 1
 execute unless score #players tdm.sys matches 2..10 run return run tellraw @s {text:"TDMには2～10人必要です",color:"red"}

@@ -3,10 +3,10 @@ execute if score #warmup tdm.sys matches 1.. run return run function oa:tdm/warm
 scoreboard players add #time tdm.sys 1
 execute as @a[tag=tdm.player] run function oa:tdm/count_kills
 execute if score #time tdm.sys matches 6000.. run return run function oa:tdm/finish
-execute as @a[tag=tdm.player,tag=br.alive,nbt={Health:0.0f}] at @s run function oa:tdm/death
+execute as @a[tag=tdm.player,tag=br.alive,tag=oa.dead] at @s run function oa:tdm/death
 scoreboard players remove @a[tag=tdm.player,scores={tdm.wait=1..}] tdm.wait 1
-execute as @a[tag=tdm.player,scores={tdm.wait=1..},nbt=!{Health:0.0f}] at @s run function oa:tdm/wait_tick
-execute as @a[tag=tdm.player,tag=!br.alive,scores={tdm.wait=0},nbt=!{Health:0.0f}] at @s run function oa:tdm/respawn
+execute as @a[tag=tdm.player,scores={tdm.wait=1..},tag=!oa.dead] at @s run function oa:tdm/wait_tick
+execute as @a[tag=tdm.player,tag=!br.alive,scores={tdm.wait=0},tag=!oa.dead] at @s run function oa:tdm/respawn
 scoreboard players remove @a[tag=tdm.player,scores={tdm.guard=1..}] tdm.guard 1
 execute as @a[tag=tdm.player,tag=br.alive,tag=br.pvp_grace,scores={tdm.guard=0}] run effect clear @s minecraft:resistance
 tag @a[tag=tdm.player,tag=br.alive,scores={tdm.guard=0}] remove br.pvp_grace

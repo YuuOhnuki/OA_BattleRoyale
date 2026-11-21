@@ -1,6 +1,6 @@
 execute unless score @s oa.pending matches 1..5 run return 0
 execute unless score @s oa.left = @s oa.qleft run return run scoreboard players set @s oa.pending 0
-execute if entity @s[nbt={Health:0.0f}] run return 0
+execute if entity @s[tag=oa.dead] run return 0
 execute if score #state br.state matches 2 run return 0
 execute if score #state br.state matches 0 if score @s br.saved matches 1 run return 0
 scoreboard players operation #control_do oa.tmp = @s oa.pending

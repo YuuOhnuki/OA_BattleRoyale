@@ -1,5 +1,5 @@
 execute unless entity @s[tag=oa.practice] run return 0
-execute if entity @s[nbt={Health:0.0f}] run return 0
+execute if entity @s[tag=oa.dead] run return 0
 execute if entity @s[tag=jp_riding] run ride @s dismount
 execute if entity @s[tag=jp_no_fall] run function jumppad:clear_fall_immunity
 tag @s add oa.practice_exiting

@@ -2,7 +2,7 @@ function oa:komame/cleanup
 tag @s remove oa.fish1911
 execute if entity @s[tag=oa.ambush_active] run function oa:yuttari/return
 # A live decoy cannot evade its return by switching gear. Death/leave cancel without moving a corpse.
-execute if entity @s[tag=oa.self_decoy] unless entity @s[nbt={Health:0.0f}] unless entity @s[gamemode=spectator] run function oa:nero/decoy_return
+execute if entity @s[tag=oa.self_decoy] unless entity @s[tag=oa.dead] unless entity @s[gamemode=spectator] run function oa:nero/decoy_return
 function oa:nero/decoy_release
 attribute @s minecraft:jump_strength modifier remove oa:fish_jump
 attribute @s minecraft:movement_speed modifier remove oa:fish

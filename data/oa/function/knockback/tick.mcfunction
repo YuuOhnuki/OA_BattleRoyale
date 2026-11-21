@@ -1,4 +1,4 @@
-execute if entity @s[nbt={Health:0.0f}] run return run scoreboard players set @s oa.kpush 0
+execute if entity @s[tag=oa.dead] run return run scoreboard players set @s oa.kpush 0
 execute if entity @s[gamemode=spectator] run return run scoreboard players set @s oa.kpush 0
 execute if entity @s[tag=oa.self_decoy] run return run scoreboard players set @s oa.kpush 0
 execute if entity @s[tag=oa.decoy_grace] run return run scoreboard players set @s oa.kpush 0

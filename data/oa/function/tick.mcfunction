@@ -1,3 +1,5 @@
+# 1.9.210: 倒れている人のタグ oa.dead はプラグイン（LifeStateTags）が付ける。プラグインが動いていない tick（#life oa.plugin が1でない）だけ、データパックが NBT で付け外しする
+execute unless score #life oa.plugin matches 1 run function oa:internal/life_fallback
 function oa:ver/tick
 execute if score #perf oa.tmp matches 19 run tag @a[tag=br.lobby_now] add oa.inv_dirty
 scoreboard players add #perf oa.tmp 1
@@ -59,7 +61,7 @@ execute if score #g_oni oa.tmp matches 1.. run function oa:tayayuyu/oni_tick
 
 execute as @a[tag=oa.furo_fall] at @s run function oa:furoball/up_tick
 
-execute if score #clock oa.beat matches 0 as @a[gamemode=!spectator,nbt=!{Health:0.0f}] at @s unless entity @s[tag=br.lobby_now,tag=!oa.debug] run function oa:visual/held_particles
+# 1.9.210: 固有武器を持つ人の周りの粒はプラグイン（visual/HeldParticles）。旧 visual/held_particles は削除
 
 execute as @a[tag=oa.taya_fall] at @s run function oa:tayayuyu/fall_tick
 
@@ -74,3 +76,6 @@ execute as @a[scores={oa.i_burn=1..}] at @s run function oa:itori/burn_tick
 execute if score #perf oa.tmp matches 0 if score #state br.state matches 0 if score #state oa.map2 matches 3 run function oa:map/internal/repair_floating_chest with storage oa_map2:args
 
 execute if score #perf oa.tmp matches 0 in oa:practice as @e[type=minecraft:zombie,tag=oa.practice_dummy,tag=!oa.practice_quiet,distance=0..] run function oa:practice/dummy_unname
+
+# 1.9.210: プラグインは毎 tick の初め（この関数より前）に1にする。ここで0に戻し、次の tick にプラグインが動いたかを見分ける
+scoreboard players set #life oa.plugin 0

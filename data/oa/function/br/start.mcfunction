@@ -8,7 +8,7 @@ execute if data storage oa_map2:job {working:1b} run return run tellraw @s {text
 execute unless data storage oa:br center.dim run return run tellraw @s {text:"先に /function oa:map/create で専用ディメンションにBRマップを生成してください。",color:"red"}
 function oa:br/border/auto
 execute if entity @a[tag=br.lobby,tag=!oa.practice,scores={br.saved=1}] run return run tellraw @s {text:"復元待ちの参加者がいます",color:"red"}
-execute if entity @a[tag=br.lobby,nbt={Health:0.0f}] run return run tellraw @s {text:"死亡中の参加者がいます。復活してから開始してください",color:"red"}
+execute if entity @a[tag=br.lobby,tag=oa.dead] run return run tellraw @s {text:"死亡中の参加者がいます。復活してから開始してください",color:"red"}
 scoreboard players set #players br.tmp 0
 execute as @a[tag=br.lobby] run scoreboard players add #players br.tmp 1
 execute unless score #players br.tmp matches 1..10 run return run tellraw @s {text:"参加者は1～10人必要です",color:"red"}

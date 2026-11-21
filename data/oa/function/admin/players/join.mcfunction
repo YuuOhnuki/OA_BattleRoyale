@@ -1,5 +1,5 @@
 execute if score #state br.state matches 2.. run return run tellraw @a[tag=oa.roster_actor] {text:"終了・演出処理の完了後に操作してください。",color:"yellow"}
-execute if entity @s[nbt={Health:0.0f}] run return run tellraw @a[tag=oa.roster_actor] {text:"対象のリスポーン完了後に再実行してください。",color:"yellow"}
+execute if entity @s[tag=oa.dead] run return run tellraw @a[tag=oa.roster_actor] {text:"対象のリスポーン完了後に再実行してください。",color:"yellow"}
 execute if score #state br.state matches 0 run return run function oa:admin/players/wait_join
 execute if entity @s[tag=br.alive] run return run tellraw @a[tag=oa.roster_actor] {text:"すでに生存参加中です。",color:"yellow"}
 execute if score #mode br.mode matches 1 unless score @s br.pick matches 1..10 run return run tellraw @a[tag=oa.roster_actor] {text:"チーム未選択です。試合前にチームを選択してください。",color:"yellow"}

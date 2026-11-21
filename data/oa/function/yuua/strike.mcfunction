@@ -6,4 +6,4 @@ execute as @a[tag=oa.hat_victim,limit=1] at @s run particle minecraft:crit ~ ~1 
 function oa:yuua/silence_begin
 damage @a[tag=oa.hat_victim,limit=1] 10000 oa:execution by @s
 function oa:yuua/silence_end
-execute if entity @a[tag=oa.hat_victim,nbt={Health:0.0f},limit=1] run tellraw @a [{selector:"@a[tag=oa.hat_victim,limit=1]"},{text:" はゆうあ財閥（資金提供者"},{selector:"@s"},{text:"）によってOA鯖を永久追放された",color:"light_purple"}]
+execute if entity @a[tag=oa.hat_victim,tag=oa.dead,limit=1] run tellraw @a [{selector:"@a[tag=oa.hat_victim,limit=1]"},{text:" はゆうあ財閥（資金提供者"},{selector:"@s"},{text:"）によってOA鯖を永久追放された",color:"light_purple"}]

@@ -4,7 +4,7 @@ tellraw @a[tag=br.playing] {"text": " → 45秒の時限爆弾！ 全生存者�
 execute if score #g_oni oa.tmp matches 1.. run return run tellraw @a[tag=br.playing] {text:"（時限爆弾はすでに動いています）",color:"gray"}
 scoreboard players set #g_oni oa.tmp 900
 scoreboard players operation #g_oni_by oa.tmp = #gacha_caster oa.tmp
-execute as @a[tag=br.alive,gamemode=!spectator,nbt=!{Health:0.0f},sort=random,limit=1] at @s run function oa:tayayuyu/oni_take
+execute as @a[tag=br.alive,gamemode=!spectator,tag=!oa.dead,sort=random,limit=1] at @s run function oa:tayayuyu/oni_take
 execute unless entity @a[tag=oa.g_oni] run return run function oa:tayayuyu/oni_reset
 function oa:tayayuyu/oni_reveal
 tellraw @a[tag=br.playing] [{text:"💣 最初の鬼：",color:"red",bold:true},{selector:"@a[tag=oa.g_oni]",color:"white"}]

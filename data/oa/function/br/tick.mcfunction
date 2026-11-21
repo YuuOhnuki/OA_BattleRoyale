@@ -5,8 +5,8 @@ execute if score #vclock br.tmp matches 10.. run scoreboard players set #vclock 
 execute if score #state br.state matches 0 if score #vclock br.tmp matches 0 as @a[scores={br.preview=1..}] at @s run function oa:br/zone/visual
 scoreboard players remove @a[scores={br.preview=1..}] br.preview 1
 execute if score #state br.state matches 0 as @a[tag=br.lobby,scores={br.saved=0}] at @s run function oa:br/team/select
-execute as @a[tag=!oa.practice,scores={br.saved=1,br.retry=0}] unless score @s br.round = #round br.round at @s unless entity @s[nbt={Health:0.0f}] run function oa:br/recover
-execute if score #state br.state matches 0 as @a[tag=!oa.practice,scores={br.saved=1,br.retry=0}] at @s unless entity @s[nbt={Health:0.0f}] run function oa:br/recover
+execute as @a[tag=!oa.practice,scores={br.saved=1,br.retry=0}] unless score @s br.round = #round br.round at @s unless entity @s[tag=oa.dead] run function oa:br/recover
+execute if score #state br.state matches 0 as @a[tag=!oa.practice,scores={br.saved=1,br.retry=0}] at @s unless entity @s[tag=oa.dead] run function oa:br/recover
 execute unless score #state br.state matches 1 run return 0
 scoreboard players add #time br.time 1
 function oa:br/day/tick
@@ -30,7 +30,7 @@ scoreboard players add #pulse br.tmp 1
 execute if score #time br.time matches 10800 run function oa:br/finale/announce
 execute if score #time br.time matches 10800.. run function oa:br/finale/tick
 execute as @a[tag=br.playing,tag=br.alive] unless score @s br.left = @s oa.left at @s run function oa:br/surrender
-execute as @a[tag=br.playing,tag=br.alive,nbt={Health:0.0f}] at @s run function oa:br/eliminate
+execute as @a[tag=br.playing,tag=br.alive,tag=oa.dead] at @s run function oa:br/eliminate
 execute as @a[tag=br.playing,tag=!br.alive,tag=!br.gm_override,gamemode=!spectator] run gamemode spectator @s
 execute if score #state br.state matches 1 as @a[tag=br.playing,tag=!br.alive,tag=!oa.spec_init,gamemode=spectator] run function oa:br/spec/begin
 execute if score #time br.time matches 1200 as @a[tag=br.spawn_protection] run effect clear @s minecraft:resistance

@@ -8,7 +8,7 @@ scoreboard players set @s tdm.wait 200
 scoreboard players set @s tdm.guard 0
 scoreboard players set @s tdm.armor 0
 tag @s add br.pvp_grace
-execute unless entity @s[nbt={Health:0.0f}] run gamemode spectator @s
+execute unless entity @s[tag=oa.dead] run gamemode spectator @s
 scoreboard players set @s tdm.ui 1
-execute unless entity @s[nbt={Health:0.0f}] run function oa:tdm/wait_tick
+execute unless entity @s[tag=oa.dead] run function oa:tdm/wait_tick
 title @s actionbar {text:"10秒後に復活。画面で次の固有武器を選択してください",color:"yellow"}
