@@ -23,6 +23,7 @@ permissions:
   contents: read
 jobs:
   deploy:
+    if: vars.OA_SERVER_OS != 'linux'
     runs-on: [self-hosted, windows, oa-server]
     timeout-minutes: 190
     steps:
@@ -42,3 +43,24 @@ jobs:
             Start-Sleep -Seconds 60
           }
           exit 0
+  deploy-linux:
+    if: vars.OA_SERVER_OS == 'linux'
+    runs-on: [self-hosted, linux, oa-server]
+    timeout-minutes: 190
+    env:
+      OA_SERVER_DIR: ${{ vars.OA_SERVER_DIR }}
+    steps:
+      - name: Stage or apply datapack
+        shell: pwsh
+        run: |
+          if (-not $env:OA_SERVER_DIR) { throw 'Set repository variable OA_SERVER_DIR' }
+          $u = Join-Path $env:OA_SERVER_DIR 'autoupdate/update.ps1'
+          $st = Join-Path $env:OA_SERVER_DIR 'autoupdate/state.json'
+          for ($i = 0; $i -lt 180; $i++) {
+            & pwsh -NoProfile -File $u -NoReload
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+            $s = if (Test-Path $st) { Get-Content -Raw $st | ConvertFrom-Json } else { $null }
+            if (-not $s -or -not $s.pendingSha) { exit 0 }
+            Start-Sleep -Seconds 60
+          }
+          throw 'Datapack update still deferred after 3 hours'
