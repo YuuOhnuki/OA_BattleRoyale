@@ -157,7 +157,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{description207:1b,description_up:1b,name_v172:1b,name_v204:1b,itori_text207:14,itori_stage:5,itori_lore194:14}}"
+      "tag": "{oa:{description208:1b,description_up:1b,name_v172:1b,name_v204:1b,itori_text208:14,itori_stage:5,itori_lore194:14}}"
     }
   ]
 }

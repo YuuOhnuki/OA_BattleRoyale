@@ -85,6 +85,33 @@ for dim_file in glob.glob('data/oa/dimension/*.json'):
     if 'if dimension ' + dim + ' run data modify storage oa:position value.dim' not in rd('data/oa/function/nero/save.mcfunction'):
         errors.append(f'座標保存のディメンションが未対応: {dim}')
 
+# A fresh medical drop must stack with the same item after inventory refresh.
+# Include custom_data migration flags in this comparison (1.9.208 regression).
+medical_components = {}
+for path in glob.glob('data/oa/item_modifier/medical/*.json'):
+    item = json.loads(rd(path))
+    actions = item.get('functions', [])
+    if len(actions) != 1 or actions[0].get('type') != 'minecraft:set_components':
+        errors.append(f'医療品の更新処理が共通コンポーネント以外を変更する: {path}')
+        continue
+    medical_components[os.path.basename(path)[:-5]] = actions[0]['components']
+
+def check_medical_loot(node, path):
+    if isinstance(node, list):
+        for child in node:
+            check_medical_loot(child, path)
+    elif isinstance(node, dict):
+        comp = node.get('components', {})
+        tag = comp.get('minecraft:custom_data', {})
+        kind = tag.get('oa_buff') or {1: 'heal1', 2: 'heal2'}.get(tag.get('br_heal_kind'))
+        if kind in medical_components and json.dumps(comp, sort_keys=True) != json.dumps(medical_components[kind], sort_keys=True):
+            errors.append(f'医療品が更新後の所持品とスタックできない: {path}: {kind}')
+        for child in node.values():
+            check_medical_loot(child, path)
+
+for path in glob.glob('data/oa/loot_table/**/*.json', recursive=True):
+    check_medical_loot(json.loads(rd(path)), path)
+
 # 3. versions
 ver = None
 m = re.search(r'OA バトルロワイヤル (\d+\.\d+\.\d+)', rd('pack.mcmeta'))

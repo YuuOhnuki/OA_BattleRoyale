@@ -1,5 +1,5 @@
 {
-  "version": "1.9.207",
-  "checks": "static JSON/functions/commands/versions and colour references",
-  "runtime": "Paper 26.3 startup passed; plugin build passed; 12 name/item components and no outlined font references verified; no match tests; actual client visibility unverified"
+  "version": "1.9.208",
+  "checks": "static JSON/functions/commands/versions, canonical consumable components and labels",
+  "runtime": "Paper 26.3 startup and plugin build passed; all 6 medical types / 19 loot component definitions match inventory modifiers; no match tests; actual mining, stacking, map rendering and combat unverified"
 }

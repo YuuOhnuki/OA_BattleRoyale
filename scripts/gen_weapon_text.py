@@ -2,7 +2,7 @@
 Run from any cwd: py -3 scripts/gen_weapon_text.py. Does not change weapon mechanics.
 """
 from pathlib import Path
-import json,re,sys
+import json,re,sys,copy
 sys.dont_write_bytecode=True
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from weapon_catalog import WEAPONS,MEDICINE
@@ -43,7 +43,7 @@ def attack(w,up=False):
  if w['hp'] is not None:s=f"{w['hp']+(1 if up else 0):g}HP"+('（＋1HP）' if up else '')+'。'
  if w['speed'] is not None:s+=f"攻撃速度{w['speed']:g}回／秒。"
  return s+w['attack']
-def note(w):return '※このアイテムは固有武器と一緒に所持できます（固有武器の所持数に含みません）。' if w.get('consumable') else '※固有武器は一人一個まで所持可能'
+def note(w):return '※固有武器と同時に所持可能。' if w.get('consumable') else '※固有武器は一人一個まで所持可能'
 
 def named(w,s=None):
  if w.get('outline'):return t(s or title(w),'white',font='oa:weapon_'+w['id'],bold=False,shadow_color=0)
@@ -65,12 +65,12 @@ def lore(w,up=False,progress=None):
  rows.append(t(note(w),'gray'))
  return [line for component in rows for line in wrap(component)]
 def modifier(w,up=False,progress=None):
- data={'description207':1,'description_up':int(up),'name_v172':1,'name_v204':1}
+ data={'description208':1,'description_up':int(up),'name_v172':1,'name_v204':1}
  if progress is not None:
-  data['itori_text207']=progress;data['itori_stage']=sum(progress>=n for n in [0,1,5,7,10,15]);data['itori_lore194']=progress
- tag='{oa:{'+','.join(k+':'+str(v)+('' if k in ['itori_text207','itori_stage','itori_lore194'] else 'b') for k,v in data.items())+'}}'
+  data['itori_text208']=progress;data['itori_stage']=sum(progress>=n for n in [0,1,5,7,10,15]);data['itori_lore194']=progress
+ tag='{oa:{'+','.join(k+':'+str(v)+('' if k in ['itori_text208','itori_stage','itori_lore194'] else 'b') for k,v in data.items())+'}}'
  return {'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':{'minecraft:custom_name':named(w),'minecraft:lore':lore(w,up,progress),'minecraft:tooltip_display':{'hidden_components':['minecraft:enchantments','minecraft:attribute_modifiers']}}},{'type':'minecraft:set_custom_data','tag':tag}]}
-menu={};reference=['# 固有武器・消耗品の説明（1.9.207）','', '記載は初期の性能。強化中の増加分はゲーム内の実物の説明欄だけへ表示。','', '体力は♥、満腹度は食料アイコンのゲージ数で表示。ダメージは軽減前。','']
+menu={};reference=['# 固有武器・消耗品の説明（1.9.208）','', '記載は初期の性能。強化中の増加分はゲーム内の実物の説明欄だけへ表示。','', '体力は♥、満腹度は食料アイコンのゲージ数で表示。ダメージは軽減前。','']
 for w in WEAPONS:
  kind=w['kind'];key=f'k{kind}' if kind<=10 else 'yu' if kind==11 else 'frosch'
  jwrite(D/f'item_modifier/lore/{key}.json',modifier(w))
@@ -90,7 +90,7 @@ for w in WEAPONS:
  if kind==11:jwrite(D/'item_modifier/lore/yu.json',modifier(w))
  if kind==12:
   # A description modifier must not rewrite consumable components or stack size.
-  jwrite(D/'item_modifier/furo_lore182.json',{'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':{'minecraft:custom_name':named(w),'minecraft:lore':lore(w)}},{'type':'minecraft:set_custom_data','tag':'{furo_lore207:1b,furo_lore182:1b}'}]})
+  jwrite(D/'item_modifier/furo_lore182.json',{'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':{'minecraft:custom_name':named(w),'minecraft:lore':lore(w)}},{'type':'minecraft:set_custom_data','tag':'{furo_lore208:1b,furo_lore182:1b}'}]})
   def update_furo(node):
    if isinstance(node,list):
     for n in node:update_furo(n)
@@ -110,21 +110,26 @@ for w in WEAPONS:
 jwrite(P/'src/main/resources/weapon-descriptions.json',menu)
 reference=[re.sub(r'([0-9]+(?:\.[0-9]+)?)HP',lambda m:f'♥×{float(m[1])/2:g}',line) if line.startswith('- ') else line for line in reference]
 reference+=['## 通常武器','', '| 武器 | 現在の効果 | 説明の改善案（未実装） |','|---|---|---|','| 木のバット | ♥×2・0.8回／秒、ノックバック | 大振りの押し出し武器として役割を明記 |','| 木のノックバック棒 | ♥×0.5・4回／秒、ノックバックII | ダメージより位置取り用と強調 |','','## 医療品・食品','']
-med_lore={}
+med_lore={};med_components={}
 for key,(name,use) in MEDICINE.items():
- lines=[row('通常攻撃','追加効果なし。'),row('右クリック',use),row('CT','なし／1個消費'),t('※固有武器と一緒に所持できます。','gray')]
+ lines=[row('効果',use),t('※固有武器と同時に所持可能。','gray')]
  med_lore[key]=lines
  f=D/f'item_modifier/medical/{key}.json';j=json.loads(f.read_text(encoding='utf-8'))
  comp=j['components'] if 'components' in j else j['functions'][0]['components']
  comp['minecraft:custom_name']=t(name,'gold',bold=True);comp['minecraft:lore']=lines
- jwrite(f,{'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':comp},{'type':'minecraft:set_custom_data','tag':'{medical_text206:1b}'}]})
+ # Fresh loot and refreshed inventory items must have identical data, including
+ # the migration flag. A flag added only after pickup prevents stacking.
+ comp['minecraft:custom_data']={k:v for k,v in comp['minecraft:custom_data'].items() if not re.fullmatch(r'medical_text\d+',k)}
+ comp['minecraft:custom_data']['medical_text208']=True
+ med_components[key]=copy.deepcopy(comp)
+ jwrite(f,{'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':comp}]})
  reference += [f'- **{name}**：'+re.sub(r'([0-9]+(?:\.[0-9]+)?)HP',lambda m:f'♥×{float(m[1])/2:g}',use)]
 def refresh_loot(node):
  if isinstance(node,list):
   for n in node:refresh_loot(n)
  elif isinstance(node,dict):
   c=node.get('components',{});data=c.get('minecraft:custom_data',{});key={1:'heal1',2:'heal2'}.get(data.get('br_heal_kind')) or data.get('oa_buff')
-  if key in MEDICINE:c['minecraft:custom_name']=t(MEDICINE[key][0],'gold',bold=True);c['minecraft:lore']=med_lore[key]
+  if key in MEDICINE:c.update(copy.deepcopy(med_components[key]))
   if data.get('oa_furoball'):c['minecraft:custom_name']=named(WEAPONS[-1]);c['minecraft:lore']=lore(WEAPONS[-1])
   for n in node.values():refresh_loot(n)
 for f in (D/'loot_table').rglob('*.json'):
@@ -140,8 +145,8 @@ for w in WEAPONS[:9]:
  if k in [4,6,8,9]:
   for up in [0,1]:
    cond=('if' if up else 'unless')+' items entity @s $(slot) *[minecraft:custom_data~{oa:{damage194_up:1b}}]'
-   lines.append(base+' '+cond+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description207:1b,description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k{k}'+('_plus1' if up else ''))
- else:lines.append(base+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description207:1b}}}}] run item modify entity @s $(slot) oa:lore/k{k}')
+   lines.append(base+' '+cond+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description208:1b,description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k{k}'+('_plus1' if up else ''))
+ else:lines.append(base+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description208:1b}}}}] run item modify entity @s $(slot) oa:lore/k{k}')
 lines.append('$execute if items entity @s $(slot) *[minecraft:custom_data~{oa:{kind:10}}] run function oa:itori/item_stage {slot:"$(slot)"}')
 write(D/'function/inventory/lore.mcfunction','\n'.join(lines)+'\n')
 lines=[]
@@ -149,11 +154,11 @@ for up in [0,1]:
  cond=('if score #state br.state matches 1 if score #time br.time matches 7200.. if entity @s[tag=br.alive,tag=!oa.practice]' if up else '')
  # Explicit flag computed by the same condition as normal_damage, even for a head/offhand slot.
  if up==0:lines+=['scoreboard players set #itori_text_up oa.tmp 0','execute if entity @s[tag=br.alive,tag=!oa.practice] if score #state br.state matches 1 if score #time br.time matches 7200.. run scoreboard players set #itori_text_up oa.tmp 1']
- lines.append(f'$execute if score #itori_text_up oa.tmp matches {up} unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description207:1b,itori_text207:$(points),description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k10_progress_$(points)'+('_plus1' if up else ''))
+ lines.append(f'$execute if score #itori_text_up oa.tmp matches {up} unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description208:1b,itori_text208:$(points),description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k10_progress_$(points)'+('_plus1' if up else ''))
 write(D/'function/itori/item_progress.mcfunction','\n'.join(lines)+'\n')
 # Update held items as soon as the actual refill modifier changes.
 f=D/'function/inventory/refill_damage.mcfunction';s=f.read_text(encoding='utf-8')
-if 'description207' not in s:s+='\n# description207: show the actual strengthened item, never forecast refill stats.\nfunction oa:inventory/lore {slot:"weapon.mainhand"}\n'
+if 'description208' not in s:s+='\n# description208: show the actual strengthened item, never forecast refill stats.\nfunction oa:inventory/lore {slot:"weapon.mainhand"}\n'
 write(f,s)
 # Current gacha list is derived from the same result announcements used by gameplay.
 names=['health_all','fire_all','revive_all','hat_all','tnt_all','rush_all','chaos_all','gather','mood_all','combo_all','giant_all','critical','exposed','jackpot','oni_all','blast']

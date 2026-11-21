@@ -91,23 +91,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "※このアイテムは固有武器と一緒に所持できます（固有武器の",
-                "color": "gray",
-                "italic": false
-              }
-            ]
-          },
-          {
-            "text": "",
-            "italic": false,
-            "extra": [
-              {
-                "text": "  ",
-                "color": "white",
-                "italic": false
-              },
-              {
-                "text": "所持数に含みません）。",
+                "text": "※固有武器と同時に所持可能。",
                 "color": "gray",
                 "italic": false
               }
@@ -124,7 +108,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{description207:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
+      "tag": "{oa:{description208:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
     }
   ]
 }

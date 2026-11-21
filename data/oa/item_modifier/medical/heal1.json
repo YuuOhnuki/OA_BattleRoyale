@@ -13,7 +13,8 @@
         "minecraft:custom_data": {
           "br_heal": true,
           "br_heal_kind": 1,
-          "medical_v170": true
+          "medical_v170": true,
+          "medical_text208": true
         },
         "minecraft:food": {
           "nutrition": 0,
@@ -52,23 +53,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "通常攻撃：",
-                "color": "gray",
-                "italic": false
-              },
-              {
-                "text": "追加効果なし。",
-                "color": "white",
-                "italic": false
-              }
-            ]
-          },
-          {
-            "text": "",
-            "italic": false,
-            "extra": [
-              {
-                "text": "右クリック：",
+                "text": "効果：",
                 "color": "gray",
                 "italic": false
               },
@@ -96,33 +81,13 @@
             ]
           },
           {
-            "text": "",
-            "italic": false,
-            "extra": [
-              {
-                "text": "CT：",
-                "color": "gray",
-                "italic": false
-              },
-              {
-                "text": "なし／1個消費",
-                "color": "white",
-                "italic": false
-              }
-            ]
-          },
-          {
-            "text": "※固有武器と一緒に所持できます。",
+            "text": "※固有武器と同時に所持可能。",
             "color": "gray",
             "italic": false
           }
         ],
         "minecraft:max_stack_size": 64
       }
-    },
-    {
-      "type": "minecraft:set_custom_data",
-      "tag": "{medical_text206:1b}"
     }
   ]
 }

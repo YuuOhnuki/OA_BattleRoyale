@@ -7,4 +7,4 @@ execute if score #old_guide oa.tmp matches 1 unless items entity @s container.* 
 scoreboard players set #old_admin oa.tmp 0
 execute if entity @s[tag=br.admin] if items entity @s container.* *[minecraft:custom_data~{oa_admin_book:1b}] run scoreboard players set #old_admin oa.tmp 1
 execute if entity @s[tag=br.admin] if items entity @s weapon.offhand *[minecraft:custom_data~{oa_admin_book:1b}] run scoreboard players set #old_admin oa.tmp 1
-execute if score #old_admin oa.tmp matches 1 unless items entity @s container.* *[minecraft:custom_data~{book_v207:1b}] unless items entity @s weapon.offhand *[minecraft:custom_data~{book_v207:1b}] run function oa:admin/book
+execute if score #old_admin oa.tmp matches 1 unless items entity @s container.* *[minecraft:custom_data~{book_v208:1b}] unless items entity @s weapon.offhand *[minecraft:custom_data~{book_v208:1b}] run function oa:admin/book

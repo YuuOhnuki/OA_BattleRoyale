@@ -15,7 +15,7 @@ dict(kind=5,id='killing',legacy='killing',info=4,name='キリング',title='呪�
 dict(kind=6,id='yuttari',legacy='yuttari',info=3,name='ゆったり',title='瞬間奇襲アイテム',motif='HitoriYuu',hp=5,speed=1.8,
  sentence='一瞬だけ敵の背後へ飛び込み、元の場所へ帰る奇襲武器。',attack='追加効果なし。',right='ランダムな敵の背後へ転移して1HPと押し出し。1秒後に元の場所へ帰還。',ct='10秒',extra=[('追加効果','両者が5秒発光。片方に速度II、もう片方に鈍足IIを5秒。どちらか一方に暗闇3秒。'),('対象','敵がいなければ不発。チームデスマッチの復活待機者は使用・対象・帰還の対象外。')],idea='発光・速度・暗闇の対象を短く表示し、発動結果を理解しやすくする。'),
 dict(kind=7,id='hochikisu',legacy='hotchikisu',info=9,name='ほちきす',title='ホッチキス',motif='hochikisu_',hp=4,speed=1.8,
- sentence='敵をその場に留め、出血で追い詰めるホッチキス。',attack='出血を2秒付与（毎秒0.5HP、合計1HP）。',right='周囲約3mの敵を2.5秒、その場に拘束する。',ct='15秒',extra=[('拘束','上下の差にも対応。相手は視点変更・攻撃が可能。'),('探知','ほかの人のぴちぴちの跳躍・らじの息切れを検知し5秒発光。チャット通知は25%。')],idea='「移動だけを止める」ことをアイコンで明示し、完全行動不能との誤解を防ぐ。'),
+ sentence='敵をその場に留め、出血で追い詰めるホッチキス。',attack='出血を2秒間付与。',right='周囲約3mの敵を2.5秒、その場に拘束する。',ct='15秒',extra=[('拘束','上下の差にも対応。相手は視点変更・攻撃が可能。'),('探知','ほかの人のぴちぴちの跳躍・らじの息切れを検知し5秒発光。チャット通知は25%。')],idea='「移動だけを止める」ことをアイコンで明示し、完全行動不能との誤解を防ぐ。'),
 dict(kind=8,id='komame',legacy='komame',info=6,name='こまめ',title='小豆バー',motif='komame_azuki',hp=4,speed=1.8,
  sentence='小さくなって守りを固め、近接戦へ飛び込む小豆バー。',attack='鈍足Iを2秒付与。',right='10秒間、体を半分にして速度I・耐性I・体力増強I。増えた最大体力分を回復。',ct='20秒',extra=[('強化','体力増強Iで最大体力＋4HP。終了後は通常の大きさ・最大体力へ戻る。')],idea='小型化と強化の残り時間をまとめて表示する。'),
 dict(kind=9,id='tayayuyu',legacy='tayayuyu',info=10,name='たやゆゆ',title='変態ガチャ',motif='tayayuyu2003',hp=5,speed=1.8,
