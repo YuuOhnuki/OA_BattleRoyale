@@ -1,0 +1,13 @@
+{
+  "values": [
+    "minecraft:dirt_path",
+    "minecraft:farmland",
+    "minecraft:soul_sand",
+    "minecraft:mud",
+    "minecraft:snow",
+    "minecraft:honey_block",
+    "minecraft:moss_carpet",
+    "minecraft:pale_moss_carpet",
+    "#minecraft:wool_carpets"
+  ]
+}

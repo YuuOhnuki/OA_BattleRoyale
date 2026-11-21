@@ -145,6 +145,8 @@ scoreboard objectives add br.lobby trigger
 scoreboard objectives add oa.mfx dummy
 function oa:br/bars/load
 function oa:disaster/cfg_defaults
+# 1.9.213: サーバー（コンソール・プラグイン）が実行したコマンドの記録を、OP のチャットに流さない（全ワールド。Paper はワールドごと）
+function oa:internal/gamerule_all {rule:"log_admin_commands",value:"false"}
 
 scoreboard objectives add oa.root dummy
 scoreboard objectives add oa.bleed dummy

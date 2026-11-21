@@ -140,7 +140,8 @@ function oa:br/intro
 execute as @a[tag=br.playing] unless entity @s[advancements={oa:ach/first_kill=true}] run function oa:br/beginner/support
 execute as @a[tag=br.playing] run function oa:br/beginner/hint
 function oa:br/intro_end
-execute as @a[tag=br.playing] at @s run playsound minecraft:entity.ender_dragon.growl player @s ~ ~ ~ 1 1
+# 1.9.213: 5秒のカウントダウン（終わると「スタート！」と効果音）
+function oa:br/countdown/begin
 
 team modify oa_br1 nametagVisibility hideForOtherTeams
 team modify oa_br2 nametagVisibility hideForOtherTeams

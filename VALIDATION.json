@@ -1,5 +1,5 @@
 {
-  "version": "1.9.212",
-  "checks": "static; disaster automated test on test server (tools/disaster_test.py)",
-  "runtime": "test server: 11 disasters single/2/3/combo/cleanup with fake players; feel and visuals unverified"
+  "version": "1.9.213",
+  "checks": "static; countdown test on test server",
+  "runtime": "test server: countdown, gamerule, shrink notices; in-game visuals unverified"
 }

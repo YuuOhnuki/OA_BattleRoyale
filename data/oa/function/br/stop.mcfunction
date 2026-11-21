@@ -1,3 +1,5 @@
+# 1.9.213: 開始のカウントダウンの拘束を外す
+function oa:br/countdown/clear
 execute if score #active tdm.sys matches 1 run return run function oa:tdm/stop
 execute if score #busy br.clean matches 1 if score #state br.state matches 4 run return run function oa:br/cleanup/abort
 execute if score #busy br.clean matches 1 run return run tellraw @s {text:"終了後の清掃中です。完了までお待ちください",color:"yellow"}

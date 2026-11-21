@@ -1,3 +1,5 @@
+# 1.9.213: 開始のカウントダウンの拘束を外す
+function oa:br/countdown/clear
 execute if score #active tdm.sys matches 1 run return run function oa:tdm/stop
 execute if score #state br.state matches 0 run return 0
 execute if data storage oa:br center run function oa:br/cleanup_loose with storage oa:br center

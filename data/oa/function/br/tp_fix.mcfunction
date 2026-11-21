@@ -6,7 +6,8 @@ execute unless loaded ~ ~ ~ run return 0
 execute align y run function oa:br/spawn_points/check
 execute if score #spawn_floor br.flag matches 1 run return 0
 scoreboard players set #tpfix_n br.tmp 80
-execute unless block ~ ~ ~ #oa:spawn_clear align y run return run function oa:br/tp_fix_up
+# 1.9.213: 土の道など高さ1未満の床の上（足の位置がそのブロックの中）は、埋まりではない
+execute unless block ~ ~ ~ #oa:spawn_clear unless block ~ ~ ~ #oa:low_floor unless block ~ ~ ~ #minecraft:slabs[type=bottom] align y run return run function oa:br/tp_fix_up
 execute unless block ~ ~1 ~ #oa:spawn_clear align y run return run function oa:br/tp_fix_up
 scoreboard players set #tpfix_n br.tmp 4
 execute align y positioned ~ ~-1 ~ run function oa:br/tp_fix_down

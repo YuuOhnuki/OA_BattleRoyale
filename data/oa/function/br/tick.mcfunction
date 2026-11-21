@@ -8,7 +8,11 @@ execute if score #state br.state matches 0 as @a[tag=br.lobby,scores={br.saved=0
 execute as @a[tag=!oa.practice,scores={br.saved=1,br.retry=0}] unless score @s br.round = #round br.round at @s unless entity @s[tag=oa.dead] run function oa:br/recover
 execute if score #state br.state matches 0 as @a[tag=!oa.practice,scores={br.saved=1,br.retry=0}] at @s unless entity @s[tag=oa.dead] run function oa:br/recover
 execute unless score #state br.state matches 1 run return 0
+# 1.9.213: 開始のカウントダウン中は試合時間を進めない
+execute if score #countdown br.tmp matches 1.. run return run function oa:br/countdown/tick
 scoreboard players add #time br.time 1
+# 1.9.213: 安置の収縮の残り30秒・10秒・完了をチャットに
+function oa:br/zone/shrink_notice
 function oa:br/day/tick
 function oa:br/weather/tick
 execute if score #time br.time matches 2400 if score #map oa.mapid matches 0 in oa:br run worldborder set 230 60s

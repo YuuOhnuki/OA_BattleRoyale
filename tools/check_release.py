@@ -154,6 +154,12 @@ def check_medical_loot(node, path):
 for path in glob.glob('data/oa/loot_table/**/*.json', recursive=True):
     check_medical_loot(json.loads(rd(path)), path)
 
+# 2c. マクロの行（先頭が $）は $(名前) を1つ以上含むこと。含まないと関数ごと読み込みに失敗する（1.9.213 の作業中、br/countdown/show で発生）
+for f in glob.glob('data/*/function/**/*.mcfunction', recursive=True):
+    for n, line in enumerate(rd(f).splitlines(), 1):
+        if line.startswith('$') and '$(' not in line:
+            errors.append(f'変数のないマクロ行: {f}:{n}')
+
 # 3. versions
 ver = None
 m = re.search(r'OA バトルロワイヤル (\d+\.\d+\.\d+)', rd('pack.mcmeta'))

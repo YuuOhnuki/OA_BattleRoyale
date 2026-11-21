@@ -13,11 +13,8 @@ execute if score #time br.time matches ..1199 store result bossbar oa:pvp_grace 
 bossbar set oa:pvp_grace name [{text:"保護期間終了まで： ",color:"green"},{score:{name:"#bar_grace",objective:"br.tmp"}},{text:"秒"}]
 execute if score #time br.time matches 13200.. run bossbar set oa:zone_timer visible false
 execute if score #time br.time matches 13200.. run return 0
+# 1.9.213: 収縮中（収縮完了までの残り）はボスバーに出さない。チャットの残り30秒・10秒・完了（br/zone/shrink_notice）。収縮開始までの10秒（pre_shrink）だけ出す
 bossbar set oa:zone_timer visible false
-execute if score #time br.time matches 2400..3599 run bossbar set oa:zone_timer visible true
-execute if score #time br.time matches 4800..5999 run bossbar set oa:zone_timer visible true
-execute if score #time br.time matches 7200..8399 run bossbar set oa:zone_timer visible true
-execute if score #time br.time matches 10800..13199 run bossbar set oa:zone_timer visible true
 execute if score #time br.time matches 0..2399 run scoreboard players set #bar_end br.tmp 2400
 execute if score #time br.time matches 0..2399 run bossbar set oa:zone_timer max 120
 execute if score #time br.time matches 0..2399 run bossbar set oa:zone_timer color blue

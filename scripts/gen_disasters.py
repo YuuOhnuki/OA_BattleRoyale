@@ -102,7 +102,7 @@ write('pick.mcfunction', lines)
 write('plan_clear.mcfunction', [HEAD] + [f'scoreboard players set #p{k} br.tmp 0' for k in KINDS] + ['scoreboard players set #plan_n br.tmp 0'])
 
 # 予告の表示（1つ＝タイトルにその災害、複数＝まとめて1回。チャットには全部）
-lines = [HEAD, '# 予定（#pN=1）の災害を知らせる。タイトルは1回だけ（複数でも上書きが続かない）。#plan_n＝数',
+lines = [HEAD, '# 予定（#pN=1）の災害を知らせる。タイトルは1回だけ（複数でも上書きが続かない）。#plan_n＝数。サブタイトルは説明だけ（危険度はチャットとボスバー。1.9.213）',
          'scoreboard players set #plan_n br.tmp 0']
 lines += [f'execute if score #p{k} br.tmp matches 1 run scoreboard players add #plan_n br.tmp 1' for k in KINDS]
 lines += ['execute if score #plan_n br.tmp matches 0 run return 0',
@@ -110,7 +110,7 @@ lines += ['execute if score #plan_n br.tmp matches 0 run return 0',
 for d in DISASTERS:
     for m, nm, ds in name_variants(d):
         cond = f'execute if score #p{d["k"]} br.tmp matches 1 if score #map oa.mapid matches {m}'
-        lines.append(f'{cond} if score #plan_n br.tmp matches 1 if score #dc_announce br.tmp matches 0 run title @a[tag=br.playing] subtitle {dump([{"text":"危険度："+STARS(d["danger"])+"　","color":"gold"},{"text":ds,"color":"yellow"}])}')
+        lines.append(f'{cond} if score #plan_n br.tmp matches 1 if score #dc_announce br.tmp matches 0 run title @a[tag=br.playing] subtitle {dump({"text":ds,"color":"yellow"})}')
         lines.append(f'{cond} if score #plan_n br.tmp matches 1 if score #dc_announce br.tmp matches 0 run title @a[tag=br.playing] title {dump({"text":"⚠ 災害発生："+nm,"color":d["color"],"bold":True})}')
         lines.append(f'{cond} run tellraw @a[tag=br.playing] {dump([{"text":"⚠ ","color":"red","bold":True},{"text":nm,"color":d["color"],"bold":True},{"text":"　危険度 "+STARS(d["danger"]),"color":"gold"},{"text":"（"+str(d["sec"])+"秒）","color":"white"},{"text":"\n　"+ds,"color":"gray"}])}')
 lines += ['execute if score #plan_n br.tmp matches 2.. if score #dc_announce br.tmp matches 0 run title @a[tag=br.playing] subtitle {"text":"複数の災害が同時に起こる！ チャットで内容を確認","color":"yellow"}',
