@@ -308,7 +308,7 @@
                   "br_heal": true,
                   "br_heal_kind": 1,
                   "medical_v170": true,
-                  "medical_text211": true
+                  "medical_text215": true
                 },
                 "minecraft:food": {
                   "nutrition": 0,
@@ -404,7 +404,7 @@
                   "br_heal_kind": 2,
                   "medical_v170": true,
                   "kit_v1185": true,
-                  "medical_text211": true
+                  "medical_text215": true
                 },
                 "minecraft:food": {
                   "nutrition": 0,

@@ -17,7 +17,7 @@ def rich(s):
   if at<m.start():out.append(t(s[at:m.start()]))
   if m['hp']:
    n=float(m['hp']);out.extend([t('\ue100','red',font='oa:icons'),t(f'×{n/2:g}')])
-  else:out.extend([t('\ue101','white',font='oa:icons'),t(f'×{m["food"]}ゲージ')])
+  else:out.extend([t('\ue101','white',font='oa:icons'),t(f'×{m["food"]}')])
   at=m.end()
  if at<len(s):out.append(t(s[at:]))
  return out or [t(s)]
@@ -70,7 +70,7 @@ def modifier(w,up=False,progress=None):
   data['itori_text214']=progress;data['itori_stage']=sum(progress>=n for n in [0,1,5,7,10,15]);data['itori_lore194']=progress
  tag='{oa:{'+','.join(k+':'+str(v)+('' if k in ['itori_text214','itori_stage','itori_lore194'] else 'b') for k,v in data.items())+'}}'
  return {'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':{'minecraft:custom_name':named(w),'minecraft:lore':lore(w,up,progress),'minecraft:tooltip_display':{'hidden_components':['minecraft:enchantments','minecraft:attribute_modifiers']}}},{'type':'minecraft:set_custom_data','tag':tag}]}
-menu={};reference=['# 固有武器・消耗品の説明（1.9.214）','', 'ダメージは補充前を本文に、補充後を括弧内に記載。','', '体力は♥、満腹度は食料アイコンのゲージ数で表示。ダメージは軽減前。','']
+menu={};reference=['# 固有武器・消耗品の説明（1.9.215）','', 'ダメージは補充前を本文に、補充後を括弧内に記載。','', '体力は♥、満腹度は食料アイコンの個数で表示。ダメージは軽減前。','']
 for w in WEAPONS:
  kind=w['kind'];key=f'k{kind}' if kind<=10 else 'yu' if kind==11 else 'frosch'
  jwrite(D/f'item_modifier/lore/{key}.json',modifier(w))
@@ -120,7 +120,7 @@ for key,(name,use) in MEDICINE.items():
  # Fresh loot and refreshed inventory items must have identical data, including
  # the migration flag. A flag added only after pickup prevents stacking.
  comp['minecraft:custom_data']={k:v for k,v in comp['minecraft:custom_data'].items() if not re.fullmatch(r'medical_text\d+',k)}
- comp['minecraft:custom_data']['medical_text211']=True
+ comp['minecraft:custom_data']['medical_text215']=True
  med_components[key]=copy.deepcopy(comp)
  jwrite(f,{'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':comp}]})
  reference += [f'- **{name}**：'+re.sub(r'([0-9]+(?:\.[0-9]+)?)HP',lambda m:f'♥×{float(m[1])/2:g}',use)]
@@ -151,7 +151,7 @@ def bat_parity(node):
 for f in (D/'loot_table').rglob('*.json'):
  before=f.read_text(encoding='utf-8');j=json.loads(before);refresh_loot(j);bat_parity(j)
  if json.loads(before)!=j:jwrite(f,j)
-reference=[re.sub(r'（内部[0-9.]+ポイント）','',line) for line in reference]
+reference=[re.sub(r'満腹度([0-9.]+)ゲージ',r'満腹度アイコン×\1',re.sub(r'（内部[0-9.]+ポイント）','',line)) for line in reference]
 write(R/'WEAPONS_JA.md','\n'.join(reference)+'\n')
 write(R/'docs/weapon-description-review.md','\n'.join(reference)+'\n')
 # One versioned slot updater upgrades old items without discarding unrelated custom data.

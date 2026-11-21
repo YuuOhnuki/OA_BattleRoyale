@@ -22,7 +22,7 @@
                   "br_heal": true,
                   "br_heal_kind": 1,
                   "medical_v170": true,
-                  "medical_text211": true
+                  "medical_text215": true
                 },
                 "minecraft:food": {
                   "nutrition": 0,
@@ -118,7 +118,7 @@
                   "br_heal_kind": 2,
                   "medical_v170": true,
                   "kit_v1185": true,
-                  "medical_text211": true
+                  "medical_text215": true
                 },
                 "minecraft:food": {
                   "nutrition": 0,
@@ -195,7 +195,7 @@
                   "oa_buff": "doria",
                   "medical_v170": true,
                   "buff_v1186": true,
-                  "medical_text211": true
+                  "medical_text215": true
                 },
                 "minecraft:max_stack_size": 64,
                 "minecraft:food": {
@@ -247,7 +247,7 @@
                         "font": "oa:icons"
                       },
                       {
-                        "text": "×2.5ゲージ",
+                        "text": "×2.5",
                         "color": "white",
                         "italic": false
                       },
@@ -287,7 +287,7 @@
                   "medical_v170": true,
                   "paimon_v1926": true,
                   "buff_v1186": true,
-                  "medical_text211": true
+                  "medical_text215": true
                 },
                 "minecraft:max_stack_size": 64,
                 "minecraft:food": {
@@ -360,7 +360,7 @@
                         "font": "oa:icons"
                       },
                       {
-                        "text": "×2.5ゲージ",
+                        "text": "×2.5",
                         "color": "white",
                         "italic": false
                       },
@@ -399,7 +399,7 @@
                   "oa_buff": "yuzupon",
                   "medical_v170": true,
                   "buff_v1186": true,
-                  "medical_text211": true
+                  "medical_text215": true
                 },
                 "minecraft:max_stack_size": 64,
                 "minecraft:food": {
@@ -451,7 +451,7 @@
                         "font": "oa:icons"
                       },
                       {
-                        "text": "×2.5ゲージ",
+                        "text": "×2.5",
                         "color": "white",
                         "italic": false
                       },
@@ -491,7 +491,7 @@
                   "medical_v170": true,
                   "azuki_v1971": true,
                   "buff_v1186": true,
-                  "medical_text211": true
+                  "medical_text215": true
                 },
                 "minecraft:max_stack_size": 64,
                 "minecraft:food": {
@@ -563,7 +563,7 @@
                         "font": "oa:icons"
                       },
                       {
-                        "text": "×2.5ゲージ",
+                        "text": "×2.5",
                         "color": "white",
                         "italic": false
                       },

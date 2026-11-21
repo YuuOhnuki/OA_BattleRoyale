@@ -15,7 +15,7 @@
           "medical_v170": true,
           "paimon_v1926": true,
           "buff_v1186": true,
-          "medical_text211": true
+          "medical_text215": true
         },
         "minecraft:max_stack_size": 64,
         "minecraft:food": {
@@ -88,7 +88,7 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×2.5ゲージ",
+                "text": "×2.5",
                 "color": "white",
                 "italic": false
               },

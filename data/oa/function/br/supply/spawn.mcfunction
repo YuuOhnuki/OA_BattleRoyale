@@ -1,4 +1,7 @@
 tag @s remove br.supply_wait
+# 着地した瞬間から通常の武器・CT表示へ戻す
+scoreboard players set #sup_on br.tmp 0
+scoreboard players set #sup_phase br.tmp 0
 tag @s add br.supply_fx
 scoreboard players set @s br.sup 0
 # 1.9.142: 回を追うごとに中身が良くなる。chest_site は25%で上位（chest_upgraded）、75%で通常（chest_basic）の中身
