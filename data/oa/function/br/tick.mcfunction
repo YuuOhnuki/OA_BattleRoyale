@@ -2,7 +2,6 @@ execute if score #active tdm.sys matches 1 run return run function oa:tdm/tick
 execute if score #state br.state matches 3 run function oa:br/celebration/tick
 scoreboard players add #vclock br.tmp 1
 execute if score #vclock br.tmp matches 10.. run scoreboard players set #vclock br.tmp 0
-execute if score #state br.state matches 0 if score #vclock br.tmp matches 0 as @a[scores={br.preview=1..}] at @s run function oa:br/zone/visual
 scoreboard players remove @a[scores={br.preview=1..}] br.preview 1
 execute if score #state br.state matches 0 as @a[tag=br.lobby,scores={br.saved=0}] at @s run function oa:br/team/select
 execute as @a[tag=!oa.practice,scores={br.saved=1,br.retry=0}] unless score @s br.round = #round br.round at @s unless entity @s[tag=oa.dead] run function oa:br/recover
@@ -11,25 +10,9 @@ execute unless score #state br.state matches 1 run return 0
 # 1.9.213: 開始のカウントダウン中は試合時間を進めない
 execute if score #countdown br.tmp matches 1.. run return run function oa:br/countdown/tick
 scoreboard players add #time br.time 1
-# 1.9.213: 安置の収縮の残り30秒・10秒・完了をチャットに
-function oa:br/zone/shrink_notice
+# 1.9.218: 安全地帯（円形・収縮・安置外ダメージ・赤い壁・知らせ）はプラグインの zone/SafeZoneManager。ワールドボーダーは試合中も 300 のまま動かさない
 function oa:br/day/tick
 function oa:br/weather/tick
-execute if score #time br.time matches 2400 if score #map oa.mapid matches 0 in oa:br run worldborder set 230 60s
-execute if score #time br.time matches 2400 if score #map oa.mapid matches 1 in oa:br_nether run worldborder set 230 60s
-execute if score #time br.time matches 2400 if score #map oa.mapid matches 2 in oa:br_cave run worldborder set 230 60s
-execute if score #time br.time matches 4800 if score #map oa.mapid matches 0 in oa:br run worldborder set 160 60s
-execute if score #time br.time matches 4800 if score #map oa.mapid matches 1 in oa:br_nether run worldborder set 160 60s
-execute if score #time br.time matches 4800 if score #map oa.mapid matches 2 in oa:br_cave run worldborder set 160 60s
-execute if score #time br.time matches 7200 if score #map oa.mapid matches 0 in oa:br run worldborder set 90 60s
-execute if score #time br.time matches 7200 if score #map oa.mapid matches 1 in oa:br_nether run worldborder set 90 60s
-execute if score #time br.time matches 7200 if score #map oa.mapid matches 2 in oa:br_cave run worldborder set 90 60s
-execute if score #time br.time matches 10800 if score #map oa.mapid matches 0 in oa:br run worldborder set 20 60s
-execute if score #time br.time matches 10800 if score #map oa.mapid matches 1 in oa:br_nether run worldborder set 20 60s
-execute if score #time br.time matches 10800 if score #map oa.mapid matches 2 in oa:br_cave run worldborder set 20 60s
-execute if score #time br.time matches 12000 if score #map oa.mapid matches 0 in oa:br run worldborder set 2 60s
-execute if score #time br.time matches 12000 if score #map oa.mapid matches 1 in oa:br_nether run worldborder set 2 60s
-execute if score #time br.time matches 12000 if score #map oa.mapid matches 2 in oa:br_cave run worldborder set 2 60s
 scoreboard players add #pulse br.tmp 1
 execute if score #time br.time matches 10800 run function oa:br/finale/announce
 execute if score #time br.time matches 10800.. run function oa:br/finale/tick
@@ -42,7 +25,6 @@ execute if score #time br.time matches 1200 run tag @a[tag=br.playing] remove br
 execute if score #time br.time matches 1200 run function oa:br/protection_end
 execute if score #pulse br.tmp matches 20.. run function oa:br/second
 
-execute if score #state br.state matches 1 as @a[tag=br.playing] at @s run function oa:br/zone/visual_stagger
 
 execute if score #state br.state matches 1 if score #vclock br.tmp matches 0 as @a[tag=br.playing] run function oa:br/zone/hud
 execute if score #state br.state matches 1 if score #vclock br.tmp matches 5 as @a[tag=br.playing] run function oa:br/zone/hud
@@ -68,4 +50,3 @@ execute if score #time br.time matches 11940 as @a[tag=br.playing] at @s run pla
 execute if score #time br.time matches 11960 as @a[tag=br.playing] at @s run playsound minecraft:block.bell.use player @s ~ ~ ~ 1 1
 execute if score #time br.time matches 11980 as @a[tag=br.playing] at @s run playsound minecraft:block.bell.use player @s ~ ~ ~ 1 1
 # 1.9.189: エリアの外にいる時間を5 tick ごとに数える（外に出て2秒はダメージなし）
-execute if score #state br.state matches 1 if score #clock oa.beat matches 0 as @a[tag=br.alive] at @s run function oa:br/zone/out_track

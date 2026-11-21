@@ -65,6 +65,7 @@ scoreboard objectives add br.retry dummy
 scoreboard players add #round br.round 0
 
 scoreboard objectives add br.edge dummy
+scoreboard objectives add br.edged dummy
 scoreboard players set #minus1 br.tmp -1
 
 scoreboard objectives add br.out dummy

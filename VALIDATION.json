@@ -1,21 +1,6 @@
 {
-  "version": "1.9.217",
-  "checks": "static check, Gradle build and unit tests",
-  "runtime": {
-    "template_round_trip": {
-      "passed": 31,
-      "failed": 0
-    },
-    "unloaded_chunk_entities": {
-      "passed": 18,
-      "failed": 0
-    },
-    "six_match_suite": {
-      "passed": 313,
-      "failed": 1,
-      "failure": "cave-team tick time 36.8ms exceeds 30ms",
-      "final_performance_recheck": "omitted at user request; idle event listeners now unregistered"
-    }
-  },
+  "version": "1.9.218",
+  "checks": "static; plugin unit tests; zone test on test server",
+  "runtime": "test server: safe zone with fake players; wall visuals, Ubuntu autoupdate unverified",
   "unverified": "human input and visuals; production awaiting manual apply"
 }

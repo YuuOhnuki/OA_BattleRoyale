@@ -11,6 +11,15 @@ scoreboard players operation #width oa.tmp /= #two oa.tmp
 scoreboard players remove #width oa.tmp 2
 execute if score #width oa.tmp matches ..0 run return run tellraw @a[tag=oa.roster_actor] {text:"安置が小さすぎるため途中参加できません。",color:"yellow"}
 data modify storage oa:roster_spawn args set from storage oa:br center
+# 1.9.218: 今の安置（円）の中に収まる範囲・中心
+scoreboard players set #7 br.tmp 7
+scoreboard players set #10 br.tmp 10
+data modify storage oa:br_spawn x set from storage oa:br center.x
+data modify storage oa:br_spawn z set from storage oa:br center.z
+function oa:br/zone/area {use:"now",margin:2}
+execute if score #zrb br.tmp matches 1.. run scoreboard players operation #width oa.tmp = #zone_range br.tmp
+execute if score #zrb br.tmp matches 1.. run data modify storage oa:roster_spawn args.x set from storage oa:br_spawn x
+execute if score #zrb br.tmp matches 1.. run data modify storage oa:roster_spawn args.z set from storage oa:br_spawn z
 execute store result storage oa:roster_spawn args.range int 1 run scoreboard players get #width oa.tmp
 function oa:admin/players/spawn with storage oa:roster_spawn args
 execute unless score #roster_spawn oa.tmp matches 1 run return run function oa:admin/players/spawn_failed

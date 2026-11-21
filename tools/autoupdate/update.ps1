@@ -10,11 +10,12 @@ $ErrorActionPreference = 'Stop'
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $ServerDir = Split-Path -Parent $Root
+. (Join-Path $Root 'platform.ps1')
 $cfg = Get-Content -Raw -Encoding UTF8 (Join-Path $Root 'config.json') | ConvertFrom-Json
 $LogFile = Join-Path $Root 'update.log'
 $StateFile = Join-Path $Root 'state.json'
 $PackId = 'file/' + $cfg.packName
-$DatapacksDir = Join-Path $ServerDir ($cfg.world + '\datapacks')
+$DatapacksDir = Join-Path $ServerDir ($cfg.world + '/datapacks')
 $PackDir = Join-Path $DatapacksDir $cfg.packName
 $RestartMode = ($cfg.applyMode -ne 'reload')
 $ManualMode = ($cfg.applyMode -eq 'manual')
@@ -124,7 +125,7 @@ function Get-RemoteSha([string]$etag) {
 function Hash-Tree([string]$base) {
     $parts = New-Object System.Collections.Generic.List[string]
     foreach ($d in @('dimension', 'dimension_type', 'worldgen', 'timeline', 'world_clock')) {
-        $p = Join-Path $base ('data\oa\' + $d)
+        $p = Join-Path $base ('data/oa/' + $d)
         if (Test-Path $p) {
             foreach ($f in (Get-ChildItem $p -Recurse -File | Sort-Object FullName)) {
                 $parts.Add($f.FullName.Substring($base.Length) + ':' + (Get-FileHash $f.FullName -Algorithm SHA256).Hash)
@@ -134,7 +135,7 @@ function Hash-Tree([string]$base) {
     return ($parts -join '|')
 }
 function Get-LogErrors([long]$pos) {
-    $latest = Join-Path $ServerDir 'logs\latest.log'
+    $latest = Join-Path $ServerDir 'logs/latest.log'
     if (-not (Test-Path $latest)) { return @() }
     $fs = [IO.File]::Open($latest, 'Open', 'Read', 'ReadWrite')
     try {
@@ -145,13 +146,14 @@ function Get-LogErrors([long]$pos) {
     return @($text -split "`n" | Where-Object { $_ -match '/ERROR\]' -and $_ -match 'Failed to load|Whilst parsing|Couldn''t|Failed to parse|Failed to reload' })
 }
 function Get-LogPos {
-    $latest = Join-Path $ServerDir 'logs\latest.log'
+    $latest = Join-Path $ServerDir 'logs/latest.log'
     if (Test-Path $latest) { return (Get-Item $latest).Length }
     return 0
 }
 function Say([string]$msg) { if ($cfg.announce) { try { [void](Invoke-Rcon ('say ' + $msg)) } catch { } } }
 # サーバーが start-server.bat（ループ起動）で動いているか。そうなら stop しても自動で起動し直す。
 function Test-LoopManaged {
+    if (-not $OaWindows) { return Test-OaLinuxLoop }
     $port = if ($props['server-port']) { [int]$props['server-port'] } else { 25565 }
     $c = Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue | Select-Object -First 1
     if (-not $c) { return $false }
@@ -183,6 +185,11 @@ function Restart-IfPossible {
 }
 # サーバー（java）が起動した時刻。動いていなければ $null
 function Get-ServerStartTime {
+    if (-not $OaWindows) {
+        $process = Get-OaLinuxServerProcess
+        if ($process) { return $process.StartTime }
+        return $null
+    }
     $port = if ($props['server-port']) { [int]$props['server-port'] } else { 25565 }
     $c = Get-NetTCPConnection -LocalPort $port -State Listen -ErrorAction SilentlyContinue | Select-Object -First 1
     if (-not $c) { return $null }
@@ -229,7 +236,7 @@ function Apply-ByRestart([string]$sha, [string]$short) {
     if (((-not $up) -or ($errs.Count -gt 0)) -and $cfg.rollbackOnError -and $bk) {
         if ($up) { Log ("Load errors after restart ({0}); rolling back. First: {1}" -f $errs.Count, $errs[0].Trim()) }
         else { Log 'The server did not come back within 7 minutes; rolling back the datapack.' }
-        & robocopy $bk.FullName $PackDir /MIR /NFL /NDL /NJH /NJS /NP | Out-Null
+        Copy-OaMirror $bk.FullName $PackDir
         $state.badSha = $sha; $state.installedSha = ''; $state.loadedSha = ''; Save-State $state
         if ($up) {
             Say "[OA] 更新 ($short) に読み込みエラーがあったため、元の版に戻して再起動します"
@@ -246,6 +253,7 @@ function Apply-ByRestart([string]$sha, [string]$short) {
 
 # ---------- main ----------
 $lock = $null
+$resultCode = 0
 try { $lock = [IO.File]::Open((Join-Path $Root 'update.lock'), 'OpenOrCreate', 'ReadWrite', 'None') } catch { exit 0 }
 try {
     $state = Load-State
@@ -304,14 +312,11 @@ try {
     Add-Type -AssemblyName System.IO.Compression.FileSystem
     [IO.Compression.ZipFile]::ExtractToDirectory($zip, (Join-Path $tmp 'x'))
     $src = (Get-ChildItem (Join-Path $tmp 'x') -Directory | Select-Object -First 1).FullName
-    if (-not (Test-Path (Join-Path $src 'pack.mcmeta')) -or -not (Test-Path (Join-Path $src 'data\oa\function'))) { throw 'downloaded repo has no pack.mcmeta/data' }
-    Add-Type -AssemblyName System.Web.Extensions
-    $ser = New-Object System.Web.Script.Serialization.JavaScriptSerializer
-    $ser.MaxJsonLength = [int]::MaxValue; $ser.RecursionLimit = 1000
-    $null = $ser.DeserializeObject([IO.File]::ReadAllText((Join-Path $src 'pack.mcmeta'), [Text.Encoding]::UTF8))
+    if (-not (Test-Path (Join-Path $src 'pack.mcmeta')) -or -not (Test-Path (Join-Path $src 'data/oa/function'))) { throw 'downloaded repo has no pack.mcmeta/data' }
+    $null = Read-OaJson (Join-Path $src 'pack.mcmeta')
     $bad = 0
     foreach ($f in (Get-ChildItem (Join-Path $src 'data') -Recurse -Include *.json -File)) {
-        try { $null = $ser.DeserializeObject([IO.File]::ReadAllText($f.FullName, [Text.Encoding]::UTF8)) }
+        try { $null = Read-OaJson $f.FullName }
         catch { $bad++; Log ('Invalid JSON: ' + $f.FullName.Substring($src.Length)) }
     }
     if ($bad -gt 0) { $state.badSha = $target; Save-State $state; throw "$bad invalid JSON file(s); not installed ($short)" }
@@ -326,17 +331,16 @@ try {
     $hadPack = $packExists
     if ($hadPack) {
         $needsRestart = (Hash-Tree $PackDir) -ne (Hash-Tree $stage)
-        $bk = Join-Path $Root ('backup\' + $(if ($state.installedSha) { $state.installedSha.Substring(0, 7) } else { 'prev' }))
+        $bk = Join-Path $Root ('backup/' + $(if ($state.installedSha) { $state.installedSha.Substring(0, 7) } else { 'prev' }))
         if (Test-Path $bk) { Remove-Item $bk -Recurse -Force }
         New-Item -ItemType Directory -Path $bk -Force | Out-Null
-        & robocopy $PackDir $bk /MIR /NFL /NDL /NJH /NJS /NP | Out-Null
+        Copy-OaMirror $PackDir $bk
         Get-ChildItem (Join-Path $Root 'backup') -Directory | Sort-Object LastWriteTime -Descending | Select-Object -Skip $cfg.keepBackups | Remove-Item -Recurse -Force
     } else { $needsRestart = $true }
     if (-not (Test-Path $DatapacksDir)) { throw "datapacks dir not found: $DatapacksDir" }
     New-Item -ItemType Directory -Path $PackDir -Force | Out-Null
     $logPos = Get-LogPos
-    & robocopy $stage $PackDir /MIR /NFL /NDL /NJH /NJS /NP | Out-Null
-    if ($LASTEXITCODE -ge 8) { throw "robocopy failed ($LASTEXITCODE)" }
+    Copy-OaMirror $stage $PackDir
     $state.installedSha = $target; $state.pendingSha = ''; $state.etag = $remote.etag
     if (-not ($state.PSObject.Properties.Name -contains 'installedAt')) { $state | Add-Member -NotePropertyName installedAt -NotePropertyValue '' }
     $state.installedAt = (Get-Date).ToString('o'); Save-State $state
@@ -376,7 +380,7 @@ try {
         if ($errs.Count -gt 0 -and $cfg.rollbackOnError -and $hadPack) {
             Log ("Load errors after reload ({0}); rolling back. First: {1}" -f $errs.Count, $errs[0].Trim())
             $bk = Get-ChildItem (Join-Path $Root 'backup') -Directory | Sort-Object LastWriteTime -Descending | Select-Object -First 1
-            & robocopy $bk.FullName $PackDir /MIR /NFL /NDL /NJH /NJS /NP | Out-Null
+            Copy-OaMirror $bk.FullName $PackDir
             [void](Invoke-Rcon 'reload' 90000)
             $state.badSha = $target; $state.installedSha = ''; Save-State $state
             Say "[OA] 更新 ($short) に読み込みエラーがあったため元に戻しました"
@@ -393,9 +397,11 @@ try {
     }
 } catch {
     Log ('ERROR: ' + $_.Exception.Message)
+    $resultCode = 1
 } finally {
     $global:LASTEXITCODE = 0   # robocopy の終了コード(1=コピー成功)を CI の失敗扱いにしない
     if ($lock) { $lock.Close() }
     $t = Join-Path $Root 'tmp'
     if (Test-Path $t) { Remove-Item $t -Recurse -Force -ErrorAction SilentlyContinue }
 }
+exit $resultCode

@@ -11,5 +11,9 @@ execute if score #map oa.mapid matches 0 in oa:br run worldborder damage amount 
 execute if score #map oa.mapid matches 1 in oa:br_nether run worldborder damage amount 0
 execute if score #map oa.mapid matches 2 in oa:br_cave run worldborder damage amount 0
 scoreboard players set #sec br.sec 0
-function oa:br/zone/update
+# 1.9.218: 安全地帯の値（#zr・#half・#zcx など）はプラグインが書く。半径215で始まる
+scoreboard players set #half br.tmp 215000
+scoreboard players set #zrb br.tmp 215
+scoreboard players set #phase br.tmp 0
+scoreboard players set #shrinking br.flag 0
 scoreboard players operation #alive br.live = #players br.tmp

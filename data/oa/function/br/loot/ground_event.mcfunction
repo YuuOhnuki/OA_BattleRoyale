@@ -5,6 +5,11 @@ data modify storage oa:br_spawn y set from storage oa:br center.y
 scoreboard players operation #range br.tmp = #half br.tmp
 scoreboard players operation #range br.tmp /= #1000 br.tmp
 scoreboard players remove #range br.tmp 4
+# 1.9.218: 今の安置（円）の中に収まる範囲
+scoreboard players set #7 br.tmp 7
+scoreboard players set #10 br.tmp 10
+function oa:br/zone/area {use:"now",margin:4}
+execute if score #zrb br.tmp matches 1.. run scoreboard players operation #range br.tmp = #zone_range br.tmp
 execute store result storage oa:br_spawn range int 1 run scoreboard players get #range br.tmp
 execute if score #map oa.mapid matches 0 in oa:br run function oa:br/loot/random_ground with storage oa:br_spawn
 execute if score #map oa.mapid matches 1 in oa:br_nether run function oa:br/loot/random_ground with storage oa:br_spawn

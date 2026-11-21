@@ -2,6 +2,8 @@
 $ErrorActionPreference = 'Stop'
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 # 以前の版で登録した定期チェックがあれば削除する
-Unregister-ScheduledTask -TaskName 'OA_BR_AutoUpdate' -Confirm:$false -ErrorAction SilentlyContinue
+if ([Environment]::OSVersion.Platform -eq [PlatformID]::Win32NT) {
+    Unregister-ScheduledTask -TaskName 'OA_BR_AutoUpdate' -Confirm:$false -ErrorAction SilentlyContinue
+}
 & (Join-Path $Root 'update.ps1') -Force
 Write-Host '導入しました。ログ: autoupdate\update.log'
