@@ -454,3 +454,12 @@ function oa:ach/armor_objectives
 function oa:tdm/load
 
 schedule function oa:presentation/refresh_labels 20t replace
+
+# 1.9.217: saved map templates are advertised by the plugin after load.
+scoreboard objectives add oa.template dummy
+scoreboard players add #busy oa.template 0
+scoreboard players add #tpl_lobby oa.template 0
+scoreboard players add #tpl_br oa.template 0
+scoreboard players add #tpl_nether oa.template 0
+scoreboard players add #tpl_cave oa.template 0
+scoreboard players add #tpl_tdm oa.template 0

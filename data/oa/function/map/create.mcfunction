@@ -1,5 +1,9 @@
+execute if score #busy oa.template matches 1 run return run tellraw @s {text:"マップの保存／復元が処理中です。完了までお待ちください。",color:"yellow"}
 execute if data storage oa_map2:job {working:1b} run return run tellraw @s {text:"マップ生成・削除の処理を先に完了してください。",color:"yellow"}
 execute unless score #state br.state matches 0 run return run tellraw @s {text:"試合停止中に実行してください。",color:"red"}
+execute if score #tpl_br oa.template matches 1 if score #map oa.mapid matches 0 run return run function oa:template/request_map
+execute if score #tpl_nether oa.template matches 1 if score #map oa.mapid matches 1 run return run function oa:template/request_map
+execute if score #tpl_cave oa.template matches 1 if score #map oa.mapid matches 2 run return run function oa:template/request_map
 execute unless score #state oa.map2 matches 0 run return run tellraw @s {text:"選択中のマップは生成済みです。再生成する場合は管理ブックから削除してください。",color:"yellow"}
 function oa:map/internal/defs
 data modify storage oa:maps ctx set value {}

@@ -1,6 +1,21 @@
 {
-  "version": "1.9.216",
-  "checks": "static release check; macro/Java callback function reachability and regression test; unchanged water geometry/release/progression; final test-data/source parity",
-  "runtime": "Paper 26.3 startup; six matches 307 passed; after final dead-write/empty-function changes ground-solo replay 131 passed; radar/config 13 passed, all 0 failed",
-  "unverified": "human input and visuals; extra reload skipped; production awaiting manual apply"
+  "version": "1.9.217",
+  "checks": "static check, Gradle build and unit tests",
+  "runtime": {
+    "template_round_trip": {
+      "passed": 31,
+      "failed": 0
+    },
+    "unloaded_chunk_entities": {
+      "passed": 18,
+      "failed": 0
+    },
+    "six_match_suite": {
+      "passed": 313,
+      "failed": 1,
+      "failure": "cave-team tick time 36.8ms exceeds 30ms",
+      "final_performance_recheck": "omitted at user request; idle event listeners now unregistered"
+    }
+  },
+  "unverified": "human input and visuals; production awaiting manual apply"
 }

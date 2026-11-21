@@ -43,7 +43,7 @@ def generate(weapons,named,repo,rp):
  f.write_text(s,encoding='utf-8')
  f=d/'tdm/loot/label_spawn.mcfunction';s=f.read_text(encoding='utf-8')
  s=s.replace('$summon','summon').replace('text:{text:"$(name)",color:"gold"}','text:{text:""}')
- if 'component' not in s:s+='\ndata modify entity @e[tag=tdm.label_new,limit=1] text set from storage oa:tdm_label component\n'
+ if 'component' not in s:s+='\ndata modify entity @e[tag=!oa.holo_custom,tag=tdm.label_new,limit=1] text set from storage oa:tdm_label component\n'
  f.write_text(s,encoding='utf-8')
  f=d/'itori/hud.mcfunction';s=f.read_text(encoding='utf-8').replace('{"text":"いとり：昭心 ","color":"light_purple"}',dump(named(weapons[9],'いとり：昭心 ')));f.write_text(s,encoding='utf-8')
  # Existing placed practice labels are migrated once. No rebuilding is needed.
@@ -51,7 +51,7 @@ def generate(weapons,named,repo,rp):
  for w in weapons:
   sel=f'@e[type=minecraft:text_display,tag=oa.practice_weapon_{w["info"]},tag=!oa.text209]'
   label=w['name'] if w['kind']!=12 else 'ふろっしゅ：ふろボール'
-  lines += [f'execute in oa:practice as {sel} run data modify entity @s text set value '+dump(named(w,label)),f'execute in oa:practice run tag {sel} add oa.text209']
+  lines += [f'execute in oa:practice as {sel} run execute unless entity @s[type=minecraft:text_display,tag=oa.holo_custom] run data modify entity @s text set value '+dump(named(w,label)),f'execute in oa:practice run tag {sel} add oa.text209']
  (d/'presentation/refresh_labels.mcfunction').write_text('\n'.join(lines)+'\n',encoding='utf-8')
  # Static labels and exact weapon name components in generated/build sources.
  names={}

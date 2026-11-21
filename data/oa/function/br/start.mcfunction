@@ -1,3 +1,4 @@
+execute if score #busy oa.template matches 1 run return run tellraw @s {text:"マップの保存／復元が処理中です。完了までお待ちください。",color:"yellow"}
 execute if score #game oa.game matches 1 run return run function oa:tdm/start
 execute as @a[tag=oa.debug,tag=!oa.practice] at @s run function oa:debug/stop
 execute if score #state br.state matches 1.. run return 0

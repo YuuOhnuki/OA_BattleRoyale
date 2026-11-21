@@ -1,3 +1,4 @@
+execute if score #busy oa.template matches 1 run return run tellraw @s {text:"マップの保存／復元が処理中です。完了までお待ちください。",color:"yellow"}
 execute unless score #state br.state matches 0 run return 0
 execute if data storage oa_map2:job {working:1b} run return run tellraw @s {text:"マップ生成が終わるまで待ってください",color:"red"}
 execute if score #busy br.clean matches 1 run return 0
