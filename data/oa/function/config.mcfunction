@@ -2,7 +2,7 @@
 scoreboard players set #sonic oa.cd 100
 scoreboard players set #ambush oa.cd 200
 scoreboard players set #mark oa.mark 400
-scoreboard players set #decoy oa.decoy 160
+scoreboard players set #decoy oa.decoy 200
 scoreboard players set #breath oa.breath 40
 scoreboard players set #chance oa.tmp 20
 

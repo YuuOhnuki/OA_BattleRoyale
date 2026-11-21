@@ -1,4 +1,11 @@
-execute store result score #mob_n br.tmp run random value 3..5
-function oa:disaster/mob_loop {kind:"pig"}
-playsound minecraft:entity.pig.ambient neutral @a[distance=..24] ~ ~ ~ 1 0.9
-particle minecraft:poof ~ ~0.6 ~ 0.8 0.4 0.8 0.03 16 normal @a[distance=..32]
+# 1隊12匹をまとめて確保。全体・ブタの上限で半端な隊列を作らない。
+execute store result score #mob_all br.tmp if entity @e[tag=oa.dis_mob]
+execute store result score #mob_capv br.tmp run data get storage oa:disaster cfg.mob_cap
+scoreboard players add #mob_all br.tmp 12
+execute if score #mob_all br.tmp > #mob_capv br.tmp run return 0
+execute store result score #mob_all br.tmp if entity @e[tag=oa.dis_pig]
+execute store result score #mob_capv br.tmp run data get storage oa:disaster cfg.pig_cap
+scoreboard players add #mob_all br.tmp 12
+execute if score #mob_all br.tmp > #mob_capv br.tmp run return 0
+execute store result storage oa:disaster parade.owner int 1 run scoreboard players get @s oa.id
+function oa:disaster/k11/formation with storage oa:disaster parade

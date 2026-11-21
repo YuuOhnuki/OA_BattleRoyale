@@ -59,7 +59,29 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×2.5。攻撃速度1.8回／秒。追加効果なし。",
+                "text": "×2.5（補充後",
+                "color": "white",
+                "italic": false
+              },
+              {
+                "text": "",
+                "color": "red",
+                "italic": false,
+                "font": "oa:icons"
+              },
+              {
+                "text": "×3）。攻撃速度1.8回／秒。追",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "  加効果なし。",
                 "color": "white",
                 "italic": false
               }
@@ -91,7 +113,7 @@
                 "italic": false
               },
               {
-                "text": "本人デコイを8秒間展開。被弾時か終了時に",
+                "text": "本人デコイを10秒間展開。被弾時か終了時",
                 "color": "white",
                 "italic": false
               }
@@ -102,7 +124,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "  発動地点へ戻る。",
+                "text": "  に発動地点へ戻る。",
                 "color": "white",
                 "italic": false
               }
@@ -146,7 +168,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{description209:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
+      "tag": "{oa:{description214:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
     }
   ]
 }

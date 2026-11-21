@@ -49,6 +49,7 @@ tag @s remove oa.radar_viewer
 tag @s remove oa.radar_target
 
 attribute @s minecraft:max_health modifier remove oa:lazi_health
+tag @s remove oa.lazi_hp214
 tag @s remove oa.lazi_hp
 tag @s remove oa.fish1911
 

@@ -38,6 +38,7 @@ tag @s remove oa.curse_blind
 execute if score @s oa.kind matches 2 run attribute @s minecraft:jump_strength modifier add oa:fish_jump 0.5 add_value
 
 attribute @s minecraft:max_health modifier remove oa:lazi_health
+tag @s remove oa.lazi_hp214
 tag @s remove oa.lazi_hp
 
 function oa:itori/off

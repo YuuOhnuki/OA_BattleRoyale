@@ -9,4 +9,3 @@ particle minecraft:end_rod ~ ~0.2 ~ 0.4 0.1 0.4 0.02 2 normal @a[distance=..24]
 # ときどき少しだけ浮く（竜巻で打ち上げられている人は除く。浮遊I 1秒）
 execute unless entity @s[tag=oa.dis_air] if predicate oa:dis/chance20 run effect give @s minecraft:levitation 1 0 true
 tag @s add br.dis_msg
-execute if score #dis_phase br.tmp matches 1 run title @s actionbar {text:"🌀 重力異常！ 高く跳べる・落下ダメージなし",color:"light_purple"}

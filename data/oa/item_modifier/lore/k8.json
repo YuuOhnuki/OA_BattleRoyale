@@ -59,7 +59,29 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×2。攻撃速度1.8回／秒。鈍足Iを2秒付与。",
+                "text": "×2（補充後",
+                "color": "white",
+                "italic": false
+              },
+              {
+                "text": "",
+                "color": "red",
+                "italic": false,
+                "font": "oa:icons"
+              },
+              {
+                "text": "×2.5）。攻撃速度1.8回／秒。鈍",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "  足Iを2秒付与。",
                 "color": "white",
                 "italic": false
               }
@@ -130,7 +152,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{description209:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
+      "tag": "{oa:{description214:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
     }
   ]
 }

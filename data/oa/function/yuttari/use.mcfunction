@@ -40,8 +40,10 @@ execute if score #roll oa.tmp matches 0 run effect give @e[tag=oa.chosen] minecr
 execute if score #roll oa.tmp matches 1 run effect give @s minecraft:slowness 5 1 true
 execute if score #roll oa.tmp matches 1 run effect give @e[tag=oa.chosen] minecraft:speed 5 1 true
 execute store result score #dark_roll oa.tmp run random value 0..1
-execute if score #dark_roll oa.tmp matches 0 run effect give @s minecraft:darkness 3 0 true
-execute if score #dark_roll oa.tmp matches 1 run effect give @e[tag=oa.chosen,limit=1] minecraft:darkness 3 0 true
+execute if score #dark_roll oa.tmp matches 0 run effect give @s minecraft:blindness 5 0 true
+execute if score #dark_roll oa.tmp matches 0 run tag @s add oa.external_blind
+execute if score #dark_roll oa.tmp matches 1 run effect give @e[tag=oa.chosen,limit=1] minecraft:blindness 5 0 true
+execute if score #dark_roll oa.tmp matches 1 run tag @e[tag=oa.chosen,limit=1] add oa.external_blind
 
 tag @s add oa.external_slow
 tag @s add oa.external_speed

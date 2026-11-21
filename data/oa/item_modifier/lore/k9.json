@@ -70,7 +70,18 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×2.5。攻撃速度1.8回／秒。10%で相手を約5m",
+                "text": "×2.5（補充後",
+                "color": "white",
+                "italic": false
+              },
+              {
+                "text": "",
+                "color": "red",
+                "italic": false,
+                "font": "oa:icons"
+              },
+              {
+                "text": "×3）。攻撃速度1.8回／秒。10",
                 "color": "white",
                 "italic": false
               }
@@ -81,7 +92,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "  打ち上げる。",
+                "text": "  %で相手を約5m打ち上げる。",
                 "color": "white",
                 "italic": false
               }
@@ -97,7 +108,7 @@
                 "italic": false
               },
               {
-                "text": "16種類の結果から抽選。大当たりは1%、残り15",
+                "text": "16種類の結果から抽選。時限爆弾3%、大爆発2%",
                 "color": "white",
                 "italic": false
               }
@@ -108,7 +119,18 @@
             "italic": false,
             "extra": [
               {
-                "text": "  種類は各6.6%。",
+                "text": "  、大当たり0.5%、復活・災害コンボ各4%、ほか11種は各約7",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "  .864%。",
                 "color": "white",
                 "italic": false
               }
@@ -152,7 +174,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{description209:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
+      "tag": "{oa:{description214:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
     }
   ]
 }

@@ -83,7 +83,7 @@ def label_entity(x,z,text,y=3.0):
 def stand(x,z,item,label,tags,scale=0.75):
  global out
  out+= [f'setblock ~{x} ~0 ~{z} minecraft:polished_deepslate',f'setblock ~{x} ~1 ~{z} minecraft:chiseled_polished_blackstone',f'setblock ~{x} ~3 ~{z} minecraft:light[level=11]']
- out.append(f'summon minecraft:item_display ~{x+.5} ~2.35 ~{z+.5} '+dump({'Tags':['oa.practice_catalog','oa.practice_show'],'item':item,'item_display':'fixed','billboard':'vertical','brightness':{'block':15,'sky':15},'transformation':tf(scale),'view_range':0.7}))
+ out.append(f'summon minecraft:item_display ~{x+.5} ~2.35 ~{z+.5} '+dump({'Tags':['oa.practice_catalog','oa.practice_show'],'item':item,'item_display':'fixed','billboard':'vertical','brightness':{'block':15,'sky':15},'transformation':dict(tf(scale),left_rotation=[0,1,0,0]) if 'oa.practice.pick.weapon.3' in tags else tf(scale),'view_range':0.7}))
  out.append(f'summon minecraft:interaction ~{x+.5} ~1 ~{z+.5} '+dump({'Tags':['oa.practice_pick']+tags,'width':1.1,'height':2.0,'response':True}))
  out.append(label_entity(x,z,label))
 # 固有武器：北の列 z=15・南の列 z=20、x=-5〜-20（3ブロックおき）
@@ -111,9 +111,9 @@ for x,title,sub in [(-12,'◀ 固有武器','展示を右クリックで持ち�
  for yaw in (0.0,180.0):
   out.append(f'summon minecraft:text_display ~{x+.5} ~4.6 ~{21.6 if yaw==0.0 else 21.4} '+dump({'Tags':['oa.practice_catalog'],'text':{'text':'','extra':[{'text':title+'\n','color':'gold','bold':True},{'text':sub,'color':'white'}]},'billboard':'fixed','Rotation':[yaw,0.0],'line_width':240,'background':1426063360,'shadow':True,'view_range':1.0,'transformation':tf(1.0)}))
 out += ['kill @e[type=minecraft:item_display,tag=oa.practice_showcase]']+[f'kill @e[type=minecraft:text_display,tag=oa.practice_weapon_{i}]' for i in range(1,13)]
-out.append('data modify storage oa:practice catalog set value 211')
+out.append('data modify storage oa:practice catalog set value 214')
 write(F/'practice/catalog/build.mcfunction','\n'.join(out)+'\n')
-write(F/'practice/catalog/update.mcfunction','execute in oa:practice unless loaded 0 64 0 run return 0\nexecute in oa:practice positioned 0 64 0 run function oa:practice/catalog/build\n')
+write(F/'practice/catalog/update.mcfunction','execute in oa:practice unless loaded 0 64 0 run return 0\nexecute in oa:practice positioned 0 64 0 align xyz run function oa:practice/catalog/build\n')
 new=[s for i,s in enumerate(lines) if i not in remove and not (s.startswith('summon minecraft:item_display ') and 'oa.practice_showcase' in s) and not (s.startswith('summon minecraft:text_display ') and '"oa.practice_weapon_' in s)]
 if 'function oa:practice/catalog/build' not in new:new.append('function oa:practice/catalog/build')
 write(p,'\n'.join(new)+'\n')

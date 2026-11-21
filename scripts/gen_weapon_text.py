@@ -40,7 +40,7 @@ def wrap(component,width=260):
 def title(w):return w['name']+'：'+w['title']
 def attack(w,up=False):
  s=''
- if w['hp'] is not None:s=f"{w['hp']+(1 if up else 0):g}HP"+('（＋1HP）' if up else '')+'。'
+ if w['hp'] is not None:s=f"{w['hp']:g}HP"+(f"（補充後{w['hp']+1:g}HP）" if w['kind'] in [4,6,8,9,10] else '')+'。'
  if w['speed'] is not None:s+=f"攻撃速度{w['speed']:g}回／秒。"
  return s+w['attack']
 def note(w):return '※固有武器と同時に所持可能。' if w.get('consumable') else '※固有武器は一人一個まで所持可能'
@@ -65,12 +65,12 @@ def lore(w,up=False,progress=None):
  rows.append(t(note(w),'gray'))
  return [line for component in rows for line in wrap(component)]
 def modifier(w,up=False,progress=None):
- data={'description209':1,'description_up':int(up),'name_v172':1,'name_v204':1}
+ data={'description214':1,'description_up':int(up),'name_v172':1,'name_v204':1}
  if progress is not None:
-  data['itori_text209']=progress;data['itori_stage']=sum(progress>=n for n in [0,1,5,7,10,15]);data['itori_lore194']=progress
- tag='{oa:{'+','.join(k+':'+str(v)+('' if k in ['itori_text209','itori_stage','itori_lore194'] else 'b') for k,v in data.items())+'}}'
+  data['itori_text214']=progress;data['itori_stage']=sum(progress>=n for n in [0,1,5,7,10,15]);data['itori_lore194']=progress
+ tag='{oa:{'+','.join(k+':'+str(v)+('' if k in ['itori_text214','itori_stage','itori_lore194'] else 'b') for k,v in data.items())+'}}'
  return {'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':{'minecraft:custom_name':named(w),'minecraft:lore':lore(w,up,progress),'minecraft:tooltip_display':{'hidden_components':['minecraft:enchantments','minecraft:attribute_modifiers']}}},{'type':'minecraft:set_custom_data','tag':tag}]}
-menu={};reference=['# 固有武器・消耗品の説明（1.9.209）','', '記載は初期の性能。強化中の増加分はゲーム内の実物の説明欄だけへ表示。','', '体力は♥、満腹度は食料アイコンのゲージ数で表示。ダメージは軽減前。','']
+menu={};reference=['# 固有武器・消耗品の説明（1.9.214）','', 'ダメージは補充前を本文に、補充後を括弧内に記載。','', '体力は♥、満腹度は食料アイコンのゲージ数で表示。ダメージは軽減前。','']
 for w in WEAPONS:
  kind=w['kind'];key=f'k{kind}' if kind<=10 else 'yu' if kind==11 else 'frosch'
  jwrite(D/f'item_modifier/lore/{key}.json',modifier(w))
@@ -161,8 +161,8 @@ for w in WEAPONS[:9]:
  if k in [4,6,8,9]:
   for up in [0,1]:
    cond=('if' if up else 'unless')+' items entity @s $(slot) *[minecraft:custom_data~{oa:{damage194_up:1b}}]'
-   lines.append(base+' '+cond+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description209:1b,description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k{k}'+('_plus1' if up else ''))
- else:lines.append(base+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description209:1b}}}}] run item modify entity @s $(slot) oa:lore/k{k}')
+   lines.append(base+' '+cond+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description214:1b,description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k{k}'+('_plus1' if up else ''))
+ else:lines.append(base+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description214:1b}}}}] run item modify entity @s $(slot) oa:lore/k{k}')
 lines.append('$execute if items entity @s $(slot) *[minecraft:custom_data~{oa:{kind:10}}] run function oa:itori/item_stage {slot:"$(slot)"}')
 write(D/'function/inventory/lore.mcfunction','\n'.join(lines)+'\n')
 lines=[]
@@ -170,15 +170,15 @@ for up in [0,1]:
  cond=('if score #state br.state matches 1 if score #time br.time matches 7200.. if entity @s[tag=br.alive,tag=!oa.practice]' if up else '')
  # Explicit flag computed by the same condition as normal_damage, even for a head/offhand slot.
  if up==0:lines+=['scoreboard players set #itori_text_up oa.tmp 0','execute if entity @s[tag=br.alive,tag=!oa.practice] if score #state br.state matches 1 if score #time br.time matches 7200.. run scoreboard players set #itori_text_up oa.tmp 1']
- lines.append(f'$execute if score #itori_text_up oa.tmp matches {up} unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description209:1b,itori_text209:$(points),description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k10_progress_$(points)'+('_plus1' if up else ''))
+ lines.append(f'$execute if score #itori_text_up oa.tmp matches {up} unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description214:1b,itori_text214:$(points),description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k10_progress_$(points)'+('_plus1' if up else ''))
 write(D/'function/itori/item_progress.mcfunction','\n'.join(lines)+'\n')
 # Update held items as soon as the actual refill modifier changes.
 f=D/'function/inventory/refill_damage.mcfunction';s=f.read_text(encoding='utf-8')
-if 'description209' not in s:s+='\n# description209: show the actual strengthened item, never forecast refill stats.\nfunction oa:inventory/lore {slot:"weapon.mainhand"}\n'
+if 'description214' not in s:s+='\n# description214: base damage followed by refill damage in parentheses.\nfunction oa:inventory/lore {slot:"weapon.mainhand"}\n'
 write(f,s)
 # Current gacha list is derived from the same result announcements used by gameplay.
 names=['health_all','fire_all','revive_all','hat_all','tnt_all','rush_all','chaos_all','gather','mood_all','combo_all','giant_all','critical','exposed','jackpot','oni_all','blast']
-out=[t('━━ たやゆゆ：ガチャ全16結果 ━━\n','gold',bold=True),t('大当たりは1%、ほか15種類は各6.6%。CT45秒。\n','white')]
+out=[t('━━ たやゆゆ：ガチャ全16結果 ━━\n','gold',bold=True),t('時限爆弾3%、大爆発2%、大当たり0.5%、復活・災害コンボ各4%、ほか各約7.864%。CT45秒。\n','white')]
 for i,name in enumerate(names,1):
  src=(D/f'function/tayayuyu/{name}.mcfunction').read_text(encoding='utf-8');matches=[]
  for line in src.splitlines():
@@ -188,7 +188,7 @@ for i,name in enumerate(names,1):
  if matches:
   label=matches[0].split('：')[-1];value=matches[1].lstrip(' →') if len(matches)>1 else '結果は発動時に表示。'
   if name=='jackpot':value='使用者以外の生存者を倒す。最後の1人になれば即座に優勝。'
-  out += [row(label+'（'+('1%' if i==14 else '6.6%')+'）',value),t('\n')]
+  out += [row(label+'（'+({15:'3%',16:'2%',14:'0.5%',3:'4%',10:'4%'}.get(i,'約7.864%'))+'）',value),t('\n')]
 write(D/'function/lobby/gallery/gacha_results.mcfunction','tellraw @s '+dump(out)+'\n')
 # UI icons are original 8px pixel art, with no external image dependency.
 from PIL import Image

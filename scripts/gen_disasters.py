@@ -28,18 +28,18 @@ DISASTERS = [
          desc='大地が揺れる。動くとダメージ、止まって耐えよう'),
     dict(k=6, key='fog', name='濃霧', names={1: '灰嵐'}, color='gray', danger=2, sec=30, weight=10, maps=[0, 1, 2],
          desc='視界が暗く狭くなる。足音と光を頼りに'),
-    dict(k=7, key='gravity', name='重力異常', color='light_purple', danger=2, sec=15, weight=7, maps=[0, 1, 2], move=True,
+    dict(k=7, key='gravity', name='重力異常', color='light_purple', danger=2, sec=20, weight=7, maps=[0, 1, 2], move=True,
          desc='体が軽くなり高く跳べる。落下ダメージなし'),
-    dict(k=8, key='chickens', name='ニワトリ大量発生', color='yellow', danger=1, sec=12, weight=7, maps=[0, 1, 2], mobs=True,
-         desc='ニワトリが大量に走り回る！'),
-    dict(k=9, key='blood_moon', name='血の月・強制パーティー', color='dark_red', danger=2, sec=15, weight=7, maps=[0, 1, 2],
-         desc='全員が光り、頭上に花火。居場所が丸見え！'),
-    dict(k=10, key='tornado', name='竜巻', color='white', danger=4, sec=15, weight=7, maps=[0, 1], move=True,
+    dict(k=8, key='chickens', name='ニワトリ大量発生', color='yellow', danger=1, sec=20, weight=7, maps=[0, 1, 2], mobs=True,
+         desc='ニワトリが暴れ回り、狙った卵で押し飛ばす！'),
+    dict(k=9, key='blood_moon', name='血の月', color='dark_red', danger=2, sec=30, weight=7, maps=[0, 1, 2],
+         desc='全員に速度上昇が付き、光り、頭上に花火。居場所が丸見え！'),
+    dict(k=10, key='tornado', name='竜巻', color='white', danger=4, sec=20, weight=7, maps=[0, 1], move=True,
          desc='竜巻が近くの人を吸い寄せ、中心で打ち上げる'),
-    dict(k=11, key='pig_parade', name='ブタの大行進', color='light_purple', danger=2, sec=15, weight=7, maps=[0, 1, 2], mobs=True,
-         desc='ブタが走り回り、ときどき小さく爆発（♥×1）'),
+    dict(k=11, key='pig_parade', name='ブタの大行進', color='light_purple', danger=3, sec=15, weight=7, maps=[0, 1, 2], mobs=True,
+         desc='2列6行のブタが走り回り、爆発し続ける（♥×1）'),
 ]
-CFG = {'cd_min': 52, 'cd_max': 78, 'first_min': 40, 'first_max': 64, 'multi2': 20, 'multi3': 5,
+CFG = {'cd_min': 50, 'cd_max': 75, 'first_min': 30, 'first_max': 45, 'multi2': 20, 'multi3': 5,
        'dot_cap': 4, 'mob_cap': 60, 'chicken_cap': 40, 'pig_cap': 30,
        'weight': {f"k{d['k']}": d['weight'] for d in DISASTERS}}
 KINDS = [d['k'] for d in DISASTERS]
@@ -64,9 +64,13 @@ HEAD = '# 生成：scripts/gen_disasters.py（直接編集しない）'
 
 # 初期設定（無ければ入れる。変えた値は残す）
 write('cfg_defaults.mcfunction', [HEAD,
-    '# 抽選・頻度・同時発生・上限の設定。cfg.v が無いか古いときだけ初期値を入れる（個別に変えた値は v を変えない限り残る）',
-    f'execute unless data storage oa:disaster cfg{{v:212}} run data modify storage oa:disaster cfg set value {dump(dict(CFG, v=212))}',
+    '# 初回は全設定、既存設定には今回変更した間隔だけを移行。重み・安全上限などの個別設定は残す。',
+    f'execute unless data storage oa:disaster cfg run data modify storage oa:disaster cfg set value {dump(dict(CFG, v=214))}',
+    'execute unless data storage oa:disaster cfg{v:214} run function oa:disaster/cfg_migrate214',
     f'data modify storage oa:disaster defs set value {dump({"k%d" % d["k"]: {"key": d["key"], "name": d["name"], "danger": d["danger"], "stars": STARS(d["danger"]), "sec": d["sec"], "desc": d["desc"], "maps": d["maps"]} for d in DISASTERS})}'])
+write('cfg_migrate214.mcfunction', [HEAD] +
+      [f'data modify storage oa:disaster cfg.{key} set value {CFG[key]}' for key in ('cd_min', 'cd_max', 'first_min', 'first_max')] +
+      ['data modify storage oa:disaster cfg.v set value 214'])
 
 # マップごとに出る災害（#avN）
 lines = [HEAD, '# 今のマップで起こる災害を #avN br.tmp に1／0で入れる（定義の maps）']

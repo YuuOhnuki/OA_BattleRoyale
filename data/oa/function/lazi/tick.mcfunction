@@ -1,4 +1,6 @@
-execute unless entity @s[tag=oa.lazi_hp] run attribute @s minecraft:max_health modifier add oa:lazi_health 6 add_value
+execute unless entity @s[tag=oa.lazi_hp214] run attribute @s minecraft:max_health modifier remove oa:lazi_health
+execute unless entity @s[tag=oa.lazi_hp214] run attribute @s minecraft:max_health modifier add oa:lazi_health 8 add_value
+tag @s add oa.lazi_hp214
 tag @s add oa.lazi_hp
 scoreboard players add @s oa.beat 1
 execute if score @s oa.beat matches 1 run playsound minecraft:entity.warden.ambient player @a[distance=..32] ~ ~ ~ 5.33333 0.8 0.666667

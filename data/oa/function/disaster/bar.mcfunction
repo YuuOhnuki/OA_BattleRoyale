@@ -62,13 +62,13 @@ execute if score #ds8 br.tmp matches 1.. if score #map oa.mapid matches 1 run da
 execute if score #ds8 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"text":"ニワトリ大量発生 ★☆☆☆☆ ","color":"yellow"}
 execute if score #ds8 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"score":{"name":"#ds8","objective":"br.tmp"},"color":"white"}
 execute if score #ds8 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
-execute if score #ds9 br.tmp matches 1.. if score #map oa.mapid matches 0 run data modify storage oa:disaster bar append value {"text":"血の月・強制パーティー ★★☆☆☆ ","color":"dark_red"}
+execute if score #ds9 br.tmp matches 1.. if score #map oa.mapid matches 0 run data modify storage oa:disaster bar append value {"text":"血の月 ★★☆☆☆ ","color":"dark_red"}
 execute if score #ds9 br.tmp matches 1.. if score #map oa.mapid matches 0 run data modify storage oa:disaster bar append value {"score":{"name":"#ds9","objective":"br.tmp"},"color":"white"}
 execute if score #ds9 br.tmp matches 1.. if score #map oa.mapid matches 0 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
-execute if score #ds9 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"text":"血の月・強制パーティー ★★☆☆☆ ","color":"dark_red"}
+execute if score #ds9 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"text":"血の月 ★★☆☆☆ ","color":"dark_red"}
 execute if score #ds9 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"score":{"name":"#ds9","objective":"br.tmp"},"color":"white"}
 execute if score #ds9 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
-execute if score #ds9 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"text":"血の月・強制パーティー ★★☆☆☆ ","color":"dark_red"}
+execute if score #ds9 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"text":"血の月 ★★☆☆☆ ","color":"dark_red"}
 execute if score #ds9 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"score":{"name":"#ds9","objective":"br.tmp"},"color":"white"}
 execute if score #ds9 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
 execute if score #ds10 br.tmp matches 1.. if score #map oa.mapid matches 0 run data modify storage oa:disaster bar append value {"text":"竜巻 ★★★★☆ ","color":"white"}
@@ -77,13 +77,13 @@ execute if score #ds10 br.tmp matches 1.. if score #map oa.mapid matches 0 run d
 execute if score #ds10 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"text":"竜巻 ★★★★☆ ","color":"white"}
 execute if score #ds10 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"score":{"name":"#ds10","objective":"br.tmp"},"color":"white"}
 execute if score #ds10 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
-execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 0 run data modify storage oa:disaster bar append value {"text":"ブタの大行進 ★★☆☆☆ ","color":"light_purple"}
+execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 0 run data modify storage oa:disaster bar append value {"text":"ブタの大行進 ★★★☆☆ ","color":"light_purple"}
 execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 0 run data modify storage oa:disaster bar append value {"score":{"name":"#ds11","objective":"br.tmp"},"color":"white"}
 execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 0 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
-execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"text":"ブタの大行進 ★★☆☆☆ ","color":"light_purple"}
+execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"text":"ブタの大行進 ★★★☆☆ ","color":"light_purple"}
 execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"score":{"name":"#ds11","objective":"br.tmp"},"color":"white"}
 execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
-execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"text":"ブタの大行進 ★★☆☆☆ ","color":"light_purple"}
+execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"text":"ブタの大行進 ★★★☆☆ ","color":"light_purple"}
 execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"score":{"name":"#ds11","objective":"br.tmp"},"color":"white"}
 execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
 execute if score #dis_active br.tmp matches ..3 run bossbar set oa:disaster name [{"text":"⚠ ","color":"red","bold":true},{"nbt":"bar[]","storage":"oa:disaster","interpret":true,"separator":""}]

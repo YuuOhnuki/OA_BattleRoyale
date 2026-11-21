@@ -1,3 +1,4 @@
 tellraw @a[tag=br.playing] {text:"たやゆゆ変態ガチャ：全員巨大化",color:"green"}
-tellraw @a[tag=br.playing] {"text": " → 生存者全員：体の大きさが4倍（10秒）", "color": "gray"}
-execute as @a[tag=br.alive,gamemode=!spectator,tag=!oa.dead] at @s run function oa:tayayuyu/size {amount:3.0,ticks:200}
+tellraw @a[tag=br.playing] {text:" → 生存者全員：地上・ネザーは5倍、洞窟は2.5倍（10秒）",color:"gray"}
+execute as @a[tag=br.alive,gamemode=!spectator,tag=!oa.dead] at @s unless dimension oa:br_cave run function oa:tayayuyu/size {amount:4.0,ticks:200}
+execute as @a[tag=br.alive,gamemode=!spectator,tag=!oa.dead] at @s if dimension oa:br_cave run function oa:tayayuyu/size {amount:1.5,ticks:200}

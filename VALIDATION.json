@@ -1,5 +1,11 @@
 {
-  "version": "1.9.213",
-  "checks": "static; countdown test on test server",
-  "runtime": "test server: countdown, gamerule, shrink notices; in-game visuals unverified"
+  "version": "1.9.214",
+  "checks": "static release check; 53 balance checks; Gradle build",
+  "runtime": "Paper 26.3 startup; six match scenarios; eleven disasters/multi/combo; 45 corrected checks passed. See ../dist/validation-1.9.214.json for superseded old assertions and original records.",
+  "limitations": [
+    "人が操作した見た目・手触りは未確認。",
+    "巨大化時の壁際の当たり判定の食い込みは従来の仕様。",
+    "本番は手動反映後の読み込み未確認。"
+  ],
+  "reload": "メモリ逼迫時に長時間停止したため中断。起動時の読み込み検査は成功。"
 }

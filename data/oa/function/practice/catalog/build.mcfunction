@@ -146,7 +146,7 @@ summon minecraft:text_display ~-7.5 ~3.0 ~15.5 {"Tags":["oa.practice_catalog"],"
 setblock ~-11 ~0 ~15 minecraft:polished_deepslate
 setblock ~-11 ~1 ~15 minecraft:chiseled_polished_blackstone
 setblock ~-11 ~3 ~15 minecraft:light[level=11]
-summon minecraft:item_display ~-10.5 ~2.35 ~15.5 {"Tags":["oa.practice_catalog","oa.practice_show"],"item":{"id":"minecraft:carrot_on_a_stick","count":1,"components":{"minecraft:item_model":"oa:yuttari"}},"item_display":"fixed","billboard":"vertical","brightness":{"block":15,"sky":15},"transformation":{"translation":[0,0,0],"left_rotation":[0,0,0,1],"right_rotation":[0,0,0,1],"scale":[0.75,0.75,0.75]},"view_range":0.7}
+summon minecraft:item_display ~-10.5 ~2.35 ~15.5 {"Tags":["oa.practice_catalog","oa.practice_show"],"item":{"id":"minecraft:carrot_on_a_stick","count":1,"components":{"minecraft:item_model":"oa:yuttari"}},"item_display":"fixed","billboard":"vertical","brightness":{"block":15,"sky":15},"transformation":{"translation":[0,0,0],"left_rotation":[0,1,0,0],"right_rotation":[0,0,0,1],"scale":[0.75,0.75,0.75]},"view_range":0.7}
 summon minecraft:interaction ~-10.5 ~1 ~15.5 {"Tags":["oa.practice_pick","oa.practice.pick.weapon.3"],"width":1.1,"height":2.0,"response":true}
 summon minecraft:text_display ~-10.5 ~3.0 ~15.5 {"Tags":["oa.practice_catalog"],"text":{"text":"ゆったり","color":"#65fff0","italic":false,"bold":true},"billboard":"center","line_width":120,"background":1073741824,"view_range":0.5,"transformation":{"translation":[0,0,0],"left_rotation":[0,0,0,1],"right_rotation":[0,0,0,1],"scale":[0.55,0.55,0.55]}}
 setblock ~-14 ~0 ~15 minecraft:polished_deepslate
@@ -324,4 +324,4 @@ kill @e[type=minecraft:text_display,tag=oa.practice_weapon_9]
 kill @e[type=minecraft:text_display,tag=oa.practice_weapon_10]
 kill @e[type=minecraft:text_display,tag=oa.practice_weapon_11]
 kill @e[type=minecraft:text_display,tag=oa.practice_weapon_12]
-data modify storage oa:practice catalog set value 211
+data modify storage oa:practice catalog set value 214

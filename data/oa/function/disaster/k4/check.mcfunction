@@ -10,4 +10,3 @@ execute if score #fog_px br.tmp > #fog_r2 br.tmp run return 0
 effect give @s minecraft:poison 3 1 true
 function oa:disaster/dmg {amount:1,type:"minecraft:magic"}
 tag @s add br.dis_msg
-execute if score #dis_phase br.tmp matches 1 run title @s actionbar {text:"☠ 毒霧の中！ 中心から離れよう",color:"dark_green"}

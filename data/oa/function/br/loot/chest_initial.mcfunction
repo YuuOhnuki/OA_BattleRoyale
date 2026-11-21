@@ -1,3 +1,4 @@
+function oa:br/loot/sea_rich
 function oa:br/loot/reset_open
 # 1.9.159: 1.9.157〜1.9.158 でチェストの名前に付けた残り時間を消す（読み込まれていなかったチェストの分）
 execute if entity @s[tag=!br.rich] run data remove block ~ ~ ~ CustomName
