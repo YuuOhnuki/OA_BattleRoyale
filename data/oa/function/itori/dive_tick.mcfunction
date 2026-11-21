@@ -1,16 +1,16 @@
 execute unless entity @s[tag=br.alive] unless entity @s[tag=oa.db_free_match] run return run function oa:itori/dive_cancel
 scoreboard players remove @s oa.i_dive 1
-execute if score @s oa.i_dive matches 36 run function oa:itori/dive_rise_frame {steps:14}
-execute if score @s oa.i_dive matches 35 run function oa:itori/dive_rise_frame {steps:11}
-execute if score @s oa.i_dive matches 34 run function oa:itori/dive_rise_frame {steps:10}
-execute if score @s oa.i_dive matches 33 run function oa:itori/dive_rise_frame {steps:9}
-execute if score @s oa.i_dive matches 32 run function oa:itori/dive_rise_frame {steps:8}
-execute if score @s oa.i_dive matches 31 run function oa:itori/dive_rise_frame {steps:7}
-execute if score @s oa.i_dive matches 30 run function oa:itori/dive_rise_frame {steps:6}
-execute if score @s oa.i_dive matches 29 run function oa:itori/dive_rise_frame {steps:5}
-execute if score @s oa.i_dive matches 28 run function oa:itori/dive_rise_frame {steps:4}
-execute if score @s oa.i_dive matches 27 run function oa:itori/dive_rise_frame {steps:3}
-execute if score @s oa.i_dive matches 26 run function oa:itori/dive_rise_frame {steps:2}
+execute if score @s oa.i_dive matches 36 run function oa:itori/dive_rise_frame {steps:21}
+execute if score @s oa.i_dive matches 35 run function oa:itori/dive_rise_frame {steps:17}
+execute if score @s oa.i_dive matches 34 run function oa:itori/dive_rise_frame {steps:15}
+execute if score @s oa.i_dive matches 33 run function oa:itori/dive_rise_frame {steps:14}
+execute if score @s oa.i_dive matches 32 run function oa:itori/dive_rise_frame {steps:12}
+execute if score @s oa.i_dive matches 31 run function oa:itori/dive_rise_frame {steps:10}
+execute if score @s oa.i_dive matches 30 run function oa:itori/dive_rise_frame {steps:9}
+execute if score @s oa.i_dive matches 29 run function oa:itori/dive_rise_frame {steps:8}
+execute if score @s oa.i_dive matches 28 run function oa:itori/dive_rise_frame {steps:6}
+execute if score @s oa.i_dive matches 27 run function oa:itori/dive_rise_frame {steps:4}
+execute if score @s oa.i_dive matches 26 run function oa:itori/dive_rise_frame {steps:3}
 execute if score @s oa.i_dive matches 25 run function oa:itori/dive_rise_frame {steps:1}
 execute if score @s oa.i_dive matches 25 at @s run function oa:itori/dive_apex
 execute if score @s oa.i_dive matches 20..24 run function oa:itori/dive_hover

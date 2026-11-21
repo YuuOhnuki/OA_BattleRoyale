@@ -20,7 +20,8 @@
                 "minecraft:custom_data": {
                   "oa_furoball": true,
                   "furo_lore182": true,
-                  "furo_stack1927": true
+                  "furo_stack1927": true,
+                  "furo_lore209": true
                 },
                 "minecraft:item_model": "minecraft:fire_charge",
                 "minecraft:max_stack_size": 64,

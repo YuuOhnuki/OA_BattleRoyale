@@ -37,6 +37,48 @@ for p in glob.glob('data/*/advancement/**/*.json', recursive=True):
             if key in ('player', 'entity', 'parent', 'partner', 'child', 'projectile', 'shooter', 'victim', 'source', 'zombie', 'villager', 'lightning', 'bystander') and isinstance(val, list):
                 errors.append(f'進捗の条件が配列: {p}: {cname}.{key}（26.3 は条件1つのオブジェクト）')
 
+# 1c. loot function / item modifier の種類：26.3 に無い種類（minecraft:reference など）があると、
+#     loot table の読み込みに失敗してサーバーが起動しなくなる（1.9.211 の作業中に発生）。一覧は 26.3 の LootItemFunctions。
+LOOT_FUNCTIONS = {'set_count', 'set_item', 'enchant_with_levels', 'enchant_randomly', 'set_enchantments', 'set_custom_data',
+    'set_components', 'furnace_smelt', 'enchanted_count_increase', 'set_damage', 'set_attributes', 'set_name',
+    'exploration_map', 'set_stew_effect', 'copy_name', 'set_contents', 'modify_contents', 'filtered', 'limit_count',
+    'apply_bonus', 'set_loot_table', 'explosion_decay', 'set_lore', 'fill_player_head', 'copy_custom_data', 'copy_state',
+    'set_banner_pattern', 'set_potion', 'set_random_dyes', 'set_random_potion', 'set_instrument', 'sequence',
+    'copy_components', 'set_fireworks', 'set_firework_explosion', 'set_book_cover', 'set_written_book_pages',
+    'set_writable_book_pages', 'toggle_tooltips', 'set_ominous_bottle_amplifier', 'set_custom_model_data', 'discard'}
+
+
+def check_loot_functions(node, path, inside):
+    """inside=True のとき node は関数のリスト／関数そのもの。"""
+    if isinstance(node, list):
+        for v in node:
+            check_loot_functions(v, path, inside)
+        return
+    if not isinstance(node, dict):
+        return
+    if inside:
+        t = node.get('type')
+        if isinstance(t, str) and t.startswith('minecraft:') and t[10:] not in LOOT_FUNCTIONS:
+            errors.append(f'26.3 に無い loot function: {path}: {t}')
+    for k, v in node.items():
+        if k in ('functions', 'modifier') and isinstance(v, list):
+            check_loot_functions(v, path, True)
+        elif isinstance(v, (dict, list)) and k not in ('conditions', 'predicate', 'components'):
+            check_loot_functions(v, path, False)
+
+
+for p in glob.glob('data/*/loot_table/**/*.json', recursive=True):
+    try:
+        check_loot_functions(json.loads(rd(p)), p, False)
+    except Exception:
+        pass
+for p in glob.glob('data/*/item_modifier/**/*.json', recursive=True):
+    try:
+        j = json.loads(rd(p))
+        check_loot_functions(j if isinstance(j, list) else [j], p, True)
+    except Exception:
+        pass
+
 # 2. function references
 funcs = {f[len('data/oa/function/'):-len('.mcfunction')].replace(os.sep, '/')
          for f in glob.glob('data/oa/function/**/*.mcfunction', recursive=True)}

@@ -1,6 +1,6 @@
 tellraw @s {"text": "ガイア：霜の襲撃", "color": "aqua"}
 function oa:itori/cast_begin
-data merge storage oa:damage {amount:2.0,type:"oa:itori_magic"}
+data merge storage oa:damage {amount:3.0,type:"oa:itori_magic"}
 execute as @e[tag=oa.target,distance=4.01..] run tag @s remove oa.target
 function oa:itori/fx/emit/ice
 playsound minecraft:entity.player.attack.sweep player @a[distance=..24] ~ ~ ~ 0.9 0.65

@@ -1,6 +1,8 @@
-# 引き継ぎメモ（1.9.210 時点）
+# 引き継ぎメモ（1.9.211 時点）
 
 ## 現状
+- 1.9.211：持ち物の更新処理（inventory/text_refresh・normal/visual_tick など、目印がない物を書き換える）を足したら、ドロップ表にも同じ目印・同じ中身を入れる。確かめるのは tools/item_parity.py（data get は深い所を {.. と省略するので、種類と custom_data などで区別している）。練習場の通常装備は gen_practice_catalog.py がドロップ表の modifier をそのまま写す。キルログはプラグインの KillLog（ダメージの種類→固有武器の表、攻撃した人のタグ→武器）。新しいダメージの種類・発生源タグを足したら KillLog の表にも足す。医療品の中身を変えたら目印の版（medical_text211）を上げる。
+
 - 1.9.210：プレイヤーの nbt={Health:0.0f} を毎 tick 読むのをやめ、プラグインのタグ oa.dead に。新しく書く「倒れていない人」の条件は tag=!oa.dead（プレイヤー）を使い、NBT はモブだけ。プラグインがないときは internal/life_fallback が同じタグを付ける（#life oa.plugin はプラグインが毎 tick 1、tick の終わりに0）。接地は述語 oa:airborne。固有武器の粒はプラグインの HeldParticles（データパックの visual/held_particles は削除）。
 
 - 1.9.209：展示背面とベンチが正面入口を塞いでいた。gen_lobby_terminalの見た目と別に直通経路を検査する。練習場はgen_practice_catalog.pyでBRのlootから品揃え／見た目／直接配布／旧入口の制限を生成。armor_breakは集計されたbroken統計でなくPlayerItemBreakEventで実物の材質・OAタグ／モデルを確認（誤解除済みの履歴はそのまま）。前回結果JSONへuuidを追加し表示側は非同期プロフィールを利用、未解決ならSteve模型を出さない。実際のゲーム内操作・描画は未確認。

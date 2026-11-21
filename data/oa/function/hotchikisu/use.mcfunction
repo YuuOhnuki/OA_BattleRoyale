@@ -11,9 +11,9 @@ function oa:combat/select_targets
 function oa:hotchikisu/range_fx
 playsound minecraft:block.anvil.land player @a[distance=..24] ~ ~ ~ 0.96 1.4
 tag @e[tag=oa.staple_range] remove oa.staple_range
-execute positioned ~ ~-1 ~ run tag @e[tag=oa.target,distance=..3] add oa.staple_range
-execute positioned ~ ~1 ~ run tag @e[tag=oa.target,distance=..3] add oa.staple_range
-tag @e[tag=oa.target,distance=..3] add oa.staple_range
+execute positioned ~ ~-1 ~ run tag @e[tag=oa.target,distance=..4] add oa.staple_range
+execute positioned ~ ~1 ~ run tag @e[tag=oa.target,distance=..4] add oa.staple_range
+tag @e[tag=oa.target,distance=..4] add oa.staple_range
 execute as @e[tag=oa.staple_range,nbt=!{Health:0.0f}] at @s run function oa:hotchikisu/root_target
 tag @e[tag=oa.staple_range] remove oa.staple_range
 function oa:combat/finish

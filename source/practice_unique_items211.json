@@ -1,0 +1,84 @@
+{
+  "1": {
+    "id": "minecraft:carrot_on_a_stick",
+    "count": 1,
+    "components": {
+      "minecraft:item_model": "oa:pichipichi"
+    }
+  },
+  "2": {
+    "id": "minecraft:carrot_on_a_stick",
+    "count": 1,
+    "components": {
+      "minecraft:item_model": "oa:yuua"
+    }
+  },
+  "3": {
+    "id": "minecraft:carrot_on_a_stick",
+    "count": 1,
+    "components": {
+      "minecraft:item_model": "oa:yuttari"
+    }
+  },
+  "4": {
+    "id": "minecraft:carrot_on_a_stick",
+    "count": 1,
+    "components": {
+      "minecraft:item_model": "oa:killing"
+    }
+  },
+  "5": {
+    "id": "minecraft:carrot_on_a_stick",
+    "count": 1,
+    "components": {
+      "minecraft:item_model": "oa:raji"
+    }
+  },
+  "6": {
+    "id": "minecraft:carrot_on_a_stick",
+    "count": 1,
+    "components": {
+      "minecraft:item_model": "oa:komame"
+    }
+  },
+  "7": {
+    "id": "minecraft:carrot_on_a_stick",
+    "count": 1,
+    "components": {
+      "minecraft:item_model": "oa:nero"
+    }
+  },
+  "8": {
+    "id": "minecraft:totem_of_undying",
+    "count": 1,
+    "components": {
+      "minecraft:item_model": "oa:yu"
+    }
+  },
+  "9": {
+    "id": "minecraft:carrot_on_a_stick",
+    "count": 1,
+    "components": {
+      "minecraft:item_model": "oa:hotchikisu"
+    }
+  },
+  "10": {
+    "id": "minecraft:carrot_on_a_stick",
+    "count": 1,
+    "components": {
+      "minecraft:item_model": "oa:tayayuyu"
+    }
+  },
+  "11": {
+    "id": "minecraft:fire_charge",
+    "count": 1,
+    "components": {}
+  },
+  "12": {
+    "id": "minecraft:carrot_on_a_stick",
+    "count": 1,
+    "components": {
+      "minecraft:item_model": "oa:itori"
+    }
+  }
+}

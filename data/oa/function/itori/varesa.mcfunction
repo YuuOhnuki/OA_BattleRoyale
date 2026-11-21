@@ -2,7 +2,7 @@ execute store result score #i_divesize oa.tmp run attribute @s minecraft:scale g
 execute if score #i_divesize oa.tmp matches 1001.. run return run scoreboard players set #i_cast_ok oa.tmp 0
 tellraw @s {"text": "ヴァレサ：シャイニングヴェント！", "color": "light_purple"}
 function oa:itori/cast_begin
-execute as @e[tag=oa.target,distance=5.01..] run tag @s remove oa.target
+execute as @e[tag=oa.target,distance=8.01..] run tag @s remove oa.target
 execute if entity @e[tag=oa.target] at @e[tag=oa.target,sort=nearest,limit=1] run function oa:itori/dive_marker
 execute unless entity @e[tag=oa.target] rotated ~ 0 positioned ^ ^ ^2 run function oa:itori/dive_marker
 function oa:itori/cast_end

@@ -21,7 +21,7 @@
                   "br_heal": true,
                   "br_heal_kind": 1,
                   "medical_v170": true,
-                  "medical_text208": true
+                  "medical_text211": true
                 },
                 "minecraft:food": {
                   "nutrition": 0,
@@ -38,7 +38,7 @@
                       "effects": [
                         {
                           "id": "minecraft:regeneration",
-                          "duration": 3,
+                          "duration": 6,
                           "amplifier": 5,
                           "show_particles": false,
                           "show_icon": false
@@ -76,7 +76,7 @@
                         "font": "oa:icons"
                       },
                       {
-                        "text": "×1.5",
+                        "text": "×3",
                         "color": "white",
                         "italic": false
                       },

@@ -19,7 +19,7 @@
                 "bold": true
               },
               {
-                "text": "展示の武器を右クリックすると\n持ち物へ直接入ります。\n空きが必要です。\n\n",
+                "text": "鳥居の北の武器庫で、展示の\n武器を右クリックすると持ち物\nへ直接入ります。\n\n",
                 "color": "black"
               },
               {
@@ -197,7 +197,7 @@
     },
     "minecraft:custom_data": {
       "oa_practice_book": true,
-      "practice_book_v209": true
+      "practice_book_v211": true
     }
   }
 }

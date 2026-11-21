@@ -120,7 +120,7 @@ for key,(name,use) in MEDICINE.items():
  # Fresh loot and refreshed inventory items must have identical data, including
  # the migration flag. A flag added only after pickup prevents stacking.
  comp['minecraft:custom_data']={k:v for k,v in comp['minecraft:custom_data'].items() if not re.fullmatch(r'medical_text\d+',k)}
- comp['minecraft:custom_data']['medical_text208']=True
+ comp['minecraft:custom_data']['medical_text211']=True
  med_components[key]=copy.deepcopy(comp)
  jwrite(f,{'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':comp}]})
  reference += [f'- **{name}**：'+re.sub(r'([0-9]+(?:\.[0-9]+)?)HP',lambda m:f'♥×{float(m[1])/2:g}',use)]
@@ -130,10 +130,26 @@ def refresh_loot(node):
  elif isinstance(node,dict):
   c=node.get('components',{});data=c.get('minecraft:custom_data',{});key={1:'heal1',2:'heal2'}.get(data.get('br_heal_kind')) or data.get('oa_buff')
   if key in MEDICINE:c.update(copy.deepcopy(med_components[key]))
-  if data.get('oa_furoball'):c['minecraft:custom_name']=named(WEAPONS[-1]);c['minecraft:lore']=lore(WEAPONS[-1])
+  if data.get('oa_furoball'):
+   c['minecraft:custom_name']=named(WEAPONS[-1]);c['minecraft:lore']=lore(WEAPONS[-1])
+   # 1.9.211: 持ち物の更新（inventory/text_refresh の furo_lore209）と同じ目印を最初から付ける。付いていないと拾ったあとに書き換わり重ならない
+   data['furo_lore182']=True;data['furo_lore209']=True;data['furo_stack1927']=True
   for n in node.values():refresh_loot(n)
+BAT_VISUAL=json.loads((D/'item_modifier/bat_visual.json').read_text(encoding='utf-8'))['functions']
+def bat_parity(node):
+ # 1.9.211: 木のバットは持つと oa:bat_visual で書き換わっていた（目印 oa_bat_v151）。ドロップ表でも最後に同じ modifier を通す
+ if isinstance(node,list):
+  for n in node:bat_parity(n)
+ elif isinstance(node,dict):
+  for key in ('modifier','functions'):
+   fs=node.get(key)
+   if isinstance(fs,list) and any(f.get('type')=='minecraft:set_components' and f.get('components',{}).get('minecraft:custom_data',{}).get('oa_normal')=='bat' for f in fs if isinstance(f,dict)):
+    # 26.3 には loot function の minecraft:reference がない（起動しなくなる）。oa:bat_visual の中身をそのまま写す
+    fs[:]=[f for f in fs if not (isinstance(f,dict) and f.get('type')=='minecraft:reference')]
+    if not any(f.get('type')=='minecraft:set_custom_data' and 'oa_bat_v151' in f.get('tag','') for f in fs):fs.extend(copy.deepcopy(BAT_VISUAL))
+  for n in node.values():bat_parity(n)
 for f in (D/'loot_table').rglob('*.json'):
- before=f.read_text(encoding='utf-8');j=json.loads(before);refresh_loot(j)
+ before=f.read_text(encoding='utf-8');j=json.loads(before);refresh_loot(j);bat_parity(j)
  if json.loads(before)!=j:jwrite(f,j)
 reference=[re.sub(r'（内部[0-9.]+ポイント）','',line) for line in reference]
 write(R/'WEAPONS_JA.md','\n'.join(reference)+'\n')

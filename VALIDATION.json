@@ -1,5 +1,5 @@
 {
-  "version": "1.9.210",
-  "checks": "static JSON/functions/commands/versions; no player nbt Health/OnGround checks outside fallback/mob paths",
-  "runtime": "test server startup only; no match tests; death/elimination/particles unverified in game"
+  "version": "1.9.211",
+  "checks": "static; loot item parity on test server (tools/item_parity.py)",
+  "runtime": "test server startup only; no match tests; kill log, practice armory, itori skills unverified in game"
 }

@@ -305,40 +305,28 @@ fill ~3 ~ ~13 ~15 ~ ~13 minecraft:mossy_stone_bricks
 fill ~-15 ~ ~21 ~-3 ~ ~21 minecraft:mossy_stone_bricks
 fill ~3 ~ ~21 ~15 ~ ~21 minecraft:mossy_stone_bricks
 setblock ~-13 ~1 ~15 minecraft:chiseled_stone_bricks
-summon minecraft:text_display ~-12.5 ~3.5 ~15.5 {"Tags": ["oa.practice_weapon_1"], "text": {"text":"ぴちぴち","color":"#2529ff","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~-9 ~1 ~15 minecraft:chiseled_stone_bricks
-summon minecraft:text_display ~-8.5 ~3.5 ~15.5 {"Tags": ["oa.practice_weapon_2"], "text": {"text":"ゆうあ","color":"#fdc5f9","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~-5 ~1 ~15 minecraft:chiseled_stone_bricks
-summon minecraft:text_display ~-4.5 ~3.5 ~15.5 {"Tags": ["oa.practice_weapon_3"], "text": {"text":"ゆったり","color":"#65fff0","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~5 ~1 ~15 minecraft:chiseled_stone_bricks
-summon minecraft:text_display ~5.5 ~3.5 ~15.5 {"Tags": ["oa.practice_weapon_4"], "text": {"text":"キリング","color":"#8d59ff","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~9 ~1 ~15 minecraft:chiseled_stone_bricks
-summon minecraft:text_display ~9.5 ~3.5 ~15.5 {"Tags": ["oa.practice_weapon_5"], "text": {"text":"らじ","color":"#ffad29","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~13 ~1 ~15 minecraft:chiseled_stone_bricks
-summon minecraft:text_display ~13.5 ~3.5 ~15.5 {"Tags": ["oa.practice_weapon_6"], "text": {"text":"こまめ","color":"#51c5ff","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~-13 ~1 ~19 minecraft:chiseled_stone_bricks
-summon minecraft:text_display ~-12.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_7"], "text": {"text":"ネロノワール","color":"#B5B5C2","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~-9 ~1 ~19 minecraft:chiseled_stone_bricks
-summon minecraft:text_display ~-8.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_8"], "text": {"text":"ゆー","color":"#55C985","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~-5 ~1 ~19 minecraft:chiseled_stone_bricks
-summon minecraft:text_display ~-4.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_9"], "text": {"text":"ほちきす","color":"#851c1c","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~5 ~1 ~19 minecraft:chiseled_stone_bricks
-summon minecraft:text_display ~5.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_10"], "text": {"text":"たやゆゆ","color":"#12a88f","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~9 ~1 ~19 minecraft:chiseled_stone_bricks
-summon minecraft:text_display ~9.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_11"], "text": {"text":"ふろっしゅ：ふろボール","color":"#58B5DD","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~13 ~1 ~19 minecraft:chiseled_stone_bricks
-summon minecraft:text_display ~13.5 ~3.5 ~19.5 {"Tags": ["oa.practice_weapon_12"], "text": {"text":"いとり","color":"#006dff","italic":false,"bold":true}, "billboard": "center", "shadow": true, "view_range": 0.5}
 
 setblock ~-18 ~ ~-8 minecraft:lily_pad
 setblock ~-11 ~ ~-8 minecraft:lily_pad
@@ -398,18 +386,6 @@ fill ~19 ~1 ~-19 ~20 ~1 ~-18 minecraft:mossy_cobblestone
 setblock ~19 ~2 ~-19 minecraft:andesite_slab
 fill ~8 ~1 ~7 ~9 ~1 ~8 minecraft:mossy_cobblestone
 setblock ~8 ~2 ~7 minecraft:andesite_slab
-summon minecraft:item_display ~-12.5 ~2.42 ~15.5 {"Tags":["oa.practice_showcase"],"item":{"id":"minecraft:carrot_on_a_stick","count":1,"components":{"minecraft:item_model":"oa:pichipichi"}},"item_display":"none","billboard":"center","view_range":0.55,"transformation":{"translation":[0.0,0.0,0.0],"left_rotation":[0.0,0.0,0.0,1.0],"scale":[1.0,1.0,1.0],"right_rotation":[0.0,0.0,0.0,1.0]}}
-summon minecraft:item_display ~-8.5 ~2.42 ~15.5 {"Tags":["oa.practice_showcase"],"item":{"id":"minecraft:carrot_on_a_stick","count":1,"components":{"minecraft:item_model":"oa:yuua"}},"item_display":"none","billboard":"center","view_range":0.55,"transformation":{"translation":[0.0,-0.0625,0.0],"left_rotation":[0.0,0.0,0.0,1.0],"scale":[1.0,1.0,1.0],"right_rotation":[0.0,0.0,0.0,1.0]}}
-summon minecraft:item_display ~-4.5 ~2.42 ~15.5 {"Tags":["oa.practice_showcase"],"item":{"id":"minecraft:carrot_on_a_stick","count":1,"components":{"minecraft:item_model":"oa:yuttari"}},"item_display":"none","billboard":"center","view_range":0.55,"transformation":{"translation":[-0.0,0.0,-0.0],"left_rotation":[0.0,1.0,0.0,0.0],"scale":[1.0,1.0,1.0],"right_rotation":[0.0,0.0,0.0,1.0]}}
-summon minecraft:item_display ~5.5 ~2.42 ~15.5 {"Tags":["oa.practice_showcase"],"item":{"id":"minecraft:carrot_on_a_stick","count":1,"components":{"minecraft:item_model":"oa:killing"}},"item_display":"none","billboard":"center","view_range":0.55,"transformation":{"translation":[-0.0,0.0,-0.0141],"left_rotation":[0.0,1.0,0.0,0.0],"scale":[1.0,1.0,1.0],"right_rotation":[0.0,0.0,0.0,1.0]}}
-summon minecraft:item_display ~9.5 ~2.42 ~15.5 {"Tags":["oa.practice_showcase"],"item":{"id":"minecraft:carrot_on_a_stick","count":1,"components":{"minecraft:item_model":"oa:raji"}},"item_display":"none","billboard":"center","view_range":0.55,"transformation":{"translation":[-0.0,0.0719,0.0453],"left_rotation":[0.0,1.0,0.0,0.0],"scale":[1.0,1.0,1.0],"right_rotation":[0.0,0.0,0.0,1.0]}}
-summon minecraft:item_display ~13.5 ~2.42 ~15.5 {"Tags":["oa.practice_showcase"],"item":{"id":"minecraft:carrot_on_a_stick","count":1,"components":{"minecraft:item_model":"oa:komame"}},"item_display":"none","billboard":"center","view_range":0.55,"transformation":{"translation":[0.0,0.0062,0.0],"left_rotation":[0.0,0.0,0.0,1.0],"scale":[1.0,1.0,1.0],"right_rotation":[0.0,0.0,0.0,1.0]}}
-summon minecraft:item_display ~-12.5 ~2.42 ~19.5 {"Tags":["oa.practice_showcase"],"item":{"id":"minecraft:carrot_on_a_stick","count":1,"components":{"minecraft:item_model":"oa:nero"}},"item_display":"none","billboard":"center","view_range":0.55,"transformation":{"translation":[-0.1234,0.0312,0.0],"left_rotation":[0.0,0.0,0.0,1.0],"scale":[1.0,1.0,1.0],"right_rotation":[0.0,0.0,0.0,1.0]}}
-summon minecraft:item_display ~-8.5 ~2.42 ~19.5 {"Tags":["oa.practice_showcase"],"item":{"id":"minecraft:totem_of_undying","count":1,"components":{"minecraft:item_model":"oa:yu"}},"item_display":"none","billboard":"center","view_range":0.55,"transformation":{"translation":[0.0,-0.0962,-0.0047],"left_rotation":[0.0,0.0,0.0,1.0],"scale":[1.0,1.0,1.0],"right_rotation":[0.0,0.0,0.0,1.0]}}
-summon minecraft:item_display ~-4.5 ~2.42 ~19.5 {"Tags":["oa.practice_showcase"],"item":{"id":"minecraft:carrot_on_a_stick","count":1,"components":{"minecraft:item_model":"oa:hotchikisu"}},"item_display":"none","billboard":"center","view_range":0.55,"transformation":{"translation":[0.0266,0.2016,0.0],"left_rotation":[0.0,0.0,0.0,1.0],"scale":[1.0,1.0,1.0],"right_rotation":[0.0,0.0,0.0,1.0]}}
-summon minecraft:item_display ~5.5 ~2.42 ~19.5 {"Tags":["oa.practice_showcase"],"item":{"id":"minecraft:carrot_on_a_stick","count":1,"components":{"minecraft:item_model":"oa:tayayuyu"}},"item_display":"none","billboard":"center","view_range":0.55,"transformation":{"translation":[0.0,0.0,0.0],"left_rotation":[0.0,1.0,0.0,0.0],"scale":[1.0,1.0,1.0],"right_rotation":[0.0,0.0,0.0,1.0]}}
-summon minecraft:item_display ~9.5 ~2.42 ~19.5 {"Tags":["oa.practice_showcase"],"item":{"id":"minecraft:fire_charge","count":1,"components":{}},"item_display":"none","billboard":"center","view_range":0.55,"transformation":{"translation":[0.0,0.0,0.0],"left_rotation":[0.0,0.0,0.0,1.0],"scale":[1.0,1.0,1.0],"right_rotation":[0.0,0.0,0.0,1.0]}}
-summon minecraft:item_display ~13.5 ~2.42 ~19.5 {"Tags":["oa.practice_showcase"],"item":{"id":"minecraft:carrot_on_a_stick","count":1,"components":{"minecraft:item_model":"oa:itori"}},"item_display":"none","billboard":"center","view_range":0.55,"transformation":{"translation":[0.0,0.0,0.0],"left_rotation":[0.0,0.0,0.0,1.0],"scale":[1.0,1.0,1.0],"right_rotation":[0.0,0.0,0.0,1.0]}}
 fill ~-47 ~1 ~-34 ~-47 ~5 ~-34 minecraft:spruce_log
 fill ~-49 ~4 ~-35 ~-45 ~4 ~-33 minecraft:spruce_leaves[persistent=true]
 fill ~-48 ~5 ~-36 ~-46 ~5 ~-33 minecraft:spruce_leaves[persistent=true]
