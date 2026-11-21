@@ -6,7 +6,6 @@ execute unless score #gacha_test_n oa.tmp matches 1..16 run return run tellraw @
 scoreboard players operation #gacha_roll oa.tmp = #gacha_test_n oa.tmp
 scoreboard players operation #gacha_caster oa.tmp = @s oa.id
 scoreboard players add #serial oa.serial 1
-scoreboard players operation #gacha_event oa.tmp = #serial oa.serial
 tellraw @a[tag=br.playing] {text:"（テスト：管理者がたやゆゆのガチャを指定して実行）",color:"dark_gray"}
 execute as @a[tag=br.playing] at @s run playsound minecraft:block.end_portal.spawn player @s ~ ~ ~ 1.2 1.5
 function oa:tayayuyu/apply

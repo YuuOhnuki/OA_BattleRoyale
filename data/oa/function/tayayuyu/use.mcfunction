@@ -10,7 +10,6 @@ execute if score @s br.gacha matches 3 run function oa:ach/give {id:"tayayuyu_ga
 execute if score @s br.gacha matches 5 run function oa:ach/give {id:"tayayuyu_master",name:"たやゆゆの申し子"}
 scoreboard players operation #gacha_caster oa.tmp = @s oa.id
 scoreboard players add #serial oa.serial 1
-scoreboard players operation #gacha_event oa.tmp = #serial oa.serial
 function oa:tayayuyu/roll
 # 1.9.146: 距離で聞こえなくならないよう、各参加者の位置で鳴らして全員に聞こえるようにする
 execute as @a[tag=br.playing] at @s run playsound minecraft:block.end_portal.spawn player @s ~ ~ ~ 1.2 1.5

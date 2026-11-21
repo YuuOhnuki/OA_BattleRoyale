@@ -5,8 +5,6 @@ function oa:disaster/combo/reset
 scoreboard players set #dis_warn br.tmp 0
 scoreboard players set #dis_left br.tmp 0
 scoreboard players set #dis_was br.tmp 0
-scoreboard players set #dis_phase br.tmp 0
-tag @a remove br.dis_msg
 function oa:disaster/clear_marks
 function oa:disaster/mobs_kill
 execute as @a run function oa:disaster/player_clear

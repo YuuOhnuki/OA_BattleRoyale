@@ -1,1 +1,0 @@
-$summon minecraft:pig ~ ~0.4 ~ {Tags:["oa.dis_mob","oa.dis_pig"],DeathLootTable:"minecraft:empty",Motion:[$(mx)d,0.35d,$(mz)d],attributes:[{id:"minecraft:max_health",base:100.0d},{id:"minecraft:movement_speed",base:0.36d}],Health:100.0f}

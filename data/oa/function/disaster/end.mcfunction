@@ -2,8 +2,6 @@
 tellraw @a[tag=br.playing] {text:"✔ 災害がすべて収まりました",color:"green"}
 execute if score #dc_on br.tmp matches 1 run function oa:disaster/combo/end
 scoreboard players set #dis_left br.tmp 0
-scoreboard players set #dis_phase br.tmp 0
-tag @a remove br.dis_msg
 function oa:disaster/clear_marks
 function oa:disaster/mobs_kill
 function oa:disaster/cooldown with storage oa:disaster cfg

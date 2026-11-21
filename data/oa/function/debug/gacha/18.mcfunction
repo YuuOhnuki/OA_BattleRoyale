@@ -1,1 +1,0 @@
-function oa:tayayuyu/stiff

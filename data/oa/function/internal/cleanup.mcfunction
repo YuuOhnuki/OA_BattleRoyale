@@ -24,10 +24,7 @@ execute store result storage oa:args id int 1 run scoreboard players get @s oa.i
 function oa:internal/clear_owned with storage oa:args
 tag @s remove oa.night
 
-scoreboard players set @s oa.water 0
-scoreboard players set @s oa.wdelay 0
 scoreboard players set @s oa.noise 0
-tag @s remove oa.water_jump
 execute if entity @s[tag=oa.external_glow] unless entity @s[tag=oa.gacha_glow] run effect clear @s minecraft:glowing
 tag @s remove oa.external_glow
 
@@ -37,14 +34,11 @@ scoreboard players set @s oa.wait 0
 execute if entity @s[tag=oa.external_weak] run effect clear @s minecraft:weakness
 tag @s remove oa.external_weak
 
-scoreboard players set @s oa.shade 0
 
 execute if entity @s[tag=oa.curse_blind] run stopsound @s player minecraft:entity.warden.ambient
 execute if entity @s[tag=oa.curse_blind] unless entity @s[tag=oa.gacha_mood] run effect clear @s minecraft:blindness
 tag @s remove oa.curse_blind
 scoreboard players set @s oa.radar 0
-scoreboard players set @s oa.rindex 0
-scoreboard players set @s oa.rclock 0
 tag @s remove oa.radar_viewer
 tag @s remove oa.radar_target
 

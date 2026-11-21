@@ -7,4 +7,3 @@ execute if score #dis_warn br.tmp matches 1 as @a[tag=br.playing] at @s run play
 execute if score #dis_warn br.tmp matches 1.. run return 0
 function oa:disaster/start_planned
 function oa:disaster/count
-scoreboard players set #dis_t br.tmp 0

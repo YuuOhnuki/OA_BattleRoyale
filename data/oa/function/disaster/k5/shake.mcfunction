@@ -15,6 +15,5 @@ scoreboard players set @s br.qwalk 0
 scoreboard players set @s br.qspr 0
 scoreboard players set @s br.qsneak 0
 scoreboard players set @s br.qjump 0
-tag @s add br.dis_msg
 # 開始から最初の2秒は猶予（反応と通信の遅れのため）。#dis_left は開始時10で、1秒ごとに減る
 execute if score #q_moved br.tmp matches 1 if score #dis_left br.tmp matches ..7 run function oa:disaster/dmg {amount:3,type:"minecraft:fall"}

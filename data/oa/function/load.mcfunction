@@ -27,17 +27,13 @@ scoreboard players add #id oa.id 0
 scoreboard players add #serial oa.serial 0
 scoreboard players add #epoch oa.epoch 1
 scoreboard objectives add oa.steps dummy
-scoreboard objectives add oa.life dummy
 scoreboard objectives add oa.hop dummy
 scoreboard objectives add oa.push dummy
 scoreboard objectives add oa.blocked dummy
-scoreboard objectives add oa.water dummy
-scoreboard objectives add oa.wdelay dummy
 scoreboard objectives add oa.noise dummy
 function oa:config
 # Installation never opts players in, changes game modes, or edits gamerules.
 
-scoreboard objectives add oa.sonic dummy
 scoreboard objectives add oa.back dummy
 
 scoreboard objectives add br.state dummy
@@ -79,7 +75,6 @@ scoreboard players add #vclock br.tmp 0
 
 scoreboard players set #ten br.tmp 10
 
-scoreboard objectives add br.member dummy
 scoreboard players set #60 br.tmp 60
 
 function oa:br/ui/load_names
@@ -93,9 +88,7 @@ scoreboard objectives add br.mcoal minecraft.mined:minecraft.coal_ore
 scoreboard objectives add br.mdcoal minecraft.mined:minecraft.deepslate_coal_ore
 scoreboard objectives add br.mred minecraft.mined:minecraft.redstone_ore
 scoreboard objectives add br.mdred minecraft.mined:minecraft.deepslate_redstone_ore
-scoreboard players add #refill br.flag 0
 
-scoreboard objectives add oa.shade dummy
 
 scoreboard objectives add oa.ktimer dummy
 
@@ -104,8 +97,6 @@ scoreboard objectives add oa.hoparc dummy
 scoreboard objectives add br.open minecraft.custom:minecraft.open_chest
 
 scoreboard objectives add oa.radar trigger
-scoreboard objectives add oa.rindex dummy
-scoreboard objectives add oa.rclock dummy
 
 scoreboard objectives add oa.jump minecraft.custom:minecraft.jump
 scoreboard objectives add oa.hcool dummy
@@ -116,7 +107,6 @@ scoreboard objectives add oa.notice dummy
 
 scoreboard objectives add oa.kpush dummy
 
-scoreboard objectives add oa.kby dummy
 
 scoreboard objectives add oa.hlift dummy
 
@@ -213,9 +203,7 @@ scoreboard objectives add oa.fowner dummy
 
 scoreboard objectives add oa.fteam dummy
 
-scoreboard objectives add oa.ftime dummy
 
-scoreboard objectives add oa.fup dummy
 
 scoreboard objectives add oa.lobby trigger
 
@@ -254,21 +242,18 @@ scoreboard objectives add oa.db_snow minecraft.used:minecraft.snowball
 scoreboard objectives add oa.db_egg minecraft.used:minecraft.egg
 
 scoreboard objectives add oa.gallery_id dummy
-scoreboard objectives add oa.exbtn dummy
 scoreboard objectives add oa.exread dummy
 
 scoreboard objectives add oa.gallery trigger
 
 scoreboard objectives add oa.fvel dummy
 # 1.9.186: ふろボールの打ち返し（ボールと当たり判定を結ぶ番号、当たり判定の残り tick）
-scoreboard objectives add oa.fid dummy
 # 1.9.186: ネロの印が前に段差を上がってからの回数
 scoreboard objectives add oa.mclimb dummy
 # 1.9.187: ぴちぴちの落下ダメージ無効を、着地してから外すまでの tick
 scoreboard objectives add oa.ffall dummy
 # 1.9.187: ネロの印の目印の残り tick
 scoreboard objectives add oa.mvis dummy
-scoreboard objectives add oa.fhb dummy
 scoreboard players set #f_accel oa.tmp 187500
 scoreboard players set #f_air95 oa.tmp 95
 scoreboard players set #f_air100 oa.tmp 100
@@ -304,14 +289,12 @@ scoreboard objectives add oa.ex_prev dummy
 scoreboard objectives add oa.ex_aprev dummy
 
 scoreboard objectives add oa.i_round dummy
-scoreboard objectives add oa.i_uses dummy
 scoreboard objectives add oa.i_unlock dummy
 scoreboard objectives add oa.i_next dummy
 scoreboard objectives add oa.i_cycle dummy
 scoreboard objectives add oa.i_lock dummy
 scoreboard objectives add oa.i_charge dummy
 scoreboard objectives add oa.i_range dummy
-scoreboard objectives add oa.i_sub dummy
 scoreboard objectives add oa.i_stamp dummy
 scoreboard objectives add oa.i_shield dummy
 scoreboard objectives add oa.i_boost dummy
@@ -360,7 +343,6 @@ scoreboard objectives add oa.i_castround dummy
 scoreboard objectives add oa.i_casttime dummy
 execute as @a[tag=oa.itori_windup] run function oa:itori/windup_cancel
 
-scoreboard objectives add oa.i_held dummy
 
 scoreboard objectives add oa.i_flins dummy
 scoreboard objectives add oa.i_dive dummy
@@ -422,7 +404,6 @@ scoreboard objectives add oa.dps trigger
 scoreboard objectives add oa.spar trigger
 scoreboard objectives add oa.dpsb dummy
 scoreboard objectives add oa.dpst dummy
-scoreboard objectives add oa.sparko dummy
 team add oa_spar
 team modify oa_spar friendlyFire true
 team modify oa_spar collisionRule never
@@ -430,8 +411,6 @@ team modify oa_spar collisionRule never
 # 1.9.107: spectator camera, highlights, weapon mastery
 scoreboard objectives add oa.spec trigger
 scoreboard objectives add br.sp dummy
-scoreboard objectives add br.wkk dummy
-scoreboard objectives add br.wkc dummy
 scoreboard objectives add br.surv dummy
 scoreboard objectives add br.st_dist dummy
 scoreboard objectives add br.mqz minecraft.mined:minecraft.nether_quartz_ore
@@ -451,7 +430,6 @@ scoreboard objectives add br.qwalk minecraft.custom:minecraft.walk_one_cm
 scoreboard objectives add br.qspr minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add br.qsneak minecraft.custom:minecraft.crouch_one_cm
 scoreboard objectives add br.qjump minecraft.custom:minecraft.jump
-scoreboard players set #3 br.tmp 3
 function oa:ach/info
 # 1.9.173: 新しい実績の数と位置
 scoreboard objectives add br.a_y1k dummy

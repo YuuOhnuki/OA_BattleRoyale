@@ -27,13 +27,9 @@ advancement revoke @s only oa:yuua/struck
 tag @s remove oa.hat_victim
 tag @s remove oa.routed_damage
 
-scoreboard players set @s oa.water 0
-scoreboard players set @s oa.wdelay 0
 scoreboard players set @s oa.noise 0
-tag @s remove oa.water_jump
 execute if entity @s[tag=oa.external_glow] run effect clear @s minecraft:glowing
 tag @s remove oa.external_glow
 
-scoreboard players set @s oa.sonic 0
 
 function oa:furoball/clear_up

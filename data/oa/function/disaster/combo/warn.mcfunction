@@ -5,5 +5,4 @@ execute if score #dc_warn br.tmp matches 1 as @a[tag=br.playing] at @s run plays
 execute if score #dc_warn br.tmp matches 1.. run return 0
 function oa:disaster/start_planned
 function oa:disaster/count
-scoreboard players set #dis_t br.tmp 0
 tellraw @a[tag=br.playing] {text:"⚠ 災害コンボ発生！",color:"dark_red",bold:true}

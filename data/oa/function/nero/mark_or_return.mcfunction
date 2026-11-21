@@ -11,7 +11,6 @@ scoreboard players operation @e[tag=oa.anchor_new,limit=1] oa.id = @s oa.id
 scoreboard players operation @e[tag=oa.anchor_new,limit=1] oa.epoch = #epoch oa.epoch
 scoreboard players operation @e[tag=oa.anchor_new,limit=1] oa.steps = #flight oa.tmp
 scoreboard players set @e[tag=oa.anchor_new,limit=1] oa.mfx 40
-scoreboard players operation @e[tag=oa.anchor_new,limit=1] oa.life = #mark oa.mark
 # 1.9.187: 印の目印（光るエンダーアイ）。プラグインが本人以外から隠す（プラグインがないと全員に見える）。nero/mark_tick が印について動かす
 summon minecraft:item_display ~ ~1.2 ~ {Tags:["oa.nero_vis","oa.vis_new"],item:{id:"minecraft:ender_eye",count:1},billboard:"center",Glowing:1b,glow_color_override:11158783,brightness:{block:15,sky:15},teleport_duration:2,transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.6f,0.6f,0.6f]}}
 scoreboard players operation @e[type=minecraft:item_display,tag=oa.vis_new] oa.id = @s oa.id

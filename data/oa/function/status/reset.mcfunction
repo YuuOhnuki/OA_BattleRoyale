@@ -7,7 +7,6 @@ function oa:status/clear_carriers
 scoreboard players set @s oa.hoparc 0
 
 scoreboard players set @s oa.kpush 0
-scoreboard players set @s oa.kby 0
 
 scoreboard players set @s oa.hlift 0
 

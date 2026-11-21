@@ -5,9 +5,7 @@ execute if score #dis_warn br.tmp matches 1.. run function oa:disaster/warn
 execute if score #dc_warn br.tmp matches 1.. run function oa:disaster/combo/warn
 # 起きている災害をそれぞれ1秒進める
 function oa:disaster/count
-execute if score #dis_active br.tmp matches 1.. run function oa:disaster/phase
 execute if score #dis_active br.tmp matches 1.. run function oa:disaster/run_all
-execute if score #dis_active br.tmp matches 0 run scoreboard players set #dis_phase br.tmp 0
 function oa:disaster/fall_tick
 function oa:disaster/bar
 # すべて収まった

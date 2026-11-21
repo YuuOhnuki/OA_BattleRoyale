@@ -9,4 +9,3 @@ scoreboard players operation #fog_px br.tmp += #fog_pz br.tmp
 execute if score #fog_px br.tmp > #fog_r2 br.tmp run return 0
 effect give @s minecraft:poison 3 1 true
 function oa:disaster/dmg {amount:1,type:"minecraft:magic"}
-tag @s add br.dis_msg

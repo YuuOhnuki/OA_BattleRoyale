@@ -18,7 +18,6 @@ scoreboard objectives add tdm.guard dummy
 scoreboard objectives add tdm.armor dummy
 scoreboard objectives add tdm.type dummy
 scoreboard objectives add tdm.cool dummy
-scoreboard objectives add tdm.slot dummy
 scoreboard objectives add tdm.board dummy {text:"TDM | 5分間キル勝負",color:"gold"}
 scoreboard players add #game oa.game 0
 scoreboard players add #active tdm.sys 0

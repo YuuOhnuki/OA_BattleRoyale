@@ -672,7 +672,8 @@ for z0 in range(0,N,32):
      end=xx
      while end+1<w and arr[yy,zz,end+1]==WATER:end+=1
      watercmd.append(f'fill ~{x+xx} ~{yy+LOW} ~{z+zz} ~{x+end} ~{yy+LOW} ~{z+zz} minecraft:water');xx=end+1
-  fn(f'tiles/water/{idx}','\n'.join(watercmd) if watercmd else '# No water in this tile.')
+  if watercmd:fn(f'tiles/water/{idx}','\n'.join(watercmd))
+  else:(F/f'tiles/water/{idx}.mcfunction').unlink(missing_ok=True)
   pre=[]
   if not watercmd:pre.append('execute if score #mode oa.map2 matches 2 run return run function oa_map2:job/skip_water')
   pre += [f'execute store success score #had{i} oa.map2 run forceload query ~{xx} ~{zz}' for i,(xx,zz) in enumerate(points)]
@@ -706,7 +707,7 @@ for z0 in range(0,N,32):
     place.append(f'fillbiome ~{xx} ~-20 ~{zz} ~{xx+ww-1} ~8 ~{zz+dd-1} minecraft:{biome}')
   fn(f'tiles/place/{idx}','\n'.join(place))
   lc=[q for q in chests if x<=q[0]<=x1 and z<=q[2]<=z1];lo=[q for q in ores if x<=q[0]<=x1 and z<=q[2]<=z1]
-  waterapply=[f'function oa_map2:tiles/water/{idx}',f'function oa_map2:tiles/release/{idx}','scoreboard players add #tile oa.map2 1','execute store result storage oa_map2:args tile int 1 run scoreboard players get #tile oa.map2','execute if score #tile oa.map2 matches 100.. run return run function oa_map2:job/finish','schedule function oa_map2:job/next 1t replace'];fn(f'tiles/water_apply/{idx}','\n'.join(waterapply))
+  waterapply=([f'function oa_map2:tiles/water/{idx}'] if watercmd else [])+[f'function oa_map2:tiles/release/{idx}','scoreboard players add #tile oa.map2 1','execute store result storage oa_map2:args tile int 1 run scoreboard players get #tile oa.map2','execute if score #tile oa.map2 matches 100.. run return run function oa_map2:job/finish','schedule function oa_map2:job/next 1t replace'];fn(f'tiles/water_apply/{idx}','\n'.join(waterapply))
   apply=[f'execute if score #mode oa.map2 matches 2 run return run function oa_map2:tiles/water_apply/{idx}',f'execute if score #mode oa.map2 matches 0 run function oa_map2:tiles/place/{idx}','execute if score #state oa.map2 matches 2 run return 0',f'execute positioned ~{x} ~-20 ~{z} run kill @e[type=minecraft:marker,tag=br.chest,dx={w-1},dy=20,dz={d-1}]',f'execute positioned ~{x} ~-20 ~{z} run kill @e[type=minecraft:marker,tag=br.ore,dx={w-1},dy=20,dz={d-1}]','scoreboard players set #stage oa.map2 2',f'scoreboard players set #expectedc oa.map2 {len(lc)}',f'scoreboard players set #expectedo oa.map2 {len(lo)}','scoreboard players set #localc oa.map2 0','scoreboard players set #localo oa.map2 0']
   for cx,cy,cz,k in lc:
    apply.append(f'execute positioned ~{cx} ~{cy} ~{cz} if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa_map2:register/chest')

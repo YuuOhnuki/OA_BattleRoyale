@@ -3,7 +3,6 @@ execute unless entity @s[tag=oa.db_free_cd] if score @s oa.cd matches 1.. run re
 scoreboard players set @s oa.cd 900
 scoreboard players operation #gacha_caster oa.tmp = @s oa.id
 scoreboard players add #serial oa.serial 1
-scoreboard players operation #gacha_event oa.tmp = #serial oa.serial
 # 1.9.191: 試合と同じ抽選（大当たり1%）
 function oa:tayayuyu/roll
 function oa:combat/select_targets

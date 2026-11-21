@@ -1,6 +1,6 @@
 {
-  "version": "1.9.215",
-  "checks": "static release check, medical component/loot parity, Gradle build",
-  "runtime": "Paper 26.3 startup; six match scenarios; all 77 new checks passed; corrected unrelated relic fixture then ground-solo replay 131 passed, 0 failed. See ../dist/validation-1.9.215.json.",
+  "version": "1.9.216",
+  "checks": "static release check; macro/Java callback function reachability and regression test; unchanged water geometry/release/progression; final test-data/source parity",
+  "runtime": "Paper 26.3 startup; six matches 307 passed; after final dead-write/empty-function changes ground-solo replay 131 passed; radar/config 13 passed, all 0 failed",
   "unverified": "human input and visuals; extra reload skipped; production awaiting manual apply"
 }

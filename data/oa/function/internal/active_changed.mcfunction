@@ -27,9 +27,7 @@ function oa:internal/clear_owned with storage oa:args
 execute if score @s oa.kind matches 5 if items entity @s armor.head *[minecraft:custom_data~{oa:{kind:5}}] run attribute @s minecraft:movement_speed modifier add oa:curse 1.75 add_multiplied_total
 tag @s remove oa.night
 
-scoreboard players set @s oa.sonic 0
 
-scoreboard players set @s oa.shade 0
 
 execute if entity @s[tag=oa.curse_blind] run stopsound @s player minecraft:entity.warden.ambient
 execute if entity @s[tag=oa.curse_blind] unless entity @s[tag=oa.gacha_mood] run effect clear @s minecraft:blindness

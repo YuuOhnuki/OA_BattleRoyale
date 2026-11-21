@@ -1,4 +1,3 @@
-function oa:map/internal/tiles/water/68
 function oa:map/internal/tiles/release/68
 scoreboard players add #tile oa.map2 1
 execute store result storage oa_map2:args tile int 1 run scoreboard players get #tile oa.map2

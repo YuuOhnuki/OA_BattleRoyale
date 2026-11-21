@@ -6,4 +6,3 @@ function oa:disaster/fall_off
 scoreboard players set @s br.dfall 0
 scoreboard players set @s br.dpig 0
 tag @s remove oa.dis_air
-tag @s remove br.dis_msg

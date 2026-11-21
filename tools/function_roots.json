@@ -1,0 +1,22 @@
+{
+  "oa:br/border/setup": "Manual border backup registration",
+  "oa:br/border/restore": "Manual macro for restoring saved border settings",
+  "oa:br/cleanup/run": "Manual cleanup entry point",
+  "oa:br/lobby/create": "Legacy lobby creation alias",
+  "oa:br/loot/register_chest": "Manual chest registration",
+  "oa:br/loot/unregister_chest": "Manual chest unregistration",
+  "oa:br/mining/register": "Manual ore registration",
+  "oa:br/mining/register_at": "Legacy ore registration alias",
+  "oa:br/mining/register_look": "Manual ore registration by line of sight",
+  "oa:br/mining/unregister": "Manual ore unregistration",
+  "oa:br/world/restore": "Manual world-settings restoration",
+  "oa:br/zone/preview": "Manual border-preview guidance",
+  "oa:lazi/automatic": "Legacy weapon command alias",
+  "oa:raji/sonic": "Legacy lazi weapon name alias",
+  "oa:raji/tick": "Legacy lazi weapon name alias",
+  "oa:lobby/rebuild_registered": "Legacy registered-lobby rebuild alias",
+  "oa:lobby/terminal/set_team": "Public team-selection macro and old action compatibility",
+  "oa:lobby/watch_warp": "Stored lobby-position teleport macro",
+  "oa:map/internal/register/ore_5": "Legacy nether ore marker ID 5",
+  "oa:map/internal/register/ore_6": "Legacy nether ore marker ID 6"
+}
