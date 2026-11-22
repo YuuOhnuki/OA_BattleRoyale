@@ -27,6 +27,7 @@ function oa:nero/save
 function oa:nero/save_owned with storage oa:args
 scoreboard players operation @s oa.mark = #mark oa.mark
 tag @e[tag=oa.anchor_new] remove oa.anchor_new
-playsound minecraft:block.respawn_anchor.charge player @a[distance=..24] ~ ~ ~ 0.84 1.4
+# 1.9.224：スキルの音は本人だけ（デコイのデバフ・テレポートの音はほかの人にも）
+playsound minecraft:block.respawn_anchor.charge player @s ~ ~ ~ 0.84 1.4
 # 1.9.186: 印の粒は本人にだけ
 particle minecraft:reverse_portal ~ ~1 ~ 0.3 0.5 0.3 0.03 14 normal @s

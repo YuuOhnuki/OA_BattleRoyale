@@ -21,8 +21,8 @@ execute if score @s br.suptype matches 3 run loot spawn ~ ~0.5 ~ loot oa:br/ches
 execute if score @s br.suptype matches 3 run loot spawn ~ ~0.5 ~ loot oa:br/heal
 execute if score @s br.suptype matches 3 run loot spawn ~ ~0.5 ~ loot oa:br/heal
 execute if score @s br.suptype matches 1..3 run function oa:br/supply/unique
-# 1.9.222：1/3 で「ゆー：オーバーワーク」も1個（固有武器の1個とは別枠）
-execute store result score #sup_yu br.tmp run random value 1..3
+# 1.9.222：「ゆー：オーバーワーク」も1個（固有武器の1個とは別枠）。1.9.224 で 1/3→1/4
+execute store result score #sup_yu br.tmp run random value 1..4
 execute if score @s br.suptype matches 1..3 if score #sup_yu br.tmp matches 1 run function oa:give/internal/overwork
 execute as @e[type=minecraft:item,distance=..3,nbt={Age:0s}] run data merge entity @s {Glowing:1b}
 execute store result score #sx br.tmp run data get entity @s Pos[0]
