@@ -12,4 +12,5 @@ execute if score #ds8 br.tmp matches 1.. run function oa:disaster/run/k8
 execute if score #ds9 br.tmp matches 1.. run function oa:disaster/run/k9
 execute if score #ds10 br.tmp matches 1.. run function oa:disaster/run/k10
 execute if score #ds11 br.tmp matches 1.. run function oa:disaster/run/k11
+execute if score #ds12 br.tmp matches 1.. run function oa:disaster/run/k12
 function oa:disaster/count

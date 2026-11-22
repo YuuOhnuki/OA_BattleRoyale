@@ -4,6 +4,7 @@ execute positioned ~136 ~-40 ~-88 run kill @e[type=minecraft:marker,tag=br.chest
 execute positioned ~136 ~-40 ~-88 run kill @e[type=minecraft:marker,tag=br.ore,dx=16,dy=80,dz=31]
 execute positioned ~136 ~-40 ~-88 run kill @e[type=minecraft:marker,tag=oa.gim,dx=16,dy=80,dz=31]
 execute positioned ~136 ~-40 ~-88 run kill @e[type=minecraft:block_display,tag=oa.mdeco,dx=16,dy=80,dz=31]
+execute positioned ~136 ~-40 ~-88 run kill @e[type=minecraft:end_crystal,tag=oa.mdeco,dx=16,dy=80,dz=31]
 scoreboard players set #stage oa.map2 2
 scoreboard players set #localc oa.map2 0
 scoreboard players set #localo oa.map2 0

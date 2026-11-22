@@ -55,3 +55,5 @@ execute if score #map oa.mapid matches 1 run scoreboard players set #av11 br.tmp
 execute if score #map oa.mapid matches 2 run scoreboard players set #av11 br.tmp 1
 execute if score #map oa.mapid matches 3 run scoreboard players set #av11 br.tmp 1
 execute if score #map oa.mapid matches 4 run scoreboard players set #av11 br.tmp 1
+scoreboard players set #av12 br.tmp 0
+execute if score #map oa.mapid matches 4 run scoreboard players set #av12 br.tmp 1

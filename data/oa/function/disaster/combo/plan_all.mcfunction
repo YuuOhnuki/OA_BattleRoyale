@@ -10,3 +10,4 @@ execute if score #av8 br.tmp matches 1 unless score #ds8 br.tmp matches 1.. run 
 execute if score #av9 br.tmp matches 1 unless score #ds9 br.tmp matches 1.. run scoreboard players set #p9 br.tmp 1
 execute if score #av10 br.tmp matches 1 unless score #ds10 br.tmp matches 1.. run scoreboard players set #p10 br.tmp 1
 execute if score #av11 br.tmp matches 1 unless score #ds11 br.tmp matches 1.. run scoreboard players set #p11 br.tmp 1
+execute if score #av12 br.tmp matches 1 unless score #ds12 br.tmp matches 1.. run scoreboard players set #p12 br.tmp 1

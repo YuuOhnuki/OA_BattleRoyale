@@ -2,393 +2,689 @@ scoreboard players set #stage oa.map2 1
 fill ~72 ~-40 ~8 ~103 ~-14 ~39 minecraft:air
 fill ~72 ~-13 ~8 ~103 ~13 ~39 minecraft:air
 fill ~72 ~14 ~8 ~103 ~40 ~39 minecraft:air
-fill ~95 ~-29 ~13 ~95 ~-28 ~13 minecraft:obsidian
-fill ~95 ~-27 ~13 ~96 ~-26 ~13 minecraft:obsidian
-fill ~95 ~-27 ~14 ~95 ~-26 ~14 minecraft:obsidian
-fill ~103 ~-26 ~8 ~103 ~-21 ~8 minecraft:obsidian
-fill ~101 ~-25 ~10 ~101 ~-23 ~10 minecraft:obsidian
-fill ~95 ~-25 ~13 ~96 ~-25 ~14 minecraft:obsidian
-fill ~101 ~-25 ~16 ~101 ~-22 ~17 minecraft:obsidian
-fill ~95 ~-24 ~13 ~97 ~-24 ~13 minecraft:obsidian
-fill ~95 ~-24 ~14 ~96 ~-24 ~14 minecraft:obsidian
-setblock ~100 ~-23 ~11 minecraft:obsidian
-fill ~94 ~-23 ~13 ~97 ~-23 ~13 minecraft:obsidian
-fill ~94 ~-23 ~14 ~96 ~-23 ~14 minecraft:obsidian
-fill ~100 ~-22 ~10 ~101 ~-21 ~11 minecraft:obsidian
-setblock ~95 ~-22 ~12 minecraft:obsidian
-fill ~94 ~-22 ~13 ~97 ~-21 ~14 minecraft:obsidian
-fill ~95 ~-21 ~12 ~96 ~-21 ~12 minecraft:obsidian
-fill ~100 ~-21 ~16 ~101 ~-21 ~16 minecraft:obsidian
-setblock ~101 ~-21 ~17 minecraft:obsidian
-fill ~102 ~-20 ~8 ~103 ~-20 ~8 minecraft:obsidian
-fill ~101 ~-20 ~9 ~103 ~-20 ~9 minecraft:obsidian
-fill ~100 ~-20 ~10 ~103 ~-20 ~10 minecraft:obsidian
-fill ~99 ~-20 ~11 ~103 ~-19 ~11 minecraft:obsidian
-fill ~102 ~-20 ~12 ~103 ~-20 ~12 minecraft:obsidian
-fill ~95 ~-20 ~12 ~97 ~-19 ~12 minecraft:obsidian
-fill ~94 ~-20 ~13 ~98 ~-19 ~13 minecraft:obsidian
-setblock ~103 ~-20 ~13 minecraft:obsidian
-fill ~94 ~-20 ~14 ~97 ~-19 ~14 minecraft:obsidian
-fill ~89 ~-20 ~14 ~89 ~-19 ~14 minecraft:obsidian
-fill ~100 ~-20 ~16 ~101 ~-20 ~17 minecraft:obsidian
-fill ~101 ~-19 ~8 ~103 ~-19 ~8 minecraft:obsidian
-fill ~100 ~-19 ~9 ~103 ~-19 ~10 minecraft:obsidian
-fill ~101 ~-19 ~12 ~103 ~-19 ~14 minecraft:obsidian
-fill ~102 ~-19 ~15 ~103 ~-19 ~15 minecraft:obsidian
-fill ~100 ~-19 ~16 ~103 ~-19 ~16 minecraft:obsidian
-fill ~100 ~-19 ~17 ~101 ~-19 ~17 minecraft:obsidian
-setblock ~103 ~-19 ~17 minecraft:obsidian
-fill ~99 ~-18 ~8 ~103 ~-18 ~11 minecraft:obsidian
-fill ~95 ~-18 ~12 ~103 ~-16 ~12 minecraft:obsidian
-fill ~94 ~-18 ~13 ~103 ~-17 ~13 minecraft:obsidian
-fill ~89 ~-18 ~13 ~89 ~-18 ~14 minecraft:obsidian
-fill ~93 ~-18 ~14 ~98 ~-18 ~14 minecraft:obsidian
-fill ~100 ~-18 ~14 ~103 ~-18 ~17 minecraft:obsidian
-fill ~102 ~-18 ~18 ~103 ~-18 ~18 minecraft:obsidian
-setblock ~95 ~-18 ~20 minecraft:obsidian
-fill ~98 ~-17 ~8 ~103 ~-17 ~11 minecraft:obsidian
-fill ~89 ~-17 ~13 ~89 ~-16 ~13 minecraft:obsidian
-fill ~89 ~-17 ~14 ~90 ~-16 ~14 minecraft:obsidian
-fill ~93 ~-17 ~14 ~103 ~-17 ~14 minecraft:obsidian
-fill ~99 ~-17 ~15 ~103 ~-17 ~16 minecraft:obsidian
-fill ~100 ~-17 ~17 ~103 ~-17 ~18 minecraft:obsidian
-fill ~95 ~-17 ~19 ~95 ~-16 ~19 minecraft:obsidian
-fill ~102 ~-17 ~19 ~103 ~-17 ~19 minecraft:obsidian
-fill ~95 ~-17 ~20 ~96 ~-16 ~20 minecraft:obsidian
-fill ~97 ~-16 ~8 ~103 ~-16 ~11 minecraft:obsidian
-setblock ~95 ~-16 ~11 minecraft:obsidian
-fill ~93 ~-16 ~13 ~103 ~-15 ~14 minecraft:obsidian
-setblock ~95 ~-16 ~15 minecraft:obsidian
-fill ~98 ~-16 ~15 ~103 ~-16 ~17 minecraft:obsidian
-fill ~99 ~-16 ~18 ~103 ~-16 ~18 minecraft:obsidian
-fill ~100 ~-16 ~19 ~103 ~-16 ~19 minecraft:obsidian
-setblock ~103 ~-16 ~20 minecraft:obsidian
-fill ~96 ~-15 ~8 ~103 ~-15 ~8 minecraft:obsidian
-fill ~95 ~-15 ~9 ~103 ~-15 ~11 minecraft:obsidian
-fill ~94 ~-15 ~12 ~103 ~-15 ~12 minecraft:obsidian
-fill ~89 ~-15 ~13 ~90 ~-15 ~13 minecraft:obsidian
-fill ~89 ~-15 ~14 ~91 ~-15 ~14 minecraft:obsidian
-fill ~95 ~-15 ~15 ~103 ~-15 ~15 minecraft:obsidian
-fill ~97 ~-15 ~16 ~103 ~-15 ~17 minecraft:obsidian
-fill ~98 ~-15 ~18 ~103 ~-15 ~18 minecraft:obsidian
-fill ~99 ~-15 ~19 ~103 ~-15 ~19 minecraft:obsidian
-fill ~95 ~-15 ~19 ~96 ~-15 ~20 minecraft:obsidian
-fill ~101 ~-15 ~20 ~103 ~-15 ~20 minecraft:obsidian
-setblock ~95 ~-15 ~21 minecraft:obsidian
-fill ~94 ~-14 ~8 ~103 ~-14 ~12 minecraft:end_stone
-fill ~89 ~-14 ~13 ~90 ~-12 ~13 minecraft:end_stone
-fill ~93 ~-14 ~13 ~103 ~-14 ~14 minecraft:end_stone
-fill ~89 ~-14 ~14 ~91 ~-14 ~14 minecraft:end_stone
-fill ~94 ~-14 ~15 ~103 ~-13 ~15 minecraft:end_stone
-fill ~96 ~-14 ~16 ~103 ~-14 ~17 minecraft:end_stone
-fill ~97 ~-14 ~18 ~103 ~-14 ~18 minecraft:end_stone
-fill ~98 ~-14 ~19 ~103 ~-14 ~19 minecraft:end_stone
-fill ~95 ~-14 ~19 ~96 ~-14 ~20 minecraft:end_stone
-fill ~99 ~-14 ~20 ~103 ~-14 ~20 minecraft:end_stone
-setblock ~95 ~-14 ~21 minecraft:end_stone
-fill ~102 ~-14 ~21 ~103 ~-14 ~21 minecraft:end_stone
-fill ~93 ~-13 ~8 ~103 ~-13 ~13 minecraft:end_stone
-fill ~89 ~-13 ~14 ~103 ~-12 ~14 minecraft:end_stone
-fill ~95 ~-13 ~16 ~103 ~-13 ~17 minecraft:end_stone
-fill ~96 ~-13 ~18 ~103 ~-13 ~18 minecraft:end_stone
-fill ~95 ~-13 ~19 ~103 ~-13 ~19 minecraft:end_stone
-fill ~94 ~-13 ~20 ~103 ~-12 ~20 minecraft:end_stone
-fill ~94 ~-13 ~21 ~96 ~-12 ~21 minecraft:end_stone
-fill ~100 ~-13 ~21 ~103 ~-13 ~21 minecraft:end_stone
-setblock ~95 ~-13 ~22 minecraft:end_stone
-fill ~89 ~-12 ~8 ~103 ~-12 ~8 minecraft:end_stone
-fill ~90 ~-12 ~9 ~103 ~-12 ~9 minecraft:end_stone
-setblock ~83 ~-12 ~10 minecraft:end_stone
-fill ~91 ~-12 ~10 ~103 ~-12 ~11 minecraft:end_stone
-fill ~92 ~-12 ~12 ~103 ~-12 ~13 minecraft:end_stone
-fill ~93 ~-12 ~15 ~103 ~-12 ~16 minecraft:end_stone
-fill ~94 ~-12 ~17 ~103 ~-12 ~17 minecraft:end_stone
-fill ~95 ~-12 ~18 ~103 ~-12 ~19 minecraft:end_stone
-fill ~98 ~-12 ~21 ~103 ~-12 ~21 minecraft:end_stone
-fill ~101 ~-12 ~22 ~103 ~-12 ~22 minecraft:end_stone
-fill ~94 ~-12 ~22 ~95 ~-12 ~22 minecraft:end_stone
-fill ~87 ~-11 ~8 ~103 ~-11 ~9 minecraft:end_stone
-fill ~83 ~-11 ~9 ~83 ~-10 ~10 minecraft:end_stone
-fill ~88 ~-11 ~10 ~103 ~-11 ~10 minecraft:end_stone
-fill ~89 ~-11 ~11 ~103 ~-11 ~12 minecraft:end_stone
-fill ~88 ~-11 ~13 ~103 ~-11 ~14 minecraft:end_stone
-setblock ~89 ~-11 ~15 minecraft:end_stone
-fill ~92 ~-11 ~15 ~103 ~-11 ~16 minecraft:end_stone
-fill ~93 ~-11 ~17 ~103 ~-11 ~17 minecraft:end_stone
-fill ~94 ~-11 ~18 ~103 ~-11 ~21 minecraft:end_stone
-fill ~98 ~-11 ~22 ~103 ~-11 ~22 minecraft:end_stone
-fill ~92 ~-11 ~22 ~95 ~-10 ~22 minecraft:end_stone
-fill ~85 ~-10 ~8 ~103 ~-10 ~8 minecraft:end_stone
-fill ~86 ~-10 ~9 ~103 ~-10 ~10 minecraft:end_stone
-fill ~87 ~-10 ~11 ~103 ~-10 ~11 minecraft:end_stone
-fill ~88 ~-10 ~12 ~103 ~-10 ~14 minecraft:end_stone
-fill ~89 ~-10 ~15 ~103 ~-9 ~15 minecraft:end_stone
-fill ~91 ~-10 ~16 ~103 ~-10 ~16 minecraft:end_stone
-fill ~92 ~-10 ~17 ~103 ~-10 ~17 minecraft:end_stone
-fill ~93 ~-10 ~18 ~103 ~-10 ~19 minecraft:end_stone
-fill ~94 ~-10 ~20 ~103 ~-10 ~21 minecraft:end_stone
-fill ~97 ~-10 ~22 ~103 ~-10 ~22 minecraft:end_stone
-fill ~93 ~-10 ~23 ~95 ~-10 ~23 minecraft:end_stone
-fill ~100 ~-10 ~23 ~103 ~-10 ~23 minecraft:end_stone
-fill ~83 ~-9 ~8 ~103 ~-9 ~8 minecraft:end_stone
-fill ~85 ~-9 ~9 ~103 ~-9 ~9 minecraft:end_stone
-setblock ~83 ~-9 ~9 minecraft:end_stone
-fill ~83 ~-9 ~10 ~103 ~-9 ~10 minecraft:end_stone
-fill ~86 ~-9 ~11 ~103 ~-9 ~11 minecraft:end_stone
-fill ~87 ~-9 ~12 ~103 ~-9 ~13 minecraft:end_stone
-fill ~88 ~-9 ~14 ~103 ~-9 ~14 minecraft:end_stone
-fill ~90 ~-9 ~16 ~103 ~-9 ~16 minecraft:end_stone
-fill ~91 ~-9 ~17 ~103 ~-9 ~17 minecraft:end_stone
-fill ~92 ~-9 ~18 ~103 ~-9 ~19 minecraft:end_stone
-fill ~93 ~-9 ~20 ~103 ~-9 ~21 minecraft:end_stone
-fill ~92 ~-9 ~22 ~103 ~-9 ~22 minecraft:end_stone
-fill ~92 ~-9 ~23 ~95 ~-9 ~23 minecraft:end_stone
-fill ~97 ~-9 ~23 ~103 ~-9 ~23 minecraft:end_stone
-fill ~83 ~-8 ~8 ~103 ~-8 ~11 minecraft:end_stone
-fill ~86 ~-8 ~12 ~103 ~-8 ~13 minecraft:end_stone
-fill ~87 ~-8 ~14 ~103 ~-8 ~14 minecraft:end_stone
-fill ~88 ~-8 ~15 ~103 ~-8 ~15 minecraft:end_stone
-fill ~89 ~-8 ~16 ~103 ~-8 ~17 minecraft:end_stone
-fill ~90 ~-8 ~18 ~103 ~-8 ~18 minecraft:end_stone
-fill ~91 ~-8 ~19 ~103 ~-8 ~19 minecraft:end_stone
-fill ~92 ~-8 ~20 ~103 ~-8 ~20 minecraft:end_stone
-fill ~93 ~-8 ~21 ~103 ~-8 ~21 minecraft:end_stone
-fill ~92 ~-8 ~22 ~103 ~-8 ~23 minecraft:end_stone
-fill ~99 ~-8 ~24 ~103 ~-8 ~24 minecraft:end_stone
-fill ~103 ~-8 ~25 ~103 ~-6 ~25 minecraft:end_stone
-fill ~82 ~-7 ~8 ~103 ~0 ~9 minecraft:end_stone
-fill ~83 ~-7 ~10 ~103 ~0 ~11 minecraft:end_stone
-fill ~85 ~-7 ~12 ~103 ~-7 ~12 minecraft:end_stone
-fill ~86 ~-7 ~13 ~103 ~-7 ~14 minecraft:end_stone
-fill ~87 ~-7 ~15 ~103 ~-7 ~15 minecraft:end_stone
-fill ~88 ~-7 ~16 ~103 ~-7 ~16 minecraft:end_stone
-fill ~89 ~-7 ~17 ~103 ~-7 ~17 minecraft:end_stone
-fill ~90 ~-7 ~18 ~103 ~-7 ~19 minecraft:end_stone
-fill ~91 ~-7 ~20 ~103 ~-7 ~20 minecraft:end_stone
-fill ~92 ~-7 ~21 ~103 ~-7 ~23 minecraft:end_stone
-fill ~94 ~-7 ~24 ~103 ~-6 ~24 minecraft:end_stone
-fill ~85 ~-6 ~12 ~103 ~-6 ~13 minecraft:end_stone
-fill ~86 ~-6 ~14 ~103 ~-6 ~15 minecraft:end_stone
-fill ~87 ~-6 ~16 ~103 ~-5 ~16 minecraft:end_stone
-fill ~88 ~-6 ~17 ~103 ~-6 ~17 minecraft:end_stone
-fill ~89 ~-6 ~18 ~103 ~-6 ~19 minecraft:end_stone
-fill ~90 ~-6 ~20 ~103 ~-6 ~20 minecraft:end_stone
-fill ~91 ~-6 ~21 ~103 ~-6 ~22 minecraft:end_stone
-fill ~92 ~-6 ~23 ~103 ~-6 ~23 minecraft:end_stone
-fill ~99 ~-6 ~25 ~100 ~-6 ~25 minecraft:end_stone
-fill ~84 ~-5 ~12 ~103 ~-5 ~12 minecraft:end_stone
-fill ~85 ~-5 ~13 ~103 ~-5 ~14 minecraft:end_stone
-fill ~86 ~-5 ~15 ~103 ~-5 ~15 minecraft:end_stone
-fill ~88 ~-5 ~17 ~103 ~-5 ~18 minecraft:end_stone
-fill ~89 ~-5 ~19 ~103 ~-4 ~20 minecraft:end_stone
-fill ~90 ~-5 ~21 ~103 ~-5 ~21 minecraft:end_stone
-fill ~91 ~-5 ~22 ~103 ~-5 ~23 minecraft:end_stone
-fill ~93 ~-5 ~24 ~103 ~-5 ~24 minecraft:end_stone
-fill ~96 ~-5 ~25 ~103 ~-5 ~25 minecraft:end_stone
-fill ~77 ~-4 ~8 ~79 ~-2 ~8 minecraft:quartz_pillar
-fill ~84 ~-4 ~12 ~103 ~0 ~13 minecraft:end_stone
-fill ~85 ~-4 ~14 ~103 ~-3 ~14 minecraft:end_stone
-fill ~86 ~-4 ~15 ~103 ~-3 ~16 minecraft:end_stone
-fill ~87 ~-4 ~17 ~103 ~0 ~17 minecraft:end_stone
-fill ~88 ~-4 ~18 ~103 ~-4 ~18 minecraft:end_stone
-fill ~90 ~-4 ~21 ~103 ~-4 ~22 minecraft:end_stone
-fill ~91 ~-4 ~23 ~103 ~-3 ~23 minecraft:end_stone
-fill ~92 ~-4 ~24 ~103 ~-3 ~24 minecraft:end_stone
-fill ~94 ~-4 ~25 ~103 ~-3 ~25 minecraft:end_stone
-fill ~88 ~-3 ~18 ~103 ~0 ~19 minecraft:end_stone
-fill ~89 ~-3 ~20 ~103 ~0 ~21 minecraft:end_stone
-fill ~90 ~-3 ~22 ~103 ~0 ~22 minecraft:end_stone
-fill ~85 ~-2 ~14 ~103 ~0 ~15 minecraft:end_stone
-fill ~86 ~-2 ~16 ~103 ~0 ~16 minecraft:end_stone
-fill ~91 ~-2 ~23 ~103 ~0 ~24 minecraft:end_stone
-fill ~93 ~-2 ~25 ~103 ~0 ~25 minecraft:end_stone
-fill ~77 ~-1 ~8 ~81 ~-1 ~8 minecraft:quartz_pillar
-fill ~72 ~0 ~8 ~81 ~0 ~8 minecraft:quartz_bricks
-fill ~77 ~0 ~9 ~81 ~0 ~9 minecraft:quartz_bricks
-setblock ~92 ~0 ~25 minecraft:smooth_quartz
-fill ~91 ~0 ~26 ~94 ~0 ~27 minecraft:smooth_quartz
-fill ~90 ~0 ~28 ~94 ~0 ~28 minecraft:smooth_quartz
-fill ~90 ~0 ~29 ~93 ~0 ~29 minecraft:smooth_quartz
-fill ~89 ~0 ~30 ~93 ~0 ~30 minecraft:smooth_quartz
-fill ~89 ~0 ~31 ~92 ~0 ~31 minecraft:smooth_quartz
-fill ~88 ~0 ~32 ~92 ~0 ~32 minecraft:smooth_quartz
-fill ~88 ~0 ~33 ~91 ~0 ~33 minecraft:smooth_quartz
-fill ~87 ~0 ~34 ~91 ~0 ~34 minecraft:smooth_quartz
-fill ~87 ~0 ~35 ~90 ~0 ~35 minecraft:smooth_quartz
-fill ~86 ~0 ~36 ~90 ~0 ~36 minecraft:smooth_quartz
-fill ~86 ~0 ~37 ~89 ~0 ~37 minecraft:smooth_quartz
-fill ~85 ~0 ~38 ~89 ~0 ~38 minecraft:smooth_quartz
-fill ~85 ~0 ~39 ~88 ~0 ~39 minecraft:smooth_quartz
-fill ~72 ~1 ~8 ~76 ~1 ~8 minecraft:end_stone_brick_wall
-fill ~77 ~1 ~9 ~81 ~1 ~9 minecraft:end_stone_brick_wall
-fill ~103 ~1 ~22 ~103 ~1 ~23 minecraft:end_stone
-fill ~102 ~1 ~24 ~103 ~1 ~24 minecraft:end_stone
-setblock ~92 ~1 ~25 minecraft:white_stained_glass_pane
-fill ~91 ~1 ~26 ~91 ~1 ~27 minecraft:white_stained_glass_pane
-fill ~94 ~1 ~27 ~94 ~1 ~28 minecraft:white_stained_glass_pane
-fill ~90 ~1 ~28 ~90 ~1 ~29 minecraft:white_stained_glass_pane
-fill ~93 ~1 ~29 ~93 ~1 ~30 minecraft:white_stained_glass_pane
-fill ~89 ~1 ~30 ~89 ~1 ~31 minecraft:white_stained_glass_pane
-fill ~92 ~1 ~31 ~92 ~1 ~32 minecraft:white_stained_glass_pane
-fill ~88 ~1 ~32 ~88 ~1 ~33 minecraft:white_stained_glass_pane
-fill ~91 ~1 ~33 ~91 ~1 ~34 minecraft:white_stained_glass_pane
-fill ~87 ~1 ~34 ~87 ~1 ~35 minecraft:white_stained_glass_pane
-fill ~90 ~1 ~35 ~90 ~1 ~36 minecraft:white_stained_glass_pane
-fill ~86 ~1 ~36 ~86 ~1 ~37 minecraft:white_stained_glass_pane
-fill ~89 ~1 ~37 ~89 ~1 ~38 minecraft:white_stained_glass_pane
-fill ~85 ~1 ~38 ~85 ~1 ~39 minecraft:white_stained_glass_pane
-setblock ~88 ~1 ~39 minecraft:white_stained_glass_pane
-execute if score #sv0 oa.map2 matches 0 run fill ~99 ~1 ~8 ~99 ~3 ~10 minecraft:purpur_block
-execute if score #sv0 oa.map2 matches 0 run fill ~99 ~1 ~11 ~101 ~2 ~11 minecraft:purpur_block
-execute if score #sv0 oa.map2 matches 0 run fill ~103 ~1 ~11 ~103 ~2 ~11 minecraft:purpur_block
-execute if score #sv0 oa.map2 matches 0 run fill ~102 ~1 ~11 ~102 ~2 ~11 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 0 run fill ~94 ~1 ~13 ~94 ~4 ~13 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv0 oa.map2 matches 0 run fill ~99 ~3 ~11 ~103 ~3 ~11 minecraft:purpur_block
-execute if score #sv0 oa.map2 matches 0 run fill ~99 ~4 ~8 ~103 ~4 ~11 minecraft:smooth_quartz
-execute if score #sv0 oa.map2 matches 0 run setblock ~93 ~4 ~13 minecraft:chorus_plant[up=true]
-execute if score #sv0 oa.map2 matches 0 run setblock ~95 ~4 ~13 minecraft:chorus_plant[up=true]
-execute if score #sv0 oa.map2 matches 0 run setblock ~94 ~5 ~13 minecraft:chorus_flower[age=5]
-execute if score #sv0 oa.map2 matches 0 run fill ~93 ~5 ~13 ~93 ~7 ~13 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv0 oa.map2 matches 0 run fill ~95 ~5 ~13 ~95 ~6 ~13 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv0 oa.map2 matches 0 run setblock ~95 ~6 ~14 minecraft:chorus_plant[up=true]
-execute if score #sv0 oa.map2 matches 0 run setblock ~93 ~7 ~12 minecraft:chorus_plant[up=true]
-execute if score #sv0 oa.map2 matches 0 run setblock ~92 ~7 ~13 minecraft:chorus_plant[up=true]
-execute if score #sv0 oa.map2 matches 0 run setblock ~95 ~7 ~13 minecraft:chorus_flower[age=5]
-execute if score #sv0 oa.map2 matches 0 run fill ~95 ~7 ~14 ~95 ~8 ~14 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv0 oa.map2 matches 0 run setblock ~93 ~8 ~12 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv0 oa.map2 matches 0 run setblock ~93 ~8 ~13 minecraft:chorus_flower[age=5]
-execute if score #sv0 oa.map2 matches 0 run setblock ~92 ~8 ~13 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv0 oa.map2 matches 0 run setblock ~93 ~9 ~12 minecraft:chorus_flower[age=5]
-execute if score #sv0 oa.map2 matches 0 run setblock ~92 ~9 ~13 minecraft:chorus_flower[age=5]
-execute if score #sv0 oa.map2 matches 0 run setblock ~95 ~9 ~14 minecraft:chorus_flower[age=5]
-execute if score #sv0 oa.map2 matches 0 run setblock ~103 ~10 ~23 minecraft:chorus_plant[up=true]
-execute if score #sv0 oa.map2 matches 0 run setblock ~103 ~11 ~23 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv0 oa.map2 matches 0 run setblock ~103 ~12 ~23 minecraft:chorus_flower[age=5]
-execute if score #sv0 oa.map2 matches 1 run fill ~98 ~0 ~8 ~103 ~0 ~9 minecraft:quartz_bricks
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~0 ~10 ~103 ~0 ~11 minecraft:quartz_bricks
-execute if score #sv0 oa.map2 matches 1 run fill ~101 ~0 ~12 ~103 ~0 ~12 minecraft:quartz_bricks
-execute if score #sv0 oa.map2 matches 1 run fill ~98 ~1 ~8 ~103 ~2 ~8 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 1 run setblock ~98 ~1 ~9 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~1 ~9 ~103 ~2 ~9 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~7 ~9 ~103 ~7 ~9 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~15 ~9 ~103 ~15 ~9 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 1 run fill ~100 ~1 ~10 ~103 ~7 ~10 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 1 run fill ~100 ~10 ~10 ~103 ~15 ~10 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 1 run setblock ~99 ~1 ~10 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~3 ~10 ~99 ~6 ~10 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~9 ~10 ~99 ~11 ~10 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~13 ~10 ~99 ~15 ~10 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run fill ~101 ~1 ~11 ~103 ~7 ~11 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 1 run fill ~101 ~10 ~11 ~103 ~15 ~11 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~1 ~11 ~100 ~1 ~11 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~3 ~11 ~100 ~6 ~11 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~9 ~11 ~100 ~11 ~11 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~13 ~11 ~100 ~15 ~11 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run setblock ~101 ~1 ~12 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run setblock ~103 ~1 ~12 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run fill ~102 ~1 ~12 ~102 ~2 ~12 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 1 run setblock ~89 ~1 ~14 minecraft:chest[facing=north]
-execute if score #sv0 oa.map2 matches 1 run setblock ~99 ~1 ~14 minecraft:chest[facing=north]
-execute if score #sv0 oa.map2 matches 1 run setblock ~101 ~1 ~21 minecraft:end_stone
-execute if score #sv0 oa.map2 matches 1 run setblock ~102 ~1 ~22 minecraft:coal_ore
-execute if score #sv0 oa.map2 matches 1 run setblock ~98 ~2 ~9 minecraft:light_blue_stained_glass
-execute if score #sv0 oa.map2 matches 1 run setblock ~99 ~2 ~10 minecraft:light_blue_stained_glass
-execute if score #sv0 oa.map2 matches 1 run setblock ~99 ~7 ~10 minecraft:light_blue_stained_glass
-execute if score #sv0 oa.map2 matches 1 run setblock ~99 ~12 ~10 minecraft:light_blue_stained_glass
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~2 ~11 ~100 ~2 ~11 minecraft:light_blue_stained_glass
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~7 ~11 ~100 ~7 ~11 minecraft:light_blue_stained_glass
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~12 ~11 ~100 ~12 ~11 minecraft:light_blue_stained_glass
-execute if score #sv0 oa.map2 matches 1 run setblock ~103 ~2 ~12 minecraft:light_blue_stained_glass
-execute if score #sv0 oa.map2 matches 1 run setblock ~101 ~2 ~12 minecraft:light_blue_stained_glass
-execute if score #sv0 oa.map2 matches 1 run fill ~98 ~3 ~8 ~98 ~6 ~9 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run fill ~98 ~9 ~8 ~98 ~11 ~9 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run fill ~98 ~13 ~8 ~98 ~15 ~9 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~3 ~8 ~103 ~6 ~9 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~9 ~8 ~103 ~14 ~9 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 1 run fill ~101 ~3 ~12 ~103 ~6 ~12 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run fill ~101 ~9 ~12 ~103 ~11 ~12 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run fill ~101 ~13 ~12 ~103 ~15 ~12 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run setblock ~103 ~7 ~8 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 1 run setblock ~103 ~15 ~8 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~7 ~8 ~101 ~7 ~8 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~15 ~8 ~101 ~15 ~8 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 1 run setblock ~102 ~7 ~8 minecraft:sea_lantern
-execute if score #sv0 oa.map2 matches 1 run setblock ~102 ~15 ~8 minecraft:sea_lantern
-execute if score #sv0 oa.map2 matches 1 run fill ~98 ~7 ~8 ~98 ~7 ~9 minecraft:light_blue_stained_glass
-execute if score #sv0 oa.map2 matches 1 run fill ~98 ~12 ~8 ~98 ~12 ~9 minecraft:light_blue_stained_glass
-execute if score #sv0 oa.map2 matches 1 run fill ~101 ~7 ~12 ~103 ~7 ~12 minecraft:light_blue_stained_glass
-execute if score #sv0 oa.map2 matches 1 run fill ~101 ~12 ~12 ~103 ~12 ~12 minecraft:light_blue_stained_glass
-execute if score #sv0 oa.map2 matches 1 run fill ~98 ~8 ~8 ~103 ~8 ~9 minecraft:smooth_quartz
-execute if score #sv0 oa.map2 matches 1 run fill ~98 ~16 ~8 ~103 ~16 ~9 minecraft:smooth_quartz
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~8 ~10 ~103 ~8 ~11 minecraft:smooth_quartz
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~16 ~10 ~103 ~16 ~11 minecraft:smooth_quartz
-execute if score #sv0 oa.map2 matches 1 run fill ~101 ~8 ~12 ~103 ~8 ~12 minecraft:smooth_quartz
-execute if score #sv0 oa.map2 matches 1 run fill ~101 ~16 ~12 ~103 ~16 ~12 minecraft:smooth_quartz
-execute if score #sv0 oa.map2 matches 1 run setblock ~100 ~9 ~10 minecraft:chest[facing=north]
-execute if score #sv0 oa.map2 matches 1 run fill ~101 ~9 ~10 ~103 ~9 ~11 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 1 run fill ~98 ~17 ~8 ~98 ~17 ~9 minecraft:end_stone_brick_wall
-execute if score #sv0 oa.map2 matches 1 run setblock ~99 ~17 ~10 minecraft:end_stone_brick_wall
-execute if score #sv0 oa.map2 matches 1 run fill ~99 ~17 ~11 ~100 ~17 ~11 minecraft:end_stone_brick_wall
-execute if score #sv0 oa.map2 matches 1 run fill ~101 ~17 ~12 ~103 ~17 ~12 minecraft:end_stone_brick_wall
-execute if score #sv0 oa.map2 matches 1 run fill ~101 ~18 ~8 ~103 ~19 ~9 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 1 run fill ~102 ~20 ~8 ~102 ~24 ~8 minecraft:end_rod[facing=up]
-execute if score #sv0 oa.map2 matches 2 run fill ~99 ~0 ~8 ~103 ~0 ~9 minecraft:quartz_bricks
-execute if score #sv0 oa.map2 matches 2 run fill ~99 ~14 ~8 ~103 ~14 ~9 minecraft:quartz_bricks
-execute if score #sv0 oa.map2 matches 2 run fill ~100 ~0 ~10 ~103 ~0 ~10 minecraft:quartz_bricks
-execute if score #sv0 oa.map2 matches 2 run fill ~100 ~14 ~10 ~103 ~14 ~10 minecraft:quartz_bricks
-execute if score #sv0 oa.map2 matches 2 run fill ~101 ~0 ~11 ~103 ~0 ~11 minecraft:quartz_bricks
-execute if score #sv0 oa.map2 matches 2 run fill ~101 ~14 ~11 ~103 ~14 ~11 minecraft:quartz_bricks
-execute if score #sv0 oa.map2 matches 2 run fill ~99 ~1 ~8 ~103 ~2 ~8 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 2 run setblock ~97 ~1 ~8 minecraft:coal_ore
-execute if score #sv0 oa.map2 matches 2 run fill ~99 ~1 ~9 ~100 ~13 ~9 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run setblock ~101 ~1 ~9 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 2 run fill ~102 ~1 ~9 ~103 ~1 ~9 minecraft:chest[facing=north]
-execute if score #sv0 oa.map2 matches 2 run fill ~100 ~1 ~10 ~101 ~13 ~10 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run fill ~103 ~1 ~10 ~103 ~2 ~11 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run fill ~103 ~4 ~10 ~103 ~5 ~11 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run fill ~103 ~8 ~10 ~103 ~9 ~11 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run fill ~103 ~12 ~10 ~103 ~13 ~11 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run fill ~102 ~1 ~10 ~102 ~2 ~11 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 2 run fill ~101 ~1 ~11 ~101 ~2 ~11 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run fill ~101 ~4 ~11 ~101 ~5 ~11 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run fill ~101 ~8 ~11 ~101 ~9 ~11 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run fill ~101 ~12 ~11 ~101 ~13 ~11 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run setblock ~100 ~1 ~12 minecraft:chest[facing=north]
-execute if score #sv0 oa.map2 matches 2 run setblock ~100 ~1 ~13 minecraft:end_stone
-execute if score #sv0 oa.map2 matches 2 run setblock ~100 ~1 ~14 minecraft:coal_ore
-execute if score #sv0 oa.map2 matches 2 run setblock ~102 ~1 ~19 minecraft:chest[facing=north]
-execute if score #sv0 oa.map2 matches 2 run fill ~101 ~2 ~9 ~103 ~13 ~9 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 2 run fill ~100 ~3 ~8 ~103 ~13 ~8 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 2 run setblock ~99 ~3 ~8 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run fill ~99 ~5 ~8 ~99 ~7 ~8 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run fill ~99 ~9 ~8 ~99 ~11 ~8 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run setblock ~99 ~13 ~8 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run setblock ~103 ~3 ~10 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run fill ~103 ~6 ~10 ~103 ~7 ~10 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run fill ~103 ~10 ~10 ~103 ~11 ~10 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run fill ~102 ~3 ~10 ~102 ~13 ~10 minecraft:cave_air
-execute if score #sv0 oa.map2 matches 2 run fill ~101 ~3 ~11 ~103 ~3 ~11 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run fill ~101 ~6 ~11 ~103 ~7 ~11 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run fill ~101 ~10 ~11 ~103 ~11 ~11 minecraft:white_concrete
-execute if score #sv0 oa.map2 matches 2 run setblock ~99 ~4 ~8 minecraft:light_blue_stained_glass_pane
-execute if score #sv0 oa.map2 matches 2 run setblock ~99 ~8 ~8 minecraft:light_blue_stained_glass_pane
-execute if score #sv0 oa.map2 matches 2 run setblock ~99 ~12 ~8 minecraft:light_blue_stained_glass_pane
-execute if score #sv0 oa.map2 matches 2 run fill ~102 ~4 ~11 ~102 ~5 ~11 minecraft:light_blue_stained_glass_pane
-execute if score #sv0 oa.map2 matches 2 run fill ~102 ~8 ~11 ~102 ~9 ~11 minecraft:light_blue_stained_glass_pane
-execute if score #sv0 oa.map2 matches 2 run fill ~102 ~12 ~11 ~102 ~13 ~11 minecraft:light_blue_stained_glass_pane
-execute if score #sv0 oa.map2 matches 2 run setblock ~99 ~15 ~8 minecraft:end_stone_brick_wall
-execute if score #sv0 oa.map2 matches 2 run setblock ~103 ~15 ~9 minecraft:chest[facing=north]
-execute if score #sv0 oa.map2 matches 2 run fill ~99 ~15 ~9 ~100 ~15 ~9 minecraft:end_stone_brick_wall
-execute if score #sv0 oa.map2 matches 2 run setblock ~103 ~15 ~10 minecraft:end_stone_brick_wall
-execute if score #sv0 oa.map2 matches 2 run setblock ~101 ~15 ~10 minecraft:end_stone_brick_wall
-execute if score #sv0 oa.map2 matches 2 run fill ~100 ~15 ~10 ~100 ~17 ~10 minecraft:quartz_pillar
-execute if score #sv0 oa.map2 matches 2 run fill ~101 ~15 ~11 ~103 ~15 ~11 minecraft:end_stone_brick_wall
-execute if score #sv0 oa.map2 matches 2 run fill ~99 ~18 ~8 ~103 ~18 ~9 minecraft:smooth_quartz
-execute if score #sv0 oa.map2 matches 2 run fill ~100 ~18 ~10 ~103 ~18 ~10 minecraft:smooth_quartz
-execute if score #sv0 oa.map2 matches 2 run fill ~101 ~18 ~11 ~103 ~18 ~11 minecraft:smooth_quartz
-execute if score #sv0 oa.map2 matches 2 run fill ~100 ~19 ~8 ~103 ~19 ~9 minecraft:smooth_quartz
-execute if score #sv0 oa.map2 matches 2 run fill ~101 ~19 ~10 ~103 ~19 ~10 minecraft:smooth_quartz
-execute if score #sv0 oa.map2 matches 2 run fill ~101 ~20 ~8 ~103 ~20 ~8 minecraft:smooth_quartz
-execute if score #sv0 oa.map2 matches 2 run setblock ~102 ~20 ~9 minecraft:smooth_quartz
-execute if score #sv0 oa.map2 matches 2 run setblock ~102 ~21 ~8 minecraft:smooth_quartz
-execute if score #sv0 oa.map2 matches 2 run fill ~102 ~22 ~8 ~102 ~23 ~8 minecraft:end_rod[facing=up]
+fill ~83 ~-37 ~10 ~83 ~-34 ~10 minecraft:obsidian
+fill ~83 ~-33 ~9 ~83 ~-33 ~11 minecraft:obsidian
+setblock ~83 ~-32 ~9 minecraft:obsidian
+fill ~82 ~-32 ~10 ~83 ~-32 ~10 minecraft:obsidian
+fill ~83 ~-32 ~11 ~83 ~-29 ~11 minecraft:obsidian
+fill ~82 ~-31 ~9 ~83 ~-29 ~10 minecraft:obsidian
+setblock ~76 ~-31 ~14 minecraft:obsidian
+fill ~76 ~-30 ~13 ~76 ~-30 ~14 minecraft:obsidian
+setblock ~83 ~-29 ~8 minecraft:obsidian
+fill ~76 ~-29 ~13 ~77 ~-27 ~13 minecraft:obsidian
+fill ~75 ~-29 ~14 ~77 ~-28 ~14 minecraft:obsidian
+fill ~82 ~-28 ~8 ~83 ~-27 ~11 minecraft:obsidian
+fill ~89 ~-28 ~14 ~89 ~-26 ~14 minecraft:obsidian
+fill ~77 ~-27 ~12 ~77 ~-26 ~12 minecraft:obsidian
+fill ~74 ~-27 ~14 ~77 ~-24 ~14 minecraft:obsidian
+fill ~82 ~-26 ~8 ~83 ~-23 ~9 minecraft:obsidian
+fill ~82 ~-26 ~10 ~84 ~-25 ~10 minecraft:obsidian
+fill ~82 ~-26 ~11 ~83 ~-25 ~11 minecraft:obsidian
+fill ~75 ~-26 ~13 ~77 ~-24 ~13 minecraft:obsidian
+fill ~76 ~-26 ~15 ~77 ~-26 ~15 minecraft:obsidian
+fill ~77 ~-25 ~11 ~77 ~-25 ~12 minecraft:obsidian
+fill ~89 ~-25 ~13 ~89 ~-23 ~14 minecraft:obsidian
+fill ~75 ~-25 ~15 ~77 ~-23 ~15 minecraft:obsidian
+fill ~82 ~-24 ~10 ~84 ~-24 ~11 minecraft:obsidian
+setblock ~77 ~-24 ~11 minecraft:obsidian
+fill ~76 ~-24 ~12 ~77 ~-22 ~12 minecraft:obsidian
+fill ~95 ~-24 ~13 ~95 ~-23 ~13 minecraft:obsidian
+setblock ~77 ~-24 ~16 minecraft:obsidian
+fill ~81 ~-23 ~10 ~84 ~-22 ~10 minecraft:obsidian
+fill ~77 ~-23 ~10 ~77 ~-23 ~11 minecraft:obsidian
+fill ~82 ~-23 ~11 ~84 ~-21 ~11 minecraft:obsidian
+fill ~74 ~-23 ~13 ~77 ~-23 ~14 minecraft:obsidian
+fill ~76 ~-23 ~16 ~77 ~-21 ~16 minecraft:obsidian
+fill ~79 ~-22 ~8 ~84 ~-22 ~8 minecraft:obsidian
+fill ~79 ~-22 ~9 ~83 ~-22 ~9 minecraft:obsidian
+fill ~77 ~-22 ~9 ~77 ~-22 ~11 minecraft:obsidian
+fill ~74 ~-22 ~13 ~78 ~-22 ~13 minecraft:obsidian
+fill ~74 ~-19 ~13 ~78 ~-19 ~13 minecraft:obsidian
+fill ~89 ~-22 ~13 ~89 ~-20 ~13 minecraft:obsidian
+fill ~95 ~-22 ~13 ~95 ~-22 ~14 minecraft:obsidian
+fill ~89 ~-22 ~14 ~90 ~-20 ~14 minecraft:obsidian
+fill ~74 ~-22 ~14 ~77 ~-22 ~15 minecraft:obsidian
+fill ~78 ~-21 ~8 ~85 ~-21 ~8 minecraft:obsidian
+fill ~77 ~-21 ~9 ~84 ~-21 ~9 minecraft:obsidian
+fill ~79 ~-21 ~10 ~84 ~-21 ~10 minecraft:obsidian
+setblock ~77 ~-21 ~10 minecraft:obsidian
+fill ~77 ~-21 ~11 ~78 ~-21 ~11 minecraft:obsidian
+fill ~76 ~-21 ~12 ~78 ~-20 ~12 minecraft:obsidian
+fill ~74 ~-21 ~13 ~78 ~-21 ~14 minecraft:obsidian
+fill ~94 ~-21 ~13 ~95 ~-20 ~14 minecraft:obsidian
+fill ~74 ~-21 ~15 ~77 ~-21 ~15 minecraft:obsidian
+fill ~77 ~-20 ~8 ~85 ~-20 ~9 minecraft:obsidian
+fill ~77 ~-20 ~10 ~84 ~-20 ~11 minecraft:obsidian
+fill ~74 ~-20 ~13 ~78 ~-20 ~15 minecraft:obsidian
+fill ~75 ~-20 ~16 ~77 ~-20 ~16 minecraft:obsidian
+fill ~76 ~-19 ~8 ~86 ~-19 ~9 minecraft:obsidian
+fill ~77 ~-19 ~10 ~85 ~-19 ~11 minecraft:obsidian
+fill ~76 ~-19 ~12 ~83 ~-19 ~12 minecraft:obsidian
+fill ~95 ~-19 ~12 ~95 ~-16 ~12 minecraft:obsidian
+fill ~94 ~-19 ~13 ~96 ~-16 ~13 minecraft:obsidian
+fill ~89 ~-19 ~13 ~90 ~-18 ~14 minecraft:obsidian
+fill ~94 ~-19 ~14 ~95 ~-19 ~14 minecraft:obsidian
+fill ~73 ~-19 ~14 ~78 ~-18 ~14 minecraft:obsidian
+fill ~74 ~-19 ~15 ~78 ~-18 ~15 minecraft:obsidian
+fill ~75 ~-19 ~16 ~78 ~-18 ~16 minecraft:obsidian
+fill ~75 ~-18 ~8 ~87 ~-18 ~9 minecraft:obsidian
+fill ~76 ~-18 ~10 ~87 ~-18 ~10 minecraft:obsidian
+fill ~77 ~-18 ~11 ~86 ~-18 ~11 minecraft:obsidian
+fill ~76 ~-18 ~12 ~85 ~-18 ~12 minecraft:obsidian
+fill ~74 ~-18 ~13 ~84 ~-18 ~13 minecraft:obsidian
+fill ~93 ~-18 ~14 ~96 ~-15 ~14 minecraft:obsidian
+fill ~74 ~-17 ~8 ~88 ~-17 ~9 minecraft:obsidian
+fill ~75 ~-17 ~10 ~88 ~-17 ~10 minecraft:obsidian
+fill ~76 ~-17 ~11 ~87 ~-17 ~11 minecraft:obsidian
+fill ~76 ~-17 ~12 ~86 ~-17 ~12 minecraft:obsidian
+fill ~74 ~-17 ~13 ~85 ~-17 ~13 minecraft:obsidian
+fill ~89 ~-17 ~13 ~90 ~-17 ~13 minecraft:obsidian
+fill ~88 ~-17 ~14 ~91 ~-16 ~14 minecraft:obsidian
+fill ~73 ~-17 ~14 ~84 ~-17 ~14 minecraft:obsidian
+fill ~74 ~-17 ~15 ~78 ~-17 ~16 minecraft:obsidian
+fill ~73 ~-16 ~8 ~89 ~-16 ~8 minecraft:obsidian
+fill ~74 ~-16 ~9 ~89 ~-16 ~10 minecraft:obsidian
+fill ~75 ~-16 ~11 ~88 ~-16 ~12 minecraft:obsidian
+fill ~74 ~-16 ~13 ~90 ~-16 ~13 minecraft:obsidian
+fill ~73 ~-16 ~14 ~86 ~-16 ~14 minecraft:obsidian
+fill ~74 ~-16 ~15 ~84 ~-16 ~15 minecraft:obsidian
+fill ~89 ~-16 ~15 ~89 ~-15 ~15 minecraft:obsidian
+fill ~74 ~-16 ~16 ~78 ~-15 ~16 minecraft:obsidian
+fill ~73 ~-15 ~8 ~90 ~-15 ~10 minecraft:obsidian
+fill ~74 ~-15 ~11 ~89 ~-15 ~11 minecraft:obsidian
+fill ~95 ~-15 ~12 ~96 ~-15 ~12 minecraft:obsidian
+fill ~75 ~-15 ~12 ~89 ~-15 ~12 minecraft:obsidian
+fill ~73 ~-15 ~13 ~90 ~-15 ~13 minecraft:obsidian
+fill ~93 ~-15 ~13 ~97 ~-15 ~13 minecraft:obsidian
+fill ~73 ~-15 ~14 ~91 ~-15 ~14 minecraft:obsidian
+fill ~74 ~-15 ~15 ~86 ~-15 ~15 minecraft:obsidian
+fill ~80 ~-15 ~16 ~84 ~-15 ~16 minecraft:obsidian
+fill ~76 ~-15 ~17 ~77 ~-15 ~17 minecraft:obsidian
+fill ~72 ~-14 ~8 ~91 ~-14 ~9 minecraft:end_stone
+fill ~73 ~-14 ~10 ~91 ~-14 ~10 minecraft:end_stone
+fill ~73 ~-14 ~11 ~90 ~-14 ~11 minecraft:end_stone
+fill ~95 ~-14 ~12 ~96 ~-14 ~12 minecraft:end_stone
+fill ~74 ~-14 ~12 ~90 ~-14 ~12 minecraft:end_stone
+fill ~93 ~-14 ~13 ~97 ~-13 ~13 minecraft:end_stone
+fill ~73 ~-14 ~13 ~90 ~-14 ~13 minecraft:end_stone
+fill ~73 ~-14 ~14 ~96 ~-14 ~14 minecraft:end_stone
+fill ~73 ~-14 ~15 ~90 ~-13 ~15 minecraft:end_stone
+fill ~74 ~-14 ~16 ~86 ~-14 ~16 minecraft:end_stone
+fill ~75 ~-14 ~17 ~77 ~-13 ~17 minecraft:end_stone
+fill ~72 ~-13 ~8 ~94 ~-13 ~9 minecraft:end_stone
+fill ~72 ~-13 ~10 ~93 ~-13 ~11 minecraft:end_stone
+setblock ~95 ~-13 ~11 minecraft:end_stone
+fill ~73 ~-13 ~12 ~97 ~-13 ~12 minecraft:end_stone
+fill ~73 ~-13 ~13 ~91 ~-13 ~13 minecraft:end_stone
+fill ~73 ~-13 ~14 ~97 ~-13 ~14 minecraft:end_stone
+fill ~73 ~-11 ~14 ~97 ~-11 ~14 minecraft:end_stone
+setblock ~95 ~-13 ~15 minecraft:end_stone
+fill ~74 ~-13 ~16 ~88 ~-13 ~16 minecraft:end_stone
+fill ~79 ~-13 ~17 ~87 ~-13 ~17 minecraft:end_stone
+setblock ~95 ~-13 ~20 minecraft:end_stone
+fill ~72 ~-12 ~8 ~95 ~-12 ~11 minecraft:end_stone
+fill ~72 ~-12 ~12 ~97 ~-12 ~12 minecraft:end_stone
+fill ~73 ~-12 ~13 ~97 ~-12 ~14 minecraft:end_stone
+fill ~73 ~-12 ~15 ~95 ~-11 ~15 minecraft:end_stone
+fill ~74 ~-12 ~16 ~90 ~-12 ~16 minecraft:end_stone
+fill ~74 ~-12 ~17 ~89 ~-12 ~17 minecraft:end_stone
+fill ~81 ~-12 ~18 ~87 ~-12 ~18 minecraft:end_stone
+fill ~95 ~-12 ~19 ~95 ~-11 ~20 minecraft:end_stone
+fill ~72 ~-11 ~8 ~96 ~-11 ~8 minecraft:end_stone
+fill ~72 ~-11 ~9 ~97 ~-11 ~12 minecraft:end_stone
+fill ~72 ~-11 ~13 ~98 ~-11 ~13 minecraft:end_stone
+fill ~74 ~-11 ~16 ~94 ~-11 ~16 minecraft:end_stone
+fill ~74 ~-11 ~17 ~92 ~-11 ~17 minecraft:end_stone
+fill ~79 ~-11 ~18 ~89 ~-11 ~18 minecraft:end_stone
+fill ~81 ~-11 ~19 ~88 ~-11 ~19 minecraft:end_stone
+setblock ~92 ~-11 ~22 minecraft:end_stone
+fill ~72 ~-10 ~8 ~97 ~-10 ~9 minecraft:end_stone
+fill ~72 ~-10 ~10 ~98 ~-10 ~13 minecraft:end_stone
+fill ~72 ~-10 ~14 ~97 ~-10 ~14 minecraft:end_stone
+fill ~73 ~-10 ~15 ~97 ~-10 ~15 minecraft:end_stone
+fill ~74 ~-10 ~16 ~96 ~-10 ~17 minecraft:end_stone
+fill ~77 ~-10 ~18 ~94 ~-10 ~18 minecraft:end_stone
+fill ~95 ~-10 ~19 ~96 ~-10 ~19 minecraft:end_stone
+fill ~80 ~-10 ~19 ~90 ~-10 ~19 minecraft:end_stone
+fill ~81 ~-10 ~20 ~89 ~-10 ~20 minecraft:end_stone
+fill ~94 ~-10 ~20 ~96 ~-9 ~20 minecraft:end_stone
+fill ~94 ~-10 ~21 ~95 ~-9 ~21 minecraft:end_stone
+fill ~92 ~-10 ~22 ~93 ~-9 ~22 minecraft:end_stone
+fill ~92 ~-10 ~23 ~92 ~-9 ~23 minecraft:end_stone
+fill ~72 ~-9 ~8 ~98 ~-9 ~10 minecraft:end_stone
+fill ~72 ~-9 ~11 ~99 ~-9 ~11 minecraft:end_stone
+fill ~72 ~-9 ~12 ~98 ~-9 ~15 minecraft:end_stone
+fill ~73 ~-9 ~16 ~98 ~-9 ~16 minecraft:end_stone
+fill ~74 ~-9 ~17 ~97 ~-9 ~17 minecraft:end_stone
+fill ~76 ~-9 ~18 ~96 ~-9 ~18 minecraft:end_stone
+fill ~77 ~-9 ~19 ~96 ~-9 ~19 minecraft:end_stone
+fill ~80 ~-9 ~20 ~92 ~-9 ~20 minecraft:end_stone
+fill ~81 ~-9 ~21 ~89 ~-9 ~21 minecraft:end_stone
+fill ~72 ~-8 ~8 ~99 ~-7 ~9 minecraft:end_stone
+fill ~72 ~-8 ~10 ~100 ~-8 ~11 minecraft:end_stone
+fill ~72 ~-8 ~12 ~99 ~-8 ~15 minecraft:end_stone
+fill ~72 ~-8 ~16 ~101 ~-8 ~16 minecraft:end_stone
+fill ~73 ~-8 ~17 ~98 ~-8 ~17 minecraft:end_stone
+fill ~74 ~-8 ~18 ~98 ~-8 ~18 minecraft:end_stone
+fill ~76 ~-8 ~19 ~96 ~-8 ~19 minecraft:end_stone
+fill ~77 ~-8 ~20 ~96 ~-8 ~20 minecraft:end_stone
+fill ~80 ~-8 ~21 ~95 ~-8 ~21 minecraft:end_stone
+fill ~82 ~-8 ~22 ~90 ~-8 ~22 minecraft:end_stone
+fill ~92 ~-8 ~22 ~94 ~-8 ~22 minecraft:end_stone
+fill ~92 ~-8 ~23 ~93 ~-8 ~23 minecraft:end_stone
+fill ~72 ~-7 ~10 ~100 ~-7 ~15 minecraft:end_stone
+fill ~72 ~-7 ~16 ~101 ~-6 ~17 minecraft:end_stone
+fill ~73 ~-7 ~18 ~99 ~-7 ~18 minecraft:end_stone
+fill ~74 ~-7 ~19 ~98 ~-7 ~19 minecraft:end_stone
+fill ~76 ~-7 ~20 ~97 ~-7 ~20 minecraft:end_stone
+fill ~78 ~-7 ~21 ~95 ~-7 ~21 minecraft:end_stone
+fill ~80 ~-7 ~22 ~94 ~-7 ~22 minecraft:end_stone
+fill ~82 ~-7 ~23 ~93 ~-7 ~23 minecraft:end_stone
+fill ~72 ~-6 ~8 ~100 ~-3 ~9 minecraft:end_stone
+fill ~72 ~-6 ~10 ~101 ~-6 ~10 minecraft:end_stone
+fill ~72 ~-6 ~11 ~100 ~-6 ~15 minecraft:end_stone
+fill ~72 ~-6 ~18 ~100 ~-5 ~18 minecraft:end_stone
+fill ~73 ~-6 ~19 ~98 ~-6 ~19 minecraft:end_stone
+fill ~75 ~-6 ~20 ~97 ~-6 ~20 minecraft:end_stone
+fill ~76 ~-6 ~21 ~96 ~-6 ~21 minecraft:end_stone
+fill ~79 ~-6 ~22 ~95 ~-6 ~22 minecraft:end_stone
+fill ~81 ~-6 ~23 ~94 ~-6 ~23 minecraft:end_stone
+fill ~84 ~-6 ~24 ~89 ~-6 ~24 minecraft:end_stone
+fill ~72 ~-5 ~10 ~101 ~-5 ~17 minecraft:end_stone
+fill ~72 ~-5 ~19 ~99 ~-4 ~19 minecraft:end_stone
+fill ~74 ~-5 ~20 ~98 ~-5 ~20 minecraft:end_stone
+fill ~75 ~-5 ~21 ~96 ~-5 ~21 minecraft:end_stone
+fill ~77 ~-5 ~22 ~95 ~-5 ~22 minecraft:end_stone
+fill ~80 ~-5 ~23 ~94 ~-4 ~23 minecraft:end_stone
+fill ~82 ~-5 ~24 ~91 ~-5 ~24 minecraft:end_stone
+fill ~72 ~-4 ~10 ~101 ~-3 ~18 minecraft:end_stone
+fill ~73 ~-4 ~20 ~98 ~-4 ~20 minecraft:end_stone
+fill ~74 ~-4 ~21 ~97 ~0 ~21 minecraft:end_stone
+fill ~76 ~-4 ~22 ~95 ~-3 ~22 minecraft:end_stone
+fill ~81 ~-4 ~24 ~92 ~-3 ~24 minecraft:end_stone
+fill ~84 ~-4 ~25 ~90 ~-4 ~25 minecraft:end_stone
+fill ~93 ~-4 ~39 ~93 ~-3 ~39 minecraft:obsidian
+fill ~72 ~-3 ~19 ~100 ~0 ~19 minecraft:end_stone
+fill ~72 ~-3 ~20 ~98 ~0 ~20 minecraft:end_stone
+fill ~79 ~-3 ~23 ~94 ~-3 ~23 minecraft:end_stone
+fill ~83 ~-3 ~25 ~91 ~0 ~25 minecraft:end_stone
+fill ~72 ~-2 ~8 ~100 ~0 ~8 minecraft:end_stone
+fill ~72 ~-2 ~9 ~101 ~0 ~18 minecraft:end_stone
+fill ~75 ~-2 ~22 ~96 ~0 ~22 minecraft:end_stone
+fill ~78 ~-2 ~23 ~94 ~0 ~23 minecraft:end_stone
+fill ~81 ~-2 ~24 ~93 ~0 ~24 minecraft:end_stone
+setblock ~93 ~-2 ~38 minecraft:obsidian
+fill ~92 ~-2 ~39 ~94 ~-2 ~39 minecraft:obsidian
+setblock ~93 ~-1 ~38 minecraft:end_stone
+fill ~92 ~-1 ~39 ~94 ~-1 ~39 minecraft:end_stone
+fill ~75 ~0 ~23 ~77 ~0 ~23 minecraft:smooth_quartz
+fill ~74 ~0 ~24 ~76 ~0 ~24 minecraft:smooth_quartz
+fill ~73 ~0 ~25 ~76 ~0 ~26 minecraft:smooth_quartz
+fill ~72 ~0 ~27 ~76 ~0 ~27 minecraft:smooth_quartz
+fill ~72 ~0 ~28 ~75 ~0 ~29 minecraft:smooth_quartz
+fill ~72 ~0 ~30 ~74 ~0 ~31 minecraft:smooth_quartz
+fill ~72 ~0 ~32 ~73 ~0 ~33 minecraft:smooth_quartz
+fill ~72 ~0 ~34 ~72 ~0 ~35 minecraft:smooth_quartz
+fill ~97 ~1 ~8 ~100 ~1 ~10 minecraft:end_stone
+fill ~96 ~1 ~11 ~101 ~1 ~12 minecraft:end_stone
+fill ~95 ~1 ~13 ~101 ~1 ~14 minecraft:end_stone
+fill ~94 ~1 ~15 ~101 ~1 ~15 minecraft:end_stone
+fill ~93 ~1 ~16 ~101 ~1 ~16 minecraft:end_stone
+fill ~92 ~1 ~17 ~101 ~1 ~17 minecraft:end_stone
+fill ~91 ~1 ~18 ~101 ~1 ~18 minecraft:end_stone
+fill ~90 ~1 ~19 ~99 ~1 ~19 minecraft:end_stone
+fill ~88 ~1 ~20 ~98 ~1 ~20 minecraft:end_stone
+fill ~87 ~1 ~21 ~96 ~1 ~21 minecraft:end_stone
+fill ~87 ~1 ~22 ~95 ~1 ~22 minecraft:end_stone
+fill ~87 ~1 ~23 ~93 ~1 ~23 minecraft:end_stone
+fill ~87 ~1 ~24 ~90 ~1 ~24 minecraft:end_stone
+setblock ~74 ~1 ~24 minecraft:white_stained_glass_pane
+fill ~73 ~1 ~25 ~73 ~1 ~26 minecraft:white_stained_glass_pane
+fill ~76 ~1 ~26 ~76 ~1 ~27 minecraft:white_stained_glass_pane
+fill ~72 ~1 ~27 ~72 ~1 ~28 minecraft:white_stained_glass_pane
+fill ~75 ~1 ~28 ~75 ~1 ~29 minecraft:white_stained_glass_pane
+fill ~74 ~1 ~30 ~74 ~1 ~31 minecraft:white_stained_glass_pane
+fill ~73 ~1 ~32 ~73 ~1 ~33 minecraft:white_stained_glass_pane
+fill ~72 ~1 ~34 ~72 ~1 ~35 minecraft:white_stained_glass_pane
+fill ~98 ~2 ~8 ~100 ~2 ~11 minecraft:end_stone
+fill ~97 ~2 ~12 ~100 ~2 ~13 minecraft:end_stone
+fill ~96 ~2 ~14 ~100 ~2 ~14 minecraft:end_stone
+fill ~95 ~2 ~15 ~100 ~2 ~15 minecraft:end_stone
+fill ~94 ~2 ~16 ~100 ~2 ~17 minecraft:end_stone
+fill ~93 ~2 ~18 ~100 ~2 ~18 minecraft:end_stone
+fill ~93 ~2 ~19 ~98 ~2 ~19 minecraft:end_stone
+fill ~92 ~2 ~20 ~97 ~2 ~20 minecraft:end_stone
+fill ~91 ~2 ~21 ~94 ~2 ~21 minecraft:end_stone
+setblock ~99 ~3 ~13 minecraft:end_stone
+fill ~97 ~3 ~14 ~99 ~3 ~14 minecraft:end_stone
+fill ~96 ~3 ~15 ~100 ~3 ~15 minecraft:end_stone
+fill ~95 ~3 ~16 ~100 ~3 ~16 minecraft:end_stone
+fill ~95 ~3 ~17 ~99 ~3 ~18 minecraft:end_stone
+fill ~95 ~3 ~19 ~97 ~3 ~19 minecraft:end_stone
+setblock ~98 ~4 ~15 minecraft:end_stone
+fill ~97 ~4 ~16 ~99 ~4 ~16 minecraft:end_stone
+fill ~96 ~4 ~17 ~99 ~4 ~17 minecraft:end_stone
+fill ~96 ~4 ~18 ~98 ~4 ~18 minecraft:end_stone
+execute if score #sv0 oa.map2 matches 0 run fill ~96 ~-3 ~8 ~100 ~20 ~9 minecraft:obsidian
+execute if score #sv0 oa.map2 matches 0 run fill ~97 ~-3 ~10 ~99 ~20 ~10 minecraft:obsidian
+execute if score #sv0 oa.map2 matches 0 run fill ~89 ~0 ~8 ~95 ~0 ~8 minecraft:end_stone_bricks
+execute if score #sv0 oa.map2 matches 0 run fill ~76 ~0 ~8 ~79 ~0 ~8 minecraft:end_stone_bricks
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~0 ~8 ~88 ~0 ~11 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~74 ~0 ~13 ~78 ~0 ~14 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~0 ~13 ~94 ~0 ~17 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~83 ~0 ~12 ~85 ~0 ~19 minecraft:end_stone_bricks
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~1 ~8 ~87 ~1 ~8 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~7 ~8 ~87 ~7 ~8 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~1 ~9 ~85 ~1 ~9 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run setblock ~86 ~1 ~9 minecraft:chest[facing=north]
+execute if score #sv0 oa.map2 matches 0 run setblock ~87 ~1 ~9 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~1 ~8 ~80 ~2 ~10 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~5 ~8 ~80 ~5 ~10 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~19 ~8 ~80 ~20 ~10 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~23 ~8 ~80 ~23 ~10 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~1 ~8 ~88 ~2 ~10 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~5 ~8 ~88 ~5 ~10 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~19 ~8 ~88 ~20 ~10 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~23 ~8 ~88 ~23 ~10 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~1 ~10 ~87 ~1 ~10 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~7 ~10 ~87 ~7 ~10 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~84 ~1 ~11 ~84 ~2 ~11 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~1 ~11 ~80 ~30 ~11 minecraft:stripped_crimson_stem
+execute if score #sv0 oa.map2 matches 0 run fill ~85 ~1 ~11 ~87 ~2 ~11 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~1 ~11 ~83 ~2 ~11 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~1 ~11 ~88 ~30 ~11 minecraft:stripped_crimson_stem
+execute if score #sv0 oa.map2 matches 0 run setblock ~76 ~1 ~12 minecraft:coal_ore
+execute if score #sv0 oa.map2 matches 0 run fill ~77 ~1 ~13 ~77 ~2 ~13 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~1 ~13 ~90 ~20 ~13 minecraft:stripped_crimson_stem
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~1 ~13 ~94 ~20 ~13 minecraft:stripped_crimson_stem
+execute if score #sv0 oa.map2 matches 0 run fill ~76 ~1 ~13 ~76 ~2 ~13 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~92 ~1 ~13 ~92 ~2 ~13 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~93 ~1 ~13 ~93 ~2 ~13 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run setblock ~83 ~1 ~13 minecraft:chest[facing=north]
+execute if score #sv0 oa.map2 matches 0 run fill ~78 ~1 ~13 ~78 ~14 ~13 minecraft:stripped_crimson_stem
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~1 ~13 ~91 ~2 ~13 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~74 ~1 ~13 ~74 ~14 ~13 minecraft:stripped_crimson_stem
+execute if score #sv0 oa.map2 matches 0 run fill ~75 ~1 ~13 ~75 ~2 ~13 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~1 ~14 ~94 ~2 ~14 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~92 ~1 ~14 ~93 ~5 ~14 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~1 ~14 ~90 ~2 ~14 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~76 ~1 ~14 ~77 ~5 ~14 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~78 ~1 ~14 ~78 ~2 ~14 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run setblock ~78 ~5 ~14 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~78 ~13 ~14 ~78 ~14 ~14 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~1 ~14 ~91 ~6 ~14 minecraft:ladder[facing=south]
+execute if score #sv0 oa.map2 matches 0 run fill ~74 ~1 ~14 ~74 ~2 ~14 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run setblock ~74 ~5 ~14 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~74 ~13 ~14 ~74 ~14 ~14 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~75 ~1 ~14 ~75 ~6 ~14 minecraft:ladder[facing=south]
+execute if score #sv0 oa.map2 matches 0 run setblock ~85 ~1 ~15 minecraft:chest[facing=north]
+execute if score #sv0 oa.map2 matches 0 run setblock ~86 ~1 ~15 minecraft:end_stone
+execute if score #sv0 oa.map2 matches 0 run setblock ~92 ~1 ~15 minecraft:chest[facing=north]
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~1 ~15 ~91 ~1 ~15 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~93 ~1 ~15 ~94 ~1 ~15 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~1 ~16 ~90 ~2 ~16 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~1 ~16 ~94 ~2 ~16 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~1 ~16 ~93 ~2 ~16 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~5 ~16 ~93 ~5 ~16 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~11 ~16 ~93 ~11 ~16 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run setblock ~86 ~1 ~16 minecraft:coal_ore
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~1 ~17 ~94 ~20 ~17 minecraft:stripped_crimson_stem
+execute if score #sv0 oa.map2 matches 0 run fill ~93 ~1 ~17 ~93 ~2 ~17 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~92 ~1 ~17 ~92 ~2 ~17 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~1 ~17 ~90 ~20 ~17 minecraft:stripped_crimson_stem
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~1 ~17 ~91 ~2 ~17 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run setblock ~84 ~1 ~18 minecraft:end_stone
+execute if score #sv0 oa.map2 matches 0 run setblock ~84 ~1 ~19 minecraft:coal_ore
+execute if score #sv0 oa.map2 matches 0 run fill ~84 ~1 ~21 ~84 ~4 ~21 minecraft:cherry_log
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~2 ~8 ~87 ~5 ~10 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~8 ~8 ~87 ~11 ~10 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~13 ~8 ~87 ~30 ~10 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~2 ~15 ~94 ~2 ~15 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~3 ~8 ~80 ~4 ~8 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~9 ~8 ~80 ~10 ~8 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~15 ~8 ~80 ~16 ~8 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~80 ~21 ~8 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~80 ~28 ~8 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~88 ~3 ~8 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~88 ~28 ~8 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~3 ~9 ~80 ~4 ~9 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~21 ~9 ~80 ~22 ~9 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~3 ~9 ~88 ~4 ~9 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~21 ~9 ~88 ~22 ~9 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~3 ~10 ~80 ~4 ~10 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~80 ~9 ~10 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~80 ~16 ~10 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~21 ~10 ~80 ~22 ~10 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~27 ~10 ~80 ~28 ~10 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~3 ~10 ~88 ~4 ~10 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~9 ~10 ~88 ~10 ~10 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~88 ~15 ~10 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~88 ~22 ~10 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~27 ~10 ~88 ~28 ~10 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~84 ~3 ~11 ~84 ~4 ~11 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~84 ~21 ~11 ~84 ~22 ~11 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~82 ~3 ~11 ~82 ~4 ~11 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~82 ~21 ~11 ~82 ~22 ~11 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run setblock ~87 ~3 ~11 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~87 ~28 ~11 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run fill ~86 ~3 ~11 ~86 ~4 ~11 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~86 ~21 ~11 ~86 ~22 ~11 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~3 ~11 ~81 ~4 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~9 ~11 ~81 ~10 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~81 ~15 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~81 ~22 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~27 ~11 ~81 ~28 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~83 ~3 ~11 ~83 ~4 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~83 ~9 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~83 ~16 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~83 ~21 ~11 ~83 ~22 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~83 ~27 ~11 ~83 ~28 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~85 ~3 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~85 ~10 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~85 ~15 ~11 ~85 ~16 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~85 ~21 ~11 ~85 ~22 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~85 ~27 ~11 ~85 ~28 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~98 ~3 ~11 ~98 ~6 ~12 minecraft:cherry_log
+execute if score #sv0 oa.map2 matches 0 run fill ~77 ~3 ~13 ~77 ~4 ~13 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~77 ~9 ~13 ~77 ~10 ~13 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~76 ~3 ~13 ~76 ~4 ~13 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~92 ~3 ~13 ~92 ~4 ~13 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~92 ~15 ~13 ~92 ~16 ~13 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run setblock ~93 ~3 ~13 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~91 ~3 ~13 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~91 ~10 ~13 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~15 ~13 ~91 ~16 ~13 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~75 ~3 ~13 ~75 ~4 ~13 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~75 ~9 ~13 ~75 ~10 ~13 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~3 ~14 ~90 ~4 ~14 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~9 ~14 ~90 ~10 ~14 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~90 ~15 ~14 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~78 ~3 ~14 ~78 ~4 ~14 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~78 ~9 ~14 ~78 ~10 ~14 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~74 ~3 ~14 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~74 ~10 ~14 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~94 ~3 ~14 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~94 ~10 ~14 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~15 ~14 ~94 ~16 ~14 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~3 ~15 ~90 ~4 ~15 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~15 ~15 ~90 ~16 ~15 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~3 ~15 ~94 ~4 ~15 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~15 ~15 ~94 ~16 ~15 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~3 ~15 ~93 ~4 ~16 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~3 ~16 ~94 ~4 ~16 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~9 ~16 ~94 ~10 ~16 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~15 ~16 ~94 ~16 ~16 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~90 ~3 ~16 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~90 ~10 ~16 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~15 ~16 ~90 ~16 ~16 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~92 ~3 ~17 ~92 ~4 ~17 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~92 ~15 ~17 ~92 ~16 ~17 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run setblock ~93 ~3 ~17 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~93 ~10 ~17 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~93 ~15 ~17 ~93 ~16 ~17 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~3 ~17 ~91 ~4 ~17 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~91 ~9 ~17 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~91 ~16 ~17 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~93 ~3 ~18 minecraft:chest[facing=north]
+execute if score #sv0 oa.map2 matches 0 run fill ~83 ~3 ~19 ~85 ~4 ~19 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~83 ~3 ~20 ~86 ~4 ~20 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~93 ~3 ~20 ~93 ~6 ~20 minecraft:cherry_log
+execute if score #sv0 oa.map2 matches 0 run fill ~85 ~3 ~21 ~86 ~4 ~21 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~83 ~3 ~21 ~83 ~4 ~21 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~83 ~3 ~22 ~86 ~4 ~22 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~83 ~3 ~23 ~85 ~4 ~23 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run setblock ~88 ~4 ~8 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~9 ~8 ~88 ~10 ~8 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~15 ~8 ~88 ~16 ~8 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~21 ~8 ~88 ~22 ~8 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~88 ~27 ~8 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~85 ~4 ~11 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~85 ~9 ~11 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~87 ~4 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~87 ~9 ~11 ~87 ~10 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~87 ~15 ~11 ~87 ~16 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~87 ~21 ~11 ~87 ~22 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~87 ~27 ~11 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~91 ~4 ~13 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~91 ~9 ~13 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~93 ~4 ~13 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~93 ~9 ~13 ~93 ~10 ~13 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run fill ~93 ~15 ~13 ~93 ~16 ~13 minecraft:magenta_stained_glass
+execute if score #sv0 oa.map2 matches 0 run setblock ~74 ~4 ~14 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~74 ~9 ~14 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~94 ~4 ~14 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~94 ~9 ~14 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~90 ~4 ~16 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~90 ~9 ~16 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~93 ~4 ~17 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~93 ~9 ~17 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run fill ~95 ~4 ~18 ~95 ~7 ~18 minecraft:cherry_log
+execute if score #sv0 oa.map2 matches 0 run fill ~96 ~5 ~10 ~96 ~6 ~10 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~100 ~5 ~10 ~100 ~6 ~10 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~5 ~11 ~87 ~5 ~11 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~19 ~11 ~87 ~20 ~11 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~23 ~11 ~87 ~23 ~11 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~96 ~5 ~11 ~97 ~6 ~12 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~99 ~5 ~11 ~100 ~6 ~12 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~5 ~13 ~93 ~5 ~13 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~13 ~13 ~93 ~14 ~13 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~17 ~13 ~93 ~17 ~13 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~96 ~5 ~13 ~100 ~6 ~13 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~75 ~5 ~13 ~77 ~5 ~13 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~75 ~13 ~13 ~77 ~14 ~13 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~97 ~5 ~14 ~99 ~6 ~14 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run setblock ~91 ~5 ~15 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run setblock ~91 ~11 ~15 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run setblock ~92 ~5 ~15 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~92 ~11 ~15 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~93 ~5 ~15 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run setblock ~93 ~11 ~15 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~5 ~14 ~94 ~5 ~16 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~13 ~14 ~94 ~14 ~16 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~17 ~14 ~94 ~17 ~16 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~5 ~14 ~90 ~5 ~16 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~13 ~14 ~90 ~14 ~16 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~17 ~14 ~90 ~17 ~16 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~5 ~17 ~93 ~5 ~17 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~13 ~17 ~93 ~14 ~17 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~17 ~17 ~93 ~17 ~17 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~92 ~5 ~18 ~94 ~5 ~18 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run setblock ~84 ~5 ~19 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~5 ~19 ~95 ~5 ~19 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~83 ~5 ~20 ~85 ~5 ~20 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~5 ~20 ~95 ~5 ~20 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~5 ~20 ~92 ~6 ~20 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~83 ~5 ~21 ~86 ~5 ~21 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~5 ~21 ~95 ~6 ~21 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~83 ~5 ~22 ~85 ~5 ~22 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~92 ~5 ~22 ~94 ~6 ~22 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run setblock ~84 ~5 ~23 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~6 ~8 ~80 ~8 ~10 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~11 ~8 ~80 ~12 ~10 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~18 ~8 ~80 ~18 ~10 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~24 ~8 ~80 ~26 ~10 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~29 ~8 ~80 ~30 ~10 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~6 ~8 ~88 ~8 ~10 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~11 ~8 ~88 ~12 ~10 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~18 ~8 ~88 ~18 ~10 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~24 ~8 ~88 ~26 ~10 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~29 ~8 ~88 ~30 ~10 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~6 ~8 ~87 ~6 ~10 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~12 ~8 ~87 ~12 ~10 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~32 ~8 ~87 ~32 ~10 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~79 ~6 ~8 ~79 ~6 ~11 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~79 ~12 ~8 ~79 ~12 ~11 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~79 ~18 ~8 ~79 ~18 ~11 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~79 ~24 ~8 ~79 ~24 ~11 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~79 ~30 ~8 ~79 ~30 ~11 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~89 ~6 ~8 ~89 ~6 ~11 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~89 ~12 ~8 ~89 ~12 ~11 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~89 ~18 ~8 ~89 ~18 ~11 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~89 ~24 ~8 ~89 ~24 ~11 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~89 ~30 ~8 ~89 ~30 ~11 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~6 ~11 ~87 ~8 ~11 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~11 ~11 ~87 ~12 ~11 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~18 ~11 ~87 ~18 ~11 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~24 ~11 ~87 ~26 ~11 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~29 ~11 ~87 ~30 ~11 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~73 ~6 ~12 ~95 ~6 ~12 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~73 ~12 ~12 ~95 ~12 ~12 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run setblock ~79 ~6 ~13 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run setblock ~89 ~6 ~13 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~75 ~6 ~13 ~77 ~6 ~13 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~75 ~12 ~13 ~77 ~12 ~13 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~6 ~13 ~93 ~6 ~13 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~12 ~13 ~93 ~12 ~13 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~18 ~13 ~93 ~18 ~13 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~76 ~6 ~14 ~77 ~6 ~14 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run setblock ~78 ~6 ~14 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run setblock ~78 ~12 ~14 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run setblock ~79 ~6 ~14 minecraft:end_stone_bricks
+execute if score #sv0 oa.map2 matches 0 run setblock ~74 ~6 ~14 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run setblock ~74 ~12 ~14 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~92 ~6 ~14 ~93 ~6 ~14 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~89 ~6 ~14 ~89 ~6 ~16 minecraft:end_stone_bricks
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~6 ~14 ~94 ~6 ~16 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~12 ~14 ~94 ~12 ~16 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~18 ~14 ~94 ~18 ~16 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~6 ~14 ~90 ~6 ~16 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~12 ~14 ~90 ~12 ~16 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~18 ~14 ~90 ~18 ~16 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~6 ~15 ~93 ~6 ~16 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run setblock ~96 ~6 ~16 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~95 ~6 ~13 ~95 ~6 ~17 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~95 ~12 ~13 ~95 ~12 ~17 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~95 ~18 ~13 ~95 ~18 ~17 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run setblock ~89 ~6 ~17 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~6 ~17 ~93 ~6 ~17 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~12 ~17 ~93 ~12 ~17 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~18 ~17 ~93 ~18 ~17 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~73 ~6 ~13 ~73 ~6 ~18 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~73 ~12 ~13 ~73 ~12 ~18 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~96 ~6 ~17 ~97 ~6 ~18 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~89 ~6 ~18 ~94 ~6 ~18 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~6 ~19 ~97 ~6 ~19 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~6 ~20 ~96 ~6 ~20 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run setblock ~82 ~7 ~9 minecraft:chest[facing=north]
+execute if score #sv0 oa.map2 matches 0 run fill ~83 ~7 ~9 ~87 ~7 ~9 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run setblock ~81 ~7 ~9 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~96 ~7 ~11 ~100 ~7 ~12 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run setblock ~73 ~7 ~12 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~73 ~13 ~12 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~95 ~7 ~12 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~95 ~13 ~12 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~95 ~19 ~12 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~89 ~7 ~12 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~89 ~13 ~12 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~89 ~19 ~12 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~89 ~25 ~12 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~89 ~31 ~12 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~79 ~7 ~12 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~79 ~13 ~12 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~79 ~19 ~12 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~79 ~25 ~12 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~79 ~31 ~12 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~7 ~13 ~93 ~8 ~13 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~11 ~13 ~93 ~11 ~13 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~19 ~13 ~93 ~20 ~13 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~75 ~7 ~13 ~77 ~8 ~13 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~75 ~11 ~13 ~77 ~11 ~13 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~97 ~7 ~13 ~99 ~7 ~13 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run setblock ~98 ~7 ~14 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~78 ~7 ~14 ~78 ~8 ~14 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run setblock ~78 ~11 ~14 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~74 ~7 ~14 ~74 ~8 ~14 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run setblock ~74 ~11 ~14 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~75 ~7 ~14 ~77 ~11 ~14 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~75 ~13 ~14 ~77 ~14 ~14 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~7 ~14 ~93 ~10 ~16 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~13 ~14 ~93 ~20 ~16 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~7 ~14 ~94 ~8 ~16 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~11 ~14 ~94 ~11 ~16 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~19 ~14 ~94 ~20 ~16 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~7 ~14 ~90 ~8 ~16 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~11 ~14 ~90 ~11 ~16 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~19 ~14 ~90 ~20 ~16 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~95 ~7 ~16 ~96 ~7 ~16 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~95 ~7 ~17 ~97 ~7 ~17 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~7 ~17 ~93 ~8 ~17 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~11 ~17 ~93 ~11 ~17 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~19 ~17 ~93 ~20 ~17 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~96 ~7 ~18 ~97 ~7 ~18 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run setblock ~73 ~7 ~18 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~73 ~13 ~18 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~89 ~7 ~18 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~89 ~13 ~18 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~89 ~19 ~18 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run fill ~93 ~7 ~18 ~94 ~7 ~18 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~92 ~7 ~19 ~97 ~7 ~19 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~7 ~20 ~96 ~7 ~20 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~92 ~7 ~21 ~94 ~7 ~21 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run setblock ~93 ~7 ~22 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run setblock ~95 ~8 ~16 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~95 ~8 ~17 ~96 ~8 ~17 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~93 ~8 ~18 ~97 ~8 ~18 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~8 ~19 ~96 ~8 ~19 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run setblock ~95 ~8 ~20 minecraft:cherry_leaves[persistent=true]
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~9 ~9 ~80 ~10 ~9 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~27 ~9 ~80 ~28 ~9 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~9 ~9 ~88 ~10 ~9 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~27 ~9 ~88 ~28 ~9 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~84 ~9 ~11 ~84 ~10 ~11 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~84 ~27 ~11 ~84 ~28 ~11 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~82 ~9 ~11 ~82 ~10 ~11 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~82 ~27 ~11 ~82 ~28 ~11 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~86 ~9 ~11 ~86 ~10 ~11 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~86 ~27 ~11 ~86 ~28 ~11 minecraft:smooth_quartz
+execute if score #sv0 oa.map2 matches 0 run fill ~92 ~9 ~13 ~92 ~10 ~13 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~76 ~9 ~13 ~76 ~10 ~13 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~9 ~15 ~90 ~10 ~15 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~94 ~9 ~15 ~94 ~10 ~15 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~92 ~9 ~17 ~92 ~10 ~17 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run setblock ~80 ~10 ~10 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~80 ~15 ~10 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~83 ~10 ~11 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~83 ~15 ~11 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~91 ~10 ~17 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~91 ~15 ~17 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~11 ~14 ~93 ~11 ~14 minecraft:cave_air
+execute if score #sv0 oa.map2 matches 0 run fill ~79 ~12 ~13 ~79 ~12 ~14 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~75 ~12 ~14 ~77 ~12 ~14 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~75 ~16 ~14 ~77 ~16 ~14 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~12 ~14 ~93 ~12 ~16 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~91 ~22 ~14 ~93 ~22 ~16 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~89 ~12 ~13 ~89 ~12 ~17 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~89 ~18 ~13 ~89 ~18 ~17 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~89 ~12 ~18 ~95 ~12 ~18 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~89 ~18 ~18 ~95 ~18 ~18 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~13 ~8 ~80 ~14 ~10 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~17 ~8 ~80 ~17 ~10 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~13 ~8 ~88 ~14 ~10 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~17 ~8 ~88 ~17 ~10 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~13 ~11 ~87 ~14 ~11 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~81 ~17 ~11 ~87 ~17 ~11 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run setblock ~95 ~13 ~18 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run setblock ~95 ~19 ~18 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~15 ~9 ~80 ~16 ~9 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~88 ~15 ~9 ~88 ~16 ~9 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~86 ~15 ~11 ~86 ~16 ~11 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~84 ~15 ~11 ~84 ~16 ~11 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~82 ~15 ~11 ~82 ~16 ~11 minecraft:purpur_block
+execute if score #sv0 oa.map2 matches 0 run fill ~74 ~15 ~13 ~78 ~15 ~14 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run setblock ~88 ~16 ~10 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~88 ~21 ~10 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~81 ~16 ~11 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~81 ~21 ~11 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~90 ~16 ~14 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run fill ~79 ~18 ~12 ~95 ~18 ~12 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run setblock ~98 ~21 ~8 minecraft:bedrock
+execute if score #sv0 oa.map2 matches 0 run fill ~90 ~21 ~13 ~94 ~21 ~17 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run setblock ~80 ~22 ~8 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~80 ~27 ~8 minecraft:pearlescent_froglight
+execute if score #sv0 oa.map2 matches 0 run setblock ~92 ~23 ~15 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~79 ~24 ~12 ~89 ~24 ~12 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~79 ~30 ~12 ~89 ~30 ~12 minecraft:crimson_slab[type=bottom]
+execute if score #sv0 oa.map2 matches 0 run fill ~92 ~24 ~15 ~92 ~26 ~15 minecraft:end_rod[facing=up]
+execute if score #sv0 oa.map2 matches 0 run fill ~80 ~31 ~8 ~88 ~31 ~11 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~82 ~33 ~8 ~86 ~33 ~9 minecraft:crimson_planks
+execute if score #sv0 oa.map2 matches 0 run fill ~83 ~34 ~8 ~85 ~34 ~8 minecraft:purpur_block

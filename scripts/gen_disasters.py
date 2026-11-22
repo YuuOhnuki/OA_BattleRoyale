@@ -38,6 +38,8 @@ DISASTERS = [
          desc='竜巻が近くの人を吸い寄せ、中心で打ち上げる'),
     dict(k=11, key='pig_parade', name='ブタの大行進', color='light_purple', danger=3, sec=15, weight=7, maps=[0, 1, 2, 3, 4], mobs=True,
          desc='2列6行のブタが走り回り、爆発し続ける（♥×1）'),
+    dict(k=12, key='tower_barrage', name='塔の砲撃', color='dark_purple', danger=4, sec=45, weight=8, maps=[4],
+         desc='黒曜石の柱から光弾が飛んでくる。紫の線が出たら横へ動くか物陰へ（♥×2）'),
 ]
 CFG = {'cd_min': 50, 'cd_max': 75, 'first_min': 30, 'first_max': 45, 'multi2': 20, 'multi3': 5,
        'dot_cap': 4, 'mob_cap': 60, 'chicken_cap': 40, 'pig_cap': 30,
@@ -67,6 +69,8 @@ write('cfg_defaults.mcfunction', [HEAD,
     '# 初回は全設定、既存設定には今回変更した間隔だけを移行。重み・安全上限などの個別設定は残す。',
     f'execute unless data storage oa:disaster cfg run data modify storage oa:disaster cfg set value {dump(dict(CFG, v=214))}',
     'execute unless data storage oa:disaster cfg{v:214} run function oa:disaster/cfg_migrate214',
+    # 1.9.232: あとから足した災害の重み（既存の設定に無ければ初期値を入れる）
+    *[f'execute unless data storage oa:disaster cfg.weight.k{d["k"]} run data modify storage oa:disaster cfg.weight.k{d["k"]} set value {d["weight"]}' for d in DISASTERS],
     f'data modify storage oa:disaster defs set value {dump({"k%d" % d["k"]: {"key": d["key"], "name": d["name"], "danger": d["danger"], "stars": STARS(d["danger"]), "sec": d["sec"], "desc": d["desc"], "maps": d["maps"]} for d in DISASTERS})}'])
 write('cfg_migrate214.mcfunction', [HEAD] +
       [f'data modify storage oa:disaster cfg.{key} set value {CFG[key]}' for key in ('cd_min', 'cd_max', 'first_min', 'first_max')] +

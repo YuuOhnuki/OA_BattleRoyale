@@ -10,5 +10,6 @@ function oa:disaster/halt/k8
 function oa:disaster/halt/k9
 function oa:disaster/halt/k10
 function oa:disaster/halt/k11
+function oa:disaster/halt/k12
 function oa:disaster/plan_clear
 function oa:disaster/count

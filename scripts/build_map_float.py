@@ -42,7 +42,7 @@ SEED = {'sky': 20261123, 'end': 20261124}[KEY]
 rng = np.random.default_rng(SEED)
 DR = np.random.default_rng(SEED + 77)   # 飾りの色などの抽選
 N = 305; OFF = 152; Y0 = -40; NY = 81; TOP = 40
-NSLOT = 8; NVAR = 3
+NSLOT = 8; NVAR = 3 if KEY == 'sky' else 1   # 1.9.232: 異界は外周の島の中身を固定（ユーザーの指示）
 
 # ======================================================================== 材料（テーマ）
 if KEY == 'sky':
@@ -223,6 +223,29 @@ def edge_point(cx, cz, r, tx, tz, inset=6.0):
     d = math.hypot(tx - cx, tz - cz); return cx + (tx - cx) / d * (r - inset), cz + (tz - cz) / d * (r - inset)
 
 # ======================================================================== 飾り（block_display。当たり判定がないので足場にならない）
+def ent(x, y, z, etype, nbt):
+    """飾りのエンティティ（タグ oa.mdeco。区画を置き直すたびに消して出し直す）。"""
+    cur.decos.append((x, y, z, nbt, etype))
+
+SPIKES = []   # 黒曜石の柱の頂上（x, 結晶の高さ y, z）。災害「塔の砲撃」の発射点
+def spike(x, z, r, h, cage=False):
+    """黒曜石の柱（エンドの柱のような円柱）。頂上に岩盤とエンドクリスタル（無敵・壊れない）。cage で鉄格子の籠。"""
+    gs_ = [gy(xx, zz) for xx in range(x - r, x + r + 1) for zz in range(z - r, z + r + 1) if gy(xx, zz) is not None]
+    g0 = min(gs_) if gs_ else 0
+    for xx in range(x - r, x + r + 1):
+        for zz in range(z - r, z + r + 1):
+            if math.hypot(xx - x, zz - z) <= r + 0.35:
+                for y in range(g0 - 3, h + 1): put(xx, y, zz, 'minecraft:obsidian')
+    put(x, h + 1, z, 'minecraft:bedrock')
+    if cage:
+        for xx in range(x - 2, x + 3):
+            for zz in range(z - 2, z + 3):
+                if max(abs(xx - x), abs(zz - z)) == 2:
+                    for y in range(h + 1, h + 5): put(xx, y, zz, 'minecraft:iron_bars')
+                put(xx, h + 5, zz, 'minecraft:iron_bars')
+    ent(x, h + 2, z, 'end_crystal', 'Invulnerable:1b,ShowBottom:0b')
+    SPIKES.append((x, h + 3, z))
+
 def bd(x, y, z, block, sx, sy, sz, ox=0.0, oy=0.0, oz=0.0, yaw=0.0, glow=False, rot=None):
     """(x,y,z) の位置（ブロックの中心）に、大きさ sx,sy,sz の箱を置く。ox,oy,oz は中心からのずれ（向き yaw で回る）。"""
     q = rot or [0.0, 0.0, 0.0, 1.0]
@@ -230,7 +253,7 @@ def bd(x, y, z, block, sx, sy, sz, ox=0.0, oy=0.0, oz=0.0, yaw=0.0, glow=False, 
            f'transformation:{{translation:[{-sx / 2 + ox:.3f}f,{oy:.3f}f,{-sz / 2 + oz:.3f}f],left_rotation:[{q[0]:.4f}f,{q[1]:.4f}f,{q[2]:.4f}f,{q[3]:.4f}f],'
            f'scale:[{sx:.3f}f,{sy:.3f}f,{sz:.3f}f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}')
     if glow: nbt += ',brightness:{block:15,sky:15}'
-    cur.decos.append((x, y, z, nbt))
+    cur.decos.append((x, y, z, nbt, 'block_display'))
 
 def balloon(x, y, z, c1, c2, yaw=0.0):
     """熱気球（天空都市）。"""
@@ -389,7 +412,8 @@ def ore_rocks(cx, cz, r, n, seed):
 
 # ======================================================================== 配置の計画（島の位置・橋の付け根・転移装置を先に決め、そこを平らにする）
 CR = 46   # 中央の島の半径
-SLOT_R = 98
+SLOT_R = 98 if KEY == 'sky' else 80   # 1.9.232: 異界は島どうしの間隔を狭める
+CORN = 126 if KEY == 'sky' else 104
 slots = []
 for k in range(NSLOT):
     a = math.radians(k * 45 + 10 * (rng.random() - 0.5))
@@ -399,7 +423,7 @@ for k in range(NSLOT):
     slots.append((cx, cz, r, 18 + int(rng.random() * 6)))
 corners = []
 for k in range(4):
-    a = math.radians(45 + 90 * k); cx, cz = (126 if math.cos(a) > 0 else -126), (126 if math.sin(a) > 0 else -126)
+    a = math.radians(45 + 90 * k); cx, cz = (CORN if math.cos(a) > 0 else -CORN), (CORN if math.sin(a) > 0 else -CORN)
     corners.append((cx, cz, 13))
 PLAN = []   # (ax, az, bx, bz, kind)
 kinds = ['stone', 'wood', 'rope', 'broken']
@@ -523,76 +547,35 @@ if KEY == 'sky':
         balloon(bx_, by_, bz_, cs[0], cs[1], yaw=j * 20.0)
     airship(-48, 24, 64, 30.0); airship(64, 22, -64, 210.0, ('minecraft:white_wool', 'minecraft:blue_wool')); airship(-130, 18, -90, 100.0)
 else:
-    # 異界神殿：白い未来都市。神殿（2層＋地下の遺跡）、まわりに白い塔と発光の柱、屋上にガラスのドーム
-    for k in range(8):
-        a = math.radians(k * 45 + 22.5); x, z = round(math.cos(a) * 30), round(math.sin(a) * 30)
-        tall = k % 2 == 0
-        hh = 22 if tall else 12
-        box(x - 1, 1, z - 1, x + 1, hh, z + 1, T['pillar'])
-        for y in range(4, hh, 5):
-            for (dx, dz) in ((-1, 0), (1, 0), (0, -1), (0, 1)): put(x + dx * 1, y, z + dz * 1, 'minecraft:light_blue_stained_glass')
-        if tall:
-            box(x - 2, hh, z - 2, x + 2, hh, z + 2, T['wall2']); box(x - 1, hh + 1, z - 1, x + 1, hh + 1, z + 1, T['wall2'])
-            for y in range(hh + 2, hh + 6): put(x, y, z, 'minecraft:end_rod[facing=up]')
-            put(x, hh - 1, z + 2, 'minecraft:sea_lantern'); put(x, hh - 1, z - 2, 'minecraft:sea_lantern')
-        else: put(x, hh + 1, z, 'minecraft:end_rod[facing=up]')
-    hollow(-11, 1, -11, 11, 8, 11, T['wall'])
-    for y in (4, 8): hollow(-11, y, -11, 11, y, 11, T['wall2'])
-    box(-11, 9, -11, 11, 9, 11, T['floor']); box(-10, 1, -10, 10, 1, 10, 'minecraft:air')
-    box(-11, 0, -11, 11, 0, 11, T['floor'])
-    for (dx, dz) in ((0, 11), (0, -11), (11, 0), (-11, 0)):
-        clear(dx - (2 if dz else 0), 1, dz - (2 if dx else 0), dx + (2 if dz else 0), 4, dz + (2 if dx else 0))
-    for x in range(-11, 12):
-        for z in (-11, 11):
-            if x % 3 == 0: put(x, 6, z, T['glass']); put(z, 6, x, T['glass'])
-    box(-10, 5, -10, 10, 5, 10, T['wall2']); box(-4, 5, -4, 4, 5, 4, 'minecraft:air')
-    for x in range(-11, 12):
-        for z in (-11, 11):
-            if x % 2 == 0: put(x, 10, z, T['wallblk']); put(z, 10, x, T['wallblk'])
-    for (lx, lz, f) in ((-9, -10, 'south'), (9, 10, 'north')):
-        clear(lx, 5, lz, lx, 5, lz); clear(lx, 9, lz, lx, 9, lz)
-        for y in range(1, 10): put(lx, y, lz, f'minecraft:ladder[facing={f}]')
-    put(0, 4, 0, 'minecraft:end_rod[facing=down]')
-    # 屋上のガラスのドーム（中には入れない。屋上の外周は歩ける）
-    for x in range(-5, 6):
-        for z in range(-5, 6):
-            for y in range(10, 16):
-                d = math.hypot(x, z, (y - 9) * 1.15)
-                if 4.4 <= d <= 5.4: put(x, y, z, 'minecraft:light_blue_stained_glass')
-    put(0, 10, 0, 'minecraft:beacon'); box(-1, 9, -1, 1, 9, 1, 'minecraft:iron_block'); put(0, 9, 0, 'minecraft:iron_block')
-    chest(-7, 1, 7); chest(7, 1, -7, rich=True); chest(-7, 6, -7, rich=True); chest(7, 6, 7); chest(0, 10, 7); chest(0, 10, -7)
-    # 中央の広場：低い遮蔽物（白い壁と発光）
-    for (hx, hz) in ((-18, 0), (18, 0), (0, -18), (0, 18), (-15, -15), (15, 15), (15, -15), (-15, 15)):
-        box(hx - 1, 1, hz, hx + 1, 2, hz, T['wall2']); put(hx, 3, hz, 'minecraft:end_rod[facing=up]')
-    # 広場の光る床の模様
-    for x in range(-24, 25):
-        for z in range(-24, 25):
+    # 1.9.232: 中央は「竜の祭壇」。岩盤の構造物（帰還ポータルのような窪みと中央の柱、松明）にチェスト、頂点にドラゴンの卵。
+    # まわりに黒曜石の柱（エンドの柱）8本。広場に低い遮蔽物とコーラスの木
+    for x in range(-9, 10):
+        for z in range(-9, 10):
             d = math.hypot(x, z)
-            if 13.5 <= d <= 14.4 or (21.5 <= d <= 22.3 and min(abs(x), abs(z)) > 2): put(x, 0, z, 'minecraft:sea_lantern' if (x + z) % 5 == 0 else T['wall2'])
-    # 空中の足場（低い。上下2段、はしご付き）
-    for (sx, sz) in ((-24, 0), (24, 0)):
-        box(sx - 2, 6, sz - 2, sx + 2, 6, sz + 2, T['wall2'])
-        box(sx, 1, sz - 3, sx, 6, sz - 3, 'minecraft:ladder[facing=north]')
-        box(sx, 1, sz - 2, sx, 5, sz - 2, T['wall']); chest(sx, 7, sz)
-    # 地下の遺跡：神殿の床下の部屋と、北の崖へ出る通路
-    hollow(-6, -7, -6, 6, -2, 6, 'minecraft:purpur_block'); box(-5, -6, -5, 5, -3, 5, 'minecraft:air'); box(-6, -8, -6, 6, -8, 6, T['floor'])
-    box(-5, -7, -5, 5, -7, 5, 'minecraft:purpur_block')
-    for y in range(-6, 1): put(3, y, 3, 'minecraft:ladder[facing=north]')
-    clear(3, 0, 3, 3, 0, 3)
-    chest(-4, -6, -4, rich=True); chest(4, -6, -4)
-    for z in range(-43, -5):
-        box(-1, -6, z, 1, -4, z, 'minecraft:air'); box(-1, -7, z, 1, -7, z, 'minecraft:purpur_block')
-        box(-2, -3, z, 2, -3, z, 'minecraft:purpur_block'); box(-2, -6, z, -2, -4, z, 'minecraft:purpur_block'); box(2, -6, z, 2, -4, z, 'minecraft:purpur_block')
-        if z % 6 == 0: put(0, -4, z, 'minecraft:end_rod[facing=down]')
-    ez_ = -43
-    for y in range(-6, (gy(0, ez_) or 0) + 1): put(0, y, ez_, 'minecraft:ladder[facing=south]')
-    clear(0, (gy(0, ez_) or 0), ez_, 0, (gy(0, ez_) or 0) + 2, ez_)
-    place_name(0, 0, '異界神殿')
+            if d <= 5.4: put(x, 0, z, 'minecraft:bedrock'); put(x, -1, z, 'minecraft:bedrock')
+            elif d <= 8.5 and nz(x * 5, z * 5) > 0.55: put(x, 0, z, 'minecraft:bedrock')
+            if d <= 3.4: put(x, 0, z, 'minecraft:air'); put(x, -1, z, 'minecraft:bedrock'); put(x, -2, z, 'minecraft:bedrock')
+    box(0, 0, 0, 0, 4, 0, 'minecraft:bedrock')
+    for (dx, dz, f) in ((0, -1, 'north'), (0, 1, 'south'), (1, 0, 'east'), (-1, 0, 'west')): put(dx, 2, dz, f'minecraft:wall_torch[facing={f}]')
+    put(0, 5, 0, 'minecraft:dragon_egg')
+    chest(2, 0, 2, rich=True, face='south'); chest(-2, 0, -2, face='north'); chest(2, 0, -2, face='east'); chest(-2, 0, 2, face='west')
+    place_name(0, 0, '竜の祭壇')
+    # 黒曜石の柱（スポークの橋を避けて、間の方向）
+    for k in range(8):
+        a = math.radians(k * 45 + 22.5); rr_ = 35 + (k % 2) * 3
+        x, z = round(math.cos(a) * rr_), round(math.sin(a) * rr_)
+        spike(x, z, 2 + (k * 5) % 3, (18, 30, 24, 34, 20, 28, 22, 32)[k], cage=k in (1, 6))
+    # 広場の遮蔽物（低い）とコーラスの木
+    for k in range(8):
+        a = math.radians(k * 45); x, z = round(math.cos(a) * 17), round(math.sin(a) * 17)
+        box(x - 1, 1, z, x + 1, 2, z, 'minecraft:end_stone_bricks'); put(x, 3, z, 'minecraft:end_rod[facing=up]')
+    for k in range(10):
+        a = math.radians(k * 36 + 10); x, z = round(math.cos(a) * 24), round(math.sin(a) * 24)
+        if free(x, 1, z): tree(x, z, 0, 5 + (k % 3))
     gim(-30, 2, 30, ['oa.gim', 'oa.gim_warp'])
-    # 空の飾り：浮かぶ結晶と円盤
-    for j, (bx_, by_, bz_) in enumerate(((-36, 28, -20), (34, 32, 26), (-10, 36, 44), (60, 26, -70), (-74, 30, 66), (118, 24, 20), (-118, 26, -24), (10, 30, -124))):
+    # 空の飾り：浮かぶ結晶
+    for j, (bx_, by_, bz_) in enumerate(((-36, 30, -20), (34, 34, 26), (-10, 37, 44), (60, 28, -70), (-74, 32, 66), (100, 26, 20), (-100, 26, -24), (10, 32, -104))):
         crystal(bx_, by_, bz_, 'minecraft:amethyst_block' if j % 2 else 'minecraft:purpur_block')
-    saucer(-52, 30, -40, 20.0); saucer(56, 34, 50, 0.0); saucer(0, 38, 0, 45.0); saucer(-128, 22, 110, 10.0)
 # 中央の島のチェスト（建物の外。広場の端・丘の上）
 for (x, z) in ((-20, 20), (20, -20), (36, 10), (-36, -10), (10, 36), (-10, -36), (32, 24), (-32, -24)):
     g = gy(x, z)
@@ -615,6 +598,20 @@ for k in range(26):
             if abs(dx) + abs(dz) <= s:
                 for dy in range(-(s - abs(dx) - abs(dz)) * 2 - 1, 1): put(x + dx, y + dy, z + dz, T['rock'] if KEY == 'sky' else T['under'])
                 put(x + dx, y, z + dz, T['top'])
+
+if KEY == 'end':
+    ir = np.random.default_rng(SEED + 9)
+    for k in range(40):
+        a = ir.random() * 2 * math.pi; d = 70 + ir.random() * 80
+        x, z = round(math.cos(a) * d), round(math.sin(a) * d)
+        if abs(x) > 148 or abs(z) > 148 or any(math.hypot(x - cx, z - cz) < r * 1.3 + 7 for cx, cz, r in ISLANDS): continue
+        if any(math.hypot(x - (ax + bx) / 2, z - (az + bz) / 2) < 8 for ax, az, bx, bz, _ in PLAN): continue
+        y = int(ir.integers(-16, 8)); s_ = 2 + int(ir.random() * 4)
+        for dx in range(-s_, s_ + 1):
+            for dz in range(-s_, s_ + 1):
+                dd = math.hypot(dx, dz)
+                if dd > s_ + 0.3: continue
+                for dy in range(-int((s_ - dd) * 1.6) - 1, 1): put(x + dx, y + dy, z + dz, 'minecraft:end_stone')
 
 # 橋
 for (ax, az, bx, bz, kd) in PLAN: bridge(ax, az, bx, bz, kd)
@@ -673,11 +670,12 @@ for (x, z) in [(x, z) for (x, z), g in SURF.items() if not in_slot_box(x, z) and
 
 # ======================================================================== スロットの種類（生成のたびに3つから抽選）
 SKY_TYPES = ['forest', 'ruins', 'garden', 'watch', 'village', 'temple', 'market', 'mansion', 'dock']
-END_TYPES = ['wilds', 'obsidian', 'city', 'chorus', 'ruins', 'crystal', 'tower', 'spire', 'dome']
+END_TYPES = ['wilds', 'obsidian', 'city', 'chorus', 'ruins', 'crystal', 'tower', 'spire', 'dome', 'pagoda']
+END_FIXED = ['pagoda', 'chorus', 'city', 'pagoda', 'crystal', 'chorus', 'pagoda', 'obsidian']   # 1.9.232: 異界の外周の島（固定）
 NAMES = {'forest': '森林の島', 'ruins': '廃墟の島', 'garden': '庭園の島', 'watch': '見張り塔の島', 'village': '集落の島',
          'temple': '神殿の島', 'market': '市場の島', 'mansion': '屋敷の島', 'dock': '飛行船の発着場',
          'wilds': 'エンドストーンの荒野', 'obsidian': '黒曜石の森', 'city': '崩れたエンドシティ', 'chorus': 'コーラスの林',
-         'crystal': '結晶の洞窟', 'tower': '異界の塔', 'spire': '白い尖塔', 'dome': 'ガラスのドーム'}
+         'crystal': '結晶の洞窟', 'tower': '異界の塔', 'spire': '白い尖塔', 'dome': 'ガラスのドーム', 'pagoda': '異界の塔街'}
 TYPES = SKY_TYPES if KEY == 'sky' else END_TYPES
 CH_PER_SLOT = 7
 
@@ -705,6 +703,9 @@ def theme(kind, cx, cz, r, seed):
                 if rr.random() < .5: put(x, g + h + 1, z, 'minecraft:end_rod[facing=up]')
                 if rr.random() < .4: put(x + 1, g + h - 1, z, 'minecraft:crying_obsidian')
             else: tree(x, z, g, 4 + int(rr.random() * (5 if KEY == 'end' else 3)), rr)
+        if KEY == 'end' and kind in ('chorus', 'obsidian'):
+            s2 = spot(6, rmin=9)
+            if s2: spike(s2[0], s2[2], 2, 16 + int(rr.random() * 10), cage=kind == 'obsidian')
         if kind == 'forest': house(cx - 3, cz - 2, 0, 6, 5, chests=2)
         elif kind == 'wilds':
             for k in range(5):
@@ -860,6 +861,68 @@ def theme(kind, cx, cz, r, seed):
                 g = gy(cx + ax_, cz + az_)
                 if g is not None and (cx + ax_, cz + az_) not in RES: box(cx + ax_, g + 1, cz + az_, cx + ax_, g + 3, cz + az_, 'minecraft:amethyst_block'); put(cx + ax_, g + 4, cz + az_, 'minecraft:amethyst_cluster[facing=up]')
             chest(cx - 2, -6, cz, rich=True); chest(cx + 2, -6, cz - 2)
+    elif kind == 'pagoda':
+        # 1.9.232: 密集した高い塔の街（真紅とプルプァと石英の帯、光る窓、反りの軒、尖った屋根）。下の2階だけ入れる
+        def pagoda(x0, z0, w, h, cols):
+            hw = w // 2
+            for x in range(x0 - hw, x0 + hw + 1):
+                for z in range(z0 - hw, z0 + hw + 1):
+                    if (x, z) in RES: continue
+                    edge = max(abs(x - x0), abs(z - z0)) == hw
+                    corner = abs(x - x0) == hw and abs(z - z0) == hw
+                    put(x, 0, z, 'minecraft:purpur_block')
+                    for y in range(1, h + 1):
+                        lv = (y - 1) // 6; yy = (y - 1) % 6
+                        if corner: m = 'minecraft:stripped_crimson_stem'
+                        elif edge:
+                            if yy == 5: m = 'minecraft:smooth_quartz'
+                            elif yy in (2, 3) and (x + z) % 2 == 0: m = 'minecraft:pearlescent_froglight' if (x * 3 + z + y) % 5 == 0 else 'minecraft:magenta_stained_glass'
+                            else: m = cols[lv % len(cols)]
+                        else: m = 'minecraft:purpur_block' if yy == 5 and lv < 2 else 'minecraft:air'
+                        put(x, y, z, m)
+            # 軒（各階の上、1つ外へ張り出す）
+            for y in range(6, h + 1, 6):
+                for x in range(x0 - hw - 1, x0 + hw + 2):
+                    for z in range(z0 - hw - 1, z0 + hw + 2):
+                        if max(abs(x - x0), abs(z - z0)) == hw + 1 and (x, z) not in RES:
+                            put(x, y, z, 'minecraft:crimson_slab[type=bottom]')
+                            if abs(x - x0) == hw + 1 and abs(z - z0) == hw + 1: put(x, y + 1, z, 'minecraft:end_rod[facing=up]')
+            # 屋根（段々にすぼまる）と尖り
+            k = 0
+            while hw - k >= 0:
+                box(x0 - hw + k, h + 1 + k, z0 - hw + k, x0 + hw - k, h + 1 + k, z0 + hw - k, 'minecraft:crimson_planks' if k % 2 == 0 else 'minecraft:purpur_block'); k += 1
+            for y in range(h + 1 + k, min(TOP, h + 4 + k)): put(x0, y, z0, 'minecraft:end_rod[facing=up]')
+            # 入口（4方向）と、2階へのはしご。2階より上は塞ぐ
+            for (dx, dz) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                clear(x0 + dx * hw, 1, z0 + dz * hw, x0 + dx * hw, 2, z0 + dz * hw)
+            box(x0 - hw + 1, 1, z0 - hw + 1, x0 - hw + 1, 6, z0 - hw + 1, 'minecraft:ladder[facing=south]')
+            box(x0 - hw + 1, 12, z0 - hw + 1, x0 + hw - 1, 12, z0 + hw - 1, 'minecraft:purpur_block')
+            put(x0, 5, z0, 'minecraft:pearlescent_froglight'); put(x0, 11, z0, 'minecraft:pearlescent_froglight')
+        pagoda(cx, cz, 9, min(32, 26 + int(rr.random() * 7)), ['minecraft:crimson_planks', 'minecraft:smooth_quartz', 'minecraft:purpur_block'])
+        for j, (dx, dz) in enumerate(((-8, -8), (8, -8), (-8, 8), (8, 8))):
+            hh = (14, 20, 18, 22)[(j + int(rr.random() * 4)) % 4]
+            pagoda(cx + dx, cz + dz, 5, hh, ['minecraft:purpur_block', 'minecraft:crimson_planks'])
+        # 塔をつなぐ渡り廊下（2階の高さ、手すり付き）
+        for (dx, dz) in ((-8, -8), (8, -8), (-8, 8), (8, 8)):
+            sx_, sz_ = (1 if dx > 0 else -1), (1 if dz > 0 else -1)
+            for t in range(5, 6):
+                for w_ in (-1, 0, 1):
+                    put(cx + sx_ * t, 6, cz + dz + w_, 'minecraft:end_stone_bricks')
+        # 足元の道・桜（異界の色）の木・チェスト
+        for x in range(cx - 12, cx + 13):
+            for z in range(cz - 12, cz + 13):
+                if (abs(x - cx) <= 1 or abs(z - cz) <= 1) and gy(x, z) == 0 and getb(x, 0, z) == T['top'] and (x, z) not in RES: put(x, 0, z, 'minecraft:end_stone_bricks')
+        for _ in range(8):
+            s2 = spot(3, rmin=12)
+            if s2:
+                x, g, z = s2
+                for y in range(g + 1, g + 5): put(x, y, z, 'minecraft:cherry_log')
+                for dx in range(-2, 3):
+                    for dz in range(-2, 3):
+                        for dy in (3, 4, 5):
+                            if abs(dx) + abs(dz) + (dy == 5) <= 3 and free(x + dx, g + dy, z + dz): put(x + dx, g + dy, z + dz, 'minecraft:cherry_leaves[persistent=true]')
+        chest(cx + 2, 1, cz + 2, rich=True); chest(cx - 2, 7, cz + 2); chest(cx - 8, 1, cz - 8); chest(cx + 8, 1, cz + 8); chest(cx - 10, 1, cz + 1)
+        spike(round(cx + (cx / math.hypot(cx, cz)) * 14), round(cz + (cz / math.hypot(cx, cz)) * 14), 2, 18 + int(rr.random() * 8))
     elif kind == 'dome':
         # ガラスのドーム（半径8、中は光る床の庭、出入口4つ）
         for x in range(cx - 9, cx + 10):
@@ -898,7 +961,7 @@ def theme(kind, cx, cz, r, seed):
 
 variants = []   # variants[k][v] = Canvas
 for k, (cx, cz, r, _) in enumerate(slots):
-    pick = list(rng.choice(len(TYPES), size=NVAR, replace=False))
+    pick = list(rng.choice(len(TYPES), size=NVAR, replace=False)) if KEY == 'sky' else [TYPES.index(END_FIXED[k])]
     vs = []
     for v in range(NVAR):
         cv = Canvas(cx - r - 8, cz - r - 8, cx + r + 8, cz + r + 8)
@@ -1003,8 +1066,8 @@ def reg_lines(c, r, cond=''):
     for (x, y, z) in cs: L.append(f"{pre}if score #mode oa.map2 matches 0 positioned ~{x} ~{y} ~{z} if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic")
     for (x, y, z, tags) in gs:
         L.append(f"{pre}positioned ~{x} ~{y} ~{z} align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:marker ~ ~ ~ {{Tags:[{','.join(json.dumps(t) for t in tags)}]}}")
-    for (x, y, z, nbt) in [d_ for d_ in c.decos if inrect(r, d_[0], d_[2])]:
-        L.append(f"{pre}positioned ~{x} ~{y} ~{z} align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:block_display ~ ~ ~ {{Tags:[\"oa.mdeco\"],{nbt}}}")
+    for (x, y, z, nbt, et) in [d_ for d_ in c.decos if inrect(r, d_[0], d_[2])]:
+        L.append(f"{pre}positioned ~{x} ~{y} ~{z} align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:{et} ~ ~ ~ {{Tags:[\"oa.mdeco\"],{nbt}}}")
     return L, len(cs) + len(rs_), len(os_)
 
 for n in range(100):
@@ -1025,6 +1088,7 @@ for n in range(100):
          f"execute positioned ~{x1} ~{Y0} ~{z1} run kill @e[type=minecraft:marker,tag=br.ore,dx={x2 - x1},dy={NY - 1},dz={z2 - z1}]",
          f"execute positioned ~{x1} ~{Y0} ~{z1} run kill @e[type=minecraft:marker,tag=oa.gim,dx={x2 - x1},dy={NY - 1},dz={z2 - z1}]",
          f"execute positioned ~{x1} ~{Y0} ~{z1} run kill @e[type=minecraft:block_display,tag=oa.mdeco,dx={x2 - x1},dy={NY - 1},dz={z2 - z1}]",
+         f"execute positioned ~{x1} ~{Y0} ~{z1} run kill @e[type=minecraft:end_crystal,tag=oa.mdeco,dx={x2 - x1},dy={NY - 1},dz={z2 - z1}]",
          "scoreboard players set #stage oa.map2 2", "scoreboard players set #localc oa.map2 0", "scoreboard players set #localo oa.map2 0"]
     L, ec, eo = reg_lines(base, r)
     A += [f"scoreboard players set #expectedc oa.map2 {ec}", f"scoreboard players set #expectedo oa.map2 {eo}"] + L
@@ -1061,6 +1125,8 @@ for k, vs in enumerate(variants):
     for v, cv in enumerate(vs):
         for (x, z, nm) in cv.places:
             LY.append(f'execute if score #sv{k} oa.map2 matches {v} run data modify storage oa:maps layout.{KEY} append value {{x:{x},z:{z},name:"{nm}"}}')
+if SPIKES:
+    LY.append(f"data modify storage oa:maps spikes.{KEY} set value [" + ",".join(f"{{x:{x},y:{y + 80},z:{z}}}" for x, y, z in SPIKES) + "]")
 open(f"{MD}/layout.mcfunction", 'w', encoding='utf8', newline='\n').write('\n'.join(LY) + '\n')
 # 生成のあと：開始地点（固定＋今の組み合わせのもの）
 def pts(lst): return ",".join(f"{{x:{x}.5d,y:{y + 80}.0d,z:{z}.5d}}" for x, y, z in lst)
@@ -1125,7 +1191,7 @@ COLS = {'grass_block': (96, 160, 70), 'dirt': (130, 96, 60), 'stone': (128, 128,
         'red_terracotta': (170, 70, 55), 'blue_terracotta': (75, 80, 140), 'cyan_terracotta': (90, 120, 125), 'orange_terracotta': (190, 105, 50),
         'light_blue_terracotta': (115, 120, 160), 'white_terracotta': (215, 185, 170), 'stone_brick': (122, 121, 122), 'oak': (162, 130, 78),
         'spruce': (115, 85, 50), 'dark_oak': (66, 43, 20), 'leaves': (60, 130, 45), 'wool': (230, 230, 230), 'gold': (240, 210, 70),
-        'brick': (150, 85, 70), 'amethyst': (140, 100, 190), 'end_rod': (240, 240, 240), 'glass': (200, 225, 235)}
+        'brick': (150, 85, 70), 'crimson': (150, 45, 75), 'cherry_leaves': (235, 165, 200), 'cherry_log': (90, 40, 50), 'bedrock': (70, 70, 70), 'froglight': (230, 200, 230), 'magenta_stained_glass': (200, 80, 200), 'amethyst': (140, 100, 190), 'end_rod': (240, 240, 240), 'glass': (200, 225, 235)}
 def colof(b):
     n = b.split(':')[1].split('[')[0]
     if n in COLS: return COLS[n]
@@ -1170,8 +1236,13 @@ if PANEL:
         d_.text((X, Y), text, font=f, fill=fill, anchor='mm')
     label(0, 0, base.places[0][2], fill=(255, 225, 120))
     for (x, z, nm) in base.places[1:]: label(x, z + (17 if z < 0 else -17), nm, small)
-    for k, (cx, cz, r, _) in enumerate(slots): label(cx, cz, '？', font, (170, 225, 255) if KEY == 'sky' else (225, 185, 255))
-    note = '「？」の島の中身は会場を作るたびに変わります'
+    if KEY == 'sky':
+        for k, (cx, cz, r, _) in enumerate(slots): label(cx, cz, '？', font, (170, 225, 255))
+        note = '「？」の島の中身は会場を作るたびに変わります'
+    else:
+        for vs in variants:
+            for (x, z, nm) in vs[0].places: label(x, z, nm, small, (235, 200, 255))
+        note = '黒曜石の柱から「塔の砲撃」が来ることがあります'
     w_ = d_.textlength(note, font=small)
     d_.rounded_rectangle([256 - w_ / 2 - 8, 486, 256 + w_ / 2 + 8, 508], 6, fill=(15, 15, 28, 210))
     d_.text((256, 497), note, font=small, fill=(235, 235, 235), anchor='mm')

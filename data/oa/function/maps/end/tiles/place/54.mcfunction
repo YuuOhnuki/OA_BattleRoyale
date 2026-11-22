@@ -245,7 +245,6 @@ fill ~-17 ~-20 ~9 ~7 ~-20 ~10 minecraft:end_stone
 fill ~-16 ~-20 ~11 ~7 ~-20 ~13 minecraft:end_stone
 fill ~-15 ~-20 ~14 ~7 ~-20 ~15 minecraft:end_stone
 fill ~-14 ~-20 ~16 ~7 ~-20 ~16 minecraft:end_stone
-fill ~-14 ~0 ~16 ~7 ~0 ~16 minecraft:end_stone
 fill ~-13 ~-20 ~17 ~7 ~-20 ~18 minecraft:end_stone
 setblock ~-22 ~-20 ~19 minecraft:end_stone
 fill ~-12 ~-20 ~19 ~7 ~-20 ~20 minecraft:end_stone
@@ -326,8 +325,10 @@ fill ~-14 ~-17 ~23 ~7 ~-17 ~26 minecraft:end_stone
 fill ~-15 ~-17 ~27 ~7 ~-17 ~27 minecraft:end_stone
 fill ~-16 ~-17 ~28 ~7 ~-16 ~28 minecraft:end_stone
 fill ~-11 ~-17 ~29 ~7 ~-17 ~29 minecraft:end_stone
+fill ~-11 ~-3 ~29 ~7 ~0 ~29 minecraft:end_stone
 fill ~-17 ~-17 ~29 ~-13 ~-17 ~30 minecraft:end_stone
 fill ~-10 ~-17 ~30 ~7 ~-17 ~30 minecraft:end_stone
+fill ~-10 ~-3 ~30 ~7 ~0 ~30 minecraft:end_stone
 fill ~-8 ~-17 ~31 ~7 ~-17 ~31 minecraft:end_stone
 fill ~-19 ~-17 ~31 ~-13 ~-17 ~31 minecraft:end_stone
 fill ~-5 ~-17 ~32 ~7 ~-17 ~32 minecraft:end_stone
@@ -437,219 +438,88 @@ fill ~-23 ~-8 ~39 ~-9 ~-8 ~39 minecraft:end_stone
 fill ~-5 ~-7 ~39 ~7 ~-6 ~39 minecraft:end_stone
 fill ~-24 ~-7 ~39 ~-8 ~-7 ~39 minecraft:end_stone
 fill ~-24 ~-6 ~39 ~-7 ~-6 ~39 minecraft:end_stone
-fill ~-24 ~-5 ~8 ~7 ~-1 ~39 minecraft:end_stone
-fill ~-24 ~0 ~8 ~-21 ~0 ~9 minecraft:end_stone
-fill ~-20 ~0 ~8 ~-20 ~0 ~9 minecraft:smooth_quartz
-fill ~-19 ~0 ~8 ~-12 ~0 ~9 minecraft:end_stone
-fill ~-10 ~0 ~8 ~7 ~0 ~9 minecraft:quartz_bricks
-fill ~-11 ~0 ~8 ~-11 ~0 ~9 minecraft:smooth_quartz
-setblock ~-11 ~0 ~10 minecraft:quartz_bricks
-setblock ~-10 ~0 ~10 minecraft:sea_lantern
-fill ~-9 ~0 ~10 ~7 ~0 ~10 minecraft:quartz_bricks
-fill ~-24 ~0 ~10 ~-12 ~0 ~10 minecraft:end_stone
-setblock ~-19 ~0 ~11 minecraft:smooth_quartz
-fill ~-24 ~0 ~11 ~-20 ~0 ~11 minecraft:end_stone
-fill ~-9 ~0 ~11 ~-8 ~0 ~11 minecraft:smooth_quartz
-fill ~-11 ~0 ~11 ~-10 ~0 ~11 minecraft:quartz_bricks
-fill ~-7 ~0 ~11 ~7 ~0 ~11 minecraft:quartz_bricks
-fill ~-18 ~0 ~11 ~-12 ~0 ~11 minecraft:end_stone
-fill ~-17 ~0 ~12 ~-8 ~0 ~12 minecraft:end_stone
-setblock ~-7 ~0 ~12 minecraft:sea_lantern
-setblock ~-18 ~0 ~12 minecraft:smooth_quartz
-fill ~-6 ~0 ~12 ~6 ~0 ~12 minecraft:end_stone
-setblock ~7 ~0 ~12 minecraft:smooth_quartz
-fill ~-24 ~0 ~12 ~-19 ~0 ~13 minecraft:end_stone
-fill ~-17 ~0 ~13 ~-7 ~0 ~13 minecraft:end_stone
-fill ~4 ~0 ~13 ~6 ~0 ~13 minecraft:smooth_quartz
-setblock ~-18 ~0 ~13 minecraft:sea_lantern
-fill ~-6 ~0 ~13 ~-4 ~0 ~13 minecraft:smooth_quartz
-fill ~-3 ~0 ~13 ~3 ~0 ~13 minecraft:end_stone
-setblock ~7 ~0 ~13 minecraft:end_stone
-setblock ~-17 ~0 ~14 minecraft:smooth_quartz
-fill ~2 ~0 ~14 ~3 ~0 ~14 minecraft:smooth_quartz
-fill ~-3 ~0 ~14 ~0 ~0 ~14 minecraft:smooth_quartz
-fill ~-24 ~0 ~14 ~-18 ~0 ~14 minecraft:end_stone
-setblock ~1 ~0 ~14 minecraft:sea_lantern
-fill ~-16 ~0 ~14 ~-4 ~0 ~14 minecraft:end_stone
-fill ~4 ~0 ~14 ~7 ~0 ~14 minecraft:end_stone
-fill ~-24 ~0 ~15 ~-17 ~0 ~15 minecraft:end_stone
-fill ~-15 ~0 ~15 ~7 ~0 ~15 minecraft:end_stone
-setblock ~-16 ~0 ~15 minecraft:smooth_quartz
-fill ~-24 ~0 ~16 ~-16 ~0 ~16 minecraft:end_stone
-setblock ~-15 ~0 ~16 minecraft:smooth_quartz
-setblock ~-14 ~0 ~17 minecraft:smooth_quartz
-fill ~-13 ~0 ~17 ~7 ~0 ~17 minecraft:end_stone
-fill ~-24 ~0 ~17 ~-15 ~0 ~17 minecraft:end_stone
-fill ~-24 ~0 ~18 ~-14 ~0 ~18 minecraft:end_stone
-fill ~-11 ~0 ~18 ~7 ~0 ~18 minecraft:end_stone
-setblock ~-13 ~0 ~18 minecraft:sea_lantern
-setblock ~-12 ~0 ~18 minecraft:smooth_quartz
-setblock ~-11 ~0 ~19 minecraft:smooth_quartz
-fill ~-10 ~0 ~19 ~7 ~0 ~19 minecraft:end_stone
-fill ~-24 ~0 ~19 ~-12 ~0 ~19 minecraft:end_stone
-fill ~-9 ~0 ~20 ~-8 ~0 ~20 minecraft:smooth_quartz
-fill ~-7 ~0 ~20 ~7 ~0 ~20 minecraft:end_stone
-fill ~-24 ~0 ~20 ~-10 ~0 ~20 minecraft:end_stone
-fill ~-4 ~0 ~21 ~4 ~0 ~21 minecraft:end_stone
-setblock ~-6 ~0 ~21 minecraft:sea_lantern
-setblock ~-5 ~0 ~21 minecraft:smooth_quartz
-fill ~5 ~0 ~21 ~7 ~0 ~21 minecraft:smooth_quartz
-fill ~-24 ~0 ~21 ~-8 ~0 ~21 minecraft:end_stone
-setblock ~-7 ~0 ~21 minecraft:smooth_quartz
-fill ~-2 ~0 ~22 ~2 ~0 ~22 minecraft:end_stone
-fill ~-24 ~0 ~22 ~-4 ~0 ~22 minecraft:end_stone
-setblock ~3 ~0 ~22 minecraft:sea_lantern
-setblock ~-3 ~0 ~22 minecraft:smooth_quartz
-fill ~4 ~0 ~22 ~7 ~0 ~22 minecraft:end_stone
-fill ~-24 ~0 ~23 ~7 ~0 ~39 minecraft:end_stone
-fill ~-11 ~1 ~8 ~-11 ~3 ~10 minecraft:white_concrete
-fill ~-11 ~5 ~8 ~-11 ~5 ~10 minecraft:white_concrete
-fill ~-11 ~7 ~8 ~-11 ~7 ~10 minecraft:white_concrete
-fill ~3 ~1 ~11 ~7 ~3 ~11 minecraft:white_concrete
-fill ~-11 ~1 ~11 ~-3 ~3 ~11 minecraft:white_concrete
-fill ~-16 ~1 ~15 ~-14 ~2 ~15 minecraft:smooth_quartz
+fill ~-24 ~-5 ~8 ~7 ~-4 ~39 minecraft:end_stone
+fill ~-24 ~-3 ~8 ~7 ~-1 ~28 minecraft:end_stone
+fill ~-14 ~-3 ~29 ~-12 ~24 ~29 minecraft:obsidian
+fill ~-24 ~-3 ~29 ~-15 ~0 ~29 minecraft:end_stone
+fill ~-24 ~-3 ~30 ~-16 ~0 ~30 minecraft:end_stone
+fill ~-15 ~-3 ~30 ~-11 ~24 ~30 minecraft:obsidian
+fill ~-24 ~-3 ~31 ~-17 ~0 ~33 minecraft:end_stone
+fill ~-16 ~-3 ~31 ~-10 ~0 ~33 minecraft:obsidian
+fill ~-16 ~2 ~31 ~-10 ~24 ~33 minecraft:obsidian
+fill ~-9 ~-3 ~31 ~7 ~0 ~33 minecraft:end_stone
+fill ~-24 ~-3 ~34 ~-16 ~0 ~34 minecraft:end_stone
+fill ~-10 ~-3 ~34 ~7 ~0 ~34 minecraft:end_stone
+fill ~-15 ~-3 ~34 ~-11 ~0 ~34 minecraft:obsidian
+fill ~-15 ~2 ~34 ~-11 ~24 ~34 minecraft:obsidian
+fill ~-14 ~-3 ~35 ~-12 ~1 ~35 minecraft:obsidian
+fill ~-14 ~3 ~35 ~-12 ~24 ~35 minecraft:obsidian
+fill ~-11 ~-3 ~35 ~7 ~0 ~35 minecraft:end_stone
+fill ~-24 ~-3 ~35 ~-15 ~0 ~35 minecraft:end_stone
+fill ~-24 ~-3 ~36 ~7 ~0 ~39 minecraft:end_stone
+fill ~3 ~0 ~8 ~7 ~0 ~8 minecraft:end_stone
+fill ~-24 ~0 ~8 ~0 ~0 ~8 minecraft:end_stone
+fill ~1 ~0 ~8 ~2 ~0 ~8 minecraft:bedrock
+fill ~-24 ~0 ~9 ~7 ~0 ~28 minecraft:end_stone
+fill ~-22 ~1 ~11 ~-22 ~5 ~11 minecraft:chorus_plant[up=true,down=true]
+fill ~-13 ~1 ~12 ~-11 ~2 ~12 minecraft:end_stone_bricks
 setblock ~3 ~1 ~16 minecraft:end_stone
 setblock ~4 ~1 ~17 minecraft:coal_ore
-fill ~-1 ~1 ~18 ~1 ~2 ~18 minecraft:smooth_quartz
+fill ~-1 ~1 ~17 ~1 ~2 ~17 minecraft:end_stone_bricks
 setblock ~-20 ~1 ~20 minecraft:chest[facing=north]
-fill ~-12 ~1 ~27 ~-10 ~3 ~29 minecraft:quartz_pillar
-fill ~-12 ~5 ~27 ~-10 ~8 ~29 minecraft:quartz_pillar
-fill ~-12 ~10 ~27 ~-10 ~13 ~29 minecraft:quartz_pillar
-fill ~-12 ~15 ~27 ~-10 ~18 ~29 minecraft:quartz_pillar
-fill ~-12 ~20 ~27 ~-10 ~21 ~29 minecraft:quartz_pillar
-fill ~-15 ~1 ~29 ~-13 ~1 ~29 minecraft:end_stone
-fill ~-16 ~1 ~30 ~-10 ~1 ~30 minecraft:end_stone
-fill ~-17 ~1 ~31 ~-15 ~1 ~31 minecraft:obsidian
-fill ~-14 ~1 ~31 ~-7 ~1 ~31 minecraft:end_stone
+fill ~-11 ~1 ~21 ~-11 ~4 ~21 minecraft:chorus_plant[up=true,down=true]
+fill ~3 ~1 ~24 ~3 ~6 ~24 minecraft:chorus_plant[up=true,down=true]
+setblock ~-15 ~1 ~29 minecraft:end_stone
+setblock ~-10 ~1 ~30 minecraft:end_stone
+setblock ~-16 ~1 ~30 minecraft:end_stone
 fill ~-6 ~1 ~31 ~-6 ~1 ~32 minecraft:obsidian
-fill ~-15 ~1 ~32 ~-7 ~1 ~32 minecraft:end_stone
+fill ~-9 ~1 ~31 ~-7 ~1 ~32 minecraft:end_stone
 fill ~-5 ~1 ~32 ~-4 ~1 ~32 minecraft:end_stone
-fill ~-17 ~1 ~32 ~-16 ~1 ~33 minecraft:obsidian
-fill ~-15 ~1 ~33 ~-4 ~1 ~33 minecraft:end_stone
-fill ~-15 ~1 ~34 ~-5 ~1 ~34 minecraft:end_stone
-fill ~-18 ~1 ~34 ~-16 ~1 ~35 minecraft:obsidian
-fill ~-15 ~1 ~35 ~-7 ~1 ~35 minecraft:end_stone
+fill ~-17 ~1 ~31 ~-10 ~1 ~33 minecraft:obsidian
+fill ~-9 ~1 ~33 ~-4 ~1 ~33 minecraft:end_stone
+fill ~-18 ~1 ~34 ~-11 ~1 ~34 minecraft:obsidian
+fill ~-10 ~1 ~34 ~-5 ~1 ~34 minecraft:end_stone
+fill ~-18 ~1 ~35 ~-16 ~1 ~35 minecraft:obsidian
+setblock ~-15 ~1 ~35 minecraft:end_stone
+fill ~-11 ~1 ~35 ~-6 ~1 ~35 minecraft:end_stone
 fill ~-15 ~1 ~36 ~-8 ~1 ~36 minecraft:end_stone
 fill ~-19 ~1 ~36 ~-16 ~1 ~36 minecraft:obsidian
 setblock ~-20 ~1 ~37 minecraft:end_stone
-fill ~-16 ~1 ~37 ~-9 ~1 ~37 minecraft:end_stone
 fill ~-19 ~1 ~37 ~-17 ~1 ~37 minecraft:obsidian
-fill ~-16 ~1 ~38 ~-10 ~1 ~38 minecraft:end_stone
+fill ~-16 ~1 ~37 ~-9 ~1 ~38 minecraft:end_stone
 fill ~-20 ~1 ~38 ~-17 ~1 ~38 minecraft:obsidian
 fill ~7 ~1 ~38 ~7 ~1 ~39 minecraft:end_stone
+fill ~-17 ~1 ~39 ~-10 ~1 ~39 minecraft:end_stone
 setblock ~-21 ~1 ~39 minecraft:end_stone
-fill ~-17 ~1 ~39 ~-11 ~1 ~39 minecraft:end_stone
 fill ~-20 ~1 ~39 ~-18 ~1 ~39 minecraft:obsidian
-fill ~-13 ~2 ~31 ~-11 ~2 ~31 minecraft:end_stone
-setblock ~-14 ~2 ~31 minecraft:obsidian
-fill ~-13 ~2 ~32 ~-9 ~2 ~32 minecraft:end_stone
-fill ~-15 ~2 ~32 ~-14 ~2 ~33 minecraft:obsidian
-fill ~-13 ~2 ~33 ~-8 ~2 ~33 minecraft:end_stone
-fill ~-14 ~2 ~34 ~-8 ~2 ~34 minecraft:end_stone
-fill ~-15 ~2 ~34 ~-15 ~2 ~35 minecraft:obsidian
-fill ~-14 ~2 ~35 ~-9 ~2 ~35 minecraft:end_stone
+fill ~-9 ~2 ~32 ~-8 ~2 ~32 minecraft:end_stone
+fill ~-9 ~2 ~33 ~-7 ~2 ~33 minecraft:end_stone
+fill ~-10 ~2 ~34 ~-8 ~2 ~34 minecraft:end_stone
+fill ~-11 ~2 ~35 ~-9 ~2 ~35 minecraft:end_stone
+fill ~-15 ~2 ~35 ~-12 ~2 ~35 minecraft:obsidian
 fill ~-13 ~2 ~36 ~-10 ~2 ~36 minecraft:end_stone
 fill ~-15 ~2 ~36 ~-14 ~2 ~36 minecraft:obsidian
 fill ~-14 ~2 ~37 ~-11 ~2 ~37 minecraft:end_stone
 fill ~-16 ~2 ~37 ~-15 ~2 ~37 minecraft:obsidian
-fill ~-15 ~2 ~38 ~-13 ~2 ~38 minecraft:end_stone
-setblock ~-15 ~3 ~15 minecraft:end_rod[facing=up]
-setblock ~0 ~3 ~18 minecraft:end_rod[facing=up]
-fill ~-10 ~3 ~32 ~-10 ~6 ~32 minecraft:chorus_plant[up=true,down=true]
-fill ~-10 ~10 ~32 ~-10 ~12 ~32 minecraft:chorus_plant[up=true,down=true]
-fill ~-13 ~3 ~33 ~-10 ~3 ~33 minecraft:end_stone
-fill ~-13 ~3 ~34 ~-11 ~3 ~35 minecraft:end_stone
-fill ~-14 ~3 ~34 ~-14 ~3 ~35 minecraft:obsidian
-setblock ~-13 ~3 ~36 minecraft:end_stone
-fill ~-11 ~4 ~8 ~-11 ~4 ~10 minecraft:smooth_quartz
-fill ~-11 ~8 ~8 ~-11 ~8 ~10 minecraft:smooth_quartz
-fill ~-11 ~4 ~11 ~-3 ~4 ~11 minecraft:smooth_quartz
-fill ~3 ~4 ~11 ~7 ~4 ~11 minecraft:smooth_quartz
-setblock ~-12 ~4 ~27 minecraft:quartz_pillar
-setblock ~-12 ~9 ~27 minecraft:quartz_pillar
-setblock ~-12 ~14 ~27 minecraft:quartz_pillar
-setblock ~-12 ~19 ~27 minecraft:quartz_pillar
-setblock ~-11 ~4 ~27 minecraft:light_blue_stained_glass
-setblock ~-11 ~9 ~27 minecraft:light_blue_stained_glass
-setblock ~-11 ~14 ~27 minecraft:light_blue_stained_glass
-setblock ~-11 ~19 ~27 minecraft:light_blue_stained_glass
-setblock ~-10 ~4 ~27 minecraft:quartz_pillar
-setblock ~-10 ~9 ~27 minecraft:quartz_pillar
-setblock ~-10 ~14 ~27 minecraft:quartz_pillar
-setblock ~-10 ~19 ~27 minecraft:quartz_pillar
-setblock ~-11 ~4 ~28 minecraft:quartz_pillar
-setblock ~-11 ~9 ~28 minecraft:quartz_pillar
-setblock ~-11 ~14 ~28 minecraft:quartz_pillar
-setblock ~-11 ~19 ~28 minecraft:quartz_pillar
-setblock ~-12 ~4 ~28 minecraft:light_blue_stained_glass
-setblock ~-12 ~9 ~28 minecraft:light_blue_stained_glass
-setblock ~-12 ~14 ~28 minecraft:light_blue_stained_glass
-setblock ~-12 ~19 ~28 minecraft:light_blue_stained_glass
-setblock ~-10 ~4 ~28 minecraft:light_blue_stained_glass
-setblock ~-10 ~9 ~28 minecraft:light_blue_stained_glass
-setblock ~-10 ~14 ~28 minecraft:light_blue_stained_glass
-setblock ~-10 ~19 ~28 minecraft:light_blue_stained_glass
-setblock ~-12 ~4 ~29 minecraft:quartz_pillar
-setblock ~-12 ~9 ~29 minecraft:quartz_pillar
-setblock ~-12 ~14 ~29 minecraft:quartz_pillar
-setblock ~-12 ~19 ~29 minecraft:quartz_pillar
-setblock ~-11 ~4 ~29 minecraft:light_blue_stained_glass
-setblock ~-11 ~9 ~29 minecraft:light_blue_stained_glass
-setblock ~-11 ~14 ~29 minecraft:light_blue_stained_glass
-setblock ~-11 ~19 ~29 minecraft:light_blue_stained_glass
-setblock ~-10 ~4 ~29 minecraft:quartz_pillar
-setblock ~-10 ~9 ~29 minecraft:quartz_pillar
-setblock ~-10 ~14 ~29 minecraft:quartz_pillar
-setblock ~-10 ~19 ~29 minecraft:quartz_pillar
-fill ~-10 ~5 ~8 ~7 ~5 ~10 minecraft:smooth_quartz
-fill ~-11 ~5 ~11 ~7 ~5 ~11 minecraft:white_concrete
-fill ~-11 ~7 ~11 ~7 ~7 ~11 minecraft:white_concrete
-setblock ~-11 ~6 ~8 minecraft:white_concrete
-setblock ~-11 ~6 ~9 minecraft:light_blue_stained_glass_pane
-setblock ~-11 ~6 ~10 minecraft:white_concrete
-setblock ~-3 ~6 ~11 minecraft:light_blue_stained_glass_pane
-setblock ~-9 ~6 ~11 minecraft:light_blue_stained_glass_pane
-setblock ~-6 ~6 ~11 minecraft:light_blue_stained_glass_pane
-setblock ~3 ~6 ~11 minecraft:light_blue_stained_glass_pane
-fill ~4 ~6 ~11 ~5 ~6 ~11 minecraft:white_concrete
-fill ~-2 ~6 ~11 ~-1 ~6 ~11 minecraft:white_concrete
-fill ~1 ~6 ~11 ~2 ~6 ~11 minecraft:white_concrete
-setblock ~6 ~6 ~11 minecraft:light_blue_stained_glass_pane
-setblock ~7 ~6 ~11 minecraft:white_concrete
-setblock ~0 ~6 ~11 minecraft:light_blue_stained_glass_pane
-fill ~-11 ~6 ~11 ~-10 ~6 ~11 minecraft:white_concrete
-fill ~-5 ~6 ~11 ~-4 ~6 ~11 minecraft:white_concrete
-fill ~-8 ~6 ~11 ~-7 ~6 ~11 minecraft:white_concrete
-setblock ~-11 ~6 ~32 minecraft:chorus_plant[up=true]
-setblock ~-10 ~6 ~33 minecraft:chorus_plant[up=true]
-setblock ~-12 ~7 ~32 minecraft:chorus_plant[up=true]
-setblock ~-10 ~7 ~32 minecraft:chorus_flower[age=5]
-setblock ~-10 ~13 ~32 minecraft:chorus_flower[age=5]
-setblock ~-11 ~7 ~32 minecraft:chorus_plant[up=true,down=true]
-fill ~-10 ~7 ~33 ~-10 ~9 ~33 minecraft:chorus_plant[up=true,down=true]
-fill ~-11 ~8 ~11 ~7 ~8 ~11 minecraft:smooth_quartz
-setblock ~-11 ~8 ~32 minecraft:chorus_flower[age=5]
-fill ~-12 ~8 ~32 ~-12 ~9 ~32 minecraft:chorus_plant[up=true,down=true]
-fill ~-11 ~9 ~8 ~7 ~9 ~11 minecraft:quartz_bricks
-setblock ~-10 ~9 ~32 minecraft:chorus_plant[up=true]
-setblock ~-11 ~9 ~33 minecraft:chorus_plant[up=true]
-setblock ~-11 ~10 ~8 minecraft:end_stone_brick_wall
-setblock ~-11 ~10 ~10 minecraft:end_stone_brick_wall
-setblock ~-10 ~10 ~11 minecraft:end_stone_brick_wall
-setblock ~2 ~10 ~11 minecraft:end_stone_brick_wall
-setblock ~-6 ~10 ~11 minecraft:end_stone_brick_wall
-setblock ~-4 ~10 ~11 minecraft:end_stone_brick_wall
-setblock ~0 ~10 ~11 minecraft:end_stone_brick_wall
-setblock ~6 ~10 ~11 minecraft:end_stone_brick_wall
-setblock ~4 ~10 ~11 minecraft:end_stone_brick_wall
-setblock ~-2 ~10 ~11 minecraft:end_stone_brick_wall
-setblock ~-8 ~10 ~11 minecraft:end_stone_brick_wall
-setblock ~-12 ~10 ~32 minecraft:chorus_flower[age=5]
-setblock ~-10 ~10 ~33 minecraft:chorus_flower[age=5]
-setblock ~-11 ~10 ~33 minecraft:chorus_plant[up=true,down=true]
-setblock ~-11 ~11 ~33 minecraft:chorus_flower[age=5]
-setblock ~-11 ~21 ~26 minecraft:sea_lantern
-setblock ~-11 ~21 ~30 minecraft:sea_lantern
-fill ~-13 ~22 ~26 ~-9 ~22 ~30 minecraft:smooth_quartz
-fill ~-12 ~23 ~27 ~-10 ~23 ~29 minecraft:smooth_quartz
-fill ~-11 ~24 ~28 ~-11 ~27 ~28 minecraft:end_rod[facing=up]
+fill ~-15 ~2 ~38 ~-12 ~2 ~38 minecraft:end_stone
+setblock ~-12 ~3 ~12 minecraft:end_rod[facing=up]
+setblock ~0 ~3 ~17 minecraft:end_rod[facing=up]
+setblock ~-10 ~3 ~34 minecraft:end_stone
+setblock ~-11 ~3 ~35 minecraft:end_stone
+fill ~-13 ~3 ~36 ~-12 ~3 ~36 minecraft:end_stone
+setblock ~-23 ~5 ~11 minecraft:chorus_plant[up=true]
+setblock ~-11 ~5 ~21 minecraft:chorus_flower[age=5]
+fill ~-23 ~6 ~11 ~-23 ~7 ~11 minecraft:chorus_plant[up=true,down=true]
+setblock ~-22 ~6 ~11 minecraft:chorus_flower[age=5]
+setblock ~4 ~6 ~24 minecraft:chorus_plant[up=true]
+setblock ~-24 ~7 ~11 minecraft:chorus_plant[up=true]
+setblock ~-23 ~7 ~12 minecraft:chorus_plant[up=true]
+fill ~4 ~7 ~24 ~4 ~8 ~24 minecraft:chorus_plant[up=true,down=true]
+setblock ~3 ~7 ~24 minecraft:chorus_flower[age=5]
+fill ~-24 ~8 ~11 ~-24 ~9 ~11 minecraft:chorus_plant[up=true,down=true]
+setblock ~-23 ~8 ~11 minecraft:chorus_flower[age=5]
+fill ~-23 ~8 ~12 ~-23 ~10 ~12 minecraft:chorus_plant[up=true,down=true]
+setblock ~4 ~9 ~24 minecraft:chorus_flower[age=5]
+setblock ~-24 ~10 ~11 minecraft:chorus_flower[age=5]
+setblock ~-23 ~11 ~12 minecraft:chorus_flower[age=5]
+setblock ~-13 ~25 ~32 minecraft:bedrock

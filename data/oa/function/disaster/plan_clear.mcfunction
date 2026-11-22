@@ -10,4 +10,5 @@ scoreboard players set #p8 br.tmp 0
 scoreboard players set #p9 br.tmp 0
 scoreboard players set #p10 br.tmp 0
 scoreboard players set #p11 br.tmp 0
+scoreboard players set #p12 br.tmp 0
 scoreboard players set #plan_n br.tmp 0

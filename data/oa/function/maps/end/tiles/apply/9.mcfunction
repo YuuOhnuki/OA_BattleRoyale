@@ -4,12 +4,12 @@ execute positioned ~136 ~-40 ~-152 run kill @e[type=minecraft:marker,tag=br.ches
 execute positioned ~136 ~-40 ~-152 run kill @e[type=minecraft:marker,tag=br.ore,dx=16,dy=80,dz=31]
 execute positioned ~136 ~-40 ~-152 run kill @e[type=minecraft:marker,tag=oa.gim,dx=16,dy=80,dz=31]
 execute positioned ~136 ~-40 ~-152 run kill @e[type=minecraft:block_display,tag=oa.mdeco,dx=16,dy=80,dz=31]
+execute positioned ~136 ~-40 ~-152 run kill @e[type=minecraft:end_crystal,tag=oa.mdeco,dx=16,dy=80,dz=31]
 scoreboard players set #stage oa.map2 2
 scoreboard players set #localc oa.map2 0
 scoreboard players set #localo oa.map2 0
 scoreboard players set #expectedc oa.map2 0
-scoreboard players set #expectedo oa.map2 1
-execute positioned ~136 ~1 ~-125 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
+scoreboard players set #expectedo oa.map2 0
 execute unless score #localc oa.map2 = #expectedc oa.map2 run return run function oa:map/internal/job/failed
 execute unless score #localo oa.map2 = #expectedo oa.map2 run return run function oa:map/internal/job/failed
 scoreboard players operation #chests oa.map2 += #localc oa.map2

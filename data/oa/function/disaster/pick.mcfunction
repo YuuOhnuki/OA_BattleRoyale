@@ -57,6 +57,11 @@ execute if score #av11 br.tmp matches 1 unless score #p11 br.tmp matches 1 unles
 execute if score #avoid_last br.tmp matches 1 if score #last11 br.tmp matches 1 run scoreboard players set #w11 br.tmp 0
 execute if score #w11 br.tmp matches ..-1 run scoreboard players set #w11 br.tmp 0
 scoreboard players operation #wt br.tmp += #w11 br.tmp
+scoreboard players set #w12 br.tmp 0
+execute if score #av12 br.tmp matches 1 unless score #p12 br.tmp matches 1 unless score #ds12 br.tmp matches 1.. store result score #w12 br.tmp run data get storage oa:disaster cfg.weight.k12
+execute if score #avoid_last br.tmp matches 1 if score #last12 br.tmp matches 1 run scoreboard players set #w12 br.tmp 0
+execute if score #w12 br.tmp matches ..-1 run scoreboard players set #w12 br.tmp 0
+scoreboard players operation #wt br.tmp += #w12 br.tmp
 execute if score #wt br.tmp matches ..0 run return 0
 execute store result score #r br.tmp run random value 0..1000000
 scoreboard players operation #r br.tmp %= #wt br.tmp
@@ -93,4 +98,7 @@ execute if score #r br.tmp matches ..0 run scoreboard players set #p10 br.tmp 1
 execute if score #r br.tmp matches ..0 run return run scoreboard players set #picked br.tmp 1
 scoreboard players operation #r br.tmp -= #w11 br.tmp
 execute if score #r br.tmp matches ..0 run scoreboard players set #p11 br.tmp 1
+execute if score #r br.tmp matches ..0 run return run scoreboard players set #picked br.tmp 1
+scoreboard players operation #r br.tmp -= #w12 br.tmp
+execute if score #r br.tmp matches ..0 run scoreboard players set #p12 br.tmp 1
 execute if score #r br.tmp matches ..0 run return run scoreboard players set #picked br.tmp 1

@@ -2,21 +2,31 @@ scoreboard players set #stage oa.map2 1
 fill ~-120 ~-40 ~40 ~-89 ~-14 ~71 minecraft:air
 fill ~-120 ~-13 ~40 ~-89 ~13 ~71 minecraft:air
 fill ~-120 ~14 ~40 ~-89 ~40 ~71 minecraft:air
-fill ~-108 ~3 ~70 ~-108 ~4 ~70 minecraft:obsidian
-fill ~-108 ~5 ~69 ~-108 ~6 ~69 minecraft:obsidian
-fill ~-109 ~5 ~70 ~-107 ~6 ~70 minecraft:obsidian
-fill ~-108 ~5 ~71 ~-108 ~6 ~71 minecraft:obsidian
-fill ~-108 ~7 ~68 ~-108 ~8 ~68 minecraft:obsidian
-fill ~-109 ~7 ~69 ~-107 ~8 ~69 minecraft:obsidian
-fill ~-110 ~7 ~70 ~-106 ~8 ~70 minecraft:obsidian
-fill ~-109 ~7 ~71 ~-107 ~8 ~71 minecraft:obsidian
-setblock ~-108 ~9 ~67 minecraft:obsidian
-fill ~-109 ~9 ~68 ~-107 ~9 ~68 minecraft:obsidian
-fill ~-110 ~9 ~69 ~-106 ~9 ~69 minecraft:obsidian
-fill ~-111 ~9 ~70 ~-105 ~9 ~70 minecraft:obsidian
-fill ~-110 ~9 ~71 ~-106 ~9 ~71 minecraft:obsidian
-setblock ~-108 ~10 ~67 minecraft:end_stone
-fill ~-109 ~10 ~68 ~-107 ~10 ~68 minecraft:end_stone
-fill ~-110 ~10 ~69 ~-106 ~10 ~69 minecraft:end_stone
-fill ~-111 ~10 ~70 ~-105 ~10 ~70 minecraft:end_stone
-fill ~-110 ~10 ~71 ~-106 ~10 ~71 minecraft:end_stone
+fill ~-108 ~-22 ~70 ~-108 ~-21 ~70 minecraft:obsidian
+fill ~-108 ~-20 ~69 ~-108 ~-19 ~69 minecraft:obsidian
+fill ~-109 ~-20 ~70 ~-107 ~-19 ~70 minecraft:obsidian
+fill ~-108 ~-20 ~71 ~-108 ~-19 ~71 minecraft:obsidian
+fill ~-108 ~-18 ~68 ~-108 ~-17 ~68 minecraft:obsidian
+fill ~-109 ~-18 ~69 ~-107 ~-17 ~69 minecraft:obsidian
+fill ~-110 ~-18 ~70 ~-106 ~-17 ~70 minecraft:obsidian
+fill ~-109 ~-18 ~71 ~-107 ~-17 ~71 minecraft:obsidian
+setblock ~-108 ~-16 ~67 minecraft:obsidian
+fill ~-109 ~-16 ~68 ~-107 ~-16 ~68 minecraft:obsidian
+fill ~-110 ~-16 ~69 ~-106 ~-16 ~69 minecraft:obsidian
+fill ~-111 ~-16 ~70 ~-105 ~-16 ~70 minecraft:obsidian
+fill ~-110 ~-16 ~71 ~-106 ~-16 ~71 minecraft:obsidian
+setblock ~-120 ~-15 ~59 minecraft:end_stone
+setblock ~-108 ~-15 ~67 minecraft:end_stone
+fill ~-109 ~-15 ~68 ~-107 ~-15 ~68 minecraft:end_stone
+fill ~-110 ~-15 ~69 ~-106 ~-15 ~69 minecraft:end_stone
+fill ~-111 ~-15 ~70 ~-105 ~-15 ~70 minecraft:end_stone
+fill ~-110 ~-15 ~71 ~-106 ~-15 ~71 minecraft:end_stone
+fill ~-120 ~-14 ~58 ~-120 ~-14 ~60 minecraft:end_stone
+setblock ~-120 ~-13 ~57 minecraft:end_stone
+fill ~-120 ~-13 ~58 ~-119 ~-13 ~60 minecraft:end_stone
+setblock ~-120 ~-13 ~61 minecraft:end_stone
+fill ~-120 ~-12 ~56 ~-120 ~-11 ~56 minecraft:end_stone
+fill ~-120 ~-12 ~57 ~-119 ~-11 ~57 minecraft:end_stone
+fill ~-120 ~-12 ~58 ~-118 ~-11 ~60 minecraft:end_stone
+fill ~-120 ~-12 ~61 ~-119 ~-11 ~61 minecraft:end_stone
+fill ~-120 ~-12 ~62 ~-120 ~-11 ~62 minecraft:end_stone

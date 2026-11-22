@@ -134,6 +134,9 @@ execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 3 run d
 execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 4 run data modify storage oa:disaster bar append value {"text":"ブタの大行進 ★★★☆☆ ","color":"light_purple"}
 execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 4 run data modify storage oa:disaster bar append value {"score":{"name":"#ds11","objective":"br.tmp"},"color":"white"}
 execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 4 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
+execute if score #ds12 br.tmp matches 1.. if score #map oa.mapid matches 4 run data modify storage oa:disaster bar append value {"text":"塔の砲撃 ★★★★☆ ","color":"dark_purple"}
+execute if score #ds12 br.tmp matches 1.. if score #map oa.mapid matches 4 run data modify storage oa:disaster bar append value {"score":{"name":"#ds12","objective":"br.tmp"},"color":"white"}
+execute if score #ds12 br.tmp matches 1.. if score #map oa.mapid matches 4 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
 execute if score #dis_active br.tmp matches ..3 run bossbar set oa:disaster name [{"text":"⚠ ","color":"red","bold":true},{"nbt":"bar[]","storage":"oa:disaster","interpret":true,"separator":""}]
 execute if score #dis_active br.tmp matches 4.. run bossbar set oa:disaster name [{"text":"⚠ 災害が同時に ","color":"red","bold":true},{"score":{"name":"#dis_active","objective":"br.tmp"},"color":"white","bold":true},{"text":" 種類","color":"red","bold":true}]
 scoreboard players set #bar_max br.tmp 1
@@ -160,6 +163,8 @@ execute if score #ds10 br.tmp > #bar_v br.tmp run scoreboard players operation #
 execute if score #ds10 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_v br.tmp = #ds10 br.tmp
 execute if score #ds11 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_max br.tmp = #dmax11 br.tmp
 execute if score #ds11 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_v br.tmp = #ds11 br.tmp
+execute if score #ds12 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_max br.tmp = #dmax12 br.tmp
+execute if score #ds12 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_v br.tmp = #ds12 br.tmp
 execute store result bossbar oa:disaster max run scoreboard players get #bar_max br.tmp
 execute store result bossbar oa:disaster value run scoreboard players get #bar_v br.tmp
 bossbar set oa:disaster players @a[tag=br.playing]

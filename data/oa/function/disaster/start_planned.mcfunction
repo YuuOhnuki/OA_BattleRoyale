@@ -12,4 +12,5 @@ execute if score #p8 br.tmp matches 1 unless score #ds8 br.tmp matches 1.. run f
 execute if score #p9 br.tmp matches 1 unless score #ds9 br.tmp matches 1.. run function oa:disaster/go/k9
 execute if score #p10 br.tmp matches 1 unless score #ds10 br.tmp matches 1.. run function oa:disaster/go/k10
 execute if score #p11 br.tmp matches 1 unless score #ds11 br.tmp matches 1.. run function oa:disaster/go/k11
+execute if score #p12 br.tmp matches 1 unless score #ds12 br.tmp matches 1.. run function oa:disaster/go/k12
 function oa:disaster/plan_clear
