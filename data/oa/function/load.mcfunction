@@ -376,6 +376,7 @@ scoreboard objectives add br.st_walk minecraft.custom:minecraft.walk_one_cm
 scoreboard objectives add br.st_sprint minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add br.st_open dummy
 scoreboard objectives add br.st_ore dummy
+scoreboard objectives add br.yukill dummy
 scoreboard objectives add br.st_tmp dummy
 
 # 1.9.98 武器実績
