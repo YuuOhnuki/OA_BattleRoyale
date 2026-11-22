@@ -2,413 +2,393 @@ scoreboard players set #stage oa.map2 1
 fill ~-56 ~-40 ~-24 ~-25 ~-14 ~7 minecraft:air
 fill ~-56 ~-13 ~-24 ~-25 ~13 ~7 minecraft:air
 fill ~-56 ~14 ~-24 ~-25 ~40 ~7 minecraft:air
-fill ~-56 ~-27 ~-12 ~-54 ~-27 ~-6 minecraft:obsidian
-fill ~-56 ~-26 ~-12 ~-54 ~-26 ~-8 minecraft:obsidian
-setblock ~-54 ~-26 ~-7 minecraft:obsidian
-setblock ~-55 ~-26 ~-7 minecraft:end_stone
-setblock ~-56 ~-26 ~-7 minecraft:obsidian
-fill ~-56 ~-26 ~-6 ~-54 ~-26 ~-6 minecraft:obsidian
-setblock ~-55 ~-25 ~-7 minecraft:redstone_ore
-fill ~-25 ~-25 ~-10 ~-25 ~-25 ~0 minecraft:obsidian
-fill ~-25 ~-24 ~-13 ~-25 ~-24 ~-9 minecraft:obsidian
-fill ~-26 ~-24 ~-8 ~-25 ~-24 ~3 minecraft:obsidian
-setblock ~-25 ~-24 ~4 minecraft:obsidian
-fill ~-25 ~-23 ~-16 ~-25 ~-23 ~-13 minecraft:obsidian
-fill ~-26 ~-23 ~-12 ~-25 ~-23 ~-7 minecraft:obsidian
-fill ~-27 ~-23 ~-6 ~-25 ~-23 ~-1 minecraft:obsidian
-fill ~-28 ~-23 ~0 ~-25 ~-23 ~4 minecraft:obsidian
-fill ~-29 ~-23 ~5 ~-25 ~-23 ~6 minecraft:obsidian
-fill ~-26 ~-23 ~7 ~-25 ~-23 ~7 minecraft:obsidian
-fill ~-25 ~-22 ~-18 ~-25 ~-22 ~-15 minecraft:obsidian
-fill ~-26 ~-22 ~-14 ~-25 ~-22 ~-11 minecraft:obsidian
-fill ~-27 ~-22 ~-10 ~-25 ~-22 ~-5 minecraft:obsidian
-fill ~-28 ~-22 ~-4 ~-25 ~-22 ~-2 minecraft:obsidian
-fill ~-29 ~-22 ~-1 ~-25 ~-22 ~1 minecraft:obsidian
-fill ~-30 ~-22 ~2 ~-25 ~-22 ~3 minecraft:obsidian
-fill ~-31 ~-22 ~4 ~-25 ~-22 ~6 minecraft:obsidian
-fill ~-30 ~-22 ~7 ~-25 ~-22 ~7 minecraft:obsidian
-fill ~-25 ~-21 ~-19 ~-25 ~-21 ~-18 minecraft:obsidian
-fill ~-26 ~-21 ~-17 ~-25 ~-21 ~-14 minecraft:obsidian
-fill ~-27 ~-21 ~-13 ~-25 ~-21 ~-9 minecraft:obsidian
-fill ~-28 ~-21 ~-8 ~-25 ~-21 ~-4 minecraft:obsidian
-fill ~-29 ~-21 ~-3 ~-25 ~-21 ~-2 minecraft:obsidian
-fill ~-30 ~-21 ~-1 ~-25 ~-21 ~0 minecraft:obsidian
-fill ~-31 ~-21 ~1 ~-25 ~-21 ~2 minecraft:obsidian
-fill ~-32 ~-21 ~3 ~-25 ~-21 ~5 minecraft:obsidian
-fill ~-33 ~-21 ~6 ~-25 ~-21 ~6 minecraft:obsidian
-fill ~-32 ~-21 ~7 ~-25 ~-21 ~7 minecraft:obsidian
-fill ~-25 ~-20 ~-21 ~-25 ~-20 ~-20 minecraft:obsidian
-fill ~-26 ~-20 ~-19 ~-25 ~-20 ~-16 minecraft:obsidian
-fill ~-27 ~-20 ~-15 ~-25 ~-20 ~-12 minecraft:obsidian
-fill ~-28 ~-20 ~-11 ~-25 ~-20 ~-6 minecraft:obsidian
-fill ~-29 ~-20 ~-5 ~-25 ~-20 ~-4 minecraft:obsidian
-fill ~-30 ~-20 ~-3 ~-25 ~-20 ~-2 minecraft:obsidian
-fill ~-31 ~-20 ~-1 ~-25 ~-20 ~-1 minecraft:obsidian
-fill ~-32 ~-20 ~0 ~-25 ~-20 ~1 minecraft:obsidian
-fill ~-33 ~-20 ~2 ~-25 ~-20 ~4 minecraft:obsidian
-fill ~-34 ~-20 ~5 ~-25 ~-20 ~6 minecraft:obsidian
-fill ~-33 ~-20 ~7 ~-25 ~-20 ~7 minecraft:obsidian
-fill ~-25 ~-19 ~-22 ~-25 ~-19 ~-21 minecraft:obsidian
-fill ~-26 ~-19 ~-20 ~-25 ~-19 ~-19 minecraft:obsidian
-fill ~-27 ~-19 ~-18 ~-25 ~-19 ~-15 minecraft:obsidian
-fill ~-28 ~-19 ~-14 ~-25 ~-19 ~-9 minecraft:obsidian
-fill ~-29 ~-19 ~-8 ~-25 ~-19 ~-5 minecraft:obsidian
-fill ~-30 ~-19 ~-4 ~-25 ~-19 ~-4 minecraft:obsidian
-fill ~-31 ~-19 ~-3 ~-25 ~-19 ~-3 minecraft:obsidian
-fill ~-32 ~-19 ~-2 ~-25 ~-19 ~-1 minecraft:obsidian
-fill ~-33 ~-19 ~0 ~-25 ~-19 ~1 minecraft:obsidian
-fill ~-34 ~-19 ~2 ~-25 ~-19 ~4 minecraft:obsidian
-fill ~-35 ~-19 ~5 ~-25 ~-19 ~6 minecraft:obsidian
-fill ~-34 ~-19 ~7 ~-25 ~-19 ~7 minecraft:obsidian
-fill ~-25 ~-18 ~-23 ~-25 ~-18 ~-22 minecraft:end_stone
-fill ~-26 ~-18 ~-21 ~-25 ~-18 ~-20 minecraft:end_stone
-fill ~-27 ~-18 ~-19 ~-25 ~-18 ~-17 minecraft:end_stone
-fill ~-28 ~-18 ~-16 ~-25 ~-18 ~-13 minecraft:end_stone
-fill ~-29 ~-18 ~-12 ~-25 ~-18 ~-6 minecraft:end_stone
-fill ~-30 ~-18 ~-5 ~-25 ~-18 ~-5 minecraft:end_stone
-fill ~-31 ~-18 ~-4 ~-25 ~-18 ~-4 minecraft:end_stone
-fill ~-32 ~-18 ~-3 ~-25 ~-18 ~-3 minecraft:end_stone
-fill ~-33 ~-18 ~-2 ~-25 ~-18 ~-2 minecraft:end_stone
-fill ~-34 ~-18 ~-1 ~-25 ~-18 ~0 minecraft:end_stone
-fill ~-35 ~-18 ~1 ~-25 ~-18 ~3 minecraft:end_stone
-fill ~-36 ~-18 ~4 ~-25 ~-18 ~4 minecraft:end_stone
-fill ~-36 ~-18 ~5 ~-32 ~-18 ~5 minecraft:end_stone_bricks
-fill ~-31 ~-18 ~5 ~-25 ~-18 ~5 minecraft:end_stone
-fill ~-36 ~-18 ~6 ~-29 ~-18 ~6 minecraft:end_stone_bricks
-fill ~-28 ~-18 ~6 ~-25 ~-18 ~6 minecraft:end_stone
-fill ~-35 ~-18 ~7 ~-31 ~-18 ~7 minecraft:end_stone_bricks
-fill ~-30 ~-18 ~7 ~-25 ~-18 ~7 minecraft:end_stone
-fill ~-25 ~-17 ~-24 ~-25 ~-17 ~-23 minecraft:end_stone
-fill ~-26 ~-17 ~-22 ~-25 ~-17 ~-22 minecraft:end_stone
-fill ~-27 ~-17 ~-21 ~-25 ~-17 ~-19 minecraft:end_stone
-fill ~-28 ~-17 ~-18 ~-25 ~-17 ~-15 minecraft:end_stone
-fill ~-29 ~-17 ~-14 ~-25 ~-17 ~-9 minecraft:end_stone
-fill ~-30 ~-17 ~-8 ~-25 ~-17 ~-6 minecraft:end_stone
-fill ~-31 ~-17 ~-5 ~-25 ~-17 ~-5 minecraft:end_stone
-fill ~-32 ~-17 ~-4 ~-25 ~-17 ~-4 minecraft:end_stone
-fill ~-33 ~-17 ~-3 ~-25 ~-17 ~-3 minecraft:end_stone
-fill ~-34 ~-17 ~-2 ~-25 ~-17 ~-2 minecraft:end_stone
-fill ~-35 ~-17 ~-1 ~-25 ~-17 ~0 minecraft:end_stone
-fill ~-36 ~-17 ~1 ~-25 ~-17 ~4 minecraft:end_stone
-fill ~-32 ~-17 ~5 ~-25 ~-17 ~5 minecraft:end_stone
-fill ~-37 ~-17 ~5 ~-33 ~-17 ~5 minecraft:end_stone_bricks
-fill ~-29 ~-17 ~6 ~-25 ~-17 ~6 minecraft:end_stone
-fill ~-37 ~-17 ~6 ~-30 ~-17 ~6 minecraft:end_stone_bricks
-fill ~-36 ~-17 ~7 ~-32 ~-17 ~7 minecraft:end_stone_bricks
-fill ~-31 ~-17 ~7 ~-25 ~-17 ~7 minecraft:end_stone
-setblock ~-25 ~-16 ~-24 minecraft:end_stone
-fill ~-26 ~-16 ~-23 ~-25 ~-16 ~-23 minecraft:end_stone
-fill ~-27 ~-16 ~-22 ~-25 ~-16 ~-21 minecraft:end_stone
-fill ~-28 ~-16 ~-20 ~-25 ~-16 ~-17 minecraft:end_stone
-fill ~-29 ~-16 ~-16 ~-25 ~-16 ~-12 minecraft:end_stone
-fill ~-30 ~-16 ~-11 ~-25 ~-16 ~-7 minecraft:end_stone
-fill ~-31 ~-16 ~-6 ~-25 ~-16 ~-6 minecraft:end_stone
-fill ~-32 ~-16 ~-5 ~-25 ~-16 ~-5 minecraft:end_stone
-fill ~-34 ~-16 ~-4 ~-25 ~-16 ~-4 minecraft:end_stone
-fill ~-35 ~-16 ~-3 ~-25 ~-16 ~-2 minecraft:end_stone
-fill ~-36 ~-16 ~-1 ~-25 ~-16 ~0 minecraft:end_stone
-fill ~-37 ~-16 ~1 ~-25 ~-16 ~4 minecraft:end_stone
-fill ~-37 ~-16 ~5 ~-34 ~-16 ~5 minecraft:end_stone_bricks
-fill ~-33 ~-16 ~5 ~-25 ~-16 ~5 minecraft:end_stone
-fill ~-38 ~-16 ~6 ~-31 ~-16 ~6 minecraft:end_stone_bricks
-fill ~-30 ~-16 ~6 ~-26 ~-16 ~6 minecraft:end_stone
-setblock ~-25 ~-16 ~6 minecraft:end_stone_bricks
-fill ~-32 ~-16 ~7 ~-25 ~-16 ~7 minecraft:end_stone
-fill ~-37 ~-16 ~7 ~-33 ~-16 ~7 minecraft:end_stone_bricks
-fill ~-26 ~-15 ~-24 ~-25 ~-15 ~-24 minecraft:end_stone
-fill ~-27 ~-15 ~-23 ~-25 ~-15 ~-22 minecraft:end_stone
-fill ~-28 ~-15 ~-21 ~-25 ~-15 ~-20 minecraft:end_stone
-fill ~-29 ~-15 ~-19 ~-25 ~-15 ~-15 minecraft:end_stone
-fill ~-30 ~-15 ~-14 ~-25 ~-15 ~-11 minecraft:end_stone
-fill ~-31 ~-15 ~-10 ~-25 ~-15 ~-9 minecraft:end_stone
-fill ~-32 ~-15 ~-8 ~-25 ~-15 ~-6 minecraft:end_stone
-fill ~-34 ~-15 ~-5 ~-25 ~-15 ~-5 minecraft:end_stone
-fill ~-35 ~-15 ~-4 ~-25 ~-15 ~-4 minecraft:end_stone
-fill ~-36 ~-15 ~-3 ~-25 ~-15 ~-2 minecraft:end_stone
-fill ~-37 ~-15 ~-1 ~-25 ~-15 ~0 minecraft:end_stone
-fill ~-38 ~-15 ~1 ~-25 ~-15 ~4 minecraft:end_stone
-fill ~-34 ~-15 ~5 ~-25 ~-15 ~5 minecraft:end_stone
-fill ~-38 ~-15 ~5 ~-35 ~-15 ~5 minecraft:end_stone_bricks
-fill ~-31 ~-15 ~6 ~-27 ~-15 ~6 minecraft:end_stone
-fill ~-26 ~-15 ~6 ~-25 ~-15 ~6 minecraft:end_stone_bricks
-fill ~-38 ~-15 ~6 ~-32 ~-15 ~6 minecraft:end_stone_bricks
-fill ~-33 ~-15 ~7 ~-26 ~-15 ~7 minecraft:end_stone
-setblock ~-25 ~-15 ~7 minecraft:end_stone_bricks
-fill ~-38 ~-15 ~7 ~-34 ~-15 ~7 minecraft:end_stone_bricks
-fill ~-27 ~-14 ~-24 ~-25 ~-14 ~-24 minecraft:end_stone
-fill ~-28 ~-14 ~-23 ~-25 ~-14 ~-21 minecraft:end_stone
-fill ~-29 ~-14 ~-20 ~-25 ~-14 ~-17 minecraft:end_stone
-fill ~-30 ~-14 ~-16 ~-25 ~-14 ~-14 minecraft:end_stone
-fill ~-31 ~-14 ~-13 ~-25 ~-14 ~-12 minecraft:end_stone
-fill ~-32 ~-14 ~-11 ~-25 ~-14 ~-9 minecraft:end_stone
-fill ~-33 ~-14 ~-8 ~-25 ~-14 ~-7 minecraft:end_stone
-fill ~-34 ~-14 ~-6 ~-25 ~-14 ~-6 minecraft:end_stone
-fill ~-35 ~-14 ~-5 ~-25 ~-14 ~-5 minecraft:end_stone
-fill ~-36 ~-14 ~-4 ~-25 ~-14 ~-4 minecraft:end_stone
-fill ~-37 ~-14 ~-3 ~-25 ~-14 ~-2 minecraft:end_stone
-fill ~-38 ~-14 ~-1 ~-25 ~-14 ~1 minecraft:end_stone
-fill ~-39 ~-14 ~2 ~-25 ~-14 ~4 minecraft:end_stone
-fill ~-39 ~-14 ~5 ~-36 ~-14 ~5 minecraft:end_stone_bricks
-setblock ~-25 ~-14 ~5 minecraft:end_stone_bricks
-fill ~-35 ~-14 ~5 ~-26 ~-14 ~5 minecraft:end_stone
-fill ~-39 ~-14 ~6 ~-33 ~-14 ~6 minecraft:end_stone_bricks
-fill ~-27 ~-14 ~6 ~-25 ~-14 ~6 minecraft:end_stone_bricks
-fill ~-32 ~-14 ~6 ~-28 ~-14 ~6 minecraft:end_stone
-fill ~-34 ~-14 ~7 ~-27 ~-14 ~7 minecraft:end_stone
-fill ~-39 ~-14 ~7 ~-35 ~-14 ~7 minecraft:end_stone_bricks
-fill ~-26 ~-14 ~7 ~-25 ~-14 ~7 minecraft:end_stone_bricks
-fill ~-28 ~-13 ~-24 ~-25 ~-13 ~-23 minecraft:end_stone
-fill ~-29 ~-13 ~-22 ~-25 ~-13 ~-19 minecraft:end_stone
-fill ~-30 ~-13 ~-18 ~-25 ~-13 ~-16 minecraft:end_stone
-fill ~-31 ~-13 ~-15 ~-25 ~-13 ~-14 minecraft:end_stone
-fill ~-32 ~-13 ~-13 ~-25 ~-13 ~-12 minecraft:end_stone
-fill ~-33 ~-13 ~-11 ~-25 ~-13 ~-10 minecraft:end_stone
-fill ~-34 ~-13 ~-9 ~-25 ~-13 ~-7 minecraft:end_stone
-fill ~-35 ~-13 ~-6 ~-25 ~-13 ~-6 minecraft:end_stone
-fill ~-36 ~-13 ~-5 ~-25 ~-13 ~-5 minecraft:end_stone
-fill ~-37 ~-13 ~-4 ~-25 ~-13 ~-4 minecraft:end_stone
-fill ~-38 ~-13 ~-3 ~-25 ~-13 ~-1 minecraft:end_stone
-fill ~-39 ~-13 ~0 ~-25 ~-13 ~4 minecraft:end_stone
-fill ~-40 ~-13 ~5 ~-37 ~-13 ~5 minecraft:end_stone_bricks
-fill ~-26 ~-13 ~5 ~-25 ~-13 ~5 minecraft:end_stone_bricks
-fill ~-36 ~-13 ~5 ~-27 ~-13 ~5 minecraft:end_stone
-fill ~-40 ~-13 ~6 ~-34 ~-13 ~6 minecraft:end_stone_bricks
-fill ~-33 ~-13 ~6 ~-29 ~-13 ~6 minecraft:end_stone
-fill ~-28 ~-13 ~6 ~-25 ~-13 ~6 minecraft:end_stone_bricks
-fill ~-39 ~-13 ~7 ~-36 ~-13 ~7 minecraft:end_stone_bricks
-fill ~-35 ~-13 ~7 ~-28 ~-13 ~7 minecraft:end_stone
-fill ~-27 ~-13 ~7 ~-25 ~-13 ~7 minecraft:end_stone_bricks
-fill ~-28 ~-12 ~-24 ~-25 ~-12 ~-24 minecraft:end_stone
-fill ~-29 ~-12 ~-23 ~-25 ~-12 ~-21 minecraft:end_stone
-fill ~-30 ~-12 ~-20 ~-25 ~-12 ~-18 minecraft:end_stone
-fill ~-31 ~-12 ~-17 ~-25 ~-12 ~-16 minecraft:end_stone
-fill ~-32 ~-12 ~-15 ~-25 ~-12 ~-14 minecraft:end_stone
-fill ~-33 ~-12 ~-13 ~-25 ~-12 ~-12 minecraft:end_stone
-fill ~-34 ~-12 ~-11 ~-25 ~-12 ~-10 minecraft:end_stone
-fill ~-35 ~-12 ~-9 ~-25 ~-12 ~-7 minecraft:end_stone
-fill ~-36 ~-12 ~-6 ~-25 ~-12 ~-6 minecraft:end_stone
+setblock ~-26 ~-34 ~5 minecraft:obsidian
+fill ~-26 ~-33 ~5 ~-25 ~-33 ~5 minecraft:obsidian
+setblock ~-26 ~-33 ~6 minecraft:obsidian
+fill ~-26 ~-32 ~4 ~-25 ~-30 ~6 minecraft:obsidian
+fill ~-26 ~-31 ~7 ~-26 ~-30 ~7 minecraft:obsidian
+fill ~-25 ~-30 ~3 ~-25 ~-27 ~3 minecraft:obsidian
+setblock ~-25 ~-29 ~-11 minecraft:obsidian
+fill ~-26 ~-29 ~4 ~-25 ~-27 ~7 minecraft:obsidian
+fill ~-25 ~-28 ~-11 ~-25 ~-23 ~-10 minecraft:obsidian
+fill ~-25 ~-26 ~2 ~-25 ~-23 ~2 minecraft:obsidian
+fill ~-26 ~-26 ~3 ~-25 ~-25 ~7 minecraft:obsidian
+fill ~-32 ~-26 ~6 ~-32 ~-26 ~7 minecraft:obsidian
+fill ~-26 ~-25 ~-5 ~-25 ~-23 ~-4 minecraft:obsidian
+fill ~-33 ~-25 ~5 ~-32 ~-25 ~6 minecraft:obsidian
+setblock ~-32 ~-25 ~7 minecraft:obsidian
+fill ~-26 ~-24 ~3 ~-25 ~-23 ~4 minecraft:obsidian
+fill ~-27 ~-24 ~5 ~-25 ~-23 ~5 minecraft:obsidian
+fill ~-34 ~-24 ~5 ~-32 ~-23 ~6 minecraft:obsidian
+fill ~-26 ~-24 ~6 ~-25 ~-23 ~7 minecraft:obsidian
+fill ~-33 ~-24 ~7 ~-32 ~-23 ~7 minecraft:obsidian
+fill ~-26 ~-22 ~-11 ~-25 ~-21 ~-10 minecraft:end_stone
+fill ~-25 ~-22 ~-7 ~-25 ~-22 ~-6 minecraft:end_stone
+fill ~-26 ~-22 ~-5 ~-25 ~-22 ~-4 minecraft:end_stone
+fill ~-25 ~-22 ~-3 ~-25 ~-22 ~-2 minecraft:end_stone
+setblock ~-28 ~-22 ~-2 minecraft:end_stone
+fill ~-25 ~-22 ~2 ~-25 ~-21 ~2 minecraft:end_stone
+fill ~-26 ~-22 ~3 ~-25 ~-21 ~3 minecraft:end_stone
+fill ~-27 ~-22 ~4 ~-25 ~-22 ~5 minecraft:end_stone
+fill ~-34 ~-22 ~5 ~-31 ~-22 ~6 minecraft:end_stone
+fill ~-26 ~-22 ~6 ~-25 ~-22 ~7 minecraft:end_stone
+fill ~-34 ~-22 ~7 ~-32 ~-22 ~7 minecraft:end_stone
+setblock ~-25 ~-21 ~-12 minecraft:end_stone
+fill ~-25 ~-21 ~-9 ~-25 ~-21 ~-6 minecraft:end_stone
+fill ~-29 ~-21 ~-2 ~-28 ~-21 ~-2 minecraft:end_stone
+fill ~-26 ~-21 ~-5 ~-25 ~-21 ~1 minecraft:end_stone
+setblock ~-33 ~-21 ~4 minecraft:end_stone
+fill ~-27 ~-21 ~4 ~-25 ~-21 ~6 minecraft:end_stone
+fill ~-34 ~-21 ~5 ~-31 ~-21 ~7 minecraft:end_stone
+fill ~-26 ~-21 ~7 ~-25 ~-20 ~7 minecraft:end_stone
+fill ~-29 ~-20 ~-14 ~-28 ~-18 ~-14 minecraft:end_stone
+fill ~-25 ~-20 ~-16 ~-25 ~-20 ~-12 minecraft:end_stone
+fill ~-26 ~-20 ~-11 ~-25 ~-20 ~-4 minecraft:end_stone
+fill ~-27 ~-20 ~-3 ~-25 ~-20 ~-3 minecraft:end_stone
+fill ~-29 ~-20 ~-2 ~-25 ~-20 ~-2 minecraft:end_stone
+fill ~-27 ~-20 ~-1 ~-25 ~-20 ~1 minecraft:end_stone
+fill ~-28 ~-20 ~2 ~-25 ~-20 ~3 minecraft:end_stone
+fill ~-29 ~-20 ~4 ~-25 ~-20 ~4 minecraft:end_stone
+fill ~-34 ~-20 ~4 ~-32 ~-20 ~4 minecraft:end_stone
+fill ~-35 ~-20 ~5 ~-25 ~-20 ~5 minecraft:end_stone
+fill ~-34 ~-20 ~6 ~-25 ~-20 ~6 minecraft:end_stone
+fill ~-34 ~-20 ~7 ~-31 ~-20 ~7 minecraft:end_stone
+fill ~-25 ~-19 ~-18 ~-25 ~-19 ~-15 minecraft:end_stone
+fill ~-26 ~-19 ~-14 ~-25 ~-19 ~-8 minecraft:end_stone
+fill ~-27 ~-19 ~-7 ~-25 ~-19 ~-3 minecraft:end_stone
+fill ~-29 ~-19 ~-2 ~-25 ~-19 ~1 minecraft:end_stone
+fill ~-30 ~-19 ~2 ~-25 ~-19 ~2 minecraft:end_stone
+fill ~-31 ~-19 ~3 ~-25 ~-19 ~3 minecraft:end_stone
+fill ~-34 ~-19 ~4 ~-25 ~-18 ~4 minecraft:end_stone
+fill ~-35 ~-19 ~5 ~-25 ~-18 ~6 minecraft:end_stone
+fill ~-34 ~-19 ~7 ~-25 ~-18 ~7 minecraft:end_stone
+fill ~-25 ~-18 ~-20 ~-25 ~-18 ~-18 minecraft:end_stone
+fill ~-26 ~-18 ~-17 ~-25 ~-18 ~-13 minecraft:end_stone
+setblock ~-28 ~-18 ~-13 minecraft:end_stone
+fill ~-32 ~-18 ~-8 ~-32 ~-17 ~-8 minecraft:end_stone
+fill ~-27 ~-18 ~-12 ~-25 ~-18 ~-6 minecraft:end_stone
+fill ~-28 ~-18 ~-5 ~-25 ~-18 ~-3 minecraft:end_stone
+fill ~-29 ~-18 ~-2 ~-25 ~-18 ~-1 minecraft:end_stone
+fill ~-30 ~-18 ~0 ~-25 ~-18 ~0 minecraft:end_stone
+fill ~-31 ~-18 ~1 ~-25 ~-18 ~1 minecraft:end_stone
+fill ~-32 ~-18 ~2 ~-25 ~-18 ~3 minecraft:end_stone
+fill ~-25 ~-17 ~-21 ~-25 ~-17 ~-20 minecraft:end_stone
+fill ~-26 ~-17 ~-19 ~-25 ~-17 ~-17 minecraft:end_stone
+fill ~-27 ~-17 ~-16 ~-25 ~-17 ~-15 minecraft:end_stone
+fill ~-29 ~-17 ~-14 ~-25 ~-16 ~-13 minecraft:end_stone
+fill ~-27 ~-17 ~-12 ~-25 ~-17 ~-10 minecraft:end_stone
+fill ~-28 ~-17 ~-9 ~-25 ~-17 ~-5 minecraft:end_stone
+fill ~-29 ~-17 ~-4 ~-25 ~-17 ~-3 minecraft:end_stone
+fill ~-30 ~-17 ~-2 ~-25 ~-17 ~-2 minecraft:end_stone
+fill ~-31 ~-17 ~-1 ~-25 ~-17 ~-1 minecraft:end_stone
+fill ~-32 ~-17 ~0 ~-25 ~-17 ~0 minecraft:end_stone
+fill ~-33 ~-17 ~1 ~-25 ~-17 ~1 minecraft:end_stone
+fill ~-34 ~-17 ~2 ~-25 ~-17 ~3 minecraft:end_stone
+fill ~-35 ~-17 ~4 ~-25 ~-17 ~7 minecraft:end_stone
+setblock ~-25 ~-16 ~-22 minecraft:end_stone
+fill ~-26 ~-16 ~-21 ~-25 ~-16 ~-19 minecraft:end_stone
+setblock ~-32 ~-16 ~-19 minecraft:end_stone
+fill ~-27 ~-16 ~-18 ~-25 ~-16 ~-15 minecraft:end_stone
+fill ~-32 ~-16 ~-8 ~-32 ~-16 ~-7 minecraft:end_stone
+fill ~-28 ~-16 ~-12 ~-25 ~-16 ~-6 minecraft:end_stone
+fill ~-29 ~-16 ~-5 ~-25 ~-16 ~-4 minecraft:end_stone
+fill ~-30 ~-16 ~-3 ~-25 ~-16 ~-3 minecraft:end_stone
+fill ~-32 ~-16 ~-2 ~-25 ~-16 ~-2 minecraft:end_stone
+fill ~-33 ~-16 ~-1 ~-25 ~-16 ~-1 minecraft:end_stone
+fill ~-34 ~-16 ~0 ~-25 ~-16 ~0 minecraft:end_stone
+fill ~-35 ~-16 ~1 ~-25 ~-16 ~2 minecraft:end_stone
+fill ~-36 ~-16 ~3 ~-25 ~-16 ~7 minecraft:end_stone
+fill ~-25 ~-15 ~-24 ~-25 ~-15 ~-23 minecraft:end_stone
+fill ~-26 ~-15 ~-22 ~-25 ~-15 ~-21 minecraft:end_stone
+fill ~-32 ~-15 ~-19 ~-31 ~-14 ~-19 minecraft:end_stone
+fill ~-27 ~-15 ~-20 ~-25 ~-15 ~-18 minecraft:end_stone
+fill ~-28 ~-15 ~-17 ~-25 ~-15 ~-15 minecraft:end_stone
+fill ~-30 ~-15 ~-14 ~-25 ~-13 ~-14 minecraft:end_stone
+fill ~-29 ~-15 ~-13 ~-25 ~-15 ~-13 minecraft:end_stone
+fill ~-29 ~-13 ~-13 ~-25 ~-13 ~-13 minecraft:end_stone
+fill ~-38 ~-15 ~-13 ~-36 ~-15 ~-13 minecraft:end_stone
+fill ~-28 ~-15 ~-12 ~-25 ~-15 ~-12 minecraft:end_stone
+setblock ~-37 ~-15 ~-12 minecraft:end_stone
+fill ~-38 ~-15 ~-11 ~-38 ~-14 ~-11 minecraft:end_stone
+fill ~-32 ~-15 ~-8 ~-31 ~-14 ~-8 minecraft:end_stone
+fill ~-32 ~-15 ~-7 ~-32 ~-14 ~-7 minecraft:end_stone
+fill ~-29 ~-15 ~-11 ~-25 ~-15 ~-5 minecraft:end_stone
+fill ~-30 ~-15 ~-4 ~-25 ~-15 ~-4 minecraft:end_stone
+fill ~-32 ~-15 ~-3 ~-25 ~-15 ~-3 minecraft:end_stone
+fill ~-34 ~-15 ~-2 ~-25 ~-15 ~-2 minecraft:end_stone
+fill ~-35 ~-15 ~-1 ~-25 ~-15 ~-1 minecraft:end_stone
+fill ~-36 ~-15 ~0 ~-25 ~-15 ~1 minecraft:end_stone
+fill ~-37 ~-15 ~2 ~-25 ~-15 ~4 minecraft:end_stone
+fill ~-38 ~-15 ~5 ~-25 ~-15 ~6 minecraft:end_stone
+fill ~-37 ~-15 ~7 ~-25 ~-15 ~7 minecraft:end_stone
+fill ~-26 ~-14 ~-24 ~-25 ~-14 ~-23 minecraft:end_stone
+fill ~-27 ~-14 ~-22 ~-25 ~-14 ~-21 minecraft:end_stone
+setblock ~-32 ~-14 ~-20 minecraft:end_stone
+fill ~-28 ~-14 ~-20 ~-25 ~-14 ~-16 minecraft:end_stone
+fill ~-29 ~-14 ~-15 ~-25 ~-14 ~-15 minecraft:end_stone
+fill ~-38 ~-14 ~-13 ~-35 ~-14 ~-13 minecraft:end_stone
+fill ~-38 ~-14 ~-12 ~-37 ~-14 ~-12 minecraft:end_stone
+fill ~-29 ~-14 ~-13 ~-25 ~-14 ~-6 minecraft:end_stone
+fill ~-30 ~-14 ~-5 ~-25 ~-14 ~-5 minecraft:end_stone
+fill ~-33 ~-14 ~-4 ~-25 ~-14 ~-4 minecraft:end_stone
+fill ~-35 ~-14 ~-3 ~-25 ~-14 ~-3 minecraft:end_stone
+fill ~-36 ~-14 ~-2 ~-25 ~-14 ~-2 minecraft:end_stone
+fill ~-37 ~-14 ~-1 ~-25 ~-14 ~-1 minecraft:end_stone
+fill ~-38 ~-14 ~0 ~-25 ~-14 ~2 minecraft:end_stone
+fill ~-39 ~-14 ~3 ~-25 ~-14 ~6 minecraft:end_stone
+fill ~-38 ~-14 ~7 ~-25 ~-14 ~7 minecraft:end_stone
+fill ~-27 ~-13 ~-24 ~-25 ~-13 ~-23 minecraft:end_stone
+fill ~-28 ~-13 ~-22 ~-25 ~-13 ~-19 minecraft:end_stone
+fill ~-32 ~-13 ~-20 ~-31 ~-13 ~-19 minecraft:end_stone
+fill ~-29 ~-13 ~-18 ~-25 ~-13 ~-15 minecraft:end_stone
+fill ~-35 ~-13 ~-14 ~-34 ~-13 ~-14 minecraft:end_stone
+fill ~-38 ~-13 ~-13 ~-34 ~-13 ~-13 minecraft:end_stone
+fill ~-38 ~-13 ~-12 ~-37 ~-12 ~-11 minecraft:end_stone
+fill ~-38 ~-13 ~-10 ~-38 ~-12 ~-10 minecraft:end_stone
+fill ~-30 ~-13 ~-12 ~-25 ~-13 ~-9 minecraft:end_stone
+fill ~-33 ~-13 ~-8 ~-25 ~-12 ~-8 minecraft:end_stone
+fill ~-32 ~-13 ~-7 ~-25 ~-12 ~-7 minecraft:end_stone
+fill ~-30 ~-13 ~-6 ~-25 ~-13 ~-6 minecraft:end_stone
+fill ~-33 ~-13 ~-5 ~-25 ~-13 ~-5 minecraft:end_stone
+fill ~-36 ~-13 ~-4 ~-25 ~-13 ~-4 minecraft:end_stone
+fill ~-37 ~-13 ~-3 ~-25 ~-13 ~-3 minecraft:end_stone
+fill ~-38 ~-13 ~-2 ~-25 ~-13 ~-2 minecraft:end_stone
+fill ~-39 ~-13 ~-1 ~-25 ~-13 ~1 minecraft:end_stone
+fill ~-40 ~-13 ~2 ~-25 ~-13 ~7 minecraft:end_stone
+fill ~-28 ~-12 ~-24 ~-25 ~-12 ~-22 minecraft:end_stone
+fill ~-32 ~-12 ~-20 ~-31 ~-12 ~-18 minecraft:end_stone
+fill ~-29 ~-12 ~-21 ~-25 ~-12 ~-17 minecraft:end_stone
+fill ~-37 ~-12 ~-14 ~-34 ~-12 ~-14 minecraft:end_stone
+fill ~-39 ~-12 ~-13 ~-34 ~-11 ~-13 minecraft:end_stone
+fill ~-30 ~-12 ~-16 ~-25 ~-12 ~-12 minecraft:end_stone
+fill ~-31 ~-12 ~-11 ~-25 ~-12 ~-10 minecraft:end_stone
+fill ~-32 ~-12 ~-9 ~-25 ~-12 ~-9 minecraft:end_stone
+fill ~-33 ~-12 ~-6 ~-25 ~-12 ~-6 minecraft:end_stone
 fill ~-37 ~-12 ~-5 ~-25 ~-12 ~-5 minecraft:end_stone
-fill ~-38 ~-12 ~-4 ~-25 ~-12 ~-3 minecraft:end_stone
-fill ~-39 ~-12 ~-2 ~-25 ~-12 ~0 minecraft:end_stone
-fill ~-40 ~-12 ~1 ~-25 ~-12 ~3 minecraft:end_stone
-fill ~-40 ~-12 ~4 ~-26 ~-12 ~4 minecraft:end_stone
-setblock ~-25 ~-12 ~4 minecraft:end_stone_bricks
-fill ~-27 ~-12 ~5 ~-25 ~-12 ~5 minecraft:end_stone_bricks
-fill ~-37 ~-12 ~5 ~-28 ~-12 ~5 minecraft:end_stone
-fill ~-40 ~-12 ~5 ~-38 ~-12 ~5 minecraft:end_stone_bricks
-fill ~-40 ~-12 ~6 ~-35 ~-12 ~6 minecraft:end_stone_bricks
-fill ~-34 ~-12 ~6 ~-30 ~-12 ~6 minecraft:end_stone
-fill ~-29 ~-12 ~6 ~-25 ~-12 ~6 minecraft:end_stone_bricks
-fill ~-36 ~-12 ~7 ~-29 ~-12 ~7 minecraft:end_stone
-fill ~-40 ~-12 ~7 ~-37 ~-12 ~7 minecraft:end_stone_bricks
-fill ~-28 ~-12 ~7 ~-25 ~-12 ~7 minecraft:end_stone_bricks
-fill ~-29 ~-11 ~-24 ~-25 ~-11 ~-23 minecraft:end_stone
-fill ~-30 ~-11 ~-22 ~-25 ~-11 ~-20 minecraft:end_stone
-fill ~-31 ~-11 ~-19 ~-25 ~-11 ~-18 minecraft:end_stone
-fill ~-32 ~-11 ~-17 ~-25 ~-11 ~-16 minecraft:end_stone
-fill ~-33 ~-11 ~-15 ~-25 ~-11 ~-14 minecraft:end_stone
-fill ~-34 ~-11 ~-13 ~-25 ~-11 ~-12 minecraft:end_stone
-fill ~-35 ~-11 ~-11 ~-25 ~-11 ~-10 minecraft:end_stone
-fill ~-36 ~-11 ~-9 ~-25 ~-11 ~-7 minecraft:end_stone
-fill ~-37 ~-11 ~-6 ~-25 ~-11 ~-6 minecraft:end_stone
-fill ~-38 ~-11 ~-5 ~-25 ~-11 ~-5 minecraft:end_stone
-fill ~-39 ~-11 ~-4 ~-25 ~-11 ~-3 minecraft:end_stone
-fill ~-40 ~-11 ~-2 ~-25 ~-11 ~3 minecraft:end_stone
-fill ~-41 ~-11 ~4 ~-27 ~-11 ~4 minecraft:end_stone
-fill ~-26 ~-11 ~4 ~-25 ~-11 ~4 minecraft:end_stone_bricks
-fill ~-38 ~-11 ~5 ~-29 ~-11 ~5 minecraft:end_stone
-fill ~-41 ~-11 ~5 ~-39 ~-11 ~5 minecraft:end_stone_bricks
-fill ~-28 ~-11 ~5 ~-25 ~-11 ~5 minecraft:end_stone_bricks
-fill ~-35 ~-11 ~6 ~-31 ~-11 ~6 minecraft:end_stone
-fill ~-30 ~-11 ~6 ~-25 ~-11 ~6 minecraft:end_stone_bricks
-fill ~-41 ~-11 ~6 ~-36 ~-11 ~6 minecraft:end_stone_bricks
-fill ~-29 ~-11 ~7 ~-25 ~-11 ~7 minecraft:end_stone_bricks
-fill ~-37 ~-11 ~7 ~-30 ~-11 ~7 minecraft:end_stone
-fill ~-40 ~-11 ~7 ~-38 ~-11 ~7 minecraft:end_stone_bricks
+fill ~-39 ~-12 ~-4 ~-25 ~-12 ~-3 minecraft:end_stone
+fill ~-40 ~-12 ~-2 ~-25 ~-12 ~-1 minecraft:end_stone
+fill ~-41 ~-12 ~0 ~-25 ~-12 ~7 minecraft:end_stone
+fill ~-29 ~-11 ~-24 ~-25 ~-11 ~-21 minecraft:end_stone
+fill ~-32 ~-11 ~-20 ~-25 ~-11 ~-18 minecraft:end_stone
+fill ~-30 ~-11 ~-17 ~-25 ~-11 ~-17 minecraft:end_stone
+fill ~-31 ~-11 ~-16 ~-25 ~-11 ~-15 minecraft:end_stone
+fill ~-38 ~-11 ~-14 ~-25 ~-10 ~-14 minecraft:end_stone
+fill ~-32 ~-11 ~-13 ~-25 ~-11 ~-13 minecraft:end_stone
+fill ~-39 ~-11 ~-12 ~-36 ~-11 ~-12 minecraft:end_stone
+fill ~-33 ~-11 ~-12 ~-25 ~-11 ~-11 minecraft:end_stone
+fill ~-38 ~-11 ~-11 ~-37 ~-11 ~-10 minecraft:end_stone
+fill ~-34 ~-11 ~-10 ~-25 ~-11 ~-10 minecraft:end_stone
+fill ~-35 ~-11 ~-9 ~-25 ~-11 ~-8 minecraft:end_stone
+fill ~-37 ~-11 ~-7 ~-25 ~-11 ~-7 minecraft:end_stone
+fill ~-38 ~-11 ~-6 ~-25 ~-11 ~-6 minecraft:end_stone
+fill ~-40 ~-11 ~-5 ~-25 ~-11 ~-5 minecraft:end_stone
+fill ~-41 ~-11 ~-4 ~-25 ~-11 ~-4 minecraft:end_stone
+setblock ~-45 ~-11 ~2 minecraft:end_stone
+fill ~-42 ~-11 ~-3 ~-25 ~-11 ~7 minecraft:end_stone
 fill ~-29 ~-10 ~-24 ~-25 ~-10 ~-24 minecraft:end_stone
 fill ~-30 ~-10 ~-23 ~-25 ~-10 ~-22 minecraft:end_stone
-fill ~-31 ~-10 ~-21 ~-25 ~-10 ~-20 minecraft:end_stone
-fill ~-32 ~-10 ~-19 ~-25 ~-10 ~-18 minecraft:end_stone
-fill ~-33 ~-10 ~-17 ~-25 ~-10 ~-16 minecraft:end_stone
-fill ~-34 ~-10 ~-15 ~-25 ~-10 ~-13 minecraft:end_stone
-fill ~-35 ~-10 ~-12 ~-25 ~-10 ~-11 minecraft:end_stone
-fill ~-36 ~-10 ~-10 ~-25 ~-10 ~-9 minecraft:end_stone
-fill ~-37 ~-10 ~-8 ~-25 ~-10 ~-7 minecraft:end_stone
-fill ~-38 ~-10 ~-6 ~-25 ~-10 ~-6 minecraft:end_stone
-fill ~-39 ~-10 ~-5 ~-25 ~-10 ~-4 minecraft:end_stone
-fill ~-40 ~-10 ~-3 ~-25 ~-10 ~-1 minecraft:end_stone
-fill ~-41 ~-10 ~0 ~-25 ~-10 ~3 minecraft:end_stone
-fill ~-27 ~-10 ~4 ~-25 ~-10 ~4 minecraft:end_stone_bricks
-fill ~-41 ~-10 ~4 ~-28 ~-10 ~4 minecraft:end_stone
-fill ~-29 ~-10 ~5 ~-25 ~-10 ~5 minecraft:end_stone_bricks
-fill ~-41 ~-10 ~5 ~-40 ~-10 ~5 minecraft:end_stone_bricks
-fill ~-39 ~-10 ~5 ~-30 ~-10 ~5 minecraft:end_stone
-fill ~-36 ~-10 ~6 ~-32 ~-10 ~6 minecraft:end_stone
-fill ~-31 ~-10 ~6 ~-25 ~-10 ~6 minecraft:end_stone_bricks
-fill ~-41 ~-10 ~6 ~-37 ~-10 ~6 minecraft:end_stone_bricks
-fill ~-30 ~-10 ~7 ~-25 ~-10 ~7 minecraft:end_stone_bricks
-fill ~-41 ~-10 ~7 ~-39 ~-10 ~7 minecraft:end_stone_bricks
-fill ~-38 ~-10 ~7 ~-31 ~-10 ~7 minecraft:end_stone
-fill ~-30 ~-9 ~-24 ~-25 ~-9 ~-23 minecraft:end_stone
-fill ~-31 ~-9 ~-22 ~-25 ~-9 ~-22 minecraft:end_stone
-fill ~-32 ~-9 ~-21 ~-25 ~-9 ~-19 minecraft:end_stone
-fill ~-33 ~-9 ~-18 ~-25 ~-9 ~-17 minecraft:end_stone
-fill ~-34 ~-9 ~-16 ~-25 ~-9 ~-15 minecraft:end_stone
-fill ~-35 ~-9 ~-14 ~-25 ~-9 ~-13 minecraft:end_stone
-fill ~-36 ~-9 ~-12 ~-25 ~-9 ~-11 minecraft:end_stone
-fill ~-37 ~-9 ~-10 ~-25 ~-9 ~-8 minecraft:end_stone
-fill ~-38 ~-9 ~-7 ~-25 ~-9 ~-6 minecraft:end_stone
-fill ~-39 ~-9 ~-5 ~-25 ~-9 ~-5 minecraft:end_stone
-fill ~-40 ~-9 ~-4 ~-25 ~-9 ~-3 minecraft:end_stone
-fill ~-41 ~-9 ~-2 ~-25 ~-9 ~3 minecraft:end_stone
-fill ~-41 ~-9 ~4 ~-29 ~-9 ~4 minecraft:end_stone
-fill ~-28 ~-9 ~4 ~-25 ~-9 ~4 minecraft:end_stone_bricks
-setblock ~-41 ~-9 ~5 minecraft:end_stone_bricks
-fill ~-40 ~-9 ~5 ~-31 ~-9 ~5 minecraft:end_stone
-fill ~-30 ~-9 ~5 ~-25 ~-9 ~5 minecraft:end_stone_bricks
-fill ~-41 ~-9 ~6 ~-38 ~-9 ~6 minecraft:end_stone_bricks
-fill ~-32 ~-9 ~6 ~-25 ~-9 ~6 minecraft:end_stone_bricks
-fill ~-37 ~-9 ~6 ~-33 ~-9 ~6 minecraft:end_stone
-fill ~-31 ~-9 ~7 ~-25 ~-9 ~7 minecraft:end_stone_bricks
-fill ~-39 ~-9 ~7 ~-32 ~-9 ~7 minecraft:end_stone
-fill ~-41 ~-9 ~7 ~-40 ~-9 ~7 minecraft:end_stone_bricks
-fill ~-30 ~-8 ~-24 ~-25 ~-8 ~-24 minecraft:end_stone
-fill ~-31 ~-8 ~-23 ~-25 ~-8 ~-23 minecraft:end_stone
-fill ~-32 ~-8 ~-22 ~-25 ~-8 ~-21 minecraft:end_stone
-fill ~-33 ~-8 ~-20 ~-25 ~-8 ~-18 minecraft:end_stone
-fill ~-34 ~-8 ~-17 ~-25 ~-8 ~-16 minecraft:end_stone
-fill ~-35 ~-8 ~-15 ~-25 ~-8 ~-14 minecraft:end_stone
-fill ~-36 ~-8 ~-13 ~-25 ~-8 ~-12 minecraft:end_stone
-fill ~-37 ~-8 ~-11 ~-25 ~-8 ~-10 minecraft:end_stone
-fill ~-38 ~-8 ~-9 ~-25 ~-8 ~-8 minecraft:end_stone
-fill ~-39 ~-8 ~-7 ~-25 ~-8 ~-6 minecraft:end_stone
-fill ~-40 ~-8 ~-5 ~-25 ~-8 ~-4 minecraft:end_stone
-fill ~-41 ~-8 ~-3 ~-25 ~-8 ~0 minecraft:end_stone
-fill ~-42 ~-8 ~1 ~-25 ~-8 ~3 minecraft:end_stone
-fill ~-29 ~-8 ~4 ~-25 ~-8 ~4 minecraft:end_stone_bricks
-fill ~-42 ~-8 ~4 ~-30 ~-8 ~4 minecraft:end_stone
-fill ~-31 ~-8 ~5 ~-25 ~-8 ~5 minecraft:end_stone_bricks
-fill ~-41 ~-8 ~5 ~-32 ~-8 ~5 minecraft:end_stone
-setblock ~-42 ~-8 ~5 minecraft:end_stone_bricks
-fill ~-33 ~-8 ~6 ~-25 ~-8 ~6 minecraft:end_stone_bricks
-fill ~-42 ~-8 ~6 ~-39 ~-8 ~6 minecraft:end_stone_bricks
-fill ~-38 ~-8 ~6 ~-34 ~-8 ~6 minecraft:end_stone
-setblock ~-41 ~-8 ~7 minecraft:end_stone_bricks
-fill ~-32 ~-8 ~7 ~-25 ~-8 ~7 minecraft:end_stone_bricks
-fill ~-40 ~-8 ~7 ~-33 ~-8 ~7 minecraft:end_stone
-fill ~-31 ~-7 ~-24 ~-25 ~-6 ~-24 minecraft:end_stone
-fill ~-32 ~-7 ~-23 ~-25 ~-7 ~-22 minecraft:end_stone
-fill ~-33 ~-7 ~-21 ~-25 ~-7 ~-20 minecraft:end_stone
-fill ~-34 ~-7 ~-19 ~-25 ~-7 ~-17 minecraft:end_stone
-fill ~-35 ~-7 ~-16 ~-25 ~-7 ~-15 minecraft:end_stone
-fill ~-36 ~-7 ~-14 ~-25 ~-7 ~-13 minecraft:end_stone
-fill ~-37 ~-7 ~-12 ~-25 ~-7 ~-11 minecraft:end_stone
-fill ~-38 ~-7 ~-10 ~-25 ~-7 ~-9 minecraft:end_stone
-fill ~-39 ~-7 ~-8 ~-25 ~-7 ~-7 minecraft:end_stone
-fill ~-40 ~-7 ~-6 ~-25 ~-7 ~-5 minecraft:end_stone
-fill ~-41 ~-7 ~-4 ~-25 ~-7 ~-2 minecraft:end_stone
-fill ~-42 ~-7 ~-1 ~-25 ~-7 ~3 minecraft:end_stone
-fill ~-42 ~-7 ~4 ~-31 ~-7 ~4 minecraft:end_stone
-fill ~-30 ~-7 ~4 ~-25 ~-7 ~4 minecraft:end_stone_bricks
-fill ~-32 ~-7 ~5 ~-25 ~-7 ~5 minecraft:end_stone_bricks
-fill ~-42 ~-7 ~5 ~-33 ~-7 ~5 minecraft:end_stone
-fill ~-42 ~-7 ~6 ~-40 ~-7 ~6 minecraft:end_stone_bricks
-fill ~-39 ~-7 ~6 ~-35 ~-7 ~6 minecraft:end_stone
-fill ~-34 ~-7 ~6 ~-25 ~-7 ~6 minecraft:end_stone_bricks
-fill ~-33 ~-7 ~7 ~-25 ~-7 ~7 minecraft:end_stone_bricks
-fill ~-41 ~-7 ~7 ~-34 ~-7 ~7 minecraft:end_stone
-setblock ~-42 ~-7 ~7 minecraft:end_stone_bricks
-fill ~-32 ~-6 ~-23 ~-25 ~-6 ~-23 minecraft:end_stone
-fill ~-33 ~-6 ~-22 ~-25 ~-6 ~-21 minecraft:end_stone
-fill ~-34 ~-6 ~-20 ~-25 ~-6 ~-18 minecraft:end_stone
-fill ~-35 ~-6 ~-17 ~-25 ~-6 ~-16 minecraft:end_stone
-fill ~-36 ~-6 ~-15 ~-25 ~-6 ~-14 minecraft:end_stone
-fill ~-37 ~-6 ~-13 ~-25 ~-6 ~-12 minecraft:end_stone
-fill ~-38 ~-6 ~-11 ~-25 ~-5 ~-10 minecraft:end_stone
-fill ~-39 ~-6 ~-9 ~-25 ~-5 ~-8 minecraft:end_stone
-fill ~-40 ~-6 ~-7 ~-25 ~-5 ~-6 minecraft:end_stone
-fill ~-41 ~-6 ~-5 ~-25 ~-6 ~-4 minecraft:end_stone
-fill ~-42 ~-6 ~-3 ~-25 ~-6 ~3 minecraft:end_stone
-fill ~-31 ~-6 ~4 ~-25 ~-6 ~4 minecraft:end_stone_bricks
-fill ~-42 ~-6 ~4 ~-32 ~-6 ~4 minecraft:end_stone
-fill ~-33 ~-6 ~5 ~-25 ~-6 ~5 minecraft:end_stone_bricks
-fill ~-42 ~-6 ~5 ~-34 ~-6 ~5 minecraft:end_stone
-fill ~-40 ~-6 ~6 ~-36 ~-6 ~6 minecraft:end_stone
-fill ~-35 ~-6 ~6 ~-25 ~-6 ~6 minecraft:end_stone_bricks
-fill ~-42 ~-6 ~6 ~-41 ~-6 ~6 minecraft:end_stone_bricks
-fill ~-34 ~-6 ~7 ~-25 ~-6 ~7 minecraft:end_stone_bricks
-fill ~-42 ~-6 ~7 ~-35 ~-6 ~7 minecraft:end_stone
-fill ~-32 ~-5 ~-24 ~-25 ~-5 ~-23 minecraft:end_stone
-fill ~-33 ~-5 ~-22 ~-25 ~-5 ~-22 minecraft:end_stone
-fill ~-34 ~-5 ~-21 ~-25 ~-5 ~-19 minecraft:end_stone
-fill ~-35 ~-5 ~-18 ~-25 ~-5 ~-17 minecraft:end_stone
-fill ~-36 ~-5 ~-16 ~-25 ~-3 ~-15 minecraft:end_stone
-fill ~-37 ~-5 ~-14 ~-25 ~-5 ~-12 minecraft:end_stone
-fill ~-41 ~-5 ~-5 ~-25 ~-5 ~-5 minecraft:end_stone
-fill ~-42 ~-5 ~-4 ~-25 ~-5 ~3 minecraft:end_stone
-fill ~-32 ~-5 ~4 ~-25 ~-5 ~4 minecraft:end_stone_bricks
-fill ~-42 ~-5 ~4 ~-33 ~-5 ~4 minecraft:end_stone
-fill ~-34 ~-5 ~5 ~-25 ~-5 ~5 minecraft:end_stone_bricks
-fill ~-42 ~-5 ~5 ~-35 ~-5 ~5 minecraft:end_stone
-fill ~-41 ~-5 ~6 ~-37 ~-5 ~6 minecraft:end_stone
-setblock ~-42 ~-5 ~6 minecraft:end_stone_bricks
-fill ~-36 ~-5 ~6 ~-25 ~-5 ~6 minecraft:end_stone_bricks
-fill ~-42 ~-5 ~7 ~-36 ~-5 ~7 minecraft:end_stone
-fill ~-35 ~-5 ~7 ~-25 ~-5 ~7 minecraft:end_stone_bricks
-fill ~-32 ~-4 ~-24 ~-25 ~0 ~-24 minecraft:end_stone
-fill ~-33 ~-4 ~-23 ~-25 ~-3 ~-22 minecraft:end_stone
-fill ~-34 ~-4 ~-21 ~-25 ~-3 ~-20 minecraft:end_stone
-fill ~-35 ~-4 ~-19 ~-25 ~-3 ~-17 minecraft:end_stone
-fill ~-37 ~-4 ~-14 ~-25 ~0 ~-13 minecraft:end_stone
-fill ~-38 ~-4 ~-12 ~-25 ~0 ~-11 minecraft:end_stone
-fill ~-39 ~-4 ~-10 ~-25 ~0 ~-9 minecraft:end_stone
-fill ~-40 ~-4 ~-8 ~-25 ~0 ~-7 minecraft:end_stone
-fill ~-41 ~-4 ~-6 ~-25 ~0 ~-5 minecraft:end_stone
-fill ~-42 ~-4 ~-4 ~-25 ~-4 ~2 minecraft:end_stone
-fill ~-43 ~-4 ~3 ~-25 ~-4 ~3 minecraft:end_stone
-setblock ~-25 ~-4 ~4 minecraft:end_stone
-fill ~-33 ~-4 ~4 ~-26 ~-4 ~4 minecraft:end_stone_bricks
-fill ~-43 ~-4 ~4 ~-34 ~-4 ~4 minecraft:end_stone
-fill ~-43 ~-4 ~5 ~-36 ~-4 ~5 minecraft:end_stone
-fill ~-35 ~-4 ~5 ~-25 ~-4 ~5 minecraft:end_stone_bricks
-fill ~-37 ~-4 ~6 ~-25 ~-4 ~6 minecraft:end_stone_bricks
-fill ~-42 ~-4 ~6 ~-38 ~-4 ~6 minecraft:end_stone
-fill ~-42 ~-4 ~7 ~-37 ~-4 ~7 minecraft:end_stone
-fill ~-36 ~-4 ~7 ~-25 ~-4 ~7 minecraft:end_stone_bricks
-fill ~-42 ~-3 ~-4 ~-25 ~-3 ~1 minecraft:end_stone
-fill ~-43 ~-3 ~2 ~-25 ~-3 ~3 minecraft:end_stone
-fill ~-26 ~-3 ~4 ~-25 ~-3 ~4 minecraft:end_stone
-fill ~-34 ~-3 ~4 ~-27 ~-3 ~4 minecraft:end_stone_bricks
-fill ~-43 ~-3 ~4 ~-35 ~-3 ~4 minecraft:end_stone
-setblock ~-25 ~-3 ~5 minecraft:end_stone
-fill ~-36 ~-3 ~5 ~-26 ~-3 ~5 minecraft:end_stone_bricks
-fill ~-43 ~-3 ~5 ~-37 ~-3 ~5 minecraft:end_stone
-fill ~-43 ~-3 ~6 ~-39 ~-3 ~6 minecraft:end_stone
-fill ~-38 ~-3 ~6 ~-25 ~-3 ~6 minecraft:end_stone_bricks
-fill ~-37 ~-3 ~7 ~-26 ~-3 ~7 minecraft:end_stone_bricks
-setblock ~-25 ~-3 ~7 minecraft:end_stone
-fill ~-42 ~-3 ~7 ~-38 ~-3 ~7 minecraft:end_stone
-fill ~-33 ~-2 ~-23 ~-25 ~0 ~-23 minecraft:end_stone
-fill ~-34 ~-2 ~-22 ~-25 ~0 ~-20 minecraft:end_stone
-fill ~-35 ~-2 ~-19 ~-25 ~0 ~-18 minecraft:end_stone
-fill ~-36 ~-2 ~-17 ~-25 ~0 ~-15 minecraft:end_stone
-fill ~-42 ~-2 ~-4 ~-25 ~0 ~0 minecraft:end_stone
-fill ~-43 ~-2 ~1 ~-25 ~0 ~6 minecraft:end_stone
-fill ~-42 ~-2 ~7 ~-25 ~0 ~7 minecraft:end_stone
-fill ~-56 ~-1 ~-5 ~-55 ~-1 ~-5 minecraft:purpur_pillar
-fill ~-56 ~-1 ~-4 ~-43 ~-1 ~-2 minecraft:purpur_pillar
-fill ~-55 ~-1 ~-1 ~-43 ~-1 ~-1 minecraft:purpur_pillar
-fill ~-56 ~0 ~-6 ~-55 ~0 ~-6 minecraft:end_stone_bricks
-fill ~-56 ~0 ~-5 ~-43 ~0 ~-1 minecraft:end_stone_bricks
-fill ~-55 ~0 ~0 ~-43 ~0 ~0 minecraft:end_stone_bricks
-setblock ~-30 ~1 ~-22 minecraft:chest[facing=north]
-fill ~-29 ~1 ~-12 ~-27 ~13 ~-10 minecraft:obsidian
-setblock ~-34 ~1 ~-10 minecraft:chest[facing=north]
-fill ~-56 ~1 ~-6 ~-55 ~1 ~-6 minecraft:end_stone_brick_wall
-fill ~-54 ~1 ~-5 ~-43 ~1 ~-5 minecraft:end_stone_brick_wall
-setblock ~-56 ~1 ~-1 minecraft:end_stone_brick_wall
-fill ~-55 ~1 ~0 ~-43 ~1 ~0 minecraft:end_stone_brick_wall
-fill ~-48 ~2 ~-5 ~-47 ~2 ~-5 minecraft:end_rod
-setblock ~-48 ~2 ~0 minecraft:end_rod
-fill ~-26 ~6 ~-2 ~-25 ~6 ~2 minecraft:purpur_block
-setblock ~-28 ~14 ~-11 minecraft:end_rod[facing=up]
+fill ~-31 ~-10 ~-21 ~-25 ~-10 ~-21 minecraft:end_stone
+fill ~-33 ~-10 ~-20 ~-25 ~-10 ~-19 minecraft:end_stone
+fill ~-32 ~-10 ~-18 ~-25 ~-10 ~-16 minecraft:end_stone
+fill ~-33 ~-10 ~-15 ~-25 ~-10 ~-15 minecraft:end_stone
+fill ~-39 ~-10 ~-13 ~-25 ~-10 ~-12 minecraft:end_stone
+fill ~-38 ~-10 ~-11 ~-25 ~-10 ~-10 minecraft:end_stone
+fill ~-37 ~-10 ~-9 ~-25 ~-10 ~-9 minecraft:end_stone
+fill ~-39 ~-10 ~-8 ~-25 ~-10 ~-8 minecraft:end_stone
+fill ~-40 ~-10 ~-7 ~-25 ~-10 ~-7 minecraft:end_stone
+fill ~-42 ~-10 ~-6 ~-25 ~-10 ~-4 minecraft:end_stone
+fill ~-43 ~-10 ~-3 ~-25 ~-10 ~0 minecraft:end_stone
+fill ~-44 ~-10 ~1 ~-25 ~-10 ~1 minecraft:end_stone
+fill ~-46 ~-10 ~2 ~-25 ~-10 ~2 minecraft:end_stone
+fill ~-43 ~-10 ~3 ~-25 ~-10 ~7 minecraft:end_stone
+fill ~-31 ~-9 ~-24 ~-25 ~-9 ~-24 minecraft:end_stone
+fill ~-32 ~-9 ~-23 ~-25 ~-9 ~-21 minecraft:end_stone
+fill ~-33 ~-9 ~-20 ~-25 ~-9 ~-18 minecraft:end_stone
+fill ~-34 ~-9 ~-17 ~-25 ~-9 ~-16 minecraft:end_stone
+fill ~-35 ~-9 ~-15 ~-25 ~-9 ~-15 minecraft:end_stone
+fill ~-39 ~-9 ~-14 ~-25 ~-9 ~-14 minecraft:end_stone
+fill ~-40 ~-9 ~-13 ~-25 ~-9 ~-13 minecraft:end_stone
+fill ~-39 ~-9 ~-12 ~-25 ~-9 ~-10 minecraft:end_stone
+setblock ~-44 ~-9 ~-10 minecraft:end_stone
+fill ~-40 ~-9 ~-9 ~-25 ~-9 ~-9 minecraft:end_stone
+fill ~-42 ~-9 ~-8 ~-25 ~-9 ~-7 minecraft:end_stone
+fill ~-43 ~-9 ~-6 ~-25 ~-9 ~-1 minecraft:end_stone
+fill ~-44 ~-9 ~0 ~-25 ~-9 ~0 minecraft:end_stone
+fill ~-46 ~-9 ~1 ~-25 ~-8 ~2 minecraft:end_stone
+fill ~-44 ~-9 ~3 ~-25 ~-9 ~7 minecraft:end_stone
+fill ~-33 ~-8 ~-24 ~-25 ~-8 ~-24 minecraft:end_stone
+fill ~-34 ~-8 ~-23 ~-25 ~-8 ~-18 minecraft:end_stone
+fill ~-35 ~-8 ~-17 ~-25 ~-8 ~-17 minecraft:end_stone
+fill ~-36 ~-8 ~-16 ~-25 ~-8 ~-15 minecraft:end_stone
+fill ~-40 ~-8 ~-14 ~-25 ~-8 ~-13 minecraft:end_stone
+fill ~-39 ~-8 ~-12 ~-25 ~-8 ~-12 minecraft:end_stone
+fill ~-40 ~-8 ~-11 ~-25 ~-8 ~-11 minecraft:end_stone
+fill ~-44 ~-8 ~-10 ~-43 ~-8 ~-10 minecraft:end_stone
+fill ~-41 ~-8 ~-10 ~-25 ~-8 ~-10 minecraft:end_stone
+fill ~-44 ~-8 ~-9 ~-25 ~-8 ~-9 minecraft:end_stone
+fill ~-43 ~-8 ~-8 ~-25 ~-8 ~-5 minecraft:end_stone
+fill ~-44 ~-8 ~-4 ~-25 ~-8 ~0 minecraft:end_stone
+fill ~-45 ~-8 ~3 ~-25 ~-8 ~7 minecraft:end_stone
+fill ~-36 ~-7 ~-24 ~-25 ~-7 ~-17 minecraft:end_stone
+fill ~-37 ~-7 ~-16 ~-25 ~-7 ~-16 minecraft:end_stone
+fill ~-38 ~-7 ~-15 ~-25 ~-7 ~-15 minecraft:end_stone
+fill ~-40 ~-7 ~-14 ~-25 ~-7 ~-12 minecraft:end_stone
+fill ~-42 ~-7 ~-11 ~-25 ~-7 ~-11 minecraft:end_stone
+fill ~-44 ~-7 ~-10 ~-25 ~-7 ~-9 minecraft:end_stone
+fill ~-43 ~-7 ~-8 ~-25 ~-7 ~-7 minecraft:end_stone
+fill ~-44 ~-7 ~-6 ~-25 ~-7 ~-2 minecraft:end_stone
+fill ~-45 ~-7 ~-1 ~-25 ~-7 ~0 minecraft:end_stone
+fill ~-46 ~-7 ~1 ~-25 ~-6 ~1 minecraft:end_stone
+fill ~-47 ~-7 ~2 ~-25 ~-6 ~2 minecraft:end_stone
+fill ~-46 ~-7 ~3 ~-25 ~-7 ~7 minecraft:end_stone
+fill ~-38 ~-6 ~-24 ~-25 ~-6 ~-24 minecraft:end_stone
+fill ~-37 ~-6 ~-23 ~-25 ~-6 ~-17 minecraft:end_stone
+fill ~-38 ~-6 ~-16 ~-25 ~-6 ~-16 minecraft:end_stone
+fill ~-39 ~-6 ~-15 ~-25 ~-6 ~-15 minecraft:end_stone
+fill ~-40 ~-6 ~-14 ~-25 ~-6 ~-14 minecraft:end_stone
+fill ~-41 ~-6 ~-13 ~-25 ~-6 ~-13 minecraft:end_stone
+fill ~-42 ~-6 ~-12 ~-25 ~-6 ~-11 minecraft:end_stone
+fill ~-44 ~-6 ~-10 ~-25 ~-6 ~-4 minecraft:end_stone
+fill ~-45 ~-6 ~-3 ~-25 ~-6 ~0 minecraft:end_stone
+fill ~-46 ~-6 ~3 ~-25 ~-6 ~4 minecraft:end_stone
+fill ~-47 ~-6 ~5 ~-25 ~-6 ~6 minecraft:end_stone
+fill ~-46 ~-6 ~7 ~-25 ~-6 ~7 minecraft:end_stone
+fill ~-39 ~-5 ~-24 ~-25 ~-5 ~-23 minecraft:end_stone
+fill ~-38 ~-5 ~-22 ~-25 ~-5 ~-17 minecraft:end_stone
+fill ~-39 ~-5 ~-16 ~-25 ~-5 ~-16 minecraft:end_stone
+fill ~-40 ~-5 ~-15 ~-25 ~-5 ~-15 minecraft:end_stone
+fill ~-41 ~-5 ~-14 ~-25 ~-5 ~-14 minecraft:end_stone
+fill ~-42 ~-5 ~-13 ~-25 ~-5 ~-12 minecraft:end_stone
+fill ~-43 ~-5 ~-11 ~-25 ~-5 ~-11 minecraft:end_stone
+fill ~-44 ~-5 ~-10 ~-25 ~-5 ~-5 minecraft:end_stone
+fill ~-45 ~-5 ~-4 ~-25 ~-5 ~-1 minecraft:end_stone
+fill ~-46 ~-5 ~0 ~-25 ~-5 ~1 minecraft:end_stone
+fill ~-47 ~-5 ~2 ~-25 ~-5 ~5 minecraft:end_stone
+fill ~-48 ~-5 ~6 ~-25 ~-5 ~6 minecraft:end_stone
+fill ~-47 ~-5 ~7 ~-25 ~-4 ~7 minecraft:end_stone
+fill ~-40 ~-4 ~-24 ~-25 ~-4 ~-23 minecraft:end_stone
+fill ~-39 ~-4 ~-22 ~-25 ~-4 ~-20 minecraft:end_stone
+fill ~-38 ~-4 ~-19 ~-25 ~-4 ~-18 minecraft:end_stone
+fill ~-39 ~-4 ~-17 ~-25 ~-4 ~-17 minecraft:end_stone
+fill ~-40 ~-4 ~-16 ~-25 ~-4 ~-16 minecraft:end_stone
+fill ~-41 ~-4 ~-15 ~-25 ~0 ~-15 minecraft:end_stone
+fill ~-42 ~-4 ~-14 ~-25 ~-4 ~-13 minecraft:end_stone
+fill ~-43 ~-4 ~-12 ~-25 ~-4 ~-12 minecraft:end_stone
+fill ~-44 ~-4 ~-11 ~-25 ~-3 ~-6 minecraft:end_stone
+fill ~-50 ~-4 ~-5 ~-48 ~-2 ~-5 minecraft:quartz_pillar
+fill ~-45 ~-4 ~-5 ~-25 ~-4 ~-2 minecraft:end_stone
+fill ~-50 ~-4 ~-2 ~-49 ~-2 ~-2 minecraft:quartz_pillar
+fill ~-46 ~-4 ~-1 ~-25 ~-4 ~0 minecraft:end_stone
+fill ~-47 ~-4 ~1 ~-25 ~-4 ~4 minecraft:end_stone
+fill ~-48 ~-4 ~5 ~-25 ~-4 ~6 minecraft:end_stone
+fill ~-41 ~-3 ~-24 ~-25 ~-3 ~-24 minecraft:end_stone
+fill ~-40 ~-3 ~-23 ~-25 ~-3 ~-21 minecraft:end_stone
+fill ~-39 ~-3 ~-20 ~-25 ~0 ~-18 minecraft:end_stone
+fill ~-40 ~-3 ~-17 ~-25 ~0 ~-16 minecraft:end_stone
+fill ~-42 ~-3 ~-14 ~-25 ~0 ~-14 minecraft:end_stone
+fill ~-43 ~-3 ~-13 ~-25 ~0 ~-12 minecraft:end_stone
+fill ~-45 ~-3 ~-5 ~-25 ~-3 ~-3 minecraft:end_stone
+fill ~-46 ~-3 ~-2 ~-25 ~0 ~0 minecraft:end_stone
+fill ~-47 ~-3 ~1 ~-25 ~0 ~3 minecraft:end_stone
+fill ~-48 ~-3 ~4 ~-25 ~0 ~7 minecraft:end_stone
+fill ~-41 ~-2 ~-24 ~-25 ~0 ~-23 minecraft:end_stone
+fill ~-40 ~-2 ~-22 ~-25 ~0 ~-21 minecraft:end_stone
+fill ~-44 ~-2 ~-11 ~-25 ~0 ~-7 minecraft:end_stone
+fill ~-45 ~-2 ~-6 ~-25 ~0 ~-3 minecraft:end_stone
+fill ~-56 ~-1 ~-5 ~-47 ~-1 ~-5 minecraft:quartz_pillar
+fill ~-56 ~-1 ~-4 ~-46 ~-1 ~-3 minecraft:quartz_pillar
+fill ~-56 ~-1 ~-2 ~-47 ~-1 ~-2 minecraft:quartz_pillar
+setblock ~-47 ~-1 ~-1 minecraft:quartz_pillar
+fill ~-56 ~0 ~-6 ~-47 ~0 ~-5 minecraft:quartz_bricks
+fill ~-56 ~0 ~-4 ~-46 ~0 ~-3 minecraft:quartz_bricks
+fill ~-56 ~0 ~-2 ~-47 ~0 ~-1 minecraft:quartz_bricks
+setblock ~-47 ~0 ~0 minecraft:quartz_bricks
+setblock ~-32 ~1 ~-24 minecraft:chest[facing=north]
+fill ~-33 ~1 ~-21 ~-33 ~5 ~-21 minecraft:chorus_plant[up=true,down=true]
+fill ~-36 ~1 ~-21 ~-34 ~1 ~-21 minecraft:end_stone
+fill ~-36 ~1 ~-20 ~-31 ~1 ~-20 minecraft:end_stone
+fill ~-36 ~1 ~-19 ~-29 ~1 ~-19 minecraft:end_stone
+fill ~-35 ~1 ~-18 ~-29 ~1 ~-17 minecraft:end_stone
+fill ~-36 ~1 ~-16 ~-29 ~1 ~-16 minecraft:end_stone
+fill ~-37 ~1 ~-15 ~-30 ~1 ~-15 minecraft:end_stone
+fill ~-38 ~1 ~-14 ~-31 ~1 ~-14 minecraft:end_stone
+fill ~-38 ~1 ~-13 ~-32 ~1 ~-12 minecraft:end_stone
+fill ~-36 ~1 ~-11 ~-33 ~1 ~-11 minecraft:end_stone
+fill ~-29 ~1 ~-12 ~-27 ~3 ~-10 minecraft:quartz_pillar
+fill ~-29 ~5 ~-12 ~-27 ~8 ~-10 minecraft:quartz_pillar
+fill ~-29 ~10 ~-12 ~-27 ~13 ~-10 minecraft:quartz_pillar
+fill ~-29 ~15 ~-12 ~-27 ~18 ~-10 minecraft:quartz_pillar
+fill ~-29 ~20 ~-12 ~-27 ~21 ~-10 minecraft:quartz_pillar
+setblock ~-36 ~1 ~-10 minecraft:chest[facing=north]
+fill ~-56 ~1 ~-6 ~-47 ~1 ~-6 minecraft:end_stone_brick_wall
+fill ~-56 ~1 ~-1 ~-48 ~1 ~-1 minecraft:end_stone_brick_wall
+setblock ~-47 ~1 ~0 minecraft:end_stone_brick_wall
+fill ~-34 ~1 ~2 ~-33 ~1 ~2 minecraft:end_stone
+fill ~-36 ~1 ~3 ~-32 ~1 ~3 minecraft:end_stone
+fill ~-38 ~1 ~4 ~-32 ~1 ~4 minecraft:end_stone
+fill ~-41 ~1 ~5 ~-31 ~1 ~5 minecraft:end_stone
+fill ~-46 ~1 ~6 ~-46 ~4 ~6 minecraft:chorus_plant[up=true,down=true]
+fill ~-38 ~1 ~6 ~-31 ~1 ~6 minecraft:end_stone
+setblock ~-39 ~1 ~6 minecraft:obsidian
+fill ~-42 ~1 ~6 ~-40 ~1 ~6 minecraft:end_stone
+fill ~-44 ~1 ~7 ~-31 ~1 ~7 minecraft:end_stone
+fill ~-50 ~2 ~-6 ~-49 ~2 ~-6 minecraft:end_rod
+setblock ~-50 ~2 ~-1 minecraft:end_rod
+fill ~-36 ~2 ~4 ~-33 ~2 ~4 minecraft:end_stone
+fill ~-37 ~2 ~5 ~-32 ~2 ~6 minecraft:end_stone
+setblock ~-38 ~2 ~6 minecraft:obsidian
+fill ~-39 ~2 ~7 ~-32 ~2 ~7 minecraft:end_stone
+fill ~-35 ~3 ~5 ~-34 ~3 ~5 minecraft:end_stone
+fill ~-37 ~3 ~6 ~-33 ~3 ~6 minecraft:end_stone
+fill ~-37 ~3 ~7 ~-32 ~3 ~7 minecraft:end_stone
+setblock ~-28 ~4 ~-12 minecraft:light_blue_stained_glass
+setblock ~-28 ~9 ~-12 minecraft:light_blue_stained_glass
+setblock ~-28 ~14 ~-12 minecraft:light_blue_stained_glass
+setblock ~-28 ~19 ~-12 minecraft:light_blue_stained_glass
+setblock ~-27 ~4 ~-12 minecraft:quartz_pillar
+setblock ~-27 ~9 ~-12 minecraft:quartz_pillar
+setblock ~-27 ~14 ~-12 minecraft:quartz_pillar
+setblock ~-27 ~19 ~-12 minecraft:quartz_pillar
+setblock ~-29 ~4 ~-12 minecraft:quartz_pillar
+setblock ~-29 ~9 ~-12 minecraft:quartz_pillar
+setblock ~-29 ~14 ~-12 minecraft:quartz_pillar
+setblock ~-29 ~19 ~-12 minecraft:quartz_pillar
+setblock ~-28 ~4 ~-11 minecraft:quartz_pillar
+setblock ~-28 ~9 ~-11 minecraft:quartz_pillar
+setblock ~-28 ~14 ~-11 minecraft:quartz_pillar
+setblock ~-28 ~19 ~-11 minecraft:quartz_pillar
+setblock ~-27 ~4 ~-11 minecraft:light_blue_stained_glass
+setblock ~-27 ~9 ~-11 minecraft:light_blue_stained_glass
+setblock ~-27 ~14 ~-11 minecraft:light_blue_stained_glass
+setblock ~-27 ~19 ~-11 minecraft:light_blue_stained_glass
+setblock ~-29 ~4 ~-11 minecraft:light_blue_stained_glass
+setblock ~-29 ~9 ~-11 minecraft:light_blue_stained_glass
+setblock ~-29 ~14 ~-11 minecraft:light_blue_stained_glass
+setblock ~-29 ~19 ~-11 minecraft:light_blue_stained_glass
+setblock ~-28 ~4 ~-10 minecraft:light_blue_stained_glass
+setblock ~-28 ~9 ~-10 minecraft:light_blue_stained_glass
+setblock ~-28 ~14 ~-10 minecraft:light_blue_stained_glass
+setblock ~-28 ~19 ~-10 minecraft:light_blue_stained_glass
+setblock ~-27 ~4 ~-10 minecraft:quartz_pillar
+setblock ~-27 ~9 ~-10 minecraft:quartz_pillar
+setblock ~-27 ~14 ~-10 minecraft:quartz_pillar
+setblock ~-27 ~19 ~-10 minecraft:quartz_pillar
+setblock ~-29 ~4 ~-10 minecraft:quartz_pillar
+setblock ~-29 ~9 ~-10 minecraft:quartz_pillar
+setblock ~-29 ~14 ~-10 minecraft:quartz_pillar
+setblock ~-29 ~19 ~-10 minecraft:quartz_pillar
+setblock ~-35 ~4 ~6 minecraft:end_stone
+fill ~-36 ~4 ~7 ~-33 ~4 ~7 minecraft:end_stone
+setblock ~-46 ~5 ~6 minecraft:chorus_flower[age=5]
+fill ~-33 ~5 ~7 ~-33 ~9 ~7 minecraft:chorus_plant[up=true,down=true]
+setblock ~-33 ~6 ~-21 minecraft:chorus_flower[age=5]
+fill ~-26 ~6 ~-2 ~-25 ~6 ~2 minecraft:smooth_quartz
+setblock ~-33 ~9 ~6 minecraft:chorus_plant[up=true]
+setblock ~-33 ~10 ~6 minecraft:chorus_plant[up=true,down=true]
+setblock ~-33 ~10 ~7 minecraft:chorus_flower[age=5]
+setblock ~-33 ~11 ~6 minecraft:chorus_flower[age=5]
+setblock ~-28 ~21 ~-13 minecraft:sea_lantern
+setblock ~-28 ~21 ~-9 minecraft:sea_lantern
+fill ~-30 ~22 ~-13 ~-26 ~22 ~-9 minecraft:smooth_quartz
+fill ~-29 ~23 ~-12 ~-27 ~23 ~-10 minecraft:smooth_quartz
+fill ~-28 ~24 ~-11 ~-28 ~27 ~-11 minecraft:end_rod[facing=up]

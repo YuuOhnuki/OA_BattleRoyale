@@ -2,35 +2,35 @@ scoreboard players set #stage oa.map2 1
 fill ~136 ~-40 ~-152 ~152 ~-14 ~-121 minecraft:air
 fill ~136 ~-13 ~-152 ~152 ~13 ~-121 minecraft:air
 fill ~136 ~14 ~-152 ~152 ~40 ~-121 minecraft:air
-fill ~136 ~-9 ~-129 ~136 ~-9 ~-123 minecraft:obsidian
-fill ~136 ~-8 ~-130 ~136 ~-8 ~-127 minecraft:obsidian
-fill ~136 ~-8 ~-126 ~137 ~-8 ~-125 minecraft:obsidian
-fill ~136 ~-8 ~-124 ~136 ~-8 ~-121 minecraft:obsidian
-fill ~136 ~-7 ~-130 ~136 ~-7 ~-129 minecraft:end_stone_bricks
-fill ~136 ~-7 ~-128 ~137 ~-7 ~-125 minecraft:end_stone_bricks
-fill ~136 ~-7 ~-124 ~137 ~-7 ~-122 minecraft:end_stone
+fill ~137 ~-13 ~-122 ~137 ~-10 ~-122 minecraft:obsidian
+fill ~136 ~-10 ~-128 ~136 ~-10 ~-126 minecraft:obsidian
+fill ~136 ~-9 ~-130 ~136 ~-9 ~-124 minecraft:end_stone
+setblock ~137 ~-9 ~-122 minecraft:end_stone
+fill ~136 ~-8 ~-131 ~136 ~-8 ~-130 minecraft:end_stone
+fill ~136 ~-8 ~-129 ~137 ~-8 ~-124 minecraft:end_stone
+setblock ~136 ~-8 ~-123 minecraft:end_stone
+fill ~136 ~-8 ~-122 ~137 ~-8 ~-122 minecraft:end_stone
+fill ~136 ~-7 ~-132 ~136 ~-7 ~-131 minecraft:end_stone
+fill ~136 ~-7 ~-130 ~137 ~-7 ~-123 minecraft:end_stone
+fill ~136 ~-7 ~-122 ~138 ~-7 ~-122 minecraft:end_stone
 setblock ~136 ~-7 ~-121 minecraft:end_stone
-fill ~136 ~-6 ~-131 ~136 ~-5 ~-130 minecraft:end_stone_bricks
-fill ~136 ~-6 ~-129 ~137 ~-6 ~-125 minecraft:end_stone_bricks
-fill ~136 ~-6 ~-124 ~137 ~-6 ~-121 minecraft:end_stone
-fill ~136 ~-5 ~-129 ~137 ~-5 ~-126 minecraft:end_stone_bricks
-fill ~136 ~-5 ~-125 ~138 ~-5 ~-125 minecraft:end_stone_bricks
-fill ~136 ~-5 ~-124 ~138 ~-5 ~-123 minecraft:end_stone
-fill ~136 ~-5 ~-122 ~137 ~-5 ~-121 minecraft:end_stone
-fill ~136 ~-4 ~-132 ~136 ~-3 ~-131 minecraft:end_stone_bricks
-fill ~136 ~-4 ~-130 ~137 ~-4 ~-127 minecraft:end_stone_bricks
-fill ~136 ~-4 ~-126 ~138 ~-4 ~-126 minecraft:end_stone_bricks
-fill ~136 ~-4 ~-125 ~137 ~-4 ~-125 minecraft:end_stone_bricks
-setblock ~138 ~-4 ~-125 minecraft:end_stone
-fill ~136 ~-4 ~-124 ~138 ~-4 ~-122 minecraft:end_stone
-fill ~136 ~-4 ~-121 ~137 ~-4 ~-121 minecraft:end_stone
-fill ~136 ~-3 ~-130 ~137 ~-3 ~-128 minecraft:end_stone_bricks
-fill ~136 ~-3 ~-127 ~138 ~-3 ~-127 minecraft:end_stone_bricks
-fill ~136 ~-3 ~-126 ~137 ~-3 ~-126 minecraft:end_stone_bricks
-setblock ~138 ~-3 ~-126 minecraft:end_stone
-fill ~137 ~-3 ~-125 ~138 ~-3 ~-125 minecraft:end_stone
-setblock ~136 ~-3 ~-125 minecraft:end_stone_bricks
-fill ~136 ~-3 ~-124 ~138 ~-3 ~-121 minecraft:end_stone
-fill ~136 ~-2 ~-132 ~136 ~0 ~-131 minecraft:end_stone
-fill ~136 ~-2 ~-130 ~137 ~0 ~-128 minecraft:end_stone
-fill ~136 ~-2 ~-127 ~138 ~0 ~-121 minecraft:end_stone
+fill ~136 ~-6 ~-133 ~136 ~-6 ~-132 minecraft:end_stone
+fill ~136 ~-6 ~-131 ~137 ~-6 ~-129 minecraft:end_stone
+fill ~136 ~-6 ~-128 ~138 ~-6 ~-122 minecraft:end_stone
+fill ~136 ~-6 ~-121 ~137 ~-6 ~-121 minecraft:end_stone
+setblock ~136 ~-5 ~-133 minecraft:end_stone
+fill ~136 ~-5 ~-132 ~137 ~-5 ~-131 minecraft:end_stone
+fill ~136 ~-5 ~-130 ~138 ~-5 ~-121 minecraft:end_stone
+fill ~136 ~-4 ~-134 ~136 ~0 ~-134 minecraft:end_stone
+fill ~136 ~-4 ~-133 ~137 ~-4 ~-131 minecraft:end_stone
+fill ~136 ~-4 ~-130 ~138 ~-4 ~-127 minecraft:end_stone
+fill ~136 ~-4 ~-126 ~139 ~-4 ~-122 minecraft:end_stone
+fill ~136 ~-4 ~-121 ~138 ~-4 ~-121 minecraft:end_stone
+fill ~136 ~-3 ~-133 ~137 ~0 ~-132 minecraft:end_stone
+fill ~136 ~-3 ~-131 ~138 ~0 ~-128 minecraft:end_stone
+fill ~136 ~-3 ~-127 ~139 ~0 ~-121 minecraft:end_stone
+fill ~138 ~1 ~-130 ~138 ~4 ~-130 minecraft:chorus_plant[up=true,down=true]
+setblock ~136 ~1 ~-126 minecraft:end_stone
+setblock ~136 ~1 ~-125 minecraft:coal_ore
+fill ~136 ~1 ~-124 ~138 ~1 ~-121 minecraft:end_stone
+setblock ~138 ~5 ~-130 minecraft:chorus_flower[age=5]

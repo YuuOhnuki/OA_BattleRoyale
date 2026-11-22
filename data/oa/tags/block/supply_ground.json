@@ -1,5 +1,11 @@
 {
-  "values": ["minecraft:end_stone","minecraft:end_stone_bricks","minecraft:purpur_block","minecraft:stone_bricks","minecraft:mossy_stone_bricks","minecraft:smooth_stone",
+  "values": [
+    "minecraft:end_stone",
+    "minecraft:end_stone_bricks",
+    "minecraft:purpur_block",
+    "minecraft:stone_bricks",
+    "minecraft:mossy_stone_bricks",
+    "minecraft:smooth_stone",
     "minecraft:grass_block",
     "minecraft:dirt",
     "minecraft:coarse_dirt",
@@ -35,6 +41,12 @@
     "minecraft:deepslate_tiles",
     "minecraft:cobbled_deepslate",
     "minecraft:clay",
-    "minecraft:amethyst_block"
+    "minecraft:amethyst_block",
+    "minecraft:quartz_bricks",
+    "minecraft:smooth_quartz",
+    "minecraft:white_concrete",
+    "minecraft:quartz_block",
+    "minecraft:obsidian",
+    "minecraft:polished_andesite"
   ]
 }

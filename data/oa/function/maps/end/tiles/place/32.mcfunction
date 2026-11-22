@@ -2,226 +2,245 @@ scoreboard players set #stage oa.map2 1
 fill ~-88 ~-40 ~-56 ~-57 ~-14 ~-25 minecraft:air
 fill ~-88 ~-13 ~-56 ~-57 ~13 ~-25 minecraft:air
 fill ~-88 ~14 ~-56 ~-57 ~40 ~-25 minecraft:air
-fill ~-62 ~-16 ~-56 ~-57 ~-16 ~-56 minecraft:obsidian
-fill ~-60 ~-16 ~-55 ~-57 ~-16 ~-55 minecraft:obsidian
-fill ~-77 ~-15 ~-56 ~-68 ~-15 ~-56 minecraft:obsidian
-fill ~-66 ~-15 ~-56 ~-57 ~-15 ~-56 minecraft:obsidian
-fill ~-64 ~-15 ~-55 ~-57 ~-15 ~-55 minecraft:obsidian
-fill ~-73 ~-15 ~-55 ~-71 ~-15 ~-55 minecraft:obsidian
-fill ~-63 ~-15 ~-54 ~-57 ~-15 ~-54 minecraft:obsidian
-fill ~-62 ~-15 ~-53 ~-57 ~-15 ~-53 minecraft:obsidian
-fill ~-59 ~-15 ~-52 ~-57 ~-15 ~-52 minecraft:obsidian
-fill ~-79 ~-14 ~-56 ~-57 ~-14 ~-56 minecraft:obsidian
-fill ~-77 ~-14 ~-55 ~-57 ~-14 ~-55 minecraft:obsidian
-fill ~-66 ~-14 ~-54 ~-57 ~-14 ~-54 minecraft:obsidian
-fill ~-75 ~-14 ~-54 ~-68 ~-14 ~-54 minecraft:obsidian
-fill ~-65 ~-14 ~-53 ~-57 ~-14 ~-53 minecraft:obsidian
-fill ~-63 ~-14 ~-52 ~-57 ~-14 ~-52 minecraft:obsidian
-fill ~-62 ~-14 ~-51 ~-57 ~-14 ~-51 minecraft:obsidian
-fill ~-58 ~-14 ~-50 ~-57 ~-14 ~-50 minecraft:obsidian
-fill ~-80 ~-13 ~-56 ~-57 ~-13 ~-56 minecraft:obsidian
-fill ~-79 ~-13 ~-55 ~-57 ~-13 ~-55 minecraft:obsidian
-fill ~-78 ~-13 ~-54 ~-57 ~-13 ~-54 minecraft:obsidian
-fill ~-76 ~-13 ~-53 ~-57 ~-13 ~-53 minecraft:obsidian
-fill ~-66 ~-13 ~-52 ~-57 ~-13 ~-52 minecraft:obsidian
-fill ~-74 ~-13 ~-52 ~-68 ~-13 ~-52 minecraft:obsidian
-fill ~-65 ~-13 ~-51 ~-57 ~-13 ~-51 minecraft:obsidian
-fill ~-63 ~-13 ~-50 ~-57 ~-13 ~-50 minecraft:obsidian
-fill ~-60 ~-13 ~-49 ~-57 ~-13 ~-49 minecraft:obsidian
-fill ~-81 ~-12 ~-56 ~-57 ~-12 ~-56 minecraft:obsidian
-fill ~-80 ~-12 ~-55 ~-57 ~-12 ~-55 minecraft:obsidian
-fill ~-79 ~-12 ~-54 ~-57 ~-12 ~-53 minecraft:obsidian
-fill ~-77 ~-12 ~-52 ~-57 ~-12 ~-52 minecraft:obsidian
-fill ~-75 ~-12 ~-51 ~-57 ~-12 ~-51 minecraft:obsidian
-fill ~-65 ~-12 ~-50 ~-57 ~-12 ~-50 minecraft:obsidian
-fill ~-63 ~-12 ~-49 ~-57 ~-12 ~-49 minecraft:obsidian
-fill ~-61 ~-12 ~-48 ~-57 ~-12 ~-48 minecraft:obsidian
-fill ~-82 ~-11 ~-56 ~-57 ~-11 ~-56 minecraft:end_stone
-fill ~-81 ~-11 ~-55 ~-57 ~-11 ~-55 minecraft:end_stone
-fill ~-80 ~-11 ~-54 ~-57 ~-11 ~-53 minecraft:end_stone
-fill ~-79 ~-11 ~-52 ~-57 ~-11 ~-52 minecraft:end_stone
-fill ~-78 ~-11 ~-51 ~-57 ~-11 ~-51 minecraft:end_stone
-fill ~-76 ~-11 ~-50 ~-57 ~-11 ~-50 minecraft:end_stone
-fill ~-66 ~-11 ~-49 ~-57 ~-11 ~-49 minecraft:end_stone
-fill ~-64 ~-11 ~-48 ~-57 ~-11 ~-48 minecraft:end_stone
-fill ~-61 ~-11 ~-47 ~-57 ~-11 ~-47 minecraft:end_stone
-fill ~-82 ~-10 ~-56 ~-57 ~-10 ~-55 minecraft:end_stone
-fill ~-81 ~-10 ~-54 ~-57 ~-10 ~-54 minecraft:end_stone
-fill ~-80 ~-10 ~-53 ~-57 ~-10 ~-52 minecraft:end_stone
-fill ~-79 ~-10 ~-51 ~-57 ~-10 ~-51 minecraft:end_stone
-fill ~-78 ~-10 ~-50 ~-57 ~-10 ~-50 minecraft:end_stone
-fill ~-76 ~-10 ~-49 ~-57 ~-10 ~-49 minecraft:end_stone
-fill ~-65 ~-10 ~-48 ~-57 ~-10 ~-48 minecraft:end_stone
-fill ~-63 ~-10 ~-47 ~-57 ~-10 ~-47 minecraft:end_stone
-fill ~-60 ~-10 ~-46 ~-57 ~-10 ~-46 minecraft:end_stone
-fill ~-83 ~-9 ~-56 ~-57 ~-9 ~-56 minecraft:end_stone
-fill ~-82 ~-9 ~-55 ~-57 ~-9 ~-54 minecraft:end_stone
-fill ~-81 ~-9 ~-53 ~-57 ~-9 ~-53 minecraft:end_stone
-fill ~-80 ~-9 ~-52 ~-57 ~-9 ~-51 minecraft:end_stone
-fill ~-79 ~-9 ~-50 ~-57 ~-9 ~-50 minecraft:end_stone
-fill ~-78 ~-9 ~-49 ~-57 ~-9 ~-49 minecraft:end_stone
-fill ~-76 ~-9 ~-48 ~-57 ~-9 ~-48 minecraft:end_stone
-fill ~-65 ~-9 ~-47 ~-57 ~-9 ~-47 minecraft:end_stone
-fill ~-63 ~-9 ~-46 ~-57 ~-9 ~-46 minecraft:end_stone
-fill ~-59 ~-9 ~-45 ~-57 ~-9 ~-45 minecraft:end_stone
-fill ~-84 ~-8 ~-56 ~-57 ~-7 ~-56 minecraft:end_stone
-fill ~-83 ~-8 ~-55 ~-57 ~-8 ~-55 minecraft:end_stone
-fill ~-82 ~-8 ~-54 ~-57 ~-8 ~-53 minecraft:end_stone
-fill ~-81 ~-8 ~-52 ~-57 ~-8 ~-52 minecraft:end_stone
-fill ~-80 ~-8 ~-51 ~-57 ~-8 ~-50 minecraft:end_stone
-fill ~-79 ~-8 ~-49 ~-57 ~-8 ~-49 minecraft:end_stone
-fill ~-78 ~-8 ~-48 ~-57 ~-8 ~-48 minecraft:end_stone
-fill ~-66 ~-8 ~-47 ~-57 ~-8 ~-47 minecraft:end_stone
-fill ~-70 ~-8 ~-47 ~-68 ~-8 ~-47 minecraft:end_stone
-fill ~-75 ~-8 ~-47 ~-72 ~-8 ~-47 minecraft:end_stone
-setblock ~-71 ~-8 ~-47 minecraft:end_stone_bricks
-fill ~-64 ~-8 ~-46 ~-57 ~-8 ~-46 minecraft:end_stone
-fill ~-61 ~-8 ~-45 ~-57 ~-8 ~-45 minecraft:end_stone
-fill ~-83 ~-7 ~-55 ~-57 ~-7 ~-54 minecraft:end_stone
-fill ~-82 ~-7 ~-53 ~-57 ~-7 ~-52 minecraft:end_stone
-fill ~-81 ~-7 ~-51 ~-57 ~-7 ~-51 minecraft:end_stone
-fill ~-80 ~-7 ~-50 ~-57 ~-7 ~-49 minecraft:end_stone
-fill ~-79 ~-7 ~-48 ~-57 ~-6 ~-48 minecraft:end_stone
-fill ~-78 ~-7 ~-47 ~-73 ~-7 ~-47 minecraft:end_stone
-fill ~-71 ~-7 ~-47 ~-57 ~-7 ~-47 minecraft:end_stone
-setblock ~-72 ~-7 ~-47 minecraft:end_stone_bricks
-setblock ~-74 ~-7 ~-46 minecraft:end_stone
-setblock ~-70 ~-7 ~-46 minecraft:end_stone
-fill ~-73 ~-7 ~-46 ~-71 ~-7 ~-46 minecraft:end_stone_bricks
-fill ~-65 ~-7 ~-46 ~-57 ~-7 ~-46 minecraft:end_stone
-fill ~-63 ~-7 ~-45 ~-57 ~-7 ~-45 minecraft:end_stone
-fill ~-59 ~-7 ~-44 ~-57 ~-7 ~-44 minecraft:end_stone
-fill ~-84 ~-6 ~-56 ~-57 ~-6 ~-55 minecraft:end_stone
-fill ~-83 ~-6 ~-54 ~-57 ~-5 ~-53 minecraft:end_stone
-fill ~-82 ~-6 ~-52 ~-57 ~-6 ~-52 minecraft:end_stone
-fill ~-81 ~-6 ~-51 ~-57 ~-6 ~-50 minecraft:end_stone
-fill ~-80 ~-6 ~-49 ~-57 ~-6 ~-49 minecraft:end_stone
-fill ~-79 ~-6 ~-47 ~-74 ~-6 ~-47 minecraft:end_stone
-setblock ~-73 ~-6 ~-47 minecraft:end_stone_bricks
-fill ~-72 ~-6 ~-47 ~-57 ~-6 ~-47 minecraft:end_stone
-fill ~-66 ~-6 ~-46 ~-57 ~-6 ~-46 minecraft:end_stone
-fill ~-77 ~-6 ~-46 ~-75 ~-6 ~-46 minecraft:end_stone
-fill ~-74 ~-6 ~-46 ~-72 ~-6 ~-46 minecraft:end_stone_bricks
-fill ~-71 ~-6 ~-46 ~-68 ~-6 ~-46 minecraft:end_stone
-fill ~-64 ~-6 ~-45 ~-57 ~-6 ~-45 minecraft:end_stone
-fill ~-61 ~-6 ~-44 ~-57 ~-6 ~-44 minecraft:end_stone
-fill ~-85 ~-5 ~-56 ~-57 ~0 ~-56 minecraft:end_stone
-fill ~-84 ~-5 ~-55 ~-57 ~-5 ~-55 minecraft:end_stone
-fill ~-82 ~-5 ~-52 ~-57 ~-5 ~-51 minecraft:end_stone
-fill ~-81 ~-5 ~-50 ~-57 ~-5 ~-50 minecraft:end_stone
-fill ~-80 ~-5 ~-49 ~-57 ~-5 ~-48 minecraft:end_stone
-setblock ~-74 ~-5 ~-47 minecraft:end_stone_bricks
-fill ~-79 ~-5 ~-47 ~-75 ~-5 ~-47 minecraft:end_stone
-fill ~-73 ~-5 ~-47 ~-57 ~-5 ~-47 minecraft:end_stone
-fill ~-75 ~-5 ~-46 ~-73 ~-5 ~-46 minecraft:end_stone_bricks
-fill ~-72 ~-5 ~-46 ~-57 ~-5 ~-46 minecraft:end_stone
-fill ~-78 ~-5 ~-46 ~-76 ~-5 ~-46 minecraft:end_stone
-fill ~-74 ~-5 ~-45 ~-72 ~-5 ~-45 minecraft:end_stone_bricks
-fill ~-65 ~-5 ~-45 ~-57 ~0 ~-45 minecraft:end_stone
-fill ~-62 ~-5 ~-44 ~-57 ~-4 ~-44 minecraft:end_stone
-setblock ~-57 ~-5 ~-43 minecraft:end_stone
-fill ~-84 ~-4 ~-55 ~-57 ~0 ~-54 minecraft:end_stone
-fill ~-83 ~-4 ~-53 ~-57 ~0 ~-52 minecraft:end_stone
-fill ~-82 ~-4 ~-51 ~-57 ~-3 ~-51 minecraft:end_stone
-fill ~-81 ~-4 ~-50 ~-57 ~-3 ~-49 minecraft:end_stone
-fill ~-80 ~-4 ~-48 ~-57 ~-3 ~-48 minecraft:end_stone
-fill ~-79 ~-4 ~-47 ~-76 ~-4 ~-47 minecraft:end_stone
-fill ~-74 ~-4 ~-47 ~-57 ~-4 ~-47 minecraft:end_stone
-setblock ~-75 ~-4 ~-47 minecraft:end_stone_bricks
-fill ~-76 ~-4 ~-46 ~-74 ~-4 ~-46 minecraft:end_stone_bricks
-fill ~-73 ~-4 ~-46 ~-57 ~-4 ~-46 minecraft:end_stone
-fill ~-79 ~-4 ~-46 ~-77 ~-4 ~-46 minecraft:end_stone
-fill ~-76 ~-4 ~-45 ~-73 ~-4 ~-45 minecraft:end_stone_bricks
-fill ~-72 ~-4 ~-45 ~-70 ~-4 ~-45 minecraft:end_stone
-fill ~-59 ~-4 ~-43 ~-57 ~0 ~-43 minecraft:end_stone
-setblock ~-76 ~-3 ~-47 minecraft:end_stone_bricks
-fill ~-80 ~-3 ~-47 ~-77 ~-3 ~-47 minecraft:end_stone
-fill ~-75 ~-3 ~-47 ~-57 ~-3 ~-47 minecraft:end_stone
-fill ~-77 ~-3 ~-46 ~-75 ~-3 ~-46 minecraft:end_stone_bricks
-fill ~-79 ~-3 ~-46 ~-78 ~-3 ~-46 minecraft:end_stone
-fill ~-74 ~-3 ~-46 ~-57 ~-3 ~-46 minecraft:end_stone
-fill ~-73 ~-3 ~-45 ~-69 ~-3 ~-45 minecraft:end_stone
-fill ~-77 ~-3 ~-45 ~-74 ~-3 ~-45 minecraft:end_stone_bricks
-fill ~-63 ~-3 ~-44 ~-57 ~0 ~-44 minecraft:end_stone
-fill ~-82 ~-2 ~-51 ~-57 ~0 ~-50 minecraft:end_stone
-fill ~-81 ~-2 ~-49 ~-57 ~0 ~-49 minecraft:end_stone
-fill ~-80 ~-2 ~-48 ~-57 ~0 ~-47 minecraft:end_stone
-fill ~-79 ~-2 ~-46 ~-57 ~0 ~-46 minecraft:end_stone
-fill ~-77 ~-2 ~-45 ~-69 ~0 ~-45 minecraft:end_stone
-fill ~-77 ~0 ~-44 ~-75 ~0 ~-44 minecraft:purpur_block
-fill ~-77 ~0 ~-43 ~-74 ~0 ~-43 minecraft:purpur_block
-fill ~-78 ~0 ~-42 ~-74 ~0 ~-42 minecraft:purpur_block
-fill ~-78 ~0 ~-41 ~-75 ~0 ~-41 minecraft:purpur_block
-fill ~-79 ~0 ~-40 ~-75 ~0 ~-40 minecraft:purpur_block
-fill ~-79 ~0 ~-39 ~-76 ~0 ~-38 minecraft:purpur_block
-fill ~-80 ~0 ~-37 ~-76 ~0 ~-37 minecraft:purpur_block
-fill ~-80 ~0 ~-36 ~-77 ~0 ~-36 minecraft:purpur_block
-fill ~-81 ~0 ~-35 ~-77 ~0 ~-35 minecraft:purpur_block
-fill ~-81 ~0 ~-34 ~-78 ~0 ~-34 minecraft:purpur_block
-fill ~-82 ~0 ~-33 ~-78 ~0 ~-33 minecraft:purpur_block
-fill ~-82 ~0 ~-32 ~-79 ~0 ~-32 minecraft:purpur_block
-fill ~-83 ~0 ~-31 ~-79 ~0 ~-30 minecraft:purpur_block
-fill ~-83 ~0 ~-29 ~-80 ~0 ~-29 minecraft:purpur_block
-fill ~-84 ~0 ~-28 ~-80 ~0 ~-28 minecraft:purpur_block
-fill ~-84 ~0 ~-27 ~-81 ~0 ~-27 minecraft:purpur_block
-fill ~-85 ~0 ~-26 ~-81 ~0 ~-26 minecraft:purpur_block
-fill ~-85 ~0 ~-25 ~-82 ~0 ~-25 minecraft:purpur_block
-fill ~-77 ~1 ~-44 ~-77 ~1 ~-43 minecraft:end_stone_brick_wall
-fill ~-74 ~1 ~-43 ~-74 ~1 ~-42 minecraft:end_stone_brick_wall
-fill ~-78 ~1 ~-42 ~-78 ~1 ~-41 minecraft:end_stone_brick_wall
-fill ~-75 ~1 ~-41 ~-75 ~1 ~-40 minecraft:end_stone_brick_wall
-fill ~-79 ~1 ~-40 ~-78 ~1 ~-40 minecraft:end_stone_brick_wall
-fill ~-76 ~1 ~-39 ~-76 ~1 ~-38 minecraft:end_stone_brick_wall
-fill ~-79 ~1 ~-39 ~-79 ~1 ~-38 minecraft:end_stone_brick_wall
-fill ~-77 ~1 ~-37 ~-76 ~1 ~-37 minecraft:end_stone_brick_wall
-fill ~-80 ~1 ~-37 ~-80 ~1 ~-36 minecraft:end_stone_brick_wall
-fill ~-77 ~1 ~-36 ~-77 ~1 ~-35 minecraft:end_stone_brick_wall
-fill ~-81 ~1 ~-35 ~-81 ~1 ~-34 minecraft:end_stone_brick_wall
-fill ~-78 ~1 ~-34 ~-78 ~1 ~-33 minecraft:end_stone_brick_wall
-fill ~-82 ~1 ~-33 ~-81 ~1 ~-33 minecraft:end_stone_brick_wall
-setblock ~-82 ~1 ~-32 minecraft:end_stone_brick_wall
-fill ~-79 ~1 ~-32 ~-79 ~1 ~-31 minecraft:end_stone_brick_wall
-fill ~-83 ~1 ~-31 ~-82 ~1 ~-31 minecraft:end_stone_brick_wall
-fill ~-80 ~1 ~-30 ~-79 ~1 ~-30 minecraft:end_stone_brick_wall
-fill ~-83 ~1 ~-30 ~-83 ~1 ~-29 minecraft:end_stone_brick_wall
-fill ~-80 ~1 ~-29 ~-80 ~1 ~-28 minecraft:end_stone_brick_wall
-fill ~-84 ~1 ~-28 ~-84 ~1 ~-27 minecraft:end_stone_brick_wall
-fill ~-81 ~1 ~-27 ~-81 ~1 ~-26 minecraft:end_stone_brick_wall
-fill ~-85 ~1 ~-26 ~-84 ~1 ~-26 minecraft:end_stone_brick_wall
-setblock ~-85 ~1 ~-25 minecraft:end_stone_brick_wall
-setblock ~-82 ~1 ~-25 minecraft:end_stone_brick_wall
-execute if score #sv5 oa.map2 matches 0 run fill ~-62 ~1 ~-55 ~-62 ~1 ~-54 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 0 run setblock ~-78 ~1 ~-54 minecraft:end_stone
-execute if score #sv5 oa.map2 matches 0 run setblock ~-77 ~1 ~-53 minecraft:coal_ore
-execute if score #sv5 oa.map2 matches 0 run setblock ~-62 ~1 ~-53 minecraft:purpur_block
-execute if score #sv5 oa.map2 matches 0 run setblock ~-62 ~1 ~-52 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 0 run setblock ~-64 ~1 ~-51 minecraft:purpur_block
-execute if score #sv5 oa.map2 matches 0 run fill ~-66 ~1 ~-51 ~-65 ~1 ~-51 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 0 run setblock ~-60 ~1 ~-51 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 0 run fill ~-63 ~1 ~-51 ~-62 ~1 ~-51 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 0 run setblock ~-61 ~1 ~-51 minecraft:purpur_block
-execute if score #sv5 oa.map2 matches 0 run setblock ~-62 ~2 ~-55 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 0 run setblock ~-62 ~2 ~-54 minecraft:purpur_block
-execute if score #sv5 oa.map2 matches 0 run fill ~-62 ~2 ~-53 ~-62 ~2 ~-52 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 0 run fill ~-61 ~2 ~-51 ~-60 ~2 ~-51 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 0 run setblock ~-65 ~2 ~-51 minecraft:purpur_block
-execute if score #sv5 oa.map2 matches 0 run setblock ~-62 ~2 ~-51 minecraft:purpur_block
-execute if score #sv5 oa.map2 matches 0 run setblock ~-66 ~2 ~-51 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 0 run fill ~-64 ~2 ~-51 ~-63 ~2 ~-51 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 0 run setblock ~-62 ~3 ~-53 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 0 run setblock ~-62 ~3 ~-52 minecraft:purpur_block
-execute if score #sv5 oa.map2 matches 0 run setblock ~-62 ~3 ~-51 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 1 run setblock ~-61 ~1 ~-56 minecraft:coal_ore
-execute if score #sv5 oa.map2 matches 1 run fill ~-65 ~1 ~-54 ~-64 ~2 ~-54 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 1 run setblock ~-63 ~1 ~-48 minecraft:chest[facing=north]
-execute if score #sv5 oa.map2 matches 2 run fill ~-76 ~1 ~-56 ~-76 ~1 ~-55 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 2 run setblock ~-63 ~1 ~-53 minecraft:chest[facing=north]
-execute if score #sv5 oa.map2 matches 2 run fill ~-63 ~1 ~-51 ~-62 ~1 ~-51 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 2 run setblock ~-61 ~1 ~-51 minecraft:purpur_block
-execute if score #sv5 oa.map2 matches 2 run setblock ~-60 ~1 ~-51 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 2 run setblock ~-76 ~2 ~-56 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 2 run setblock ~-76 ~2 ~-55 minecraft:purpur_block
-execute if score #sv5 oa.map2 matches 2 run fill ~-61 ~2 ~-51 ~-60 ~2 ~-51 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 2 run setblock ~-62 ~2 ~-51 minecraft:purpur_block
-execute if score #sv5 oa.map2 matches 2 run setblock ~-63 ~2 ~-51 minecraft:end_stone_bricks
-execute if score #sv5 oa.map2 matches 2 run setblock ~-61 ~3 ~-51 minecraft:end_stone_bricks
+fill ~-65 ~-23 ~-56 ~-65 ~-20 ~-56 minecraft:obsidian
+fill ~-66 ~-19 ~-56 ~-65 ~-17 ~-56 minecraft:obsidian
+fill ~-77 ~-19 ~-53 ~-77 ~-18 ~-53 minecraft:obsidian
+fill ~-77 ~-17 ~-53 ~-76 ~-14 ~-53 minecraft:obsidian
+fill ~-66 ~-16 ~-56 ~-64 ~-16 ~-56 minecraft:obsidian
+fill ~-67 ~-15 ~-56 ~-64 ~-14 ~-56 minecraft:obsidian
+fill ~-65 ~-15 ~-55 ~-65 ~-14 ~-55 minecraft:obsidian
+fill ~-77 ~-15 ~-54 ~-77 ~-14 ~-54 minecraft:obsidian
+setblock ~-63 ~-15 ~-50 minecraft:obsidian
+fill ~-65 ~-14 ~-50 ~-62 ~-14 ~-50 minecraft:obsidian
+fill ~-67 ~-13 ~-56 ~-64 ~-13 ~-56 minecraft:end_stone
+fill ~-66 ~-13 ~-55 ~-65 ~-13 ~-55 minecraft:end_stone
+fill ~-77 ~-13 ~-54 ~-76 ~-11 ~-54 minecraft:end_stone
+fill ~-77 ~-13 ~-53 ~-75 ~-12 ~-53 minecraft:end_stone
+fill ~-77 ~-13 ~-52 ~-76 ~-12 ~-52 minecraft:end_stone
+fill ~-65 ~-13 ~-50 ~-62 ~-13 ~-50 minecraft:end_stone
+fill ~-68 ~-12 ~-56 ~-64 ~-12 ~-56 minecraft:end_stone
+fill ~-67 ~-12 ~-55 ~-65 ~-11 ~-55 minecraft:end_stone
+fill ~-65 ~-12 ~-50 ~-61 ~-11 ~-50 minecraft:end_stone
+fill ~-78 ~-11 ~-56 ~-57 ~-11 ~-56 minecraft:end_stone
+setblock ~-72 ~-11 ~-55 minecraft:end_stone
+setblock ~-77 ~-11 ~-55 minecraft:end_stone
+fill ~-63 ~-11 ~-55 ~-57 ~-11 ~-55 minecraft:end_stone
+fill ~-78 ~-11 ~-53 ~-75 ~-10 ~-53 minecraft:end_stone
+fill ~-77 ~-11 ~-52 ~-75 ~-11 ~-52 minecraft:end_stone
+fill ~-79 ~-10 ~-56 ~-57 ~-10 ~-56 minecraft:end_stone
+fill ~-78 ~-10 ~-55 ~-57 ~-10 ~-55 minecraft:end_stone
+fill ~-77 ~-10 ~-54 ~-69 ~-10 ~-54 minecraft:end_stone
+fill ~-65 ~-10 ~-54 ~-57 ~-10 ~-54 minecraft:end_stone
+fill ~-63 ~-10 ~-53 ~-57 ~-10 ~-53 minecraft:end_stone
+fill ~-60 ~-10 ~-52 ~-57 ~-10 ~-52 minecraft:end_stone
+fill ~-77 ~-10 ~-52 ~-74 ~-10 ~-52 minecraft:end_stone
+fill ~-74 ~-10 ~-51 ~-73 ~-10 ~-50 minecraft:end_stone
+fill ~-66 ~-10 ~-50 ~-61 ~-9 ~-50 minecraft:end_stone
+fill ~-63 ~-10 ~-49 ~-62 ~-10 ~-49 minecraft:end_stone
+fill ~-81 ~-9 ~-56 ~-57 ~-9 ~-56 minecraft:end_stone
+fill ~-79 ~-9 ~-55 ~-57 ~-9 ~-54 minecraft:end_stone
+fill ~-66 ~-9 ~-53 ~-57 ~-9 ~-53 minecraft:end_stone
+fill ~-78 ~-9 ~-53 ~-68 ~-9 ~-53 minecraft:end_stone
+fill ~-64 ~-9 ~-52 ~-57 ~-9 ~-52 minecraft:end_stone
+fill ~-78 ~-9 ~-52 ~-72 ~-9 ~-52 minecraft:end_stone
+fill ~-62 ~-9 ~-51 ~-57 ~-9 ~-51 minecraft:end_stone
+fill ~-74 ~-9 ~-51 ~-73 ~-9 ~-51 minecraft:end_stone
+fill ~-59 ~-9 ~-50 ~-57 ~-9 ~-50 minecraft:end_stone
+fill ~-74 ~-9 ~-50 ~-72 ~-9 ~-50 minecraft:end_stone
+fill ~-65 ~-9 ~-49 ~-61 ~-9 ~-49 minecraft:end_stone
+fill ~-82 ~-8 ~-56 ~-57 ~-8 ~-56 minecraft:end_stone
+fill ~-81 ~-8 ~-55 ~-57 ~-8 ~-55 minecraft:end_stone
+fill ~-80 ~-8 ~-54 ~-57 ~-8 ~-54 minecraft:end_stone
+fill ~-79 ~-8 ~-53 ~-57 ~-8 ~-53 minecraft:end_stone
+fill ~-78 ~-8 ~-52 ~-57 ~-8 ~-52 minecraft:end_stone
+fill ~-76 ~-8 ~-51 ~-70 ~-8 ~-51 minecraft:end_stone
+fill ~-65 ~-8 ~-51 ~-57 ~-8 ~-51 minecraft:end_stone
+fill ~-74 ~-8 ~-50 ~-69 ~-8 ~-50 minecraft:end_stone
+fill ~-67 ~-8 ~-50 ~-57 ~-8 ~-50 minecraft:end_stone
+fill ~-65 ~-8 ~-49 ~-57 ~-8 ~-49 minecraft:end_stone
+fill ~-71 ~-8 ~-49 ~-70 ~-8 ~-49 minecraft:end_stone
+fill ~-58 ~-8 ~-48 ~-57 ~-8 ~-48 minecraft:end_stone
+fill ~-83 ~-7 ~-56 ~-57 ~-7 ~-56 minecraft:end_stone
+fill ~-82 ~-7 ~-55 ~-57 ~-7 ~-55 minecraft:end_stone
+fill ~-81 ~-7 ~-54 ~-57 ~-7 ~-54 minecraft:end_stone
+fill ~-83 ~-7 ~-53 ~-82 ~-7 ~-53 minecraft:end_stone
+fill ~-80 ~-7 ~-53 ~-57 ~-7 ~-52 minecraft:end_stone
+fill ~-79 ~-7 ~-51 ~-57 ~-7 ~-51 minecraft:end_stone
+fill ~-78 ~-7 ~-50 ~-57 ~-7 ~-50 minecraft:end_stone
+fill ~-66 ~-7 ~-49 ~-57 ~-7 ~-49 minecraft:end_stone
+fill ~-73 ~-7 ~-49 ~-69 ~-7 ~-49 minecraft:end_stone
+fill ~-61 ~-7 ~-48 ~-57 ~-7 ~-48 minecraft:end_stone
+fill ~-71 ~-7 ~-48 ~-70 ~-7 ~-48 minecraft:end_stone
+fill ~-59 ~-7 ~-47 ~-57 ~-7 ~-47 minecraft:end_stone
+setblock ~-71 ~-7 ~-47 minecraft:end_stone
+fill ~-83 ~-6 ~-56 ~-57 ~-6 ~-55 minecraft:end_stone
+fill ~-82 ~-6 ~-54 ~-57 ~-6 ~-54 minecraft:end_stone
+fill ~-83 ~-6 ~-53 ~-57 ~-6 ~-53 minecraft:end_stone
+fill ~-81 ~-6 ~-52 ~-57 ~-6 ~-52 minecraft:end_stone
+fill ~-80 ~-6 ~-51 ~-57 ~-6 ~-51 minecraft:end_stone
+fill ~-79 ~-6 ~-50 ~-57 ~-6 ~-49 minecraft:end_stone
+fill ~-71 ~-6 ~-48 ~-69 ~-6 ~-48 minecraft:end_stone
+fill ~-76 ~-6 ~-48 ~-74 ~-6 ~-48 minecraft:end_stone
+fill ~-63 ~-6 ~-48 ~-57 ~-6 ~-48 minecraft:end_stone
+fill ~-61 ~-6 ~-47 ~-57 ~-6 ~-47 minecraft:end_stone
+fill ~-71 ~-6 ~-47 ~-70 ~-6 ~-47 minecraft:end_stone
+fill ~-59 ~-6 ~-46 ~-57 ~-6 ~-46 minecraft:end_stone
+fill ~-84 ~-5 ~-56 ~-57 ~-5 ~-56 minecraft:end_stone
+fill ~-83 ~-5 ~-55 ~-57 ~-5 ~-53 minecraft:end_stone
+fill ~-82 ~-5 ~-52 ~-57 ~-5 ~-52 minecraft:end_stone
+fill ~-81 ~-5 ~-51 ~-57 ~-5 ~-51 minecraft:end_stone
+fill ~-80 ~-5 ~-50 ~-57 ~-5 ~-49 minecraft:end_stone
+fill ~-79 ~-5 ~-48 ~-68 ~-5 ~-48 minecraft:end_stone
+fill ~-65 ~-5 ~-48 ~-57 ~-5 ~-48 minecraft:end_stone
+fill ~-71 ~-5 ~-47 ~-69 ~-5 ~-47 minecraft:end_stone
+fill ~-78 ~-5 ~-47 ~-74 ~-5 ~-47 minecraft:end_stone
+fill ~-63 ~-5 ~-47 ~-57 ~-5 ~-47 minecraft:end_stone
+fill ~-61 ~-5 ~-46 ~-57 ~-5 ~-46 minecraft:end_stone
+fill ~-58 ~-5 ~-45 ~-57 ~-5 ~-45 minecraft:end_stone
+fill ~-85 ~-4 ~-56 ~-57 ~-3 ~-56 minecraft:end_stone
+fill ~-84 ~-4 ~-55 ~-57 ~-4 ~-55 minecraft:end_stone
+fill ~-83 ~-4 ~-54 ~-57 ~-4 ~-53 minecraft:end_stone
+fill ~-82 ~-4 ~-52 ~-57 ~-4 ~-51 minecraft:end_stone
+fill ~-81 ~-4 ~-50 ~-57 ~-4 ~-50 minecraft:end_stone
+fill ~-80 ~-4 ~-49 ~-57 ~-4 ~-49 minecraft:end_stone
+fill ~-66 ~-4 ~-48 ~-57 ~-4 ~-48 minecraft:end_stone
+fill ~-80 ~-4 ~-48 ~-68 ~-4 ~-48 minecraft:end_stone
+fill ~-64 ~-4 ~-47 ~-57 ~-4 ~-47 minecraft:end_stone
+fill ~-79 ~-4 ~-47 ~-69 ~-4 ~-47 minecraft:end_stone
+fill ~-79 ~-4 ~-46 ~-75 ~-4 ~-46 minecraft:end_stone
+fill ~-62 ~-4 ~-46 ~-57 ~-4 ~-46 minecraft:end_stone
+fill ~-60 ~-4 ~-45 ~-57 ~-4 ~-45 minecraft:end_stone
+setblock ~-57 ~-4 ~-44 minecraft:end_stone
+fill ~-84 ~-3 ~-55 ~-57 ~-3 ~-54 minecraft:end_stone
+fill ~-83 ~-3 ~-53 ~-57 ~0 ~-52 minecraft:end_stone
+fill ~-82 ~-3 ~-51 ~-57 ~0 ~-51 minecraft:end_stone
+fill ~-81 ~-3 ~-50 ~-57 ~0 ~-49 minecraft:end_stone
+fill ~-80 ~-3 ~-48 ~-57 ~0 ~-48 minecraft:end_stone
+fill ~-80 ~-3 ~-47 ~-69 ~0 ~-47 minecraft:end_stone
+fill ~-65 ~-3 ~-47 ~-57 ~0 ~-47 minecraft:end_stone
+fill ~-79 ~-3 ~-46 ~-72 ~0 ~-46 minecraft:end_stone
+fill ~-63 ~-3 ~-46 ~-57 ~0 ~-46 minecraft:end_stone
+fill ~-61 ~-3 ~-45 ~-57 ~0 ~-45 minecraft:end_stone
+fill ~-58 ~-3 ~-44 ~-57 ~-3 ~-44 minecraft:end_stone
+fill ~-85 ~-2 ~-56 ~-57 ~0 ~-55 minecraft:end_stone
+fill ~-84 ~-2 ~-54 ~-57 ~0 ~-54 minecraft:end_stone
+fill ~-79 ~-2 ~-45 ~-76 ~0 ~-45 minecraft:end_stone
+fill ~-59 ~-2 ~-44 ~-57 ~0 ~-44 minecraft:end_stone
+fill ~-79 ~0 ~-44 ~-75 ~0 ~-44 minecraft:smooth_quartz
+fill ~-79 ~0 ~-43 ~-76 ~0 ~-42 minecraft:smooth_quartz
+fill ~-80 ~0 ~-41 ~-77 ~0 ~-41 minecraft:smooth_quartz
+fill ~-81 ~0 ~-40 ~-77 ~0 ~-39 minecraft:smooth_quartz
+fill ~-81 ~0 ~-38 ~-78 ~0 ~-38 minecraft:smooth_quartz
+fill ~-82 ~0 ~-37 ~-78 ~0 ~-37 minecraft:smooth_quartz
+fill ~-82 ~0 ~-36 ~-79 ~0 ~-36 minecraft:smooth_quartz
+fill ~-83 ~0 ~-35 ~-79 ~0 ~-35 minecraft:smooth_quartz
+fill ~-83 ~0 ~-34 ~-80 ~0 ~-34 minecraft:smooth_quartz
+fill ~-84 ~0 ~-33 ~-80 ~0 ~-32 minecraft:smooth_quartz
+fill ~-84 ~0 ~-31 ~-81 ~0 ~-31 minecraft:smooth_quartz
+fill ~-85 ~0 ~-30 ~-82 ~0 ~-29 minecraft:smooth_quartz
+fill ~-86 ~0 ~-28 ~-82 ~0 ~-28 minecraft:smooth_quartz
+fill ~-86 ~0 ~-27 ~-83 ~0 ~-27 minecraft:smooth_quartz
+fill ~-87 ~0 ~-26 ~-83 ~0 ~-26 minecraft:smooth_quartz
+fill ~-86 ~0 ~-25 ~-84 ~0 ~-25 minecraft:smooth_quartz
+fill ~-85 ~1 ~-56 ~-79 ~1 ~-56 minecraft:end_stone
+fill ~-84 ~1 ~-55 ~-80 ~1 ~-55 minecraft:end_stone
+fill ~-83 ~1 ~-54 ~-80 ~1 ~-53 minecraft:end_stone
+fill ~-82 ~1 ~-52 ~-81 ~1 ~-52 minecraft:end_stone
+setblock ~-81 ~1 ~-51 minecraft:end_stone
+fill ~-62 ~1 ~-47 ~-60 ~1 ~-47 minecraft:end_stone
+setblock ~-75 ~1 ~-44 minecraft:white_stained_glass_pane
+fill ~-79 ~1 ~-44 ~-79 ~1 ~-42 minecraft:white_stained_glass_pane
+fill ~-76 ~1 ~-43 ~-76 ~1 ~-42 minecraft:white_stained_glass_pane
+setblock ~-80 ~1 ~-41 minecraft:white_stained_glass_pane
+fill ~-81 ~1 ~-40 ~-80 ~1 ~-40 minecraft:white_stained_glass_pane
+fill ~-77 ~1 ~-41 ~-77 ~1 ~-39 minecraft:white_stained_glass_pane
+fill ~-81 ~1 ~-39 ~-81 ~1 ~-38 minecraft:white_stained_glass_pane
+setblock ~-78 ~1 ~-38 minecraft:white_stained_glass_pane
+fill ~-79 ~1 ~-37 ~-78 ~1 ~-37 minecraft:white_stained_glass_pane
+fill ~-82 ~1 ~-37 ~-82 ~1 ~-36 minecraft:white_stained_glass_pane
+fill ~-79 ~1 ~-36 ~-79 ~1 ~-35 minecraft:white_stained_glass_pane
+fill ~-83 ~1 ~-35 ~-83 ~1 ~-34 minecraft:white_stained_glass_pane
+fill ~-80 ~1 ~-34 ~-80 ~1 ~-33 minecraft:white_stained_glass_pane
+fill ~-81 ~1 ~-32 ~-80 ~1 ~-32 minecraft:white_stained_glass_pane
+fill ~-84 ~1 ~-33 ~-84 ~1 ~-31 minecraft:white_stained_glass_pane
+setblock ~-81 ~1 ~-31 minecraft:white_stained_glass_pane
+fill ~-85 ~1 ~-30 ~-85 ~1 ~-29 minecraft:white_stained_glass_pane
+fill ~-82 ~1 ~-30 ~-82 ~1 ~-28 minecraft:white_stained_glass_pane
+fill ~-86 ~1 ~-28 ~-86 ~1 ~-27 minecraft:white_stained_glass_pane
+fill ~-83 ~1 ~-27 ~-83 ~1 ~-26 minecraft:white_stained_glass_pane
+setblock ~-87 ~1 ~-26 minecraft:white_stained_glass_pane
+setblock ~-84 ~1 ~-25 minecraft:white_stained_glass_pane
+fill ~-84 ~2 ~-56 ~-81 ~2 ~-56 minecraft:end_stone
+fill ~-83 ~2 ~-55 ~-81 ~2 ~-55 minecraft:end_stone
+setblock ~-82 ~2 ~-54 minecraft:end_stone
+fill ~-83 ~3 ~-56 ~-82 ~3 ~-56 minecraft:end_stone
+execute if score #sv5 oa.map2 matches 0 run fill ~-65 ~1 ~-56 ~-65 ~3 ~-56 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 0 run setblock ~-63 ~1 ~-56 minecraft:chest[facing=north]
+execute if score #sv5 oa.map2 matches 0 run setblock ~-79 ~1 ~-55 minecraft:coal_ore
+execute if score #sv5 oa.map2 matches 0 run setblock ~-65 ~4 ~-56 minecraft:amethyst_cluster[facing=up]
+execute if score #sv5 oa.map2 matches 1 run fill ~-62 ~1 ~-55 ~-62 ~4 ~-55 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run fill ~-62 ~8 ~-55 ~-62 ~10 ~-55 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run fill ~-68 ~1 ~-51 ~-68 ~6 ~-51 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run fill ~-67 ~1 ~-49 ~-67 ~7 ~-49 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run fill ~-60 ~1 ~-49 ~-60 ~6 ~-49 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run fill ~-64 ~1 ~-48 ~-64 ~6 ~-48 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-64 ~8 ~-48 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-80 ~2 ~-55 minecraft:chest[facing=north]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-62 ~4 ~-56 minecraft:chorus_plant[up=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-61 ~4 ~-55 minecraft:chorus_plant[up=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-62 ~5 ~-56 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run fill ~-61 ~5 ~-55 ~-61 ~7 ~-55 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-62 ~5 ~-55 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-62 ~11 ~-55 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-62 ~6 ~-56 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-64 ~6 ~-49 minecraft:chorus_plant[up=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-59 ~6 ~-49 minecraft:chorus_plant[up=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-61 ~6 ~-49 minecraft:chorus_plant[up=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-60 ~6 ~-48 minecraft:chorus_plant[up=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-63 ~6 ~-48 minecraft:chorus_plant[up=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-61 ~7 ~-56 minecraft:chorus_plant[up=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-62 ~7 ~-55 minecraft:chorus_plant[up=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-61 ~7 ~-54 minecraft:chorus_plant[up=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-68 ~7 ~-51 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-59 ~7 ~-49 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-61 ~7 ~-49 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-60 ~7 ~-49 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-64 ~7 ~-49 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-63 ~7 ~-49 minecraft:chorus_plant[up=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-62 ~7 ~-48 minecraft:chorus_plant[up=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-63 ~7 ~-48 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-60 ~7 ~-48 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-64 ~7 ~-48 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run fill ~-61 ~8 ~-56 ~-61 ~9 ~-56 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-61 ~8 ~-55 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run fill ~-61 ~8 ~-54 ~-61 ~9 ~-54 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run fill ~-64 ~8 ~-49 ~-63 ~8 ~-49 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run fill ~-61 ~8 ~-49 ~-59 ~9 ~-49 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-67 ~8 ~-49 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-60 ~8 ~-48 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-63 ~8 ~-48 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run fill ~-62 ~8 ~-48 ~-62 ~10 ~-48 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-59 ~9 ~-50 minecraft:chorus_plant[up=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-61 ~9 ~-50 minecraft:chorus_plant[up=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-65 ~9 ~-49 minecraft:chorus_plant[up=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-63 ~9 ~-49 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run fill ~-64 ~9 ~-49 ~-64 ~9 ~-48 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-59 ~9 ~-48 minecraft:chorus_plant[up=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-61 ~10 ~-56 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-61 ~10 ~-54 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run fill ~-59 ~10 ~-50 ~-59 ~11 ~-50 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run fill ~-61 ~10 ~-50 ~-61 ~11 ~-50 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run fill ~-65 ~10 ~-49 ~-65 ~12 ~-49 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run fill ~-61 ~10 ~-49 ~-59 ~10 ~-49 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run fill ~-64 ~10 ~-49 ~-64 ~10 ~-48 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-59 ~10 ~-48 minecraft:chorus_plant[up=true,down=true]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-59 ~11 ~-48 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-62 ~11 ~-48 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-59 ~12 ~-50 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-61 ~12 ~-50 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 1 run setblock ~-65 ~13 ~-49 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 2 run fill ~-66 ~1 ~-52 ~-66 ~7 ~-52 minecraft:obsidian
+execute if score #sv5 oa.map2 matches 2 run fill ~-63 ~1 ~-48 ~-63 ~5 ~-48 minecraft:obsidian
+execute if score #sv5 oa.map2 matches 2 run fill ~-80 ~2 ~-55 ~-80 ~9 ~-55 minecraft:obsidian
+execute if score #sv5 oa.map2 matches 2 run fill ~-80 ~2 ~-53 ~-80 ~10 ~-53 minecraft:obsidian
+execute if score #sv5 oa.map2 matches 2 run setblock ~-62 ~4 ~-48 minecraft:crying_obsidian

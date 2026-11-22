@@ -3,6 +3,7 @@ execute if score #state oa.map2 matches 2 run return 0
 execute positioned ~136 ~-40 ~104 run kill @e[type=minecraft:marker,tag=br.chest,dx=16,dy=80,dz=31]
 execute positioned ~136 ~-40 ~104 run kill @e[type=minecraft:marker,tag=br.ore,dx=16,dy=80,dz=31]
 execute positioned ~136 ~-40 ~104 run kill @e[type=minecraft:marker,tag=oa.gim,dx=16,dy=80,dz=31]
+execute positioned ~136 ~-40 ~104 run kill @e[type=minecraft:block_display,tag=oa.mdeco,dx=16,dy=80,dz=31]
 scoreboard players set #stage oa.map2 2
 scoreboard players set #localc oa.map2 0
 scoreboard players set #localo oa.map2 0

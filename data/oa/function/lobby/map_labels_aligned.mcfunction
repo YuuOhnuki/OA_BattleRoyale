@@ -18,14 +18,22 @@ summon minecraft:item_display ~0.5 ~5.5 ~34.35 {Tags:["oa.lobby_exhibit","oa.lob
 kill @e[type=minecraft:item_display,tag=oa.map_panel1982,distance=..45]
 kill @e[type=minecraft:marker,tag=oa.button_mapsel,distance=..45]
 kill @e[type=minecraft:text_display,tag=oa.mapsel_text,distance=..45]
-# 1.9.168: マップ選択は「前へ／次へ」の2つのボタン（生成済みのマップを 地上→ネザー→洞窟→地上… の順に、何度でも回せる）。
-# パネルの前に立って見ると、東（+x）が左（推定）。左＝前へ、右＝次へ。真ん中に選択中のマップの名前。1.9.169: ボタンの上に「前のマップ／次のマップ」と切り替わる先の名前（lobby/mapsel/labels）
-setblock ~0 ~0 ~34 minecraft:air
-setblock ~-2 ~0 ~34 minecraft:stone_button[face=wall,facing=north,powered=false]
+# 1.9.231: マップ選択は、マップごとの5つのボタン（パネルの前に立つと左から 地上・ネザー・洞窟・天空都市・異界。東＝+x が左）。
+# ボタンの上に名前と状態（lobby/mapsel/labels）。1.9.168〜1.9.230 は「前へ／次へ」の2つだった
+fill ~-5 ~0 ~34 ~5 ~0 ~34 minecraft:air
+setblock ~4 ~0 ~34 minecraft:stone_button[face=wall,facing=north,powered=false]
+summon minecraft:marker ~4.5 ~0.2 ~34.5 {Tags:["oa.lobby_exhibit","oa.button_mapsel","oa.mapsel_k0"]}
+summon minecraft:text_display ~4.5 ~0.95 ~34.1 {Tags:["oa.lobby_exhibit","oa.mapsel_text","oa.mapsel_t0"],billboard:"fixed",Rotation:[0.0f,0.0f],text:{text:"…"},background:-1073741824,view_range:0.6f,line_width:80,transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[0.7f,0.7f,0.7f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
 setblock ~2 ~0 ~34 minecraft:stone_button[face=wall,facing=north,powered=false]
-summon minecraft:marker ~2.5 ~0.2 ~34.5 {Tags:["oa.lobby_exhibit","oa.button_mapsel","oa.mapsel_prev"]}
-summon minecraft:marker ~-1.5 ~0.2 ~34.5 {Tags:["oa.lobby_exhibit","oa.button_mapsel","oa.mapsel_next"]}
-summon minecraft:text_display ~2.5 ~1.25 ~34.1 {Tags:["oa.lobby_exhibit","oa.mapsel_text","oa.mapsel_t_prev"],billboard:"fixed",Rotation:[0.0f,0.0f],text:{text:"前のマップ"},background:-1073741824,view_range:0.6f,transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
-summon minecraft:text_display ~-1.5 ~1.25 ~34.1 {Tags:["oa.lobby_exhibit","oa.mapsel_text","oa.mapsel_t_next"],billboard:"fixed",Rotation:[0.0f,0.0f],text:{text:"次のマップ"},background:-1073741824,view_range:0.6f,transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
-summon minecraft:text_display ~0.5 ~1.25 ~34.1 {Tags:["oa.lobby_exhibit","oa.mapsel_text","oa.mapsel_t_cur"],billboard:"fixed",Rotation:[0.0f,0.0f],text:{text:"地上"},background:-1073741824,view_range:0.6f,transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
+summon minecraft:marker ~2.5 ~0.2 ~34.5 {Tags:["oa.lobby_exhibit","oa.button_mapsel","oa.mapsel_k1"]}
+summon minecraft:text_display ~2.5 ~0.95 ~34.1 {Tags:["oa.lobby_exhibit","oa.mapsel_text","oa.mapsel_t1"],billboard:"fixed",Rotation:[0.0f,0.0f],text:{text:"…"},background:-1073741824,view_range:0.6f,line_width:80,transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[0.7f,0.7f,0.7f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
+setblock ~0 ~0 ~34 minecraft:stone_button[face=wall,facing=north,powered=false]
+summon minecraft:marker ~0.5 ~0.2 ~34.5 {Tags:["oa.lobby_exhibit","oa.button_mapsel","oa.mapsel_k2"]}
+summon minecraft:text_display ~0.5 ~0.95 ~34.1 {Tags:["oa.lobby_exhibit","oa.mapsel_text","oa.mapsel_t2"],billboard:"fixed",Rotation:[0.0f,0.0f],text:{text:"…"},background:-1073741824,view_range:0.6f,line_width:80,transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[0.7f,0.7f,0.7f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
+setblock ~-2 ~0 ~34 minecraft:stone_button[face=wall,facing=north,powered=false]
+summon minecraft:marker ~-1.5 ~0.2 ~34.5 {Tags:["oa.lobby_exhibit","oa.button_mapsel","oa.mapsel_k3"]}
+summon minecraft:text_display ~-1.5 ~0.95 ~34.1 {Tags:["oa.lobby_exhibit","oa.mapsel_text","oa.mapsel_t3"],billboard:"fixed",Rotation:[0.0f,0.0f],text:{text:"…"},background:-1073741824,view_range:0.6f,line_width:80,transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[0.7f,0.7f,0.7f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
+setblock ~-4 ~0 ~34 minecraft:stone_button[face=wall,facing=north,powered=false]
+summon minecraft:marker ~-3.5 ~0.2 ~34.5 {Tags:["oa.lobby_exhibit","oa.button_mapsel","oa.mapsel_k4"]}
+summon minecraft:text_display ~-3.5 ~0.95 ~34.1 {Tags:["oa.lobby_exhibit","oa.mapsel_text","oa.mapsel_t4"],billboard:"fixed",Rotation:[0.0f,0.0f],text:{text:"…"},background:-1073741824,view_range:0.6f,line_width:80,transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[0.7f,0.7f,0.7f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
 function oa:lobby/map_panel_update

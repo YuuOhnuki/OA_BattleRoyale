@@ -4,120 +4,120 @@
  "slots": [
   {
    "c": [
-    93,
-    -7
+    95,
+    -8
    ],
    "r": 19,
    "types": [
-    "rocky",
-    "watch",
-    "garden"
+    "temple",
+    "ruins",
+    "watch"
    ]
   },
   {
    "c": [
-    65,
-    71
+    67,
+    72
    ],
    "r": 21,
    "types": [
-    "rocky",
-    "village",
-    "garden"
+    "garden",
+    "dock",
+    "village"
    ]
   },
   {
    "c": [
     -6,
-    91
+    93
    ],
    "r": 22,
    "types": [
-    "garden",
+    "mansion",
+    "market",
+    "dock"
+   ]
+  },
+  {
+   "c": [
+    -74,
+    71
+   ],
+   "r": 22,
+   "types": [
     "village",
-    "watch"
+    "mansion",
+    "forest"
+   ]
+  },
+  {
+   "c": [
+    -93,
+    -8
+   ],
+   "r": 22,
+   "types": [
+    "temple",
+    "dock",
+    "garden"
    ]
   },
   {
    "c": [
     -73,
-    69
-   ],
-   "r": 22,
-   "types": [
-    "ruins",
-    "village",
-    "watch"
-   ]
-  },
-  {
-   "c": [
-    -91,
-    -8
-   ],
-   "r": 22,
-   "types": [
-    "ruins",
-    "rocky",
-    "temple"
-   ]
-  },
-  {
-   "c": [
-    -72,
-    -62
+    -63
    ],
    "r": 21,
    "types": [
     "temple",
-    "watch",
-    "village"
+    "market",
+    "garden"
    ]
   },
   {
    "c": [
     7,
-    -92
+    -94
    ],
    "r": 22,
    "types": [
-    "watch",
-    "temple",
-    "village"
+    "forest",
+    "garden",
+    "market"
    ]
   },
   {
    "c": [
-    63,
-    -68
+    64,
+    -70
    ],
    "r": 21,
    "types": [
     "garden",
-    "forest",
-    "temple"
+    "ruins",
+    "market"
    ]
   }
  ],
  "corners": [
   [
-   125,
-   125,
+   126,
+   126,
    13
   ],
   [
-   -125,
-   125,
+   -126,
+   126,
    13
   ],
   [
-   -125,
-   -125,
+   -126,
+   -126,
    13
   ],
   [
-   125,
-   -125,
+   126,
+   -126,
    13
   ]
  ],
@@ -125,30 +125,31 @@
  "teleporters": [
   [
    [
-    79,
+    87,
     0,
-    -6
+    -18
    ],
    [
-    -74,
+    -85,
     0,
-    -7
+    6
    ]
   ],
   [
    [
-    -5,
+    8,
     0,
-    74
+    85
    ],
    [
-    6,
+    -7,
     0,
-    -75
+    -86
    ]
   ]
  ],
- "base_chests": 34,
+ "base_chests": 33,
  "slot_chests": 7,
- "spawns_base": 19
+ "spawns_base": 19,
+ "decos": 113
 }
