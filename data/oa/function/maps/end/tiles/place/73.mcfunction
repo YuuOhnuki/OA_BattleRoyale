@@ -196,51 +196,55 @@ fill ~-25 ~1 ~87 ~-25 ~1 ~88 minecraft:end_stone
 execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~0 ~72 ~-46 ~0 ~73 minecraft:purpur_block
 execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~0 ~74 ~-44 ~0 ~74 minecraft:purpur_block
 execute if score #sv3 oa.map2 matches 0 run fill ~-55 ~0 ~72 ~-53 ~0 ~76 minecraft:end_stone_bricks
-execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~1 ~72 ~-47 ~1 ~72 minecraft:cave_air
+execute if score #sv3 oa.map2 matches 0 run fill ~-50 ~0 ~76 ~-45 ~0 ~76 minecraft:end_stone
+execute if score #sv3 oa.map2 matches 0 run fill ~-56 ~0 ~77 ~-45 ~0 ~77 minecraft:end_stone
+execute if score #sv3 oa.map2 matches 0 run fill ~-56 ~0 ~78 ~-48 ~0 ~78 minecraft:end_stone
 execute if score #sv3 oa.map2 matches 0 run setblock ~-50 ~1 ~72 minecraft:end_stone
+execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~1 ~72 ~-47 ~1 ~72 minecraft:cave_air
 execute if score #sv3 oa.map2 matches 0 run setblock ~-49 ~1 ~72 minecraft:coal_ore
 execute if score #sv3 oa.map2 matches 0 run setblock ~-46 ~1 ~72 minecraft:chest[facing=north]
 execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~1 ~73 ~-48 ~4 ~73 minecraft:purpur_block
 execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~15 ~73 ~-48 ~16 ~73 minecraft:purpur_block
+execute if score #sv3 oa.map2 matches 0 run setblock ~-52 ~1 ~73 minecraft:end_stone
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~1 ~73 ~-46 ~2 ~73 minecraft:cave_air
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~5 ~73 ~-46 ~5 ~73 minecraft:cave_air
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~11 ~73 ~-46 ~11 ~73 minecraft:cave_air
-execute if score #sv3 oa.map2 matches 0 run setblock ~-52 ~1 ~73 minecraft:end_stone
-execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~1 ~74 ~-48 ~22 ~74 minecraft:stripped_crimson_stem
-execute if score #sv3 oa.map2 matches 0 run fill ~-46 ~1 ~74 ~-46 ~2 ~74 minecraft:cave_air
 execute if score #sv3 oa.map2 matches 0 run fill ~-44 ~1 ~74 ~-44 ~22 ~74 minecraft:stripped_crimson_stem
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~1 ~74 ~-47 ~4 ~74 minecraft:purpur_block
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~15 ~74 ~-47 ~16 ~74 minecraft:purpur_block
 execute if score #sv3 oa.map2 matches 0 run fill ~-45 ~1 ~74 ~-45 ~4 ~74 minecraft:purpur_block
 execute if score #sv3 oa.map2 matches 0 run fill ~-45 ~15 ~74 ~-45 ~16 ~74 minecraft:purpur_block
+execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~1 ~74 ~-48 ~22 ~74 minecraft:stripped_crimson_stem
 execute if score #sv3 oa.map2 matches 0 run setblock ~-52 ~1 ~74 minecraft:coal_ore
+execute if score #sv3 oa.map2 matches 0 run fill ~-46 ~1 ~74 ~-46 ~2 ~75 minecraft:cave_air
+execute if score #sv3 oa.map2 matches 0 run setblock ~-45 ~1 ~76 minecraft:cave_air
+execute if score #sv3 oa.map2 matches 0 run fill ~-50 ~1 ~76 ~-47 ~1 ~76 minecraft:cave_air
+execute if score #sv3 oa.map2 matches 0 run fill ~-46 ~1 ~76 ~-46 ~4 ~76 minecraft:cherry_log
+execute if score #sv3 oa.map2 matches 0 run fill ~-56 ~1 ~77 ~-45 ~1 ~77 minecraft:cave_air
+execute if score #sv3 oa.map2 matches 0 run fill ~-56 ~1 ~78 ~-48 ~1 ~78 minecraft:cave_air
 execute if score #sv3 oa.map2 matches 0 run fill ~-49 ~1 ~80 ~-49 ~4 ~80 minecraft:cherry_log
-execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~2 ~72 ~-46 ~2 ~72 minecraft:cave_air
-execute if score #sv3 oa.map2 matches 0 run fill ~-46 ~2 ~76 ~-46 ~5 ~76 minecraft:cherry_log
-execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~3 ~72 ~-48 ~4 ~72 minecraft:magenta_stained_glass
-execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~9 ~72 ~-48 ~10 ~72 minecraft:magenta_stained_glass
-execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~15 ~72 ~-48 ~16 ~72 minecraft:magenta_stained_glass
-execute if score #sv3 oa.map2 matches 0 run setblock ~-48 ~21 ~72 minecraft:magenta_stained_glass
+execute if score #sv3 oa.map2 matches 0 run fill ~-50 ~2 ~72 ~-46 ~2 ~72 minecraft:cave_air
+execute if score #sv3 oa.map2 matches 0 run setblock ~-48 ~3 ~72 minecraft:chiseled_quartz_block
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~3 ~72 ~-46 ~4 ~73 minecraft:cave_air
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~7 ~72 ~-46 ~10 ~73 minecraft:cave_air
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~13 ~72 ~-46 ~22 ~73 minecraft:cave_air
-execute if score #sv3 oa.map2 matches 0 run setblock ~-46 ~3 ~74 minecraft:magenta_stained_glass
-execute if score #sv3 oa.map2 matches 0 run setblock ~-46 ~10 ~74 minecraft:magenta_stained_glass
-execute if score #sv3 oa.map2 matches 0 run fill ~-46 ~15 ~74 ~-46 ~16 ~74 minecraft:magenta_stained_glass
-execute if score #sv3 oa.map2 matches 0 run fill ~-46 ~21 ~74 ~-46 ~22 ~74 minecraft:magenta_stained_glass
-execute if score #sv3 oa.map2 matches 0 run fill ~-50 ~3 ~78 ~-48 ~3 ~78 minecraft:cherry_leaves[persistent=true]
+execute if score #sv3 oa.map2 matches 0 run setblock ~-46 ~3 ~74 minecraft:chiseled_quartz_block
+execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~3 ~75 ~-44 ~4 ~75 minecraft:cherry_leaves[persistent=true]
+execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~3 ~76 ~-47 ~4 ~76 minecraft:cherry_leaves[persistent=true]
+execute if score #sv3 oa.map2 matches 0 run fill ~-45 ~3 ~76 ~-44 ~4 ~76 minecraft:cherry_leaves[persistent=true]
+execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~3 ~77 ~-44 ~4 ~77 minecraft:cherry_leaves[persistent=true]
+execute if score #sv3 oa.map2 matches 0 run fill ~-50 ~3 ~78 ~-45 ~4 ~78 minecraft:cherry_leaves[persistent=true]
 execute if score #sv3 oa.map2 matches 0 run fill ~-51 ~3 ~79 ~-47 ~4 ~79 minecraft:cherry_leaves[persistent=true]
-execute if score #sv3 oa.map2 matches 0 run fill ~-51 ~3 ~80 ~-50 ~4 ~80 minecraft:cherry_leaves[persistent=true]
 execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~3 ~80 ~-47 ~4 ~80 minecraft:cherry_leaves[persistent=true]
+execute if score #sv3 oa.map2 matches 0 run fill ~-51 ~3 ~80 ~-50 ~4 ~80 minecraft:cherry_leaves[persistent=true]
 execute if score #sv3 oa.map2 matches 0 run fill ~-51 ~3 ~81 ~-47 ~4 ~81 minecraft:cherry_leaves[persistent=true]
 execute if score #sv3 oa.map2 matches 0 run fill ~-50 ~3 ~82 ~-48 ~4 ~82 minecraft:cherry_leaves[persistent=true]
+execute if score #sv3 oa.map2 matches 0 run setblock ~-48 ~4 ~72 minecraft:magenta_stained_glass
+execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~9 ~72 ~-48 ~10 ~72 minecraft:magenta_stained_glass
+execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~15 ~72 ~-48 ~16 ~72 minecraft:magenta_stained_glass
+execute if score #sv3 oa.map2 matches 0 run setblock ~-48 ~21 ~72 minecraft:magenta_stained_glass
 execute if score #sv3 oa.map2 matches 0 run setblock ~-46 ~4 ~74 minecraft:pearlescent_froglight
 execute if score #sv3 oa.map2 matches 0 run setblock ~-46 ~9 ~74 minecraft:pearlescent_froglight
-execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~4 ~75 ~-44 ~5 ~75 minecraft:cherry_leaves[persistent=true]
-execute if score #sv3 oa.map2 matches 0 run fill ~-45 ~4 ~76 ~-44 ~5 ~76 minecraft:cherry_leaves[persistent=true]
-execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~4 ~76 ~-47 ~5 ~76 minecraft:cherry_leaves[persistent=true]
-execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~4 ~77 ~-44 ~5 ~77 minecraft:cherry_leaves[persistent=true]
-execute if score #sv3 oa.map2 matches 0 run fill ~-50 ~4 ~78 ~-45 ~4 ~78 minecraft:cherry_leaves[persistent=true]
 execute if score #sv3 oa.map2 matches 0 run setblock ~-46 ~5 ~72 minecraft:pearlescent_froglight
 execute if score #sv3 oa.map2 matches 0 run setblock ~-46 ~11 ~72 minecraft:pearlescent_froglight
 execute if score #sv3 oa.map2 matches 0 run setblock ~-47 ~5 ~72 minecraft:cave_air
@@ -251,7 +255,10 @@ execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~17 ~72 ~-48 ~17 ~73 minec
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~5 ~74 ~-45 ~5 ~74 minecraft:purpur_block
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~13 ~74 ~-45 ~14 ~74 minecraft:purpur_block
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~17 ~74 ~-45 ~17 ~74 minecraft:purpur_block
-execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~5 ~78 ~-45 ~5 ~78 minecraft:cherry_leaves[persistent=true]
+execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~5 ~75 ~-45 ~5 ~75 minecraft:cherry_leaves[persistent=true]
+execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~5 ~76 ~-44 ~5 ~76 minecraft:cherry_leaves[persistent=true]
+execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~5 ~77 ~-45 ~5 ~77 minecraft:cherry_leaves[persistent=true]
+execute if score #sv3 oa.map2 matches 0 run setblock ~-46 ~5 ~78 minecraft:cherry_leaves[persistent=true]
 execute if score #sv3 oa.map2 matches 0 run setblock ~-49 ~5 ~78 minecraft:cherry_leaves[persistent=true]
 execute if score #sv3 oa.map2 matches 0 run fill ~-50 ~5 ~79 ~-48 ~5 ~79 minecraft:cherry_leaves[persistent=true]
 execute if score #sv3 oa.map2 matches 0 run fill ~-51 ~5 ~80 ~-47 ~5 ~80 minecraft:cherry_leaves[persistent=true]
@@ -263,8 +270,9 @@ execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~18 ~72 ~-48 ~18 ~73 minec
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~6 ~72 ~-46 ~6 ~73 minecraft:purpur_block
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~12 ~72 ~-46 ~12 ~73 minecraft:purpur_block
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~24 ~72 ~-46 ~24 ~73 minecraft:purpur_block
-execute if score #sv3 oa.map2 matches 0 run fill ~-49 ~6 ~72 ~-49 ~6 ~73 minecraft:end_stone_bricks
-execute if score #sv3 oa.map2 matches 0 run setblock ~-49 ~6 ~74 minecraft:crimson_slab[type=bottom]
+execute if score #sv3 oa.map2 matches 0 run fill ~-49 ~6 ~72 ~-49 ~6 ~74 minecraft:crimson_slab[type=bottom]
+execute if score #sv3 oa.map2 matches 0 run fill ~-49 ~12 ~72 ~-49 ~12 ~74 minecraft:crimson_slab[type=bottom]
+execute if score #sv3 oa.map2 matches 0 run fill ~-49 ~18 ~72 ~-49 ~18 ~74 minecraft:crimson_slab[type=bottom]
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~6 ~74 ~-45 ~6 ~74 minecraft:smooth_quartz
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~12 ~74 ~-45 ~12 ~74 minecraft:smooth_quartz
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~18 ~74 ~-45 ~18 ~74 minecraft:smooth_quartz
@@ -274,9 +282,6 @@ execute if score #sv3 oa.map2 matches 0 run setblock ~-43 ~18 ~74 minecraft:crim
 execute if score #sv3 oa.map2 matches 0 run fill ~-49 ~6 ~75 ~-43 ~6 ~75 minecraft:crimson_slab[type=bottom]
 execute if score #sv3 oa.map2 matches 0 run fill ~-49 ~12 ~75 ~-43 ~12 ~75 minecraft:crimson_slab[type=bottom]
 execute if score #sv3 oa.map2 matches 0 run fill ~-49 ~18 ~75 ~-43 ~18 ~75 minecraft:crimson_slab[type=bottom]
-execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~6 ~76 ~-44 ~6 ~76 minecraft:cherry_leaves[persistent=true]
-execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~6 ~77 ~-45 ~6 ~77 minecraft:cherry_leaves[persistent=true]
-execute if score #sv3 oa.map2 matches 0 run setblock ~-46 ~6 ~78 minecraft:cherry_leaves[persistent=true]
 execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~7 ~72 ~-48 ~8 ~73 minecraft:crimson_planks
 execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~11 ~72 ~-48 ~11 ~73 minecraft:crimson_planks
 execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~19 ~72 ~-48 ~20 ~73 minecraft:crimson_planks
@@ -295,8 +300,9 @@ execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~9 ~74 ~-47 ~10 ~74 minecr
 execute if score #sv3 oa.map2 matches 0 run fill ~-47 ~21 ~74 ~-47 ~22 ~74 minecraft:crimson_planks
 execute if score #sv3 oa.map2 matches 0 run fill ~-45 ~9 ~74 ~-45 ~10 ~74 minecraft:crimson_planks
 execute if score #sv3 oa.map2 matches 0 run fill ~-45 ~21 ~74 ~-45 ~22 ~74 minecraft:crimson_planks
-execute if score #sv3 oa.map2 matches 0 run fill ~-49 ~12 ~72 ~-49 ~12 ~74 minecraft:crimson_slab[type=bottom]
-execute if score #sv3 oa.map2 matches 0 run fill ~-49 ~18 ~72 ~-49 ~18 ~74 minecraft:crimson_slab[type=bottom]
+execute if score #sv3 oa.map2 matches 0 run setblock ~-46 ~10 ~74 minecraft:magenta_stained_glass
+execute if score #sv3 oa.map2 matches 0 run fill ~-46 ~15 ~74 ~-46 ~16 ~74 minecraft:magenta_stained_glass
+execute if score #sv3 oa.map2 matches 0 run fill ~-46 ~21 ~74 ~-46 ~22 ~74 minecraft:magenta_stained_glass
 execute if score #sv3 oa.map2 matches 0 run setblock ~-48 ~22 ~72 minecraft:pearlescent_froglight
 execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~23 ~72 ~-46 ~23 ~73 minecraft:crimson_planks
 execute if score #sv3 oa.map2 matches 0 run fill ~-48 ~23 ~74 ~-44 ~23 ~74 minecraft:crimson_planks

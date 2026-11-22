@@ -11,12 +11,14 @@ scoreboard players set #localo oa.map2 0
 scoreboard players set #expectedc oa.map2 0
 scoreboard players set #expectedo oa.map2 0
 execute positioned ~77 ~1 ~-4 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:marker ~ ~ ~ {Tags:["oa.gim","oa.gim_tp","oa.gim_tp_-146_0_12"]}
-execute if score #sv0 oa.map2 matches 0 run scoreboard players add #expectedc oa.map2 1
+execute if score #sv0 oa.map2 matches 0 run scoreboard players add #expectedc oa.map2 2
 execute if score #sv0 oa.map2 matches 0 run scoreboard players add #expectedo oa.map2 2
 execute if score #sv0 oa.map2 matches 0 positioned ~84 ~1 ~0 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
-execute if score #sv0 oa.map2 matches 0 positioned ~93 ~2 ~-4 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
+execute if score #sv0 oa.map2 matches 0 positioned ~92 ~1 ~-4 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute if score #sv0 oa.map2 matches 0 positioned ~94 ~1 ~7 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
+execute if score #sv0 oa.map2 matches 0 positioned ~93 ~1 ~-4 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
 execute if score #sv0 oa.map2 matches 0 if score #mode oa.map2 matches 0 positioned ~94 ~1 ~7 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
+execute if score #sv0 oa.map2 matches 0 if score #mode oa.map2 matches 0 positioned ~93 ~1 ~-4 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
 execute unless score #localc oa.map2 = #expectedc oa.map2 run return run function oa:map/internal/job/failed
 execute unless score #localo oa.map2 = #expectedo oa.map2 run return run function oa:map/internal/job/failed
 scoreboard players operation #chests oa.map2 += #localc oa.map2

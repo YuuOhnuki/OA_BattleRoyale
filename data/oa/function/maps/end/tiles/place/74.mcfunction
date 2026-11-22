@@ -471,12 +471,12 @@ execute if score #sv2 oa.map2 matches 0 run fill ~0 ~1 ~85 ~0 ~4 ~85 minecraft:l
 execute if score #sv2 oa.map2 matches 0 run fill ~-13 ~1 ~85 ~-13 ~1 ~86 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run fill ~-1 ~1 ~86 ~0 ~3 ~86 minecraft:purpur_block
 execute if score #sv2 oa.map2 matches 0 run fill ~-7 ~1 ~86 ~-7 ~9 ~86 minecraft:purpur_pillar
+execute if score #sv2 oa.map2 matches 0 run fill ~-3 ~1 ~86 ~-2 ~3 ~86 minecraft:cave_air
 execute if score #sv2 oa.map2 matches 0 run fill ~1 ~1 ~86 ~1 ~9 ~86 minecraft:purpur_pillar
 execute if score #sv2 oa.map2 matches 0 run setblock ~5 ~1 ~86 minecraft:coal_ore
 execute if score #sv2 oa.map2 matches 0 run setblock ~4 ~1 ~86 minecraft:end_stone
-execute if score #sv2 oa.map2 matches 0 run setblock ~-11 ~1 ~86 minecraft:end_stone
 execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~1 ~86 ~-4 ~3 ~86 minecraft:purpur_block
-execute if score #sv2 oa.map2 matches 0 run fill ~-3 ~1 ~86 ~-2 ~3 ~86 minecraft:cave_air
+execute if score #sv2 oa.map2 matches 0 run setblock ~-11 ~1 ~86 minecraft:end_stone
 execute if score #sv2 oa.map2 matches 0 run setblock ~4 ~1 ~87 minecraft:smooth_quartz
 execute if score #sv2 oa.map2 matches 0 run setblock ~-13 ~1 ~87 minecraft:smooth_quartz
 execute if score #sv2 oa.map2 matches 0 run fill ~5 ~1 ~87 ~6 ~1 ~87 minecraft:white_concrete

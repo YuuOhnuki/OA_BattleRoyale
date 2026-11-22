@@ -247,8 +247,8 @@ fill ~-63 ~0 ~18 ~-57 ~0 ~18 minecraft:dirt
 fill ~-65 ~0 ~18 ~-64 ~0 ~18 minecraft:grass_block
 fill ~-62 ~0 ~19 ~-57 ~0 ~19 minecraft:dirt
 fill ~-64 ~0 ~19 ~-63 ~0 ~19 minecraft:grass_block
-fill ~-60 ~0 ~20 ~-57 ~0 ~20 minecraft:dirt
-fill ~-64 ~0 ~20 ~-61 ~0 ~20 minecraft:grass_block
+fill ~-61 ~0 ~20 ~-57 ~0 ~20 minecraft:dirt
+fill ~-64 ~0 ~20 ~-62 ~0 ~20 minecraft:grass_block
 fill ~-63 ~0 ~21 ~-57 ~0 ~21 minecraft:grass_block
 fill ~-62 ~0 ~22 ~-57 ~0 ~22 minecraft:grass_block
 fill ~-61 ~0 ~23 ~-57 ~0 ~23 minecraft:grass_block
@@ -261,23 +261,26 @@ fill ~-61 ~1 ~8 ~-57 ~1 ~17 minecraft:dirt
 fill ~-64 ~1 ~14 ~-62 ~1 ~17 minecraft:grass_block
 fill ~-60 ~1 ~18 ~-57 ~1 ~18 minecraft:dirt
 fill ~-63 ~1 ~18 ~-61 ~1 ~18 minecraft:grass_block
-fill ~-62 ~1 ~19 ~-59 ~1 ~19 minecraft:grass_block
-fill ~-58 ~1 ~19 ~-57 ~1 ~19 minecraft:dirt
-fill ~-60 ~1 ~20 ~-57 ~1 ~20 minecraft:grass_block
+fill ~-59 ~1 ~19 ~-57 ~1 ~19 minecraft:dirt
+fill ~-62 ~1 ~19 ~-60 ~1 ~19 minecraft:grass_block
+fill ~-61 ~1 ~20 ~-57 ~1 ~20 minecraft:grass_block
 fill ~-61 ~2 ~8 ~-59 ~2 ~12 minecraft:grass_block
 fill ~-58 ~2 ~8 ~-57 ~2 ~12 minecraft:dirt
 fill ~-61 ~2 ~13 ~-60 ~2 ~17 minecraft:grass_block
-fill ~-59 ~2 ~13 ~-57 ~2 ~17 minecraft:dirt
-fill ~-60 ~2 ~18 ~-59 ~2 ~18 minecraft:grass_block
-fill ~-58 ~2 ~18 ~-57 ~2 ~18 minecraft:dirt
-fill ~-58 ~2 ~19 ~-57 ~2 ~19 minecraft:grass_block
+fill ~-59 ~2 ~13 ~-57 ~2 ~18 minecraft:dirt
+setblock ~-60 ~2 ~18 minecraft:grass_block
+fill ~-59 ~2 ~19 ~-57 ~2 ~19 minecraft:grass_block
 fill ~-58 ~3 ~8 ~-57 ~3 ~11 minecraft:grass_block
 setblock ~-58 ~3 ~12 minecraft:grass_block
 fill ~-57 ~3 ~12 ~-57 ~3 ~14 minecraft:dirt
 fill ~-59 ~3 ~13 ~-58 ~3 ~14 minecraft:grass_block
 fill ~-59 ~3 ~15 ~-59 ~3 ~17 minecraft:grass_block
 fill ~-58 ~3 ~15 ~-57 ~3 ~17 minecraft:dirt
-fill ~-58 ~3 ~18 ~-57 ~3 ~18 minecraft:grass_block
+setblock ~-57 ~3 ~18 minecraft:dirt
+fill ~-59 ~3 ~18 ~-58 ~3 ~18 minecraft:grass_block
 fill ~-57 ~4 ~12 ~-57 ~4 ~14 minecraft:grass_block
-fill ~-58 ~4 ~15 ~-57 ~4 ~17 minecraft:grass_block
-setblock ~-57 ~10 ~17 minecraft:oak_leaves[persistent=true]
+fill ~-58 ~4 ~15 ~-57 ~4 ~15 minecraft:grass_block
+fill ~-58 ~4 ~16 ~-58 ~4 ~17 minecraft:grass_block
+fill ~-57 ~4 ~16 ~-57 ~4 ~17 minecraft:dirt
+setblock ~-57 ~4 ~18 minecraft:grass_block
+fill ~-57 ~5 ~16 ~-57 ~5 ~17 minecraft:grass_block

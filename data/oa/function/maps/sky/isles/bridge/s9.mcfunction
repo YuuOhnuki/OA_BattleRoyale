@@ -1,21 +1,27 @@
 # 生成: scripts/build_map_sky.py（直接編集しない）。候補地 9 の中央への橋（ディメンション oa:br_sky で実行）
-fill 95 76 -50 96 78 -50 minecraft:polished_andesite
-fill 98 76 -48 98 78 -48 minecraft:polished_andesite
-fill 96 76 -47 97 78 -47 minecraft:polished_andesite
-fill 87 76 -46 87 78 -46 minecraft:polished_andesite
-fill 86 76 -45 86 78 -45 minecraft:polished_andesite
-fill 88 76 -43 89 78 -43 minecraft:polished_andesite
-fill 87 76 -42 87 78 -42 minecraft:polished_andesite
-fill 77 76 -41 78 78 -41 minecraft:polished_andesite
-fill 80 76 -39 80 78 -39 minecraft:polished_andesite
-fill 78 76 -38 79 78 -38 minecraft:polished_andesite
-fill 69 76 -37 69 78 -37 minecraft:polished_andesite
-fill 68 76 -36 69 78 -36 minecraft:polished_andesite
-fill 70 76 -34 71 78 -34 minecraft:polished_andesite
-fill 69 76 -33 69 78 -33 minecraft:polished_andesite
-fill 59 76 -32 60 78 -32 minecraft:polished_andesite
-fill 62 76 -30 62 78 -30 minecraft:polished_andesite
-fill 61 76 -29 61 78 -29 minecraft:polished_andesite
+fill 99 76 -52 99 78 -51 minecraft:polished_andesite
+fill 100 76 -49 100 78 -49 minecraft:polished_andesite
+fill 91 76 -48 91 78 -48 minecraft:polished_andesite
+fill 90 76 -47 90 78 -47 minecraft:polished_andesite
+fill 92 76 -45 92 78 -45 minecraft:polished_andesite
+fill 91 76 -44 91 78 -44 minecraft:polished_andesite
+fill 81 76 -43 82 78 -43 minecraft:polished_andesite
+fill 81 76 -42 81 78 -42 minecraft:polished_andesite
+fill 82 76 -40 83 78 -40 minecraft:polished_andesite
+fill 73 76 -39 73 78 -39 minecraft:polished_andesite
+fill 72 76 -38 73 78 -38 minecraft:polished_andesite
+fill 74 76 -36 74 78 -36 minecraft:polished_andesite
+fill 73 76 -35 74 78 -35 minecraft:polished_andesite
+fill 63 76 -34 64 78 -34 minecraft:polished_andesite
+fill 63 76 -33 63 78 -33 minecraft:polished_andesite
+fill 64 76 -31 65 78 -31 minecraft:polished_andesite
+fill 55 76 -30 55 78 -30 minecraft:polished_andesite
+fill 54 76 -29 55 78 -29 minecraft:polished_andesite
+fill 56 76 -27 57 78 -27 minecraft:polished_andesite
+fill 55 76 -26 56 78 -26 minecraft:polished_andesite
+fill 45 76 -25 46 78 -25 minecraft:polished_andesite
+fill 45 76 -24 45 78 -24 minecraft:polished_andesite
+fill 46 76 -22 48 78 -22 minecraft:polished_andesite
 setblock 101 79 -53 minecraft:dark_oak_planks
 fill 99 79 -52 102 79 -52 minecraft:dark_oak_planks
 fill 97 79 -51 102 79 -51 minecraft:dark_oak_planks
@@ -32,20 +38,27 @@ fill 77 79 -41 86 79 -41 minecraft:dark_oak_planks
 fill 75 79 -40 83 79 -40 minecraft:dark_oak_planks
 fill 73 79 -39 82 79 -39 minecraft:dark_oak_planks
 fill 71 79 -38 79 79 -38 minecraft:dark_oak_planks
-fill 69 79 -37 77 79 -37 minecraft:dark_oak_planks
+fill 69 79 -37 78 79 -37 minecraft:dark_oak_planks
 fill 67 79 -36 75 79 -36 minecraft:dark_oak_planks
-fill 65 79 -35 73 79 -35 minecraft:dark_oak_planks
-fill 63 79 -34 72 79 -34 minecraft:dark_oak_planks
+fill 65 79 -35 74 79 -35 minecraft:dark_oak_planks
+fill 63 79 -34 71 79 -34 minecraft:dark_oak_planks
 fill 61 79 -33 69 79 -33 minecraft:dark_oak_planks
 fill 59 79 -32 68 79 -32 minecraft:dark_oak_planks
 fill 57 79 -31 65 79 -31 minecraft:dark_oak_planks
-fill 56 79 -30 64 79 -30 minecraft:dark_oak_planks
+fill 55 79 -30 64 79 -30 minecraft:dark_oak_planks
 fill 53 79 -29 61 79 -29 minecraft:dark_oak_planks
-fill 52 79 -28 60 79 -28 minecraft:dark_oak_planks
-fill 50 79 -27 58 79 -27 minecraft:dark_oak_planks
-fill 51 79 -26 56 79 -26 minecraft:dark_oak_planks
-fill 51 79 -25 54 79 -25 minecraft:dark_oak_planks
-setblock 52 79 -24 minecraft:dark_oak_planks
+fill 51 79 -28 60 79 -28 minecraft:dark_oak_planks
+fill 49 79 -27 57 79 -27 minecraft:dark_oak_planks
+fill 48 79 -26 56 79 -26 minecraft:dark_oak_planks
+fill 45 79 -25 53 79 -25 minecraft:dark_oak_planks
+fill 44 79 -24 52 79 -24 minecraft:dark_oak_planks
+fill 41 79 -23 50 79 -23 minecraft:dark_oak_planks
+fill 40 79 -22 48 79 -22 minecraft:dark_oak_planks
+fill 37 79 -21 46 79 -21 minecraft:dark_oak_planks
+fill 36 79 -20 44 79 -20 minecraft:dark_oak_planks
+fill 36 79 -19 42 79 -19 minecraft:dark_oak_planks
+fill 37 79 -18 40 79 -18 minecraft:dark_oak_planks
+fill 37 79 -17 38 79 -17 minecraft:dark_oak_planks
 setblock 101 80 -54 minecraft:spruce_planks
 fill 98 80 -53 101 80 -53 minecraft:spruce_planks
 fill 97 80 -52 102 80 -52 minecraft:spruce_planks
@@ -59,25 +72,32 @@ fill 83 80 -45 95 80 -45 minecraft:spruce_planks
 fill 81 80 -44 94 80 -44 minecraft:spruce_planks
 fill 79 80 -43 91 80 -43 minecraft:spruce_planks
 fill 77 80 -42 90 80 -42 minecraft:spruce_planks
-fill 75 80 -41 88 80 -41 minecraft:spruce_planks
+fill 75 80 -41 87 80 -41 minecraft:spruce_planks
 fill 73 80 -40 86 80 -40 minecraft:spruce_planks
 fill 71 80 -39 84 80 -39 minecraft:spruce_planks
 fill 69 80 -38 82 80 -38 minecraft:spruce_planks
 fill 67 80 -37 80 80 -37 minecraft:spruce_planks
-fill 65 80 -36 77 80 -36 minecraft:spruce_planks
+fill 65 80 -36 78 80 -36 minecraft:spruce_planks
 fill 63 80 -35 76 80 -35 minecraft:spruce_planks
-fill 61 80 -34 73 80 -34 minecraft:spruce_planks
+fill 61 80 -34 74 80 -34 minecraft:spruce_planks
 fill 59 80 -33 72 80 -33 minecraft:spruce_planks
 fill 57 80 -32 70 80 -32 minecraft:spruce_planks
 fill 55 80 -31 68 80 -31 minecraft:spruce_planks
 fill 53 80 -30 66 80 -30 minecraft:spruce_planks
 fill 51 80 -29 64 80 -29 minecraft:spruce_planks
-fill 50 80 -28 62 80 -28 minecraft:spruce_planks
-fill 50 80 -27 60 80 -27 minecraft:spruce_planks
-fill 51 80 -26 58 80 -26 minecraft:spruce_planks
-fill 51 80 -25 56 80 -25 minecraft:spruce_planks
-fill 52 80 -24 54 80 -24 minecraft:spruce_planks
-setblock 52 80 -23 minecraft:spruce_planks
+fill 49 80 -28 62 80 -28 minecraft:spruce_planks
+fill 47 80 -27 60 80 -27 minecraft:spruce_planks
+fill 45 80 -26 58 80 -26 minecraft:spruce_planks
+fill 43 80 -25 56 80 -25 minecraft:spruce_planks
+fill 41 80 -24 54 80 -24 minecraft:spruce_planks
+fill 39 80 -23 52 80 -23 minecraft:spruce_planks
+fill 37 80 -22 50 80 -22 minecraft:spruce_planks
+fill 36 80 -21 48 80 -21 minecraft:spruce_planks
+fill 36 80 -20 46 80 -20 minecraft:spruce_planks
+fill 36 80 -19 44 80 -19 minecraft:spruce_planks
+fill 37 80 -18 42 80 -18 minecraft:spruce_planks
+fill 37 80 -17 40 80 -17 minecraft:spruce_planks
+setblock 38 80 -16 minecraft:spruce_planks
 setblock 101 81 -54 minecraft:spruce_fence
 fill 98 81 -53 100 81 -53 minecraft:spruce_fence
 fill 97 81 -52 98 81 -52 minecraft:spruce_fence
@@ -87,10 +107,10 @@ fill 91 81 -49 92 81 -49 minecraft:spruce_fence
 fill 102 81 -49 103 81 -49 minecraft:spruce_fence
 fill 100 81 -48 102 81 -48 minecraft:spruce_fence
 fill 89 81 -48 90 81 -48 minecraft:spruce_fence
-fill 98 81 -47 99 81 -47 minecraft:spruce_fence
 fill 87 81 -47 88 81 -47 minecraft:spruce_fence
-fill 85 81 -46 86 81 -46 minecraft:spruce_fence
+fill 98 81 -47 99 81 -47 minecraft:spruce_fence
 fill 96 81 -46 98 81 -46 minecraft:spruce_fence
+fill 85 81 -46 86 81 -46 minecraft:spruce_fence
 fill 94 81 -45 95 81 -45 minecraft:spruce_fence
 fill 83 81 -45 84 81 -45 minecraft:spruce_fence
 fill 81 81 -44 82 81 -44 minecraft:spruce_fence
@@ -99,48 +119,64 @@ fill 79 81 -43 81 81 -43 minecraft:spruce_fence
 fill 90 81 -43 91 81 -43 minecraft:spruce_fence
 fill 77 81 -42 78 81 -42 minecraft:spruce_fence
 fill 88 81 -42 90 81 -42 minecraft:spruce_fence
-fill 86 81 -41 88 81 -41 minecraft:spruce_fence
+fill 86 81 -41 87 81 -41 minecraft:spruce_fence
 fill 75 81 -41 77 81 -41 minecraft:spruce_fence
-fill 73 81 -40 74 81 -40 minecraft:spruce_fence
 fill 84 81 -40 86 81 -40 minecraft:spruce_fence
+fill 73 81 -40 74 81 -40 minecraft:spruce_fence
 fill 82 81 -39 84 81 -39 minecraft:spruce_fence
 fill 71 81 -39 73 81 -39 minecraft:spruce_fence
-fill 69 81 -38 70 81 -38 minecraft:spruce_fence
 fill 80 81 -38 82 81 -38 minecraft:spruce_fence
-fill 78 81 -37 80 81 -37 minecraft:spruce_fence
+fill 69 81 -38 70 81 -38 minecraft:spruce_fence
 fill 67 81 -37 69 81 -37 minecraft:spruce_fence
-fill 76 81 -36 77 81 -36 minecraft:spruce_fence
-fill 65 81 -36 67 81 -36 minecraft:spruce_fence
-fill 74 81 -35 76 81 -35 minecraft:spruce_fence
+fill 78 81 -37 80 81 -37 minecraft:spruce_fence
+fill 76 81 -36 78 81 -36 minecraft:spruce_fence
+fill 65 81 -36 66 81 -36 minecraft:spruce_fence
 fill 63 81 -35 65 81 -35 minecraft:spruce_fence
+fill 74 81 -35 76 81 -35 minecraft:spruce_fence
+fill 72 81 -34 74 81 -34 minecraft:spruce_fence
 fill 61 81 -34 63 81 -34 minecraft:spruce_fence
-fill 72 81 -34 73 81 -34 minecraft:spruce_fence
+fill 59 81 -33 61 81 -33 minecraft:spruce_fence
 fill 70 81 -33 72 81 -33 minecraft:spruce_fence
-fill 59 81 -33 60 81 -33 minecraft:spruce_fence
 fill 68 81 -32 70 81 -32 minecraft:spruce_fence
 fill 57 81 -32 59 81 -32 minecraft:spruce_fence
+fill 55 81 -31 57 81 -31 minecraft:spruce_fence
 fill 66 81 -31 68 81 -31 minecraft:spruce_fence
-fill 55 81 -31 56 81 -31 minecraft:spruce_fence
 fill 64 81 -30 66 81 -30 minecraft:spruce_fence
 fill 53 81 -30 55 81 -30 minecraft:spruce_fence
 fill 62 81 -29 64 81 -29 minecraft:spruce_fence
 fill 51 81 -29 53 81 -29 minecraft:spruce_fence
-fill 50 81 -28 51 81 -28 minecraft:spruce_fence
 fill 60 81 -28 62 81 -28 minecraft:spruce_fence
+fill 49 81 -28 51 81 -28 minecraft:spruce_fence
+fill 47 81 -27 49 81 -27 minecraft:spruce_fence
 fill 58 81 -27 60 81 -27 minecraft:spruce_fence
 fill 56 81 -26 58 81 -26 minecraft:spruce_fence
+fill 45 81 -26 47 81 -26 minecraft:spruce_fence
 fill 54 81 -25 56 81 -25 minecraft:spruce_fence
-fill 52 81 -24 54 81 -24 minecraft:spruce_fence
-setblock 52 81 -23 minecraft:spruce_fence
-setblock 99 82 -53 minecraft:lantern
-fill 101 82 -48 102 82 -48 minecraft:lantern
-setblock 90 82 -48 minecraft:lantern
-fill 81 82 -44 82 82 -44 minecraft:lantern
-fill 92 82 -44 93 82 -44 minecraft:lantern
-fill 72 82 -39 73 82 -39 minecraft:lantern
-fill 83 82 -39 84 82 -39 minecraft:lantern
-fill 63 82 -35 64 82 -35 minecraft:lantern
-fill 74 82 -35 75 82 -35 minecraft:lantern
-fill 54 82 -30 55 82 -30 minecraft:lantern
-fill 65 82 -30 66 82 -30 minecraft:lantern
-fill 56 82 -26 57 82 -26 minecraft:lantern
+fill 43 81 -25 45 81 -25 minecraft:spruce_fence
+fill 53 81 -24 54 81 -24 minecraft:spruce_fence
+fill 41 81 -24 43 81 -24 minecraft:spruce_fence
+fill 50 81 -23 52 81 -23 minecraft:spruce_fence
+fill 39 81 -23 41 81 -23 minecraft:spruce_fence
+fill 49 81 -22 50 81 -22 minecraft:spruce_fence
+fill 37 81 -22 39 81 -22 minecraft:spruce_fence
+fill 36 81 -21 37 81 -21 minecraft:spruce_fence
+fill 46 81 -21 48 81 -21 minecraft:spruce_fence
+fill 45 81 -20 46 81 -20 minecraft:spruce_fence
+fill 42 81 -19 44 81 -19 minecraft:spruce_fence
+fill 40 81 -18 42 81 -18 minecraft:spruce_fence
+fill 38 81 -17 40 81 -17 minecraft:spruce_fence
+setblock 38 81 -16 minecraft:spruce_fence
+setblock 94 82 -50 minecraft:lantern
+setblock 85 82 -46 minecraft:lantern
+setblock 96 82 -46 minecraft:lantern
+setblock 76 82 -41 minecraft:lantern
+setblock 87 82 -41 minecraft:lantern
+setblock 78 82 -37 minecraft:lantern
+setblock 67 82 -37 minecraft:lantern
+fill 69 82 -32 70 82 -32 minecraft:lantern
+setblock 58 82 -32 minecraft:lantern
+fill 60 82 -28 61 82 -28 minecraft:lantern
+fill 49 82 -28 49 82 -27 minecraft:lantern
+fill 51 82 -23 52 82 -23 minecraft:lantern
+setblock 40 82 -23 minecraft:lantern
+fill 42 82 -19 43 82 -19 minecraft:lantern

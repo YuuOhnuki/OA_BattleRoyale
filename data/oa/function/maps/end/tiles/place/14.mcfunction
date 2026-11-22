@@ -124,37 +124,46 @@ fill ~4 ~6 ~-93 ~5 ~6 ~-93 minecraft:end_stone
 execute if score #sv6 oa.map2 matches 0 run fill ~1 ~-3 ~-93 ~3 ~23 ~-93 minecraft:obsidian
 execute if score #sv6 oa.map2 matches 0 run fill ~0 ~-3 ~-92 ~4 ~23 ~-90 minecraft:obsidian
 execute if score #sv6 oa.map2 matches 0 run fill ~1 ~-3 ~-89 ~3 ~23 ~-89 minecraft:obsidian
+execute if score #sv6 oa.map2 matches 0 run setblock ~-1 ~0 ~-91 minecraft:end_stone
+execute if score #sv6 oa.map2 matches 0 run fill ~-11 ~0 ~-91 ~-7 ~0 ~-91 minecraft:end_stone
+execute if score #sv6 oa.map2 matches 0 run fill ~5 ~0 ~-91 ~7 ~0 ~-90 minecraft:end_stone
+execute if score #sv6 oa.map2 matches 0 run fill ~-12 ~0 ~-90 ~-7 ~0 ~-90 minecraft:end_stone
+execute if score #sv6 oa.map2 matches 0 run fill ~-12 ~0 ~-89 ~-6 ~0 ~-89 minecraft:end_stone
+execute if score #sv6 oa.map2 matches 0 run fill ~6 ~0 ~-89 ~7 ~0 ~-89 minecraft:end_stone
 execute if score #sv6 oa.map2 matches 0 run fill ~-5 ~1 ~-92 ~-5 ~4 ~-92 minecraft:cherry_log
+execute if score #sv6 oa.map2 matches 0 run fill ~-1 ~1 ~-91 ~-1 ~4 ~-91 minecraft:cherry_log
+execute if score #sv6 oa.map2 matches 0 run fill ~-11 ~1 ~-91 ~-7 ~1 ~-91 minecraft:cave_air
 execute if score #sv6 oa.map2 matches 0 run setblock ~-4 ~1 ~-91 minecraft:coal_ore
 execute if score #sv6 oa.map2 matches 0 run setblock ~-5 ~1 ~-91 minecraft:end_stone
-execute if score #sv6 oa.map2 matches 0 run fill ~-1 ~2 ~-91 ~-1 ~5 ~-91 minecraft:cherry_log
+execute if score #sv6 oa.map2 matches 0 run fill ~5 ~1 ~-91 ~7 ~1 ~-90 minecraft:cave_air
+execute if score #sv6 oa.map2 matches 0 run fill ~-12 ~1 ~-90 ~-7 ~1 ~-90 minecraft:cave_air
+execute if score #sv6 oa.map2 matches 0 run fill ~-12 ~1 ~-89 ~-6 ~1 ~-89 minecraft:cave_air
+execute if score #sv6 oa.map2 matches 0 run fill ~6 ~1 ~-89 ~7 ~1 ~-89 minecraft:cave_air
+execute if score #sv6 oa.map2 matches 0 run fill ~-10 ~2 ~-91 ~-8 ~2 ~-91 minecraft:cave_air
+execute if score #sv6 oa.map2 matches 0 run fill ~5 ~2 ~-91 ~7 ~2 ~-91 minecraft:cave_air
+execute if score #sv6 oa.map2 matches 0 run fill ~6 ~2 ~-90 ~7 ~2 ~-90 minecraft:cave_air
+execute if score #sv6 oa.map2 matches 0 run fill ~-11 ~2 ~-90 ~-8 ~2 ~-90 minecraft:cave_air
+execute if score #sv6 oa.map2 matches 0 run setblock ~-6 ~2 ~-89 minecraft:cave_air
+execute if score #sv6 oa.map2 matches 0 run fill ~-12 ~2 ~-89 ~-8 ~2 ~-89 minecraft:cave_air
 execute if score #sv6 oa.map2 matches 0 run fill ~-6 ~3 ~-94 ~-4 ~4 ~-94 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-7 ~3 ~-93 ~-3 ~3 ~-93 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-4 ~3 ~-92 ~-3 ~3 ~-92 minecraft:cherry_leaves[persistent=true]
+execute if score #sv6 oa.map2 matches 0 run fill ~-7 ~3 ~-93 ~0 ~4 ~-93 minecraft:cherry_leaves[persistent=true]
+execute if score #sv6 oa.map2 matches 0 run fill ~-4 ~3 ~-92 ~-1 ~4 ~-92 minecraft:cherry_leaves[persistent=true]
 execute if score #sv6 oa.map2 matches 0 run fill ~-7 ~3 ~-92 ~-6 ~4 ~-92 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-7 ~3 ~-91 ~-3 ~3 ~-91 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-6 ~3 ~-90 ~-4 ~3 ~-90 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-7 ~4 ~-93 ~0 ~4 ~-93 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-4 ~4 ~-92 ~-1 ~4 ~-92 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-7 ~4 ~-91 ~-2 ~4 ~-91 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-6 ~4 ~-90 ~-1 ~4 ~-90 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~7 ~4 ~-90 ~7 ~5 ~-89 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-2 ~4 ~-89 ~0 ~5 ~-89 minecraft:cherry_leaves[persistent=true]
+execute if score #sv6 oa.map2 matches 0 run fill ~-7 ~3 ~-91 ~-2 ~4 ~-91 minecraft:cherry_leaves[persistent=true]
+execute if score #sv6 oa.map2 matches 0 run fill ~5 ~3 ~-91 ~6 ~3 ~-91 minecraft:cave_air
+execute if score #sv6 oa.map2 matches 0 run fill ~-9 ~3 ~-90 ~-1 ~4 ~-90 minecraft:cherry_leaves[persistent=true]
+execute if score #sv6 oa.map2 matches 0 run fill ~7 ~3 ~-90 ~7 ~4 ~-89 minecraft:cherry_leaves[persistent=true]
+execute if score #sv6 oa.map2 matches 0 run fill ~-2 ~3 ~-89 ~0 ~4 ~-89 minecraft:cherry_leaves[persistent=true]
+execute if score #sv6 oa.map2 matches 0 run fill ~-10 ~3 ~-89 ~-6 ~4 ~-89 minecraft:cherry_leaves[persistent=true]
 execute if score #sv6 oa.map2 matches 0 run setblock ~-5 ~5 ~-94 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-2 ~5 ~-93 ~0 ~5 ~-93 minecraft:cherry_leaves[persistent=true]
 execute if score #sv6 oa.map2 matches 0 run fill ~-6 ~5 ~-93 ~-4 ~5 ~-93 minecraft:cherry_leaves[persistent=true]
+execute if score #sv6 oa.map2 matches 0 run setblock ~-1 ~5 ~-93 minecraft:cherry_leaves[persistent=true]
 execute if score #sv6 oa.map2 matches 0 run fill ~-7 ~5 ~-92 ~-1 ~5 ~-92 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-6 ~5 ~-91 ~-2 ~5 ~-91 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-3 ~5 ~-90 ~-1 ~5 ~-90 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-9 ~5 ~-90 ~-7 ~6 ~-90 minecraft:cherry_leaves[persistent=true]
+execute if score #sv6 oa.map2 matches 0 run fill ~-6 ~5 ~-91 ~-1 ~5 ~-91 minecraft:cherry_leaves[persistent=true]
+execute if score #sv6 oa.map2 matches 0 run fill ~-2 ~5 ~-90 ~-1 ~5 ~-90 minecraft:cherry_leaves[persistent=true]
+execute if score #sv6 oa.map2 matches 0 run setblock ~-8 ~5 ~-90 minecraft:cherry_leaves[persistent=true]
 execute if score #sv6 oa.map2 matches 0 run setblock ~-5 ~5 ~-90 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-10 ~5 ~-89 ~-6 ~6 ~-89 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run setblock ~-1 ~6 ~-93 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-2 ~6 ~-92 ~-1 ~6 ~-92 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-3 ~6 ~-91 ~-1 ~6 ~-91 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-2 ~6 ~-90 ~-1 ~6 ~-90 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run setblock ~-1 ~6 ~-89 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run setblock ~7 ~6 ~-89 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run setblock ~-8 ~7 ~-90 minecraft:cherry_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~-9 ~7 ~-89 ~-7 ~7 ~-89 minecraft:cherry_leaves[persistent=true]
+execute if score #sv6 oa.map2 matches 0 run setblock ~7 ~5 ~-89 minecraft:cherry_leaves[persistent=true]
+execute if score #sv6 oa.map2 matches 0 run fill ~-9 ~5 ~-89 ~-7 ~5 ~-89 minecraft:cherry_leaves[persistent=true]
+execute if score #sv6 oa.map2 matches 0 run setblock ~-1 ~5 ~-89 minecraft:cherry_leaves[persistent=true]
 execute if score #sv6 oa.map2 matches 0 run setblock ~2 ~24 ~-91 minecraft:bedrock

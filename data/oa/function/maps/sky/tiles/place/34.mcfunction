@@ -736,6 +736,7 @@ fill ~-17 ~-8 ~-50 ~-1 ~-8 ~-50 minecraft:stone
 fill ~1 ~-8 ~-49 ~7 ~-8 ~-48 minecraft:andesite
 fill ~-16 ~-8 ~-49 ~0 ~-8 ~-48 minecraft:stone
 fill ~2 ~-8 ~-47 ~7 ~-8 ~-47 minecraft:andesite
+fill ~2 ~-1 ~-47 ~7 ~0 ~-47 minecraft:andesite
 fill ~-16 ~-8 ~-47 ~1 ~-8 ~-47 minecraft:stone
 fill ~-17 ~-8 ~-46 ~6 ~-8 ~-46 minecraft:stone
 fill ~-24 ~-8 ~-46 ~-23 ~-8 ~-46 minecraft:stone
@@ -845,7 +846,6 @@ fill ~-17 ~-5 ~-48 ~-14 ~-5 ~-47 minecraft:stone
 fill ~-13 ~-5 ~-48 ~-6 ~-5 ~-47 minecraft:dirt
 fill ~-24 ~-5 ~-48 ~-20 ~-5 ~-47 minecraft:stone
 fill ~-1 ~-5 ~-47 ~7 ~-5 ~-47 minecraft:andesite
-fill ~-1 ~0 ~-47 ~7 ~0 ~-47 minecraft:andesite
 fill ~-5 ~-5 ~-47 ~-2 ~-5 ~-47 minecraft:stone
 fill ~-24 ~-5 ~-46 ~-13 ~-5 ~-46 minecraft:stone
 fill ~4 ~-5 ~-46 ~7 ~-5 ~-46 minecraft:andesite
@@ -917,6 +917,7 @@ fill ~-11 ~-4 ~-47 ~-6 ~-4 ~-47 minecraft:dirt
 fill ~-2 ~-4 ~-47 ~7 ~-4 ~-47 minecraft:andesite
 fill ~-6 ~-4 ~-46 ~2 ~-4 ~-46 minecraft:stone
 fill ~3 ~-4 ~-46 ~7 ~-4 ~-46 minecraft:andesite
+fill ~3 ~-1 ~-46 ~7 ~-1 ~-46 minecraft:andesite
 fill ~-10 ~-4 ~-46 ~-7 ~-4 ~-46 minecraft:dirt
 fill ~-24 ~-4 ~-46 ~-11 ~-4 ~-45 minecraft:stone
 fill ~-9 ~-4 ~-45 ~4 ~-4 ~-45 minecraft:stone
@@ -1030,36 +1031,25 @@ fill ~-16 ~-3 ~-26 ~-9 ~-3 ~-25 minecraft:andesite
 fill ~4 ~-3 ~-25 ~7 ~-3 ~-25 minecraft:stone
 setblock ~3 ~-3 ~-25 minecraft:dirt
 fill ~-8 ~-3 ~-25 ~2 ~-3 ~-25 minecraft:stone
+fill ~0 ~-2 ~-56 ~3 ~-2 ~-56 minecraft:andesite
 fill ~4 ~-2 ~-56 ~7 ~-2 ~-56 minecraft:stone
-fill ~-16 ~-2 ~-56 ~-2 ~-2 ~-56 minecraft:dirt
-fill ~-1 ~-2 ~-56 ~3 ~-2 ~-56 minecraft:andesite
-fill ~-16 ~-2 ~-55 ~-3 ~-2 ~-52 minecraft:dirt
-fill ~-2 ~-2 ~-55 ~4 ~-2 ~-51 minecraft:andesite
+fill ~-16 ~-2 ~-56 ~-1 ~-2 ~-56 minecraft:dirt
+fill ~-16 ~-2 ~-55 ~-2 ~-2 ~-52 minecraft:dirt
+fill ~-1 ~-2 ~-55 ~4 ~-2 ~-51 minecraft:andesite
 fill ~5 ~-2 ~-55 ~7 ~-2 ~-51 minecraft:stone
-fill ~-17 ~-2 ~-51 ~-3 ~-2 ~-51 minecraft:dirt
-fill ~-11 ~-2 ~-50 ~-3 ~-2 ~-50 minecraft:dirt
-fill ~-17 ~-2 ~-50 ~-15 ~-2 ~-50 minecraft:dirt
-fill ~-14 ~-2 ~-50 ~-12 ~-2 ~-50 minecraft:stone
-fill ~-2 ~-2 ~-50 ~5 ~-2 ~-50 minecraft:andesite
+fill ~-17 ~-2 ~-51 ~-2 ~-2 ~-50 minecraft:dirt
+fill ~-1 ~-2 ~-50 ~5 ~-2 ~-50 minecraft:andesite
 fill ~6 ~-2 ~-50 ~7 ~-2 ~-49 minecraft:stone
-fill ~-9 ~-2 ~-49 ~-4 ~-2 ~-49 minecraft:dirt
-fill ~-15 ~-2 ~-49 ~-10 ~-2 ~-49 minecraft:stone
-fill ~-3 ~-2 ~-49 ~5 ~-2 ~-49 minecraft:andesite
-fill ~-17 ~-2 ~-49 ~-16 ~-2 ~-49 minecraft:dirt
-fill ~-18 ~-2 ~-48 ~-17 ~-2 ~-48 minecraft:dirt
-fill ~-8 ~-2 ~-48 ~-5 ~-2 ~-48 minecraft:dirt
+fill ~0 ~-2 ~-49 ~5 ~-2 ~-49 minecraft:andesite
+fill ~-17 ~-2 ~-49 ~-1 ~-2 ~-49 minecraft:dirt
 fill ~-24 ~-2 ~-48 ~-20 ~-1 ~-48 minecraft:dirt
-fill ~-16 ~-2 ~-48 ~-9 ~-2 ~-47 minecraft:stone
-fill ~-4 ~-2 ~-48 ~7 ~-2 ~-47 minecraft:andesite
-fill ~-7 ~-2 ~-47 ~-5 ~-2 ~-47 minecraft:stone
-fill ~-24 ~-2 ~-47 ~-17 ~-2 ~-47 minecraft:dirt
-setblock ~-8 ~-2 ~-47 minecraft:dirt
+fill ~0 ~-2 ~-48 ~7 ~-2 ~-48 minecraft:andesite
+fill ~-18 ~-2 ~-48 ~-1 ~-2 ~-48 minecraft:dirt
+fill ~-24 ~-2 ~-47 ~0 ~-2 ~-47 minecraft:dirt
+fill ~1 ~-2 ~-47 ~7 ~-2 ~-46 minecraft:andesite
 setblock ~-24 ~-2 ~-46 minecraft:stone
-fill ~1 ~-2 ~-46 ~7 ~-2 ~-46 minecraft:andesite
-fill ~-23 ~-2 ~-46 ~-16 ~-2 ~-46 minecraft:dirt
-fill ~-15 ~-2 ~-46 ~0 ~-2 ~-46 minecraft:stone
-fill ~-21 ~-2 ~-45 ~-15 ~-2 ~-45 minecraft:dirt
-fill ~-14 ~-2 ~-45 ~2 ~-2 ~-45 minecraft:stone
+fill ~-23 ~-2 ~-46 ~0 ~-2 ~-46 minecraft:dirt
+fill ~-21 ~-2 ~-45 ~2 ~-2 ~-45 minecraft:dirt
 fill ~3 ~-2 ~-45 ~7 ~-2 ~-45 minecraft:andesite
 fill ~-24 ~-2 ~-45 ~-22 ~-2 ~-44 minecraft:stone
 fill ~-21 ~-2 ~-44 ~7 ~-2 ~-44 minecraft:dirt
@@ -1072,75 +1062,56 @@ fill ~-24 ~-2 ~-39 ~-23 ~-2 ~-39 minecraft:stone
 fill ~-23 ~-2 ~-38 ~7 ~-2 ~-38 minecraft:dirt
 setblock ~-24 ~-2 ~-38 minecraft:stone
 fill ~-24 ~-2 ~-37 ~7 ~-2 ~-25 minecraft:dirt
-fill ~-16 ~-1 ~-56 ~7 ~-1 ~-55 minecraft:dirt
+fill ~-16 ~-1 ~-56 ~7 ~-1 ~-56 minecraft:dirt
+fill ~2 ~-1 ~-55 ~7 ~-1 ~-55 minecraft:dirt
+setblock ~1 ~-1 ~-55 minecraft:andesite
+fill ~-16 ~-1 ~-55 ~0 ~-1 ~-54 minecraft:dirt
 setblock ~7 ~-1 ~-54 minecraft:stone
-fill ~0 ~-1 ~-54 ~3 ~-1 ~-54 minecraft:andesite
 fill ~4 ~-1 ~-54 ~6 ~-1 ~-54 minecraft:dirt
-fill ~-16 ~-1 ~-54 ~-1 ~-1 ~-54 minecraft:dirt
-fill ~-16 ~-1 ~-53 ~-2 ~-1 ~-52 minecraft:dirt
+fill ~1 ~-1 ~-54 ~3 ~-1 ~-54 minecraft:andesite
+fill ~-16 ~-1 ~-53 ~-1 ~-1 ~-52 minecraft:dirt
+fill ~0 ~-1 ~-53 ~3 ~-1 ~-51 minecraft:andesite
 fill ~4 ~-1 ~-53 ~7 ~-1 ~-51 minecraft:stone
-fill ~-1 ~-1 ~-53 ~3 ~-1 ~-51 minecraft:andesite
-fill ~-17 ~-1 ~-51 ~-2 ~-1 ~-51 minecraft:dirt
-fill ~-2 ~-1 ~-50 ~4 ~-1 ~-50 minecraft:andesite
-fill ~-17 ~-1 ~-50 ~-3 ~-1 ~-50 minecraft:dirt
+fill ~-17 ~-1 ~-51 ~-1 ~-1 ~-50 minecraft:dirt
+fill ~0 ~-1 ~-50 ~4 ~-1 ~-50 minecraft:andesite
 fill ~5 ~-1 ~-50 ~7 ~-1 ~-49 minecraft:stone
-fill ~-3 ~-1 ~-49 ~4 ~-1 ~-49 minecraft:andesite
-fill ~-7 ~-1 ~-49 ~-4 ~-1 ~-49 minecraft:dirt
-fill ~-17 ~-1 ~-49 ~-9 ~-1 ~-49 minecraft:dirt
-setblock ~-8 ~-1 ~-49 minecraft:stone
-fill ~-13 ~-1 ~-48 ~-8 ~-1 ~-48 minecraft:stone
-fill ~-18 ~-1 ~-48 ~-14 ~-1 ~-48 minecraft:dirt
-setblock ~-7 ~-1 ~-48 minecraft:dirt
-fill ~-6 ~-1 ~-48 ~6 ~-1 ~-48 minecraft:andesite
+fill ~1 ~-1 ~-49 ~4 ~-1 ~-49 minecraft:andesite
+fill ~-17 ~-1 ~-49 ~0 ~-1 ~-49 minecraft:dirt
+fill ~-18 ~-1 ~-48 ~0 ~-1 ~-48 minecraft:dirt
+fill ~1 ~-1 ~-48 ~6 ~-1 ~-48 minecraft:andesite
 setblock ~7 ~-1 ~-48 minecraft:stone
-fill ~-24 ~-1 ~-47 ~-14 ~-1 ~-47 minecraft:dirt
-fill ~-13 ~-1 ~-47 ~-6 ~-1 ~-47 minecraft:stone
-fill ~-5 ~-1 ~-47 ~7 ~-1 ~-47 minecraft:andesite
-setblock ~-6 ~-1 ~-46 minecraft:stone
-fill ~-24 ~-1 ~-46 ~-7 ~-1 ~-46 minecraft:dirt
-fill ~-5 ~-1 ~-46 ~-2 ~-1 ~-46 minecraft:dirt
-fill ~0 ~-1 ~-46 ~7 ~-1 ~-46 minecraft:andesite
-setblock ~-1 ~-1 ~-46 minecraft:stone
+fill ~-24 ~-1 ~-47 ~1 ~-1 ~-47 minecraft:dirt
+fill ~-24 ~-1 ~-46 ~2 ~-1 ~-46 minecraft:dirt
 fill ~-24 ~-1 ~-45 ~7 ~-1 ~-43 minecraft:dirt
 fill ~-23 ~-1 ~-42 ~7 ~-1 ~-41 minecraft:dirt
 fill ~-24 ~-1 ~-42 ~-24 ~-1 ~-41 minecraft:stone
 fill ~-24 ~-1 ~-40 ~7 ~-1 ~-25 minecraft:dirt
-fill ~-16 ~0 ~-56 ~-2 ~0 ~-56 minecraft:grass_block
-fill ~-1 ~0 ~-56 ~7 ~0 ~-56 minecraft:dirt
-fill ~-2 ~0 ~-55 ~7 ~0 ~-54 minecraft:dirt
-fill ~-16 ~0 ~-55 ~-3 ~0 ~-54 minecraft:grass_block
-fill ~-3 ~0 ~-53 ~7 ~0 ~-53 minecraft:dirt
-fill ~-16 ~0 ~-53 ~-4 ~0 ~-53 minecraft:grass_block
-fill ~-16 ~0 ~-52 ~-5 ~0 ~-52 minecraft:grass_block
+fill ~0 ~0 ~-56 ~7 ~0 ~-56 minecraft:dirt
+fill ~-16 ~0 ~-56 ~-1 ~0 ~-56 minecraft:grass_block
+fill ~-1 ~0 ~-55 ~7 ~0 ~-53 minecraft:dirt
+fill ~-16 ~0 ~-55 ~-2 ~0 ~-52 minecraft:grass_block
 fill ~3 ~0 ~-52 ~4 ~0 ~-52 minecraft:stone
 fill ~5 ~0 ~-52 ~7 ~0 ~-52 minecraft:dirt
-fill ~-4 ~0 ~-52 ~-1 ~0 ~-52 minecraft:dirt
-fill ~0 ~0 ~-52 ~2 ~0 ~-52 minecraft:andesite
-fill ~-5 ~0 ~-51 ~-2 ~0 ~-51 minecraft:dirt
-fill ~-1 ~0 ~-51 ~2 ~0 ~-51 minecraft:andesite
-fill ~-17 ~0 ~-51 ~-6 ~0 ~-51 minecraft:grass_block
+fill ~1 ~0 ~-52 ~2 ~0 ~-51 minecraft:andesite
 fill ~3 ~0 ~-51 ~7 ~0 ~-51 minecraft:stone
-fill ~-7 ~0 ~-50 ~-3 ~0 ~-50 minecraft:dirt
-fill ~-11 ~0 ~-50 ~-8 ~0 ~-50 minecraft:grass_block
-fill ~-14 ~0 ~-50 ~-12 ~0 ~-50 minecraft:dirt
-fill ~-17 ~0 ~-50 ~-15 ~0 ~-50 minecraft:grass_block
-fill ~-2 ~0 ~-50 ~3 ~0 ~-50 minecraft:andesite
+fill ~-1 ~0 ~-52 ~0 ~0 ~-50 minecraft:dirt
+fill ~-17 ~0 ~-51 ~-2 ~0 ~-50 minecraft:grass_block
 fill ~4 ~0 ~-50 ~7 ~0 ~-49 minecraft:stone
-fill ~-5 ~0 ~-49 ~3 ~0 ~-49 minecraft:andesite
-fill ~-15 ~0 ~-49 ~-6 ~0 ~-49 minecraft:dirt
-fill ~-17 ~0 ~-49 ~-16 ~0 ~-49 minecraft:grass_block
+fill ~1 ~0 ~-50 ~3 ~0 ~-49 minecraft:andesite
+fill ~-17 ~0 ~-49 ~-1 ~0 ~-49 minecraft:grass_block
+setblock ~0 ~0 ~-49 minecraft:dirt
+fill ~2 ~0 ~-48 ~5 ~0 ~-48 minecraft:andesite
+fill ~-18 ~0 ~-48 ~-1 ~0 ~-48 minecraft:grass_block
 fill ~6 ~0 ~-48 ~7 ~0 ~-48 minecraft:stone
-fill ~-5 ~0 ~-48 ~5 ~0 ~-48 minecraft:andesite
-fill ~-18 ~0 ~-48 ~-17 ~0 ~-48 minecraft:grass_block
-fill ~-16 ~0 ~-48 ~-6 ~0 ~-48 minecraft:dirt
+fill ~0 ~0 ~-48 ~1 ~0 ~-48 minecraft:dirt
 fill ~-24 ~0 ~-48 ~-20 ~0 ~-48 minecraft:grass_block
-fill ~-24 ~0 ~-47 ~-17 ~0 ~-47 minecraft:grass_block
-fill ~-16 ~0 ~-47 ~-2 ~0 ~-47 minecraft:dirt
-fill ~-23 ~0 ~-46 ~-16 ~0 ~-46 minecraft:grass_block
-fill ~-15 ~0 ~-46 ~7 ~0 ~-46 minecraft:dirt
+fill ~-24 ~0 ~-47 ~0 ~0 ~-47 minecraft:grass_block
+setblock ~1 ~0 ~-47 minecraft:dirt
+fill ~-23 ~0 ~-46 ~0 ~0 ~-46 minecraft:grass_block
+fill ~1 ~0 ~-46 ~7 ~0 ~-46 minecraft:dirt
 setblock ~-24 ~0 ~-46 minecraft:dirt
-fill ~-14 ~0 ~-45 ~7 ~0 ~-45 minecraft:dirt
-fill ~-21 ~0 ~-45 ~-15 ~0 ~-45 minecraft:grass_block
+fill ~-21 ~0 ~-45 ~2 ~0 ~-45 minecraft:grass_block
+fill ~3 ~0 ~-45 ~7 ~0 ~-45 minecraft:dirt
 fill ~-24 ~0 ~-45 ~-22 ~0 ~-44 minecraft:dirt
 fill ~-21 ~0 ~-44 ~7 ~0 ~-44 minecraft:grass_block
 fill ~-20 ~0 ~-43 ~7 ~0 ~-41 minecraft:grass_block
@@ -1284,45 +1255,40 @@ fill ~6 ~0 ~-25 ~7 ~0 ~-25 minecraft:stone_bricks
 fill ~-19 ~0 ~-25 ~-16 ~0 ~-25 minecraft:stone_bricks
 fill ~-9 ~0 ~-25 ~-6 ~0 ~-25 minecraft:stone_bricks
 setblock ~-5 ~0 ~-25 minecraft:mossy_stone_bricks
-fill ~-1 ~1 ~-56 ~7 ~1 ~-56 minecraft:grass_block
-fill ~-2 ~1 ~-55 ~7 ~1 ~-55 minecraft:grass_block
+fill ~0 ~1 ~-56 ~7 ~1 ~-56 minecraft:grass_block
+fill ~2 ~1 ~-55 ~7 ~1 ~-55 minecraft:grass_block
+setblock ~1 ~1 ~-55 minecraft:dirt
+fill ~-1 ~1 ~-55 ~0 ~1 ~-54 minecraft:grass_block
 fill ~4 ~1 ~-54 ~6 ~1 ~-54 minecraft:grass_block
-fill ~-2 ~1 ~-54 ~-1 ~1 ~-54 minecraft:grass_block
+fill ~1 ~1 ~-54 ~3 ~1 ~-54 minecraft:dirt
 setblock ~7 ~1 ~-54 minecraft:dirt
-fill ~0 ~1 ~-54 ~3 ~1 ~-54 minecraft:dirt
-fill ~-3 ~1 ~-53 ~-2 ~1 ~-53 minecraft:grass_block
-fill ~-1 ~1 ~-53 ~7 ~1 ~-53 minecraft:dirt
-fill ~-3 ~1 ~-52 ~7 ~1 ~-52 minecraft:dirt
-setblock ~-4 ~1 ~-52 minecraft:grass_block
+fill ~0 ~1 ~-53 ~7 ~1 ~-52 minecraft:dirt
+setblock ~1 ~1 ~-51 minecraft:andesite
 fill ~5 ~1 ~-51 ~7 ~1 ~-51 minecraft:dirt
-fill ~-4 ~1 ~-51 ~-2 ~1 ~-51 minecraft:dirt
-setblock ~-5 ~1 ~-51 minecraft:grass_block
-fill ~-1 ~1 ~-51 ~1 ~1 ~-51 minecraft:andesite
 fill ~2 ~1 ~-51 ~4 ~1 ~-51 minecraft:stone
+fill ~-1 ~1 ~-53 ~-1 ~1 ~-50 minecraft:grass_block
+fill ~0 ~1 ~-51 ~0 ~1 ~-50 minecraft:dirt
+fill ~1 ~1 ~-50 ~2 ~1 ~-50 minecraft:andesite
 fill ~3 ~1 ~-50 ~5 ~1 ~-50 minecraft:stone
-fill ~-7 ~1 ~-50 ~-6 ~1 ~-50 minecraft:grass_block
-fill ~-5 ~1 ~-50 ~-3 ~1 ~-50 minecraft:dirt
-fill ~-14 ~1 ~-50 ~-12 ~1 ~-50 minecraft:grass_block
 fill ~6 ~1 ~-50 ~7 ~1 ~-50 minecraft:dirt
-fill ~-2 ~1 ~-50 ~2 ~1 ~-49 minecraft:andesite
 setblock ~7 ~1 ~-49 minecraft:dirt
-fill ~-15 ~1 ~-49 ~-9 ~1 ~-49 minecraft:grass_block
-fill ~-8 ~1 ~-49 ~-3 ~1 ~-49 minecraft:dirt
+setblock ~2 ~1 ~-49 minecraft:andesite
 fill ~3 ~1 ~-49 ~6 ~1 ~-49 minecraft:stone
-fill ~-1 ~1 ~-48 ~4 ~1 ~-48 minecraft:andesite
-fill ~-13 ~1 ~-48 ~-2 ~1 ~-48 minecraft:dirt
+fill ~0 ~1 ~-49 ~0 ~1 ~-48 minecraft:grass_block
+fill ~1 ~1 ~-49 ~1 ~1 ~-48 minecraft:dirt
+fill ~2 ~1 ~-48 ~4 ~1 ~-48 minecraft:andesite
+setblock ~-13 ~1 ~-48 minecraft:chest[facing=north]
 fill ~6 ~1 ~-48 ~7 ~1 ~-48 minecraft:dirt
 setblock ~5 ~1 ~-48 minecraft:stone
-fill ~-16 ~1 ~-48 ~-14 ~1 ~-47 minecraft:grass_block
 fill ~4 ~1 ~-47 ~7 ~1 ~-47 minecraft:dirt
-fill ~2 ~1 ~-47 ~3 ~1 ~-47 minecraft:andesite
-fill ~-13 ~1 ~-47 ~1 ~1 ~-47 minecraft:dirt
-fill ~-15 ~1 ~-46 ~-7 ~1 ~-46 minecraft:grass_block
-fill ~-1 ~1 ~-46 ~7 ~1 ~-46 minecraft:dirt
+setblock ~2 ~1 ~-47 minecraft:dirt
+setblock ~1 ~1 ~-47 minecraft:grass_block
+setblock ~3 ~1 ~-47 minecraft:andesite
+fill ~3 ~1 ~-46 ~7 ~1 ~-46 minecraft:dirt
+fill ~1 ~1 ~-46 ~2 ~1 ~-46 minecraft:grass_block
+setblock ~-16 ~1 ~-46 minecraft:chest[facing=north]
 setblock ~-24 ~1 ~-46 minecraft:grass_block
-setblock ~-6 ~1 ~-46 minecraft:dirt
-fill ~-5 ~1 ~-46 ~-2 ~1 ~-46 minecraft:grass_block
-fill ~-14 ~1 ~-45 ~7 ~1 ~-45 minecraft:grass_block
+fill ~3 ~1 ~-45 ~7 ~1 ~-45 minecraft:grass_block
 fill ~-24 ~1 ~-45 ~-22 ~1 ~-44 minecraft:grass_block
 fill ~-24 ~1 ~-43 ~-21 ~1 ~-43 minecraft:grass_block
 fill ~-23 ~1 ~-42 ~-21 ~1 ~-41 minecraft:grass_block
@@ -1330,14 +1296,12 @@ fill ~-24 ~1 ~-42 ~-24 ~1 ~-41 minecraft:dirt
 fill ~-24 ~1 ~-40 ~-22 ~1 ~-40 minecraft:grass_block
 fill ~-24 ~1 ~-39 ~-23 ~1 ~-39 minecraft:grass_block
 setblock ~-24 ~1 ~-38 minecraft:grass_block
-fill ~-6 ~1 ~-37 ~-4 ~4 ~-37 minecraft:stone_bricks
-fill ~-6 ~7 ~-37 ~-4 ~9 ~-37 minecraft:stone_bricks
-fill ~-6 ~11 ~-37 ~-4 ~11 ~-37 minecraft:stone_bricks
+fill ~-6 ~1 ~-37 ~-4 ~5 ~-37 minecraft:stone_bricks
+fill ~-6 ~7 ~-37 ~-4 ~11 ~-37 minecraft:stone_bricks
 fill ~-6 ~13 ~-37 ~-4 ~13 ~-37 minecraft:stone_bricks
 fill ~-6 ~15 ~-37 ~-4 ~15 ~-37 minecraft:stone_bricks
-fill ~4 ~1 ~-37 ~6 ~4 ~-37 minecraft:stone_bricks
-fill ~4 ~7 ~-37 ~6 ~9 ~-37 minecraft:stone_bricks
-fill ~4 ~11 ~-37 ~6 ~11 ~-37 minecraft:stone_bricks
+fill ~4 ~1 ~-37 ~6 ~5 ~-37 minecraft:stone_bricks
+fill ~4 ~7 ~-37 ~6 ~11 ~-37 minecraft:stone_bricks
 fill ~4 ~13 ~-37 ~6 ~13 ~-37 minecraft:stone_bricks
 fill ~4 ~15 ~-37 ~6 ~15 ~-37 minecraft:stone_bricks
 fill ~5 ~1 ~-36 ~5 ~14 ~-36 minecraft:ladder[facing=south]
@@ -1437,55 +1401,46 @@ fill ~-20 ~1 ~-27 ~-20 ~4 ~-27 minecraft:quartz_pillar
 setblock ~6 ~1 ~-26 minecraft:polished_andesite
 setblock ~-6 ~1 ~-26 minecraft:polished_andesite
 fill ~6 ~2 ~-55 ~6 ~6 ~-55 minecraft:oak_log
+setblock ~1 ~2 ~-55 minecraft:grass_block
+setblock ~6 ~2 ~-54 minecraft:short_grass
 setblock ~7 ~2 ~-54 minecraft:grass_block
-fill ~0 ~2 ~-54 ~3 ~2 ~-54 minecraft:grass_block
-fill ~-1 ~2 ~-53 ~7 ~2 ~-53 minecraft:grass_block
+fill ~1 ~2 ~-54 ~3 ~2 ~-54 minecraft:grass_block
+fill ~0 ~2 ~-53 ~7 ~2 ~-53 minecraft:grass_block
 fill ~5 ~2 ~-52 ~7 ~2 ~-52 minecraft:grass_block
-fill ~-3 ~2 ~-52 ~-2 ~2 ~-52 minecraft:grass_block
-fill ~-1 ~2 ~-52 ~4 ~2 ~-52 minecraft:dirt
-fill ~-3 ~2 ~-51 ~0 ~2 ~-51 minecraft:dirt
+fill ~1 ~2 ~-52 ~4 ~2 ~-52 minecraft:dirt
 fill ~3 ~2 ~-51 ~7 ~2 ~-51 minecraft:dirt
-setblock ~-4 ~2 ~-51 minecraft:grass_block
-fill ~1 ~2 ~-51 ~2 ~2 ~-51 minecraft:stone
-fill ~-4 ~2 ~-50 ~-2 ~2 ~-50 minecraft:dirt
-setblock ~-5 ~2 ~-50 minecraft:grass_block
-fill ~-1 ~2 ~-50 ~1 ~2 ~-50 minecraft:andesite
-fill ~5 ~2 ~-50 ~7 ~2 ~-49 minecraft:dirt
+setblock ~2 ~2 ~-51 minecraft:stone
+fill ~0 ~2 ~-52 ~0 ~2 ~-50 minecraft:grass_block
+fill ~1 ~2 ~-51 ~1 ~2 ~-49 minecraft:dirt
 fill ~2 ~2 ~-50 ~4 ~2 ~-49 minecraft:stone
-fill ~-5 ~2 ~-49 ~-1 ~2 ~-49 minecraft:dirt
-fill ~0 ~2 ~-49 ~1 ~2 ~-49 minecraft:andesite
-fill ~-8 ~2 ~-49 ~-6 ~2 ~-49 minecraft:grass_block
+fill ~5 ~2 ~-50 ~7 ~2 ~-49 minecraft:dirt
 fill ~4 ~2 ~-48 ~7 ~2 ~-48 minecraft:dirt
-fill ~-13 ~2 ~-48 ~-6 ~2 ~-48 minecraft:grass_block
-fill ~-5 ~2 ~-48 ~0 ~2 ~-48 minecraft:dirt
-fill ~1 ~2 ~-48 ~3 ~2 ~-48 minecraft:andesite
-fill ~-1 ~2 ~-47 ~7 ~2 ~-47 minecraft:dirt
-fill ~-13 ~2 ~-47 ~-2 ~2 ~-47 minecraft:grass_block
-fill ~-1 ~2 ~-46 ~7 ~2 ~-46 minecraft:grass_block
-setblock ~-6 ~2 ~-46 minecraft:grass_block
-fill ~-21 ~2 ~-42 ~-21 ~6 ~-42 minecraft:oak_log
+setblock ~2 ~2 ~-48 minecraft:dirt
+setblock ~1 ~2 ~-48 minecraft:grass_block
+setblock ~3 ~2 ~-48 minecraft:andesite
+fill ~2 ~2 ~-47 ~7 ~2 ~-47 minecraft:dirt
+setblock ~1 ~2 ~-47 minecraft:cornflower
+fill ~3 ~2 ~-46 ~7 ~2 ~-46 minecraft:grass_block
+fill ~-21 ~2 ~-43 ~-21 ~7 ~-43 minecraft:oak_log
 fill ~-24 ~2 ~-42 ~-24 ~2 ~-41 minecraft:grass_block
 fill ~-19 ~2 ~-31 ~-12 ~2 ~-30 minecraft:stone_bricks
 setblock ~-6 ~2 ~-26 minecraft:gold_block
 setblock ~6 ~2 ~-26 minecraft:gold_block
-fill ~-1 ~3 ~-52 ~4 ~3 ~-52 minecraft:grass_block
+fill ~1 ~3 ~-52 ~4 ~3 ~-52 minecraft:grass_block
 fill ~5 ~3 ~-51 ~7 ~3 ~-51 minecraft:grass_block
-fill ~-3 ~3 ~-51 ~-2 ~3 ~-51 minecraft:grass_block
-fill ~-1 ~3 ~-51 ~4 ~3 ~-51 minecraft:dirt
+fill ~1 ~3 ~-51 ~4 ~3 ~-51 minecraft:dirt
 fill ~6 ~3 ~-50 ~7 ~3 ~-50 minecraft:grass_block
-fill ~-4 ~3 ~-50 ~-3 ~3 ~-50 minecraft:grass_block
+setblock ~2 ~3 ~-50 minecraft:stone
 fill ~3 ~3 ~-50 ~5 ~3 ~-50 minecraft:dirt
-fill ~-2 ~3 ~-50 ~0 ~3 ~-49 minecraft:dirt
-fill ~1 ~3 ~-50 ~2 ~3 ~-49 minecraft:stone
-fill ~3 ~3 ~-49 ~6 ~3 ~-49 minecraft:dirt
+setblock ~1 ~3 ~-50 minecraft:dirt
 setblock ~7 ~3 ~-49 minecraft:grass_block
-fill ~-5 ~3 ~-49 ~-3 ~3 ~-49 minecraft:grass_block
-fill ~-5 ~3 ~-48 ~-2 ~3 ~-48 minecraft:grass_block
-fill ~-1 ~3 ~-48 ~5 ~3 ~-48 minecraft:dirt
+fill ~2 ~3 ~-49 ~6 ~3 ~-49 minecraft:dirt
+setblock ~1 ~3 ~-49 minecraft:grass_block
+fill ~2 ~3 ~-48 ~5 ~3 ~-48 minecraft:dirt
 fill ~6 ~3 ~-48 ~7 ~3 ~-48 minecraft:grass_block
 fill ~4 ~3 ~-47 ~7 ~3 ~-47 minecraft:grass_block
-fill ~2 ~3 ~-47 ~3 ~3 ~-47 minecraft:dirt
-fill ~-1 ~3 ~-47 ~1 ~3 ~-47 minecraft:grass_block
+setblock ~3 ~3 ~-47 minecraft:dirt
+setblock ~2 ~3 ~-47 minecraft:grass_block
 setblock ~-24 ~3 ~-42 minecraft:stone
 fill ~-6 ~3 ~-31 ~-4 ~4 ~-31 minecraft:stone_bricks
 fill ~-6 ~7 ~-31 ~-4 ~9 ~-31 minecraft:stone_bricks
@@ -1499,25 +1454,21 @@ fill ~4 ~7 ~-31 ~6 ~9 ~-31 minecraft:stone_bricks
 fill ~4 ~11 ~-31 ~6 ~11 ~-31 minecraft:stone_bricks
 fill ~4 ~13 ~-31 ~6 ~13 ~-31 minecraft:stone_bricks
 fill ~4 ~15 ~-31 ~6 ~15 ~-31 minecraft:stone_bricks
-fill ~0 ~3 ~-31 ~0 ~7 ~-31 minecraft:red_wool
 fill ~-18 ~3 ~-31 ~-12 ~3 ~-30 minecraft:stone_bricks
 fill ~5 ~4 ~-56 ~7 ~4 ~-56 minecraft:oak_leaves[persistent=true]
 setblock ~5 ~4 ~-55 minecraft:oak_leaves[persistent=true]
 fill ~7 ~4 ~-55 ~7 ~6 ~-55 minecraft:oak_leaves[persistent=true]
 fill ~5 ~4 ~-54 ~7 ~4 ~-54 minecraft:oak_leaves[persistent=true]
 fill ~3 ~4 ~-51 ~4 ~4 ~-51 minecraft:grass_block
-fill ~1 ~4 ~-51 ~2 ~4 ~-51 minecraft:dirt
-fill ~-1 ~4 ~-51 ~0 ~4 ~-51 minecraft:grass_block
-fill ~-1 ~4 ~-50 ~4 ~4 ~-50 minecraft:dirt
+setblock ~2 ~4 ~-51 minecraft:dirt
+fill ~1 ~4 ~-51 ~1 ~4 ~-50 minecraft:grass_block
 setblock ~5 ~4 ~-50 minecraft:grass_block
-setblock ~-2 ~4 ~-50 minecraft:grass_block
+fill ~2 ~4 ~-50 ~4 ~4 ~-49 minecraft:dirt
 fill ~5 ~4 ~-49 ~6 ~4 ~-49 minecraft:grass_block
-fill ~-2 ~4 ~-49 ~-1 ~4 ~-49 minecraft:grass_block
-fill ~0 ~4 ~-49 ~4 ~4 ~-49 minecraft:dirt
 fill ~4 ~4 ~-48 ~5 ~4 ~-48 minecraft:grass_block
-fill ~-1 ~4 ~-48 ~0 ~4 ~-48 minecraft:grass_block
-fill ~1 ~4 ~-48 ~3 ~4 ~-48 minecraft:dirt
-fill ~2 ~4 ~-47 ~3 ~4 ~-47 minecraft:grass_block
+setblock ~3 ~4 ~-48 minecraft:dirt
+setblock ~2 ~4 ~-48 minecraft:grass_block
+setblock ~3 ~4 ~-47 minecraft:grass_block
 setblock ~-8 ~4 ~-34 minecraft:stone_bricks
 fill ~-8 ~8 ~-34 ~-8 ~9 ~-34 minecraft:stone_bricks
 setblock ~-8 ~11 ~-34 minecraft:stone_bricks
@@ -1543,30 +1494,13 @@ fill ~4 ~5 ~-55 ~5 ~5 ~-55 minecraft:oak_leaves[persistent=true]
 fill ~4 ~5 ~-54 ~7 ~5 ~-54 minecraft:oak_leaves[persistent=true]
 fill ~5 ~5 ~-53 ~7 ~5 ~-53 minecraft:oak_leaves[persistent=true]
 fill ~5 ~7 ~-53 ~7 ~7 ~-53 minecraft:oak_leaves[persistent=true]
-fill ~1 ~5 ~-51 ~2 ~5 ~-51 minecraft:grass_block
 fill ~3 ~5 ~-51 ~3 ~10 ~-51 minecraft:oak_log
-fill ~-1 ~5 ~-50 ~0 ~5 ~-50 minecraft:grass_block
-fill ~3 ~5 ~-50 ~4 ~5 ~-49 minecraft:grass_block
-fill ~1 ~5 ~-50 ~2 ~5 ~-49 minecraft:dirt
-setblock ~0 ~5 ~-49 minecraft:grass_block
-setblock ~5 ~5 ~-48 minecraft:oxeye_daisy
-fill ~1 ~5 ~-48 ~3 ~5 ~-48 minecraft:grass_block
-fill ~-22 ~5 ~-43 ~-20 ~6 ~-43 minecraft:oak_leaves[persistent=true]
-setblock ~-20 ~5 ~-42 minecraft:oak_leaves[persistent=true]
-setblock ~-22 ~5 ~-42 minecraft:oak_leaves[persistent=true]
-fill ~-22 ~5 ~-41 ~-20 ~6 ~-41 minecraft:oak_leaves[persistent=true]
-setblock ~-5 ~5 ~-37 minecraft:glass_pane
-setblock ~-5 ~10 ~-37 minecraft:glass_pane
-setblock ~6 ~5 ~-37 minecraft:stone_bricks
-setblock ~6 ~10 ~-37 minecraft:stone_bricks
-setblock ~5 ~5 ~-37 minecraft:glass_pane
-setblock ~5 ~10 ~-37 minecraft:glass_pane
-setblock ~-6 ~5 ~-37 minecraft:stone_bricks
-setblock ~-6 ~10 ~-37 minecraft:stone_bricks
-setblock ~-4 ~5 ~-37 minecraft:stone_bricks
-setblock ~-4 ~10 ~-37 minecraft:stone_bricks
-setblock ~4 ~5 ~-37 minecraft:stone_bricks
-setblock ~4 ~10 ~-37 minecraft:stone_bricks
+setblock ~2 ~5 ~-51 minecraft:grass_block
+fill ~3 ~5 ~-50 ~4 ~5 ~-50 minecraft:grass_block
+setblock ~2 ~5 ~-50 minecraft:dirt
+setblock ~5 ~5 ~-50 minecraft:coal_ore
+fill ~2 ~5 ~-49 ~4 ~5 ~-49 minecraft:grass_block
+setblock ~3 ~5 ~-48 minecraft:grass_block
 fill ~-24 ~5 ~-34 ~-9 ~5 ~-34 minecraft:stone_bricks
 setblock ~-8 ~5 ~-34 minecraft:glass_pane
 setblock ~-8 ~10 ~-34 minecraft:glass_pane
@@ -1587,11 +1521,11 @@ setblock ~-24 ~5 ~-27 minecraft:chiseled_stone_bricks
 fill ~3 ~6 ~-55 ~5 ~6 ~-55 minecraft:oak_leaves[persistent=true]
 fill ~4 ~6 ~-54 ~7 ~6 ~-53 minecraft:oak_leaves[persistent=true]
 setblock ~6 ~6 ~-52 minecraft:oak_leaves[persistent=true]
-fill ~1 ~6 ~-50 ~2 ~6 ~-49 minecraft:grass_block
-setblock ~-21 ~6 ~-44 minecraft:oak_leaves[persistent=true]
-fill ~-23 ~6 ~-42 ~-22 ~6 ~-42 minecraft:oak_leaves[persistent=true]
-fill ~-20 ~6 ~-42 ~-19 ~6 ~-42 minecraft:oak_leaves[persistent=true]
-setblock ~-21 ~6 ~-40 minecraft:oak_leaves[persistent=true]
+setblock ~2 ~6 ~-50 minecraft:grass_block
+fill ~-22 ~6 ~-44 ~-20 ~7 ~-44 minecraft:oak_leaves[persistent=true]
+setblock ~-20 ~6 ~-43 minecraft:oak_leaves[persistent=true]
+setblock ~-22 ~6 ~-43 minecraft:oak_leaves[persistent=true]
+fill ~-22 ~6 ~-42 ~-20 ~7 ~-42 minecraft:oak_leaves[persistent=true]
 fill ~3 ~6 ~-36 ~4 ~6 ~-36 minecraft:polished_andesite
 fill ~3 ~12 ~-36 ~4 ~12 ~-36 minecraft:polished_andesite
 fill ~3 ~14 ~-36 ~4 ~14 ~-36 minecraft:polished_andesite
@@ -1653,15 +1587,20 @@ fill ~6 ~12 ~-32 ~7 ~12 ~-32 minecraft:polished_andesite
 fill ~6 ~14 ~-32 ~7 ~14 ~-32 minecraft:polished_andesite
 setblock ~4 ~6 ~-31 minecraft:polished_andesite
 setblock ~-4 ~6 ~-31 minecraft:polished_andesite
-fill ~5 ~6 ~-31 ~7 ~6 ~-27 minecraft:stone_brick_slab[type=bottom]
 fill ~-24 ~6 ~-31 ~-5 ~6 ~-27 minecraft:stone_brick_slab[type=bottom]
+fill ~5 ~6 ~-31 ~7 ~6 ~-27 minecraft:stone_brick_slab[type=bottom]
 fill ~4 ~7 ~-56 ~7 ~7 ~-54 minecraft:oak_leaves[persistent=true]
-fill ~-22 ~7 ~-43 ~-20 ~7 ~-41 minecraft:oak_leaves[persistent=true]
+setblock ~2 ~7 ~-50 minecraft:short_grass
+setblock ~-21 ~7 ~-45 minecraft:oak_leaves[persistent=true]
+fill ~-23 ~7 ~-43 ~-22 ~7 ~-43 minecraft:oak_leaves[persistent=true]
+fill ~-20 ~7 ~-43 ~-19 ~7 ~-43 minecraft:oak_leaves[persistent=true]
+setblock ~-21 ~7 ~-41 minecraft:oak_leaves[persistent=true]
 fill ~-2 ~7 ~-34 ~2 ~7 ~-34 minecraft:stone_bricks
 fill ~-3 ~7 ~-33 ~3 ~7 ~-33 minecraft:stone_bricks
 fill ~-4 ~7 ~-32 ~4 ~7 ~-32 minecraft:stone_bricks
 fill ~-14 ~7 ~-31 ~-12 ~7 ~-30 minecraft:stone_bricks
 fill ~5 ~8 ~-56 ~7 ~8 ~-54 minecraft:oak_leaves[persistent=true]
+fill ~-22 ~8 ~-44 ~-20 ~8 ~-42 minecraft:oak_leaves[persistent=true]
 fill ~-1 ~8 ~-34 ~1 ~8 ~-33 minecraft:polished_andesite
 fill ~-2 ~8 ~-32 ~2 ~8 ~-32 minecraft:polished_andesite
 fill ~-13 ~8 ~-31 ~-12 ~8 ~-30 minecraft:stone_bricks

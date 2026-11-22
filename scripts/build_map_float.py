@@ -648,7 +648,7 @@ for (pa, pb) in TPP:
     teleporter_pair(pa, pb); TP.append((pa, pb))
 if KEY == 'end':
     for k in (1, 5):
-        cx, cz, r, _ = slots[k]; gim(cx, 1, cz, ['oa.gim', 'oa.gim_grav', 'oa.gim_grav_9'])
+        cx, cz, r, _ = slots[k]; gim(cx, 1, cz, ['oa.gim', 'oa.gim_grav', 'oa.gim_grav_28'])   # 1.9.236：島全体（以前は半径9）
     for k in (3, 7):
         cx, cz, r, _ = slots[k]; gim(round(cx * 0.6), 2, round(cz * 0.6), ['oa.gim', 'oa.gim_warp'])
 
@@ -897,19 +897,25 @@ def theme(kind, cx, cz, r, seed):
             # 入口（4方向）と、2階へのはしご。2階より上は塞ぐ
             for (dx, dz) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
                 clear(x0 + dx * hw, 1, z0 + dz * hw, x0 + dx * hw, 2, z0 + dz * hw)
+                put(x0 + dx * hw, 3, z0 + dz * hw, 'minecraft:chiseled_quartz_block')
+                for k_ in (1, 2):   # 入口の前（外へ2マス）は通れるように
+                    clear(x0 + dx * (hw + k_), 1, z0 + dz * (hw + k_), x0 + dx * (hw + k_), 2, z0 + dz * (hw + k_))
             box(x0 - hw + 1, 1, z0 - hw + 1, x0 - hw + 1, 6, z0 - hw + 1, 'minecraft:ladder[facing=south]')
             box(x0 - hw + 1, 12, z0 - hw + 1, x0 + hw - 1, 12, z0 + hw - 1, 'minecraft:purpur_block')
             put(x0, 5, z0, 'minecraft:pearlescent_froglight'); put(x0, 11, z0, 'minecraft:pearlescent_froglight')
+        # 1.9.236：塔のまわりを均す（丘が入口をふさいでいた）
+        for x in range(cx - 14, cx + 15):
+            for z in range(cz - 14, cz + 15):
+                g = gy(x, z)
+                if g is None or (x, z) in RES: continue
+                if g > 0:
+                    for yy in range(1, g + 1): put(x, yy, z, 'minecraft:air')
+                    put(x, 0, z, T['top']); SURF[(x, z)] = 0
         pagoda(cx, cz, 9, min(32, 26 + int(rr.random() * 7)), ['minecraft:crimson_planks', 'minecraft:smooth_quartz', 'minecraft:purpur_block'])
         for j, (dx, dz) in enumerate(((-8, -8), (8, -8), (-8, 8), (8, 8))):
             hh = (14, 20, 18, 22)[(j + int(rr.random() * 4)) % 4]
             pagoda(cx + dx, cz + dz, 5, hh, ['minecraft:purpur_block', 'minecraft:crimson_planks'])
-        # 塔をつなぐ渡り廊下（2階の高さ、手すり付き）
-        for (dx, dz) in ((-8, -8), (8, -8), (-8, 8), (8, 8)):
-            sx_, sz_ = (1 if dx > 0 else -1), (1 if dz > 0 else -1)
-            for t in range(5, 6):
-                for w_ in (-1, 0, 1):
-                    put(cx + sx_ * t, 6, cz + dz + w_, 'minecraft:end_stone_bricks')
+        # （1.9.232 の宙に浮いた渡り廊下の切れ端は 1.9.236 で削除）
         # 足元の道・桜（異界の色）の木・チェスト
         for x in range(cx - 12, cx + 13):
             for z in range(cz - 12, cz + 13):

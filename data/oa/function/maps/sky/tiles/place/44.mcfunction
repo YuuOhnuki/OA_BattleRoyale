@@ -1222,7 +1222,7 @@ fill ~-20 ~1 ~-14 ~-14 ~1 ~-14 minecraft:polished_andesite
 fill ~-10 ~1 ~-11 ~-2 ~1 ~-11 minecraft:stone_bricks
 fill ~2 ~1 ~-11 ~7 ~1 ~-11 minecraft:stone_bricks
 fill ~-11 ~1 ~-11 ~-11 ~22 ~-11 minecraft:quartz_pillar
-fill ~-9 ~1 ~-10 ~-9 ~22 ~-10 minecraft:ladder[facing=south]
+fill ~-6 ~1 ~-10 ~-6 ~23 ~-10 minecraft:ladder[facing=south]
 fill ~-22 ~1 ~-12 ~-22 ~2 ~-8 minecraft:oak_leaves[persistent=true]
 setblock ~7 ~1 ~-7 minecraft:chest[facing=north]
 fill ~-11 ~1 ~-10 ~-11 ~1 ~-2 minecraft:stone_bricks
@@ -1290,10 +1290,10 @@ fill ~-11 ~9 ~-10 ~-11 ~9 ~7 minecraft:white_terracotta
 fill ~-11 ~12 ~-10 ~-11 ~14 ~7 minecraft:white_terracotta
 fill ~-11 ~16 ~-10 ~-11 ~17 ~7 minecraft:white_terracotta
 fill ~-11 ~20 ~-10 ~-11 ~22 ~7 minecraft:white_terracotta
-setblock ~-10 ~7 ~-10 minecraft:spruce_planks
-setblock ~-10 ~14 ~-10 minecraft:spruce_planks
-fill ~-8 ~7 ~-10 ~7 ~7 ~-10 minecraft:spruce_planks
-fill ~-8 ~14 ~-10 ~7 ~14 ~-10 minecraft:spruce_planks
+fill ~-10 ~7 ~-10 ~-7 ~7 ~-10 minecraft:spruce_planks
+fill ~-10 ~14 ~-10 ~-7 ~14 ~-10 minecraft:spruce_planks
+fill ~-5 ~7 ~-10 ~7 ~7 ~-10 minecraft:spruce_planks
+fill ~-5 ~14 ~-10 ~7 ~14 ~-10 minecraft:spruce_planks
 fill ~-10 ~7 ~-9 ~7 ~7 ~-8 minecraft:spruce_planks
 fill ~-10 ~14 ~-9 ~7 ~14 ~-8 minecraft:spruce_planks
 fill ~-10 ~7 ~-7 ~-8 ~7 ~7 minecraft:spruce_planks
@@ -1335,8 +1335,11 @@ fill ~-1 ~14 ~-1 ~1 ~14 ~1 minecraft:gold_block
 fill ~0 ~15 ~0 ~0 ~22 ~0 minecraft:iron_chain[axis=y]
 fill ~-11 ~23 ~-12 ~-9 ~23 ~-12 minecraft:polished_andesite
 fill ~-11 ~29 ~-12 ~-9 ~29 ~-12 minecraft:polished_andesite
-fill ~-7 ~23 ~-11 ~7 ~23 ~-9 minecraft:stone_bricks
+fill ~-7 ~23 ~-11 ~7 ~23 ~-11 minecraft:stone_bricks
+setblock ~-7 ~23 ~-10 minecraft:stone_bricks
+fill ~-5 ~23 ~-10 ~7 ~23 ~-10 minecraft:stone_bricks
 fill ~-12 ~23 ~-11 ~-8 ~23 ~-9 minecraft:polished_andesite
+fill ~-7 ~23 ~-9 ~7 ~23 ~-9 minecraft:stone_bricks
 fill ~-8 ~23 ~-8 ~7 ~23 ~-8 minecraft:stone_bricks
 fill ~-11 ~23 ~-8 ~-9 ~23 ~-8 minecraft:polished_andesite
 fill ~-11 ~29 ~-8 ~-9 ~29 ~-8 minecraft:polished_andesite

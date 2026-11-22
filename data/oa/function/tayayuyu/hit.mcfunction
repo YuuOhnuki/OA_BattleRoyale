@@ -1,7 +1,7 @@
 execute if entity @s[tag=br.pvp_grace] run return 0
-execute store result score #launch_roll oa.tmp run random value 1..10
-# 1.9.227：打ち上げは 10%→20%
-execute unless score #launch_roll oa.tmp matches 1..2 run return 0
+execute store result score #launch_roll oa.tmp run random value 1..4
+# 1.9.227：打ち上げは 10%→20%。1.9.236：25%
+execute unless score #launch_roll oa.tmp matches 1 run return 0
 execute if entity @s[tag=oa.practice_dummy] run data merge entity @s {NoAI:0b,NoGravity:0b}
 # 1.9.227：高さを約75%に（浮遊の強さ 12→10。3tick で外すのは同じ）
 effect give @s minecraft:levitation 1 9 true

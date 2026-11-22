@@ -81,7 +81,7 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×3）。攻撃速度1.8回／秒。10",
+                "text": "×3）。攻撃速度1.8回／秒。25",
                 "color": "white",
                 "italic": false
               }
@@ -92,7 +92,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "  %で相手を強く吹き飛ばす。",
+                "text": "  %で相手を強く吹き飛ばす（平地で約18ブロック）。",
                 "color": "white",
                 "italic": false
               }

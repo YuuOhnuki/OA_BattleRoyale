@@ -269,7 +269,7 @@ def round_tower(x, z, y0, h, rad, wall='minecraft:stone_bricks', band='minecraft
                 if (xx + zz) % 2 == 0: put(xx, y0 + h + 2, zz, wall)
     if rad >= 3:
         for y in range(y0 + 5, y0 + h - 1, 5):
-            for (dx, dz) in ((rad, 0), (-rad, 0), (0, rad), (0, -rad)): put(x + dx, y, z + dz, 'minecraft:glass_pane')
+            for (dx, dz) in ((rad, 0), (-rad, 0), (0, rad)): put(x + dx, y, z + dz, 'minecraft:glass_pane')   # 1.9.236：(0,-rad) ははしごの裏なので窓にしない
     for (dx, dz) in door: clear(x + dx * rad, y0 + 1, z + dz * rad, x + dx * rad, y0 + 2, z + dz * rad)
     if ladder:
         for y in range(y0 + 1, y0 + h + 1): put(x, y, z - rad + 1, 'minecraft:ladder[facing=south]')
@@ -339,16 +339,38 @@ for k in range(10):
     SITES.append((round(math.cos(a) * rad), round(math.sin(a) * rad)))
 BRIDGE_END_IN = 8   # 島の中心から、橋の端までの距離（島の縁の平らな所に届く）
 def bridge_points(s):
+    """1.9.236：橋は城壁の外側（中心から 34/max(|cos|,|sin|)＋3）から、島の中心の8ブロック手前まで。
+    以前は中央の島の縁の近く（中心から57）からで、島の縁が内側へ入り込んだ所では橋が途切れていた。"""
     sx, sz = SITES[s]; d = math.hypot(sx, sz); ux, uz = sx / d, sz / d
-    return (ux * (CR - 7), uz * (CR - 7)), (sx - ux * BRIDGE_END_IN, sz - uz * BRIDGE_END_IN)
+    r0 = 34 / max(abs(ux), abs(uz)) + 3
+    # 角の大きな塔（半径6）・門楼の小塔（半径3）にかからない所から始める
+    towers = [(sx_ * 34, sz_ * 34, 8.0) for sx_ in (-1, 1) for sz_ in (-1, 1)] +              [(a_ * 34, b_ * 5, 5.0) for a_ in (-1, 1) for b_ in (-1, 1)] + [(b_ * 5, a_ * 34, 5.0) for a_ in (-1, 1) for b_ in (-1, 1)]
+    while any(math.hypot(ux * r0 - tx, uz * r0 - tz) < tr for tx, tz, tr in towers): r0 += 1
+    return (ux * r0, uz * r0), (sx - ux * BRIDGE_END_IN, sz - uz * BRIDGE_END_IN)
+def near_bridge(x, z, m=5.0):
+    """中央の島の上の橋の通り道（幅 m の内側）か。"""
+    for s_ in range(10):
+        (ax, az), (bx, bz) = bridge_points(s_)
+        vx, vz = bx - ax, bz - az; L2 = vx * vx + vz * vz
+        t = max(0.0, min(1.0, ((x - ax) * vx + (z - az) * vz) / L2))
+        if math.hypot(x - (ax + vx * t), z - (az + vz * t)) < m and math.hypot(x, z) < CR + 8: return True
+    return False
+BRIDGE_FLATS = []
+for s_ in range(10):
+    (ax, az), (bx, bz) = bridge_points(s_)
+    d0 = math.hypot(ax, az); ux, uz = ax / d0, az / d0
+    for rr_ in range(int(d0), CR + 6, 3): BRIDGE_FLATS.append((ux * rr_, uz * rr_, 4))
 ENDS = [bridge_points(s)[0] for s in range(10)]
 
 # ======================================================================== 中央：天空城
 cur = base
-island(0, 0, CR, 38, amp=9, flats=[(0, 0, 44)] + [(ex, ez, 6) for ex, ez in ENDS])
+island(0, 0, CR, 38, amp=9, flats=[(0, 0, 44)] + [(ex, ez, 6) for ex, ez in ENDS] + BRIDGE_FLATS)
 for ex, ez in ENDS:
     for dx in range(-4, 5):
         for dz in range(-4, 5): RES.add((round(ex) + dx, round(ez) + dz))
+for x in range(-CR - 8, CR + 9):
+    for z in range(-CR - 8, CR + 9):
+        if math.hypot(x, z) > 36 and near_bridge(x, z, 3.5): RES.add((x, z))
 W_ = 34   # 城壁の外側
 STONE, STONE2, TRIM = 'minecraft:stone_bricks', 'minecraft:polished_andesite', 'minecraft:smooth_stone'
 # 中庭の床（石畳と赤い道）
@@ -366,6 +388,7 @@ for x in range(-W_, W_ + 1):
         if max(abs(x), abs(z)) == W_ and (x + z) % 2 == 0: put(x, 10, z, STONE)
         if max(abs(x), abs(z)) == W_: put(x, 10, z, STONE) if (x + z) % 2 == 0 else None
 for x in range(-W_ + 4, W_ - 3, 6):
+    if abs(x) <= 3: continue   # 1.9.236：門の前はあける（以前は垂れ幕が門をふさいでいた）
     for (zz, f) in ((-W_ + 3, 'south'), (W_ - 3, 'north')):
         box(x, 3, zz, x, 7, zz, 'minecraft:red_wool'); put(x, 2, zz, 'minecraft:red_carpet') if False else None
     for (xx, f) in ((-W_ + 3, 'east'), (W_ - 3, 'west')):
@@ -390,7 +413,10 @@ for (dx, dz) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
     put(gx - dx * 1, 7, gz - dz * 1, 'minecraft:bell[attachment=ceiling,facing=north]') if False else None
 # 角の大きな丸い塔（円錐の屋根）
 for (sx_, sz_) in ((-1, -1), (1, -1), (-1, 1), (1, 1)):
-    round_tower(sx_ * W_, sz_ * W_, 0, 20, 6, top='cone', roof='minecraft:deepslate_tiles', door=((-sx_, 0), (0, -sz_)), chest_top=False)
+    round_tower(sx_ * W_, sz_ * W_, 0, 20, 6, top='cone', roof='minecraft:deepslate_tiles', door=(), chest_top=False)
+    for t in range(3, 10):   # 1.9.236：中庭から塔へ斜めの通路（以前の入口は城壁の中に開いていて入れなかった）
+        for (ox, oz) in ((0, 0), (sx_, 0), (0, sz_)):
+            clear(sx_ * (W_ - t) + ox, 1, sz_ * (W_ - t) + oz, sx_ * (W_ - t) + ox, 3, sz_ * (W_ - t) + oz)
     for y in (10,):   # 城壁の通路から入る口
         clear(sx_ * W_ - sx_ * 6, 10, sz_ * W_, sx_ * W_ - sx_ * 6, 11, sz_ * W_); clear(sx_ * W_, 10, sz_ * W_ - sz_ * 6, sx_ * W_, 11, sz_ * W_ - sz_ * 6)
     chest(sx_ * W_ + sx_ * 2, 1, sz_ * W_, face='north'); box(sx_ * W_, 13, sz_ * W_ - 4, sx_ * W_ + 0, 13, sz_ * W_ + 4, 'minecraft:spruce_planks')
@@ -432,8 +458,8 @@ for (dx, dz) in ((0, K), (0, -K), (K, 0), (-K, 0)):
     clear(dx - (1 if dz else 0), 1, dz - (1 if dx else 0), dx + (1 if dz else 0), 4, dz + (1 if dx else 0))
     put(dx - (2 if dz else 0) * 1, 5, dz - (2 if dx else 0), 'minecraft:chiseled_stone_bricks')
 for fy in (7, 14, 23):
-    clear(-K + 2, fy, -K + 1, -K + 2, fy, -K + 1); clear(K - 2, fy, K - 1, K - 2, fy, K - 1)
-for y in range(1, 24): put(-K + 2, y, -K + 1, 'minecraft:ladder[facing=south]'); put(K - 2, y, K - 1, 'minecraft:ladder[facing=north]')
+    clear(-6, fy, -K + 1, -6, fy, -K + 1); clear(6, fy, K - 1, 6, fy, K - 1)   # 1.9.236：はしごは壁の中ほど（角の尖塔の床に突き当たらない）
+for y in range(1, 24): put(-6, y, -K + 1, 'minecraft:ladder[facing=south]'); put(6, y, K - 1, 'minecraft:ladder[facing=north]')
 box(-1, 1, -1, 1, 1, 1, 'minecraft:red_carpet')
 for y in range(15, 23): put(0, y, 0, 'minecraft:iron_chain[axis=y]')   # 吹き抜けのシャンデリア
 box(-1, 14, -1, 1, 14, 1, 'minecraft:gold_block'); [put(x, 13, z, 'minecraft:lantern[hanging=true]') for (x, z) in ((-1, -1), (1, -1), (-1, 1), (1, 1))]
@@ -454,14 +480,14 @@ for _ in range(70):
     s = spot(rr0, 0, 0, 40, CR - 6, need_top='minecraft:grass_block')
     if not s: continue
     x, g, z = s
-    if any(math.hypot(x - ex, z - ez) < 8 for ex, ez in ENDS): continue
+    if near_bridge(x, z): continue
     v = rr0.random()
     if v < 0.45: tree_round(x, z, g, 4 + int(rr0.random() * 3), rad=2 + int(rr0.random() * 2))
     elif v < 0.6: tree_cherry(x, z, g, 4)
     else: put(x, g + 1, z, str(rr0.choice(['minecraft:poppy', 'minecraft:cornflower', 'minecraft:oxeye_daisy', 'minecraft:short_grass', 'minecraft:short_grass'])))
 for k in range(6):
     a = math.radians(k * 60 + 30); x0, z0 = round(math.cos(a) * 50), round(math.sin(a) * 50)
-    if any(math.hypot(x0 - ex, z0 - ez) < 12 for ex, ez in ENDS): continue
+    if near_bridge(x0, z0, 12): continue
     g = gy(x0, z0)
     if g is None: continue
     house_timber(x0 - 3, z0 - 2, g, 7, 5, chests=1, roof=('minecraft:spruce_stairs', 'minecraft:spruce_planks') if k % 2 else ('minecraft:dark_oak_stairs', 'minecraft:dark_oak_planks'))
@@ -499,7 +525,7 @@ def isle(key, name, r):
     def deco(fn): ISLES.append((key, name, r, fn)); return fn
     return deco
 
-def pad(x1, z1, x2, z2, y=None, top=None, fill='minecraft:stone', margin=1, ymax=None):
+def pad(x1, z1, x2, z2, y=None, top=None, fill='minecraft:stone', margin=2, ymax=None):
     """建物の敷地を平らに均す（段）。y を与えなければ敷地の地面の高さの中央値。高い所は削り、低い所は埋める。地面の高さを返す。"""
     cells = [(x, z) for x in range(x1 - margin, x2 + margin + 1) for z in range(z1 - margin, z2 + margin + 1)]
     gs = sorted(gy(x, z) for x, z in cells if gy(x, z) is not None)
@@ -565,13 +591,18 @@ def house_fine(x, z, y0, w, d, h=4, wall='minecraft:white_terracotta', frame='mi
     if ex or ez:   # 張り出しの下の持ち送り
         for xx in range(X1, X2 + 1, 2):
             for zz in (Z1, Z2):
-                if (xx, zz) != (X1, Z1) and free(xx, y0 + 2, zz): put(xx, y0 + 2, zz, 'minecraft:dark_oak_fence')
+                if (xx, zz) == (X1, Z1) or not free(xx, y0 + 2, zz): continue
+                if abs(xx - (x + w // 2)) <= 1 and ((door == 's' and zz == Z2) or (door == 'n' and zz == Z1)): continue   # 入口の前
+                put(xx, y0 + 2, zz, 'minecraft:dark_oak_fence')
+        for zz in range(Z1, Z2 + 1, 2):
+            for xx in (X1, X2):
+                if ex and abs(zz - (z + d // 2)) <= 1 and ((door == 'e' and xx == X2) or (door == 'w' and xx == X1)): continue
     top = y0 + 3 + h - 2
     hollow(X1, top + 1, Z1, X2, top + 1, Z2, 'minecraft:stripped_dark_oak_log[axis=x]' if axis == 'x' else 'minecraft:stripped_dark_oak_log[axis=z]')
     box(X1 + 1, top + 1, Z1 + 1, X2 - 1, top + 1, Z2 - 1, 'minecraft:spruce_planks')
     gable(X1, Z1, top + 1, X2 - X1 + 1, Z2 - Z1 + 1, roof[0], roof[1], axis, wall)
     # 窓（1階・2階）と花台
-    for xx in range(x + 1, x + w - 1, 2):
+    for xx in range(x + 2, x + w - 1, 2):   # 1.9.236：x+1 ははしごの裏なので窓にしない
         put(xx, y0 + 2, z, 'minecraft:glass_pane'); put(xx, y0 + 2, z + d - 1, 'minecraft:glass_pane')
     for xx in range(X1 + 1, X2, 2):
         for (zz, oz) in ((Z1, -1), (Z2, 1)):
@@ -585,6 +616,12 @@ def house_fine(x, z, y0, w, d, h=4, wall='minecraft:white_terracotta', frame='mi
     elif door == 'e': clear(x + w - 1, y0 + 1, mz, x + w - 1, y0 + 2, mz)
     else: clear(x, y0 + 1, mz, x, y0 + 2, mz)
     clear(x + 1, y0 + 3, z + 1, x + 1, y0 + 3, z + 1); box(x + 1, y0 + 1, z + 1, x + 1, y0 + 3, z + 1, 'minecraft:ladder[facing=south]')
+    # 入口の前（外へ3マス）を、床の高さで歩けるように空ける
+    odx, odz, ox0, oz0 = {'s': (0, 1, mx, z + d - 1), 'n': (0, -1, mx, z), 'e': (1, 0, x + w - 1, mz), 'w': (-1, 0, x, mz)}[door]
+    for k_ in (1, 2, 3):
+        cx_, cz_ = ox0 + odx * k_, oz0 + odz * k_
+        clear(cx_, y0 + 1, cz_, cx_, y0 + 3, cz_)
+        if free(cx_, y0, cz_): put(cx_, y0, cz_, 'minecraft:cobblestone')
     put(mx, top, mz, 'minecraft:lantern[hanging=true]'); put(mx, y0 + 3, mz + (1 if mz + 1 < z + d - 1 else 0), 'minecraft:lantern[hanging=true]') if False else None
     box(x + w - 2, top + 1, z + d - 2, x + w - 2, top + (min(X2 - X1, Z2 - Z1) + 1) // 2 + 3, z + d - 2, 'minecraft:bricks')
     put(x + w - 2, top + (min(X2 - X1, Z2 - Z1) + 1) // 2 + 4, z + d - 2, 'minecraft:campfire[lit=false]') if False else None
@@ -903,7 +940,7 @@ def b_ship(rr, r):
     for z in (-3, 3):
         for x in range(-L2 + 3, -L2 + 9, 2): put(x, 3, z, 'minecraft:glass_pane')
     clear(-L2 + 9, 1, 0, -L2 + 9, 2, 0); hollow(-L2 + 2, 7, -2, -L2 + 6, 9, 2, 'minecraft:dark_oak_planks'); box(-L2 + 2, 10, -2, -L2 + 6, 10, 2, 'minecraft:spruce_slab[type=bottom]')
-    box(-L2 + 8, 1, -2, -L2 + 8, 6, -2, 'minecraft:ladder[facing=east]'); clear(-L2 + 6, 7, 0, -L2 + 6, 8, 0)
+    clear(-L2 + 3, 6, 0, -L2 + 3, 6, 0); box(-L2 + 3, 1, 0, -L2 + 3, 6, 0, 'minecraft:ladder[facing=east]'); clear(-L2 + 6, 7, 0, -L2 + 6, 8, 0)   # 1.9.236：はしごは船尾の壁（x=-L2+2）に付ける
     chest(-L2 + 4, 1, -2, face='south'); chest(-L2 + 4, 7, 1, rich=True, face='north')
     put(-L2 + 10, 1, 0, 'minecraft:dark_oak_fence'); put(-L2 + 10, 2, 0, 'minecraft:spruce_trapdoor[facing=east,half=top,open=false]')
     # マスト3本と帆・見張り台・旗
@@ -962,7 +999,10 @@ def b_balloon(rr, r):
             if d <= 5.4: put(x, -12, z, 'minecraft:spruce_planks')
             if d <= 3.4: put(x, -13, z, 'minecraft:dark_oak_planks')
             if 4.6 <= d <= 5.4: put(x, -11, z, 'minecraft:spruce_fence')
-    box(6, -11, 0, 6, -1, 0, 'minecraft:ladder[facing=east]'); clear(6, 0, 0, 6, 0, 0); put(6, -12, 0, 'minecraft:spruce_planks'); put(5, -11, 0, 'minecraft:air')
+    # 1.9.236：はしごは x=12（支えの柱 x=11、上は高い甲板の外）。吊りかごから渡り板で行く
+    box(11, -11, 0, 11, -1, 0, 'minecraft:stripped_mangrove_log'); box(12, -11, 0, 12, -1, 0, 'minecraft:ladder[facing=east]'); clear(12, 0, 0, 12, 0, 0)
+    box(5, -12, -1, 12, -12, 1, 'minecraft:spruce_planks'); clear(5, -11, 0, 5, -10, 0)
+    for xx in range(6, 13): put(xx, -11, -1, 'minecraft:spruce_fence'); put(xx, -11, 1, 'minecraft:spruce_fence')
     for (x, z) in ((-4, 0), (4, 0), (0, -4), (0, 4)): box(x, -11, z, x, -2, z, 'minecraft:dark_oak_fence')
     chest(-2, -11, 2, face='north')
     # 気球（飾り）と綱。ドームの中に収める

@@ -10,7 +10,7 @@ scoreboard players set #localc oa.map2 0
 scoreboard players set #localo oa.map2 0
 scoreboard players set #expectedc oa.map2 0
 scoreboard players set #expectedo oa.map2 0
-execute positioned ~58 ~1 ~59 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:marker ~ ~ ~ {Tags:["oa.gim","oa.gim_grav","oa.gim_grav_9"]}
+execute positioned ~58 ~1 ~59 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:marker ~ ~ ~ {Tags:["oa.gim","oa.gim_grav","oa.gim_grav_28"]}
 execute if score #sv1 oa.map2 matches 0 run scoreboard players add #expectedc oa.map2 6
 execute if score #sv1 oa.map2 matches 0 run scoreboard players add #expectedo oa.map2 5
 execute if score #sv1 oa.map2 matches 0 positioned ~59 ~1 ~67 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1

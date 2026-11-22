@@ -423,87 +423,87 @@ execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-7 ~-9 ~-71 ~-7 ~1 minecr
 execute if score #sv4 oa.map2 matches 0 run setblock ~-76 ~-6 ~-11 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-76 ~-3 ~-11 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-74 ~-6 ~-10 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-77 ~-6 ~-10 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-79 ~-6 ~-10 ~-78 ~-6 ~-10 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-76 ~-6 ~-10 ~-75 ~-6 ~-10 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-77 ~-6 ~-10 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-73 ~-6 ~-10 ~-73 ~-6 ~-9 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-78 ~-6 ~-9 ~-74 ~-6 ~-9 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-6 ~-9 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run fill ~-78 ~-6 ~-9 ~-74 ~-6 ~-9 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-6 ~-9 ~-79 ~-6 ~-9 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-6 ~-8 ~-80 ~-6 ~-8 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-79 ~-6 ~-8 ~-73 ~-6 ~-8 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-72 ~-6 ~-8 ~-71 ~-6 ~-8 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-82 ~-6 ~-7 ~-81 ~-6 ~-7 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run setblock ~-73 ~-6 ~-7 minecraft:amethyst_cluster[facing=up]
+execute if score #sv4 oa.map2 matches 0 run setblock ~-80 ~-6 ~-7 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run setblock ~-79 ~-6 ~-7 minecraft:amethyst_cluster[facing=up]
 execute if score #sv4 oa.map2 matches 0 run fill ~-78 ~-6 ~-7 ~-74 ~-6 ~-7 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-6 ~-7 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-82 ~-6 ~-7 ~-81 ~-6 ~-7 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-71 ~-6 ~-7 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run setblock ~-73 ~-6 ~-7 minecraft:amethyst_cluster[facing=up]
-execute if score #sv4 oa.map2 matches 0 run setblock ~-79 ~-6 ~-7 minecraft:amethyst_cluster[facing=up]
-execute if score #sv4 oa.map2 matches 0 run setblock ~-80 ~-6 ~-7 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-70 ~-6 ~-7 ~-70 ~-6 ~-6 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-73 ~-6 ~-6 ~-71 ~-6 ~-6 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run setblock ~-74 ~-6 ~-6 minecraft:chest[facing=north]
-execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-6 ~-6 ~-75 ~-6 ~-6 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run setblock ~-82 ~-6 ~-6 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-6 ~-5 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-6 ~-5 ~-71 ~-6 ~-5 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-6 ~-6 ~-75 ~-6 ~-6 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run setblock ~-82 ~-6 ~-5 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run setblock ~-78 ~-6 ~-4 minecraft:chest[facing=north]
-execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-6 ~-4 ~-79 ~-6 ~-4 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-6 ~-5 ~-71 ~-6 ~-5 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-6 ~-5 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-83 ~-6 ~-4 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-83 ~-3 ~-4 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run fill ~-77 ~-6 ~-4 ~-71 ~-6 ~-4 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run setblock ~-78 ~-6 ~-4 minecraft:chest[facing=north]
+execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-6 ~-4 ~-79 ~-6 ~-4 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-70 ~-6 ~-4 ~-69 ~-6 ~-4 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-77 ~-6 ~-4 ~-71 ~-6 ~-4 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-82 ~-6 ~-4 ~-82 ~-6 ~-3 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-6 ~-3 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-6 ~-3 ~-71 ~-6 ~-2 minecraft:cave_air
-execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-6 ~-2 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-82 ~-6 ~-2 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run fill ~-82 ~-6 ~-1 ~-81 ~-6 ~-1 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-6 ~-1 minecraft:cave_air
-execute if score #sv4 oa.map2 matches 0 run setblock ~-71 ~-6 ~-1 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-6 ~-2 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-73 ~-6 ~-1 minecraft:amethyst_cluster[facing=up]
-execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-6 ~-1 ~-74 ~-6 ~-1 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-70 ~-6 ~-1 ~-70 ~-5 ~-1 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-79 ~-6 ~0 ~-73 ~-6 ~0 minecraft:cave_air
-execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-6 ~0 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-6 ~-1 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-82 ~-6 ~-1 ~-81 ~-6 ~-1 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-6 ~-1 ~-74 ~-6 ~-1 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run setblock ~-71 ~-6 ~-1 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-81 ~-6 ~0 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run fill ~-79 ~-6 ~0 ~-73 ~-6 ~0 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run setblock ~-71 ~-6 ~0 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-6 ~0 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-6 ~0 ~-80 ~-6 ~1 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-78 ~-6 ~1 ~-74 ~-6 ~1 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-6 ~1 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-79 ~-6 ~1 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-73 ~-6 ~1 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run fill ~-73 ~-6 ~2 ~-73 ~-5 ~2 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-78 ~-6 ~1 ~-74 ~-6 ~1 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run setblock ~-79 ~-6 ~1 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-74 ~-6 ~2 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run fill ~-79 ~-6 ~2 ~-78 ~-6 ~2 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-75 ~-6 ~2 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-77 ~-6 ~2 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-76 ~-6 ~2 ~-76 ~-1 ~2 minecraft:ladder[facing=north]
+execute if score #sv4 oa.map2 matches 0 run fill ~-79 ~-6 ~2 ~-78 ~-6 ~2 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-73 ~-6 ~2 ~-73 ~-5 ~2 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-76 ~-6 ~3 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-74 ~-5 ~-11 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-74 ~-2 ~-11 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-77 ~-5 ~-11 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-77 ~-2 ~-11 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-79 ~-5 ~-11 ~-78 ~-5 ~-11 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-79 ~-2 ~-11 ~-78 ~-2 ~-11 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-76 ~-5 ~-11 ~-75 ~-5 ~-11 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-76 ~-2 ~-11 ~-75 ~-2 ~-11 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-77 ~-5 ~-11 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run setblock ~-77 ~-2 ~-11 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-73 ~-5 ~-11 ~-73 ~-5 ~-10 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-78 ~-5 ~-10 ~-74 ~-5 ~-10 minecraft:cave_air
-execute if score #sv4 oa.map2 matches 0 run fill ~-78 ~-1 ~-10 ~-74 ~-1 ~-10 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-5 ~-10 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-2 ~-10 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run fill ~-78 ~-5 ~-10 ~-74 ~-5 ~-10 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-78 ~-1 ~-10 ~-74 ~-1 ~-10 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-5 ~-10 ~-79 ~-5 ~-10 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-5 ~-9 ~-72 ~-1 ~-9 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run setblock ~-71 ~-5 ~-9 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-81 ~-5 ~-9 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-2 ~-9 ~-81 ~-1 ~-9 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-5 ~-9 ~-72 ~-1 ~-9 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run setblock ~-82 ~-5 ~-8 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-82 ~-2 ~-8 ~-82 ~-1 ~-8 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-70 ~-5 ~-8 ~-70 ~-5 ~-7 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-5 ~-8 ~-71 ~-5 ~-7 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-1 ~-8 ~-71 ~-1 ~-7 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-70 ~-5 ~-8 ~-70 ~-5 ~-7 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-83 ~-5 ~-7 ~-82 ~-5 ~-7 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-69 ~-5 ~-7 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-69 ~-2 ~-7 minecraft:budding_amethyst
@@ -521,41 +521,41 @@ execute if score #sv4 oa.map2 matches 0 run setblock ~-69 ~-5 ~-1 minecraft:budd
 execute if score #sv4 oa.map2 matches 0 run setblock ~-69 ~-2 ~-1 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-5 ~-1 ~-71 ~-5 ~0 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-1 ~-1 ~-71 ~-1 ~0 minecraft:cave_air
-execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-5 ~0 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-2 ~0 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-82 ~-5 ~0 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-82 ~-2 ~0 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-5 ~0 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-2 ~0 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-5 ~1 ~-72 ~-1 ~1 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run setblock ~-71 ~-5 ~1 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-71 ~-2 ~1 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-81 ~-5 ~1 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-5 ~1 ~-72 ~-1 ~1 minecraft:cave_air
-execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-5 ~2 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-2 ~2 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run fill ~-75 ~-5 ~2 ~-74 ~-5 ~2 minecraft:cave_air
-execute if score #sv4 oa.map2 matches 0 run fill ~-75 ~-1 ~2 ~-74 ~-1 ~2 minecraft:cave_air
-execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-5 ~2 ~-79 ~-5 ~2 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-78 ~-5 ~2 ~-77 ~-5 ~2 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-78 ~-1 ~2 ~-77 ~-1 ~2 minecraft:cave_air
-execute if score #sv4 oa.map2 matches 0 run fill ~-78 ~-5 ~3 ~-77 ~-5 ~3 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-78 ~-2 ~3 ~-77 ~-2 ~3 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-5 ~2 ~-79 ~-5 ~2 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-75 ~-5 ~2 ~-74 ~-5 ~2 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-75 ~-1 ~2 ~-74 ~-1 ~2 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-5 ~2 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-2 ~2 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-75 ~-5 ~3 ~-74 ~-5 ~3 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-75 ~-2 ~3 ~-74 ~-2 ~3 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-79 ~-5 ~3 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run setblock ~-79 ~-2 ~3 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-73 ~-5 ~3 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-73 ~-2 ~3 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-79 ~-5 ~3 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-79 ~-2 ~3 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-76 ~-5 ~3 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-76 ~-2 ~3 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run fill ~-78 ~-5 ~3 ~-77 ~-5 ~3 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-78 ~-2 ~3 ~-77 ~-2 ~3 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-74 ~-4 ~-11 ~-73 ~-4 ~-11 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-74 ~-1 ~-11 ~-73 ~-1 ~-11 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-4 ~-11 ~-79 ~-4 ~-11 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-77 ~-4 ~-11 ~-76 ~-4 ~-11 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-77 ~-1 ~-11 ~-76 ~-1 ~-11 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run setblock ~-78 ~-4 ~-11 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-78 ~-1 ~-11 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-75 ~-4 ~-11 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-75 ~-1 ~-11 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-4 ~-11 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run setblock ~-78 ~-4 ~-11 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run setblock ~-78 ~-1 ~-11 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-4 ~-11 ~-79 ~-4 ~-11 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-74 ~-4 ~-11 ~-73 ~-4 ~-11 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-74 ~-1 ~-11 ~-73 ~-1 ~-11 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-77 ~-4 ~-11 ~-76 ~-4 ~-11 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-77 ~-1 ~-11 ~-76 ~-1 ~-11 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-4 ~-10 ~-80 ~-4 ~-10 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-79 ~-4 ~-10 ~-73 ~-2 ~-10 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-72 ~-4 ~-10 ~-71 ~-4 ~-10 minecraft:amethyst_block
@@ -563,9 +563,9 @@ execute if score #sv4 oa.map2 matches 0 run fill ~-82 ~-4 ~-9 ~-81 ~-4 ~-9 minec
 execute if score #sv4 oa.map2 matches 0 run setblock ~-71 ~-4 ~-9 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-71 ~-1 ~-9 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-70 ~-4 ~-9 ~-70 ~-4 ~-8 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-4 ~-8 ~-71 ~-2 ~-8 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-83 ~-4 ~-8 ~-82 ~-4 ~-8 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-69 ~-4 ~-8 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-4 ~-8 ~-71 ~-2 ~-8 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run setblock ~-83 ~-4 ~-7 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-83 ~-1 ~-7 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-69 ~-4 ~-7 ~-69 ~-4 ~-6 minecraft:amethyst_block
@@ -583,41 +583,41 @@ execute if score #sv4 oa.map2 matches 0 run fill ~-83 ~-4 ~-2 ~-83 ~-4 ~-1 minec
 execute if score #sv4 oa.map2 matches 0 run fill ~-83 ~-1 ~-2 ~-83 ~-1 ~-1 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-69 ~-4 ~-1 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-69 ~-1 ~-1 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-83 ~-4 ~0 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run fill ~-70 ~-4 ~0 ~-69 ~-4 ~0 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-4 ~0 ~-71 ~-2 ~0 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-70 ~-4 ~0 ~-69 ~-4 ~0 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run setblock ~-83 ~-4 ~0 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-82 ~-4 ~0 ~-82 ~-4 ~1 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-71 ~-4 ~1 ~-70 ~-4 ~1 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-81 ~-4 ~1 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-81 ~-1 ~1 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run fill ~-75 ~-4 ~2 ~-73 ~-2 ~2 minecraft:cave_air
-execute if score #sv4 oa.map2 matches 0 run fill ~-79 ~-4 ~2 ~-77 ~-2 ~2 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-71 ~-4 ~1 ~-70 ~-4 ~1 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-72 ~-4 ~2 ~-71 ~-4 ~2 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-4 ~2 ~-80 ~-4 ~2 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-75 ~-4 ~2 ~-73 ~-2 ~2 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-79 ~-4 ~2 ~-77 ~-2 ~2 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run setblock ~-74 ~-4 ~3 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-74 ~-1 ~3 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-80 ~-4 ~3 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run fill ~-73 ~-4 ~3 ~-72 ~-4 ~3 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run setblock ~-77 ~-4 ~3 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-77 ~-1 ~3 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-79 ~-4 ~3 ~-78 ~-4 ~3 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-79 ~-1 ~3 ~-78 ~-1 ~3 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-76 ~-4 ~3 ~-75 ~-4 ~3 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-76 ~-1 ~3 ~-75 ~-1 ~3 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-73 ~-4 ~3 ~-72 ~-4 ~3 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-80 ~-4 ~3 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run setblock ~-77 ~-4 ~3 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run setblock ~-77 ~-1 ~3 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run fill ~-75 ~-3 ~-11 ~-74 ~-3 ~-11 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run setblock ~-73 ~-3 ~-11 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-79 ~-3 ~-11 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-78 ~-3 ~-11 ~-77 ~-3 ~-11 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-80 ~-3 ~-11 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-75 ~-3 ~-11 ~-74 ~-3 ~-11 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-79 ~-3 ~-11 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run setblock ~-73 ~-3 ~-11 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-72 ~-3 ~-11 ~-72 ~-3 ~-10 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-71 ~-3 ~-10 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-81 ~-3 ~-10 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-80 ~-3 ~-10 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-71 ~-3 ~-10 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-81 ~-3 ~-9 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-71 ~-3 ~-9 ~-70 ~-3 ~-9 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-82 ~-3 ~-9 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-81 ~-3 ~-9 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-3 ~-8 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-82 ~-3 ~-8 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-3 ~-8 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-83 ~-3 ~-8 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-69 ~-3 ~-8 ~-69 ~-3 ~-7 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-83 ~-3 ~-7 minecraft:budding_amethyst
@@ -632,30 +632,30 @@ execute if score #sv4 oa.map2 matches 0 run fill ~-83 ~-3 ~0 ~-82 ~-3 ~0 minecra
 execute if score #sv4 oa.map2 matches 0 run setblock ~-69 ~-3 ~0 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-3 ~0 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-1 ~0 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-3 ~1 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-82 ~-3 ~1 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-3 ~1 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-71 ~-3 ~1 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-71 ~-1 ~1 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-81 ~-3 ~1 ~-81 ~-3 ~2 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-71 ~-3 ~2 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-3 ~2 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-1 ~2 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-80 ~-3 ~2 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-71 ~-3 ~2 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run fill ~-74 ~-3 ~3 ~-73 ~-3 ~3 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-3 ~3 ~-79 ~-3 ~3 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-77 ~-3 ~3 ~-76 ~-3 ~3 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run setblock ~-78 ~-3 ~3 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-75 ~-3 ~3 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-3 ~3 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run setblock ~-78 ~-3 ~3 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-3 ~3 ~-79 ~-3 ~3 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-74 ~-3 ~3 ~-73 ~-3 ~3 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-77 ~-3 ~3 ~-76 ~-3 ~3 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-73 ~-2 ~-11 ~-72 ~-2 ~-11 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-80 ~-2 ~-11 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-2 ~-10 ~-80 ~-1 ~-10 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run fill ~-73 ~-2 ~-11 ~-72 ~-2 ~-11 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-81 ~-2 ~-10 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-2 ~-10 ~-80 ~-1 ~-10 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-71 ~-2 ~-10 ~-71 ~-2 ~-9 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-2 ~-9 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-82 ~-2 ~-9 minecraft:budding_amethyst
-execute if score #sv4 oa.map2 matches 0 run setblock ~-83 ~-2 ~-8 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-2 ~-9 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-70 ~-2 ~-8 ~-69 ~-2 ~-8 minecraft:amethyst_block
+execute if score #sv4 oa.map2 matches 0 run setblock ~-83 ~-2 ~-8 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-83 ~-2 ~-7 ~-83 ~-2 ~-6 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run fill ~-82 ~-2 ~-7 ~-70 ~-2 ~-6 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run setblock ~-69 ~-2 ~-6 minecraft:amethyst_block
@@ -672,23 +672,23 @@ execute if score #sv4 oa.map2 matches 0 run fill ~-80 ~-2 ~2 ~-80 ~-2 ~3 minecra
 execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-2 ~3 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-79 ~-1 ~-11 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-72 ~-1 ~-10 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-79 ~-1 ~-10 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-73 ~-1 ~-10 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-79 ~-1 ~-10 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-1 ~-8 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-1 ~-7 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-82 ~-1 ~-7 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-1 ~-7 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run fill ~-82 ~-1 ~-6 ~-70 ~-1 ~-6 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-84 ~-1 ~-5 ~-68 ~-1 ~-3 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-82 ~-1 ~-2 ~-70 ~-1 ~-2 minecraft:cave_air
-execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-1 ~-1 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-82 ~-1 ~-1 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-70 ~-1 ~-1 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-82 ~-1 ~0 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-80 ~-1 ~2 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run setblock ~-79 ~-1 ~2 minecraft:budding_amethyst
 execute if score #sv4 oa.map2 matches 0 run setblock ~-73 ~-1 ~2 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-79 ~-1 ~2 minecraft:budding_amethyst
+execute if score #sv4 oa.map2 matches 0 run setblock ~-80 ~-1 ~2 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-73 ~-1 ~3 minecraft:amethyst_block
-execute if score #sv4 oa.map2 matches 0 run fill ~-69 ~0 ~-5 ~-67 ~0 ~-3 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-87 ~0 ~-5 ~-83 ~0 ~-3 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-69 ~0 ~-5 ~-67 ~0 ~-3 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run setblock ~-76 ~0 ~2 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run setblock ~-79 ~1 ~-13 minecraft:end_stone
 execute if score #sv4 oa.map2 matches 0 run setblock ~-78 ~1 ~-12 minecraft:coal_ore
@@ -696,8 +696,8 @@ execute if score #sv4 oa.map2 matches 0 run fill ~-68 ~1 ~-10 ~-68 ~3 ~-10 minec
 execute if score #sv4 oa.map2 matches 0 run setblock ~-75 ~1 ~-9 minecraft:chest[facing=north]
 execute if score #sv4 oa.map2 matches 0 run setblock ~-82 ~1 ~-6 minecraft:end_stone
 execute if score #sv4 oa.map2 matches 0 run setblock ~-81 ~1 ~-5 minecraft:coal_ore
-execute if score #sv4 oa.map2 matches 0 run fill ~-87 ~1 ~-5 ~-84 ~1 ~-3 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-68 ~1 ~-5 ~-67 ~1 ~-3 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-87 ~1 ~-5 ~-84 ~1 ~-3 minecraft:cave_air
 execute if score #sv4 oa.map2 matches 0 run fill ~-85 ~1 ~0 ~-85 ~3 ~0 minecraft:amethyst_block
 execute if score #sv4 oa.map2 matches 0 run setblock ~-82 ~1 ~0 minecraft:chest[facing=north]
 execute if score #sv4 oa.map2 matches 0 run setblock ~-80 ~1 ~3 minecraft:end_stone

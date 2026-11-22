@@ -1,20 +1,20 @@
 # 生成: scripts/build_map_sky.py（直接編集しない）。候補地 6 の中央への橋（ディメンション oa:br_sky で実行）
-fill -69 76 -71 -68 78 -71 minecraft:polished_andesite
 fill -68 76 -70 -68 78 -70 minecraft:polished_andesite
-fill -71 76 -69 -71 78 -69 minecraft:polished_andesite
-fill -71 76 -68 -70 78 -68 minecraft:polished_andesite
-fill -62 76 -64 -62 78 -64 minecraft:polished_andesite
+fill -67 76 -69 -67 78 -69 minecraft:polished_andesite
+fill -70 76 -68 -70 78 -68 minecraft:polished_andesite
+fill -69 76 -67 -69 78 -67 minecraft:polished_andesite
 fill -61 76 -63 -61 78 -63 minecraft:polished_andesite
-fill -64 76 -62 -64 78 -62 minecraft:polished_andesite
+fill -60 76 -62 -60 78 -62 minecraft:polished_andesite
 fill -63 76 -61 -63 78 -61 minecraft:polished_andesite
-fill -55 76 -57 -55 78 -57 minecraft:polished_andesite
-fill -54 76 -56 -53 78 -56 minecraft:polished_andesite
-fill -57 76 -55 -57 78 -55 minecraft:polished_andesite
-fill -56 76 -54 -56 78 -53 minecraft:polished_andesite
-fill -47 76 -50 -47 78 -49 minecraft:polished_andesite
+fill -62 76 -60 -62 78 -60 minecraft:polished_andesite
+fill -54 76 -56 -54 78 -56 minecraft:polished_andesite
+fill -53 76 -55 -53 78 -55 minecraft:polished_andesite
+fill -56 76 -54 -56 78 -54 minecraft:polished_andesite
+fill -55 76 -53 -55 78 -53 minecraft:polished_andesite
+fill -47 76 -49 -46 78 -49 minecraft:polished_andesite
 fill -46 76 -48 -46 78 -48 minecraft:polished_andesite
-fill -50 76 -47 -49 78 -47 minecraft:polished_andesite
-fill -48 76 -46 -48 78 -46 minecraft:polished_andesite
+fill -49 76 -47 -49 78 -47 minecraft:polished_andesite
+fill -49 76 -46 -48 78 -46 minecraft:polished_andesite
 fill -72 79 -73 -71 79 -73 minecraft:polished_andesite
 fill -73 79 -72 -70 79 -72 minecraft:polished_andesite
 fill -73 79 -71 -68 79 -71 minecraft:polished_andesite
@@ -32,24 +32,24 @@ fill -62 79 -60 -57 79 -60 minecraft:polished_andesite
 fill -61 79 -59 -57 79 -59 minecraft:polished_andesite
 fill -61 79 -58 -56 79 -58 minecraft:polished_andesite
 fill -60 79 -57 -55 79 -57 minecraft:polished_andesite
-fill -58 79 -56 -53 79 -56 minecraft:polished_andesite
+fill -58 79 -56 -54 79 -56 minecraft:polished_andesite
 fill -57 79 -55 -52 79 -55 minecraft:polished_andesite
-fill -56 79 -54 -52 79 -54 minecraft:polished_andesite
-fill -56 79 -53 -51 79 -53 minecraft:polished_andesite
+fill -56 79 -54 -51 79 -54 minecraft:polished_andesite
+fill -55 79 -53 -51 79 -53 minecraft:polished_andesite
 fill -55 79 -52 -50 79 -52 minecraft:polished_andesite
-fill -53 79 -51 -48 79 -51 minecraft:polished_andesite
+fill -54 79 -51 -49 79 -51 minecraft:polished_andesite
 fill -52 79 -50 -47 79 -50 minecraft:polished_andesite
-fill -51 79 -49 -47 79 -49 minecraft:polished_andesite
-fill -51 79 -48 -46 79 -48 minecraft:polished_andesite
+fill -51 79 -49 -46 79 -49 minecraft:polished_andesite
+fill -50 79 -48 -46 79 -48 minecraft:polished_andesite
 fill -50 79 -47 -45 79 -47 minecraft:polished_andesite
-fill -48 79 -46 -44 79 -46 minecraft:polished_andesite
-fill -47 79 -45 -42 79 -45 minecraft:polished_andesite
+fill -49 79 -46 -44 79 -46 minecraft:polished_andesite
+fill -47 79 -45 -43 79 -45 minecraft:polished_andesite
 fill -46 79 -44 -41 79 -44 minecraft:polished_andesite
 fill -45 79 -43 -41 79 -43 minecraft:polished_andesite
-fill -45 79 -42 -40 79 -42 minecraft:polished_andesite
+fill -44 79 -42 -40 79 -42 minecraft:polished_andesite
 fill -44 79 -41 -39 79 -41 minecraft:polished_andesite
-fill -42 79 -40 -40 79 -40 minecraft:polished_andesite
-setblock -41 79 -39 minecraft:polished_andesite
+fill -42 79 -40 -39 79 -40 minecraft:polished_andesite
+fill -41 79 -39 -40 79 -39 minecraft:polished_andesite
 fill -71 80 -74 -70 80 -74 minecraft:stone_bricks
 fill -72 80 -73 -69 80 -73 minecraft:stone_bricks
 fill -73 80 -72 -68 80 -72 minecraft:stone_bricks
@@ -82,10 +82,11 @@ fill -50 80 -46 -42 80 -46 minecraft:stone_bricks
 fill -49 80 -45 -41 80 -45 minecraft:stone_bricks
 fill -48 80 -44 -40 80 -44 minecraft:stone_bricks
 fill -47 80 -43 -39 80 -43 minecraft:stone_bricks
-fill -46 80 -42 -39 80 -42 minecraft:stone_bricks
-fill -45 80 -41 -39 80 -41 minecraft:stone_bricks
-fill -44 80 -40 -40 80 -40 minecraft:stone_bricks
-fill -43 80 -39 -41 80 -39 minecraft:stone_bricks
+fill -46 80 -42 -38 80 -42 minecraft:stone_bricks
+fill -45 80 -41 -38 80 -41 minecraft:stone_bricks
+fill -44 80 -40 -39 80 -40 minecraft:stone_bricks
+fill -43 80 -39 -40 80 -39 minecraft:stone_bricks
+fill -42 80 -38 -41 80 -38 minecraft:stone_bricks
 fill -71 81 -74 -70 81 -74 minecraft:stone_brick_wall
 fill -70 81 -73 -69 81 -73 minecraft:stone_brick_wall
 fill -69 81 -72 -68 81 -72 minecraft:stone_brick_wall
@@ -147,18 +148,20 @@ fill -41 81 -44 -40 81 -44 minecraft:stone_brick_wall
 fill -48 81 -44 -47 81 -44 minecraft:stone_brick_wall
 fill -47 81 -43 -46 81 -43 minecraft:stone_brick_wall
 fill -40 81 -43 -39 81 -43 minecraft:stone_brick_wall
+fill -39 81 -42 -38 81 -42 minecraft:stone_brick_wall
 fill -46 81 -42 -45 81 -42 minecraft:stone_brick_wall
-setblock -39 81 -42 minecraft:stone_brick_wall
 fill -45 81 -41 -44 81 -41 minecraft:stone_brick_wall
+setblock -38 81 -41 minecraft:stone_brick_wall
 fill -44 81 -40 -43 81 -40 minecraft:stone_brick_wall
 fill -43 81 -39 -42 81 -39 minecraft:stone_brick_wall
-setblock -71 82 -74 minecraft:lantern
-setblock -74 82 -71 minecraft:lantern
-fill -64 82 -67 -63 82 -67 minecraft:lantern
-fill -67 82 -64 -67 82 -63 minecraft:lantern
-fill -57 82 -60 -56 82 -60 minecraft:lantern
-fill -60 82 -57 -60 82 -56 minecraft:lantern
-fill -50 82 -53 -49 82 -53 minecraft:lantern
-fill -53 82 -50 -53 82 -49 minecraft:lantern
-setblock -42 82 -46 minecraft:lantern
-setblock -46 82 -42 minecraft:lantern
+fill -42 81 -38 -41 81 -38 minecraft:stone_brick_wall
+fill -70 82 -74 -70 82 -73 minecraft:lantern
+fill -74 82 -70 -73 82 -70 minecraft:lantern
+fill -63 82 -67 -63 82 -66 minecraft:lantern
+fill -67 82 -63 -66 82 -63 minecraft:lantern
+fill -56 82 -60 -56 82 -59 minecraft:lantern
+fill -60 82 -56 -59 82 -56 minecraft:lantern
+setblock -49 82 -52 minecraft:lantern
+setblock -52 82 -49 minecraft:lantern
+fill -42 82 -45 -41 82 -45 minecraft:lantern
+fill -45 82 -42 -45 82 -41 minecraft:lantern

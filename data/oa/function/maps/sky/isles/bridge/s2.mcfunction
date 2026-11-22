@@ -1,18 +1,20 @@
 # 生成: scripts/build_map_sky.py（直接編集しない）。候補地 2 の中央への橋（ディメンション oa:br_sky で実行）
-fill 12 76 66 12 78 68 minecraft:polished_andesite
-fill 9 76 67 9 78 68 minecraft:polished_andesite
-fill 13 76 76 13 78 76 minecraft:polished_andesite
-fill 10 76 76 10 78 76 minecraft:polished_andesite
-fill 14 76 77 14 78 77 minecraft:polished_andesite
-fill 10 76 77 11 78 77 minecraft:polished_andesite
-fill 11 76 78 11 78 78 minecraft:polished_andesite
-fill 15 76 86 15 78 87 minecraft:polished_andesite
-fill 12 76 86 12 78 88 minecraft:polished_andesite
-fill 16 76 96 17 78 96 minecraft:polished_andesite
-fill 17 76 97 17 78 97 minecraft:polished_andesite
-fill 14 76 96 14 78 98 minecraft:polished_andesite
-fill 8 79 56 10 79 56 minecraft:polished_andesite
-fill 7 79 57 10 79 57 minecraft:polished_andesite
+fill 9 76 49 9 78 50 minecraft:polished_andesite
+fill 6 76 49 6 78 51 minecraft:polished_andesite
+fill 11 76 59 11 78 60 minecraft:polished_andesite
+fill 8 76 59 8 78 61 minecraft:polished_andesite
+fill 9 76 69 9 78 70 minecraft:polished_andesite
+fill 12 76 69 12 78 70 minecraft:polished_andesite
+fill 14 76 78 14 78 80 minecraft:polished_andesite
+fill 11 76 79 11 78 80 minecraft:polished_andesite
+fill 15 76 88 15 78 89 minecraft:polished_andesite
+fill 12 76 89 12 78 89 minecraft:polished_andesite
+fill 16 76 90 16 78 90 minecraft:polished_andesite
+fill 13 76 90 13 78 90 minecraft:polished_andesite
+fill 5 79 39 8 79 44 minecraft:polished_andesite
+fill 5 79 45 9 79 45 minecraft:polished_andesite
+fill 6 79 46 9 79 51 minecraft:polished_andesite
+fill 7 79 52 10 79 57 minecraft:polished_andesite
 fill 7 79 58 11 79 58 minecraft:polished_andesite
 fill 8 79 59 11 79 63 minecraft:polished_andesite
 fill 8 79 64 12 79 64 minecraft:polished_andesite
@@ -25,8 +27,11 @@ fill 12 79 84 15 79 89 minecraft:polished_andesite
 fill 13 79 90 16 79 95 minecraft:polished_andesite
 fill 13 79 96 17 79 96 minecraft:polished_andesite
 fill 14 79 97 17 79 101 minecraft:polished_andesite
-fill 8 80 56 11 80 56 minecraft:stone_bricks
-fill 6 80 57 11 80 57 minecraft:stone_bricks
+fill 4 80 39 9 80 44 minecraft:stone_bricks
+fill 4 80 45 10 80 45 minecraft:stone_bricks
+fill 5 80 46 10 80 50 minecraft:stone_bricks
+fill 5 80 51 11 80 51 minecraft:stone_bricks
+fill 6 80 52 11 80 57 minecraft:stone_bricks
 fill 6 80 58 12 80 58 minecraft:stone_bricks
 fill 7 80 59 12 80 63 minecraft:stone_bricks
 fill 7 80 64 13 80 64 minecraft:stone_bricks
@@ -41,8 +46,15 @@ fill 11 80 90 17 80 90 minecraft:stone_bricks
 fill 12 80 91 17 80 95 minecraft:stone_bricks
 fill 12 80 96 18 80 96 minecraft:stone_bricks
 fill 13 80 97 18 80 101 minecraft:stone_bricks
-fill 11 81 56 11 81 57 minecraft:stone_brick_wall
-setblock 6 81 57 minecraft:stone_brick_wall
+fill 9 81 39 9 81 44 minecraft:stone_brick_wall
+fill 4 81 39 4 81 44 minecraft:stone_brick_wall
+fill 9 81 45 10 81 45 minecraft:stone_brick_wall
+fill 4 81 45 5 81 45 minecraft:stone_brick_wall
+fill 10 81 46 10 81 50 minecraft:stone_brick_wall
+fill 5 81 46 5 81 51 minecraft:stone_brick_wall
+fill 10 81 51 11 81 51 minecraft:stone_brick_wall
+fill 6 81 52 6 81 57 minecraft:stone_brick_wall
+fill 11 81 52 11 81 57 minecraft:stone_brick_wall
 fill 6 81 58 7 81 58 minecraft:stone_brick_wall
 fill 12 81 58 12 81 63 minecraft:stone_brick_wall
 fill 7 81 59 7 81 64 minecraft:stone_brick_wall
@@ -56,21 +68,24 @@ fill 9 81 72 9 81 77 minecraft:stone_brick_wall
 fill 15 81 77 15 81 82 minecraft:stone_brick_wall
 fill 10 81 78 10 81 83 minecraft:stone_brick_wall
 fill 15 81 83 16 81 83 minecraft:stone_brick_wall
-fill 11 81 84 11 81 89 minecraft:stone_brick_wall
 fill 16 81 84 16 81 89 minecraft:stone_brick_wall
+fill 11 81 84 11 81 89 minecraft:stone_brick_wall
 fill 11 81 90 12 81 90 minecraft:stone_brick_wall
 fill 17 81 90 17 81 95 minecraft:stone_brick_wall
 fill 12 81 91 12 81 96 minecraft:stone_brick_wall
 fill 17 81 96 18 81 96 minecraft:stone_brick_wall
-fill 18 81 97 18 81 101 minecraft:stone_brick_wall
 fill 13 81 97 13 81 101 minecraft:stone_brick_wall
-setblock 12 82 61 minecraft:lantern
-setblock 7 82 62 minecraft:lantern
-setblock 14 82 71 minecraft:lantern
-setblock 9 82 72 minecraft:lantern
-setblock 15 82 81 minecraft:lantern
-setblock 10 82 82 minecraft:lantern
-setblock 17 82 91 minecraft:lantern
-setblock 12 82 92 minecraft:lantern
-setblock 18 82 101 minecraft:lantern
-setblock 13 82 101 minecraft:lantern
+fill 18 81 97 18 81 101 minecraft:stone_brick_wall
+setblock 9 82 44 minecraft:lantern
+fill 4 82 44 4 82 45 minecraft:lantern
+fill 11 82 53 11 82 54 minecraft:lantern
+fill 6 82 54 6 82 55 minecraft:lantern
+fill 12 82 63 12 82 64 minecraft:lantern
+setblock 7 82 64 minecraft:lantern
+setblock 8 82 65 minecraft:lantern
+fill 14 82 73 14 82 74 minecraft:lantern
+fill 9 82 74 9 82 75 minecraft:lantern
+fill 16 82 83 16 82 84 minecraft:lantern
+fill 11 82 84 11 82 85 minecraft:lantern
+fill 17 82 93 17 82 94 minecraft:lantern
+fill 12 82 94 12 82 95 minecraft:lantern

@@ -396,8 +396,8 @@ execute if score #sv5 oa.map2 matches 0 run setblock ~-56 ~1 ~-56 minecraft:ches
 execute if score #sv5 oa.map2 matches 0 run setblock ~-55 ~1 ~-55 minecraft:chest[facing=north]
 execute if score #sv5 oa.map2 matches 0 run setblock ~-53 ~1 ~-55 minecraft:chest[facing=north]
 execute if score #sv5 oa.map2 matches 0 run fill ~-51 ~1 ~-56 ~-51 ~3 ~-52 minecraft:purpur_block
-execute if score #sv5 oa.map2 matches 0 run fill ~-54 ~1 ~-51 ~-54 ~2 ~-51 minecraft:cave_air
 execute if score #sv5 oa.map2 matches 0 run fill ~-56 ~1 ~-51 ~-55 ~2 ~-51 minecraft:purpur_block
+execute if score #sv5 oa.map2 matches 0 run fill ~-54 ~1 ~-51 ~-54 ~2 ~-51 minecraft:cave_air
 execute if score #sv5 oa.map2 matches 0 run fill ~-53 ~1 ~-51 ~-51 ~2 ~-51 minecraft:purpur_block
 execute if score #sv5 oa.map2 matches 0 run fill ~-41 ~1 ~-49 ~-41 ~4 ~-49 minecraft:chorus_plant[up=true,down=true]
 execute if score #sv5 oa.map2 matches 0 run fill ~-41 ~8 ~-49 ~-41 ~10 ~-49 minecraft:chorus_plant[up=true,down=true]
