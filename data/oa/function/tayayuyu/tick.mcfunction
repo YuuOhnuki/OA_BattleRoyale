@@ -17,7 +17,7 @@ execute if score @s oa.gfire matches 20 run function oa:tayayuyu/fire_hit
 execute if score @s oa.gfire matches 1.. if score #vclock br.tmp matches 0 run particle minecraft:flame ~ ~0.7 ~ 0.3 0.6 0.3 0.01 8 normal @a[distance=..24]
 scoreboard players remove @s[scores={oa.gfire=1..}] oa.gfire 1
 scoreboard players remove @s[scores={oa.glift=1..}] oa.glift 1
-execute if score @s oa.glift matches 0 if entity @s[tag=oa.gacha_lift] if data entity @s active_effects[{id:"minecraft:levitation",amplifier:11}] run effect clear @s minecraft:levitation
+execute if score @s oa.glift matches 0 if entity @s[tag=oa.gacha_lift] if data entity @s active_effects[{id:"minecraft:levitation",amplifier:9}] run effect clear @s minecraft:levitation
 execute if score @s oa.glift matches 0 run tag @s remove oa.gacha_lift
 
 scoreboard players remove @s[scores={oa.gsize=1..}] oa.gsize 1

@@ -17,7 +17,7 @@ scoreboard players set @s oa.gmood 0
 scoreboard players set @s oa.gglow 0
 attribute @s minecraft:max_health modifier remove oa:gacha_hp
 attribute @s minecraft:movement_speed modifier remove oa:gacha_speed
-execute if entity @s[tag=oa.gacha_lift] if data entity @s active_effects[{id:"minecraft:levitation",amplifier:11}] run effect clear @s minecraft:levitation
+execute if entity @s[tag=oa.gacha_lift] if data entity @s active_effects[{id:"minecraft:levitation",amplifier:9}] run effect clear @s minecraft:levitation
 tag @s remove oa.gacha_lift
 scoreboard players set @s oa.ghp 0
 scoreboard players set @s oa.gspeed 0
