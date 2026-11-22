@@ -1502,6 +1502,8 @@ fill ~-10 ~8 ~11 ~7 ~8 ~11 minecraft:stone_bricks
 fill ~-10 ~15 ~11 ~7 ~15 ~11 minecraft:stone_bricks
 fill ~-2 ~8 ~32 ~2 ~8 ~32 minecraft:polished_andesite
 fill ~-1 ~8 ~33 ~1 ~8 ~34 minecraft:polished_andesite
+fill ~0 ~9 ~10 ~0 ~12 ~10 minecraft:red_wool
+fill ~0 ~16 ~10 ~0 ~19 ~10 minecraft:red_wool
 fill ~-24 ~9 ~32 ~-8 ~9 ~32 minecraft:smooth_stone
 fill ~-2 ~9 ~32 ~2 ~9 ~32 minecraft:smooth_stone
 fill ~-1 ~9 ~33 ~1 ~9 ~34 minecraft:smooth_stone
@@ -1525,6 +1527,7 @@ fill ~-6 ~14 ~35 ~-4 ~14 ~35 minecraft:smooth_stone
 fill ~4 ~14 ~35 ~6 ~14 ~35 minecraft:smooth_stone
 setblock ~-5 ~14 ~36 minecraft:smooth_stone
 setblock ~5 ~14 ~36 minecraft:smooth_stone
+setblock ~-9 ~15 ~8 minecraft:chest[facing=north]
 setblock ~6 ~15 ~35 minecraft:chest[facing=north]
 setblock ~-5 ~16 ~31 minecraft:stone_bricks
 setblock ~5 ~16 ~31 minecraft:stone_bricks

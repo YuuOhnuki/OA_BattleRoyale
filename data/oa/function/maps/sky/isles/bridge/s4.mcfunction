@@ -94,8 +94,8 @@ fill -74 81 40 -72 81 40 minecraft:stone_brick_wall
 fill -84 81 40 -83 81 40 minecraft:stone_brick_wall
 fill -75 81 41 -74 81 41 minecraft:stone_brick_wall
 fill -87 81 41 -85 81 41 minecraft:stone_brick_wall
-fill -78 81 42 -76 81 42 minecraft:stone_brick_wall
 fill -88 81 42 -87 81 42 minecraft:stone_brick_wall
+fill -78 81 42 -76 81 42 minecraft:stone_brick_wall
 fill -79 81 43 -78 81 43 minecraft:stone_brick_wall
 fill -91 81 43 -89 81 43 minecraft:stone_brick_wall
 fill -92 81 44 -91 81 44 minecraft:stone_brick_wall
@@ -106,12 +106,12 @@ fill -88 81 47 -86 81 47 minecraft:stone_brick_wall
 fill -89 81 48 -88 81 48 minecraft:stone_brick_wall
 setblock -90 81 49 minecraft:stone_brick_wall
 fill -57 82 26 -56 82 26 minecraft:lantern
-setblock -65 82 30 minecraft:lantern
 setblock -54 82 30 minecraft:lantern
+setblock -65 82 30 minecraft:lantern
 setblock -55 82 31 minecraft:lantern
 setblock -66 82 31 minecraft:lantern
-setblock -63 82 35 minecraft:lantern
 fill -75 82 35 -74 82 35 minecraft:lantern
+setblock -63 82 35 minecraft:lantern
 fill -72 82 39 -72 82 40 minecraft:lantern
 fill -84 82 40 -83 82 40 minecraft:lantern
 setblock -81 82 44 minecraft:lantern

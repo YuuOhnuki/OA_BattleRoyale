@@ -597,8 +597,8 @@ fill ~-10 ~0 ~61 ~-5 ~0 ~61 minecraft:grass_block
 fill ~-24 ~1 ~40 ~-20 ~1 ~40 minecraft:grass_block
 fill ~-24 ~1 ~41 ~-18 ~1 ~41 minecraft:grass_block
 fill ~-21 ~1 ~42 ~-16 ~1 ~42 minecraft:grass_block
-fill ~-19 ~1 ~43 ~-15 ~1 ~43 minecraft:grass_block
 fill ~2 ~1 ~43 ~2 ~4 ~43 minecraft:oak_log
+fill ~-19 ~1 ~43 ~-15 ~1 ~43 minecraft:grass_block
 fill ~-19 ~1 ~44 ~-13 ~1 ~44 minecraft:grass_block
 fill ~-18 ~1 ~45 ~-12 ~1 ~46 minecraft:grass_block
 fill ~-3 ~1 ~46 ~-1 ~1 ~46 minecraft:grass_block
@@ -609,9 +609,9 @@ fill ~-3 ~1 ~47 ~1 ~1 ~48 minecraft:grass_block
 fill ~-16 ~1 ~48 ~-15 ~1 ~48 minecraft:grass_block
 fill ~-16 ~1 ~49 ~-12 ~1 ~49 minecraft:grass_block
 fill ~-2 ~1 ~49 ~0 ~1 ~49 minecraft:grass_block
-fill ~-6 ~1 ~50 ~-6 ~4 ~50 minecraft:oak_log
-fill ~-15 ~1 ~50 ~-12 ~1 ~50 minecraft:grass_block
 fill ~-8 ~1 ~50 ~-8 ~4 ~50 minecraft:oak_log
+fill ~-15 ~1 ~50 ~-12 ~1 ~50 minecraft:grass_block
+fill ~-6 ~1 ~50 ~-6 ~4 ~50 minecraft:oak_log
 fill ~-14 ~1 ~51 ~-12 ~1 ~51 minecraft:grass_block
 fill ~-14 ~1 ~52 ~-11 ~1 ~52 minecraft:grass_block
 fill ~-14 ~1 ~53 ~-10 ~1 ~54 minecraft:grass_block
@@ -632,11 +632,11 @@ fill ~1 ~2 ~42 ~3 ~2 ~42 minecraft:oak_leaves[persistent=true]
 setblock ~3 ~2 ~43 minecraft:oak_leaves[persistent=true]
 setblock ~1 ~2 ~43 minecraft:oak_leaves[persistent=true]
 fill ~1 ~2 ~44 ~3 ~2 ~44 minecraft:oak_leaves[persistent=true]
-setblock ~-2 ~2 ~47 minecraft:stone
 setblock ~-3 ~2 ~47 minecraft:coal_ore
+setblock ~-2 ~2 ~47 minecraft:stone
 fill ~-14 ~2 ~47 ~-14 ~2 ~48 minecraft:grass_block
-fill ~-4 ~2 ~56 ~-2 ~2 ~56 minecraft:grass_block
 fill ~-5 ~2 ~56 ~-5 ~6 ~56 minecraft:oak_log
+fill ~-4 ~2 ~56 ~-2 ~2 ~56 minecraft:grass_block
 fill ~-5 ~2 ~57 ~-2 ~2 ~57 minecraft:grass_block
 fill ~-5 ~2 ~58 ~-3 ~2 ~58 minecraft:grass_block
 fill ~1 ~3 ~41 ~3 ~3 ~41 minecraft:oak_leaves[persistent=true]
@@ -654,8 +654,8 @@ setblock ~-5 ~3 ~50 minecraft:oak_leaves[persistent=true]
 fill ~-9 ~3 ~51 ~-5 ~4 ~51 minecraft:oak_leaves[persistent=true]
 setblock ~2 ~4 ~40 minecraft:oak_leaves[persistent=true]
 fill ~0 ~4 ~41 ~4 ~4 ~42 minecraft:oak_leaves[persistent=true]
-fill ~3 ~4 ~43 ~5 ~4 ~43 minecraft:oak_leaves[persistent=true]
 fill ~-1 ~4 ~43 ~1 ~4 ~43 minecraft:oak_leaves[persistent=true]
+fill ~3 ~4 ~43 ~5 ~4 ~43 minecraft:oak_leaves[persistent=true]
 fill ~0 ~4 ~44 ~4 ~4 ~45 minecraft:oak_leaves[persistent=true]
 setblock ~2 ~4 ~46 minecraft:oak_leaves[persistent=true]
 setblock ~-6 ~4 ~48 minecraft:oak_leaves[persistent=true]

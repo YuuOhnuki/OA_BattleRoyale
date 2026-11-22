@@ -43,7 +43,7 @@ execute if score #game oa.game matches 1 run data modify storage oa:admin_book m
 data modify storage oa:admin_book map set value "地上"
 execute if score #map oa.mapid matches 1 run data modify storage oa:admin_book map set value "ネザー"
 execute if score #map oa.mapid matches 2 run data modify storage oa:admin_book map set value "地下（古代都市）"
-execute if score #map oa.mapid matches 3 run data modify storage oa:admin_book map set value "天空都市"
+execute if score #map oa.mapid matches 3 run data modify storage oa:admin_book map set value "天空島"
 execute if score #map oa.mapid matches 4 run data modify storage oa:admin_book map set value "異界"
 execute if score #game oa.game matches 1 run data modify storage oa:admin_book map set value "立体工廠"
 data modify storage oa:admin_book state set value "待機中（取得時点）"

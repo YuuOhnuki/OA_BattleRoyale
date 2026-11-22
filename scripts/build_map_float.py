@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""OA Battle Royale 1.9.231: 浮遊島マップ2種類の生成（天空都市 sky ＝ oa:br_sky、異界 end ＝ oa:br_end）。
+"""OA Battle Royale 1.9.231: 浮遊島マップ2種類の生成（天空島 sky ＝ oa:br_sky、異界 end ＝ oa:br_end）。
 使い方: py -3 scripts/build_map_float.py <repo root> sky|end [--png 確認用PNG] [--panel ロビーの地図パネル PNG(512x512)]
 
 洞窟（build_map_cave.py）と同じく、会場を 100 区画のタイル関数（data/oa/function/maps/<key>/tiles/{preload,wait,release,apply,place}/N）に
@@ -8,7 +8,7 @@
 1.9.231 で地形を作り直した：
 - 島の上面に起伏（丘・段丘）。建物の立つ所（中央の城・各島の広場・橋の付け根・転移装置）だけ平らにする。
 - 島の底は下へ尖り、ところどころ岩が垂れ下がる（浮遊島らしく）。
-- 天空都市：色の付いた屋根の家・市場・屋敷・飛行船の発着場。空に気球と飛行船（block_display、当たり判定なし＝足場にならない）。
+- 天空島：色の付いた屋根の家・市場・屋敷・飛行船の発着場。空に気球と飛行船（block_display、当たり判定なし＝足場にならない）。
 - 異界：エンドストーンの段丘とコーラスの林、白い未来都市（白い塔・ガラスのドーム・発光）、空に浮かぶ結晶と円盤（block_display）。
 
 毎回の生成で変わるところ（「スロット」方式）：
@@ -33,11 +33,11 @@ ROOT = sys.argv[1]
 KEY = sys.argv[2]
 assert KEY in ('sky', 'end')
 if KEY == 'sky':
-    sys.exit('1.9.233 から天空都市は scripts/build_map_sky.py で生成する（このスクリプトは異界 end だけ）')
+    sys.exit('1.9.233 から天空島は scripts/build_map_sky.py で生成する（このスクリプトは異界 end だけ）')
 PNG = sys.argv[sys.argv.index('--png') + 1] if '--png' in sys.argv else None
 PANEL = sys.argv[sys.argv.index('--panel') + 1] if '--panel' in sys.argv else None
 DIM = {'sky': 'oa:br_sky', 'end': 'oa:br_end'}[KEY]
-LABEL = {'sky': '天空都市', 'end': '異界'}[KEY]
+LABEL = {'sky': '天空島', 'end': '異界'}[KEY]
 OUT = f"{ROOT}/data/oa/function/maps/{KEY}/tiles"
 SRC = f"{ROOT}/data/oa/function/map/internal/tiles"
 SEED = {'sky': 20261123, 'end': 20261124}[KEY]
@@ -258,14 +258,14 @@ def bd(x, y, z, block, sx, sy, sz, ox=0.0, oy=0.0, oz=0.0, yaw=0.0, glow=False, 
     cur.decos.append((x, y, z, nbt, 'block_display'))
 
 def balloon(x, y, z, c1, c2, yaw=0.0):
-    """熱気球（天空都市）。"""
+    """熱気球（天空島）。"""
     bd(x, y, z, c1, 5.0, 5.0, 5.0, oy=0.5); bd(x, y, z, c2, 6.0, 3.0, 4.0, oy=1.5, yaw=yaw); bd(x, y, z, c2, 4.0, 3.0, 6.0, oy=1.5, yaw=yaw)
     bd(x, y, z, c1, 3.6, 1.2, 3.6, oy=5.5); bd(x, y, z, c1, 3.0, 1.0, 3.0, oy=-0.6)
     for (dx, dz) in ((-0.9, -0.9), (0.9, -0.9), (-0.9, 0.9), (0.9, 0.9)): bd(x, y, z, 'minecraft:oak_fence', 0.12, 2.6, 0.12, ox=dx, oy=-3.2, oz=dz)
     bd(x, y, z, 'minecraft:spruce_planks', 2.0, 1.0, 2.0, oy=-4.0)
 
 def airship(x, y, z, yaw, c=('minecraft:white_wool', 'minecraft:red_wool')):
-    """飛行船（天空都市）。"""
+    """飛行船（天空島）。"""
     bd(x, y, z, 'minecraft:dark_oak_planks', 3.0, 1.6, 10.0, yaw=yaw); bd(x, y, z, 'minecraft:dark_oak_planks', 2.0, 1.0, 12.0, oy=-0.6, yaw=yaw)
     bd(x, y, z, 'minecraft:spruce_planks', 3.4, 0.25, 10.4, oy=1.6, yaw=yaw)
     bd(x, y, z, c[0], 5.0, 4.5, 13.0, oy=4.8, yaw=yaw); bd(x, y, z, c[0], 3.6, 3.0, 15.0, oy=5.5, yaw=yaw)
@@ -324,7 +324,7 @@ def tower(x, z, y0, h, rad=3, roof=True, chest_top=True, door_face=None, roofm=N
     if chest_top: chest(x + 1, y0 + h + 1, z + 1)
 
 def house(x, z, y0, w, d, h=4, chests=1, face='south', wallm=None, roofm=None):
-    """家。天空都市は色の付いた寄棟屋根、異界は白い壁と平らな屋根（発光の縁取り）。"""
+    """家。天空島は色の付いた寄棟屋根、異界は白い壁と平らな屋根（発光の縁取り）。"""
     wallm = wallm or str(DR.choice(WALLS)); roofm = roofm or str(DR.choice(ROOFS))
     foundation(x, z, x + w - 1, z + d - 1, y0)
     hollow(x, y0 + 1, z, x + w - 1, y0 + h, z + d - 1, wallm)
@@ -652,7 +652,7 @@ if KEY == 'end':
     for k in (3, 7):
         cx, cz, r, _ = slots[k]; gim(round(cx * 0.6), 2, round(cz * 0.6), ['oa.gim', 'oa.gim_warp'])
 
-# 土台の飾り（スロットの外：中央の島の外周・角の小島）。天空都市は草花と木、異界はコーラスの木と黒曜石の斑
+# 土台の飾り（スロットの外：中央の島の外周・角の小島）。天空島は草花と木、異界はコーラスの木と黒曜石の斑
 SLOT_BOX = [(cx - r - 8, cz - r - 8, cx + r + 8, cz + r + 8) for cx, cz, r, _ in slots]
 def in_slot_box(x, z): return any(a <= x <= c and b <= z <= d for a, b, c, d in SLOT_BOX)
 for (x, z), g in list(SURF.items()):

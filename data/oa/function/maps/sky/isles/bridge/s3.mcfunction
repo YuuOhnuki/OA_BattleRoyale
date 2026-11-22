@@ -100,23 +100,23 @@ fill -52 80 102 -48 80 102 minecraft:spruce_planks
 fill -50 80 103 -49 80 103 minecraft:spruce_planks
 setblock -28 81 50 minecraft:spruce_fence
 fill -29 81 51 -28 81 51 minecraft:spruce_fence
-setblock -29 81 52 minecraft:spruce_fence
 fill -24 81 52 -23 81 52 minecraft:spruce_fence
+setblock -29 81 52 minecraft:spruce_fence
 setblock -24 81 53 minecraft:spruce_fence
 fill -30 81 53 -29 81 53 minecraft:spruce_fence
 setblock -30 81 54 minecraft:spruce_fence
 fill -25 81 54 -24 81 54 minecraft:spruce_fence
-fill -31 81 55 -30 81 55 minecraft:spruce_fence
 setblock -25 81 55 minecraft:spruce_fence
-fill -26 81 56 -25 81 56 minecraft:spruce_fence
+fill -31 81 55 -30 81 55 minecraft:spruce_fence
 setblock -31 81 56 minecraft:spruce_fence
+fill -26 81 56 -25 81 56 minecraft:spruce_fence
 setblock -26 81 57 minecraft:spruce_fence
 fill -32 81 57 -32 81 58 minecraft:spruce_fence
 fill -27 81 58 -26 81 58 minecraft:spruce_fence
-setblock -27 81 59 minecraft:spruce_fence
 fill -33 81 59 -32 81 59 minecraft:spruce_fence
-setblock -33 81 60 minecraft:spruce_fence
+setblock -27 81 59 minecraft:spruce_fence
 fill -28 81 60 -27 81 60 minecraft:spruce_fence
+setblock -33 81 60 minecraft:spruce_fence
 setblock -28 81 61 minecraft:spruce_fence
 fill -34 81 61 -34 81 62 minecraft:spruce_fence
 fill -29 81 62 -28 81 62 minecraft:spruce_fence
@@ -124,18 +124,18 @@ fill -35 81 63 -34 81 63 minecraft:spruce_fence
 setblock -29 81 63 minecraft:spruce_fence
 setblock -35 81 64 minecraft:spruce_fence
 fill -30 81 64 -29 81 64 minecraft:spruce_fence
-setblock -30 81 65 minecraft:spruce_fence
 fill -36 81 65 -35 81 65 minecraft:spruce_fence
-setblock -36 81 66 minecraft:spruce_fence
+setblock -30 81 65 minecraft:spruce_fence
 fill -31 81 66 -30 81 66 minecraft:spruce_fence
+setblock -36 81 66 minecraft:spruce_fence
 fill -37 81 67 -36 81 67 minecraft:spruce_fence
 setblock -31 81 67 minecraft:spruce_fence
 setblock -37 81 68 minecraft:spruce_fence
 fill -32 81 68 -31 81 68 minecraft:spruce_fence
 fill -38 81 69 -37 81 69 minecraft:spruce_fence
 setblock -32 81 69 minecraft:spruce_fence
-fill -33 81 70 -32 81 70 minecraft:spruce_fence
 setblock -38 81 70 minecraft:spruce_fence
+fill -33 81 70 -32 81 70 minecraft:spruce_fence
 setblock -33 81 71 minecraft:spruce_fence
 fill -39 81 71 -39 81 72 minecraft:spruce_fence
 fill -34 81 72 -33 81 72 minecraft:spruce_fence
@@ -176,8 +176,8 @@ setblock -45 81 95 minecraft:spruce_fence
 fill -51 81 95 -51 81 96 minecraft:spruce_fence
 fill -46 81 96 -46 81 97 minecraft:spruce_fence
 setblock -52 81 97 minecraft:spruce_fence
-fill -47 81 98 -46 81 98 minecraft:spruce_fence
 fill -53 81 98 -52 81 98 minecraft:spruce_fence
+fill -47 81 98 -46 81 98 minecraft:spruce_fence
 setblock -47 81 99 minecraft:spruce_fence
 fill -53 81 99 -53 81 100 minecraft:spruce_fence
 fill -48 81 100 -48 81 101 minecraft:spruce_fence

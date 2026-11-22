@@ -18,7 +18,7 @@ summon minecraft:item_display ~0.5 ~5.5 ~34.35 {Tags:["oa.lobby_exhibit","oa.lob
 kill @e[type=minecraft:item_display,tag=oa.map_panel1982,distance=..45]
 kill @e[type=minecraft:marker,tag=oa.button_mapsel,distance=..45]
 kill @e[type=minecraft:text_display,tag=oa.mapsel_text,distance=..45]
-# 1.9.231: マップ選択は、マップごとの5つのボタン（パネルの前に立つと左から 地上・ネザー・洞窟・天空都市・異界。東＝+x が左）。
+# 1.9.231: マップ選択は、マップごとの5つのボタン（パネルの前に立つと左から 地上・ネザー・洞窟・天空島・異界。東＝+x が左）。
 # ボタンの上に名前と状態（lobby/mapsel/labels）。1.9.168〜1.9.230 は「前へ／次へ」の2つだった
 fill ~-5 ~0 ~34 ~5 ~0 ~34 minecraft:air
 setblock ~4 ~0 ~34 minecraft:stone_button[face=wall,facing=north,powered=false]

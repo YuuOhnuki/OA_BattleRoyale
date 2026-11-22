@@ -12,7 +12,7 @@ execute if score #isle oa.map2 matches 7 store result score #isle_ok oa.map2 run
 execute if score #isle oa.map2 matches 8 store result score #isle_ok oa.map2 run function oa:maps/sky/isles/ready_s8
 execute if score #isle oa.map2 matches 9 store result score #isle_ok oa.map2 run function oa:maps/sky/isles/ready_s9
 execute if score #isle_ok oa.map2 matches 0 if score #isle_wait oa.map2 matches ..120 run return run schedule function oa:maps/sky/isles/wait 5t replace
-execute if score #isle_ok oa.map2 matches 0 run tellraw @a[tag=br.admin] {text:"[天空都市] 島の場所が読み込めなかったので飛ばしました",color:"red"}
+execute if score #isle_ok oa.map2 matches 0 run tellraw @a[tag=br.admin] {text:"[天空島] 島の場所が読み込めなかったので飛ばしました",color:"red"}
 execute if score #isle_ok oa.map2 matches 1 run function oa:maps/sky/isles/place
 execute if score #isle oa.map2 matches 0 run function oa:maps/sky/isles/unload_s0
 execute if score #isle oa.map2 matches 1 run function oa:maps/sky/isles/unload_s1

@@ -1,6 +1,6 @@
 # 生成: scripts/build_map_sky.py（直接編集しない）。空中補給の場所名（#rx,#rz は中心からの相対）。中央か、置かれた島のうちいちばん近い所
 scoreboard players set #rbest br.tmp 2147483647
-data modify storage oa:supply region set value "天空都市"
+data modify storage oa:supply region set value "天空島"
 scoreboard players operation #rdx br.tmp = #rx br.tmp
 scoreboard players remove #rdx br.tmp 0
 scoreboard players operation #rdx br.tmp *= #rdx br.tmp

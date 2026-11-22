@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""OA Battle Royale 1.9.233: 天空都市（sky ＝ oa:br_sky）の生成。
+"""OA Battle Royale 1.9.233: 天空島（sky ＝ oa:br_sky）の生成。
 使い方: py -3 scripts/build_map_sky.py <repo root> [--png 真上.png] [--iso 斜め上.png] [--panel ロビーのパネル.png] [--isles 島の見本の出力フォルダ]
 
 1.9.233 で作りを変えた（ユーザーの指示）：
@@ -23,7 +23,7 @@ KEY = 'sky'
 def arg(name):
     return sys.argv[sys.argv.index(name) + 1] if name in sys.argv else None
 PNG, ISO, PANEL, ISLES_OUT = arg('--png'), arg('--iso'), arg('--panel'), arg('--isles')
-DIM = 'oa:br_sky'; LABEL = '天空都市'
+DIM = 'oa:br_sky'; LABEL = '天空島'
 OUT = f"{ROOT}/data/oa/function/maps/{KEY}/tiles"
 SRC = f"{ROOT}/data/oa/function/map/internal/tiles"
 MD = f"{ROOT}/data/oa/function/maps/{KEY}"
@@ -420,7 +420,10 @@ for i in range(-K + 3, K - 2, 4):
     for y in (3, 4, 10, 11, 18, 19):
         for (x, z) in ((i, -K), (i, K), (-K, i), (K, i)):
             if abs(i) > 2: put(x, y, z, 'minecraft:glass_pane')
-for fy in (7, 14): box(-K + 1, fy, -K + 1, K - 1, fy, K - 1, 'minecraft:spruce_planks')
+for fy in (7, 14):   # 1.9.235：吹き抜け。各階は外周の幅3の回廊（手すり付き）だけ
+    box(-K + 1, fy, -K + 1, K - 1, fy, K - 1, 'minecraft:spruce_planks'); box(-K + 4, fy, -K + 4, K - 4, fy, K - 4, 'minecraft:air')
+    hollow(-K + 4, fy + 1, -K + 4, K - 4, fy + 1, K - 4, 'minecraft:dark_oak_fence')
+    for (dx, dz) in ((0, 1), (0, -1), (1, 0), (-1, 0)): put(dx * (K - 4), fy + 1, dz * (K - 4), 'minecraft:air')
 box(-K, 23, -K, K, 23, K, STONE)
 for x in range(-K, K + 1):
     for z in (-K, K):
@@ -431,8 +434,13 @@ for (dx, dz) in ((0, K), (0, -K), (K, 0), (-K, 0)):
 for fy in (7, 14, 23):
     clear(-K + 2, fy, -K + 1, -K + 2, fy, -K + 1); clear(K - 2, fy, K - 1, K - 2, fy, K - 1)
 for y in range(1, 24): put(-K + 2, y, -K + 1, 'minecraft:ladder[facing=south]'); put(K - 2, y, K - 1, 'minecraft:ladder[facing=north]')
-box(-1, 1, -1, 1, 1, 1, 'minecraft:red_carpet'); put(0, 6, 0, 'minecraft:lantern[hanging=true]'); put(0, 13, 0, 'minecraft:lantern[hanging=true]')
-chest(-7, 1, 7); chest(7, 1, -7); chest(-7, 8, -7); chest(7, 8, 7, rich=True); chest(-7, 15, 7, rich=True); chest(7, 15, -7)
+box(-1, 1, -1, 1, 1, 1, 'minecraft:red_carpet')
+for y in range(15, 23): put(0, y, 0, 'minecraft:iron_chain[axis=y]')   # 吹き抜けのシャンデリア
+box(-1, 14, -1, 1, 14, 1, 'minecraft:gold_block'); [put(x, 13, z, 'minecraft:lantern[hanging=true]') for (x, z) in ((-1, -1), (1, -1), (-1, 1), (1, 1))]
+for y in range(2, 22, 1):
+    for (x, z) in ((-K + 1, 0), (K - 1, 0), (0, -K + 1), (0, K - 1)):
+        if y % 7 not in (0,) and free(x, y, z) and y > 4: put(x, y, z, 'minecraft:red_wool') if abs(x) + abs(z) == K - 1 and y in range(9, 13) or y in range(16, 20) else None
+chest(-7, 1, 7); chest(7, 1, -7); chest(-9, 8, -8); chest(9, 8, 8, rich=True); chest(-9, 15, 8, rich=True); chest(9, 15, -8)
 for (sx_, sz_) in ((-1, -1), (1, -1), (-1, 1), (1, 1)):
     round_tower(sx_ * (K - 1), sz_ * (K - 1), 23, 6, 2, wall='minecraft:white_terracotta', top='cone', roof='minecraft:deepslate_tiles', ladder=False, door=(), chest_top=False)
 box(-2, 24, -2, 2, 30, 2, 'minecraft:white_terracotta'); box(-3, 31, -3, 3, 31, 3, 'minecraft:deepslate_tiles')
@@ -483,260 +491,441 @@ print('center: chests', len(base.chests), 'rich', len(base.riches), 'ores', len(
 assert len(base.spawns) >= 12
 
 # ======================================================================== 島の見本（10種類）
+# 1.9.235：島の上面に大きな起伏（丘・山・段丘）。建物はそれぞれ平らに均した段（pad）の上に建てる（地面に埋もれない）。
+# 島のまわりには半径28の石の回廊（ガラスの半球の土台。maps/sky/isles のドームが乗る）。高い建物はドームの内側（高さ27まで）に収める。
+DOME_R = 29
 ISLES = []   # (key, 名前, 半径, 作る関数)
 def isle(key, name, r):
     def deco(fn): ISLES.append((key, name, r, fn)); return fn
     return deco
+
+def pad(x1, z1, x2, z2, y=None, top=None, fill='minecraft:stone', margin=1, ymax=None):
+    """建物の敷地を平らに均す（段）。y を与えなければ敷地の地面の高さの中央値。高い所は削り、低い所は埋める。地面の高さを返す。"""
+    cells = [(x, z) for x in range(x1 - margin, x2 + margin + 1) for z in range(z1 - margin, z2 + margin + 1)]
+    gs = sorted(gy(x, z) for x, z in cells if gy(x, z) is not None)
+    if y is None: y = gs[len(gs) // 2] if gs else 0
+    if ymax is not None: y = min(y, ymax)
+    for x, z in cells:
+        g = gy(x, z)
+        if g is None: continue
+        tb = top or getb(x, g, z)
+        if tb in PASS or tb.startswith('minecraft:water'): tb = 'minecraft:grass_block'
+        if g > y:
+            for yy in range(y + 1, g + 1): put(x, yy, z, 'minecraft:air')
+        else:
+            for yy in range(g, y): put(x, yy, z, fill)
+        for yy in range(y + 1, y + 4):
+            if getb(x, yy, z) in PASS or 'leaves' in getb(x, yy, z) or getb(x, yy, z) in ('minecraft:snow',): put(x, yy, z, 'minecraft:air')
+        put(x, y, z, tb); cur.surf[(x, z)] = y
+    return y
+
+def promenade(mat='minecraft:polished_andesite', edge='minecraft:smooth_stone_slab[type=bottom]', lamp='minecraft:lantern'):
+    """島のまわりの回廊（ガラスの半球の土台）。島の縁から半径28.4 まで、地形のない所を y=0 の床で埋める。"""
+    for x in range(-IS, IS + 1):
+        for z in range(-IS, IS + 1):
+            d = math.hypot(x, z)
+            if d <= DOME_R - 0.6:
+                if gy(x, z) is not None: continue   # 地形・甲板のある所はそのまま。ない所（島の縁からドームまで）を床で埋める
+                put(x, 0, z, mat if (x * 7 + z * 3) % 9 else 'minecraft:chiseled_stone_bricks')
+                put(x, -1, z, 'minecraft:stone_bricks'); put(x, -2, z, 'minecraft:stone_brick_slab[type=top]')
+                cur.surf[(x, z)] = 0
+    for k in range(16):
+        a = k * math.pi / 8 + math.pi / 16
+        x, z = round(math.cos(a) * 27), round(math.sin(a) * 27)
+        if gy(x, z) == 0: box(x, 1, z, x, 3, z, 'minecraft:dark_oak_fence'); put(x, 4, z, lamp)
+
+def isle_terrain(r, mats=GRASS, amp=10, seed_off=0, depth=26, band=None, plateau=None):
+    island(0, 0, r, depth, amp=amp, mats=mats, rim=0.8, wob=0.12, band=band, plateau=plateau, seed_off=seed_off)
+
+def window_box(x, y, z, out_dx, out_dz, flower='minecraft:potted_red_tulip'):
+    """窓の下の花台（外側に上付きのトラップドア＋植木鉢）。"""
+    fx, fz = x + out_dx, z + out_dz
+    if free(fx, y - 1, fz): put(fx, y - 1, fz, 'minecraft:spruce_trapdoor[half=top,facing=north]')
+    if free(fx, y, fz): put(fx, y, fz, flower)
+
+def house_fine(x, z, y0, w, d, h=4, wall='minecraft:white_terracotta', frame='minecraft:dark_oak_log', roof=('minecraft:dark_oak_stairs', 'minecraft:dark_oak_planks'),
+               base='minecraft:cobblestone', chests=1, door='s', axis='x', rich=False, jetty=True, flowers=('minecraft:potted_red_tulip', 'minecraft:potted_blue_orchid')):
+    """木組みの家（2階が張り出す）。石の土台・白壁に黒い梁・軒の深い切妻屋根・花台・煙突・ランタン。"""
+    foundation(x - 1, z - 1, x + w, z + d, y0)
+    box(x, y0, z, x + w - 1, y0, z + d - 1, 'minecraft:spruce_planks')
+    hollow(x, y0 + 1, z, x + w - 1, y0 + 2, z + d - 1, base)
+    for xx in (x, x + w - 1):
+        for zz in (z, z + d - 1): box(xx, y0 + 1, zz, xx, y0 + 2, zz, frame)
+    # 2階（張り出し：長い辺の両側へ1）
+    ex, ez = (0, 1) if axis == 'x' else (1, 0)
+    if not jetty: ex = ez = 0
+    X1, Z1, X2, Z2 = x - ex, z - ez, x + w - 1 + ex, z + d - 1 + ez
+    box(X1, y0 + 3, Z1, X2, y0 + 3, Z2, 'minecraft:stripped_dark_oak_log[axis=x]' if axis == 'x' else 'minecraft:stripped_dark_oak_log[axis=z]')
+    hollow(X1, y0 + 4, Z1, X2, y0 + 3 + h - 2, Z2, wall)
+    box(x + 1, y0 + 3, z + 1, x + w - 2, y0 + 3, z + d - 2, 'minecraft:spruce_planks')
+    for xx in range(X1, X2 + 1, 2):
+        for zz in (Z1, Z2): box(xx, y0 + 4, zz, xx, y0 + 3 + h - 2, zz, frame)
+    for zz in range(Z1, Z2 + 1, 2):
+        for xx in (X1, X2): box(xx, y0 + 4, zz, xx, y0 + 3 + h - 2, zz, frame)
+    if ex or ez:   # 張り出しの下の持ち送り
+        for xx in range(X1, X2 + 1, 2):
+            for zz in (Z1, Z2):
+                if (xx, zz) != (X1, Z1) and free(xx, y0 + 2, zz): put(xx, y0 + 2, zz, 'minecraft:dark_oak_fence')
+    top = y0 + 3 + h - 2
+    hollow(X1, top + 1, Z1, X2, top + 1, Z2, 'minecraft:stripped_dark_oak_log[axis=x]' if axis == 'x' else 'minecraft:stripped_dark_oak_log[axis=z]')
+    box(X1 + 1, top + 1, Z1 + 1, X2 - 1, top + 1, Z2 - 1, 'minecraft:spruce_planks')
+    gable(X1, Z1, top + 1, X2 - X1 + 1, Z2 - Z1 + 1, roof[0], roof[1], axis, wall)
+    # 窓（1階・2階）と花台
+    for xx in range(x + 1, x + w - 1, 2):
+        put(xx, y0 + 2, z, 'minecraft:glass_pane'); put(xx, y0 + 2, z + d - 1, 'minecraft:glass_pane')
+    for xx in range(X1 + 1, X2, 2):
+        for (zz, oz) in ((Z1, -1), (Z2, 1)):
+            put(xx, y0 + 5, zz, 'minecraft:glass_pane'); window_box(xx, y0 + 5, zz, 0, oz, flowers[(xx + zz) % 2])
+    for zz in range(Z1 + 1, Z2, 2):
+        for (xx, ox) in ((X1, -1), (X2, 1)):
+            put(xx, y0 + 5, zz, 'minecraft:glass_pane')
+    mx, mz = x + w // 2, z + d // 2
+    if door == 's': clear(mx, y0 + 1, z + d - 1, mx, y0 + 2, z + d - 1); put(mx, y0 + 1, z + d, 'minecraft:spruce_stairs[facing=north]') if free(mx, y0 + 1, z + d) and False else None
+    elif door == 'n': clear(mx, y0 + 1, z, mx, y0 + 2, z)
+    elif door == 'e': clear(x + w - 1, y0 + 1, mz, x + w - 1, y0 + 2, mz)
+    else: clear(x, y0 + 1, mz, x, y0 + 2, mz)
+    clear(x + 1, y0 + 3, z + 1, x + 1, y0 + 3, z + 1); box(x + 1, y0 + 1, z + 1, x + 1, y0 + 3, z + 1, 'minecraft:ladder[facing=south]')
+    put(mx, top, mz, 'minecraft:lantern[hanging=true]'); put(mx, y0 + 3, mz + (1 if mz + 1 < z + d - 1 else 0), 'minecraft:lantern[hanging=true]') if False else None
+    box(x + w - 2, top + 1, z + d - 2, x + w - 2, top + (min(X2 - X1, Z2 - Z1) + 1) // 2 + 3, z + d - 2, 'minecraft:bricks')
+    put(x + w - 2, top + (min(X2 - X1, Z2 - Z1) + 1) // 2 + 4, z + d - 2, 'minecraft:campfire[lit=false]') if False else None
+    for i in range(chests):
+        if i == 0: chest(x + w - 2, y0 + 1, z + 1, rich=rich, face='south')
+        else: chest(x + w - 2, y0 + 4, z + 1, face='south')
+
+def lantern_post(x, z, g):
+    put(x, g + 1, z, 'minecraft:stone_brick_wall'); put(x, g + 2, z, 'minecraft:dark_oak_fence'); put(x, g + 3, z, 'minecraft:dark_oak_fence')
+    put(x, g + 4, z, 'minecraft:dark_oak_slab[type=bottom]'); put(x, g + 3, z + 1, 'minecraft:lantern[hanging=true]') if free(x, g + 3, z + 1) else None
+
 def fin(rr, r, want_chests=7, spawns=5, ores=4, host='minecraft:stone'):
     drop_overwritten()
-    fill_chests(rr, 0, 0, 4, r * 0.85, want_chests)
+    fill_chests(rr, 0, 0, 4, min(r * 0.9, 23), want_chests)
     while len(cur.chests) + len(cur.riches) > want_chests and cur.chests:
         x, y, z = cur.chests.pop(); put(x, y, z, 'minecraft:air')
-    ore_rocks(rr, 0, 0, 3, r * 0.85, ores, host)
-    add_spawns(rr, 0, 0, 2, r * 0.9, spawns)
+    ore_rocks(rr, 0, 0, 3, min(r * 0.9, 23), ores, host)
+    add_spawns(rr, 0, 0, 2, 26, spawns)
     drop_overwritten()
 
-@isle('desert', '砂漠の島', 22)
+# ---------------------------------------------------------------------------------------------------- 砂漠
+@isle('desert', '砂漠の島', 23)
 def b_desert(rr, r):
     M = dict(top='minecraft:sand', sub='minecraft:sandstone', rock='minecraft:sandstone', rock2='minecraft:smooth_sandstone', under='minecraft:terracotta')
-    island(0, 0, r, 26, amp=6, mats=M, rim=0.62, seed_off=101)
-    # 段々のピラミッド（中は宝の部屋）
-    P_ = 8
+    isle_terrain(r, M, amp=10, seed_off=101)
+    # 段々のピラミッド（神殿）。入口の階段、中に柱と宝の部屋
+    y0 = pad(-12, -12, 4, 4, top='minecraft:smooth_sandstone', fill='minecraft:sandstone')
+    cx, cz, P_ = -4, -4, 8
     for k in range(P_ + 1):
-        box(-P_ + k, k, -P_ + k, P_ - k, k, P_ - k, 'minecraft:cut_sandstone' if k % 2 else 'minecraft:sandstone')
-    box(-P_ + 1, 1, -P_ + 1, P_ - 1, 3, P_ - 1, 'minecraft:sandstone')
-    clear(-3, 1, -3, 3, 3, 3); clear(-1, 1, 3, 1, 2, P_)
-    for k in range(P_ + 1): put(0, k, P_ - k + 1, 'minecraft:sandstone_stairs[facing=north]') if k < 4 else None
-    put(0, P_ + 1, 0, 'minecraft:gold_block'); box(-1, 1, -3, 1, 1, -3, 'minecraft:chiseled_sandstone')
-    chest(0, 1, -2, rich=True, face='south'); put(-3, 2, 0, 'minecraft:lantern') if False else None
-    for (x, z) in ((-2, 2), (2, 2)): put(x, 2, z, 'minecraft:torch')
-    # 砂岩の家2軒と井戸、サボテン・枯れ木、日よけ
-    for (hx, hz) in ((10, -6), (-12, 4)):
-        g = 0
-        box(hx - 2, 0, hz - 2, hx + 2, 0, hz + 2, 'minecraft:smooth_sandstone'); hollow(hx - 2, 1, hz - 2, hx + 2, 4, hz + 2, 'minecraft:smooth_sandstone')
-        box(hx - 2, 5, hz - 2, hx + 2, 5, hz + 2, 'minecraft:cut_sandstone_slab[type=bottom]'); clear(hx, 1, hz + 2, hx, 2, hz + 2)
-        put(hx - 2, 3, hz, 'minecraft:orange_stained_glass_pane'); chest(hx - 1, 1, hz - 1)
-        box(hx - 3, 4, hz + 3, hx + 3, 4, hz + 4, 'minecraft:orange_wool'); put(hx - 3, 1, hz + 4, 'minecraft:birch_fence'); box(hx - 3, 1, hz + 4, hx - 3, 3, hz + 4, 'minecraft:birch_fence'); box(hx + 3, 1, hz + 4, hx + 3, 3, hz + 4, 'minecraft:birch_fence')
-    hollow(-11, 1, -11, -9, 1, -9, 'minecraft:sandstone_wall'); put(-10, 0, -10, 'minecraft:water'); box(-11, 3, -11, -9, 3, -9, 'minecraft:smooth_sandstone_slab[type=bottom]'); put(-11, 2, -11, 'minecraft:sandstone_wall'); put(-9, 2, -9, 'minecraft:sandstone_wall')
-    for _ in range(14):
-        s = spot(rr, 0, 0, 10, r * 0.95, need_top='minecraft:sand')
-        if s: (cactus(s[0], s[2], s[1], 2 + int(rr.random() * 2)) if rr.random() < 0.6 else put(s[0], s[1] + 1, s[2], 'minecraft:dead_bush'))
+        m = 'minecraft:cut_sandstone' if k % 2 else 'minecraft:sandstone'
+        hollow(cx - P_ + k, y0 + k, cz - P_ + k, cx + P_ - k, y0 + k, cz + P_ - k, m)
+        box(cx - P_ + k + 1, y0 + k, cz - P_ + k + 1, cx + P_ - k - 1, y0 + k, cz + P_ - k - 1, 'minecraft:sandstone')
+    for k in range(P_ + 1):   # 角の帯（オレンジのテラコッタ）
+        for (sx, sz) in ((-1, -1), (1, -1), (-1, 1), (1, 1)): put(cx + sx * (P_ - k), y0 + k, cz + sz * (P_ - k), 'minecraft:orange_terracotta')
+    clear(cx - 4, y0 + 1, cz - 4, cx + 4, y0 + 4, cz + 4)
+    for (px, pz) in ((-3, -3), (3, -3), (-3, 3), (3, 3)): box(cx + px, y0 + 1, cz + pz, cx + px, y0 + 4, cz + pz, 'minecraft:chiseled_sandstone')
+    clear(cx - 1, y0 + 1, cz + 4, cx + 1, y0 + 3, cz + P_)
+    for i in range(3): box(cx - 1, y0 + i, cz + P_ + 1 + i * 0, cx + 1, y0 + i, cz + P_ + 1, 'minecraft:sandstone_stairs[facing=north]') if i == 0 else None
+    box(cx - 2, y0 + 4, cz + P_ - 3, cx + 2, y0 + 4, cz + P_ - 3, 'minecraft:chiseled_sandstone')
+    put(cx, y0 + 1, cz - 3, 'minecraft:gold_block'); chest(cx, y0 + 1, cz - 2, rich=True, face='south')
+    for (px, pz) in ((-2, 2), (2, 2), (-2, -2), (2, -2)): put(cx + px, y0 + 2, cz + pz, 'minecraft:lantern') if free(cx + px, y0 + 2, cz + pz) else None
+    put(cx, y0 + P_ + 1, cz, 'minecraft:gold_block'); put(cx, y0 + P_ + 2, cz, 'minecraft:lightning_rod')
+    # オベリスク2本
+    for (ox, oz) in ((cx - 3, cz + P_ + 4), (cx + 3, cz + P_ + 4)):
+        g = gy(ox, oz)
+        if g is None: continue
+        box(ox, g + 1, oz, ox, g + 7, oz, 'minecraft:chiseled_sandstone'); put(ox, g + 8, oz, 'minecraft:gold_block')
+        for (dx, dz) in ((1, 0), (-1, 0), (0, 1), (0, -1)): put(ox + dx, g + 1, oz + dz, 'minecraft:smooth_sandstone_stairs[facing=north]') if False else put(ox + dx, g + 1, oz + dz, 'minecraft:cut_sandstone_slab[type=bottom]')
+    # 砂岩の家（平屋根・日よけ・アーチの窓）2軒と市場
+    for j, (hx, hz) in enumerate(((11, -9), (9, 8))):
+        y1 = pad(hx - 3, hz - 3, hx + 3, hz + 3, top='minecraft:smooth_sandstone', fill='minecraft:sandstone')
+        hollow(hx - 3, y1 + 1, hz - 3, hx + 3, y1 + 5, hz + 3, 'minecraft:smooth_sandstone')
+        for (dx, dz) in ((-3, -3), (3, -3), (-3, 3), (3, 3)): box(hx + dx, y1 + 1, hz + dz, hx + dx, y1 + 6, hz + dz, 'minecraft:cut_sandstone')
+        hollow(hx - 3, y1 + 6, hz - 3, hx + 3, y1 + 6, hz + 3, 'minecraft:cut_sandstone_slab[type=bottom]')
+        box(hx - 2, y1 + 5, hz - 2, hx + 2, y1 + 5, hz + 2, 'minecraft:smooth_sandstone')
+        clear(hx, y1 + 1, hz + 3, hx, y1 + 3, hz + 3)
+        for (wx, wz) in ((hx - 3, hz), (hx + 3, hz), (hx, hz - 3)): put(wx, y1 + 3, wz, 'minecraft:orange_stained_glass_pane')
+        box(hx - 2, y1 + 4, hz + 4, hx + 2, y1 + 4, hz + 5, ['minecraft:orange_wool', 'minecraft:white_wool'][j])
+        box(hx - 2, y1 + 1, hz + 5, hx - 2, y1 + 3, hz + 5, 'minecraft:birch_fence'); box(hx + 2, y1 + 1, hz + 5, hx + 2, y1 + 3, hz + 5, 'minecraft:birch_fence')
+        chest(hx - 2, y1 + 1, hz - 2, face='south'); put(hx + 2, y1 + 1, hz - 2, 'minecraft:barrel[facing=up]')
+    # 井戸
+    g = pad(14, -1, 16, 1, top='minecraft:smooth_sandstone')
+    hollow(14, g + 1, -1, 16, g + 1, 1, 'minecraft:sandstone_wall'); put(15, g, 0, 'minecraft:water')
+    for (x, z) in ((14, -1), (16, 1)): box(x, g + 2, z, x, g + 3, z, 'minecraft:sandstone_wall')
+    box(14, g + 4, -1, 16, g + 4, 1, 'minecraft:smooth_sandstone_slab[type=bottom]')
+    for _ in range(18):
+        s = spot(rr, 0, 0, 14, 23, need_top='minecraft:sand')
+        if s: (cactus(s[0], s[2], s[1], 2 + int(rr.random() * 2)) if rr.random() < 0.55 else put(s[0], s[1] + 1, s[2], 'minecraft:dead_bush'))
+    promenade('minecraft:smooth_sandstone', lamp='minecraft:lantern')
     fin(rr, r, host='minecraft:sandstone')
 
-@isle('snow', '雪の島', 22)
+# ---------------------------------------------------------------------------------------------------- 雪
+@isle('snow', '雪の島', 23)
 def b_snow(rr, r):
     M = dict(top='minecraft:snow_block', sub='minecraft:dirt', rock='minecraft:stone', rock2='minecraft:packed_ice', under='minecraft:tuff')
-    island(0, 0, r, 26, amp=10, mats=M, rim=0.62, seed_off=202)
-    # 丸太小屋（切妻・雪）とかまくら、氷の池、氷の柱
-    house_timber(-4, -3, 0, 8, 6, wall='minecraft:spruce_planks', frame='minecraft:stripped_spruce_log', roof=('minecraft:spruce_stairs', 'minecraft:spruce_planks'), base='minecraft:cobblestone', chests=2)
-    for x in range(-5, 5):
-        for z in range(-4, 4):
-            for y in range(4, 12):
-                if getb(x, y, z) in ('minecraft:spruce_stairs[facing=south,half=bottom]', 'minecraft:spruce_stairs[facing=north,half=bottom]', 'minecraft:spruce_planks') and free(x, y + 1, z): put(x, y + 1, z, 'minecraft:snow')
-    ix, iz = 10, 8
-    for x in range(ix - 4, ix + 5):
-        for z in range(iz - 4, iz + 5):
-            for y in range(0, 5):
-                d = math.hypot(x - ix, z - iz, y * 1.1)
-                if 3.4 <= d <= 4.4: put(x, y + (1 if y else 1), z, 'minecraft:snow_block') if y > 0 else None
+    isle_terrain(r, M, amp=15, seed_off=202)
+    # 山小屋（石の土台・丸太・2階張り出し）
+    y0 = pad(-6, -4, 3, 3, top='minecraft:spruce_planks')
+    house_fine(-6, -4, y0, 9, 7, h=5, wall='minecraft:spruce_planks', frame='minecraft:stripped_spruce_log', roof=('minecraft:deepslate_tile_stairs', 'minecraft:deepslate_tiles'),
+               base='minecraft:cobblestone', chests=2, door='s', flowers=('minecraft:potted_spruce_sapling', 'minecraft:potted_fern'))
+    # かまくら（雪のドーム）
+    ix, iz = 11, 8
+    yi = pad(ix - 4, iz - 4, ix + 4, iz + 4, top='minecraft:snow_block', fill='minecraft:packed_ice')
     for x in range(ix - 4, ix + 5):
         for z in range(iz - 4, iz + 5):
             for y in range(1, 6):
                 d = math.hypot(x - ix, z - iz, (y - 1) * 1.1)
-                if 3.4 <= d <= 4.4: put(x, y, z, 'minecraft:snow_block')
-    clear(ix, 1, iz - 4, ix, 2, iz - 3); chest(ix, 1, iz, face='north'); put(ix + 1, 1, iz + 1, 'minecraft:lantern')
-    for x in range(-12, -5):
-        for z in range(4, 11):
-            if math.hypot(x + 9, z - 7) < 3.2 and gy(x, z) is not None: put(x, gy(x, z), z, 'minecraft:ice')
-    for (sx_, sz_) in ((12, -10), (-13, -9), (5, 14)):
-        g = gy(sx_, sz_)
-        if g is None: continue
-        hh = 6 + int(rr.random() * 6)
-        box(sx_, g + 1, sz_, sx_, g + hh, sz_, 'minecraft:packed_ice')
-        for (dx, dz) in ((1, 0), (0, 1), (-1, 0), (0, -1)): box(sx_ + dx, g + 1, sz_ + dz, sx_ + dx, g + hh // 2, sz_ + dz, 'minecraft:packed_ice')
-    for _ in range(16):
-        s = spot(rr, 0, 0, 8, r * 0.95, need_top='minecraft:snow_block')
+                if 3.4 <= d <= 4.4: put(x, yi + y, z, 'minecraft:snow_block')
+                elif d < 3.4: put(x, yi + y, z, 'minecraft:air')
+    clear(ix, yi + 1, iz - 4, ix, yi + 2, iz - 3); chest(ix, yi + 1, iz, face='north'); put(ix + 1, yi + 1, iz + 1, 'minecraft:lantern')
+    put(ix - 1, yi + 1, iz + 1, 'minecraft:white_carpet')
+    # 凍った池
+    yp = pad(-14, 5, -6, 12, top='minecraft:ice')
+    for x in range(-15, -5):
+        for z in range(4, 13):
+            if math.hypot(x + 10, z - 8) > 4.3 and gy(x, z) == yp: put(x, yp, z, 'minecraft:snow_block')
+    # 山の頂の氷の柱（高い所を選ぶ）
+    peaks = sorted([(g, x, z) for (x, z), g in cur.surf.items() if math.hypot(x, z) < 18], reverse=True)
+    used = []
+    for g, x, z in peaks:
+        if len(used) >= 3: break
+        if any(abs(x - a) + abs(z - b) < 8 for a, b in used) or getb(x, g + 1, z) not in PASS: continue
+        hh = 5 + int(rr.random() * 5)
+        box(x, g + 1, z, x, g + hh, z, 'minecraft:packed_ice')
+        for (dx, dz) in ((1, 0), (0, 1), (-1, 0), (0, -1)): box(x + dx, g + 1, z + dz, x + dx, g + hh // 2, z + dz, 'minecraft:packed_ice')
+        used.append((x, z))
+    for _ in range(18):
+        s = spot(rr, 0, 0, 8, 23, need_top='minecraft:snow_block')
         if s: tree_spruce(s[0], s[2], s[1], 6 + int(rr.random() * 4), snowy=True)
     for (x, z), g in list(cur.surf.items()):
         if getb(x, g, z) == 'minecraft:snow_block' and free(x, g + 1, z) and rr.random() < 0.5: put(x, g + 1, z, 'minecraft:snow')
+    promenade('minecraft:polished_diorite', lamp='minecraft:lantern')
     fin(rr, r)
 
+# ---------------------------------------------------------------------------------------------------- メサ
 @isle('mesa', 'メサの島', 23)
 def b_mesa(rr, r):
     BANDS = ['minecraft:terracotta', 'minecraft:orange_terracotta', 'minecraft:yellow_terracotta', 'minecraft:terracotta', 'minecraft:red_terracotta',
              'minecraft:white_terracotta', 'minecraft:light_gray_terracotta', 'minecraft:brown_terracotta', 'minecraft:orange_terracotta']
     band = lambda y: BANDS[(y + 40) % len(BANDS)]
     M = dict(top='minecraft:red_sand', sub='minecraft:orange_terracotta', rock='minecraft:terracotta', rock2='minecraft:terracotta', under='minecraft:terracotta')
-    island(0, 0, r, 28, amp=0, mats=M, rim=0.62, band=band, seed_off=303)
-    # 台地（メサ）を2つ。上へは階段（木の足場）
-    for (mx, mz, mr, mh) in ((-6, -5, 7, 11), (8, 6, 5, 7)):
+    isle_terrain(r, M, amp=5, seed_off=303, depth=28, band=band)
+    # 台地（メサ）2つ：縞の崖、上は赤い砂、木の足場の階段で上がる
+    for (mx, mz, mr, mh, rich) in ((-7, -6, 7, 13, True), (9, 5, 5, 8, False)):
         for x in range(mx - mr - 1, mx + mr + 2):
             for z in range(mz - mr - 1, mz + mr + 2):
                 d = math.hypot(x - mx, z - mz) / (mr * (1 + 0.2 * (nz(x * 3, z * 3) - 0.5)))
-                if d > 1: continue
-                for y in range(1, mh + 1): put(x, y, z, band(y))
-                put(x, mh, z, 'minecraft:red_sand'); cur.surf[(x, z)] = mh
-                if rr.random() < 0.08: put(x, mh + 1, z, 'minecraft:dead_bush')
-        # 木の足場の階段（外周に沿って）
+                if d > 1 or gy(x, z) is None: continue
+                g0 = gy(x, z)
+                hh = mh if d < 0.8 else mh - 2
+                for y in range(g0 + 1, hh + 1): put(x, y, z, band(y))
+                put(x, hh, z, 'minecraft:red_sand'); cur.surf[(x, z)] = hh
+                if rr.random() < 0.06: put(x, hh + 1, z, 'minecraft:dead_bush')
         a0 = math.atan2(-mz, -mx)
-        for i in range(mh):
-            a = a0 + i * 0.22; x, z = round(mx + math.cos(a) * (mr + 1.5)), round(mz + math.sin(a) * (mr + 1.5))
-            box(x, 1, z, x, i, z, 'minecraft:oak_fence') if i > 1 else None
-            put(x, i + 1, z, 'minecraft:spruce_slab[type=top]')
-        chest(mx, mh + 1, mz, rich=mr >= 7)
-    # 自然のアーチ
-    for t in np.linspace(0, math.pi, 30):
-        x = round(12 * math.cos(t) * 0.5 + 0); z = -14; y = round(1 + 7 * math.sin(t))
-        box(x - 6 + round(6 - 6 * math.cos(t)), y, z - 1, x - 6 + round(6 - 6 * math.cos(t)), y + 1, z + 1, band(y))
-    # 廃坑の入口（木の枠）と荷車
-    box(14, 1, -4, 14, 3, -4, 'minecraft:oak_fence'); box(14, 1, 0, 14, 3, 0, 'minecraft:oak_fence'); box(14, 4, -4, 14, 4, 0, 'minecraft:oak_planks')
-    chest(15, 1, -2, face='west')
-    for _ in range(10):
-        s = spot(rr, 0, 0, 10, r * 0.95)
-        if s: (cactus(s[0], s[2], s[1], 2) if rr.random() < 0.4 else put(s[0], s[1] + 1, s[2], 'minecraft:dead_bush'))
+        for i in range(mh + 2):
+            a = a0 + i * 0.2; x, z = round(mx + math.cos(a) * (mr + 1.6)), round(mz + math.sin(a) * (mr + 1.6))
+            g0 = gy(x, z) or 0
+            if i > 0: box(x, g0 + 1, z, x, i - 1, z, 'minecraft:oak_fence')
+            put(x, i, z, 'minecraft:spruce_slab[type=top]'); cur.surf[(x, z)] = max(g0, i) if False else cur.surf.get((x, z), g0)
+        chest(mx, mh + 1, mz, rich=rich)
+        box(mx - 1, mh + 1, mz + 2, mx + 1, mh + 3, mz + 2, 'minecraft:oak_fence') if False else None
+    # 自然のアーチ（縞のテラコッタ）
+    for t in np.linspace(0, math.pi, 40):
+        x = round(-1 + 7 * math.cos(t)); y = round(7 * math.sin(t)); z = 15
+        for dz in (-1, 0, 1):
+            g0 = gy(x, z + dz) or 0
+            put(x, g0 + y + 1, z + dz, band(g0 + y + 1)); put(x, g0 + y + 2, z + dz, band(g0 + y + 2))
+            if t < 0.3 or t > math.pi - 0.3:
+                for yy in range(g0 + 1, g0 + y + 1): put(x, yy, z + dz, band(yy))
+    # 廃坑の入口（台地の崖に木の枠）と線路・荷車
+    for (dx, dy) in ((0, 1), (0, 2), (0, 3)): put(-7 + 7, dy, -6, 'minecraft:air') if False else None
+    ex, ez = -7 + 8, -6
+    g0 = gy(ex + 1, ez) or 0
+    clear(ex - 2, g0 + 1, ez - 1, ex, g0 + 3, ez + 1)
+    box(ex, g0 + 1, ez - 2, ex, g0 + 3, ez - 2, 'minecraft:oak_log'); box(ex, g0 + 1, ez + 2, ex, g0 + 3, ez + 2, 'minecraft:oak_log'); box(ex, g0 + 4, ez - 2, ex, g0 + 4, ez + 2, 'minecraft:oak_planks')
+    for i in range(4): put(ex + 1 + i, g0 + 1, ez, 'minecraft:rail[shape=east_west]') if free(ex + 1 + i, g0 + 1, ez) and not free(ex + 1 + i, g0, ez) else None
+    chest(ex - 1, g0 + 1, ez + 1, face='east')
+    for _ in range(12):
+        s = spot(rr, 0, 0, 10, 23)
+        if s: (cactus(s[0], s[2], s[1], 2) if rr.random() < 0.4 and getb(s[0], s[1], s[2]) == 'minecraft:red_sand' else put(s[0], s[1] + 1, s[2], 'minecraft:dead_bush'))
+    promenade('minecraft:terracotta', lamp='minecraft:lantern')
     fin(rr, r, host='minecraft:terracotta')
 
-@isle('oasis', 'オアシスの島', 21)
+# ---------------------------------------------------------------------------------------------------- オアシス
+@isle('oasis', 'オアシスの島', 22)
 def b_oasis(rr, r):
     M = dict(top='minecraft:sand', sub='minecraft:sandstone', rock='minecraft:sandstone', rock2='minecraft:smooth_sandstone', under='minecraft:terracotta')
-    island(0, 0, r, 24, amp=4, mats=M, rim=0.62, seed_off=404)
+    isle_terrain(r, M, amp=9, seed_off=404)
+    # 窪地の泉（周りより低い）と草地・ヤシ
+    yp = pad(-8, -8, 8, 8, y=0)
     for x in range(-10, 11):
         for z in range(-10, 11):
             d = math.hypot(x, z)
-            if d < 6.5: put(x, 0, z, 'minecraft:water'); put(x, -1, z, 'minecraft:sand'); cur.surf[(x, z)] = 0
-            elif d < 9.5 and gy(x, z) is not None: put(x, gy(x, z), z, 'minecraft:grass_block')
-    for (x, z) in ((-2, 1), (3, -2), (0, 4)): put(x, 1, z, 'minecraft:lily_pad')
-    for k in range(7):
-        a = k * 2 * math.pi / 7 + 0.3; x, z = round(math.cos(a) * 8), round(math.sin(a) * 8)
+            if gy(x, z) is None: continue
+            if d < 6.5: put(x, -1, z, 'minecraft:water'); put(x, 0, z, 'minecraft:air'); put(x, -2, z, 'minecraft:sand'); cur.surf[(x, z)] = -1
+            elif d < 9.5: put(x, gy(x, z), z, 'minecraft:grass_block')
+    for (x, z) in ((-2, 1), (3, -2), (0, 4)): put(x, 0, z, 'minecraft:lily_pad')
+    for k in range(8):
+        a = k * 2 * math.pi / 8 + 0.3; x, z = round(math.cos(a) * 8), round(math.sin(a) * 8)
         g = gy(x, z)
         if g is not None: tree_palm(x, z, g, 6 + k % 3)
-    # 隊商のテント（色の布）と市場
-    for j, (tx, tz) in enumerate(((12, 4), (-12, -4), (2, -13))):
+    # 隊商のテント3つ（色の布・段の屋根）と、砂岩のアーチの門
+    for j, (tx, tz) in enumerate(((14, 4), (-13, -5), (2, -15))):
         cols = ['minecraft:red_wool', 'minecraft:yellow_wool', 'minecraft:blue_wool'][j]
-        for (dx, dz) in ((-2, -2), (2, -2), (-2, 2), (2, 2)): box(tx + dx, 1, tz + dz, tx + dx, 2, tz + dz, 'minecraft:birch_fence')
-        box(tx - 2, 3, tz - 2, tx + 2, 3, tz + 2, cols); box(tx - 1, 4, tz - 1, tx + 1, 4, tz + 1, cols); put(tx, 5, tz, 'minecraft:white_wool')
-        box(tx - 2, 0, tz - 2, tx + 2, 0, tz + 2, 'minecraft:smooth_sandstone'); chest(tx, 1, tz)
-        put(tx + 1, 1, tz - 1, 'minecraft:barrel[facing=up]')
+        y1 = pad(tx - 3, tz - 3, tx + 3, tz + 3, top='minecraft:smooth_sandstone')
+        for (dx, dz) in ((-3, -3), (3, -3), (-3, 3), (3, 3)): box(tx + dx, y1 + 1, tz + dz, tx + dx, y1 + 3, tz + dz, 'minecraft:stripped_birch_log')
+        box(tx - 3, y1 + 4, tz - 3, tx + 3, y1 + 4, tz + 3, cols); box(tx - 2, y1 + 5, tz - 2, tx + 2, y1 + 5, tz + 2, 'minecraft:white_wool'); box(tx - 1, y1 + 6, tz - 1, tx + 1, y1 + 6, tz + 1, cols)
+        put(tx, y1 + 7, tz, 'minecraft:gold_block'); put(tx, y1 + 3, tz, 'minecraft:lantern[hanging=true]')
+        chest(tx - 1, y1 + 1, tz - 1); put(tx + 1, y1 + 1, tz - 1, 'minecraft:barrel[facing=up]'); put(tx + 1, y1 + 1, tz + 1, 'minecraft:red_carpet')
+    gx, gz = -6, 15
+    y2 = pad(gx - 4, gz - 1, gx + 4, gz + 1, top='minecraft:smooth_sandstone')
+    for sx in (-4, 4): box(gx + sx, y2 + 1, gz, gx + sx, y2 + 6, gz, 'minecraft:cut_sandstone')
+    box(gx - 4, y2 + 7, gz, gx + 4, y2 + 7, gz, 'minecraft:chiseled_sandstone'); box(gx - 3, y2 + 6, gz, gx + 3, y2 + 6, gz, 'minecraft:smooth_sandstone_slab[type=top]')
+    put(gx, y2 + 8, gz, 'minecraft:gold_block')
+    promenade('minecraft:smooth_sandstone')
     fin(rr, r, host='minecraft:sandstone')
 
-@isle('western', '西洋の町の島', 25)
+# ---------------------------------------------------------------------------------------------------- 西洋の町
+@isle('western', '西洋の町の島', 24)
 def b_western(rr, r):
-    island(0, 0, r, 28, amp=0, rim=0.62, seed_off=505)
-    # 石畳の広場と噴水
-    for x in range(-r, r + 1):
-        for z in range(-r, r + 1):
-            if gy(x, z) is None: continue
-            if math.hypot(x, z) < 7.5 or (abs(x) <= 1 and abs(z) < r - 2) or (abs(z) <= 1 and abs(x) < r - 2):
-                put(x, 0, z, 'minecraft:stone_bricks' if (x * 3 + z) % 4 else 'minecraft:cobblestone')
-    hollow(-2, 1, -2, 2, 1, 2, 'minecraft:stone_brick_wall'); box(-1, 0, -1, 1, 0, 1, 'minecraft:water'); box(0, 1, 0, 0, 3, 0, 'minecraft:stone_brick_wall'); put(0, 4, 0, 'minecraft:lantern')
-    # 家（木組み・色の屋根）を4つの区画に
+    isle_terrain(r, amp=9, seed_off=505)
+    # 中央の広場（石畳）と噴水
+    yc = pad(-6, -6, 6, 6, top='minecraft:stone_bricks')
+    for x in range(-6, 7):
+        for z in range(-6, 7):
+            if (x * 3 + z) % 4 == 0: put(x, yc, z, 'minecraft:cobblestone')
+    hollow(-2, yc + 1, -2, 2, yc + 1, 2, 'minecraft:stone_brick_wall'); box(-1, yc, -1, 1, yc, 1, 'minecraft:water'); box(0, yc + 1, 0, 0, yc + 3, 0, 'minecraft:stone_brick_wall'); put(0, yc + 4, 0, 'minecraft:lantern')
+    for (lx, lz) in ((-5, -5), (5, -5), (-5, 5), (5, 5)): lantern_post(lx, lz, yc)
+    # 段々の家（それぞれの段に）
     roofs = [('minecraft:dark_oak_stairs', 'minecraft:dark_oak_planks'), ('minecraft:spruce_stairs', 'minecraft:spruce_planks'),
              ('minecraft:brick_stairs', 'minecraft:bricks'), ('minecraft:deepslate_tile_stairs', 'minecraft:deepslate_tiles')]
-    lots = [(4, 4, 7, 6, 'n', 'x'), (4, -10, 6, 6, 's', 'z'), (-11, 4, 6, 7, 'n', 'z'), (11, -3, 6, 5, 'w', 'x'), (-6, -17, 6, 5, 's', 'x'), (-17, -4, 5, 7, 'e', 'z')]
+    lots = [(8, 3, 7, 6, 'w', 'z'), (8, -12, 6, 6, 's', 'x'), (-15, 3, 6, 7, 'e', 'z'), (-4, 9, 7, 5, 'n', 'x'), (-14, -10, 6, 5, 's', 'x')]
     for j, (hx, hz, w, d, door, ax) in enumerate(lots):
-        house_timber(hx, hz, 0, w, d, h=4 + (j % 2), roof=roofs[j % 4], chests=1, door=door, axis=ax, wall=['minecraft:white_terracotta', 'minecraft:smooth_sandstone', 'minecraft:white_terracotta'][j % 3])
-    # 教会（尖塔）
-    cx_, cz_ = -8, -8
-    box(cx_ - 3, 0, cz_ - 4, cx_ + 3, 0, cz_ + 4, 'minecraft:stone_bricks'); hollow(cx_ - 3, 1, cz_ - 4, cx_ + 3, 6, cz_ + 4, 'minecraft:stone_bricks')
-    gable(cx_ - 3, cz_ - 4, 6, 7, 9, 'minecraft:deepslate_tile_stairs', 'minecraft:deepslate_tiles', 'z', 'minecraft:stone_bricks')
-    clear(cx_, 1, cz_ + 4, cx_, 3, cz_ + 4)
-    for y in (3, 4): put(cx_ - 3, y, cz_ - 2, 'minecraft:yellow_stained_glass_pane'); put(cx_ + 3, y, cz_ - 2, 'minecraft:blue_stained_glass_pane'); put(cx_ - 3, y, cz_ + 1, 'minecraft:red_stained_glass_pane'); put(cx_ + 3, y, cz_ + 1, 'minecraft:yellow_stained_glass_pane')
-    box(cx_ - 1, 1, cz_ - 6, cx_ + 1, 14, cz_ - 4, 'minecraft:stone_bricks'); clear(cx_, 10, cz_ - 6, cx_, 12, cz_ - 4)
-    for k in range(4): box(cx_ - 1 + (k > 1), 15 + k, cz_ - 6 + (k > 1), cx_ + 1 - (k > 1), 15 + k, cz_ - 4 - (k > 1), 'minecraft:deepslate_tiles')
-    put(cx_, 19, cz_ - 5, 'minecraft:lightning_rod'); put(cx_, 11, cz_ - 5, 'minecraft:bell[attachment=ceiling,facing=north]')
-    chest(cx_, 1, cz_ - 3, rich=True, face='south')
-    for (lx, lz) in ((3, 9), (-3, -12), (9, 3), (-12, 3)): lamp(lx, lz, 0)
-    for _ in range(10):
-        s = spot(rr, 0, 0, 15, r * 0.95, need_top='minecraft:grass_block')
-        if s: tree_round(s[0], s[2], s[1], 4, rad=2)
+        y1 = pad(hx, hz, hx + w - 1, hz + d - 1)
+        house_fine(hx, hz, y1, w, d, h=5, roof=roofs[j % 4], chests=1, door=door, axis=ax,
+                   wall=['minecraft:white_terracotta', 'minecraft:smooth_sandstone', 'minecraft:white_concrete'][j % 3])
+    # 尖塔の教会（バラ窓・控え壁）
+    cx_, cz_ = -3, -15
+    y2 = pad(cx_ - 4, cz_ - 6, cx_ + 4, cz_ + 5, top='minecraft:stone_bricks', ymax=3)
+    hollow(cx_ - 3, y2 + 1, cz_ - 4, cx_ + 3, y2 + 7, cz_ + 4, 'minecraft:stone_bricks')
+    for zz in range(cz_ - 4, cz_ + 5, 2):
+        for xx in (cx_ - 4, cx_ + 4): box(xx, y2 + 1, zz, xx, y2 + 4, zz, 'minecraft:stone_brick_wall')
+    gable(cx_ - 3, cz_ - 4, y2 + 7, 7, 9, 'minecraft:deepslate_tile_stairs', 'minecraft:deepslate_tiles', 'z', 'minecraft:stone_bricks')
+    clear(cx_, y2 + 1, cz_ + 4, cx_, y2 + 3, cz_ + 4); put(cx_, y2 + 6, cz_ + 4, 'minecraft:red_stained_glass')
+    for y in (y2 + 3, y2 + 4, y2 + 5):
+        for zz in (cz_ - 2, cz_, cz_ + 2): put(cx_ - 3, y, zz, 'minecraft:blue_stained_glass_pane'); put(cx_ + 3, y, zz, 'minecraft:yellow_stained_glass_pane')
+    box(cx_ - 1, y2 + 1, cz_ - 6, cx_ + 1, y2 + 14, cz_ - 4, 'minecraft:stone_bricks'); clear(cx_, y2 + 11, cz_ - 6, cx_, y2 + 13, cz_ - 4)
+    for k in range(5): box(cx_ - 1 + (k > 1), y2 + 15 + k, cz_ - 6 + (k > 1), cx_ + 1 - (k > 1), y2 + 15 + k, cz_ - 4 - (k > 1), 'minecraft:deepslate_tiles')
+    put(cx_, y2 + 20, cz_ - 5, 'minecraft:lightning_rod'); put(cx_, y2 + 12, cz_ - 5, 'minecraft:bell[attachment=ceiling,facing=north]')
+    box(cx_ - 2, y2 + 1, cz_ - 3, cx_ + 2, y2 + 1, cz_ - 3, 'minecraft:quartz_slab[type=bottom]'); chest(cx_, y2 + 2, cz_ - 3, rich=True, face='south')
+    for z in range(cz_ - 2, cz_ + 4): put(cx_, y2, z, 'minecraft:red_wool')
+    for _ in range(12):
+        s = spot(rr, 0, 0, 12, 23, need_top='minecraft:grass_block')
+        if s: tree_round(s[0], s[2], s[1], 4 + int(rr.random() * 2), rad=2)
+    for (x, z), g in list(cur.surf.items()):
+        if getb(x, g, z) == 'minecraft:grass_block' and free(x, g + 1, z) and rr.random() < 0.06: put(x, g + 1, z, str(rr.choice(['minecraft:poppy', 'minecraft:cornflower', 'minecraft:oxeye_daisy'])))
+    promenade()
     fin(rr, r)
 
+# ---------------------------------------------------------------------------------------------------- 和風
 @isle('japan', '和風の島', 24)
 def b_japan(rr, r):
-    island(0, 0, r, 28, amp=5, rim=0.6, seed_off=606)
-    # 五重の塔
+    isle_terrain(r, amp=13, seed_off=606)
+    # 四重の塔（丘の上）
     tx, tz = -6, -6
-    for lv in range(5):
-        y0 = lv * 5; hw = 3 - (lv >= 2) - (lv >= 4)
-        box(tx - hw, y0 + 1, tz - hw, tx + hw, y0 + 4, tz + hw, 'minecraft:dark_oak_planks')
-        for (dx, dz) in ((-hw, -hw), (hw, -hw), (-hw, hw), (hw, hw)): box(tx + dx, y0 + 1, tz + dz, tx + dx, y0 + 4, tz + dz, 'minecraft:stripped_mangrove_log')
-        box(tx - hw + 1, y0 + 2, tz - hw, tx + hw - 1, y0 + 3, tz - hw, 'minecraft:white_concrete') if hw > 1 else None
+    y0 = pad(tx - 5, tz - 5, tx + 5, tz + 5, top='minecraft:stone_bricks', ymax=2)
+    for lv in range(4):
+        b0 = y0 + lv * 5; hw = 3 - (lv >= 2)
+        box(tx - hw, b0 + 1, tz - hw, tx + hw, b0 + 4, tz + hw, 'minecraft:dark_oak_planks')
+        box(tx - hw + 1, b0 + 2, tz - hw, tx + hw - 1, b0 + 3, tz - hw, 'minecraft:white_concrete'); box(tx - hw + 1, b0 + 2, tz + hw, tx + hw - 1, b0 + 3, tz + hw, 'minecraft:white_concrete')
+        for (dx, dz) in ((-hw, -hw), (hw, -hw), (-hw, hw), (hw, hw)): box(tx + dx, b0 + 1, tz + dz, tx + dx, b0 + 4, tz + dz, 'minecraft:stripped_mangrove_log')
         for x in range(tx - hw - 2, tx + hw + 3):
             for z in range(tz - hw - 2, tz + hw + 3):
-                if max(abs(x - tx), abs(z - tz)) >= hw + 1: put(x, y0 + 5, z, 'minecraft:deepslate_tile_slab[type=bottom]')
-                else: put(x, y0 + 5, z, 'minecraft:deepslate_tiles')
-            for (cx2, cz2) in ((tx - hw - 2, tz - hw - 2), (tx + hw + 2, tz - hw - 2), (tx - hw - 2, tz + hw + 2), (tx + hw + 2, tz + hw + 2)): put(cx2, y0 + 6, cz2, 'minecraft:deepslate_tile_slab[type=bottom]')
-    clear(tx, 1, tz + 3, tx, 2, tz + 3); clear(tx - 2, 1, tz - 2, tx + 2, 4, tz + 2)
-    box(tx, 26, tz, tx, 30, tz, 'minecraft:chain') if False else box(tx, 26, tz, tx, 29, tz, 'minecraft:gold_block')
-    chest(tx, 1, tz, rich=True, face='south')
-    # 鳥居（赤）と参道・石灯籠
-    for sgn in (-1, 1): box(sgn * 3 + 6, 1, 10, sgn * 3 + 6, 6, 10, 'minecraft:red_concrete')
-    box(2, 6, 10, 10, 6, 10, 'minecraft:red_concrete'); box(1, 7, 10, 11, 7, 10, 'minecraft:black_concrete'); box(3, 4, 10, 9, 4, 10, 'minecraft:red_concrete')
-    for z in range(-1, 18): put(6, 0, z, 'minecraft:gravel') if gy(6, z) == 0 else None
-    for (lx, lz) in ((4, 4), (8, 4), (4, 14), (8, 14)):
-        put(lx, 1, lz, 'minecraft:stone_brick_wall'); put(lx, 2, lz, 'minecraft:lantern'); put(lx, 3, lz, 'minecraft:stone_brick_slab[type=bottom]')
-    # 茶屋（縁側）と池・飛び石・竹
-    hx, hz = 8, -10
-    box(hx - 3, 0, hz - 3, hx + 3, 0, hz + 3, 'minecraft:spruce_planks'); hollow(hx - 3, 1, hz - 3, hx + 3, 3, hz + 3, 'minecraft:birch_planks')
-    for (dx, dz) in ((-3, -3), (3, -3), (-3, 3), (3, 3)): box(hx + dx, 1, hz + dz, hx + dx, 3, hz + dz, 'minecraft:stripped_spruce_log')
-    gable(hx - 3, hz - 3, 3, 7, 7, 'minecraft:deepslate_tile_stairs', 'minecraft:deepslate_tiles', 'x', 'minecraft:birch_planks')
-    clear(hx, 1, hz + 3, hx, 2, hz + 3); chest(hx - 2, 1, hz - 2, face='south')
-    for x in range(-14, -6):
-        for z in range(4, 12):
-            if math.hypot(x + 10, z - 8) < 3.4 and gy(x, z) is not None: put(x, gy(x, z), z, 'minecraft:water'); cur.surf[(x, z)] = gy(x, z)
-    for (x, z) in ((-12, 7), (-10, 9), (-8, 8)): put(x, gy(x, z) or 0, z, 'minecraft:stone_bricks')
-    for _ in range(14):
-        s = spot(rr, 0, 0, 12, r * 0.95, need_top='minecraft:grass_block')
+                put(x, b0 + 5, z, 'minecraft:deepslate_tile_slab[type=bottom]' if max(abs(x - tx), abs(z - tz)) >= hw + 1 else 'minecraft:deepslate_tiles')
+        for (cx2, cz2) in ((tx - hw - 2, tz - hw - 2), (tx + hw + 2, tz - hw - 2), (tx - hw - 2, tz + hw + 2), (tx + hw + 2, tz + hw + 2)):
+            put(cx2, b0 + 6, cz2, 'minecraft:deepslate_tile_slab[type=bottom]'); put(cx2, b0 + 4, cz2, 'minecraft:lantern[hanging=true]') if free(cx2, b0 + 4, cz2) else None
+    clear(tx - 2, y0 + 1, tz - 2, tx + 2, y0 + 4, tz + 2); clear(tx, y0 + 1, tz + 3, tx, y0 + 2, tz + 3)
+    box(tx, y0 + 21, tz, tx, y0 + 23, tz, 'minecraft:gold_block')
+    chest(tx, y0 + 1, tz, rich=True, face='south')
+    # 鳥居（参道の入口）と石灯籠
+    gx, gz = 6, 12
+    y1 = pad(gx - 4, gz - 1, gx + 4, gz + 1, top='minecraft:gravel')
+    for sgn in (-3, 3): box(gx + sgn, y1 + 1, gz, gx + sgn, y1 + 6, gz, 'minecraft:red_concrete'); put(gx + sgn, y1 + 1, gz, 'minecraft:black_concrete')
+    box(gx - 4, y1 + 6, gz, gx + 4, y1 + 6, gz, 'minecraft:red_concrete'); box(gx - 5, y1 + 7, gz, gx + 5, y1 + 7, gz, 'minecraft:black_concrete'); box(gx - 3, y1 + 4, gz, gx + 3, y1 + 4, gz, 'minecraft:red_concrete')
+    put(gx, y1 + 5, gz, 'minecraft:gold_block')
+    for (lx, lz) in ((gx - 2, gz - 3), (gx + 2, gz - 3), (gx - 2, gz - 7), (gx + 2, gz - 7)):
+        g = gy(lx, lz)
+        if g is None: continue
+        put(lx, g + 1, lz, 'minecraft:stone_brick_wall'); put(lx, g + 2, lz, 'minecraft:lantern'); put(lx, g + 3, lz, 'minecraft:stone_brick_slab[type=bottom]')
+    # 茶屋（縁側・障子）
+    hx, hz = 9, -10
+    y2 = pad(hx - 4, hz - 4, hx + 4, hz + 4, top='minecraft:spruce_planks')
+    box(hx - 4, y2, hz - 4, hx + 4, y2, hz + 4, 'minecraft:spruce_slab[type=top]'); box(hx - 3, y2, hz - 3, hx + 3, y2, hz + 3, 'minecraft:spruce_planks')
+    hollow(hx - 3, y2 + 1, hz - 3, hx + 3, y2 + 3, hz + 3, 'minecraft:birch_planks')
+    for (dx, dz) in ((-3, -3), (3, -3), (-3, 3), (3, 3), (0, -3), (0, 3), (-3, 0), (3, 0)): box(hx + dx, y2 + 1, hz + dz, hx + dx, y2 + 3, hz + dz, 'minecraft:stripped_spruce_log')
+    for (x, z) in ((hx - 2, hz - 3), (hx + 2, hz - 3), (hx - 2, hz + 3), (hx + 2, hz + 3)): put(x, y2 + 2, z, 'minecraft:white_stained_glass_pane')
+    gable(hx - 3, hz - 3, y2 + 3, 7, 7, 'minecraft:deepslate_tile_stairs', 'minecraft:deepslate_tiles', 'x', 'minecraft:birch_planks')
+    clear(hx - 1, y2 + 1, hz + 3, hx + 1, y2 + 2, hz + 3); chest(hx - 2, y2 + 1, hz - 2, face='south'); put(hx + 2, y2 + 1, hz - 2, 'minecraft:barrel[facing=up]')
+    # 池と飛び石・竹・桜
+    yp = pad(-15, 4, -7, 12)
+    for x in range(-15, -6):
+        for z in range(4, 13):
+            if math.hypot(x + 11, z - 8) < 3.6: put(x, yp, z, 'minecraft:water')
+    for (x, z) in ((-13, 7), (-11, 9), (-9, 8)): put(x, yp, z, 'minecraft:stone_bricks')
+    for _ in range(16):
+        s = spot(rr, 0, 0, 10, 23, need_top='minecraft:grass_block')
         if not s: continue
         if rr.random() < 0.65: tree_cherry(s[0], s[2], s[1], 4 + int(rr.random() * 2))
         else: box(s[0], s[1] + 1, s[2], s[0], s[1] + 4 + int(rr.random() * 3), s[2], 'minecraft:bamboo')
     for (x, z), g in list(cur.surf.items()):
-        if getb(x, g, z) == 'minecraft:grass_block' and free(x, g + 1, z) and rr.random() < 0.06: put(x, g + 1, z, 'minecraft:pink_petals[flower_amount=4,facing=north]')
+        if getb(x, g, z) == 'minecraft:grass_block' and free(x, g + 1, z) and rr.random() < 0.07: put(x, g + 1, z, 'minecraft:pink_petals[flower_amount=4,facing=north]')
+    promenade('minecraft:stone_bricks', lamp='minecraft:lantern')
     fin(rr, r)
 
+# ---------------------------------------------------------------------------------------------------- 飛行船
 @isle('ship', '飛行船の島', 19)
 def b_ship(rr, r):
-    island(0, 0, 14, 22, amp=0, rim=0.6, seed_off=707)
-    for x in range(-14, 15):
-        for z in range(-14, 15):
-            if gy(x, z) is not None and math.hypot(x, z) < 6: put(x, 0, z, 'minecraft:spruce_planks')
-    # 停泊中の大きな飛行船（甲板 y=0、長さ40、幅11）。船首は +x
+    island(0, 0, 13, 22, amp=4, rim=0.8, wob=0.1, seed_off=707)
+    pad(-3, -3, 3, 3, top='minecraft:spruce_planks')
+    # 停泊中の大きな飛行船（甲板 y=0、長さ40、幅11）。船首は +x。横の手すりはなし（どの向きからでも乗り込める）
     L2, W2 = 20, 5
     for x in range(-L2, L2 + 1):
         t = x / L2
         hw = W2 if abs(t) < 0.6 else max(1, round(W2 * (1 - (abs(t) - 0.6) / 0.45)))
         for z in range(-hw, hw + 1):
-            put(x, 0, z, 'minecraft:spruce_planks')
+            put(x, 0, z, 'minecraft:spruce_planks' if (x + z) % 5 else 'minecraft:stripped_spruce_wood')
             depth = max(1, round(5 * (1 - (z / (hw + 0.5)) ** 2) * (1 - max(0, abs(t) - 0.5))))
             for y in range(-depth, 0): put(x, y, z, 'minecraft:dark_oak_planks' if y > -depth else 'minecraft:spruce_planks')
-            if abs(z) == hw: put(x, 1, z, 'minecraft:dark_oak_fence'); put(x, -1, z, 'minecraft:stripped_dark_oak_log[axis=x]')
-    box(L2 + 1, 1, 0, L2 + 6, 1, 0, 'minecraft:spruce_fence'); put(L2 + 1, 0, 0, 'minecraft:dark_oak_planks')
-    # 船室（2階建て・金の飾り）と舵
-    hollow(-L2 + 2, 1, -3, -L2 + 9, 5, 3, 'minecraft:dark_oak_planks'); box(-L2 + 2, 6, -4, -L2 + 9, 6, 4, 'minecraft:spruce_slab[type=bottom]')
+            if abs(z) == hw: put(x, -1, z, 'minecraft:stripped_dark_oak_log[axis=x]'); put(x, -2, z, 'minecraft:gold_block') if x % 6 == 0 and abs(t) < 0.55 else None
+            cur.surf[(x, z)] = 0
+    box(L2 + 1, 1, 0, L2 + 6, 1, 0, 'minecraft:spruce_fence'); put(L2 + 1, 0, 0, 'minecraft:dark_oak_planks'); put(L2 + 2, 0, 0, 'minecraft:gold_block')
+    # 船尾楼（2階建て・窓・金の縁）と舵
+    hollow(-L2 + 2, 1, -3, -L2 + 9, 5, 3, 'minecraft:dark_oak_planks')
+    for x in range(-L2 + 2, -L2 + 10): put(x, 5, -3, 'minecraft:stripped_dark_oak_log[axis=x]'); put(x, 5, 3, 'minecraft:stripped_dark_oak_log[axis=x]')
+    box(-L2 + 1, 6, -4, -L2 + 10, 6, 4, 'minecraft:spruce_slab[type=bottom]')
     for z in (-3, 3):
         for x in range(-L2 + 3, -L2 + 9, 2): put(x, 3, z, 'minecraft:glass_pane')
     clear(-L2 + 9, 1, 0, -L2 + 9, 2, 0); hollow(-L2 + 2, 7, -2, -L2 + 6, 9, 2, 'minecraft:dark_oak_planks'); box(-L2 + 2, 10, -2, -L2 + 6, 10, 2, 'minecraft:spruce_slab[type=bottom]')
     box(-L2 + 8, 1, -2, -L2 + 8, 6, -2, 'minecraft:ladder[facing=east]'); clear(-L2 + 6, 7, 0, -L2 + 6, 8, 0)
-    box(-L2 + 2, 5, -4, -L2 + 9, 5, -4, 'minecraft:gold_block') if False else None
     chest(-L2 + 4, 1, -2, face='south'); chest(-L2 + 4, 7, 1, rich=True, face='north')
     put(-L2 + 10, 1, 0, 'minecraft:dark_oak_fence'); put(-L2 + 10, 2, 0, 'minecraft:spruce_trapdoor[facing=east,half=top,open=false]')
-    # マスト3本と帆（羊毛）・旗
+    # マスト3本と帆・見張り台・旗
     for (mx, mh) in ((-4, 16), (6, 18), (14, 12)):
         box(mx, 1, 0, mx, mh, 0, 'minecraft:spruce_log')
         for y in range(mh - 10, mh - 2):
             hw = 4 - abs(y - (mh - 6)) // 3
             for z in range(-hw, hw + 1): put(mx + 1, y, z, 'minecraft:white_wool')
         box(mx, mh - 10, -5, mx, mh - 10, 5, 'minecraft:stripped_spruce_log[axis=z]')
+        box(mx - 1, mh - 1, -1, mx + 1, mh - 1, 1, 'minecraft:spruce_slab[type=top]'); put(mx, mh - 1, 0, 'minecraft:spruce_log')
         put(mx, mh + 1, 0, 'minecraft:spruce_fence'); put(mx + 1, mh + 1, 0, 'minecraft:red_wool'); put(mx + 2, mh + 1, 0, 'minecraft:red_wool')
     chest(2, 1, -3, face='south'); chest(10, 1, 3, face='north'); chest(-8, 1, 3)
-    # 船を浮かべる気嚢（飾り、当たり判定なし）
-    bd(0, 22, 0, 'minecraft:white_wool', 9.0, 8.0, 34.0, yaw=90.0); bd(0, 22, 0, 'minecraft:red_wool', 9.4, 1.4, 34.4, oy=3.0, yaw=90.0)
-    for x in (-14, 0, 14): bd(x, 1, 0, 'minecraft:oak_fence', 0.15, 21.0, 0.15)
+    for x in (-12, 0, 12): put(x, 1, 0, 'minecraft:barrel[facing=up]') if free(x, 1, 0) else None
+    # 船を浮かべる気嚢（飾り、当たり判定なし。ドームの中に収める）
+    bd(0, 16, 0, 'minecraft:white_wool', 8.0, 6.0, 32.0, yaw=90.0); bd(0, 16, 0, 'minecraft:red_wool', 8.4, 1.2, 32.4, oy=2.2, yaw=90.0)
+    for x in (-14, 0, 14): bd(x, 1, 0, 'minecraft:oak_fence', 0.15, 15.0, 0.15)
+    promenade('minecraft:spruce_planks', edge='minecraft:spruce_slab[type=bottom]')
     fin(rr, r, want_chests=7, spawns=4)
 
+# ---------------------------------------------------------------------------------------------------- 気球
 @isle('balloon', '気球の島', 18)
 def b_balloon(rr, r):
-    # 丸い甲板（桜の植え込み）、下に吊りかご（はしご）、上に大きな気球（飾り）
     R_ = 16
     for x in range(-R_ - 1, R_ + 2):
         for z in range(-R_ - 1, R_ + 2):
@@ -746,106 +935,133 @@ def b_balloon(rr, r):
                 put(x, -1, z, 'minecraft:dark_oak_planks'); cur.surf[(x, z)] = 0
                 if d > R_ - 3: put(x, -2, z, 'minecraft:mangrove_planks')
                 if d > R_ - 1: put(x, -3, z, 'minecraft:stripped_mangrove_log')
-            if R_ - 0.6 <= d <= R_ + 0.4: put(x, 1, z, 'minecraft:mangrove_fence')
+    # 2段の甲板（中央を一段高く）
+    for x in range(-9, 10):
+        for z in range(-9, 10):
+            if math.hypot(x, z) <= 9.4: put(x, 1, z, 'minecraft:cherry_planks'); cur.surf[(x, z)] = 1
+            if 8.6 <= math.hypot(x, z) <= 9.4 and abs(x) > 1 and abs(z) > 1: put(x, 2, z, 'minecraft:mangrove_fence')
     for k in range(8):
         a = k * math.pi / 4; x, z = round(math.cos(a) * (R_ - 1)), round(math.sin(a) * (R_ - 1))
         box(x, 1, z, x, 2, z, 'minecraft:stripped_mangrove_log'); put(x, 3, z, 'minecraft:lantern')
-    # 中央の楼閣（真紅・桜色）
-    hollow(-5, 1, -5, 5, 5, 5, 'minecraft:mangrove_planks'); box(-6, 6, -6, 6, 6, 6, 'minecraft:mangrove_slab[type=bottom]')
-    for (dx, dz) in ((-5, -5), (5, -5), (-5, 5), (5, 5)): box(dx, 1, dz, dx, 6, dz, 'minecraft:stripped_mangrove_log')
+    # 中央の楼閣（真紅・桜色、2層の反り屋根）
+    hollow(-5, 2, -5, 5, 6, 5, 'minecraft:mangrove_planks')
+    for (dx, dz) in ((-5, -5), (5, -5), (-5, 5), (5, 5)): box(dx, 2, dz, dx, 7, dz, 'minecraft:stripped_mangrove_log')
     for i in (-3, -1, 1, 3):
-        for (x, z) in ((i, -5), (i, 5), (-5, i), (5, i)): put(x, 3, z, 'minecraft:pink_stained_glass_pane')
-    for (dx, dz) in ((1, 0), (-1, 0), (0, 1), (0, -1)): clear(dx * 5, 1, dz * 5, dx * 5, 2, dz * 5)
-    box(-4, 7, -4, 4, 7, 4, 'minecraft:mangrove_planks'); box(-3, 8, -3, 3, 8, 3, 'minecraft:cherry_planks'); put(0, 9, 0, 'minecraft:gold_block')
-    chest(-3, 1, -3, rich=True, face='south'); chest(3, 1, 3, face='north')
-    for (tx, tz) in ((-10, -8), (10, 8), (-9, 10), (10, -9)): tree_cherry(tx, tz, 0, 4)
-    # 吊りかご（下の小さな甲板）
+        for (x, z) in ((i, -5), (i, 5), (-5, i), (5, i)): put(x, 4, z, 'minecraft:pink_stained_glass_pane')
+    for (dx, dz) in ((1, 0), (-1, 0), (0, 1), (0, -1)): clear(dx * 5, 2, dz * 5, dx * 5, 3, dz * 5)
+    box(-7, 7, -7, 7, 7, 7, 'minecraft:mangrove_slab[type=bottom]'); box(-6, 7, -6, 6, 7, 6, 'minecraft:mangrove_planks')
+    box(-4, 8, -4, 4, 10, 4, 'minecraft:cherry_planks'); clear(-3, 8, -3, 3, 10, 3); box(-5, 11, -5, 5, 11, 5, 'minecraft:mangrove_slab[type=bottom]'); box(-3, 12, -3, 3, 12, 3, 'minecraft:mangrove_planks')
+    put(0, 13, 0, 'minecraft:gold_block')
+    for (x, z) in ((-7, -7), (7, -7), (-7, 7), (7, 7), (-5, -5), (5, 5)): put(x, 8 if abs(x) == 7 else 12, z, 'minecraft:end_rod[facing=up]')
+    chest(-3, 2, -3, rich=True, face='south'); chest(3, 2, 3, face='north')
+    for (tx, tz) in ((-11, -8), (11, 8), (-10, 10), (11, -9)): tree_cherry(tx, tz, 0, 4)
+    # 吊りかご（下の小さな甲板、はしご）
     for x in range(-5, 6):
         for z in range(-5, 6):
             d = math.hypot(x, z)
-            if d <= 5.4: put(x, -12, z, 'minecraft:spruce_planks'); put(x, -13, z, 'minecraft:dark_oak_planks') if d > 3 else None
+            if d <= 5.4: put(x, -12, z, 'minecraft:spruce_planks')
+            if d <= 3.4: put(x, -13, z, 'minecraft:dark_oak_planks')
             if 4.6 <= d <= 5.4: put(x, -11, z, 'minecraft:spruce_fence')
-    for y in range(-11, 0): put(0, y, 7, 'minecraft:ladder[facing=south]') if False else None
-    box(6, -11, 0, 6, -1, 0, 'minecraft:ladder[facing=east]'); clear(6, 0, 0, 6, 0, 0); put(6, -12, 0, 'minecraft:spruce_planks')
+    box(6, -11, 0, 6, -1, 0, 'minecraft:ladder[facing=east]'); clear(6, 0, 0, 6, 0, 0); put(6, -12, 0, 'minecraft:spruce_planks'); put(5, -11, 0, 'minecraft:air')
     for (x, z) in ((-4, 0), (4, 0), (0, -4), (0, 4)): box(x, -11, z, x, -2, z, 'minecraft:dark_oak_fence')
     chest(-2, -11, 2, face='north')
-    # 気球（飾り）と綱
-    bd(0, 14, 0, 'minecraft:pink_wool', 22.0, 14.0, 22.0); bd(0, 14, 0, 'minecraft:white_wool', 24.0, 6.0, 16.0, oy=4.0); bd(0, 14, 0, 'minecraft:white_wool', 16.0, 6.0, 24.0, oy=4.0)
-    bd(0, 14, 0, 'minecraft:magenta_wool', 14.0, 3.0, 14.0, oy=14.0); bd(0, 14, 0, 'minecraft:mangrove_planks', 18.0, 1.0, 18.0, oy=-1.0)
-    for (x, z) in ((-8, -8), (8, -8), (-8, 8), (8, 8)): bd(x, 1, z, 'minecraft:oak_fence', 0.15, 13.0, 0.15)
+    # 気球（飾り）と綱。ドームの中に収める
+    bd(0, 15, 0, 'minecraft:pink_wool', 20.0, 10.0, 20.0); bd(0, 15, 0, 'minecraft:white_wool', 22.0, 4.0, 14.0, oy=3.0); bd(0, 15, 0, 'minecraft:white_wool', 14.0, 4.0, 22.0, oy=3.0)
+    bd(0, 15, 0, 'minecraft:magenta_wool', 12.0, 2.0, 12.0, oy=10.0)
+    for (x, z) in ((-7, -7), (7, -7), (-7, 7), (7, 7)): bd(x, 8, z, 'minecraft:oak_fence', 0.15, 7.0, 0.15)
+    promenade('minecraft:spruce_planks')
     fin(rr, R_, want_chests=6, spawns=4, ores=2, host='minecraft:spruce_planks')
 
-@isle('temple', '天空神殿の島', 22)
+# ---------------------------------------------------------------------------------------------------- 天空神殿
+@isle('temple', '天空神殿の島', 23)
 def b_temple(rr, r):
     M = dict(top='minecraft:moss_block', sub='minecraft:calcite', rock='minecraft:calcite', rock2='minecraft:diorite', under='minecraft:calcite')
-    island(0, 0, r, 30, amp=4, mats=M, rim=0.62, seed_off=808)
-    # 島の縁から垂れる苔（下へ）
+    isle_terrain(r, M, amp=11, seed_off=808, depth=30)
     for (x, z), g in list(cur.surf.items()):
         d = math.hypot(x, z) / r
-        if d > 0.8 and rr.random() < 0.18:
-            ln = 2 + int(rr.random() * 6)
-            for y in range(-3 - ln, -2): put(x, y, z, 'minecraft:azalea_leaves[persistent=true]') if free(x, y, z) else None
-    # 神殿（石英の列柱・破風・階段）
-    box(-9, 0, -7, 9, 0, 7, 'minecraft:smooth_quartz'); box(-10, 0, -8, 10, 0, 8, 'minecraft:quartz_bricks') if False else None
-    for x in range(-11, 12):
-        for z in range(-9, 10):
-            if max(abs(x) - 9, abs(z) - 7) in (1, 2): put(x, 0, z, 'minecraft:quartz_stairs[facing=north]') if False else None
-    box(-9, 1, -7, 9, 1, 7, 'minecraft:quartz_slab[type=bottom]')
+        if d > 0.8 and rr.random() < 0.2:
+            ln = 2 + int(rr.random() * 7)
+            for y in range(-3 - ln, -2):
+                if free(x, y, z): put(x, y, z, 'minecraft:azalea_leaves[persistent=true]')
+    # 基壇（3段の石英の階段）の上の神殿（周柱式・破風）。基壇は均して地面に埋もれない
+    y0 = pad(-12, -10, 12, 10, top='minecraft:smooth_quartz', fill='minecraft:calcite', ymax=2)
+    for k in range(3):
+        hollow(-12 + k, y0 + k, -10 + k, 12 - k, y0 + k, 10 - k, 'minecraft:quartz_bricks')
+        box(-11 + k, y0 + k, -9 + k, 11 - k, y0 + k, 9 - k, 'minecraft:smooth_quartz')
+    for (dz, f) in ((-1, 'south'), (1, 'north')):
+        for k in range(3): box(-2, y0 + k, dz * (10 - k), 2, y0 + k, dz * (10 - k), f'minecraft:quartz_stairs[facing={f}]')
+    yb = y0 + 2
     for x in range(-8, 9, 4):
-        for z in (-6, 6): box(x, 1, z, x, 8, z, 'minecraft:quartz_pillar')
+        for z in (-6, 6):
+            put(x, yb + 1, z, 'minecraft:chiseled_quartz_block'); box(x, yb + 2, z, x, yb + 8, z, 'minecraft:quartz_pillar'); put(x, yb + 9, z, 'minecraft:chiseled_quartz_block')
     for z in (-2, 2):
-        for x in (-8, 8): box(x, 1, z, x, 8, z, 'minecraft:quartz_pillar')
-    box(-9, 9, -7, 9, 9, 7, 'minecraft:chiseled_quartz_block'); box(-9, 10, -7, 9, 10, 7, 'minecraft:smooth_quartz')
-    gable(-9, -7, 10, 19, 15, 'minecraft:quartz_stairs', 'minecraft:quartz_block', 'x', None)
-    hollow(-5, 1, -3, 5, 8, 3, 'minecraft:quartz_bricks'); clear(-1, 1, 3, 1, 4, 3); clear(-1, 1, -3, 1, 4, -3)
-    put(0, 1, 0, 'minecraft:gold_block'); chest(0, 2, 0, rich=True, face='south')
-    for (x, z) in ((-4, -2), (4, 2)): put(x, 1, z, 'minecraft:lantern')
-    # 桜と噴水
-    box(-1, 0, 11, 1, 0, 13, 'minecraft:water'); hollow(-2, 1, 10, 2, 1, 14, 'minecraft:quartz_slab[type=bottom]')
-    for _ in range(9):
-        s = spot(rr, 0, 0, 11, r * 0.92)
+        for x in (-8, 8):
+            put(x, yb + 1, z, 'minecraft:chiseled_quartz_block'); box(x, yb + 2, z, x, yb + 8, z, 'minecraft:quartz_pillar'); put(x, yb + 9, z, 'minecraft:chiseled_quartz_block')
+    box(-9, yb + 10, -7, 9, yb + 10, 7, 'minecraft:smooth_quartz'); hollow(-9, yb + 10, -7, 9, yb + 10, 7, 'minecraft:chiseled_quartz_block')
+    gable(-9, -7, yb + 10, 19, 15, 'minecraft:quartz_stairs', 'minecraft:quartz_block', 'z', None)
+    for x in range(-8, 9):   # 破風の三角を埋める
+        for z in (-7, 7):
+            for y in range(yb + 11, yb + 11 + (9 - abs(x)) // 1):
+                if getb(x, y, z) == 'minecraft:air' and y - yb - 11 < (9 - abs(x)): put(x, y, z, 'minecraft:smooth_quartz')
+    hollow(-5, yb + 1, -3, 5, yb + 9, 3, 'minecraft:quartz_bricks'); box(-4, yb + 1, -2, 4, yb + 9, 2, 'minecraft:air')
+    clear(-1, yb + 1, 3, 1, yb + 4, 3); clear(-1, yb + 1, -3, 1, yb + 4, -3)
+    for (x, z) in ((-5, 0), (5, 0)): put(x, yb + 5, z, 'minecraft:light_blue_stained_glass_pane')
+    put(0, yb + 1, 0, 'minecraft:gold_block'); chest(0, yb + 2, 0, rich=True, face='south')
+    for (x, z) in ((-3, -1), (3, 1)): put(x, yb + 1, z, 'minecraft:lantern')
+    for (x, z) in ((-3, 1), (3, -1)): put(x, yb + 1, z, 'minecraft:potted_azalea_bush')
+    # 噴水と桜・苔
+    yf = pad(-2, 13, 2, 17, top='minecraft:smooth_quartz')
+    box(-1, yf, 14, 1, yf, 16, 'minecraft:water'); hollow(-2, yf + 1, 13, 2, yf + 1, 17, 'minecraft:quartz_slab[type=bottom]'); box(0, yf + 1, 15, 0, yf + 2, 15, 'minecraft:quartz_pillar'); put(0, yf + 3, 15, 'minecraft:gold_block')
+    for _ in range(12):
+        s = spot(rr, 0, 0, 13, 23)
         if s: tree_cherry(s[0], s[2], s[1], 4 + int(rr.random() * 2))
     for (x, z), g in list(cur.surf.items()):
-        if getb(x, g, z) == 'minecraft:moss_block' and free(x, g + 1, z) and rr.random() < 0.1: put(x, g + 1, z, 'minecraft:moss_carpet')
+        if getb(x, g, z) == 'minecraft:moss_block' and free(x, g + 1, z) and rr.random() < 0.12: put(x, g + 1, z, 'minecraft:moss_carpet')
+    promenade('minecraft:smooth_quartz', lamp='minecraft:lantern')
     fin(rr, r, host='minecraft:calcite')
 
+# ---------------------------------------------------------------------------------------------------- リゾート
 @isle('resort', 'リゾートの島', 23)
 def b_resort(rr, r):
-    island(0, 0, r, 26, amp=0, rim=0.62, seed_off=909)
-    # 白い砂浜とプール、ウォータースライダー風の赤い滑り台、休憩小屋、展望塔
-    for x in range(-r, r + 1):
-        for z in range(-r, r + 1):
-            if gy(x, z) is None: continue
-            if math.hypot(x - 3, z - 2) < 12: put(x, 0, z, 'minecraft:white_concrete_powder' if math.hypot(x - 3, z - 2) > 8 else 'minecraft:smooth_quartz')
-    for x in range(-2, 9):
-        for z in range(-3, 7):
-            put(x, 0, z, 'minecraft:water'); put(x, -1, z, 'minecraft:light_blue_concrete')
-            if x in (-2, 8) or z in (-3, 6): put(x, 0, z, 'minecraft:smooth_quartz')
-    hollow(-2, 0, -3, 8, 0, 6, 'minecraft:smooth_quartz')
-    # 滑り台（赤い螺旋の飾り。ブロックで低く）
-    for i in range(18):
-        a = i * 0.45; x, z = round(-8 + math.cos(a) * 3), round(-6 + math.sin(a) * 3); y = 7 - i * 7 // 18
+    isle_terrain(r, amp=8, seed_off=909)
+    # 白い砂浜とプール（段のテラス）
+    yb = pad(-6, -6, 12, 10, top='minecraft:smooth_quartz')
+    for x in range(-6, 13):
+        for z in range(-6, 11):
+            put(x, yb, z, 'minecraft:white_concrete_powder' if (x < -3 or x > 9 or z < -3 or z > 7) else 'minecraft:smooth_quartz')
+    for x in range(-1, 9):
+        for z in range(-2, 7):
+            put(x, yb, z, 'minecraft:water'); put(x, yb - 1, z, 'minecraft:light_blue_concrete')
+    hollow(-2, yb, -3, 9, yb, 7, 'minecraft:smooth_quartz')
+    for x in range(0, 9, 2): put(x, yb - 1, 2, 'minecraft:sea_lantern')
+    for (x, z) in ((11, -4), (11, -2), (11, 0)): put(x, yb + 1, z, 'minecraft:white_carpet')
+    # 滑り台（赤い螺旋）と飛び込み台
+    sx, sz = -9, -8
+    ys = pad(sx - 3, sz - 3, sx + 3, sz + 3, top='minecraft:smooth_quartz')
+    box(sx, ys + 1, sz, sx, ys + 8, sz, 'minecraft:white_concrete'); box(sx, ys + 1, sz - 1, sx, ys + 8, sz - 1, 'minecraft:ladder[facing=north]')
+    for i in range(20):
+        a = i * 0.42; x, z = round(sx + math.cos(a) * 3), round(sz + math.sin(a) * 3); y = ys + 8 - i * 8 // 20
         put(x, y, z, 'minecraft:red_concrete')
-    box(-8, 1, -6, -8, 7, -6, 'minecraft:white_concrete'); box(-8, 1, -7, -8, 7, -7, 'minecraft:ladder[facing=north]')
-    # 休憩小屋（八角の屋根）
-    for (px_, pz_) in ((12, 8), (-6, 10)):
-        for (dx, dz) in ((-2, -2), (2, -2), (-2, 2), (2, 2)): box(px_ + dx, 1, pz_ + dz, px_ + dx, 3, pz_ + dz, 'minecraft:stripped_spruce_log')
+    # 休憩小屋（八角の屋根）2つ
+    for (px_, pz_) in ((14, 10), (-8, 11)):
+        y1 = pad(px_ - 3, pz_ - 3, px_ + 3, pz_ + 3, top='minecraft:spruce_planks')
+        for (dx, dz) in ((-2, -2), (2, -2), (-2, 2), (2, 2)): box(px_ + dx, y1 + 1, pz_ + dz, px_ + dx, y1 + 3, pz_ + dz, 'minecraft:stripped_spruce_log')
         for k in range(4):
             for x in range(px_ - 4 + k, px_ + 5 - k):
                 for z in range(pz_ - 4 + k, pz_ + 5 - k):
-                    if abs(x - px_) + abs(z - pz_) <= 6 - k: put(x, 4 + k, z, 'minecraft:spruce_planks' if k % 2 else 'minecraft:stripped_spruce_wood')
-        chest(px_, 1, pz_)
-        for (dx, dz) in ((-1, 3), (1, 3)): put(px_ + dx, 1, pz_ + dz, 'minecraft:white_bed[facing=north,part=foot]') if False else None
-    # 展望塔
-    round_tower(-12, -8, 0, 12, 2, wall='minecraft:bricks', band='minecraft:spruce_planks', top='crenel', door=((1, 0),), chest_top=True)
-    for _ in range(10):
-        s = spot(rr, 0, 0, 13, r * 0.95)
+                    if abs(x - px_) + abs(z - pz_) <= 6 - k: put(x, y1 + 4 + k, z, 'minecraft:spruce_planks' if k % 2 else 'minecraft:stripped_spruce_wood')
+        chest(px_, y1 + 1, pz_); put(px_ + 1, y1 + 1, pz_ + 1, 'minecraft:barrel[facing=up]')
+    # 展望塔（レンガ）
+    y2 = pad(-16, -4, -12, 0)
+    round_tower(-14, -2, y2, 12, 2, wall='minecraft:bricks', band='minecraft:spruce_planks', top='crenel', door=((1, 0),), chest_top=True)
+    for _ in range(12):
+        s = spot(rr, 0, 0, 13, 23)
         if s: tree_palm(s[0], s[2], s[1], 6 + int(rr.random() * 2))
-    for (x, z) in ((10, -6), (12, -4), (14, -6)):
-        put(x, 1, z, 'minecraft:white_carpet'); put(x, 1, z + 1, 'minecraft:white_carpet')
+    promenade('minecraft:smooth_quartz')
     fin(rr, r)
 
 assert len(ISLES) == 10, len(ISLES)
+# 島ごとのドームの内側の高さの確認（建物がガラスを突き抜けない）
 
 # ======================================================================== 書き出し：中央（タイル）
 os.makedirs(OUT, exist_ok=True)
@@ -957,8 +1173,19 @@ for ti, (key, name, r, fn) in enumerate(ISLES):
     cv = Canvas(-IS, -IS, IS, IS, isle=True)
     cur = cv
     fn(np.random.default_rng(SEED * 7 + ti), r)
-    # 島の上 y=1〜4 の空いた所は空気を書く（橋の手すりを消す）
-    for (x, z), g in cv.surf.items():
+    # ドームの内側（半径 DOME_R-1）より上へ出るブロックは消す（ガラスを突き抜けない）
+    cut = 0
+    for x in range(-IS, IS + 1):
+        for z in range(-IS, IS + 1):
+            d = math.hypot(x, z); lim = int(math.floor(math.sqrt(max(0.0, (DOME_R - 1.6) ** 2 - d * d))))
+            for y in range(max(lim + 1, 1), TOP + 1):
+                if cv.g[x + IS, z + IS, y - Y0]: cv.g[x + IS, z + IS, y - Y0] = 0; cut += 1
+    if cut: print(f'  {key}: ドームの外へ出る {cut} ブロックを消した')
+    # 歩ける所（地形・y=0 に床のある列）の上、y=1〜4 の空いた所は空気を書く（橋の手すりを消す）
+    cols = set(cv.surf.keys()) | {(x - IS, z - IS) for x, z in zip(*np.nonzero(cv.g[:, :, 0 - Y0]))}
+    for (x, z) in cols:
+        if math.hypot(x, z) > DOME_R - 0.6: continue
+        g = cv.surf.get((x, z), 0)
         for y in range(max(1, g + 1), 5):
             if cv.g[x + IS, z + IS, y - Y0] == 0: cv.g[x + IS, z + IS, y - Y0] = EXPLICIT_AIR
     # NBT
@@ -989,6 +1216,49 @@ for ti, (key, name, r, fn) in enumerate(ISLES):
     assert len(cv.chests) + len(cv.riches) >= 5, key
     assert len(cv.spawns) >= 3, key
 cur = base
+
+# ======================================================================== 書き出し：ガラスの半球（候補地ごと。入口は中央への橋の向き）
+def write_nbt(path, g):
+    palette = []; pindex = {}; blocks = []
+    xs, zs, ys = np.nonzero(g)
+    for x, z, y in zip(xs, zs, ys):
+        b = pal[g[x, z, y]]
+        if b == 'minecraft:cave_air': b = 'minecraft:air'
+        if b not in pindex: pindex[b] = len(palette); palette.append(b)
+        blocks.append(compound([(9, 'pos', list_payload(3, [i32(int(x)), i32(int(y)), i32(int(z))])), (3, 'state', i32(pindex[b]))]))
+    pal_payloads = []
+    for b in palette:
+        nm, pr = parse_state(b); items = [(8, 'Name', nbt_str(nm))]
+        if pr: items.append((10, 'Properties', compound([(8, k, nbt_str(v)) for k, v in pr.items()])))
+        pal_payloads.append(compound(items))
+    root = compound([(3, 'DataVersion', i32(DATA_VERSION)), (9, 'size', list_payload(3, [i32(g.shape[0]), i32(NY), i32(g.shape[1])])),
+                     (9, 'palette', list_payload(10, pal_payloads)), (9, 'blocks', list_payload(10, blocks)), (9, 'entities', list_payload(0, []))])
+    with gzip.open(path, 'wb') as f: f.write(tag_named(10, '', root))
+    return len(blocks)
+for s in range(10):
+    sx, sz = SITES[s]; dd = math.hypot(sx, sz); ux, uz = -sx / dd, -sz / dd   # 島の中心から中央へ
+    dc = Canvas(-IS, -IS, IS, IS, isle=True); cur = dc
+    for x in range(-IS, IS + 1):
+        for z in range(-IS, IS + 1):
+            for y in range(0, DOME_R + 1):
+                d = math.sqrt(x * x + z * z + y * y)
+                if not (DOME_R - 0.5 <= d <= DOME_R + 0.5): continue
+                along = x * ux + z * uz; perp = abs(-uz * x + ux * z)
+                if along > 0 and perp <= 2.6 and y <= 5: continue        # 入口（幅5・高さ6）
+                ang = math.degrees(math.atan2(z, x)) % 30
+                if y <= 0: m = 'minecraft:smooth_quartz'
+                elif ang < 1.6 or ang > 28.4 or y % 8 == 0: m = 'minecraft:white_stained_glass'
+                else: m = 'minecraft:glass'
+                put(x, y, z, m)
+    # 入口の枠（石英の柱とまぐさ）
+    for sgn in (-1, 1):
+        fx, fz = round(ux * DOME_R + (-uz) * sgn * 3.4), round(uz * DOME_R + ux * sgn * 3.4)
+        box(fx, 0, fz, fx, 6, fz, 'minecraft:quartz_pillar')
+    for t in np.linspace(-3.4, 3.4, 15):
+        put(round(ux * DOME_R - uz * t), 6, round(uz * DOME_R + ux * t), 'minecraft:chiseled_quartz_block')
+    nb = write_nbt(f"{ISLE_DIR}/dome_s{s}.nbt", dc.g)
+cur = base
+print('domes written')
 
 # ======================================================================== 書き出し：島を置く関数
 ROT = ['none', 'clockwise_90', '180', 'counterclockwise_90']   # rot_off の 1＝(-z,x)＝clockwise_90（テスト用サーバーで中心の金ブロックの位置を測って確認）
@@ -1066,7 +1336,8 @@ for s in range(10):
             L = [HEAD + f"。候補地 {s}（{sx},{sz}）に「{name}」を向き {ROT[rt]} で置き、登録する（oa:br_sky で）",
                  f"execute unless score #mode oa.map2 matches 1 in {DIM} run function oa:maps/{KEY}/isles/bridge/s{s}",
                  f"execute unless score #mode oa.map2 matches 1 in {DIM} store success score #isle_placed oa.map2 run place template oa:sky/{key} {ox} {YB + Y0} {oz} {ROT[rt]}",
-                 f"execute unless score #mode oa.map2 matches 1 if score #isle_placed oa.map2 matches 0 run tellraw @a[tag=br.admin] {{text:\"[天空都市] 「{name}」を置けませんでした（読み込み）\",color:\"red\"}}"]
+                 f"execute unless score #mode oa.map2 matches 1 if score #isle_placed oa.map2 matches 0 run tellraw @a[tag=br.admin] {{text:\"[天空島] 「{name}」を置けませんでした（読み込み）\",color:\"red\"}}",
+                 f"execute unless score #mode oa.map2 matches 1 in {DIM} run place template oa:sky/dome_s{s} {sx - IS} {YB + Y0} {sz - IS}"]
             def W2(lx, lz):
                 a, b = rot_off(lx + IS, lz + IS, rt); return ox + a, oz + b
             for (x, y, z, k) in D['ores']:
@@ -1115,7 +1386,7 @@ W("begin", [HEAD + "。区画（中央）のあとに呼ばれる。島を1つ�
             "data modify storage oa:maps sky_isles set value []",
             "data remove storage oa:maps sky_region",
             "scoreboard players set #isle oa.map2 0", "scoreboard players set #isle_wait oa.map2 0",
-            'tellraw @a[tag=br.admin] {text:"[天空都市] まわりの島を置いています…",color:"gold"}',
+            'tellraw @a[tag=br.admin] {text:"[天空島] まわりの島を置いています…",color:"gold"}',
             f"function oa:maps/{KEY}/isles/next"])
 NX = [HEAD + "。次の候補地へ（選ばれていなければ飛ばす）",
       f"execute if score #isle oa.map2 matches 10.. run return run function oa:maps/{KEY}/isles/finish"]
@@ -1130,7 +1401,7 @@ WT = [HEAD + "。読み込みを待つ（最大30秒）", "scoreboard players ad
 for s in range(10):
     WT.append(f"execute if score #isle oa.map2 matches {s} store result score #isle_ok oa.map2 run function oa:maps/{KEY}/isles/ready_s{s}")
 WT += [f"execute if score #isle_ok oa.map2 matches 0 if score #isle_wait oa.map2 matches ..120 run return run schedule function oa:maps/{KEY}/isles/wait 5t replace",
-       f"execute if score #isle_ok oa.map2 matches 0 run tellraw @a[tag=br.admin] {{text:\"[天空都市] 島の場所が読み込めなかったので飛ばしました\",color:\"red\"}}",
+       f"execute if score #isle_ok oa.map2 matches 0 run tellraw @a[tag=br.admin] {{text:\"[天空島] 島の場所が読み込めなかったので飛ばしました\",color:\"red\"}}",
        f"execute if score #isle_ok oa.map2 matches 1 run function oa:maps/{KEY}/isles/place"]
 for s in range(10):
     WT.append(f"execute if score #isle oa.map2 matches {s} run function oa:maps/{KEY}/isles/unload_s{s}")
@@ -1143,7 +1414,7 @@ W("finish", [HEAD + "。島を置き終えた",
              "data modify storage oa_map2:job working set value 0b",
              "execute store result score #sp_n oa.tmp run data get storage oa:spawn_points points",
              "execute store result score #isle_n oa.tmp run data get storage oa:maps sky_isles",
-             'tellraw @a[tag=br.admin] [{text:"[天空都市] まわりの島 ",color:"green"},{score:{name:"#isle_n",objective:"oa.tmp"},color:"green"},{text:" 個を置きました（",color:"green"},{nbt:"sky_isles[]",storage:"oa:maps",color:"white",separator:"・"},{text:"）。チェスト ",color:"green"},{score:{name:"#chests",objective:"oa.map2"},color:"green"},{text:"個・開始地点 ",color:"green"},{score:{name:"#sp_n",objective:"oa.tmp"},color:"green"},{text:"か所。",color:"green"}]',
+             'tellraw @a[tag=br.admin] [{text:"[天空島] まわりの島 ",color:"green"},{score:{name:"#isle_n",objective:"oa.tmp"},color:"green"},{text:" 個を置きました（",color:"green"},{nbt:"sky_isles[]",storage:"oa:maps",color:"white",separator:"・"},{text:"）。チェスト ",color:"green"},{score:{name:"#chests",objective:"oa.map2"},color:"green"},{text:"個・開始地点 ",color:"green"},{score:{name:"#sp_n",objective:"oa.tmp"},color:"green"},{text:"か所。",color:"green"}]',
              "execute as @a[tag=br.admin] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 0.6 1.2"])
 # post：中央の開始地点・地点名（そのあと島）
 def ptsl(lst): return ",".join(f"{{x:{x}.5d,y:{y + 80}.0d,z:{z}.5d}}" for x, y, z in lst)

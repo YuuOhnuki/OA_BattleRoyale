@@ -72,5 +72,5 @@ setblock 15 82 81 minecraft:lantern
 setblock 10 82 82 minecraft:lantern
 setblock 17 82 91 minecraft:lantern
 setblock 12 82 92 minecraft:lantern
-setblock 13 82 101 minecraft:lantern
 setblock 18 82 101 minecraft:lantern
+setblock 13 82 101 minecraft:lantern

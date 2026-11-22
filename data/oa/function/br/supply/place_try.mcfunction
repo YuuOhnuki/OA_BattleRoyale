@@ -1,6 +1,6 @@
 scoreboard players add #sup_try br.tmp 1
 $execute unless score #map oa.mapid matches 2..4 store success score #sp_ok br.flag run spreadplayers $(x) $(z) 0 $(range) false @e[type=minecraft:marker,tag=br.supply_new]
-# 1.9.230：天空都市・異界は上から床を探す（under 120）。島のない列では奈落に置かれるので ground_ok で落とす
+# 1.9.230：天空島・異界は上から床を探す（under 120）。島のない列では奈落に置かれるので ground_ok で落とす
 $execute if score #map oa.mapid matches 3..4 store success score #sp_ok br.flag run spreadplayers $(x) $(z) 0 $(range) under 120 false @e[type=minecraft:marker,tag=br.supply_new]
 # 1.9.167: 洞窟は天井より下の床を探す（under 76）。岩だけの列では奈落に置かれるので ground_ok で落とす
 $execute if score #map oa.mapid matches 2 store success score #sp_ok br.flag run spreadplayers $(x) $(z) 0 $(range) under 76 false @e[type=minecraft:marker,tag=br.supply_new]

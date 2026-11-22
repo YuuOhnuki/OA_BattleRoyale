@@ -1708,6 +1708,7 @@ setblock ~10 ~14 ~10 minecraft:spruce_planks
 setblock ~8 ~7 ~10 minecraft:spruce_planks
 setblock ~8 ~14 ~10 minecraft:spruce_planks
 fill ~12 ~7 ~30 ~14 ~7 ~31 minecraft:stone_bricks
+setblock ~9 ~8 ~8 minecraft:chest[facing=north]
 setblock ~39 ~8 ~22 minecraft:dark_oak_stairs[facing=south,half=bottom]
 setblock ~39 ~8 ~28 minecraft:dark_oak_stairs[facing=north,half=bottom]
 fill ~12 ~8 ~30 ~13 ~8 ~31 minecraft:stone_bricks

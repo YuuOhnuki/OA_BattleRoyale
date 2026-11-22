@@ -1549,8 +1549,8 @@ fill ~-1 ~5 ~-50 ~0 ~5 ~-50 minecraft:grass_block
 fill ~3 ~5 ~-50 ~4 ~5 ~-49 minecraft:grass_block
 fill ~1 ~5 ~-50 ~2 ~5 ~-49 minecraft:dirt
 setblock ~0 ~5 ~-49 minecraft:grass_block
-fill ~1 ~5 ~-48 ~3 ~5 ~-48 minecraft:grass_block
 setblock ~5 ~5 ~-48 minecraft:oxeye_daisy
+fill ~1 ~5 ~-48 ~3 ~5 ~-48 minecraft:grass_block
 fill ~-22 ~5 ~-43 ~-20 ~6 ~-43 minecraft:oak_leaves[persistent=true]
 setblock ~-20 ~5 ~-42 minecraft:oak_leaves[persistent=true]
 setblock ~-22 ~5 ~-42 minecraft:oak_leaves[persistent=true]

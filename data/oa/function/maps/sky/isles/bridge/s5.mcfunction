@@ -46,14 +46,14 @@ fill -94 81 -17 -88 81 -17 minecraft:spruce_fence
 fill -88 81 -16 -82 81 -16 minecraft:spruce_fence
 fill -112 81 -15 -108 81 -15 minecraft:spruce_fence
 fill -82 81 -15 -76 81 -15 minecraft:spruce_fence
-fill -108 81 -14 -102 81 -14 minecraft:spruce_fence
 fill -75 81 -14 -69 81 -14 minecraft:spruce_fence
+fill -108 81 -14 -102 81 -14 minecraft:spruce_fence
 fill -69 81 -13 -63 81 -13 minecraft:spruce_fence
 fill -101 81 -13 -95 81 -13 minecraft:spruce_fence
-fill -63 81 -12 -57 81 -12 minecraft:spruce_fence
 fill -95 81 -12 -89 81 -12 minecraft:spruce_fence
-setblock -56 81 -11 minecraft:spruce_fence
+fill -63 81 -12 -57 81 -12 minecraft:spruce_fence
 fill -89 81 -11 -83 81 -11 minecraft:spruce_fence
+setblock -56 81 -11 minecraft:spruce_fence
 fill -82 81 -10 -76 81 -10 minecraft:spruce_fence
 fill -76 81 -9 -70 81 -9 minecraft:spruce_fence
 fill -70 81 -8 -64 81 -8 minecraft:spruce_fence
@@ -62,8 +62,8 @@ setblock -57 81 -6 minecraft:spruce_fence
 setblock -111 82 -20 minecraft:lantern
 fill -101 82 -19 -101 82 -18 minecraft:lantern
 setblock -91 82 -17 minecraft:lantern
-setblock -81 82 -15 minecraft:lantern
 fill -112 82 -15 -111 82 -15 minecraft:lantern
+setblock -81 82 -15 minecraft:lantern
 setblock -102 82 -14 minecraft:lantern
 setblock -71 82 -14 minecraft:lantern
 setblock -92 82 -12 minecraft:lantern

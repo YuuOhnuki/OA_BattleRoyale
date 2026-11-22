@@ -1380,9 +1380,9 @@ fill ~8 ~1 ~-44 ~24 ~1 ~-44 minecraft:grass_block
 fill ~19 ~1 ~-43 ~28 ~1 ~-43 minecraft:grass_block
 fill ~20 ~1 ~-42 ~29 ~1 ~-42 minecraft:grass_block
 fill ~29 ~1 ~-41 ~30 ~1 ~-41 minecraft:grass_block
-fill ~14 ~1 ~-41 ~14 ~6 ~-41 minecraft:oak_log
-fill ~21 ~1 ~-41 ~25 ~1 ~-41 minecraft:grass_block
 fill ~26 ~1 ~-41 ~28 ~1 ~-41 minecraft:dirt
+fill ~21 ~1 ~-41 ~25 ~1 ~-41 minecraft:grass_block
+fill ~14 ~1 ~-41 ~14 ~6 ~-41 minecraft:oak_log
 fill ~32 ~1 ~-40 ~36 ~4 ~-40 minecraft:stone_bricks
 fill ~32 ~7 ~-40 ~36 ~9 ~-40 minecraft:stone_bricks
 fill ~32 ~11 ~-40 ~36 ~11 ~-40 minecraft:stone_bricks
@@ -1549,8 +1549,8 @@ fill ~32 ~19 ~-28 ~36 ~19 ~-28 minecraft:stone_bricks
 setblock ~39 ~3 ~-28 minecraft:grass_block
 setblock ~38 ~3 ~-27 minecraft:short_grass
 setblock ~14 ~4 ~-52 minecraft:short_grass
-fill ~16 ~4 ~-50 ~16 ~7 ~-50 minecraft:cherry_log
 fill ~10 ~4 ~-50 ~14 ~4 ~-50 minecraft:grass_block
+fill ~16 ~4 ~-50 ~16 ~7 ~-50 minecraft:cherry_log
 fill ~9 ~4 ~-49 ~10 ~4 ~-48 minecraft:grass_block
 fill ~15 ~4 ~-49 ~15 ~4 ~-48 minecraft:grass_block
 fill ~11 ~4 ~-49 ~14 ~4 ~-48 minecraft:dirt
@@ -1580,8 +1580,8 @@ fill ~32 ~8 ~-27 ~34 ~8 ~-25 minecraft:polished_andesite
 fill ~8 ~5 ~-56 ~8 ~5 ~-54 minecraft:oak_leaves[persistent=true]
 fill ~8 ~7 ~-56 ~8 ~7 ~-54 minecraft:oak_leaves[persistent=true]
 fill ~15 ~5 ~-51 ~17 ~5 ~-51 minecraft:cherry_leaves[persistent=true]
-setblock ~17 ~5 ~-50 minecraft:cherry_leaves[persistent=true]
 setblock ~15 ~5 ~-50 minecraft:cherry_leaves[persistent=true]
+setblock ~17 ~5 ~-50 minecraft:cherry_leaves[persistent=true]
 fill ~15 ~5 ~-49 ~17 ~5 ~-49 minecraft:cherry_leaves[persistent=true]
 fill ~11 ~5 ~-49 ~14 ~5 ~-48 minecraft:grass_block
 fill ~12 ~5 ~-47 ~13 ~5 ~-47 minecraft:grass_block
@@ -1687,9 +1687,9 @@ fill ~27 ~6 ~-26 ~31 ~6 ~-25 minecraft:stone_brick_slab[type=bottom]
 setblock ~15 ~7 ~-56 minecraft:oak_leaves[persistent=true]
 fill ~16 ~7 ~-54 ~17 ~7 ~-54 minecraft:oak_leaves[persistent=true]
 fill ~13 ~7 ~-54 ~14 ~7 ~-54 minecraft:oak_leaves[persistent=true]
-fill ~16 ~7 ~-52 ~18 ~7 ~-52 minecraft:cherry_leaves[persistent=true]
-setblock ~15 ~7 ~-52 minecraft:oak_leaves[persistent=true]
 setblock ~14 ~7 ~-52 minecraft:cherry_leaves[persistent=true]
+setblock ~15 ~7 ~-52 minecraft:oak_leaves[persistent=true]
+fill ~16 ~7 ~-52 ~18 ~7 ~-52 minecraft:cherry_leaves[persistent=true]
 fill ~13 ~7 ~-50 ~15 ~7 ~-50 minecraft:cherry_leaves[persistent=true]
 fill ~17 ~7 ~-50 ~19 ~7 ~-50 minecraft:cherry_leaves[persistent=true]
 fill ~14 ~7 ~-49 ~18 ~7 ~-48 minecraft:cherry_leaves[persistent=true]

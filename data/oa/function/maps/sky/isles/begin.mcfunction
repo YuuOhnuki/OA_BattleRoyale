@@ -4,5 +4,5 @@ data modify storage oa:maps sky_isles set value []
 data remove storage oa:maps sky_region
 scoreboard players set #isle oa.map2 0
 scoreboard players set #isle_wait oa.map2 0
-tellraw @a[tag=br.admin] {text:"[天空都市] まわりの島を置いています…",color:"gold"}
+tellraw @a[tag=br.admin] {text:"[天空島] まわりの島を置いています…",color:"gold"}
 function oa:maps/sky/isles/next

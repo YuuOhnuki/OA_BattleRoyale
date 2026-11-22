@@ -1225,12 +1225,10 @@ fill ~-11 ~1 ~-11 ~-11 ~22 ~-11 minecraft:quartz_pillar
 fill ~-9 ~1 ~-10 ~-9 ~22 ~-10 minecraft:ladder[facing=south]
 fill ~-22 ~1 ~-12 ~-22 ~2 ~-8 minecraft:oak_leaves[persistent=true]
 setblock ~7 ~1 ~-7 minecraft:chest[facing=north]
-setblock ~7 ~15 ~-7 minecraft:chest[facing=north]
 fill ~-11 ~1 ~-10 ~-11 ~1 ~-2 minecraft:stone_bricks
 fill ~-1 ~1 ~-1 ~1 ~1 ~1 minecraft:red_carpet
 fill ~-11 ~1 ~2 ~-11 ~1 ~7 minecraft:stone_bricks
 setblock ~-7 ~1 ~7 minecraft:chest[facing=north]
-setblock ~-7 ~15 ~7 minecraft:chest[facing=north]
 fill ~2 ~2 ~-11 ~7 ~2 ~-11 minecraft:white_terracotta
 fill ~-10 ~2 ~-11 ~-2 ~2 ~-11 minecraft:white_terracotta
 fill ~-11 ~2 ~-10 ~-11 ~2 ~-2 minecraft:white_terracotta
@@ -1287,8 +1285,6 @@ fill ~-10 ~9 ~-11 ~7 ~9 ~-11 minecraft:white_terracotta
 fill ~-10 ~12 ~-11 ~7 ~14 ~-11 minecraft:white_terracotta
 fill ~-10 ~16 ~-11 ~7 ~17 ~-11 minecraft:white_terracotta
 fill ~-10 ~20 ~-11 ~7 ~22 ~-11 minecraft:white_terracotta
-setblock ~0 ~6 ~0 minecraft:lantern[hanging=true]
-setblock ~0 ~13 ~0 minecraft:lantern[hanging=true]
 fill ~-11 ~6 ~-10 ~-11 ~7 ~7 minecraft:white_terracotta
 fill ~-11 ~9 ~-10 ~-11 ~9 ~7 minecraft:white_terracotta
 fill ~-11 ~12 ~-10 ~-11 ~14 ~7 minecraft:white_terracotta
@@ -1298,18 +1294,45 @@ setblock ~-10 ~7 ~-10 minecraft:spruce_planks
 setblock ~-10 ~14 ~-10 minecraft:spruce_planks
 fill ~-8 ~7 ~-10 ~7 ~7 ~-10 minecraft:spruce_planks
 fill ~-8 ~14 ~-10 ~7 ~14 ~-10 minecraft:spruce_planks
-fill ~-10 ~7 ~-9 ~7 ~7 ~7 minecraft:spruce_planks
-fill ~-10 ~14 ~-9 ~7 ~14 ~7 minecraft:spruce_planks
+fill ~-10 ~7 ~-9 ~7 ~7 ~-8 minecraft:spruce_planks
+fill ~-10 ~14 ~-9 ~7 ~14 ~-8 minecraft:spruce_planks
+fill ~-10 ~7 ~-7 ~-8 ~7 ~7 minecraft:spruce_planks
+fill ~-10 ~14 ~-7 ~-8 ~14 ~7 minecraft:spruce_planks
 fill ~-10 ~8 ~-11 ~7 ~8 ~-11 minecraft:stone_bricks
 fill ~-10 ~15 ~-11 ~7 ~15 ~-11 minecraft:stone_bricks
-setblock ~-7 ~8 ~-7 minecraft:chest[facing=north]
+setblock ~-9 ~8 ~-8 minecraft:chest[facing=north]
+fill ~-7 ~8 ~-7 ~-1 ~8 ~-7 minecraft:dark_oak_fence
+fill ~-7 ~15 ~-7 ~-1 ~15 ~-7 minecraft:dark_oak_fence
+fill ~1 ~8 ~-7 ~7 ~8 ~-7 minecraft:dark_oak_fence
+fill ~1 ~15 ~-7 ~7 ~15 ~-7 minecraft:dark_oak_fence
+fill ~-7 ~8 ~-6 ~-7 ~8 ~-1 minecraft:dark_oak_fence
+fill ~-7 ~15 ~-6 ~-7 ~15 ~-1 minecraft:dark_oak_fence
+fill ~7 ~8 ~-6 ~7 ~8 ~-1 minecraft:dark_oak_fence
+fill ~7 ~15 ~-6 ~7 ~15 ~-1 minecraft:dark_oak_fence
+fill ~-7 ~8 ~1 ~-7 ~8 ~6 minecraft:dark_oak_fence
+fill ~-7 ~15 ~1 ~-7 ~15 ~6 minecraft:dark_oak_fence
+fill ~7 ~8 ~1 ~7 ~8 ~6 minecraft:dark_oak_fence
+fill ~7 ~15 ~1 ~7 ~15 ~6 minecraft:dark_oak_fence
 fill ~-11 ~8 ~-10 ~-11 ~8 ~7 minecraft:stone_bricks
 fill ~-11 ~15 ~-10 ~-11 ~15 ~7 minecraft:stone_bricks
-setblock ~7 ~8 ~7 minecraft:chest[facing=north]
+fill ~-7 ~8 ~7 ~-1 ~8 ~7 minecraft:dark_oak_fence
+fill ~-7 ~15 ~7 ~-1 ~15 ~7 minecraft:dark_oak_fence
+fill ~1 ~8 ~7 ~7 ~8 ~7 minecraft:dark_oak_fence
+fill ~1 ~15 ~7 ~7 ~15 ~7 minecraft:dark_oak_fence
+fill ~0 ~9 ~-10 ~0 ~12 ~-10 minecraft:red_wool
+fill ~0 ~16 ~-10 ~0 ~19 ~-10 minecraft:red_wool
+fill ~-10 ~9 ~0 ~-10 ~12 ~0 minecraft:red_wool
+fill ~-10 ~16 ~0 ~-10 ~19 ~0 minecraft:red_wool
 fill ~-3 ~10 ~-11 ~3 ~11 ~-11 minecraft:white_terracotta
 fill ~-3 ~18 ~-11 ~3 ~19 ~-11 minecraft:white_terracotta
 fill ~-11 ~10 ~-3 ~-11 ~11 ~3 minecraft:white_terracotta
 fill ~-11 ~18 ~-3 ~-11 ~19 ~3 minecraft:white_terracotta
+setblock ~-1 ~13 ~-1 minecraft:lantern[hanging=true]
+setblock ~1 ~13 ~-1 minecraft:lantern[hanging=true]
+setblock ~-1 ~13 ~1 minecraft:lantern[hanging=true]
+setblock ~1 ~13 ~1 minecraft:lantern[hanging=true]
+fill ~-1 ~14 ~-1 ~1 ~14 ~1 minecraft:gold_block
+fill ~0 ~15 ~0 ~0 ~22 ~0 minecraft:iron_chain[axis=y]
 fill ~-11 ~23 ~-12 ~-9 ~23 ~-12 minecraft:polished_andesite
 fill ~-11 ~29 ~-12 ~-9 ~29 ~-12 minecraft:polished_andesite
 fill ~-7 ~23 ~-11 ~7 ~23 ~-9 minecraft:stone_bricks
