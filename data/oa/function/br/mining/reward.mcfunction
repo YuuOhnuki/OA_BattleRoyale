@@ -1,5 +1,7 @@
 $scoreboard players remove @s $(stat) 1
 function oa:itori/count_ore
+# 1.9.221：お題「鉱石を5個掘る」用の試合ごとの数
+scoreboard players add @s br.st_ore 1
 # 1.9.174: 採掘の報酬・追加ドロップ・鉱石そのもののドロップは、掘った人のインベントリへ直接入れる（いっぱいなら足元に落ちる）
 $loot give @s loot oa:br/$(table)
 particle minecraft:happy_villager ~ ~0.5 ~ 0.3 0.3 0.3 0 8 normal @a[distance=..16]
