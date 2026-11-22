@@ -188,6 +188,7 @@ for i,name in enumerate(names,1):
  if matches:
   label=matches[0].split('：')[-1];value=matches[1].lstrip(' →') if len(matches)>1 else '結果は発動時に表示。'
   if name=='jackpot':value='使用者以外の生存者を倒す。最後の1人になれば即座に優勝。'
+  if name=='fire_all':value='生存者全員：10秒間、毎秒2HPの炎ダメージ・発光10秒'   # 1.9.229：アナウンスの♥がアイコンの別要素のため、ここで書く（rich が 2HP を♥×1 のアイコンにする）
   out += [row(label+'（'+({15:'3%',16:'2%',14:'0.5%',3:'4%',10:'4%'}.get(i,'約7.864%'))+'）',value),t('\n')]
 write(D/'function/lobby/gallery/gacha_results.mcfunction','tellraw @s '+dump(out)+'\n')
 # UI icons are original 8px pixel art, with no external image dependency.

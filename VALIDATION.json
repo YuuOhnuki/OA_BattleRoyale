@@ -1,5 +1,5 @@
 {
-  "version": "1.9.233",
+  "version": "1.9.234",
   "checks": "static; plugin unit tests; zone test on test server",
   "runtime": "test server: safe zone with fake players; wall visuals, Ubuntu autoupdate unverified",
   "unverified": "human input and visuals; production awaiting manual apply"
