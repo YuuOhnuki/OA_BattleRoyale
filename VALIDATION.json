@@ -1,6 +1,7 @@
 {
-  "version": "1.9.237",
-  "checks": "static; plugin unit tests; zone test on test server",
-  "runtime": "test server: safe zone with fake players; wall visuals, Ubuntu autoupdate unverified",
-  "unverified": "human input and visuals; production awaiting manual apply"
+  "version": "1.9.238",
+  "checks": "static; plugin build and unit tests; 6 matches on test server; 400 accepted checks",
+  "runtime": "test server: 3 maps x solo/team; 64 rescue platforms after map rebuild; knockback impulse; levitation rescue in sky/end; existing lore migration",
+  "unverified": "human input and visuals; real-client ascent height; production application",
+  "notes": "One obsolete 20-second tornado expectation corrected and rechecked at the current 30 seconds. See ../dist/validation-1.9.238.json."
 }

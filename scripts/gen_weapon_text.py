@@ -66,6 +66,7 @@ def lore(w,up=False,progress=None):
  return [line for component in rows for line in wrap(component)]
 def modifier(w,up=False,progress=None):
  data={'description214':1,'description_up':int(up),'name_v172':1,'name_v204':1}
+ if w['kind']==6:data['description238']=1
  if progress is not None:
   data['itori_text214']=progress;data['itori_stage']=sum(progress>=n for n in [0,1,5,7,10,15]);data['itori_lore194']=progress
  tag='{oa:{'+','.join(k+':'+str(v)+('' if k in ['itori_text214','itori_stage','itori_lore194'] else 'b') for k,v in data.items())+'}}'
@@ -158,10 +159,11 @@ write(R/'docs/weapon-description-review.md','\n'.join(reference)+'\n')
 lines=[]
 for w in WEAPONS[:9]:
  k=w['kind'];base=f'$execute if items entity @s $(slot) *[minecraft:custom_data~{{oa:{{kind:{k}}}}}]'
+ version='description238' if k==6 else 'description214'
  if k in [4,6,8,9]:
   for up in [0,1]:
    cond=('if' if up else 'unless')+' items entity @s $(slot) *[minecraft:custom_data~{oa:{damage194_up:1b}}]'
-   lines.append(base+' '+cond+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description214:1b,description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k{k}'+('_plus1' if up else ''))
+   lines.append(base+' '+cond+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{{version}:1b,description_up:{up}b}}}}] run item modify entity @s $(slot) oa:lore/k{k}'+('_plus1' if up else ''))
  else:lines.append(base+f' unless items entity @s $(slot) *[minecraft:custom_data~{{oa:{{description214:1b}}}}] run item modify entity @s $(slot) oa:lore/k{k}')
 lines.append('$execute if items entity @s $(slot) *[minecraft:custom_data~{oa:{kind:10}}] run function oa:itori/item_stage {slot:"$(slot)"}')
 write(D/'function/inventory/lore.mcfunction','\n'.join(lines)+'\n')

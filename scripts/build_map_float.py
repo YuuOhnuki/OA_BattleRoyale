@@ -630,17 +630,32 @@ for k, (cx, cz, r) in enumerate(corners):
     pad(cx + dx * 6, 0, cz + dz * 6)
     place_name(cx, cz, ('南東', '南西', '北西', '北東')[k] + ('の小島' if KEY == 'sky' else 'の浮岩'))
 
-# 救済用の足場と上昇気流（中央への橋の真下。落ちても戻れる場所がある）
+# 救済用の足場と上昇気流。従来の4か所を残し、空いた所へ28か所追加（計32）。
+rescue_pads = []
 for k, (cx, cz, r, _) in enumerate(slots):
     if k % 2: continue
     mx, mz = (cx * 0.64), (cz * 0.64)
     px_, pz_ = round(mx + (-cz) / math.hypot(cx, cz) * 6), round(mz + cx / math.hypot(cx, cz) * 6)
+    rescue_pads.append((px_, pz_))
+for k in range(10000):
+    if len(rescue_pads) == 32: break
+    a = math.radians(k * 137.507764)
+    r = 48 + (k % 10) * 10
+    x, z = round(math.cos(a) * r), round(math.sin(a) * r)
+    if any(abs(x - cx) <= r + 11 and abs(z - cz) <= r + 11 for cx, cz, r, _ in slots): continue
+    if any(max(abs(x - px), abs(z - pz)) < 10 for px, pz in rescue_pads): continue
+    if any(base.get(xx, yy, zz) not in (None, 'minecraft:air') for xx in range(x - 3, x + 4)
+           for zz in range(z - 3, z + 4) for yy in range(-27, -21)): continue
+    rescue_pads.append((x, z))
+assert len(rescue_pads) == 32, len(rescue_pads)
+for pad_index, (px_, pz_) in enumerate(rescue_pads):
     box(px_ - 3, -26, pz_ - 3, px_ + 3, -26, pz_ + 3, T['rock'] if KEY == 'sky' else T['under'])
     box(px_ - 3, -27, pz_ - 3, px_ + 3, -27, pz_ + 3, T['under'])
     put(px_, -26, pz_, T['accent'])
     gim(px_, -25, pz_, ['oa.gim', 'oa.gim_up', 'oa.gim_up_31'])
-    ore(px_ + 2, -25, pz_ + 2, 3); put(px_ + 2, -26, pz_ + 2, T['rock'])
-    chest(px_ - 2, -25, pz_ - 2)
+    if pad_index < 4:
+        ore(px_ + 2, -25, pz_ + 2, 3); put(px_ + 2, -26, pz_ + 2, T['rock'])
+        chest(px_ - 2, -25, pz_ - 2)
 
 # 転移装置（離れた島どうし。双方向）。異界は「異界ポータル」
 TP = []

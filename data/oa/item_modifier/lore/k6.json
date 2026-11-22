@@ -92,7 +92,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "  %で相手を強く吹き飛ばす（平地で約19ブロック）。",
+                "text": "  %で相手を強く吹き飛ばす（スキルの半分の強さ）。",
                 "color": "white",
                 "italic": false
               }
@@ -130,18 +130,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "  出し（ノックバック10相当、平地で約38ブロック）。1秒後",
-                "color": "white",
-                "italic": false
-              }
-            ]
-          },
-          {
-            "text": "",
-            "italic": false,
-            "extra": [
-              {
-                "text": "  に元の場所へ帰還。",
+                "text": "  出し（ノックバック7相当）。1秒後に元の場所へ帰還。",
                 "color": "white",
                 "italic": false
               }
@@ -185,7 +174,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{description214:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
+      "tag": "{oa:{description214:1b,description_up:0b,name_v172:1b,name_v204:1b,description238:1b}}"
     }
   ]
 }
