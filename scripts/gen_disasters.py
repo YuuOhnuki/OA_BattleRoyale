@@ -34,7 +34,7 @@ DISASTERS = [
          desc='ニワトリが暴れ回り、狙った卵で押し飛ばす！'),
     dict(k=9, key='blood_moon', name='血の月', color='dark_red', danger=2, sec=30, weight=7, maps=[0, 1, 2],
          desc='全員に速度上昇が付き、光り、頭上に花火。居場所が丸見え！'),
-    dict(k=10, key='tornado', name='竜巻', color='white', danger=4, sec=20, weight=7, maps=[0, 1], move=True,
+    dict(k=10, key='tornado', name='竜巻', color='white', danger=4, sec=30, weight=7, maps=[0, 1], move=True,
          desc='竜巻が近くの人を吸い寄せ、中心で打ち上げる'),
     dict(k=11, key='pig_parade', name='ブタの大行進', color='light_purple', danger=3, sec=15, weight=7, maps=[0, 1, 2], mobs=True,
          desc='2列6行のブタが走り回り、爆発し続ける（♥×1）'),
