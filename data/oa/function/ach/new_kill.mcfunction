@@ -18,7 +18,8 @@ execute if score @s oa.kind matches 7 run function oa:ach/give {id:"hotchikisu_k
 execute if score @s oa.kind matches 9 run function oa:ach/give {id:"tayayuyu_kill",name:"変態の洗礼"}
 execute if score @s oa.kind matches 10 run function oa:ach/give {id:"itori_kill",name:"いとりの一撃"}
 execute if score @s oa.kind matches 8 if score @s oa.small matches 1.. run function oa:ach/give {id:"komame_big",name:"小さな巨人"}
-execute if score #mission br.tmp matches 4 unless items entity @s weapon.mainhand * if score @s br.mdone matches 0 run function oa:br/mission/clear
+# 1.9.223：お題8［難］素手で1キル
+execute if score #mission br.tmp matches 8 unless items entity @s weapon.mainhand * if score @s br.mdone matches 0 run function oa:br/mission/clear
 # 1.9.173: ゆうあ「私こそが企業だ」（帽子を被って1試合で3キル）、ぴちぴち「カジキマグロ」（激流を使ってから1.5秒以内のキル。激流で oa.cd=100 になり毎tick減る）
 execute if score @s oa.kind matches 1 run scoreboard players add @s br.a_y1k 1
 execute if score @s br.a_y1k matches 3.. run function oa:ach/give {id:"yuua_corp",name:"私こそが企業だ"}
