@@ -32,6 +32,8 @@ import numpy as np
 ROOT = sys.argv[1]
 KEY = sys.argv[2]
 assert KEY in ('sky', 'end')
+if KEY == 'sky':
+    sys.exit('1.9.233 から天空都市は scripts/build_map_sky.py で生成する（このスクリプトは異界 end だけ）')
 PNG = sys.argv[sys.argv.index('--png') + 1] if '--png' in sys.argv else None
 PANEL = sys.argv[sys.argv.index('--panel') + 1] if '--panel' in sys.argv else None
 DIM = {'sky': 'oa:br_sky', 'end': 'oa:br_end'}[KEY]

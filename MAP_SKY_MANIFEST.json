@@ -1,155 +1,110 @@
 {
  "key": "sky",
- "seed": 20261123,
- "slots": [
-  {
-   "c": [
-    95,
-    -8
-   ],
-   "r": 19,
-   "types": [
-    "temple",
-    "ruins",
-    "watch"
-   ]
+ "seed": 20261125,
+ "sites": [
+  [
+   109,
+   17
+  ],
+  [
+   86,
+   86
+  ],
+  [
+   17,
+   109
+  ],
+  [
+   -55,
+   109
+  ],
+  [
+   -98,
+   50
+  ],
+  [
+   -120,
+   -19
+  ],
+  [
+   -78,
+   -78
+  ],
+  [
+   -19,
+   -120
+  ],
+  [
+   50,
+   -98
+  ],
+  [
+   109,
+   -55
+  ]
+ ],
+ "isles": {
+  "desert": {
+   "name": "砂漠の島",
+   "chests": 7,
+   "ores": 4,
+   "spawns": 5
   },
-  {
-   "c": [
-    67,
-    72
-   ],
-   "r": 21,
-   "types": [
-    "garden",
-    "dock",
-    "village"
-   ]
+  "snow": {
+   "name": "雪の島",
+   "chests": 7,
+   "ores": 4,
+   "spawns": 5
   },
-  {
-   "c": [
-    -6,
-    93
-   ],
-   "r": 22,
-   "types": [
-    "mansion",
-    "market",
-    "dock"
-   ]
+  "mesa": {
+   "name": "メサの島",
+   "chests": 7,
+   "ores": 4,
+   "spawns": 5
   },
-  {
-   "c": [
-    -74,
-    71
-   ],
-   "r": 22,
-   "types": [
-    "village",
-    "mansion",
-    "forest"
-   ]
+  "oasis": {
+   "name": "オアシスの島",
+   "chests": 7,
+   "ores": 4,
+   "spawns": 5
   },
-  {
-   "c": [
-    -93,
-    -8
-   ],
-   "r": 22,
-   "types": [
-    "temple",
-    "dock",
-    "garden"
-   ]
+  "western": {
+   "name": "西洋の町の島",
+   "chests": 7,
+   "ores": 4,
+   "spawns": 5
   },
-  {
-   "c": [
-    -73,
-    -63
-   ],
-   "r": 21,
-   "types": [
-    "temple",
-    "market",
-    "garden"
-   ]
+  "japan": {
+   "name": "和風の島",
+   "chests": 7,
+   "ores": 4,
+   "spawns": 5
   },
-  {
-   "c": [
-    7,
-    -94
-   ],
-   "r": 22,
-   "types": [
-    "forest",
-    "garden",
-    "market"
-   ]
+  "ship": {
+   "name": "飛行船の島",
+   "chests": 7,
+   "ores": 4,
+   "spawns": 4
   },
-  {
-   "c": [
-    64,
-    -70
-   ],
-   "r": 21,
-   "types": [
-    "garden",
-    "ruins",
-    "market"
-   ]
+  "balloon": {
+   "name": "気球の島",
+   "chests": 6,
+   "ores": 2,
+   "spawns": 4
+  },
+  "temple": {
+   "name": "天空神殿の島",
+   "chests": 7,
+   "ores": 4,
+   "spawns": 5
+  },
+  "resort": {
+   "name": "リゾートの島",
+   "chests": 7,
+   "ores": 4,
+   "spawns": 5
   }
- ],
- "corners": [
-  [
-   126,
-   126,
-   13
-  ],
-  [
-   -126,
-   126,
-   13
-  ],
-  [
-   -126,
-   -126,
-   13
-  ],
-  [
-   126,
-   -126,
-   13
-  ]
- ],
- "bridges": 20,
- "teleporters": [
-  [
-   [
-    87,
-    0,
-    -18
-   ],
-   [
-    -85,
-    0,
-    6
-   ]
-  ],
-  [
-   [
-    8,
-    0,
-    85
-   ],
-   [
-    -7,
-    0,
-    -86
-   ]
-  ]
- ],
- "base_chests": 33,
- "slot_chests": 7,
- "spawns_base": 19,
- "decos": 113
+ },
+ "center_chests": 28,
+ "center_spawns": 18
 }

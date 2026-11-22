@@ -4,13 +4,12 @@ execute positioned ~8 ~-40 ~72 run kill @e[type=minecraft:marker,tag=br.chest,dx
 execute positioned ~8 ~-40 ~72 run kill @e[type=minecraft:marker,tag=br.ore,dx=31,dy=80,dz=31]
 execute positioned ~8 ~-40 ~72 run kill @e[type=minecraft:marker,tag=oa.gim,dx=31,dy=80,dz=31]
 execute positioned ~8 ~-40 ~72 run kill @e[type=minecraft:block_display,tag=oa.mdeco,dx=31,dy=80,dz=31]
-execute positioned ~8 ~-40 ~72 run kill @e[type=minecraft:end_crystal,tag=oa.mdeco,dx=31,dy=80,dz=31]
+execute if score #mode oa.map2 matches 0 positioned ~8 ~-40 ~72 run kill @e[type=minecraft:block_display,tag=oa.isle,dx=31,dy=80,dz=31]
 scoreboard players set #stage oa.map2 2
 scoreboard players set #localc oa.map2 0
 scoreboard players set #localo oa.map2 0
 scoreboard players set #expectedc oa.map2 0
 scoreboard players set #expectedo oa.map2 0
-execute positioned ~8 ~1 ~85 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:marker ~ ~ ~ {Tags:["oa.gim","oa.gim_tp","oa.gim_tp_-15_0_-171"]}
 execute unless score #localc oa.map2 = #expectedc oa.map2 run return run function oa:map/internal/job/failed
 execute unless score #localo oa.map2 = #expectedo oa.map2 run return run function oa:map/internal/job/failed
 scoreboard players operation #chests oa.map2 += #localc oa.map2

@@ -1,4 +1,4 @@
-# 生成: scripts/build_map_float.py sky（直接編集しない）。空中補給の場所名（中心からの相対座標 #rx,#rz は br/supply/region で計算済み）。いちばん近い地点（今の組み合わせ）の名前
+# 生成: scripts/build_map_sky.py（直接編集しない）。空中補給の場所名（#rx,#rz は中心からの相対）。中央か、置かれた島のうちいちばん近い所
 scoreboard players set #rbest br.tmp 2147483647
 data modify storage oa:supply region set value "天空都市"
 scoreboard players operation #rdx br.tmp = #rx br.tmp
@@ -10,255 +10,93 @@ scoreboard players operation #rdz br.tmp *= #rdz br.tmp
 scoreboard players operation #rdx br.tmp += #rdz br.tmp
 execute if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "天空城のあたり"
 execute if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-scoreboard players operation #rdx br.tmp = #rx br.tmp
-scoreboard players remove #rdx br.tmp 126
-scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-scoreboard players operation #rdz br.tmp = #rz br.tmp
-scoreboard players remove #rdz br.tmp 126
-scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "南東の小島のあたり"
-execute if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-scoreboard players operation #rdx br.tmp = #rx br.tmp
-scoreboard players add #rdx br.tmp 126
-scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-scoreboard players operation #rdz br.tmp = #rz br.tmp
-scoreboard players remove #rdz br.tmp 126
-scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "南西の小島のあたり"
-execute if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-scoreboard players operation #rdx br.tmp = #rx br.tmp
-scoreboard players add #rdx br.tmp 126
-scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-scoreboard players operation #rdz br.tmp = #rz br.tmp
-scoreboard players add #rdz br.tmp 126
-scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "北西の小島のあたり"
-execute if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-scoreboard players operation #rdx br.tmp = #rx br.tmp
-scoreboard players remove #rdx br.tmp 126
-scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-scoreboard players operation #rdz br.tmp = #rz br.tmp
-scoreboard players add #rdz br.tmp 126
-scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "北東の小島のあたり"
-execute if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv0 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv0 oa.map2 matches 0 run scoreboard players remove #rdx br.tmp 95
-execute if score #sv0 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv0 oa.map2 matches 0 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv0 oa.map2 matches 0 run scoreboard players add #rdz br.tmp 8
-execute if score #sv0 oa.map2 matches 0 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv0 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv0 oa.map2 matches 0 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "神殿の島のあたり"
-execute if score #sv0 oa.map2 matches 0 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv0 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv0 oa.map2 matches 1 run scoreboard players remove #rdx br.tmp 95
-execute if score #sv0 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv0 oa.map2 matches 1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv0 oa.map2 matches 1 run scoreboard players add #rdz br.tmp 8
-execute if score #sv0 oa.map2 matches 1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv0 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv0 oa.map2 matches 1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "廃墟の島のあたり"
-execute if score #sv0 oa.map2 matches 1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv0 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv0 oa.map2 matches 2 run scoreboard players remove #rdx br.tmp 95
-execute if score #sv0 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv0 oa.map2 matches 2 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv0 oa.map2 matches 2 run scoreboard players add #rdz br.tmp 8
-execute if score #sv0 oa.map2 matches 2 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv0 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv0 oa.map2 matches 2 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "見張り塔の島のあたり"
-execute if score #sv0 oa.map2 matches 2 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv1 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv1 oa.map2 matches 0 run scoreboard players remove #rdx br.tmp 67
-execute if score #sv1 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv1 oa.map2 matches 0 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv1 oa.map2 matches 0 run scoreboard players remove #rdz br.tmp 72
-execute if score #sv1 oa.map2 matches 0 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv1 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv1 oa.map2 matches 0 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "庭園の島のあたり"
-execute if score #sv1 oa.map2 matches 0 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv1 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv1 oa.map2 matches 1 run scoreboard players remove #rdx br.tmp 67
-execute if score #sv1 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv1 oa.map2 matches 1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv1 oa.map2 matches 1 run scoreboard players remove #rdz br.tmp 72
-execute if score #sv1 oa.map2 matches 1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv1 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv1 oa.map2 matches 1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "飛行船の発着場のあたり"
-execute if score #sv1 oa.map2 matches 1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv1 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv1 oa.map2 matches 2 run scoreboard players remove #rdx br.tmp 67
-execute if score #sv1 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv1 oa.map2 matches 2 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv1 oa.map2 matches 2 run scoreboard players remove #rdz br.tmp 72
-execute if score #sv1 oa.map2 matches 2 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv1 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv1 oa.map2 matches 2 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "集落の島のあたり"
-execute if score #sv1 oa.map2 matches 2 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv2 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv2 oa.map2 matches 0 run scoreboard players add #rdx br.tmp 6
-execute if score #sv2 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv2 oa.map2 matches 0 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv2 oa.map2 matches 0 run scoreboard players remove #rdz br.tmp 93
-execute if score #sv2 oa.map2 matches 0 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv2 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv2 oa.map2 matches 0 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "屋敷の島のあたり"
-execute if score #sv2 oa.map2 matches 0 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv2 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv2 oa.map2 matches 1 run scoreboard players add #rdx br.tmp 6
-execute if score #sv2 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv2 oa.map2 matches 1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv2 oa.map2 matches 1 run scoreboard players remove #rdz br.tmp 93
-execute if score #sv2 oa.map2 matches 1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv2 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv2 oa.map2 matches 1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "市場の島のあたり"
-execute if score #sv2 oa.map2 matches 1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv2 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv2 oa.map2 matches 2 run scoreboard players add #rdx br.tmp 6
-execute if score #sv2 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv2 oa.map2 matches 2 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv2 oa.map2 matches 2 run scoreboard players remove #rdz br.tmp 93
-execute if score #sv2 oa.map2 matches 2 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv2 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv2 oa.map2 matches 2 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "飛行船の発着場のあたり"
-execute if score #sv2 oa.map2 matches 2 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv3 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv3 oa.map2 matches 0 run scoreboard players add #rdx br.tmp 74
-execute if score #sv3 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv3 oa.map2 matches 0 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv3 oa.map2 matches 0 run scoreboard players remove #rdz br.tmp 71
-execute if score #sv3 oa.map2 matches 0 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv3 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv3 oa.map2 matches 0 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "集落の島のあたり"
-execute if score #sv3 oa.map2 matches 0 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv3 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv3 oa.map2 matches 1 run scoreboard players add #rdx br.tmp 74
-execute if score #sv3 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv3 oa.map2 matches 1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv3 oa.map2 matches 1 run scoreboard players remove #rdz br.tmp 71
-execute if score #sv3 oa.map2 matches 1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv3 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv3 oa.map2 matches 1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "屋敷の島のあたり"
-execute if score #sv3 oa.map2 matches 1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv3 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv3 oa.map2 matches 2 run scoreboard players add #rdx br.tmp 74
-execute if score #sv3 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv3 oa.map2 matches 2 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv3 oa.map2 matches 2 run scoreboard players remove #rdz br.tmp 71
-execute if score #sv3 oa.map2 matches 2 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv3 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv3 oa.map2 matches 2 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "森林の島のあたり"
-execute if score #sv3 oa.map2 matches 2 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv4 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv4 oa.map2 matches 0 run scoreboard players add #rdx br.tmp 93
-execute if score #sv4 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv4 oa.map2 matches 0 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv4 oa.map2 matches 0 run scoreboard players add #rdz br.tmp 8
-execute if score #sv4 oa.map2 matches 0 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv4 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv4 oa.map2 matches 0 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "神殿の島のあたり"
-execute if score #sv4 oa.map2 matches 0 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv4 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv4 oa.map2 matches 1 run scoreboard players add #rdx br.tmp 93
-execute if score #sv4 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv4 oa.map2 matches 1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv4 oa.map2 matches 1 run scoreboard players add #rdz br.tmp 8
-execute if score #sv4 oa.map2 matches 1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv4 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv4 oa.map2 matches 1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "飛行船の発着場のあたり"
-execute if score #sv4 oa.map2 matches 1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv4 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv4 oa.map2 matches 2 run scoreboard players add #rdx br.tmp 93
-execute if score #sv4 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv4 oa.map2 matches 2 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv4 oa.map2 matches 2 run scoreboard players add #rdz br.tmp 8
-execute if score #sv4 oa.map2 matches 2 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv4 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv4 oa.map2 matches 2 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "庭園の島のあたり"
-execute if score #sv4 oa.map2 matches 2 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv5 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv5 oa.map2 matches 0 run scoreboard players add #rdx br.tmp 73
-execute if score #sv5 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv5 oa.map2 matches 0 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv5 oa.map2 matches 0 run scoreboard players add #rdz br.tmp 63
-execute if score #sv5 oa.map2 matches 0 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv5 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv5 oa.map2 matches 0 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "神殿の島のあたり"
-execute if score #sv5 oa.map2 matches 0 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv5 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv5 oa.map2 matches 1 run scoreboard players add #rdx br.tmp 73
-execute if score #sv5 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv5 oa.map2 matches 1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv5 oa.map2 matches 1 run scoreboard players add #rdz br.tmp 63
-execute if score #sv5 oa.map2 matches 1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv5 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv5 oa.map2 matches 1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "市場の島のあたり"
-execute if score #sv5 oa.map2 matches 1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv5 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv5 oa.map2 matches 2 run scoreboard players add #rdx br.tmp 73
-execute if score #sv5 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv5 oa.map2 matches 2 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv5 oa.map2 matches 2 run scoreboard players add #rdz br.tmp 63
-execute if score #sv5 oa.map2 matches 2 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv5 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv5 oa.map2 matches 2 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "庭園の島のあたり"
-execute if score #sv5 oa.map2 matches 2 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv6 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv6 oa.map2 matches 0 run scoreboard players remove #rdx br.tmp 7
-execute if score #sv6 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv6 oa.map2 matches 0 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv6 oa.map2 matches 0 run scoreboard players add #rdz br.tmp 94
-execute if score #sv6 oa.map2 matches 0 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv6 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv6 oa.map2 matches 0 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "森林の島のあたり"
-execute if score #sv6 oa.map2 matches 0 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv6 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv6 oa.map2 matches 1 run scoreboard players remove #rdx br.tmp 7
-execute if score #sv6 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv6 oa.map2 matches 1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv6 oa.map2 matches 1 run scoreboard players add #rdz br.tmp 94
-execute if score #sv6 oa.map2 matches 1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv6 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv6 oa.map2 matches 1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "庭園の島のあたり"
-execute if score #sv6 oa.map2 matches 1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv6 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv6 oa.map2 matches 2 run scoreboard players remove #rdx br.tmp 7
-execute if score #sv6 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv6 oa.map2 matches 2 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv6 oa.map2 matches 2 run scoreboard players add #rdz br.tmp 94
-execute if score #sv6 oa.map2 matches 2 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv6 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv6 oa.map2 matches 2 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "市場の島のあたり"
-execute if score #sv6 oa.map2 matches 2 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv7 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv7 oa.map2 matches 0 run scoreboard players remove #rdx br.tmp 64
-execute if score #sv7 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv7 oa.map2 matches 0 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv7 oa.map2 matches 0 run scoreboard players add #rdz br.tmp 70
-execute if score #sv7 oa.map2 matches 0 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv7 oa.map2 matches 0 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv7 oa.map2 matches 0 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "庭園の島のあたり"
-execute if score #sv7 oa.map2 matches 0 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv7 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv7 oa.map2 matches 1 run scoreboard players remove #rdx br.tmp 64
-execute if score #sv7 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv7 oa.map2 matches 1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv7 oa.map2 matches 1 run scoreboard players add #rdz br.tmp 70
-execute if score #sv7 oa.map2 matches 1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv7 oa.map2 matches 1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv7 oa.map2 matches 1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "廃墟の島のあたり"
-execute if score #sv7 oa.map2 matches 1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
-execute if score #sv7 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp = #rx br.tmp
-execute if score #sv7 oa.map2 matches 2 run scoreboard players remove #rdx br.tmp 64
-execute if score #sv7 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
-execute if score #sv7 oa.map2 matches 2 run scoreboard players operation #rdz br.tmp = #rz br.tmp
-execute if score #sv7 oa.map2 matches 2 run scoreboard players add #rdz br.tmp 70
-execute if score #sv7 oa.map2 matches 2 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
-execute if score #sv7 oa.map2 matches 2 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
-execute if score #sv7 oa.map2 matches 2 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set value "市場の島のあたり"
-execute if score #sv7 oa.map2 matches 2 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
+execute unless score #sk0 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
+execute unless score #sk0 oa.map2 matches -1 run scoreboard players remove #rdx br.tmp 109
+execute unless score #sk0 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
+execute unless score #sk0 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
+execute unless score #sk0 oa.map2 matches -1 run scoreboard players remove #rdz br.tmp 17
+execute unless score #sk0 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
+execute unless score #sk0 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
+execute unless score #sk0 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set from storage oa:maps sky_region.s0
+execute unless score #sk0 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
+execute unless score #sk1 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
+execute unless score #sk1 oa.map2 matches -1 run scoreboard players remove #rdx br.tmp 86
+execute unless score #sk1 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
+execute unless score #sk1 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
+execute unless score #sk1 oa.map2 matches -1 run scoreboard players remove #rdz br.tmp 86
+execute unless score #sk1 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
+execute unless score #sk1 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
+execute unless score #sk1 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set from storage oa:maps sky_region.s1
+execute unless score #sk1 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
+execute unless score #sk2 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
+execute unless score #sk2 oa.map2 matches -1 run scoreboard players remove #rdx br.tmp 17
+execute unless score #sk2 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
+execute unless score #sk2 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
+execute unless score #sk2 oa.map2 matches -1 run scoreboard players remove #rdz br.tmp 109
+execute unless score #sk2 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
+execute unless score #sk2 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
+execute unless score #sk2 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set from storage oa:maps sky_region.s2
+execute unless score #sk2 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
+execute unless score #sk3 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
+execute unless score #sk3 oa.map2 matches -1 run scoreboard players add #rdx br.tmp 55
+execute unless score #sk3 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
+execute unless score #sk3 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
+execute unless score #sk3 oa.map2 matches -1 run scoreboard players remove #rdz br.tmp 109
+execute unless score #sk3 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
+execute unless score #sk3 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
+execute unless score #sk3 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set from storage oa:maps sky_region.s3
+execute unless score #sk3 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
+execute unless score #sk4 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
+execute unless score #sk4 oa.map2 matches -1 run scoreboard players add #rdx br.tmp 98
+execute unless score #sk4 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
+execute unless score #sk4 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
+execute unless score #sk4 oa.map2 matches -1 run scoreboard players remove #rdz br.tmp 50
+execute unless score #sk4 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
+execute unless score #sk4 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
+execute unless score #sk4 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set from storage oa:maps sky_region.s4
+execute unless score #sk4 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
+execute unless score #sk5 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
+execute unless score #sk5 oa.map2 matches -1 run scoreboard players add #rdx br.tmp 120
+execute unless score #sk5 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
+execute unless score #sk5 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
+execute unless score #sk5 oa.map2 matches -1 run scoreboard players add #rdz br.tmp 19
+execute unless score #sk5 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
+execute unless score #sk5 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
+execute unless score #sk5 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set from storage oa:maps sky_region.s5
+execute unless score #sk5 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
+execute unless score #sk6 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
+execute unless score #sk6 oa.map2 matches -1 run scoreboard players add #rdx br.tmp 78
+execute unless score #sk6 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
+execute unless score #sk6 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
+execute unless score #sk6 oa.map2 matches -1 run scoreboard players add #rdz br.tmp 78
+execute unless score #sk6 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
+execute unless score #sk6 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
+execute unless score #sk6 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set from storage oa:maps sky_region.s6
+execute unless score #sk6 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
+execute unless score #sk7 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
+execute unless score #sk7 oa.map2 matches -1 run scoreboard players add #rdx br.tmp 19
+execute unless score #sk7 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
+execute unless score #sk7 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
+execute unless score #sk7 oa.map2 matches -1 run scoreboard players add #rdz br.tmp 120
+execute unless score #sk7 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
+execute unless score #sk7 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
+execute unless score #sk7 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set from storage oa:maps sky_region.s7
+execute unless score #sk7 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
+execute unless score #sk8 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
+execute unless score #sk8 oa.map2 matches -1 run scoreboard players remove #rdx br.tmp 50
+execute unless score #sk8 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
+execute unless score #sk8 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
+execute unless score #sk8 oa.map2 matches -1 run scoreboard players add #rdz br.tmp 98
+execute unless score #sk8 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
+execute unless score #sk8 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
+execute unless score #sk8 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set from storage oa:maps sky_region.s8
+execute unless score #sk8 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp
+execute unless score #sk9 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp = #rx br.tmp
+execute unless score #sk9 oa.map2 matches -1 run scoreboard players remove #rdx br.tmp 109
+execute unless score #sk9 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp *= #rdx br.tmp
+execute unless score #sk9 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp = #rz br.tmp
+execute unless score #sk9 oa.map2 matches -1 run scoreboard players add #rdz br.tmp 55
+execute unless score #sk9 oa.map2 matches -1 run scoreboard players operation #rdz br.tmp *= #rdz br.tmp
+execute unless score #sk9 oa.map2 matches -1 run scoreboard players operation #rdx br.tmp += #rdz br.tmp
+execute unless score #sk9 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run data modify storage oa:supply region set from storage oa:maps sky_region.s9
+execute unless score #sk9 oa.map2 matches -1 if score #rdx br.tmp < #rbest br.tmp run scoreboard players operation #rbest br.tmp = #rdx br.tmp

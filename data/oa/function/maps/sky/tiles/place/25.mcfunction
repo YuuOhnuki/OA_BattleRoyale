@@ -2,464 +2,290 @@ scoreboard players set #stage oa.map2 1
 fill ~8 ~-40 ~-88 ~39 ~-14 ~-57 minecraft:air
 fill ~8 ~-13 ~-88 ~39 ~13 ~-57 minecraft:air
 fill ~8 ~14 ~-88 ~39 ~40 ~-57 minecraft:air
-fill ~8 ~-27 ~-63 ~13 ~-27 ~-57 minecraft:tuff
-fill ~13 ~-26 ~-83 ~13 ~-25 ~-83 minecraft:tuff
-fill ~8 ~-26 ~-63 ~13 ~-26 ~-61 minecraft:stone
-setblock ~10 ~-26 ~-60 minecraft:gold_block
-fill ~8 ~-26 ~-60 ~9 ~-26 ~-60 minecraft:stone
-fill ~11 ~-26 ~-60 ~13 ~-26 ~-60 minecraft:stone
-fill ~8 ~-26 ~-59 ~13 ~-26 ~-57 minecraft:stone
-fill ~8 ~-25 ~-80 ~8 ~-25 ~-79 minecraft:tuff
-fill ~8 ~-15 ~-80 ~8 ~-15 ~-79 minecraft:tuff
-setblock ~8 ~-25 ~-62 minecraft:chest[facing=north]
-setblock ~12 ~-25 ~-58 minecraft:redstone_ore
-fill ~12 ~-24 ~-83 ~13 ~-22 ~-83 minecraft:tuff
-fill ~8 ~-24 ~-80 ~8 ~-23 ~-78 minecraft:tuff
-fill ~8 ~-23 ~-86 ~8 ~-21 ~-86 minecraft:tuff
-fill ~13 ~-22 ~-82 ~13 ~-20 ~-82 minecraft:tuff
-fill ~8 ~-22 ~-80 ~8 ~-21 ~-77 minecraft:tuff
-fill ~11 ~-21 ~-83 ~13 ~-21 ~-83 minecraft:tuff
-setblock ~8 ~-20 ~-88 minecraft:tuff
-fill ~8 ~-20 ~-86 ~8 ~-19 ~-85 minecraft:tuff
-fill ~11 ~-20 ~-83 ~14 ~-19 ~-83 minecraft:tuff
-fill ~8 ~-20 ~-80 ~8 ~-20 ~-76 minecraft:tuff
-fill ~8 ~-19 ~-88 ~10 ~-19 ~-88 minecraft:tuff
-fill ~8 ~-19 ~-87 ~9 ~-19 ~-87 minecraft:tuff
-fill ~12 ~-19 ~-82 ~13 ~-18 ~-82 minecraft:tuff
-fill ~8 ~-19 ~-81 ~8 ~-19 ~-75 minecraft:tuff
-fill ~8 ~-18 ~-88 ~12 ~-18 ~-88 minecraft:tuff
-fill ~8 ~-18 ~-87 ~11 ~-18 ~-87 minecraft:tuff
-fill ~8 ~-18 ~-86 ~10 ~-18 ~-86 minecraft:tuff
-setblock ~8 ~-18 ~-85 minecraft:tuff
-fill ~10 ~-18 ~-83 ~14 ~-17 ~-83 minecraft:tuff
-fill ~8 ~-18 ~-81 ~8 ~-18 ~-78 minecraft:tuff
-fill ~8 ~-18 ~-77 ~9 ~-18 ~-77 minecraft:tuff
-fill ~8 ~-18 ~-76 ~8 ~-18 ~-75 minecraft:tuff
-fill ~8 ~-17 ~-88 ~14 ~-17 ~-88 minecraft:tuff
-setblock ~17 ~-17 ~-88 minecraft:tuff
-fill ~8 ~-17 ~-87 ~13 ~-17 ~-87 minecraft:tuff
-fill ~8 ~-17 ~-86 ~12 ~-17 ~-86 minecraft:tuff
-fill ~8 ~-17 ~-85 ~11 ~-17 ~-85 minecraft:tuff
-fill ~8 ~-17 ~-84 ~9 ~-17 ~-84 minecraft:tuff
-setblock ~8 ~-17 ~-83 minecraft:tuff
-fill ~12 ~-17 ~-82 ~14 ~-16 ~-82 minecraft:tuff
-fill ~8 ~-17 ~-81 ~8 ~-17 ~-79 minecraft:tuff
-fill ~8 ~-17 ~-78 ~9 ~-15 ~-77 minecraft:tuff
-fill ~8 ~-17 ~-76 ~8 ~-15 ~-74 minecraft:tuff
-fill ~8 ~-16 ~-88 ~17 ~-16 ~-88 minecraft:tuff
-fill ~8 ~-16 ~-87 ~14 ~-16 ~-87 minecraft:tuff
-fill ~8 ~-16 ~-86 ~13 ~-16 ~-86 minecraft:tuff
-fill ~8 ~-16 ~-85 ~12 ~-16 ~-85 minecraft:tuff
-fill ~8 ~-16 ~-84 ~11 ~-16 ~-84 minecraft:tuff
-setblock ~13 ~-16 ~-84 minecraft:tuff
-fill ~8 ~-16 ~-83 ~14 ~-16 ~-83 minecraft:tuff
-fill ~8 ~-16 ~-82 ~8 ~-16 ~-79 minecraft:tuff
-fill ~13 ~-16 ~-77 ~13 ~-15 ~-77 minecraft:tuff
-fill ~8 ~-15 ~-88 ~18 ~-15 ~-88 minecraft:tuff
-fill ~8 ~-15 ~-87 ~15 ~-15 ~-86 minecraft:tuff
-fill ~8 ~-15 ~-85 ~14 ~-15 ~-85 minecraft:tuff
-fill ~8 ~-15 ~-84 ~13 ~-15 ~-84 minecraft:tuff
-fill ~8 ~-15 ~-83 ~14 ~-15 ~-82 minecraft:tuff
-fill ~8 ~-13 ~-83 ~14 ~-13 ~-82 minecraft:tuff
-fill ~13 ~-15 ~-81 ~13 ~-14 ~-81 minecraft:tuff
-fill ~8 ~-15 ~-81 ~9 ~-15 ~-81 minecraft:tuff
-fill ~8 ~-14 ~-88 ~19 ~-13 ~-88 minecraft:tuff
-fill ~8 ~-14 ~-87 ~17 ~-14 ~-87 minecraft:tuff
-fill ~22 ~-14 ~-86 ~22 ~-13 ~-86 minecraft:tuff
-fill ~8 ~-14 ~-86 ~16 ~-14 ~-86 minecraft:tuff
-fill ~8 ~-14 ~-85 ~15 ~-14 ~-85 minecraft:tuff
-fill ~8 ~-14 ~-84 ~14 ~-14 ~-82 minecraft:tuff
-fill ~8 ~-14 ~-81 ~11 ~-14 ~-81 minecraft:tuff
-fill ~13 ~-14 ~-78 ~13 ~-12 ~-78 minecraft:tuff
-fill ~12 ~-14 ~-77 ~13 ~-13 ~-77 minecraft:tuff
-fill ~8 ~-14 ~-80 ~9 ~-14 ~-76 minecraft:tuff
-fill ~8 ~-14 ~-75 ~8 ~-12 ~-74 minecraft:tuff
-fill ~8 ~-13 ~-87 ~18 ~-13 ~-87 minecraft:tuff
-fill ~8 ~-13 ~-86 ~17 ~-13 ~-86 minecraft:tuff
-fill ~8 ~-13 ~-85 ~16 ~-13 ~-85 minecraft:tuff
-fill ~8 ~-13 ~-84 ~15 ~-13 ~-84 minecraft:tuff
-fill ~8 ~-13 ~-81 ~13 ~-13 ~-81 minecraft:tuff
-fill ~8 ~-13 ~-80 ~11 ~-13 ~-80 minecraft:tuff
-fill ~8 ~-13 ~-79 ~10 ~-13 ~-79 minecraft:tuff
-fill ~8 ~-13 ~-78 ~9 ~-13 ~-78 minecraft:tuff
-fill ~8 ~-13 ~-77 ~10 ~-13 ~-77 minecraft:tuff
-fill ~8 ~-13 ~-76 ~9 ~-12 ~-76 minecraft:tuff
-fill ~8 ~-12 ~-88 ~21 ~-12 ~-88 minecraft:tuff
-fill ~8 ~-12 ~-87 ~20 ~-12 ~-87 minecraft:tuff
-fill ~22 ~-12 ~-86 ~23 ~-12 ~-86 minecraft:tuff
-fill ~8 ~-12 ~-86 ~18 ~-12 ~-86 minecraft:tuff
-fill ~8 ~-12 ~-85 ~17 ~-12 ~-85 minecraft:tuff
-fill ~8 ~-12 ~-84 ~16 ~-12 ~-84 minecraft:tuff
-fill ~8 ~-12 ~-83 ~15 ~-12 ~-83 minecraft:tuff
-fill ~8 ~-12 ~-82 ~14 ~-12 ~-81 minecraft:tuff
-fill ~8 ~-12 ~-80 ~12 ~-12 ~-80 minecraft:tuff
-fill ~8 ~-12 ~-79 ~11 ~-12 ~-79 minecraft:tuff
-fill ~8 ~-12 ~-78 ~10 ~-12 ~-77 minecraft:tuff
-fill ~12 ~-12 ~-77 ~14 ~-12 ~-77 minecraft:tuff
-fill ~8 ~-11 ~-88 ~22 ~-11 ~-88 minecraft:stone
-setblock ~25 ~-11 ~-88 minecraft:stone
-fill ~8 ~-11 ~-87 ~21 ~-11 ~-87 minecraft:stone
-fill ~8 ~-11 ~-86 ~23 ~-8 ~-86 minecraft:stone
-fill ~8 ~-11 ~-85 ~18 ~-11 ~-85 minecraft:stone
-fill ~8 ~-11 ~-84 ~17 ~-11 ~-84 minecraft:stone
-fill ~8 ~-11 ~-83 ~16 ~-11 ~-83 minecraft:stone
-fill ~8 ~-11 ~-82 ~15 ~-11 ~-82 minecraft:stone
-fill ~8 ~-11 ~-81 ~14 ~-11 ~-81 minecraft:stone
-fill ~8 ~-11 ~-80 ~13 ~-11 ~-80 minecraft:stone
-fill ~8 ~-11 ~-79 ~12 ~-11 ~-79 minecraft:stone
-setblock ~13 ~-11 ~-78 minecraft:stone
-fill ~8 ~-11 ~-78 ~11 ~-11 ~-78 minecraft:stone
-fill ~8 ~-11 ~-77 ~14 ~-11 ~-77 minecraft:stone
-fill ~8 ~-11 ~-76 ~9 ~-11 ~-76 minecraft:stone
-fill ~8 ~-4 ~-76 ~9 ~-4 ~-76 minecraft:stone
-fill ~8 ~-11 ~-75 ~8 ~-11 ~-74 minecraft:stone
-fill ~8 ~-10 ~-88 ~26 ~-8 ~-88 minecraft:stone
-fill ~8 ~-10 ~-87 ~22 ~-10 ~-87 minecraft:stone
-fill ~8 ~-10 ~-85 ~20 ~-10 ~-85 minecraft:stone
-fill ~8 ~-10 ~-84 ~19 ~-10 ~-84 minecraft:stone
-fill ~8 ~-10 ~-83 ~17 ~-10 ~-83 minecraft:stone
-fill ~8 ~-10 ~-82 ~16 ~-10 ~-82 minecraft:stone
-fill ~8 ~-10 ~-81 ~15 ~-10 ~-81 minecraft:stone
-fill ~8 ~-10 ~-80 ~14 ~-10 ~-80 minecraft:stone
-fill ~8 ~-10 ~-79 ~13 ~-10 ~-79 minecraft:stone
-fill ~8 ~-10 ~-78 ~14 ~-10 ~-77 minecraft:stone
-fill ~8 ~-8 ~-78 ~14 ~-8 ~-77 minecraft:stone
-fill ~8 ~-10 ~-76 ~11 ~-10 ~-76 minecraft:stone
-fill ~8 ~-6 ~-76 ~11 ~-6 ~-76 minecraft:stone
-fill ~8 ~-10 ~-75 ~10 ~-10 ~-75 minecraft:stone
-fill ~8 ~-6 ~-75 ~10 ~-6 ~-75 minecraft:stone
-setblock ~8 ~-10 ~-74 minecraft:stone
-setblock ~8 ~-5 ~-74 minecraft:stone
-fill ~8 ~-9 ~-87 ~24 ~-9 ~-87 minecraft:stone
-fill ~8 ~-9 ~-85 ~22 ~-8 ~-85 minecraft:stone
-fill ~8 ~-9 ~-84 ~20 ~-9 ~-84 minecraft:stone
-fill ~8 ~-9 ~-83 ~18 ~-9 ~-83 minecraft:stone
-fill ~8 ~-9 ~-82 ~17 ~-9 ~-82 minecraft:stone
-fill ~8 ~-9 ~-81 ~16 ~-9 ~-81 minecraft:stone
-fill ~8 ~-9 ~-80 ~15 ~-9 ~-80 minecraft:stone
-fill ~8 ~-9 ~-79 ~14 ~-9 ~-77 minecraft:stone
-fill ~8 ~-9 ~-76 ~12 ~-9 ~-76 minecraft:stone
-fill ~8 ~-7 ~-76 ~12 ~-7 ~-76 minecraft:stone
-fill ~8 ~-9 ~-75 ~11 ~-9 ~-75 minecraft:stone
-fill ~8 ~-7 ~-75 ~11 ~-7 ~-75 minecraft:stone
-fill ~8 ~-9 ~-74 ~10 ~-9 ~-74 minecraft:stone
-fill ~8 ~-7 ~-74 ~10 ~-7 ~-74 minecraft:stone
-setblock ~8 ~-9 ~-73 minecraft:stone
-fill ~8 ~-8 ~-87 ~25 ~-7 ~-87 minecraft:stone
-fill ~8 ~-8 ~-84 ~21 ~-8 ~-84 minecraft:stone
-fill ~8 ~-8 ~-83 ~20 ~-7 ~-83 minecraft:stone
-fill ~8 ~-8 ~-82 ~18 ~-8 ~-82 minecraft:stone
-fill ~8 ~-8 ~-81 ~17 ~-8 ~-81 minecraft:stone
-fill ~8 ~-8 ~-80 ~16 ~-8 ~-80 minecraft:stone
-fill ~8 ~-8 ~-79 ~15 ~-8 ~-79 minecraft:stone
-fill ~8 ~-8 ~-76 ~13 ~-8 ~-76 minecraft:stone
-fill ~8 ~-8 ~-75 ~12 ~-8 ~-75 minecraft:stone
-fill ~8 ~-8 ~-74 ~11 ~-8 ~-74 minecraft:stone
-fill ~8 ~-8 ~-73 ~10 ~-8 ~-73 minecraft:stone
-setblock ~8 ~-8 ~-72 minecraft:stone
-fill ~8 ~-7 ~-88 ~27 ~-6 ~-88 minecraft:stone
-fill ~8 ~-7 ~-86 ~24 ~-7 ~-86 minecraft:stone
-fill ~8 ~-7 ~-85 ~23 ~-7 ~-85 minecraft:stone
-fill ~8 ~-7 ~-84 ~22 ~-7 ~-84 minecraft:stone
-fill ~8 ~-7 ~-82 ~19 ~-7 ~-82 minecraft:stone
-fill ~8 ~-7 ~-81 ~18 ~-7 ~-81 minecraft:stone
-fill ~8 ~-7 ~-80 ~17 ~-6 ~-80 minecraft:stone
-fill ~8 ~-7 ~-79 ~16 ~-7 ~-79 minecraft:stone
-fill ~8 ~-7 ~-78 ~15 ~-7 ~-77 minecraft:stone
-fill ~13 ~-7 ~-76 ~14 ~-7 ~-76 minecraft:andesite
-fill ~12 ~-7 ~-75 ~13 ~-7 ~-75 minecraft:andesite
-fill ~11 ~-7 ~-74 ~12 ~-7 ~-74 minecraft:andesite
-fill ~10 ~-7 ~-73 ~11 ~-7 ~-73 minecraft:andesite
-fill ~8 ~-7 ~-73 ~9 ~-7 ~-72 minecraft:stone
-setblock ~10 ~-7 ~-72 minecraft:andesite
-setblock ~8 ~-7 ~-71 minecraft:stone
-fill ~8 ~-6 ~-87 ~26 ~-6 ~-87 minecraft:stone
-fill ~8 ~-6 ~-86 ~25 ~-6 ~-86 minecraft:stone
-fill ~8 ~-6 ~-85 ~24 ~-5 ~-85 minecraft:stone
-fill ~8 ~-6 ~-84 ~23 ~-5 ~-84 minecraft:stone
-fill ~8 ~-6 ~-83 ~21 ~-6 ~-83 minecraft:stone
-fill ~8 ~-6 ~-82 ~20 ~-6 ~-82 minecraft:stone
-fill ~8 ~-6 ~-81 ~19 ~-5 ~-81 minecraft:stone
-fill ~8 ~-6 ~-79 ~16 ~-6 ~-78 minecraft:stone
-fill ~8 ~-6 ~-77 ~15 ~-6 ~-77 minecraft:stone
-fill ~14 ~-6 ~-76 ~15 ~-6 ~-76 minecraft:stone
-fill ~12 ~-6 ~-76 ~13 ~-6 ~-76 minecraft:andesite
-fill ~11 ~-6 ~-75 ~14 ~-6 ~-75 minecraft:andesite
-fill ~8 ~-6 ~-74 ~9 ~-6 ~-74 minecraft:stone
-fill ~10 ~-6 ~-74 ~13 ~-6 ~-74 minecraft:andesite
-fill ~9 ~-6 ~-73 ~12 ~-6 ~-73 minecraft:andesite
-fill ~8 ~-6 ~-73 ~8 ~-6 ~-72 minecraft:stone
-fill ~9 ~-6 ~-72 ~11 ~-6 ~-72 minecraft:andesite
-fill ~8 ~-6 ~-71 ~10 ~-6 ~-71 minecraft:andesite
-setblock ~8 ~-6 ~-70 minecraft:andesite
-fill ~8 ~-5 ~-88 ~28 ~-5 ~-88 minecraft:stone
-fill ~24 ~-5 ~-87 ~27 ~-5 ~-87 minecraft:dirt
-fill ~8 ~-5 ~-87 ~23 ~-5 ~-86 minecraft:stone
-fill ~24 ~-5 ~-86 ~26 ~-5 ~-86 minecraft:dirt
-fill ~8 ~-5 ~-83 ~22 ~-4 ~-83 minecraft:stone
-fill ~8 ~-5 ~-82 ~21 ~-3 ~-82 minecraft:stone
-fill ~8 ~-5 ~-80 ~18 ~-4 ~-80 minecraft:stone
-fill ~8 ~-5 ~-79 ~17 ~-5 ~-79 minecraft:stone
-fill ~8 ~-5 ~-78 ~16 ~-5 ~-77 minecraft:stone
-fill ~11 ~-5 ~-76 ~12 ~-5 ~-76 minecraft:andesite
-fill ~8 ~-5 ~-76 ~10 ~-5 ~-76 minecraft:stone
-fill ~13 ~-5 ~-76 ~15 ~-5 ~-76 minecraft:stone
-fill ~14 ~-5 ~-75 ~15 ~-5 ~-75 minecraft:stone
-fill ~8 ~-5 ~-75 ~9 ~-5 ~-75 minecraft:stone
-fill ~10 ~-5 ~-75 ~13 ~-5 ~-75 minecraft:andesite
-fill ~9 ~-5 ~-74 ~14 ~-5 ~-74 minecraft:andesite
-fill ~8 ~-5 ~-73 ~13 ~-5 ~-73 minecraft:andesite
-fill ~8 ~-5 ~-72 ~12 ~-5 ~-72 minecraft:andesite
-fill ~8 ~-5 ~-71 ~11 ~-5 ~-71 minecraft:andesite
-fill ~8 ~-2 ~-71 ~11 ~-2 ~-71 minecraft:andesite
-fill ~8 ~-5 ~-70 ~9 ~-5 ~-70 minecraft:andesite
-fill ~8 ~-2 ~-70 ~9 ~-2 ~-70 minecraft:andesite
-fill ~25 ~-4 ~-88 ~28 ~-4 ~-88 minecraft:dirt
-fill ~8 ~-4 ~-88 ~24 ~-4 ~-87 minecraft:stone
-fill ~25 ~-4 ~-87 ~27 ~-4 ~-87 minecraft:dirt
-setblock ~26 ~-4 ~-86 minecraft:dirt
-fill ~8 ~-4 ~-86 ~25 ~-4 ~-85 minecraft:stone
-fill ~32 ~-4 ~-85 ~33 ~-2 ~-85 minecraft:polished_andesite
-fill ~8 ~-4 ~-84 ~24 ~-3 ~-84 minecraft:stone
-fill ~30 ~-4 ~-82 ~32 ~-2 ~-82 minecraft:polished_andesite
-fill ~8 ~-4 ~-81 ~20 ~-3 ~-81 minecraft:stone
-fill ~8 ~-4 ~-79 ~17 ~-4 ~-78 minecraft:stone
-fill ~8 ~-4 ~-77 ~16 ~-4 ~-77 minecraft:stone
-fill ~12 ~-4 ~-76 ~16 ~-4 ~-76 minecraft:stone
-fill ~10 ~-4 ~-76 ~11 ~-4 ~-76 minecraft:andesite
-fill ~9 ~-4 ~-75 ~12 ~-4 ~-75 minecraft:andesite
-fill ~13 ~-4 ~-75 ~15 ~-4 ~-75 minecraft:stone
-setblock ~8 ~-4 ~-75 minecraft:stone
-fill ~14 ~-4 ~-74 ~15 ~-4 ~-74 minecraft:stone
-fill ~8 ~-4 ~-74 ~13 ~-4 ~-74 minecraft:andesite
-fill ~8 ~-4 ~-73 ~14 ~-4 ~-73 minecraft:andesite
-fill ~8 ~-4 ~-72 ~13 ~-4 ~-72 minecraft:andesite
-fill ~8 ~-4 ~-71 ~12 ~-4 ~-71 minecraft:andesite
-fill ~8 ~-4 ~-70 ~11 ~-3 ~-70 minecraft:andesite
-fill ~8 ~-4 ~-69 ~9 ~-4 ~-69 minecraft:andesite
-fill ~8 ~-3 ~-88 ~25 ~-3 ~-88 minecraft:stone
-fill ~26 ~-3 ~-88 ~29 ~-3 ~-88 minecraft:dirt
-setblock ~27 ~-3 ~-87 minecraft:dirt
-fill ~8 ~-3 ~-87 ~26 ~-3 ~-86 minecraft:stone
-fill ~8 ~-3 ~-85 ~25 ~-3 ~-85 minecraft:stone
-fill ~8 ~-3 ~-83 ~23 ~-3 ~-83 minecraft:stone
-fill ~8 ~-3 ~-80 ~19 ~-3 ~-80 minecraft:stone
-fill ~8 ~-3 ~-79 ~17 ~-3 ~-77 minecraft:stone
-fill ~11 ~-3 ~-76 ~16 ~-3 ~-76 minecraft:stone
-fill ~9 ~-3 ~-76 ~10 ~-3 ~-76 minecraft:andesite
-setblock ~8 ~-3 ~-76 minecraft:stone
-fill ~8 ~-3 ~-75 ~11 ~-3 ~-75 minecraft:andesite
-fill ~12 ~-3 ~-75 ~16 ~-3 ~-75 minecraft:stone
-fill ~8 ~-3 ~-74 ~12 ~-3 ~-74 minecraft:andesite
-fill ~13 ~-3 ~-74 ~15 ~-3 ~-74 minecraft:stone
-setblock ~15 ~-3 ~-73 minecraft:stone
-fill ~8 ~-3 ~-73 ~14 ~-3 ~-72 minecraft:andesite
-fill ~8 ~-3 ~-71 ~13 ~-3 ~-71 minecraft:andesite
-fill ~8 ~-3 ~-69 ~10 ~-3 ~-69 minecraft:andesite
-fill ~8 ~-2 ~-88 ~29 ~-1 ~-88 minecraft:dirt
-fill ~8 ~-2 ~-87 ~28 ~-1 ~-87 minecraft:dirt
-fill ~8 ~-2 ~-86 ~26 ~-1 ~-86 minecraft:dirt
-fill ~8 ~-2 ~-85 ~25 ~-1 ~-85 minecraft:dirt
-fill ~8 ~-2 ~-84 ~24 ~-1 ~-84 minecraft:dirt
-fill ~8 ~-2 ~-83 ~23 ~-1 ~-83 minecraft:dirt
-fill ~8 ~-2 ~-82 ~21 ~-1 ~-82 minecraft:dirt
-fill ~14 ~-2 ~-81 ~15 ~-2 ~-81 minecraft:stone
-fill ~8 ~-2 ~-81 ~13 ~-2 ~-81 minecraft:dirt
-fill ~16 ~-2 ~-81 ~20 ~-2 ~-81 minecraft:dirt
-fill ~18 ~-2 ~-80 ~19 ~-2 ~-80 minecraft:dirt
-setblock ~18 ~-2 ~-79 minecraft:dirt
-fill ~13 ~-2 ~-80 ~17 ~-2 ~-78 minecraft:stone
-setblock ~17 ~-2 ~-77 minecraft:dirt
-fill ~8 ~-2 ~-80 ~12 ~-2 ~-76 minecraft:dirt
-fill ~13 ~-2 ~-77 ~16 ~-2 ~-76 minecraft:stone
-setblock ~16 ~-2 ~-75 minecraft:dirt
-fill ~12 ~-2 ~-75 ~15 ~-2 ~-75 minecraft:stone
-fill ~8 ~-2 ~-75 ~11 ~-2 ~-74 minecraft:dirt
-fill ~12 ~-2 ~-74 ~14 ~-2 ~-74 minecraft:stone
-fill ~15 ~-2 ~-74 ~15 ~-2 ~-73 minecraft:dirt
-fill ~8 ~-2 ~-73 ~10 ~-2 ~-73 minecraft:dirt
-setblock ~14 ~-2 ~-73 minecraft:stone
-fill ~11 ~-2 ~-73 ~13 ~-2 ~-73 minecraft:andesite
-fill ~13 ~-2 ~-72 ~14 ~-2 ~-72 minecraft:dirt
-fill ~9 ~-2 ~-72 ~12 ~-2 ~-72 minecraft:andesite
-setblock ~8 ~-2 ~-72 minecraft:dirt
-fill ~12 ~-2 ~-71 ~13 ~-2 ~-71 minecraft:dirt
-fill ~10 ~-2 ~-70 ~12 ~-2 ~-70 minecraft:dirt
-fill ~8 ~-2 ~-69 ~10 ~-1 ~-69 minecraft:dirt
-fill ~27 ~-1 ~-86 ~31 ~-1 ~-86 minecraft:polished_andesite
-fill ~26 ~-1 ~-85 ~33 ~-1 ~-85 minecraft:polished_andesite
-fill ~26 ~-1 ~-84 ~35 ~-1 ~-84 minecraft:polished_andesite
-fill ~28 ~-1 ~-83 ~38 ~-1 ~-83 minecraft:polished_andesite
-fill ~30 ~-1 ~-82 ~39 ~-1 ~-82 minecraft:polished_andesite
-fill ~8 ~-1 ~-81 ~20 ~-1 ~-81 minecraft:dirt
-fill ~33 ~-1 ~-81 ~39 ~-1 ~-81 minecraft:polished_andesite
-fill ~36 ~-1 ~-80 ~39 ~-1 ~-80 minecraft:polished_andesite
-fill ~8 ~-1 ~-80 ~19 ~-1 ~-80 minecraft:dirt
-fill ~8 ~-1 ~-79 ~18 ~-1 ~-79 minecraft:dirt
-fill ~38 ~-1 ~-79 ~39 ~-1 ~-79 minecraft:polished_andesite
-fill ~8 ~-1 ~-78 ~17 ~-1 ~-77 minecraft:dirt
-fill ~8 ~-1 ~-76 ~16 ~-1 ~-75 minecraft:dirt
-fill ~8 ~-1 ~-74 ~15 ~-1 ~-73 minecraft:dirt
-fill ~8 ~-1 ~-72 ~14 ~-1 ~-72 minecraft:dirt
-fill ~8 ~-1 ~-71 ~13 ~-1 ~-71 minecraft:dirt
-fill ~8 ~-1 ~-70 ~12 ~-1 ~-70 minecraft:dirt
-fill ~8 ~0 ~-88 ~29 ~0 ~-88 minecraft:grass_block
-fill ~29 ~0 ~-87 ~31 ~0 ~-87 minecraft:stone_bricks
-fill ~8 ~0 ~-87 ~28 ~0 ~-87 minecraft:grass_block
-fill ~27 ~0 ~-86 ~33 ~0 ~-86 minecraft:stone_bricks
-fill ~8 ~0 ~-86 ~26 ~0 ~-86 minecraft:grass_block
-fill ~8 ~0 ~-85 ~25 ~0 ~-85 minecraft:grass_block
-fill ~26 ~0 ~-85 ~36 ~0 ~-85 minecraft:stone_bricks
-fill ~8 ~0 ~-84 ~24 ~0 ~-84 minecraft:grass_block
-fill ~26 ~0 ~-84 ~38 ~0 ~-84 minecraft:stone_bricks
-fill ~27 ~0 ~-83 ~39 ~0 ~-83 minecraft:stone_bricks
-fill ~8 ~0 ~-83 ~23 ~0 ~-83 minecraft:grass_block
-fill ~8 ~0 ~-82 ~21 ~0 ~-82 minecraft:grass_block
-fill ~28 ~0 ~-82 ~39 ~0 ~-82 minecraft:stone_bricks
-fill ~16 ~0 ~-81 ~20 ~0 ~-81 minecraft:grass_block
-fill ~8 ~0 ~-81 ~13 ~0 ~-81 minecraft:grass_block
-fill ~31 ~0 ~-81 ~39 ~0 ~-81 minecraft:stone_bricks
-fill ~14 ~0 ~-81 ~15 ~0 ~-81 minecraft:dirt
-fill ~33 ~0 ~-80 ~39 ~0 ~-80 minecraft:stone_bricks
-fill ~18 ~0 ~-80 ~19 ~0 ~-80 minecraft:grass_block
-setblock ~18 ~0 ~-79 minecraft:grass_block
-fill ~35 ~0 ~-79 ~39 ~0 ~-79 minecraft:stone_bricks
-fill ~13 ~0 ~-80 ~17 ~0 ~-78 minecraft:dirt
-fill ~38 ~0 ~-78 ~39 ~0 ~-78 minecraft:stone_bricks
-setblock ~17 ~0 ~-77 minecraft:grass_block
-fill ~8 ~0 ~-80 ~12 ~0 ~-76 minecraft:grass_block
-fill ~13 ~0 ~-77 ~16 ~0 ~-76 minecraft:dirt
-fill ~12 ~0 ~-75 ~15 ~0 ~-75 minecraft:dirt
-setblock ~16 ~0 ~-75 minecraft:grass_block
-fill ~8 ~0 ~-75 ~11 ~0 ~-74 minecraft:grass_block
-fill ~12 ~0 ~-74 ~14 ~0 ~-74 minecraft:dirt
-fill ~15 ~0 ~-74 ~15 ~0 ~-73 minecraft:grass_block
-fill ~8 ~0 ~-73 ~10 ~0 ~-73 minecraft:grass_block
-fill ~11 ~0 ~-73 ~14 ~0 ~-73 minecraft:dirt
-setblock ~8 ~0 ~-72 minecraft:grass_block
-fill ~13 ~0 ~-72 ~14 ~0 ~-72 minecraft:grass_block
-fill ~9 ~0 ~-72 ~12 ~0 ~-72 minecraft:dirt
-fill ~8 ~0 ~-71 ~11 ~0 ~-71 minecraft:dirt
-fill ~12 ~0 ~-71 ~13 ~0 ~-71 minecraft:grass_block
-fill ~8 ~0 ~-70 ~9 ~0 ~-70 minecraft:dirt
-fill ~10 ~0 ~-70 ~12 ~0 ~-70 minecraft:grass_block
-fill ~8 ~0 ~-69 ~10 ~0 ~-69 minecraft:grass_block
-fill ~8 ~0 ~-68 ~8 ~0 ~-67 minecraft:stone_bricks
-fill ~29 ~1 ~-87 ~31 ~1 ~-87 minecraft:stone_brick_wall
-fill ~32 ~1 ~-86 ~33 ~1 ~-86 minecraft:stone_brick_wall
-fill ~34 ~1 ~-85 ~36 ~1 ~-85 minecraft:stone_brick_wall
-fill ~36 ~1 ~-84 ~38 ~1 ~-84 minecraft:stone_brick_wall
-setblock ~27 ~1 ~-83 minecraft:stone_brick_wall
-setblock ~39 ~1 ~-83 minecraft:stone_brick_wall
-fill ~28 ~1 ~-82 ~30 ~1 ~-82 minecraft:stone_brick_wall
-fill ~14 ~1 ~-81 ~15 ~1 ~-81 minecraft:grass_block
-fill ~31 ~1 ~-81 ~32 ~1 ~-81 minecraft:stone_brick_wall
-fill ~33 ~1 ~-80 ~35 ~1 ~-80 minecraft:stone_brick_wall
-fill ~35 ~1 ~-79 ~37 ~1 ~-79 minecraft:stone_brick_wall
-fill ~13 ~1 ~-80 ~17 ~1 ~-78 minecraft:grass_block
-fill ~38 ~1 ~-78 ~39 ~1 ~-78 minecraft:stone_brick_wall
-fill ~13 ~1 ~-77 ~16 ~1 ~-76 minecraft:grass_block
-fill ~12 ~1 ~-75 ~15 ~1 ~-75 minecraft:grass_block
-fill ~12 ~1 ~-74 ~14 ~1 ~-74 minecraft:grass_block
-fill ~11 ~1 ~-73 ~14 ~1 ~-73 minecraft:grass_block
-fill ~9 ~1 ~-72 ~12 ~1 ~-72 minecraft:grass_block
-fill ~8 ~1 ~-71 ~11 ~1 ~-71 minecraft:grass_block
-fill ~8 ~1 ~-70 ~9 ~1 ~-70 minecraft:grass_block
-fill ~8 ~1 ~-68 ~8 ~1 ~-67 minecraft:stone_brick_wall
-setblock ~27 ~2 ~-83 minecraft:lantern
-setblock ~39 ~2 ~-83 minecraft:lantern
-setblock ~38 ~2 ~-78 minecraft:lantern
-execute if score #sv6 oa.map2 matches 0 run fill ~15 ~1 ~-86 ~15 ~5 ~-86 minecraft:oak_log
-execute if score #sv6 oa.map2 matches 0 run setblock ~8 ~1 ~-85 minecraft:chest[facing=north]
-execute if score #sv6 oa.map2 matches 0 run fill ~15 ~1 ~-83 ~15 ~4 ~-83 minecraft:oak_log
-execute if score #sv6 oa.map2 matches 0 run fill ~19 ~1 ~-81 ~20 ~4 ~-81 minecraft:oak_log
-execute if score #sv6 oa.map2 matches 0 run fill ~14 ~3 ~-85 ~16 ~3 ~-85 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~13 ~3 ~-84 ~17 ~3 ~-84 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~18 ~3 ~-83 ~20 ~4 ~-83 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~21 ~3 ~-83 ~21 ~4 ~-83 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~13 ~3 ~-83 ~14 ~4 ~-83 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~16 ~3 ~-83 ~17 ~4 ~-83 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~18 ~3 ~-82 ~21 ~4 ~-82 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~13 ~3 ~-82 ~17 ~4 ~-82 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~14 ~3 ~-81 ~16 ~4 ~-81 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~17 ~3 ~-81 ~18 ~4 ~-81 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~21 ~3 ~-81 ~21 ~4 ~-81 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~22 ~3 ~-82 ~22 ~4 ~-80 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~17 ~3 ~-80 ~21 ~4 ~-80 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~18 ~3 ~-79 ~20 ~4 ~-79 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~21 ~3 ~-79 ~21 ~4 ~-79 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~14 ~4 ~-88 ~16 ~5 ~-88 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~13 ~4 ~-87 ~17 ~5 ~-87 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~16 ~4 ~-86 ~17 ~5 ~-86 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~13 ~4 ~-86 ~14 ~5 ~-86 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~13 ~4 ~-85 ~17 ~5 ~-85 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run setblock ~17 ~4 ~-84 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~14 ~4 ~-84 ~16 ~5 ~-84 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run setblock ~13 ~4 ~-84 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run setblock ~20 ~5 ~-83 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~13 ~5 ~-83 ~17 ~5 ~-83 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run setblock ~19 ~5 ~-83 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~18 ~5 ~-82 ~20 ~5 ~-82 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run setblock ~21 ~5 ~-82 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~14 ~5 ~-82 ~16 ~5 ~-82 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~17 ~5 ~-81 ~21 ~5 ~-81 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run setblock ~15 ~5 ~-81 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run setblock ~22 ~5 ~-81 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~18 ~5 ~-80 ~20 ~5 ~-80 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run setblock ~21 ~5 ~-80 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run setblock ~20 ~5 ~-79 minecraft:azalea_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run setblock ~19 ~5 ~-79 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run setblock ~15 ~6 ~-88 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~14 ~6 ~-87 ~16 ~6 ~-87 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~13 ~6 ~-86 ~17 ~6 ~-86 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run fill ~14 ~6 ~-85 ~16 ~6 ~-85 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 0 run setblock ~15 ~6 ~-84 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 1 run fill ~15 ~0 ~-88 ~15 ~0 ~-87 minecraft:dirt_path
-execute if score #sv6 oa.map2 matches 1 run fill ~11 ~0 ~-88 ~11 ~0 ~-87 minecraft:dirt_path
-execute if score #sv6 oa.map2 matches 1 run fill ~8 ~0 ~-86 ~16 ~0 ~-86 minecraft:dirt_path
-execute if score #sv6 oa.map2 matches 1 run setblock ~15 ~0 ~-85 minecraft:dirt_path
-execute if score #sv6 oa.map2 matches 1 run setblock ~11 ~0 ~-85 minecraft:dirt_path
-execute if score #sv6 oa.map2 matches 1 run fill ~8 ~1 ~-88 ~8 ~2 ~-88 minecraft:oak_leaves[persistent=true]
-execute if score #sv6 oa.map2 matches 1 run setblock ~13 ~1 ~-87 minecraft:dandelion
-execute if score #sv6 oa.map2 matches 1 run setblock ~16 ~1 ~-87 minecraft:dandelion
-execute if score #sv6 oa.map2 matches 1 run setblock ~14 ~1 ~-87 minecraft:chest[facing=north]
-execute if score #sv6 oa.map2 matches 1 run setblock ~13 ~1 ~-85 minecraft:cornflower
-execute if score #sv6 oa.map2 matches 1 run fill ~16 ~1 ~-85 ~16 ~3 ~-85 minecraft:quartz_pillar
-execute if score #sv6 oa.map2 matches 1 run fill ~12 ~1 ~-85 ~12 ~3 ~-85 minecraft:quartz_pillar
-execute if score #sv6 oa.map2 matches 1 run setblock ~17 ~1 ~-83 minecraft:stone
-execute if score #sv6 oa.map2 matches 1 run setblock ~18 ~1 ~-82 minecraft:coal_ore
-execute if score #sv6 oa.map2 matches 1 run fill ~11 ~4 ~-88 ~17 ~4 ~-84 minecraft:orange_terracotta
-execute if score #sv6 oa.map2 matches 1 run fill ~12 ~5 ~-88 ~16 ~5 ~-85 minecraft:orange_terracotta
-execute if score #sv6 oa.map2 matches 1 run setblock ~14 ~6 ~-87 minecraft:orange_terracotta
-execute if score #sv6 oa.map2 matches 2 run setblock ~16 ~0 ~-88 minecraft:polished_andesite
-execute if score #sv6 oa.map2 matches 2 run fill ~14 ~0 ~-88 ~15 ~0 ~-88 minecraft:stone_bricks
-execute if score #sv6 oa.map2 matches 2 run fill ~11 ~0 ~-88 ~12 ~0 ~-88 minecraft:stone_bricks
-execute if score #sv6 oa.map2 matches 2 run fill ~8 ~0 ~-88 ~9 ~0 ~-88 minecraft:stone_bricks
-execute if score #sv6 oa.map2 matches 2 run setblock ~13 ~0 ~-88 minecraft:polished_andesite
-execute if score #sv6 oa.map2 matches 2 run setblock ~10 ~0 ~-88 minecraft:polished_andesite
-execute if score #sv6 oa.map2 matches 2 run setblock ~9 ~0 ~-87 minecraft:polished_andesite
-execute if score #sv6 oa.map2 matches 2 run setblock ~16 ~0 ~-87 minecraft:stone_bricks
-execute if score #sv6 oa.map2 matches 2 run fill ~10 ~0 ~-87 ~11 ~0 ~-87 minecraft:stone_bricks
-execute if score #sv6 oa.map2 matches 2 run setblock ~8 ~0 ~-87 minecraft:stone_bricks
-execute if score #sv6 oa.map2 matches 2 run setblock ~15 ~0 ~-87 minecraft:polished_andesite
-execute if score #sv6 oa.map2 matches 2 run setblock ~12 ~0 ~-87 minecraft:polished_andesite
-execute if score #sv6 oa.map2 matches 2 run fill ~13 ~0 ~-87 ~14 ~0 ~-87 minecraft:stone_bricks
-execute if score #sv6 oa.map2 matches 2 run setblock ~8 ~0 ~-86 minecraft:polished_andesite
-execute if score #sv6 oa.map2 matches 2 run fill ~9 ~0 ~-86 ~10 ~0 ~-86 minecraft:stone_bricks
-execute if score #sv6 oa.map2 matches 2 run setblock ~11 ~0 ~-86 minecraft:polished_andesite
-execute if score #sv6 oa.map2 matches 2 run setblock ~14 ~0 ~-86 minecraft:polished_andesite
-execute if score #sv6 oa.map2 matches 2 run fill ~12 ~0 ~-86 ~13 ~0 ~-86 minecraft:stone_bricks
-execute if score #sv6 oa.map2 matches 2 run fill ~15 ~0 ~-86 ~16 ~0 ~-86 minecraft:stone_bricks
-execute if score #sv6 oa.map2 matches 2 run setblock ~16 ~0 ~-85 minecraft:polished_andesite
-execute if score #sv6 oa.map2 matches 2 run fill ~14 ~0 ~-85 ~15 ~0 ~-85 minecraft:stone_bricks
-execute if score #sv6 oa.map2 matches 2 run fill ~11 ~0 ~-85 ~12 ~0 ~-85 minecraft:stone_bricks
-execute if score #sv6 oa.map2 matches 2 run fill ~8 ~0 ~-85 ~9 ~0 ~-85 minecraft:stone_bricks
-execute if score #sv6 oa.map2 matches 2 run setblock ~13 ~0 ~-85 minecraft:polished_andesite
-execute if score #sv6 oa.map2 matches 2 run setblock ~10 ~0 ~-85 minecraft:polished_andesite
-execute if score #sv6 oa.map2 matches 2 run setblock ~13 ~1 ~-88 minecraft:barrel[facing=up]
-execute if score #sv6 oa.map2 matches 2 run setblock ~10 ~1 ~-87 minecraft:chest[facing=north]
-execute if score #sv6 oa.map2 matches 2 run fill ~14 ~1 ~-87 ~14 ~2 ~-87 minecraft:oak_fence
-execute if score #sv6 oa.map2 matches 2 run fill ~12 ~1 ~-87 ~12 ~2 ~-87 minecraft:oak_fence
-execute if score #sv6 oa.map2 matches 2 run setblock ~11 ~1 ~-78 minecraft:stone
-execute if score #sv6 oa.map2 matches 2 run setblock ~12 ~1 ~-77 minecraft:coal_ore
-execute if score #sv6 oa.map2 matches 2 run fill ~11 ~3 ~-88 ~15 ~3 ~-86 minecraft:orange_wool
+fill ~13 ~-16 ~-62 ~14 ~-15 ~-61 minecraft:stone
+setblock ~14 ~-15 ~-60 minecraft:stone
+fill ~13 ~-14 ~-62 ~14 ~-14 ~-60 minecraft:stone
+setblock ~14 ~-14 ~-59 minecraft:stone
+fill ~17 ~-13 ~-67 ~19 ~-13 ~-66 minecraft:stone
+fill ~18 ~-13 ~-65 ~18 ~-13 ~-64 minecraft:stone
+fill ~13 ~-13 ~-62 ~14 ~-12 ~-59 minecraft:stone
+setblock ~8 ~-13 ~-57 minecraft:andesite
+setblock ~8 ~-9 ~-57 minecraft:andesite
+fill ~16 ~-12 ~-67 ~19 ~-12 ~-65 minecraft:stone
+fill ~17 ~-12 ~-64 ~19 ~-12 ~-64 minecraft:stone
+setblock ~14 ~-12 ~-63 minecraft:stone
+fill ~17 ~-12 ~-63 ~18 ~-12 ~-63 minecraft:stone
+setblock ~18 ~-12 ~-62 minecraft:stone
+fill ~8 ~-12 ~-58 ~8 ~-11 ~-58 minecraft:andesite
+fill ~8 ~-12 ~-57 ~11 ~-12 ~-57 minecraft:andesite
+setblock ~18 ~-11 ~-68 minecraft:stone
+fill ~15 ~-11 ~-67 ~20 ~-11 ~-64 minecraft:stone
+fill ~14 ~-11 ~-63 ~19 ~-11 ~-63 minecraft:stone
+setblock ~22 ~-11 ~-62 minecraft:stone
+fill ~13 ~-11 ~-62 ~19 ~-11 ~-62 minecraft:stone
+fill ~16 ~-11 ~-61 ~18 ~-11 ~-61 minecraft:stone
+fill ~13 ~-11 ~-61 ~14 ~-11 ~-59 minecraft:stone
+fill ~9 ~-11 ~-58 ~13 ~-11 ~-58 minecraft:stone
+fill ~8 ~-11 ~-57 ~10 ~-11 ~-57 minecraft:andesite
+fill ~11 ~-11 ~-57 ~13 ~-11 ~-57 minecraft:stone
+fill ~16 ~-10 ~-68 ~19 ~-10 ~-68 minecraft:stone
+setblock ~21 ~-10 ~-67 minecraft:andesite
+fill ~15 ~-10 ~-67 ~20 ~-10 ~-67 minecraft:stone
+fill ~14 ~-10 ~-66 ~21 ~-10 ~-64 minecraft:stone
+fill ~13 ~-10 ~-63 ~20 ~-10 ~-63 minecraft:stone
+fill ~12 ~-10 ~-62 ~22 ~-9 ~-62 minecraft:stone
+fill ~22 ~-10 ~-61 ~22 ~-9 ~-61 minecraft:stone
+fill ~13 ~-10 ~-61 ~19 ~-10 ~-61 minecraft:stone
+fill ~10 ~-10 ~-60 ~19 ~-10 ~-60 minecraft:stone
+fill ~8 ~-10 ~-59 ~18 ~-10 ~-59 minecraft:stone
+fill ~8 ~-10 ~-58 ~16 ~-10 ~-58 minecraft:stone
+fill ~10 ~-10 ~-57 ~15 ~-10 ~-57 minecraft:stone
+fill ~8 ~-10 ~-57 ~9 ~-10 ~-57 minecraft:andesite
+setblock ~20 ~-9 ~-68 minecraft:andesite
+fill ~15 ~-9 ~-68 ~19 ~-9 ~-68 minecraft:stone
+fill ~20 ~-9 ~-67 ~22 ~-9 ~-67 minecraft:andesite
+fill ~14 ~-9 ~-67 ~19 ~-9 ~-67 minecraft:stone
+fill ~21 ~-9 ~-66 ~22 ~-9 ~-66 minecraft:andesite
+fill ~13 ~-9 ~-66 ~20 ~-9 ~-65 minecraft:stone
+setblock ~21 ~-9 ~-65 minecraft:andesite
+fill ~13 ~-9 ~-64 ~21 ~-9 ~-63 minecraft:stone
+fill ~10 ~-9 ~-61 ~20 ~-9 ~-61 minecraft:stone
+fill ~8 ~-9 ~-60 ~20 ~-9 ~-60 minecraft:stone
+fill ~8 ~-9 ~-59 ~19 ~-9 ~-59 minecraft:stone
+fill ~8 ~-2 ~-59 ~19 ~-2 ~-59 minecraft:stone
+fill ~8 ~-9 ~-58 ~18 ~-9 ~-58 minecraft:stone
+fill ~8 ~-2 ~-58 ~18 ~-2 ~-58 minecraft:stone
+fill ~9 ~-9 ~-57 ~17 ~-9 ~-57 minecraft:stone
+fill ~17 ~-8 ~-69 ~18 ~-8 ~-69 minecraft:stone
+setblock ~19 ~-8 ~-69 minecraft:andesite
+fill ~15 ~-8 ~-68 ~18 ~-8 ~-68 minecraft:stone
+fill ~19 ~-8 ~-68 ~20 ~-8 ~-68 minecraft:andesite
+fill ~19 ~-8 ~-67 ~22 ~-8 ~-67 minecraft:andesite
+fill ~13 ~-8 ~-67 ~18 ~-8 ~-67 minecraft:stone
+fill ~20 ~-8 ~-66 ~22 ~-8 ~-65 minecraft:andesite
+fill ~13 ~-8 ~-66 ~19 ~-8 ~-65 minecraft:stone
+fill ~12 ~-8 ~-64 ~20 ~-8 ~-64 minecraft:stone
+fill ~21 ~-8 ~-64 ~22 ~-8 ~-64 minecraft:andesite
+fill ~11 ~-8 ~-63 ~21 ~-8 ~-63 minecraft:stone
+setblock ~22 ~-8 ~-63 minecraft:andesite
+setblock ~22 ~-2 ~-63 minecraft:andesite
+setblock ~23 ~-8 ~-62 minecraft:andesite
+fill ~10 ~-8 ~-62 ~22 ~-8 ~-62 minecraft:stone
+fill ~9 ~-8 ~-61 ~22 ~-8 ~-61 minecraft:stone
+fill ~8 ~-8 ~-60 ~21 ~-8 ~-60 minecraft:stone
+fill ~8 ~-8 ~-59 ~20 ~-8 ~-59 minecraft:stone
+fill ~8 ~-8 ~-58 ~19 ~-8 ~-58 minecraft:stone
+fill ~8 ~-8 ~-57 ~18 ~-8 ~-57 minecraft:stone
+fill ~16 ~-7 ~-69 ~17 ~-7 ~-69 minecraft:stone
+fill ~18 ~-7 ~-69 ~19 ~-7 ~-69 minecraft:andesite
+fill ~14 ~-7 ~-68 ~17 ~-7 ~-68 minecraft:stone
+fill ~18 ~-7 ~-68 ~21 ~-7 ~-68 minecraft:andesite
+fill ~18 ~-7 ~-67 ~23 ~-7 ~-67 minecraft:andesite
+fill ~13 ~-7 ~-67 ~17 ~-7 ~-67 minecraft:stone
+fill ~19 ~-7 ~-66 ~23 ~-7 ~-65 minecraft:andesite
+fill ~12 ~-7 ~-66 ~18 ~-7 ~-65 minecraft:stone
+fill ~20 ~-7 ~-64 ~22 ~-7 ~-64 minecraft:andesite
+fill ~11 ~-7 ~-64 ~19 ~-7 ~-64 minecraft:stone
+fill ~11 ~-7 ~-63 ~20 ~-7 ~-63 minecraft:stone
+fill ~21 ~-7 ~-63 ~22 ~-7 ~-63 minecraft:andesite
+fill ~22 ~-7 ~-62 ~23 ~-7 ~-62 minecraft:andesite
+fill ~9 ~-7 ~-62 ~21 ~-7 ~-62 minecraft:stone
+fill ~8 ~-7 ~-61 ~23 ~-7 ~-61 minecraft:stone
+fill ~8 ~-7 ~-60 ~22 ~-7 ~-60 minecraft:stone
+fill ~8 ~-7 ~-59 ~21 ~-7 ~-59 minecraft:stone
+fill ~8 ~-7 ~-58 ~20 ~-7 ~-58 minecraft:stone
+fill ~8 ~-7 ~-57 ~19 ~-7 ~-57 minecraft:stone
+fill ~15 ~-6 ~-69 ~16 ~-6 ~-69 minecraft:stone
+fill ~17 ~-6 ~-69 ~20 ~-6 ~-69 minecraft:andesite
+fill ~17 ~-6 ~-68 ~21 ~-6 ~-68 minecraft:andesite
+fill ~13 ~-6 ~-68 ~16 ~-6 ~-68 minecraft:stone
+fill ~17 ~-6 ~-67 ~23 ~-6 ~-67 minecraft:andesite
+fill ~12 ~-6 ~-67 ~16 ~-6 ~-67 minecraft:stone
+fill ~12 ~-6 ~-66 ~17 ~-6 ~-66 minecraft:stone
+fill ~18 ~-6 ~-66 ~23 ~-6 ~-65 minecraft:andesite
+fill ~11 ~-6 ~-65 ~17 ~-6 ~-65 minecraft:stone
+fill ~19 ~-6 ~-64 ~23 ~-5 ~-64 minecraft:andesite
+fill ~11 ~-6 ~-64 ~18 ~-6 ~-64 minecraft:stone
+fill ~20 ~-6 ~-63 ~23 ~-5 ~-63 minecraft:andesite
+fill ~10 ~-6 ~-63 ~19 ~-6 ~-63 minecraft:stone
+fill ~8 ~-6 ~-62 ~20 ~-6 ~-62 minecraft:stone
+fill ~21 ~-6 ~-62 ~23 ~-5 ~-62 minecraft:andesite
+setblock ~23 ~-6 ~-61 minecraft:andesite
+fill ~8 ~-6 ~-61 ~22 ~-6 ~-59 minecraft:stone
+fill ~8 ~-6 ~-58 ~21 ~-6 ~-58 minecraft:stone
+fill ~8 ~-6 ~-57 ~20 ~-6 ~-57 minecraft:stone
+setblock ~18 ~-5 ~-70 minecraft:andesite
+setblock ~15 ~-5 ~-69 minecraft:stone
+fill ~16 ~-5 ~-69 ~20 ~-5 ~-69 minecraft:andesite
+fill ~13 ~-5 ~-68 ~15 ~-5 ~-68 minecraft:stone
+fill ~16 ~-5 ~-68 ~22 ~-5 ~-68 minecraft:andesite
+setblock ~13 ~-5 ~-67 minecraft:dirt
+setblock ~12 ~-5 ~-67 minecraft:stone
+fill ~14 ~-5 ~-67 ~15 ~-5 ~-67 minecraft:stone
+fill ~16 ~-5 ~-67 ~23 ~-5 ~-67 minecraft:andesite
+fill ~11 ~-5 ~-66 ~15 ~-5 ~-66 minecraft:dirt
+fill ~17 ~-5 ~-66 ~24 ~-5 ~-66 minecraft:andesite
+setblock ~16 ~-5 ~-66 minecraft:stone
+fill ~17 ~-5 ~-65 ~23 ~-5 ~-65 minecraft:andesite
+fill ~11 ~-5 ~-65 ~16 ~-5 ~-65 minecraft:dirt
+fill ~10 ~-5 ~-64 ~18 ~-5 ~-64 minecraft:dirt
+fill ~9 ~-5 ~-63 ~19 ~-5 ~-63 minecraft:dirt
+fill ~8 ~-5 ~-62 ~20 ~-5 ~-62 minecraft:dirt
+fill ~20 ~-5 ~-61 ~21 ~-5 ~-61 minecraft:stone
+fill ~9 ~-5 ~-61 ~19 ~-5 ~-61 minecraft:dirt
+fill ~22 ~-5 ~-61 ~23 ~-5 ~-61 minecraft:andesite
+fill ~8 ~-5 ~-61 ~8 ~-5 ~-60 minecraft:stone
+fill ~19 ~-5 ~-60 ~23 ~-4 ~-60 minecraft:stone
+fill ~9 ~-5 ~-60 ~18 ~-5 ~-60 minecraft:dirt
+fill ~8 ~-5 ~-59 ~9 ~-5 ~-59 minecraft:stone
+fill ~10 ~-5 ~-59 ~17 ~-5 ~-59 minecraft:dirt
+fill ~18 ~-5 ~-59 ~23 ~-5 ~-59 minecraft:stone
+fill ~8 ~-5 ~-58 ~11 ~-5 ~-58 minecraft:stone
+fill ~16 ~-5 ~-58 ~22 ~-5 ~-58 minecraft:stone
+fill ~12 ~-5 ~-58 ~15 ~-5 ~-58 minecraft:dirt
+fill ~8 ~-5 ~-57 ~21 ~-5 ~-57 minecraft:stone
+setblock ~23 ~-5 ~-57 minecraft:stone
+fill ~17 ~-4 ~-70 ~18 ~-4 ~-70 minecraft:andesite
+setblock ~14 ~-4 ~-69 minecraft:stone
+fill ~15 ~-4 ~-69 ~20 ~-4 ~-69 minecraft:andesite
+setblock ~13 ~-4 ~-68 minecraft:stone
+fill ~15 ~-4 ~-68 ~22 ~-4 ~-68 minecraft:andesite
+setblock ~14 ~-4 ~-68 minecraft:dirt
+fill ~12 ~-4 ~-67 ~16 ~-4 ~-67 minecraft:dirt
+fill ~17 ~-4 ~-67 ~24 ~-4 ~-67 minecraft:andesite
+fill ~11 ~-4 ~-66 ~17 ~-4 ~-66 minecraft:dirt
+fill ~18 ~-4 ~-66 ~24 ~-4 ~-66 minecraft:andesite
+fill ~11 ~-4 ~-65 ~19 ~-4 ~-65 minecraft:dirt
+fill ~20 ~-4 ~-65 ~24 ~-4 ~-65 minecraft:andesite
+fill ~21 ~-4 ~-64 ~24 ~-4 ~-64 minecraft:andesite
+fill ~10 ~-4 ~-64 ~20 ~-4 ~-64 minecraft:dirt
+fill ~9 ~-4 ~-63 ~21 ~-4 ~-63 minecraft:dirt
+fill ~9 ~-2 ~-63 ~21 ~-2 ~-63 minecraft:dirt
+fill ~22 ~-4 ~-63 ~24 ~-3 ~-63 minecraft:andesite
+fill ~21 ~-4 ~-62 ~24 ~-3 ~-62 minecraft:andesite
+fill ~10 ~-4 ~-62 ~20 ~-4 ~-62 minecraft:dirt
+fill ~8 ~-4 ~-62 ~9 ~-4 ~-61 minecraft:stone
+fill ~10 ~-4 ~-61 ~19 ~-4 ~-61 minecraft:dirt
+setblock ~20 ~-4 ~-61 minecraft:stone
+fill ~21 ~-4 ~-61 ~23 ~-4 ~-61 minecraft:andesite
+fill ~11 ~-4 ~-60 ~18 ~-4 ~-60 minecraft:dirt
+fill ~8 ~-4 ~-60 ~10 ~-4 ~-60 minecraft:stone
+fill ~13 ~-4 ~-59 ~16 ~-4 ~-59 minecraft:dirt
+fill ~17 ~-4 ~-59 ~23 ~-4 ~-59 minecraft:stone
+fill ~8 ~-4 ~-59 ~12 ~-4 ~-59 minecraft:stone
+fill ~8 ~-4 ~-58 ~23 ~-4 ~-57 minecraft:stone
+fill ~17 ~-3 ~-70 ~19 ~-3 ~-70 minecraft:andesite
+fill ~16 ~-3 ~-69 ~21 ~-3 ~-69 minecraft:andesite
+setblock ~15 ~-3 ~-69 minecraft:dirt
+setblock ~14 ~-3 ~-69 minecraft:andesite
+fill ~18 ~-3 ~-68 ~22 ~-3 ~-68 minecraft:andesite
+fill ~12 ~-3 ~-68 ~17 ~-3 ~-68 minecraft:dirt
+fill ~11 ~-3 ~-67 ~18 ~-3 ~-67 minecraft:dirt
+fill ~19 ~-3 ~-67 ~24 ~-3 ~-67 minecraft:andesite
+fill ~11 ~-3 ~-66 ~20 ~-3 ~-66 minecraft:dirt
+fill ~21 ~-3 ~-66 ~24 ~-3 ~-66 minecraft:andesite
+fill ~10 ~-3 ~-65 ~21 ~-3 ~-65 minecraft:dirt
+fill ~22 ~-3 ~-65 ~24 ~-3 ~-65 minecraft:andesite
+fill ~10 ~-3 ~-64 ~22 ~-3 ~-64 minecraft:dirt
+fill ~23 ~-3 ~-64 ~24 ~-3 ~-64 minecraft:andesite
+fill ~11 ~-3 ~-63 ~21 ~-3 ~-63 minecraft:dirt
+fill ~9 ~-3 ~-63 ~10 ~-3 ~-63 minecraft:stone
+fill ~11 ~-3 ~-62 ~20 ~-3 ~-62 minecraft:dirt
+fill ~8 ~-3 ~-62 ~10 ~-3 ~-62 minecraft:stone
+fill ~12 ~-3 ~-61 ~19 ~-3 ~-61 minecraft:dirt
+fill ~8 ~-3 ~-61 ~11 ~-3 ~-61 minecraft:stone
+fill ~20 ~-3 ~-61 ~22 ~-3 ~-61 minecraft:andesite
+fill ~23 ~-3 ~-61 ~24 ~-3 ~-61 minecraft:stone
+fill ~8 ~-3 ~-60 ~13 ~-3 ~-60 minecraft:stone
+fill ~14 ~-3 ~-60 ~17 ~-3 ~-60 minecraft:dirt
+fill ~18 ~-3 ~-60 ~24 ~-3 ~-60 minecraft:stone
+fill ~8 ~-3 ~-59 ~23 ~-3 ~-57 minecraft:stone
+fill ~16 ~-2 ~-70 ~19 ~-1 ~-70 minecraft:dirt
+fill ~14 ~-2 ~-69 ~21 ~-1 ~-69 minecraft:dirt
+fill ~12 ~-2 ~-68 ~22 ~-1 ~-68 minecraft:dirt
+fill ~11 ~-2 ~-67 ~24 ~-1 ~-66 minecraft:dirt
+fill ~10 ~-2 ~-65 ~24 ~-1 ~-64 minecraft:dirt
+fill ~23 ~-2 ~-63 ~24 ~-2 ~-62 minecraft:dirt
+fill ~21 ~-2 ~-62 ~22 ~-2 ~-62 minecraft:andesite
+fill ~8 ~-2 ~-62 ~10 ~-2 ~-62 minecraft:dirt
+fill ~11 ~-2 ~-62 ~12 ~-2 ~-62 minecraft:stone
+fill ~13 ~-2 ~-62 ~20 ~-2 ~-62 minecraft:dirt
+fill ~8 ~-2 ~-61 ~9 ~-2 ~-61 minecraft:dirt
+fill ~15 ~-2 ~-61 ~18 ~-2 ~-61 minecraft:dirt
+fill ~15 ~1 ~-61 ~18 ~1 ~-61 minecraft:dirt
+fill ~19 ~-2 ~-61 ~21 ~-2 ~-61 minecraft:andesite
+fill ~10 ~-2 ~-61 ~14 ~-2 ~-61 minecraft:stone
+fill ~22 ~-2 ~-61 ~24 ~-2 ~-61 minecraft:dirt
+fill ~21 ~-2 ~-60 ~24 ~-2 ~-60 minecraft:dirt
+fill ~9 ~-2 ~-60 ~20 ~-2 ~-60 minecraft:stone
+setblock ~8 ~-2 ~-60 minecraft:dirt
+fill ~20 ~-2 ~-59 ~24 ~-2 ~-59 minecraft:dirt
+fill ~19 ~-2 ~-58 ~23 ~-2 ~-58 minecraft:dirt
+fill ~18 ~-2 ~-57 ~23 ~-2 ~-57 minecraft:dirt
+fill ~8 ~-2 ~-57 ~17 ~-2 ~-57 minecraft:stone
+fill ~9 ~-1 ~-63 ~24 ~-1 ~-63 minecraft:dirt
+setblock ~15 ~-1 ~-62 minecraft:stone
+fill ~16 ~-1 ~-62 ~24 ~-1 ~-62 minecraft:dirt
+fill ~8 ~-1 ~-62 ~14 ~-1 ~-61 minecraft:dirt
+fill ~15 ~-1 ~-61 ~17 ~-1 ~-61 minecraft:stone
+fill ~19 ~-1 ~-61 ~24 ~-1 ~-61 minecraft:dirt
+setblock ~18 ~-1 ~-61 minecraft:andesite
+fill ~18 ~-1 ~-60 ~24 ~-1 ~-60 minecraft:dirt
+fill ~8 ~-1 ~-60 ~16 ~-1 ~-60 minecraft:dirt
+setblock ~17 ~-1 ~-60 minecraft:stone
+fill ~8 ~-1 ~-59 ~24 ~-1 ~-59 minecraft:dirt
+fill ~8 ~-1 ~-58 ~23 ~-1 ~-57 minecraft:dirt
+fill ~16 ~0 ~-70 ~19 ~0 ~-70 minecraft:grass_block
+fill ~14 ~0 ~-69 ~21 ~0 ~-69 minecraft:grass_block
+fill ~12 ~0 ~-68 ~22 ~0 ~-68 minecraft:grass_block
+fill ~21 ~0 ~-67 ~24 ~0 ~-67 minecraft:grass_block
+fill ~15 ~0 ~-67 ~20 ~0 ~-67 minecraft:dirt
+fill ~11 ~0 ~-67 ~14 ~0 ~-67 minecraft:grass_block
+fill ~14 ~0 ~-66 ~21 ~0 ~-66 minecraft:dirt
+fill ~11 ~0 ~-66 ~13 ~0 ~-66 minecraft:grass_block
+fill ~22 ~0 ~-66 ~24 ~0 ~-66 minecraft:grass_block
+fill ~13 ~0 ~-65 ~22 ~0 ~-65 minecraft:dirt
+fill ~10 ~0 ~-65 ~12 ~0 ~-65 minecraft:grass_block
+fill ~10 ~0 ~-64 ~11 ~0 ~-64 minecraft:grass_block
+fill ~12 ~0 ~-64 ~22 ~0 ~-63 minecraft:dirt
+fill ~9 ~0 ~-63 ~11 ~0 ~-63 minecraft:grass_block
+fill ~23 ~0 ~-65 ~24 ~0 ~-62 minecraft:grass_block
+fill ~8 ~0 ~-62 ~10 ~0 ~-62 minecraft:grass_block
+fill ~11 ~0 ~-62 ~22 ~0 ~-62 minecraft:dirt
+fill ~8 ~0 ~-61 ~9 ~0 ~-61 minecraft:grass_block
+fill ~10 ~0 ~-61 ~21 ~0 ~-61 minecraft:dirt
+fill ~22 ~0 ~-61 ~24 ~0 ~-61 minecraft:grass_block
+fill ~21 ~0 ~-60 ~24 ~0 ~-60 minecraft:grass_block
+setblock ~8 ~0 ~-60 minecraft:grass_block
+fill ~9 ~0 ~-60 ~20 ~0 ~-60 minecraft:dirt
+fill ~20 ~0 ~-59 ~24 ~0 ~-59 minecraft:grass_block
+fill ~8 ~0 ~-59 ~19 ~0 ~-59 minecraft:dirt
+fill ~8 ~0 ~-58 ~18 ~0 ~-58 minecraft:dirt
+fill ~19 ~0 ~-58 ~23 ~0 ~-58 minecraft:grass_block
+fill ~18 ~0 ~-57 ~23 ~0 ~-57 minecraft:grass_block
+fill ~8 ~0 ~-57 ~17 ~0 ~-57 minecraft:dirt
+fill ~15 ~1 ~-67 ~20 ~1 ~-67 minecraft:grass_block
+fill ~14 ~1 ~-66 ~21 ~1 ~-66 minecraft:grass_block
+fill ~17 ~1 ~-65 ~18 ~1 ~-65 minecraft:dirt
+fill ~19 ~1 ~-65 ~22 ~1 ~-65 minecraft:grass_block
+fill ~13 ~1 ~-65 ~16 ~1 ~-65 minecraft:grass_block
+fill ~16 ~1 ~-64 ~19 ~1 ~-64 minecraft:dirt
+fill ~12 ~1 ~-64 ~15 ~1 ~-64 minecraft:grass_block
+fill ~12 ~1 ~-63 ~14 ~1 ~-63 minecraft:grass_block
+fill ~20 ~1 ~-64 ~22 ~1 ~-62 minecraft:grass_block
+fill ~15 ~1 ~-63 ~19 ~1 ~-62 minecraft:dirt
+fill ~11 ~1 ~-62 ~14 ~1 ~-62 minecraft:grass_block
+fill ~10 ~1 ~-61 ~14 ~1 ~-61 minecraft:grass_block
+fill ~19 ~1 ~-61 ~21 ~1 ~-61 minecraft:grass_block
+fill ~18 ~1 ~-60 ~20 ~1 ~-60 minecraft:grass_block
+fill ~9 ~1 ~-60 ~16 ~1 ~-60 minecraft:grass_block
+setblock ~17 ~1 ~-60 minecraft:dirt
+fill ~8 ~1 ~-59 ~19 ~1 ~-59 minecraft:grass_block
+fill ~8 ~1 ~-58 ~18 ~1 ~-58 minecraft:grass_block
+fill ~8 ~1 ~-57 ~17 ~1 ~-57 minecraft:grass_block
+fill ~17 ~2 ~-65 ~18 ~2 ~-65 minecraft:grass_block
+fill ~16 ~2 ~-64 ~19 ~2 ~-64 minecraft:grass_block
+fill ~15 ~2 ~-63 ~19 ~2 ~-62 minecraft:grass_block
+fill ~15 ~2 ~-61 ~18 ~2 ~-61 minecraft:grass_block
+setblock ~17 ~2 ~-60 minecraft:grass_block
+setblock ~8 ~6 ~-57 minecraft:oak_leaves[persistent=true]
