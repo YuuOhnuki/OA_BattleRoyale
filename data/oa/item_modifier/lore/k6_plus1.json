@@ -92,7 +92,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "  %で相手を強く吹き飛ばす（平地で約18ブロック）。",
+                "text": "  %で相手を強く吹き飛ばす（平地で約19ブロック）。",
                 "color": "white",
                 "italic": false
               }
@@ -119,7 +119,7 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×0.5と押し出し",
+                "text": "×0.5と強い押し",
                 "color": "white",
                 "italic": false
               }
@@ -130,7 +130,18 @@
             "italic": false,
             "extra": [
               {
-                "text": "  。1秒後に元の場所へ帰還。",
+                "text": "  出し（ノックバック10相当、平地で約38ブロック）。1秒後",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "  に元の場所へ帰還。",
                 "color": "white",
                 "italic": false
               }
