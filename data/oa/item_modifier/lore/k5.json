@@ -64,7 +64,18 @@
             "italic": false,
             "extra": [
               {
-                "text": "  量。最寄りの敵を発光表示。参加者の攻撃を25%で無効化。",
+                "text": "  量。最寄りの敵を発光表示。すべてのダメージを25%で無効化",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "  （攻撃を当ててから3秒間は15%）。",
                 "color": "white",
                 "italic": false
               }

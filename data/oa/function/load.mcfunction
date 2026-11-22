@@ -382,6 +382,7 @@ scoreboard objectives add br.yukill dummy
 scoreboard objectives add br.st_relic dummy
 scoreboard objectives add br.yuchest dummy
 scoreboard objectives add br.yuore dummy
+scoreboard objectives add oa.katk dummy
 scoreboard objectives add br.st_tmp dummy
 
 # 1.9.98 武器実績
