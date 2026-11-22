@@ -1,0 +1,154 @@
+{
+ "key": "end",
+ "seed": 20261124,
+ "slots": [
+  {
+   "c": [
+    100,
+    8
+   ],
+   "r": 19,
+   "types": [
+    "obsidian",
+    "ruins",
+    "chorus"
+   ]
+  },
+  {
+   "c": [
+    69,
+    71
+   ],
+   "r": 22,
+   "types": [
+    "obsidian",
+    "wilds",
+    "crystal"
+   ]
+  },
+  {
+   "c": [
+    -4,
+    98
+   ],
+   "r": 22,
+   "types": [
+    "ruins",
+    "chorus",
+    "wilds"
+   ]
+  },
+  {
+   "c": [
+    -64,
+    76
+   ],
+   "r": 20,
+   "types": [
+    "chorus",
+    "ruins",
+    "city"
+   ]
+  },
+  {
+   "c": [
+    -92,
+    -5
+   ],
+   "r": 20,
+   "types": [
+    "chorus",
+    "crystal",
+    "ruins"
+   ]
+  },
+  {
+   "c": [
+    -66,
+    -65
+   ],
+   "r": 22,
+   "types": [
+    "wilds",
+    "tower",
+    "ruins"
+   ]
+  },
+  {
+   "c": [
+    2,
+    -93
+   ],
+   "r": 21,
+   "types": [
+    "ruins",
+    "chorus",
+    "tower"
+   ]
+  },
+  {
+   "c": [
+    68,
+    -63
+   ],
+   "r": 20,
+   "types": [
+    "wilds",
+    "obsidian",
+    "city"
+   ]
+  }
+ ],
+ "corners": [
+  [
+   125,
+   125,
+   13
+  ],
+  [
+   -125,
+   125,
+   13
+  ],
+  [
+   -125,
+   -125,
+   13
+  ],
+  [
+   125,
+   -125,
+   13
+  ]
+ ],
+ "bridges": 20,
+ "teleporters": [
+  [
+   [
+    86,
+    0,
+    7
+   ],
+   [
+    -77,
+    0,
+    -4
+   ]
+  ],
+  [
+   [
+    -3,
+    0,
+    81
+   ],
+   [
+    2,
+    0,
+    -77
+   ]
+  ]
+ ],
+ "base_chests": 34,
+ "slot_chests": 7,
+ "spawns_base": 19
+}

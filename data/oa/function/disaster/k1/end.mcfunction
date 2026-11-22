@@ -3,3 +3,5 @@ execute if score #weather_target br.tmp matches 1 run scoreboard players operati
 execute if score #map oa.mapid matches 0 in oa:br run function oa:br/weather/apply
 execute if score #map oa.mapid matches 1 in oa:br_nether run function oa:br/weather/apply
 execute if score #map oa.mapid matches 2 in oa:br_cave run function oa:br/weather/apply
+execute if score #map oa.mapid matches 3 in oa:br_sky run function oa:br/weather/apply
+execute if score #map oa.mapid matches 4 in oa:br_end run function oa:br/weather/apply

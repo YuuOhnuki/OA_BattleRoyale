@@ -33,10 +33,14 @@ scoreboard players set #bclock oa.tmp 4
 execute if score #map oa.mapid matches 0 in oa:br as @e[distance=0..,type=minecraft:armor_stand,tag=jp_vehicle] at @s run function jumppad:land
 execute if score #map oa.mapid matches 1 in oa:br_nether as @e[distance=0..,type=minecraft:armor_stand,tag=jp_vehicle] at @s run function jumppad:land
 execute if score #map oa.mapid matches 2 in oa:br_cave as @e[distance=0..,type=minecraft:armor_stand,tag=jp_vehicle] at @s run function jumppad:land
+execute if score #map oa.mapid matches 3 in oa:br_sky as @e[distance=0..,type=minecraft:armor_stand,tag=jp_vehicle] at @s run function jumppad:land
+execute if score #map oa.mapid matches 4 in oa:br_end as @e[distance=0..,type=minecraft:armor_stand,tag=jp_vehicle] at @s run function jumppad:land
 
 execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,type=minecraft:block_display,tag=oa.gacha_bomb,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,type=minecraft:block_display,tag=oa.gacha_bomb,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 2 in oa:br_cave run kill @e[distance=0..,type=minecraft:block_display,tag=oa.gacha_bomb,tag=!oa.db_projectile]
+execute if score #map oa.mapid matches 3 in oa:br_sky run kill @e[distance=0..,type=minecraft:block_display,tag=oa.gacha_bomb,tag=!oa.db_projectile]
+execute if score #map oa.mapid matches 4 in oa:br_end run kill @e[distance=0..,type=minecraft:block_display,tag=oa.gacha_bomb,tag=!oa.db_projectile]
 execute in minecraft:the_nether run kill @e[distance=0..,type=minecraft:block_display,tag=oa.gacha_bomb,tag=!oa.db_projectile]
 execute in minecraft:the_end run kill @e[distance=0..,type=minecraft:block_display,tag=oa.gacha_bomb,tag=!oa.db_projectile]
 
@@ -45,10 +49,14 @@ data modify storage oa:gacha_hits hits set value {}
 execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,type=minecraft:item_display,tag=oa.furoball,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,type=minecraft:item_display,tag=oa.furoball,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 2 in oa:br_cave run kill @e[distance=0..,type=minecraft:item_display,tag=oa.furoball,tag=!oa.db_projectile]
+execute if score #map oa.mapid matches 3 in oa:br_sky run kill @e[distance=0..,type=minecraft:item_display,tag=oa.furoball,tag=!oa.db_projectile]
+execute if score #map oa.mapid matches 4 in oa:br_end run kill @e[distance=0..,type=minecraft:item_display,tag=oa.furoball,tag=!oa.db_projectile]
 
 execute if score #map oa.mapid matches 0 in oa:br as @e[distance=0..,type=minecraft:armor_stand,tag=oa.furo_carrier,tag=!oa.db_projectile] run function oa:furoball/carrier/release
 execute if score #map oa.mapid matches 1 in oa:br_nether as @e[distance=0..,type=minecraft:armor_stand,tag=oa.furo_carrier,tag=!oa.db_projectile] run function oa:furoball/carrier/release
 execute if score #map oa.mapid matches 2 in oa:br_cave as @e[distance=0..,type=minecraft:armor_stand,tag=oa.furo_carrier,tag=!oa.db_projectile] run function oa:furoball/carrier/release
+execute if score #map oa.mapid matches 3 in oa:br_sky as @e[distance=0..,type=minecraft:armor_stand,tag=oa.furo_carrier,tag=!oa.db_projectile] run function oa:furoball/carrier/release
+execute if score #map oa.mapid matches 4 in oa:br_end as @e[distance=0..,type=minecraft:armor_stand,tag=oa.furo_carrier,tag=!oa.db_projectile] run function oa:furoball/carrier/release
 execute in minecraft:the_nether as @e[distance=0..,type=minecraft:armor_stand,tag=oa.furo_carrier,tag=!oa.db_projectile] run function oa:furoball/carrier/release
 execute in minecraft:the_end as @e[distance=0..,type=minecraft:armor_stand,tag=oa.furo_carrier,tag=!oa.db_projectile] run function oa:furoball/carrier/release
 
@@ -60,19 +68,29 @@ schedule function oa:lobby/events/finish_cached 60t replace
 execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,tag=oa.itori_proxy,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,tag=oa.itori_proxy,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 2 in oa:br_cave run kill @e[distance=0..,tag=oa.itori_proxy,tag=!oa.db_projectile]
+execute if score #map oa.mapid matches 3 in oa:br_sky run kill @e[distance=0..,tag=oa.itori_proxy,tag=!oa.db_projectile]
+execute if score #map oa.mapid matches 4 in oa:br_end run kill @e[distance=0..,tag=oa.itori_proxy,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,tag=oa.itori_bolt,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,tag=oa.itori_bolt,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 2 in oa:br_cave run kill @e[distance=0..,tag=oa.itori_bolt,tag=!oa.db_projectile]
+execute if score #map oa.mapid matches 3 in oa:br_sky run kill @e[distance=0..,tag=oa.itori_bolt,tag=!oa.db_projectile]
+execute if score #map oa.mapid matches 4 in oa:br_end run kill @e[distance=0..,tag=oa.itori_bolt,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,tag=oa.itori_sweep,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,tag=oa.itori_sweep,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 2 in oa:br_cave run kill @e[distance=0..,tag=oa.itori_sweep,tag=!oa.db_projectile]
+execute if score #map oa.mapid matches 3 in oa:br_sky run kill @e[distance=0..,tag=oa.itori_sweep,tag=!oa.db_projectile]
+execute if score #map oa.mapid matches 4 in oa:br_end run kill @e[distance=0..,tag=oa.itori_sweep,tag=!oa.db_projectile]
 
 execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,tag=oa.itori_fx,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,tag=oa.itori_fx,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 2 in oa:br_cave run kill @e[distance=0..,tag=oa.itori_fx,tag=!oa.db_projectile]
+execute if score #map oa.mapid matches 3 in oa:br_sky run kill @e[distance=0..,tag=oa.itori_fx,tag=!oa.db_projectile]
+execute if score #map oa.mapid matches 4 in oa:br_end run kill @e[distance=0..,tag=oa.itori_fx,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,tag=oa.itori_shield_mesh,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,tag=oa.itori_shield_mesh,tag=!oa.db_projectile]
 execute if score #map oa.mapid matches 2 in oa:br_cave run kill @e[distance=0..,tag=oa.itori_shield_mesh,tag=!oa.db_projectile]
+execute if score #map oa.mapid matches 3 in oa:br_sky run kill @e[distance=0..,tag=oa.itori_shield_mesh,tag=!oa.db_projectile]
+execute if score #map oa.mapid matches 4 in oa:br_end run kill @e[distance=0..,tag=oa.itori_shield_mesh,tag=!oa.db_projectile]
 execute in minecraft:the_nether run kill @e[distance=0..,tag=oa.itori_fx,tag=!oa.db_projectile]
 execute in minecraft:the_nether run kill @e[distance=0..,tag=oa.itori_shield_mesh,tag=!oa.db_projectile]
 execute in minecraft:the_end run kill @e[distance=0..,tag=oa.itori_fx,tag=!oa.db_projectile]
@@ -82,3 +100,5 @@ execute in minecraft:the_end run kill @e[distance=0..,tag=oa.itori_shield_mesh,t
 execute if score #map oa.mapid matches 0 in oa:br as @e[distance=0..,type=minecraft:marker,tag=br.chest,tag=!br.rich] at @s if block ~ ~ ~ minecraft:chest run data remove block ~ ~ ~ CustomName
 execute if score #map oa.mapid matches 1 in oa:br_nether as @e[distance=0..,type=minecraft:marker,tag=br.chest,tag=!br.rich] at @s if block ~ ~ ~ minecraft:chest run data remove block ~ ~ ~ CustomName
 execute if score #map oa.mapid matches 2 in oa:br_cave as @e[distance=0..,type=minecraft:marker,tag=br.chest,tag=!br.rich] at @s if block ~ ~ ~ minecraft:chest run data remove block ~ ~ ~ CustomName
+execute if score #map oa.mapid matches 3 in oa:br_sky as @e[distance=0..,type=minecraft:marker,tag=br.chest,tag=!br.rich] at @s if block ~ ~ ~ minecraft:chest run data remove block ~ ~ ~ CustomName
+execute if score #map oa.mapid matches 4 in oa:br_end as @e[distance=0..,type=minecraft:marker,tag=br.chest,tag=!br.rich] at @s if block ~ ~ ~ minecraft:chest run data remove block ~ ~ ~ CustomName

@@ -1,6 +1,6 @@
 execute unless entity @s[tag=br.admin] run return 0
 execute if score #state br.state matches 1.. run return run tellraw @s {text:"試合中は開始地点を編集できません",color:"red"}
-execute unless dimension oa:br unless dimension oa:br_nether unless dimension oa:br_cave run return 0
+execute unless dimension oa:br unless dimension oa:br_nether unless dimension oa:br_cave unless dimension oa:br_sky unless dimension oa:br_end run return 0
 execute if score #map oa.mapid matches 0 unless dimension oa:br run return run tellraw @s {text:"選択中のマップは地上です。地上の会場の中で実行してください",color:"red"}
 execute if score #map oa.mapid matches 1 unless dimension oa:br_nether run return run tellraw @s {text:"選択中のマップはネザーです。ネザーの会場の中で実行してください",color:"red"}
 execute if score #map oa.mapid matches 2 unless dimension oa:br_cave run return run tellraw @s {text:"選択中のマップは洞窟です。洞窟の会場の中で実行してください",color:"red"}

@@ -1,4 +1,14 @@
-# 引き継ぎメモ（1.9.229 時点）
+# 引き継ぎメモ（1.9.230 時点）
+
+## 1.9.230
+
+- **新しいマップ2種類**：天空都市（key `sky`、id 3、`oa:br_sky`）と異界（key `end`、id 4、`oa:br_end`）。どちらも 300×300 の浮遊島（中央の天空城／異界神殿、外周の8つの島、角の4つの小島、橋）。外周の島の中身は会場を作るたびに3種類から抽選（`scripts/build_map_float.py`、タイル関数は洞窟と同じ形）。
+- 仕掛け：既存のジャンプ台、転移装置／異界ポータル（双方向2組）、救済用の足場と上昇気流（天空都市）、重力異常エリア・空間の歪みの演出（異界）。動きはプラグイン 0.46.0（`map/MapGimmickService`）。
+- マップごとの分岐（約250行）に天空都市・異界を足した（`scripts/add_map_branches.py`、洞窟の行を手本に）。地面の武器・補給の場所は上から床を探す（under 120）。災害は天候・竜巻以外。ロビーのマップ選択（前へ／次へ）・管理コード 120〜131／140〜151・管理メニューに追加。
+- 地面の判定のタグにエンドストーン・石レンガなどを足した（補給・開始地点の床）。
+- （プラグイン 0.46.0）試合後の自動の作り直し（`map/MapRerollService`）、試合中の地図の絵を会場の地形から作る・地点名は今の組み合わせ、5マップ対応（安全地帯・災害・地図・メニュー）。
+- マップを足す手順（今回の例）：`defs` に1行、ディメンション（`dimension`・`dimension_type`・`world_clock`・`timeline`・`worldgen/biome`）、`map/<op>_<key>` の短い関数、`admin/dispatch` のコード、`scripts/add_map_branches.py`（洞窟の行を手本に足す。二度実行しても重ならない）、洞窟だけ `#map matches 2` で分けていた行（補給・地面の武器・場所名・開始地点の登録）を手で、`gen_disasters.py` の maps、ロビーの `lobby/mapsel/*`、プラグインの5か所の配列（`SafeZoneManager`・`DisasterService`・`MatchMapService`・`PlayerMenu`・`MapInteractions`・`NeroMarkService`・`AdminMenu`）。
+- 浮遊島マップのスロット：中身の面は `cave_air` で土台を削る（0 は「置かない」）。スロットのチェスト数はそろえる（区画の照合は `#expectedc` に抽選の結果を足して比べる）。
 
 ## 1.9.229
 

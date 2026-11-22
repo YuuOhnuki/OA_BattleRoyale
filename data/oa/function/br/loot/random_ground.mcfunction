@@ -7,9 +7,9 @@ execute if score #gok br.tmp matches 0 run function oa:br/loot/ground_try with s
 execute if score #gok br.tmp matches 0 run function oa:br/loot/ground_try with storage oa:br_spawn
 execute if score #gok br.tmp matches 0 run function oa:br/loot/ground_try with storage oa:br_spawn
 # 1.9.167: 洞窟は岩の部分が多く外れやすいので、さらに6回まで試す
-execute if score #map oa.mapid matches 2 if score #gok br.tmp matches 0 run function oa:br/loot/ground_try with storage oa:br_spawn
-execute if score #map oa.mapid matches 2 if score #gok br.tmp matches 0 run function oa:br/loot/ground_try with storage oa:br_spawn
-execute if score #map oa.mapid matches 2 if score #gok br.tmp matches 0 run function oa:br/loot/ground_try with storage oa:br_spawn
-execute if score #map oa.mapid matches 2 if score #gok br.tmp matches 0 run function oa:br/loot/ground_try with storage oa:br_spawn
-execute if score #map oa.mapid matches 2 if score #gok br.tmp matches 0 run function oa:br/loot/ground_try with storage oa:br_spawn
-execute if score #map oa.mapid matches 2 if score #gok br.tmp matches 0 run function oa:br/loot/ground_try with storage oa:br_spawn
+execute if score #map oa.mapid matches 2..4 if score #gok br.tmp matches 0 run function oa:br/loot/ground_try with storage oa:br_spawn
+execute if score #map oa.mapid matches 2..4 if score #gok br.tmp matches 0 run function oa:br/loot/ground_try with storage oa:br_spawn
+execute if score #map oa.mapid matches 2..4 if score #gok br.tmp matches 0 run function oa:br/loot/ground_try with storage oa:br_spawn
+execute if score #map oa.mapid matches 2..4 if score #gok br.tmp matches 0 run function oa:br/loot/ground_try with storage oa:br_spawn
+execute if score #map oa.mapid matches 2..4 if score #gok br.tmp matches 0 run function oa:br/loot/ground_try with storage oa:br_spawn
+execute if score #map oa.mapid matches 2..4 if score #gok br.tmp matches 0 run function oa:br/loot/ground_try with storage oa:br_spawn

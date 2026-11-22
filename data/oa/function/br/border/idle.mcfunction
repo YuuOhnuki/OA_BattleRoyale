@@ -2,6 +2,10 @@
 execute if score #map oa.mapid matches 0 in oa:br run worldborder center 0 0
 execute if score #map oa.mapid matches 1 in oa:br_nether run worldborder center 0 0
 execute if score #map oa.mapid matches 2 in oa:br_cave run worldborder center 0 0
+execute if score #map oa.mapid matches 3 in oa:br_sky run worldborder center 0 0
+execute if score #map oa.mapid matches 4 in oa:br_end run worldborder center 0 0
 execute if score #map oa.mapid matches 0 in oa:br run worldborder set 59999968
 execute if score #map oa.mapid matches 1 in oa:br_nether run worldborder set 59999968
 execute if score #map oa.mapid matches 2 in oa:br_cave run worldborder set 59999968
+execute if score #map oa.mapid matches 3 in oa:br_sky run worldborder set 59999968
+execute if score #map oa.mapid matches 4 in oa:br_end run worldborder set 59999968

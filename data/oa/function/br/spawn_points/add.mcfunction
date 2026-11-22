@@ -1,6 +1,6 @@
 execute unless entity @s[tag=br.admin] run return 0
 execute if score #state br.state matches 1.. run return run tellraw @s {text:"試合中は開始地点を編集できません",color:"red"}
-execute unless dimension oa:br unless dimension oa:br_nether unless dimension oa:br_cave run return run tellraw @s {text:"開始地点はBR専用ディメンションで登録してください",color:"red"}
+execute unless dimension oa:br unless dimension oa:br_nether unless dimension oa:br_cave unless dimension oa:br_sky unless dimension oa:br_end run return run tellraw @s {text:"開始地点はBR専用ディメンションで登録してください",color:"red"}
 function oa:br/spawn_points/label
 execute if score #map oa.mapid matches 0 unless dimension oa:br run return run tellraw @s [{text:"【",color:"gray"},{nbt:"label",storage:"oa:spawn_points",color:"aqua"},{text:"】",color:"gray"},{text:"選択中のマップは地上です。地上の会場の中に立って実行してください（管理ブックの「地上マップ」ページを使うと自動で切り替わります）",color:"red"}]
 execute if score #map oa.mapid matches 1 unless dimension oa:br_nether run return run tellraw @s [{text:"【",color:"gray"},{nbt:"label",storage:"oa:spawn_points",color:"aqua"},{text:"】",color:"gray"},{text:"選択中のマップはネザーです。ネザーの会場の中に立って実行してください（管理ブックの「ネザーマップ」ページを使うと自動で切り替わります）",color:"red"}]

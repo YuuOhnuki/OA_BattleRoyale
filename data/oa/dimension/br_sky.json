@@ -1,0 +1,18 @@
+{
+  "type": "oa:br_sky",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "oa:br_sky",
+      "features": false,
+      "lakes": false,
+      "structure_overrides": [],
+      "layers": [
+        {
+          "height": 1,
+          "block": "minecraft:air"
+        }
+      ]
+    }
+  }
+}

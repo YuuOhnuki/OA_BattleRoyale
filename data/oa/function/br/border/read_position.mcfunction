@@ -3,6 +3,8 @@ execute store result score #tz br.z run data get entity @s Pos[2] 1000
 execute if score #map oa.mapid matches 0 in oa:br store result score #bw br.tmp run worldborder get
 execute if score #map oa.mapid matches 1 in oa:br_nether store result score #bw br.tmp run worldborder get
 execute if score #map oa.mapid matches 2 in oa:br_cave store result score #bw br.tmp run worldborder get
+execute if score #map oa.mapid matches 3 in oa:br_sky store result score #bw br.tmp run worldborder get
+execute if score #map oa.mapid matches 4 in oa:br_end store result score #bw br.tmp run worldborder get
 scoreboard players operation #bh br.tmp = #bw br.tmp
 scoreboard players operation #bh br.tmp *= #500 br.tmp
 # One-block inward margin covers rounded get-size, player width, and command center float precision.

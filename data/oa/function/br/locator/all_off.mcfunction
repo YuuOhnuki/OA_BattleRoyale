@@ -12,7 +12,11 @@ execute if score #lbar oa.tmp matches 1 in oa:br run gamerule minecraft:locator_
 execute in oa:br_nether store result score #lbar oa.tmp run gamerule minecraft:locator_bar
 execute if score #lbar oa.tmp matches 1 in oa:br_nether run gamerule minecraft:locator_bar false
 execute in oa:br_cave store result score #lbar oa.tmp run gamerule minecraft:locator_bar
+execute in oa:br_sky store result score #lbar oa.tmp run gamerule minecraft:locator_bar
+execute in oa:br_end store result score #lbar oa.tmp run gamerule minecraft:locator_bar
 execute if score #lbar oa.tmp matches 1 in oa:br_cave run gamerule minecraft:locator_bar false
+execute if score #lbar oa.tmp matches 1 in oa:br_sky run gamerule minecraft:locator_bar false
+execute if score #lbar oa.tmp matches 1 in oa:br_end run gamerule minecraft:locator_bar false
 execute in oa:practice store result score #lbar oa.tmp run gamerule minecraft:locator_bar
 execute if score #lbar oa.tmp matches 1 in oa:practice run gamerule minecraft:locator_bar false
 execute in oa:tdm run gamerule minecraft:locator_bar false

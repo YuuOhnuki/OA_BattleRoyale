@@ -8,4 +8,6 @@ execute if dimension minecraft:the_end run data modify storage oa:radar dim_name
 execute if dimension oa:br run data modify storage oa:radar dim_name set value "BR会場"
 execute if dimension oa:br_nether run data modify storage oa:radar dim_name set value "BR会場"
 execute if dimension oa:br_cave run data modify storage oa:radar dim_name set value "BR会場"
+execute if dimension oa:br_sky run data modify storage oa:radar dim_name set value "BR会場"
+execute if dimension oa:br_end run data modify storage oa:radar dim_name set value "BR会場"
 execute if dimension oa:practice run data modify storage oa:radar dim_name set value "練習場"

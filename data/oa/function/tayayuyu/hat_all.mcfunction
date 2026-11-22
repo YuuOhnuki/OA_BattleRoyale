@@ -11,6 +11,8 @@ execute as @a[tag=br.playing,tag=!oa.practice] if score @s br.round = #round br.
 execute if score #map oa.mapid matches 0 in oa:br as @e[distance=0..,type=minecraft:item] if items entity @s contents *[minecraft:custom_data~{oa:{kind:1}}] run function oa:tayayuyu/prune_ground_hat
 execute if score #map oa.mapid matches 1 in oa:br_nether as @e[distance=0..,type=minecraft:item] if items entity @s contents *[minecraft:custom_data~{oa:{kind:1}}] run function oa:tayayuyu/prune_ground_hat
 execute if score #map oa.mapid matches 2 in oa:br_cave as @e[distance=0..,type=minecraft:item] if items entity @s contents *[minecraft:custom_data~{oa:{kind:1}}] run function oa:tayayuyu/prune_ground_hat
+execute if score #map oa.mapid matches 3 in oa:br_sky as @e[distance=0..,type=minecraft:item] if items entity @s contents *[minecraft:custom_data~{oa:{kind:1}}] run function oa:tayayuyu/prune_ground_hat
+execute if score #map oa.mapid matches 4 in oa:br_end as @e[distance=0..,type=minecraft:item] if items entity @s contents *[minecraft:custom_data~{oa:{kind:1}}] run function oa:tayayuyu/prune_ground_hat
 tag @a[tag=oa.hat_candidate] remove oa.hat_candidate
 execute as @a[tag=br.playing,tag=br.alive,tag=!oa.practice,gamemode=!spectator,tag=!oa.dead] if score @s br.round = #round br.round run tag @s add oa.hat_candidate
 execute as @a[tag=oa.hat_candidate,sort=random,limit=1] at @s run function oa:tayayuyu/hat

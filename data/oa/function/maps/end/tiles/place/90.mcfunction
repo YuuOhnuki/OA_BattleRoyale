@@ -1,0 +1,27 @@
+scoreboard players set #stage oa.map2 1
+fill ~-152 ~-40 ~136 ~-121 ~-14 ~152 minecraft:air
+fill ~-152 ~-13 ~136 ~-121 ~13 ~152 minecraft:air
+fill ~-152 ~14 ~136 ~-121 ~40 ~152 minecraft:air
+fill ~-128 ~-10 ~136 ~-125 ~-10 ~136 minecraft:obsidian
+fill ~-130 ~-9 ~136 ~-123 ~-9 ~136 minecraft:obsidian
+fill ~-128 ~-9 ~137 ~-126 ~-9 ~137 minecraft:obsidian
+fill ~-131 ~-8 ~136 ~-122 ~-8 ~136 minecraft:obsidian
+fill ~-130 ~-8 ~137 ~-124 ~-8 ~137 minecraft:obsidian
+fill ~-132 ~-7 ~136 ~-121 ~-7 ~136 minecraft:end_stone_bricks
+fill ~-131 ~-7 ~137 ~-122 ~-7 ~137 minecraft:end_stone_bricks
+fill ~-129 ~-7 ~138 ~-125 ~-7 ~138 minecraft:end_stone_bricks
+fill ~-133 ~-6 ~136 ~-121 ~-6 ~136 minecraft:end_stone_bricks
+fill ~-132 ~-6 ~137 ~-122 ~-6 ~137 minecraft:end_stone_bricks
+fill ~-130 ~-6 ~138 ~-124 ~-6 ~138 minecraft:end_stone_bricks
+fill ~-128 ~-6 ~139 ~-127 ~-6 ~139 minecraft:end_stone_bricks
+fill ~-134 ~-5 ~136 ~-121 ~-3 ~136 minecraft:end_stone_bricks
+fill ~-133 ~-5 ~137 ~-121 ~-3 ~137 minecraft:end_stone_bricks
+fill ~-131 ~-5 ~138 ~-123 ~-5 ~138 minecraft:end_stone_bricks
+fill ~-129 ~-5 ~139 ~-126 ~-5 ~139 minecraft:end_stone_bricks
+fill ~-132 ~-4 ~138 ~-123 ~-4 ~138 minecraft:end_stone_bricks
+fill ~-130 ~-4 ~139 ~-125 ~-3 ~139 minecraft:end_stone_bricks
+fill ~-132 ~-3 ~138 ~-122 ~-3 ~138 minecraft:end_stone_bricks
+fill ~-134 ~-2 ~136 ~-121 ~0 ~136 minecraft:end_stone
+fill ~-133 ~-2 ~137 ~-121 ~0 ~137 minecraft:end_stone
+fill ~-132 ~-2 ~138 ~-122 ~0 ~138 minecraft:end_stone
+fill ~-130 ~-2 ~139 ~-125 ~0 ~139 minecraft:end_stone

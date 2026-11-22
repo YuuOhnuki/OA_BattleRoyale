@@ -4,6 +4,8 @@ data modify storage oa_map2:job working set value 0b
 function oa:map/internal/center with storage oa_map2:args
 execute if data storage oa_map2:args {dim:"oa:br_nether"} run function oa:maps/nether/post
 execute if data storage oa_map2:args {dim:"oa:br_cave"} run function oa:maps/cave/post
+execute if data storage oa_map2:args {dim:"oa:br_sky"} run function oa:maps/sky/post
+execute if data storage oa_map2:args {dim:"oa:br_end"} run function oa:maps/end/post
 tellraw @a [{text:"[OA Map 305] 完了！登録成功 チェスト ",color:"green"},{score:{name:"#chests",objective:"oa.map2"}},{text:"個 / 鉱石 "},{score:{name:"#ores",objective:"oa.map2"}},{text:"個。BR中心も設定しました。"}]
 execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 0.6 1
 execute if data storage oa_map2:args dim run tellraw @a[tag=br.admin] {text:"管理ブックの「BR中心へ移動」または /function oa:map/teleport で会場へ入り、開始地点を登録してください。",color:"aqua"}

@@ -4,3 +4,5 @@ scoreboard players set #ds3 br.tmp 0
 execute if score #map oa.mapid matches 0 run tellraw @a[tag=br.playing] [{"text":"✔ ","color":"green"},{"text":"隕石群","color":"red"},{"text":" が収まった","color":"green"}]
 execute if score #map oa.mapid matches 1 run tellraw @a[tag=br.playing] [{"text":"✔ ","color":"green"},{"text":"火山弾","color":"red"},{"text":" が収まった","color":"green"}]
 execute if score #map oa.mapid matches 2 run tellraw @a[tag=br.playing] [{"text":"✔ ","color":"green"},{"text":"落盤","color":"red"},{"text":" が収まった","color":"green"}]
+execute if score #map oa.mapid matches 3 run tellraw @a[tag=br.playing] [{"text":"✔ ","color":"green"},{"text":"隕石群","color":"red"},{"text":" が収まった","color":"green"}]
+execute if score #map oa.mapid matches 4 run tellraw @a[tag=br.playing] [{"text":"✔ ","color":"green"},{"text":"隕石群","color":"red"},{"text":" が収まった","color":"green"}]

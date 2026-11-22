@@ -1,0 +1,154 @@
+{
+ "key": "sky",
+ "seed": 20261123,
+ "slots": [
+  {
+   "c": [
+    93,
+    -7
+   ],
+   "r": 19,
+   "types": [
+    "rocky",
+    "watch",
+    "garden"
+   ]
+  },
+  {
+   "c": [
+    65,
+    71
+   ],
+   "r": 21,
+   "types": [
+    "rocky",
+    "village",
+    "garden"
+   ]
+  },
+  {
+   "c": [
+    -6,
+    91
+   ],
+   "r": 22,
+   "types": [
+    "garden",
+    "village",
+    "watch"
+   ]
+  },
+  {
+   "c": [
+    -73,
+    69
+   ],
+   "r": 22,
+   "types": [
+    "ruins",
+    "village",
+    "watch"
+   ]
+  },
+  {
+   "c": [
+    -91,
+    -8
+   ],
+   "r": 22,
+   "types": [
+    "ruins",
+    "rocky",
+    "temple"
+   ]
+  },
+  {
+   "c": [
+    -72,
+    -62
+   ],
+   "r": 21,
+   "types": [
+    "temple",
+    "watch",
+    "village"
+   ]
+  },
+  {
+   "c": [
+    7,
+    -92
+   ],
+   "r": 22,
+   "types": [
+    "watch",
+    "temple",
+    "village"
+   ]
+  },
+  {
+   "c": [
+    63,
+    -68
+   ],
+   "r": 21,
+   "types": [
+    "garden",
+    "forest",
+    "temple"
+   ]
+  }
+ ],
+ "corners": [
+  [
+   125,
+   125,
+   13
+  ],
+  [
+   -125,
+   125,
+   13
+  ],
+  [
+   -125,
+   -125,
+   13
+  ],
+  [
+   125,
+   -125,
+   13
+  ]
+ ],
+ "bridges": 20,
+ "teleporters": [
+  [
+   [
+    79,
+    0,
+    -6
+   ],
+   [
+    -74,
+    0,
+    -7
+   ]
+  ],
+  [
+   [
+    -5,
+    0,
+    74
+   ],
+   [
+    6,
+    0,
+    -75
+   ]
+  ]
+ ],
+ "base_chests": 34,
+ "slot_chests": 7,
+ "spawns_base": 19
+}

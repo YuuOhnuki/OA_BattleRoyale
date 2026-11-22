@@ -1,5 +1,5 @@
 execute unless entity @s[type=minecraft:player] run return 0
-execute unless dimension oa:br unless dimension oa:br_nether unless dimension oa:br_cave run return run tellraw @s {text:"中心はBR専用ディメンションで登録してください",color:"red"}
+execute unless dimension oa:br unless dimension oa:br_nether unless dimension oa:br_cave unless dimension oa:br_sky unless dimension oa:br_end run return run tellraw @s {text:"中心はBR専用ディメンションで登録してください",color:"red"}
 execute if score #state br.state matches 1.. run return 0
 execute store result score #center_x br.tmp run data get entity @s Pos[0]
 execute store result score #center_z br.tmp run data get entity @s Pos[2]
@@ -8,9 +8,13 @@ execute unless score #center_z br.tmp matches -2000000..2000000 run return run t
 data modify storage oa:br center set value {dim:"oa:br"}
 execute if dimension oa:br_nether run data modify storage oa:br center.dim set value "oa:br_nether"
 execute if dimension oa:br_cave run data modify storage oa:br center.dim set value "oa:br_cave"
+execute if dimension oa:br_sky run data modify storage oa:br center.dim set value "oa:br_sky"
+execute if dimension oa:br_end run data modify storage oa:br center.dim set value "oa:br_end"
 execute if dimension oa:br run scoreboard players set #map oa.mapid 0
 execute if dimension oa:br_nether run scoreboard players set #map oa.mapid 1
 execute if dimension oa:br_cave run scoreboard players set #map oa.mapid 2
+execute if dimension oa:br_sky run scoreboard players set #map oa.mapid 3
+execute if dimension oa:br_end run scoreboard players set #map oa.mapid 4
 data modify storage oa:br center.x set from entity @s Pos[0]
 data modify storage oa:br center.y set from entity @s Pos[1]
 data modify storage oa:br center.z set from entity @s Pos[2]

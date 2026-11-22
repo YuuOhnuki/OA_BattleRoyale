@@ -2,6 +2,8 @@ $execute in minecraft:overworld run kill @e[distance=0..,type=minecraft:item_dis
 $execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,type=minecraft:item_display,tag=oa.itori_shield_mesh,scores={oa.owner=$(id)}]
 $execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,type=minecraft:item_display,tag=oa.itori_shield_mesh,scores={oa.owner=$(id)}]
 $execute if score #map oa.mapid matches 2 in oa:br_cave run kill @e[distance=0..,type=minecraft:item_display,tag=oa.itori_shield_mesh,scores={oa.owner=$(id)}]
+$execute if score #map oa.mapid matches 3 in oa:br_sky run kill @e[distance=0..,type=minecraft:item_display,tag=oa.itori_shield_mesh,scores={oa.owner=$(id)}]
+$execute if score #map oa.mapid matches 4 in oa:br_end run kill @e[distance=0..,type=minecraft:item_display,tag=oa.itori_shield_mesh,scores={oa.owner=$(id)}]
 $execute in oa:practice run kill @e[distance=0..,type=minecraft:item_display,tag=oa.itori_shield_mesh,scores={oa.owner=$(id)}]
 $execute in oa:tdm run kill @e[distance=0..,type=minecraft:item_display,tag=oa.itori_shield_mesh,scores={oa.owner=$(id)}]
 $execute in minecraft:the_nether run kill @e[distance=0..,type=minecraft:item_display,tag=oa.itori_shield_mesh,scores={oa.owner=$(id)}]

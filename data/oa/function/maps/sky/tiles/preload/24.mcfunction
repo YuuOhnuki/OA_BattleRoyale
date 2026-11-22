@@ -1,0 +1,12 @@
+execute store success score #had0 oa.map2 run forceload query ~-24 ~-88
+execute store success score #had1 oa.map2 run forceload query ~-24 ~-72
+execute store success score #had2 oa.map2 run forceload query ~-24 ~-57
+execute store success score #had3 oa.map2 run forceload query ~-8 ~-88
+execute store success score #had4 oa.map2 run forceload query ~-8 ~-72
+execute store success score #had5 oa.map2 run forceload query ~-8 ~-57
+execute store success score #had6 oa.map2 run forceload query ~7 ~-88
+execute store success score #had7 oa.map2 run forceload query ~7 ~-72
+execute store success score #had8 oa.map2 run forceload query ~7 ~-57
+forceload add ~-24 ~-88 ~7 ~-57
+data modify storage oa_map2:job holding set value 1b
+schedule function oa:map/internal/job/wait 1t replace

@@ -12,6 +12,8 @@ function oa:br/cleanup_loose with storage oa:br center
 execute if score #map oa.mapid matches 0 in oa:br run kill @e[distance=0..,type=minecraft:text_display,tag=br.open_label]
 execute if score #map oa.mapid matches 1 in oa:br_nether run kill @e[distance=0..,type=minecraft:text_display,tag=br.open_label]
 execute if score #map oa.mapid matches 2 in oa:br_cave run kill @e[distance=0..,type=minecraft:text_display,tag=br.open_label]
+execute if score #map oa.mapid matches 3 in oa:br_sky run kill @e[distance=0..,type=minecraft:text_display,tag=br.open_label]
+execute if score #map oa.mapid matches 4 in oa:br_end run kill @e[distance=0..,type=minecraft:text_display,tag=br.open_label]
 function oa:br/cleanup/release
 scoreboard players add #quad br.clean 1
 execute if score #quad br.clean matches ..3 run return run function oa:br/cleanup/tile

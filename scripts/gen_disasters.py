@@ -12,7 +12,7 @@ import json
 R = Path(__file__).resolve().parents[1]
 F = R / 'data/oa/function/disaster'
 STARS = lambda n: '★' * n + '☆' * (5 - n)
-MAPS = {0: 'br', 1: 'nether', 2: 'cave'}
+MAPS = {0: 'br', 1: 'nether', 2: 'cave', 3: 'sky', 4: 'end'}
 
 # kind, key, 表示名（マップ別に上書き可）, 色, 危険度, 秒, 重み, 出るマップ, 説明（マップ別に上書き可）, 移動系, 敵味方の印
 DISASTERS = [
@@ -20,23 +20,23 @@ DISASTERS = [
          desc='酸の雨が降る。屋根の下か頭の防具で防げる'),
     dict(k=2, key='cold_wave', name='寒波', color='aqua', danger=4, sec=30, weight=10, maps=[0],
          desc='空の下が凍える寒さに。屋根の下か革の胸当てで防げる'),
-    dict(k=3, key='meteor', name='隕石群', names={1: '火山弾', 2: '落盤'}, color='red', danger=5, sec=24, weight=10, maps=[0, 1, 2],
+    dict(k=3, key='meteor', name='隕石群', names={1: '火山弾', 2: '落盤'}, color='red', danger=5, sec=24, weight=10, maps=[0, 1, 2, 3, 4],
          desc='赤い円に隕石が落ちる。円から離れるか屋根の下へ', descs={2: '赤い円に天井の岩が落ちる。円から離れよう'}),
-    dict(k=4, key='poison_fog', name='毒霧', names={1: '毒の瘴気'}, color='dark_green', danger=4, sec=40, weight=10, maps=[0, 1, 2],
+    dict(k=4, key='poison_fog', name='毒霧', names={1: '毒の瘴気'}, color='dark_green', danger=4, sec=40, weight=10, maps=[0, 1, 2, 3, 4],
          desc='中心から毒霧が広がります！'),
-    dict(k=5, key='earthquake', name='地震', color='gold', danger=3, sec=10, weight=10, maps=[0, 1, 2],
+    dict(k=5, key='earthquake', name='地震', color='gold', danger=3, sec=10, weight=10, maps=[0, 1, 2, 3, 4],
          desc='大地が揺れる。動くとダメージ、止まって耐えよう'),
-    dict(k=6, key='fog', name='濃霧', names={1: '灰嵐'}, color='gray', danger=2, sec=30, weight=10, maps=[0, 1, 2],
+    dict(k=6, key='fog', name='濃霧', names={1: '灰嵐'}, color='gray', danger=2, sec=30, weight=10, maps=[0, 1, 2, 3, 4],
          desc='視界が暗く狭くなる。足音と光を頼りに'),
-    dict(k=7, key='gravity', name='重力異常', color='light_purple', danger=2, sec=20, weight=7, maps=[0, 1, 2], move=True,
+    dict(k=7, key='gravity', name='重力異常', color='light_purple', danger=2, sec=20, weight=7, maps=[0, 1, 2, 3, 4], move=True,
          desc='体が軽くなり高く跳べる。落下ダメージなし'),
-    dict(k=8, key='chickens', name='ニワトリ大量発生', color='yellow', danger=1, sec=20, weight=7, maps=[0, 1, 2], mobs=True,
+    dict(k=8, key='chickens', name='ニワトリ大量発生', color='yellow', danger=1, sec=20, weight=7, maps=[0, 1, 2, 3, 4], mobs=True,
          desc='ニワトリが暴れ回り、狙った卵で押し飛ばす！'),
-    dict(k=9, key='blood_moon', name='血の月', color='dark_red', danger=2, sec=30, weight=7, maps=[0, 1, 2],
+    dict(k=9, key='blood_moon', name='血の月', color='dark_red', danger=2, sec=30, weight=7, maps=[0, 1, 2, 3, 4],
          desc='全員に速度上昇が付き、光り、頭上に花火。居場所が丸見え！'),
     dict(k=10, key='tornado', name='竜巻', color='white', danger=4, sec=30, weight=7, maps=[0, 1], move=True,
          desc='竜巻が近くの人を吸い寄せ、中心で打ち上げる'),
-    dict(k=11, key='pig_parade', name='ブタの大行進', color='light_purple', danger=3, sec=15, weight=7, maps=[0, 1, 2], mobs=True,
+    dict(k=11, key='pig_parade', name='ブタの大行進', color='light_purple', danger=3, sec=15, weight=7, maps=[0, 1, 2, 3, 4], mobs=True,
          desc='2列6行のブタが走り回り、爆発し続ける（♥×1）'),
 ]
 CFG = {'cd_min': 50, 'cd_max': 75, 'first_min': 30, 'first_max': 45, 'multi2': 20, 'multi3': 5,
@@ -55,7 +55,7 @@ def write(rel, lines):
 def name_variants(d):
     """[(map条件, 名前, 説明)]。map条件は None（既定）か mapid。"""
     out = []
-    for m in (0, 1, 2):
+    for m in (0, 1, 2, 3, 4):
         out.append((m, d.get('names', {}).get(m, d['name']), d.get('descs', {}).get(m, d['desc'])))
     return out
 

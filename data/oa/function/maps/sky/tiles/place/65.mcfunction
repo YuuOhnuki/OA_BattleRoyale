@@ -1,0 +1,81 @@
+scoreboard players set #stage oa.map2 1
+fill ~8 ~-40 ~40 ~39 ~-14 ~71 minecraft:air
+fill ~8 ~-13 ~40 ~39 ~13 ~71 minecraft:air
+fill ~8 ~14 ~40 ~39 ~40 ~71 minecraft:air
+fill ~16 ~-16 ~40 ~18 ~-16 ~40 minecraft:andesite
+fill ~13 ~-15 ~40 ~18 ~-15 ~40 minecraft:andesite
+setblock ~19 ~-15 ~40 minecraft:stone
+fill ~17 ~-15 ~41 ~18 ~-15 ~41 minecraft:andesite
+fill ~18 ~-14 ~40 ~19 ~-14 ~40 minecraft:stone
+fill ~11 ~-14 ~40 ~17 ~-14 ~40 minecraft:andesite
+fill ~13 ~-14 ~41 ~19 ~-14 ~41 minecraft:andesite
+fill ~17 ~-13 ~40 ~20 ~-13 ~40 minecraft:stone
+fill ~9 ~-13 ~40 ~16 ~-13 ~40 minecraft:andesite
+fill ~10 ~-13 ~41 ~19 ~-13 ~41 minecraft:andesite
+fill ~13 ~-13 ~42 ~18 ~-13 ~42 minecraft:andesite
+fill ~20 ~-12 ~40 ~21 ~-12 ~40 minecraft:andesite
+fill ~16 ~-12 ~40 ~19 ~-12 ~40 minecraft:stone
+fill ~8 ~-12 ~40 ~15 ~-12 ~40 minecraft:andesite
+fill ~8 ~-12 ~41 ~20 ~-11 ~41 minecraft:andesite
+fill ~9 ~-12 ~42 ~19 ~-12 ~42 minecraft:andesite
+fill ~8 ~-11 ~40 ~14 ~-11 ~40 minecraft:andesite
+fill ~19 ~-11 ~40 ~21 ~-11 ~40 minecraft:andesite
+fill ~15 ~-11 ~40 ~18 ~-11 ~40 minecraft:stone
+fill ~8 ~-11 ~42 ~19 ~-11 ~42 minecraft:andesite
+fill ~12 ~-11 ~43 ~17 ~-11 ~43 minecraft:andesite
+fill ~8 ~-10 ~40 ~13 ~-10 ~40 minecraft:andesite
+fill ~14 ~-10 ~40 ~17 ~-10 ~40 minecraft:stone
+fill ~18 ~-10 ~40 ~21 ~-10 ~40 minecraft:andesite
+fill ~8 ~-10 ~41 ~21 ~-8 ~41 minecraft:andesite
+fill ~8 ~-10 ~42 ~20 ~-8 ~42 minecraft:andesite
+fill ~8 ~-10 ~43 ~18 ~-10 ~43 minecraft:andesite
+fill ~13 ~-9 ~40 ~16 ~-9 ~40 minecraft:stone
+fill ~8 ~-9 ~40 ~12 ~-9 ~40 minecraft:andesite
+fill ~17 ~-9 ~40 ~22 ~-9 ~40 minecraft:andesite
+fill ~8 ~-9 ~43 ~19 ~-7 ~43 minecraft:andesite
+fill ~8 ~-8 ~40 ~11 ~-8 ~40 minecraft:andesite
+fill ~16 ~-8 ~40 ~22 ~-8 ~40 minecraft:andesite
+fill ~12 ~-8 ~40 ~15 ~-8 ~40 minecraft:stone
+fill ~15 ~-7 ~40 ~22 ~-7 ~40 minecraft:andesite
+fill ~11 ~-7 ~40 ~14 ~-7 ~40 minecraft:stone
+fill ~8 ~-7 ~40 ~10 ~-7 ~40 minecraft:andesite
+fill ~8 ~-7 ~41 ~22 ~-3 ~41 minecraft:andesite
+fill ~8 ~-7 ~42 ~21 ~-3 ~42 minecraft:andesite
+fill ~10 ~-6 ~40 ~13 ~-6 ~40 minecraft:stone
+fill ~14 ~-6 ~40 ~23 ~-6 ~40 minecraft:andesite
+fill ~8 ~-6 ~40 ~9 ~-6 ~40 minecraft:andesite
+fill ~8 ~-6 ~43 ~20 ~-3 ~43 minecraft:andesite
+fill ~8 ~-6 ~44 ~13 ~-6 ~44 minecraft:andesite
+fill ~9 ~-5 ~40 ~12 ~-5 ~40 minecraft:stone
+setblock ~8 ~-5 ~40 minecraft:andesite
+fill ~13 ~-5 ~40 ~23 ~-5 ~40 minecraft:andesite
+fill ~8 ~-5 ~44 ~15 ~-5 ~44 minecraft:andesite
+fill ~12 ~-4 ~40 ~23 ~-4 ~40 minecraft:andesite
+fill ~8 ~-4 ~40 ~11 ~-4 ~40 minecraft:stone
+fill ~8 ~-4 ~44 ~16 ~-3 ~44 minecraft:andesite
+fill ~11 ~-3 ~40 ~23 ~-3 ~40 minecraft:andesite
+fill ~8 ~-3 ~40 ~10 ~-3 ~40 minecraft:stone
+fill ~8 ~-2 ~40 ~23 ~-1 ~40 minecraft:dirt
+fill ~8 ~-2 ~41 ~22 ~-1 ~41 minecraft:dirt
+fill ~8 ~-2 ~42 ~21 ~-1 ~42 minecraft:dirt
+fill ~8 ~-2 ~43 ~20 ~-1 ~43 minecraft:dirt
+fill ~8 ~-2 ~44 ~17 ~-1 ~44 minecraft:dirt
+fill ~8 ~0 ~40 ~23 ~0 ~40 minecraft:grass_block
+fill ~34 ~0 ~40 ~39 ~0 ~41 minecraft:oak_planks
+fill ~8 ~0 ~41 ~22 ~0 ~41 minecraft:grass_block
+fill ~8 ~0 ~42 ~21 ~0 ~42 minecraft:grass_block
+fill ~35 ~0 ~42 ~39 ~0 ~42 minecraft:oak_planks
+fill ~36 ~0 ~43 ~39 ~0 ~43 minecraft:oak_planks
+fill ~8 ~0 ~43 ~20 ~0 ~43 minecraft:grass_block
+fill ~37 ~0 ~44 ~39 ~0 ~44 minecraft:oak_planks
+fill ~8 ~0 ~44 ~17 ~0 ~44 minecraft:grass_block
+fill ~38 ~0 ~45 ~39 ~0 ~45 minecraft:oak_planks
+setblock ~39 ~0 ~46 minecraft:oak_planks
+setblock ~34 ~1 ~40 minecraft:oak_fence
+setblock ~39 ~1 ~40 minecraft:oak_fence
+fill ~34 ~1 ~41 ~35 ~1 ~41 minecraft:oak_fence
+fill ~35 ~1 ~42 ~36 ~1 ~42 minecraft:oak_fence
+fill ~36 ~1 ~43 ~37 ~1 ~43 minecraft:oak_fence
+fill ~37 ~1 ~44 ~38 ~1 ~44 minecraft:oak_fence
+fill ~38 ~1 ~45 ~39 ~1 ~45 minecraft:oak_fence
+setblock ~39 ~1 ~46 minecraft:oak_fence

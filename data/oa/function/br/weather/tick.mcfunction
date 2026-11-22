@@ -6,3 +6,5 @@ execute if score #time br.time matches 3600.. if score #weather_mod br.tmp match
 execute if score #perf oa.tmp matches 0 if score #weather_target br.tmp matches 0..2 if score #map oa.mapid matches 0 in oa:br run function oa:br/weather/maintain
 execute if score #perf oa.tmp matches 0 if score #weather_target br.tmp matches 0..2 if score #map oa.mapid matches 1 in oa:br_nether run function oa:br/weather/maintain
 execute if score #perf oa.tmp matches 0 if score #weather_target br.tmp matches 0..2 if score #map oa.mapid matches 2 in oa:br_cave run function oa:br/weather/maintain
+execute if score #perf oa.tmp matches 0 if score #weather_target br.tmp matches 0..2 if score #map oa.mapid matches 3 in oa:br_sky run function oa:br/weather/maintain
+execute if score #perf oa.tmp matches 0 if score #weather_target br.tmp matches 0..2 if score #map oa.mapid matches 4 in oa:br_end run function oa:br/weather/maintain
