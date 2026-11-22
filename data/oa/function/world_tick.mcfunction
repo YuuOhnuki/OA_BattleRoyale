@@ -25,7 +25,7 @@ execute if score #vclock br.tmp matches 0 as @e[type=minecraft:item,tag=oa.yu_gr
 
 
 
-function oa:throwable/observe/world
+# 1.9.225：雪玉・卵の当たりはプラグイン（combat/ThrowableService）へ移した。throwable/observe・push の関数は互換のため残す（呼ばない）
 
 
 execute as @e[distance=0..,type=minecraft:block_display,tag=oa.gacha_bomb] at @s run function oa:tayayuyu/bomb_tick

@@ -165,6 +165,8 @@ scoreboard objectives add oa.powner dummy
 scoreboard objectives add oa.throw_hits dummy
 
 scoreboard objectives add oa.tpush dummy
+# 1.9.225：雪玉・卵の追跡の目印は使わなくなったので、読み込み済みのものを消す
+kill @e[type=minecraft:marker,tag=oa.throw_observer]
 
 scoreboard objectives add oa.roster trigger
 
