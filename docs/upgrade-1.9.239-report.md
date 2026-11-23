@@ -163,9 +163,13 @@ DP1.9.239＋PL0.50.0＋RP1.9.48。本番の生成/手編集データは直接変
 配布：`OA_BattleRoyale_v1.9.239.zip`、`OABattleRoyale-0.50.0.jar`、`OA_BattleRoyale_Resources_v1.9.48.zip`。
 公開先：[データパック](https://github.com/YuuOhnuki/OA_BattleRoyale/releases/tag/v1.9.239)／[プラグイン](https://github.com/YuuOhnuki/OA_BattleRoyale_Plugin/releases/tag/v0.50.0)／[リソースパック](https://github.com/YuuOhnuki/OA_BattleRoyale_ResourcePack/releases/tag/v1.9.48)。本番への配置/再起動の実際の結果は配布時の報告とワークスペースSTATE.mdに記録する。
 
+本番の確認結果：DP 66d76eeは13:24:31にRestarted、PL 0cac553は13:27:08に「OABattleRoyale v0.50.0が有効」を記録。両Linuxジョブ成功（[DP](https://github.com/YuuOhnuki/OA_BattleRoyale/actions/runs/45111540651)／[PL](https://github.com/YuuOhnuki/OA_BattleRoyale_Plugin/actions/runs/45111765955)）。今回は手動反映待ちではなく再起動で適用された。サーバー設定変更・本番会場の再生成・人のクライアント確認は行っていない。
+
 リリーススクリプトの重複した既定3会場テストは`--no-smoke`で省略する。今回の5会場10ケースと修正後再検査・最終ビルド後の11検査が済んでいるためで、未実施を省略扱いにしたものではない。Linuxへの反映は旧Windowsログの待機を使わず、GitHub Actionsの該当コミットの実行結果と配置/再起動ログで確認する。
 
 地形の変更は天空島・エンド・地下の会場再生成後に適用する。**手編集は上書きされるので先に `/oaplugin map backup <sky|end|cave>` で完了を確認する。** 天空島の選択確認では完成会場のバックアップを自動で作成する。既存5ボタンのロビーは更新不要。3ボタンの旧ロビーを手作業で更新する場合は先にlobbyを保存し、`/trigger oa.admin set 14`。練習場の建築更新は不要、武器の表示は既存更新で反映する。プラグイン変更のため再起動が必要。
+
+手動の再生成では、backupの完了後に **`/oaplugin map use <key> generated`** で標準生成へ切り替えてから `/function oa:map/rebuild_<key>` を実行する（keyはsky/end/cave）。これを省くと従来互換の「次回は保存版を使用」が働く。天空島の確認UIはこの切替も自動で行う。詳細は[設定・適用手順](upgrade-1.9.239-config.md)。この手順補足は配布後の文書訂正で、ゲームの挙動/版は変更しない。
 
 ## J. 残存問題・人による確認手順
 
