@@ -11,4 +11,4 @@ function oa:give/internal/killing with storage oa:args
 function oa:tayayuyu/equip_mask with storage oa:args
 particle minecraft:reverse_portal ~ ~1.5 ~ 0.4 0.4 0.4 0.05 30 normal @a[distance=..24]
 playsound minecraft:entity.evoker.prepare_summon player @a[distance=..24] ~ ~ ~ 1 1.2
-tellraw @s {text:"キル！ 新しいキリングのお面に付け替えた（また60秒）",color:"light_purple"}
+tellraw @s {text:"キル！ 新しいキリングのお面に付け替えた（また60秒）"}

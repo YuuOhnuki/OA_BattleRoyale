@@ -1,1 +1,1 @@
-$tellraw @a[tag=br.playing] [{text:"★ ",color:"gold"},{selector:"@s"},{text:" が",color:"yellow"},{text:"今回のお題",color:"gold",underlined:true,hover_event:{action:"show_text",value:[{text:"今回のお題\n",color:"gold",bold:true},{text:"$(name)",color:"yellow"}]}},{text:"を達成！",color:"yellow"}]
+$tellraw @a[tag=br.playing] [{text:"★ ",color:"gold"},{selector:"@s"},{text:" が"},{text:"今回のお題",underlined:true,hover_event:{action:"show_text",value:[{text:"今回のお題\n",color:"gold",bold:true},{text:"$(name)",color:"yellow"}]}},{text:"を達成！"}]

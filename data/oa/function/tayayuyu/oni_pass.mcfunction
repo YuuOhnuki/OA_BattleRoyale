@@ -12,7 +12,7 @@ scoreboard players operation #oni_sec oa.tmp = #g_oni oa.tmp
 scoreboard players add #oni_sec oa.tmp 19
 scoreboard players set #c20 oa.tmp 20
 scoreboard players operation #oni_sec oa.tmp /= #c20 oa.tmp
-tellraw @a[tag=br.playing] [{text:"💣 ",color:"red"},{selector:"@a[tag=oa.g_oni_prev]",color:"white"},{text:" → ",color:"red",bold:true},{selector:"@s",color:"yellow"},{text:" に爆弾が移った！ 残り",color:"red"},{score:{name:"#oni_sec",objective:"oa.tmp"},color:"gold"},{text:"秒",color:"red"}]
+tellraw @a[tag=br.playing] [{text:"💣 ",color:"red"},{selector:"@a[tag=oa.g_oni_prev]",color:"white"},{text:" → ",bold:true},{selector:"@s"},{text:" に爆弾が移った！ 残り"},{score:{name:"#oni_sec",objective:"oa.tmp"}},{text:"秒"}]
 execute as @a[tag=br.playing] at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 0.8 0.5
 execute at @a[tag=oa.g_oni_prev] run particle minecraft:poof ~ ~1 ~ 0.4 0.6 0.4 0.05 20 normal @a[distance=..32]
 tag @a remove oa.g_oni_prev

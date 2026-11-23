@@ -1,7 +1,7 @@
 # 1.9.191: 大当たり「神引き」（1%）。使用者以外の生存者全員に即死のダメージ（使用者のキル）。武器の説明には書かない
 tellraw @a[tag=br.playing] ""
-tellraw @a[tag=br.playing] {text:"★★★ たやゆゆ変態ガチャ：大当たり！ 神引き ★★★",color:"gold",bold:true}
-tellraw @a[tag=br.playing] [{text:" → ",color:"gray"},{selector:"@s",color:"yellow"},{text:" 以外の全員が消し飛ぶ",color:"gray"}]
+tellraw @a[tag=br.playing] {text:"★★★ たやゆゆ変態ガチャ：大当たり！ 神引き ★★★",color:"#12a88f",bold:true}
+tellraw @a[tag=br.playing] [{text:" → ",color:"gray"},{selector:"@s"},{text:" 以外の全員が消し飛ぶ",color:"gray"}]
 tellraw @a[tag=br.playing] ""
 # 1.9.192: 「たやゆゆの勝ち」は、優勝のタイトルのあとに出す（br/win_solo・win_team → tayayuyu/jackpot_title）
 scoreboard players set #g_jp_win oa.tmp 1

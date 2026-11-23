@@ -18,7 +18,7 @@ execute store result storage oa:disaster fog.n int 1 run scoreboard players get 
 execute as @a[tag=br.alive,limit=1] at @s as @e[type=minecraft:marker,tag=br.dis_zone,distance=..2000] at @s run function oa:disaster/k4/zone with storage oa:disaster fog
 scoreboard players operation #fog_m br.tmp = #fog_el br.tmp
 scoreboard players operation #fog_m br.tmp %= #five br.tmp
-execute if score #fog_m br.tmp matches 0 if score #fog_el br.tmp matches 5..25 run tellraw @a[tag=br.playing] [{text:"☠ 毒霧 半径",color:"dark_green"},{score:{name:"#fog_r",objective:"br.tmp"},color:"green"},{text:"m",color:"dark_green"}]
+execute if score #fog_m br.tmp matches 0 if score #fog_el br.tmp matches 5..25 run tellraw @a[tag=br.playing] [{text:"☠ 毒霧 半径",color:"dark_green"},{score:{name:"#fog_r",objective:"br.tmp"}},{text:"m"}]
 # 判定：生存者ごとに、中心からの水平の距離の2乗と半径の2乗を比べる
 execute store result score #fog_cx br.tmp run data get storage oa:br center.x
 execute store result score #fog_cz br.tmp run data get storage oa:br center.z

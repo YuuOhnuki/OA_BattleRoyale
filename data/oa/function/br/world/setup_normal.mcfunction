@@ -11,4 +11,4 @@ gamerule minecraft:spawn_phantoms false
 gamerule minecraft:spawn_wardens false
 gamerule minecraft:raids false
 gamerule minecraft:spawner_blocks_work false
-tellraw @a[tag=br.admin] {text:"[OA] 難易度ノーマル。全モブの自然スポーン・巡回・ファントム・ウォーデン・襲撃・スポナーを停止しました。",color:"green"}
+tellraw @a[tag=br.admin] {text:"[OA] 難易度ノーマル。全モブの自然スポーン・巡回・ファントム・ウォーデン・襲撃・スポナーを停止しました。"}

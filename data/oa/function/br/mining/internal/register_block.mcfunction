@@ -12,4 +12,4 @@ summon minecraft:marker ~ ~ ~ {Tags:["br.ore","br.newore"]}
 scoreboard players operation @e[tag=br.newore,limit=1] br.ore = #ore br.tmp
 scoreboard players set @e[tag=br.newore,limit=1] br.regen 0
 tag @e[tag=br.newore] remove br.newore
-tellraw @s {text:"資源鉱石を登録しました（試合中、採掘から30秒で再生成）",color:"green"}
+tellraw @s {text:"資源鉱石を登録しました（試合中、採掘から30秒で再生成）"}

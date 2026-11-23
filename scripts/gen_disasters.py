@@ -126,7 +126,7 @@ lines += ['title @a[tag=br.playing] times 10 50 15',
 for d in DISASTERS:
     for m, nm, ds in name_variants(d):
         cond = f'execute if score #p{d["k"]} br.tmp matches 1 if score #map oa.mapid matches {m}'
-        lines.append(f'{cond} run tellraw @a[tag=br.playing] {dump([{"text":"⚠ ","color":"red","bold":True},{"text":nm,"color":d["color"],"bold":True},{"text":"  "+STARS(d["danger"]),"color":"gold"},{"text":"\n    "+ds,"color":"gray"}])}')
+        lines.append(f'{cond} run tellraw @a[tag=br.playing] {dump([{"text":"⚠ ","color":"red","bold":True},{"text":nm,"bold":True},{"text":"  "+STARS(d["danger"])},{"text":"\n    "+ds,"color":"gray"}])}')
 write('announce.mcfunction', lines)
 
 # 予定の災害を始める（それぞれの残り秒 #dsN を定義の秒に）
@@ -157,7 +157,7 @@ for d in DISASTERS:
     stop += [f'scoreboard players set #ds{k} br.tmp 0']
     for m, nm, ds in name_variants(d):
         if m in d['maps']:
-            stop.append(f'execute if score #map oa.mapid matches {m} run tellraw @a[tag=br.playing] {dump([{"text":"✔ ","color":"green"},{"text":nm,"color":d["color"]},{"text":" が収まった","color":"green"}])}')
+            stop.append(f'execute if score #map oa.mapid matches {m} run tellraw @a[tag=br.playing] {dump([{"text":"✔ ","color":"green"},{"text":nm},{"text":" が収まった"}])}')
     write(f'stop/k{k}.mcfunction', stop)
     # 片付け（試合の終わり・中止。予告を出さずに止める）
     write(f'halt/k{k}.mcfunction', [HEAD] + ([f'execute if score #ds{k} br.tmp matches 1.. run function oa:disaster/k{k}/end'] if has_end else []) + [f'scoreboard players set #ds{k} br.tmp 0'])

@@ -22,4 +22,4 @@ execute if data storage oa:world_backup {spawn_wandering_traders:0} run gamerule
 execute if data storage oa:world_backup {spawn_wandering_traders:1} run gamerule minecraft:spawn_wandering_traders true
 data remove storage oa:world_backup spawn_wandering_traders
 data remove storage oa:world_backup saved
-tellraw @a[tag=br.admin] {text:"[OA] 難易度・スポーン設定を適用前に戻しました",color:"yellow"}
+tellraw @a[tag=br.admin] {text:"[OA] 難易度・スポーン設定を適用前に戻しました"}

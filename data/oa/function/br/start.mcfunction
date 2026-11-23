@@ -1,5 +1,5 @@
-execute if score #editing oa.template matches 1 run return run tellraw @s {text:"会場の手編集中です。/oaplugin map end で編集を終了してください",color:"yellow"}
-execute if score #busy oa.template matches 1 run return run tellraw @s {text:"マップの保存／復元が処理中です。完了までお待ちください。",color:"yellow"}
+execute if score #editing oa.template matches 1 run return run tellraw @s {text:"会場の手編集中です。/oaplugin map end で編集を終了してください"}
+execute if score #busy oa.template matches 1 run return run tellraw @s {text:"マップの保存／復元が処理中です。完了までお待ちください。"}
 execute if score #game oa.game matches 1 run return run function oa:tdm/start
 execute as @a[tag=oa.debug,tag=!oa.practice] at @s run function oa:debug/stop
 execute if score #state br.state matches 1.. run return 0
@@ -7,8 +7,8 @@ scoreboard players set #skip_clean br.clean 0
 execute if score #clean_ready br.clean matches 1 run scoreboard players set #skip_clean br.clean 1
 scoreboard players set #clean_ready br.clean 0
 execute if data storage oa_map2:job {working:1b} run return run tellraw @s {text:"マップ生成・登録が未完了です。完了してから試合を開始してください",color:"red"}
-execute if score #map oa.mapid matches 3 if score #match_map oa.plugin matches 1 if score #image_sky oa.tmp matches 0 run return run tellraw @s {text:"天空島の完成地図を準備中です。少し待ってから開始してください",color:"yellow"}
-execute if score #map oa.mapid matches 4 if score #match_map oa.plugin matches 1 if score #image_end oa.tmp matches 0 run return run tellraw @s {text:"エンドの完成地図を準備中です。少し待ってから開始してください",color:"yellow"}
+execute if score #map oa.mapid matches 3 if score #match_map oa.plugin matches 1 if score #image_sky oa.tmp matches 0 run return run tellraw @s {text:"天空島の完成地図を準備中です。少し待ってから開始してください"}
+execute if score #map oa.mapid matches 4 if score #match_map oa.plugin matches 1 if score #image_end oa.tmp matches 0 run return run tellraw @s {text:"エンドの完成地図を準備中です。少し待ってから開始してください"}
 execute unless score #state oa.map2 matches 3 run return run tellraw @s {text:"会場が完成していません。生成状態を確認してください",color:"red"}
 execute unless data storage oa:br center.dim run return run tellraw @s {text:"先に /function oa:map/create で専用ディメンションにBRマップを生成してください。",color:"red"}
 function oa:br/border/auto
@@ -154,7 +154,7 @@ function oa:br/intro
 execute as @a[tag=br.playing] unless entity @s[advancements={oa:ach/first_kill=true}] run function oa:br/beginner/support
 execute as @a[tag=br.playing] run function oa:br/beginner/hint
 # 1.9.242：初心者救済モードの案内
-execute if score #rescue br.flag matches 1 run tellraw @a[tag=br.playing] [{text:" ✚ ",color:"aqua"},{text:"初心者救済：",color:"aqua"},{text:"6分までに倒れても補充で復活",color:"white"}]
+execute if score #rescue br.flag matches 1 run tellraw @a[tag=br.playing] [{text:" ✚ ",color:"aqua"},{text:"初心者救済："},{text:"6分までに倒れても補充で復活",color:"white"}]
 function oa:br/intro_end
 # 1.9.213: 5秒のカウントダウン（終わると「スタート！」と効果音）
 function oa:br/countdown/begin

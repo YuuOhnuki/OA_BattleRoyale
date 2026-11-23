@@ -15,4 +15,4 @@ scoreboard players operation #mode br.mode = #old_mode tdm.sys
 scoreboard players set #state br.state 0
 execute if data storage oa:lobby origin{ready:1b} as @a[tag=br.watch] run function oa:lobby/center with storage oa:lobby origin
 execute as @a[tag=br.lobby] run function oa:br/team/sync
-tellraw @a[tag=br.lobby] {text:"TDM終了。ロビーに戻りました。",color:"green"}
+tellraw @a[tag=br.lobby] {text:"TDM終了。ロビーに戻りました。"}

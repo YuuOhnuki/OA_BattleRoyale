@@ -10,7 +10,7 @@ function oa:br/supply/region
 title @a[tag=br.playing] times 5 70 15
 title @a[tag=br.playing] subtitle [{text:"場所：",color:"white"},{storage:"oa:supply",nbt:"region",interpret:true,color:"aqua",bold:true},{text:" ／ 約30秒後に着地",color:"gray"}]
 title @a[tag=br.playing] title {text:"✈ 空中補給用意",color:"gold",bold:true}
-tellraw @a[tag=br.playing] [{text:"✈ 空中補給　30秒後　",color:"gold",bold:true},{storage:"oa:supply",nbt:"region",interpret:true,color:"aqua",bold:true}]
+tellraw @a[tag=br.playing] [{text:"✈ 空中補給　30秒後　",color:"gold",bold:true},{storage:"oa:supply",nbt:"region",interpret:true,bold:true}]
 # 1.9.157: 便と強さ（★）だけを表示する
 execute if score @s br.suptype matches 1 run tellraw @a[tag=br.playing] [{text:"    第1便 ",color:"gray"},{text:"★",color:"gold"},{text:"☆☆",color:"dark_gray"}]
 execute if score @s br.suptype matches 2 run tellraw @a[tag=br.playing] [{text:"    第2便 ",color:"gray"},{text:"★★",color:"gold"},{text:"☆",color:"dark_gray"}]

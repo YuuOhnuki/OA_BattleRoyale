@@ -1,4 +1,4 @@
-tellraw @a[tag=br.playing] [{text:"💥 ドカーン！ ",color:"red",bold:true},{selector:"@s",color:"white"},{text:" が時限爆弾で爆発した",color:"red"}]
+tellraw @a[tag=br.playing] [{text:"💥 ドカーン！ ",color:"red",bold:true},{selector:"@s",color:"white"},{text:" が時限爆弾で爆発した"}]
 particle minecraft:explosion_emitter ~ ~1 ~ 1 1 1 0 4 force @a[distance=..96]
 particle minecraft:flame ~ ~1 ~ 1.5 1.5 1.5 0.25 150 force @a[distance=..96]
 particle minecraft:lava ~ ~1 ~ 1 1 1 0 40 force @a[distance=..96]

@@ -1,4 +1,4 @@
-execute if score #busy oa.template matches 1 run return run tellraw @s {text:"マップの保存／復元が処理中です。完了までお待ちください。",color:"yellow"}
+execute if score #busy oa.template matches 1 run return run tellraw @s {text:"マップの保存／復元が処理中です。完了までお待ちください。"}
 execute unless score #state br.state matches 0 run return 0
 execute if data storage oa_map2:job {working:1b} run return run tellraw @s {text:"マップ生成が終わるまで待ってください",color:"red"}
 execute if score #busy br.clean matches 1 run return 0
@@ -53,7 +53,7 @@ title @a[tag=tdm.player] times 0 25 0
 title @a[tag=tdm.player] title {text:"開始まで 10",color:"gold"}
 scoreboard objectives setdisplay sidebar.team.red tdm.board
 scoreboard objectives setdisplay sidebar.team.blue tdm.board
-tellraw @a[tag=tdm.player] {text:"配置完了！10秒後にTDM開始。石の剣・弓・矢10本を支給しました",color:"gold"}
+tellraw @a[tag=tdm.player] {text:"配置完了！10秒後にTDM開始。石の剣・弓・矢10本を支給しました"}
 execute as @a[tag=tdm.player] run function oa:tdm/warmup_lock
 
 scoreboard players set @a[tag=tdm.player] tdm.ui 1

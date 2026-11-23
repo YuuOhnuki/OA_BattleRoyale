@@ -1,4 +1,4 @@
-tellraw @a[tag=br.playing] {text:"たやゆゆ変態ガチャ：時限爆弾",color:"green"}
+tellraw @a[tag=br.playing] {text:"たやゆゆ変態ガチャ：時限爆弾",color:"#12a88f"}
 tellraw @a[tag=br.playing] {"text": " → 鬼は殴って爆弾を押しつけろ\n → 45秒後に持っている人が爆発", "color": "gray"}
 # 1.9.192: 全体で1つ（#g_oni＝残り tick、tick から oni_tick）。すでに動いていれば延長しない
 execute if score #g_oni oa.tmp matches 1.. run return run tellraw @a[tag=br.playing] {text:"時限爆弾は作動中",color:"gray"}

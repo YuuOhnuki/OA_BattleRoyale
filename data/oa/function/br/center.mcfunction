@@ -22,6 +22,6 @@ data modify storage oa:br center.yaw set from entity @s Rotation[0]
 data modify storage oa:br center.pitch set from entity @s Rotation[1]
 execute store result score #cx br.x run data get entity @s Pos[0] 1000
 execute store result score #cz br.z run data get entity @s Pos[2] 1000
-tellraw @s {text:"現在地をBRマップの中心・観戦地点として登録しました",color:"green"}
+tellraw @s {text:"現在地をBRマップの中心・観戦地点として登録しました"}
 
 function oa:br/border/auto

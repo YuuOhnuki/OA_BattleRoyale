@@ -21,7 +21,7 @@ tag @a remove oa.spec_init
 tag @a remove br.rescue
 execute as @a[tag=br.playing,tag=!oa.practice] if score @s br.round = #round br.round at @s run function oa:br/finish_player
 function oa:br/cleanup/finish
-tellraw @a[tag=br.lobby] {text:"試合終了。ロビーへ戻りました。",color:"green"}
+tellraw @a[tag=br.lobby] {text:"試合終了。ロビーへ戻りました。"}
 function oa:br/bars/hide
 execute if data storage oa:lobby origin{ready:1b} as @a[tag=br.watch] run function oa:lobby/center with storage oa:lobby origin
 function oa:br/locator/all_off
