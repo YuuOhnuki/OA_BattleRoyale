@@ -410,6 +410,8 @@ scoreboard objectives add oa.mclear dummy
 scoreboard objectives add br.mdone dummy
 scoreboard objectives add br.st_jmp minecraft.custom:minecraft.jump
 scoreboard players add #nobeginner br.flag 0
+# 1.9.242：初心者救済モード（既定はオフ）
+scoreboard players add #rescue br.flag 0
 scoreboard objectives add br.suptype dummy
 scoreboard objectives add oa.t_games dummy
 scoreboard objectives add oa.t_win dummy

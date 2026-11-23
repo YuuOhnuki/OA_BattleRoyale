@@ -7,7 +7,9 @@ tag @s remove br.pvp_grace
 tag @s remove br.mining_allowed
 execute unless entity @s[tag=br.alive] run return 0
 tag @s remove br.alive
-execute if score #state br.state matches 1 if score #firstdead br.tmp matches 0 run function oa:ach/first_out
+# 1.9.242：初心者救済モード（チェスト補充より前に倒れたら、補充のときに復活）
+function oa:br/rescue/mark
+execute if score #state br.state matches 1 if score #firstdead br.tmp matches 0 unless entity @s[tag=br.rescue] run function oa:ach/first_out
 tag @s remove br.spawn_protection
 function oa:status/reset
 # 1.9.212: 災害の効果（重力・落下無効など）を外す
@@ -25,7 +27,7 @@ scoreboard players set @s oa.death 0
 gamemode spectator @s
 execute if entity @s[tag=oa.dead] run return 0
 function oa:internal/tp with storage oa:br center
-tellraw @a[tag=br.playing] [{selector:"@s"},{text:" が脱落しました",color:"red"}]
+execute unless entity @s[tag=br.rescue] run tellraw @a[tag=br.playing] [{selector:"@s"},{text:" が脱落しました",color:"red"}]
 
 function oa:tayayuyu/clear
 

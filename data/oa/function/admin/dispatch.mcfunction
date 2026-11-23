@@ -148,3 +148,5 @@ execute if score @s oa.admin matches 148 run function oa:map/do {key:"end",op:"s
 execute if score @s oa.admin matches 149 run function oa:map/do {key:"end",op:"sp_remove"}
 execute if score @s oa.admin matches 150 run function oa:map/do {key:"end",op:"sp_clear"}
 execute if score @s oa.admin matches 151 run function oa:map/do {key:"end",op:"select"}
+# 1.9.242：初心者救済モードの切り替え
+execute if score @s oa.admin matches 160 run function oa:admin/rescue/toggle
