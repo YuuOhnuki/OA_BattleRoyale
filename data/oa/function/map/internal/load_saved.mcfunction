@@ -1,3 +1,5 @@
+scoreboard players set #map_failed oa.map2 0
+$execute if data storage oa:maps saved.$(key).failed store result score #map_failed oa.map2 run data get storage oa:maps saved.$(key).failed
 $execute if data storage oa:maps saved.$(key).center run data modify storage oa:br center set from storage oa:maps saved.$(key).center
 $execute if data storage oa:maps saved.$(key).points run data modify storage oa:spawn_points points set from storage oa:maps saved.$(key).points
 $execute if data storage oa:maps saved.$(key).spawn_dim run data modify storage oa:spawn_points dim set from storage oa:maps saved.$(key).spawn_dim

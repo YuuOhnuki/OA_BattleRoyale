@@ -24,7 +24,6 @@ fill ~-51 ~-26 ~-6 ~-45 ~-26 ~-6 minecraft:obsidian
 fill ~-25 ~-26 ~2 ~-25 ~-23 ~2 minecraft:obsidian
 fill ~-26 ~-26 ~3 ~-25 ~-25 ~7 minecraft:obsidian
 fill ~-32 ~-26 ~6 ~-32 ~-26 ~7 minecraft:obsidian
-setblock ~-50 ~-25 ~-11 minecraft:chest[facing=north]
 setblock ~-46 ~-25 ~-7 minecraft:redstone_ore
 fill ~-26 ~-25 ~-5 ~-25 ~-23 ~-4 minecraft:obsidian
 fill ~-33 ~-25 ~5 ~-32 ~-25 ~6 minecraft:obsidian
@@ -340,6 +339,7 @@ setblock ~-36 ~1 ~-16 minecraft:end_stone
 fill ~-37 ~1 ~-15 ~-36 ~1 ~-15 minecraft:end_stone
 fill ~-38 ~1 ~-14 ~-37 ~1 ~-12 minecraft:end_stone
 fill ~-37 ~1 ~-11 ~-36 ~1 ~-11 minecraft:end_stone
+setblock ~-44 ~1 ~-11 minecraft:chest[facing=north]
 setblock ~-36 ~1 ~-10 minecraft:chest[facing=north]
 fill ~-55 ~1 ~-5 ~-47 ~1 ~-5 minecraft:end_stone_brick_wall
 fill ~-55 ~1 ~0 ~-47 ~1 ~0 minecraft:end_stone_brick_wall

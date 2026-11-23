@@ -23,6 +23,7 @@ scoreboard players set #sup_min2 br.tmp 1225
 execute if score #time br.time matches 6300..8699 run scoreboard players set #sup_min2 br.tmp 625
 execute if score #time br.time matches 8700.. run scoreboard players set #sup_min2 br.tmp 225
 execute store result storage oa:br_spawn range int 1 run scoreboard players get #range br.tmp
+execute if score #supply_chunks oa.plugin matches 1 run return run function oa:br/supply/request_chunks
 execute if score #map oa.mapid matches 0 in oa:br run function oa:br/supply/place with storage oa:br_spawn
 execute if score #map oa.mapid matches 1 in oa:br_nether run function oa:br/supply/place with storage oa:br_spawn
 execute if score #map oa.mapid matches 2 in oa:br_cave run function oa:br/supply/place with storage oa:br_spawn

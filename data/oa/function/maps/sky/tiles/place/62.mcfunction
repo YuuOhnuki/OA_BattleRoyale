@@ -14,4 +14,3 @@ setblock ~-63 ~-26 ~57 minecraft:gold_block
 fill ~-66 ~-26 ~57 ~-64 ~-26 ~57 minecraft:stone
 fill ~-62 ~-26 ~57 ~-60 ~-26 ~57 minecraft:stone
 fill ~-66 ~-26 ~58 ~-60 ~-26 ~60 minecraft:stone
-setblock ~-62 ~-25 ~41 minecraft:chest[facing=north]

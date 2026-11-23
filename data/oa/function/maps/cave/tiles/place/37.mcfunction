@@ -433,8 +433,9 @@ setblock ~78 ~-29 ~-36 minecraft:andesite
 fill ~83 ~-29 ~-36 ~91 ~-29 ~-36 minecraft:stone
 setblock ~77 ~-29 ~-36 minecraft:tuff
 fill ~72 ~-29 ~-35 ~79 ~-29 ~-35 minecraft:stone
+fill ~81 ~-29 ~-35 ~92 ~-29 ~-35 minecraft:stone
+setblock ~93 ~-29 ~-35 minecraft:coal_ore
 setblock ~80 ~-29 ~-35 minecraft:andesite
-fill ~81 ~-29 ~-35 ~93 ~-29 ~-35 minecraft:stone
 fill ~72 ~-29 ~-34 ~74 ~-29 ~-34 minecraft:stone
 fill ~79 ~-29 ~-34 ~103 ~-29 ~-34 minecraft:stone
 setblock ~76 ~-29 ~-34 minecraft:stone

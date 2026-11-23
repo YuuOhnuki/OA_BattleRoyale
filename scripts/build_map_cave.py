@@ -16,11 +16,11 @@ ROOT = sys.argv[1]
 PNG = sys.argv[sys.argv.index('--png') + 1] if '--png' in sys.argv else None
 OUT = f"{ROOT}/data/oa/function/maps/cave/tiles"
 SRC = f"{ROOT}/data/oa/function/map/internal/tiles"
-SEED = 20261115
+SEED = int(sys.argv[sys.argv.index('--seed')+1]) if '--seed' in sys.argv else 20261115
 rng = np.random.default_rng(SEED)
 N = 305; OFF = 152; Y0 = -40; NY = 41; TOP = 0
 NCH = 100    # 通常チェスト（1.9.169 で88→100。中央の神殿と中間の空洞に足した）
-NORE = 180   # 鉱石（1.9.169 で108→180）
+NORE = 270   # 鉱石（1.9.169 で108→180）
 
 pal = ['minecraft:air']; pid = {'minecraft:air': 0}
 def P(b):
@@ -623,7 +623,7 @@ oc = []
 cand = cells(6) + cells(7)
 rd.shuffle(cand)
 for x, z in cand:
-    if len(oc) >= NORE: break
+    if len(oc) >= 180: break
     if math.hypot(x, z) < 30: continue
     f = fl(x, z)
     for (a, b) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
@@ -635,6 +635,18 @@ for x, z in cand:
         k = 1 if len(oc) % 9 < 5 else 3
         put(wx, y, wz, 'minecraft:coal_ore' if k == 1 else 'minecraft:redstone_ore')
         oc.append((wx, y, wz, k)); break
+# 3..8-block wall veins; preserve the original 5:4 coal/redstone ratio.
+for x,y,z,k in list(oc):
+    if len(oc)>=NORE:break
+    budget=min(NORE-len(oc),int(rd.integers(2,8)))
+    for dx,dy,dz in ((0,1,0),(0,-1,0),(1,0,0),(-1,0,0),(0,0,1),(0,0,-1),(1,1,0),(0,1,1)):
+        if budget<=0:break
+        a,b,c=x+dx,y+dy,z+dz
+        if get(a,b,c) not in ('minecraft:stone','minecraft:tuff','minecraft:deepslate'):continue
+        if not any(opn(a+u,c+v) for u,v in ((1,0),(-1,0),(0,1),(0,-1))):continue
+        if any(abs(a-u)+abs(c-w)<3 for u,_,w in chests+riches):continue
+        kind=1 if sum(o[3]==1 for o in oc)<round((len(oc)+1)*5/9) else 3
+        put(a,b,c,'minecraft:coal_ore' if kind==1 else 'minecraft:redstone_ore');oc.append((a,b,c,kind));budget-=1
 ores = oc
 
 # ---------------- 開始地点 ----------------

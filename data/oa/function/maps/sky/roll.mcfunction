@@ -20,6 +20,13 @@ scoreboard players set #tu6 oa.map2 0
 scoreboard players set #tu7 oa.map2 0
 scoreboard players set #tu8 oa.map2 0
 scoreboard players set #tu9 oa.map2 0
+scoreboard players set #tu10 oa.map2 0
+scoreboard players set #tu11 oa.map2 0
+scoreboard players set #tu12 oa.map2 0
+scoreboard players set #tu13 oa.map2 0
+scoreboard players set #tu14 oa.map2 0
+scoreboard players set #tu15 oa.map2 0
+scoreboard players set #tu16 oa.map2 0
 execute store result score #in oa.map2 run random value 3..6
 scoreboard players set #ii oa.map2 0
 function oa:maps/sky/isles/roll_one

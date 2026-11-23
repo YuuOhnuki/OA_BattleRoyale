@@ -10,7 +10,7 @@ execute store result score #yu_mine br.tmp run random value 1..50
 $execute if score #yu_mine br.tmp matches $(overwork_roll) run function oa:give/internal/overwork
 
 execute store result score #mine_recover br.tmp run random value 1..100
-$execute if score #mine_recover br.tmp matches 1..25 run function oa:medical/mine_$(table)
+$execute if score #mine_recover br.tmp matches 1..$(recover) run function oa:medical/mine_$(table)
 # 鉱石の位置に落ちたアイテム（鉱石のドロップ・オーバーワーク）を本人へ移して、すぐ拾えるようにする
 execute as @e[type=minecraft:item,distance=..1.6] run data modify entity @s PickupDelay set value 0s
 tp @e[type=minecraft:item,distance=..1.6] @s

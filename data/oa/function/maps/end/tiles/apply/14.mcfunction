@@ -10,9 +10,13 @@ scoreboard players set #localc oa.map2 0
 scoreboard players set #localo oa.map2 0
 scoreboard players set #expectedc oa.map2 0
 scoreboard players set #expectedo oa.map2 0
-execute if score #sv6 oa.map2 matches 0 run scoreboard players add #expectedo oa.map2 1
-execute if score #sv6 oa.map2 matches 0 positioned ~-4 ~1 ~-91 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
-execute if score #sv6 oa.map2 matches 0 positioned ~2 ~25 ~-91 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:end_crystal ~ ~ ~ {Tags:["oa.mdeco"],Invulnerable:1b,ShowBottom:0b}
+execute if score #sv6 oa.map2 matches 0 run scoreboard players add #expectedc oa.map2 1
+execute if score #sv6 oa.map2 matches 0 positioned ~-5 ~1 ~-91 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
+execute if score #sv6 oa.map2 matches 0 if score #mode oa.map2 matches 0 positioned ~-5 ~1 ~-91 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
+execute if score #sv6 oa.map2 matches 2 run scoreboard players add #expectedc oa.map2 1
+execute if score #sv6 oa.map2 matches 2 positioned ~-5 ~1 ~-90 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
+execute if score #sv6 oa.map2 matches 2 if score #mode oa.map2 matches 0 positioned ~-5 ~1 ~-90 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
+execute if score #sv6 oa.map2 matches 2 positioned ~2 ~23 ~-91 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:end_crystal ~ ~ ~ {Tags:["oa.mdeco"],Invulnerable:1b,ShowBottom:0b}
 execute unless score #localc oa.map2 = #expectedc oa.map2 run return run function oa:map/internal/job/failed
 execute unless score #localo oa.map2 = #expectedo oa.map2 run return run function oa:map/internal/job/failed
 scoreboard players operation #chests oa.map2 += #localc oa.map2

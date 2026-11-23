@@ -12,7 +12,6 @@ setblock ~-6 ~-26 ~54 minecraft:end_stone
 setblock ~-5 ~-26 ~54 minecraft:obsidian
 fill ~-11 ~-26 ~54 ~-7 ~-26 ~54 minecraft:obsidian
 fill ~-11 ~-26 ~55 ~-5 ~-26 ~55 minecraft:obsidian
-setblock ~-10 ~-25 ~50 minecraft:chest[facing=north]
 setblock ~-6 ~-25 ~54 minecraft:redstone_ore
 fill ~2 ~-15 ~41 ~4 ~-14 ~41 minecraft:end_stone
 setblock ~4 ~-15 ~42 minecraft:end_stone
@@ -305,6 +304,7 @@ fill ~-20 ~1 ~42 ~-14 ~1 ~42 minecraft:end_stone
 fill ~-19 ~1 ~43 ~-15 ~1 ~43 minecraft:end_stone
 fill ~-18 ~1 ~44 ~-16 ~1 ~44 minecraft:end_stone
 fill ~7 ~1 ~40 ~7 ~1 ~45 minecraft:end_stone
+setblock ~-13 ~1 ~48 minecraft:chest[facing=north]
 fill ~-15 ~1 ~48 ~-15 ~4 ~48 minecraft:chorus_plant[up=true,down=true]
 fill ~-4 ~1 ~47 ~-4 ~1 ~54 minecraft:end_stone_brick_wall
 fill ~-5 ~1 ~55 ~-5 ~1 ~57 minecraft:end_stone_brick_wall
@@ -316,3 +316,5 @@ setblock ~-14 ~4 ~48 minecraft:chorus_plant[up=true]
 setblock ~-15 ~5 ~48 minecraft:chorus_flower[age=5]
 fill ~-14 ~5 ~48 ~-14 ~6 ~48 minecraft:chorus_plant[up=true,down=true]
 setblock ~-14 ~7 ~48 minecraft:chorus_flower[age=5]
+execute if score #sv2 oa.map2 matches 1 run setblock ~-10 ~1 ~67 minecraft:coal_ore
+execute if score #sv2 oa.map2 matches 1 run setblock ~3 ~1 ~67 minecraft:coal_ore

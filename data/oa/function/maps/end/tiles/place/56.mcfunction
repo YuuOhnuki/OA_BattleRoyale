@@ -12,7 +12,6 @@ setblock ~56 ~-26 ~12 minecraft:obsidian
 setblock ~55 ~-26 ~12 minecraft:end_stone
 fill ~50 ~-26 ~12 ~54 ~-26 ~12 minecraft:obsidian
 fill ~50 ~-26 ~13 ~56 ~-26 ~13 minecraft:obsidian
-setblock ~51 ~-25 ~8 minecraft:chest[facing=north]
 setblock ~55 ~-25 ~12 minecraft:redstone_ore
 setblock ~71 ~-13 ~8 minecraft:end_stone
 fill ~71 ~-12 ~8 ~71 ~-12 ~10 minecraft:end_stone
@@ -121,5 +120,3 @@ fill ~50 ~2 ~39 ~56 ~2 ~39 minecraft:end_stone
 fill ~52 ~3 ~38 ~55 ~3 ~38 minecraft:end_stone
 fill ~51 ~3 ~39 ~56 ~3 ~39 minecraft:end_stone
 fill ~53 ~4 ~39 ~55 ~4 ~39 minecraft:end_stone
-execute if score #sv0 oa.map2 matches 0 run fill ~70 ~0 ~15 ~70 ~0 ~16 minecraft:end_stone
-execute if score #sv0 oa.map2 matches 0 run fill ~70 ~1 ~15 ~70 ~1 ~16 minecraft:cave_air

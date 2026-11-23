@@ -271,8 +271,10 @@ fill ~-96 ~-29 ~-94 ~-90 ~-29 ~-94 minecraft:andesite
 setblock ~-89 ~-29 ~-94 minecraft:stone
 fill ~-120 ~-29 ~-94 ~-97 ~-29 ~-92 minecraft:stone
 fill ~-96 ~-29 ~-93 ~-91 ~-29 ~-92 minecraft:andesite
-fill ~-90 ~-29 ~-93 ~-89 ~-29 ~-90 minecraft:stone
+fill ~-90 ~-29 ~-93 ~-89 ~-29 ~-91 minecraft:stone
 fill ~-95 ~-29 ~-91 ~-91 ~-29 ~-90 minecraft:andesite
+setblock ~-89 ~-29 ~-90 minecraft:coal_ore
+setblock ~-90 ~-29 ~-90 minecraft:stone
 fill ~-120 ~-29 ~-91 ~-96 ~-29 ~-89 minecraft:stone
 fill ~-91 ~-29 ~-89 ~-89 ~-29 ~-89 minecraft:stone
 fill ~-95 ~-29 ~-89 ~-92 ~-29 ~-89 minecraft:andesite
@@ -322,8 +324,8 @@ fill ~-120 ~-28 ~-95 ~-96 ~-28 ~-92 minecraft:stone
 fill ~-95 ~-28 ~-92 ~-93 ~-28 ~-92 minecraft:andesite
 fill ~-92 ~-28 ~-92 ~-89 ~-28 ~-91 minecraft:stone
 fill ~-94 ~-28 ~-91 ~-93 ~-28 ~-90 minecraft:andesite
-fill ~-92 ~-28 ~-90 ~-90 ~-28 ~-90 minecraft:stone
-setblock ~-89 ~-28 ~-90 minecraft:redstone_ore
+fill ~-92 ~-28 ~-90 ~-91 ~-28 ~-90 minecraft:stone
+fill ~-90 ~-28 ~-90 ~-89 ~-28 ~-90 minecraft:redstone_ore
 fill ~-120 ~-28 ~-91 ~-95 ~-28 ~-89 minecraft:stone
 fill ~-93 ~-28 ~-89 ~-91 ~-28 ~-89 minecraft:stone
 setblock ~-94 ~-28 ~-89 minecraft:andesite
@@ -365,7 +367,9 @@ fill ~-120 ~-27 ~-100 ~-89 ~-27 ~-96 minecraft:stone
 fill ~-93 ~-27 ~-95 ~-89 ~-27 ~-92 minecraft:stone
 fill ~-94 ~-27 ~-95 ~-94 ~-27 ~-92 minecraft:andesite
 fill ~-120 ~-27 ~-95 ~-95 ~-27 ~-92 minecraft:stone
-fill ~-120 ~-27 ~-91 ~-89 ~-27 ~-90 minecraft:stone
+fill ~-120 ~-27 ~-91 ~-89 ~-27 ~-91 minecraft:stone
+setblock ~-89 ~-27 ~-90 minecraft:redstone_ore
+fill ~-120 ~-27 ~-90 ~-90 ~-27 ~-90 minecraft:stone
 fill ~-120 ~-27 ~-89 ~-91 ~-24 ~-89 minecraft:stone
 fill ~-120 ~-26 ~-120 ~-103 ~-25 ~-119 minecraft:tuff
 fill ~-102 ~-26 ~-120 ~-89 ~-26 ~-118 minecraft:stone

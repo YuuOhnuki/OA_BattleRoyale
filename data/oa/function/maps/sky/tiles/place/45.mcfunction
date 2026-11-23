@@ -856,6 +856,7 @@ setblock ~20 ~0 ~-20 minecraft:mossy_stone_bricks
 fill ~26 ~0 ~-20 ~29 ~0 ~-20 minecraft:stone_bricks
 fill ~21 ~0 ~-20 ~24 ~0 ~-20 minecraft:stone_bricks
 setblock ~8 ~0 ~-19 minecraft:stone_bricks
+fill ~18 ~0 ~-19 ~19 ~0 ~-19 minecraft:water
 setblock ~14 ~0 ~-19 minecraft:mossy_stone_bricks
 fill ~25 ~0 ~-19 ~28 ~0 ~-19 minecraft:stone_bricks
 fill ~10 ~0 ~-19 ~13 ~0 ~-19 minecraft:stone_bricks
@@ -863,7 +864,9 @@ setblock ~29 ~0 ~-19 minecraft:mossy_stone_bricks
 fill ~30 ~0 ~-19 ~33 ~0 ~-19 minecraft:stone_bricks
 setblock ~9 ~0 ~-19 minecraft:mossy_stone_bricks
 setblock ~24 ~0 ~-19 minecraft:mossy_stone_bricks
+setblock ~17 ~0 ~-19 minecraft:smooth_stone_slab[type=bottom]
 fill ~20 ~0 ~-19 ~23 ~0 ~-19 minecraft:stone_bricks
+fill ~15 ~0 ~-19 ~16 ~0 ~-19 minecraft:water
 fill ~24 ~0 ~-18 ~27 ~0 ~-18 minecraft:stone_bricks
 fill ~9 ~0 ~-18 ~12 ~0 ~-18 minecraft:stone_bricks
 setblock ~13 ~0 ~-18 minecraft:mossy_stone_bricks
@@ -872,37 +875,44 @@ setblock ~33 ~0 ~-18 minecraft:mossy_stone_bricks
 fill ~29 ~0 ~-18 ~32 ~0 ~-18 minecraft:stone_bricks
 setblock ~23 ~0 ~-18 minecraft:mossy_stone_bricks
 setblock ~14 ~0 ~-18 minecraft:stone_bricks
+fill ~15 ~0 ~-18 ~19 ~0 ~-18 minecraft:water
 setblock ~8 ~0 ~-18 minecraft:mossy_stone_bricks
 fill ~20 ~0 ~-18 ~22 ~0 ~-18 minecraft:stone_bricks
+setblock ~19 ~0 ~-17 minecraft:smooth_stone_slab[type=bottom]
 fill ~20 ~0 ~-17 ~21 ~0 ~-17 minecraft:stone_bricks
 setblock ~22 ~0 ~-17 minecraft:mossy_stone_bricks
 fill ~8 ~0 ~-17 ~11 ~0 ~-17 minecraft:stone_bricks
 setblock ~12 ~0 ~-17 minecraft:mossy_stone_bricks
+setblock ~15 ~0 ~-17 minecraft:smooth_stone_slab[type=bottom]
 fill ~28 ~0 ~-17 ~31 ~0 ~-17 minecraft:stone_bricks
 setblock ~32 ~0 ~-17 minecraft:mossy_stone_bricks
 setblock ~33 ~0 ~-17 minecraft:stone_bricks
 fill ~13 ~0 ~-17 ~14 ~0 ~-17 minecraft:stone_bricks
 fill ~23 ~0 ~-17 ~26 ~0 ~-17 minecraft:stone_bricks
 setblock ~27 ~0 ~-17 minecraft:mossy_stone_bricks
+fill ~16 ~0 ~-17 ~18 ~0 ~-17 minecraft:water
 setblock ~20 ~0 ~-16 minecraft:stone_bricks
 fill ~8 ~0 ~-16 ~10 ~0 ~-16 minecraft:stone_bricks
 setblock ~26 ~0 ~-16 minecraft:mossy_stone_bricks
 fill ~27 ~0 ~-16 ~30 ~0 ~-16 minecraft:stone_bricks
 fill ~32 ~0 ~-16 ~33 ~0 ~-16 minecraft:stone_bricks
 fill ~22 ~0 ~-16 ~25 ~0 ~-16 minecraft:stone_bricks
+fill ~15 ~0 ~-16 ~19 ~0 ~-16 minecraft:water
 setblock ~21 ~0 ~-16 minecraft:mossy_stone_bricks
 fill ~12 ~0 ~-16 ~14 ~0 ~-16 minecraft:stone_bricks
 setblock ~31 ~0 ~-16 minecraft:mossy_stone_bricks
 setblock ~11 ~0 ~-16 minecraft:mossy_stone_bricks
-fill ~15 ~0 ~-19 ~19 ~0 ~-15 minecraft:water
 setblock ~25 ~0 ~-15 minecraft:mossy_stone_bricks
+setblock ~20 ~0 ~-15 minecraft:mossy_stone_bricks
 fill ~11 ~0 ~-15 ~14 ~0 ~-15 minecraft:stone_bricks
+fill ~18 ~0 ~-15 ~19 ~0 ~-15 minecraft:water
 setblock ~30 ~0 ~-15 minecraft:mossy_stone_bricks
 fill ~8 ~0 ~-15 ~9 ~0 ~-15 minecraft:stone_bricks
 setblock ~10 ~0 ~-15 minecraft:mossy_stone_bricks
 fill ~31 ~0 ~-15 ~33 ~0 ~-15 minecraft:stone_bricks
-setblock ~20 ~0 ~-15 minecraft:mossy_stone_bricks
 fill ~26 ~0 ~-15 ~29 ~0 ~-15 minecraft:stone_bricks
+setblock ~17 ~0 ~-15 minecraft:smooth_stone_slab[type=bottom]
+fill ~15 ~0 ~-15 ~16 ~0 ~-15 minecraft:water
 fill ~21 ~0 ~-15 ~24 ~0 ~-15 minecraft:stone_bricks
 setblock ~8 ~0 ~-14 minecraft:stone_bricks
 fill ~15 ~0 ~-14 ~18 ~0 ~-14 minecraft:stone_bricks
@@ -1128,12 +1138,16 @@ fill ~27 ~1 ~-24 ~27 ~4 ~-24 minecraft:quartz_pillar
 fill ~8 ~1 ~-22 ~12 ~2 ~-22 minecraft:oak_leaves[persistent=true]
 fill ~32 ~1 ~-24 ~34 ~1 ~-21 minecraft:stone_bricks
 fill ~27 ~1 ~-20 ~27 ~4 ~-20 minecraft:quartz_pillar
-fill ~14 ~1 ~-20 ~20 ~1 ~-20 minecraft:polished_andesite
+fill ~14 ~1 ~-20 ~16 ~1 ~-20 minecraft:polished_andesite
+fill ~18 ~1 ~-20 ~20 ~1 ~-20 minecraft:polished_andesite
+fill ~20 ~1 ~-19 ~20 ~1 ~-18 minecraft:polished_andesite
+fill ~14 ~1 ~-19 ~14 ~1 ~-18 minecraft:polished_andesite
 fill ~17 ~1 ~-17 ~17 ~3 ~-17 minecraft:quartz_pillar
 fill ~27 ~1 ~-16 ~27 ~4 ~-16 minecraft:quartz_pillar
-fill ~20 ~1 ~-19 ~20 ~1 ~-15 minecraft:polished_andesite
-fill ~14 ~1 ~-19 ~14 ~1 ~-15 minecraft:polished_andesite
-fill ~14 ~1 ~-14 ~20 ~1 ~-14 minecraft:polished_andesite
+fill ~20 ~1 ~-16 ~20 ~1 ~-15 minecraft:polished_andesite
+fill ~14 ~1 ~-16 ~14 ~1 ~-15 minecraft:polished_andesite
+fill ~14 ~1 ~-14 ~16 ~1 ~-14 minecraft:polished_andesite
+fill ~18 ~1 ~-14 ~20 ~1 ~-14 minecraft:polished_andesite
 fill ~30 ~1 ~-20 ~34 ~1 ~-12 minecraft:stone_bricks
 fill ~27 ~1 ~-12 ~27 ~4 ~-12 minecraft:quartz_pillar
 fill ~11 ~1 ~-11 ~11 ~22 ~-11 minecraft:quartz_pillar
@@ -1435,24 +1449,24 @@ setblock ~34 ~14 ~7 minecraft:smooth_stone
 setblock ~9 ~15 ~-8 minecraft:chest[facing=north]
 setblock ~35 ~15 ~6 minecraft:chest[facing=north]
 setblock ~34 ~16 ~-8 minecraft:stone_bricks
-setblock ~35 ~16 ~-7 minecraft:stone_bricks
 setblock ~33 ~16 ~-7 minecraft:stone_bricks
-setblock ~32 ~16 ~-6 minecraft:stone_bricks
+setblock ~35 ~16 ~-7 minecraft:stone_bricks
 setblock ~36 ~16 ~-6 minecraft:stone_bricks
-setblock ~32 ~16 ~-4 minecraft:stone_bricks
+setblock ~32 ~16 ~-6 minecraft:stone_bricks
 setblock ~36 ~16 ~-4 minecraft:stone_bricks
-setblock ~35 ~16 ~-3 minecraft:stone_bricks
+setblock ~32 ~16 ~-4 minecraft:stone_bricks
 setblock ~33 ~16 ~-3 minecraft:stone_bricks
+setblock ~35 ~16 ~-3 minecraft:stone_bricks
 setblock ~34 ~16 ~-2 minecraft:stone_bricks
 setblock ~34 ~16 ~2 minecraft:stone_bricks
-setblock ~35 ~16 ~3 minecraft:stone_bricks
 setblock ~33 ~16 ~3 minecraft:stone_bricks
-setblock ~32 ~16 ~4 minecraft:stone_bricks
+setblock ~35 ~16 ~3 minecraft:stone_bricks
 setblock ~36 ~16 ~4 minecraft:stone_bricks
-setblock ~32 ~16 ~6 minecraft:stone_bricks
+setblock ~32 ~16 ~4 minecraft:stone_bricks
 setblock ~36 ~16 ~6 minecraft:stone_bricks
-setblock ~35 ~16 ~7 minecraft:stone_bricks
+setblock ~32 ~16 ~6 minecraft:stone_bricks
 setblock ~33 ~16 ~7 minecraft:stone_bricks
+setblock ~35 ~16 ~7 minecraft:stone_bricks
 fill ~9 ~23 ~-12 ~11 ~23 ~-12 minecraft:polished_andesite
 fill ~9 ~29 ~-12 ~11 ~29 ~-12 minecraft:polished_andesite
 fill ~8 ~23 ~-11 ~12 ~23 ~-9 minecraft:polished_andesite
@@ -1461,12 +1475,12 @@ fill ~9 ~23 ~-8 ~11 ~23 ~-8 minecraft:polished_andesite
 fill ~9 ~29 ~-8 ~11 ~29 ~-8 minecraft:polished_andesite
 fill ~8 ~23 ~-7 ~11 ~23 ~7 minecraft:stone_bricks
 fill ~9 ~24 ~-12 ~11 ~28 ~-12 minecraft:white_terracotta
-fill ~8 ~24 ~-11 ~9 ~28 ~-11 minecraft:white_terracotta
 fill ~11 ~24 ~-11 ~12 ~28 ~-11 minecraft:white_terracotta
+fill ~8 ~24 ~-11 ~9 ~28 ~-11 minecraft:white_terracotta
 fill ~12 ~24 ~-10 ~12 ~28 ~-10 minecraft:white_terracotta
 fill ~8 ~24 ~-10 ~8 ~28 ~-10 minecraft:white_terracotta
-fill ~8 ~24 ~-9 ~9 ~28 ~-9 minecraft:white_terracotta
 fill ~11 ~24 ~-9 ~12 ~28 ~-9 minecraft:white_terracotta
+fill ~8 ~24 ~-9 ~9 ~28 ~-9 minecraft:white_terracotta
 fill ~9 ~24 ~-8 ~11 ~28 ~-8 minecraft:white_terracotta
 setblock ~11 ~24 ~-6 minecraft:stone_bricks
 setblock ~11 ~24 ~-4 minecraft:stone_bricks

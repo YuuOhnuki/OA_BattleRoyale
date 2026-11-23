@@ -4,3 +4,4 @@ $data modify storage oa:maps saved.$(key).points set from storage oa:spawn_point
 $data modify storage oa:maps saved.$(key).spawn_dim set from storage oa:spawn_points dim
 $data modify storage oa:maps saved.$(key).args set from storage oa_map2:args
 $execute store result storage oa:maps saved.$(key).state int 1 run scoreboard players get #state oa.map2
+$execute store result storage oa:maps saved.$(key).failed int 1 run scoreboard players get #map_failed oa.map2

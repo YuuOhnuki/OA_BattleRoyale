@@ -66,12 +66,12 @@ def lore(w,up=False,progress=None):
  return [line for component in rows for line in wrap(component)]
 def modifier(w,up=False,progress=None):
  data={'description214':1,'description_up':int(up),'name_v172':1,'name_v204':1}
- if w['kind']==6:data['description238']=1
+ if w['kind'] in (4,6,9):data['description239']=1
  if progress is not None:
   data['itori_text214']=progress;data['itori_stage']=sum(progress>=n for n in [0,1,5,7,10,15]);data['itori_lore194']=progress
  tag='{oa:{'+','.join(k+':'+str(v)+('' if k in ['itori_text214','itori_stage','itori_lore194'] else 'b') for k,v in data.items())+'}}'
  return {'type':'minecraft:sequence','functions':[{'type':'minecraft:set_components','components':{'minecraft:custom_name':named(w),'minecraft:lore':lore(w,up,progress),'minecraft:tooltip_display':{'hidden_components':['minecraft:enchantments','minecraft:attribute_modifiers']}}},{'type':'minecraft:set_custom_data','tag':tag}]}
-menu={};reference=['# 固有武器・消耗品の説明（1.9.215）','', 'ダメージは補充前を本文に、補充後を括弧内に記載。','', '体力は♥、満腹度は食料アイコンの個数で表示。ダメージは軽減前。','']
+menu={};reference=['# 固有武器・消耗品の説明（1.9.239）','', 'ダメージは補充前を本文に、補充後を括弧内に記載。','', '体力は♥、満腹度は食料アイコンの個数で表示。ダメージは軽減前。','']
 for w in WEAPONS:
  kind=w['kind'];key=f'k{kind}' if kind<=10 else 'yu' if kind==11 else 'frosch'
  jwrite(D/f'item_modifier/lore/{key}.json',modifier(w))
@@ -110,7 +110,7 @@ for w in WEAPONS:
  reference+=['## '+title(w),'',w['sentence'],'',f'- コマンドID：`{w["id"]}`',f'- モチーフ：{w["motif"]}',*[f'- {a}：{b}' for a,b in fields(w) if a!='モチーフ']]+[f'- {a}：{b}' for a,b in w['extra']]+['',note(w),'', '**改善案（未実装・性能変更なし）：** '+w['idea'],'']
 jwrite(P/'src/main/resources/weapon-descriptions.json',menu)
 reference=[re.sub(r'([0-9]+(?:\.[0-9]+)?)HP',lambda m:f'♥×{float(m[1])/2:g}',line) if line.startswith('- ') else line for line in reference]
-reference+=['## 通常武器','', '| 武器 | 現在の効果 | 説明の改善案（未実装） |','|---|---|---|','| 木のバット | ♥×2・0.8回／秒、ノックバック | 大振りの押し出し武器として役割を明記 |','| 木のノックバック棒 | ♥×0.5・4回／秒、ノックバックII | ダメージより位置取り用と強調 |','','## 医療品・食品','']
+reference+=['## 通常武器','', '| 武器 | 現在の効果 | 説明の改善案（未実装） |','|---|---|---|','| 木のバット | ♥×2・0.8回／秒、ノックバックIV | 大振りの押し出し武器として役割を明記 |','| 木のノックバック棒 | ♥×0.5・4回／秒、ノックバックII | ダメージより位置取り用と強調 |','','## 医療品・食品','']
 med_lore={};med_components={}
 for key,(name,use) in MEDICINE.items():
  lines=[row('効果',use),t('※固有武器と同時に所持可能。','gray')]
@@ -147,7 +147,9 @@ def bat_parity(node):
    if isinstance(fs,list) and any(f.get('type')=='minecraft:set_components' and f.get('components',{}).get('minecraft:custom_data',{}).get('oa_normal')=='bat' for f in fs if isinstance(f,dict)):
     # 26.3 には loot function の minecraft:reference がない（起動しなくなる）。oa:bat_visual の中身をそのまま写す
     fs[:]=[f for f in fs if not (isinstance(f,dict) and f.get('type')=='minecraft:reference')]
-    if not any(f.get('type')=='minecraft:set_custom_data' and 'oa_bat_v151' in f.get('tag','') for f in fs):fs.extend(copy.deepcopy(BAT_VISUAL))
+    old=next((i for i,f in enumerate(fs) if f.get('type')=='minecraft:set_custom_data' and 'oa_bat_v150' in f.get('tag','')),None)
+    if old is not None:del fs[old-2:]
+    if not any(f.get('type')=='minecraft:set_custom_data' and 'oa_bat_v239' in f.get('tag','') for f in fs):fs.extend(copy.deepcopy(BAT_VISUAL))
   for n in node.values():bat_parity(n)
 for f in (D/'loot_table').rglob('*.json'):
  before=f.read_text(encoding='utf-8');j=json.loads(before);refresh_loot(j);bat_parity(j)
@@ -159,7 +161,7 @@ write(R/'docs/weapon-description-review.md','\n'.join(reference)+'\n')
 lines=[]
 for w in WEAPONS[:9]:
  k=w['kind'];base=f'$execute if items entity @s $(slot) *[minecraft:custom_data~{{oa:{{kind:{k}}}}}]'
- version='description238' if k==6 else 'description214'
+ version='description239' if k in (4,6,9) else 'description214'
  if k in [4,6,8,9]:
   for up in [0,1]:
    cond=('if' if up else 'unless')+' items entity @s $(slot) *[minecraft:custom_data~{oa:{damage194_up:1b}}]'

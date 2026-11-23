@@ -474,8 +474,10 @@ setblock ~0 ~1 ~-12 minecraft:coal_ore
 fill ~-24 ~1 ~-4 ~-24 ~6 ~-4 minecraft:chorus_plant[up=true,down=true]
 fill ~-24 ~10 ~-4 ~-24 ~12 ~-4 minecraft:chorus_plant[up=true,down=true]
 fill ~-18 ~1 ~0 ~-16 ~2 ~0 minecraft:end_stone_bricks
-setblock ~-15 ~1 ~4 minecraft:end_stone
-setblock ~-14 ~1 ~4 minecraft:redstone_ore
+setblock ~-14 ~1 ~3 minecraft:coal_ore
+setblock ~-13 ~1 ~4 minecraft:coal_ore
+fill ~-15 ~1 ~4 ~-14 ~1 ~4 minecraft:redstone_ore
+fill ~-14 ~1 ~5 ~-13 ~1 ~5 minecraft:coal_ore
 setblock ~0 ~2 ~-1 minecraft:wall_torch[facing=north]
 setblock ~-1 ~2 ~0 minecraft:wall_torch[facing=west]
 setblock ~1 ~2 ~0 minecraft:wall_torch[facing=east]

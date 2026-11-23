@@ -16,4 +16,5 @@ scoreboard players set #point_count br.tmp 0
 execute store result score #point_count br.tmp run data get storage oa:spawn_points points
 execute if score #point_count br.tmp < #spawn_needed br.tmp run return run scoreboard players set #spawn_ok br.flag 0
 data modify storage oa:spawn_pool points set from storage oa:spawn_points points
+data modify storage oa:spawn_pool used set value []
 data modify storage oa:spawn_plan teams set value {}

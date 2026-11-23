@@ -1592,8 +1592,8 @@ fill ~5 ~6 ~-31 ~7 ~6 ~-27 minecraft:stone_brick_slab[type=bottom]
 fill ~4 ~7 ~-56 ~7 ~7 ~-54 minecraft:oak_leaves[persistent=true]
 setblock ~2 ~7 ~-50 minecraft:short_grass
 setblock ~-21 ~7 ~-45 minecraft:oak_leaves[persistent=true]
-fill ~-23 ~7 ~-43 ~-22 ~7 ~-43 minecraft:oak_leaves[persistent=true]
 fill ~-20 ~7 ~-43 ~-19 ~7 ~-43 minecraft:oak_leaves[persistent=true]
+fill ~-23 ~7 ~-43 ~-22 ~7 ~-43 minecraft:oak_leaves[persistent=true]
 setblock ~-21 ~7 ~-41 minecraft:oak_leaves[persistent=true]
 fill ~-2 ~7 ~-34 ~2 ~7 ~-34 minecraft:stone_bricks
 fill ~-3 ~7 ~-33 ~3 ~7 ~-33 minecraft:stone_bricks

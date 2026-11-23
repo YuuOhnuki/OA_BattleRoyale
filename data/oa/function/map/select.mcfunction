@@ -1,3 +1,4 @@
+execute if score #editing oa.template matches 1 run return run tellraw @s {text:"会場の手編集中です。/oaplugin map end で編集を終了してください",color:"yellow"}
 execute if score #busy oa.template matches 1 run return run tellraw @s {text:"マップの保存／復元が処理中です。完了までお待ちください。",color:"yellow"}
 # 使い方: /function oa:map/select {key:"br"} または {key:"nether"} または {key:"cave"}（試合停止中・管理者のみ）
 execute if entity @s[type=minecraft:player] unless entity @s[tag=br.admin] unless entity @s[tag=br.host] run return run tellraw @s {text:"登録済み管理者のみ実行できます。",color:"red"}

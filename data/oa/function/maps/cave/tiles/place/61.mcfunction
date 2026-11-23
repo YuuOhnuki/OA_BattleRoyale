@@ -392,9 +392,10 @@ fill ~-103 ~-29 ~63 ~-101 ~-25 ~63 minecraft:dripstone_block
 fill ~-97 ~-29 ~63 ~-96 ~-25 ~63 minecraft:dripstone_block
 fill ~-120 ~-29 ~63 ~-104 ~-24 ~63 minecraft:tuff
 fill ~-96 ~-29 ~64 ~-90 ~-25 ~64 minecraft:dripstone_block
+setblock ~-101 ~-29 ~64 minecraft:redstone_ore
 fill ~-120 ~-29 ~64 ~-102 ~-29 ~65 minecraft:tuff
-fill ~-101 ~-29 ~64 ~-101 ~-29 ~65 minecraft:stone
 fill ~-94 ~-29 ~65 ~-89 ~-26 ~65 minecraft:stone
+setblock ~-101 ~-29 ~65 minecraft:stone
 fill ~-93 ~-29 ~66 ~-89 ~-25 ~66 minecraft:stone
 fill ~-95 ~-29 ~66 ~-94 ~-25 ~66 minecraft:dripstone_block
 fill ~-103 ~-29 ~66 ~-100 ~-29 ~66 minecraft:stone

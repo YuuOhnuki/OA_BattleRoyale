@@ -342,9 +342,9 @@ fill ~-63 ~-28 ~128 ~-57 ~-28 ~128 minecraft:stone
 fill ~-88 ~-28 ~129 ~-57 ~-28 ~131 minecraft:stone
 fill ~-82 ~-27 ~104 ~-79 ~-27 ~104 minecraft:stone
 fill ~-88 ~-27 ~104 ~-83 ~-27 ~104 minecraft:tuff
-fill ~-59 ~-27 ~105 ~-57 ~-27 ~105 minecraft:stone
 fill ~-88 ~-27 ~105 ~-78 ~-23 ~105 minecraft:tuff
-setblock ~-60 ~-27 ~105 minecraft:redstone_ore
+fill ~-60 ~-27 ~105 ~-57 ~-26 ~105 minecraft:stone
+fill ~-60 ~-24 ~105 ~-57 ~-24 ~105 minecraft:stone
 fill ~-62 ~-27 ~106 ~-57 ~-27 ~106 minecraft:stone
 fill ~-88 ~-27 ~106 ~-77 ~-23 ~106 minecraft:tuff
 setblock ~-63 ~-27 ~106 minecraft:tuff
@@ -396,8 +396,6 @@ fill ~-82 ~-27 ~135 ~-80 ~-27 ~135 minecraft:tuff
 fill ~-88 ~-27 ~135 ~-83 ~-27 ~135 minecraft:stone
 fill ~-79 ~-27 ~135 ~-72 ~-27 ~135 minecraft:stone
 fill ~-88 ~-26 ~104 ~-79 ~-23 ~104 minecraft:tuff
-fill ~-60 ~-26 ~105 ~-57 ~-26 ~105 minecraft:stone
-fill ~-60 ~-24 ~105 ~-57 ~-24 ~105 minecraft:stone
 fill ~-61 ~-26 ~106 ~-57 ~-26 ~107 minecraft:stone
 fill ~-63 ~-26 ~106 ~-62 ~-26 ~107 minecraft:tuff
 fill ~-88 ~-26 ~109 ~-73 ~-23 ~109 minecraft:tuff

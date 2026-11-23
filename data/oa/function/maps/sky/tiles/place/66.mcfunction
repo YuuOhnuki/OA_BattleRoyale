@@ -18,7 +18,6 @@ fill ~44 ~-26 ~60 ~46 ~-26 ~60 minecraft:stone
 fill ~40 ~-26 ~60 ~42 ~-26 ~60 minecraft:stone
 fill ~40 ~-26 ~61 ~46 ~-26 ~63 minecraft:stone
 fill ~42 ~-26 ~69 ~48 ~-26 ~71 minecraft:stone
-setblock ~41 ~-25 ~58 minecraft:chest[facing=north]
 fill ~41 ~-11 ~55 ~41 ~-10 ~55 minecraft:stone
 fill ~40 ~-10 ~40 ~42 ~-10 ~40 minecraft:stone
 fill ~40 ~-9 ~40 ~43 ~-9 ~40 minecraft:stone
@@ -72,3 +71,4 @@ fill ~41 ~0 ~47 ~43 ~0 ~48 minecraft:grass_block
 fill ~40 ~0 ~49 ~43 ~0 ~49 minecraft:grass_block
 fill ~40 ~0 ~50 ~44 ~0 ~55 minecraft:grass_block
 fill ~42 ~0 ~56 ~43 ~0 ~56 minecraft:grass_block
+setblock ~41 ~1 ~42 minecraft:chest[facing=north]

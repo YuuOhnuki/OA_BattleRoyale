@@ -69,5 +69,5 @@ function oa:furoball/clear_up
 
 execute unless score @s oa.i_round = #round br.round run function oa:itori/progress_reset
 function oa:itori/effects_end
-# 1.9.236：異界ではエリトラ（防御力+6）を着せる
+# 1.9.236：エンドではエリトラ（防御力+6）を着せる
 function oa:br/end_elytra

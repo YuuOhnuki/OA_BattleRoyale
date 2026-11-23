@@ -46,8 +46,8 @@ fill 11 80 90 17 80 90 minecraft:stone_bricks
 fill 12 80 91 17 80 95 minecraft:stone_bricks
 fill 12 80 96 18 80 96 minecraft:stone_bricks
 fill 13 80 97 18 80 101 minecraft:stone_bricks
-fill 9 81 39 9 81 44 minecraft:stone_brick_wall
 fill 4 81 39 4 81 44 minecraft:stone_brick_wall
+fill 9 81 39 9 81 44 minecraft:stone_brick_wall
 fill 9 81 45 10 81 45 minecraft:stone_brick_wall
 fill 4 81 45 5 81 45 minecraft:stone_brick_wall
 fill 10 81 46 10 81 50 minecraft:stone_brick_wall

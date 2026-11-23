@@ -90,8 +90,8 @@ fill -42 80 -38 -41 80 -38 minecraft:stone_bricks
 fill -71 81 -74 -70 81 -74 minecraft:stone_brick_wall
 fill -70 81 -73 -69 81 -73 minecraft:stone_brick_wall
 fill -69 81 -72 -68 81 -72 minecraft:stone_brick_wall
-fill -68 81 -71 -67 81 -71 minecraft:stone_brick_wall
 setblock -74 81 -71 minecraft:stone_brick_wall
+fill -68 81 -71 -67 81 -71 minecraft:stone_brick_wall
 fill -67 81 -70 -66 81 -70 minecraft:stone_brick_wall
 fill -74 81 -70 -73 81 -70 minecraft:stone_brick_wall
 fill -73 81 -69 -72 81 -69 minecraft:stone_brick_wall
@@ -122,8 +122,8 @@ fill -61 81 -57 -60 81 -57 minecraft:stone_brick_wall
 fill -54 81 -57 -53 81 -57 minecraft:stone_brick_wall
 fill -60 81 -56 -59 81 -56 minecraft:stone_brick_wall
 fill -53 81 -56 -52 81 -56 minecraft:stone_brick_wall
-fill -52 81 -55 -51 81 -55 minecraft:stone_brick_wall
 fill -59 81 -55 -58 81 -55 minecraft:stone_brick_wall
+fill -52 81 -55 -51 81 -55 minecraft:stone_brick_wall
 fill -51 81 -54 -50 81 -54 minecraft:stone_brick_wall
 fill -58 81 -54 -57 81 -54 minecraft:stone_brick_wall
 fill -57 81 -53 -56 81 -53 minecraft:stone_brick_wall
@@ -138,12 +138,12 @@ fill -53 81 -49 -52 81 -49 minecraft:stone_brick_wall
 fill -46 81 -49 -45 81 -49 minecraft:stone_brick_wall
 fill -45 81 -48 -44 81 -48 minecraft:stone_brick_wall
 fill -52 81 -48 -51 81 -48 minecraft:stone_brick_wall
-fill -44 81 -47 -43 81 -47 minecraft:stone_brick_wall
 fill -51 81 -47 -50 81 -47 minecraft:stone_brick_wall
+fill -44 81 -47 -43 81 -47 minecraft:stone_brick_wall
 fill -43 81 -46 -42 81 -46 minecraft:stone_brick_wall
 fill -50 81 -46 -49 81 -46 minecraft:stone_brick_wall
-fill -49 81 -45 -48 81 -45 minecraft:stone_brick_wall
 fill -42 81 -45 -41 81 -45 minecraft:stone_brick_wall
+fill -49 81 -45 -48 81 -45 minecraft:stone_brick_wall
 fill -41 81 -44 -40 81 -44 minecraft:stone_brick_wall
 fill -48 81 -44 -47 81 -44 minecraft:stone_brick_wall
 fill -47 81 -43 -46 81 -43 minecraft:stone_brick_wall

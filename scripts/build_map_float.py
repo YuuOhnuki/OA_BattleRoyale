@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""OA Battle Royale 1.9.231: 浮遊島マップ2種類の生成（天空島 sky ＝ oa:br_sky、異界 end ＝ oa:br_end）。
+"""OA Battle Royale 1.9.231: 浮遊島マップ2種類の生成（天空島 sky ＝ oa:br_sky、エンド end ＝ oa:br_end）。
 使い方: py -3 scripts/build_map_float.py <repo root> sky|end [--png 確認用PNG] [--panel ロビーの地図パネル PNG(512x512)]
 
 洞窟（build_map_cave.py）と同じく、会場を 100 区画のタイル関数（data/oa/function/maps/<key>/tiles/{preload,wait,release,apply,place}/N）に
@@ -9,7 +9,7 @@
 - 島の上面に起伏（丘・段丘）。建物の立つ所（中央の城・各島の広場・橋の付け根・転移装置）だけ平らにする。
 - 島の底は下へ尖り、ところどころ岩が垂れ下がる（浮遊島らしく）。
 - 天空島：色の付いた屋根の家・市場・屋敷・飛行船の発着場。空に気球と飛行船（block_display、当たり判定なし＝足場にならない）。
-- 異界：エンドストーンの段丘とコーラスの林、白い未来都市（白い塔・ガラスのドーム・発光）、空に浮かぶ結晶と円盤（block_display）。
+- エンド：エンドストーンの段丘とコーラスの林、白い未来都市（白い塔・ガラスのドーム・発光）、空に浮かぶ結晶と円盤（block_display）。
 
 毎回の生成で変わるところ（「スロット」方式）：
 - 外周の8つの島（スロット）は、形と位置・橋は固定で、上に載るもの（島の種類・建物・チェスト・開始地点・地点の名前）を
@@ -21,30 +21,34 @@
 特殊な仕掛けはマーカー（タグ oa.gim）で置き、動きはプラグイン（map/MapGimmickService）：
 - oa.gim_tp_<dx>_<dy>_<dz>：転移装置（マーカーからの相対位置へ。双方向は2つ置く）
 - oa.gim_up_<h>：上昇気流（マーカーから高さ h まで持ち上げる。島の下の救済用の足場から）
-- oa.gim_grav_<r>：重力異常エリア（半径 r。異界のみ）
-- oa.gim_warp：空間の歪みの演出（紫の粒・音。異界のみ）
+- oa.gim_grav_<r>：重力異常エリア（半径 r。エンドのみ）
+- oa.gim_warp：空間の歪みの演出（紫の粒・音。エンドのみ）
 飾り（気球・飛行船・結晶・円盤）は block_display（タグ oa.mdeco）。区画を置き直すたびに消して出し直す。
 ジャンプ台は既存のもの（石の感圧板＋下にレンガ。jumppad 名前空間）。
 """
 import sys, os, re, glob, json, math
 import numpy as np
+from pathlib import Path
+from map_quality import audit,veins
+CATALOG=json.loads(Path(__file__).with_name("map_islands.json").read_text(encoding="utf-8"))["end"]
+QUALITY={"checks":[],"ores":[]}
 
 ROOT = sys.argv[1]
 KEY = sys.argv[2]
 assert KEY in ('sky', 'end')
 if KEY == 'sky':
-    sys.exit('1.9.233 から天空島は scripts/build_map_sky.py で生成する（このスクリプトは異界 end だけ）')
+    sys.exit('1.9.233 から天空島は scripts/build_map_sky.py で生成する（このスクリプトはエンド end だけ）')
 PNG = sys.argv[sys.argv.index('--png') + 1] if '--png' in sys.argv else None
 PANEL = sys.argv[sys.argv.index('--panel') + 1] if '--panel' in sys.argv else None
 DIM = {'sky': 'oa:br_sky', 'end': 'oa:br_end'}[KEY]
-LABEL = {'sky': '天空島', 'end': '異界'}[KEY]
+LABEL = {'sky': '天空島', 'end': 'エンド'}[KEY]
 OUT = f"{ROOT}/data/oa/function/maps/{KEY}/tiles"
 SRC = f"{ROOT}/data/oa/function/map/internal/tiles"
-SEED = {'sky': 20261123, 'end': 20261124}[KEY]
+SEED = int(sys.argv[sys.argv.index('--seed')+1]) if '--seed' in sys.argv else {'sky':20261123,'end':20261124}[KEY]
 rng = np.random.default_rng(SEED)
 DR = np.random.default_rng(SEED + 77)   # 飾りの色などの抽選
 N = 305; OFF = 152; Y0 = -40; NY = 81; TOP = 40
-NSLOT = 8; NVAR = 3 if KEY == 'sky' else 1   # 1.9.232: 異界は外周の島の中身を固定（ユーザーの指示）
+NSLOT = 8; NVAR = 3   # 1.9.232: エンドは外周の島の中身を固定（ユーザーの指示）
 
 # ======================================================================== 材料（テーマ）
 if KEY == 'sky':
@@ -275,12 +279,12 @@ def airship(x, y, z, yaw, c=('minecraft:white_wool', 'minecraft:red_wool')):
     for oz in (-3.0, 3.0): bd(x, y, z, 'minecraft:oak_fence', 0.15, 2.2, 0.15, oy=1.8, oz=oz, yaw=yaw)
 
 def crystal(x, y, z, block='minecraft:amethyst_block', s=2.6):
-    """浮かぶ結晶（異界）。45度傾けた箱。"""
+    """浮かぶ結晶（エンド）。45度傾けた箱。"""
     q = [0.2706, 0.0, 0.2706, 0.9239]
     bd(x, y, z, block, s, s, s, oy=0.0, glow=True, rot=q); bd(x, y, z, 'minecraft:end_rod', 0.3, s * 2.2, 0.3, oy=-s * 0.6, glow=True)
 
 def saucer(x, y, z, yaw=0.0):
-    """浮かぶ円盤（異界の未来都市）。"""
+    """浮かぶ円盤（エンドの未来都市）。"""
     bd(x, y, z, 'minecraft:smooth_quartz', 9.0, 0.8, 9.0, yaw=yaw); bd(x, y, z, 'minecraft:smooth_quartz', 6.4, 0.8, 6.4, oy=0.6, yaw=yaw + 45)
     bd(x, y, z, 'minecraft:white_concrete', 11.0, 0.3, 3.0, oy=0.25, yaw=yaw); bd(x, y, z, 'minecraft:white_concrete', 3.0, 0.3, 11.0, oy=0.25, yaw=yaw)
     bd(x, y, z, 'minecraft:light_blue_stained_glass', 3.6, 2.2, 3.6, oy=1.3, yaw=yaw)
@@ -324,7 +328,7 @@ def tower(x, z, y0, h, rad=3, roof=True, chest_top=True, door_face=None, roofm=N
     if chest_top: chest(x + 1, y0 + h + 1, z + 1)
 
 def house(x, z, y0, w, d, h=4, chests=1, face='south', wallm=None, roofm=None):
-    """家。天空島は色の付いた寄棟屋根、異界は白い壁と平らな屋根（発光の縁取り）。"""
+    """家。天空島は色の付いた寄棟屋根、エンドは白い壁と平らな屋根（発光の縁取り）。"""
     wallm = wallm or str(DR.choice(WALLS)); roofm = roofm or str(DR.choice(ROOFS))
     foundation(x, z, x + w - 1, z + d - 1, y0)
     hollow(x, y0 + 1, z, x + w - 1, y0 + h, z + d - 1, wallm)
@@ -364,7 +368,7 @@ def tree(x, z, y0, h=5, rr=None):
                 for dy in range(h - 1, h + 2):
                     if abs(dx) + abs(dz) + max(0, dy - h) <= 3 and (dx, dz) != (0, 0) or dy == h + 1 and abs(dx) + abs(dz) <= 1:
                         if free(x + dx, y0 + dy, z + dz): put(x + dx, y0 + dy, z + dz, lv)
-    else:   # 異界：枝分かれするコーラスの木
+    else:   # エンド：枝分かれするコーラスの木
         def grow(px, py, pz, n, depth):
             for i in range(n):
                 put(px, py + i, pz, 'minecraft:chorus_plant[up=true,down=true]')
@@ -414,7 +418,7 @@ def ore_rocks(cx, cz, r, n, seed):
 
 # ======================================================================== 配置の計画（島の位置・橋の付け根・転移装置を先に決め、そこを平らにする）
 CR = 46   # 中央の島の半径
-SLOT_R = 98 if KEY == 'sky' else 80   # 1.9.232: 異界は島どうしの間隔を狭める
+SLOT_R = 98 if KEY == 'sky' else 80   # 1.9.232: エンドは島どうしの間隔を狭める
 CORN = 126 if KEY == 'sky' else 104
 slots = []
 for k in range(NSLOT):
@@ -466,7 +470,7 @@ def free_dir(cx, cz, r):
         if m > bd_: best, bd_ = a, m
     return best
 
-# ======================================================================== 中央（天空城／異界神殿）
+# ======================================================================== 中央（天空城／エンド神殿）
 cur = base
 island(0, 0, CR, 32, amp=9, flats=flats_for(0, 0, CR, 31))
 if KEY == 'sky':
@@ -657,7 +661,7 @@ for pad_index, (px_, pz_) in enumerate(rescue_pads):
         ore(px_ + 2, -25, pz_ + 2, 3); put(px_ + 2, -26, pz_ + 2, T['rock'])
         chest(px_ - 2, -25, pz_ - 2)
 
-# 転移装置（離れた島どうし。双方向）。異界は「異界ポータル」
+# 転移装置（離れた島どうし。双方向）。エンドは「エンドポータル」
 TP = []
 for (pa, pb) in TPP:
     teleporter_pair(pa, pb); TP.append((pa, pb))
@@ -667,7 +671,7 @@ if KEY == 'end':
     for k in (3, 7):
         cx, cz, r, _ = slots[k]; gim(round(cx * 0.6), 2, round(cz * 0.6), ['oa.gim', 'oa.gim_warp'])
 
-# 土台の飾り（スロットの外：中央の島の外周・角の小島）。天空島は草花と木、異界はコーラスの木と黒曜石の斑
+# 土台の飾り（スロットの外：中央の島の外周・角の小島）。天空島は草花と木、エンドはコーラスの木と黒曜石の斑
 SLOT_BOX = [(cx - r - 8, cz - r - 8, cx + r + 8, cz + r + 8) for cx, cz, r, _ in slots]
 def in_slot_box(x, z): return any(a <= x <= c and b <= z <= d for a, b, c, d in SLOT_BOX)
 for (x, z), g in list(SURF.items()):
@@ -687,12 +691,13 @@ for (x, z) in [(x, z) for (x, z), g in SURF.items() if not in_slot_box(x, z) and
 
 # ======================================================================== スロットの種類（生成のたびに3つから抽選）
 SKY_TYPES = ['forest', 'ruins', 'garden', 'watch', 'village', 'temple', 'market', 'mansion', 'dock']
-END_TYPES = ['wilds', 'obsidian', 'city', 'chorus', 'ruins', 'crystal', 'tower', 'spire', 'dome', 'pagoda']
-END_FIXED = ['pagoda', 'chorus', 'city', 'pagoda', 'crystal', 'chorus', 'pagoda', 'obsidian']   # 1.9.232: 異界の外周の島（固定）
+END_TYPES = list(CATALOG)
+END_FIXED = ['pagoda', 'chorus', 'city', 'pagoda', 'crystal', 'chorus', 'pagoda', 'obsidian']   # 1.9.232: エンドの外周の島（固定）
 NAMES = {'forest': '森林の島', 'ruins': '廃墟の島', 'garden': '庭園の島', 'watch': '見張り塔の島', 'village': '集落の島',
          'temple': '神殿の島', 'market': '市場の島', 'mansion': '屋敷の島', 'dock': '飛行船の発着場',
          'wilds': 'エンドストーンの荒野', 'obsidian': '黒曜石の森', 'city': '崩れたエンドシティ', 'chorus': 'コーラスの林',
-         'crystal': '結晶の洞窟', 'tower': '異界の塔', 'spire': '白い尖塔', 'dome': 'ガラスのドーム', 'pagoda': '異界の塔街'}
+         'crystal': '結晶の洞窟', 'tower': 'エンドの塔', 'spire': '白い尖塔', 'dome': 'ガラスのドーム', 'pagoda': 'エンドの塔街'}
+NAMES.update({k:v['name'] for k,v in CATALOG.items()})
 TYPES = SKY_TYPES if KEY == 'sky' else END_TYPES
 CH_PER_SLOT = 7
 
@@ -700,6 +705,8 @@ def theme(kind, cx, cz, r, seed):
     """スロット1つの中身（cur の面に書く）。チェストは必ず CH_PER_SLOT 個（特別チェストは神殿・結晶・尖塔だけ1つ含む）。
     島の中心の半径12は平らな広場（y=0）、その外は起伏（gy で地面の高さ）。"""
     rr = np.random.default_rng(seed)
+    profile=CATALOG[kind];r=min(r,int(profile["radius"]));want=int(profile["chests"]);kind=profile["structure"];assert kind in CATALOG
+    assert 16<=r<=30 and 5<=want<=12 and 1<=profile["weight"]<=20
     def spot(margin=4, tries=300, rmin=0.0):
         for _ in range(tries):
             a = rr.random() * 2 * math.pi; d = rmin + (r - margin - rmin) * math.sqrt(rr.random())
@@ -709,7 +716,36 @@ def theme(kind, cx, cz, r, seed):
             if g is None: continue
             if not free(x, g, z) and getb(x, g, z) != 'minecraft:water' and free(x, g + 1, z) and free(x, g + 2, z): return x, g, z
         return None
-    if kind in ('forest', 'chorus', 'obsidian', 'wilds'):
+    if kind in ('sanctuary','pearl_ruins','rift','crystal_garden','hollow','archive'):
+        mat='minecraft:purpur_block' if kind in ('archive','sanctuary') else 'minecraft:end_stone_bricks'
+        box(cx-8,0,cz-8,cx+8,0,cz+8,T['floor'])
+        for dx,dz in ((-7,-7),(7,-7),(-7,7),(7,7)):
+            box(cx+dx,1,cz+dz,cx+dx,6,cz+dz,mat)
+            put(cx+dx,7,cz+dz,'minecraft:end_rod[facing=up]')
+        if kind=='archive':
+            for dx in (-6,6):box(cx+dx,1,cz-4,cx+dx,3,cz+4,'minecraft:bookshelf')
+            box(cx-7,7,cz-7,cx+7,7,cz+7,'minecraft:purpur_slab[type=bottom]')
+        elif kind=='sanctuary':
+            hollow(cx-4,1,cz-4,cx+4,3,cz+4,mat);clear(cx-1,1,cz+4,cx+1,3,cz+4)
+            box(cx-1,1,cz-1,cx+1,1,cz+1,'minecraft:chiseled_quartz_block')
+        elif kind=='pearl_ruins':
+            for dx in (-4,4):box(cx+dx,1,cz-2,cx+dx,5,cz-2,'minecraft:crying_obsidian')
+            box(cx-4,5,cz-2,cx+4,5,cz-2,'minecraft:obsidian')
+        elif kind=='rift':
+            for dx,dz in ((-5,-3),(2,4),(6,-2)):
+                box(cx+dx,1,cz+dz,cx+dx,5+abs(dx)//2,cz+dz,'minecraft:crying_obsidian')
+                crystal(cx+dx,7,cz+dz,s=1.4)
+        elif kind=='crystal_garden':
+            for dx,dz in ((-5,-5),(5,-5),(-5,5),(5,5)):
+                box(cx+dx-1,1,cz+dz-1,cx+dx+1,2,cz+dz+1,'minecraft:amethyst_block')
+                put(cx+dx,3,cz+dz,'minecraft:amethyst_cluster[facing=up]')
+        else:
+            clear(cx-3,-3,cz-3,cx+3,-1,cz+3);box(cx-3,-4,cz-3,cx+3,-4,cz+3,T['floor'])
+            box(cx-3,-3,cz-3,cx+3,-3,cz-3,'minecraft:bookshelf')
+            clear(cx,-3,cz+2,cx,2,cz+2);box(cx,-3,cz+2,cx,1,cz+2,'minecraft:ladder[facing=north]')
+            box(cx,-3,cz+3,cx,0,cz+3,mat);chest(cx-2,-3,cz)
+        chest(cx-4,1,cz);chest(cx+4,1,cz)
+    elif kind in ('forest', 'chorus', 'obsidian', 'wilds'):
         n = {'forest': 16, 'chorus': 22, 'obsidian': 14, 'wilds': 6}[kind]
         for _ in range(n):
             s = spot(3, rmin=7)
@@ -931,7 +967,7 @@ def theme(kind, cx, cz, r, seed):
             hh = (14, 20, 18, 22)[(j + int(rr.random() * 4)) % 4]
             pagoda(cx + dx, cz + dz, 5, hh, ['minecraft:purpur_block', 'minecraft:crimson_planks'])
         # （1.9.232 の宙に浮いた渡り廊下の切れ端は 1.9.236 で削除）
-        # 足元の道・桜（異界の色）の木・チェスト
+        # 足元の道・桜（エンドの色）の木・チェスト
         for x in range(cx - 12, cx + 13):
             for z in range(cz - 12, cz + 13):
                 if (abs(x - cx) <= 1 or abs(z - cz) <= 1) and gy(x, z) == 0 and getb(x, 0, z) == T['top'] and (x, z) not in RES: put(x, 0, z, 'minecraft:end_stone_bricks')
@@ -962,11 +998,11 @@ def theme(kind, cx, cz, r, seed):
         chest(cx - 4, 1, cz - 3); chest(cx + 4, 1, cz + 3); chest(cx, 1, cz + 5)
     drop_overwritten()
     # チェストの数をそろえる（足りない分は島の上の空いた場所）
-    while len(cur.chests) + len(cur.riches) < CH_PER_SLOT:
+    while len(cur.chests) + len(cur.riches) < want:
         s = spot(4)
         if not s: break
         chest(s[0], s[1] + 1, s[2])
-    while len(cur.chests) + len(cur.riches) > CH_PER_SLOT and cur.chests:
+    while len(cur.chests) + len(cur.riches) > want and cur.chests:
         x, y, z = cur.chests.pop(); put(x, y, z, 'minecraft:air')
     ore_rocks(cx, cz, r - 3, 5, seed + 7)
     # 開始地点（平らで頭上が空いた所。5か所）
@@ -980,16 +1016,28 @@ def theme(kind, cx, cz, r, seed):
            and all(math.hypot(x - a, z - b) > 6 for a, _, b in cur.spawns):
             cur.spawns.append((x, g + 1, z)); got += 1
             if got >= 5: break
-    place_name(cx, cz, NAMES[kind])
+    place_name(cx, cz, profile["name"])
 
+type_order=list(rng.permutation(len(TYPES)))
 variants = []   # variants[k][v] = Canvas
 for k, (cx, cz, r, _) in enumerate(slots):
-    pick = list(rng.choice(len(TYPES), size=NVAR, replace=False)) if KEY == 'sky' else [TYPES.index(END_FIXED[k])]
+    pick=[type_order[(k+v*7)%len(TYPES)] for v in range(NVAR)]
     vs = []
     for v in range(NVAR):
         cv = Canvas(cx - r - 8, cz - r - 8, cx + r + 8, cz + r + 8)
         cur = cv
         theme(TYPES[pick[v]], cx, cz, r, SEED * 31 + k * 7 + v)
+        profile=CATALOG[TYPES[pick[v]]]
+        if profile.get("chest_positions"):
+            positions=profile["chest_positions"];assert len(positions)==profile["chests"]
+            for old in cur.chests+cur.riches:put(*old,'minecraft:air')
+            cur.chests=[];cur.riches=[]
+            for point in positions:
+                dx,y,dz=(int(point[n]) for n in ('x','y','z'));assert cur.inb(cx+dx,cz+dz) and -35<=y<=30
+                chest(cx+dx,y,cz+dz,rich=bool(point.get('rich',False)),face=point.get('facing','north'))
+        QUALITY["checks"].append(dict(slot=k,variant=v,kind=TYPES[pick[v]],**audit(cv,pal,Y0,put,base)))
+        assert not QUALITY["checks"][-1]["unreachable_chests"],(k,v)
+        QUALITY["ores"].append(dict(slot=k,variant=v,**veins(cv,math.ceil(len(cv.ores)*1.5),getb,put,SEED+k*3+v,T['ore_host'],gy)))
         cv.kind = TYPES[pick[v]]
         vs.append(cv)
     variants.append(vs)
@@ -1006,13 +1054,16 @@ for (cx, cz, r) in corners:
     base_spawn(cx + 3, cz + 7); base_spawn(cx - 7, cz - 2)
 
 # ======================================================================== 検査
+cur=base
+QUALITY["checks"].append(dict(kind="center",**audit(base,pal,Y0,put)))
+QUALITY["ores"].append(dict(kind="center",**veins(base,math.ceil(len(base.ores)*1.5),getb,put,SEED+999,T["ore_host"],gy)))
 def chk(c, x, y, z, want_chest=True):
     b = c.get(x, y, z) if c is not base else base.get(x, y, z)
     return b is not None and (not want_chest or b.startswith('minecraft:chest'))
 assert all(chk(base, x, y, z) for x, y, z in base.chests + base.riches)
 for vs in variants:
     for cv in vs:
-        assert len(cv.chests) + len(cv.riches) == CH_PER_SLOT, (cv.kind, len(cv.chests), len(cv.riches))
+        assert len(cv.chests) + len(cv.riches) == int(CATALOG[cv.kind]["chests"]), (cv.kind, len(cv.chests), len(cv.riches))
         bad = [(x, y, z, cv.get(x, y, z)) for x, y, z in cv.chests + cv.riches if not cv.get(x, y, z).startswith('minecraft:chest')]
         assert not bad, (cv.kind, bad)
         assert len(cv.spawns) >= 3, (cv.kind, len(cv.spawns))
@@ -1137,7 +1188,12 @@ HEAD = f"# 生成: scripts/build_map_float.py {KEY}（直接編集しない）"
 # 抽選（生成のはじめ。#mode 0＝作成・再生成のときだけ。登録だけのやり直しでは前回の結果を使う）
 R = [HEAD + "。スロット（外周の8つの島）の中身を3種類から抽選する（map/internal/job/begin から）",
      "execute unless score #mode oa.map2 matches 0 run return 0"]
-for k in range(NSLOT): R.append(f"execute store result score #sv{k} oa.map2 run random value 0..{NVAR - 1}")
+for k in range(NSLOT):
+    weights=[int(CATALOG[cv.kind]['weight']) for cv in variants[k]]
+    R.append(f"execute store result score #variant oa.map2 run random value 1..{sum(weights)}")
+    start=1
+    for v,weight in enumerate(weights):
+        R.append(f"execute if score #variant oa.map2 matches {start}..{start+weight-1} run scoreboard players set #sv{k} oa.map2 {v}");start+=weight
 R.append(f"function oa:maps/{KEY}/layout")
 open(f"{MD}/roll.mcfunction", 'w', encoding='utf8', newline='\n').write('\n'.join(R) + '\n')
 # 今の組み合わせ（地図の地点名・補給の場所名に使う）を storage oa:maps layout.<key> に書く
@@ -1188,25 +1244,20 @@ open(f"{MD}/supply_region.mcfunction", 'w', encoding='utf8', newline='\n').write
 
 # ======================================================================== 確認用の画像・ロビーの地図パネル・一覧
 def topview(include_variant=None):
-    """上から見た色と高さ（include_variant=v なら各スロットの種類 v を重ねる）。"""
-    H = np.full((N, N), -999, int); C = np.zeros((N, N), int)
-    has = base.g.any(axis=2)
-    top = NY - 1 - np.argmax(base.g[:, :, ::-1] != 0, axis=2)
-    for x in range(N):
-        for z in range(N):
-            if has[x, z]: H[x, z] = top[x, z] + Y0; C[x, z] = base.g[x, z, top[x, z]]
+    # The same composited terrain used by the finished map; glass is transparent in the illustration.
+    grid=base.g.copy()
     if include_variant is not None:
         for vs in variants:
-            cv = vs[include_variant]
-            for x in range(cv.g.shape[0]):
-                for z in range(cv.g.shape[1]):
-                    col = cv.g[x, z, :]; nzi = np.nonzero(col)[0]
-                    if not len(nzi): continue
-                    gx, gz = x + cv.x1 + OFF, z + cv.z1 + OFF
-                    if not (0 <= gx < N and 0 <= gz < N) or pal[col[nzi[-1]]] == 'minecraft:cave_air': continue
-                    yy = nzi[-1] + Y0
-                    if yy >= H[gx, gz]: H[gx, gz] = yy; C[gx, gz] = col[nzi[-1]]
-    return H, C
+            cv=vs[include_variant];x=cv.x1+OFF;z=cv.z1+OFF
+            target=grid[x:x+cv.g.shape[0],z:z+cv.g.shape[1],:]
+            target[:]=np.where(cv.g!=0,cv.g,target)
+    for i,b in enumerate(pal):
+        if 'glass' in b or b=='minecraft:cave_air':grid[grid==i]=0
+    has=grid.any(axis=2);top=NY-1-np.argmax(grid[:,:,::-1]!=0,axis=2)
+    H=np.where(has,top+Y0,-999)
+    C=np.take_along_axis(grid,top[:,:,None],axis=2)[:,:,0]
+    return H,C
+
 COLS = {'grass_block': (96, 160, 70), 'dirt': (130, 96, 60), 'stone': (128, 128, 128), 'andesite': (136, 136, 136), 'tuff': (100, 100, 95),
         'end_stone': (222, 222, 160), 'obsidian': (40, 28, 60), 'water': (60, 110, 220), 'short_grass': (96, 170, 70),
         'white_concrete': (235, 238, 240), 'smooth_quartz': (230, 228, 222), 'quartz': (232, 228, 220),
@@ -1247,7 +1298,7 @@ if PNG:
     H, C = topview(0); render(H, C, N * 2).save(PNG)
 if PANEL:
     from PIL import Image, ImageDraw, ImageFont
-    H, C = topview(None)
+    H, C = topview(0)
     img = render(H, C, 512)
     d_ = ImageDraw.Draw(img, 'RGBA')
     font = ImageFont.truetype('C:/Windows/Fonts/meiryob.ttc', 18); small = ImageFont.truetype('C:/Windows/Fonts/meiryob.ttc', 14)
@@ -1265,7 +1316,7 @@ if PANEL:
     else:
         for vs in variants:
             for (x, z, nm) in vs[0].places: label(x, z, nm, small, (235, 200, 255))
-        note = '黒曜石の柱から「塔の砲撃」が来ることがあります'
+        note = '見本：完成後は中央の実地図へ更新。塔の砲撃に注意'
     w_ = d_.textlength(note, font=small)
     d_.rounded_rectangle([256 - w_ / 2 - 8, 486, 256 + w_ / 2 + 8, 508], 6, fill=(15, 15, 28, 210))
     d_.text((256, 497), note, font=small, fill=(235, 235, 235), anchor='mm')
@@ -1302,3 +1353,5 @@ if ISO:
         img[vv:vv + S2 + 1, uu:uu + S2 + 1] = c
     Image.fromarray(np.clip(img, 0, 255).astype('uint8')).save(ISO)
 print('ok', KEY)
+
+json.dump(QUALITY,open(f"{ROOT}/MAP_END_QUALITY.json","w",encoding="utf-8"),ensure_ascii=False,indent=2,default=int)

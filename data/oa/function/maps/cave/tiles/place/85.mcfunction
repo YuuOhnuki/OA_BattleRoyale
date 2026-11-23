@@ -533,9 +533,9 @@ setblock ~12 ~-30 ~120 minecraft:moss_block
 fill ~12 ~-20 ~120 ~12 ~-19 ~120 minecraft:moss_block
 setblock ~24 ~-30 ~121 minecraft:stone
 fill ~9 ~-30 ~121 ~14 ~-30 ~121 minecraft:moss_block
-fill ~17 ~-30 ~121 ~18 ~-30 ~121 minecraft:tuff
-fill ~17 ~-28 ~121 ~18 ~-22 ~121 minecraft:tuff
 setblock ~15 ~-30 ~121 minecraft:stone
+setblock ~18 ~-30 ~121 minecraft:tuff
+setblock ~17 ~-30 ~121 minecraft:redstone_ore
 fill ~19 ~-30 ~120 ~22 ~-30 ~122 minecraft:stone
 fill ~8 ~-30 ~120 ~8 ~-30 ~122 minecraft:tuff
 fill ~32 ~-30 ~121 ~39 ~-30 ~122 minecraft:tuff
@@ -599,12 +599,12 @@ fill ~17 ~-29 ~120 ~19 ~-29 ~120 minecraft:moss_block
 fill ~17 ~-21 ~120 ~19 ~-21 ~120 minecraft:moss_block
 fill ~20 ~-29 ~120 ~22 ~-29 ~120 minecraft:stone
 setblock ~16 ~-29 ~120 minecraft:moss_carpet
+fill ~17 ~-29 ~121 ~18 ~-29 ~121 minecraft:coal_ore
 setblock ~8 ~-29 ~121 minecraft:moss_block
 setblock ~10 ~-29 ~121 minecraft:moss_carpet
-fill ~12 ~-29 ~121 ~13 ~-29 ~121 minecraft:moss_carpet
-fill ~18 ~-29 ~121 ~20 ~-29 ~121 minecraft:tuff
 fill ~24 ~-29 ~121 ~24 ~-26 ~121 minecraft:tuff
-setblock ~17 ~-29 ~121 minecraft:coal_ore
+fill ~19 ~-29 ~121 ~20 ~-29 ~121 minecraft:tuff
+fill ~12 ~-29 ~121 ~13 ~-29 ~121 minecraft:moss_carpet
 fill ~21 ~-29 ~121 ~22 ~-29 ~122 minecraft:stone
 fill ~8 ~-29 ~122 ~8 ~-25 ~122 minecraft:tuff
 fill ~24 ~-29 ~122 ~25 ~-26 ~122 minecraft:tuff
@@ -713,8 +713,10 @@ fill ~21 ~-28 ~120 ~22 ~-22 ~120 minecraft:tuff
 fill ~20 ~-28 ~120 ~20 ~-22 ~120 minecraft:mossy_cobblestone
 fill ~9 ~-28 ~120 ~10 ~-28 ~120 minecraft:moss_carpet
 setblock ~8 ~-28 ~120 minecraft:azalea
+setblock ~18 ~-28 ~121 minecraft:redstone_ore
 fill ~20 ~-28 ~121 ~22 ~-22 ~121 minecraft:tuff
 fill ~19 ~-28 ~121 ~19 ~-22 ~121 minecraft:mossy_cobblestone
+setblock ~17 ~-28 ~121 minecraft:coal_ore
 fill ~16 ~-28 ~122 ~22 ~-26 ~122 minecraft:tuff
 fill ~15 ~-28 ~123 ~39 ~-28 ~123 minecraft:tuff
 setblock ~22 ~-28 ~124 minecraft:stone
@@ -751,6 +753,7 @@ fill ~29 ~-27 ~105 ~39 ~-27 ~107 minecraft:stone
 setblock ~21 ~-27 ~109 minecraft:small_dripleaf[half=upper,facing=north]
 setblock ~8 ~-27 ~112 minecraft:small_dripleaf[half=upper,facing=north]
 setblock ~18 ~-27 ~115 minecraft:small_dripleaf[half=upper,facing=north]
+fill ~17 ~-27 ~121 ~18 ~-22 ~121 minecraft:tuff
 fill ~15 ~-27 ~123 ~39 ~-26 ~124 minecraft:tuff
 fill ~14 ~-27 ~125 ~39 ~-26 ~125 minecraft:tuff
 fill ~13 ~-27 ~126 ~39 ~-26 ~126 minecraft:tuff

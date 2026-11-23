@@ -23,3 +23,6 @@ fill ~-115 ~1 ~18 ~-109 ~2 ~19 minecraft:end_stone
 fill ~-116 ~1 ~20 ~-108 ~2 ~22 minecraft:end_stone
 fill ~-115 ~1 ~23 ~-109 ~2 ~24 minecraft:end_stone
 fill ~-113 ~1 ~25 ~-111 ~2 ~25 minecraft:end_stone
+execute if score #sv4 oa.map2 matches 0 run fill ~-90 ~3 ~8 ~-89 ~4 ~8 minecraft:cherry_leaves[persistent=true]
+execute if score #sv4 oa.map2 matches 0 run fill ~-89 ~3 ~9 ~-89 ~4 ~9 minecraft:cherry_leaves[persistent=true]
+execute if score #sv4 oa.map2 matches 0 run setblock ~-89 ~5 ~8 minecraft:cherry_leaves[persistent=true]

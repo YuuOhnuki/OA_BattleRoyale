@@ -162,7 +162,8 @@ fill ~8 ~-31 ~-112 ~25 ~-31 ~-112 minecraft:stone
 fill ~28 ~-31 ~-111 ~30 ~-31 ~-111 minecraft:stone
 setblock ~24 ~-31 ~-111 minecraft:andesite
 setblock ~25 ~-31 ~-111 minecraft:stone
-fill ~8 ~-31 ~-111 ~23 ~-27 ~-111 minecraft:stone
+fill ~8 ~-31 ~-111 ~23 ~-31 ~-111 minecraft:stone
+fill ~8 ~-29 ~-111 ~23 ~-27 ~-111 minecraft:stone
 setblock ~37 ~-31 ~-111 minecraft:andesite
 setblock ~33 ~-31 ~-111 minecraft:stone
 fill ~35 ~-31 ~-111 ~36 ~-31 ~-111 minecraft:stone
@@ -227,7 +228,8 @@ fill ~27 ~-30 ~-116 ~39 ~-26 ~-116 minecraft:stone
 fill ~9 ~-30 ~-116 ~20 ~-27 ~-116 minecraft:stone
 setblock ~39 ~-30 ~-113 minecraft:tuff
 setblock ~39 ~-30 ~-112 minecraft:stone
-fill ~8 ~-30 ~-112 ~22 ~-26 ~-112 minecraft:stone
+fill ~8 ~-30 ~-112 ~22 ~-30 ~-111 minecraft:stone
+setblock ~23 ~-30 ~-111 minecraft:redstone_ore
 fill ~35 ~-30 ~-110 ~37 ~-26 ~-110 minecraft:stone
 fill ~38 ~-30 ~-110 ~39 ~-26 ~-110 minecraft:deepslate
 fill ~8 ~-30 ~-110 ~25 ~-29 ~-110 minecraft:stone
@@ -340,6 +342,7 @@ fill ~28 ~-30 ~-89 ~30 ~-30 ~-89 minecraft:deepslate_tiles
 setblock ~27 ~-30 ~-89 minecraft:cracked_deepslate_tiles
 fill ~24 ~-30 ~-89 ~26 ~-30 ~-89 minecraft:deepslate_tiles
 fill ~15 ~-29 ~-119 ~19 ~-27 ~-119 minecraft:stone
+fill ~8 ~-29 ~-112 ~22 ~-26 ~-112 minecraft:stone
 setblock ~28 ~-29 ~-110 minecraft:glow_lichen[south=true]
 fill ~37 ~-29 ~-109 ~39 ~-26 ~-109 minecraft:deepslate
 fill ~24 ~-29 ~-109 ~36 ~-29 ~-109 minecraft:stone

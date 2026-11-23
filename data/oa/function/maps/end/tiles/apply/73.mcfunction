@@ -14,8 +14,15 @@ execute if score #sv3 oa.map2 matches 0 run scoreboard players add #expectedc oa
 execute if score #sv3 oa.map2 matches 0 run scoreboard players add #expectedo oa.map2 2
 execute if score #sv3 oa.map2 matches 0 positioned ~-52 ~1 ~74 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute if score #sv3 oa.map2 matches 0 positioned ~-49 ~1 ~72 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
-execute if score #sv3 oa.map2 matches 0 positioned ~-46 ~1 ~72 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
-execute if score #sv3 oa.map2 matches 0 if score #mode oa.map2 matches 0 positioned ~-46 ~1 ~72 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
+execute if score #sv3 oa.map2 matches 0 positioned ~-54 ~1 ~75 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
+execute if score #sv3 oa.map2 matches 0 if score #mode oa.map2 matches 0 positioned ~-54 ~1 ~75 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
+execute if score #sv3 oa.map2 matches 1 run scoreboard players add #expectedc oa.map2 1
+execute if score #sv3 oa.map2 matches 1 positioned ~-53 ~1 ~75 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
+execute if score #sv3 oa.map2 matches 1 if score #mode oa.map2 matches 0 positioned ~-53 ~1 ~75 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
+execute if score #sv3 oa.map2 matches 2 run scoreboard players add #expectedc oa.map2 1
+execute if score #sv3 oa.map2 matches 2 positioned ~-51 ~2 ~77 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
+execute if score #sv3 oa.map2 matches 2 if score #mode oa.map2 matches 0 positioned ~-51 ~2 ~77 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
+execute if score #sv3 oa.map2 matches 2 positioned ~-56 ~24 ~77 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:end_crystal ~ ~ ~ {Tags:["oa.mdeco"],Invulnerable:1b,ShowBottom:0b}
 execute unless score #localc oa.map2 = #expectedc oa.map2 run return run function oa:map/internal/job/failed
 execute unless score #localo oa.map2 = #expectedo oa.map2 run return run function oa:map/internal/job/failed
 scoreboard players operation #chests oa.map2 += #localc oa.map2

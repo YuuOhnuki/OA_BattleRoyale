@@ -32,5 +32,12 @@ execute if score #pt oa.map2 matches 6 run scoreboard players set #tu6 oa.map2 1
 execute if score #pt oa.map2 matches 7 run scoreboard players set #tu7 oa.map2 1
 execute if score #pt oa.map2 matches 8 run scoreboard players set #tu8 oa.map2 1
 execute if score #pt oa.map2 matches 9 run scoreboard players set #tu9 oa.map2 1
+execute if score #pt oa.map2 matches 10 run scoreboard players set #tu10 oa.map2 1
+execute if score #pt oa.map2 matches 11 run scoreboard players set #tu11 oa.map2 1
+execute if score #pt oa.map2 matches 12 run scoreboard players set #tu12 oa.map2 1
+execute if score #pt oa.map2 matches 13 run scoreboard players set #tu13 oa.map2 1
+execute if score #pt oa.map2 matches 14 run scoreboard players set #tu14 oa.map2 1
+execute if score #pt oa.map2 matches 15 run scoreboard players set #tu15 oa.map2 1
+execute if score #pt oa.map2 matches 16 run scoreboard players set #tu16 oa.map2 1
 scoreboard players add #ii oa.map2 1
 function oa:maps/sky/isles/roll_one

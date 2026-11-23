@@ -1,3 +1,7 @@
+scoreboard players add #map_revision oa.map2 1
+scoreboard players set #image_sky oa.tmp 0
+scoreboard players set #image_end oa.tmp 0
+scoreboard players set #map_failed oa.map2 0
 scoreboard players set #state oa.map2 1
 scoreboard players set #tile oa.map2 0
 scoreboard players set #chests oa.map2 0
@@ -6,6 +10,6 @@ data modify storage oa_map2:args tile set value 0
 data modify storage oa_map2:job working set value 1b
 tellraw @a {text:"[OA Map 305] 処理開始。完了まで試合を開始しないでください。全100区画",color:"gold"}
 function oa:map/internal/job/next
-# 1.9.230：天空島・異界は、外周の島（スロット）の中身を抽選する（作成・再生成のときだけ）
+# 1.9.230：天空島・エンドは、外周の島（スロット）の中身を抽選する（作成・再生成のときだけ）
 execute if data storage oa_map2:args {dim:"oa:br_sky"} run function oa:maps/sky/roll
 execute if data storage oa_map2:args {dim:"oa:br_end"} run function oa:maps/end/roll

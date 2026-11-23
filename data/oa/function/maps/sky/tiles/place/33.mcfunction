@@ -775,6 +775,7 @@ fill ~-49 ~0 ~-25 ~-45 ~0 ~-25 minecraft:dirt
 fill ~-33 ~0 ~-25 ~-31 ~0 ~-25 minecraft:stone_bricks
 setblock ~-25 ~0 ~-25 minecraft:mossy_stone_bricks
 fill ~-30 ~1 ~-48 ~-29 ~1 ~-48 minecraft:grass_block
+setblock ~-33 ~1 ~-47 minecraft:chest[facing=north]
 fill ~-31 ~1 ~-47 ~-26 ~1 ~-47 minecraft:grass_block
 fill ~-30 ~1 ~-46 ~-29 ~1 ~-46 minecraft:dirt
 fill ~-28 ~1 ~-46 ~-25 ~1 ~-46 minecraft:grass_block
@@ -847,14 +848,14 @@ fill ~-40 ~16 ~-35 ~-40 ~17 ~-33 minecraft:stone_bricks
 fill ~-40 ~19 ~-35 ~-40 ~19 ~-33 minecraft:stone_bricks
 fill ~-28 ~1 ~-34 ~-25 ~3 ~-33 minecraft:stone_bricks
 fill ~-28 ~7 ~-34 ~-25 ~7 ~-33 minecraft:stone_bricks
-fill ~-40 ~1 ~-32 ~-39 ~5 ~-32 minecraft:stone_bricks
-fill ~-40 ~7 ~-32 ~-39 ~11 ~-32 minecraft:stone_bricks
-fill ~-40 ~13 ~-32 ~-39 ~17 ~-32 minecraft:stone_bricks
-fill ~-40 ~19 ~-32 ~-39 ~19 ~-32 minecraft:stone_bricks
 fill ~-29 ~1 ~-32 ~-25 ~3 ~-32 minecraft:stone_bricks
 fill ~-29 ~5 ~-32 ~-25 ~5 ~-32 minecraft:stone_bricks
 fill ~-29 ~7 ~-32 ~-25 ~7 ~-32 minecraft:stone_bricks
 setblock ~-47 ~1 ~-32 minecraft:oxeye_daisy
+fill ~-40 ~1 ~-32 ~-39 ~5 ~-32 minecraft:stone_bricks
+fill ~-40 ~7 ~-32 ~-39 ~11 ~-32 minecraft:stone_bricks
+fill ~-40 ~13 ~-32 ~-39 ~17 ~-32 minecraft:stone_bricks
+fill ~-40 ~19 ~-32 ~-39 ~19 ~-32 minecraft:stone_bricks
 fill ~-50 ~1 ~-32 ~-48 ~1 ~-31 minecraft:grass_block
 fill ~-29 ~1 ~-31 ~-29 ~5 ~-31 minecraft:stone_bricks
 fill ~-29 ~7 ~-31 ~-29 ~11 ~-31 minecraft:stone_bricks
@@ -903,8 +904,8 @@ fill ~-49 ~1 ~-25 ~-46 ~1 ~-25 minecraft:grass_block
 fill ~-30 ~2 ~-47 ~-30 ~5 ~-47 minecraft:cherry_log
 fill ~-30 ~2 ~-46 ~-29 ~2 ~-46 minecraft:grass_block
 fill ~-30 ~2 ~-45 ~-27 ~2 ~-45 minecraft:grass_block
-setblock ~-32 ~2 ~-44 minecraft:oxeye_daisy
 fill ~-31 ~2 ~-44 ~-26 ~2 ~-44 minecraft:grass_block
+setblock ~-32 ~2 ~-44 minecraft:oxeye_daisy
 fill ~-29 ~2 ~-43 ~-28 ~2 ~-43 minecraft:dirt
 fill ~-27 ~2 ~-43 ~-25 ~2 ~-43 minecraft:grass_block
 fill ~-30 ~2 ~-43 ~-30 ~2 ~-42 minecraft:grass_block
@@ -934,8 +935,8 @@ setblock ~-29 ~3 ~-47 minecraft:cherry_leaves[persistent=true]
 setblock ~-31 ~3 ~-47 minecraft:cherry_leaves[persistent=true]
 fill ~-31 ~3 ~-46 ~-29 ~3 ~-46 minecraft:cherry_leaves[persistent=true]
 fill ~-29 ~3 ~-43 ~-28 ~3 ~-43 minecraft:grass_block
-fill ~-29 ~3 ~-42 ~-27 ~3 ~-42 minecraft:grass_block
 setblock ~-25 ~3 ~-42 minecraft:coal_ore
+fill ~-29 ~3 ~-42 ~-27 ~3 ~-42 minecraft:grass_block
 fill ~-28 ~3 ~-41 ~-28 ~3 ~-40 minecraft:dirt
 fill ~-30 ~3 ~-41 ~-29 ~3 ~-40 minecraft:grass_block
 fill ~-27 ~3 ~-41 ~-27 ~3 ~-40 minecraft:grass_block
@@ -950,8 +951,8 @@ fill ~-32 ~4 ~-47 ~-31 ~4 ~-47 minecraft:cherry_leaves[persistent=true]
 fill ~-32 ~4 ~-46 ~-28 ~4 ~-46 minecraft:cherry_leaves[persistent=true]
 fill ~-31 ~4 ~-45 ~-29 ~4 ~-45 minecraft:cherry_leaves[persistent=true]
 fill ~-31 ~6 ~-45 ~-29 ~6 ~-45 minecraft:cherry_leaves[persistent=true]
-setblock ~-30 ~4 ~-41 minecraft:redstone_ore
 setblock ~-29 ~4 ~-41 minecraft:stone
+setblock ~-30 ~4 ~-41 minecraft:redstone_ore
 fill ~-28 ~4 ~-41 ~-28 ~4 ~-40 minecraft:grass_block
 fill ~-28 ~4 ~-35 ~-28 ~4 ~-33 minecraft:stone_bricks
 fill ~-28 ~8 ~-35 ~-28 ~9 ~-33 minecraft:stone_bricks
@@ -968,18 +969,18 @@ fill ~-30 ~4 ~-30 ~-30 ~5 ~-30 minecraft:stone_bricks
 fill ~-30 ~7 ~-30 ~-30 ~11 ~-30 minecraft:stone_bricks
 fill ~-30 ~13 ~-30 ~-30 ~17 ~-30 minecraft:stone_bricks
 setblock ~-30 ~19 ~-30 minecraft:stone_bricks
-fill ~-40 ~4 ~-27 ~-40 ~6 ~-27 minecraft:dark_oak_log
 fill ~-46 ~4 ~-27 ~-46 ~6 ~-27 minecraft:dark_oak_log
 fill ~-45 ~4 ~-27 ~-41 ~4 ~-27 minecraft:cobblestone
+fill ~-40 ~4 ~-27 ~-40 ~6 ~-27 minecraft:dark_oak_log
 setblock ~-45 ~4 ~-26 minecraft:chest[facing=south]
 fill ~-34 ~4 ~-27 ~-32 ~4 ~-25 minecraft:polished_andesite
 fill ~-34 ~8 ~-27 ~-32 ~8 ~-25 minecraft:polished_andesite
-fill ~-40 ~4 ~-26 ~-40 ~4 ~-25 minecraft:cobblestone
 fill ~-46 ~4 ~-26 ~-46 ~4 ~-25 minecraft:cobblestone
+fill ~-40 ~4 ~-26 ~-40 ~4 ~-25 minecraft:cobblestone
 setblock ~-30 ~5 ~-50 minecraft:cherry_leaves[persistent=true]
 fill ~-32 ~5 ~-49 ~-28 ~5 ~-48 minecraft:cherry_leaves[persistent=true]
-fill ~-33 ~5 ~-47 ~-31 ~5 ~-47 minecraft:cherry_leaves[persistent=true]
 fill ~-29 ~5 ~-47 ~-27 ~5 ~-47 minecraft:cherry_leaves[persistent=true]
+fill ~-33 ~5 ~-47 ~-31 ~5 ~-47 minecraft:cherry_leaves[persistent=true]
 fill ~-32 ~5 ~-46 ~-28 ~5 ~-45 minecraft:cherry_leaves[persistent=true]
 setblock ~-30 ~5 ~-44 minecraft:cherry_leaves[persistent=true]
 setblock ~-40 ~5 ~-35 minecraft:stone_bricks
@@ -1004,10 +1005,10 @@ fill ~-33 ~15 ~-28 ~-32 ~15 ~-28 minecraft:stone_bricks
 setblock ~-27 ~5 ~-28 minecraft:chiseled_stone_bricks
 setblock ~-34 ~5 ~-28 minecraft:glass_pane
 setblock ~-34 ~15 ~-28 minecraft:glass_pane
-fill ~-43 ~5 ~-27 ~-43 ~6 ~-27 minecraft:dark_oak_log
-fill ~-42 ~5 ~-27 ~-41 ~5 ~-27 minecraft:white_terracotta
 fill ~-45 ~5 ~-27 ~-44 ~5 ~-27 minecraft:white_terracotta
+fill ~-42 ~5 ~-27 ~-41 ~5 ~-27 minecraft:white_terracotta
 setblock ~-28 ~5 ~-27 minecraft:chiseled_stone_bricks
+fill ~-43 ~5 ~-27 ~-43 ~6 ~-27 minecraft:dark_oak_log
 fill ~-40 ~5 ~-26 ~-40 ~5 ~-25 minecraft:white_terracotta
 fill ~-40 ~9 ~-26 ~-40 ~9 ~-25 minecraft:white_terracotta
 fill ~-46 ~5 ~-26 ~-46 ~5 ~-25 minecraft:white_terracotta
@@ -1078,21 +1079,21 @@ fill ~-37 ~20 ~-29 ~-36 ~20 ~-29 minecraft:polished_andesite
 fill ~-31 ~6 ~-31 ~-25 ~6 ~-27 minecraft:stone_brick_slab[type=bottom]
 setblock ~-41 ~6 ~-27 minecraft:glass_pane
 setblock ~-45 ~6 ~-27 minecraft:glass_pane
-setblock ~-42 ~6 ~-27 minecraft:white_terracotta
 setblock ~-44 ~6 ~-27 minecraft:white_terracotta
+setblock ~-42 ~6 ~-27 minecraft:white_terracotta
 setblock ~-40 ~6 ~-26 minecraft:glass_pane
 setblock ~-46 ~6 ~-26 minecraft:glass_pane
 fill ~-31 ~6 ~-26 ~-27 ~6 ~-25 minecraft:stone_brick_slab[type=bottom]
 setblock ~-40 ~6 ~-25 minecraft:white_terracotta
 setblock ~-40 ~10 ~-25 minecraft:white_terracotta
-setblock ~-43 ~6 ~-25 minecraft:lantern[hanging=true]
 setblock ~-46 ~6 ~-25 minecraft:white_terracotta
 setblock ~-46 ~10 ~-25 minecraft:white_terracotta
+setblock ~-43 ~6 ~-25 minecraft:lantern[hanging=true]
 fill ~-31 ~7 ~-48 ~-29 ~7 ~-46 minecraft:cherry_leaves[persistent=true]
 fill ~-46 ~7 ~-27 ~-40 ~7 ~-27 minecraft:stripped_dark_oak_log[axis=x]
+fill ~-40 ~7 ~-26 ~-40 ~7 ~-25 minecraft:stripped_dark_oak_log[axis=x]
 fill ~-46 ~7 ~-26 ~-46 ~7 ~-25 minecraft:stripped_dark_oak_log[axis=x]
 fill ~-45 ~7 ~-26 ~-41 ~7 ~-25 minecraft:spruce_planks
-fill ~-40 ~7 ~-26 ~-40 ~7 ~-25 minecraft:stripped_dark_oak_log[axis=x]
 fill ~-47 ~8 ~-28 ~-39 ~8 ~-28 minecraft:spruce_stairs[facing=south,half=bottom]
 fill ~-41 ~8 ~-26 ~-41 ~12 ~-26 minecraft:bricks
 fill ~-40 ~8 ~-27 ~-40 ~8 ~-25 minecraft:white_terracotta
@@ -1117,7 +1118,7 @@ fill ~-32 ~12 ~-29 ~-31 ~12 ~-29 minecraft:polished_andesite
 fill ~-32 ~18 ~-29 ~-31 ~18 ~-29 minecraft:polished_andesite
 fill ~-32 ~20 ~-29 ~-31 ~20 ~-29 minecraft:polished_andesite
 fill ~-34 ~13 ~-38 ~-34 ~13 ~-30 minecraft:spruce_planks
-setblock ~-36 ~14 ~-35 minecraft:chest[facing=north]
+setblock ~-34 ~14 ~-35 minecraft:chest[facing=north]
 setblock ~-35 ~20 ~-39 minecraft:smooth_stone
 setblock ~-33 ~20 ~-39 minecraft:smooth_stone
 fill ~-37 ~20 ~-38 ~-31 ~20 ~-38 minecraft:smooth_stone
@@ -1128,7 +1129,8 @@ fill ~-37 ~20 ~-30 ~-31 ~20 ~-30 minecraft:smooth_stone
 fill ~-35 ~20 ~-29 ~-33 ~20 ~-29 minecraft:smooth_stone
 fill ~-36 ~21 ~-41 ~-32 ~21 ~-41 minecraft:deepslate_tiles
 fill ~-38 ~21 ~-40 ~-30 ~21 ~-40 minecraft:deepslate_tiles
-fill ~-39 ~21 ~-39 ~-29 ~21 ~-39 minecraft:deepslate_tiles
+fill ~-33 ~21 ~-39 ~-29 ~21 ~-39 minecraft:deepslate_tiles
+fill ~-39 ~21 ~-39 ~-35 ~21 ~-39 minecraft:deepslate_tiles
 fill ~-40 ~21 ~-38 ~-28 ~21 ~-37 minecraft:deepslate_tiles
 fill ~-41 ~21 ~-36 ~-27 ~21 ~-32 minecraft:deepslate_tiles
 fill ~-40 ~21 ~-31 ~-28 ~21 ~-30 minecraft:deepslate_tiles
@@ -1136,7 +1138,8 @@ fill ~-39 ~21 ~-29 ~-29 ~21 ~-29 minecraft:deepslate_tiles
 fill ~-38 ~21 ~-28 ~-30 ~21 ~-28 minecraft:deepslate_tiles
 fill ~-36 ~21 ~-27 ~-32 ~21 ~-27 minecraft:deepslate_tiles
 fill ~-35 ~22 ~-40 ~-33 ~22 ~-40 minecraft:deepslate_tiles
-fill ~-37 ~22 ~-39 ~-31 ~22 ~-39 minecraft:deepslate_tiles
+fill ~-33 ~22 ~-39 ~-31 ~22 ~-39 minecraft:deepslate_tiles
+fill ~-37 ~22 ~-39 ~-35 ~22 ~-39 minecraft:deepslate_tiles
 fill ~-38 ~22 ~-38 ~-30 ~22 ~-38 minecraft:deepslate_tiles
 fill ~-39 ~22 ~-37 ~-29 ~22 ~-36 minecraft:deepslate_tiles
 fill ~-40 ~22 ~-35 ~-28 ~22 ~-33 minecraft:deepslate_tiles

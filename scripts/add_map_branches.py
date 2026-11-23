@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""OA Battle Royale 1.9.230: マップごとの分岐に、天空島（id 3, oa:br_sky）と異界（id 4, oa:br_end）を足す。
+"""OA Battle Royale 1.9.230: マップごとの分岐に、天空島（id 3, oa:br_sky）とエンド（id 4, oa:br_end）を足す。
 洞窟（id 2, oa:br_cave）の行を手本に機械的に足す（1.9.167 で洞窟を足したときと同じやり方。HANDOFF 参照）。
 使い方: py -3 scripts/add_map_branches.py <repo root> [--apply]   （--apply なしなら変更点を表示するだけ）
 二度実行しても重ならない（すでに足した行があれば飛ばす）。

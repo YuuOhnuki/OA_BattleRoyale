@@ -4,15 +4,21 @@ execute positioned ~40 ~-40 ~104 run kill @e[type=minecraft:marker,tag=br.chest,
 execute positioned ~40 ~-40 ~104 run kill @e[type=minecraft:marker,tag=br.ore,dx=31,dy=40,dz=31]
 scoreboard players set #stage oa.map2 2
 scoreboard players set #expectedc oa.map2 0
-scoreboard players set #expectedo oa.map2 4
+scoreboard players set #expectedo oa.map2 10
 scoreboard players set #localc oa.map2 0
 scoreboard players set #localo oa.map2 0
 execute positioned ~47 ~-29 ~119 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute positioned ~60 ~-29 ~106 if block ~ ~ ~ minecraft:redstone_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_3
 execute positioned ~60 ~-29 ~116 if block ~ ~ ~ minecraft:redstone_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_3
 execute positioned ~45 ~-28 ~113 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
+execute positioned ~47 ~-28 ~119 if block ~ ~ ~ minecraft:redstone_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_3
+execute positioned ~47 ~-30 ~119 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
+execute positioned ~48 ~-29 ~119 if block ~ ~ ~ minecraft:redstone_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_3
+execute positioned ~46 ~-29 ~119 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
+execute positioned ~48 ~-28 ~119 if block ~ ~ ~ minecraft:redstone_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_3
+execute positioned ~54 ~-29 ~116 if block ~ ~ ~ minecraft:redstone_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_3
 execute unless score #localc oa.map2 matches 0 run return run function oa:map/internal/job/failed
-execute unless score #localo oa.map2 matches 4 run return run function oa:map/internal/job/failed
+execute unless score #localo oa.map2 matches 10 run return run function oa:map/internal/job/failed
 scoreboard players operation #chests oa.map2 += #localc oa.map2
 scoreboard players operation #ores oa.map2 += #localo oa.map2
 function oa:maps/cave/tiles/release/86

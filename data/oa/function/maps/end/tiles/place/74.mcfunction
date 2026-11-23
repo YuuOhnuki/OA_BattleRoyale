@@ -446,36 +446,36 @@ fill ~-23 ~3 ~88 ~-20 ~3 ~89 minecraft:end_stone
 fill ~-22 ~3 ~90 ~-20 ~3 ~90 minecraft:end_stone
 fill ~-23 ~4 ~87 ~-21 ~4 ~88 minecraft:end_stone
 fill ~-22 ~4 ~89 ~-21 ~4 ~89 minecraft:end_stone
-execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~1 ~78 ~0 ~7 ~78 minecraft:purpur_block
-execute if score #sv2 oa.map2 matches 0 run fill ~1 ~1 ~78 ~1 ~9 ~78 minecraft:purpur_pillar
-execute if score #sv2 oa.map2 matches 0 run fill ~-7 ~1 ~78 ~-7 ~9 ~78 minecraft:purpur_pillar
+execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~0 ~79 ~-1 ~0 ~84 minecraft:quartz_bricks
+execute if score #sv2 oa.map2 matches 0 run fill ~-1 ~1 ~79 ~-1 ~4 ~79 minecraft:quartz_pillar
+execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~1 ~79 ~-6 ~2 ~79 minecraft:quartz_pillar
+execute if score #sv2 oa.map2 matches 0 run fill ~-5 ~1 ~79 ~-2 ~2 ~79 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run fill ~-12 ~1 ~79 ~-12 ~1 ~80 minecraft:white_concrete
-execute if score #sv2 oa.map2 matches 0 run setblock ~-5 ~1 ~80 minecraft:chest[facing=north]
-execute if score #sv2 oa.map2 matches 0 run setblock ~-5 ~5 ~80 minecraft:chest[facing=north]
+execute if score #sv2 oa.map2 matches 0 run setblock ~-2 ~1 ~80 minecraft:chest[facing=north]
+execute if score #sv2 oa.map2 matches 0 run setblock ~-5 ~1 ~80 minecraft:chest[facing=south]
+execute if score #sv2 oa.map2 matches 0 run fill ~-1 ~1 ~80 ~-1 ~3 ~80 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run setblock ~3 ~1 ~81 minecraft:white_concrete
-execute if score #sv2 oa.map2 matches 0 run setblock ~0 ~1 ~81 minecraft:white_concrete
-execute if score #sv2 oa.map2 matches 0 run fill ~-3 ~1 ~81 ~-2 ~1 ~81 minecraft:white_concrete
+execute if score #sv2 oa.map2 matches 0 run fill ~-3 ~1 ~81 ~1 ~1 ~81 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run setblock ~-12 ~1 ~81 minecraft:smooth_quartz
-execute if score #sv2 oa.map2 matches 0 run setblock ~-1 ~1 ~81 minecraft:smooth_quartz
 execute if score #sv2 oa.map2 matches 0 run setblock ~2 ~1 ~81 minecraft:smooth_quartz
 execute if score #sv2 oa.map2 matches 0 run fill ~6 ~1 ~82 ~7 ~1 ~82 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run setblock ~-13 ~1 ~82 minecraft:coal_ore
 execute if score #sv2 oa.map2 matches 0 run setblock ~5 ~1 ~82 minecraft:smooth_quartz
 execute if score #sv2 oa.map2 matches 0 run fill ~3 ~1 ~82 ~4 ~1 ~82 minecraft:white_concrete
+execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~1 ~80 ~-6 ~1 ~83 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run fill ~-12 ~1 ~82 ~-12 ~1 ~83 minecraft:white_concrete
+execute if score #sv2 oa.map2 matches 0 run fill ~-1 ~1 ~82 ~-1 ~1 ~83 minecraft:white_concrete
+execute if score #sv2 oa.map2 matches 0 run fill ~-1 ~3 ~82 ~-1 ~3 ~83 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run setblock ~-14 ~1 ~83 minecraft:end_stone
 execute if score #sv2 oa.map2 matches 0 run setblock ~-14 ~1 ~84 minecraft:coal_ore
-execute if score #sv2 oa.map2 matches 0 run fill ~1 ~1 ~79 ~1 ~7 ~85 minecraft:purpur_block
-execute if score #sv2 oa.map2 matches 0 run fill ~-7 ~1 ~79 ~-7 ~3 ~85 minecraft:purpur_block
-execute if score #sv2 oa.map2 matches 0 run fill ~0 ~1 ~85 ~0 ~4 ~85 minecraft:ladder[facing=north]
+execute if score #sv2 oa.map2 matches 0 run fill ~-1 ~1 ~84 ~-1 ~4 ~84 minecraft:quartz_pillar
+execute if score #sv2 oa.map2 matches 0 run fill ~-3 ~1 ~84 ~-3 ~2 ~84 minecraft:cave_air
+execute if score #sv2 oa.map2 matches 0 run fill ~-5 ~1 ~84 ~-4 ~1 ~84 minecraft:white_concrete
+execute if score #sv2 oa.map2 matches 0 run setblock ~-2 ~1 ~84 minecraft:white_concrete
+execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~1 ~84 ~-6 ~4 ~84 minecraft:quartz_pillar
 execute if score #sv2 oa.map2 matches 0 run fill ~-13 ~1 ~85 ~-13 ~1 ~86 minecraft:white_concrete
-execute if score #sv2 oa.map2 matches 0 run fill ~-1 ~1 ~86 ~0 ~3 ~86 minecraft:purpur_block
-execute if score #sv2 oa.map2 matches 0 run fill ~-7 ~1 ~86 ~-7 ~9 ~86 minecraft:purpur_pillar
-execute if score #sv2 oa.map2 matches 0 run fill ~-3 ~1 ~86 ~-2 ~3 ~86 minecraft:cave_air
-execute if score #sv2 oa.map2 matches 0 run fill ~1 ~1 ~86 ~1 ~9 ~86 minecraft:purpur_pillar
 execute if score #sv2 oa.map2 matches 0 run setblock ~5 ~1 ~86 minecraft:coal_ore
 execute if score #sv2 oa.map2 matches 0 run setblock ~4 ~1 ~86 minecraft:end_stone
-execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~1 ~86 ~-4 ~3 ~86 minecraft:purpur_block
 execute if score #sv2 oa.map2 matches 0 run setblock ~-11 ~1 ~86 minecraft:end_stone
 execute if score #sv2 oa.map2 matches 0 run setblock ~4 ~1 ~87 minecraft:smooth_quartz
 execute if score #sv2 oa.map2 matches 0 run setblock ~-13 ~1 ~87 minecraft:smooth_quartz
@@ -492,19 +492,29 @@ execute if score #sv2 oa.map2 matches 0 run setblock ~-3 ~1 ~91 minecraft:smooth
 execute if score #sv2 oa.map2 matches 0 run fill ~-3 ~1 ~92 ~-3 ~1 ~93 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run setblock ~7 ~1 ~94 minecraft:end_stone
 execute if score #sv2 oa.map2 matches 0 run setblock ~-3 ~1 ~94 minecraft:smooth_quartz
+execute if score #sv2 oa.map2 matches 0 run setblock ~7 ~1 ~95 minecraft:coal_ore
 execute if score #sv2 oa.map2 matches 0 run setblock ~2 ~1 ~96 minecraft:chest[facing=north]
 execute if score #sv2 oa.map2 matches 0 run setblock ~-12 ~2 ~79 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run setblock ~-12 ~2 ~80 minecraft:smooth_quartz
+execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~2 ~80 ~-6 ~2 ~81 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run setblock ~-3 ~2 ~81 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run setblock ~-2 ~2 ~81 minecraft:smooth_quartz
 execute if score #sv2 oa.map2 matches 0 run fill ~-1 ~2 ~81 ~0 ~2 ~81 minecraft:white_concrete
+execute if score #sv2 oa.map2 matches 0 run setblock ~1 ~2 ~81 minecraft:smooth_quartz
 execute if score #sv2 oa.map2 matches 0 run fill ~2 ~2 ~81 ~3 ~2 ~81 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run fill ~-12 ~2 ~81 ~-12 ~2 ~82 minecraft:white_concrete
+execute if score #sv2 oa.map2 matches 0 run setblock ~-1 ~2 ~82 minecraft:light_blue_stained_glass_pane
 execute if score #sv2 oa.map2 matches 0 run setblock ~3 ~2 ~82 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run setblock ~4 ~2 ~82 minecraft:smooth_quartz
+execute if score #sv2 oa.map2 matches 0 run setblock ~-6 ~2 ~82 minecraft:light_blue_stained_glass_pane
 execute if score #sv2 oa.map2 matches 0 run setblock ~7 ~2 ~82 minecraft:smooth_quartz
 execute if score #sv2 oa.map2 matches 0 run setblock ~6 ~2 ~82 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run setblock ~-12 ~2 ~83 minecraft:smooth_quartz
+execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~2 ~83 ~-6 ~4 ~83 minecraft:white_concrete
+execute if score #sv2 oa.map2 matches 0 run setblock ~-1 ~2 ~83 minecraft:white_concrete
+execute if score #sv2 oa.map2 matches 0 run setblock ~-4 ~2 ~84 minecraft:white_concrete
+execute if score #sv2 oa.map2 matches 0 run setblock ~-5 ~2 ~84 minecraft:light_blue_stained_glass_pane
+execute if score #sv2 oa.map2 matches 0 run setblock ~-2 ~2 ~84 minecraft:light_blue_stained_glass_pane
 execute if score #sv2 oa.map2 matches 0 run setblock ~-13 ~2 ~85 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run setblock ~-13 ~2 ~86 minecraft:smooth_quartz
 execute if score #sv2 oa.map2 matches 0 run setblock ~6 ~2 ~87 minecraft:smooth_quartz
@@ -521,12 +531,14 @@ execute if score #sv2 oa.map2 matches 0 run setblock ~-3 ~2 ~93 minecraft:smooth
 execute if score #sv2 oa.map2 matches 0 run setblock ~-3 ~2 ~94 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run setblock ~-5 ~2 ~97 minecraft:chest[facing=north]
 execute if score #sv2 oa.map2 matches 0 run setblock ~-12 ~3 ~79 minecraft:smooth_quartz
+execute if score #sv2 oa.map2 matches 0 run fill ~-2 ~3 ~79 ~-2 ~4 ~79 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run fill ~-12 ~3 ~80 ~-12 ~3 ~81 minecraft:white_concrete
-execute if score #sv2 oa.map2 matches 0 run setblock ~-3 ~3 ~81 minecraft:smooth_quartz
-execute if score #sv2 oa.map2 matches 0 run setblock ~-2 ~3 ~81 minecraft:white_concrete
+execute if score #sv2 oa.map2 matches 0 run fill ~-2 ~3 ~81 ~-1 ~3 ~81 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run setblock ~2 ~3 ~81 minecraft:white_concrete
+execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~3 ~79 ~-3 ~9 ~82 minecraft:cave_air
 execute if score #sv2 oa.map2 matches 0 run fill ~3 ~3 ~81 ~3 ~3 ~82 minecraft:smooth_quartz
 execute if score #sv2 oa.map2 matches 0 run setblock ~7 ~3 ~82 minecraft:white_concrete
+execute if score #sv2 oa.map2 matches 0 run fill ~-5 ~3 ~84 ~-2 ~4 ~84 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run setblock ~-13 ~3 ~85 minecraft:smooth_quartz
 execute if score #sv2 oa.map2 matches 0 run fill ~-13 ~3 ~86 ~-13 ~3 ~87 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run setblock ~6 ~3 ~87 minecraft:white_concrete
@@ -535,15 +547,74 @@ execute if score #sv2 oa.map2 matches 0 run setblock ~5 ~3 ~87 minecraft:smooth_
 execute if score #sv2 oa.map2 matches 0 run fill ~3 ~3 ~87 ~4 ~3 ~87 minecraft:white_concrete
 execute if score #sv2 oa.map2 matches 0 run setblock ~-3 ~3 ~89 minecraft:smooth_quartz
 execute if score #sv2 oa.map2 matches 0 run fill ~-3 ~3 ~93 ~-3 ~3 ~94 minecraft:white_concrete
-execute if score #sv2 oa.map2 matches 0 run fill ~-7 ~4 ~79 ~-7 ~7 ~81 minecraft:purpur_block
-execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~4 ~79 ~0 ~4 ~83 minecraft:quartz_bricks
-execute if score #sv2 oa.map2 matches 0 run fill ~-7 ~4 ~82 ~-7 ~7 ~84 minecraft:cave_air
-execute if score #sv2 oa.map2 matches 0 run fill ~-1 ~4 ~84 ~0 ~4 ~84 minecraft:cave_air
-execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~4 ~84 ~-2 ~4 ~85 minecraft:quartz_bricks
-execute if score #sv2 oa.map2 matches 0 run fill ~-7 ~4 ~85 ~-7 ~7 ~85 minecraft:purpur_block
-execute if score #sv2 oa.map2 matches 0 run setblock ~-1 ~4 ~85 minecraft:cave_air
-execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~4 ~86 ~0 ~7 ~86 minecraft:purpur_block
-execute if score #sv2 oa.map2 matches 0 run setblock ~-3 ~7 ~82 minecraft:end_rod[facing=down]
-execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~8 ~78 ~0 ~8 ~78 minecraft:purpur_slab[type=bottom]
-execute if score #sv2 oa.map2 matches 0 run fill ~-7 ~8 ~79 ~1 ~8 ~85 minecraft:purpur_slab[type=bottom]
-execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~8 ~86 ~0 ~8 ~86 minecraft:purpur_slab[type=bottom]
+execute if score #sv2 oa.map2 matches 0 run fill ~-1 ~4 ~80 ~-1 ~4 ~83 minecraft:white_concrete
+execute if score #sv2 oa.map2 matches 0 run setblock ~0 ~5 ~78 minecraft:sea_lantern
+execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~5 ~78 ~-1 ~5 ~78 minecraft:smooth_quartz
+execute if score #sv2 oa.map2 matches 0 run setblock ~-7 ~5 ~78 minecraft:sea_lantern
+execute if score #sv2 oa.map2 matches 0 run fill ~-7 ~5 ~79 ~-7 ~5 ~82 minecraft:smooth_quartz
+execute if score #sv2 oa.map2 matches 0 run fill ~-2 ~5 ~79 ~0 ~5 ~82 minecraft:smooth_quartz
+execute if score #sv2 oa.map2 matches 0 run fill ~-7 ~5 ~83 ~0 ~5 ~84 minecraft:smooth_quartz
+execute if score #sv2 oa.map2 matches 0 run setblock ~0 ~5 ~85 minecraft:sea_lantern
+execute if score #sv2 oa.map2 matches 0 run fill ~-6 ~5 ~85 ~-1 ~5 ~85 minecraft:smooth_quartz
+execute if score #sv2 oa.map2 matches 0 run setblock ~-7 ~5 ~85 minecraft:sea_lantern
+execute if score #sv2 oa.map2 matches 1 run fill ~-6 ~-4 ~79 ~0 ~-4 ~85 minecraft:quartz_bricks
+execute if score #sv2 oa.map2 matches 1 run fill ~-6 ~-3 ~79 ~0 ~-3 ~79 minecraft:bookshelf
+execute if score #sv2 oa.map2 matches 1 run fill ~-6 ~-3 ~80 ~0 ~-3 ~81 minecraft:cave_air
+execute if score #sv2 oa.map2 matches 1 run fill ~-4 ~-3 ~82 ~0 ~-3 ~82 minecraft:cave_air
+execute if score #sv2 oa.map2 matches 1 run setblock ~-5 ~-3 ~82 minecraft:chest[facing=north]
+execute if score #sv2 oa.map2 matches 1 run setblock ~-6 ~-3 ~82 minecraft:cave_air
+execute if score #sv2 oa.map2 matches 1 run fill ~-6 ~-3 ~83 ~0 ~-3 ~83 minecraft:cave_air
+execute if score #sv2 oa.map2 matches 1 run fill ~-3 ~-3 ~84 ~-3 ~1 ~84 minecraft:ladder[facing=north]
+execute if score #sv2 oa.map2 matches 1 run fill ~-6 ~-3 ~84 ~-4 ~-1 ~85 minecraft:cave_air
+execute if score #sv2 oa.map2 matches 1 run fill ~-2 ~-3 ~84 ~0 ~-1 ~85 minecraft:cave_air
+execute if score #sv2 oa.map2 matches 1 run fill ~-3 ~-3 ~85 ~-3 ~0 ~85 minecraft:end_stone_bricks
+execute if score #sv2 oa.map2 matches 1 run fill ~-6 ~-2 ~79 ~0 ~-1 ~83 minecraft:cave_air
+execute if score #sv2 oa.map2 matches 1 run fill ~-11 ~0 ~74 ~5 ~0 ~83 minecraft:quartz_bricks
+execute if score #sv2 oa.map2 matches 1 run fill ~-2 ~0 ~84 ~5 ~0 ~85 minecraft:quartz_bricks
+execute if score #sv2 oa.map2 matches 1 run fill ~-11 ~0 ~84 ~-4 ~0 ~85 minecraft:quartz_bricks
+execute if score #sv2 oa.map2 matches 1 run fill ~-11 ~0 ~86 ~5 ~0 ~90 minecraft:quartz_bricks
+execute if score #sv2 oa.map2 matches 1 run fill ~-10 ~1 ~75 ~-10 ~6 ~75 minecraft:end_stone_bricks
+execute if score #sv2 oa.map2 matches 1 run fill ~4 ~1 ~75 ~4 ~6 ~75 minecraft:end_stone_bricks
+execute if score #sv2 oa.map2 matches 1 run setblock ~1 ~1 ~82 minecraft:chest[facing=north]
+execute if score #sv2 oa.map2 matches 1 run setblock ~-7 ~1 ~82 minecraft:chest[facing=north]
+execute if score #sv2 oa.map2 matches 1 run setblock ~-19 ~1 ~83 minecraft:chest[facing=north]
+execute if score #sv2 oa.map2 matches 1 run setblock ~1 ~1 ~84 minecraft:chest[facing=north]
+execute if score #sv2 oa.map2 matches 1 run setblock ~-3 ~1 ~85 minecraft:stone_bricks
+execute if score #sv2 oa.map2 matches 1 run setblock ~4 ~1 ~88 minecraft:coal_ore
+execute if score #sv2 oa.map2 matches 1 run setblock ~-3 ~1 ~89 minecraft:chest[facing=north]
+execute if score #sv2 oa.map2 matches 1 run fill ~-10 ~1 ~89 ~-10 ~6 ~89 minecraft:end_stone_bricks
+execute if score #sv2 oa.map2 matches 1 run fill ~4 ~1 ~89 ~4 ~6 ~89 minecraft:end_stone_bricks
+execute if score #sv2 oa.map2 matches 1 run fill ~-4 ~1 ~93 ~-2 ~1 ~93 minecraft:coal_ore
+execute if score #sv2 oa.map2 matches 1 run setblock ~-3 ~1 ~94 minecraft:coal_ore
+execute if score #sv2 oa.map2 matches 1 run fill ~-3 ~2 ~84 ~-3 ~3 ~84 minecraft:cave_air
+execute if score #sv2 oa.map2 matches 1 run setblock ~-20 ~3 ~86 minecraft:chest[facing=north]
+execute if score #sv2 oa.map2 matches 1 run setblock ~4 ~7 ~75 minecraft:end_rod[facing=up]
+execute if score #sv2 oa.map2 matches 1 run setblock ~-10 ~7 ~75 minecraft:end_rod[facing=up]
+execute if score #sv2 oa.map2 matches 1 run setblock ~4 ~7 ~89 minecraft:end_rod[facing=up]
+execute if score #sv2 oa.map2 matches 1 run setblock ~-10 ~7 ~89 minecraft:end_rod[facing=up]
+execute if score #sv2 oa.map2 matches 2 run fill ~-11 ~0 ~74 ~5 ~0 ~90 minecraft:quartz_bricks
+execute if score #sv2 oa.map2 matches 2 run setblock ~-1 ~1 ~72 minecraft:chest[facing=north]
+execute if score #sv2 oa.map2 matches 2 run fill ~-10 ~1 ~75 ~-10 ~6 ~75 minecraft:end_stone_bricks
+execute if score #sv2 oa.map2 matches 2 run fill ~4 ~1 ~75 ~4 ~6 ~75 minecraft:end_stone_bricks
+execute if score #sv2 oa.map2 matches 2 run setblock ~-2 ~1 ~79 minecraft:chest[facing=north]
+execute if score #sv2 oa.map2 matches 2 run setblock ~4 ~1 ~80 minecraft:end_stone
+execute if score #sv2 oa.map2 matches 2 run fill ~1 ~1 ~80 ~1 ~4 ~80 minecraft:crying_obsidian
+execute if score #sv2 oa.map2 matches 2 run fill ~-7 ~1 ~80 ~-7 ~4 ~80 minecraft:crying_obsidian
+execute if score #sv2 oa.map2 matches 2 run setblock ~5 ~1 ~80 minecraft:coal_ore
+execute if score #sv2 oa.map2 matches 2 run setblock ~1 ~1 ~82 minecraft:chest[facing=north]
+execute if score #sv2 oa.map2 matches 2 run setblock ~-7 ~1 ~82 minecraft:chest[facing=north]
+execute if score #sv2 oa.map2 matches 2 run setblock ~5 ~1 ~85 minecraft:coal_ore
+execute if score #sv2 oa.map2 matches 2 run setblock ~7 ~1 ~88 minecraft:end_stone
+execute if score #sv2 oa.map2 matches 2 run fill ~-10 ~1 ~89 ~-10 ~6 ~89 minecraft:end_stone_bricks
+execute if score #sv2 oa.map2 matches 2 run setblock ~-7 ~1 ~89 minecraft:end_stone
+execute if score #sv2 oa.map2 matches 2 run fill ~4 ~1 ~89 ~4 ~6 ~89 minecraft:end_stone_bricks
+execute if score #sv2 oa.map2 matches 2 run fill ~-7 ~1 ~90 ~-5 ~1 ~90 minecraft:coal_ore
+execute if score #sv2 oa.map2 matches 2 run setblock ~-6 ~1 ~91 minecraft:coal_ore
+execute if score #sv2 oa.map2 matches 2 run setblock ~-9 ~1 ~93 minecraft:chest[facing=north]
+execute if score #sv2 oa.map2 matches 2 run setblock ~-6 ~1 ~95 minecraft:chest[facing=north]
+execute if score #sv2 oa.map2 matches 2 run setblock ~-2 ~1 ~96 minecraft:chest[facing=north]
+execute if score #sv2 oa.map2 matches 2 run fill ~-7 ~5 ~80 ~1 ~5 ~80 minecraft:obsidian
+execute if score #sv2 oa.map2 matches 2 run setblock ~4 ~7 ~75 minecraft:end_rod[facing=up]
+execute if score #sv2 oa.map2 matches 2 run setblock ~-10 ~7 ~75 minecraft:end_rod[facing=up]
+execute if score #sv2 oa.map2 matches 2 run setblock ~4 ~7 ~89 minecraft:end_rod[facing=up]
+execute if score #sv2 oa.map2 matches 2 run setblock ~-10 ~7 ~89 minecraft:end_rod[facing=up]

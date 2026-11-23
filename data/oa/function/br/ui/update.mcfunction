@@ -25,6 +25,7 @@ execute store result storage oa:br_ui left_m int 1 run scoreboard players get #m
 execute store result storage oa:br_ui left_s int 1 run scoreboard players get #s br.tmp
 data modify storage oa:br_ui left_pad set value ""
 execute if score #s br.tmp matches ..9 run data modify storage oa:br_ui left_pad set value "0"
+function oa:br/ui/mission
 data modify storage oa:br_ui view set value 0
 function oa:br/ui/rows with storage oa:br_ui
 data modify storage oa:br_ui view set value 1

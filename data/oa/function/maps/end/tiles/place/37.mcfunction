@@ -84,4 +84,6 @@ setblock ~72 ~1 ~-25 minecraft:white_stained_glass_pane
 setblock ~72 ~2 ~-46 minecraft:end_stone
 fill ~72 ~3 ~-53 ~73 ~3 ~-49 minecraft:end_stone
 fill ~72 ~4 ~-51 ~73 ~4 ~-51 minecraft:end_stone
-execute if score #sv7 oa.map2 matches 0 run setblock ~72 ~5 ~-51 minecraft:coal_ore
+execute if score #sv7 oa.map2 matches 0 run setblock ~72 ~4 ~-50 minecraft:coal_ore
+execute if score #sv7 oa.map2 matches 0 run fill ~72 ~4 ~-49 ~73 ~4 ~-49 minecraft:coal_ore
+execute if score #sv7 oa.map2 matches 2 run setblock ~72 ~2 ~-43 minecraft:coal_ore

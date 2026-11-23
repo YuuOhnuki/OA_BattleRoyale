@@ -111,6 +111,7 @@ fill ~47 ~1 ~1 ~48 ~1 ~1 minecraft:end_stone_brick_wall
 fill ~49 ~1 ~2 ~60 ~1 ~2 minecraft:end_stone_brick_wall
 fill ~60 ~1 ~3 ~64 ~1 ~3 minecraft:end_stone_brick_wall
 setblock ~47 ~1 ~6 minecraft:end_stone_brick_wall
+setblock ~51 ~1 ~6 minecraft:chest[facing=north]
 fill ~48 ~1 ~7 ~59 ~1 ~7 minecraft:end_stone_brick_wall
 setblock ~69 ~2 ~-21 minecraft:end_rod
 fill ~41 ~2 ~-18 ~41 ~7 ~-18 minecraft:chorus_plant[up=true,down=true]

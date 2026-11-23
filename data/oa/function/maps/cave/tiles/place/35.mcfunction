@@ -449,10 +449,12 @@ fill ~14 ~-28 ~-35 ~20 ~-28 ~-35 minecraft:stone
 fill ~21 ~-28 ~-35 ~39 ~-28 ~-35 minecraft:tuff
 fill ~20 ~-28 ~-34 ~39 ~-28 ~-34 minecraft:tuff
 fill ~13 ~-28 ~-34 ~19 ~-28 ~-34 minecraft:stone
+setblock ~8 ~-28 ~-33 minecraft:stone
+setblock ~8 ~-26 ~-33 minecraft:stone
+setblock ~8 ~-19 ~-33 minecraft:stone
 fill ~19 ~-28 ~-33 ~39 ~-28 ~-32 minecraft:tuff
 fill ~13 ~-28 ~-33 ~18 ~-28 ~-32 minecraft:stone
-fill ~8 ~-28 ~-33 ~8 ~-28 ~-32 minecraft:stone
-fill ~8 ~-26 ~-33 ~8 ~-23 ~-32 minecraft:stone
+setblock ~8 ~-28 ~-32 minecraft:redstone_ore
 fill ~13 ~-28 ~-31 ~17 ~-28 ~-31 minecraft:stone
 fill ~18 ~-28 ~-31 ~39 ~-28 ~-31 minecraft:tuff
 fill ~17 ~-28 ~-30 ~39 ~-28 ~-30 minecraft:tuff
@@ -508,9 +510,7 @@ setblock ~13 ~-27 ~-34 minecraft:redstone_ore
 fill ~14 ~-27 ~-34 ~18 ~-27 ~-34 minecraft:stone
 fill ~13 ~-27 ~-33 ~17 ~-27 ~-33 minecraft:stone
 fill ~18 ~-27 ~-33 ~39 ~-27 ~-33 minecraft:tuff
-setblock ~8 ~-27 ~-33 minecraft:stone
-setblock ~8 ~-19 ~-33 minecraft:stone
-setblock ~8 ~-27 ~-32 minecraft:coal_ore
+fill ~8 ~-27 ~-33 ~8 ~-27 ~-32 minecraft:coal_ore
 fill ~17 ~-27 ~-32 ~39 ~-27 ~-32 minecraft:tuff
 fill ~13 ~-27 ~-32 ~16 ~-27 ~-32 minecraft:stone
 fill ~13 ~-27 ~-31 ~15 ~-27 ~-31 minecraft:stone
@@ -549,6 +549,7 @@ fill ~13 ~-26 ~-34 ~17 ~-26 ~-34 minecraft:stone
 fill ~18 ~-26 ~-34 ~39 ~-26 ~-34 minecraft:tuff
 fill ~17 ~-26 ~-33 ~39 ~-26 ~-33 minecraft:tuff
 fill ~13 ~-26 ~-33 ~16 ~-26 ~-33 minecraft:stone
+setblock ~8 ~-26 ~-32 minecraft:coal_ore
 fill ~13 ~-26 ~-32 ~15 ~-26 ~-32 minecraft:stone
 fill ~16 ~-26 ~-32 ~39 ~-26 ~-32 minecraft:tuff
 fill ~15 ~-26 ~-31 ~39 ~-26 ~-31 minecraft:tuff
@@ -579,6 +580,7 @@ fill ~17 ~-25 ~-34 ~39 ~-25 ~-34 minecraft:tuff
 fill ~13 ~-25 ~-34 ~16 ~-25 ~-34 minecraft:stone
 fill ~13 ~-25 ~-33 ~15 ~-25 ~-33 minecraft:stone
 fill ~16 ~-25 ~-33 ~39 ~-25 ~-33 minecraft:tuff
+fill ~8 ~-25 ~-33 ~8 ~-23 ~-32 minecraft:stone
 fill ~15 ~-25 ~-32 ~39 ~-25 ~-32 minecraft:tuff
 fill ~13 ~-25 ~-32 ~14 ~-25 ~-32 minecraft:stone
 setblock ~13 ~-25 ~-31 minecraft:stone

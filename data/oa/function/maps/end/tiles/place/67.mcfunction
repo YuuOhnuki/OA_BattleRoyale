@@ -177,44 +177,15 @@ fill ~95 ~4 ~68 ~97 ~4 ~68 minecraft:end_stone
 fill ~94 ~4 ~69 ~98 ~4 ~69 minecraft:end_stone
 fill ~93 ~4 ~70 ~99 ~4 ~70 minecraft:end_stone
 fill ~94 ~4 ~71 ~98 ~4 ~71 minecraft:end_stone
-execute if score #sv1 oa.map2 matches 0 run fill ~72 ~2 ~53 ~72 ~4 ~53 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv1 oa.map2 matches 0 run fill ~75 ~3 ~54 ~75 ~6 ~54 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~73 ~4 ~53 minecraft:chorus_plant[up=true]
-execute if score #sv1 oa.map2 matches 0 run fill ~76 ~4 ~57 ~76 ~7 ~57 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~76 ~10 ~57 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv1 oa.map2 matches 0 run fill ~73 ~5 ~53 ~73 ~6 ~53 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~72 ~5 ~53 minecraft:chorus_flower[age=5]
-execute if score #sv1 oa.map2 matches 0 run setblock ~73 ~6 ~52 minecraft:chorus_plant[up=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~74 ~6 ~53 minecraft:chorus_plant[up=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~76 ~6 ~54 minecraft:chorus_plant[up=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~73 ~6 ~54 minecraft:chorus_plant[up=true]
-execute if score #sv1 oa.map2 matches 0 run fill ~73 ~7 ~52 ~73 ~8 ~52 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv1 oa.map2 matches 0 run fill ~74 ~7 ~53 ~74 ~8 ~53 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~73 ~7 ~53 minecraft:chorus_flower[age=5]
-execute if score #sv1 oa.map2 matches 0 run setblock ~76 ~7 ~54 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~75 ~7 ~54 minecraft:chorus_flower[age=5]
-execute if score #sv1 oa.map2 matches 0 run fill ~73 ~7 ~54 ~73 ~8 ~54 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv1 oa.map2 matches 0 run fill ~76 ~7 ~55 ~76 ~7 ~56 minecraft:chorus_plant[up=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~75 ~7 ~57 minecraft:chorus_plant[up=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~76 ~7 ~58 minecraft:chorus_plant[up=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~76 ~8 ~54 minecraft:chorus_flower[age=5]
-execute if score #sv1 oa.map2 matches 0 run fill ~76 ~8 ~55 ~76 ~9 ~56 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~76 ~8 ~57 minecraft:chorus_flower[age=5]
-execute if score #sv1 oa.map2 matches 0 run setblock ~76 ~11 ~57 minecraft:chorus_flower[age=5]
-execute if score #sv1 oa.map2 matches 0 run setblock ~75 ~8 ~57 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv1 oa.map2 matches 0 run fill ~76 ~8 ~58 ~76 ~9 ~58 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~73 ~9 ~52 minecraft:chorus_flower[age=5]
-execute if score #sv1 oa.map2 matches 0 run setblock ~74 ~9 ~53 minecraft:chorus_flower[age=5]
-execute if score #sv1 oa.map2 matches 0 run setblock ~73 ~9 ~54 minecraft:chorus_flower[age=5]
-execute if score #sv1 oa.map2 matches 0 run setblock ~75 ~9 ~57 minecraft:chorus_flower[age=5]
-execute if score #sv1 oa.map2 matches 0 run setblock ~76 ~9 ~57 minecraft:chorus_plant[up=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~75 ~9 ~58 minecraft:chorus_plant[up=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~77 ~9 ~58 minecraft:chorus_plant[up=true]
-execute if score #sv1 oa.map2 matches 0 run fill ~76 ~10 ~55 ~76 ~10 ~56 minecraft:chorus_flower[age=5]
-execute if score #sv1 oa.map2 matches 0 run fill ~77 ~10 ~58 ~77 ~12 ~58 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~76 ~10 ~58 minecraft:chorus_flower[age=5]
-execute if score #sv1 oa.map2 matches 0 run fill ~75 ~10 ~58 ~75 ~12 ~58 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv1 oa.map2 matches 0 run fill ~76 ~11 ~55 ~76 ~12 ~55 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv1 oa.map2 matches 0 run setblock ~76 ~13 ~55 minecraft:chorus_flower[age=5]
-execute if score #sv1 oa.map2 matches 0 run setblock ~75 ~13 ~58 minecraft:chorus_flower[age=5]
-execute if score #sv1 oa.map2 matches 0 run setblock ~77 ~13 ~58 minecraft:chorus_flower[age=5]
+execute if score #sv1 oa.map2 matches 0 run fill ~72 ~-3 ~52 ~74 ~19 ~52 minecraft:obsidian
+execute if score #sv1 oa.map2 matches 0 run fill ~72 ~-3 ~53 ~75 ~19 ~55 minecraft:obsidian
+execute if score #sv1 oa.map2 matches 0 run fill ~72 ~-3 ~56 ~74 ~19 ~56 minecraft:obsidian
+execute if score #sv1 oa.map2 matches 0 run fill ~76 ~4 ~56 ~76 ~7 ~56 minecraft:obsidian
+execute if score #sv1 oa.map2 matches 0 run setblock ~77 ~6 ~56 minecraft:crying_obsidian
+execute if score #sv1 oa.map2 matches 0 run setblock ~76 ~10 ~53 minecraft:crying_obsidian
+execute if score #sv1 oa.map2 matches 0 run fill ~72 ~20 ~52 ~75 ~23 ~52 minecraft:iron_bars
+execute if score #sv1 oa.map2 matches 0 run setblock ~73 ~20 ~54 minecraft:bedrock
+execute if score #sv1 oa.map2 matches 0 run fill ~75 ~20 ~53 ~75 ~23 ~55 minecraft:iron_bars
+execute if score #sv1 oa.map2 matches 0 run fill ~72 ~20 ~56 ~75 ~23 ~56 minecraft:iron_bars
+execute if score #sv1 oa.map2 matches 0 run fill ~72 ~24 ~52 ~75 ~24 ~56 minecraft:iron_bars
+execute if score #sv1 oa.map2 matches 1 run setblock ~74 ~2 ~52 minecraft:chest[facing=north]

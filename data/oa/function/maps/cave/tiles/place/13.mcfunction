@@ -341,9 +341,12 @@ setblock ~-29 ~-33 ~-110 minecraft:tuff
 fill ~-28 ~-33 ~-110 ~-25 ~-33 ~-110 minecraft:stone
 fill ~-36 ~-33 ~-110 ~-36 ~-33 ~-109 minecraft:andesite
 fill ~-53 ~-33 ~-110 ~-37 ~-33 ~-109 minecraft:stone
-fill ~-31 ~-33 ~-109 ~-25 ~-33 ~-109 minecraft:stone
+fill ~-27 ~-33 ~-109 ~-25 ~-33 ~-109 minecraft:stone
+fill ~-27 ~-31 ~-109 ~-25 ~-31 ~-109 minecraft:stone
+fill ~-31 ~-33 ~-109 ~-29 ~-33 ~-109 minecraft:stone
 fill ~-35 ~-33 ~-109 ~-34 ~-33 ~-109 minecraft:stone
 setblock ~-33 ~-33 ~-109 minecraft:gravel
+setblock ~-28 ~-33 ~-109 minecraft:redstone_ore
 fill ~-56 ~-33 ~-109 ~-55 ~-33 ~-109 minecraft:deepslate
 fill ~-54 ~-33 ~-109 ~-54 ~-32 ~-109 minecraft:sculk
 fill ~-54 ~-26 ~-109 ~-54 ~-25 ~-109 minecraft:sculk
@@ -511,18 +514,18 @@ fill ~-36 ~-32 ~-115 ~-36 ~-32 ~-113 minecraft:andesite
 fill ~-56 ~-32 ~-115 ~-37 ~-32 ~-113 minecraft:stone
 fill ~-35 ~-32 ~-113 ~-34 ~-32 ~-113 minecraft:stone
 fill ~-55 ~-32 ~-112 ~-34 ~-31 ~-112 minecraft:stone
+fill ~-28 ~-32 ~-112 ~-25 ~-32 ~-111 minecraft:stone
 fill ~-54 ~-32 ~-111 ~-34 ~-32 ~-111 minecraft:stone
-fill ~-28 ~-32 ~-112 ~-25 ~-32 ~-110 minecraft:stone
 fill ~-55 ~-32 ~-110 ~-53 ~-32 ~-110 minecraft:deepslate
 fill ~-55 ~-25 ~-110 ~-53 ~-25 ~-110 minecraft:deepslate
 fill ~-52 ~-32 ~-110 ~-35 ~-32 ~-110 minecraft:stone
-fill ~-27 ~-32 ~-109 ~-25 ~-32 ~-109 minecraft:stone
+fill ~-27 ~-32 ~-110 ~-25 ~-32 ~-109 minecraft:stone
+fill ~-28 ~-32 ~-110 ~-28 ~-32 ~-109 minecraft:coal_ore
 fill ~-51 ~-32 ~-109 ~-35 ~-32 ~-109 minecraft:stone
 fill ~-53 ~-32 ~-109 ~-52 ~-32 ~-109 minecraft:deepslate
 fill ~-53 ~-25 ~-109 ~-52 ~-25 ~-109 minecraft:deepslate
 setblock ~-55 ~-32 ~-109 minecraft:deepslate
 setblock ~-56 ~-32 ~-109 minecraft:sculk_vein[down=true]
-setblock ~-28 ~-32 ~-109 minecraft:coal_ore
 fill ~-34 ~-32 ~-108 ~-34 ~-30 ~-108 minecraft:oak_fence
 fill ~-52 ~-32 ~-108 ~-51 ~-31 ~-108 minecraft:deepslate
 fill ~-29 ~-32 ~-108 ~-29 ~-30 ~-108 minecraft:oak_fence
@@ -532,7 +535,7 @@ setblock ~-52 ~-32 ~-107 minecraft:deepslate
 fill ~-48 ~-32 ~-106 ~-35 ~-28 ~-106 minecraft:stone
 fill ~-47 ~-32 ~-105 ~-36 ~-32 ~-105 minecraft:stone
 setblock ~-35 ~-32 ~-105 minecraft:redstone_ore
-fill ~-28 ~-32 ~-108 ~-25 ~-32 ~-103 minecraft:stone
+fill ~-28 ~-32 ~-108 ~-25 ~-31 ~-103 minecraft:stone
 fill ~-27 ~-32 ~-102 ~-25 ~-28 ~-102 minecraft:stone
 fill ~-44 ~-32 ~-102 ~-35 ~-28 ~-101 minecraft:stone
 fill ~-43 ~-32 ~-100 ~-35 ~-29 ~-100 minecraft:stone
@@ -581,16 +584,17 @@ fill ~-56 ~-31 ~-114 ~-33 ~-31 ~-114 minecraft:stone
 fill ~-56 ~-31 ~-113 ~-34 ~-31 ~-113 minecraft:stone
 fill ~-52 ~-31 ~-111 ~-34 ~-31 ~-111 minecraft:stone
 fill ~-55 ~-31 ~-111 ~-53 ~-31 ~-111 minecraft:deepslate
+fill ~-28 ~-31 ~-112 ~-25 ~-31 ~-110 minecraft:stone
 fill ~-51 ~-31 ~-110 ~-35 ~-31 ~-110 minecraft:stone
 fill ~-55 ~-31 ~-110 ~-52 ~-31 ~-110 minecraft:deepslate
 setblock ~-55 ~-31 ~-109 minecraft:sculk_vein[down=true]
 fill ~-53 ~-31 ~-109 ~-51 ~-31 ~-109 minecraft:deepslate
 fill ~-53 ~-24 ~-109 ~-51 ~-24 ~-109 minecraft:deepslate
+setblock ~-28 ~-31 ~-109 minecraft:coal_ore
 fill ~-50 ~-31 ~-109 ~-35 ~-31 ~-108 minecraft:stone
 setblock ~-53 ~-31 ~-108 minecraft:sculk_vein[down=true]
 setblock ~-34 ~-31 ~-107 minecraft:glow_lichen[west=true]
 fill ~-47 ~-31 ~-105 ~-35 ~-28 ~-105 minecraft:stone
-fill ~-28 ~-31 ~-112 ~-25 ~-28 ~-103 minecraft:stone
 fill ~-41 ~-31 ~-96 ~-36 ~-31 ~-96 minecraft:tuff
 setblock ~-35 ~-31 ~-96 minecraft:stone
 setblock ~-40 ~-30 ~-120 minecraft:stone
@@ -659,6 +663,7 @@ fill ~-51 ~-23 ~-109 ~-48 ~-23 ~-109 minecraft:deepslate
 fill ~-51 ~-30 ~-108 ~-50 ~-30 ~-108 minecraft:deepslate
 setblock ~-30 ~-30 ~-108 minecraft:lantern[hanging=true]
 fill ~-49 ~-30 ~-108 ~-35 ~-30 ~-107 minecraft:stone
+fill ~-28 ~-30 ~-112 ~-25 ~-28 ~-103 minecraft:stone
 fill ~-41 ~-30 ~-97 ~-36 ~-30 ~-97 minecraft:tuff
 setblock ~-35 ~-30 ~-97 minecraft:stone
 fill ~-41 ~-30 ~-96 ~-35 ~-30 ~-96 minecraft:tuff

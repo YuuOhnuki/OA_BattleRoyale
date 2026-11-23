@@ -1,0 +1,448 @@
+{
+  "checks": [
+    {
+      "kind": "center",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 11800,
+      "ladder_columns": 14,
+      "geometry_repairs": 10,
+      "relocated_chests": [
+        {
+          "from": [
+            6,
+            15,
+            35
+          ],
+          "to": [
+            12,
+            7,
+            45
+          ]
+        },
+        {
+          "from": [
+            -36,
+            14,
+            -35
+          ],
+          "to": [
+            -34,
+            14,
+            -35
+          ]
+        },
+        {
+          "from": [
+            32,
+            14,
+            -35
+          ],
+          "to": [
+            34,
+            14,
+            -35
+          ]
+        },
+        {
+          "from": [
+            -36,
+            14,
+            33
+          ],
+          "to": [
+            -34,
+            14,
+            33
+          ]
+        },
+        {
+          "from": [
+            32,
+            14,
+            33
+          ],
+          "to": [
+            34,
+            14,
+            33
+          ]
+        },
+        {
+          "from": [
+            41,
+            -25,
+            58
+          ],
+          "to": [
+            41,
+            1,
+            42
+          ]
+        },
+        {
+          "from": [
+            -62,
+            -25,
+            41
+          ],
+          "to": [
+            -51,
+            1,
+            34
+          ]
+        },
+        {
+          "from": [
+            -45,
+            -25,
+            -62
+          ],
+          "to": [
+            -33,
+            1,
+            -47
+          ]
+        },
+        {
+          "from": [
+            58,
+            -25,
+            -45
+          ],
+          "to": [
+            54,
+            1,
+            -35
+          ]
+        }
+      ],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "desert",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2470,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "snow",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2490,
+      "ladder_columns": 1,
+      "geometry_repairs": 0,
+      "relocated_chests": [
+        {
+          "from": [
+            9,
+            5,
+            -4
+          ],
+          "to": [
+            10,
+            5,
+            -5
+          ]
+        }
+      ],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "mesa",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2269,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [
+        {
+          "from": [
+            9,
+            9,
+            5
+          ],
+          "to": [
+            1,
+            5,
+            5
+          ]
+        },
+        {
+          "from": [
+            -7,
+            14,
+            -6
+          ],
+          "to": [
+            -1,
+            6,
+            -10
+          ]
+        }
+      ],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "oasis",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2579,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "western",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2471,
+      "ladder_columns": 5,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "japan",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2505,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "ship",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2444,
+      "ladder_columns": 1,
+      "geometry_repairs": 1,
+      "relocated_chests": [
+        {
+          "from": [
+            -16,
+            1,
+            -2
+          ],
+          "to": [
+            -16,
+            1,
+            -4
+          ]
+        },
+        {
+          "from": [
+            -16,
+            7,
+            1
+          ],
+          "to": [
+            -19,
+            1,
+            1
+          ]
+        }
+      ],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "balloon",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2564,
+      "ladder_columns": 1,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "temple",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2446,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "resort",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2515,
+      "ladder_columns": 2,
+      "geometry_repairs": 1,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "grove",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2509,
+      "ladder_columns": 1,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "great_tree",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2676,
+      "ladder_columns": 1,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "windmill",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2527,
+      "ladder_columns": 1,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "mushroom",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2522,
+      "ladder_columns": 1,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "quarry",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2517,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "terrace",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2521,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "ruin_fort",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 2473,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    }
+  ],
+  "ores": [
+    {
+      "kind": "center",
+      "before": 10,
+      "target": 15,
+      "after": 15
+    },
+    {
+      "kind": "desert",
+      "before": 4,
+      "target": 6,
+      "after": 6
+    },
+    {
+      "kind": "snow",
+      "before": 4,
+      "target": 6,
+      "after": 6
+    },
+    {
+      "kind": "mesa",
+      "before": 4,
+      "target": 6,
+      "after": 6
+    },
+    {
+      "kind": "oasis",
+      "before": 4,
+      "target": 6,
+      "after": 6
+    },
+    {
+      "kind": "western",
+      "before": 4,
+      "target": 6,
+      "after": 6
+    },
+    {
+      "kind": "japan",
+      "before": 4,
+      "target": 6,
+      "after": 6
+    },
+    {
+      "kind": "ship",
+      "before": 4,
+      "target": 6,
+      "after": 6
+    },
+    {
+      "kind": "balloon",
+      "before": 2,
+      "target": 3,
+      "after": 3
+    },
+    {
+      "kind": "temple",
+      "before": 4,
+      "target": 6,
+      "after": 6
+    },
+    {
+      "kind": "resort",
+      "before": 4,
+      "target": 6,
+      "after": 6
+    },
+    {
+      "kind": "grove",
+      "before": 4,
+      "target": 6,
+      "after": 6
+    },
+    {
+      "kind": "great_tree",
+      "before": 4,
+      "target": 6,
+      "after": 6
+    },
+    {
+      "kind": "windmill",
+      "before": 4,
+      "target": 6,
+      "after": 6
+    },
+    {
+      "kind": "mushroom",
+      "before": 4,
+      "target": 6,
+      "after": 6
+    },
+    {
+      "kind": "quarry",
+      "before": 4,
+      "target": 6,
+      "after": 6
+    },
+    {
+      "kind": "terrace",
+      "before": 4,
+      "target": 6,
+      "after": 6
+    },
+    {
+      "kind": "ruin_fort",
+      "before": 4,
+      "target": 6,
+      "after": 6
+    }
+  ]
+}

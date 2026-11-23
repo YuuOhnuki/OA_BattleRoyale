@@ -73,13 +73,13 @@ fill -17 81 -94 -17 81 -89 minecraft:spruce_fence
 fill -17 81 -88 -16 81 -88 minecraft:spruce_fence
 fill -11 81 -88 -11 81 -83 minecraft:spruce_fence
 fill -16 81 -87 -16 81 -83 minecraft:spruce_fence
-fill -16 81 -82 -15 81 -82 minecraft:spruce_fence
 fill -11 81 -82 -10 81 -82 minecraft:spruce_fence
+fill -16 81 -82 -15 81 -82 minecraft:spruce_fence
 fill -10 81 -81 -10 81 -77 minecraft:spruce_fence
 fill -15 81 -81 -15 81 -76 minecraft:spruce_fence
 fill -10 81 -76 -9 81 -76 minecraft:spruce_fence
-fill -14 81 -75 -14 81 -70 minecraft:spruce_fence
 fill -9 81 -75 -9 81 -70 minecraft:spruce_fence
+fill -14 81 -75 -14 81 -70 minecraft:spruce_fence
 fill -8 81 -69 -8 81 -64 minecraft:spruce_fence
 fill -13 81 -69 -13 81 -64 minecraft:spruce_fence
 fill -13 81 -63 -12 81 -63 minecraft:spruce_fence

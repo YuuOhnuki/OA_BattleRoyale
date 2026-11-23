@@ -10,8 +10,8 @@ scoreboard players set #localc oa.map2 0
 scoreboard players set #localo oa.map2 0
 scoreboard players set #expectedc oa.map2 1
 scoreboard players set #expectedo oa.map2 0
-execute positioned ~58 ~-25 ~-45 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
-execute if score #mode oa.map2 matches 0 positioned ~58 ~-25 ~-45 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
+execute positioned ~54 ~1 ~-35 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
+execute if score #mode oa.map2 matches 0 positioned ~54 ~1 ~-35 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
 execute positioned ~60 ~-25 ~-43 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:marker ~ ~ ~ {Tags:["oa.gim","oa.gim_up","oa.gim_up_31"]}
 execute positioned ~44 ~34 ~-40 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:block_display ~ ~ ~ {Tags:["oa.mdeco"],block_state:"minecraft:blue_wool",view_range:6.0f,Rotation:[0.0f,0.0f],transformation:{translation:[-2.500f,0.500f,-2.500f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[5.000f,5.000f,5.000f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
 execute positioned ~44 ~34 ~-40 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:block_display ~ ~ ~ {Tags:["oa.mdeco"],block_state:"minecraft:yellow_wool",view_range:6.0f,Rotation:[20.0f,0.0f],transformation:{translation:[-3.000f,1.500f,-2.000f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[6.000f,3.000f,4.000f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}

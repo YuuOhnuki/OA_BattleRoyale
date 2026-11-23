@@ -327,19 +327,19 @@ fill ~90 ~-29 ~39 ~103 ~-29 ~39 minecraft:stone
 fill ~73 ~-29 ~39 ~89 ~-29 ~39 minecraft:tuff
 fill ~83 ~-28 ~8 ~85 ~-28 ~8 minecraft:amethyst_block
 fill ~83 ~-18 ~8 ~85 ~-18 ~8 minecraft:amethyst_block
-fill ~73 ~-28 ~8 ~77 ~-28 ~8 minecraft:calcite
 fill ~90 ~-28 ~8 ~103 ~-28 ~8 minecraft:stone
 fill ~86 ~-28 ~8 ~89 ~-28 ~8 minecraft:tuff
 fill ~72 ~-28 ~8 ~72 ~-23 ~8 minecraft:smooth_basalt
+fill ~73 ~-28 ~8 ~77 ~-28 ~9 minecraft:calcite
+fill ~73 ~-22 ~8 ~77 ~-22 ~9 minecraft:calcite
 fill ~78 ~-28 ~8 ~81 ~-28 ~9 minecraft:amethyst_block
-fill ~96 ~-28 ~9 ~97 ~-27 ~9 minecraft:calcite
-fill ~96 ~-19 ~9 ~97 ~-18 ~9 minecraft:calcite
+setblock ~72 ~-28 ~9 minecraft:coal_ore
 setblock ~86 ~-28 ~9 minecraft:calcite
 setblock ~86 ~-17 ~9 minecraft:calcite
+fill ~96 ~-28 ~9 ~97 ~-27 ~9 minecraft:calcite
+fill ~96 ~-19 ~9 ~97 ~-18 ~9 minecraft:calcite
 setblock ~99 ~-28 ~9 minecraft:calcite
 setblock ~99 ~-18 ~9 minecraft:calcite
-fill ~87 ~-28 ~9 ~91 ~-27 ~9 minecraft:amethyst_block
-fill ~87 ~-18 ~9 ~91 ~-18 ~9 minecraft:amethyst_block
 fill ~100 ~-28 ~9 ~101 ~-28 ~9 minecraft:amethyst_block
 fill ~100 ~-18 ~9 ~101 ~-18 ~9 minecraft:amethyst_block
 fill ~93 ~-28 ~9 ~95 ~-28 ~9 minecraft:amethyst_block
@@ -351,7 +351,8 @@ fill ~92 ~-19 ~9 ~92 ~-18 ~9 minecraft:calcite
 fill ~102 ~-28 ~9 ~103 ~-28 ~9 minecraft:stone
 fill ~98 ~-28 ~9 ~98 ~-27 ~9 minecraft:amethyst_block
 fill ~98 ~-19 ~9 ~98 ~-18 ~9 minecraft:amethyst_block
-fill ~72 ~-28 ~9 ~77 ~-28 ~9 minecraft:calcite
+fill ~87 ~-28 ~9 ~91 ~-27 ~9 minecraft:amethyst_block
+fill ~87 ~-18 ~9 ~91 ~-18 ~9 minecraft:amethyst_block
 fill ~88 ~-28 ~10 ~88 ~-27 ~10 minecraft:calcite
 fill ~88 ~-18 ~10 ~88 ~-17 ~10 minecraft:calcite
 fill ~74 ~-28 ~10 ~75 ~-28 ~10 minecraft:amethyst_block
@@ -1052,7 +1053,6 @@ setblock ~82 ~-20 ~37 minecraft:amethyst_block
 setblock ~82 ~-16 ~37 minecraft:amethyst_block
 fill ~72 ~-23 ~9 ~73 ~-23 ~10 minecraft:calcite
 fill ~78 ~-22 ~8 ~85 ~-19 ~8 minecraft:amethyst_block
-fill ~73 ~-22 ~8 ~77 ~-22 ~9 minecraft:calcite
 fill ~72 ~-22 ~8 ~72 ~-22 ~9 minecraft:stone
 fill ~72 ~-20 ~8 ~72 ~-19 ~9 minecraft:stone
 fill ~72 ~-22 ~11 ~72 ~-21 ~11 minecraft:amethyst_block

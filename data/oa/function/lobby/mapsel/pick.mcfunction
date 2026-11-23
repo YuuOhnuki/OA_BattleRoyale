@@ -1,3 +1,5 @@
+$data modify storage oa:map_choice key set value "$(key)"
+execute if data storage oa:map_choice {key:"sky"} run return run function oa:lobby/terminal/select_map {key:"sky"}
 execute unless entity @s[tag=br.host] unless entity @s[tag=br.admin] run return run tellraw @s {text:"会場の変更はホスト・管理者が行います",color:"yellow"}
 execute if score #game oa.game matches 1 run return run tellraw @s {text:"TDMは専用アリーナを使います。BRのマップ選択は保存されています",color:"yellow"}
 # macro: key  プレイヤー(@s)が押したボタンのマップへ、試合用マップを切り替える

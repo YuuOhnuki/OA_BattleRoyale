@@ -1,3 +1,4 @@
+execute if score #editing oa.template matches 1 run return run tellraw @s {text:"会場の手編集中です。/oaplugin map end で編集を終了してください",color:"yellow"}
 execute if score #busy oa.template matches 1 run return run tellraw @s {text:"マップの保存／復元が処理中です。完了までお待ちください。",color:"yellow"}
 execute if score #game oa.game matches 1 run return run function oa:tdm/start
 execute as @a[tag=oa.debug,tag=!oa.practice] at @s run function oa:debug/stop
@@ -6,6 +7,9 @@ scoreboard players set #skip_clean br.clean 0
 execute if score #clean_ready br.clean matches 1 run scoreboard players set #skip_clean br.clean 1
 scoreboard players set #clean_ready br.clean 0
 execute if data storage oa_map2:job {working:1b} run return run tellraw @s {text:"マップ生成・登録が未完了です。完了してから試合を開始してください",color:"red"}
+execute if score #map oa.mapid matches 3 if score #match_map oa.plugin matches 1 if score #image_sky oa.tmp matches 0 run return run tellraw @s {text:"天空島の完成地図を準備中です。少し待ってから開始してください",color:"yellow"}
+execute if score #map oa.mapid matches 4 if score #match_map oa.plugin matches 1 if score #image_end oa.tmp matches 0 run return run tellraw @s {text:"エンドの完成地図を準備中です。少し待ってから開始してください",color:"yellow"}
+execute unless score #state oa.map2 matches 3 run return run tellraw @s {text:"会場が完成していません。生成状態を確認してください",color:"red"}
 execute unless data storage oa:br center.dim run return run tellraw @s {text:"先に /function oa:map/create で専用ディメンションにBRマップを生成してください。",color:"red"}
 function oa:br/border/auto
 execute if entity @a[tag=br.lobby,tag=!oa.practice,scores={br.saved=1}] run return run tellraw @s {text:"復元待ちの参加者がいます",color:"red"}
@@ -175,3 +179,6 @@ team modify oa_br7 color dark_purple
 team modify oa_br8 color gold
 team modify oa_br9 color white
 team modify oa_br10 color dark_gray
+
+# 初回のお題も通常の表示更新へ流す。
+function oa:br/ui/update

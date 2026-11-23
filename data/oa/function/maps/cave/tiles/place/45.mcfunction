@@ -541,7 +541,7 @@ fill ~23 ~-29 ~-10 ~23 ~-25 ~-10 minecraft:deepslate_bricks
 fill ~14 ~-29 ~-6 ~15 ~-29 ~-5 minecraft:chiseled_deepslate
 fill ~14 ~-13 ~-6 ~15 ~-13 ~-5 minecraft:chiseled_deepslate
 setblock ~34 ~-29 ~-5 minecraft:tuff
-fill ~34 ~-27 ~-5 ~34 ~-24 ~-5 minecraft:tuff
+fill ~34 ~-26 ~-5 ~34 ~-24 ~-5 minecraft:tuff
 fill ~28 ~-29 ~-3 ~29 ~-29 ~-3 minecraft:stone
 setblock ~37 ~-29 ~-3 minecraft:stone
 setblock ~36 ~-29 ~-3 minecraft:tuff
@@ -574,7 +574,7 @@ fill ~17 ~-28 ~-19 ~18 ~-23 ~-19 minecraft:deepslate
 fill ~19 ~-28 ~-19 ~30 ~-24 ~-19 minecraft:tuff
 setblock ~16 ~-28 ~-18 minecraft:glow_lichen[east=true]
 fill ~14 ~-28 ~-6 ~15 ~-14 ~-5 minecraft:polished_deepslate
-setblock ~34 ~-28 ~-5 minecraft:coal_ore
+fill ~34 ~-28 ~-5 ~34 ~-27 ~-5 minecraft:coal_ore
 fill ~28 ~-28 ~-3 ~29 ~-24 ~-3 minecraft:tuff
 fill ~36 ~-28 ~-3 ~37 ~-25 ~-3 minecraft:tuff
 fill ~29 ~-28 ~-2 ~30 ~-28 ~-2 minecraft:tuff

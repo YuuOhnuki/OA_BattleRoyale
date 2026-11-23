@@ -1,0 +1,270 @@
+{
+  "sky": {
+    "desert": {
+      "name": "砂漠の島",
+      "radius": 23,
+      "weight": 1,
+      "chests": 7,
+      "structure": "desert",
+      "chest_positions": []
+    },
+    "snow": {
+      "name": "雪の島",
+      "radius": 23,
+      "weight": 1,
+      "chests": 7,
+      "structure": "snow",
+      "chest_positions": []
+    },
+    "mesa": {
+      "name": "メサの島",
+      "radius": 23,
+      "weight": 1,
+      "chests": 7,
+      "structure": "mesa",
+      "chest_positions": []
+    },
+    "oasis": {
+      "name": "オアシスの島",
+      "radius": 22,
+      "weight": 1,
+      "chests": 7,
+      "structure": "oasis",
+      "chest_positions": []
+    },
+    "western": {
+      "name": "西洋の町の島",
+      "radius": 24,
+      "weight": 1,
+      "chests": 7,
+      "structure": "western",
+      "chest_positions": []
+    },
+    "japan": {
+      "name": "和風の島",
+      "radius": 24,
+      "weight": 1,
+      "chests": 7,
+      "structure": "japan",
+      "chest_positions": []
+    },
+    "ship": {
+      "name": "飛行船の島",
+      "radius": 19,
+      "weight": 1,
+      "chests": 7,
+      "structure": "ship",
+      "chest_positions": []
+    },
+    "balloon": {
+      "name": "気球の島",
+      "radius": 18,
+      "weight": 1,
+      "chests": 7,
+      "structure": "balloon",
+      "chest_positions": []
+    },
+    "temple": {
+      "name": "天空神殿の島",
+      "radius": 23,
+      "weight": 1,
+      "chests": 7,
+      "structure": "temple",
+      "chest_positions": []
+    },
+    "resort": {
+      "name": "リゾートの島",
+      "radius": 23,
+      "weight": 1,
+      "chests": 7,
+      "structure": "resort",
+      "chest_positions": []
+    },
+    "grove": {
+      "name": "小さな森林島",
+      "radius": 23,
+      "weight": 2,
+      "chests": 7,
+      "structure": "grove",
+      "chest_positions": []
+    },
+    "great_tree": {
+      "name": "巨樹の島",
+      "radius": 23,
+      "weight": 1,
+      "chests": 7,
+      "structure": "great_tree",
+      "chest_positions": []
+    },
+    "windmill": {
+      "name": "風車の島",
+      "radius": 23,
+      "weight": 1,
+      "chests": 7,
+      "structure": "windmill",
+      "chest_positions": []
+    },
+    "mushroom": {
+      "name": "キノコの島",
+      "radius": 23,
+      "weight": 1,
+      "chests": 7,
+      "structure": "mushroom",
+      "chest_positions": []
+    },
+    "quarry": {
+      "name": "鉱山の島",
+      "radius": 23,
+      "weight": 2,
+      "chests": 7,
+      "structure": "quarry",
+      "chest_positions": []
+    },
+    "terrace": {
+      "name": "段々庭園の島",
+      "radius": 23,
+      "weight": 1,
+      "chests": 7,
+      "structure": "terrace",
+      "chest_positions": []
+    },
+    "ruin_fort": {
+      "name": "崩れた砦の島",
+      "radius": 23,
+      "weight": 1,
+      "chests": 7,
+      "structure": "ruin_fort",
+      "chest_positions": []
+    }
+  },
+  "end": {
+    "wilds": {
+      "name": "荒野",
+      "weight": 1,
+      "chests": 7,
+      "structure": "wilds",
+      "radius": 22,
+      "chest_positions": []
+    },
+    "obsidian": {
+      "name": "黒曜石の森",
+      "weight": 1,
+      "chests": 7,
+      "structure": "obsidian",
+      "radius": 22,
+      "chest_positions": []
+    },
+    "city": {
+      "name": "崩れたエンドシティ",
+      "weight": 1,
+      "chests": 7,
+      "structure": "city",
+      "radius": 22,
+      "chest_positions": []
+    },
+    "chorus": {
+      "name": "コーラスの林",
+      "weight": 1,
+      "chests": 7,
+      "structure": "chorus",
+      "radius": 22,
+      "chest_positions": []
+    },
+    "ruins": {
+      "name": "浮遊遺跡",
+      "weight": 1,
+      "chests": 7,
+      "structure": "ruins",
+      "radius": 22,
+      "chest_positions": []
+    },
+    "crystal": {
+      "name": "結晶の洞窟",
+      "weight": 1,
+      "chests": 7,
+      "structure": "crystal",
+      "radius": 22,
+      "chest_positions": []
+    },
+    "tower": {
+      "name": "エンドの塔",
+      "weight": 1,
+      "chests": 7,
+      "structure": "tower",
+      "radius": 22,
+      "chest_positions": []
+    },
+    "spire": {
+      "name": "白い尖塔",
+      "weight": 1,
+      "chests": 7,
+      "structure": "spire",
+      "radius": 22,
+      "chest_positions": []
+    },
+    "dome": {
+      "name": "ガラスのドーム",
+      "weight": 1,
+      "chests": 7,
+      "structure": "dome",
+      "radius": 22,
+      "chest_positions": []
+    },
+    "pagoda": {
+      "name": "塔街",
+      "weight": 1,
+      "chests": 7,
+      "structure": "pagoda",
+      "radius": 22,
+      "chest_positions": []
+    },
+    "sanctuary": {
+      "name": "古代聖堂",
+      "weight": 1,
+      "chests": 7,
+      "structure": "sanctuary",
+      "radius": 22,
+      "chest_positions": []
+    },
+    "pearl_ruins": {
+      "name": "真珠の遺跡",
+      "weight": 1,
+      "chests": 7,
+      "structure": "pearl_ruins",
+      "radius": 22,
+      "chest_positions": []
+    },
+    "rift": {
+      "name": "空間の裂け目",
+      "weight": 1,
+      "chests": 7,
+      "structure": "rift",
+      "radius": 22,
+      "chest_positions": []
+    },
+    "crystal_garden": {
+      "name": "結晶庭園",
+      "weight": 1,
+      "chests": 7,
+      "structure": "crystal_garden",
+      "radius": 22,
+      "chest_positions": []
+    },
+    "hollow": {
+      "name": "地底回廊",
+      "weight": 1,
+      "chests": 7,
+      "structure": "hollow",
+      "radius": 22,
+      "chest_positions": []
+    },
+    "archive": {
+      "name": "記憶の書庫",
+      "weight": 1,
+      "chests": 7,
+      "structure": "archive",
+      "radius": 22,
+      "chest_positions": []
+    }
+  }
+}

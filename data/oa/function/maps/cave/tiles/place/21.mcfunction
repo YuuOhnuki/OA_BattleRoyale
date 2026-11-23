@@ -282,8 +282,8 @@ setblock ~-100 ~-29 ~-71 minecraft:stone
 fill ~-108 ~-29 ~-71 ~-106 ~-29 ~-71 minecraft:stone
 setblock ~-101 ~-29 ~-71 minecraft:cobbled_deepslate
 fill ~-97 ~-29 ~-71 ~-89 ~-24 ~-71 minecraft:granite
-fill ~-120 ~-29 ~-73 ~-110 ~-28 ~-70 minecraft:stone
-fill ~-120 ~-26 ~-73 ~-110 ~-24 ~-70 minecraft:stone
+fill ~-120 ~-29 ~-73 ~-110 ~-29 ~-70 minecraft:stone
+fill ~-120 ~-25 ~-73 ~-110 ~-24 ~-70 minecraft:stone
 fill ~-109 ~-29 ~-71 ~-109 ~-29 ~-70 minecraft:cobbled_deepslate
 fill ~-104 ~-29 ~-70 ~-103 ~-29 ~-70 minecraft:stone
 setblock ~-101 ~-29 ~-70 minecraft:stone
@@ -398,7 +398,11 @@ fill ~-120 ~-28 ~-76 ~-107 ~-24 ~-76 minecraft:stone
 fill ~-101 ~-28 ~-75 ~-98 ~-24 ~-75 minecraft:stone
 fill ~-120 ~-28 ~-75 ~-108 ~-24 ~-75 minecraft:stone
 fill ~-120 ~-28 ~-74 ~-109 ~-24 ~-74 minecraft:stone
+fill ~-120 ~-28 ~-73 ~-110 ~-26 ~-73 minecraft:stone
 fill ~-105 ~-28 ~-73 ~-98 ~-24 ~-73 minecraft:stone
+fill ~-110 ~-28 ~-72 ~-110 ~-27 ~-72 minecraft:coal_ore
+fill ~-120 ~-28 ~-72 ~-111 ~-26 ~-72 minecraft:stone
+fill ~-120 ~-28 ~-71 ~-110 ~-26 ~-70 minecraft:stone
 fill ~-114 ~-28 ~-69 ~-111 ~-23 ~-69 minecraft:stone
 fill ~-120 ~-28 ~-68 ~-111 ~-24 ~-68 minecraft:stone
 setblock ~-96 ~-28 ~-66 minecraft:chest
@@ -421,14 +425,11 @@ fill ~-120 ~-27 ~-88 ~-93 ~-24 ~-88 minecraft:stone
 fill ~-120 ~-27 ~-87 ~-94 ~-24 ~-87 minecraft:stone
 fill ~-120 ~-27 ~-86 ~-95 ~-24 ~-85 minecraft:stone
 setblock ~-108 ~-27 ~-74 minecraft:glow_lichen[west=true]
-fill ~-120 ~-27 ~-73 ~-110 ~-27 ~-73 minecraft:stone
-setblock ~-110 ~-27 ~-72 minecraft:coal_ore
-fill ~-120 ~-27 ~-72 ~-111 ~-27 ~-72 minecraft:stone
-fill ~-120 ~-27 ~-71 ~-110 ~-27 ~-70 minecraft:stone
 setblock ~-96 ~-27 ~-67 minecraft:glow_lichen[east=true]
 setblock ~-100 ~-27 ~-62 minecraft:glow_lichen[east=true]
 setblock ~-101 ~-27 ~-61 minecraft:glow_lichen[east=true]
 setblock ~-95 ~-26 ~-81 minecraft:lantern[hanging=true]
+setblock ~-110 ~-26 ~-72 minecraft:redstone_ore
 fill ~-95 ~-25 ~-84 ~-95 ~-25 ~-77 minecraft:stripped_oak_log[axis=z]
 fill ~-105 ~-25 ~-58 ~-105 ~-25 ~-57 minecraft:stripped_oak_log[axis=z]
 setblock ~-97 ~-24 ~-79 minecraft:lantern[hanging=true]

@@ -1,0 +1,528 @@
+{
+  "checks": [
+    {
+      "slot": 0,
+      "variant": 0,
+      "kind": "pearl_ruins",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1269,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 0,
+      "variant": 1,
+      "kind": "city",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1220,
+      "ladder_columns": 1,
+      "geometry_repairs": 0,
+      "relocated_chests": [
+        {
+          "from": [
+            82,
+            5,
+            5
+          ],
+          "to": [
+            81,
+            1,
+            4
+          ]
+        }
+      ],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 0,
+      "variant": 2,
+      "kind": "rift",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1268,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 1,
+      "variant": 0,
+      "kind": "obsidian",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1791,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 1,
+      "variant": 1,
+      "kind": "dome",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1822,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 1,
+      "variant": 2,
+      "kind": "spire",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1925,
+      "ladder_columns": 1,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 2,
+      "variant": 0,
+      "kind": "ruins",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1688,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 2,
+      "variant": 1,
+      "kind": "hollow",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1761,
+      "ladder_columns": 1,
+      "geometry_repairs": 1,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 2,
+      "variant": 2,
+      "kind": "pearl_ruins",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1708,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 3,
+      "variant": 0,
+      "kind": "sanctuary",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1470,
+      "ladder_columns": 0,
+      "geometry_repairs": 2,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 3,
+      "variant": 1,
+      "kind": "chorus",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1435,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 3,
+      "variant": 2,
+      "kind": "obsidian",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1443,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 4,
+      "variant": 0,
+      "kind": "pagoda",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1509,
+      "ladder_columns": 4,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 4,
+      "variant": 1,
+      "kind": "tower",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1357,
+      "ladder_columns": 1,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 4,
+      "variant": 2,
+      "kind": "ruins",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1318,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 5,
+      "variant": 0,
+      "kind": "archive",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1750,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 5,
+      "variant": 1,
+      "kind": "crystal",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1916,
+      "ladder_columns": 1,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 5,
+      "variant": 2,
+      "kind": "sanctuary",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1739,
+      "ladder_columns": 0,
+      "geometry_repairs": 2,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 6,
+      "variant": 0,
+      "kind": "wilds",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1595,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 6,
+      "variant": 1,
+      "kind": "crystal_garden",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1608,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 6,
+      "variant": 2,
+      "kind": "pagoda",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1645,
+      "ladder_columns": 5,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 7,
+      "variant": 0,
+      "kind": "city",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1647,
+      "ladder_columns": 1,
+      "geometry_repairs": 0,
+      "relocated_chests": [
+        {
+          "from": [
+            55,
+            5,
+            -54
+          ],
+          "to": [
+            54,
+            1,
+            -55
+          ]
+        }
+      ],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 7,
+      "variant": 1,
+      "kind": "rift",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1697,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "slot": 7,
+      "variant": 2,
+      "kind": "archive",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 1682,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [],
+      "unreachable_chests": []
+    },
+    {
+      "kind": "center",
+      "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
+      "walkable_reached": 21191,
+      "ladder_columns": 0,
+      "geometry_repairs": 0,
+      "relocated_chests": [
+        {
+          "from": [
+            51,
+            -25,
+            8
+          ],
+          "to": [
+            51,
+            1,
+            6
+          ]
+        },
+        {
+          "from": [
+            -10,
+            -25,
+            50
+          ],
+          "to": [
+            -13,
+            1,
+            48
+          ]
+        },
+        {
+          "from": [
+            -50,
+            -25,
+            -11
+          ],
+          "to": [
+            -44,
+            1,
+            -11
+          ]
+        },
+        {
+          "from": [
+            5,
+            -25,
+            -51
+          ],
+          "to": [
+            3,
+            1,
+            -51
+          ]
+        }
+      ],
+      "unreachable_chests": []
+    }
+  ],
+  "ores": [
+    {
+      "slot": 0,
+      "variant": 0,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 0,
+      "variant": 1,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 0,
+      "variant": 2,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 1,
+      "variant": 0,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 1,
+      "variant": 1,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 1,
+      "variant": 2,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 2,
+      "variant": 0,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 2,
+      "variant": 1,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 2,
+      "variant": 2,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 3,
+      "variant": 0,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 3,
+      "variant": 1,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 3,
+      "variant": 2,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 4,
+      "variant": 0,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 4,
+      "variant": 1,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 4,
+      "variant": 2,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 5,
+      "variant": 0,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 5,
+      "variant": 1,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 5,
+      "variant": 2,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 6,
+      "variant": 0,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 6,
+      "variant": 1,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 6,
+      "variant": 2,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 7,
+      "variant": 0,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 7,
+      "variant": 1,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "slot": 7,
+      "variant": 2,
+      "before": 5,
+      "target": 8,
+      "after": 8
+    },
+    {
+      "kind": "center",
+      "before": 24,
+      "target": 36,
+      "after": 36
+    }
+  ]
+}

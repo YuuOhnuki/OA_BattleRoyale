@@ -150,45 +150,89 @@ fill ~-34 ~0 ~-61 ~-33 ~0 ~-61 minecraft:end_stone_bricks
 fill ~-56 ~1 ~-71 ~-51 ~1 ~-71 minecraft:end_stone
 fill ~-56 ~1 ~-69 ~-47 ~1 ~-69 minecraft:end_stone
 fill ~-55 ~1 ~-68 ~-48 ~1 ~-68 minecraft:end_stone
-execute if score #sv5 oa.map2 matches 0 run fill ~-49 ~1 ~-71 ~-49 ~7 ~-71 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv5 oa.map2 matches 0 run fill ~-49 ~10 ~-71 ~-49 ~12 ~-71 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv5 oa.map2 matches 0 run fill ~-47 ~1 ~-68 ~-47 ~4 ~-68 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv5 oa.map2 matches 0 run fill ~-56 ~1 ~-66 ~-55 ~6 ~-66 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv5 oa.map2 matches 0 run fill ~-40 ~1 ~-66 ~-40 ~4 ~-66 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-49 ~1 ~-66 minecraft:chest[facing=north]
-execute if score #sv5 oa.map2 matches 0 run fill ~-47 ~1 ~-65 ~-47 ~7 ~-65 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-53 ~1 ~-63 minecraft:chest[facing=north]
-execute if score #sv5 oa.map2 matches 0 run fill ~-56 ~1 ~-57 ~-51 ~3 ~-57 minecraft:purpur_block
+execute if score #sv5 oa.map2 matches 0 run fill ~-56 ~0 ~-62 ~-46 ~0 ~-57 minecraft:quartz_bricks
+execute if score #sv5 oa.map2 matches 0 run fill ~-47 ~1 ~-61 ~-47 ~6 ~-61 minecraft:purpur_block
+execute if score #sv5 oa.map2 matches 0 run fill ~-48 ~1 ~-58 ~-48 ~3 ~-57 minecraft:bookshelf
 execute if score #sv5 oa.map2 matches 0 run setblock ~-53 ~2 ~-69 minecraft:end_stone
 execute if score #sv5 oa.map2 matches 0 run setblock ~-53 ~2 ~-68 minecraft:coal_ore
-execute if score #sv5 oa.map2 matches 0 run setblock ~-39 ~4 ~-66 minecraft:chorus_plant[up=true]
-execute if score #sv5 oa.map2 matches 0 run fill ~-56 ~4 ~-57 ~-51 ~4 ~-57 minecraft:smooth_quartz
-execute if score #sv5 oa.map2 matches 0 run setblock ~-47 ~5 ~-68 minecraft:chorus_flower[age=5]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-40 ~5 ~-66 minecraft:chorus_flower[age=5]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-39 ~5 ~-66 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-39 ~6 ~-66 minecraft:chorus_flower[age=5]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-48 ~7 ~-71 minecraft:chorus_plant[up=true]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-55 ~7 ~-66 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-56 ~7 ~-66 minecraft:chorus_flower[age=5]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-47 ~7 ~-64 minecraft:chorus_plant[up=true]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-49 ~8 ~-71 minecraft:chorus_flower[age=5]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-49 ~13 ~-71 minecraft:chorus_flower[age=5]
-execute if score #sv5 oa.map2 matches 0 run fill ~-48 ~8 ~-71 ~-48 ~9 ~-71 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-55 ~8 ~-66 minecraft:chorus_flower[age=5]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-47 ~8 ~-65 minecraft:chorus_flower[age=5]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-46 ~8 ~-64 minecraft:chorus_plant[up=true]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-48 ~8 ~-64 minecraft:chorus_plant[up=true]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-47 ~8 ~-64 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-47 ~8 ~-63 minecraft:chorus_plant[up=true]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-49 ~9 ~-71 minecraft:chorus_plant[up=true]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-48 ~9 ~-70 minecraft:chorus_plant[up=true]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-47 ~9 ~-64 minecraft:chorus_flower[age=5]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-48 ~9 ~-64 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv5 oa.map2 matches 0 run fill ~-46 ~9 ~-64 ~-46 ~11 ~-64 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv5 oa.map2 matches 0 run fill ~-47 ~9 ~-63 ~-47 ~11 ~-63 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-48 ~10 ~-71 minecraft:chorus_flower[age=5]
-execute if score #sv5 oa.map2 matches 0 run fill ~-48 ~10 ~-70 ~-48 ~12 ~-70 minecraft:chorus_plant[up=true,down=true]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-48 ~10 ~-64 minecraft:chorus_flower[age=5]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-46 ~12 ~-64 minecraft:chorus_flower[age=5]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-47 ~12 ~-63 minecraft:chorus_flower[age=5]
-execute if score #sv5 oa.map2 matches 0 run setblock ~-48 ~13 ~-70 minecraft:chorus_flower[age=5]
+execute if score #sv5 oa.map2 matches 0 run fill ~-56 ~7 ~-61 ~-47 ~7 ~-57 minecraft:purpur_slab[type=bottom]
+execute if score #sv5 oa.map2 matches 1 run fill ~-56 ~-7 ~-59 ~-49 ~-7 ~-57 minecraft:quartz_bricks
+execute if score #sv5 oa.map2 matches 1 run setblock ~-54 ~-6 ~-61 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run fill ~-53 ~-6 ~-60 ~-52 ~-6 ~-60 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run fill ~-56 ~-6 ~-60 ~-55 ~-6 ~-60 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-51 ~-6 ~-60 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run setblock ~-54 ~-6 ~-60 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run fill ~-56 ~-6 ~-59 ~-52 ~-6 ~-59 minecraft:cave_air
+execute if score #sv5 oa.map2 matches 1 run fill ~-51 ~-6 ~-59 ~-50 ~-6 ~-59 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-50 ~-6 ~-58 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run fill ~-56 ~-6 ~-58 ~-51 ~-6 ~-58 minecraft:cave_air
+execute if score #sv5 oa.map2 matches 1 run fill ~-49 ~-6 ~-58 ~-49 ~-6 ~-57 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run fill ~-56 ~-6 ~-57 ~-52 ~-6 ~-57 minecraft:cave_air
+execute if score #sv5 oa.map2 matches 1 run setblock ~-50 ~-6 ~-57 minecraft:cave_air
+execute if score #sv5 oa.map2 matches 1 run setblock ~-48 ~-6 ~-57 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run setblock ~-51 ~-6 ~-57 minecraft:amethyst_cluster[facing=up]
+execute if score #sv5 oa.map2 matches 1 run fill ~-53 ~-5 ~-61 ~-52 ~-5 ~-61 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run fill ~-53 ~-2 ~-61 ~-52 ~-2 ~-61 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run fill ~-56 ~-5 ~-61 ~-55 ~-5 ~-61 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run fill ~-56 ~-2 ~-61 ~-55 ~-2 ~-61 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-51 ~-5 ~-61 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run setblock ~-51 ~-2 ~-61 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run setblock ~-54 ~-5 ~-61 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run setblock ~-54 ~-2 ~-61 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run fill ~-56 ~-5 ~-60 ~-52 ~-5 ~-60 minecraft:cave_air
+execute if score #sv5 oa.map2 matches 1 run fill ~-56 ~-1 ~-60 ~-52 ~-1 ~-60 minecraft:cave_air
+execute if score #sv5 oa.map2 matches 1 run fill ~-51 ~-5 ~-60 ~-50 ~-5 ~-60 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-49 ~-5 ~-59 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-49 ~-1 ~-59 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run fill ~-56 ~-5 ~-59 ~-50 ~-1 ~-59 minecraft:cave_air
+execute if score #sv5 oa.map2 matches 1 run setblock ~-48 ~-5 ~-58 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run setblock ~-48 ~-2 ~-58 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run fill ~-56 ~-5 ~-58 ~-49 ~-5 ~-57 minecraft:cave_air
+execute if score #sv5 oa.map2 matches 1 run fill ~-56 ~-1 ~-58 ~-49 ~-1 ~-57 minecraft:cave_air
+execute if score #sv5 oa.map2 matches 1 run fill ~-48 ~-5 ~-57 ~-47 ~-5 ~-57 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run fill ~-51 ~-4 ~-61 ~-50 ~-4 ~-61 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run fill ~-54 ~-4 ~-61 ~-53 ~-4 ~-61 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run fill ~-54 ~-1 ~-61 ~-53 ~-1 ~-61 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-52 ~-4 ~-61 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run setblock ~-52 ~-1 ~-61 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run setblock ~-56 ~-4 ~-61 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-56 ~-1 ~-61 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-55 ~-4 ~-61 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run setblock ~-55 ~-1 ~-61 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run setblock ~-50 ~-4 ~-60 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run setblock ~-50 ~-1 ~-60 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run fill ~-56 ~-4 ~-60 ~-51 ~-2 ~-60 minecraft:cave_air
+execute if score #sv5 oa.map2 matches 1 run fill ~-49 ~-4 ~-60 ~-49 ~-4 ~-59 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-48 ~-4 ~-59 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run fill ~-56 ~-4 ~-58 ~-49 ~-2 ~-58 minecraft:cave_air
+execute if score #sv5 oa.map2 matches 1 run fill ~-48 ~-4 ~-58 ~-47 ~-4 ~-58 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-47 ~-4 ~-57 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run setblock ~-47 ~-1 ~-57 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run fill ~-56 ~-4 ~-57 ~-48 ~-2 ~-57 minecraft:cave_air
+execute if score #sv5 oa.map2 matches 1 run fill ~-55 ~-3 ~-61 ~-54 ~-3 ~-61 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-50 ~-3 ~-61 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run fill ~-52 ~-3 ~-61 ~-51 ~-3 ~-61 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-56 ~-3 ~-61 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run setblock ~-53 ~-3 ~-61 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run fill ~-50 ~-3 ~-60 ~-49 ~-3 ~-60 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-49 ~-3 ~-59 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run fill ~-48 ~-3 ~-59 ~-48 ~-3 ~-58 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-47 ~-3 ~-58 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run setblock ~-47 ~-3 ~-57 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run fill ~-50 ~-2 ~-61 ~-50 ~-2 ~-60 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-49 ~-2 ~-60 minecraft:budding_amethyst
+execute if score #sv5 oa.map2 matches 1 run fill ~-49 ~-2 ~-59 ~-48 ~-2 ~-59 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run fill ~-47 ~-2 ~-58 ~-47 ~-2 ~-57 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run fill ~-51 ~-1 ~-61 ~-51 ~-1 ~-60 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run fill ~-48 ~-1 ~-58 ~-48 ~-1 ~-57 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-56 ~1 ~-72 minecraft:chest[facing=north]
+execute if score #sv5 oa.map2 matches 1 run fill ~-46 ~1 ~-60 ~-46 ~3 ~-60 minecraft:amethyst_block
+execute if score #sv5 oa.map2 matches 1 run setblock ~-53 ~2 ~-70 minecraft:end_stone
+execute if score #sv5 oa.map2 matches 1 run setblock ~-53 ~2 ~-69 minecraft:coal_ore
+execute if score #sv5 oa.map2 matches 1 run setblock ~-46 ~4 ~-60 minecraft:amethyst_cluster[facing=up]
+execute if score #sv5 oa.map2 matches 2 run fill ~-56 ~0 ~-62 ~-46 ~0 ~-57 minecraft:quartz_bricks
+execute if score #sv5 oa.map2 matches 2 run fill ~-47 ~1 ~-61 ~-47 ~6 ~-61 minecraft:purpur_block
+execute if score #sv5 oa.map2 matches 2 run setblock ~-56 ~1 ~-60 minecraft:chest[facing=north]
+execute if score #sv5 oa.map2 matches 2 run fill ~-56 ~1 ~-58 ~-50 ~3 ~-58 minecraft:purpur_block
+execute if score #sv5 oa.map2 matches 2 run fill ~-50 ~1 ~-57 ~-50 ~3 ~-57 minecraft:purpur_block
+execute if score #sv5 oa.map2 matches 2 run setblock ~-47 ~7 ~-61 minecraft:end_rod[facing=up]

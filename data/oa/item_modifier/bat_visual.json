@@ -4,7 +4,19 @@
     {
       "type": "minecraft:set_components",
       "components": {
-        "minecraft:item_model": "oa:wooden_bat"
+        "minecraft:item_model": "oa:wooden_bat",
+        "minecraft:lore": [
+          {
+            "text": "通常攻撃：♥×2・攻撃速度0.8回／秒",
+            "color": "white",
+            "italic": false
+          },
+          {
+            "text": "ノックバック IV",
+            "color": "gray",
+            "italic": false
+          }
+        ]
       }
     },
     {
@@ -34,13 +46,13 @@
     {
       "type": "minecraft:set_enchantments",
       "enchantments": {
-        "minecraft:knockback": 0
+        "minecraft:knockback": 4
       },
       "add": false
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa_bat_v151:1b}"
+      "tag": "{oa_bat_v151:1b,oa_bat_v239:1b}"
     }
   ]
 }

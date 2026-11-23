@@ -3,5 +3,6 @@ execute store result score #point_max br.tmp run data get storage oa:spawn_pool 
 scoreboard players remove #point_max br.tmp 1
 execute store result storage oa:spawn_pool max int 1 run scoreboard players get #point_max br.tmp
 function oa:br/spawn_points/random with storage oa:spawn_pool
+execute if data storage oa:spawn_pool used[0] run function oa:br/spawn_points/farthest
 execute store result storage oa:spawn_pool index int 1 run scoreboard players get #point_pick br.tmp
 function oa:br/spawn_points/select with storage oa:spawn_pool

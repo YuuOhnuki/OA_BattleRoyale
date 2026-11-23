@@ -47,61 +47,103 @@
   "desert": {
    "name": "砂漠の島",
    "chests": 7,
-   "ores": 4,
+   "ores": 6,
    "spawns": 5
   },
   "snow": {
    "name": "雪の島",
    "chests": 7,
-   "ores": 4,
+   "ores": 6,
    "spawns": 5
   },
   "mesa": {
    "name": "メサの島",
    "chests": 7,
-   "ores": 4,
+   "ores": 6,
    "spawns": 5
   },
   "oasis": {
    "name": "オアシスの島",
    "chests": 7,
-   "ores": 4,
+   "ores": 6,
    "spawns": 5
   },
   "western": {
    "name": "西洋の町の島",
    "chests": 7,
-   "ores": 4,
+   "ores": 6,
    "spawns": 5
   },
   "japan": {
    "name": "和風の島",
    "chests": 7,
-   "ores": 4,
+   "ores": 6,
    "spawns": 5
   },
   "ship": {
    "name": "飛行船の島",
    "chests": 7,
-   "ores": 4,
-   "spawns": 4
+   "ores": 6,
+   "spawns": 5
   },
   "balloon": {
    "name": "気球の島",
-   "chests": 6,
-   "ores": 2,
-   "spawns": 4
+   "chests": 7,
+   "ores": 3,
+   "spawns": 5
   },
   "temple": {
    "name": "天空神殿の島",
    "chests": 7,
-   "ores": 4,
+   "ores": 6,
    "spawns": 5
   },
   "resort": {
    "name": "リゾートの島",
    "chests": 7,
-   "ores": 4,
+   "ores": 6,
+   "spawns": 5
+  },
+  "grove": {
+   "name": "小さな森林島",
+   "chests": 7,
+   "ores": 6,
+   "spawns": 5
+  },
+  "great_tree": {
+   "name": "巨樹の島",
+   "chests": 7,
+   "ores": 6,
+   "spawns": 5
+  },
+  "windmill": {
+   "name": "風車の島",
+   "chests": 7,
+   "ores": 6,
+   "spawns": 5
+  },
+  "mushroom": {
+   "name": "キノコの島",
+   "chests": 7,
+   "ores": 6,
+   "spawns": 5
+  },
+  "quarry": {
+   "name": "鉱山の島",
+   "chests": 7,
+   "ores": 6,
+   "spawns": 5
+  },
+  "terrace": {
+   "name": "段々庭園の島",
+   "chests": 7,
+   "ores": 6,
+   "spawns": 5
+  },
+  "ruin_fort": {
+   "name": "崩れた砦の島",
+   "chests": 7,
+   "ores": 6,
    "spawns": 5
   }
  },

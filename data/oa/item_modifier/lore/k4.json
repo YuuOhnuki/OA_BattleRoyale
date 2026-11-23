@@ -70,7 +70,7 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×3）。攻撃速度1.8回／秒。25",
+                "text": "×3）。攻撃速度1.8回／秒。20",
                 "color": "white",
                 "italic": false
               }
@@ -168,7 +168,7 @@
     },
     {
       "type": "minecraft:set_custom_data",
-      "tag": "{oa:{description214:1b,description_up:0b,name_v172:1b,name_v204:1b}}"
+      "tag": "{oa:{description214:1b,description_up:0b,name_v172:1b,name_v204:1b,description239:1b}}"
     }
   ]
 }

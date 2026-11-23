@@ -15,8 +15,12 @@
 島のテンプレートは 61×81×61（中心が島の中心、y=0 が島の縁の高さ＝絶対80）。島の縁（半径の6割より外）は平らな y=0 にして、
 どの向きから橋が来ても平らな所につながる。島の上 y=1〜4 の何もない所は空気も含めて書き出す（橋の手すりを消す）。
 """
-import sys, os, re, glob, json, math, gzip, struct
+import sys, os, re, glob, json, math, gzip, struct, zlib
 import numpy as np
+from pathlib import Path
+from map_quality import audit,veins
+CATALOG=json.loads(Path(__file__).with_name("map_islands.json").read_text(encoding="utf-8"))["sky"]
+QUALITY={"checks":[],"ores":[]}
 
 ROOT = sys.argv[1]
 KEY = 'sky'
@@ -27,7 +31,15 @@ DIM = 'oa:br_sky'; LABEL = '天空島'
 OUT = f"{ROOT}/data/oa/function/maps/{KEY}/tiles"
 SRC = f"{ROOT}/data/oa/function/map/internal/tiles"
 MD = f"{ROOT}/data/oa/function/maps/{KEY}"
-SEED = 20261125
+SEED = int(arg("--seed") or 20261125)
+def write_structure(path,data):
+    target=Path(path)
+    if target.exists():
+        try:
+            if gzip.decompress(target.read_bytes())==data:return
+        except (OSError,EOFError,zlib.error):pass
+    target.write_bytes(gzip.compress(data,mtime=0))
+
 DATA_VERSION = 3953   # 1.21 の番号（26.3 の 5023 を書くと、テンプレートが何も置かれなかった。テスト用サーバーで確認）。ゲームが新しい版へ直して読む
 rng = np.random.default_rng(SEED)
 N = 305; OFF = 152; Y0 = -40; NY = 81; TOP = 40
@@ -432,6 +444,8 @@ for x in range(-W_ + 3, W_ - 2):
 # 中庭の飾り：噴水・金の像・生け垣・花壇
 for (fx, fz) in ((-17, -17), (17, -17), (-17, 17), (17, 17)):
     hollow(fx - 3, 1, fz - 3, fx + 3, 1, fz + 3, 'minecraft:polished_andesite'); box(fx - 2, 0, fz - 2, fx + 2, 0, fz + 2, 'minecraft:water')
+    for dx,dz in ((1,0),(-1,0),(0,1),(0,-1)):
+        put(fx+dx*2,0,fz+dz*2,'minecraft:smooth_stone_slab[type=bottom]');clear(fx+dx*3,1,fz+dz*3,fx+dx*3,2,fz+dz*3)
     box(fx, 1, fz, fx, 3, fz, 'minecraft:quartz_pillar'); put(fx, 4, fz, 'minecraft:gold_block')
 for (hx, hz) in ((-10, -22), (10, -22), (-10, 22), (10, 22), (-22, -10), (22, -10), (-22, 10), (22, 10)):
     box(hx - 2, 1, hz, hx + 2, 2, hz, 'minecraft:oak_leaves[persistent=true]') if hz in (-22, 22) else box(hx, 1, hz - 2, hx, 2, hz + 2, 'minecraft:oak_leaves[persistent=true]')
@@ -534,7 +548,11 @@ assert len(base.spawns) >= 12
 DOME_R = 29
 ISLES = []   # (key, 名前, 半径, 作る関数)
 def isle(key, name, r):
-    def deco(fn): ISLES.append((key, name, r, fn)); return fn
+    def deco(fn):
+        profile=CATALOG[key]
+        radius=int(profile["radius"]);assert 16<=radius<=25
+        assert 1<=profile["weight"]<=20 and 5<=profile["chests"]<=12
+        ISLES.append((key, profile["name"], radius, fn)); return fn
     return deco
 
 def pad(x1, z1, x2, z2, y=None, top=None, fill='minecraft:stone', margin=2, ymax=None):
@@ -646,12 +664,13 @@ def lantern_post(x, z, g):
     put(x, g + 4, z, 'minecraft:dark_oak_slab[type=bottom]'); put(x, g + 3, z + 1, 'minecraft:lantern[hanging=true]') if free(x, g + 3, z + 1) else None
 
 def fin(rr, r, want_chests=7, spawns=5, ores=4, host='minecraft:stone'):
+    want_chests=cur.profile["chests"]
     drop_overwritten()
     fill_chests(rr, 0, 0, 4, min(r * 0.9, 23), want_chests)
     while len(cur.chests) + len(cur.riches) > want_chests and cur.chests:
         x, y, z = cur.chests.pop(); put(x, y, z, 'minecraft:air')
     ore_rocks(rr, 0, 0, 3, min(r * 0.9, 23), ores, host)
-    add_spawns(rr, 0, 0, 2, 26, spawns)
+    add_spawns(rr, 0, 0, 2, 26, max(5,spawns))
     drop_overwritten()
 
 # ---------------------------------------------------------------------------------------------------- 砂漠
@@ -1112,7 +1131,86 @@ def b_resort(rr, r):
     promenade('minecraft:smooth_quartz')
     fin(rr, r)
 
-assert len(ISLES) == 10, len(ISLES)
+
+# 1.9.239: bridge-compatible, intentionally low profile variants.
+@isle('grove', '小さな森林島', 23)
+def b_grove(rr,r):
+    isle_terrain(r,amp=4,seed_off=1200)
+    g=pad(-8,-8,8,8,y=0,top='minecraft:moss_block')
+    for x,z in ((-12,-10),(12,-9),(-11,11),(12,12),(0,13)):
+        h=gy(x,z)
+        if h is not None:tree_round(x,z,h,5,rad=3)
+    house_fine(-3,-3,0,6,6,chests=2)
+    promenade();fin(rr,r)
+
+@isle('great_tree', '巨樹の島', 23)
+def b_great_tree(rr,r):
+    isle_terrain(r,amp=4,seed_off=1271)
+    g=pad(-8,-8,8,8,y=0,top='minecraft:moss_block')
+    box(-1,1,-1,1,13,1,'minecraft:oak_log')
+    for y,rad in ((11,7),(14,5),(17,3)):
+        for x in range(-rad,rad+1):
+            for z in range(-rad,rad+1):
+                if math.hypot(x,z)<=rad-.3+float(rr.random())*.6:box(x,y,z,x,y+1,z,'minecraft:oak_leaves[persistent=true]')
+    box(0,1,-2,0,14,-2,'minecraft:ladder[facing=north]')
+    box(-3,14,-3,3,14,3,'minecraft:oak_planks');clear(-3,15,-3,3,16,3)
+    put(0,14,-2,'minecraft:ladder[facing=north]')
+    chest(2,15,1,rich=True)
+    promenade();fin(rr,r)
+
+@isle('windmill', '風車の島', 23)
+def b_windmill(rr,r):
+    isle_terrain(r,amp=4,seed_off=1342)
+    g=pad(-8,-8,8,8,y=0,top='minecraft:moss_block')
+    house_fine(-3,-3,0,7,7,chests=2,roof=('minecraft:oak_stairs','minecraft:oak_planks'))
+    box(-1,8,-1,1,13,1,'minecraft:stripped_oak_log')
+    for d in range(2,7):
+        put(d,12+d//3,-2,'minecraft:white_wool');put(-d,12-d//3,-2,'minecraft:white_wool')
+        put(0,12+d,-2,'minecraft:white_wool');put(0,12-d,-2,'minecraft:white_wool')
+    promenade();fin(rr,r)
+
+@isle('mushroom', 'キノコの島', 23)
+def b_mushroom(rr,r):
+    isle_terrain(r,amp=4,seed_off=1413)
+    g=pad(-8,-8,8,8,y=0,top='minecraft:moss_block')
+    for x,z,h in ((-9,-9,5),(9,-9,7),(-9,9,6),(9,9,5)):
+        y=gy(x,z) or 0;box(x,y+1,z,x,y+h,z,'minecraft:mushroom_stem');box(x-3,y+h,z-3,x+3,y+h+1,z+3,'minecraft:red_mushroom_block')
+    house_fine(-3,-3,0,6,6,chests=2,wall='minecraft:brown_mushroom_block')
+    promenade();fin(rr,r)
+
+@isle('quarry', '鉱山の島', 23)
+def b_quarry(rr,r):
+    isle_terrain(r,amp=4,seed_off=1484)
+    g=pad(-8,-8,8,8,y=0,top='minecraft:moss_block')
+    for x,z in ((-6,-6),(6,-6),(-6,6),(6,6)):
+        box(x,1,z,x,4,z,'minecraft:oak_log');box(x-1,4,z,x+1,4,z,'minecraft:oak_planks')
+        box(x-1,0,z-1,x+1,0,z+1,'minecraft:stone');put(x,1,z+1,'minecraft:rail[shape=north_south]')
+    chest(-2,1,0);chest(2,1,0)
+    promenade();fin(rr,r)
+
+@isle('terrace', '段々庭園の島', 23)
+def b_terrace(rr,r):
+    isle_terrain(r,amp=7,seed_off=1555)
+    g=pad(-8,-8,8,8,y=0,top='minecraft:moss_block')
+    for y in range(4):
+        box(-8+y*2,y,-8+y*2,8-y*2,y,8-y*2,'minecraft:stone_bricks')
+        put(0,y,8-y*2,'minecraft:stone_brick_stairs[facing=north]');clear(0,y+1,8-y*2,0,y+2,8-y*2)
+    chest(1,4,0,rich=True)
+    promenade();fin(rr,r)
+
+@isle('ruin_fort', '崩れた砦の島', 23)
+def b_ruin_fort(rr,r):
+    isle_terrain(r,amp=4,seed_off=1626)
+    g=pad(-8,-8,8,8,y=0,top='minecraft:moss_block')
+    hollow(-7,1,-7,7,3,7,'minecraft:mossy_stone_bricks');clear(-1,1,7,1,3,7);clear(-7,2,-2,-7,4,2)
+    for x,z in ((-7,-7),(7,-7),(-7,7),(7,7)):box(x,1,z,x,5,z,'minecraft:cracked_stone_bricks')
+    chest(-3,1,-3);chest(3,1,-3)
+    promenade();fin(rr,r)
+
+assert len(ISLES) == len(CATALOG), len(ISLES)
+cur=base
+QUALITY["checks"].append(dict(kind="center",**audit(base,pal,Y0,put)))
+QUALITY["ores"].append(dict(kind="center",**veins(base,math.ceil(len(base.ores)*1.5),getb,put,SEED+999,surface=gy)))
 # 島ごとのドームの内側の高さの確認（建物がガラスを突き抜けない）
 
 # ======================================================================== 書き出し：中央（タイル）
@@ -1221,10 +1319,23 @@ os.makedirs(ISLE_DIR, exist_ok=True)
 IS = 30   # テンプレートの半分の幅（61）
 ISLE_DATA = {}
 isle_canvases = {}
+BUILDERS={key:fn for key,_,_,fn in ISLES}
 for ti, (key, name, r, fn) in enumerate(ISLES):
     cv = Canvas(-IS, -IS, IS, IS, isle=True)
     cur = cv
-    fn(np.random.default_rng(SEED * 7 + ti), r)
+    cur.profile=CATALOG[key]
+    builder=BUILDERS[CATALOG[key]["structure"]]
+    builder(np.random.default_rng(SEED * 7 + ti), r)
+    if cur.profile.get("chest_positions"):
+        positions=cur.profile["chest_positions"];assert len(positions)==cur.profile["chests"]
+        for old in cur.chests+cur.riches:put(*old,'minecraft:air')
+        cur.chests=[];cur.riches=[]
+        for point in positions:
+            x,y,z=(int(point[k]) for k in ('x','y','z'));assert cur.inb(x,z) and -35<=y<=30
+            chest(x,y,z,rich=bool(point.get('rich',False)),face=point.get('facing','north'))
+    QUALITY["checks"].append(dict(kind=key,**audit(cv,pal,Y0,put)))
+    assert not QUALITY["checks"][-1]["unreachable_chests"],(key,QUALITY["checks"][-1])
+    QUALITY["ores"].append(dict(kind=key,**veins(cv,math.ceil(len(cv.ores)*1.5),getb,put,SEED+ti,surface=gy)))
     # ドームの内側（半径 DOME_R-1）より上へ出るブロックは消す（ガラスを突き抜けない）
     cut = 0
     for x in range(-IS, IS + 1):
@@ -1261,7 +1372,7 @@ for ti, (key, name, r, fn) in enumerate(ISLES):
                      (9, 'blocks', list_payload(10, blocks)),
                      (9, 'entities', list_payload(0, []))])
     data = tag_named(10, '', root[:-0] if False else root)
-    with gzip.open(f"{ISLE_DIR}/{key}.nbt", 'wb') as f: f.write(data)
+    write_structure(f"{ISLE_DIR}/{key}.nbt",data)
     ISLE_DATA[key] = dict(name=name, chests=list(cv.chests), riches=list(cv.riches), ores=list(cv.ores), spawns=list(cv.spawns), decos=list(cv.decos))
     isle_canvases[key] = cv
     print(f'isle {key}: blocks {len(blocks)} chests {len(cv.chests) + len(cv.riches)} ores {len(cv.ores)} spawns {len(cv.spawns)} decos {len(cv.decos)}')
@@ -1285,7 +1396,7 @@ def write_nbt(path, g):
         pal_payloads.append(compound(items))
     root = compound([(3, 'DataVersion', i32(DATA_VERSION)), (9, 'size', list_payload(3, [i32(g.shape[0]), i32(NY), i32(g.shape[1])])),
                      (9, 'palette', list_payload(10, pal_payloads)), (9, 'blocks', list_payload(10, blocks)), (9, 'entities', list_payload(0, []))])
-    with gzip.open(path, 'wb') as f: f.write(tag_named(10, '', root))
+    write_structure(path,tag_named(10, '', root))
     return len(blocks)
 for s in range(10):
     sx, sz = SITES[s]; dd = math.hypot(sx, sz); ux, uz = -sx / dd, -sz / dd   # 島の中心から中央へ
@@ -1389,7 +1500,9 @@ for s in range(10):
                  f"execute unless score #mode oa.map2 matches 1 in {DIM} run function oa:maps/{KEY}/isles/bridge/s{s}",
                  f"execute unless score #mode oa.map2 matches 1 in {DIM} store success score #isle_placed oa.map2 run place template oa:sky/{key} {ox} {YB + Y0} {oz} {ROT[rt]}",
                  f"execute unless score #mode oa.map2 matches 1 if score #isle_placed oa.map2 matches 0 run tellraw @a[tag=br.admin] {{text:\"[天空島] 「{name}」を置けませんでした（読み込み）\",color:\"red\"}}",
-                 f"execute unless score #mode oa.map2 matches 1 in {DIM} run place template oa:sky/dome_s{s} {sx - IS} {YB + Y0} {sz - IS}"]
+                 f"execute unless score #mode oa.map2 matches 1 in {DIM} store success score #dome_placed oa.map2 run place template oa:sky/dome_s{s} {sx - IS} {YB + Y0} {sz - IS}",
+                 "execute unless score #mode oa.map2 matches 1 if score #dome_placed oa.map2 matches 0 run scoreboard players set #map_failed oa.map2 1",
+                 "execute unless score #mode oa.map2 matches 1 if score #isle_placed oa.map2 matches 0 run scoreboard players set #map_failed oa.map2 1"]
             def W2(lx, lz):
                 a, b = rot_off(lx + IS, lz + IS, rt); return ox + a, oz + b
             for (x, y, z, k) in D['ores']:
@@ -1419,19 +1532,23 @@ for s in range(10):
 # 抽選
 R = [HEAD + "。外周の島：3〜6個を、10か所の候補地から場所・種類・向きを抽選する（作成・再生成のときだけ。map/internal/job/begin から）",
      "execute unless score #mode oa.map2 matches 0 run return 0"]
-R += [f"scoreboard players set #sk{s} oa.map2 -1" for s in range(10)] + [f"scoreboard players set #tu{t} oa.map2 0" for t in range(10)]
+R += [f"scoreboard players set #sk{s} oa.map2 -1" for s in range(10)] + [f"scoreboard players set #tu{t} oa.map2 0" for t in range(len(ISLES))]
 R += ["execute store result score #in oa.map2 run random value 3..6", "scoreboard players set #ii oa.map2 0", f"function oa:maps/{KEY}/isles/roll_one"]
 open(f"{MD}/roll.mcfunction", 'w', encoding='utf8', newline='\n').write('\n'.join(R) + '\n')
 W("roll_one", [HEAD, "execute if score #ii oa.map2 >= #in oa.map2 run return 0",
                f"function oa:maps/{KEY}/isles/pick_site", f"function oa:maps/{KEY}/isles/pick_type"]
   + [f"execute if score #ps oa.map2 matches {s} run scoreboard players operation #sk{s} oa.map2 = #pt oa.map2" for s in range(10)]
   + [f"execute if score #ps oa.map2 matches {s} store result score #sr{s} oa.map2 run random value 0..3" for s in range(10)]
-  + [f"execute if score #pt oa.map2 matches {t} run scoreboard players set #tu{t} oa.map2 1" for t in range(10)]
+  + [f"execute if score #pt oa.map2 matches {t} run scoreboard players set #tu{t} oa.map2 1" for t in range(len(ISLES))]
   + ["scoreboard players add #ii oa.map2 1", f"function oa:maps/{KEY}/isles/roll_one"])
 W("pick_site", [HEAD, "execute store result score #ps oa.map2 run random value 0..9"]
   + [f"execute if score #ps oa.map2 matches {s} unless score #sk{s} oa.map2 matches -1 run return run function oa:maps/{KEY}/isles/pick_site" for s in range(10)])
-W("pick_type", [HEAD, "execute store result score #pt oa.map2 run random value 0..9"]
-  + [f"execute if score #pt oa.map2 matches {t} if score #tu{t} oa.map2 matches 1 run return run function oa:maps/{KEY}/isles/pick_type" for t in range(10)])
+weights=[int(CATALOG[k]["weight"]) for k,_,_,_ in ISLES]
+weighted=[];start=1
+for t,weight in enumerate(weights):
+    weighted.append(f"execute if score #type_roll oa.map2 matches {start}..{start+weight-1} run scoreboard players set #pt oa.map2 {t}");start+=weight
+W("pick_type", [HEAD, f"execute store result score #type_roll oa.map2 run random value 1..{sum(weights)}"]+weighted
+  + [f"execute if score #pt oa.map2 matches {t} if score #tu{t} oa.map2 matches 1 run return run function oa:maps/{KEY}/isles/pick_type" for t in range(len(ISLES))])
 # 置く順番（区画のあと）
 W("begin", [HEAD + "。区画（中央）のあとに呼ばれる。島を1つずつ置く（終わるまで生成中のまま）",
             "data modify storage oa_map2:job working set value 1b",
@@ -1463,7 +1580,10 @@ W("place", [HEAD + "。今の候補地（#isle）の島を置いて登録する"
   + [f"execute if score #isle oa.map2 matches {s} run function oa:maps/{KEY}/isles/do_s{s}" for s in range(10)]
   + ["scoreboard players operation #chests oa.map2 += #localc oa.map2", "scoreboard players operation #ores oa.map2 += #localo oa.map2"])
 W("finish", [HEAD + "。島を置き終えた",
+             "execute if score #map_failed oa.map2 matches 1.. run return run function oa:maps/sky/isles/failed",
              "data modify storage oa_map2:job working set value 0b",
+             "scoreboard players set #image_sky oa.tmp 0",
+             "function oa:map/internal/save_cur {key:\"sky\"}",
              "execute store result score #sp_n oa.tmp run data get storage oa:spawn_points points",
              "execute store result score #isle_n oa.tmp run data get storage oa:maps sky_isles",
              'tellraw @a[tag=br.admin] [{text:"[天空島] まわりの島 ",color:"green"},{score:{name:"#isle_n",objective:"oa.tmp"},color:"green"},{text:" 個を置きました（",color:"green"},{nbt:"sky_isles[]",storage:"oa:maps",color:"white",separator:"・"},{text:"）。チェスト ",color:"green"},{score:{name:"#chests",objective:"oa.map2"},color:"green"},{text:"個・開始地点 ",color:"green"},{score:{name:"#sp_n",objective:"oa.tmp"},color:"green"},{text:"か所。",color:"green"}]',
@@ -1537,6 +1657,9 @@ if PNG or PANEL:
     from PIL import Image, ImageDraw, ImageFont
     def render_top(G, size, clouds=True):
         img = Image.new('RGB', (N, N)); px = img.load()
+        G=G.copy()
+        for i,b in enumerate(pal):
+            if "glass" in b or b in ("minecraft:air","minecraft:cave_air"):G[G==i]=0
         has = G.any(axis=2); top = NY - 1 - np.argmax(G[:, :, ::-1] != 0, axis=2)
         CL = smooth(25, 9)
         for x in range(N):
@@ -1552,7 +1675,7 @@ if PNG or PANEL:
         return img.resize((size, size), Image.LANCZOS)
     if PNG: render_top(composite(SAMPLE), N * 2).save(PNG)
     if PANEL:
-        img = render_top(base.g, 512)
+        img = render_top(composite(SAMPLE), 512)
         d_ = ImageDraw.Draw(img, 'RGBA')
         font = ImageFont.truetype('C:/Windows/Fonts/meiryob.ttc', 18); small = ImageFont.truetype('C:/Windows/Fonts/meiryob.ttc', 14)
         S_ = 512 / N
@@ -1562,7 +1685,7 @@ if PNG or PANEL:
             d_.text((X, Y), '？', font=font, fill=(255, 255, 255, 200), anchor='mm')
         X, Y = 256, 256; w_ = d_.textlength('天空城', font=font)
         d_.rounded_rectangle([X - w_ / 2 - 7, Y - 14, X + w_ / 2 + 7, Y + 14], 6, fill=(15, 15, 28, 195)); d_.text((X, Y), '天空城', font=font, fill=(255, 225, 120), anchor='mm')
-        note = 'まわりの島は会場を作るたびに3〜6個（場所・種類・向きが変わる）'
+        note = '見本：完成後は中央の実地図へ更新（島は3〜6個・17種類）'
         w_ = d_.textlength(note, font=small)
         d_.rounded_rectangle([256 - w_ / 2 - 8, 486, 256 + w_ / 2 + 8, 508], 6, fill=(15, 15, 28, 210)); d_.text((256, 497), note, font=small, fill=(235, 235, 235), anchor='mm')
         img.save(PANEL)
@@ -1592,3 +1715,7 @@ json.dump({"key": KEY, "seed": SEED, "sites": SITES, "isles": {k: {"name": v['na
            "center_chests": len(base.chests) + len(base.riches), "center_spawns": len(base.spawns)},
           open(f"{ROOT}/MAP_SKY_MANIFEST.json", "w", encoding="utf8"), ensure_ascii=False, indent=1, default=int)
 print('ok sky')
+
+json.dump(QUALITY,open(f"{ROOT}/MAP_SKY_QUALITY.json","w",encoding="utf-8"),ensure_ascii=False,indent=2,default=int)
+
+W("failed",[HEAD,"data modify storage oa_map2:job working set value 0b","scoreboard players set #state oa.map2 2",'function oa:map/internal/save_cur {key:"sky"}','tellraw @a[tag=br.admin] {text:"[天空島] テンプレート配置に失敗しました。完成扱いにせず停止しました。ログを確認して再生成してください。",color:"red"}'])

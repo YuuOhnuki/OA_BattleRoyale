@@ -63,10 +63,10 @@ fill 44 82 4 45 82 4 minecraft:lantern
 fill 54 82 6 55 82 6 minecraft:lantern
 setblock 64 82 7 minecraft:lantern
 setblock 65 82 8 minecraft:lantern
-setblock 44 82 9 minecraft:lantern
 fill 74 82 9 75 82 9 minecraft:lantern
-fill 84 82 11 85 82 11 minecraft:lantern
+setblock 44 82 9 minecraft:lantern
 fill 53 82 11 54 82 11 minecraft:lantern
+fill 84 82 11 85 82 11 minecraft:lantern
 fill 94 82 12 95 82 12 minecraft:lantern
 fill 63 82 12 64 82 12 minecraft:lantern
 fill 73 82 14 74 82 14 minecraft:lantern

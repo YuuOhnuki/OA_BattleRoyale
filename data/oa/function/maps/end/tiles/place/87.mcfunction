@@ -103,8 +103,8 @@ setblock ~103 ~1 ~109 minecraft:coal_ore
 fill ~92 ~1 ~109 ~95 ~1 ~109 minecraft:end_stone
 setblock ~99 ~1 ~110 minecraft:end_stone
 fill ~92 ~1 ~110 ~97 ~1 ~110 minecraft:end_stone
+fill ~99 ~1 ~111 ~100 ~1 ~111 minecraft:coal_ore
 fill ~93 ~1 ~111 ~98 ~1 ~111 minecraft:end_stone
-setblock ~99 ~1 ~111 minecraft:coal_ore
 setblock ~100 ~1 ~112 minecraft:obsidian
 fill ~93 ~1 ~112 ~99 ~1 ~112 minecraft:end_stone
 fill ~94 ~1 ~113 ~102 ~1 ~113 minecraft:end_stone

@@ -1,5 +1,5 @@
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{oa_normal:"bat"}] unless items entity @s weapon.mainhand *[minecraft:custom_data~{oa_bat_v151:1b}] run item modify entity @s weapon.mainhand oa:bat_visual
-execute if items entity @s weapon.offhand *[minecraft:custom_data~{oa_normal:"bat"}] unless items entity @s weapon.offhand *[minecraft:custom_data~{oa_bat_v151:1b}] run item modify entity @s weapon.offhand oa:bat_visual
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{oa_normal:"bat"}] unless items entity @s weapon.mainhand *[minecraft:custom_data~{oa_bat_v239:1b}] run item modify entity @s weapon.mainhand oa:bat_visual
+execute if items entity @s weapon.offhand *[minecraft:custom_data~{oa_normal:"bat"}] unless items entity @s weapon.offhand *[minecraft:custom_data~{oa_bat_v239:1b}] run item modify entity @s weapon.offhand oa:bat_visual
 
 function oa:normal/nonstack/scan
 

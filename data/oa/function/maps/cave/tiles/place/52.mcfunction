@@ -253,7 +253,7 @@ fill ~-60 ~-30 ~21 ~-59 ~-30 ~22 minecraft:stone
 fill ~-58 ~-30 ~22 ~-57 ~-29 ~22 minecraft:dripstone_block
 fill ~-58 ~-23 ~22 ~-57 ~-22 ~22 minecraft:dripstone_block
 fill ~-62 ~-30 ~19 ~-61 ~-30 ~23 minecraft:dripstone_block
-fill ~-60 ~-30 ~23 ~-57 ~-29 ~23 minecraft:stone
+fill ~-60 ~-30 ~23 ~-57 ~-30 ~23 minecraft:stone
 fill ~-61 ~-30 ~24 ~-59 ~-29 ~24 minecraft:stone
 fill ~-61 ~-23 ~24 ~-59 ~-23 ~24 minecraft:stone
 fill ~-58 ~-30 ~24 ~-58 ~-29 ~24 minecraft:dripstone_block
@@ -319,7 +319,10 @@ fill ~-60 ~-29 ~21 ~-59 ~-29 ~21 minecraft:stone
 fill ~-62 ~-29 ~22 ~-60 ~-24 ~22 minecraft:dripstone_block
 setblock ~-59 ~-29 ~22 minecraft:stone
 setblock ~-59 ~-23 ~22 minecraft:stone
+fill ~-58 ~-29 ~23 ~-57 ~-29 ~23 minecraft:stone
+fill ~-60 ~-29 ~23 ~-60 ~-27 ~23 minecraft:stone
 fill ~-62 ~-29 ~23 ~-61 ~-24 ~23 minecraft:dripstone_block
+fill ~-59 ~-29 ~23 ~-59 ~-28 ~23 minecraft:coal_ore
 fill ~-61 ~-29 ~25 ~-58 ~-29 ~25 minecraft:stone
 setblock ~-57 ~-29 ~25 minecraft:andesite
 fill ~-61 ~-29 ~26 ~-57 ~-29 ~26 minecraft:stone
@@ -372,9 +375,9 @@ fill ~-59 ~-22 ~16 ~-58 ~-22 ~16 minecraft:dripstone_block
 fill ~-61 ~-28 ~17 ~-59 ~-24 ~17 minecraft:stone
 fill ~-61 ~-28 ~18 ~-60 ~-24 ~18 minecraft:stone
 fill ~-60 ~-28 ~19 ~-60 ~-24 ~21 minecraft:stone
-setblock ~-60 ~-28 ~23 minecraft:stone
-setblock ~-59 ~-28 ~23 minecraft:coal_ore
-fill ~-61 ~-28 ~24 ~-59 ~-24 ~25 minecraft:stone
+setblock ~-59 ~-28 ~24 minecraft:redstone_ore
+fill ~-61 ~-28 ~24 ~-60 ~-27 ~24 minecraft:stone
+fill ~-61 ~-28 ~25 ~-59 ~-27 ~25 minecraft:stone
 fill ~-61 ~-28 ~26 ~-58 ~-24 ~26 minecraft:stone
 fill ~-58 ~-28 ~28 ~-58 ~-24 ~28 minecraft:stone
 fill ~-62 ~-28 ~28 ~-60 ~-24 ~28 minecraft:stone
@@ -394,9 +397,12 @@ fill ~-62 ~-27 ~12 ~-61 ~-23 ~12 minecraft:granite
 fill ~-59 ~-27 ~12 ~-57 ~-23 ~12 minecraft:granite
 fill ~-60 ~-27 ~12 ~-60 ~-23 ~12 minecraft:dripstone_block
 fill ~-59 ~-27 ~16 ~-59 ~-23 ~16 minecraft:dripstone_block
-fill ~-60 ~-27 ~23 ~-59 ~-24 ~23 minecraft:stone
+setblock ~-59 ~-27 ~23 minecraft:redstone_ore
+setblock ~-59 ~-27 ~24 minecraft:coal_ore
 setblock ~-57 ~-27 ~31 minecraft:glow_lichen[west=true]
 fill ~-60 ~-26 ~11 ~-59 ~-23 ~11 minecraft:granite
+fill ~-60 ~-26 ~23 ~-59 ~-24 ~23 minecraft:stone
+fill ~-61 ~-26 ~24 ~-59 ~-24 ~25 minecraft:stone
 setblock ~-68 ~-26 ~35 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
 setblock ~-69 ~-26 ~37 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]
 setblock ~-70 ~-25 ~12 minecraft:pointed_dripstone[vertical_direction=down,thickness=tip]

@@ -10,7 +10,6 @@ fill ~61 ~-26 ~-43 ~63 ~-26 ~-43 minecraft:stone
 fill ~57 ~-26 ~-43 ~59 ~-26 ~-43 minecraft:stone
 setblock ~60 ~-26 ~-43 minecraft:gold_block
 fill ~57 ~-26 ~-42 ~63 ~-26 ~-40 minecraft:stone
-setblock ~58 ~-25 ~-45 minecraft:chest[facing=north]
 fill ~49 ~-24 ~-26 ~50 ~-23 ~-26 minecraft:tuff
 setblock ~50 ~-23 ~-27 minecraft:tuff
 setblock ~50 ~-23 ~-25 minecraft:tuff
@@ -354,8 +353,9 @@ fill ~40 ~0 ~-26 ~66 ~0 ~-25 minecraft:grass_block
 fill ~40 ~1 ~-38 ~42 ~1 ~-38 minecraft:grass_block
 fill ~40 ~1 ~-37 ~47 ~1 ~-37 minecraft:grass_block
 fill ~41 ~1 ~-36 ~49 ~1 ~-36 minecraft:grass_block
-fill ~44 ~1 ~-35 ~48 ~1 ~-35 minecraft:dirt
 fill ~49 ~1 ~-35 ~50 ~1 ~-35 minecraft:grass_block
+fill ~44 ~1 ~-35 ~48 ~1 ~-35 minecraft:dirt
+setblock ~54 ~1 ~-35 minecraft:chest[facing=north]
 fill ~48 ~1 ~-34 ~50 ~1 ~-34 minecraft:grass_block
 fill ~44 ~1 ~-34 ~47 ~1 ~-34 minecraft:dirt
 fill ~41 ~1 ~-35 ~43 ~1 ~-33 minecraft:grass_block

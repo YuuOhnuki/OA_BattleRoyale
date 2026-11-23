@@ -159,4 +159,25 @@ fill ~-94 ~5 ~-7 ~-93 ~5 ~-7 minecraft:end_stone
 fill ~-95 ~5 ~-6 ~-93 ~5 ~-6 minecraft:end_stone
 fill ~-94 ~5 ~-5 ~-93 ~5 ~-4 minecraft:end_stone
 fill ~-94 ~6 ~-6 ~-93 ~6 ~-5 minecraft:end_stone
-execute if score #sv4 oa.map2 matches 0 run setblock ~-91 ~5 ~-3 minecraft:coal_ore
+execute if score #sv4 oa.map2 matches 0 run fill ~-91 ~-3 ~-7 ~-89 ~22 ~-7 minecraft:obsidian
+execute if score #sv4 oa.map2 matches 0 run fill ~-92 ~-3 ~-6 ~-89 ~22 ~-4 minecraft:obsidian
+execute if score #sv4 oa.map2 matches 0 run fill ~-91 ~-3 ~-3 ~-89 ~22 ~-3 minecraft:obsidian
+execute if score #sv4 oa.map2 matches 0 run setblock ~-89 ~0 ~-15 minecraft:end_stone
+execute if score #sv4 oa.map2 matches 0 run fill ~-90 ~0 ~-14 ~-89 ~0 ~-8 minecraft:end_stone
+execute if score #sv4 oa.map2 matches 0 run fill ~-90 ~0 ~-2 ~-89 ~0 ~4 minecraft:end_stone
+execute if score #sv4 oa.map2 matches 0 run setblock ~-89 ~0 ~5 minecraft:end_stone
+execute if score #sv4 oa.map2 matches 0 run setblock ~-89 ~1 ~-15 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-90 ~1 ~-14 ~-89 ~2 ~-8 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-90 ~1 ~-2 ~-89 ~1 ~4 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run setblock ~-89 ~1 ~5 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-90 ~2 ~-2 ~-89 ~2 ~2 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-89 ~2 ~3 ~-89 ~2 ~4 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-90 ~3 ~-13 ~-89 ~3 ~-10 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-90 ~3 ~-9 ~-90 ~3 ~-8 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-90 ~3 ~-2 ~-90 ~3 ~0 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run fill ~-89 ~3 ~5 ~-89 ~4 ~5 minecraft:cherry_leaves[persistent=true]
+execute if score #sv4 oa.map2 matches 0 run fill ~-90 ~3 ~6 ~-89 ~4 ~7 minecraft:cherry_leaves[persistent=true]
+execute if score #sv4 oa.map2 matches 0 run fill ~-90 ~4 ~-12 ~-90 ~4 ~-10 minecraft:cave_air
+execute if score #sv4 oa.map2 matches 0 run setblock ~-89 ~5 ~6 minecraft:cherry_leaves[persistent=true]
+execute if score #sv4 oa.map2 matches 0 run fill ~-90 ~5 ~7 ~-89 ~5 ~7 minecraft:cherry_leaves[persistent=true]
+execute if score #sv4 oa.map2 matches 0 run setblock ~-90 ~23 ~-5 minecraft:bedrock
