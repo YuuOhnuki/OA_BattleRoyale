@@ -1,5 +1,5 @@
 tellraw @a[tag=br.playing] {text:"たやゆゆ変態ガチャ：瀕死の時間",color:"red"}
-tellraw @a[tag=br.playing] {"text": " → 使用者だけ：体力が残り1ハートに", "color": "gray"}
+tellraw @a[tag=br.playing] {"text": " → 使用者の体力が残り1ハートに", "color": "gray"}
 # 1.9.192: 発光30秒
 function oa:tayayuyu/self_glow_30
 execute store result score #critical_hp oa.tmp run data get entity @s Health 1000

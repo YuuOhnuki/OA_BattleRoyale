@@ -1,6 +1,6 @@
 # 1.9.191〜：たやゆゆのガチャ「災害コンボ」。このマップで起こる災害を5秒後にすべて同時に起こす（1.9.212 から新しい災害も含む）。
 # 長さはそれぞれの災害と同じ。今起きている同じ災害には重ねない。予告中の通常の災害は、このコンボにまとめる
-execute if score #dc_on br.tmp matches 1 run return run tellraw @a[tag=br.playing] {text:"（災害コンボはすでに起きています）",color:"gray"}
+execute if score #dc_on br.tmp matches 1 run return run tellraw @a[tag=br.playing] {text:"災害コンボは発生中",color:"gray"}
 function oa:disaster/available
 execute unless score #dis_warn br.tmp matches 1.. run function oa:disaster/plan_clear
 scoreboard players set #dis_warn br.tmp 0

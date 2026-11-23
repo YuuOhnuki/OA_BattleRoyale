@@ -16,7 +16,7 @@ execute unless score #relic_off br.tmp matches 1 if score #map oa.mapid matches 
 execute unless score #relic_off br.tmp matches 1 if score #map oa.mapid matches 2 in oa:br_cave as @e[type=minecraft:marker,tag=br.chest,sort=random,limit=6] at @s run function oa:disaster/relic/make
 execute unless score #relic_off br.tmp matches 1 if score #map oa.mapid matches 3 in oa:br_sky as @e[type=minecraft:marker,tag=br.chest,sort=random,limit=6] at @s run function oa:disaster/relic/make
 execute unless score #relic_off br.tmp matches 1 if score #map oa.mapid matches 4 in oa:br_end as @e[type=minecraft:marker,tag=br.chest,sort=random,limit=6] at @s run function oa:disaster/relic/make
-execute unless score #relic_off br.tmp matches 1 run tellraw @a[tag=br.playing] [{text:"✦ ",color:"light_purple"},{text:"建物の中に「封印の宝珠」がある。右クリックで5秒かけて解錠すると、戦利品が手に入る。",color:"gray"}]
+execute unless score #relic_off br.tmp matches 1 run tellraw @a[tag=br.playing] [{text:"✦ ",color:"light_purple"},{text:"封印の宝珠：建物の中。右クリックで解錠",color:"gray"}]
 # 1.9.191: 災害コンボ・TNTの雨を止める
 function oa:disaster/combo/reset
 scoreboard players set #g_jp_win oa.tmp 0

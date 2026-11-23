@@ -1,5 +1,5 @@
 tellraw @a[tag=br.playing] {text:"たやゆゆ変態ガチャ：大ハズレ：大爆発",color:"dark_red",bold:true}
-tellraw @a[tag=br.playing] {"text": " → 使用者がその場で大爆発（半径10mの人にも10HP）", "color": "gray"}
+tellraw @a[tag=br.playing] {"text": " → 使用者が大爆発。半径10mにも大ダメージ", "color": "gray"}
 # 1.9.192: 使用者は倒れる。半径10mの生存者に10HP（oa:gacha_blast：防具を無視。使用者のダメージ）
 particle minecraft:explosion_emitter ~ ~1 ~ 2 1 2 0 8 force @a[distance=..96]
 particle minecraft:flame ~ ~1 ~ 3 2 3 0.3 250 force @a[distance=..96]

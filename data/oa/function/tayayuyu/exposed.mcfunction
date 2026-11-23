@@ -1,5 +1,5 @@
 tellraw @a[tag=br.playing] {text:"たやゆゆ変態ガチャ：完全無防備",color:"red"}
-tellraw @a[tag=br.playing] {"text": " → 使用者だけ：攻撃不可・被ダメージ約2倍（30秒）", "color": "gray"}
+tellraw @a[tag=br.playing] {"text": " → 使用者は30秒 攻撃不可・被ダメ2倍", "color": "gray"}
 function oa:tayayuyu/self_glow
 attribute @s minecraft:attack_damage modifier remove oa:gacha_exposed
 attribute @s minecraft:entity_interaction_range modifier remove oa:gacha_exposed

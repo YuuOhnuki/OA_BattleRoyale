@@ -7,6 +7,6 @@ execute if score #map oa.mapid matches 1 in oa:br_nether run function oa:br/weat
 execute if score #map oa.mapid matches 2 in oa:br_cave run function oa:br/weather/apply
 execute if score #map oa.mapid matches 3 in oa:br_sky run function oa:br/weather/apply
 execute if score #map oa.mapid matches 4 in oa:br_end run function oa:br/weather/apply
-execute if score #weather_roll br.tmp matches 1..20 run tellraw @a[tag=br.playing] {text:"天候抽選：雨（次の抽選まで3分）",color:"aqua"}
-execute if score #weather_roll br.tmp matches 21..90 run tellraw @a[tag=br.playing] {text:"天候抽選：晴れ（次の抽選まで3分）",color:"yellow"}
-execute if score #weather_roll br.tmp matches 91..100 run tellraw @a[tag=br.playing] {text:"天候抽選：雷雨（次の抽選まで3分）",color:"dark_aqua"}
+execute if score #weather_roll br.tmp matches 1..20 run tellraw @a[tag=br.playing] {text:"☁ 天気：雨",color:"aqua"}
+execute if score #weather_roll br.tmp matches 21..90 run tellraw @a[tag=br.playing] {text:"☀ 天気：晴れ",color:"yellow"}
+execute if score #weather_roll br.tmp matches 91..100 run tellraw @a[tag=br.playing] {text:"⚡ 天気：雷雨",color:"dark_aqua"}

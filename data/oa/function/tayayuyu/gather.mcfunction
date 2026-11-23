@@ -1,5 +1,5 @@
 tellraw @a[tag=br.playing] {text:"たやゆゆ変態ガチャ：強制集合",color:"green"}
-tellraw @a[tag=br.playing] {"text": " → 全員を中央付近へ集合・3秒保護", "color": "gray"}
+tellraw @a[tag=br.playing] {"text": " → 全員が中央へ集合", "color": "gray"}
 function oa:tayayuyu/move/prepare
 execute if score #g_move_ok oa.tmp matches 0 run return run function oa:tayayuyu/move/abort
 execute as @a[tag=br.alive,gamemode=!spectator,tag=!oa.dead,sort=random] at @s run function oa:tayayuyu/move/capture

@@ -53,6 +53,6 @@ execute if score #mode br.mode matches 0 run team join oa_brsolo @s
 effect give @s minecraft:resistance 5 4 true
 scoreboard players set @s br.tp_ok 1
 execute at @s run function oa:br/rescue/kit
-tellraw @a[tag=br.playing] [{selector:"@s"},{text:" が復活しました",color:"aqua"},{text:"（初心者救済）",color:"gray"}]
-tellraw @s [{text:"✚ 初心者救済モード：",color:"aqua"},{text:"復活しました。固有武器・チェーンの防具一式・パン5個・包帯5個を渡しました（固有武器は足元）。",color:"white"}]
+tellraw @a[tag=br.playing] [{selector:"@s"},{text:" が復活",color:"aqua"}]
+tellraw @s [{text:"✚ 復活！ ",color:"aqua"},{text:"固有武器は足元",color:"white"}]
 execute at @s run playsound minecraft:item.totem.use player @s ~ ~ ~ 0.6 1.2

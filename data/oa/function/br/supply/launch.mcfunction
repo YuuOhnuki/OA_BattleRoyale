@@ -9,7 +9,7 @@ summon minecraft:block_display ~ ~91.5 ~ {Tags:["br.supply_crate"],block_state:{
 title @a[tag=br.playing] times 5 50 15
 title @a[tag=br.playing] subtitle [{text:"場所：",color:"white"},{storage:"oa:supply",nbt:"region",interpret:true,color:"aqua",bold:true}]
 title @a[tag=br.playing] title {text:"✈ 補給物資が降下中",color:"gold",bold:true}
-tellraw @a[tag=br.playing] [{text:"✈ 補給物資が降下中！約9秒後に着地します。",color:"gold",bold:true}]
+tellraw @a[tag=br.playing] [{text:"✈ 補給が降下中　あと9秒",color:"gold",bold:true}]
 execute as @a[tag=br.playing] at @s run function oa:br/supply/guide_chat
 execute as @a[tag=br.playing] at @s run playsound minecraft:block.beacon.activate player @s ~ ~ ~ 1.5 1.2
 execute as @a[tag=br.playing] at @s run playsound minecraft:entity.firework_rocket.launch player @s ~ ~ ~ 1.5 0.8

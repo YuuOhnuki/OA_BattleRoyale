@@ -154,7 +154,7 @@ function oa:br/intro
 execute as @a[tag=br.playing] unless entity @s[advancements={oa:ach/first_kill=true}] run function oa:br/beginner/support
 execute as @a[tag=br.playing] run function oa:br/beginner/hint
 # 1.9.242：初心者救済モードの案内
-execute if score #rescue br.flag matches 1 run tellraw @a[tag=br.playing] [{text:" ✚ ",color:"aqua"},{text:"初心者救済モード：",color:"aqua"},{text:"チェスト補充（6分）より前に倒れても、補充のときに固有武器などを持って復活します",color:"white"}]
+execute if score #rescue br.flag matches 1 run tellraw @a[tag=br.playing] [{text:" ✚ ",color:"aqua"},{text:"初心者救済：",color:"aqua"},{text:"6分までに倒れても補充で復活",color:"white"}]
 function oa:br/intro_end
 # 1.9.213: 5秒のカウントダウン（終わると「スタート！」と効果音）
 function oa:br/countdown/begin

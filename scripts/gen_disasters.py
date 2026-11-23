@@ -17,29 +17,29 @@ MAPS = {0: 'br', 1: 'nether', 2: 'cave', 3: 'sky', 4: 'end'}
 # kind, key, 表示名（マップ別に上書き可）, 色, 危険度, 秒, 重み, 出るマップ, 説明（マップ別に上書き可）, 移動系, 敵味方の印
 DISASTERS = [
     dict(k=1, key='acid_rain', name='酸性雨', color='green', danger=4, sec=30, weight=10, maps=[0],
-         desc='酸の雨が降る。屋根の下か頭の防具で防げる'),
+         desc='屋根の下か頭の防具で防げる'),
     dict(k=2, key='cold_wave', name='寒波', color='aqua', danger=4, sec=30, weight=10, maps=[0],
-         desc='空の下が凍える寒さに。屋根の下か革の胸当てで防げる'),
+         desc='屋根の下か革の胸当てで防げる'),
     dict(k=3, key='meteor', name='隕石群', names={1: '火山弾', 2: '落盤'}, color='red', danger=5, sec=24, weight=10, maps=[0, 1, 2, 3, 4],
-         desc='赤い円に隕石が落ちる。円から離れるか屋根の下へ', descs={2: '赤い円に天井の岩が落ちる。円から離れよう'}),
+         desc='赤い円から離れるか屋根の下へ', descs={2: '赤い円から離れよう'}),
     dict(k=4, key='poison_fog', name='毒霧', names={1: '毒の瘴気'}, color='dark_green', danger=4, sec=40, weight=10, maps=[0, 1, 2, 3, 4],
-         desc='中心から毒霧が広がります！'),
+         desc='中心から広がる。外へ逃げよう'),
     dict(k=5, key='earthquake', name='地震', color='gold', danger=3, sec=10, weight=10, maps=[0, 1, 2, 3, 4],
-         desc='大地が揺れる。動くとダメージ、止まって耐えよう'),
+         desc='動くとダメージ。止まって耐えよう'),
     dict(k=6, key='fog', name='濃霧', names={1: '灰嵐'}, color='gray', danger=2, sec=30, weight=10, maps=[0, 1, 2, 3, 4],
-         desc='視界が暗く狭くなる。足音と光を頼りに'),
+         desc='視界が狭くなる'),
     dict(k=7, key='gravity', name='重力異常', color='light_purple', danger=2, sec=20, weight=7, maps=[0, 1, 2, 3, 4], move=True,
-         desc='体が軽くなり高く跳べる。落下ダメージなし'),
+         desc='高く跳べる。落下ダメージなし'),
     dict(k=8, key='chickens', name='ニワトリ大量発生', color='yellow', danger=1, sec=20, weight=7, maps=[0, 1, 2, 3, 4], mobs=True,
-         desc='ニワトリが暴れ回り、狙った卵で押し飛ばす！'),
+         desc='卵に当たると押し飛ばされる'),
     dict(k=9, key='blood_moon', name='血の月', color='dark_red', danger=2, sec=30, weight=7, maps=[0, 1, 2, 3, 4],
-         desc='全員に速度上昇が付き、光り、頭上に花火。居場所が丸見え！'),
+         desc='全員が光り、居場所が丸見え'),
     dict(k=10, key='tornado', name='竜巻', color='white', danger=4, sec=30, weight=7, maps=[0, 1], move=True,
-         desc='竜巻が近くの人を吸い寄せ、中心で打ち上げる'),
+         desc='吸い寄せられて打ち上げられる'),
     dict(k=11, key='pig_parade', name='ブタの大行進', color='light_purple', danger=3, sec=15, weight=7, maps=[0, 1, 2, 3, 4], mobs=True,
-         desc='2列6行のブタが走り回り、爆発し続ける（♥×1）'),
+         desc='ブタが爆発しながら走り回る'),
     dict(k=12, key='tower_barrage', name='塔の砲撃', color='dark_purple', danger=4, sec=45, weight=8, maps=[4],
-         desc='黒曜石の柱から光弾が飛んでくる。紫の線が出たら横へ動くか物陰へ（♥×2）'),
+         desc='紫の線が出たら横へ動くか物陰へ'),
 ]
 CFG = {'cd_min': 50, 'cd_max': 75, 'first_min': 30, 'first_max': 45, 'multi2': 20, 'multi3': 5,
        'dot_cap': 4, 'mob_cap': 90, 'chicken_cap': 60, 'pig_cap': 30, 'chicken_population_v':240,
@@ -126,7 +126,7 @@ lines += ['title @a[tag=br.playing] times 10 50 15',
 for d in DISASTERS:
     for m, nm, ds in name_variants(d):
         cond = f'execute if score #p{d["k"]} br.tmp matches 1 if score #map oa.mapid matches {m}'
-        lines.append(f'{cond} run tellraw @a[tag=br.playing] {dump([{"text":"⚠ 災害発生：","color":"red","bold":True},{"text":nm,"color":d["color"],"bold":True},{"text":"　危険度 "+STARS(d["danger"]),"color":"gold"},{"text":"（"+str(d["sec"])+"秒）","color":"white"},{"text":"\n　"+ds,"color":"gray"}])}')
+        lines.append(f'{cond} run tellraw @a[tag=br.playing] {dump([{"text":"⚠ ","color":"red","bold":True},{"text":nm,"color":d["color"],"bold":True},{"text":"  "+STARS(d["danger"]),"color":"gold"},{"text":"\n    "+ds,"color":"gray"}])}')
 write('announce.mcfunction', lines)
 
 # 予定の災害を始める（それぞれの残り秒 #dsN を定義の秒に）

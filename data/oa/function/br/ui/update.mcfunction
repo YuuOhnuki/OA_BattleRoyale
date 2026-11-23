@@ -5,7 +5,7 @@ scoreboard players operation #remaining br.tmp -= #sec br.sec
 execute if score #remaining br.tmp matches ..-1 run scoreboard players set #remaining br.tmp 0
 data modify storage oa:br_ui state set value "待機中"
 execute if score #shrinking br.flag matches 1 run data modify storage oa:br_ui state set value "収縮中"
-execute if score #phase br.tmp matches 5.. if score #shrinking br.flag matches 0 run data modify storage oa:br_ui state set value "最終安置"
+execute if score #phase br.tmp matches 5.. if score #shrinking br.flag matches 0 run data modify storage oa:br_ui state set value "最終安地"
 execute store result storage oa:br_ui phase int 1 run scoreboard players get #phase br.tmp
 execute store result storage oa:br_ui alive int 1 run scoreboard players get #alive br.live
 execute store result storage oa:br_ui width int 1 run scoreboard players get #shown_width br.tmp
