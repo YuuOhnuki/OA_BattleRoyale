@@ -1,3 +1,4 @@
+scoreboard players set #delete_wait oa.map2 0
 execute store success score #had0 oa.map2 run forceload query ~40 ~-152
 execute store success score #had1 oa.map2 run forceload query ~40 ~-136
 execute store success score #had2 oa.map2 run forceload query ~40 ~-121

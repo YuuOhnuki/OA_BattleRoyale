@@ -253,7 +253,7 @@ execute if score #sv3 oa.map2 matches 0 run setblock ~-65 ~1 ~65 minecraft:chest
 execute if score #sv3 oa.map2 matches 0 run fill ~-58 ~1 ~65 ~-58 ~2 ~67 minecraft:purpur_block
 execute if score #sv3 oa.map2 matches 0 run setblock ~-65 ~1 ~68 minecraft:coal_ore
 execute if score #sv3 oa.map2 matches 0 run fill ~-58 ~1 ~68 ~-57 ~3 ~68 minecraft:purpur_block
-execute if score #sv3 oa.map2 matches 0 run setblock ~-60 ~1 ~68 minecraft:end_stone
+execute if score #sv3 oa.map2 matches 0 run setblock ~-60 ~1 ~68 minecraft:coal_ore
 execute if score #sv3 oa.map2 matches 0 run fill ~-60 ~1 ~69 ~-59 ~1 ~69 minecraft:coal_ore
 execute if score #sv3 oa.map2 matches 0 run setblock ~-60 ~1 ~70 minecraft:coal_ore
 execute if score #sv3 oa.map2 matches 0 run setblock ~-58 ~2 ~64 minecraft:cave_air

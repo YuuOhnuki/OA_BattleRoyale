@@ -1067,6 +1067,7 @@ for vs in variants:
         bad = [(x, y, z, cv.get(x, y, z)) for x, y, z in cv.chests + cv.riches if not cv.get(x, y, z).startswith('minecraft:chest')]
         assert not bad, (cv.kind, bad)
         assert len(cv.spawns) >= 3, (cv.kind, len(cv.spawns))
+        assert all(cv.get(x,y,z)==('minecraft:coal_ore' if kind==1 else 'minecraft:redstone_ore') for x,y,z,kind in cv.ores),(cv.kind,'ore registration without placed block')
 assert len(base.spawns) >= 10, len(base.spawns)
 n_base = len(base.chests) + len(base.riches)
 print(KEY, 'base chests', n_base, 'rich', len(base.riches), 'ores', len(base.ores), 'spawns', len(base.spawns), 'decos', len(base.decos),

@@ -360,6 +360,7 @@ execute if score #sv0 oa.map2 matches 0 run fill ~80 ~5 ~5 ~88 ~5 ~5 minecraft:o
 execute if score #sv0 oa.map2 matches 0 run setblock ~77 ~7 ~0 minecraft:end_rod[facing=up]
 execute if score #sv0 oa.map2 matches 0 run setblock ~91 ~7 ~0 minecraft:end_rod[facing=up]
 execute if score #sv0 oa.map2 matches 1 run setblock ~87 ~1 ~-5 minecraft:chest[facing=north]
+execute if score #sv0 oa.map2 matches 1 run setblock ~73 ~1 ~0 minecraft:coal_ore
 execute if score #sv0 oa.map2 matches 1 run fill ~89 ~1 ~1 ~90 ~1 ~1 minecraft:white_concrete
 execute if score #sv0 oa.map2 matches 1 run fill ~72 ~1 ~1 ~74 ~1 ~1 minecraft:coal_ore
 execute if score #sv0 oa.map2 matches 1 run setblock ~91 ~1 ~1 minecraft:smooth_quartz

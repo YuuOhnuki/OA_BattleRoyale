@@ -1,9 +1,9 @@
 {
-  "version": "1.9.239",
-  "plugin": "0.50.0",
+  "version": "1.9.240",
+  "plugin": "0.50.1",
   "resourcepack": "1.9.48",
-  "checks": "5243 functions static OK; Gradle build and 43 JUnit tests; 40 offline checks including 3 seeds each for sky/end/cave; 83 resource JSONs and two 512x512 images",
-  "runtime": "Five maps x solo/team: latest case results 463 passed/0 failed. Targeted runtime72, mobs/rewards/audio/pearl25, final saved-state/native-floor11 all passed. Floor-checker regressions7 passed.",
+  "checks": "Pending240 validation",
+  "runtime": "Pending240 runtime",
   "unverified": "Human client input, weapon feel, visual/collision appearance, exhaustive manual routes, actual multiplayer balance, production application at build time",
-  "notes": "Original full run460/3 retained; three floor-classifier cases rerun to completion with82/0 and46/0. Combined case-level report preserves provenance. Full sky backup112.19s and backup->regeneration->image134.78s succeeded; that run75/1 includes a test-fixture lobby diagnostic, followed by clean72/0. Original/interrupted records retained under dist/upgrade239-*. See docs/upgrade-1.9.239-report.md."
+  "notes": "See docs/fix-1.9.240-progress.md;239 evidence is for prior version."
 }

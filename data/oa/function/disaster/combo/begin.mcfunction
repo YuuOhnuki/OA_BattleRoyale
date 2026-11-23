@@ -7,9 +7,6 @@ scoreboard players set #dis_warn br.tmp 0
 function oa:disaster/combo/plan_all
 scoreboard players set #dc_announce br.tmp 1
 function oa:disaster/announce
-title @a[tag=br.playing] times 10 70 15
-title @a[tag=br.playing] subtitle {text:"このマップの災害がすべて同時に起こる！ チャットで一覧を確認",color:"yellow"}
-title @a[tag=br.playing] title {text:"⚠ 災害コンボ",color:"dark_red",bold:true}
 execute as @a[tag=br.playing] at @s run playsound minecraft:entity.lightning_bolt.thunder master @s ~ ~ ~ 0.9 0.6
 scoreboard players set #dc_on br.tmp 1
 scoreboard players set #dc_warn br.tmp 5

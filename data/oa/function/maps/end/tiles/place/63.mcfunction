@@ -541,8 +541,9 @@ execute if score #sv3 oa.map2 matches 1 run setblock ~-39 ~11 ~62 minecraft:chor
 execute if score #sv3 oa.map2 matches 2 run fill ~-52 ~1 ~48 ~-52 ~9 ~48 minecraft:obsidian
 execute if score #sv3 oa.map2 matches 2 run fill ~-51 ~1 ~53 ~-51 ~6 ~53 minecraft:obsidian
 execute if score #sv3 oa.map2 matches 2 run fill ~-51 ~1 ~56 ~-51 ~7 ~56 minecraft:obsidian
-execute if score #sv3 oa.map2 matches 2 run fill ~-49 ~1 ~60 ~-48 ~1 ~60 minecraft:coal_ore
+execute if score #sv3 oa.map2 matches 2 run fill ~-50 ~1 ~60 ~-48 ~1 ~60 minecraft:coal_ore
 execute if score #sv3 oa.map2 matches 2 run fill ~-56 ~1 ~61 ~-51 ~3 ~61 minecraft:purpur_block
+execute if score #sv3 oa.map2 matches 2 run setblock ~-49 ~1 ~61 minecraft:coal_ore
 execute if score #sv3 oa.map2 matches 2 run setblock ~-55 ~1 ~63 minecraft:chest[facing=north]
 execute if score #sv3 oa.map2 matches 2 run setblock ~-53 ~1 ~63 minecraft:chest[facing=north]
 execute if score #sv3 oa.map2 matches 2 run setblock ~-39 ~1 ~63 minecraft:chest[facing=north]

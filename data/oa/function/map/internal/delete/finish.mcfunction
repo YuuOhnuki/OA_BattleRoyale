@@ -8,7 +8,11 @@ execute if data storage oa_map2:args {dim:"minecraft:overworld"} if data storage
 data modify storage oa_map2:job working set value 0b
 data modify storage oa_map2:job deleting set value 0b
 scoreboard players set #state oa.map2 0
+scoreboard players set #map_failed oa.map2 0
 execute if score #same_map_dim br.flag matches 1 run data remove storage oa:br center
 execute if score #same_map_dim br.flag matches 1 run data remove storage oa:br border_restore
 data remove storage oa_map2:args center_y
+execute if score #same_map_dim br.flag matches 1 run data remove storage oa:spawn_points points
+data modify storage oa:maps ctx.key set from storage oa:maps current
+function oa:map/internal/save_cur with storage oa:maps ctx
 tellraw @a[tag=br.admin] {text:"登録済みマップの削除が完了しました。",color:"green"}

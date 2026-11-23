@@ -24,7 +24,11 @@ def veins(canvas,target,get,put,seed,host='minecraft:stone',surface=None):
             coal=sum(o[3]==1 for o in canvas.ores)
             ratio=sum(o[3]==1 for o in front)/len(front)
             kind=1 if coal<round((len(canvas.ores)+1)*ratio) else 3
-            put(a,y,c,'minecraft:coal_ore' if kind==1 else 'minecraft:redstone_ore');canvas.ores.append((a,y,c,kind));used.add((a,y,c));added+=1
+            block='minecraft:coal_ore' if kind==1 else 'minecraft:redstone_ore'
+            put(a,y,c,block)
+            # Protected columns may reject a write. Never register a phantom ore.
+            if get(a,y,c)!=block:continue
+            canvas.ores.append((a,y,c,kind));used.add((a,y,c));added+=1
     return {'before':original,'target':target,'after':len(canvas.ores)}
 
 def audit(canvas,pal,y0,put,base=None,repair=True):

@@ -6,5 +6,7 @@ scoreboard players add #state oa.map2 0
 schedule clear oa:map/internal/job/next
 schedule clear oa:map/internal/job/wait
 execute if score #state oa.map2 matches 1 run schedule function oa:map/internal/job/wait 2t replace
+execute if score #state oa.map2 matches 4 unless data storage oa_map2:job {delete_version:240} run function oa:map/internal/delete/recover240
+execute if score #state oa.map2 matches 4 run function oa:map/internal/delete/configure
 execute if score #state oa.map2 matches 4 if data storage oa_map2:job {holding:1b} run schedule function oa:map/internal/delete/wait 2t replace
 execute if score #state oa.map2 matches 4 unless data storage oa_map2:job {holding:1b} run schedule function oa:map/internal/delete/dispatch 2t replace

@@ -15,9 +15,9 @@ execute if score #sv5 oa.map2 matches 0 run scoreboard players add #expectedo oa
 execute if score #sv5 oa.map2 matches 0 positioned ~-65 ~1 ~-42 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute if score #sv5 oa.map2 matches 0 positioned ~-66 ~1 ~-51 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute if score #sv5 oa.map2 matches 0 positioned ~-65 ~1 ~-47 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
-execute if score #sv5 oa.map2 matches 0 positioned ~-64 ~1 ~-42 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute if score #sv5 oa.map2 matches 0 positioned ~-66 ~1 ~-42 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute if score #sv5 oa.map2 matches 0 positioned ~-65 ~1 ~-41 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
+execute if score #sv5 oa.map2 matches 0 positioned ~-65 ~1 ~-43 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute if score #sv5 oa.map2 matches 0 positioned ~-58 ~1 ~-54 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
 execute if score #sv5 oa.map2 matches 0 positioned ~-65 ~1 ~-55 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
 execute if score #sv5 oa.map2 matches 0 positioned ~-61 ~1 ~-56 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest

@@ -36,11 +36,13 @@ execute if score #sv3 oa.map2 matches 1 if score #mode oa.map2 matches 0 positio
 execute if score #sv3 oa.map2 matches 1 if score #mode oa.map2 matches 0 positioned ~-48 ~1 ~62 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
 execute if score #sv3 oa.map2 matches 1 if score #mode oa.map2 matches 0 positioned ~-41 ~1 ~62 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
 execute if score #sv3 oa.map2 matches 2 run scoreboard players add #expectedc oa.map2 3
-execute if score #sv3 oa.map2 matches 2 run scoreboard players add #expectedo oa.map2 4
+execute if score #sv3 oa.map2 matches 2 run scoreboard players add #expectedo oa.map2 6
 execute if score #sv3 oa.map2 matches 2 positioned ~-49 ~1 ~60 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute if score #sv3 oa.map2 matches 2 positioned ~-48 ~1 ~70 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute if score #sv3 oa.map2 matches 2 positioned ~-50 ~1 ~69 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute if score #sv3 oa.map2 matches 2 positioned ~-48 ~1 ~60 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
+execute if score #sv3 oa.map2 matches 2 positioned ~-50 ~1 ~60 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
+execute if score #sv3 oa.map2 matches 2 positioned ~-49 ~1 ~61 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute if score #sv3 oa.map2 matches 2 positioned ~-55 ~1 ~63 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
 execute if score #sv3 oa.map2 matches 2 positioned ~-53 ~1 ~63 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
 execute if score #sv3 oa.map2 matches 2 positioned ~-39 ~1 ~63 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest

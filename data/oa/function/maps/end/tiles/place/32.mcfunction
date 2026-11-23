@@ -229,6 +229,7 @@ execute if score #sv5 oa.map2 matches 0 run setblock ~-66 ~1 ~-48 minecraft:end_
 execute if score #sv5 oa.map2 matches 0 run setblock ~-65 ~1 ~-47 minecraft:coal_ore
 execute if score #sv5 oa.map2 matches 0 run fill ~-61 ~1 ~-47 ~-61 ~6 ~-47 minecraft:purpur_block
 execute if score #sv5 oa.map2 matches 0 run setblock ~-59 ~1 ~-46 minecraft:chest[facing=north]
+execute if score #sv5 oa.map2 matches 0 run setblock ~-65 ~1 ~-43 minecraft:coal_ore
 execute if score #sv5 oa.map2 matches 0 run setblock ~-66 ~1 ~-43 minecraft:end_stone
 execute if score #sv5 oa.map2 matches 0 run fill ~-66 ~1 ~-42 ~-65 ~1 ~-42 minecraft:coal_ore
 execute if score #sv5 oa.map2 matches 0 run setblock ~-65 ~1 ~-41 minecraft:coal_ore

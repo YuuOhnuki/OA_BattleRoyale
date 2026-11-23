@@ -272,7 +272,6 @@ execute if score #state br.state matches 0 if data storage oa:br center run func
 
 execute if data storage oa:lobby_job {working:1b} if data storage oa:lobby_job old run schedule function oa:lobby/delete_wait 1t replace
 
-execute if data storage oa_map2:job {deleting:1b} run schedule function oa:map/internal/delete/wait 1t replace
 
 scoreboard objectives add oa.tfall dummy
 

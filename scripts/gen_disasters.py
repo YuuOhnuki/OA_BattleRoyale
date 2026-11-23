@@ -42,7 +42,7 @@ DISASTERS = [
          desc='黒曜石の柱から光弾が飛んでくる。紫の線が出たら横へ動くか物陰へ（♥×2）'),
 ]
 CFG = {'cd_min': 50, 'cd_max': 75, 'first_min': 30, 'first_max': 45, 'multi2': 20, 'multi3': 5,
-       'dot_cap': 4, 'mob_cap': 60, 'chicken_cap': 40, 'pig_cap': 30,
+       'dot_cap': 4, 'mob_cap': 90, 'chicken_cap': 60, 'pig_cap': 30, 'chicken_population_v':240,
        'weight': {f"k{d['k']}": d['weight'] for d in DISASTERS}}
 KINDS = [d['k'] for d in DISASTERS]
 dump = lambda x: json.dumps(x, ensure_ascii=False, separators=(',', ':'))
@@ -69,12 +69,17 @@ write('cfg_defaults.mcfunction', [HEAD,
     '# 初回は全設定、既存設定には今回変更した間隔だけを移行。重み・安全上限などの個別設定は残す。',
     f'execute unless data storage oa:disaster cfg run data modify storage oa:disaster cfg set value {dump(dict(CFG, v=214))}',
     'execute unless data storage oa:disaster cfg{v:214} run function oa:disaster/cfg_migrate214',
+    'execute unless data storage oa:disaster cfg{chicken_population_v:240} run function oa:disaster/cfg_chickens240',
     # 1.9.232: あとから足した災害の重み（既存の設定に無ければ初期値を入れる）
     *[f'execute unless data storage oa:disaster cfg.weight.k{d["k"]} run data modify storage oa:disaster cfg.weight.k{d["k"]} set value {d["weight"]}' for d in DISASTERS],
     f'data modify storage oa:disaster defs set value {dump({"k%d" % d["k"]: {"key": d["key"], "name": d["name"], "danger": d["danger"], "stars": STARS(d["danger"]), "sec": d["sec"], "desc": d["desc"], "maps": d["maps"]} for d in DISASTERS})}'])
 write('cfg_migrate214.mcfunction', [HEAD] +
       [f'data modify storage oa:disaster cfg.{key} set value {CFG[key]}' for key in ('cd_min', 'cd_max', 'first_min', 'first_max')] +
       ['data modify storage oa:disaster cfg.v set value 214'])
+write('cfg_chickens240.mcfunction',[HEAD,
+    'execute if data storage oa:disaster cfg{chicken_cap:40} run data modify storage oa:disaster cfg.chicken_cap set value 60',
+    'execute if data storage oa:disaster cfg{mob_cap:60} run data modify storage oa:disaster cfg.mob_cap set value 90',
+    'data modify storage oa:disaster cfg.chicken_population_v set value 240'])
 
 # マップごとに出る災害（#avN）
 lines = [HEAD, '# 今のマップで起こる災害を #avN br.tmp に1／0で入れる（定義の maps）']
@@ -109,21 +114,19 @@ write('pick.mcfunction', lines)
 # 予定を空にする
 write('plan_clear.mcfunction', [HEAD] + [f'scoreboard players set #p{k} br.tmp 0' for k in KINDS] + ['scoreboard players set #plan_n br.tmp 0'])
 
-# 予告の表示（1つ＝タイトルにその災害、複数＝まとめて1回。チャットには全部）
-lines = [HEAD, '# 予定（#pN=1）の災害を知らせる。タイトルは1回だけ（複数でも上書きが続かない）。#plan_n＝数。サブタイトルは説明だけ（危険度はチャットとボスバー。1.9.213）',
+# 予告の表示（個数にかかわらず災害ごとの同じチャット形式）
+lines = [HEAD, '# 単発・複数・全同時とも同じチャット形式。タイトルは共通の「⚠ 災害発生」だけ（1.9.240）。',
          'scoreboard players set #plan_n br.tmp 0']
 lines += [f'execute if score #p{k} br.tmp matches 1 run scoreboard players add #plan_n br.tmp 1' for k in KINDS]
-lines += ['execute if score #plan_n br.tmp matches 0 run return 0',
-          'title @a[tag=br.playing] times 10 70 15']
+lines += ['execute if score #plan_n br.tmp matches 0 run return 0']
+# 1.9.240：タイトルは災害の数・種類によらず同じ「⚠ 災害発生」だけ（中身はチャット）。単発・複数・災害コンボで共通
+lines += ['title @a[tag=br.playing] times 10 50 15',
+          'title @a[tag=br.playing] subtitle {"text":"内容はチャットを確認","color":"yellow"}',
+          'title @a[tag=br.playing] title {"text":"⚠ 災害発生","color":"dark_red","bold":true}']
 for d in DISASTERS:
     for m, nm, ds in name_variants(d):
         cond = f'execute if score #p{d["k"]} br.tmp matches 1 if score #map oa.mapid matches {m}'
-        lines.append(f'{cond} if score #plan_n br.tmp matches 1 if score #dc_announce br.tmp matches 0 run title @a[tag=br.playing] subtitle {dump({"text":ds,"color":"yellow"})}')
-        lines.append(f'{cond} if score #plan_n br.tmp matches 1 if score #dc_announce br.tmp matches 0 run title @a[tag=br.playing] title {dump({"text":"⚠ 災害発生："+nm,"color":d["color"],"bold":True})}')
-        lines.append(f'{cond} run tellraw @a[tag=br.playing] {dump([{"text":"⚠ ","color":"red","bold":True},{"text":nm,"color":d["color"],"bold":True},{"text":"　危険度 "+STARS(d["danger"]),"color":"gold"},{"text":"（"+str(d["sec"])+"秒）","color":"white"},{"text":"\n　"+ds,"color":"gray"}])}')
-lines += ['execute if score #plan_n br.tmp matches 2.. if score #dc_announce br.tmp matches 0 run title @a[tag=br.playing] subtitle {"text":"複数の災害が同時に起こる！ チャットで内容を確認","color":"yellow"}',
-          'execute if score #plan_n br.tmp matches 2 if score #dc_announce br.tmp matches 0 run title @a[tag=br.playing] title {"text":"⚠ 災害発生 ×2","color":"dark_red","bold":true}',
-          'execute if score #plan_n br.tmp matches 3.. if score #dc_announce br.tmp matches 0 run title @a[tag=br.playing] title {"text":"⚠ 災害発生 ×3","color":"dark_red","bold":true}']
+        lines.append(f'{cond} run tellraw @a[tag=br.playing] {dump([{"text":"⚠ 災害発生：","color":"red","bold":True},{"text":nm,"color":d["color"],"bold":True},{"text":"　危険度 "+STARS(d["danger"]),"color":"gold"},{"text":"（"+str(d["sec"])+"秒）","color":"white"},{"text":"\n　"+ds,"color":"gray"}])}')
 write('announce.mcfunction', lines)
 
 # 予定の災害を始める（それぞれの残り秒 #dsN を定義の秒に）

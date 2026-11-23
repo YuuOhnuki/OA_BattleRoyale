@@ -1,7 +1,8 @@
 # 生成：scripts/gen_disasters.py（直接編集しない）
 # 初回は全設定、既存設定には今回変更した間隔だけを移行。重み・安全上限などの個別設定は残す。
-execute unless data storage oa:disaster cfg run data modify storage oa:disaster cfg set value {"cd_min":50,"cd_max":75,"first_min":30,"first_max":45,"multi2":20,"multi3":5,"dot_cap":4,"mob_cap":60,"chicken_cap":40,"pig_cap":30,"weight":{"k1":10,"k2":10,"k3":10,"k4":10,"k5":10,"k6":10,"k7":7,"k8":7,"k9":7,"k10":7,"k11":7,"k12":8},"v":214}
+execute unless data storage oa:disaster cfg run data modify storage oa:disaster cfg set value {"cd_min":50,"cd_max":75,"first_min":30,"first_max":45,"multi2":20,"multi3":5,"dot_cap":4,"mob_cap":90,"chicken_cap":60,"pig_cap":30,"chicken_population_v":240,"weight":{"k1":10,"k2":10,"k3":10,"k4":10,"k5":10,"k6":10,"k7":7,"k8":7,"k9":7,"k10":7,"k11":7,"k12":8},"v":214}
 execute unless data storage oa:disaster cfg{v:214} run function oa:disaster/cfg_migrate214
+execute unless data storage oa:disaster cfg{chicken_population_v:240} run function oa:disaster/cfg_chickens240
 execute unless data storage oa:disaster cfg.weight.k1 run data modify storage oa:disaster cfg.weight.k1 set value 10
 execute unless data storage oa:disaster cfg.weight.k2 run data modify storage oa:disaster cfg.weight.k2 set value 10
 execute unless data storage oa:disaster cfg.weight.k3 run data modify storage oa:disaster cfg.weight.k3 set value 10
