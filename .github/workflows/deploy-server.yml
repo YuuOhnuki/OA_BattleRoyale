@@ -27,6 +27,13 @@ jobs:
     runs-on: [self-hosted, windows, oa-server]
     timeout-minutes: 190
     steps:
+      - uses: actions/checkout@v4
+      # 2026-11-23：サーバーの更新スクリプトをリポジトリの版にそろえる（手で入れ直さなくてよい）。config.json・state.json は触らない
+      - name: Sync autoupdate scripts
+        shell: powershell
+        run: |
+          $d = "D:\MinecraftServer\oa_battle_royale\autoupdate"
+          foreach ($f in 'apply.ps1', 'update.ps1', 'platform.ps1') { Copy-Item (Join-Path 'tools/autoupdate' $f) (Join-Path $d $f) -Force }
       - name: Update server datapack
         shell: powershell
         run: |
@@ -50,6 +57,14 @@ jobs:
     env:
       OA_SERVER_DIR: ${{ vars.OA_SERVER_DIR }}
     steps:
+      - uses: actions/checkout@v4
+      # 2026-11-23：サーバーの更新スクリプトをリポジトリの版にそろえる。config.json・state.json は触らない
+      - name: Sync autoupdate scripts
+        shell: pwsh
+        run: |
+          if (-not $env:OA_SERVER_DIR) { throw 'Set repository variable OA_SERVER_DIR' }
+          $d = Join-Path $env:OA_SERVER_DIR 'autoupdate'
+          foreach ($f in 'apply.ps1', 'update.ps1', 'platform.ps1') { Copy-Item (Join-Path 'tools/autoupdate' $f) (Join-Path $d $f) -Force }
       - name: Stage or apply datapack
         shell: pwsh
         run: |

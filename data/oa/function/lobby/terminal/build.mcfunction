@@ -1185,38 +1185,52 @@ setblock ~11 ~0 ~22 minecraft:polished_deepslate
 fill ~11 ~1 ~22 ~11 ~2 ~22 minecraft:polished_blackstone
 setblock ~11 ~3 ~22 minecraft:sea_lantern
 setblock ~11 ~-1 ~20 minecraft:sea_lantern
-setblock ~14 ~0 ~21 minecraft:polished_deepslate
-setblock ~14 ~1 ~21 minecraft:smooth_quartz_slab[type=bottom]
-setblock ~14 ~0 ~22 minecraft:polished_deepslate
-fill ~14 ~1 ~22 ~14 ~2 ~22 minecraft:polished_blackstone
-setblock ~14 ~3 ~22 minecraft:sea_lantern
-setblock ~14 ~-1 ~20 minecraft:sea_lantern
-setblock ~16 ~0 ~21 minecraft:polished_deepslate
-setblock ~16 ~1 ~21 minecraft:smooth_quartz_slab[type=bottom]
-setblock ~16 ~0 ~22 minecraft:polished_deepslate
-fill ~16 ~1 ~22 ~16 ~2 ~22 minecraft:polished_blackstone
-setblock ~16 ~3 ~22 minecraft:sea_lantern
-setblock ~16 ~-1 ~20 minecraft:sea_lantern
+setblock ~20 ~0 ~21 minecraft:polished_deepslate
+setblock ~20 ~1 ~21 minecraft:smooth_quartz_slab[type=bottom]
+setblock ~20 ~0 ~22 minecraft:polished_deepslate
+fill ~20 ~1 ~22 ~20 ~2 ~22 minecraft:polished_blackstone
+setblock ~20 ~3 ~22 minecraft:sea_lantern
+setblock ~20 ~-1 ~20 minecraft:sea_lantern
 setblock ~18 ~0 ~21 minecraft:polished_deepslate
 setblock ~18 ~1 ~21 minecraft:smooth_quartz_slab[type=bottom]
 setblock ~18 ~0 ~22 minecraft:polished_deepslate
 fill ~18 ~1 ~22 ~18 ~2 ~22 minecraft:polished_blackstone
 setblock ~18 ~3 ~22 minecraft:sea_lantern
 setblock ~18 ~-1 ~20 minecraft:sea_lantern
+setblock ~16 ~0 ~21 minecraft:polished_deepslate
+setblock ~16 ~1 ~21 minecraft:smooth_quartz_slab[type=bottom]
+setblock ~16 ~0 ~22 minecraft:polished_deepslate
+fill ~16 ~1 ~22 ~16 ~2 ~22 minecraft:polished_blackstone
+setblock ~16 ~3 ~22 minecraft:sea_lantern
+setblock ~16 ~-1 ~20 minecraft:sea_lantern
+setblock ~14 ~0 ~21 minecraft:polished_deepslate
+setblock ~14 ~1 ~21 minecraft:smooth_quartz_slab[type=bottom]
+setblock ~14 ~0 ~22 minecraft:polished_deepslate
+fill ~14 ~1 ~22 ~14 ~2 ~22 minecraft:polished_blackstone
+setblock ~14 ~3 ~22 minecraft:sea_lantern
+setblock ~14 ~-1 ~20 minecraft:sea_lantern
+setblock ~12 ~0 ~21 minecraft:polished_deepslate
+setblock ~12 ~1 ~21 minecraft:smooth_quartz_slab[type=bottom]
+setblock ~12 ~0 ~22 minecraft:polished_deepslate
+fill ~12 ~1 ~22 ~12 ~2 ~22 minecraft:polished_blackstone
+setblock ~12 ~3 ~22 minecraft:sea_lantern
+setblock ~12 ~-1 ~20 minecraft:sea_lantern
 setblock ~21 ~0 ~21 minecraft:polished_deepslate
 setblock ~21 ~1 ~21 minecraft:smooth_quartz_slab[type=bottom]
 setblock ~21 ~0 ~22 minecraft:polished_deepslate
 fill ~21 ~1 ~22 ~21 ~2 ~22 minecraft:polished_blackstone
 setblock ~21 ~3 ~22 minecraft:sea_lantern
 setblock ~21 ~-1 ~20 minecraft:sea_lantern
+fill ~13 ~0 ~22 ~13 ~3 ~22 minecraft:polished_deepslate
 fill ~15 ~0 ~22 ~15 ~3 ~22 minecraft:polished_deepslate
 fill ~17 ~0 ~22 ~17 ~3 ~22 minecraft:polished_deepslate
-fill ~13 ~3 ~22 ~19 ~3 ~22 minecraft:polished_deepslate
+fill ~19 ~0 ~22 ~19 ~3 ~22 minecraft:polished_deepslate
+fill ~12 ~3 ~22 ~20 ~3 ~22 minecraft:polished_deepslate
+setblock ~12 ~3 ~22 minecraft:sea_lantern
 setblock ~14 ~3 ~22 minecraft:sea_lantern
 setblock ~16 ~3 ~22 minecraft:sea_lantern
 setblock ~18 ~3 ~22 minecraft:sea_lantern
-fill ~13 ~0 ~22 ~13 ~3 ~22 minecraft:polished_deepslate
-fill ~19 ~0 ~22 ~19 ~3 ~22 minecraft:polished_deepslate
+setblock ~20 ~3 ~22 minecraft:sea_lantern
 setblock ~-11 ~0 ~21 minecraft:polished_deepslate
 setblock ~-11 ~1 ~21 minecraft:smooth_quartz_slab[type=bottom]
 setblock ~-11 ~0 ~22 minecraft:polished_deepslate

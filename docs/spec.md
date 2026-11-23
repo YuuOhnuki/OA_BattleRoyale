@@ -1,4 +1,4 @@
-# OA Battle Royale 仕様書（1.9.240 時点）
+# OA Battle Royale 仕様書（1.9.241 時点）
 
 ## 1.9.240 修正
 
@@ -939,6 +939,8 @@ CTは実装で確認済み。効果の細かい数値は `WEAPONS_JA.md` から�
 
 
 ## ロビー：出撃ターミナル（1.9.203）
+
+1.9.241：バトルロワイヤル受付のマップの台は5つ（x=20・18・16・14・12 の順に 地上・ネザー・地下・天空島・エンド。正面から見て左から）。既存のロビーは `lobby/terminal/tick` の定期点検（`maps5_check`：台0があり台4がなければ）で、台の周りだけ `maps5_apply` で置き直す。会場の生成・削除の進み具合は、10区画ごとにチャット（`map/internal/job/progress`・`delete/progress`、名前は `oa_map2:job name`）。天空島はまわりの島ごとにも出す。
 
 1.9.203 で空間構成から作り直した。配置・寸法・素材・端末の当たり判定・展示の位置合わせ・明るさの基準・入口対応は `docs/lobby-terminal.md` を正本とする。一般入口は /oa（ページ：main・play・br・br_team・br_maps・br_host・tdm・tdm_host・practice・records・guide、旧名 team・maps・mode・host も使える）、TDMの武器は /tdm と同じ画面、管理は /oamenu（試合運営・プレイヤー管理・会場管理・ロビー／練習場・記録／実績・サーバー更新・診断／開発）。危険な操作は対象と影響を示す確認画面を経て実行し、画面を開いた後に試合・マップ・モード・権限が変わると実行しない。
 

@@ -1,16 +1,21 @@
-﻿# OA Battle Royale: 置いてある更新を反映する（applyMode "manual" のとき。Windows PowerShell 5.1）
-# プラグインの /oaplugin update apply（管理メニュー）が起動する。手で実行してもよい：
-#   powershell -ExecutionPolicy Bypass -File autoupdate\apply.ps1
-# プラグインの jar が置いてあれば plugin-update.ps1 -Apply（30秒予告して再起動、jar の入れ替え・確認・失敗なら戻す）。
-# 再起動で置いてあるデータパックも読み込まれる。jar がなければ update.ps1 -Apply（データパックだけ、30秒予告して再起動）。
+﻿# OA Battle Royale: 更新を反映する（/oaplugin update apply・管理メニューが起動する。手で実行してもよい）
+#   Windows: powershell -ExecutionPolicy Bypass -File autoupdate\apply.ps1      Linux: pwsh -NoProfile -File autoupdate/apply.ps1
+# 2026-11-23：1回でデータパックもプラグインも反映する。
+#   1) GitHub の最新のデータパックを確かめ、新しければ置く（update.ps1 -InstallOnly。ここでは再起動しない）
+#   2) プラグインの jar が置いてあれば plugin-update.ps1 -Apply（予告して再起動。jar の入れ替え・確認・失敗なら戻す）。
+#      その再起動で、1) で置いたデータパックも読み込まれる
+#   3) jar がなければ update.ps1 -Apply（データパックだけ、予告して再起動）
+# 予告は10秒（-WarnSec で変えられる）。
+param([int]$WarnSec = 10)
 $ErrorActionPreference = 'Stop'
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 . (Join-Path $Root 'platform.ps1')
+& $OaPowerShell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $Root 'update.ps1') -InstallOnly -NoReload
 $pp = Join-Path $Root 'pending-plugin.json'
 if (Test-Path $pp) {
     $p = Get-Content -Raw -Encoding UTF8 $pp | ConvertFrom-Json
     $jar = Join-Path $Root ('pending/' + $p.jar)
-    & $OaPowerShell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $Root 'plugin-update.ps1') -Jar $jar -Sha $p.sha -Apply
+    & $OaPowerShell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $Root 'plugin-update.ps1') -Jar $jar -Sha $p.sha -Apply -WarnSec $WarnSec
     $code = $LASTEXITCODE
     if ($code -eq 0 -or $code -eq 2) {
         Remove-Item $pp -Force -ErrorAction SilentlyContinue
@@ -20,5 +25,5 @@ if (Test-Path $pp) {
     & $OaPowerShell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $Root 'update.ps1')
     exit $code
 }
-& $OaPowerShell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $Root 'update.ps1') -Apply
+& $OaPowerShell -NoProfile -ExecutionPolicy Bypass -File (Join-Path $Root 'update.ps1') -Apply -WarnSec $WarnSec
 exit $LASTEXITCODE

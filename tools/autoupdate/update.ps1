@@ -1,5 +1,7 @@
 ﻿# OA Battle Royale: GitHub main -> server datapack auto updater (Windows PowerShell 5.1)
-param([switch]$Force, [switch]$NoReload, [switch]$Apply)
+param([switch]$Force, [switch]$NoReload, [switch]$Apply, [switch]$InstallOnly, [int]$WarnSec = 30)
+# -InstallOnly（2026-11-23）：新しい版があればデータパックを置くだけ（applyMode によらず再起動しない）。apply.ps1 が反映の前に呼ぶ
+# -WarnSec：再起動の予告の秒数（apply.ps1 からは10秒）
 # 反映のしかた（2026-11-15〜）：config.json の applyMode が "restart"（既定）なら、ファイルを置いたあと
 #   30秒予告してサーバーを再起動する（start-server.bat のループ起動のときだけ。試合中・生成中・練習場に人がいる間は待つ）。
 #   "reload" なら従来どおり /reload。大きなデータパックの /reload は60秒以上サーバーを止め、Paper の watchdog に止められたことがある。
@@ -18,7 +20,7 @@ $PackId = 'file/' + $cfg.packName
 $DatapacksDir = Join-Path $ServerDir ($cfg.world + '/datapacks')
 $PackDir = Join-Path $DatapacksDir $cfg.packName
 $RestartMode = ($cfg.applyMode -ne 'reload')
-$ManualMode = ($cfg.applyMode -eq 'manual')
+$ManualMode = ($cfg.applyMode -eq 'manual') -or $InstallOnly
 
 function Log([string]$m) {
     if ((Test-Path $LogFile) -and ((Get-Item $LogFile).Length -gt 1MB)) { Move-Item $LogFile ($LogFile + '.old') -Force }
@@ -215,10 +217,13 @@ function Apply-ByRestart([string]$sha, [string]$short) {
         Log "Installed $short, but the server is not run by start-server.bat: restart it manually to apply."
         return
     }
-    Say "[OA] データパックを更新します ($short)。30秒後にサーバーを再起動します（1分ほどで戻ります）"
-    Start-Sleep -Seconds 20
-    Say '[OA] 再起動まで 10 秒'
-    Start-Sleep -Seconds 10
+    Say "[OA] 更新を反映します ($short)。${WarnSec}秒後にサーバーを再起動します（1分ほどで戻ります）"
+    $left = $WarnSec
+    while ($left -gt 0) {
+        $step = if ($left -gt 10) { $left - 10 } elseif ($left -gt 5) { $left - 5 } else { 1 }
+        Start-Sleep -Seconds $step; $left -= $step
+        if ($left -gt 0 -and ($left -le 5 -or $left -eq 10)) { Say "[OA] 再起動まで $left 秒" }
+    }
     if ((Test-Busy) -or (Test-PracticeUsed)) {
         Say '[OA] 試合・練習などが始まったので、再起動を延期します（終わると自動で再起動します）'
         $state.pendingSha = $sha; Save-State $state

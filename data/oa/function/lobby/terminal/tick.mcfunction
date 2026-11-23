@@ -8,3 +8,5 @@ execute as @a[tag=br.lobby_now] at @s run function oa:lobby/comfort
 execute as @a[tag=oa.lobby_safe,tag=!br.lobby_now] run attribute @s minecraft:fall_damage_multiplier modifier remove oa:lobby_fall
 tag @a[tag=oa.lobby_safe,tag=!br.lobby_now] remove oa.lobby_safe
 execute if score #perf oa.tmp matches 0 run function oa:lobby/protect_exhibits
+# 2026-11-23：マップの台が3つのままなら5つへ置き直す（建て直し不要）
+execute if score #perf oa.tmp matches 0 unless data storage oa:lobby_job {working:1b} run function oa:lobby/terminal/maps5_check with storage oa:lobby origin

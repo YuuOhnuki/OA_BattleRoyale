@@ -1578,7 +1578,8 @@ WT += ["scoreboard players add #isle oa.map2 1", f"schedule function oa:maps/{KE
 W("wait", WT)
 W("place", [HEAD + "。今の候補地（#isle）の島を置いて登録する", "scoreboard players set #localc oa.map2 0", "scoreboard players set #localo oa.map2 0"]
   + [f"execute if score #isle oa.map2 matches {s} run function oa:maps/{KEY}/isles/do_s{s}" for s in range(10)]
-  + ["scoreboard players operation #chests oa.map2 += #localc oa.map2", "scoreboard players operation #ores oa.map2 += #localo oa.map2"])
+  + ["scoreboard players operation #chests oa.map2 += #localc oa.map2", "scoreboard players operation #ores oa.map2 += #localo oa.map2"]
+  + ['scoreboard players add #isle_done oa.map2 1', 'execute store result score #isle_n oa.tmp run data get storage oa:maps sky_isles', 'tellraw @a [{text:"[会場の生成] ",color:"gold"},{text:"天空島",color:"yellow"},{text:"：まわりの島 ",color:"gray"},{score:{name:"#isle_done",objective:"oa.map2"},color:"white"},{text:"/",color:"gray"},{score:{name:"#in",objective:"oa.map2"},color:"white"},{text:" 個目（",color:"gray"},{nbt:"sky_isles[-1]",storage:"oa:maps",interpret:true,color:"white"},{text:"）",color:"gray"}]'])
 W("finish", [HEAD + "。島を置き終えた",
              "execute if score #map_failed oa.map2 matches 1.. run return run function oa:maps/sky/isles/failed",
              "data modify storage oa_map2:job working set value 0b",
@@ -1586,7 +1587,7 @@ W("finish", [HEAD + "。島を置き終えた",
              "function oa:map/internal/save_cur {key:\"sky\"}",
              "execute store result score #sp_n oa.tmp run data get storage oa:spawn_points points",
              "execute store result score #isle_n oa.tmp run data get storage oa:maps sky_isles",
-             'tellraw @a[tag=br.admin] [{text:"[天空島] まわりの島 ",color:"green"},{score:{name:"#isle_n",objective:"oa.tmp"},color:"green"},{text:" 個を置きました（",color:"green"},{nbt:"sky_isles[]",storage:"oa:maps",color:"white",separator:"・"},{text:"）。チェスト ",color:"green"},{score:{name:"#chests",objective:"oa.map2"},color:"green"},{text:"個・開始地点 ",color:"green"},{score:{name:"#sp_n",objective:"oa.tmp"},color:"green"},{text:"か所。",color:"green"}]',
+             'tellraw @a[tag=br.admin] [{text:"[天空島] まわりの島 ",color:"green"},{score:{name:"#isle_n",objective:"oa.tmp"},color:"green"},{text:" 個を置きました（",color:"green"},{nbt:"sky_isles[]",storage:"oa:maps",interpret:true,color:"white",separator:"・"},{text:"）。チェスト ",color:"green"},{score:{name:"#chests",objective:"oa.map2"},color:"green"},{text:"個・開始地点 ",color:"green"},{score:{name:"#sp_n",objective:"oa.tmp"},color:"green"},{text:"か所。",color:"green"}]',
              "execute as @a[tag=br.admin] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 0.6 1.2"])
 # post：中央の開始地点・地点名（そのあと島）
 def ptsl(lst): return ",".join(f"{{x:{x}.5d,y:{y + 80}.0d,z:{z}.5d}}" for x, y, z in lst)

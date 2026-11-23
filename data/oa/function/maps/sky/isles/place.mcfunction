@@ -13,3 +13,6 @@ execute if score #isle oa.map2 matches 8 run function oa:maps/sky/isles/do_s8
 execute if score #isle oa.map2 matches 9 run function oa:maps/sky/isles/do_s9
 scoreboard players operation #chests oa.map2 += #localc oa.map2
 scoreboard players operation #ores oa.map2 += #localo oa.map2
+scoreboard players add #isle_done oa.map2 1
+execute store result score #isle_n oa.tmp run data get storage oa:maps sky_isles
+tellraw @a [{text:"[会場の生成] ",color:"gold"},{text:"天空島",color:"yellow"},{text:"：まわりの島 ",color:"gray"},{score:{name:"#isle_done",objective:"oa.map2"},color:"white"},{text:"/",color:"gray"},{score:{name:"#in",objective:"oa.map2"},color:"white"},{text:" 個目（",color:"gray"},{nbt:"sky_isles[-1]",storage:"oa:maps",interpret:true,color:"white"},{text:"）",color:"gray"}]

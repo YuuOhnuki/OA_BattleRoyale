@@ -12,4 +12,7 @@ data modify storage oa_map2:args tile set value 0
 scoreboard players set #state oa.map2 4
 scoreboard players set #tile oa.map2 0
 function oa:map/internal/delete/configure
+data modify storage oa_map2:job name set value "会場"
+function oa:map/internal/job/progress_name with storage oa:maps
+tellraw @a [{text:"[会場の削除] ",color:"gold"},{nbt:"name",storage:"oa_map2:job",interpret:true,color:"yellow"},{text:" を削除しています。全100区画（10区画ごとに進み具合を出します）",color:"gold"}]
 function oa:map/internal/delete/dispatch
