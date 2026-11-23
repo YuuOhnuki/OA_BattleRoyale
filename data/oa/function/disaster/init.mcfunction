@@ -8,6 +8,7 @@ scoreboard players set #dis_left br.tmp 0
 scoreboard players set #dis_was br.tmp 0
 function oa:disaster/cooldown_first with storage oa:disaster cfg
 function oa:disaster/clear_marks
+function oa:disaster/relic/clear
 function oa:disaster/mobs_kill
 execute as @a run function oa:disaster/player_clear
 bossbar set oa:disaster visible false
