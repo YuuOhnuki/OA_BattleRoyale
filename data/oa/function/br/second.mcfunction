@@ -3,6 +3,8 @@ scoreboard players operation #sec br.sec = #time br.time
 scoreboard players operation #sec br.sec /= #20 br.tmp
 # 1.9.242：初心者救済の復活（チェスト補充 tick 7200 以降）
 function oa:br/rescue/revive_all
+# 1.9.246：チームが全滅したら、そのチームの復活待ちは脱落（チーム戦のみ）
+execute if score #state br.state matches 1 if score #mode br.mode matches 1 as @a[tag=br.rescue,tag=br.playing,tag=!br.alive] run function oa:br/rescue/wipe_check
 function oa:br/check_winner
 execute if score #state br.state matches 1 as @a[tag=br.alive,scores={br.mdone=0}] at @s run function oa:br/mission/check
 # 1.9.223：チェスト25個・鉱石50個のごほうび
