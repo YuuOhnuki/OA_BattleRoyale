@@ -5,23 +5,10 @@ fill ~40 ~14 ~8 ~71 ~40 ~39 minecraft:air
 fill ~40 ~-30 ~8 ~40 ~-25 ~8 minecraft:tuff
 setblock ~40 ~-29 ~23 minecraft:tuff
 fill ~40 ~-28 ~23 ~41 ~-24 ~23 minecraft:tuff
-fill ~70 ~-27 ~8 ~71 ~-27 ~13 minecraft:tuff
-fill ~68 ~-27 ~17 ~71 ~-27 ~23 minecraft:tuff
 setblock ~41 ~-27 ~34 minecraft:tuff
-fill ~61 ~-27 ~35 ~67 ~-27 ~39 minecraft:tuff
-fill ~70 ~-26 ~8 ~71 ~-26 ~13 minecraft:stone
-fill ~68 ~-26 ~17 ~71 ~-26 ~19 minecraft:stone
-fill ~68 ~-26 ~20 ~70 ~-26 ~20 minecraft:stone
-setblock ~71 ~-26 ~20 minecraft:gold_block
-fill ~68 ~-26 ~21 ~71 ~-26 ~23 minecraft:stone
 fill ~40 ~-26 ~33 ~40 ~-25 ~33 minecraft:tuff
 fill ~40 ~-26 ~34 ~41 ~-26 ~34 minecraft:tuff
 setblock ~41 ~-26 ~35 minecraft:tuff
-fill ~61 ~-26 ~35 ~67 ~-26 ~37 minecraft:stone
-fill ~61 ~-26 ~38 ~63 ~-26 ~38 minecraft:stone
-setblock ~64 ~-26 ~38 minecraft:gold_block
-fill ~65 ~-26 ~38 ~67 ~-26 ~38 minecraft:stone
-fill ~61 ~-26 ~39 ~67 ~-26 ~39 minecraft:stone
 fill ~40 ~-25 ~22 ~40 ~-24 ~22 minecraft:tuff
 fill ~40 ~-25 ~34 ~41 ~-24 ~35 minecraft:tuff
 fill ~40 ~-24 ~8 ~41 ~-21 ~8 minecraft:tuff

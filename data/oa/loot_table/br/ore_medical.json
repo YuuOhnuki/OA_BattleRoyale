@@ -321,7 +321,7 @@
                         {
                           "id": "minecraft:strength",
                           "duration": 400,
-                          "amplifier": 1,
+                          "amplifier": 0,
                           "show_particles": true,
                           "show_icon": true
                         },
@@ -349,7 +349,7 @@
                         "italic": false
                       },
                       {
-                        "text": "1秒で使用。速度II・跳躍II・攻撃力II・再生Iを20秒。",
+                        "text": "1秒で使用。速度II・跳躍II・攻撃力I・再生Iを20秒。",
                         "color": "white",
                         "italic": false
                       },

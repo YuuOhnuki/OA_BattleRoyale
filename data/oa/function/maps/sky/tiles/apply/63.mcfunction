@@ -10,7 +10,6 @@ scoreboard players set #localc oa.map2 0
 scoreboard players set #localo oa.map2 0
 scoreboard players set #expectedc oa.map2 0
 scoreboard players set #expectedo oa.map2 0
-execute positioned ~-43 ~-25 ~61 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:marker ~ ~ ~ {Tags:["oa.gim","oa.gim_up","oa.gim_up_31"]}
 execute positioned ~-40 ~32 ~46 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:block_display ~ ~ ~ {Tags:["oa.mdeco"],block_state:"minecraft:red_wool",view_range:6.0f,Rotation:[0.0f,0.0f],transformation:{translation:[-2.500f,0.500f,-2.500f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[5.000f,5.000f,5.000f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
 execute positioned ~-40 ~32 ~46 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:block_display ~ ~ ~ {Tags:["oa.mdeco"],block_state:"minecraft:white_wool",view_range:6.0f,Rotation:[0.0f,0.0f],transformation:{translation:[-3.000f,1.500f,-2.000f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[6.000f,3.000f,4.000f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
 execute positioned ~-40 ~32 ~46 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:block_display ~ ~ ~ {Tags:["oa.mdeco"],block_state:"minecraft:white_wool",view_range:6.0f,Rotation:[0.0f,0.0f],transformation:{translation:[-2.000f,1.500f,-3.000f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[4.000f,3.000f,6.000f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}

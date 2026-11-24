@@ -512,26 +512,7 @@ for k in range(8):
     a = math.radians(k * 45 + 22.5); x, z = round(math.cos(a) * 22), round(math.sin(a) * 22)
     if free(x, 1, z) and free(x, 2, z): spawn(x, 1, z)
 add_spawns(rr0, 0, 0, 40, CR - 6, 10)
-# 救済用の足場と上昇気流。従来の4か所を残し、空いた所へ28か所追加（計32）。
-rescue_pads = [(round(math.cos(math.radians(k * 90 + 54)) * 74),
-                round(math.sin(math.radians(k * 90 + 54)) * 74)) for k in range(4)]
-for k in range(10000):
-    if len(rescue_pads) == 32: break
-    a = math.radians(k * 137.507764)
-    r = 74 + (k % 7) * 11
-    x, z = round(math.cos(a) * r), round(math.sin(a) * r)
-    # 島のテンプレートの範囲（61×61）と足場同士が重ならない。
-    if any(abs(x - sx) <= 34 and abs(z - sz) <= 34 for sx, sz in SITES): continue
-    if any(max(abs(x - px), abs(z - pz)) < 10 for px, pz in rescue_pads): continue
-    if any(getb(xx, yy, zz) != 'minecraft:air' for xx in range(x - 3, x + 4)
-           for zz in range(z - 3, z + 4) for yy in range(-27, -21)): continue
-    rescue_pads.append((x, z))
-assert len(rescue_pads) == 32, len(rescue_pads)
-for pad_index, (px_, pz_) in enumerate(rescue_pads):
-    box(px_ - 3, -26, pz_ - 3, px_ + 3, -26, pz_ + 3, 'minecraft:stone'); box(px_ - 3, -27, pz_ - 3, px_ + 3, -27, pz_ + 3, 'minecraft:tuff')
-    put(px_, -26, pz_, 'minecraft:gold_block')
-    gim(px_, -25, pz_, ['oa.gim', 'oa.gim_up', 'oa.gim_up_31'])
-    if pad_index < 4: chest(px_ - 2, -25, pz_ - 2)
+# 1.9.250：救済用の足場と上昇気流は廃止（ユーザーの指示。1.9.238 までは各32か所、y=54）。
 # 空の飾り
 for j, (bx_, by_, bz_) in enumerate(((-40, 32, 46), (44, 34, -40), (10, 38, 50), (-80, 28, -60), (84, 30, 66), (-140, 30, 20), (140, 28, -30), (30, 34, -140), (-30, 30, 140))):
     cs = [('minecraft:red_wool', 'minecraft:white_wool'), ('minecraft:blue_wool', 'minecraft:yellow_wool'), ('minecraft:orange_wool', 'minecraft:white_wool'),

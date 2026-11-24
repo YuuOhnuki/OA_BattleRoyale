@@ -137,7 +137,7 @@ fill ~-102 ~1 ~106 ~-102 ~4 ~106 minecraft:quartz_pillar
 setblock ~-103 ~1 ~106 minecraft:quartz_block
 fill ~-107 ~1 ~106 ~-107 ~4 ~106 minecraft:quartz_pillar
 fill ~-113 ~1 ~107 ~-113 ~1 ~108 minecraft:end_stone
-setblock ~-109 ~1 ~108 minecraft:coal_ore
+fill ~-109 ~1 ~107 ~-108 ~1 ~108 minecraft:coal_ore
 setblock ~-110 ~1 ~108 minecraft:end_stone
 setblock ~-110 ~1 ~109 minecraft:chest[facing=north]
 fill ~-114 ~1 ~109 ~-112 ~1 ~109 minecraft:end_stone

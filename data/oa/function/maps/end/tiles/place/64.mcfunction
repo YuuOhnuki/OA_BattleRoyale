@@ -2,17 +2,6 @@ scoreboard players set #stage oa.map2 1
 fill ~-24 ~-40 ~40 ~7 ~-14 ~71 minecraft:air
 fill ~-24 ~-13 ~40 ~7 ~13 ~71 minecraft:air
 fill ~-24 ~14 ~40 ~7 ~40 ~71 minecraft:air
-fill ~-11 ~-27 ~49 ~-5 ~-27 ~55 minecraft:obsidian
-fill ~-11 ~-26 ~49 ~-5 ~-26 ~51 minecraft:obsidian
-fill ~-11 ~-26 ~52 ~-9 ~-26 ~52 minecraft:obsidian
-fill ~-7 ~-26 ~52 ~-5 ~-26 ~52 minecraft:obsidian
-setblock ~-8 ~-26 ~52 minecraft:sea_lantern
-fill ~-11 ~-26 ~53 ~-5 ~-26 ~53 minecraft:obsidian
-setblock ~-6 ~-26 ~54 minecraft:end_stone
-setblock ~-5 ~-26 ~54 minecraft:obsidian
-fill ~-11 ~-26 ~54 ~-7 ~-26 ~54 minecraft:obsidian
-fill ~-11 ~-26 ~55 ~-5 ~-26 ~55 minecraft:obsidian
-setblock ~-6 ~-25 ~54 minecraft:redstone_ore
 fill ~2 ~-15 ~41 ~4 ~-14 ~41 minecraft:end_stone
 setblock ~4 ~-15 ~42 minecraft:end_stone
 setblock ~-18 ~-15 ~46 minecraft:end_stone
@@ -304,7 +293,6 @@ fill ~-20 ~1 ~42 ~-14 ~1 ~42 minecraft:end_stone
 fill ~-19 ~1 ~43 ~-15 ~1 ~43 minecraft:end_stone
 fill ~-18 ~1 ~44 ~-16 ~1 ~44 minecraft:end_stone
 fill ~7 ~1 ~40 ~7 ~1 ~45 minecraft:end_stone
-setblock ~-13 ~1 ~48 minecraft:chest[facing=north]
 fill ~-15 ~1 ~48 ~-15 ~4 ~48 minecraft:chorus_plant[up=true,down=true]
 fill ~-4 ~1 ~47 ~-4 ~1 ~54 minecraft:end_stone_brick_wall
 fill ~-5 ~1 ~55 ~-5 ~1 ~57 minecraft:end_stone_brick_wall

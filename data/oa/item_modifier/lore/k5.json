@@ -53,7 +53,7 @@
                 "italic": false
               },
               {
-                "text": "拾うと頭へ強制装着。移動速度＋175%、盲目と大音",
+                "text": "拾うと頭へ強制装着。移動速度＋150%・体力の上限が半分、盲目と大音",
                 "color": "white",
                 "italic": false
               }
@@ -75,7 +75,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "  （攻撃を当ててから3秒間は15%）。",
+                "text": "  （攻撃を当ててから3秒間は10%）。",
                 "color": "white",
                 "italic": false
               }
@@ -91,7 +91,7 @@
                 "italic": false
               },
               {
-                "text": "なし／装着の累計60秒で消滅",
+                "text": "なし／装着の累計45秒で消滅",
                 "color": "white",
                 "italic": false
               }

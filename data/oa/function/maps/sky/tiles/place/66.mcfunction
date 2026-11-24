@@ -2,22 +2,6 @@ scoreboard players set #stage oa.map2 1
 fill ~40 ~-40 ~40 ~71 ~-14 ~71 minecraft:air
 fill ~40 ~-13 ~40 ~71 ~13 ~71 minecraft:air
 fill ~40 ~14 ~40 ~71 ~40 ~71 minecraft:air
-fill ~61 ~-27 ~40 ~67 ~-27 ~41 minecraft:tuff
-fill ~66 ~-27 ~46 ~71 ~-27 ~52 minecraft:tuff
-fill ~40 ~-27 ~57 ~46 ~-27 ~63 minecraft:tuff
-fill ~42 ~-27 ~69 ~48 ~-27 ~71 minecraft:tuff
-fill ~61 ~-26 ~40 ~67 ~-26 ~41 minecraft:stone
-fill ~66 ~-26 ~46 ~71 ~-26 ~48 minecraft:stone
-setblock ~69 ~-26 ~49 minecraft:gold_block
-fill ~66 ~-26 ~49 ~68 ~-26 ~49 minecraft:stone
-fill ~70 ~-26 ~49 ~71 ~-26 ~49 minecraft:stone
-fill ~66 ~-26 ~50 ~71 ~-26 ~52 minecraft:stone
-fill ~40 ~-26 ~57 ~46 ~-26 ~59 minecraft:stone
-setblock ~43 ~-26 ~60 minecraft:gold_block
-fill ~44 ~-26 ~60 ~46 ~-26 ~60 minecraft:stone
-fill ~40 ~-26 ~60 ~42 ~-26 ~60 minecraft:stone
-fill ~40 ~-26 ~61 ~46 ~-26 ~63 minecraft:stone
-fill ~42 ~-26 ~69 ~48 ~-26 ~71 minecraft:stone
 fill ~41 ~-11 ~55 ~41 ~-10 ~55 minecraft:stone
 fill ~40 ~-10 ~40 ~42 ~-10 ~40 minecraft:stone
 fill ~40 ~-9 ~40 ~43 ~-9 ~40 minecraft:stone
@@ -71,4 +55,3 @@ fill ~41 ~0 ~47 ~43 ~0 ~48 minecraft:grass_block
 fill ~40 ~0 ~49 ~43 ~0 ~49 minecraft:grass_block
 fill ~40 ~0 ~50 ~44 ~0 ~55 minecraft:grass_block
 fill ~42 ~0 ~56 ~43 ~0 ~56 minecraft:grass_block
-setblock ~41 ~1 ~42 minecraft:chest[facing=north]

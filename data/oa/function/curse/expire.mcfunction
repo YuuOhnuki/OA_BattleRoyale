@@ -9,4 +9,4 @@ scoreboard players set @s oa.kind 0
 scoreboard players set @s oa.old 0
 particle minecraft:reverse_portal ~ ~1.5 ~ 0.4 0.4 0.4 0.03 25 normal @a[distance=..24]
 playsound minecraft:entity.item.break player @s ~ ~ ~ 1 0.8
-tellraw @s {text:"1分経過：キリングのマスクが壊れ、呪いが解けました"}
+tellraw @s {text:"45秒経過：キリングのマスクが壊れ、呪いが解けました"}

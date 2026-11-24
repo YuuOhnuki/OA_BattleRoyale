@@ -2,19 +2,6 @@ scoreboard players set #stage oa.map2 1
 fill ~8 ~-40 ~-56 ~39 ~-14 ~-25 minecraft:air
 fill ~8 ~-13 ~-56 ~39 ~13 ~-25 minecraft:air
 fill ~8 ~14 ~-56 ~39 ~40 ~-25 minecraft:air
-fill ~8 ~-27 ~-52 ~10 ~-27 ~-46 minecraft:obsidian
-fill ~17 ~-27 ~-46 ~23 ~-27 ~-40 minecraft:obsidian
-fill ~8 ~-26 ~-52 ~10 ~-26 ~-48 minecraft:obsidian
-setblock ~9 ~-26 ~-47 minecraft:end_stone
-setblock ~8 ~-26 ~-47 minecraft:obsidian
-setblock ~10 ~-26 ~-47 minecraft:obsidian
-fill ~8 ~-26 ~-46 ~10 ~-26 ~-46 minecraft:obsidian
-fill ~17 ~-26 ~-46 ~23 ~-26 ~-44 minecraft:obsidian
-fill ~21 ~-26 ~-43 ~23 ~-26 ~-43 minecraft:obsidian
-setblock ~20 ~-26 ~-43 minecraft:sea_lantern
-fill ~17 ~-26 ~-43 ~19 ~-26 ~-43 minecraft:obsidian
-fill ~17 ~-26 ~-42 ~23 ~-26 ~-40 minecraft:obsidian
-setblock ~9 ~-25 ~-47 minecraft:redstone_ore
 setblock ~16 ~-25 ~-28 minecraft:obsidian
 setblock ~14 ~-24 ~-29 minecraft:obsidian
 fill ~15 ~-24 ~-28 ~16 ~-24 ~-28 minecraft:obsidian

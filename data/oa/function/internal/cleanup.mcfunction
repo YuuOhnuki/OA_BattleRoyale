@@ -6,6 +6,9 @@ attribute @s minecraft:jump_strength modifier remove oa:fish_jump
 function oa:fish/fall_off
 attribute @s minecraft:movement_speed modifier remove oa:fish
 attribute @s minecraft:movement_speed modifier remove oa:curse
+# 1.9.250：キリングの体力の上限半分を戻す（次に着けたらまた付け直す）
+attribute @s minecraft:max_health modifier remove oa:curse_hp
+tag @s remove oa.curse_v250
 attribute @s minecraft:movement_speed modifier remove oa:night
 attribute @s minecraft:attack_damage modifier remove oa:night
 attribute @s minecraft:armor modifier remove oa:night

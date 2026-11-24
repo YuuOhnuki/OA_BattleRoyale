@@ -296,56 +296,7 @@
       "walkable_reached": 21191,
       "ladder_columns": 0,
       "geometry_repairs": 0,
-      "relocated_chests": [
-        {
-          "from": [
-            51,
-            -25,
-            8
-          ],
-          "to": [
-            51,
-            1,
-            6
-          ]
-        },
-        {
-          "from": [
-            -10,
-            -25,
-            50
-          ],
-          "to": [
-            -13,
-            1,
-            48
-          ]
-        },
-        {
-          "from": [
-            -50,
-            -25,
-            -11
-          ],
-          "to": [
-            -44,
-            1,
-            -11
-          ]
-        },
-        {
-          "from": [
-            5,
-            -25,
-            -51
-          ],
-          "to": [
-            3,
-            1,
-            -51
-          ]
-        }
-      ],
+      "relocated_chests": [],
       "unreachable_chests": []
     }
   ],
@@ -520,9 +471,9 @@
     },
     {
       "kind": "center",
-      "before": 24,
-      "target": 36,
-      "after": 36
+      "before": 20,
+      "target": 30,
+      "after": 30
     }
   ]
 }

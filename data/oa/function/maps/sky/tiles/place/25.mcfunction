@@ -2,18 +2,6 @@ scoreboard players set #stage oa.map2 1
 fill ~8 ~-40 ~-88 ~39 ~-14 ~-57 minecraft:air
 fill ~8 ~-13 ~-88 ~39 ~13 ~-57 minecraft:air
 fill ~8 ~14 ~-88 ~39 ~40 ~-57 minecraft:air
-fill ~9 ~-27 ~-87 ~15 ~-27 ~-81 minecraft:tuff
-fill ~11 ~-27 ~-76 ~17 ~-27 ~-70 minecraft:tuff
-fill ~9 ~-26 ~-87 ~15 ~-26 ~-85 minecraft:stone
-fill ~13 ~-26 ~-84 ~15 ~-26 ~-84 minecraft:stone
-setblock ~12 ~-26 ~-84 minecraft:gold_block
-fill ~9 ~-26 ~-84 ~11 ~-26 ~-84 minecraft:stone
-fill ~9 ~-26 ~-83 ~15 ~-26 ~-81 minecraft:stone
-fill ~11 ~-26 ~-76 ~17 ~-26 ~-74 minecraft:stone
-setblock ~14 ~-26 ~-73 minecraft:gold_block
-fill ~11 ~-26 ~-73 ~13 ~-26 ~-73 minecraft:stone
-fill ~15 ~-26 ~-73 ~17 ~-26 ~-73 minecraft:stone
-fill ~11 ~-26 ~-72 ~17 ~-26 ~-70 minecraft:stone
 fill ~13 ~-16 ~-62 ~14 ~-15 ~-61 minecraft:stone
 setblock ~14 ~-15 ~-60 minecraft:stone
 fill ~13 ~-14 ~-62 ~14 ~-14 ~-60 minecraft:stone

@@ -464,8 +464,9 @@ fill ~-24 ~0 ~9 ~7 ~0 ~28 minecraft:end_stone
 fill ~-22 ~1 ~11 ~-22 ~5 ~11 minecraft:chorus_plant[up=true,down=true]
 fill ~-13 ~1 ~12 ~-11 ~2 ~12 minecraft:end_stone_bricks
 setblock ~3 ~1 ~16 minecraft:end_stone
-setblock ~4 ~1 ~17 minecraft:coal_ore
+fill ~3 ~1 ~17 ~5 ~1 ~17 minecraft:coal_ore
 fill ~-1 ~1 ~17 ~1 ~2 ~17 minecraft:end_stone_bricks
+setblock ~4 ~1 ~18 minecraft:coal_ore
 setblock ~-20 ~1 ~20 minecraft:chest[facing=north]
 fill ~-11 ~1 ~21 ~-11 ~4 ~21 minecraft:chorus_plant[up=true,down=true]
 fill ~3 ~1 ~24 ~3 ~6 ~24 minecraft:chorus_plant[up=true,down=true]

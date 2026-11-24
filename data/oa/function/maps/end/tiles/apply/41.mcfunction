@@ -10,7 +10,6 @@ scoreboard players set #localc oa.map2 0
 scoreboard players set #localo oa.map2 0
 scoreboard players set #expectedc oa.map2 0
 scoreboard players set #expectedo oa.map2 0
-execute positioned ~-118 ~-25 ~5 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:marker ~ ~ ~ {Tags:["oa.gim","oa.gim_up","oa.gim_up_31"]}
 execute positioned ~-100 ~26 ~-24 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:block_display ~ ~ ~ {Tags:["oa.mdeco"],block_state:"minecraft:purpur_block",view_range:6.0f,Rotation:[0.0f,0.0f],transformation:{translation:[-1.300f,0.000f,-1.300f],left_rotation:[0.2706f,0.0000f,0.2706f,0.9239f],scale:[2.600f,2.600f,2.600f],right_rotation:[0.0f,0.0f,0.0f,1.0f]},brightness:{block:15,sky:15}}
 execute positioned ~-100 ~26 ~-24 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:block_display ~ ~ ~ {Tags:["oa.mdeco"],block_state:"minecraft:end_rod",view_range:6.0f,Rotation:[0.0f,0.0f],transformation:{translation:[-0.150f,-1.560f,-0.150f],left_rotation:[0.0000f,0.0000f,0.0000f,1.0000f],scale:[0.300f,5.720f,0.300f],right_rotation:[0.0f,0.0f,0.0f,1.0f]},brightness:{block:15,sky:15}}
 execute if score #sv4 oa.map2 matches 0 positioned ~-90 ~24 ~-5 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:end_crystal ~ ~ ~ {Tags:["oa.mdeco"],Invulnerable:1b,ShowBottom:0b}

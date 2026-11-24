@@ -775,7 +775,6 @@ fill ~-49 ~0 ~-25 ~-45 ~0 ~-25 minecraft:dirt
 fill ~-33 ~0 ~-25 ~-31 ~0 ~-25 minecraft:stone_bricks
 setblock ~-25 ~0 ~-25 minecraft:mossy_stone_bricks
 fill ~-30 ~1 ~-48 ~-29 ~1 ~-48 minecraft:grass_block
-setblock ~-33 ~1 ~-47 minecraft:chest[facing=north]
 fill ~-31 ~1 ~-47 ~-26 ~1 ~-47 minecraft:grass_block
 fill ~-30 ~1 ~-46 ~-29 ~1 ~-46 minecraft:dirt
 fill ~-28 ~1 ~-46 ~-25 ~1 ~-46 minecraft:grass_block

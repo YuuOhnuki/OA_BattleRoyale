@@ -9,10 +9,12 @@ scoreboard players set #stage oa.map2 2
 scoreboard players set #localc oa.map2 0
 scoreboard players set #localo oa.map2 0
 scoreboard players set #expectedc oa.map2 3
-scoreboard players set #expectedo oa.map2 3
+scoreboard players set #expectedo oa.map2 5
 execute positioned ~24 ~1 ~28 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute positioned ~17 ~1 ~11 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute positioned ~12 ~1 ~31 if block ~ ~ ~ minecraft:redstone_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_3
+execute positioned ~25 ~1 ~28 if block ~ ~ ~ minecraft:redstone_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_3
+execute positioned ~23 ~1 ~28 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute positioned ~36 ~2 ~10 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
 execute positioned ~10 ~2 ~36 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
 execute positioned ~32 ~1 ~24 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest

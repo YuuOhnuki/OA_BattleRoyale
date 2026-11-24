@@ -9,8 +9,11 @@ scoreboard players set #stage oa.map2 2
 scoreboard players set #localc oa.map2 0
 scoreboard players set #localo oa.map2 0
 scoreboard players set #expectedc oa.map2 1
-scoreboard players set #expectedo oa.map2 1
+scoreboard players set #expectedo oa.map2 4
 execute positioned ~4 ~1 ~17 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
+execute positioned ~5 ~1 ~17 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
+execute positioned ~3 ~1 ~17 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
+execute positioned ~4 ~1 ~18 if block ~ ~ ~ minecraft:coal_ore align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/ore_1
 execute positioned ~-20 ~1 ~20 if block ~ ~ ~ minecraft:chest align xyz positioned ~0.5 ~0.5 ~0.5 summon minecraft:marker run function oa:map/internal/register/chest
 execute if score #mode oa.map2 matches 0 positioned ~-20 ~1 ~20 if block ~ ~ ~ minecraft:chest run loot replace block ~ ~ ~ container.0 27 loot oa:br/chest_basic
 execute positioned ~-13 ~26 ~32 align xyz positioned ~0.5 ~0 ~0.5 run summon minecraft:end_crystal ~ ~ ~ {Tags:["oa.mdeco"],Invulnerable:1b,ShowBottom:0b}

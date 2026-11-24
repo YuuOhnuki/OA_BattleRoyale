@@ -523,7 +523,8 @@ fill ~36 ~1 ~25 ~37 ~1 ~25 minecraft:end_stone
 fill ~36 ~1 ~26 ~36 ~6 ~26 minecraft:chorus_plant[up=true,down=true]
 fill ~36 ~10 ~26 ~36 ~12 ~26 minecraft:chorus_plant[up=true,down=true]
 setblock ~23 ~1 ~27 minecraft:end_stone
-setblock ~24 ~1 ~28 minecraft:coal_ore
+setblock ~25 ~1 ~28 minecraft:redstone_ore
+fill ~23 ~1 ~28 ~24 ~1 ~28 minecraft:coal_ore
 setblock ~12 ~1 ~31 minecraft:redstone_ore
 setblock ~35 ~1 ~33 minecraft:white_stained_glass_pane
 fill ~36 ~1 ~34 ~37 ~1 ~34 minecraft:white_stained_glass_pane

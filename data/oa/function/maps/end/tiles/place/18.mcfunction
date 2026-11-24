@@ -175,11 +175,9 @@ fill ~105 ~1 ~-117 ~108 ~1 ~-117 minecraft:end_stone
 setblock ~111 ~1 ~-116 minecraft:obsidian
 fill ~104 ~1 ~-115 ~111 ~1 ~-115 minecraft:end_stone
 setblock ~112 ~1 ~-115 minecraft:obsidian
-fill ~106 ~1 ~-114 ~113 ~1 ~-114 minecraft:end_stone
-setblock ~105 ~1 ~-114 minecraft:coal_ore
+fill ~105 ~1 ~-114 ~113 ~1 ~-114 minecraft:end_stone
 fill ~108 ~1 ~-113 ~114 ~1 ~-113 minecraft:end_stone
-fill ~105 ~1 ~-113 ~106 ~1 ~-112 minecraft:coal_ore
-fill ~107 ~1 ~-113 ~107 ~1 ~-112 minecraft:redstone_ore
+setblock ~106 ~1 ~-113 minecraft:coal_ore
 fill ~109 ~1 ~-112 ~115 ~1 ~-112 minecraft:end_stone
 fill ~110 ~1 ~-111 ~116 ~1 ~-111 minecraft:end_stone
 fill ~111 ~1 ~-110 ~116 ~1 ~-110 minecraft:end_stone

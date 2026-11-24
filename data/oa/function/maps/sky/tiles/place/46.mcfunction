@@ -22,8 +22,6 @@ fill ~53 ~-28 ~-7 ~54 ~-28 ~-7 minecraft:tuff
 fill ~56 ~-27 ~-21 ~56 ~-27 ~-20 minecraft:tuff
 fill ~52 ~-27 ~-9 ~54 ~-27 ~-7 minecraft:tuff
 fill ~50 ~-27 ~-4 ~50 ~-27 ~-2 minecraft:tuff
-fill ~71 ~-27 ~-3 ~71 ~-27 ~3 minecraft:tuff
-fill ~70 ~-27 ~7 ~71 ~-27 ~7 minecraft:tuff
 setblock ~56 ~-26 ~-21 minecraft:tuff
 setblock ~56 ~-22 ~-21 minecraft:tuff
 fill ~56 ~-26 ~-20 ~57 ~-24 ~-20 minecraft:tuff
@@ -33,8 +31,6 @@ fill ~52 ~-26 ~-7 ~54 ~-26 ~-7 minecraft:tuff
 fill ~53 ~-26 ~-6 ~53 ~-25 ~-6 minecraft:tuff
 fill ~49 ~-26 ~-4 ~50 ~-25 ~-4 minecraft:tuff
 fill ~50 ~-26 ~-3 ~50 ~-26 ~-1 minecraft:tuff
-fill ~71 ~-26 ~-3 ~71 ~-26 ~3 minecraft:stone
-fill ~70 ~-26 ~7 ~71 ~-26 ~7 minecraft:stone
 fill ~56 ~-25 ~-22 ~56 ~-25 ~-21 minecraft:tuff
 fill ~50 ~-25 ~-11 ~53 ~-25 ~-11 minecraft:tuff
 fill ~50 ~-25 ~-10 ~54 ~-23 ~-10 minecraft:tuff

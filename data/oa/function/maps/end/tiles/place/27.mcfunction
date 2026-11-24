@@ -2,7 +2,6 @@ scoreboard players set #stage oa.map2 1
 fill ~72 ~-40 ~-88 ~103 ~-14 ~-57 minecraft:air
 fill ~72 ~-13 ~-88 ~103 ~13 ~-57 minecraft:air
 fill ~72 ~14 ~-88 ~103 ~40 ~-57 minecraft:air
-fill ~88 ~-27 ~-88 ~94 ~-26 ~-87 minecraft:obsidian
 setblock ~72 ~-8 ~-57 minecraft:end_stone
 fill ~72 ~-7 ~-58 ~72 ~-7 ~-57 minecraft:end_stone
 fill ~72 ~-6 ~-59 ~72 ~-6 ~-58 minecraft:end_stone

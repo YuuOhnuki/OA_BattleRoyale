@@ -3,13 +3,7 @@ fill ~-88 ~-40 ~8 ~-57 ~-14 ~39 minecraft:air
 fill ~-88 ~-13 ~8 ~-57 ~13 ~39 minecraft:air
 fill ~-88 ~14 ~8 ~-57 ~40 ~39 minecraft:air
 fill ~-77 ~-28 ~8 ~-77 ~-27 ~8 minecraft:obsidian
-fill ~-86 ~-27 ~26 ~-80 ~-27 ~32 minecraft:obsidian
 fill ~-77 ~-26 ~8 ~-77 ~-26 ~9 minecraft:obsidian
-fill ~-86 ~-26 ~26 ~-80 ~-26 ~28 minecraft:obsidian
-fill ~-82 ~-26 ~29 ~-80 ~-26 ~29 minecraft:obsidian
-setblock ~-83 ~-26 ~29 minecraft:sea_lantern
-fill ~-86 ~-26 ~29 ~-84 ~-26 ~29 minecraft:obsidian
-fill ~-86 ~-26 ~30 ~-80 ~-26 ~32 minecraft:obsidian
 fill ~-77 ~-25 ~8 ~-77 ~-25 ~10 minecraft:obsidian
 fill ~-78 ~-24 ~8 ~-77 ~-23 ~8 minecraft:obsidian
 fill ~-77 ~-24 ~9 ~-77 ~-23 ~9 minecraft:obsidian
