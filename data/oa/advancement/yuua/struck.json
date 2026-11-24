@@ -25,7 +25,8 @@
                 "expected": false
               }
             ]
-          }
+          },
+          "blocked": false
         }
       }
     }

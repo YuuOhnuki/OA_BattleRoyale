@@ -1,11 +1,11 @@
 function oa:combat/select_targets
 data modify storage oa:damage amount set value 2
 data modify storage oa:damage type set value "oa:sonic"
-# 1.9.248: 球（半径4）から円柱（水平の半径4・上下6）に。縦の範囲が4ブロック分広い
+# 1.9.249: 足もとから高さ4m・半径4mの円柱（1.9.248 は上下6、それ以前は半径4の球）
 execute store result score #lazi_cx oa.tmp run data get entity @s Pos[0] 100
 execute store result score #lazi_cy oa.tmp run data get entity @s Pos[1] 100
 execute store result score #lazi_cz oa.tmp run data get entity @s Pos[2] 100
-execute as @e[tag=oa.target,distance=..8] at @s run function oa:lazi/cylinder_hit
+execute as @e[tag=oa.target,distance=..7] at @s run function oa:lazi/cylinder_hit
 function oa:lazi/ring
 playsound minecraft:entity.generic.explode player @a[distance=..32] ~ ~ ~ 1.6 1.2
 particle minecraft:explosion ~ ~1 ~ 0.4 0.2 0.4 0 2 normal @a[distance=..32]
