@@ -174,6 +174,152 @@
           "type": "minecraft:item",
           "name": "minecraft:bow",
           "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "刀",
+                  "color": "white",
+                  "italic": false
+                },
+                "minecraft:custom_data": {
+                  "oa_assist": "katana"
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "id": "oa:katana_damage",
+                    "amount": 4.0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "id": "oa:katana_speed",
+                    "amount": -2.4,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minecraft:lore": [
+                  {
+                    "text": "アシスト武器",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "振るたびに前の広い範囲に当たる",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "ダメージは一定。会心なし",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "追尾弓",
+                  "color": "white",
+                  "italic": false
+                },
+                "minecraft:custom_data": {
+                  "oa_assist": "homing"
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:lore": [
+                  {
+                    "text": "アシスト武器",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "照準の近くの相手へ矢が曲がって飛ぶ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "矢は遅く、威力は一定",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ],
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "ロックオン槍",
+                  "color": "white",
+                  "italic": false
+                },
+                "minecraft:custom_data": {
+                  "oa_assist": "lockon"
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "id": "oa:lockon_damage",
+                    "amount": 2.0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "id": "oa:lockon_speed",
+                    "amount": -2.9,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minecraft:lore": [
+                  {
+                    "text": "アシスト武器",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "相手を1秒見続けるとロックオン",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "投げると相手へ曲がって飛び、手に戻る",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ],
+          "weight": 6
         }
       ]
     },

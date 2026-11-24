@@ -6,8 +6,56 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:chainmail_boots",
-          "modifier": []
+          "name": "minecraft:trident",
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "ロックオン槍",
+                  "color": "white",
+                  "italic": false
+                },
+                "minecraft:custom_data": {
+                  "oa_assist": "lockon"
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "id": "oa:lockon_damage",
+                    "amount": 2.0,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "id": "oa:lockon_speed",
+                    "amount": -2.9,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ],
+                "minecraft:lore": [
+                  {
+                    "text": "アシスト武器",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "相手を1秒見続けるとロックオン",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "投げると相手へ曲がって飛び、手に戻る",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
         }
       ]
     }

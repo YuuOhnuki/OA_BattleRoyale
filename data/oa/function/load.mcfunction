@@ -6,6 +6,9 @@ scoreboard objectives add oa.serial dummy
 scoreboard objectives add oa.owner dummy
 scoreboard objectives add oa.have dummy
 scoreboard objectives add oa.kind dummy
+# 1.9.247：練習場の吹き飛ぶ標的（置き場の番号・当たらない時間）
+scoreboard objectives add oa.kb_pair dummy
+scoreboard objectives add oa.kb_idle dummy
 scoreboard objectives add oa.old dummy
 scoreboard objectives add oa.cd dummy
 scoreboard objectives add oa.mark dummy

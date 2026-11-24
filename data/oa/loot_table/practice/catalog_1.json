@@ -7,7 +7,39 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:bow",
-          "modifier": []
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "追尾弓",
+                  "color": "white",
+                  "italic": false
+                },
+                "minecraft:custom_data": {
+                  "oa_assist": "homing"
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:lore": [
+                  {
+                    "text": "アシスト武器",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "照準の近くの相手へ矢が曲がって飛ぶ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "矢は遅く、威力は一定",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
         }
       ]
     }

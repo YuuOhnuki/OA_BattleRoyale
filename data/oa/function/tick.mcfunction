@@ -21,6 +21,8 @@ execute if score #state br.state matches 1..3 if score #map oa.mapid matches 2 i
 execute if score #state br.state matches 1..3 if score #map oa.mapid matches 3 in oa:br_sky run function oa:world_tick
 execute if score #state br.state matches 1..3 if score #map oa.mapid matches 4 in oa:br_end run function oa:world_tick
 execute if entity @a[tag=oa.practice] in oa:practice run function oa:world_tick
+# 1.9.247：練習場の吹き飛ぶ標的
+execute if entity @a[tag=oa.practice] in oa:practice run function oa:practice/kb/tick
 execute as @a[tag=oa.player] at @s run function oa:player_tick
 execute if score #clock oa.beat matches 5.. run scoreboard players set #clock oa.beat 0
 
