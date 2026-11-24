@@ -46,7 +46,7 @@
         },
         {
           "type": "minecraft:empty",
-          "weight": 85652
+          "weight": 101376
         },
         {
           "type": "minecraft:item",
@@ -81,117 +81,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:stick",
-          "weight": 3724,
-          "modifier": [
-            {
-              "type": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_name": {
-                  "text": "木のバット",
-                  "color": "gold",
-                  "italic": false
-                },
-                "minecraft:enchantments": {
-                  "oa:bat": 1
-                },
-                "minecraft:custom_data": {
-                  "oa_normal": "bat"
-                },
-                "minecraft:lore": [
-                  {
-                    "text": "通常武器／固有装備の所持制限対象外",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ],
-                "minecraft:item_model": "oa:wooden_bat",
-                "minecraft:max_stack_size": 1
-              }
-            },
-            {
-              "type": "minecraft:set_attributes",
-              "replace": true,
-              "modifiers": [
-                {
-                  "id": "oa:bat_damage",
-                  "attribute": "minecraft:attack_damage",
-                  "amount": 3.0,
-                  "operation": "add_value",
-                  "slot": "mainhand"
-                },
-                {
-                  "id": "oa:bat_speed",
-                  "attribute": "minecraft:attack_speed",
-                  "amount": -3.2,
-                  "operation": "add_value",
-                  "slot": "mainhand"
-                }
-              ]
-            },
-            {
-              "type": "minecraft:set_components",
-              "components": {
-                "minecraft:item_model": "oa:wooden_bat"
-              }
-            },
-            {
-              "type": "minecraft:set_components",
-              "components": {
-                "minecraft:item_model": "oa:wooden_bat",
-                "minecraft:lore": [
-                  {
-                    "text": "通常攻撃：♥×2・攻撃速度0.8回／秒",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "text": "ノックバック IV",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ]
-              }
-            },
-            {
-              "type": "minecraft:set_attributes",
-              "replace": true,
-              "modifiers": [
-                {
-                  "id": "oa:bat_damage",
-                  "attribute": "minecraft:attack_damage",
-                  "amount": 3.0,
-                  "operation": "add_value",
-                  "slot": "mainhand"
-                },
-                {
-                  "id": "oa:bat_speed",
-                  "attribute": "minecraft:attack_speed",
-                  "amount": -3.2,
-                  "operation": "add_value",
-                  "slot": "mainhand"
-                }
-              ]
-            },
-            {
-              "type": "minecraft:set_custom_data",
-              "tag": "{oa_bat_v150:1b}"
-            },
-            {
-              "type": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:knockback": 4
-              },
-              "add": false
-            },
-            {
-              "type": "minecraft:set_custom_data",
-              "tag": "{oa_bat_v151:1b,oa_bat_v239:1b}"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:wooden_axe",
           "weight": 2793
         },
@@ -220,7 +109,7 @@
                   {
                     "type": "minecraft:attack_damage",
                     "id": "oa:katana_damage",
-                    "amount": 4.0,
+                    "amount": 3.0,
                     "operation": "add_value",
                     "slot": "mainhand"
                   },
@@ -248,103 +137,12 @@
                     "color": "gray",
                     "italic": false
                   }
-                ]
+                ],
+                "minecraft:item_model": "oa:katana"
               }
             }
           ],
           "weight": 9000
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:bow",
-          "modifier": [
-            {
-              "type": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_name": {
-                  "text": "追尾弓",
-                  "color": "white",
-                  "italic": false
-                },
-                "minecraft:custom_data": {
-                  "oa_assist": "homing"
-                },
-                "minecraft:unbreakable": {},
-                "minecraft:lore": [
-                  {
-                    "text": "アシスト武器",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": "照準の近くの相手へ矢が曲がって飛ぶ",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": "矢は遅く、威力は一定",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ]
-              }
-            }
-          ],
-          "weight": 7000
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:trident",
-          "modifier": [
-            {
-              "type": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_name": {
-                  "text": "ロックオン槍",
-                  "color": "white",
-                  "italic": false
-                },
-                "minecraft:custom_data": {
-                  "oa_assist": "lockon"
-                },
-                "minecraft:unbreakable": {},
-                "minecraft:attribute_modifiers": [
-                  {
-                    "type": "minecraft:attack_damage",
-                    "id": "oa:lockon_damage",
-                    "amount": 2.0,
-                    "operation": "add_value",
-                    "slot": "mainhand"
-                  },
-                  {
-                    "type": "minecraft:attack_speed",
-                    "id": "oa:lockon_speed",
-                    "amount": -2.9,
-                    "operation": "add_value",
-                    "slot": "mainhand"
-                  }
-                ],
-                "minecraft:lore": [
-                  {
-                    "text": "アシスト武器",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": "相手を1秒見続けるとロックオン",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": "投げると相手へ曲がって飛び、手に戻る",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ]
-              }
-            }
-          ],
-          "weight": 5000
         }
       ]
     },

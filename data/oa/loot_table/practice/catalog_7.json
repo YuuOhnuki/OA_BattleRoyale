@@ -7,55 +7,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_sword",
-          "modifier": [
-            {
-              "type": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_name": {
-                  "text": "刀",
-                  "color": "white",
-                  "italic": false
-                },
-                "minecraft:custom_data": {
-                  "oa_assist": "katana"
-                },
-                "minecraft:unbreakable": {},
-                "minecraft:attribute_modifiers": [
-                  {
-                    "type": "minecraft:attack_damage",
-                    "id": "oa:katana_damage",
-                    "amount": 4.0,
-                    "operation": "add_value",
-                    "slot": "mainhand"
-                  },
-                  {
-                    "type": "minecraft:attack_speed",
-                    "id": "oa:katana_speed",
-                    "amount": -2.4,
-                    "operation": "add_value",
-                    "slot": "mainhand"
-                  }
-                ],
-                "minecraft:lore": [
-                  {
-                    "text": "アシスト武器",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": "振るたびに前の広い範囲に当たる",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": "ダメージは一定。会心なし",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ]
-              }
-            }
-          ]
+          "modifier": []
         }
       ]
     }

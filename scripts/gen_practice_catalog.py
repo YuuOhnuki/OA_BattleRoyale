@@ -21,7 +21,7 @@ def walk(x):
    for mod in mods:
     if mod['type']=='minecraft:set_components':c.update(copy.deepcopy(mod['components']))
    if n=='minecraft:wooden_shovel' and c.get('minecraft:custom_data',{}).get('oa_normal')!='bat':return
-   # 1.9.247：トライデントはアシスト武器（ロックオン槍）だけ
+   # 1.9.247〜：トライデントはチェストに出ない（1.9.248 でロックオン槍も廃止）
    if n=='minecraft:trident' and not c.get('minecraft:custom_data',{}).get('oa_assist'):return
    # 1.9.211: 個数・確率の modifier 以外（属性・参照など）もそのまま写す。チェストの物と同じにする
    mods=[m for m in mods if m.get('type') not in ('minecraft:set_count','minecraft:enchant_randomly','minecraft:set_damage')]
@@ -33,7 +33,7 @@ def table(name):
  if p.exists():walk(json.loads(p.read_text(encoding='utf-8')))
 for n in ['oa:br/chest_basic','oa:br/chest_upgraded','oa:br/chest_site','oa:br/rich_iron']:table(n)
 normal=sorted(items.values(),key=lambda e:(e[0].endswith(('_helmet','_chestplate','_leggings','_boots')),e[0],dump(e[1])))
-assert len(normal)<=40,len(normal)  # 1.9.247：アシスト武器3つで33
+assert len(normal)<=40,len(normal)  # 1.9.248：バット・追尾弓・ロックオン槍を除いて30
 assert not any('netherite' in n or n=='minecraft:diamond_axe' or (n=='minecraft:trident' and not c.get('minecraft:custom_data',{}).get('oa_assist')) for n,c in normal)
 assist=lambda c:bool(c.get('minecraft:custom_data',{}).get('oa_assist'))
 guard=['execute unless entity @s[tag=oa.practice,gamemode=!spectator] run return 0','execute unless dimension oa:practice run return 0','execute store result score #practice_space oa.tmp run function oa:practice/catalog/has_space','execute if score #practice_space oa.tmp matches 0 run return run tellraw @s {text:"持ち物に空きを1つ作ってから受け取ってください。",color:"yellow"}']
@@ -110,7 +110,9 @@ for (m,label,col),(x,z) in zip(mats,[(19,15),(21,15),(19,20),(21,20)]):
  out.append(label_entity(x,z,{'text':label,'color':col,'bold':True},3.15))
  write(F/f'practice/catalog/armor_{m}.mcfunction',f'function oa:practice/vanilla/armor {{m:"{m}"}}\nplaysound minecraft:item.armor.equip_generic player @s ~ ~ ~ 0.8 1.0\n')
 # 1.9.247：アシスト武器の台（ASSIST_POS）。練習場の北西（吹き飛ぶ標的は北東、practice/kb/*）
-ASSIST_POS=[(-24,-32),(-20,-32),(-16,-32)]
+ASSIST_POS=[(-20,-32)]
+# 1.9.248：追尾弓・ロックオン槍の台（-24,-32）・（-16,-32）を片付ける
+for x in (-24,-16):out+=[f'setblock ~{x} ~1 ~-32 minecraft:air',f'setblock ~{x} ~3 ~-32 minecraft:air']
 aw=[(i,n,c) for i,(n,c) in enumerate(normal) if assist(c)]
 assert len(aw)<=len(ASSIST_POS),len(aw)
 for (i,n,c),(x,z) in zip(aw,ASSIST_POS):
@@ -123,7 +125,7 @@ for x,title,sub in [(-12,'◀ 固有武器','展示を右クリックで持ち�
   out.append(f'summon minecraft:text_display ~{x+.5} ~4.6 ~{21.6 if yaw==0.0 else 21.4} '+dump({'Tags':['oa.practice_catalog'],'text':{'text':'','extra':[{'text':title+'\n','color':'gold','bold':True},{'text':sub,'color':'white'}]},'billboard':'fixed','Rotation':[yaw,0.0],'line_width':240,'background':1426063360,'shadow':True,'view_range':1.0,'transformation':tf(1.0)}))
 out += ['kill @e[type=minecraft:item_display,tag=oa.practice_showcase]']+[f'kill @e[type=minecraft:text_display,tag=oa.practice_weapon_{i}]' for i in range(1,13)]
 out.append('function oa:practice/kb/build')
-out.append('data modify storage oa:practice catalog set value 247')
+out.append('data modify storage oa:practice catalog set value 248')
 write(F/'practice/catalog/build.mcfunction','\n'.join(out)+'\n')
 write(F/'practice/catalog/update.mcfunction','execute in oa:practice unless loaded 0 64 0 run return 0\nexecute in oa:practice positioned 0 64 0 align xyz run function oa:practice/catalog/build\n')
 new=[s for i,s in enumerate(lines) if i not in remove and not (s.startswith('summon minecraft:item_display ') and 'oa.practice_showcase' in s) and not (s.startswith('summon minecraft:text_display ') and '"oa.practice_weapon_' in s)]
