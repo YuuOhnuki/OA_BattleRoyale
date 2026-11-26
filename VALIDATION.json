@@ -1,9 +1,9 @@
 {
-  "version": "1.9.250",
-  "plugin": "0.50.1",
-  "resourcepack": "1.9.48",
-  "checks": "Pending240 validation",
-  "runtime": "Pending240 runtime",
-  "unverified": "Human client input, weapon feel, visual/collision appearance, exhaustive manual routes, actual multiplayer balance, production application at build time",
-  "notes": "See docs/fix-1.9.240-progress.md;239 evidence is for prior version."
+  "version": "1.9.251",
+  "plugin": "0.54.0",
+  "resourcepack": "1.9.49",
+  "checks": "check_release.py OK; plugin build and unit tests; smoke_test.py (br/nether/cave solo+team) with chest glow checks",
+  "runtime": "Test server smoke test: chest glow appears near players and is removed after the match",
+  "unverified": "Chest glow appearance in a real client (outline through walls, color, overlap with the real chest); Killing parry rate in actual play",
+  "notes": "Killing parry is always 25% (oa.katk branch removed). Chest glow is plugin glow/ChestGlowService."
 }
