@@ -1392,7 +1392,7 @@ fill ~36 ~7 ~-29 ~37 ~11 ~-29 minecraft:stone_bricks
 fill ~36 ~13 ~-29 ~37 ~17 ~-29 minecraft:stone_bricks
 fill ~36 ~19 ~-29 ~37 ~19 ~-29 minecraft:stone_bricks
 fill ~31 ~1 ~-29 ~32 ~5 ~-29 minecraft:stone_bricks
-fill ~31 ~7 ~-29 ~32 ~11 ~-29 minecraft:stone_bricks
+fill ~31 ~7 ~-29 ~32 ~9 ~-29 minecraft:stone_bricks
 fill ~31 ~13 ~-29 ~32 ~17 ~-29 minecraft:stone_bricks
 fill ~31 ~19 ~-29 ~32 ~19 ~-29 minecraft:stone_bricks
 fill ~38 ~1 ~-29 ~39 ~1 ~-29 minecraft:grass_block
@@ -1475,13 +1475,12 @@ fill ~28 ~16 ~-35 ~28 ~17 ~-33 minecraft:stone_bricks
 fill ~28 ~19 ~-35 ~28 ~19 ~-33 minecraft:stone_bricks
 fill ~8 ~4 ~-35 ~8 ~4 ~-33 minecraft:stone_bricks
 fill ~8 ~8 ~-35 ~8 ~9 ~-33 minecraft:stone_bricks
-fill ~8 ~11 ~-35 ~8 ~11 ~-33 minecraft:stone_bricks
 fill ~8 ~13 ~-35 ~8 ~13 ~-33 minecraft:stone_bricks
 fill ~8 ~15 ~-35 ~8 ~15 ~-33 minecraft:stone_bricks
 fill ~9 ~4 ~-34 ~27 ~4 ~-33 minecraft:polished_andesite
 fill ~9 ~8 ~-34 ~27 ~8 ~-33 minecraft:polished_andesite
 fill ~28 ~4 ~-32 ~29 ~4 ~-32 minecraft:stone_bricks
-fill ~28 ~8 ~-32 ~29 ~11 ~-32 minecraft:stone_bricks
+fill ~28 ~8 ~-32 ~29 ~9 ~-32 minecraft:stone_bricks
 fill ~28 ~13 ~-32 ~29 ~17 ~-32 minecraft:stone_bricks
 fill ~28 ~19 ~-32 ~29 ~19 ~-32 minecraft:stone_bricks
 fill ~8 ~4 ~-32 ~27 ~4 ~-32 minecraft:polished_andesite
@@ -1514,7 +1513,6 @@ setblock ~8 ~5 ~-34 minecraft:glass_pane
 setblock ~8 ~10 ~-34 minecraft:glass_pane
 fill ~8 ~5 ~-33 ~28 ~5 ~-33 minecraft:stone_bricks
 fill ~32 ~5 ~-28 ~33 ~5 ~-28 minecraft:stone_bricks
-fill ~32 ~10 ~-28 ~33 ~11 ~-28 minecraft:stone_bricks
 fill ~32 ~15 ~-28 ~33 ~15 ~-28 minecraft:stone_bricks
 setblock ~27 ~5 ~-28 minecraft:chiseled_stone_bricks
 fill ~35 ~5 ~-28 ~36 ~5 ~-28 minecraft:stone_bricks
@@ -1606,8 +1604,24 @@ fill ~14 ~7 ~-51 ~18 ~7 ~-49 minecraft:cherry_leaves[persistent=true]
 fill ~13 ~7 ~-42 ~15 ~7 ~-40 minecraft:oak_leaves[persistent=true]
 fill ~14 ~8 ~-55 ~16 ~8 ~-53 minecraft:oak_leaves[persistent=true]
 fill ~15 ~8 ~-51 ~17 ~8 ~-49 minecraft:cherry_leaves[persistent=true]
+setblock ~35 ~9 ~-39 minecraft:smooth_stone
+setblock ~35 ~20 ~-39 minecraft:smooth_stone
+setblock ~33 ~9 ~-39 minecraft:smooth_stone
+setblock ~33 ~20 ~-39 minecraft:smooth_stone
+fill ~31 ~9 ~-38 ~37 ~9 ~-38 minecraft:smooth_stone
+fill ~31 ~20 ~-38 ~37 ~20 ~-38 minecraft:smooth_stone
+fill ~30 ~9 ~-37 ~38 ~9 ~-36 minecraft:smooth_stone
+fill ~30 ~20 ~-37 ~38 ~20 ~-36 minecraft:smooth_stone
+fill ~29 ~9 ~-35 ~39 ~9 ~-33 minecraft:smooth_stone
+fill ~29 ~20 ~-35 ~39 ~20 ~-33 minecraft:smooth_stone
 fill ~9 ~9 ~-34 ~27 ~9 ~-33 minecraft:smooth_stone
 fill ~8 ~9 ~-32 ~27 ~9 ~-32 minecraft:smooth_stone
+fill ~30 ~9 ~-32 ~38 ~9 ~-31 minecraft:smooth_stone
+fill ~30 ~20 ~-32 ~38 ~20 ~-31 minecraft:smooth_stone
+fill ~31 ~9 ~-30 ~37 ~9 ~-30 minecraft:smooth_stone
+fill ~31 ~20 ~-30 ~37 ~20 ~-30 minecraft:smooth_stone
+fill ~33 ~9 ~-29 ~35 ~9 ~-29 minecraft:smooth_stone
+fill ~33 ~20 ~-29 ~35 ~20 ~-29 minecraft:smooth_stone
 fill ~32 ~9 ~-27 ~34 ~9 ~-25 minecraft:smooth_stone
 setblock ~20 ~10 ~-34 minecraft:stone_bricks
 setblock ~18 ~10 ~-34 minecraft:stone_bricks
@@ -1618,10 +1632,9 @@ setblock ~12 ~10 ~-34 minecraft:stone_bricks
 setblock ~26 ~10 ~-34 minecraft:stone_bricks
 setblock ~10 ~10 ~-34 minecraft:stone_bricks
 setblock ~16 ~10 ~-34 minecraft:stone_bricks
-fill ~28 ~10 ~-33 ~28 ~11 ~-33 minecraft:stone_bricks
-setblock ~28 ~15 ~-33 minecraft:stone_bricks
-setblock ~8 ~10 ~-33 minecraft:stone_bricks
+fill ~31 ~10 ~-29 ~31 ~11 ~-29 minecraft:stone_bricks
 setblock ~34 ~10 ~-26 minecraft:stone_bricks
+fill ~8 ~11 ~-35 ~8 ~11 ~-34 minecraft:stone_bricks
 setblock ~29 ~12 ~-31 minecraft:polished_andesite
 setblock ~29 ~18 ~-31 minecraft:polished_andesite
 setblock ~29 ~20 ~-31 minecraft:polished_andesite
@@ -1633,15 +1646,8 @@ fill ~31 ~18 ~-29 ~32 ~18 ~-29 minecraft:polished_andesite
 fill ~31 ~20 ~-29 ~32 ~20 ~-29 minecraft:polished_andesite
 fill ~34 ~13 ~-38 ~34 ~13 ~-30 minecraft:spruce_planks
 setblock ~34 ~14 ~-35 minecraft:chest[facing=north]
+setblock ~28 ~15 ~-33 minecraft:stone_bricks
 setblock ~8 ~16 ~-34 minecraft:stone_bricks
-setblock ~35 ~20 ~-39 minecraft:smooth_stone
-setblock ~33 ~20 ~-39 minecraft:smooth_stone
-fill ~31 ~20 ~-38 ~37 ~20 ~-38 minecraft:smooth_stone
-fill ~30 ~20 ~-37 ~38 ~20 ~-36 minecraft:smooth_stone
-fill ~29 ~20 ~-35 ~39 ~20 ~-33 minecraft:smooth_stone
-fill ~30 ~20 ~-32 ~38 ~20 ~-31 minecraft:smooth_stone
-fill ~31 ~20 ~-30 ~37 ~20 ~-30 minecraft:smooth_stone
-fill ~33 ~20 ~-29 ~35 ~20 ~-29 minecraft:smooth_stone
 fill ~32 ~21 ~-41 ~36 ~21 ~-41 minecraft:deepslate_tiles
 fill ~30 ~21 ~-40 ~38 ~21 ~-40 minecraft:deepslate_tiles
 fill ~35 ~21 ~-39 ~39 ~21 ~-39 minecraft:deepslate_tiles

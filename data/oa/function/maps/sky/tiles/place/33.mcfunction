@@ -872,7 +872,7 @@ fill ~-38 ~13 ~-30 ~-38 ~17 ~-30 minecraft:stone_bricks
 setblock ~-38 ~19 ~-30 minecraft:stone_bricks
 fill ~-51 ~1 ~-30 ~-48 ~1 ~-30 minecraft:grass_block
 fill ~-32 ~1 ~-29 ~-31 ~5 ~-29 minecraft:stone_bricks
-fill ~-32 ~7 ~-29 ~-31 ~11 ~-29 minecraft:stone_bricks
+fill ~-32 ~7 ~-29 ~-31 ~9 ~-29 minecraft:stone_bricks
 fill ~-32 ~13 ~-29 ~-31 ~17 ~-29 minecraft:stone_bricks
 fill ~-32 ~19 ~-29 ~-31 ~19 ~-29 minecraft:stone_bricks
 fill ~-37 ~1 ~-29 ~-36 ~5 ~-29 minecraft:stone_bricks
@@ -961,7 +961,7 @@ fill ~-28 ~19 ~-35 ~-28 ~19 ~-33 minecraft:stone_bricks
 fill ~-27 ~4 ~-34 ~-25 ~4 ~-32 minecraft:polished_andesite
 fill ~-27 ~8 ~-34 ~-25 ~8 ~-32 minecraft:polished_andesite
 fill ~-29 ~4 ~-32 ~-28 ~4 ~-32 minecraft:stone_bricks
-fill ~-29 ~8 ~-32 ~-28 ~11 ~-32 minecraft:stone_bricks
+fill ~-29 ~8 ~-32 ~-28 ~9 ~-32 minecraft:stone_bricks
 fill ~-29 ~13 ~-32 ~-28 ~17 ~-32 minecraft:stone_bricks
 fill ~-29 ~19 ~-32 ~-28 ~19 ~-32 minecraft:stone_bricks
 fill ~-30 ~4 ~-30 ~-30 ~5 ~-30 minecraft:stone_bricks
@@ -999,7 +999,6 @@ fill ~-36 ~5 ~-28 ~-35 ~5 ~-28 minecraft:stone_bricks
 fill ~-36 ~10 ~-28 ~-35 ~11 ~-28 minecraft:stone_bricks
 fill ~-36 ~15 ~-28 ~-35 ~15 ~-28 minecraft:stone_bricks
 fill ~-33 ~5 ~-28 ~-32 ~5 ~-28 minecraft:stone_bricks
-fill ~-33 ~10 ~-28 ~-32 ~11 ~-28 minecraft:stone_bricks
 fill ~-33 ~15 ~-28 ~-32 ~15 ~-28 minecraft:stone_bricks
 setblock ~-27 ~5 ~-28 minecraft:chiseled_stone_bricks
 setblock ~-34 ~5 ~-28 minecraft:glass_pane
@@ -1097,12 +1096,27 @@ fill ~-47 ~8 ~-28 ~-39 ~8 ~-28 minecraft:spruce_stairs[facing=south,half=bottom]
 fill ~-41 ~8 ~-26 ~-41 ~12 ~-26 minecraft:bricks
 fill ~-40 ~8 ~-27 ~-40 ~8 ~-25 minecraft:white_terracotta
 fill ~-46 ~8 ~-27 ~-46 ~8 ~-25 minecraft:white_terracotta
+setblock ~-35 ~9 ~-39 minecraft:smooth_stone
+setblock ~-35 ~20 ~-39 minecraft:smooth_stone
+setblock ~-33 ~9 ~-39 minecraft:smooth_stone
+setblock ~-33 ~20 ~-39 minecraft:smooth_stone
+fill ~-37 ~9 ~-38 ~-31 ~9 ~-38 minecraft:smooth_stone
+fill ~-37 ~20 ~-38 ~-31 ~20 ~-38 minecraft:smooth_stone
+fill ~-38 ~9 ~-37 ~-30 ~9 ~-36 minecraft:smooth_stone
+fill ~-38 ~20 ~-37 ~-30 ~20 ~-36 minecraft:smooth_stone
+fill ~-39 ~9 ~-35 ~-29 ~9 ~-33 minecraft:smooth_stone
+fill ~-39 ~20 ~-35 ~-29 ~20 ~-33 minecraft:smooth_stone
 fill ~-27 ~9 ~-34 ~-25 ~9 ~-32 minecraft:smooth_stone
+fill ~-38 ~9 ~-32 ~-30 ~9 ~-31 minecraft:smooth_stone
+fill ~-38 ~20 ~-32 ~-30 ~20 ~-31 minecraft:smooth_stone
+fill ~-37 ~9 ~-30 ~-31 ~9 ~-30 minecraft:smooth_stone
+fill ~-37 ~20 ~-30 ~-31 ~20 ~-30 minecraft:smooth_stone
+fill ~-35 ~9 ~-29 ~-33 ~9 ~-29 minecraft:smooth_stone
+fill ~-35 ~20 ~-29 ~-33 ~20 ~-29 minecraft:smooth_stone
 fill ~-47 ~9 ~-27 ~-39 ~9 ~-27 minecraft:spruce_stairs[facing=south,half=bottom]
 fill ~-34 ~9 ~-27 ~-32 ~9 ~-25 minecraft:smooth_stone
 setblock ~-26 ~10 ~-34 minecraft:stone_bricks
-fill ~-28 ~10 ~-33 ~-28 ~11 ~-33 minecraft:stone_bricks
-setblock ~-28 ~15 ~-33 minecraft:stone_bricks
+fill ~-31 ~10 ~-29 ~-31 ~11 ~-29 minecraft:stone_bricks
 fill ~-47 ~10 ~-26 ~-42 ~10 ~-26 minecraft:spruce_stairs[facing=south,half=bottom]
 fill ~-40 ~10 ~-26 ~-39 ~10 ~-26 minecraft:spruce_stairs[facing=south,half=bottom]
 setblock ~-34 ~10 ~-26 minecraft:stone_bricks
@@ -1118,14 +1132,7 @@ fill ~-32 ~18 ~-29 ~-31 ~18 ~-29 minecraft:polished_andesite
 fill ~-32 ~20 ~-29 ~-31 ~20 ~-29 minecraft:polished_andesite
 fill ~-34 ~13 ~-38 ~-34 ~13 ~-30 minecraft:spruce_planks
 setblock ~-34 ~14 ~-35 minecraft:chest[facing=north]
-setblock ~-35 ~20 ~-39 minecraft:smooth_stone
-setblock ~-33 ~20 ~-39 minecraft:smooth_stone
-fill ~-37 ~20 ~-38 ~-31 ~20 ~-38 minecraft:smooth_stone
-fill ~-38 ~20 ~-37 ~-30 ~20 ~-36 minecraft:smooth_stone
-fill ~-39 ~20 ~-35 ~-29 ~20 ~-33 minecraft:smooth_stone
-fill ~-38 ~20 ~-32 ~-30 ~20 ~-31 minecraft:smooth_stone
-fill ~-37 ~20 ~-30 ~-31 ~20 ~-30 minecraft:smooth_stone
-fill ~-35 ~20 ~-29 ~-33 ~20 ~-29 minecraft:smooth_stone
+setblock ~-28 ~15 ~-33 minecraft:stone_bricks
 fill ~-36 ~21 ~-41 ~-32 ~21 ~-41 minecraft:deepslate_tiles
 fill ~-38 ~21 ~-40 ~-30 ~21 ~-40 minecraft:deepslate_tiles
 fill ~-33 ~21 ~-39 ~-29 ~21 ~-39 minecraft:deepslate_tiles

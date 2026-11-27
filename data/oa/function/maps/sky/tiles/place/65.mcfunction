@@ -535,7 +535,6 @@ fill ~26 ~6 ~45 ~27 ~6 ~45 minecraft:oak_leaves[persistent=true]
 fill ~12 ~6 ~45 ~14 ~6 ~47 minecraft:cherry_leaves[persistent=true]
 setblock ~28 ~6 ~47 minecraft:oak_leaves[persistent=true]
 fill ~15 ~6 ~51 ~17 ~6 ~53 minecraft:cherry_leaves[persistent=true]
-setblock ~12 ~7 ~45 minecraft:chest[facing=north]
 fill ~27 ~7 ~44 ~29 ~7 ~46 minecraft:oak_leaves[persistent=true]
 fill ~30 ~21 ~40 ~38 ~21 ~40 minecraft:deepslate_tiles
 fill ~32 ~21 ~41 ~36 ~21 ~41 minecraft:deepslate_tiles

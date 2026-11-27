@@ -423,6 +423,17 @@ for (dx, dz) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
         round_tower(tx, tz, 0, 14, 3, top='crenel', door=((-dx, -dz),) if (dx or dz) else ((1, 0),), chest_top=sgn == 1)
     # 門の上の金の鐘
     put(gx - dx * 1, 7, gz - dz * 1, 'minecraft:bell[attachment=ceiling,facing=north]') if False else None
+    # 1.9.254：門楼の2つの小塔を行き来できるように（ユーザーの指示）。u＝門の向き（0＝城壁の外側の線、-1＝内側へ1）、v＝門の幅の向き
+    # 塔の上（床 y=14）どうしを幅3の橋でつなぐ（向かい合う胸壁を3マスあけ、橋の両側に低い手すり）。城壁の通路からの通り抜けは下の walk_through。
+    def at(u, v): return (gx + u * dx, v) if dx else (v, gz + u * dz)
+    for u in (-1, 0, 1):
+        for v in (-1, 0, 1):
+            x_, z_ = at(u, v); put(x_, 14, z_, TRIM)
+        for v in (-2, 2):
+            x_, z_ = at(u, v); clear(x_, 15, z_, x_, 16, z_)
+    for u in (-2, 2):
+        for v in (-1, 0, 1):
+            x_, z_ = at(u, v); put(x_, 15, z_, STONE)
 # 角の大きな丸い塔（円錐の屋根）
 for (sx_, sz_) in ((-1, -1), (1, -1), (-1, 1), (1, 1)):
     round_tower(sx_ * W_, sz_ * W_, 0, 20, 6, top='cone', roof='minecraft:deepslate_tiles', door=(), chest_top=False)
@@ -433,6 +444,26 @@ for (sx_, sz_) in ((-1, -1), (1, -1), (-1, 1), (1, 1)):
         clear(sx_ * W_ - sx_ * 6, 10, sz_ * W_, sx_ * W_ - sx_ * 6, 11, sz_ * W_); clear(sx_ * W_, 10, sz_ * W_ - sz_ * 6, sx_ * W_, 11, sz_ * W_ - sz_ * 6)
     chest(sx_ * W_ + sx_ * 2, 1, sz_ * W_, face='north'); box(sx_ * W_, 13, sz_ * W_ - 4, sx_ * W_ + 0, 13, sz_ * W_ + 4, 'minecraft:spruce_planks')
     chest(sx_ * W_ - 2, 14, sz_ * W_ - 1)
+# 1.9.254：城壁の上の通路（床 y=9）が、まわりの塔（角の大きな塔4つ・門楼の小塔8つ）を通り抜けられるように（ユーザーの指示。
+# 以前は塔の壁で行き止まり、角の塔は入口が外側の1マスだけで、中に床がなく下まで落ちた）。
+# 通路の内側2列（城壁の外の線から1・2内側）にある塔の壁を y=10〜11 だけあけ、塔の中の y=9 に床を張る（はしごのマスはあけたまま）。
+def walk_through(tx, tz, rad, cells):
+    for xx in range(tx - rad, tx + rad + 1):
+        for zz in range(tz - rad, tz + rad + 1):
+            if math.hypot(xx - tx, zz - tz) <= rad - 0.8 and (xx, zz) != (tx, tz - rad + 1): put(xx, 9, zz, TRIM)
+    for (xx, zz) in cells:
+        d = math.hypot(xx - tx, zz - tz)
+        if rad - 0.8 < d <= rad + 0.4: clear(xx, 10, zz, xx, 11, zz)
+for (dx, dz) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+    for sgn in (-1, 1):
+        if dx: tx, tz = dx * W_, sgn * 5; cells = [(tx - dx * k, zz) for k in (1, 2) for zz in range(tz - 4, tz + 5)]
+        else: tx, tz = sgn * 5, dz * W_; cells = [(xx, tz - dz * k) for k in (1, 2) for xx in range(tx - 4, tx + 5)]
+        walk_through(tx, tz, 3, cells)
+for (sx_, sz_) in ((-1, -1), (1, -1), (-1, 1), (1, 1)):
+    tx, tz = sx_ * W_, sz_ * W_
+    cells = [(xx, tz - sz_ * k) for k in (1, 2) for xx in range(tx - 7, tx + 8) if sx_ * (xx - tx) < 0]
+    cells += [(tx - sx_ * k, zz) for k in (1, 2) for zz in range(tz - 7, tz + 8) if sz_ * (zz - tz) < 0]
+    walk_through(tx, tz, 6, cells)
 # 回廊（城壁の内側の柱廊。屋根の上は歩ける）
 for i in range(-W_ + 6, W_ - 5, 4):
     for (x, z) in ((i, -W_ + 7), (i, W_ - 7), (-W_ + 7, i), (W_ - 7, i)):
