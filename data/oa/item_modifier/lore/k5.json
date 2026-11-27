@@ -53,7 +53,7 @@
                 "italic": false
               },
               {
-                "text": "拾うと頭へ強制装着。移動速度＋150%・体力の上限",
+                "text": "拾うと頭へ強制装着。移動速度＋175%・体力の上限",
                 "color": "white",
                 "italic": false
               }
@@ -75,7 +75,7 @@
             "italic": false,
             "extra": [
               {
-                "text": "  ージを25%で無効化。",
+                "text": "  ージを20%で無効化。",
                 "color": "white",
                 "italic": false
               }

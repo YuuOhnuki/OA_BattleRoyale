@@ -1,9 +1,9 @@
 {
-  "version": "1.9.256",
-  "plugin": "0.59.0",
+  "version": "1.9.257",
+  "plugin": "0.60.0",
   "resourcepack": "1.9.49",
-  "checks": "check_release.py OK; plugin build and unit tests; test server: yu bonus goes straight into the inventory, ground pickup shows the self-only chat",
+  "checks": "check_release.py OK; plugin build and unit tests; test server reload without load errors",
   "runtime": "Not run (smoke test only on request)",
-  "unverified": "Pig parade speed and charges in a real client",
-  "notes": "Yu bonus uses inventory/take_item. Overwork pickup notice and faster pig parade are in the plugin."
+  "unverified": "Killing feel (20% parry, +175% speed), shield frequency, pig parade turning, backstab feedback in a real client",
+  "notes": "Killing parry 20% (curse/prepare), speed +175% (curse/tick, oa.curse_v257). Shield weights halved. Pig turn interval and backstab feedback are in the plugin."
 }

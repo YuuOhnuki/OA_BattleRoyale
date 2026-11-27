@@ -241,7 +241,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:shield",
-          "weight": 30
+          "weight": 15
         },
         {
           "type": "minecraft:empty",
