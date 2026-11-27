@@ -1,9 +1,9 @@
 {
-  "version": "1.9.251",
-  "plugin": "0.54.0",
+  "version": "1.9.252",
+  "plugin": "0.55.0",
   "resourcepack": "1.9.49",
-  "checks": "check_release.py OK; plugin build and unit tests; smoke_test.py (br/nether/cave solo+team) with chest glow checks",
-  "runtime": "Test server smoke test: chest glow appears near players and is removed after the match",
-  "unverified": "Chest glow appearance in a real client (outline through walls, color, overlap with the real chest); Killing parry rate in actual play",
-  "notes": "Killing parry is always 25% (oa.katk branch removed). Chest glow is plugin glow/ChestGlowService."
+  "checks": "check_release.py OK; plugin build and unit tests (backstab angle); test server startup check",
+  "runtime": "Not run (smoke test only on request)",
+  "unverified": "Nero 4-hit shadow step and backstab in a real client: feather particle visibility, teleport feel, +2HP/blindness balance",
+  "notes": "Nero's 20% behind-teleport replaced by plugin combat/MeleeProcs: 4 hits on the same target within 5s teleports behind on the 4th; hits from within 45 degrees of the target's back deal +2HP and 0.5s blindness."
 }

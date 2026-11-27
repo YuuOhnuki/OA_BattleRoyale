@@ -70,7 +70,7 @@
                 "font": "oa:icons"
               },
               {
-                "text": "×3）。攻撃速度1.8回／秒。20",
+                "text": "×3）。攻撃速度1.8回／秒。同",
                 "color": "white",
                 "italic": false
               }
@@ -81,7 +81,29 @@
             "italic": false,
             "extra": [
               {
-                "text": "  %で相手の真後ろへテレポート。",
+                "text": "  じ相手へ5秒以内に4回当てると、4回目で真後ろへ回り込む。",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "  背中側から当てると+",
+                "color": "white",
+                "italic": false
+              },
+              {
+                "text": "",
+                "color": "red",
+                "italic": false,
+                "font": "oa:icons"
+              },
+              {
+                "text": "×1・盲目0.5秒。",
                 "color": "white",
                 "italic": false
               }
