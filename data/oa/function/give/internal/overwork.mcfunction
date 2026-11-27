@@ -4,4 +4,6 @@ execute if entity @s[tag=br.chest] run tag @e[tag=oa.overwork_spawn] add br.newu
 execute if score #state br.state matches 1 run tag @e[tag=oa.overwork_spawn] add br.matchloot
 execute if entity @s[tag=tdm.yu_equip] run item replace entity @s hotbar.3 from entity @e[type=minecraft:item,tag=oa.overwork_spawn,limit=1] contents
 execute if entity @s[tag=tdm.yu_equip] run kill @e[type=minecraft:item,tag=oa.overwork_spawn]
+# 1.9.256: チェスト25個・鉱石50個の報酬（br/yu_bonus_give が oa.yu_direct を付けて呼ぶ）は、足もとではなくインベントリへ直接
+execute if entity @s[tag=oa.yu_direct] run function oa:inventory/take_item {tag:"oa.overwork_spawn"}
 tag @e[tag=oa.overwork_spawn] remove oa.overwork_spawn
