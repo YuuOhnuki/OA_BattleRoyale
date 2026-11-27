@@ -1,9 +1,9 @@
 {
-  "version": "1.9.254",
-  "plugin": "0.56.0",
+  "version": "1.9.255",
+  "plugin": "0.57.0",
   "resourcepack": "1.9.49",
-  "checks": "check_release.py OK; plugin build and unit tests; test server reload without load errors; sky map audit walkable 11800 -> 14016",
+  "checks": "check_release.py OK; plugin build and unit tests; test server reload without load errors; open_label_one runtime check (empty -> 空 + refill timer, non-empty -> refill timer only)",
   "runtime": "Not run (smoke test only on request)",
-  "unverified": "In a real client: open lid on opened chests (including after chunk reload), empty label, glow box shape, walking through the sky castle towers and the gate tower bridge",
-  "notes": "Sky castle towers connected via wall walk pass-through and gate tower top bridges (sky arena regeneration required). Opened-chest labels moved to plugin glow/ChestGlowService."
+  "unverified": "In a real client: label look, pig parade passing through blocks, bows without lock-on",
+  "notes": "Refill label restored with 空 in place of 開封済み when empty. Pig parade passes through blocks. Bow/crossbow lock-on removed."
 }
