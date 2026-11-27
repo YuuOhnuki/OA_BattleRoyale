@@ -1,9 +1,9 @@
 {
-  "version": "1.9.252",
-  "plugin": "0.55.0",
+  "version": "1.9.253",
+  "plugin": "0.55.1",
   "resourcepack": "1.9.49",
-  "checks": "check_release.py OK; plugin build and unit tests (backstab angle); test server startup check",
+  "checks": "check_release.py OK; test server reload without load errors",
   "runtime": "Not run (smoke test only on request)",
-  "unverified": "Nero 4-hit shadow step and backstab in a real client: feather particle visibility, teleport feel, +2HP/blindness balance",
-  "notes": "Nero's 20% behind-teleport replaced by plugin combat/MeleeProcs: 4 hits on the same target within 5s teleports behind on the 4th; hits from within 45 degrees of the target's back deal +2HP and 0.5s blindness."
+  "unverified": "Forced head equip in a real client: previous helmet moved into a free slot, dropped when the inventory is full; TNT oni and gacha hat/mask paths",
+  "notes": "Forced head equips use inventory/hold_head + release_head. Old lobby map panel/mapsel functions removed (terminal panel is handled by plugin LobbyBoards)."
 }
