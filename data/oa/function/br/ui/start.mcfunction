@@ -10,7 +10,7 @@ scoreboard players set OA_alive br.ui0 15
 scoreboard players set OA_width br.ui0 14
 scoreboard players set OA_phase br.ui0 13
 scoreboard players set OA_next br.ui0 12
-scoreboard players set OA_version br.ui0 10
+scoreboard players set OA_version br.ui0 9
 scoreboard objectives remove br.ui1
 scoreboard objectives add br.ui1 dummy {text:"OAバトルロワイヤル",color:"gold",bold:true}
 scoreboard objectives modify br.ui1 numberformat blank
@@ -20,7 +20,7 @@ scoreboard players set OA_alive br.ui1 15
 scoreboard players set OA_width br.ui1 14
 scoreboard players set OA_phase br.ui1 13
 scoreboard players set OA_next br.ui1 12
-scoreboard players set OA_version br.ui1 10
+scoreboard players set OA_version br.ui1 9
 scoreboard players set OA_header br.ui1 8
 scoreboard players display name OA_header br.ui1 {text:"チーム1のメンバー",color:"yellow"}
 scoreboard players set OA_mate1 br.ui1 7
@@ -41,7 +41,7 @@ scoreboard players set OA_alive br.ui2 15
 scoreboard players set OA_width br.ui2 14
 scoreboard players set OA_phase br.ui2 13
 scoreboard players set OA_next br.ui2 12
-scoreboard players set OA_version br.ui2 10
+scoreboard players set OA_version br.ui2 9
 scoreboard players set OA_header br.ui2 8
 scoreboard players display name OA_header br.ui2 {text:"チーム2のメンバー",color:"yellow"}
 scoreboard players set OA_mate1 br.ui2 7
@@ -62,7 +62,7 @@ scoreboard players set OA_alive br.ui3 15
 scoreboard players set OA_width br.ui3 14
 scoreboard players set OA_phase br.ui3 13
 scoreboard players set OA_next br.ui3 12
-scoreboard players set OA_version br.ui3 10
+scoreboard players set OA_version br.ui3 9
 scoreboard players set OA_header br.ui3 8
 scoreboard players display name OA_header br.ui3 {text:"チーム3のメンバー",color:"yellow"}
 scoreboard players set OA_mate1 br.ui3 7
@@ -83,7 +83,7 @@ scoreboard players set OA_alive br.ui4 15
 scoreboard players set OA_width br.ui4 14
 scoreboard players set OA_phase br.ui4 13
 scoreboard players set OA_next br.ui4 12
-scoreboard players set OA_version br.ui4 10
+scoreboard players set OA_version br.ui4 9
 scoreboard players set OA_header br.ui4 8
 scoreboard players display name OA_header br.ui4 {text:"チーム4のメンバー",color:"yellow"}
 scoreboard players set OA_mate1 br.ui4 7
@@ -104,7 +104,7 @@ scoreboard players set OA_alive br.ui5 15
 scoreboard players set OA_width br.ui5 14
 scoreboard players set OA_phase br.ui5 13
 scoreboard players set OA_next br.ui5 12
-scoreboard players set OA_version br.ui5 10
+scoreboard players set OA_version br.ui5 9
 scoreboard players set OA_header br.ui5 8
 scoreboard players display name OA_header br.ui5 {text:"チーム5のメンバー",color:"yellow"}
 scoreboard players set OA_mate1 br.ui5 7
@@ -125,7 +125,7 @@ scoreboard players set OA_alive br.ui6 15
 scoreboard players set OA_width br.ui6 14
 scoreboard players set OA_phase br.ui6 13
 scoreboard players set OA_next br.ui6 12
-scoreboard players set OA_version br.ui6 10
+scoreboard players set OA_version br.ui6 9
 scoreboard players set OA_header br.ui6 8
 scoreboard players display name OA_header br.ui6 {text:"チーム6のメンバー",color:"yellow"}
 scoreboard players set OA_mate1 br.ui6 7
@@ -146,7 +146,7 @@ scoreboard players set OA_alive br.ui7 15
 scoreboard players set OA_width br.ui7 14
 scoreboard players set OA_phase br.ui7 13
 scoreboard players set OA_next br.ui7 12
-scoreboard players set OA_version br.ui7 10
+scoreboard players set OA_version br.ui7 9
 scoreboard players set OA_header br.ui7 8
 scoreboard players display name OA_header br.ui7 {text:"チーム7のメンバー",color:"yellow"}
 scoreboard players set OA_mate1 br.ui7 7
@@ -167,7 +167,7 @@ scoreboard players set OA_alive br.ui8 15
 scoreboard players set OA_width br.ui8 14
 scoreboard players set OA_phase br.ui8 13
 scoreboard players set OA_next br.ui8 12
-scoreboard players set OA_version br.ui8 10
+scoreboard players set OA_version br.ui8 9
 scoreboard players set OA_header br.ui8 8
 scoreboard players display name OA_header br.ui8 {text:"チーム8のメンバー",color:"yellow"}
 scoreboard players set OA_mate1 br.ui8 7
@@ -188,7 +188,7 @@ scoreboard players set OA_alive br.ui9 15
 scoreboard players set OA_width br.ui9 14
 scoreboard players set OA_phase br.ui9 13
 scoreboard players set OA_next br.ui9 12
-scoreboard players set OA_version br.ui9 10
+scoreboard players set OA_version br.ui9 9
 scoreboard players set OA_header br.ui9 8
 scoreboard players display name OA_header br.ui9 {text:"チーム9のメンバー",color:"yellow"}
 scoreboard players set OA_mate1 br.ui9 7
@@ -209,7 +209,7 @@ scoreboard players set OA_alive br.ui10 15
 scoreboard players set OA_width br.ui10 14
 scoreboard players set OA_phase br.ui10 13
 scoreboard players set OA_next br.ui10 12
-scoreboard players set OA_version br.ui10 10
+scoreboard players set OA_version br.ui10 9
 scoreboard players set OA_header br.ui10 8
 scoreboard players display name OA_header br.ui10 {text:"チーム10のメンバー",color:"yellow"}
 scoreboard players set OA_mate1 br.ui10 7

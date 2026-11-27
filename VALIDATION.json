@@ -1,9 +1,9 @@
 {
-  "version": "1.9.257",
-  "plugin": "0.60.0",
+  "version": "1.9.258",
+  "plugin": "0.61.0",
   "resourcepack": "1.9.49",
-  "checks": "check_release.py OK; plugin build and unit tests; test server reload without load errors",
+  "checks": "check_release.py OK; plugin build and unit tests (strike text); test server: sidebar order next(12) > mission(11,10) > version(9)",
   "runtime": "Not run (smoke test only on request)",
-  "unverified": "Killing feel (20% parry, +175% speed), shield frequency, pig parade turning, backstab feedback in a real client",
-  "notes": "Killing parry 20% (curse/prepare), speed +175% (curse/tick, oa.curse_v257). Shield weights halved. Pig turn interval and backstab feedback are in the plugin."
+  "unverified": "Mission strikethrough in a real client (fake players do not receive packets); one-line mission hides the second row",
+  "notes": "Mission rows moved above the version and restyled. Strikethrough per viewer is plugin menu/MissionStrike. Backstab subtitles and bell removed."
 }
