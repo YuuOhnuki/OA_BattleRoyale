@@ -8,6 +8,9 @@ execute if entity @s[tag=oa.debug] run function oa:debug/select_targets
 # 1.9.187: 模擬戦の相手は、デバッグの標的を選んだあとに足す（以前は先に足していて、練習場ではデバッグの選び直しで消え、ほちきす・lazi・ゆったり・いとりのスキルが模擬戦の相手に効かなかった）
 execute if entity @s[tag=oa.spar] as @a[tag=oa.spar,tag=!oa.caster,gamemode=!spectator] run tag @s add oa.target
 
+# 1.9.268：地下のウォーデン（プラグイン disaster/CaveWardens、タグ oa.warden）も試合の生存者のスキルの標的にする
+execute if entity @s[tag=br.alive,tag=!oa.practice] run tag @e[type=minecraft:warden,tag=oa.warden,distance=..64] add oa.target
+
 # TDMの復活待機中はスキルの標的にしない。
 tag @a[tag=tdm.player,tag=!br.alive] remove oa.target
 tag @a[tag=tdm.player,scores={tdm.wait=1..}] remove oa.target
