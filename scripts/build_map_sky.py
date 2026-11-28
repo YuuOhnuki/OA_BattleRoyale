@@ -519,6 +519,26 @@ for k in range(1, 4): box(-3 + k, 31 + k, -3 + k, 3 - k, 31 + k, 3 - k, 'minecra
 for (x, z) in ((0, -3), (0, 3), (-3, 0), (3, 0)): put(x, 28, z, 'minecraft:gold_block')
 box(0, 35, 0, 0, 37, 0, 'minecraft:oak_fence'); put(1, 37, 0, 'minecraft:red_wool'); put(2, 37, 0, 'minecraft:red_wool')
 cur.places.append((0, 0, '天空城'))
+def pad(x1, z1, x2, z2, y=None, top=None, fill='minecraft:stone', margin=2, ymax=None):
+    """建物の敷地を平らに均す（段）。y を与えなければ敷地の地面の高さの中央値。高い所は削り、低い所は埋める。地面の高さを返す。"""
+    cells = [(x, z) for x in range(x1 - margin, x2 + margin + 1) for z in range(z1 - margin, z2 + margin + 1)]
+    gs = sorted(gy(x, z) for x, z in cells if gy(x, z) is not None)
+    if y is None: y = gs[len(gs) // 2] if gs else 0
+    if ymax is not None: y = min(y, ymax)
+    for x, z in cells:
+        g = gy(x, z)
+        if g is None: continue
+        tb = top or getb(x, g, z)
+        if tb in PASS or tb.startswith('minecraft:water'): tb = 'minecraft:grass_block'
+        if g > y:
+            for yy in range(y + 1, g + 1): put(x, yy, z, 'minecraft:air')
+        else:
+            for yy in range(g, y): put(x, yy, z, fill)
+        for yy in range(y + 1, y + 4):
+            if getb(x, yy, z) in PASS or 'leaves' in getb(x, yy, z) or getb(x, yy, z) in ('minecraft:snow',): put(x, yy, z, 'minecraft:air')
+        put(x, y, z, tb); cur.surf[(x, z)] = y
+    return y
+
 # 城の外：丘の木・花・家・チェスト・鉱石
 rr0 = np.random.default_rng(SEED + 11)
 for _ in range(70):
@@ -533,9 +553,13 @@ for _ in range(70):
 for k in range(6):
     a = math.radians(k * 60 + 30); x0, z0 = round(math.cos(a) * 50), round(math.sin(a) * 50)
     if near_bridge(x0, z0, 12): continue
-    g = gy(x0, z0)
-    if g is None: continue
+    if gy(x0, z0) is None: continue
+    # 1.9.271：敷地と入口の前（3マス）を平らに均してから建てる（以前は中心の地面の高さに建てていて、丘の斜面では入口の前の地面が戸口より高く、入れなかった）
+    g = pad(x0 - 3, z0 - 2, x0 + 3, z0 + 2, margin=3)
     house_timber(x0 - 3, z0 - 2, g, 7, 5, chests=1, roof=('minecraft:spruce_stairs', 'minecraft:spruce_planks') if k % 2 else ('minecraft:dark_oak_stairs', 'minecraft:dark_oak_planks'))
+    # 入口（南）の前の2マスが通れること（1.9.271）
+    mx_ = x0 - 3 + 7 // 2
+    assert free(mx_, g + 1, z0 + 3) and free(mx_, g + 2, z0 + 3), ('house entrance blocked', x0, z0, g)
 ore_rocks(rr0, 0, 0, 40, CR - 6, 10)
 fill_chests(rr0, 0, 0, 40, CR - 8, len(cur.chests) + len(cur.riches) + 4)
 # 開始地点：中庭と城の外
@@ -566,26 +590,6 @@ def isle(key, name, r):
         assert 1<=profile["weight"]<=20 and 5<=profile["chests"]<=12
         ISLES.append((key, profile["name"], radius, fn)); return fn
     return deco
-
-def pad(x1, z1, x2, z2, y=None, top=None, fill='minecraft:stone', margin=2, ymax=None):
-    """建物の敷地を平らに均す（段）。y を与えなければ敷地の地面の高さの中央値。高い所は削り、低い所は埋める。地面の高さを返す。"""
-    cells = [(x, z) for x in range(x1 - margin, x2 + margin + 1) for z in range(z1 - margin, z2 + margin + 1)]
-    gs = sorted(gy(x, z) for x, z in cells if gy(x, z) is not None)
-    if y is None: y = gs[len(gs) // 2] if gs else 0
-    if ymax is not None: y = min(y, ymax)
-    for x, z in cells:
-        g = gy(x, z)
-        if g is None: continue
-        tb = top or getb(x, g, z)
-        if tb in PASS or tb.startswith('minecraft:water'): tb = 'minecraft:grass_block'
-        if g > y:
-            for yy in range(y + 1, g + 1): put(x, yy, z, 'minecraft:air')
-        else:
-            for yy in range(g, y): put(x, yy, z, fill)
-        for yy in range(y + 1, y + 4):
-            if getb(x, yy, z) in PASS or 'leaves' in getb(x, yy, z) or getb(x, yy, z) in ('minecraft:snow',): put(x, yy, z, 'minecraft:air')
-        put(x, y, z, tb); cur.surf[(x, z)] = y
-    return y
 
 def promenade(mat='minecraft:polished_andesite', edge='minecraft:smooth_stone_slab[type=bottom]', lamp='minecraft:lantern'):
     """島のまわりの回廊（ガラスの半球の土台）。島の縁から半径28.4 まで、地形のない所を y=0 の床で埋める。"""

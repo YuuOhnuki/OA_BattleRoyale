@@ -468,7 +468,6 @@ fill ~40 ~-6 ~20 ~57 ~-5 ~21 minecraft:stone
 fill ~40 ~-6 ~22 ~56 ~-5 ~22 minecraft:stone
 fill ~47 ~-6 ~23 ~50 ~-6 ~23 minecraft:andesite
 fill ~40 ~-6 ~23 ~46 ~-6 ~23 minecraft:stone
-fill ~40 ~2 ~23 ~46 ~2 ~23 minecraft:stone
 fill ~51 ~-6 ~23 ~55 ~-6 ~23 minecraft:stone
 fill ~45 ~-6 ~24 ~51 ~-6 ~24 minecraft:andesite
 fill ~52 ~-6 ~24 ~54 ~-6 ~24 minecraft:stone
@@ -529,9 +528,9 @@ fill ~40 ~-4 ~23 ~44 ~-4 ~23 minecraft:stone
 fill ~43 ~-4 ~24 ~49 ~-4 ~24 minecraft:andesite
 fill ~50 ~-4 ~24 ~55 ~-4 ~24 minecraft:stone
 fill ~40 ~-4 ~24 ~42 ~-4 ~24 minecraft:stone
-fill ~40 ~2 ~24 ~42 ~2 ~24 minecraft:stone
+fill ~40 ~1 ~24 ~42 ~1 ~24 minecraft:stone
 setblock ~40 ~-4 ~25 minecraft:stone
-setblock ~40 ~2 ~25 minecraft:stone
+setblock ~40 ~1 ~25 minecraft:stone
 fill ~41 ~-4 ~25 ~50 ~-4 ~25 minecraft:andesite
 fill ~51 ~-4 ~25 ~54 ~-4 ~25 minecraft:stone
 fill ~52 ~-4 ~26 ~53 ~-4 ~27 minecraft:stone
@@ -682,17 +681,17 @@ fill ~51 ~0 ~18 ~53 ~0 ~18 minecraft:dirt
 fill ~40 ~0 ~18 ~50 ~0 ~19 minecraft:grass_block
 fill ~51 ~0 ~19 ~54 ~0 ~19 minecraft:dirt
 fill ~55 ~0 ~19 ~58 ~0 ~20 minecraft:grass_block
-fill ~40 ~0 ~20 ~49 ~0 ~20 minecraft:grass_block
 fill ~50 ~0 ~20 ~54 ~0 ~20 minecraft:dirt
+fill ~40 ~0 ~20 ~49 ~0 ~20 minecraft:stone
+fill ~40 ~0 ~21 ~48 ~0 ~21 minecraft:stone
 fill ~49 ~0 ~21 ~54 ~0 ~21 minecraft:dirt
-fill ~40 ~0 ~21 ~48 ~0 ~21 minecraft:grass_block
 fill ~55 ~0 ~21 ~57 ~0 ~21 minecraft:grass_block
 fill ~45 ~0 ~22 ~53 ~0 ~22 minecraft:dirt
-fill ~40 ~0 ~22 ~44 ~0 ~22 minecraft:grass_block
 fill ~54 ~0 ~22 ~57 ~0 ~22 minecraft:grass_block
-fill ~40 ~0 ~23 ~41 ~0 ~23 minecraft:grass_block
+fill ~40 ~0 ~22 ~44 ~0 ~22 minecraft:stone
 fill ~42 ~0 ~23 ~53 ~0 ~23 minecraft:dirt
 fill ~54 ~0 ~23 ~56 ~0 ~23 minecraft:grass_block
+fill ~40 ~0 ~23 ~41 ~0 ~23 minecraft:stone
 fill ~40 ~0 ~24 ~53 ~0 ~24 minecraft:dirt
 fill ~54 ~0 ~24 ~55 ~0 ~24 minecraft:grass_block
 setblock ~45 ~0 ~25 minecraft:andesite
@@ -732,18 +731,13 @@ fill ~40 ~0 ~39 ~47 ~0 ~39 minecraft:grass_block
 setblock ~47 ~1 ~15 minecraft:oxeye_daisy
 fill ~51 ~1 ~18 ~53 ~1 ~18 minecraft:grass_block
 fill ~51 ~1 ~19 ~54 ~1 ~19 minecraft:grass_block
-fill ~50 ~1 ~20 ~54 ~1 ~20 minecraft:grass_block
-fill ~49 ~1 ~21 ~54 ~1 ~21 minecraft:grass_block
-fill ~45 ~1 ~22 ~53 ~1 ~22 minecraft:grass_block
-setblock ~40 ~1 ~22 minecraft:poppy
-fill ~42 ~1 ~23 ~53 ~1 ~23 minecraft:grass_block
-fill ~40 ~1 ~23 ~41 ~1 ~23 minecraft:stone
-fill ~40 ~1 ~24 ~42 ~1 ~24 minecraft:grass_block
+fill ~50 ~1 ~20 ~54 ~1 ~21 minecraft:grass_block
+fill ~40 ~1 ~20 ~49 ~1 ~23 minecraft:stone
+fill ~50 ~1 ~22 ~53 ~1 ~24 minecraft:grass_block
+setblock ~49 ~1 ~24 minecraft:stone
 fill ~43 ~1 ~24 ~48 ~1 ~24 minecraft:dirt
-fill ~49 ~1 ~24 ~53 ~1 ~24 minecraft:grass_block
-fill ~41 ~1 ~25 ~50 ~1 ~25 minecraft:dirt
 fill ~51 ~1 ~25 ~53 ~1 ~25 minecraft:grass_block
-setblock ~40 ~1 ~25 minecraft:grass_block
+fill ~41 ~1 ~25 ~50 ~1 ~25 minecraft:dirt
 fill ~52 ~1 ~26 ~53 ~1 ~26 minecraft:grass_block
 fill ~40 ~1 ~26 ~51 ~1 ~29 minecraft:dirt
 fill ~52 ~1 ~27 ~52 ~1 ~29 minecraft:grass_block
@@ -763,93 +757,74 @@ fill ~40 ~13 ~32 ~40 ~14 ~36 minecraft:stone_bricks
 fill ~40 ~16 ~32 ~40 ~17 ~36 minecraft:stone_bricks
 fill ~40 ~19 ~32 ~40 ~19 ~36 minecraft:stone_bricks
 fill ~53 ~2 ~19 ~53 ~6 ~19 minecraft:oak_log
+fill ~40 ~2 ~20 ~49 ~2 ~22 minecraft:grass_block
 fill ~51 ~2 ~22 ~51 ~6 ~22 minecraft:oak_log
-setblock ~47 ~2 ~23 minecraft:oxeye_daisy
-fill ~49 ~2 ~23 ~49 ~5 ~23 minecraft:cherry_log
-fill ~43 ~2 ~24 ~48 ~2 ~24 minecraft:grass_block
-fill ~46 ~2 ~25 ~50 ~2 ~25 minecraft:grass_block
-fill ~43 ~2 ~25 ~45 ~2 ~25 minecraft:dirt
-fill ~41 ~2 ~25 ~42 ~2 ~25 minecraft:grass_block
-fill ~41 ~2 ~26 ~47 ~2 ~26 minecraft:dirt
-fill ~48 ~2 ~26 ~51 ~2 ~26 minecraft:grass_block
-setblock ~40 ~2 ~26 minecraft:grass_block
-fill ~40 ~2 ~27 ~49 ~2 ~29 minecraft:dirt
-fill ~50 ~2 ~27 ~51 ~2 ~29 minecraft:grass_block
-setblock ~50 ~2 ~30 minecraft:grass_block
-setblock ~40 ~2 ~30 minecraft:grass_block
-fill ~41 ~2 ~30 ~49 ~2 ~30 minecraft:dirt
+fill ~47 ~2 ~23 ~49 ~2 ~24 minecraft:grass_block
+fill ~47 ~2 ~25 ~50 ~2 ~25 minecraft:grass_block
+fill ~40 ~2 ~23 ~46 ~2 ~27 minecraft:spruce_planks
+fill ~47 ~2 ~26 ~51 ~2 ~27 minecraft:grass_block
+fill ~40 ~2 ~28 ~51 ~2 ~29 minecraft:grass_block
+fill ~40 ~2 ~30 ~50 ~2 ~30 minecraft:grass_block
 fill ~44 ~2 ~31 ~48 ~2 ~31 minecraft:dirt
 fill ~41 ~2 ~31 ~43 ~2 ~31 minecraft:grass_block
 fill ~49 ~2 ~31 ~50 ~2 ~31 minecraft:grass_block
 fill ~44 ~2 ~32 ~49 ~2 ~32 minecraft:grass_block
-fill ~48 ~3 ~22 ~50 ~3 ~22 minecraft:cherry_leaves[persistent=true]
-setblock ~50 ~3 ~23 minecraft:cherry_leaves[persistent=true]
-setblock ~48 ~3 ~23 minecraft:cherry_leaves[persistent=true]
-fill ~48 ~3 ~24 ~50 ~3 ~24 minecraft:cherry_leaves[persistent=true]
-setblock ~47 ~3 ~26 minecraft:grass_block
-fill ~40 ~3 ~23 ~46 ~3 ~27 minecraft:spruce_planks
-fill ~47 ~3 ~27 ~49 ~3 ~27 minecraft:grass_block
-fill ~40 ~3 ~28 ~47 ~3 ~28 minecraft:dirt
-fill ~48 ~3 ~28 ~49 ~3 ~29 minecraft:grass_block
-fill ~41 ~3 ~29 ~47 ~3 ~29 minecraft:dirt
-setblock ~40 ~3 ~29 minecraft:grass_block
-fill ~47 ~3 ~30 ~49 ~3 ~30 minecraft:grass_block
-fill ~41 ~3 ~30 ~43 ~3 ~30 minecraft:grass_block
-fill ~44 ~3 ~30 ~46 ~3 ~30 minecraft:dirt
+fill ~41 ~3 ~23 ~45 ~3 ~23 minecraft:cobblestone
+fill ~46 ~3 ~23 ~46 ~5 ~23 minecraft:dark_oak_log
+fill ~49 ~3 ~23 ~49 ~5 ~23 minecraft:cherry_log
+fill ~40 ~3 ~23 ~40 ~5 ~23 minecraft:dark_oak_log
+fill ~50 ~3 ~22 ~50 ~3 ~24 minecraft:cherry_leaves[persistent=true]
+setblock ~41 ~3 ~24 minecraft:chest[facing=south]
+fill ~46 ~3 ~24 ~46 ~3 ~26 minecraft:cobblestone
+fill ~40 ~3 ~24 ~40 ~3 ~26 minecraft:cobblestone
+setblock ~46 ~3 ~27 minecraft:dark_oak_log
+setblock ~40 ~3 ~27 minecraft:dark_oak_log
+fill ~44 ~3 ~27 ~45 ~3 ~27 minecraft:cobblestone
+fill ~41 ~3 ~27 ~42 ~3 ~27 minecraft:cobblestone
 fill ~44 ~3 ~31 ~48 ~3 ~31 minecraft:grass_block
 setblock ~47 ~3 ~32 minecraft:short_grass
-fill ~48 ~4 ~21 ~50 ~4 ~21 minecraft:cherry_leaves[persistent=true]
-fill ~48 ~6 ~21 ~50 ~6 ~21 minecraft:cherry_leaves[persistent=true]
 fill ~51 ~4 ~21 ~52 ~4 ~21 minecraft:oak_leaves[persistent=true]
-fill ~47 ~4 ~22 ~50 ~6 ~22 minecraft:cherry_leaves[persistent=true]
+fill ~50 ~4 ~21 ~50 ~4 ~22 minecraft:cherry_leaves[persistent=true]
 fill ~52 ~4 ~22 ~52 ~4 ~23 minecraft:oak_leaves[persistent=true]
-fill ~47 ~4 ~23 ~48 ~5 ~23 minecraft:cherry_leaves[persistent=true]
-fill ~41 ~4 ~23 ~45 ~4 ~23 minecraft:cobblestone
-fill ~46 ~4 ~23 ~46 ~6 ~23 minecraft:dark_oak_log
-fill ~50 ~4 ~23 ~51 ~4 ~23 minecraft:cherry_leaves[persistent=true]
-fill ~40 ~4 ~23 ~40 ~6 ~23 minecraft:dark_oak_log
-fill ~47 ~4 ~24 ~51 ~4 ~24 minecraft:cherry_leaves[persistent=true]
-setblock ~41 ~4 ~24 minecraft:chest[facing=south]
-fill ~48 ~4 ~25 ~50 ~4 ~25 minecraft:cherry_leaves[persistent=true]
-fill ~48 ~6 ~25 ~50 ~6 ~25 minecraft:cherry_leaves[persistent=true]
-fill ~46 ~4 ~24 ~46 ~4 ~26 minecraft:cobblestone
-fill ~40 ~4 ~24 ~40 ~4 ~26 minecraft:cobblestone
-fill ~41 ~4 ~27 ~42 ~4 ~27 minecraft:cobblestone
-setblock ~46 ~4 ~27 minecraft:dark_oak_log
-fill ~44 ~4 ~27 ~45 ~4 ~27 minecraft:cobblestone
-setblock ~47 ~4 ~27 minecraft:oxeye_daisy
-setblock ~40 ~4 ~27 minecraft:dark_oak_log
-fill ~41 ~4 ~28 ~45 ~4 ~28 minecraft:dirt
-setblock ~40 ~4 ~28 minecraft:grass_block
-fill ~46 ~4 ~28 ~47 ~4 ~29 minecraft:grass_block
-fill ~44 ~4 ~29 ~45 ~4 ~29 minecraft:dirt
-fill ~41 ~4 ~29 ~43 ~4 ~29 minecraft:grass_block
-fill ~44 ~4 ~30 ~46 ~4 ~30 minecraft:grass_block
+fill ~43 ~4 ~23 ~43 ~5 ~23 minecraft:dark_oak_log
+fill ~41 ~4 ~23 ~42 ~4 ~23 minecraft:white_terracotta
+fill ~44 ~4 ~23 ~45 ~4 ~23 minecraft:white_terracotta
+fill ~50 ~4 ~23 ~51 ~4 ~24 minecraft:cherry_leaves[persistent=true]
+fill ~46 ~4 ~24 ~46 ~4 ~25 minecraft:white_terracotta
+fill ~40 ~4 ~24 ~40 ~4 ~25 minecraft:white_terracotta
+setblock ~50 ~4 ~25 minecraft:cherry_leaves[persistent=true]
+fill ~46 ~4 ~26 ~46 ~5 ~27 minecraft:dark_oak_log
+fill ~40 ~4 ~26 ~40 ~5 ~27 minecraft:dark_oak_log
+fill ~44 ~4 ~27 ~45 ~4 ~27 minecraft:white_terracotta
+fill ~41 ~4 ~27 ~42 ~4 ~27 minecraft:white_terracotta
 fill ~52 ~5 ~18 ~54 ~6 ~18 minecraft:oak_leaves[persistent=true]
 setblock ~52 ~5 ~19 minecraft:oak_leaves[persistent=true]
 setblock ~54 ~5 ~19 minecraft:oak_leaves[persistent=true]
-setblock ~49 ~5 ~20 minecraft:cherry_leaves[persistent=true]
 fill ~50 ~5 ~20 ~54 ~5 ~20 minecraft:oak_leaves[persistent=true]
 fill ~50 ~7 ~20 ~54 ~7 ~20 minecraft:oak_leaves[persistent=true]
-fill ~47 ~5 ~21 ~51 ~5 ~21 minecraft:cherry_leaves[persistent=true]
+fill ~50 ~5 ~21 ~51 ~5 ~21 minecraft:cherry_leaves[persistent=true]
 fill ~52 ~5 ~21 ~53 ~5 ~22 minecraft:oak_leaves[persistent=true]
-fill ~43 ~5 ~23 ~43 ~6 ~23 minecraft:dark_oak_log
-fill ~41 ~5 ~23 ~42 ~5 ~23 minecraft:white_terracotta
+setblock ~50 ~5 ~22 minecraft:cherry_leaves[persistent=true]
+setblock ~41 ~5 ~23 minecraft:glass_pane
+setblock ~42 ~5 ~23 minecraft:white_terracotta
 setblock ~53 ~5 ~23 minecraft:oak_leaves[persistent=true]
-fill ~44 ~5 ~23 ~45 ~5 ~23 minecraft:white_terracotta
 fill ~50 ~5 ~23 ~52 ~5 ~23 minecraft:cherry_leaves[persistent=true]
+setblock ~45 ~5 ~23 minecraft:glass_pane
+setblock ~44 ~5 ~23 minecraft:white_terracotta
 setblock ~52 ~5 ~24 minecraft:oak_leaves[persistent=true]
-fill ~46 ~5 ~24 ~46 ~5 ~25 minecraft:white_terracotta
-fill ~47 ~5 ~24 ~51 ~5 ~25 minecraft:cherry_leaves[persistent=true]
-fill ~40 ~5 ~24 ~40 ~5 ~25 minecraft:white_terracotta
-setblock ~49 ~5 ~26 minecraft:cherry_leaves[persistent=true]
-fill ~46 ~5 ~26 ~46 ~6 ~27 minecraft:dark_oak_log
-fill ~40 ~5 ~26 ~40 ~6 ~27 minecraft:dark_oak_log
-fill ~44 ~5 ~27 ~45 ~5 ~27 minecraft:white_terracotta
-fill ~41 ~5 ~27 ~42 ~5 ~27 minecraft:white_terracotta
-fill ~41 ~5 ~28 ~45 ~5 ~28 minecraft:grass_block
-setblock ~47 ~5 ~28 minecraft:short_grass
-fill ~44 ~5 ~29 ~45 ~5 ~29 minecraft:grass_block
+setblock ~46 ~5 ~24 minecraft:glass_pane
+setblock ~40 ~5 ~24 minecraft:glass_pane
+fill ~50 ~5 ~24 ~51 ~5 ~25 minecraft:cherry_leaves[persistent=true]
+setblock ~43 ~5 ~25 minecraft:lantern[hanging=true]
+setblock ~46 ~5 ~25 minecraft:white_terracotta
+setblock ~46 ~9 ~25 minecraft:white_terracotta
+setblock ~40 ~5 ~25 minecraft:white_terracotta
+setblock ~40 ~9 ~25 minecraft:white_terracotta
+setblock ~43 ~5 ~27 minecraft:dark_oak_log
+setblock ~41 ~5 ~27 minecraft:glass_pane
+setblock ~42 ~5 ~27 minecraft:white_terracotta
+setblock ~45 ~5 ~27 minecraft:glass_pane
+setblock ~44 ~5 ~27 minecraft:white_terracotta
 fill ~40 ~5 ~32 ~40 ~5 ~33 minecraft:stone_bricks
 fill ~40 ~10 ~32 ~40 ~10 ~33 minecraft:stone_bricks
 fill ~40 ~15 ~32 ~40 ~15 ~33 minecraft:stone_bricks
@@ -864,50 +839,37 @@ fill ~51 ~6 ~19 ~52 ~6 ~19 minecraft:oak_leaves[persistent=true]
 fill ~54 ~6 ~19 ~55 ~6 ~19 minecraft:oak_leaves[persistent=true]
 fill ~49 ~6 ~20 ~54 ~6 ~20 minecraft:oak_leaves[persistent=true]
 fill ~51 ~6 ~21 ~53 ~6 ~21 minecraft:oak_leaves[persistent=true]
+fill ~48 ~6 ~21 ~50 ~6 ~21 minecraft:cherry_leaves[persistent=true]
+fill ~47 ~6 ~22 ~50 ~6 ~22 minecraft:cherry_leaves[persistent=true]
 fill ~52 ~6 ~22 ~54 ~6 ~22 minecraft:oak_leaves[persistent=true]
-setblock ~41 ~6 ~23 minecraft:glass_pane
-setblock ~42 ~6 ~23 minecraft:white_terracotta
-setblock ~45 ~6 ~23 minecraft:glass_pane
-setblock ~44 ~6 ~23 minecraft:white_terracotta
-fill ~52 ~6 ~23 ~53 ~6 ~24 minecraft:oak_leaves[persistent=true]
+fill ~40 ~6 ~23 ~46 ~6 ~23 minecraft:stripped_dark_oak_log[axis=x]
 fill ~47 ~6 ~23 ~51 ~6 ~24 minecraft:cherry_leaves[persistent=true]
-setblock ~46 ~6 ~24 minecraft:glass_pane
-setblock ~40 ~6 ~24 minecraft:glass_pane
-setblock ~43 ~6 ~25 minecraft:lantern[hanging=true]
-setblock ~46 ~6 ~25 minecraft:white_terracotta
-setblock ~46 ~10 ~25 minecraft:white_terracotta
-setblock ~40 ~6 ~25 minecraft:white_terracotta
-setblock ~40 ~10 ~25 minecraft:white_terracotta
+fill ~52 ~6 ~23 ~53 ~6 ~24 minecraft:oak_leaves[persistent=true]
+fill ~48 ~6 ~25 ~50 ~6 ~25 minecraft:cherry_leaves[persistent=true]
 setblock ~51 ~6 ~25 minecraft:oak_leaves[persistent=true]
-setblock ~43 ~6 ~27 minecraft:dark_oak_log
-setblock ~41 ~6 ~27 minecraft:glass_pane
-setblock ~42 ~6 ~27 minecraft:white_terracotta
-setblock ~45 ~6 ~27 minecraft:glass_pane
-setblock ~44 ~6 ~27 minecraft:white_terracotta
+fill ~46 ~6 ~24 ~46 ~6 ~26 minecraft:stripped_dark_oak_log[axis=x]
+fill ~40 ~6 ~24 ~40 ~6 ~26 minecraft:stripped_dark_oak_log[axis=x]
+fill ~41 ~6 ~24 ~45 ~6 ~26 minecraft:spruce_planks
+fill ~40 ~6 ~27 ~46 ~6 ~27 minecraft:stripped_dark_oak_log[axis=x]
 fill ~52 ~7 ~18 ~54 ~7 ~19 minecraft:oak_leaves[persistent=true]
 fill ~49 ~7 ~21 ~53 ~7 ~21 minecraft:oak_leaves[persistent=true]
+fill ~40 ~7 ~22 ~47 ~7 ~22 minecraft:dark_oak_stairs[facing=south,half=bottom]
 fill ~51 ~7 ~22 ~53 ~7 ~23 minecraft:oak_leaves[persistent=true]
-fill ~40 ~7 ~23 ~46 ~7 ~23 minecraft:stripped_dark_oak_log[axis=x]
 fill ~48 ~7 ~22 ~50 ~7 ~24 minecraft:cherry_leaves[persistent=true]
 fill ~51 ~7 ~24 ~52 ~7 ~24 minecraft:oak_leaves[persistent=true]
-fill ~46 ~7 ~24 ~46 ~7 ~26 minecraft:stripped_dark_oak_log[axis=x]
-fill ~40 ~7 ~24 ~40 ~7 ~26 minecraft:stripped_dark_oak_log[axis=x]
-fill ~41 ~7 ~24 ~45 ~7 ~26 minecraft:spruce_planks
-fill ~40 ~7 ~27 ~46 ~7 ~27 minecraft:stripped_dark_oak_log[axis=x]
-fill ~40 ~8 ~22 ~47 ~8 ~22 minecraft:dark_oak_stairs[facing=south,half=bottom]
+fill ~45 ~7 ~24 ~45 ~11 ~24 minecraft:bricks
+fill ~46 ~7 ~23 ~46 ~7 ~27 minecraft:white_terracotta
+fill ~40 ~7 ~23 ~40 ~7 ~27 minecraft:white_terracotta
+fill ~40 ~7 ~28 ~47 ~7 ~28 minecraft:dark_oak_stairs[facing=north,half=bottom]
 fill ~50 ~8 ~21 ~52 ~8 ~23 minecraft:oak_leaves[persistent=true]
-fill ~45 ~8 ~24 ~45 ~12 ~24 minecraft:bricks
-fill ~46 ~8 ~23 ~46 ~8 ~27 minecraft:white_terracotta
-fill ~40 ~8 ~23 ~40 ~8 ~27 minecraft:white_terracotta
-fill ~40 ~8 ~28 ~47 ~8 ~28 minecraft:dark_oak_stairs[facing=north,half=bottom]
-fill ~40 ~9 ~23 ~47 ~9 ~23 minecraft:dark_oak_stairs[facing=south,half=bottom]
-fill ~46 ~9 ~24 ~46 ~9 ~26 minecraft:white_terracotta
-fill ~40 ~9 ~24 ~40 ~9 ~26 minecraft:white_terracotta
-fill ~40 ~9 ~27 ~47 ~9 ~27 minecraft:dark_oak_stairs[facing=north,half=bottom]
-fill ~46 ~10 ~24 ~47 ~10 ~24 minecraft:dark_oak_stairs[facing=south,half=bottom]
-fill ~40 ~10 ~24 ~44 ~10 ~24 minecraft:dark_oak_stairs[facing=south,half=bottom]
-fill ~40 ~10 ~26 ~47 ~10 ~26 minecraft:dark_oak_stairs[facing=north,half=bottom]
-fill ~40 ~11 ~25 ~47 ~11 ~25 minecraft:dark_oak_planks
+fill ~40 ~8 ~23 ~47 ~8 ~23 minecraft:dark_oak_stairs[facing=south,half=bottom]
+fill ~46 ~8 ~24 ~46 ~8 ~26 minecraft:white_terracotta
+fill ~40 ~8 ~24 ~40 ~8 ~26 minecraft:white_terracotta
+fill ~40 ~8 ~27 ~47 ~8 ~27 minecraft:dark_oak_stairs[facing=north,half=bottom]
+fill ~46 ~9 ~24 ~47 ~9 ~24 minecraft:dark_oak_stairs[facing=south,half=bottom]
+fill ~40 ~9 ~24 ~44 ~9 ~24 minecraft:dark_oak_stairs[facing=south,half=bottom]
+fill ~40 ~9 ~26 ~47 ~9 ~26 minecraft:dark_oak_stairs[facing=north,half=bottom]
+fill ~40 ~10 ~25 ~47 ~10 ~25 minecraft:dark_oak_planks
 fill ~40 ~21 ~30 ~40 ~21 ~31 minecraft:deepslate_tiles
 fill ~40 ~21 ~32 ~41 ~21 ~36 minecraft:deepslate_tiles
 fill ~40 ~21 ~37 ~40 ~21 ~38 minecraft:deepslate_tiles

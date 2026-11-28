@@ -3,7 +3,7 @@
     {
       "kind": "center",
       "method": "3D BFS, full-cube approximation; spawn/ring entry roots; recheck after repairs",
-      "walkable_reached": 14016,
+      "walkable_reached": 14024,
       "ladder_columns": 14,
       "geometry_repairs": 10,
       "relocated_chests": [

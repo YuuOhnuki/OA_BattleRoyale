@@ -1,4 +1,2 @@
-attribute @s minecraft:movement_speed modifier add oa:night 0.2 add_multiplied_total
-attribute @s minecraft:attack_damage modifier add oa:night 0.2 add_multiplied_total
-attribute @s minecraft:armor modifier add oa:night 0.2 add_multiplied_total
-tag @s add oa.night
+# 1.9.271：ネロの夜間バフは廃止（互換のため残す。何もしない）
+return 0
