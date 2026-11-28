@@ -1,5 +1,5 @@
 {
-  "version": "1.9.263",
+  "version": "1.9.264",
   "plugin": "0.61.0",
   "resourcepack": "1.9.49",
   "checks": "check_release.py OK; plugin build and unit tests (strike text); test server: sidebar order next(12) > mission(11,10) > version(9)",

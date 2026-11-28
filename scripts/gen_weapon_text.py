@@ -5,7 +5,7 @@ from pathlib import Path
 import json,re,sys,copy
 sys.dont_write_bytecode=True
 sys.path.insert(0,str(Path(__file__).resolve().parent))
-from weapon_catalog import WEAPONS,MEDICINE
+from weapon_catalog import WEAPONS,MEDICINE,EASE
 R=Path(__file__).resolve().parents[1];D=R/'data/oa';P=R.parent/'oa_battleroyale_plugin';RP=R.parent/'oa_battleroyale_resourcepack'
 def dump(x):return json.dumps(x,ensure_ascii=False,separators=(',',':'))
 def write(p,s):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(s,encoding='utf-8')
@@ -83,6 +83,8 @@ for w in WEAPONS:
     jwrite(D/f'item_modifier/lore/k10_progress_{n}.json',modifier(w,False,n))
     jwrite(D/f'item_modifier/lore/k10_progress_{n}_plus1.json',modifier(w,True,n))
  body=[t('\n━━ ','gold'),named(w),t(' ━━\n','gold')]
+ # 1.9.264：扱いやすさを★で（5段階）
+ ease=EASE[kind];body.extend([row('扱いやすさ','★'*ease+'☆'*(5-ease)+'　'+['','とてもむずかしい','むずかしい','ふつう','かんたん','とてもかんたん'][ease]),t('\n')])
  for label,value in fields(w)+w['extra']:
   body.extend([row(label,value),t('\n')])
  body += [t(note(w)+'\n','gray')]

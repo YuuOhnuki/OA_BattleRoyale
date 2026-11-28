@@ -130,7 +130,18 @@
             "italic": false,
             "extra": [
               {
-                "text": "  出し（ノックバック1〜8のランダム）。1秒後に元の場所へ帰還。",
+                "text": "  出し（ノックバック1〜8のランダム）。1秒後に元の場所へ帰",
+                "color": "white",
+                "italic": false
+              }
+            ]
+          },
+          {
+            "text": "",
+            "italic": false,
+            "extra": [
+              {
+                "text": "  還。",
                 "color": "white",
                 "italic": false
               }

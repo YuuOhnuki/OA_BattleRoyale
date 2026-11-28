@@ -1,12 +1,12 @@
 # Player executor; only one transfer succeeds, and no item is consumed on full inventory.
-# 1.9.182: 軽量化。足もと1.5ブロックに拾える地面の固有武器がなければ、すぐ終わる（毎tick・固有武器を持っていない全員）。
+# 1.9.264: 拾える距離を1.5→2ブロックに（ふつうのアイテムに近く。足もとの武器へ持ち替えやすく）。1.9.182: 軽量化。足もと1.5ブロックに拾える地面の固有武器がなければ、すぐ終わる（毎tick・固有武器を持っていない全員）。
 # 以下の oa.pick の検索も、種類と距離で絞る（以前は全ワールドの全エンティティを調べていた）
-execute unless entity @e[type=minecraft:item,tag=oa.ground,scores={oa.wait=0},distance=..1.5,limit=1] run return 0
+execute unless entity @e[type=minecraft:item,tag=oa.ground,scores={oa.wait=0},distance=..2,limit=1] run return 0
 tag @e[type=minecraft:item,tag=oa.pick,distance=..4] remove oa.pick
-execute as @e[type=minecraft:item,tag=oa.ground,scores={oa.wait=0},distance=..1.5,nbt={Item:{components:{"minecraft:custom_data":{oa:{kind:1}}}}},sort=nearest,limit=1] run tag @s add oa.pick
-execute unless entity @e[type=minecraft:item,tag=oa.pick,distance=..2] as @e[type=minecraft:item,tag=oa.ground,scores={oa.wait=0},distance=..1.5,sort=nearest,limit=1] run tag @s add oa.pick
-execute unless entity @e[type=minecraft:item,tag=oa.pick,distance=..2] run return 0
-execute if data entity @e[type=minecraft:item,tag=oa.pick,distance=..2,limit=1] Item.components."minecraft:custom_data".oa{kind:1} run return run function oa:ground/force_yuua
+execute as @e[type=minecraft:item,tag=oa.ground,scores={oa.wait=0},distance=..2,nbt={Item:{components:{"minecraft:custom_data":{oa:{kind:1}}}}},sort=nearest,limit=1] run tag @s add oa.pick
+execute unless entity @e[type=minecraft:item,tag=oa.pick,distance=..2.5] as @e[type=minecraft:item,tag=oa.ground,scores={oa.wait=0},distance=..2,sort=nearest,limit=1] run tag @s add oa.pick
+execute unless entity @e[type=minecraft:item,tag=oa.pick,distance=..2.5] run return 0
+execute if data entity @e[type=minecraft:item,tag=oa.pick,distance=..2.5,limit=1] Item.components."minecraft:custom_data".oa{kind:1} run return run function oa:ground/force_yuua
 execute unless items entity @s hotbar.0 * run return run function oa:ground/transfer {slot:"hotbar.0"}
 execute unless items entity @s hotbar.1 * run return run function oa:ground/transfer {slot:"hotbar.1"}
 execute unless items entity @s hotbar.2 * run return run function oa:ground/transfer {slot:"hotbar.2"}
