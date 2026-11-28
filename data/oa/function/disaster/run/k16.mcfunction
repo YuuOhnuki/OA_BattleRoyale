@@ -1,5 +1,5 @@
 # 生成：scripts/gen_disasters.py（直接編集しない）
-# 島の崩落の1秒。#dis_left を一時的にこの災害の残り秒にして k16/second を呼ぶ
+# 橋の崩落の1秒。#dis_left を一時的にこの災害の残り秒にして k16/second を呼ぶ
 scoreboard players operation #dis_left br.tmp = #ds16 br.tmp
 scoreboard players remove #dis_left br.tmp 1
 function oa:disaster/k16/second

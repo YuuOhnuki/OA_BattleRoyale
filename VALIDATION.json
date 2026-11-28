@@ -1,9 +1,9 @@
 {
-  "version": "1.9.268",
-  "plugin": "0.72.0",
+  "version": "1.9.269",
+  "plugin": "0.73.0",
   "resourcepack": "1.9.49",
-  "checks": "check_release.py OK; plugin build; test server: warden selected by combat/select_targets and damaged by lazi sonic (100->98); dragon flies below player feet and within ~5 blocks horizontally, 9696 blocks broken",
+  "checks": "check_release.py OK; plugin build; test server: giant meteors ramp to 16 in 30s, dragon below feet, bridge collapse 3 bridges x2 (1768 blocks), geyser 6877 blocks + launch, all restored; flare lands and drops supply-grade contents",
   "runtime": "Not run (smoke test only on request)",
-  "unverified": "Katana/throwables/furoball/itori bolt hitting wardens (fake players cannot attack), dragon look",
-  "notes": "Dragon uses vanilla flight with charge-phase target around prey; flare loot entry fixed to 26.3 modifier/type; warden HP 100, damage x0.2."
+  "unverified": "Stats menu screen, tips display, credits book, meteor/dragon visuals in a real client",
+  "notes": "Meteor schedule/visuals, dragon cycle, geyser (k14) and bridge collapse (k16) replace eruption/island collapse, flare uses br/supply/contents, stats menu, tips, credits."
 }

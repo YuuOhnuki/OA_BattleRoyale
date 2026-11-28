@@ -140,13 +140,13 @@ execute if score #ds12 br.tmp matches 1.. if score #map oa.mapid matches 4 run d
 execute if score #ds13 br.tmp matches 1.. if score #map oa.mapid matches 0 run data modify storage oa:disaster bar append value {"text":"巨大隕石 ★★★★★ ","color":"red"}
 execute if score #ds13 br.tmp matches 1.. if score #map oa.mapid matches 0 run data modify storage oa:disaster bar append value {"score":{"name":"#ds13","objective":"br.tmp"},"color":"white"}
 execute if score #ds13 br.tmp matches 1.. if score #map oa.mapid matches 0 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
-execute if score #ds14 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"text":"噴火 ★★★★☆ ","color":"gold"}
+execute if score #ds14 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"text":"炎の間欠泉 ★★★★☆ ","color":"gold"}
 execute if score #ds14 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"score":{"name":"#ds14","objective":"br.tmp"},"color":"white"}
 execute if score #ds14 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
 execute if score #ds15 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"text":"スカルクの目覚め ★★★☆☆ ","color":"dark_aqua"}
 execute if score #ds15 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"score":{"name":"#ds15","objective":"br.tmp"},"color":"white"}
 execute if score #ds15 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
-execute if score #ds16 br.tmp matches 1.. if score #map oa.mapid matches 3 run data modify storage oa:disaster bar append value {"text":"島の崩落 ★★★★☆ ","color":"aqua"}
+execute if score #ds16 br.tmp matches 1.. if score #map oa.mapid matches 3 run data modify storage oa:disaster bar append value {"text":"橋の崩落 ★★★☆☆ ","color":"aqua"}
 execute if score #ds16 br.tmp matches 1.. if score #map oa.mapid matches 3 run data modify storage oa:disaster bar append value {"score":{"name":"#ds16","objective":"br.tmp"},"color":"white"}
 execute if score #ds16 br.tmp matches 1.. if score #map oa.mapid matches 3 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
 execute if score #ds17 br.tmp matches 1.. if score #map oa.mapid matches 4 run data modify storage oa:disaster bar append value {"text":"虚空の侵食 ★★★★☆ ","color":"dark_purple"}

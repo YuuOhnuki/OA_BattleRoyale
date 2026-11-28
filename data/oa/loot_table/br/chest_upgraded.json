@@ -754,26 +754,6 @@
                     "text": "3秒後、打ち上げた場所へ空から小さな補給が落ちてくる",
                     "color": "gray",
                     "italic": false
-                  },
-                  {
-                    "text": "　中身：上位チェスト・通常チェスト・回復を1つずつ",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": "使うと全員に知らされ、赤い光の柱が立つ",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": "（ほかの人に横取りされることもある）",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": "使えるのは試合中、保護期間（最初の1分）のあと",
-                    "color": "gray",
-                    "italic": false
                   }
                 ],
                 "minecraft:custom_data": {
