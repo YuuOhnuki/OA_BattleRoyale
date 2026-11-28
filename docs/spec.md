@@ -1,4 +1,4 @@
-# OA Battle Royale 仕様書（1.9.261 時点）
+# OA Battle Royale 仕様書（1.9.262 時点）
 
 ## 1.9.240 修正
 
@@ -853,6 +853,7 @@ CTは実装で確認済み。効果の細かい数値は `WEAPONS_JA.md` から�
 | 脱落者の1v1（`match/DuelService`、ディメンション `oa:duel`、タグ `oa.duel`・`br.gm_override`。救済OFFかつ管理者ONのときだけ） | **プラグイン**（0.64.0） |
 | 信号弾（custom_data `oa_flare`、上位チェスト4%。使用・補給は `match/FlareService`） | **両方**（0.64.0／1.9.261） |
 | 設定の保存（`admin/PresetService`、`presets.yml`）・報告の一覧（`FeedbackService`） | **プラグイン**（0.64.0） |
+| ロビーのホットバー（`menu/LobbyHotbar`：コンパス＝メニュー・頭＝プロフィール・本＝クレジット、PDC `oa:lobby_item`）・`/menu`・`/profile`・`/tutorial br|tdm`。旧「はじめての案内」の本（`oa_player_book`）は消す | **プラグイン**（0.65.0）／DPの `lobby/guide/book` は消すだけ（1.9.262） |
 | 位置の異常（埋まり・空中に立っている・空中で止まっている）と試合中の切断・キックの記録（直さない。補正はデータパックの `tp_fix`） | **プラグイン**（0.5.0） |
 | 試合中の地図（自分の位置・安全地帯・味方・地点の名前） | **プラグイン**（0.5.0） |
 
