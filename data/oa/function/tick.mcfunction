@@ -12,6 +12,9 @@ tag @a remove oa.curse_guard
 execute as @a if items entity @s armor.head *[minecraft:custom_data~{oa:{kind:5}}] run function oa:curse/prepare
 function oa:normal/bat_clock
 scoreboard players add #clock oa.beat 1
+# 1.9.259: TNT鬼の旧表示と落ちたTNTの後始末。どちらも全ワールドが対象なので、world_tick（1tickに最大6回）から移して1回だけ
+kill @e[type=minecraft:item_display,tag=oa.g_oni_hat]
+execute as @e[type=minecraft:item] if items entity @s contents *[minecraft:custom_data~{oa_tnt_oni:1b}] run kill @s
 execute in minecraft:overworld run function oa:world_tick
 execute in minecraft:the_nether run function oa:world_tick
 execute in minecraft:the_end run function oa:world_tick

@@ -11,7 +11,7 @@ from book_layout import check_page
 
 r = Path(__file__).resolve().parents[1]
 f = r / 'data/oa/function/lobby/guide/book.mcfunction'
-VER = 'guide_v209'
+VER = 'guide_v259'
 
 def page(title, body, links):
     e = [{'text': title + '\n', 'color': 'dark_aqua', 'bold': True}, {'text': body + '\n', 'color': 'black'}]
@@ -42,7 +42,7 @@ pages = [
     page('バトルロワイヤル',
          '会場で装備を集め、最後の1人（1チーム）まで生き残る。\n'
          'ソロ／チーム戦（最大3人）。\n'
-         'マップ：地上・ネザー・地下（古代都市）。\n'
+         'マップ：地上・ネザー・地下（古代都市）・天空島・エンド。\n'
          'エリアは段階的に縮む。',
          [('BR受付', '/oa br'), ('チームを選ぶ', '/oa br_team'), ('マップを見る', '/oa br_maps')]),
     page('チームデスマッチ',

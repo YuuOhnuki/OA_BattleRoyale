@@ -1,7 +1,8 @@
 execute if entity @s[tag=oa.db_multi] run return run function oa:debug/inventory
 scoreboard players set @s oa.have 0
 execute store result storage oa:args serial int 1 run scoreboard players get @s oa.owner
-function oa:inventory/find_old with storage oa:args
+# 1.9.259: 固有武器の持ち主でない人（oa.owner 0）は探さない（毎tick・全員のマクロ呼び出しを省く。結果は同じ oa.have 0）
+execute if score @s oa.owner matches 1.. run function oa:inventory/find_old with storage oa:args
 execute if score @s oa.have matches 0 if score @s oa.owner matches 1.. run function oa:internal/cleanup
 execute if score @s oa.have matches 0 run scoreboard players set @s oa.owner 0
 scoreboard players set @s oa.have 0

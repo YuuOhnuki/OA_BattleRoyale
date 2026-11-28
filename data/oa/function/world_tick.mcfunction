@@ -1,5 +1,3 @@
-kill @e[type=minecraft:item_display,tag=oa.g_oni_hat]
-execute as @e[type=minecraft:item] if items entity @s contents *[minecraft:custom_data~{oa_tnt_oni:1b}] run kill @s
 execute if score #state br.state matches 1 as @e[distance=0..,type=minecraft:arrow,tag=!oa.bow_checked,nbt={weapon:{id:"minecraft:bow"}}] run function oa:br/combat/bow_arrow
 execute if score #state br.state matches 1 as @e[distance=0..,type=minecraft:spectral_arrow,tag=!oa.bow_checked,nbt={weapon:{id:"minecraft:bow"}}] run function oa:br/combat/bow_arrow
 execute if entity @a[tag=oa.gacha_exposed] as @e[distance=0..,type=#oa:gacha_projectiles] run function oa:tayayuyu/projectile_check
