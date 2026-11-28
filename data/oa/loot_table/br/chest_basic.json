@@ -493,7 +493,7 @@
           "type": "minecraft:item",
           "name": "minecraft:ender_pearl",
           "weight": 4,
-          "functions": [
+          "modifier": [
             {
               "type": "minecraft:set_count",
               "count": 1

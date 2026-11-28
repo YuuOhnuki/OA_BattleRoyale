@@ -60,6 +60,12 @@ def check_loot_functions(node, path, inside):
         t = node.get('type')
         if isinstance(t, str) and t.startswith('minecraft:') and t[10:] not in LOOT_FUNCTIONS:
             errors.append(f'26.3 に無い loot function: {path}: {t}')
+        # 1.9.267：26.3 では関数の種類は "type"。旧形式の "function" は読み込みエラーにならず、その関数だけ黙って無視される
+        #（信号弾が名前も中身もない花火の星になっていた）
+        if 'functions' in node and node.get('type') != 'minecraft:sequence':
+            errors.append(f'loot の旧形式 "functions"（26.3 は "modifier"。旧形式は黙って無視される）: {path}')
+        if 'function' in node and 'type' not in node:
+            errors.append(f'loot function の旧形式 "function"（26.3 は "type"）: {path}: {node.get("function")}')
     for k, v in node.items():
         if k in ('functions', 'modifier') and isinstance(v, list):
             check_loot_functions(v, path, True)

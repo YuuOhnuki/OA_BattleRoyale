@@ -1,9 +1,9 @@
 {
-  "version": "1.9.266",
-  "plugin": "0.70.0",
+  "version": "1.9.267",
+  "plugin": "0.71.0",
   "resourcepack": "1.9.49",
-  "checks": "check_release.py OK; plugin build; test server: each new disaster on its map records terrain and restores after the match (meteor 1716, eruption 231, island collapse 109203, void 14874, dragon 560 blocks); warden HP 200, damage scaled, reward drops after emerging",
+  "checks": "check_release.py OK (new rule: old loot keys functions/function); plugin build; test server: flare from chest_upgraded has name/lore/oa_flare; dragon orbits players 15-21 blocks and breaks ~7000 blocks per run, restored after match",
   "runtime": "Not run (smoke test only on request)",
-  "unverified": "Visuals/sounds/difficulty feel, dragon flight look, sculk noise build-up from real sprinting/jumping (fake players cannot move), warden emerge animation, /tips and death tips in a real client",
-  "notes": "New map disasters k13-k18 (plugin disaster/MapDisasters), TerrainLog restore, CaveWardens, /tips."
+  "unverified": "Dragon look/feel, warden strength feel in a real client",
+  "notes": "Dragon uses vanilla flight with charge-phase target around prey; flare loot entry fixed to 26.3 modifier/type; warden HP 100, damage x0.2."
 }
