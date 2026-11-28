@@ -1,4 +1,4 @@
-# OA Battle Royale 仕様書（1.9.262 時点）
+# OA Battle Royale 仕様書（1.9.263 時点）
 
 ## 1.9.240 修正
 
@@ -851,7 +851,7 @@ CTは実装で確認済み。効果の細かい数値は `WEAPONS_JA.md` から�
 | 特別ルール（`match/MatchRules`、`/oarule`、`match-settings.properties`） | **プラグイン**（0.64.0） |
 | 脱落者の投票（`match/SpectatorVote`。補給の方角 `#sup_vote br.tmp` 1北東2北西3南東4南西、次の災害 `#dis_vote br.tmp`、使用済み `#dis_vote_used`）。選び直し・抽選はデータパック（`br/supply/vote_check`・`disaster/vote_valid`・`vote_apply`） | **両方**（0.64.0／1.9.261） |
 | 脱落者の1v1（`match/DuelService`、ディメンション `oa:duel`、タグ `oa.duel`・`br.gm_override`。救済OFFかつ管理者ONのときだけ） | **プラグイン**（0.64.0） |
-| 信号弾（custom_data `oa_flare`、上位チェスト4%。使用・補給は `match/FlareService`） | **両方**（0.64.0／1.9.261） |
+| 信号弾（custom_data `oa_flare`、見た目は打ち上げ花火、consumable で空中の右クリックも届く。上位チェスト4%。使用・補給は `match/FlareService`） | **両方**（0.64.0／1.9.261） |
 | 設定の保存（`admin/PresetService`、`presets.yml`）・報告の一覧（`FeedbackService`） | **プラグイン**（0.64.0） |
 | ロビーのホットバー（`menu/LobbyHotbar`：1マス目コンパス＝メニュー・5マス目頭＝プロフィール・9マス目本＝クレジット、PDC `oa:lobby_item`）・`/menu`・`/profile`・`/tutorial br|tdm`（0.66.0 からメニューのページ、手順ごとのアイテム）・`/oaweapon`（固有武器の説明のページ）。メニューは5段、出撃設定は管理者だけに表示。旧「はじめての案内」の本（`oa_player_book`）は消す | **プラグイン**（0.65.0）／DPの `lobby/guide/book` は消すだけ（1.9.262） |
 | 位置の異常（埋まり・空中に立っている・空中で止まっている）と試合中の切断・キックの記録（直さない。補正はデータパックの `tp_fix`） | **プラグイン**（0.5.0） |

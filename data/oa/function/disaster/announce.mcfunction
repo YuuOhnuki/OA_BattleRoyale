@@ -15,7 +15,7 @@ execute if score #p11 br.tmp matches 1 run scoreboard players add #plan_n br.tmp
 execute if score #p12 br.tmp matches 1 run scoreboard players add #plan_n br.tmp 1
 execute if score #plan_n br.tmp matches 0 run return 0
 title @a[tag=br.playing] times 10 50 15
-title @a[tag=br.playing] subtitle {"text":"内容はチャットを確認","color":"yellow"}
+title @a[tag=br.playing] subtitle {"text":"内容はチャットを確認","color":"gray"}
 title @a[tag=br.playing] title {"text":"⚠ 災害発生","color":"dark_red","bold":true}
 execute if score #p1 br.tmp matches 1 if score #map oa.mapid matches 0 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"酸性雨","bold":true},{"text":"  ★★★★☆"},{"text":"\n    屋根の下か頭の防具で防げる","color":"gray"}]
 execute if score #p1 br.tmp matches 1 if score #map oa.mapid matches 1 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"酸性雨","bold":true},{"text":"  ★★★★☆"},{"text":"\n    屋根の下か頭の防具で防げる","color":"gray"}]

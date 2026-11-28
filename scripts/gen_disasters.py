@@ -121,7 +121,7 @@ lines += [f'execute if score #p{k} br.tmp matches 1 run scoreboard players add #
 lines += ['execute if score #plan_n br.tmp matches 0 run return 0']
 # 1.9.240：タイトルは災害の数・種類によらず同じ「⚠ 災害発生」だけ（中身はチャット）。単発・複数・災害コンボで共通
 lines += ['title @a[tag=br.playing] times 10 50 15',
-          'title @a[tag=br.playing] subtitle {"text":"内容はチャットを確認","color":"yellow"}',
+          'title @a[tag=br.playing] subtitle {"text":"内容はチャットを確認","color":"gray"}',
           'title @a[tag=br.playing] title {"text":"⚠ 災害発生","color":"dark_red","bold":true}']
 for d in DISASTERS:
     for m, nm, ds in name_variants(d):

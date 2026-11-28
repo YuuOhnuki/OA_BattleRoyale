@@ -746,12 +746,32 @@
                 },
                 "minecraft:lore": [
                   {
-                    "text": "右クリックで使う。10秒後に足もとへ小さな補給が届く",
+                    "text": "右クリックで空へ打ち上げる",
                     "color": "gray",
                     "italic": false
                   },
                   {
-                    "text": "使うと全員に知らされ、空に赤い光が上がる",
+                    "text": "10秒後、打ち上げた場所に小さな補給が届く",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "　中身：上位チェスト・通常チェスト・回復を1つずつ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "使うと全員に知らされ、赤い光の柱が10秒立つ",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "（ほかの人に横取りされることもある）",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "使えるのは試合中、保護期間（最初の1分）のあと",
                     "color": "gray",
                     "italic": false
                   }
@@ -760,7 +780,14 @@
                   "oa_flare": true
                 },
                 "minecraft:max_stack_size": 1,
-                "minecraft:enchantment_glint_override": true
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:item_model": "minecraft:firework_rocket",
+                "minecraft:consumable": {
+                  "consume_seconds": 3600,
+                  "animation": "none",
+                  "sound": "minecraft:intentionally_empty",
+                  "has_consume_particles": false
+                }
               }
             }
           ]
