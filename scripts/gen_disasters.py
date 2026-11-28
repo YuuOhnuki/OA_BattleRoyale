@@ -42,7 +42,7 @@ DISASTERS = [
          desc='紫の線が出たら横へ動くか物陰へ'),
     # 1.9.266：マップ固有の災害（動き・地形の変化はプラグイン disaster/MapDisasters。#dsN の残り秒が合図）。
     # 壊した地形はプラグイン disaster/TerrainLog が記録し、試合の終わりに元へ戻す
-    dict(k=13, key='giant_meteor', name='巨大隕石', color='red', danger=5, sec=30, weight=8, maps=[0],
+    dict(k=13, key='giant_meteor', name='巨大隕石', color='red', danger=5, sec=20, weight=8, maps=[0],
          desc='赤い円の中から逃げよう。地面がえぐれる'),
     dict(k=14, key='geyser', name='炎の間欠泉', color='gold', danger=4, sec=30, weight=8, maps=[1],
          desc='煙が出た所は2秒後に爆発する。すぐ離れよう'),

@@ -1,9 +1,9 @@
 {
-  "version": "1.9.271",
-  "plugin": "0.75.0",
+  "version": "1.9.272",
+  "plugin": "0.77.0",
   "resourcepack": "1.9.49",
-  "checks": "check_release.py OK; plugin build; test server: clean startup, katana sweep damages warden (94->90), plain totem pickup replaced with proper yu (oa_overwork); sky generator asserts house entrances are clear",
+  "checks": "check_release.py OK; plugin build",
   "runtime": "Not run (smoke test only on request)",
-  "unverified": "Katana reach/knockback feel, katana on decoy/mobs, Nero 3-block-front teleport, lobby drop block, sky house entrance in game",
-  "notes": "Katana 3.5m/half knockback/vanilla targeting; furoball hits mobs/spar; Nero front teleport; night buff removed; lobby no drop; yu spawned with components; sky houses on leveled plots."
+  "unverified": "Meteor size/duration feel in game (numeric change only)",
+  "notes": "Giant meteor 20s, crater r8, damage r10."
 }
