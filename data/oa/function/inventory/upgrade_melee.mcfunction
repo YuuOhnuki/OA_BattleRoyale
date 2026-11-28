@@ -1,7 +1,3 @@
-# Upgrade existing handheld uniques once; do not rewrite unrelated items.
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{kind:2}}] unless items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{fish_v146:1b}}] run item modify entity @s weapon.mainhand oa:melee_fish
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{kind:7}}] unless items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{staple_damage147:1b}}] run item modify entity @s weapon.mainhand oa:melee_staple
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{kind:7}}] unless items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{staple_v146:1b}}] run item modify entity @s weapon.mainhand oa:staple_upgrade
-
-execute if items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{kind:9}}] unless items entity @s weapon.mainhand *[minecraft:custom_data~{oa:{taya_registry171:1b}}] run item modify entity @s weapon.mainhand oa:tayayuyu_upgrade
+# 1.9.260: 1.9.146〜1.9.171 の旧武器の書き換え（melee_fish・melee_staple・staple_upgrade・tayayuyu_upgrade）は削除。
+# 固有武器はすべて give/internal/* で作られ、作る時点で同じ書き換えを済ませている（試合をまたいで残らない）。item_modifier の JSON は give が使うので残す
 function oa:inventory/refill_damage
