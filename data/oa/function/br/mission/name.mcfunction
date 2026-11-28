@@ -11,3 +11,15 @@ execute if score #mission br.tmp matches 9 run data modify storage oa:br mission
 execute if score #mission br.tmp matches 10 run data modify storage oa:br mission set value {name:"チェストを20個開ける",hard:1}
 execute if score #mission br.tmp matches 11 run data modify storage oa:br mission set value {name:"合計1000m移動する",hard:1}
 execute if score #mission br.tmp matches 12 run data modify storage oa:br mission set value {name:"相手に合計♡×30のダメージを与える",hard:1}
+execute if score #mission br.tmp matches 13 run data modify storage oa:br mission set value {name:"2キルする",hard:0}
+execute if score #mission br.tmp matches 14 run data modify storage oa:br mission set value {name:"3キルする",hard:1}
+execute if score #mission br.tmp matches 15 run data modify storage oa:br mission set value {name:"固有武器で1キルする",hard:0}
+execute if score #mission br.tmp matches 16 run data modify storage oa:br mission set value {name:"弓かクロスボウで1キルする",hard:0}
+execute if score #mission br.tmp matches 17 run data modify storage oa:br mission set value {name:"チェストを15個開ける",hard:0}
+execute if score #mission br.tmp matches 18 run data modify storage oa:br mission set value {name:"鉱石を20個掘る",hard:0}
+execute if score #mission br.tmp matches 19 run data modify storage oa:br mission set value {name:"封印の宝珠を2つ解錠する",hard:0}
+execute if score #mission br.tmp matches 20 run data modify storage oa:br mission set value {name:"相手に合計♡×20のダメージを与える",hard:0}
+execute if score #mission br.tmp matches 21 run data modify storage oa:br mission set value {name:"9分以上生き残る",hard:0}
+execute if score #mission br.tmp matches 22 run data modify storage oa:br mission set value {name:"残り3人まで生き残る",hard:1}
+execute if score #mission br.tmp matches 23 run data modify storage oa:br mission set value {name:"ジャンプを300回する",hard:0}
+execute if score #mission br.tmp matches 24 run data modify storage oa:br mission set value {name:"固有武器を2種類同時に持つ",hard:1}

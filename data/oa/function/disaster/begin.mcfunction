@@ -13,7 +13,15 @@ scoreboard players operation #lim br.tmp -= #m3 br.tmp
 execute if score #r100 br.tmp > #lim br.tmp run scoreboard players set #want br.tmp 2
 scoreboard players operation #lim br.tmp += #m2 br.tmp
 execute if score #r100 br.tmp > #lim br.tmp run scoreboard players set #want br.tmp 3
+# 1.9.261：観戦者の投票（#dis_vote br.tmp＝災害の番号。プラグインが書く）が起こせる災害なら、その分を1つ減らして残りを抽選し、最後に足す
+scoreboard players set #vote_ok br.tmp 0
+execute if score #dis_vote br.tmp matches 1.. run function oa:disaster/vote_valid
+execute if score #vote_ok br.tmp matches 1 run scoreboard players remove #want br.tmp 1
 scoreboard players set #avoid_last br.tmp 1
-function oa:disaster/pick_n
+scoreboard players set #plan_n br.tmp 0
+execute if score #want br.tmp matches 1.. run function oa:disaster/pick_n
+execute if score #vote_ok br.tmp matches 1 run function oa:disaster/vote_apply
+execute if score #vote_ok br.tmp matches 1 run scoreboard players set #dis_vote_used br.tmp 1
+scoreboard players set #dis_vote br.tmp 0
 execute if score #plan_n br.tmp matches 0 run return 0
 function oa:disaster/plan_commit

@@ -1,4 +1,4 @@
-# OA Battle Royale 仕様書（1.9.260 時点）
+# OA Battle Royale 仕様書（1.9.261 時点）
 
 ## 1.9.240 修正
 
@@ -847,6 +847,12 @@ CTは実装で確認済み。効果の細かい数値は `WEAPONS_JA.md` から�
 | 試合ごとの記録（SQLite）と `/stats`（戦績・ランキング）、**通算（`oa.t_games`・`oa.t_win`・`oa.t_kill`）の正本** | **プラグイン**（0.4.0、通算は 0.6.0）。ロビーの戦績ボードはデータパックが、プラグインの書き込んだスコアを表示する |
 | 不具合・感想の報告 `/oafb <内容>`（`plugins/OABattleRoyale/feedback.log` に時刻・場所・試合の状態・版と1行で記録。30秒に1回・200文字まで。管理者は内容なしで最新10件） | **プラグイン**（0.62.0） |
 | 武器ごとの統計（`stats/WeaponTracker`：試合中に持っていた固有武器を1秒ごと、倒した武器をキルログから。SQLite の `match_weapons`。管理メニュー「記録・実績」→「武器の統計」で所持試合数・勝率・平均順位・キル、全期間／直近7日） | **プラグイン**（0.63.0） |
+| 熟練度・称号・見た目のご褒美・`/stats weapon`（`stats/ProgressService`、選択は `player_prefs`） | **プラグイン**（0.64.0） |
+| 特別ルール（`match/MatchRules`、`/oarule`、`match-settings.properties`） | **プラグイン**（0.64.0） |
+| 脱落者の投票（`match/SpectatorVote`。補給の方角 `#sup_vote br.tmp` 1北東2北西3南東4南西、次の災害 `#dis_vote br.tmp`、使用済み `#dis_vote_used`）。選び直し・抽選はデータパック（`br/supply/vote_check`・`disaster/vote_valid`・`vote_apply`） | **両方**（0.64.0／1.9.261） |
+| 脱落者の1v1（`match/DuelService`、ディメンション `oa:duel`、タグ `oa.duel`・`br.gm_override`。救済OFFかつ管理者ONのときだけ） | **プラグイン**（0.64.0） |
+| 信号弾（custom_data `oa_flare`、上位チェスト4%。使用・補給は `match/FlareService`） | **両方**（0.64.0／1.9.261） |
+| 設定の保存（`admin/PresetService`、`presets.yml`）・報告の一覧（`FeedbackService`） | **プラグイン**（0.64.0） |
 | 位置の異常（埋まり・空中に立っている・空中で止まっている）と試合中の切断・キックの記録（直さない。補正はデータパックの `tp_fix`） | **プラグイン**（0.5.0） |
 | 試合中の地図（自分の位置・安全地帯・味方・地点の名前） | **プラグイン**（0.5.0） |
 

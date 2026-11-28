@@ -727,6 +727,49 @@
           "weight": 85
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:firework_star",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_name": {
+                  "text": "信号弾",
+                  "color": "red",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "右クリックで使う。10秒後に足もとへ小さな補給が届く",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "使うと全員に知らされ、空に赤い光が上がる",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:custom_data": {
+                  "oa_flare": true
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:enchantment_glint_override": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 96
+        }
+      ]
     }
   ]
 }

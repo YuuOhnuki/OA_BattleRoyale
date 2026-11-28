@@ -9,6 +9,8 @@ scoreboard players set #sup_good br.tmp 0
 execute if score #sp_ok br.flag matches 1 as @e[type=minecraft:marker,tag=br.supply_new,limit=1] at @s run function oa:br/supply/ground_ok
 # 1.9.186: 中心に近すぎる場所は選び直す
 execute if score #sup_good br.tmp matches 1 as @e[type=minecraft:marker,tag=br.supply_new,limit=1] run function oa:br/supply/far_check
+# 1.9.261：観戦者の投票（#sup_vote br.tmp 1北東 2北西 3南東 4南西。プラグインが書く）の方角でなければ選び直す。選び直しが続いたら方角は無視
+execute if score #sup_good br.tmp matches 1 if score #sup_vote br.tmp matches 1..4 if score #sup_try br.tmp matches ..14 as @e[type=minecraft:marker,tag=br.supply_new,limit=1] run function oa:br/supply/vote_check
 execute if score #sup_good br.tmp matches 1 run return 1
 execute if score #sup_try br.tmp matches 20.. unless score #map oa.mapid matches 2..4 run return 0
 # 1.9.186: 洞窟は80回まで（以前は40回）
