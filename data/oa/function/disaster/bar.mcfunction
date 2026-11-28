@@ -137,6 +137,24 @@ execute if score #ds11 br.tmp matches 1.. if score #map oa.mapid matches 4 run d
 execute if score #ds12 br.tmp matches 1.. if score #map oa.mapid matches 4 run data modify storage oa:disaster bar append value {"text":"塔の砲撃 ★★★★☆ ","color":"dark_purple"}
 execute if score #ds12 br.tmp matches 1.. if score #map oa.mapid matches 4 run data modify storage oa:disaster bar append value {"score":{"name":"#ds12","objective":"br.tmp"},"color":"white"}
 execute if score #ds12 br.tmp matches 1.. if score #map oa.mapid matches 4 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
+execute if score #ds13 br.tmp matches 1.. if score #map oa.mapid matches 0 run data modify storage oa:disaster bar append value {"text":"巨大隕石 ★★★★★ ","color":"red"}
+execute if score #ds13 br.tmp matches 1.. if score #map oa.mapid matches 0 run data modify storage oa:disaster bar append value {"score":{"name":"#ds13","objective":"br.tmp"},"color":"white"}
+execute if score #ds13 br.tmp matches 1.. if score #map oa.mapid matches 0 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
+execute if score #ds14 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"text":"噴火 ★★★★☆ ","color":"gold"}
+execute if score #ds14 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"score":{"name":"#ds14","objective":"br.tmp"},"color":"white"}
+execute if score #ds14 br.tmp matches 1.. if score #map oa.mapid matches 1 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
+execute if score #ds15 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"text":"スカルクの目覚め ★★★☆☆ ","color":"dark_aqua"}
+execute if score #ds15 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"score":{"name":"#ds15","objective":"br.tmp"},"color":"white"}
+execute if score #ds15 br.tmp matches 1.. if score #map oa.mapid matches 2 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
+execute if score #ds16 br.tmp matches 1.. if score #map oa.mapid matches 3 run data modify storage oa:disaster bar append value {"text":"島の崩落 ★★★★☆ ","color":"aqua"}
+execute if score #ds16 br.tmp matches 1.. if score #map oa.mapid matches 3 run data modify storage oa:disaster bar append value {"score":{"name":"#ds16","objective":"br.tmp"},"color":"white"}
+execute if score #ds16 br.tmp matches 1.. if score #map oa.mapid matches 3 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
+execute if score #ds17 br.tmp matches 1.. if score #map oa.mapid matches 4 run data modify storage oa:disaster bar append value {"text":"虚空の侵食 ★★★★☆ ","color":"dark_purple"}
+execute if score #ds17 br.tmp matches 1.. if score #map oa.mapid matches 4 run data modify storage oa:disaster bar append value {"score":{"name":"#ds17","objective":"br.tmp"},"color":"white"}
+execute if score #ds17 br.tmp matches 1.. if score #map oa.mapid matches 4 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
+execute if score #ds18 br.tmp matches 1.. if score #map oa.mapid matches 4 run data modify storage oa:disaster bar append value {"text":"エンダードラゴン ★★★☆☆ ","color":"light_purple"}
+execute if score #ds18 br.tmp matches 1.. if score #map oa.mapid matches 4 run data modify storage oa:disaster bar append value {"score":{"name":"#ds18","objective":"br.tmp"},"color":"white"}
+execute if score #ds18 br.tmp matches 1.. if score #map oa.mapid matches 4 run data modify storage oa:disaster bar append value {"text":"秒　","color":"white"}
 execute if score #dis_active br.tmp matches ..3 run bossbar set oa:disaster name [{"text":"⚠ ","color":"red","bold":true},{"nbt":"bar[]","storage":"oa:disaster","interpret":true,"separator":""}]
 execute if score #dis_active br.tmp matches 4.. run bossbar set oa:disaster name [{"text":"⚠ 災害が同時に ","color":"red","bold":true},{"score":{"name":"#dis_active","objective":"br.tmp"},"color":"white","bold":true},{"text":" 種類","color":"red","bold":true}]
 scoreboard players set #bar_max br.tmp 1
@@ -165,6 +183,18 @@ execute if score #ds11 br.tmp > #bar_v br.tmp run scoreboard players operation #
 execute if score #ds11 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_v br.tmp = #ds11 br.tmp
 execute if score #ds12 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_max br.tmp = #dmax12 br.tmp
 execute if score #ds12 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_v br.tmp = #ds12 br.tmp
+execute if score #ds13 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_max br.tmp = #dmax13 br.tmp
+execute if score #ds13 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_v br.tmp = #ds13 br.tmp
+execute if score #ds14 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_max br.tmp = #dmax14 br.tmp
+execute if score #ds14 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_v br.tmp = #ds14 br.tmp
+execute if score #ds15 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_max br.tmp = #dmax15 br.tmp
+execute if score #ds15 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_v br.tmp = #ds15 br.tmp
+execute if score #ds16 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_max br.tmp = #dmax16 br.tmp
+execute if score #ds16 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_v br.tmp = #ds16 br.tmp
+execute if score #ds17 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_max br.tmp = #dmax17 br.tmp
+execute if score #ds17 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_v br.tmp = #ds17 br.tmp
+execute if score #ds18 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_max br.tmp = #dmax18 br.tmp
+execute if score #ds18 br.tmp > #bar_v br.tmp run scoreboard players operation #bar_v br.tmp = #ds18 br.tmp
 execute store result bossbar oa:disaster max run scoreboard players get #bar_max br.tmp
 execute store result bossbar oa:disaster value run scoreboard players get #bar_v br.tmp
 bossbar set oa:disaster players @a[tag=br.playing]

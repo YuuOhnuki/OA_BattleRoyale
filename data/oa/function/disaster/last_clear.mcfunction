@@ -11,3 +11,9 @@ scoreboard players set #last9 br.tmp 0
 scoreboard players set #last10 br.tmp 0
 scoreboard players set #last11 br.tmp 0
 scoreboard players set #last12 br.tmp 0
+scoreboard players set #last13 br.tmp 0
+scoreboard players set #last14 br.tmp 0
+scoreboard players set #last15 br.tmp 0
+scoreboard players set #last16 br.tmp 0
+scoreboard players set #last17 br.tmp 0
+scoreboard players set #last18 br.tmp 0

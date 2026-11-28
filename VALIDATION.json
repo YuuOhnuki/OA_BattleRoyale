@@ -1,9 +1,9 @@
 {
-  "version": "1.9.265",
-  "plugin": "0.69.0",
+  "version": "1.9.266",
+  "plugin": "0.70.0",
   "resourcepack": "1.9.49",
-  "checks": "check_release.py OK; plugin build and unit tests; test server startup without load errors",
+  "checks": "check_release.py OK; plugin build; test server: each new disaster on its map records terrain and restores after the match (meteor 1716, eruption 231, island collapse 109203, void 14874, dragon 560 blocks); warden HP 200, damage scaled, reward drops after emerging",
   "runtime": "Not run (smoke test only on request)",
-  "unverified": "Killing mood speed feel in game; saved-venue delete menu clicks in a real client",
-  "notes": "Gacha killing mood: blindness 20s + movement speed +175%. Plugin 0.69.0: delete saved venue revisions and presets."
+  "unverified": "Visuals/sounds/difficulty feel, dragon flight look, sculk noise build-up from real sprinting/jumping (fake players cannot move), warden emerge animation, /tips and death tips in a real client",
+  "notes": "New map disasters k13-k18 (plugin disaster/MapDisasters), TerrainLog restore, CaveWardens, /tips."
 }

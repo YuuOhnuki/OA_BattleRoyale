@@ -40,6 +40,20 @@ DISASTERS = [
          desc='ブタが爆発しながら走り回る'),
     dict(k=12, key='tower_barrage', name='塔の砲撃', color='dark_purple', danger=4, sec=45, weight=8, maps=[4],
          desc='紫の線が出たら横へ動くか物陰へ'),
+    # 1.9.266：マップ固有の災害（動き・地形の変化はプラグイン disaster/MapDisasters。#dsN の残り秒が合図）。
+    # 壊した地形はプラグイン disaster/TerrainLog が記録し、試合の終わりに元へ戻す
+    dict(k=13, key='giant_meteor', name='巨大隕石', color='red', danger=5, sec=20, weight=8, maps=[0],
+         desc='赤い円の中から逃げよう。地面がえぐれる'),
+    dict(k=14, key='eruption', name='噴火', color='gold', danger=4, sec=30, weight=8, maps=[1],
+         desc='火口から離れよう。火山弾と溶岩に注意'),
+    dict(k=15, key='sculk_wake', name='スカルクの目覚め', color='dark_aqua', danger=3, sec=40, weight=8, maps=[2],
+         desc='走る・跳ぶ・戦うと居場所がばれる。しゃがんで静かに'),
+    dict(k=16, key='island_collapse', name='島の崩落', color='aqua', danger=4, sec=40, weight=7, maps=[3],
+         desc='外側の島から崩れる。中央へ移動しよう'),
+    dict(k=17, key='void_erosion', name='虚空の侵食', color='dark_purple', danger=4, sec=40, weight=7, maps=[4],
+         desc='紫の渦の場所に穴が開く。渦から離れよう'),
+    dict(k=18, key='ender_dragon', name='エンダードラゴン', color='light_purple', danger=3, sec=40, weight=7, maps=[4],
+         desc='ドラゴンが地形を壊して飛び回る。足場に注意'),
 ]
 CFG = {'cd_min': 50, 'cd_max': 75, 'first_min': 30, 'first_max': 45, 'multi2': 20, 'multi3': 5,
        'dot_cap': 4, 'mob_cap': 90, 'chicken_cap': 60, 'pig_cap': 30, 'chicken_population_v':240,

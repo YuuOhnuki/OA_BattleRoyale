@@ -13,6 +13,12 @@ execute if score #p9 br.tmp matches 1 run scoreboard players add #plan_n br.tmp 
 execute if score #p10 br.tmp matches 1 run scoreboard players add #plan_n br.tmp 1
 execute if score #p11 br.tmp matches 1 run scoreboard players add #plan_n br.tmp 1
 execute if score #p12 br.tmp matches 1 run scoreboard players add #plan_n br.tmp 1
+execute if score #p13 br.tmp matches 1 run scoreboard players add #plan_n br.tmp 1
+execute if score #p14 br.tmp matches 1 run scoreboard players add #plan_n br.tmp 1
+execute if score #p15 br.tmp matches 1 run scoreboard players add #plan_n br.tmp 1
+execute if score #p16 br.tmp matches 1 run scoreboard players add #plan_n br.tmp 1
+execute if score #p17 br.tmp matches 1 run scoreboard players add #plan_n br.tmp 1
+execute if score #p18 br.tmp matches 1 run scoreboard players add #plan_n br.tmp 1
 execute if score #plan_n br.tmp matches 0 run return 0
 title @a[tag=br.playing] times 10 50 15
 title @a[tag=br.playing] subtitle {"text":"内容はチャットを確認","color":"gray"}
@@ -77,3 +83,33 @@ execute if score #p12 br.tmp matches 1 if score #map oa.mapid matches 1 run tell
 execute if score #p12 br.tmp matches 1 if score #map oa.mapid matches 2 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"塔の砲撃","bold":true},{"text":"  ★★★★☆"},{"text":"\n    紫の線が出たら横へ動くか物陰へ","color":"gray"}]
 execute if score #p12 br.tmp matches 1 if score #map oa.mapid matches 3 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"塔の砲撃","bold":true},{"text":"  ★★★★☆"},{"text":"\n    紫の線が出たら横へ動くか物陰へ","color":"gray"}]
 execute if score #p12 br.tmp matches 1 if score #map oa.mapid matches 4 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"塔の砲撃","bold":true},{"text":"  ★★★★☆"},{"text":"\n    紫の線が出たら横へ動くか物陰へ","color":"gray"}]
+execute if score #p13 br.tmp matches 1 if score #map oa.mapid matches 0 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"巨大隕石","bold":true},{"text":"  ★★★★★"},{"text":"\n    赤い円の中から逃げよう。地面がえぐれる","color":"gray"}]
+execute if score #p13 br.tmp matches 1 if score #map oa.mapid matches 1 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"巨大隕石","bold":true},{"text":"  ★★★★★"},{"text":"\n    赤い円の中から逃げよう。地面がえぐれる","color":"gray"}]
+execute if score #p13 br.tmp matches 1 if score #map oa.mapid matches 2 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"巨大隕石","bold":true},{"text":"  ★★★★★"},{"text":"\n    赤い円の中から逃げよう。地面がえぐれる","color":"gray"}]
+execute if score #p13 br.tmp matches 1 if score #map oa.mapid matches 3 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"巨大隕石","bold":true},{"text":"  ★★★★★"},{"text":"\n    赤い円の中から逃げよう。地面がえぐれる","color":"gray"}]
+execute if score #p13 br.tmp matches 1 if score #map oa.mapid matches 4 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"巨大隕石","bold":true},{"text":"  ★★★★★"},{"text":"\n    赤い円の中から逃げよう。地面がえぐれる","color":"gray"}]
+execute if score #p14 br.tmp matches 1 if score #map oa.mapid matches 0 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"噴火","bold":true},{"text":"  ★★★★☆"},{"text":"\n    火口から離れよう。火山弾と溶岩に注意","color":"gray"}]
+execute if score #p14 br.tmp matches 1 if score #map oa.mapid matches 1 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"噴火","bold":true},{"text":"  ★★★★☆"},{"text":"\n    火口から離れよう。火山弾と溶岩に注意","color":"gray"}]
+execute if score #p14 br.tmp matches 1 if score #map oa.mapid matches 2 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"噴火","bold":true},{"text":"  ★★★★☆"},{"text":"\n    火口から離れよう。火山弾と溶岩に注意","color":"gray"}]
+execute if score #p14 br.tmp matches 1 if score #map oa.mapid matches 3 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"噴火","bold":true},{"text":"  ★★★★☆"},{"text":"\n    火口から離れよう。火山弾と溶岩に注意","color":"gray"}]
+execute if score #p14 br.tmp matches 1 if score #map oa.mapid matches 4 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"噴火","bold":true},{"text":"  ★★★★☆"},{"text":"\n    火口から離れよう。火山弾と溶岩に注意","color":"gray"}]
+execute if score #p15 br.tmp matches 1 if score #map oa.mapid matches 0 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"スカルクの目覚め","bold":true},{"text":"  ★★★☆☆"},{"text":"\n    走る・跳ぶ・戦うと居場所がばれる。しゃがんで静かに","color":"gray"}]
+execute if score #p15 br.tmp matches 1 if score #map oa.mapid matches 1 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"スカルクの目覚め","bold":true},{"text":"  ★★★☆☆"},{"text":"\n    走る・跳ぶ・戦うと居場所がばれる。しゃがんで静かに","color":"gray"}]
+execute if score #p15 br.tmp matches 1 if score #map oa.mapid matches 2 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"スカルクの目覚め","bold":true},{"text":"  ★★★☆☆"},{"text":"\n    走る・跳ぶ・戦うと居場所がばれる。しゃがんで静かに","color":"gray"}]
+execute if score #p15 br.tmp matches 1 if score #map oa.mapid matches 3 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"スカルクの目覚め","bold":true},{"text":"  ★★★☆☆"},{"text":"\n    走る・跳ぶ・戦うと居場所がばれる。しゃがんで静かに","color":"gray"}]
+execute if score #p15 br.tmp matches 1 if score #map oa.mapid matches 4 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"スカルクの目覚め","bold":true},{"text":"  ★★★☆☆"},{"text":"\n    走る・跳ぶ・戦うと居場所がばれる。しゃがんで静かに","color":"gray"}]
+execute if score #p16 br.tmp matches 1 if score #map oa.mapid matches 0 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"島の崩落","bold":true},{"text":"  ★★★★☆"},{"text":"\n    外側の島から崩れる。中央へ移動しよう","color":"gray"}]
+execute if score #p16 br.tmp matches 1 if score #map oa.mapid matches 1 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"島の崩落","bold":true},{"text":"  ★★★★☆"},{"text":"\n    外側の島から崩れる。中央へ移動しよう","color":"gray"}]
+execute if score #p16 br.tmp matches 1 if score #map oa.mapid matches 2 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"島の崩落","bold":true},{"text":"  ★★★★☆"},{"text":"\n    外側の島から崩れる。中央へ移動しよう","color":"gray"}]
+execute if score #p16 br.tmp matches 1 if score #map oa.mapid matches 3 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"島の崩落","bold":true},{"text":"  ★★★★☆"},{"text":"\n    外側の島から崩れる。中央へ移動しよう","color":"gray"}]
+execute if score #p16 br.tmp matches 1 if score #map oa.mapid matches 4 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"島の崩落","bold":true},{"text":"  ★★★★☆"},{"text":"\n    外側の島から崩れる。中央へ移動しよう","color":"gray"}]
+execute if score #p17 br.tmp matches 1 if score #map oa.mapid matches 0 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"虚空の侵食","bold":true},{"text":"  ★★★★☆"},{"text":"\n    紫の渦の場所に穴が開く。渦から離れよう","color":"gray"}]
+execute if score #p17 br.tmp matches 1 if score #map oa.mapid matches 1 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"虚空の侵食","bold":true},{"text":"  ★★★★☆"},{"text":"\n    紫の渦の場所に穴が開く。渦から離れよう","color":"gray"}]
+execute if score #p17 br.tmp matches 1 if score #map oa.mapid matches 2 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"虚空の侵食","bold":true},{"text":"  ★★★★☆"},{"text":"\n    紫の渦の場所に穴が開く。渦から離れよう","color":"gray"}]
+execute if score #p17 br.tmp matches 1 if score #map oa.mapid matches 3 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"虚空の侵食","bold":true},{"text":"  ★★★★☆"},{"text":"\n    紫の渦の場所に穴が開く。渦から離れよう","color":"gray"}]
+execute if score #p17 br.tmp matches 1 if score #map oa.mapid matches 4 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"虚空の侵食","bold":true},{"text":"  ★★★★☆"},{"text":"\n    紫の渦の場所に穴が開く。渦から離れよう","color":"gray"}]
+execute if score #p18 br.tmp matches 1 if score #map oa.mapid matches 0 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"エンダードラゴン","bold":true},{"text":"  ★★★☆☆"},{"text":"\n    ドラゴンが地形を壊して飛び回る。足場に注意","color":"gray"}]
+execute if score #p18 br.tmp matches 1 if score #map oa.mapid matches 1 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"エンダードラゴン","bold":true},{"text":"  ★★★☆☆"},{"text":"\n    ドラゴンが地形を壊して飛び回る。足場に注意","color":"gray"}]
+execute if score #p18 br.tmp matches 1 if score #map oa.mapid matches 2 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"エンダードラゴン","bold":true},{"text":"  ★★★☆☆"},{"text":"\n    ドラゴンが地形を壊して飛び回る。足場に注意","color":"gray"}]
+execute if score #p18 br.tmp matches 1 if score #map oa.mapid matches 3 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"エンダードラゴン","bold":true},{"text":"  ★★★☆☆"},{"text":"\n    ドラゴンが地形を壊して飛び回る。足場に注意","color":"gray"}]
+execute if score #p18 br.tmp matches 1 if score #map oa.mapid matches 4 run tellraw @a[tag=br.playing] [{"text":"⚠ ","color":"red","bold":true},{"text":"エンダードラゴン","bold":true},{"text":"  ★★★☆☆"},{"text":"\n    ドラゴンが地形を壊して飛び回る。足場に注意","color":"gray"}]

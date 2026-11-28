@@ -11,3 +11,9 @@ execute if score #dis_vote br.tmp matches 9 if score #av9 br.tmp matches 1 unles
 execute if score #dis_vote br.tmp matches 10 if score #av10 br.tmp matches 1 unless score #ds10 br.tmp matches 1.. run scoreboard players set #vote_ok br.tmp 1
 execute if score #dis_vote br.tmp matches 11 if score #av11 br.tmp matches 1 unless score #ds11 br.tmp matches 1.. run scoreboard players set #vote_ok br.tmp 1
 execute if score #dis_vote br.tmp matches 12 if score #av12 br.tmp matches 1 unless score #ds12 br.tmp matches 1.. run scoreboard players set #vote_ok br.tmp 1
+execute if score #dis_vote br.tmp matches 13 if score #av13 br.tmp matches 1 unless score #ds13 br.tmp matches 1.. run scoreboard players set #vote_ok br.tmp 1
+execute if score #dis_vote br.tmp matches 14 if score #av14 br.tmp matches 1 unless score #ds14 br.tmp matches 1.. run scoreboard players set #vote_ok br.tmp 1
+execute if score #dis_vote br.tmp matches 15 if score #av15 br.tmp matches 1 unless score #ds15 br.tmp matches 1.. run scoreboard players set #vote_ok br.tmp 1
+execute if score #dis_vote br.tmp matches 16 if score #av16 br.tmp matches 1 unless score #ds16 br.tmp matches 1.. run scoreboard players set #vote_ok br.tmp 1
+execute if score #dis_vote br.tmp matches 17 if score #av17 br.tmp matches 1 unless score #ds17 br.tmp matches 1.. run scoreboard players set #vote_ok br.tmp 1
+execute if score #dis_vote br.tmp matches 18 if score #av18 br.tmp matches 1 unless score #ds18 br.tmp matches 1.. run scoreboard players set #vote_ok br.tmp 1

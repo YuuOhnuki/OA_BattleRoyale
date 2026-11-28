@@ -13,4 +13,10 @@ execute if score #p9 br.tmp matches 1 unless score #ds9 br.tmp matches 1.. run f
 execute if score #p10 br.tmp matches 1 unless score #ds10 br.tmp matches 1.. run function oa:disaster/go/k10
 execute if score #p11 br.tmp matches 1 unless score #ds11 br.tmp matches 1.. run function oa:disaster/go/k11
 execute if score #p12 br.tmp matches 1 unless score #ds12 br.tmp matches 1.. run function oa:disaster/go/k12
+execute if score #p13 br.tmp matches 1 unless score #ds13 br.tmp matches 1.. run function oa:disaster/go/k13
+execute if score #p14 br.tmp matches 1 unless score #ds14 br.tmp matches 1.. run function oa:disaster/go/k14
+execute if score #p15 br.tmp matches 1 unless score #ds15 br.tmp matches 1.. run function oa:disaster/go/k15
+execute if score #p16 br.tmp matches 1 unless score #ds16 br.tmp matches 1.. run function oa:disaster/go/k16
+execute if score #p17 br.tmp matches 1 unless score #ds17 br.tmp matches 1.. run function oa:disaster/go/k17
+execute if score #p18 br.tmp matches 1 unless score #ds18 br.tmp matches 1.. run function oa:disaster/go/k18
 function oa:disaster/plan_clear

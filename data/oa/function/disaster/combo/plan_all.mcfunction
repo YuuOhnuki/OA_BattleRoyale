@@ -11,3 +11,9 @@ execute if score #av9 br.tmp matches 1 unless score #ds9 br.tmp matches 1.. run 
 execute if score #av10 br.tmp matches 1 unless score #ds10 br.tmp matches 1.. run scoreboard players set #p10 br.tmp 1
 execute if score #av11 br.tmp matches 1 unless score #ds11 br.tmp matches 1.. run scoreboard players set #p11 br.tmp 1
 execute if score #av12 br.tmp matches 1 unless score #ds12 br.tmp matches 1.. run scoreboard players set #p12 br.tmp 1
+execute if score #av13 br.tmp matches 1 unless score #ds13 br.tmp matches 1.. run scoreboard players set #p13 br.tmp 1
+execute if score #av14 br.tmp matches 1 unless score #ds14 br.tmp matches 1.. run scoreboard players set #p14 br.tmp 1
+execute if score #av15 br.tmp matches 1 unless score #ds15 br.tmp matches 1.. run scoreboard players set #p15 br.tmp 1
+execute if score #av16 br.tmp matches 1 unless score #ds16 br.tmp matches 1.. run scoreboard players set #p16 br.tmp 1
+execute if score #av17 br.tmp matches 1 unless score #ds17 br.tmp matches 1.. run scoreboard players set #p17 br.tmp 1
+execute if score #av18 br.tmp matches 1 unless score #ds18 br.tmp matches 1.. run scoreboard players set #p18 br.tmp 1

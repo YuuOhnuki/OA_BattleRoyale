@@ -11,5 +11,11 @@ function oa:disaster/halt/k9
 function oa:disaster/halt/k10
 function oa:disaster/halt/k11
 function oa:disaster/halt/k12
+function oa:disaster/halt/k13
+function oa:disaster/halt/k14
+function oa:disaster/halt/k15
+function oa:disaster/halt/k16
+function oa:disaster/halt/k17
+function oa:disaster/halt/k18
 function oa:disaster/plan_clear
 function oa:disaster/count
