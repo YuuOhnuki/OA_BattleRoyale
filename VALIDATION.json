@@ -1,9 +1,9 @@
 {
-  "version": "1.9.264",
-  "plugin": "0.61.0",
+  "version": "1.9.265",
+  "plugin": "0.69.0",
   "resourcepack": "1.9.49",
-  "checks": "check_release.py OK; plugin build and unit tests (strike text); test server: sidebar order next(12) > mission(11,10) > version(9)",
+  "checks": "check_release.py OK; plugin build and unit tests; test server startup without load errors",
   "runtime": "Not run (smoke test only on request)",
-  "unverified": "Mission strikethrough in a real client (fake players do not receive packets); one-line mission hides the second row",
-  "notes": "Mission rows moved above the version and restyled. Strikethrough per viewer is plugin menu/MissionStrike. Backstab subtitles and bell removed."
+  "unverified": "Killing mood speed feel in game; saved-venue delete menu clicks in a real client",
+  "notes": "Gacha killing mood: blindness 20s + movement speed +175%. Plugin 0.69.0: delete saved venue revisions and presets."
 }
