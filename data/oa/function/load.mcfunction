@@ -218,6 +218,7 @@ scoreboard objectives add oa.guard_fx dummy
 scoreboard objectives add oa.fage dummy
 
 scoreboard objectives add oa.fair dummy
+scoreboard objectives add oa.fland dummy
 
 scoreboard objectives add oa.control trigger
 

@@ -1,9 +1,9 @@
 {
-  "version": "1.9.269",
-  "plugin": "0.73.0",
+  "version": "1.9.270",
+  "plugin": "0.74.0",
   "resourcepack": "1.9.49",
-  "checks": "check_release.py OK; plugin build; test server: giant meteors ramp to 16 in 30s, dragon below feet, bridge collapse 3 bridges x2 (1768 blocks), geyser 6877 blocks + launch, all restored; flare lands and drops supply-grade contents",
+  "checks": "check_release.py OK; plugin build; test server: flare crate lands ~12.5s after use, katana sweep damages warden (100->96), admin/user menu body slots identical",
   "runtime": "Not run (smoke test only on request)",
-  "unverified": "Stats menu screen, tips display, credits book, meteor/dragon visuals in a real client",
-  "notes": "Meteor schedule/visuals, dragon cycle, geyser (k14) and bridge collapse (k16) replace eruption/island collapse, flare uses br/supply/contents, stats menu, tips, credits."
+  "unverified": "Furoball fall-damage fix (fake players do not fall), chest lid visuals (fake players receive no packets)",
+  "notes": "Furoball landing needs 2 grounded ticks; chest lids driven by br.opened incl. unloaded chests; flare 9s fall; barrage warn 0.6s; katana next-tick sweep; admin menu items at slot 8."
 }

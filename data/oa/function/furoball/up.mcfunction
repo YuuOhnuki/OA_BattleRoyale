@@ -1,6 +1,7 @@
 function oa:furoball/stop_lift
 scoreboard players set @s oa.fage 0
 scoreboard players set @s oa.fair 0
+scoreboard players set @s oa.fland 0
 tag @s add oa.furo_fall
 attribute @s minecraft:fall_damage_multiplier modifier remove oa:furo_fall
 attribute @s minecraft:fall_damage_multiplier modifier add oa:furo_fall -1 add_multiplied_total
